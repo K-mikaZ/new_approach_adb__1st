@@ -24,3 +24,6 @@
 !
 !#endif
 !
+! Badfilters concern
+!
+!#include common_utils/lists/badfilters.txt
