@@ -1,0 +1,2 @@
+#file: < master/rules.txt >
+!#include master/common_utils/skeleton_def.txt
