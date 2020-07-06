@@ -1,1 +1,1 @@
-#file: < https://github.com/K-mikaZ/new_approach_adb__K-mikaZ/blob/master/common_utils/components/other_def.txt >
+#file: < master/common_utils/components/other_def.txt >
