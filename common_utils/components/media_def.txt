@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/media_def.txt >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop media
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (media && mp3 && 1p)
 *.mp3$media,redirect-rule=noop-0.1s.mp3
@@ -25,3 +27,5 @@
 !#if (media && !mp3 && !mp4 && !1p)
 *$media,3p,redirect-rule=empty
 !#endif
+
+!
