@@ -1,11 +1,11 @@
+
+!#include ping_def.txt
+!#include other_def.txt
 ! ——————————————————————————————————————————————————————————————————————————————————
 !
 ! Noop beacon
 !
 ! ——————————————————————————————————————————————————————————————————————————————————
-
-!#include ping_def.txt
-!#include other_def.txt
 
 ! Noop other beacon (not sure really useful!)
 
@@ -16,3 +16,5 @@
 !#if (beacon && !ping && !other && !1p)
 *$beacon,3p,redirect-rule=empty
 !#endif
+
+!
