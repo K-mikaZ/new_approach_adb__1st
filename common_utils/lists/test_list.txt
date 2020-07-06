@@ -17,7 +17,7 @@
 !
 ! [except] ~account.google because recaptcha require it.
 !
-! contrary to what one might think, does not block, neither the css, nor the scripts of google, but only the (gstatic|google).com/*/_/js/k=
+! contrary to what one might think, does not block, neither the css, nor the scripts of google, but only the (gstatic|google).com/*/_/(ss|js)/k=
 
 !#if script
 *$script,domain=~account.google.com|google.com
