@@ -1,8 +1,9 @@
-#file: < master/rules.txt >
+!
 ! Title: Better redirect-rules
 ! Version: 202005161346
 ! Expires: 14 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
-! Description: It is not a list of filters but only a file to automatically apply the rules defined above..
+! Description: It is not a list of filters but only a file to automatically apply the rules defined above.
+!
 !#include common_utils/skeleton_def.txt
