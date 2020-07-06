@@ -1,8 +1,11 @@
 #file: < master/common_utils/components/css_def.txt >
+
 ! Noop stylesheet
+
 !#if (css && 1p)
 *$css,redirect-rule=noop.txt
 !#endif
+
 !#if (css && !1p)
 *$css,3p,redirect-rule=noop.txt
 !#endif
