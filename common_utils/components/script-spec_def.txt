@@ -6,6 +6,8 @@
 
 ! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
 
+!#if (script && !1p)
+
 ! Google concern
 ||google-analytics.*/cx/api.js$script,important,redirect-rule=google-analytics_cx_api.js
 ||google-analytics.*/inpage_linkid.js$script,important,redirect-rule=google-analytics_inpage_linkid.js
@@ -71,5 +73,7 @@
 ||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 ||disqus.com/count.js$script
 @@||disqus.com/embed.js?_=1457540*$script
+
+!#endif
 
 !
