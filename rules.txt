@@ -1,5 +1,5 @@
 !
-! Title: Better redirect-rules
+! Title: [module] "redirect-rules" definitions
 ! Version: 202005161346
 ! Expires: 14 days
 ! Author: K-mik@Z
