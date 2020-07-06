@@ -1,1 +1,11 @@
 #file: < master/common_utils/components/other_def.txt >
+
+! Noop other
+
+!#if (other && 1p)
+*$other,redirect-rule=empty
+!#endif
+
+!#if (other && !1p)
+*$other,3p,redirect-rule=empty
+!#endif
