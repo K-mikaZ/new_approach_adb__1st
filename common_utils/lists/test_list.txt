@@ -1,7 +1,11 @@
 !
-! TEST LIST
+! Title: [fix] block some tracking - test file
+! Version: 202005161346
+! Expires: 14 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ/edit/master/common_utils/lists/test_list.txt
+! Description: It is not a list of filters but only a file to automatically apply the rules defined above.
 !
-! [fix] block some tracking
 !
 ! When you make a search, those appear:
 ! gstatic.com/og/_/js/k=og.qtm.en_US.rVh_Q0PtyiE.O/rt=j/m=qabr,q_d,qcwid,qmutsd,qapid/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTvksNUEQ0kqoj7bGygixkjJzQDXZQ
@@ -12,6 +16,8 @@
 ! and see the adblocker console
 !
 ! [except] ~account.google because recaptcha require it.
+!
+! contrary to what one might think, does not block, neither the css, nor the scripts of google, but only the (gstatic|google).com/*/_/js/k=
 
 !#if script
 *$script,domain=~account.google.com|google.com
