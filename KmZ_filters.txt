@@ -6,25 +6,26 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
 ! Description: My first blocking list.
 !
+
 ! First, include rules
-!
+
 !#include common_utils/rules.txt
-!
+
 !#if (dom && 1p)
-!
+
 !#include common_utils/lists/filter_dom_script_inject.txt
-!
+
 !#include common_utils/lists/filter_dom_css.txt
-!
+
 !#endif
-!
+
 !#if script
-!
+
 !#include common_utils/lists/filter_scripts_list.txt
-!
+
 !#endif
-!
+
 ! Badfilters concern
-!
+
 !#include common_utils/lists/badfilters.txt
-!
+
