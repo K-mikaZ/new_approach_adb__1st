@@ -1,5 +1,5 @@
 !
-! Title: [KmZ][new wave] "Filtering and exception list"
+! Title: [✔][new wave] "Filtering and exception list" - by K-mik@Z
 ! Version: 202005161346
 ! Expires: 7 days
 ! Author: K-mik@Z
