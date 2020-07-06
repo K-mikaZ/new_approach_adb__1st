@@ -1,1 +1,11 @@
 #file: < master/common_utils/components/inline-script_def.txt >
+
+! Noop script
+
+!#if (inline-script && 1p)
+*$inline-script,redirect-rule=noop.js
+!#endif
+
+!#if (inline-script && !1p)
+*$inline-script,3p,redirect-rule=noop.js
+!#endif
