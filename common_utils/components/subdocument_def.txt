@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/subdocument_def.txt >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop subdocument
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (subdocument && 1p)
 *$subdocument,redirect-rule=noop.html
@@ -9,3 +11,5 @@
 !#if (subdocument && !1p)
 *$subdocument,3p,redirect-rule=noop.html
 !#endif
+
+!
