@@ -27,3 +27,5 @@
 !#if  (image && !gif && !png && !1p)
 *$image,3p,redirect-rule=empty
 !#endif
+
+!
