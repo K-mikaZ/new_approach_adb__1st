@@ -1,2 +1,1 @@
-#file: < https://github.com/K-mikaZ/new_approach_adb__K-mikaZ/master/common_utils/components/xhr_def.txt >
-coming soon...
+#file: < master/common_utils/components/xhr_def.txt >
