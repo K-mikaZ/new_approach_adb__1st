@@ -1,9 +1,10 @@
 # file: < master/common_utils/skeleton_def.txt >
 !#include components/dom_def.txt
 !#include components/inline-script_def.txt
-!#include components/beacon_def.txt
-!#include components/beacon_def.txt
-!#include components/beacon_def.txt
-!#include components/beacon_def.txt
-!#include components/beacon_def.txt
+!#include components/css_def.txt
+!#include components/script_def.txt
+!#include components/xhr_def.txt
+!#include components/subdocument_def.txt
+!#include components/object-subrequest_def.txt
+!#include components/websocket_def.txt
 !#include components/beacon_def.txt
