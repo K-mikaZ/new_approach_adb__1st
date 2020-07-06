@@ -1,1 +1,1 @@
-# new_approach_blocking__KmikaZ
+# New approach for adblockers and first time purpose (by K-mik@Z)
