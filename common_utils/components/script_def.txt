@@ -1,1 +1,11 @@
 #file: < master/common_utils/components/script_def.txt >
+
+! Noop script
+
+!#if (script && 1p)
+*$script,redirect-rule=noop.js
+!#endif
+
+!#if (script && !1p)
+*$script,3p,redirect-rule=noop.js
+!#endif
