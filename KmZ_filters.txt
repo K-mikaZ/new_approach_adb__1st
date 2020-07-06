@@ -6,6 +6,9 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
 ! Description: My first blocking list.
 !
+! First, include rules
+!
+!#include common_utils/rules.txt
 !
 !#if (dom && 1p)
 !
