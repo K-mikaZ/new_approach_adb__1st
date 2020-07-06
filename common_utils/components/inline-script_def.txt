@@ -1,15 +1,11 @@
 ! ——————————————————————————————————————————————————————————————————————————————————
 !
-! Noop script
+! Noop inline-script
 !
 ! ——————————————————————————————————————————————————————————————————————————————————
 
-!#if (inline-script && 1p)
+!#if (inline-script)
 *$inline-script,redirect-rule=noop.js
-!#endif
-
-!#if (inline-script && !1p)
-*$inline-script,3p,redirect-rule=noop.js
 !#endif
 
 !
