@@ -1,0 +1,72 @@
+
+!#if script
+! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
+
+! Google concern
+||google-analytics.*/cx/api.js$script,important,redirect-rule=google-analytics_cx_api.js
+||google-analytics.*/inpage_linkid.js$script,important,redirect-rule=google-analytics_inpage_linkid.js
+||google-analytics.*/analytics.js$script,important,redirect-rule=google-analytics_analytics.js
+||google-analytics.*/ga.js$script,important,redirect-rule=google-analytics_ga.js
+
+||google-analytics.com^$script
+
+||googlesyndication.*/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+! Fix missing : pagead2.googlesyndication is not take over the rule `||googlesyndication.*/pagead/js/adsbygoogle.js` (script concern, not xhr)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+
+*.googlesyndication.*^$script
+
+||googletagmanager.*/gtm.js$script,important,redirect-rule=googletagmanager_gtm.js
+! Fix missing : googletagservices.com/tag/js/gpt.js using googletagmanager.com/gtag/js?
+! see < https://support.google.com/analytics/answer/1034342?hl=en#RelatedResources >
+! see < https://developers.google.com/analytics/devguides/collection/gtagjs >
+||www.googletagmanager.com^$badfilter
+||googletagmanager.com/gtag/js$script,important,redirect-rule=google-analytics_analytics.js
+
+||googletagmanager.*/gtag/js?$script
+*googletagmanager.*^$script
+
+||googletagservices.*/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
+
+||googletagservices.com^$script
+
+! others concern
+||addthis.*/addthis_widget.js$script,important,redirect-rule=addthis_widget.js
+||addthis.com^$script
+
+||amazon-adsystem.*/amzn_ads.js$script,important,redirect-rule=amazon_ads.js
+||amazon-adsystem.*/apstag.js$script,important,redirect-rule=amazon_apstag.js
+||amazon-adsystem.com^$script
+
+||cdn.ampproject.org/v0.js$script,important,redirect-rule=ampproject_v0.js
+||cdn.ampproject.org/v0.js
+
+||static.chartbeat.com/js/chartbeat.js$script,important,redirect-rule=chartbeat.js
+*.chartbeat.*^$important
+
+||doubleclick.*/ad_status.js$script,important,redirect-rule=doubleclick_instream_ad_status.js
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
+@@||doubleclick.net/instream/ad_status.js$badfilter
+||doubleclick.net/instream/ad_status.js$important
+*.doubleclick.*$script
+
+||ligatus.*/angular-tag.js$script,important,redirect-rule=ligatus_angular-tag.js
+||ligatus.^$important
+
+||widgets.outbrain.*/outbrain.js$script,important,redirect-rule=outbrain-widget.js
+||outbrain.^$important
+
+||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
+||smartadserver.^$important
+
+||scorecardresearch.*/beacon.js$script,important,redirect-rule=scorecardresearch_beacon.js
+||scorecardresearch.^$important
+
+!#if (script && disqus.com && !1p)
+# redirect rules only not blocking here (see antisocial third-party)
+||disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
+||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
+||disqus.com/count.js$script
+@@||disqus.com/embed.js?_=1457540*$script
+
+!
