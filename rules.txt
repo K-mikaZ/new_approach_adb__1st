@@ -1,5 +1,5 @@
 !
-! Title: [⚙][module] "redirect-rules" definitions
+! Title: [⚙][module][definitions] "redirect-rules"
 ! Version: 202005161346
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
