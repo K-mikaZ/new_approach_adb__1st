@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/object-subrequest_def.txt >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop object-subrequest
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (object-subrequest && 1p)
 *$object-subrequest,redirect-rule=empty
@@ -9,3 +11,5 @@
 !#if (object-subrequest && !1p)
 *$object-subrequest,3p,redirect-rule=empty
 !#endif
+
+!
