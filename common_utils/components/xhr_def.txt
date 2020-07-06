@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/xhr_def.txt >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop xhr
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (xhr && 1p)
 *$xhr,redirect-rule=noop.txt
@@ -9,3 +11,5 @@
 !#if (xhr && !1p)
 *$xhr,3p,redirect-rule=noop.txt
 !#endif
+
+!
