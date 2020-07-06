@@ -1,1 +1,27 @@
 #file: < master/common_utils/components/image_def.txt >
+
+! Noop image
+
+!#if (image && png && 1p)
+*.png$image,redirect-rule=2x2.png
+!#endif
+
+!#if (image && png && !1p)
+*.png$image,3p,redirect-rule=2x2.png
+!#endif
+
+!#if (image && gif && 1p)
+*.gif$image,redirect-rule=1x1.gif
+!#endif
+
+!#if (image && gif && !1p)
+*.gif$image,3p,redirect-rule=1x1.gif
+!#endif
+
+!#if  (image && !gif && !png && 1p)
+*$image,redirect-rule=empty
+!#endif
+
+!#if  (image && !gif && !png && !1p)
+*$image,3p,redirect-rule=empty
+!#endif
