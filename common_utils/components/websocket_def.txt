@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/websocket_def.txt >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop websocket
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (websocket && 1p)
 *$websocket,redirect-rule=empty
@@ -9,3 +11,5 @@
 !#if (websocket && !1p)
 *$websocket,3p,redirect-rule=empty
 !#endif
+
+!
