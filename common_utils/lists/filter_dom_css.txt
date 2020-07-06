@@ -1,6 +1,14 @@
 !
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-! < start dom css rules >                                                      [concern] common_utils/lists/filter_dom_css.txt
+! < start dom css rules >                                                      [concern] common_utils/lists/filter_dom_css.txt!
+! ------------------------------------------------------------------
+!
+! Advanced filters --                                 < https://adblockplus.org/filter-cheatsheet#elementhidingemulation-ex1 >
+!                                                     < https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors >
+! Filtres avancés --                                  rc.js < https://github.com/gorhill/uBlock/wiki/Resources-Library#rcjs- >
+!                                       < https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#subjectxpatharg >
+! ------------------------------------------------------------------
+!
 ! ---- Global -----
 ! < start global CSS rules >
 *##[class="adsbygoogle"]
@@ -15,6 +23,8 @@
 *##a:if([class^="ebooks_"])
 ! </ end global CSS rules >
 !
+! ---- Per site -----
+! < start per site CSS rules >
 !#if film01stream.*
 film01stream.*#?#span:-abp-contains(/ads/)
 film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
@@ -66,7 +76,9 @@ ettvdl.com##a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d2410
 di.fm##a:if(:has-text(/premium|trial/i))
 di.fm##[class*="premium"],#sponsor-region
 !#endif
+! </end per site CSS rules >
 !
+! Not optimized (the rest) - to sort
 *.wixsite.com###WIX_ADS
 mega-p2p.net##[href*="navigateur-brave"]
 streamcomplet.mobi##a[href*=".streamcomplet.mobi/player/"]
