@@ -1,0 +1,3 @@
+# file: <https://github.com/K-mikaZ/new_approach_adb__K-mikaZ/master/common_utils/skeleton_def.txt>
+!#include common_utils/rules_def.txt
+comming soon...
