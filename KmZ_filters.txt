@@ -7,9 +7,11 @@
 ! Description: My first blocking list.
 !
 
-! First, include rules
+! FIRST, INCLUDE RULES
 
 !#include common_utils/rules.txt
+
+! DOM CONCERN
 
 !#if (dom && 1p)
 
@@ -19,13 +21,15 @@
 
 !#endif
 
+! SCIPTS CONCERN
+
 !#if script
 
 !#include common_utils/lists/filter_scripts_list.txt
 
 !#endif
 
-! Badfilters concern
+! BADFILTERS CONCERN
 
 !#include common_utils/lists/badfilters.txt
 
