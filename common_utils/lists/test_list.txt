@@ -13,10 +13,10 @@
 !
 ! [except] ~account.google because recaptcha require it.
 
-!#if (google.com && script)
+!#if script
 *$script,domain=~account.google.com|google.com
 !#endif
 
-!#if (google.com && css)
+!#if css
 *$css,domain=~account.google.com|google.com
 !#endif
