@@ -10,7 +10,9 @@
 
 !#if (script && !1p)
 *$script,3p,redirect-rule=noop.js
+!
 !#include script-spec_def.txt
+!
 !#endif
 
 !
