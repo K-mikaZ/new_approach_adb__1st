@@ -1,6 +1,6 @@
 !
-! Title: [✔][new wave] "Filtering and exception list" - by K-mik@Z
-! Version: 202005161346
+! Title: [✔][new wave] "Rules, Filtering and exception list" - by K-mik@Z
+! Version: 1
 ! Expires: 7 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
