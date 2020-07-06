@@ -11,3 +11,5 @@
 !#if (script && !1p)
 *$script,3p,redirect-rule=noop.js
 !#endif
+
+!
