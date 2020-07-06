@@ -1,6 +1,8 @@
-#file: < master/common_utils/components/ping.def >
-
+! ——————————————————————————————————————————————————————————————————————————————————
+!
 ! Noop ping
+!
+! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if (ping && 1p)
 *$ping,redirect-rule=empty
@@ -9,3 +11,5 @@
 !#if (ping && !1p)
 *$ping,3p,redirect-rule=empty
 !#endif
+
+!
