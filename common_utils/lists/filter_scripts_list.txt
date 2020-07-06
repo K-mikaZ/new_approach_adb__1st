@@ -1,0 +1,28 @@
+!
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+! < start script-spec_def >                                              [concern] common_utils/components/script-spec_def.txt
+||google-analytics.com^$script
+*.googlesyndication.*^$script
+![fix] for ensure blocking (because other lists)
+||www.googletagmanager.com^$badfilter
+||googletagmanager.*/gtag/js?$script
+*googletagmanager.*^$script
+||googletagservices.com^$script
+||addthis.com^$script
+||amazon-adsystem.com^$script
+||cdn.ampproject.org/v0.js
+*.chartbeat.*^$important
+![fix] for ensure blocking (because other lists)
+@@||doubleclick.net/instream/ad_status.js$badfilter
+||doubleclick.net/instream/ad_status.js$important
+*.doubleclick.*$script
+||ligatus.^$important
+||outbrain.^$important
+||smartadserver.^$important
+||scorecardresearch.^$important
+||disqus.com/count.js$script
+![fix] allowing
+@@||disqus.com/embed.js?_=1457540*$script
+! </ end script-spec_def >
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+!
