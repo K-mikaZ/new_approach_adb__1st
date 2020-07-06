@@ -1,3 +1,13 @@
 #file: < master/common_utils/components/beacon_def.txt >
 !#include ping_def.txt
 !#include other_def.txt
+
+! Noop other beacon (not sure really useful!)
+
+!#if (beacon && !ping && !other && 1p)
+*$beacon,redirect-rule=empty
+!#endif
+
+!#if (beacon && !ping && !other && !1p)
+*$beacon,3p,redirect-rule=empty
+!#endif
