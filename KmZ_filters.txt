@@ -8,6 +8,6 @@
 !
 !#if script
 !
-! include common_utils/lists/filter_scripts_list.txt
+!#include common_utils/lists/filter_scripts_list.txt
 !
 !#endif
