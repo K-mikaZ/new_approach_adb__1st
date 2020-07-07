@@ -1,0 +1,11 @@
+!
+! Title: [💣][test][fix] "try to block some missing".
+! Version: 1
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ/edit/master/common_utils/lists/💣danger_zone/test_file.txt
+! Description: List to test certain filters before offering them.
+!
+
+!
+!#include
+!
