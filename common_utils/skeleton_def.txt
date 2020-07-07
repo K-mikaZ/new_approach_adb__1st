@@ -1,4 +1,3 @@
-!!#include components/dom_def.txt
 
 !
 !#include components/inline-script_def.txt
