@@ -26,5 +26,5 @@
 *$css,domain=~account.google.com|google.com
 !#endif
 
-! TEST submodue
-!#include ✗to_block/per_sites/test_submodule.txt
+! TEST submodule
+! #include ✗to_block/per_sites/test_submodule.txt
