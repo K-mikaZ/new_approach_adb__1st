@@ -7,13 +7,16 @@
 ! Description: My first blocking list.
 !
 
-! FIRST, INCLUDE RULES
+! FIRST, INCLUDE RULES!
+! It is not a list of filters but only a module.
+! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
+! #read also < https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule >
 
 !#include common_utils/rules.txt
 
 ! DOM CONCERN
 
-!#if (dom && 1p)
+!#if dom
 
 !#include common_utils/lists/filter_dom_script_inject.txt
 
@@ -33,3 +36,4 @@
 
 !#include common_utils/lists/badfilters.txt
 
+!
