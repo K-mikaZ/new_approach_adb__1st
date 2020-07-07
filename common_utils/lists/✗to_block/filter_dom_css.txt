@@ -98,7 +98,6 @@ allseries.co##.big-btn.btn-info.btn
 alvinet.com###itedkjrx,#pvgsoihc,#saybnkwd,#zsawqobp
 amazon.fr###DAnsm
 amazon.com###desktop-ad-atf
-animedigitalnetwork.fr##.adn-opm2-block-rectangle,.adn-pave,#google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
 animes-mangas-ddl.net##.pubads,.td_block_template_9.td-pb-border-top.td_uid_6_5a21732be2f2d_rand.td_block_widget.td_block_text_with_title.td_block_wrap
 animesvostfr.net##.adkiss,.container .adkiss
 annuaire.118712.fr###le712_lr_pub
@@ -408,7 +407,6 @@ whatismybrowser.com##.extra,.responsive.fun
 wikiserie.ink###pub,[href="/streaming.html"],[href="/download.html"],center center
 windy.com###articles
 yahoo.com###UMU,.ads
-yatta.animedigitalnetwork.fr##.adn-header
 yggtorrent.*##[href*="marmota.tv"],[href^="https://primexbt.com"],#over-18-notification,.animated.alert-success,.ad-alert-18-sub-title,.ad-alert-18.ad-alert-message
 youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 zdnet.fr###zrlnqtos
