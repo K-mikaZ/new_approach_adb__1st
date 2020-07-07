@@ -59,16 +59,20 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 /ads/pop.$badfilter
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
-
+! [fix] datadome.co (Real-Time Bot Protection)
+||datadome.co^$3p,badfilter
+! [fix] are you still here di.fm
+||gvt1.com^$badfilter
+||redirector.gvt1.com^$badfilter
+!
+! Tracking urls
+! I prefer use < https://chrome.google.com/webstore/search/clearurls > for that:
+! ——————————————————————————————————————————————————————————————————————————————
 ! [fix] Require for DDos protection by cloudflare
 ||*&__cf_chl_jschl_tk__=$badfilter
 ||*?__cf_chl_jschl_tk__=$badfilter
-
 ! [fix] Practices for facebook. To block only if antisocial list
 ?fbclid=$document,important,badfilter
-
-! [fix] datadome.co (Real-Time Bot Protection)
-||datadome.co^$3p,badfilter
 
 ! </end badfilters >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
