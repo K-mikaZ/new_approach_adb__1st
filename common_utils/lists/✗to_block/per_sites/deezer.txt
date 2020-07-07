@@ -6,6 +6,7 @@
 ! Deezer --
 !
 ! ------------------------------------------------------------------
+! < start deezer rules >
 !#if deezer.com
 !#if script
 /cast_sender.js$script,important,domain=deezer.com
@@ -19,5 +20,6 @@
 /lightbox/*$important,domain=deezer.com
 /gw\-light\.php\*method\=(restriction_setTime|log\.listen|songkick\.getGeoEvents)/$important,domain=deezer.com
 !#endif
+! </end deezer rules >
 
 !
