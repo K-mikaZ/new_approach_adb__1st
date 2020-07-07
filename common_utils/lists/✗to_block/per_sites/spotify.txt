@@ -1,0 +1,33 @@
+!
+
+!
+! ------------------------------------------------------------------
+!
+! Spotify --
+!
+! ------------------------------------------------------------------
+! < start spotify rules >
+!#if open.spotify.com
+!#if script
+/(.*)?pixel\-static\.spotify\.(.{2,})\/sync\.min\.js/$script,important
+!#endif
+!#if (image && !1p)
+||spotify.demdex.net$image,important
+!#endif
+!#if xhr
+*.client.*.spotify.*sponsoredplaylist$xhr,important
+!#endif
+! badfilters
+||open.spotify.com^$badfilter
+||wg.spotify.com$badfilter
+||spclient.wg.spotify.com/ads/v2/config$badfilter
+||sentry.io/api/*$badfilter
+! allow
+@@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
+@@||adeventtracker.spotify.com/monitoring$xhr,domain=open.spotify.com
+@@||gew-dealer.spotify.com^$websocket,1p
+@@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
+!#endif
+! </ end spotify rules >
+
+!
