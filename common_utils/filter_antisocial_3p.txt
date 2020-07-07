@@ -47,8 +47,10 @@
 # comments to be loaded.
 # Works with following filters: disqus_forums_embed.js AND disqus_embed.js
 # Uncomment for blocking all
+!#if script
 ||disqus.com/forums/*/embed.js$script
 ||disqus.com/embed.js$script
+!#endif
 ! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
 ! see example here: < https://einaregilsson.com/redirector/ >
 
@@ -78,8 +80,10 @@
 ! < start ADN (animedigitalnetwork) rules >
 !#if animedigitalnetwork.fr
 ! bloc comments concern
+!#if dom
 animedigitalnetwork.fr#?#.adn-block-content:if(span:-abp-contains(/Avis sur /))
-!#if css|stylesheet|js|script
+!#endif
+!#if css|script
 /animedigitalnetwork\.(.{2})\/media\/vodcomment\/(vod)?comment(s)?(\-v([0-9]{1,}))?\.((min\.)?js|css)(.*)/$all,1p,important
 ! font comments concerned
 */css?family=Poppins$stylesheet,important,domain=animedigitalnetwork.fr
