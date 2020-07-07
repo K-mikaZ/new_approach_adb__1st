@@ -7,19 +7,6 @@
 
 !#include rules.txt
 
-! DOM CONCERN
+!#include lists/to_block.txt
 
-!#if dom
-
-!#include lists/filter_dom_script_inject.txt
-
-!#include lists/filter_dom_css.txt
-
-!#endif
-
-! SCIPTS CONCERN
-
-!#if script
-!#include lists/filter_scripts_list.txt
-
-!#endif
+!
