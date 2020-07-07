@@ -8,13 +8,12 @@
 !
 
 !
-!#include common_utils/lists/filter_global_without_antisocial_3p.txt
+!#include common_utils/filter_global_without_antisocial_3p.txt
+!
+!
+!#include common_utils/filter_antisocial_3p.txt
 !
 
 !
-!#include common_utils/lists/filter_antisocial_3p.txt
-!
-
-!
-!#include common_utils/lists/allowing.txt
+!#include common_utils/allowing.txt
 !
