@@ -344,10 +344,6 @@ www.beta3.neko-san.fr##.md-theme-default.btn-cinema.md-raised.md-button
 www.cineiz.cc##.VF.full-quality
 www.cocostreaming.com##.rose.dropdown
 www.cpasbien.sx###sgsgx9k
-www.deezer.com###cookies_banner
-www.deezer.com##.alert-wrapper
-www.deezer.com##.naboo .modal
-www.deezer.com##.subscribe
 www.dpstream.net##.twitter.subsection.moduleSection
 www.dpstream.net##div.facebook.subsection.moduleSection:nth-of-type(2) .moduleHeader
 www.dpstream.net##div.facebook.subsection.moduleSection:nth-of-type(2) .text-center.moduleContent
