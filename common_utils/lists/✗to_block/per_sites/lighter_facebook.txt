@@ -1,6 +1,7 @@
 
 !
 ! Is including Facebook Zuckestion Killer + Module connections list
+! from https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/facebook
 !
 ! < start lighter facebook >
 !#if facebook.com
