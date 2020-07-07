@@ -1,5 +1,5 @@
 !
-! Title: [✔][new wave] "Rules, Filtering and exception list" - by K-mik@Z
+! Title: [✔][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Version: 1
 ! Expires: 7 days
 ! Author: K-mik@Z
