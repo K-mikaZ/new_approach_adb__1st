@@ -21,11 +21,11 @@
 *.gif$image,3p,redirect-rule=1x1.gif
 !#endif
 
-!#if  (image && !gif && !png && 1p)
+!#if (image && !gif && !png && 1p)
 *$image,redirect-rule=empty
 !#endif
 
-!#if  (image && !gif && !png && !1p)
+!#if (image && !gif && !png && !1p)
 *$image,3p,redirect-rule=empty
 !#endif
 
