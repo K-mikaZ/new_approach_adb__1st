@@ -9,6 +9,7 @@
 ! < start badfilters >
 
 !#if dom
+
 #@#.ytp-pause-overlay
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
@@ -23,7 +24,10 @@ yggtorrent.*,voirseries.*#@#+js(nobab)
 gounlimited.to#@#+js(nowebrtc)
 voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
 motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
+
 !#endif
+
+!#if !dom
 
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
@@ -73,6 +77,8 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ||*?__cf_chl_jschl_tk__=$badfilter
 ! [fix] Practices for facebook. To block only if antisocial list
 ?fbclid=$document,important,badfilter
+
+!#endif
 
 ! </end badfilters >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
