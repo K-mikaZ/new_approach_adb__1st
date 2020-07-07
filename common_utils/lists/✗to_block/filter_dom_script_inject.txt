@@ -1,0 +1,54 @@
+
+!
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+! < start dom inject rules >                                          [concern] common_utils/lists/filter_dom_script_inject.txt
+
+1337x.to##+js(aeld.js, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
+1337x.to,dropapk.com,fbstreams.me,mlbstream.me,nbastreams.me,nflstreams.me,nhlstreams.me,shink.in,salefiles.com,torrentfunk.com,userscloud.com##+js(aopw.js, Fingerprint2)
+cwtv.com##+js(aopw.js, wallConfig)
+download.mokeedev.com##+js(std.js, alert-danger-enabled)
+eurogamer.net,rockpapershotgun.com,vg247.com##+js(aopw.js, yafaIt)
+fullmatchesandshows.com,mediafire.com,newser.com,pornhub.com,rlslog.net,scienceworldreport.com,streamcloud.eu,tinypic.com##+js(aopw.js, UAParser)
+gamer.com.tw##+js(aopr.js, AntiAd.check)
+hackintosh.zone##+js(acis.js, document.readyState, /(?:\\x[0-9a-f]{2}){20}/)
+hackintosh.zone##+js(aopr.js, document.write)
+hdfilme.tv##+js(aopr.js, x3B5W)
+hdfilme.tv##+js(aeld.js, system.popunder)
+hqq.tv,waaw.tv,netu.tv##+js(aopw.js, tcheck)
+kbb.com##+js(aopr.js, KBB.DetectBlockerExtensions)
+knowyourmeme.com##+js(aopw.js, upManager)
+korrespondent.net,nnm-club.name,nnmclub.to##+js(acis.js, MutationObserver, 676574456c656d656e747342795461674e616d65)
+math-aids.com##+js(aopw.js, __drizzleSettings)
+monova.org,salefiles.com##+js(aopr.js, adblock)
+navigaweb.net##+js(alert-buster.js)
+newser.com##+js(aopr.js, checkAds)
+newser.com##+js(aopr.js, oio)
+pornhub.com##+js(aopw.js, isAdblockOn)
+vidnow.to,vshare.eu##+js(aopr.js, BetterJsPop)
+rapidvideo.com##+js(aopw.js, executed)
+tvad.me##+js(aopr.js, app.adblockPop)
+rarbg.to##+js(aopr.js, _wm3)
+serienstream.to##+js(acis.js, /(?:\\x[0-9a-f]{2}){20}/)
+shink.in##+js(aopr.js, blockAdBlock)
+shink.in##+js(aopr.js, jsPopunder)
+shink.in##+js(aopr.js, RunAds)
+shink.in##+js(aopw.js, _pop)
+speedtest.net##+js(aopr.js, _sp_)
+streamlive.to##+js(acis.js, parseInt, charAt)
+thevideo.me##+js(aopr.js, app.main.adblock)
+thevideo.me##+js(aopr.js, MarketGidJSON)
+thevideo.me##+js(aeld.js, click, void)
+userscloud.com##+js(aopw.js, open)
+vidup.me##+js(aopr.js, adsShowPopup)
+watchcartoonsonline.eu##+js(acis.js, 676574456c656d656e747342795461674e616d65)
+watchcartoonsonline.eu##+js(acis.js, document.createElement, jsc.mgid.com)
+wz.de##+js(aopr.js, jsABLoaded)
+zippyshare.com##+js(acis.js, String.fromCharCode, decodeURIComponent)
+zone-stream.club##+js(aopr.js, check)
+twitch.tv##+js(twitch-videoad.js)
+! Stop detecting focus found in < https://openwhyd.org/js/whydPlayer.js >
+openwhyd.org##+js(aopw.js, document.hasFocus, false)
+
+! </ end dom inject rules >
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+!
