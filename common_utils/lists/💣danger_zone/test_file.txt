@@ -12,5 +12,5 @@
 
 !
 ! Test include
-!#include ✗to_block/per_sites/FacebookZuckestionKiller_module
+!#include FacebookZuckestionKiller_module
 !
