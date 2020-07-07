@@ -1,7 +1,16 @@
 !
-!#include common_utils/heading.txt
+! Title: [✔][new wave] "Rules, Filtering and exception list" - by K-mik@Z
+! Version: 1
+! Expires: 7 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__K-mikaZ
+! Description: My first blocking list.
 !
 
 !
 !#include common_utils/lists/filter_global_without_antisocial_3p.txt
+!
+
+!
+!#include common_utils/lists/allowing.txt
 !
