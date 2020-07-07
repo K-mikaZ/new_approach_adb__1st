@@ -1,1 +1,79 @@
 
+
+! ------------------------------------------------------------------
+!
+! Antisocial third-party --
+!
+! ------------------------------------------------------------------
+! < start Antisocial third-party >
+
+!#if (facebook.com && !1p)
+
+||*.facebook.*$all,3p,important,domain=~facebook.com
+||fbsbx.com^$all,3p,important,domain=~facebook.com
+!#if image
+|*/hsts-pixel.gif|$image,important,domain=~facebook.com
+!#endif
+!#if script
+||facebook.*/*/sdk.js$script,3p,important,domain=~facebook.com
+!#endif
+!#if subdocument
+||facebook.*/*/like.php$subdocument,3p,important,domain=~facebook.com
+!#endif
+!#if dom
+~facebook.com##[src*="facebook.com"]
+!#endif
+
+!#endif
+
+!#if (google.com && !1p)
+
+!#if script
+*plusone*\.js/$script,3p,important,domain=~google.com
+!#endif
+
+!#endif
+
+!#if (instagram.com && !1p)
+
+||instagram.com^$all,3p,important
+||logger.instagram.com^$all,important
+@@||cdninstagram.com^$3p
+
+!#endif
+
+!#if (twitter.com && !1p)
+
+||*twitter.com^$all,3p,important
+||analytics.twitter.com^$domain=~twitter.com
+
+!#endif
+
+!#if (disqus.com && !1p)
+
+# Completely experimental: load Disqus on demand only. Purpose is to avoid
+# connecting to Disqus' servers, unless the user explicitly asks for the
+# comments to be loaded.
+# Works with following filters: disqus_forums_embed.js AND disqus_embed.js
+# Uncomment for blocking all
+||disqus.com/forums/*/embed.js$script
+||disqus.com/embed.js$script
+! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
+! see example here: < https://einaregilsson.com/redirector/ >
+
+# If you want a site you regularly visit to always have the comment loaded,
+# just use an exception static filter. Example for wired.com:
+# @@||wired.disqus.com/embed.js
+
+# Otherwise, leave commented and block on request per sites with example:
+!||allocine-prod2.disqus.com/embed.js$script,important
+!||topreplay.disqus.com/embed.js$script,important
+
+!#endif
+
+!#if (chatango.com && !1p)
+
+||*.chatango.com^$all,important
+
+!#endif
+
