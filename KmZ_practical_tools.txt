@@ -7,6 +7,8 @@
 ! Description: A list for automation.
 !
 
+! require Nano Defender integration
+! < https://jspenguin2017.github.io/uBlockProtector/#extra-installation-steps-for-ublock-origin >
 !
 !#include common_utils/practical_tools.txt
 !
