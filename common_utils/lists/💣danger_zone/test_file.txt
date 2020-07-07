@@ -12,5 +12,5 @@
 
 !
 ! Test include
-require('https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt')
+require 'https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt'
 !
