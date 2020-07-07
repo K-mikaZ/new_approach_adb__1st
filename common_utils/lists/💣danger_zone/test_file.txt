@@ -12,5 +12,5 @@
 
 !
 ! Test include
-!#include raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt'
+!#include ✗to_block/per_sites/FacebookZuckestionKiller_module
 !
