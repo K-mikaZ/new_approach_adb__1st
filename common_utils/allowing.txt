@@ -1,8 +1,8 @@
 
 !
-!#include
+!#include lists/whitelisting.txt
 !
 
 !
-!#include
+!#include lists/badfilters.txt
 !
