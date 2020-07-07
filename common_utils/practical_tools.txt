@@ -2,6 +2,9 @@
 !
 
 ! Automatically clicks the start button to start the scan
+! ———————————————————————————————————————————————————————
 cryptojackingtest.com##+js(nanop-click-elements-onready.js, #start_btn)
-
+dnsleaktest.com##+js(nanop-click-elements-onready.js, .enhanced)
+cmdns.dev.dns-oarc.net##+js(nanop-click-elements-onready.js, .btn-vlg.btn-lg.btn-primary.btn)
+dnssec.vs.uni-due.de##+js(nanop-click-elements-onready.js, #startTest)
 !
