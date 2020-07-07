@@ -1,4 +1,6 @@
 
+!
+
 ! DOM CONCERN
 
 !#if dom
@@ -12,6 +14,9 @@
 ! SCIPTS CONCERN
 
 !#if script
+
 !#include ✗to_block/filter_scripts_list.txt
 
 !#endif
+
+!
