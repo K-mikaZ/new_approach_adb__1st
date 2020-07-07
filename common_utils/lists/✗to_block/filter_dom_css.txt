@@ -216,7 +216,6 @@ official-film-illimite.co###cookiedata
 onvid.host##.video_batman
 onvid.icu###rkm,body div:nth-of-type(6),body div:nth-of-type(7)
 oomoviz.com##.download.get
-open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa11ca9390bd7-scss._2221af4e93029bedeab751d04fab4b8b-scss,.f8173b6c9c83185b5ba509aefd178eb8\.scss,._3c08e30e0b5018cc15edf990e21d3dc5-scss,._73caa39b8a3031fc2c408c9f442beb35-scss._1edf52628d509e6baded2387f6267588-scss._2221af4e93029bedeab751d04fab4b8b-scss
 openwhyd.org##.error
 ouakari.com###WebForm1
 skstream.ink##div[class="responsive-ad"]
