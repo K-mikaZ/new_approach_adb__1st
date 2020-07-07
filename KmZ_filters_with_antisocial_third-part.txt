@@ -3,7 +3,7 @@
 ! Version: 1
 ! Expires: 7 days
 ! Author: K-mik@Z
-! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/edit/master/KmZ_filters_with_antisocial_third-part.txt
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters_with_antisocial_third-part.txt
 ! Description: My first blocking list.
 !
 
