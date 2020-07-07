@@ -9,3 +9,8 @@
 !
 !#include to_test/misc.txt
 !
+
+!
+! Test include
+!#include kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt
+!
