@@ -23,9 +23,3 @@
 !#include common_utils/lists/filter_scripts_list.txt
 
 !#endif
-
-! BADFILTERS CONCERN
-
-!#include common_utils/lists/badfilters.txt
-
-!
