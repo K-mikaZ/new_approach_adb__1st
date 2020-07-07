@@ -69,7 +69,7 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ! [fix] are you still here di.fm
 ||gvt1.com^$badfilter
 ||redirector.gvt1.com^$badfilter
-!
+
 ! Tracking urls
 ! I prefer use < https://chrome.google.com/webstore/search/clearurls > for that:
 ! ——————————————————————————————————————————————————————————————————————————————
