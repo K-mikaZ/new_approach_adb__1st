@@ -1,18 +1,1 @@
-!
-! When you make a search, those appear:
-! gstatic.com/og/_/js/k=og.qtm.en_US.rVh_Q0PtyiE.O/rt=j/m=qabr,q_d,qcwid,qmutsd,qapid/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTvksNUEQ0kqoj7bGygixkjJzQDXZQ
-! google.com/xjs/_/js/k=xjs.s.fr.AmK43f-LYbE.O/ck=xjs.s.ckD5Uv40Ajg.L.W.O/m=IvlUe,MC8mtf,TJw5qb,Y33vzc,ZyRBae,cdos,hsm,iDPoPb,jsa,mvYTse,tg8oTe,d,csi/am=AAAAIAAAAGAJ2LsD5Pw3AQAuMHEAAAAAArgk2FgghZBQEIAAAMCsTgAECA/d=1/dg=2/br=1/ct=zgms/rs=ACT90oFXXyP-QirJkKAsy_us3Iw-jpI6dw
 
-! try https://www.google.com/search?q=firefox
-! or http://translate.google.com/translate?u=https%3A%2F%2Fampbrowser.com%2F&langpair=auto|fr&tbb=1&ie=UTF-8
-! and see the adblocker console
-
-! contrary to what one might think, does not block, neither the css, nor the scripts of google, but only the (gstatic|google).com/(og|xjs)/_/(ss|js)/k=
-
-!#if (script && css)
-/(google|gstatic)\.com\/(og|xjs)/\_\/(js|ss)\/k\=/$script,css,domain=~account.google.com|~consent.google.com|~google.com
-!#endif
-
-! [except] ~account.google because recaptcha require it.
-
-!
