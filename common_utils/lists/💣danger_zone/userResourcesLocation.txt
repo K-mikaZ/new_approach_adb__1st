@@ -1,15 +1,29 @@
+# ---------------------------------------------------------------------------- #
 
+# Extra resources for Nano Adblocker
 
-# Source: https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/NanoResources.txt
-# This file is a compiled binary, do not modify
-# All modifications will be overwritten on the next build
+# Same format as uBlock Origin's resources file
+# Everything should be prefixed with "nano-" to prevent name collision
+# However, collided names will always cause uBlock Origin's resources to be
+# overridden, and can be done purposefully when intervention is required
+
+# This file is no longer in use, the new file is located at:
+# https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
+
+# ---------------------------------------------------------------------------- #
+
 
 nano-tiny-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
+
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
+
+# Assign a variable when the document gets ready, 2 required arguments.
+# chain - The property chain.
+# value - The value to assign, must be 'null', 'true', or 'false'.
 nano-assign-variable-onready.js application/javascript
 (function() {
     var chain = '{{1}}';
@@ -42,6 +56,21 @@ nano-assign-variable-onready.js application/javascript
     }
 })();
 
+
+# ---------------------------------------------------------------------------- #
+
+# Specific resources
+
+
+# Nothing for now...
+
+
+# ---------------------------------------------------------------------------- #
+
+# Experimental resources, these can change or break at any time
+
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/390
 nano-vvvvid-it.js application/javascript
 (function() {
     // Based on KAADIVVVV
@@ -60,6 +89,8 @@ nano-vvvvid-it.js application/javascript
     }
 })();
 
+
+# https://github.com/uBlockOrigin/uAssets/issues/247
 nano-colombiaonline-com.js application/javascript
 (function() {
     var magic = 'a' + Math.random().toString(36).substring(2);
@@ -167,6 +198,10 @@ nano-colombiaonline-com.js application/javascript
     setInterval(adsHidder, 1000);
 })();
 
+
+# Patch document.createElement and prevent created script from receiving
+# network error event, 1 required argument
+# url - The URL matcher of the script
 nano-hijack-script-create.js application/javascript
 (function() {
     var _createElement = document.createElement;
@@ -196,6 +231,10 @@ nano-hijack-script-create.js application/javascript
     };
 })();
 
+
+# Remove elements when the document gets ready, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+#            pseudo-selectors are not supported.
 nano-remove-elements-onready.js application/javascript
 (function() {
     var selector = '{{1}}';
@@ -216,6 +255,11 @@ nano-remove-elements-onready.js application/javascript
     }
 })();
 
+
+# Insert an invisible elements onto the page, can be used to dodge baits,
+# 1 required argument.
+# identifier - An identifier, either an id or a class name. Like "#id" or
+#              ".class"
 nano-make-bait-element.js application/javascript
 (function() {
     var identifier = '{{1}}';
@@ -231,6 +275,8 @@ nano-make-bait-element.js application/javascript
     document.documentElement.appendChild(element);
 })();
 
+
+# Grant fake notification permission
 nano-grant-fake-notification.js application/javascript
 (function() {
     Notification = function() { };
@@ -244,6 +290,10 @@ nano-grant-fake-notification.js application/javascript
     };
 })();
 
+
+# Prevent inline scripts with specific IDs from executing, 1 required argument
+# needle - The ID matcher, can be a plain string (exact match) or a regular
+#          expression
 nano-abort-inline-scripts-by-id.js application/javascript
 (() => {
     let needle = '{{1}}';
@@ -280,6 +330,16 @@ nano-abort-inline-scripts-by-id.js application/javascript
     }
 })();
 
+
+# ---------------------------------------------------------------------------- #
+
+# Privileged resources, these are only available to Nano Adblocker's trusted
+# filter lists
+
+
+# Click elements when the document gets ready, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+#            pseudo-selectors are not supported.
 nanop-click-elements-onready.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -304,6 +364,10 @@ nanop-click-elements-onready.js application/javascript
     }
 })();
 
+
+# Click elements when the document gets loaded, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+#            pseudo-selectors are not supported.
 nanop-click-elements-onload.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -327,6 +391,14 @@ nanop-click-elements-onload.js application/javascript
     }
 })();
 
+
+# Set a cookie, 1 required arguments, 3 optional arguments.
+# data   - The key=value pair.
+# path   - Optional, the path, default to current path.
+# domain - Optional, the domain, default to current domain.
+# secure - true or false. Optional, default to false.
+# del    - true or false. Set to true to delete the cookie instead. Optional,
+#          default to false.
 nanop-easy-set-cookie.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -358,6 +430,9 @@ nanop-easy-set-cookie.js application/javascript
     document.cookie = data;
 })();
 
+
+# Set a cookie the hard way, 1 required argument.
+# data - The cookie data to set.
 nanop-set-cookie.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -371,6 +446,9 @@ nanop-set-cookie.js application/javascript
     document.cookie = data;
 })();
 
+
+# Redirect to a URL in GET parameter
+# key - The parameter key
 nanop-get-redirect.js application/javascript
 (() => {
     var guard = '{{nano}}';
@@ -390,13 +468,17 @@ nanop-get-redirect.js application/javascript
 })();
 
 
+# ---------------------------------------------------------------------------- #
+
+
 /**
  * AdGuard Scriptlets
  * Version 1.2.5
  */
 
 # Adguard redirects portage
-! from https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
+# 
+https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
 
 /**
  * AdGuard Scriptlets
@@ -4371,11 +4453,10 @@ var Redirects = (function () {
 
 }());
 //# sourceMappingURL=redirects.js.map
-https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
 
 
 # Adguard scriptlets portage
-! from https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
+# https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
 
 /**
  * AdGuard Scriptlets
@@ -9367,4 +9448,3 @@ https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.j
  * -------------------------------------------
  */
 //# sourceMappingURL=scriptlets.js.map
-https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
