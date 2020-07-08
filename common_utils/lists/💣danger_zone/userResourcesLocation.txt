@@ -474,7 +474,9 @@ nanop-get-redirect.js application/javascript
 # AdGuard Scriptlets
 # Version 1.2.5
 #
- 
+
+// source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
+
 metrika-yandex-tag  application/javascript
 (function(source, args){
 function metrikaYandexTag(source) {
@@ -641,6 +643,9 @@ function noopFunc() {};
         metrikaYandexTag.apply(this, updatedArgs);
     
 })({"name":"metrika-yandex-tag","args":[]}, []);
+
+
+// source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 
 metrika-yandex-watch  application/javascript
 (function(source, args){
