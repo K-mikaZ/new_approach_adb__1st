@@ -1,13 +1,15 @@
 
 # Expires: 3 days
 # License: See source for license and credits
-
-# Adguard scriptlets portage
-https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js
-
 # Source: https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/NanoResources.txt
 # This file is a compiled binary, do not modify
 # All modifications will be overwritten on the next build
+
+# Adguard scriptlets portage
+https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
+
+# Adguard redirects portage
+https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
 
 
 nano-tiny-noopvast-2.0 text/xml
