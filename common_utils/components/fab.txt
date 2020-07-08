@@ -1,0 +1,39 @@
+
+!
+! Adblocker redirect to neutered
+! ——————————————————————————————
+! < start Adblocker redirect >
+!         Somes are redirect with fuckfuckadblock list, see https://github.com/bogachenko/fuckfuckadblock
+
+! PLEASE noop, don't block only
+! -----------------------------
+! because of /js/adv/* into Easylist and redirect noop.js
+/js/adv/*$badfilter
+*/\/js\/adv\/*$script,important,redirect-rule=nofab.js
+*/js/adv/*$script,important,redirect-rule=nofab.js
+
+*/\/(js\/adv\/)?(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\./*$script,important,redirect-rule=nofab.js
+@@/fuckadblock.$script,1p,badfilter
+
+!#if (script && /fuckadblock.js)
+||*/fuckadblock.$script,important,redirect-rule=nofab.js
+!#endif
+
+!#if (script && /blockadblock.js)
+||*/blockadblock.$script,important,redirect-rule=nofab.js
+!#endif
+
+!#if (script && /sniffadblock.js)
+||*/sniffadblock.$script,important,redirect-rule=nofab.js
+!#endif
+
+||*/fuckadb*$script,important,redirect-rule=nofab.js
+||*/blockadb*$script,important,redirect-rule=nofab.js
+||*/sniffadb*$script,important,redirect-rule=nofab.js
+
+! [try fix] hqq.tv/js/adv/fuckadblock.js not working
+! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
+||*.tv*/fuckadblock.*$script,important,redirect=nofab.js
+||https://hqq.tv/js/adv/fuckadblock.js?$script,important,redirect=nofab.js
+
+!
