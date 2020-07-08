@@ -1,23 +1,5 @@
-
-# Expires: 3 days
-# License: See source for license and credits
-
-
-/**
- * AdGuard Scriptlets
- * Version 1.2.5
- */
-
 https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
 
-/**
- * -------------------------------------------
- * |                                         |
- * |  If you want to add your own scriptlet  |
- * |  please put your code below             |
- * |                                         |
- * -------------------------------------------
- */
 
 # https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js
 
