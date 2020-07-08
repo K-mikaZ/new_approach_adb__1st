@@ -403,7 +403,7 @@ nanop-get-redirect.js application/javascript
  * Version 1.2.5
  */
  
-metrika-yandex-watch.js application/javascript
+metrika-yandex-watch application/javascript
 (function(source, args){
 function metrikaYandexWatch(source) {
     var cbName = 'yandex_metrika_callbacks';
