@@ -9081,6 +9081,7 @@ var Redirects = (function () {
      * ```
      */
 
+    metrika-yandex-tag  application/javascript
     function metrikaYandexTag(source) {
       var asyncCallbackFromOptions = function asyncCallbackFromOptions(param) {
         var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -9201,6 +9202,7 @@ var Redirects = (function () {
      * ```
      */
 
+    metrika-yandex-watch  application/javascript
     function metrikaYandexWatch(source) {
       var cbName = 'yandex_metrika_callbacks';
       /**
