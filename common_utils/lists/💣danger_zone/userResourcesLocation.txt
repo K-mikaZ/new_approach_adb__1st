@@ -4990,8 +4990,6 @@
  * |                                         |
  * -------------------------------------------
  */
-//# sourceMappingURL=scriptlets.js.map
-
 
 # ---------------------------------------------------------------------------- #
 
@@ -5461,6 +5459,9 @@ nanop-get-redirect.js application/javascript
     }
     location.href = param;
 })();
+
+
+//# sourceMappingURL=scriptlets.js.map
 
 
 # ---------------------------------------------------------------------------- #
