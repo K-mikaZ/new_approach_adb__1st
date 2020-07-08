@@ -398,4 +398,5 @@ nanop-get-redirect.js application/javascript
  * -------------------------------------------
  */
 
-! from https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
+// add Adguard scriptlets portage
+https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
