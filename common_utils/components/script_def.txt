@@ -8,7 +8,7 @@
 *$script,redirect-rule=noop.js
 !#endif
 
-!#if (script && !1p)
+!#if (script && !1p && !(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\.)
 *$script,3p,redirect-rule=noop.js
 !
 !#include script-spec_def.txt
