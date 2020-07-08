@@ -1,9 +1,9 @@
 # Adguard redirects portage
-!#include https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
+! from https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
 
 
 # Adguard scriptlets portage
-!#include https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
+! from https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
 
 
 # Source: https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/NanoResources.txt
