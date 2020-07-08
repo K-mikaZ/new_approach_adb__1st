@@ -6,10 +6,10 @@
 # All modifications will be overwritten on the next build
 
 # Adguard scriptlets portage
-https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
+! https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js
 
 # Adguard redirects portage
-https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
+! https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js
 
 
 nano-tiny-noopvast-2.0 text/xml
