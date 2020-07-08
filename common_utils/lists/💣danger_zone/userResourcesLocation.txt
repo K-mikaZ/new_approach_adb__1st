@@ -1,13 +1,95 @@
-var grab = (async function(fileUrl) {
-  'use strict';
-  let response = await fetch(fileUrl);
-  if (response.ok) { // if HTTP-status is 200-299
-    let text = await response.text();
-    return text
-  } else {
-    console.log("HTTP-Error: " + response.status);
+'use strict';
+/**
+ * @param {!Object} validators
+ * @param {!Function} name
+ * @param {!Function} reject
+ * @param {!Function} update
+ * @param {!Function} fn
+ * @param {string} key
+ * @param {!Object} arg
+ * @return {undefined}
+ */
+function asyncGeneratorStep(validators, name, reject, update, fn, key, arg) {
+  try {
+    var info = validators[key](arg);
+    var value = info.value;
+  } catch (createConnectionErr) {
+    reject(createConnectionErr);
+    return;
   }
-})();
+  if (info.done) {
+    name(value);
+  } else {
+    Promise.resolve(value).then(update, fn);
+  }
+}
+/**
+ * @param {!Function} fn
+ * @return {?}
+ */
+function _asyncToGenerator(fn) {
+  return function() {
+    var document = this;
+    /** @type {!Arguments} */
+    var args = arguments;
+    return new Promise(function(skeletonId, onRejected) {
+      /**
+       * @param {!Object} value
+       * @return {undefined}
+       */
+      function run(value) {
+        asyncGeneratorStep(options, skeletonId, onRejected, run, invoke, "next", value);
+      }
+      /**
+       * @param {!Object} listeners
+       * @return {undefined}
+       */
+      function invoke(listeners) {
+        asyncGeneratorStep(options, skeletonId, onRejected, run, invoke, "throw", listeners);
+      }
+      var options = fn.apply(document, args);
+      run(undefined);
+    });
+  };
+}
+var grab = function() {
+  var _ref4 = _asyncToGenerator(regeneratorRuntime.mark(function _callee(url) {
+    var result;
+    var output;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      for (; 1;) {
+        switch(_context.prev = _context.next) {
+          case 0:
+            /** @type {number} */
+            _context.next = 2;
+            return fetch(url);
+          case 2:
+            result = _context.sent;
+            if (!result.ok) {
+              /** @type {number} */
+              _context.next = 10;
+              break;
+            }
+            /** @type {number} */
+            _context.next = 6;
+            return result.text();
+          case 6:
+            output = _context.sent;
+            return _context.abrupt("return", output);
+          case 10:
+            console.log("HTTP-Error: " + result.status);
+          case 11:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return function(canCreateDiscussions) {
+    return _ref4.apply(this, arguments);
+  };
+}()();
+
 
 # ---------------------------------------------------------------------------- #
 
