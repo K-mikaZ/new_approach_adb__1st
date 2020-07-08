@@ -73,4 +73,10 @@
 ||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
 
+! (([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\./* scripts concern
+! ————————————————————————————————————————————————————————————————————————————————
+!
+!#include fab_def.txt
+!
+
 !
