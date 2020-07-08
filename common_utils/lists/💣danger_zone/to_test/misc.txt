@@ -9,12 +9,8 @@
 
 ! contrary to what one might think, does not block, neither the css, nor the scripts of google, but only the (gstatic|google).com/(og|xjs)/_/(ss|js)/k=
 
-!#if script
-*$script,domain=~account.google.com|google.com
-!#endif
-
-!#if css
-*$css,domain=~account.google.com|google.com
+!#if (script && css)
+/(google|gstatic)\.com\/(og|xjs)/\_\/(js|ss)\/k\=/$script,css,domain=~account.google.com|google.com
 !#endif
 
 ! [except] ~account.google because recaptcha require it.
