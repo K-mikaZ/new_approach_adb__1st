@@ -1,18 +1,11 @@
 var grab = (async function(fileUrl) {
   'use strict';
-
-  // Your code here...
-  //const metrika-yandex-watch_fileUrl = 'https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js'; // provide file location
-
   let response = await fetch(fileUrl);
-
   if (response.ok) { // if HTTP-status is 200-299
-    // get the response body (the method explained below)
     let text = await response.text();
     return text
-    //console.log("await zuckestionkiller = ", text);
   } else {
-    //console.log("HTTP-Error: " + response.status);
+    console.log("HTTP-Error: " + response.status);
   }
 })();
 
@@ -42,13 +35,15 @@ grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippe
 # Version 1.2.5
 #
 
+# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
+# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
+
 # ---------------------------------------------------------------------------- #
 
 # metrika-yandex-watch redirect
 # source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
 metrika-yandex-tag  application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js)
-
 
 # metrika-yandex-watch redirect
 # source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
