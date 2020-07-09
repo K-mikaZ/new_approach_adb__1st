@@ -79,6 +79,7 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ! [fix] Require for DDos protection by cloudflare
 ||*&__cf_chl_jschl_tk__=$badfilter
 ||*?__cf_chl_jschl_tk__=$badfilter
+!#if document
 ! [fix] Practices for facebook. To block only if antisocial list
 ?fbclid=$document,important,badfilter
 &fbclid=$document,important,badfilter
@@ -86,7 +87,7 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ||l.messenger.com$document,important,badfilter
 ||lm.facebook.com$document,important,badfilter
 ||lm.messenger.com$document,important,badfilter
-
+!#endif
 !#endif
 ! </end badfilters >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
