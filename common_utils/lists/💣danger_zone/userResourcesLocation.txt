@@ -1,138 +1,739 @@
-'use strict';
-/**
- * @param {!Object} validators
- * @param {!Function} name
- * @param {!Function} reject
- * @param {!Function} update
- * @param {!Function} fn
- * @param {string} key
- * @param {!Object} arg
- * @return {undefined}
- */
-function asyncGeneratorStep(validators, name, reject, update, fn, key, arg) {
-  try {
-    var info = validators[key](arg);
-    var value = info.value;
-  } catch (createConnectionErr) {
-    reject(createConnectionErr);
-    return;
-  }
-  if (info.done) {
-    name(value);
-  } else {
-    Promise.resolve(value).then(update, fn);
-  }
-}
-/**
- * @param {!Function} fn
- * @return {?}
- */
-function _asyncToGenerator(fn) {
-  return function() {
-    var document = this;
-    /** @type {!Arguments} */
-    var args = arguments;
-    return new Promise(function(skeletonId, onRejected) {
-      /**
-       * @param {!Object} value
-       * @return {undefined}
-       */
-      function run(value) {
-        asyncGeneratorStep(options, skeletonId, onRejected, run, invoke, "next", value);
-      }
-      /**
-       * @param {!Object} listeners
-       * @return {undefined}
-       */
-      function invoke(listeners) {
-        asyncGeneratorStep(options, skeletonId, onRejected, run, invoke, "throw", listeners);
-      }
-      var options = fn.apply(document, args);
-      run(undefined);
-    });
-  };
-}
-var grab = function() {
-  var _ref4 = _asyncToGenerator(regeneratorRuntime.mark(function _callee(url) {
-    var result;
-    var output;
-    return regeneratorRuntime.wrap(function _callee$(_context) {
-      for (; 1;) {
-        switch(_context.prev = _context.next) {
-          case 0:
-            /** @type {number} */
-            _context.next = 2;
-            return fetch(url);
-          case 2:
-            result = _context.sent;
-            if (!result.ok) {
-              /** @type {number} */
-              _context.next = 10;
-              break;
-            }
-            /** @type {number} */
-            _context.next = 6;
-            return result.text();
-          case 6:
-            output = _context.sent;
-            return _context.abrupt("return", output);
-          case 10:
-            console.log("HTTP-Error: " + result.status);
-          case 11:
-          case "end":
-            return _context.stop();
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// Nano Core 2 - An adblocker
+// Copyright (C) 2018-2019  Nano Core 2 contributors
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+"use strict";
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// Assign a variable when the document gets ready, 2 required arguments
+// chain - The property chain
+// value - The value to assign, must be 'null', 'true', or 'false'
+//
+/// nano-assign-variable-onready.js
+(() => {
+    var chain = '{{1}}';
+    var value = '{{2}}';
+    if (chain === '' || chain === '{{1}}') {
+        return;
+    }
+    if (value === 'null') {
+        value = null;
+    } else if (value === 'true') {
+        value = true;
+    } else if (value === 'false') {
+        value = false;
+    } else {
+        return;
+    }
+    var assign = function () {
+        var parent = window;
+        chain = chain.split('.');
+        for (var i = 0; i < chain.length - 1; i++) {
+            parent = parent[chain[i]];
         }
-      }
-    }, _callee);
-  }));
-  return function(canCreateDiscussions) {
-    return _ref4.apply(this, arguments);
-  };
-}()();
+        parent[chain[chain.length - 1]] = value;
+    };
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        assign();
+    } else {
+        addEventListener('DOMContentLoaded', assign);
+    }
+})();
 
+// ----------------------------------------------------------------------------------------------------------------- //
 
-//# ---------------------------------------------------------------------------- #
+// Experimental resources, these can change or break at any time
 
-//# Extra resources from Nano Adblocker
-//# source: https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
+// Based on KAADIVVVV
+// License: https://github.com/Robotex/KAADIVVVV/blob/master/LICENSE
+//
+/// nano-vvvvid-it.js
+(() => {
+    function defuse() {
+        var checkAdv = function () {
+            this.hasAdv = false;
+        };
+        vvvvid.models.PlayerObj.prototype.checkAdv = checkAdv;
+        window[wnbshgd] = vvvvid.models.PlayerObj.prototype.checkAdv;
+    }
+    if (typeof vvvvid === 'object') {
+        defuse();
+    } else {
+        addEventListener('DOMContentLoaded', defuse);
+    }
+})();
 
-//# ---------------------------------------------------------------------------- #
+/// nano-colombiaonline-com.js
+(() => {
+    var magic = 'a' + Math.random().toString(36).substring(2);
+    var testScript = "typeof otab == 'function'";
+    var testComment = /\d{5,} \d{1,2}/;
+    //
+    var getter = function () {
+        var script, temp;
+        //
+        temp = Array.from(document.querySelectorAll(
+            'script:not([src]):not([' + magic + '])'
+        ));
+        if (document.currentScript && !document.currentScript.hasAttribute(magic)) {
+            temp.unshift(document.currentScript);
+        }
+        if (temp.length === 0) {
+            return true;
+        }
+        for (var e of temp) {
+            e.setAttribute(magic, '');
+            if (e.textContent && e.textContent.includes(testScript)) {
+                script = e;
+                break;
+            }
+        }
+        //
+        if (script === undefined) {
+            return true;
+        }
+        var prev = script.previousSibling;
+        temp = prev;
+        while (temp = temp.previousSibling) {
+            if (temp.nodeType === Node.COMMENT_NODE && testComment.test(temp.data)) {
+                prev.style.setProperty('display', 'none', 'important');
+                return false;
+            }
+        }
+    };
+    //
+    Object.defineProperty(window, "trev", {
+        set: function () { },
+        get: function () {
+            var r;
+            var i = 0;
+            do {
+                try {
+                    r = getter();
+                } catch (err) { }
+            } while (i++ , !r && i < 100);
+            return null;
+        }
+    });
+    addEventListener('load', function () {
+        void trev;
+    });
+    //
+    var isInBackground = false;
+    var reStart = /^\/[a-z_]+\.cms/;
+    var reEnd = /^ \d{5,} \d{1,2} $/;
+    var adsHidder = function () {
+        if (isInBackground || !document.body) {
+            return;
+        }
+        var iterator = document.createTreeWalker(document.body, NodeFilter.SHOW_COMMENT);
+        var comment;
+        while (comment = iterator.nextNode()) {
+            if (reStart.test(comment.data)) {
+                var toHide = [];
+                var prev = comment;
+                while (prev = prev.previousSibling) {
+                    if (prev.nodeType === Node.COMMENT_NODE && reEnd.test(prev.data)) {
+                        if (toHide.length < 15) {
+                            for (var e of toHide) {
+                                try {
+                                    e.style.setProperty('display', 'none', 'important');
+                                } catch (err) { }
+                            }
+                        }
+                        break;
+                    }
+                    toHide.push(prev);
+                }
+            }
+        }
+    };
+    addEventListener('focus', function () {
+        isInBackground = false;
+    });
+    addEventListener('blur', function () {
+        isInBackground = true;
+    });
+    setInterval(adsHidder, 1000);
+})();
 
-grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js);
+// Patch document.createElement and prevent created script from receiving network error event, 1 required argument
+// url - The URL matcher of the script
+//
+/// nano-hijack-script-create.js
+(() => {
+    var _createElement = document.createElement;
+    var needle = '{{1}}';
+    if (needle === '' || needle === '{{1}}') {
+        needle = '.?';
+    } else if (needle.length > 2 && needle.startsWith('/') && needle.endsWith('/')) {
+        needle = needle.slice(1, -1);
+    } else {
+        needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+    needle = new RegExp(needle);
+    document.createElement = function (name) {
+        var elem = _createElement.apply(this, arguments);
+        if (name === 'script') {
+            elem.addEventListener('error', function (e) {
+                if (needle.test(elem.src)) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var ev = new Event('load');
+                    elem.dispatchEvent(ev);
+                }
+            });
+        }
+        return elem;
+    };
+})();
 
+// Insert an invisible elements onto the page, can be used to dodge baits, 1 required argument
+// identifier - An identifier, either an id or a class name.Like '#id' or '.class'
+//
+/// nano-make-bait-element.js
+(() => {
+    var identifier = '{{1}}';
+    var element = document.createElement('div');
+    if (identifier.charAt(0) === '#') {
+        element.id = identifier.substring(1);
+    } else if (identifier.charAt(0) === '.') {
+        element.className = identifier.substring(1);
+    } else {
+        return;
+    }
+    element.style.display = 'none';
+    document.documentElement.appendChild(element);
+})();
 
-//! NOT SURE THAT BLOCK IS UTIL (IN TEST)
-//! ——————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// Grant fake notification permission
+//
+/// nano-grant-fake-notification.js
+(() => {
+    Notification = function () { };
+    Notification.permission = 'default';
+    Notification.requestPermission = function (callback) {
+        Notification.permission = 'granted';
+        if (callback) {
+            setTimeout(callback, 0, 'granted');
+        }
+        return Promise.resolve('granted');
+    };
+})();
 
-//# Extra resources from Adblock Plus
-//# source: https://github.com/adblockplus/adblockpluscore/blob/next/lib/content/snippets.js
-//grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js);
+// Prevent inline scripts with specific IDs from executing, 1 required argument
+// needle - The ID matcher, can be a plain string (exact match) or a regular expression
+//
+/// nano-abort-inline-scripts-by-id.js
+(() => {
+    let needle = '{{1}}';
+    if (needle === '' || needle === '{{1}}') {
+        return;
+    } else if (needle.startsWith('/') && needle.endsWith('/')) {
+        needle = needle.slice(1, -1);
+    } else {
+        needle = '^' + needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$';
+    }
+    needle = new RegExp(needle);
+    //
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+                if (node.tagName === 'SCRIPT' && needle.test(node.id)) {
+                    node.textContent = '';
+                    node.remove();
+                }
+            }
+        }
+    });
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        return; // Too late
+    } else {
+        observer.observe(document, {
+            childList: true,
+            subtree: true,
+        });
+        addEventListener('DOMContentLoaded', () => {
+            observer.disconnect();
+        });
+    }
+})();
 
+// ----------------------------------------------------------------------------------------------------------------- //
 
-//# ---------------------------------------------------------------------------- #
+// Deprecated resources, these may be removed in the future
 
-//#
-//# Extra resources from AdGuard
-//# Version 1.2.5
-//# source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
-//# source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
-//# read:
-//# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
-//# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
-//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
-//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts);
-//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
-//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
-//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js);
+// Remove elements when the document gets ready, 1 required argument
+// selector - The selector for elements to remove, must be a plain CSS selector, pseudo-selectors are not supported
+//
+/// nano-remove-elements-onready.js
+(() => {
+    var selector = '{{1}}';
+    if (selector === '' || selector === '{{1}}') {
+        return;
+    }
+    var remove = function () {
+        var elements = document.querySelectorAll(selector);
+        for (var element of elements) {
+            element.remove();
+        }
+    };
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        remove();
+    } else {
+        addEventListener('DOMContentLoaded', remove);
+    }
+})();
 
-//! ——————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ----------------------------------------------------------------------------------------------------------------- //
 
+// Privileged resources, these are only available to Nano Adblocker's trusted filter lists
 
-//! REDIRECT-RULES SUPPLEMENTARY
-//! ————————————————————————————
+// Click elements when the document gets ready, 1 required argument
+// selector - The selector for elements to remove, must be a plain CSS selector, pseudo-selectors are not supported
+//
+/// nanop-click-elements-onready.js
+(() => {
+    var guard = '{{nano}}';
+    if (guard === '{{nano}}') {
+        return;
+    }
+    var selector = '{{1}}';
+    if (selector === '' || selector === '{{1}}') {
+        return;
+    }
+    var click = function () {
+        var elements = document.querySelectorAll(selector);
+        for (var element of elements) {
+            element.click();
+        }
+    };
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        click();
+    } else {
+        addEventListener('DOMContentLoaded', click);
+    }
+})();
+
+// Click elements when the document gets loaded, 1 required argument
+// selector - The selector for elements to remove, must be a plain CSS selector, pseudo-selectors are not supported
+//
+/// nanop-click-elements-onload.js
+(() => {
+    var guard = '{{nano}}';
+    if (guard === '{{nano}}') {
+        return;
+    }
+    var selector = '{{1}}';
+    if (selector === '' || selector === '{{1}}') {
+        return;
+    }
+    var click = function () {
+        var elements = document.querySelectorAll(selector);
+        for (var element of elements) {
+            element.click();
+        }
+    };
+    if (document.readyState === 'complete') {
+        click();
+    } else {
+        addEventListener('load', click);
+    }
+})();
+
+// Set a cookie, 1 required arguments, 3 optional arguments
+// data   - The key = value pair
+// path   - Optional, the path, default to current path
+// domain - Optional, the domain, default to current domain
+// secure - true or false; optional, default to false
+// del    - true or false, set to true to delete the cookie instead; optional, default to false
+//
+/// nanop-easy-set-cookie.js
+(() => {
+    var guard = '{{nano}}';
+    if (guard === '{{nano}}') {
+        return;
+    }
+    var data = '{{1}}';
+    var path = '{{2}}';
+    var domain = '{{3}}';
+    var secure = '{{4}}';
+    var del = '{{5}}';
+    if (data.indexOf('=') === -1) {
+        return;
+    }
+    if (del === 'true') {
+        data += ';max-age=-100';
+    } else {
+        data += ';max-age=2592000'; // 30 days
+    }
+    if (path !== '' && path !== '{{2}}') {
+        data += ';path=' + path;
+    }
+    if (domain !== '' && domain !== '{{3}}') {
+        data += ';domain=' + domain;
+    }
+    if (secure === 'true') {
+        data += ';secure';
+    }
+    document.cookie = data;
+})();
+
+// Set a cookie the hard way, 1 required argument
+// data - The cookie data to set
+//
+/// nanop-set-cookie.js
+(() => {
+    var guard = '{{nano}}';
+    if (guard === '{{nano}}') {
+        return;
+    }
+    var data = '{{1}}';
+    if (data.indexOf('=') === -1) {
+        return;
+    }
+    document.cookie = data;
+})();
+
+// Redirect to a URL in GET parameter
+// key - The parameter key
+//
+/// nanop-get-redirect.js
+(() => {
+    var guard = '{{nano}}';
+    if (guard === '{{nano}}') {
+        return;
+    }
+    var data = '{{1}}';
+    if (data === '' || data === '{{1}}') {
+        return;
+    }
+    var url = new URL(location.href);
+    var param = url.searchParams.get(data);
+    if (typeof param !== 'string' || !/^https?:\/\//.test(param)) {
+        return;
+    }
+    location.href = param;
+})();
+
+// ----------------------------------------------------------------------------------------------------------------- //
 
 metrika-yandex-tag application/javascript
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
+(function(source, args){
+function metrikaYandexTag(source) {
+    var asyncCallbackFromOptions = function asyncCallbackFromOptions(param) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var callback = options.callback;
+      var ctx = options.ctx;
+
+      if (typeof callback === 'function') {
+        callback = ctx !== undefined ? callback.bind(ctx) : callback;
+        setTimeout(function () {
+          return callback();
+        });
+      }
+    };
+
+    var init = noopFunc;
+    /**
+     * https://yandex.ru/support/metrica/objects/addfileextension.html
+     */
+
+    var addFileExtension = noopFunc;
+    /**
+     * https://yandex.ru/support/metrica/objects/extlink.html
+     */
+
+    var extLink = asyncCallbackFromOptions;
+    /**
+     * https://yandex.ru/support/metrica/objects/file.html
+     */
+
+    var file = asyncCallbackFromOptions;
+    /**
+     * https://yandex.ru/support/metrica/objects/get-client-id.html
+     * @param {Function} cb
+     */
+
+    var getClientID = function getClientID(cb) {
+      setTimeout(cb(null));
+    };
+    /**
+     * https://yandex.ru/support/metrica/objects/hit.html
+     */
+
+
+    var hitFunc = asyncCallbackFromOptions;
+    /**
+     * https://yandex.ru/support/metrica/objects/notbounce.html
+     */
+
+    var notBounce = asyncCallbackFromOptions;
+    /**
+     * https://yandex.ru/support/metrica/objects/params-method.html
+     */
+
+    var params = noopFunc;
+    /**
+     * https://yandex.ru/support/metrica/objects/reachgoal.html
+     * @param {string} target
+     * @param {Object} params
+     * @param {Function} callback
+     * @param {any} ctx
+     */
+
+    var reachGoal = function reachGoal(target, params, callback, ctx) {
+      asyncCallbackFromOptions(null, {
+        callback: callback,
+        ctx: ctx
+      });
+    };
+    /**
+     * https://yandex.ru/support/metrica/objects/set-user-id.html
+     */
+
+
+    var setUserID = noopFunc;
+    /**
+     * https://yandex.ru/support/metrica/objects/user-params.html
+     */
+
+    var userParams = noopFunc;
+    var api = {
+      init: init,
+      addFileExtension: addFileExtension,
+      extLink: extLink,
+      file: file,
+      getClientID: getClientID,
+      hit: hitFunc,
+      notBounce: notBounce,
+      params: params,
+      reachGoal: reachGoal,
+      setUserID: setUserID,
+      userParams: userParams
+    };
+
+    function ym(id, funcName) {
+      for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+        args[_key - 2] = arguments[_key];
+      }
+
+      return api[funcName] && api[funcName].apply(api, args);
+    }
+
+    window.ym = ym;
+    hit(source);
+  }
+function hit(source, message) {
+    if (source.verbose !== true) {
+      return;
+    }
+
+    try {
+      var log = console.log.bind(console);
+      var trace = console.trace.bind(console);
+      var prefix = source.ruleText || '';
+
+      if (source.domainName) {
+        var AG_SCRIPTLET_MARKER = '#%#//';
+        var UBO_SCRIPTLET_MARKER = '##+js';
+        var ruleStartIndex;
+
+        if (source.ruleText.indexOf(AG_SCRIPTLET_MARKER) > -1) {
+          ruleStartIndex = source.ruleText.indexOf(AG_SCRIPTLET_MARKER);
+        } else if (source.ruleText.indexOf(UBO_SCRIPTLET_MARKER) > -1) {
+          ruleStartIndex = source.ruleText.indexOf(UBO_SCRIPTLET_MARKER);
+        } // delete all domains from ruleText and leave just rule part
+
+
+        var rulePart = source.ruleText.slice(ruleStartIndex); // prepare applied scriptlet rule for specific domain
+
+        prefix = "".concat(source.domainName).concat(rulePart);
+      } // Used to check if scriptlet uses 'hit' function for logging
+
+
+      var LOG_MARKER = 'log: ';
+
+      if (message) {
+        if (message.indexOf(LOG_MARKER) === -1) {
+          log("".concat(prefix, " message:\n").concat(message));
+        } else {
+          log(message.slice(LOG_MARKER.length));
+        }
+      }
+
+      log("".concat(prefix, " trace start"));
+
+      if (trace) {
+        trace();
+      }
+
+      log("".concat(prefix, " trace end"));
+    } catch (e) {// try catch for Edge 15
+      // In according to this issue https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/14495220/
+      // console.log throws an error
+    } // This is necessary for unit-tests only!
+
+
+    if (typeof window.__debug === 'function') {
+      window.__debug(source);
+    }
+  }
+function noopFunc() {};
+        const updatedArgs = args ? [].concat(source).concat(args) : [source];
+        metrikaYandexTag.apply(this, updatedArgs);
+    
+})({"name":"metrika-yandex-tag","args":[]}, []);
 
 metrika-yandex-watch application/javascript
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js);
+(function(source, args){
+function metrikaYandexWatch(source) {
+    var cbName = 'yandex_metrika_callbacks';
+    /**
+     * Gets callback and its context from options and call it in async way
+     * @param {Object} options Yandex Metrika API options
+     */
+
+    var asyncCallbackFromOptions = function asyncCallbackFromOptions() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var callback = options.callback;
+      var ctx = options.ctx;
+
+      if (typeof callback === 'function') {
+        callback = ctx !== undefined ? callback.bind(ctx) : callback;
+        setTimeout(function () {
+          return callback();
+        });
+      }
+    };
+
+    function Metrika() {} // constructor
+    // Methods without options
+
+
+    Metrika.prototype.addFileExtension = noopFunc;
+    Metrika.prototype.getClientID = noopFunc;
+    Metrika.prototype.setUserID = noopFunc;
+    Metrika.prototype.userParams = noopFunc; // Methods with options
+    // The order of arguments should be kept in according to API
+
+    Metrika.prototype.extLink = function (url, options) {
+      asyncCallbackFromOptions(options);
+    };
+
+    Metrika.prototype.file = function (url, options) {
+      asyncCallbackFromOptions(options);
+    };
+
+    Metrika.prototype.hit = function (url, options) {
+      asyncCallbackFromOptions(options);
+    };
+
+    Metrika.prototype.reachGoal = function (target, params, cb, ctx) {
+      asyncCallbackFromOptions({
+        callback: cb,
+        ctx: ctx
+      });
+    };
+
+    Metrika.prototype.notBounce = asyncCallbackFromOptions;
+
+    if (window.Ya) {
+      window.Ya.Metrika = Metrika;
+    } else {
+      window.Ya = {
+        Metrika: Metrika
+      };
+    }
+
+    if (window[cbName] && Array.isArray(window[cbName])) {
+      window[cbName].forEach(function (func) {
+        if (typeof func === 'function') {
+          func();
+        }
+      });
+    }
+
+    hit(source);
+  }
+function hit(source, message) {
+    if (source.verbose !== true) {
+      return;
+    }
+
+    try {
+      var log = console.log.bind(console);
+      var trace = console.trace.bind(console);
+      var prefix = source.ruleText || '';
+
+      if (source.domainName) {
+        var AG_SCRIPTLET_MARKER = '#%#//';
+        var UBO_SCRIPTLET_MARKER = '##+js';
+        var ruleStartIndex;
+
+        if (source.ruleText.indexOf(AG_SCRIPTLET_MARKER) > -1) {
+          ruleStartIndex = source.ruleText.indexOf(AG_SCRIPTLET_MARKER);
+        } else if (source.ruleText.indexOf(UBO_SCRIPTLET_MARKER) > -1) {
+          ruleStartIndex = source.ruleText.indexOf(UBO_SCRIPTLET_MARKER);
+        } // delete all domains from ruleText and leave just rule part
+
+
+        var rulePart = source.ruleText.slice(ruleStartIndex); // prepare applied scriptlet rule for specific domain
+
+        prefix = "".concat(source.domainName).concat(rulePart);
+      } // Used to check if scriptlet uses 'hit' function for logging
+
+
+      var LOG_MARKER = 'log: ';
+
+      if (message) {
+        if (message.indexOf(LOG_MARKER) === -1) {
+          log("".concat(prefix, " message:\n").concat(message));
+        } else {
+          log(message.slice(LOG_MARKER.length));
+        }
+      }
+
+      log("".concat(prefix, " trace start"));
+
+      if (trace) {
+        trace();
+      }
+
+      log("".concat(prefix, " trace end"));
+    } catch (e) {// try catch for Edge 15
+      // In according to this issue https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/14495220/
+      // console.log throws an error
+    } // This is necessary for unit-tests only!
+
+
+    if (typeof window.__debug === 'function') {
+      window.__debug(source);
+    }
+  }
+function noopFunc() {};
+        const updatedArgs = args ? [].concat(source).concat(args) : [source];
+        metrikaYandexWatch.apply(this, updatedArgs);
+    
+})({"name":"metrika-yandex-watch","args":[]}, []);
