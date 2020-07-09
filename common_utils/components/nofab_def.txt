@@ -33,7 +33,7 @@
 
 ! [try fix] hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
-||*.tv*/fuckadblock.*$script,important,redirect=nofab.js
-||https://hqq.tv/js/adv/fuckadblock.js?$script,important,redirect=nofab.js
+*fuckadblock*$script,important,redirect-rule=nofab.js
+*hqq.tv/js/adv/fuckadblock.*?$script,important,redirect-rule=nofab.js
 
 !
