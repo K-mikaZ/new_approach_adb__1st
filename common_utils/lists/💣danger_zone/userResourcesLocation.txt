@@ -132,10 +132,11 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/sc
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
 
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.json);
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js);
 
-metrika-yandex-tag application/javascript
+#metrika-yandex-tag application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
 
-metrika-yandex-watch application/javascript
+#metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js);
