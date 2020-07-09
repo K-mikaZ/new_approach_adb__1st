@@ -93,37 +93,30 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-# Extra resources for Nano Adblocker
-
-# Same format as uBlock Origin's resources file
-# Everything should be prefixed with "nano-" to prevent name collision
-# However, collided names will always cause uBlock Origin's resources to be
-# overridden, and can be done purposefully when intervention is required
-
-# This file is no longer in use, the new file is located at:
-# https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
+# Extra resources from Nano Adblocker
+# source: https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
 
 # ---------------------------------------------------------------------------- #
+
 grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
-##############################################################################################################
-
 
 # ---------------------------------------------------------------------------- #
 
 #
-# AdGuard Scriptlets
+# Extra resources from AdGuard
 # Version 1.2.5
+# source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
+# source: https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
+# read:
+# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
+# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
 #
 
 # ---------------------------------------------------------------------------- #
 
-# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
-
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
-
-# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
+# grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
 
 metrika-yandex-tag application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
