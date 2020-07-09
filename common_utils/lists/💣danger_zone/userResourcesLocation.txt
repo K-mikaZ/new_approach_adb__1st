@@ -121,7 +121,7 @@ grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippe
 
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
 
-# grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
 
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
 
