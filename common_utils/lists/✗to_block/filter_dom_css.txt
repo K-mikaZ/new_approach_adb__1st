@@ -93,7 +93,6 @@ papystreaming.so##div[id="bd_sp"]
 absoluporn.com##.clickable_overlay
 accuradio.com##.js_lb_overlay.lb_overlay,#div-gpt-ad-1394228394731-0,#pageSidebarWrapper,#registerForm
 aliceadsl.fr###dfp_banner-basse-bf
-allocine.fr##.js-trigger-overlay-close.modal-layer,.label-sponso.label-md.label,.modal-email.modal,.overlay-content,.titlebar-btn-holder,#newsletter-anchor,#overlay,.megatooltip.modal.myfriends
 allseries.co##.big-btn.btn-info.btn
 alvinet.com###itedkjrx,#pvgsoihc,#saybnkwd,#zsawqobp
 amazon.fr###DAnsm
