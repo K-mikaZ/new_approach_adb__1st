@@ -10,7 +10,6 @@
 ! < start badfilters >
 
 !#if dom
-
 #@#.ytp-pause-overlay
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
@@ -25,11 +24,9 @@ yggtorrent.*,voirseries.*#@#+js(nobab)
 gounlimited.to#@#+js(nowebrtc)
 voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
 motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
-
 !#endif
 
 !#if !dom
-
 @@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
@@ -86,9 +83,11 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ?fbclid=$document,important,badfilter
 &fbclid=$document,important,badfilter
 ||l.facebook.com^$document,important,badfilter
+||l.messenger.com$document,important,badfilter
+||lm.facebook.com$document,important,badfilter
+||lm.messenger.com$document,important,badfilter
 
 !#endif
-
 ! </end badfilters >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
