@@ -10,6 +10,8 @@
 !#if (facebook.com && !1p)
 ||*.facebook.*$all,3p,important,domain=~facebook.com
 ||fbsbx.com^$all,3p,important,domain=~facebook.com
+||fbcdn.net^$all,3p,important,domain=~facebook.com
+
 !#if image
 |*/hsts-pixel.gif|$image,important,domain=~facebook.com
 !#endif
