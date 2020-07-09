@@ -136,7 +136,6 @@ enseries.io###InsidePlayer
 enseries.io##div.AdsArea,.AdsArea a.adSecw,.aoa_overlay
 entreprise-sans-fautes.com###mc_embed_signup
 etools.ch##.sResult,.sResultStatus
-facebook.com###u_jsonp_3_s,#u_ps_0_0_2,#u_ps_jsonp_2_0_m,.bottomborder.uiBoxGray._3d9x.fbPageBanner.pam,.ego_section,.mvs._5j5u._5jqk.clearfix,.promotedPostFlyoutContainer,.uiContextualLayer.uiContextualLayerAboveRight,._1dwg,._1yv,._2bex,._4-u2.mvm._54bx._54bz.clearfix,DIV[data-ownerid^="tl_unit_"],div[id^=hyperfeed_story_id_]:has(span[data-ft="{\"tn\":\"j\"}"]),[data-referrer*="_advertiser_"],[data-referrer="substream_1"],[div*="data-xt-vimp"],[id*="_advertiser_"],[id*="_ego_"],[id="substream_1"],[id^="hyperfeed_story_"]
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
 film.hds-streaming.com##.textwidget
