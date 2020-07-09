@@ -1,0 +1,17 @@
+
+!
+! ------------------------------------------------------------------
+!
+! animedigitalnetwork --
+!
+! ------------------------------------------------------------------
+!!#if animedigitalnetwork.fr
+! < start animedigitalnetwork rules>
+!#if dom
+animedigitalnetwork.fr##.adn-opm2-block-rectangle,.adn-pave,#google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
+yatta.animedigitalnetwork.fr##.adn-header
+!#endif
+! </ end animedigitalnetwork rules>
+!#endif
+
+!
