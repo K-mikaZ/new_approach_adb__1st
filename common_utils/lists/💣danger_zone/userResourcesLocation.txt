@@ -98,7 +98,7 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-#grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
+grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
 
@@ -109,7 +109,7 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-#grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js)
+grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js)
 
 
 
@@ -127,7 +127,7 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-# grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
 
 metrika-yandex-tag application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
