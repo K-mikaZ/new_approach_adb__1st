@@ -130,6 +130,6 @@ var adguardRedirects = {
 };
 var tool;
 for (tool in adguardRedirects) {
-  "${tool} application/javascript";
+  tool "application/javascript";
   grab(adguardRedirects[tool]);
 };
