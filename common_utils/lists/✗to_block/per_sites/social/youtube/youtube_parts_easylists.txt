@@ -1,0 +1,44 @@
+!
+! #Homepage: http://youtube.adblockplus.me/
+! < start yt_annoyances_suggestions >
+! #Source:   https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt
+!#if dom
+! Removes video suggestions on video pages
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item > .related-video
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+! Removes recommended channels on home page, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+youtube.com##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-box:first-child:last-child
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com
+youtube.com##.html5-endscreen-content
+youtube.com##.html5-endscreen
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+youtube.com##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-related-channels:first-child + .branded-page-box:last-child
+! "Subscribe to see more videos from this channel" on home page after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+!#endif
+! </ end yt_annoyances_suggestions >
+!
+! < start yt_annoyances_other.txt >
+! #Source:   https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt
+! Removes all annotations in videos
+!#if object-subrequest
+||youtube.com/annotations_invideo?$object-subrequest
+!#endif
+!#if dom
+! HTML5 version
+youtube.com##.video-annotations
+! Removes sharing tab below videos
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for=
+!#endif
+!#if xhr
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+!#endif
+! </end yt_annoyances_other.txt >
+!
