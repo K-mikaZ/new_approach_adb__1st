@@ -82,14 +82,25 @@
 ! bloc comments concern
 !#if dom
 animedigitalnetwork.fr#?#.adn-block-content:if(span:-abp-contains(/Avis sur /))
+animedigitalnetwork.fr##.vodshare,.link,.footer-social
 !#endif
 !#if css|script
+/share.$domain=animedigitalnetwork.fr
 /animedigitalnetwork\.(.{2})\/media\/vodcomment\/(vod)?comment(s)?(\-v([0-9]{1,}))?\.((min\.)?js|css)(.*)/$all,1p,important
 ! font comments concerned
 */css?family=Poppins$stylesheet,important,domain=animedigitalnetwork.fr
 !#endif
 !#endif
 ! </ end ADN (animedigitalnetwork) rules >
+
+!#if di.fm
+di.fm##.footer-social,.share,.discuss-btn,.social-region,.discord-region
+!#endif
+
+!#if script
+! found on openwhyd.org
+/facebook.js$script,important,domain=~facebook.com
+!#endif
 
 ! </ end Antisocial third-party >
 !
