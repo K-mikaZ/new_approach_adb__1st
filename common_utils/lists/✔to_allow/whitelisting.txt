@@ -7,4 +7,9 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
 
+!#if script
+@@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
+@@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
+!#endif
+
 ! </ end whitelist >
