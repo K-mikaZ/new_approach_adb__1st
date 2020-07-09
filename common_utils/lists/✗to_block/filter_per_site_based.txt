@@ -1,4 +1,4 @@
-!#include per_sites/lighter_facebook.txt
+!#include per_sites/social/facebook/facebook_lighter.txt
 !#include per_sites/deezer.txt
 !#include per_sites/spotify.txt
 !#include per_sites/animedigitalnetwork.txt
