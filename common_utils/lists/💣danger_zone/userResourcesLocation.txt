@@ -98,7 +98,7 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05hbm9BZGJsb2NrZXIvTmFub0NvcmUyL21hc3Rlci9zcmMvc25pcHBldHMuanM=);
+grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js);
 
 
 ! NOT SURE THAT BLOCK IS UTIL (IN TEST)
@@ -106,7 +106,7 @@ grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05hbm9BZGJsb2NrZXIvTmFub0NvcmU
 
 # Extra resources from Adblock Plus
 # source: https://github.com/adblockplus/adblockpluscore/blob/next/lib/content/snippets.js
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FkYmxvY2twbHVzL2FkYmxvY2twbHVzY29yZS9uZXh0L2xpYi9jb250ZW50L3NuaXBwZXRzLmpz);
+grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js);
 
 
 # ---------------------------------------------------------------------------- #
@@ -119,11 +119,11 @@ grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FkYmxvY2twbHVzL2FkYmxvY2twbHV
 # read:
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3Qvc2NyaXB0bGV0cy5qcw==);
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvY2pzL3NjcmlwdGxldHMuZC50cw);
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvY2pzL3NjcmlwdGxldHNDanMuanM=);
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvY2pzL3NjcmlwdGxldHNDanMuanMubWFw);
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvcmVkaXJlY3RzLmpz);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js);
 
 ! ——————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
@@ -132,7 +132,7 @@ grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHM
 ! ————————————————————————————
 
 metrika-yandex-tag application/javascript
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvcmVkaXJlY3QtZmlsZXMvbWV0cmlrYS15YW5kZXgtdGFnLmpz);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
 
 metrika-yandex-watch application/javascript
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvcmVkaXJlY3QtZmlsZXMvbWV0cmlrYS15YW5kZXgtd2F0Y2guanM=);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js);
