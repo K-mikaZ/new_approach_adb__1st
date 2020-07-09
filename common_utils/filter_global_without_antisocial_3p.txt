@@ -7,12 +7,11 @@
 !
 
 !
-!#include lists/to_block.txt
-!
+!#include rules.txt
 !
 
-! TEST INCLUDE RULES AT THE END
-!#include rules.txt
+!
+!#include lists/to_block.txt
 !
 
 !
