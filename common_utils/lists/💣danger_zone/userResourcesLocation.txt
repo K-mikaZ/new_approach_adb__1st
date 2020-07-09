@@ -7,7 +7,6 @@ var handleResponse = function handleResponse(response) {
   return response.text().then(function(txt) {
     if (response.ok) {
       return txt;
-      console.log('grab url OK')
     } else {
       return Promise.reject(response);
     }
