@@ -104,7 +104,7 @@ var grab = function() {
 # https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
 
 # ---------------------------------------------------------------------------- #
-grab('https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js')
+grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
 ##############################################################################################################
@@ -121,12 +121,12 @@ grab('https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snipp
 
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
 
-grab('https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js');
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
 
 # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
 
 metrika-yandex-tag application/javascript
-grab('https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js');
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
 
 metrika-yandex-watch application/javascript
-grab('https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js');
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js);
