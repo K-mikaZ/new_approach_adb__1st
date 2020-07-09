@@ -407,7 +407,6 @@ wikiserie.ink###pub,[href="/streaming.html"],[href="/download.html"],center cent
 windy.com###articles
 yahoo.com###UMU,.ads
 yggtorrent.*##[href*="marmota.tv"],[href^="https://primexbt.com"],#over-18-notification,.animated.alert-success,.ad-alert-18-sub-title,.ad-alert-18.ad-alert-message
-youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 zdnet.fr###zrlnqtos
 zebulon.fr###popup_name.popup_block
 zone-stream.club##a#yell60,.salidor_register_contbutton
