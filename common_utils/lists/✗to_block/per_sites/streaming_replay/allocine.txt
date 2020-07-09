@@ -9,7 +9,7 @@
 ! < start allocine rules >
 
 !#if dom
-allocine.fr##div[class="jw-aspect jw-reset"],.jw-reset.jw-controls,.js-sticky-btf.sticky-btf.sticky-ad-holder,.js-trigger-overlay-close.modal-layer,.label-sponso.label-md.label,.modal-email.modal,.overlay-content,.titlebar-btn-holder,#newsletter-anchor,#overlay,.megatooltip.modal.myfriends
+allocine.fr##.js-sticky-btf.sticky-btf.sticky-ad-holder,.js-trigger-overlay-close.modal-layer,.label-sponso.label-md.label,.modal-email.modal,.overlay-content,.titlebar-btn-holder,#newsletter-anchor,#overlay,.megatooltip.modal.myfriends
 ! boost lancement de la B.A
 allocine.fr##+js(set-constant.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
