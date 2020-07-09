@@ -106,7 +106,7 @@ grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippe
 
 //# Extra resources from Adblock Plus
 //# source: https://github.com/adblockplus/adblockpluscore/blob/next/lib/content/snippets.js
-grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js);
+//grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/content/snippets.js);
 
 
 //# ---------------------------------------------------------------------------- #
@@ -119,11 +119,11 @@ grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/cont
 //# read:
 //# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#scriptlets
 //# https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md#-redirects-compatibility-table
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts);
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
-grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js);
+//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
+//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts);
+//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
+//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
+//grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js);
 
 //! ——————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
