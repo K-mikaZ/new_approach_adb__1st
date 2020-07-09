@@ -2,9 +2,70 @@
 
 !#if dom
 ! #Homepage: http://facebook.adblockplus.me/
-! #source: https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt
-! try grab here
-grab(https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt)
+! #source: https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt
+! Right sidebar
+! Various suggestions/recommendations
+facebook.com##.home_right_column .ego_column.egoOrganicColumn
+facebook.com###globalContainer .ego_column.egoOrganicColumn
+facebook.com###rightCol .ego_column.egoOrganicColumn
+facebook.com##.home_right_column .pagelet.egoOrganicColumn
+facebook.com###globalContainer .pagelet.egoOrganicColumn
+facebook.com###rightCol .pagelet.egoOrganicColumn
+! "Trending" box
+facebook.com###pagelet_trending_tags_and_topics
+! "Featured Music Services" (Music feed)
+facebook.com###music_services
+! "Games Your Friends Are Playing" (Games feed)
+facebook.com##.rightColumnWrapper > ._5ksw
+facebook.com##.rightColumnWrapper > ._5ms_
+! "Game requests/invitations" 
+facebook.com##.rightColumnWrapper .fbRemindersRemove + #custom_reminders_link[data-gt*="\"appid\":\""]
+! "Recommended games"
+facebook.com###pagelet_games_rhc
+! In news feed
+! "Upcoming Events" and "Most Shared On Page X"
+facebook.com##.fbMainStreamAttachment ._4hh
+! "Recently Released Albums"
+facebook.com##.fbMainStreamAttachment ._4hl
+! "Similar To Page X" (after liking a post in the news feed)
+facebook.com##.commentable_item + .mvs
+facebook.com##.commentable_item + div > .mvs
+facebook.com##div[id^="substream_"] > div > div > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="feed_stream_"] > DIV[id^="js_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] ._2bex > .mbm > ._4_ck
+facebook.com###pagelet_group_ .mbm > ._4_ck
+! "Suggestions" below a post
+facebook.com##.userContentWrapper > ._5pax > DIV > .mvs
+! "Page X is posting about Page Y", "Page X is similar to Pages you like" and "Trending about Page X"
+facebook.com##.storyContent > .storyUnconnectedPost
+! "Games You May Like" (new Facebook news feed)
+facebook.com##.mbm._6nl + .uiList > ._6n2
+facebook.com##.mbm._6nl
+facebook.com##._5pcr > .mbm._43rz
+facebook.com##._5pcr > .mbm._43rz + ._43r-
+facebook.com##.mbm._43rz + .uiList > ._43s1
+facebook.com##.mbm._43rz + .uiList + .uiList
+facebook.com##.mbm > ._5pcr > .mbs + ._43r- > .uiList
+facebook.com##.mbm > ._5pcr > .mbs
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > A[href="https://www.facebook.com/games/"]
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg ._50z3 > ._50zm
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw > .fsl.fwb.fcb
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw + .uiLinkSubtle[href="https://www.facebook.com/games/"]
+! "People you may know"
+facebook.com###stream_pagelet > #pagelet_composer + ._4-u2._2ph_._3-95
+! Other
+! All recommendations in the right sidebar but when viewing an image in gallery view 
+facebook.com##.photoUfiContainer .ego_column.egoOrganicColumn
+facebook.com##.photoUfiContainer .pagelet.egoOrganicColumn
+! "Like Your Favorite Pages" (Pages feed)
+facebook.com##.megaphone_location_pages_feed
+! Right sidebar on app/game pages
+apps.facebook.com###rightCol
+! "People You May Know" on profile page
+facebook.com###pagelet_pymk_timeline
 !#endif
 
 !
