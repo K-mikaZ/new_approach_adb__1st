@@ -30,6 +30,7 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 
 !#if !dom
 
+@@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
 /o0\-[0-9]{1,}\.(.{2,})/$badfilter
@@ -69,16 +70,22 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ! [fix] are you still here di.fm
 ||gvt1.com^$badfilter
 ||redirector.gvt1.com^$badfilter
+!  [fix] "About Facebook Ads" page, not ads
+||facebook.com/ads/$popup,inline-script,badfilter
+! [fix] require for google consent (I think)
+&adsafe=$badfilter
+/consentui/*$badfilter
 
 ! Tracking urls
-! I prefer use < https://chrome.google.com/webstore/search/clearurls > for that:
-! ——————————————————————————————————————————————————————————————————————————————
+! I prefer use an addon for that for that:
+! ————————————————————————————————————————
 ! [fix] Require for DDos protection by cloudflare
 ||*&__cf_chl_jschl_tk__=$badfilter
 ||*?__cf_chl_jschl_tk__=$badfilter
 ! [fix] Practices for facebook. To block only if antisocial list
 ?fbclid=$document,important,badfilter
 &fbclid=$document,important,badfilter
+||l.facebook.com^$document,important,badfilter
 
 !#endif
 
