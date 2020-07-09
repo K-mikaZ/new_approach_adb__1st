@@ -1,0 +1,26 @@
+
+!
+! ------------------------------------------------------------------
+!
+! Allocine --
+!
+! ------------------------------------------------------------------
+!#if allocine.fr
+! < start allocine rules >
+
+!#if dom
+allocine.fr##div[class="jw-aspect jw-reset"],.jw-reset.jw-controls,.js-sticky-btf.sticky-btf.sticky-ad-holder
+! boost lancement de la B.A
+allocine.fr##+js(set-constant.js, wadsBeforeStartAlreadyDone, true)
+allocine.fr##+js(aopr.js, wadsBeforeStart)
+!#endif
+!#if image
+||assets.allocine.fr/skin/img/loader*.svg
+!#endif
+||autopromo.allocine.fr^$important
+||acceptable.allocine.fr^$important
+
+! </ end allocine rules >
+!#endif
+
+!
