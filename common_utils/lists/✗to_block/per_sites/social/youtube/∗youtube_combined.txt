@@ -1,0 +1,5 @@
+!
+!#if dom
+youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
+!#endif
+!
