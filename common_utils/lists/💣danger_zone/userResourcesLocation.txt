@@ -98,7 +98,7 @@ var grab = function() {
 
 # ---------------------------------------------------------------------------- #
 
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05hbm9BZGJsb2NrZXIvTmFub0NvcmUyL21hc3Rlci9zcmMvc25pcHBldHMuanM=)
+grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05hbm9BZGJsb2NrZXIvTmFub0NvcmUyL21hc3Rlci9zcmMvc25pcHBldHMuanM=);
 
 
 ! NOT SURE THAT BLOCK IS UTIL (IN TEST)
@@ -106,7 +106,7 @@ grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL05hbm9BZGJsb2NrZXIvTmFub0NvcmU
 
 # Extra resources from Adblock Plus
 # source: https://github.com/adblockplus/adblockpluscore/blob/next/lib/content/snippets.js
-grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FkYmxvY2twbHVzL2FkYmxvY2twbHVzY29yZS9uZXh0L2xpYi9jb250ZW50L3NuaXBwZXRzLmpz)
+grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FkYmxvY2twbHVzL2FkYmxvY2twbHVzY29yZS9uZXh0L2xpYi9jb250ZW50L3NuaXBwZXRzLmpz);
 
 
 # ---------------------------------------------------------------------------- #
@@ -136,3 +136,7 @@ grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHM
 
 metrika-yandex-watch application/javascript
 grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvcmVkaXJlY3QtZmlsZXMvbWV0cmlrYS15YW5kZXgtd2F0Y2guanM=);
+
+# redefines Fab function for best adblock detection
+nofab.js  application/javascript
+grab(aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FkZ3VhcmRUZWFtL1NjcmlwdGxldHMvbWFzdGVyL2Rpc3QvcmVkaXJlY3QtZmlsZXMvcHJldmVudC1mYWItMy4yLjAuanM=);
