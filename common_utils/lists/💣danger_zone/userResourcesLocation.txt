@@ -128,7 +128,9 @@ grab(https://raw.githubusercontent.com/adblockplus/adblockpluscore/next/lib/cont
 # ---------------------------------------------------------------------------- #
 
 #grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts);
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js);
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map);
 
 metrika-yandex-tag application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js);
