@@ -1,10 +1,12 @@
+!
 
+! PER SITES
+!
+!#include ✗to_block/filter_per_site_based.txt
 !
 
 ! DOM CONCERN
-
 !#if dom
-
 !
 !#include ✗to_block/filter_dom_script_inject.txt
 !
@@ -12,21 +14,13 @@
 !
 !#include ✗to_block/filter_dom_css.txt
 !
-
 !#endif
 
 ! SCIPTS CONCERN
-
 !#if script
-
 !
 !#include ✗to_block/filter_scripts_list.txt
 !
-
 !#endif
 
-! PER SITES
-
-!
-!#include ✗to_block/filter_per_site_based.txt
 !
