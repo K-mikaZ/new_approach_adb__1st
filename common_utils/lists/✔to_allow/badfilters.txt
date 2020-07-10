@@ -70,6 +70,9 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 ||redirector.gvt1.com^$badfilter
 !  [fix] "About Facebook Ads" page, not ads
 ||facebook.com/ads/$popup,inline-script,badfilter
+!  [fix] seems to charge better with
+||facebook.com/ajax/$ping,important,badfilter
+||facebook.com/ajax/bz$ping,badfilter
 ! [fix] require for google consent (I think)
 &adsafe=$badfilter
 /consentui/*$badfilter
