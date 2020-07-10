@@ -75,10 +75,8 @@
 
 ! (([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\. scripts concern
 ! ————————————————————————————————————————————————————————————————————————————————
-!#if (/\/(js\/adv\/)?(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\.)
 !
 !#include nofab_def.txt
 !
-!#endif
 
 !
