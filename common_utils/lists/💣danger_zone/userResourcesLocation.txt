@@ -737,3 +737,28 @@ function noopFunc() {};
         metrikaYandexWatch.apply(this, updatedArgs);
     
 })({"name":"metrika-yandex-watch","args":[]}, []);
+
+
+// Font-display masses
+// Try to optimize loading fonts
+(() => {
+  try {
+    var e = document.createElement("style");
+    e.textContent = "@font-face { font-display: swap; }";
+    document.documentElement.appendChild(e);
+    var isFontDisplaySupported = e.sheet.cssRules[0].cssText.indexOf("font-display") != -1;
+    e.remove();
+  } catch (e) {
+    // Do something with an error if you want
+  }
+  if (isFontDisplaySupported === false && "fonts" in document) {
+    document.fonts.load("1em Open Sans Regular");
+    document.fonts.ready.then(function(fontFaceSet) {
+      document.documentElement.className += " fonts-loaded";
+    });
+  }
+  else {
+    // Maybe figure out your own strategy, but this might be sensible:
+    document.documentElement.className += " fonts-loaded";
+  }
+})();
