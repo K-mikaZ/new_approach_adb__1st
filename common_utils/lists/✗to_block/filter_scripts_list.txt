@@ -77,6 +77,10 @@
 ||.webvisor.org^$important
 !#endif
 
+! Ensure redirect fingerprint script
+*/fingerprint2.js$script,important,redirect=fingerprint2.js
+*/fp2.js$script,important,redirect=fingerprint2.js
+
 ! </ end script-spec_def >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
