@@ -9,6 +9,6 @@ di.fm##.adsbygoogle.sidebar-ad-component
 ! [fix] di.fm page margin because suppressing ads!
 di.fm###page-wrap:style(bottom:6vh!important)
 ! [fix] try suppress message "Are You Still There?"
-di.fm##+js(set-constant.js, maxLoadTime, undefined)
+di.fm##+js(set.js, maxLoadTime, undefined)
 !#endif
 !#endif
