@@ -4,15 +4,20 @@
 !
 ! ——————————————————————————————————————————————————————————————————————————————————
 
-!#if (script && 1p)
+!#if script
 *$script,redirect-rule=noop.js
-!#endif
 
 !#if (script && !1p)
 *$script,3p,redirect-rule=noop.js
-!#endif
 !
 !#include script-spec_def.txt
 !
+!#endif
+
+!
+!#include nofab_def.txt
+!
+
+!#endif
 
 !
