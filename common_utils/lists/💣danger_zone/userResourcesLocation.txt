@@ -37,13 +37,3 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redire
 
 metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
-
-
-// ----------------------------------------------------------------------------------------------------------------- //
-
-/**
- * cacheAsset
- * @author K-mik@Z
- */
- 
-!function(){const e=document,t=t=>(e.querySelectorAll.bind(e)(t).length,e.querySelectorAll.bind(e)(t)),n=(e,t)=>{return((e,t)=>caches.open(e).then(e=>e.match(t)))(e,t).then(n=>n||fetch(t).then(n=>(((e,t,n)=>caches.open(e).then(e=>e.put(t,n)))(e,t,n.clone()),n)))};var s=t("script".src)||t("script".href),r=t("img".src)||t("img".href)||t("img[data-href*='.css']"),a=t("style".src)||t("style".href);self.addEventListener("fetch",e=>{const t=new URL(e.request.url);-1===t.pathname.indexOf(r)&&-1===t.pathname.indexOf(s)&&-1===t.pathname.indexOf(a)||e.respondWith(n("assets",e.request))});self.addEventListener("activate",e=>{e.waitUntil((()=>caches.open("assets").then(e=>e.keys().then(t=>{const n=t.filter(e=>{const t=new URL(e.url);return-1==="assets".indexOf(t.pathname)});return Promise.all(n.map(t=>e.delete(t)))})))())})}();
