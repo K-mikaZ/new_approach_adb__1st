@@ -70,8 +70,9 @@
 !#if yandex.ru|webvisor.org
 ! try adguard compatibility portage
 ||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
+||*/*metrica-watch/*watch.js$script,important,redirect-rule=metrika-yandex-watch
 ||*metrika*/tag.js$script,important,redirect-rule=metrika-yandex-tag
-||*/*metrica-watch/*$script,important,redirect-rule=metrika-yandex-tag
+||*/*metrica-watch/*tag.js$script,important,redirect-rule=metrika-yandex-tag
 ||.yandex.ru^$important
 ||.webvisor.org^$important
 !#endif
