@@ -3,28 +3,78 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start script-spec_def >                                              [concern] common_utils/components/script-spec_def.txt
 
+!#if google-analytics.com
 ||google-analytics.com^$script
+!#endif
+
+!#if googlesyndication.com
 *.googlesyndication.*^$script
+!#endif
+
+!#if googletagmanager.com
 ![fix] for ensure blocking (because other lists)
 ||www.googletagmanager.com^$badfilter
 ||googletagmanager.*/gtag/js?$script
 *googletagmanager.*^$script
+!#endif
+
+!#if googletagservices.com
 ||googletagservices.com^$script
+!#endif
+
+!#if addthis.com
 ||addthis.com^$script
+!#endif
+
+!#if amazon-adsystem.com
 ||amazon-adsystem.com^$script
+!#endif
+
+!#if ampproject.org
 ||cdn.ampproject.org/v0.js
+!#endif
+
+!#if chartbeat.com
 *.chartbeat.*^$important
+!#endif
+
+!#if ligatus.com
+||ligatus.^$important
+!#endif
+
+!#if outbrain.com
+||outbrain.^$important
+!#endif
+
+!#if smartadserver.com
+||smartadserver.^$important
+!#endif
+
+!#if scorecardresearch.com
+||scorecardresearch.^$important
+!#endif
+
+!#if doubleclick.net
 ![fix] for ensure blocking (because other lists)
 @@||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$important
 *.doubleclick.*$script
-||ligatus.^$important
-||outbrain.^$important
-||smartadserver.^$important
-||scorecardresearch.^$important
+!#endif
+
+!#if disqus.com
 ||disqus.com/count.js$script
 ![fix] allowing
 @@||disqus.com/embed.js?_=1457540*$script
+!#endif
+
+!#if yandex.ru|webvisor.org
+! try adguard compatibility portage
+||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
+||*metrika*/tag.js$script,important,redirect-rule=metrika-yandex-tag
+||*/*metrica-watch/*$script,important,redirect-rule=metrika-yandex-tag
+||.yandex.ru^$important
+||.webvisor.org^$important
+!#endif
 
 ! </ end script-spec_def >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
