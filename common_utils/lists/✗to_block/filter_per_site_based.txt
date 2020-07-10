@@ -1,5 +1,3 @@
-!#include per_sites/social/facebook/∗facebook_lighter.txt
-!#include per_sites/social/youtube/∗youtube_all.txt
-!#include per_sites/streaming_replay/∗streaming_replay_combined.txt
-!#include per_sites/deezer.txt
-!#include per_sites/spotify.txt
+!#include per_sites/∗social_combined.txt
+!#include per_sites/∗musical_combined.txt
+!#include per_sites/∗streaming_replay_combined.txt
