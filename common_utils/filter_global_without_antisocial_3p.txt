@@ -7,7 +7,7 @@
 !
 
 !
-!#include rules.txt
+!#include rules_def.txt
 !
 
 !
