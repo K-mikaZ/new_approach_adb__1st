@@ -16,7 +16,7 @@
 
 ! (([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\. scripts concern
 ! ————————————————————————————————————————————————————————————————————————————————
-!#if /(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\.js/
+!#if *adbloc*.js
 !
 !#include nofab_def.txt
 !
