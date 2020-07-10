@@ -15,25 +15,18 @@
 
 !||*/\/(js\/adv\/)?(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\./*$script,important,redirect-rule=nofab.js
 
-!#if (script && /fuckadblock.js)
+!#if *adbloc*.js
 ||*/fuckadblock.$script,important,redirect-rule=nofab.js
-!#endif
-
-!#if (script && /blockadblock.js)
 ||*/blockadblock.$script,important,redirect-rule=nofab.js
-!#endif
-
-!#if (script && /sniffadblock.js)
 ||*/sniffadblock.$script,important,redirect-rule=nofab.js
-!#endif
-
+! [fix]try for unrecognized
 ||*/fuckadb*$script,important,redirect-rule=nofab.js
 ||*/blockadb*$script,important,redirect-rule=nofab.js
 ||*/sniffadb*$script,important,redirect-rule=nofab.js
-
-! [try fix] hqq.tv/js/adv/fuckadblock.js not working
+! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
 !*fuckadblock*$script,important,redirect-rule=nofab.js
-!*hqq.tv/js/adv/fuckadblock.*?$script,important,redirect-rule=nofab.js
+*hqq.tv/js/adv/fuckadblock.*?$script,important,redirect-rule=nofab.js
+!#endif
 
 !
