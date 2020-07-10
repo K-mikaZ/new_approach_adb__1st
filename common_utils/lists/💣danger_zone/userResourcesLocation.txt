@@ -762,3 +762,7 @@ function noopFunc() {};
     document.documentElement.className += " fonts-loaded";
   }
 })();
+
+// JS __UniversalDelayer_Modul
+https://pastebin.com/raw/Rhu09X97
+https://pastebin.com/raw/Rhu09X97
