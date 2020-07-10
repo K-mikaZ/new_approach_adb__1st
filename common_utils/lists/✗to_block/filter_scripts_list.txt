@@ -3,71 +3,71 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start script-spec_def >                                              [concern] common_utils/components/script-spec_def.txt
 
-!#if google-analytics.com
+!#if *google-analytics.com
 ||google-analytics.com^$script
 !#endif
 
-!#if googlesyndication.com
+!#if *googlesyndication.com
 *.googlesyndication.*^$script
 !#endif
 
-!#if googletagmanager.com
+!#if *googletagmanager.com
 ![fix] for ensure blocking (because other lists)
 ||www.googletagmanager.com^$badfilter
 ||googletagmanager.*/gtag/js?$script
 *googletagmanager.*^$script
 !#endif
 
-!#if googletagservices.com
+!#if *googletagservices.com
 ||googletagservices.com^$script
 !#endif
 
-!#if addthis.com
+!#if *addthis.com
 ||addthis.com^$script
 !#endif
 
-!#if amazon-adsystem.com
+!#if *amazon-adsystem.com
 ||amazon-adsystem.com^$script
 !#endif
 
-!#if ampproject.org
+!#if *ampproject.org
 ||cdn.ampproject.org/v0.js
 !#endif
 
-!#if chartbeat.com
+!#if *chartbeat.com
 *.chartbeat.*^$important
 !#endif
 
-!#if ligatus.com
+!#if *ligatus.com
 ||ligatus.^$important
 !#endif
 
-!#if outbrain.com
+!#if *outbrain.com
 ||outbrain.^$important
 !#endif
 
-!#if smartadserver.com
+!#if *smartadserver.com
 ||smartadserver.^$important
 !#endif
 
-!#if scorecardresearch.com
+!#if *scorecardresearch.com
 ||scorecardresearch.^$important
 !#endif
 
-!#if doubleclick.net
+!#if *doubleclick.net
 ![fix] for ensure blocking (because other lists)
 @@||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$important
 *.doubleclick.*$script
 !#endif
 
-!#if disqus.com
+!#if *disqus.com
 ||disqus.com/count.js$script
 ![fix] allowing
 @@||disqus.com/embed.js?_=1457540*$script
 !#endif
 
-!#if (yandex.ru|webvisor.org)
+!#if (*yandex.ru|*webvisor.org)
 ! try adguard compatibility portage
 ||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
 ||*/*metrica-watch/*watch.js$script,important,redirect-rule=metrika-yandex-watch
