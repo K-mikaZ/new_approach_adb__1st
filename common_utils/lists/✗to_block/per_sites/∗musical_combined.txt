@@ -1,2 +1,3 @@
 !#include musical/deezer.txt
 !#include musical/spotify.txt
+!#include musical/di_fm.txt
