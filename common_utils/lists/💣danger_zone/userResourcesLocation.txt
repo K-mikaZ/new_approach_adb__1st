@@ -47,7 +47,8 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redire
  * Try to optimize loading pages
  */
  
-function noOptimizeFlicker(){var t=document.getElementsByTagName("html"),e=!0,r=!1,i=void 0;try{for(var a,l=t[Symbol.iterator]();!(e=(a=l.next()).done);e=!0){var n=a.value,o=n.getAttribute("style")||"";n.setAttribute("style",o+"opacity:1!important;"),n.classList.remove("async-hide")}}catch(t){r=!0,i=t}finally{try{e||null==l.return||l.return()}finally{if(r)throw i}}}
+!function noOptimizeFlicker(){var t=document.getElementsByTagName("html"),e=!0,r=!1,i=void 0;try{for(var a,l=t[Symbol.iterator]();!(e=(a=l.next()).done);e=!0){var n=a.value,o=n.getAttribute("style")||"";n.setAttribute("style",o+"opacity:1!important;"),n.classList.remove("async-hide")}}catch(t){r=!0,i=t}finally{try{e||null==l.return||l.return()}finally{if(r)throw i}}}();
+
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
@@ -59,6 +60,7 @@ function noOptimizeFlicker(){var t=document.getElementsByTagName("html"),e=!0,r=
 
 !function(){try{var e=document.createElement("style");e.textContent="@font-face { font-display: swap; }",document.documentElement.appendChild(e);var t=-1!=e.sheet.cssRules[0].cssText.indexOf("font-display");e.remove()}catch(e){}!1===t&&"fonts"in document?(document.fonts.load("1em Open Sans Regular"),document.fonts.ready.then(function(e){document.documentElement.className+=" fonts-loaded"})):document.documentElement.className+=" fonts-loaded"}();
 
+
 // ----------------------------------------------------------------------------------------------------------------- //
 
 /**
@@ -69,6 +71,7 @@ function noOptimizeFlicker(){var t=document.getElementsByTagName("html"),e=!0,r=
  
 grab(https://pastebin.com/raw/Rhu09X97)
 
+
 // ----------------------------------------------------------------------------------------------------------------- //
 
 /**
@@ -78,4 +81,14 @@ grab(https://pastebin.com/raw/Rhu09X97)
  */
 // because requirement
 grab(https://webrtc.github.io/adapter/adapter-latest.js)
-function NoAudioProcess(){var e;navigator.mediaDevices&&navigator.mediaDevices.getUserMedia?(console.log("[GetUserMedia] Audio processing disable"),e=document.querySelector("audio"),navigator.mediaDevices.getUserMedia({audio:{echoCancellation:!1,noiseSuppression:!1,autoGainControl:!1,autoGainControl2:!1,highpassFilter:!1,googEchoCancellation:!1,googAutoGainControl:!1,googAutoGainControl2:!1,googNoiseSuppression:!1,googHighpassFilter:!1,googTypingNoiseDetection:!1}}).then(function(o){e.srcObject=o}).catch(function(o){return console.log(o.name+": "+o.message)})):console.log("getUserMedia() is not supported by your browser")}
+!function NoAudioProcess(){var e;navigator.mediaDevices&&navigator.mediaDevices.getUserMedia?(console.log("[GetUserMedia] Audio processing disable"),e=document.querySelector("audio"),navigator.mediaDevices.getUserMedia({audio:{echoCancellation:!1,noiseSuppression:!1,autoGainControl:!1,autoGainControl2:!1,highpassFilter:!1,googEchoCancellation:!1,googAutoGainControl:!1,googAutoGainControl2:!1,googNoiseSuppression:!1,googHighpassFilter:!1,googTypingNoiseDetection:!1}}).then(function(o){e.srcObject=o}).catch(function(o){return console.log(o.name+": "+o.message)})):console.log("getUserMedia() is not supported by your browser")}();
+
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+/**
+ * Torrent9 magnets link correctif
+ * @author K-mik@Z
+ * Try to take over the world!
+ */
+!function(){var e=document.querySelectorAll("a[href*='magnet:?']")[0],t=document.querySelectorAll("a[href*='magnet:?'] > i")[0],a=e.textContent,n=new RegExp(/Magnet/i),s="fa-download",i="fa-magnet",l="  Lien Magnet";"function"!=typeof btoa?(s==t.classList&&t.classList.remove(s),i!=t.classList&&t.classList.add(i),a!=n&&(e.innerHTML=e.innerHTML.replace(a,l))):btoa((s==t.classList&&t.classList.remove(s),i!=t.classList&&t.classList.add(i),!void(a!=n&&(e.innerHTML=e.innerHTML.replace(a,l)))))}();
