@@ -1,58 +1,60 @@
 'use strict';
-function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){return void n(e)}u.done?r(s):Promise.resolve(s).then(t,a)}function _asyncToGenerator(u){return function(){var e=this,c=arguments;return new Promise(function(r,n){function t(e){asyncGeneratorStep(o,r,n,t,a,"next",e)}function a(e){asyncGeneratorStep(o,r,n,t,a,"throw",e)}var o=u.apply(e,c);t(void 0)})}}var grab=function(){var r=_asyncToGenerator(regeneratorRuntime.mark(function e(r){var n,t;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,fetch(r);case 2:if((n=e.sent).ok)return e.next=6,n.text();e.next=10;break;case 6:return t=e.sent,e.abrupt("return",t);case 10:console.log("HTTP-Error: "+n.status);case 11:case"end":return e.stop()}},e)}));return function(e){return r.apply(this,arguments)}}()();
 
 // ----------------------------------------------------------------------------------------------------------------- //
-
-// Nano Core 2 - An adblocker
-// Copyright (C) 2018-2019  Nano Core 2 contributors
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-// ----------------------------------------------------------------------------------------------------------------- //
-
-// For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
-
-// ----------------------------------------------------------------------------------------------------------------- //
-
-// source:  https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
-grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
-
-// ----------------------------------------------------------------------------------------------------------------- //
-
 
 /**
- * AdGuard Scriptlets
- * Version 1.2.5
+ * the "Grabber"
+ * @author K-mik@Z
+ * Try to optimize loading fonts
  */
+ 
+function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){return void n(e)}u.done?r(s):Promise.resolve(s).then(t,a)}function _asyncToGenerator(u){return function(){var e=this,c=arguments;return new Promise(function(r,n){function t(e){asyncGeneratorStep(o,r,n,t,a,"next",e)}function a(e){asyncGeneratorStep(o,r,n,t,a,"throw",e)}var o=u.apply(e,c);t(void 0)})}}var grab=function(){var r=_asyncToGenerator(regeneratorRuntime.mark(function e(r){var n,t;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,fetch(r);case 2:if((n=e.sent).ok)return e.next=6,n.text();e.next=10;break;case 6:return t=e.sent,e.abrupt("return",t);case 10:console.log("HTTP-Error: "+n.status);case 11:case"end":return e.stop()}},e)}));return function(e){return r.apply(this,arguments)}}()();
 
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+/**
+ * Nano Core 2 - An adblocker
+ * Copyright (C) 2018-2019  Nano Core 2 contributors
+ * for the licence, see source:  https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
+ * For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
+ */
+ 
+grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
+
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+/**
+ * AdGuard Scriptlets integration
+ * Version 1.2.5
+ * source metrika-yandex-tag:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
+ * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
+ */
+ 
 metrika-yandex-tag application/javascript
-// source:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js)
 
-
 metrika-yandex-watch application/javascript
-// source:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
 
 
-// Font-display masses
-// Try to optimize loading fonts
-// @author K-mik@Z
+// ----------------------------------------------------------------------------------------------------------------- //
+
+/**
+ * Font-display masses
+ * @author K-mik@Z
+ * Try to optimize loading fonts
+ */
+
 !function(){try{var e=document.createElement("style");e.textContent="@font-face { font-display: swap; }",document.documentElement.appendChild(e);var t=-1!=e.sheet.cssRules[0].cssText.indexOf("font-display");e.remove()}catch(e){}!1===t&&"fonts"in document?(document.fonts.load("1em Open Sans Regular"),document.fonts.ready.then(function(e){document.documentElement.className+=" fonts-loaded"})):document.documentElement.className+=" fonts-loaded"}();
 
 
-// JS __UniversalDelayer_Modul
-// @author K-mik@Z
+/**
+ * Javascript universal delayer
+ * @author K-mik@Z
+ * Trying to delay loading third-party scripts
+ */
+ 
 grab(https://pastebin.com/raw/Rhu09X97)
 
