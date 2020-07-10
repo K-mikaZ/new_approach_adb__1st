@@ -855,4 +855,433 @@ function noopFunc() {};
 })();
 
 // JS __UniversalDelayer_Modul
-grab(https://pastebin.com/raw/Rhu09X97)
+!function delayer() {
+    setTimeout(function init() {
+        function flat(arr) {
+            const flattened = [];
+            return arr.forEach(arr => {
+                Array.isArray(arr) ? flattened.push(...flat(arr)) : flattened.push(arr);
+            }), flattened;
+        }
+        function isInArray(uri, arr) {
+            return arr.indexOf(uri) > -1;
+        }
+        function notInArray(uri, arr) {
+            return arr.indexOf(uri) >= 0;
+        }
+        function fetch(uri) {
+            return 0 != window.location.hostname.indexOf(uri);
+        }
+        function preloadScript() {
+            var node;
+            for (node = document.createElement("link"),
+                 s = scripts.length - 1; s >= 0; --s) for (scripts[s].parentNode.removeChild(scripts[s]); -1 !== scripts[s].src; ) {
+                node.href = scripts[s].src,
+                    node.as = "script",
+                    node.rel = "prelink", head.appendChild(node);
+                break;
+            }
+        }
+        var e, a, t, s, count = 0;
+        const doc = document, win = window, head = (location, doc.getElementsByTagName("head")[0]),
+              author = GM_info.script.author, scriptName = GM_info.script.name, scripts = doc.scripts,
+              acceptLngs = [ "de", "en", "es", "fr", "it", "pt" ],
+              u = {
+                  st1 : {
+                      de : "ist schlecht und wurde verz\u00f6gert (nicht wirklich blockiert), um das Laden der Seite zu optimieren.",
+                      en : "is bad & was delayed (not really block) to optimize page loading.",
+                      es : "es malo y se retras\u00f3 (en realidad no bloque\u00f3) para optimizar la carga de la p\u00e1gina.",
+                      fr : "est mauvais et a \u00e9t\u00e9 retard\u00e9 (pas vraiment bloqu\u00e9) pour optimiser le chargement de la page.",
+                      it : "\u00e8 male ed \u00e8 stato ritardato (non proprio bloccato) per ottimizzare il caricamento della pagina.",
+                      pt : "est\u00e1 ruim e foi atrasado (n\u00e3o \u00e9 realmente bloqueado) para otimizar o carregamento da p\u00e1gina."
+                  },
+                  st2 : {
+                      de : "Bitte sperren Sie mich (falls noch nicht geschehen) in Ihrem Werbeblocker.",
+                      en : "Please block me (if you have not already done so) in your ad blocker.",
+                      es : "Bloqu\u00e9eme (si a\u00fan no lo ha hecho) en su bloqueador de anuncios.",
+                      fr : "Bloquez-moi s'il vous pla\u00eet (si ce n'est pas d\u00e9j\u00e0 fait) dans votre bloqueur de publicit\u00e9.",
+                      it : "Per favore bloccami (se non l'hai gi\u00e0 fatto) nel tuo blocco degli annunci.",
+                      pt : "Bloqueie-me (se ainda n\u00e3o o fez) no seu bloqueador de an\u00fancios."
+                  },
+                  st3 : {
+                      de : "ist nicht wirklich notwendig und wurde verz\u00f6gert, um das Laden der Seite zu optimieren.",
+                      en : "is not really necessary & was delayed to optimize page loading.",
+                      es : "no es realmente necesario y se retras\u00f3 para optimizar la carga de la p\u00e1gina.",
+                      fr : "n'est pas vraiment n\u00e9cessaire et a \u00e9t\u00e9 retard\u00e9 pour optimiser le chargement de la page.",
+                      it : "non \u00e8 davvero necessario ed \u00e8 stato ritardato per ottimizzare il caricamento della pagina.",
+                      pt : "n\u00e3o \u00e9 realmente necess\u00e1rio e foi adiado para otimizar o carregamento da p\u00e1gina."
+                  },
+                  st4 : {
+                      de : "Sie k\u00f6nnen mich ohne Risiko in Ihren Werbeblocker sperren.",
+                      en : "You can block me without risk (if you would) into your ad-blocker.",
+                      es : "Puede bloquearme sin riesgo (si lo har\u00eda) en su bloqueador de anuncios.",
+                      fr : "Vous pouvez me bloquer sans risque (si vous le souhaitez) dans votre bloqueur de publicit\u00e9.",
+                      it : "Puoi bloccarmi senza rischi (se lo desideri) nel tuo blocco degli annunci.",
+                      pt : "Voc\u00ea pode me bloquear sem risco (se quiser) em seu bloqueador de an\u00fancios."
+                  },
+                  st5 : {
+                      de : "ist gut (oder notwendig) und wurde nur verz\u00f6gert, um das Laden der Seite zu optimieren.",
+                      en : "is good (or necessary) & was only delayed to optimize page loading.",
+                      es : "es bueno (o necesario) y solo se retras\u00f3 para optimizar la carga de la p\u00e1gina.",
+                      fr : "est bon (ou n\u00e9cessaire) et n\u2019a \u00e9t\u00e9 que retard\u00e9 pour optimiser le chargement des pages.",
+                      it : "\u00e8 buono (o necessario) ed \u00e8 stato ritardato solo per ottimizzare il caricamento della pagina.",
+                      pt : "\u00e9 bom (ou necess\u00e1rio) e s\u00f3 foi adiado para otimizar o carregamento da p\u00e1gina."
+                  },
+                  st6 : {
+                      de : "Kann einige Operationen unterbrechen, wenn sie blockiert sind.",
+                      en : "Can break some operations if blocked.",
+                      es : "Puede interrumpir algunas operaciones si est\u00e1 bloqueado.",
+                      fr : "Peut interrompre certaines op\u00e9rations s'il est bloqu\u00e9.",
+                      it : "Pu\u00f2 interrompere alcune operazioni se bloccato.",
+                      pt : "Pode interromper algumas opera\u00e7\u00f5es se bloqueado."
+                  },
+                  st7 : {
+                      de : "wurde verz\u00f6gert, um das Laden der Seite zu optimieren.",
+                      en : "was delayed to optimize page loading.",
+                      es : "se retras\u00f3 para optimizar la carga de la p\u00e1gina.",
+                      fr : "a \u00e9t\u00e9 retard\u00e9 pour optimiser le chargement de la page.",
+                      it : "\u00e8 stato ritardato per ottimizzare il caricamento della pagina.",
+                      pt : "foi adiado para otimizar o carregamento da p\u00e1gina."
+                  },
+                  st8 : {
+                      de : "Blockiere mich nicht, sonst k\u00f6nnen einige Operationen (oder einige Sites) unterbrochen werden.",
+                      en : "Do not block me, can break some operations (or some sites) otherwise.",
+                      es : "No me bloquee, puede romper algunas operaciones (o algunos sitios) de lo contrario.",
+                      fr : "Ne me bloquez pas, peut casser certaines op\u00e9rations (ou certains sites) autrement.",
+                      it : "Non bloccarmi, altrimenti potresti interrompere alcune operazioni (o alcuni siti).",
+                      pt : "N\u00e3o me bloqueie, pois pode interromper algumas opera\u00e7\u00f5es (ou alguns sites)."
+                  },
+                  st9 : {
+                      de : ", zu beachten und wurde verz\u00f6gert, um das Laden der Seite zu optimieren.",
+                      en : ", to pay attention & has been delayed to optimize the loading of the page.",
+                      es : ", para prestar atenci\u00f3n y se ha retrasado para optimizar la carga de la p\u00e1gina.",
+                      fr : ", \u00e0 pr\u00eater attention et a \u00e9t\u00e9 retard\u00e9 pour optimiser le chargement de la page.",
+                      it : ", per prestare attenzione ed \u00e8 stato ritardato per ottimizzare il caricamento della pagina.",
+                      pt : ", preste aten\u00e7\u00e3o e foi adiado para otimizar o carregamento da p\u00e1gina."
+                  },
+                  st10 : {
+                      de : "Untersuche mich (oder versuche mich sorgf\u00e4ltig zu blockieren).",
+                      en : "Inspect me (or try to block me carefully).",
+                      es : "Inspeccionarme (o tratar de bloquearme con cuidado).",
+                      fr : "Inspectez-moi (ou essayez de me bloquer avec pr\u00e9caution).",
+                      it : "Ispezionami (o prova a bloccarmi attentamente).",
+                      pt : "Inspecione-me (ou tente me bloquear com cuidado)."
+                  },
+                  st11 : {
+                      de : "Wenn ich keine URL habe, dann bin ich sicher ein Inline-Skript.",
+                      en : "If I do not have a URL, then that I am certainly an inline-script.",
+                      es : "Si no tengo una URL, entonces ciertamente soy un script en l\u00ednea.",
+                      fr : "Si je n'ai pas d'URL, c'est que je suis certainement un script en ligne.",
+                      it : "Se non ho un URL, allora sono sicuramente uno script incorporato.",
+                      pt : "Se eu n\u00e3o tenho um URL, certamente sou um script embutido."
+                  },
+                  st12 : {
+                      de : "Ich bin ein Drehbuch. (::Warnung::, sei vorsichtig, wenn du mich blockieren willst).",
+                      en : "I'm a script. (::warning::, act with caution if you want to block me).",
+                      es : "Soy un guion (::advertencia::, act\u00faa con precauci\u00f3n si quieres bloquearme).",
+                      fr : "Je suis un script. (::avertissement::, agissez avec prudence si vous voulez me bloquer).",
+                      it : "Sono una sceneggiatura. (::attenzione::, agisci con cautela se vuoi bloccarmi).",
+                      pt : "Eu sou um roteiro. (::aviso::, tome cuidado se quiser me bloquear)."
+                  },
+                  st13 : {
+                      de : "| Liste zur Verwendung Ihres Werbeblockers |",
+                      en : "| List to use in your Ad Blocker |",
+                      es : "| Lista para usar su bloqueador de anuncios |",
+                      fr : "| Liste \u00e0 utiliser dans votre bloqueur de publicit\u00e9 |",
+                      it : "| Elenco per utilizzare Ad Blocker |",
+                      pt : "| Lista para usar seu Ad Blocker |"
+                  },
+                  st14 : {
+                      de : "(klick mich an)",
+                      en : "(click me)",
+                      es : "(haz clic en m\u00ed)",
+                      fr : "(cliquez moi)",
+                      it : "(cliccami)",
+                      pt : "(clique em mim)"
+                  },
+                  st15 : {
+                      de : `Generiert mit "${scriptName}" von ${author}`,
+                      en : `Generated with "${scriptName}" by ${author}`,
+                      es : `Generado con "${scriptName}" por ${author}`,
+                      fr : `G\u00e9n\u00e9r\u00e9e avec "${scriptName}" par ${author}`,
+                      it : `Generato con "${scriptName}" da ${author}`,
+                      pt : `Gerado com "${scriptName}" por ${author}`
+                  },
+                  st16 : {
+                      de : "verhindert den ordnungsgem\u00e4\u00dfen Betrieb",
+                      en : "prevents proper operation",
+                      es : "impide el funcionamiento correcto",
+                      fr : "emp\u00eache le bon fonctionnement",
+                      it : "impedisce il corretto funzionamento",
+                      pt : "impede opera\u00e7\u00e3o adequada"
+                  },
+                  st17 : {
+                      de : "(Fehler verursachen, also blockieren).",
+                      en : "(cause bugs, so to block).",
+                      es : "(causar errores, por lo que bloquear).",
+                      fr : "(cause des bogues/bugs, donc \u00e0 bloquer).",
+                      it : "(causa bug, quindi per bloccare).",
+                      pt : "(causar erros, de modo a bloquear)."
+                  },
+                  st18 : {
+                      de : "autorisieren",
+                      en : "to authorize",
+                      es : "autorizar",
+                      fr : "\u00e0 autoriser",
+                      it : "autorizzare",
+                      pt : "para autorizar"
+                  },
+                  st19 : {
+                      de : "zu blockieren",
+                      en : "to block",
+                      es : "para bloquear",
+                      fr : "\u00e0 bloquer",
+                      it : "per bloccare",
+                      pt : "bloquear"
+                  },
+                  st20 : {
+                      de : "aufgrund einer Fehlfunktion",
+                      en : "due to malfunction",
+                      es : "debido a un mal funcionamiento",
+                      fr : "pour cause de dysfonctionnement",
+                      it : "a causa di un malfunzionamento",
+                      pt : "devido a mau funcionamento"
+                  }
+              },
+              nav = win.navigator, m = [ nav.language + "" || nav.browserLanguage + "" || nav.userLanguage + "", nav.languages + "", "en" ].filter(Boolean),
+              g = e => e.split("-")[0],
+              z = m.find(e => (a => {
+                  let t = g(e);
+                  return acceptLngs.includes(t);
+              })()),
+              f = g(z), translate = e => {
+                  let a = u[e];
+                  return a && (a[z] || a[f]) || e;
+              };
+        var done, commonStyle = "padding:.25em;line-height:1.5em;font-weight:bold;font-size:1.2em;",
+            options = {
+                pre: "%c%s",
+                grn: commonStyle + "color:#99C794;",
+                blu: commonStyle + "color:#374852;",
+                ylw: commonStyle + "color:#FAC863;",
+                red: commonStyle + "color:#b35d62;",
+                org: commonStyle + "color:#F99157;",
+                prp: commonStyle + "color:#C594C5;",
+                brw: commonStyle + "color:#AB7967;",
+                ttl: commonStyle + "color:rgba(0,0,0,.6);font-variant:small-caps;font-size:1.7em!important"
+            },
+            j = [], k = [], q = [], A = [], I = [], L = [], x = [], S = [], E = [],
+            protocolsRequired = /^((ht{2}ps?):\/\/)/,
+            regexURL_ThatCauseBUGS = [
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?filmgratuit\.(net)\/templates\/default\/js\/(jquery\-1\.10\.2)\.js/
+            ],
+            regexURL_thatCanBeBLOCK = [
+                /(in(tegrations\/breadcrumbs|voke))\.js/,
+                /(protraf{2}ic|clicksagent|greatdemosite|evrotraf{2}|fpctraf{2}ic2|traf{2}ic(holder|roup|shop)|g-traf{2}ic|refer\.c{2}bil{2})\.(com|net)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?youtube\.(.{2,})\/embed\/(.*)?ps=software/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?((gk)?tor{2}ent9?|vidoza)\.(.{2,})\/(js\/)?sw(\.min)?\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?((o(pen)?|et)load)\.(.{2,})\/cdn-cgi\/ap{2}s\/head\/([a-zA-Z0-9]{3,}).js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?uptostream\.(.{2,})\/as{2}ets\/js\/u2f\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(ads(.*)|ftp)\.uptobox\.(.{2,})\/(.*)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?streamango\.(.{2,})\/(.*\/)?(popunder(.*))\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?rapidvideo\.(.{2,})\/genads\.php/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(upvid|o((pen)?load|jet)|rapidvideo|streamango|vidoza)\.(.*)\/((.*)\/)?(custom\-)?pop\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(upvid|o((pen)?load|jet)|rapidvideo|vidoza)\.(.*)(\/(.*))?\/((go{2}gle)?ad(s|vert([0-9]+)?)?)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?exosrv\.(.{2,})\/(((popunder(.*))\.js|js\.php))/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?yandex\.(.{2,})\/metrika/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(adsco|newsatads)\.(.{2,})\/(.*)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/landers\/dark_player\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?vd\.7vid\.(.{2,})\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?easylist\.(.{2,})\/(ados|popunder(.*))\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?gstatic\.(.{2,})\/(.*)\/sender\/(.*)\/cast_sender\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?hostingcloud\.(.{2,})\/u83k\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?static\.ad{2}toany\.(.{2,})\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(d[eo]lo(pl|h)en)\.(.{2,})\/apu\.php/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?subscribers\.click\/fp{2}\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(doubleclick|firstimpres{2}ion|highwebmedia|(((sentry\-)|zen)cdn)|rubiconproject|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer))\.(.{2,})(\/(.*))?(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?fastcounter\.(.{2,})\/fcount\.php/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?animedigitalnetwork\.(.{2,})\/media\/analytics\/event\.min\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?mou{2}hrprxixwrw\.(.{2,})\/prqi\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(h(istats|otjar)|pubdirecte|s(ekindo|tremanp)|tharbadir)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?static\.x{2}\.fbcdn\.(.{2,})\/rsrc\.php\/(.*)\/GMj0{2}YJBc2{2}\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(6zw2rcfd|hcg82f2b|dnzwjlbknhe|s20dh7e9dh|tu42het2{2}n)\.(com)\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?pixel\-static\.spotify\.(.{2,})\/sync\.min\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?s3\.amazonaws\.(.{2,})\/ki\.js\/51746\/b0R\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?vast\.adsafeprotected\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?jsc\.mgid\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(blaghfpd|youborafds01|x{2}c{2}dshj|qualaro{2}|optimizesrv)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(4f2sm1y1s{2}|utip|nutaku|a(d(cash|nium|venturefe{2}ds|s(ervme|rv4k|ke{2}per|pyglas{2}|ter{2}a|up{2}ly))|sdad)|media-dl)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(cjlicka(du|ine)|d(oublepimp|nomads)|exoclick|fpctraf{2}ic|gadsbe{2}|hil{2}topads|inxyads|juicyads|(p(ushnest|lugrush)|op((my)?ads|cash)))\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(propel{2}erads|r(ivertraf{2}ic|oyalads|unative)|squren|t(raf{2}ic(force|h(aus|unt)|s(hop|tars))|ubecorporate))\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)\.(cafe)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?ie8eamus\.(.{2,})\/sfp\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?signup\.favgame\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?voir\.dpstream\.(site)\/pop\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?captched\.(com)\/jws\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?uhit\.(eu)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?al{2}osponsor\.(.{2,})\/cgi-bin/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?fe{2}ds\.fe{2}dburner\.(.{2,})\/(.*)&label=listeners/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?pixel\.bsmartdata\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?stats\.(([a-z]+).doubleclick|wp)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(infolinks|pubdirecte|sendpulse)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?cdns\-files\.dzcdn\.(.{2,})\/(.*)\/(route\-naboo\-ads\.(.*))\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)\.(com)\/ntfc\.php/
+            ],
+            Z = [
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?adtag\.c{2}/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?stats\.wp\.(com)\/(.*).js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?vidoza\.(.{2,})\/(js\/)?jquery(\.min)?\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?streamango\.(.{2,})\/(.*\/)?((script\.packed)|license(\.adbl)?)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?cdn\.jsdelivr\.(.{2,})\/npm\/yandex\-metrica\-watch\/tag.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?voirfilms\.(.{2,})\/((.*)\/)?(b{2}codes([0-9]+)?|main|plus|voirfilms?)(\.min)?\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?e\-cdns\-files\.dzcdn\.net\/cache\/js\/ap{2}-web\.(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?con{2}ect\.(mail|ok)\.ru/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)\.facebo{2}k\.(.{2,})\/(.*)\/\?fields=engagement/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?vk\.(.{2,})\/share\.php\?act=count/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?yastatic\.(.{2,})\/share(.*)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?toro\-tags\.(.{2,})\/_?tags\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?player\.hq{2}\.(.{2,})\/player\/ch\.php/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?french\-stream\.(in)\/templates\/(.*)\/js\/share\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(sharethis|(widgets\.amung))\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?filmgratuit\.(net)\/templates\/default\/js\/libs\.js\?/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?yt?img\.(.{2,})(\/(.*))?\/(yap\.js|(player\-(.*))\/endscre{2}n\.swf)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?youtube\.(.{2,})\/yts\/jsbin\/(.*\/)?(miniplayer|endscreen|(annotations\_module)|(web\-animations\-next\-lite))(\.min)?\.js/
+            ],
+            C = [
+                /(p2p\-media\-loader\-(hlsjs|core)(\.min)?)\.js/g,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?youtube\.(.{2,})\/yts\/jsbin\/(.*\/)?(((.*)tampering)|s(pf|cheduler)|(webcomponents(.*))|(custom\-elements\-es5\-adapter)|network)(\.min)?\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(mystream|uqload)\.(.{2,})(\/(.*))\/?pop\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?uptostream\.(.{2,})\/dist\/uts(Init|Plugin)\.min\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?voirfilms\.(.{2,})\/((.*)\/)?(jquery(ui)?)(\.min)?\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?go{2}gle\.(.{2,})\/js\/bg\/(.*)\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(g(static|o{2}gle)|recaptcha)\.(.{2,})\/recaptcha/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?vkc(ache|dnservice)\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(hls|fluid)play(er)?\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?hq{2}\.(.{2,})\/js(\/.*)?\/(ads|script\-(.*))\.js(\?.*)?/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?french\-vid\.(ga)\/as{2}et\/default\/player\/base\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?((core1|easy)player)\.(c(c|om))/
+            ],
+            P = [
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?go{2}gle\-analytics.(.{2,})\/(analytics\.js)?/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?streamango\.(.{2,})\/go{2}glead\.js/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?((pagead([0-9]+)?)|tpc)\.go{2}glesyndication\.(.{2,})(\/safeframe)?/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?((adservice\.go{2}gle)|consensu|go{2}gletag(manager|services))\.(.{2,})/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(s0\.)?2mdn\.(.{2,})\/instream\/video\/client\.js/
+            ],
+            G = [
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{5,}\.(com)\/(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{2,}\/(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{2,}\/(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{2,}\/[a-zA-Z0-9]{5,}\.js/g, /ht{2}ps?:\/\/(([vw]{2,})?([a-z0-9]+)?\.)?[A-Za-z0-9]{9,}\.cloudfront\.(.{2,})\/(.*)\.js/, /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)\.(pro|vip)/, /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?pub\.(network)/, /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)?(((amazon\-adsystem)|geoip\-db)|(static\.apester))\.(com)/, /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(fastly\-insights)\.(com)/,
+                /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(open\.scdn)\.(.{2,})\/static\/js\/gtag\.js/g
+            ],
+            U = [ /\/(analytics?|beacon)\.js/g ],
+            N = [ /(\w{2})-(\w{2})/, /ht{2}ps?:\/\/(([vw]{2,})?([a-z]+)?([0-9]+)?\.)?(.*)/ ];
+        !function dispatching() {
+            for (
+                s = scripts.length - 1; s >= 0; --s) {
+                for (t = scripts[s].src, S.push(t), flat(S),
+                     a = 0; a < regexURL_thatCanBeBLOCK.length; a++) for (
+                    e = new RegExp(regexURL_thatCanBeBLOCK[a]); e.test(t); ) {
+                    j.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < Z.length; a++) for (
+                    e = new RegExp(Z[a]); e.test(t); ) {
+                    k.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < C.length; a++) for (
+                    e = new RegExp(C[a]); e.test(t); ) {
+                    q.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < P.length; a++) for (
+                    e = new RegExp(P[a]); e.test(t); ) {
+                    A.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < regexURL_ThatCauseBUGS.length; a++) for (
+                    e = new RegExp(regexURL_ThatCauseBUGS[a]); e.test(t); ) {
+                    L.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < U.length; a++) for (
+                    e = new RegExp(U[a]); e.test(t); ) {
+                    x.push(t), E.push(t);
+                    break;
+                }
+                for (a = 0; a < G.length; a++) if (e = new RegExp(G[a]),
+                                                   fetch(t)) for (;isInArray(t, x); ) {
+                    for (;e.test(t); ) {
+                        I.push(t), E.push(t);
+                        break;
+                    }
+                    break;
+                } else if (notInArray(t, P)) for (;e.test(t); ) {
+                    I.push(t), E.push(t);
+                    break;
+                }
+                if (flat(j), flat(k), flat(q), flat(A), flat(I), flat(E), isInArray(t, E)) {
+                    for (;isInArray(t, x); ) {
+                        if (window.console) for (;notInArray(0, P); ) {
+                            console.log(options.pre, options.brw, "\n[!] " + t + " " + translate("st9"), "\n" + translate("st10") + "\n\n");
+                            break;
+                        }
+                        break;
+                    }
+                    for (;isInArray(t, I); ) {
+                        if (window.console) for (;fetch(t); ) {
+                            console.log(options.pre, options.brw, "\n[!] " + t + " " + translate("st9"), "\n" + translate("st10") + "\n\n");
+                            break;
+                        }
+                        break;
+                    }
+                    for (;isInArray(t, j); ) {
+                        window.console && console.log(options.pre, options.red, "\n[\u2717] " + t + " " + translate("st1"), "\n" + translate("st2") + "\n\n");
+                        break;
+                    }
+                    for (;isInArray(t, k); ) {
+                        window.console && console.log(options.pre, options.org, "\n[-] " + t + " " + translate("st3"), "\n" + translate("st4") + "\n\n");
+                        break;
+                    }
+                    for (;isInArray(t, q); ) {
+                        window.console && console.log(options.pre, options.grn, "\n[\u2714] " + t + " " + translate("st5"), "\n" + translate("st6") + "\n\n");
+                        break;
+                    }
+                    for (;isInArray(t, A); ) {
+                        window.console && console.log(options.pre, options.blu, "\n[~] " + t + " " + translate("st7"), "\n" + translate("st8") + "\n\n");
+                        break;
+                    }
+                    for (;isInArray(t, L); ) {
+                        window.console && console.log(options.pre, options.ylw, "\n[\u2717] " + t + " " + translate("st16"), "\n" + translate("st17") + "\n\n");
+                        break;
+                    }
+                } else "" === t ? window.console : window.console && t.match(protocolsRequired) ? console.log(options.pre, options.prp, "\n[!] " + t + " " + translate("st7"), "\n" + translate("st11") + "\n\n") : console.log(options.pre, options.prp, "\n[!] " + t + " ( I am an addon )\n\n");
+            }
+        }(), win.addEventListener("beforescriptexecute", function load(aim) {
+            var action, s = aim.target.src; //e.target.innerHTML,
+            -1 !== s.search(N) && protocolsRequired.test(t) && (count++, aim.preventDefault(),
+                                                                aim.stopPropagation(),
+                                                                action = preloadScript,
+                                                                head.appendChild(doc.createElement("script")).innerHTML = action.toString().replace(/^function.*{|}$/g, "")),
+                2 == count && win.removeEventListener(aim.type, load, !0);
+        }, !0),
+            done = function() {
+            if (window.console) {
+                var e = [].concat(regexURL_thatCanBeBLOCK, Z).sort(), a = [].concat(C, P).sort(), lines = [];
+                lines.push("!\n! " + translate("st15") + "\n!\n! URLS " + translate("st19") + "\n! ---------------------------\n"),
+                    e.forEach(function(e) {
+                    e = e.toString().replace(/\/(g)?$/, '/$').replace(/\.js\/(\$)?$/, '\.js/$script,'),
+                        lines.push(e + "important\n");
+                }), lines.push("!\n! URLS " + translate("st18") + "\n! ---------------------------\n"), a.forEach(function(e) {
+                    e = e.toString().replace(/\/g$/,'/'), lines.push("@@" + e + "\n");
+                });
+                /** @type {string} */
+                var s = lines.join("");
+                console.groupCollapsed(options.pre, options.ttl, translate("st13"), "\t\t" + translate("st14") + "\n\n"), console.log(options.pre, "%s", "! #########################################################################################################################\n" + s + "\n! #########################################################################################################################"),
+                    console.groupEnd();
+            }
+        }, (doc.attachEvent ? "complete" === doc.readyState : "loading" !== doc.readyState) ? done() : doc.addEventListener("DOMContentLoaded", done);
+    }, 100);
+}();
