@@ -1,0 +1,2 @@
+!#include musical/deezer.txt
+!#include musical/spotify.txt
