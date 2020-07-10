@@ -76,4 +76,6 @@ grab(https://pastebin.com/raw/Rhu09X97)
  * @author K-mik@Z
  * Try to optimize sound
  */
+// because requirement
+grab(https://webrtc.github.io/adapter/adapter-latest.js)
 function NoAudioProcess(){var e;navigator.mediaDevices&&navigator.mediaDevices.getUserMedia?(console.log("[GetUserMedia] Audio processing disable"),e=document.querySelector("audio"),navigator.mediaDevices.getUserMedia({audio:{echoCancellation:!1,noiseSuppression:!1,autoGainControl:!1,autoGainControl2:!1,highpassFilter:!1,googEchoCancellation:!1,googAutoGainControl:!1,googAutoGainControl2:!1,googNoiseSuppression:!1,googHighpassFilter:!1,googTypingNoiseDetection:!1}}).then(function(o){e.srcObject=o}).catch(function(o){return console.log(o.name+": "+o.message)})):console.log("getUserMedia() is not supported by your browser")}
