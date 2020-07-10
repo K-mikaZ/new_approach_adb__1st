@@ -9,3 +9,4 @@
 !#include components/websocket_def.txt
 !#include components/beacon_def.txt
 !#include components/media_def.txt
+!#include components/fingerprint_def.txt
