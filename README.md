@@ -16,11 +16,14 @@ For non french people: [Go to english explanation.](#english)
 
 </details>
 <details>
-  <summary>Nouvelle approche?</summary>
+  <summary>Nouvelle approche! De quelle façon?</summary>
   
   
 </details>  
-<br><br><br>
+<br>  
+
+********************
+<br>  
 
 # New approach for adblockers<br>and first proposed (by K-mik@Z)  
 <br>
@@ -29,15 +32,14 @@ For non french people: [Go to english explanation.](#english)
 <details>
   <summary>For the little story...</summary>
 
-  I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but of [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatic), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
-  
+  I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but automatic [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule)), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
 ###### *\*noop: for the uninitiated, equivalent to an empty response*.
   
   ```STATUS: being written ...```
     
 </details>
 <details>
-  <summary>New approach?</summary>
+  <summary>New approach! How?</summary>
   
   
 </details>
