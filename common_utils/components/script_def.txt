@@ -7,7 +7,7 @@
 !#if script
 *$script,redirect-rule=noop.js
 
-!#if (script && !1p)
+!#if !1p
 *$script,3p,redirect-rule=noop.js
 !
 !#include script-spec_def.txt
