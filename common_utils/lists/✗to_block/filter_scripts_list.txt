@@ -78,10 +78,7 @@
 !#endif
 
 ! Ensure redirect fingerprint script
-*/fingerprint2.js$script,important,redirect=fingerprint2.js
-*/fingerprint2.js$script,redirect=fingerprint2.js
-*/fp2.js$script,important,redirect=fingerprint2.js
-*/fp2.js$script,redirect=fingerprint2.js
+*/fingerprint2.js$script
 
 ! </ end script-spec_def >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
