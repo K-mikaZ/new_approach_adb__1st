@@ -1,9 +1,14 @@
 !
 
 ! PER SITES
+! -------------------------------
 !
 !#include ✗to_block/filter_per_site_based.txt
 !
+
+!
+! NOT SORTED - (BULK)
+! -------------------------------
 
 ! DOM CONCERN
 !#if dom
