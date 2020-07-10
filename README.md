@@ -1,7 +1,7 @@
 # Nouvelle approche pour les bloqueurs de publicités<br>et première fois proposé (par K-mik@Z)  
 <br>
 
-[Go to english explanation.](#english)  
+For non french people: [Go to english explanation.](#english)  
 
 ```STATUS:    in progress...    |    en cours...```
 
@@ -9,7 +9,7 @@
 <details>
   <summary>Pour la petite histoire...</summary>
 
-  J'ai voulu proposer une simple liste (non pas de blocage), mais de [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatique, pour aider au *noop\** de tous les filtres de blocages (déjà présent, mais aussi à venir) et qui utilisais pour cela des conditions ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ).
+  J'ai voulu proposer (sur un [site connu de la communauté](https://github.com/collinbarrett/FilterLists)) une simple liste (non pas de blocage, mais de [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatique), pour aider au *noop\** de tous les filtres de blocages (déjà présent dans votre bloqueur de pubs, mais aussi à venir) et qui utilisais pour cela des conditions ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ).
 ###### *\*noop: pour les non initiés, équivaut à une reponse vide*.
 
   ```STATUS: en cours d'écriture...```
@@ -29,7 +29,7 @@
 <details>
   <summary>For the little story...</summary>
 
-  I wanted to offer a simple list (not of blocking), but of automatic [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule), to help with the *noop\** of all blocking filters (already present, but also to come) and who used ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ) conditions.
+  I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but of [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatic), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
   
 ###### *\*noop: for the uninitiated, equivalent to an empty response*.
   
