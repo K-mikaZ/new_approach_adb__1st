@@ -10,7 +10,8 @@
 ! < start badfilters >
 
 !#if dom
-#@#.ytp-pause-overlay
+*#@#.ytp-pause-overlay
+*#@#.ad-alert-wrapper
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
 torrent9.*#@#.download-btn + .download-btn a
