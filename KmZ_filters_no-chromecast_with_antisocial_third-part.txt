@@ -1,5 +1,5 @@
 !
-! Title: [✔][list][new wave] "Rules, filtering, exception, no chromecast and blocking antisocial third-party" - by K-mik@Z
+! Title: [✔][list][new wave] "Rules, filtering, exception, blocking antisocial third-party and no chromecast" - by K-mik@Z
 ! Version: 1
 ! Expires: 7 days
 ! Author: K-mik@Z
