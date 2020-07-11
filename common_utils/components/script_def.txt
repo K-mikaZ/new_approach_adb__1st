@@ -9,7 +9,6 @@
 !#if script
 
 !#include nofab_def.txt
-!#include monkeybroker_def.txt
 *$script,redirect-rule=noop.js
 
 !#if !1p
