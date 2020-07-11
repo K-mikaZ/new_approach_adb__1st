@@ -73,8 +73,6 @@ motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 !  [fix] seems loading better with
 ||facebook.com/ajax/$ping,important,badfilter
 ||facebook.com/ajax/bz$ping,badfilter
-! [fix] for connection by click on profil image
-||facebook.com/security/hsts-pixel.gif$image,important,badfilter
 ! [fix] require for google consent (I think)
 &adsafe=$badfilter
 /consentui/*$badfilter
