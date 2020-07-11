@@ -10,6 +10,8 @@
 !#if script
 @@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
 @@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
+! CSS prefix by Lea Verou concern
+@@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 !#endif
 
 ! </ end whitelist >
