@@ -82,6 +82,7 @@ playtovid.com###lkfyb,#isah7vt,#container-2e454816c2f0b2e3aeed71e38edfb86377331
 @@||waaw.tv^$script,1p,badfilter
 @@||netu.tv^$script,1p,badfilter
 ! PREFER set in "dynamic filtering"
+! see:  < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/streaming_replay/dynamic_filtering_streaming_replay.txt >
 !    * hqq.tv * noop
 !    * netu.tv * noop
 !    * waaw.tv * noop
