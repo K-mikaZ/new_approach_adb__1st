@@ -1,5 +1,5 @@
 !
-! Title: [✔][list][new wave] "Rules, Filtering, exception list and blocking antisocial third-part" - by K-mik@Z
+! Title: [✔][list][new wave] "Rules, filtering, exception list and blocking antisocial third-party" - by K-mik@Z
 ! Version: 1
 ! Expires: 7 days
 ! Author: K-mik@Z
