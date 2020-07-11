@@ -20,7 +20,7 @@
 ! Fix missing : googletagservices.com/tag/js/gpt.js using googletagmanager.com/gtag/js?
 ! see < https://support.google.com/analytics/answer/1034342?hl=en#RelatedResources >
 ! see < https://developers.google.com/analytics/devguides/collection/gtagjs >
-||*googletagmanager.*/gtag/js*$script,redirect-rule=google-analytics_analytics.js
+||*googletagmanager.com/gtag/js*$script,important,redirect-rule=google-analytics_analytics.js
 !#endif
 
 !#if googletagservices.com
