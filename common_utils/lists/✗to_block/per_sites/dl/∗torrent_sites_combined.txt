@@ -5,7 +5,7 @@
 @@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se
 
 !#if (ettvdl.com && dom)
-ettvdl.com##[href*="://lookmovie."],.download_liinks_a
+ettvdl.com##[href*="://lookmovie."],.download_liinks_a,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"],#kr_cr
 !#endif
 
 ! [fix] liens magnet seulement
