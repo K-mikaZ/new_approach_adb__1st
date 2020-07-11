@@ -44,6 +44,12 @@ voiranime.com##iframe:style(max-width:110vh!important)
 voiranime.com##a[href*="/signup/"],a[href*="://network.nutaku.net/"]
 !#endif
 !
+!#if voirfilms.*
+voirfilms.*##center:if(.myButton)
+voirfilms.*##.salidor_inner,.salidor_b,.f-inner,.X,#pub
+!#endif
+!
+!
 ! ---- Global -----
 ! < start global CSS rules >
 *##[class="adsbygoogle"]
