@@ -1,0 +1,15 @@
+!
+! Title: [✔][list][new wave] "Rules, Filtering, exception list and no-chromecast" - by K-mik@Z
+! Version: 1
+! Expires: 7 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
+! Description: My first blocking list.
+!
+!#if *://*
+!
+!#include common_utils/filter_global_without_antisocial_3p.txt
+!#include common_utils/lists/✗to_block/others/no_chromecast.txt
+!#include common_utils/allowing.txt
+!
+!#endif
