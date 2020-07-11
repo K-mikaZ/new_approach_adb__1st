@@ -27,19 +27,24 @@
 ! ---- Per site -----
 ! Not optimized - to sort
 *.wixsite.com###WIX_ADS
-mega-p2p.net##[href*="navigateur-brave"]
+01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
 76actu.fr###headerpub,#Widget-Francebillet,.mtl.mbl.pts.pbl.bbg1.btg1
 123people.com##.ad_content,.dialog_container
 absoluporn.com##.clickable_overlay
 accuradio.com##.js_lb_overlay.lb_overlay,#div-gpt-ad-1394228394731-0,#pageSidebarWrapper,#registerForm
+add0n.com##div.content:nth-of-type(1) > table > tbody
 aliceadsl.fr###dfp_banner-basse-bf
+allseries.co##.big-btn.btn-info.btn
 alvinet.com###itedkjrx,#pvgsoihc,#saybnkwd,#zsawqobp
-amazon.fr###DAnsm
 amazon.com###desktop-ad-atf
+amazon.fr###DAnsm
+animes-mangas-ddl.net##.pubads,.td_block_template_9.td-pb-border-top.td_uid_6_5a21732be2f2d_rand.td_block_widget.td_block_text_with_title.td_block_wrap
+animesvostfr.net##.adkiss,.container .adkiss
 annuaire.118712.fr###le712_lr_pub
 applicanet.com###cboxOverlay,#colorbox
 ask.com###spl_img_top,.spl_shd_plus
 atlantico.fr###ad-planetveo
+beta3.neko-san.fr##.md-theme-default.btn-cinema.md-raised.md-button
 bfmtv.com###sas_95
 bibliobs.nouvelobs.com###ultimedia_nouvelobs
 bing.com##.b_ad,.sb_adsNv2,.sb_adsWv2
@@ -48,46 +53,90 @@ blogs.mediapart.fr##.tiroir
 brefmail.com###template01_shadow
 bwp.download.cnet.com##.bwp
 causeur.fr###popin-newsletter-block
+cinecomplet.net###playerOver
+cineiz.cc##.VF.full-quality
+cinemey.com###pub,.X,.ebooks_orange_7289002
 cmb.fr##.portletReseauxSociaux
+cocostreaming.com##.rose.dropdown
 courrierinternational.com##.div-content-csprivacy
 cours-informatique-gratuit.fr##.advertise--ribbon
+cpasmieux.*###playerOverClose, .social-here, .report-pub, .log-buts, .reg-link, #show-login
 crowdstream.ml###best_submitters
 da.feedsportal.com###clicker
+dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
+daylimovies.net##.download.get
 degrouptest.com###icdkgher
 derniers-films.com##.myButton,[href="/regarder.html"] > span
 deviantart.com##.ad-container,.adpool-pen,.da-custom-ad-box
+disneyhd.tk###boutonpubregarder,#chat_contain,a[href^="http://zulu.r867qq.net/offer"]
+dpstream.cc###jba0
 dsearch.com##.ZqMqBWcmxRluPcEdgQSa2
 duckduckgo.com###ra-0
+easytutoriel.com##.aNtFGijmACfM-bg
 emploi.trovit.fr##.listing.sponsored.noPhoto
 en.softonic.com##.is-shown.modal-latest-articles--social.js-modal-latest-articles.js-social-modal.modal-latest-articles.modal-window
 encrypted.google.com###imagebox_bigimages,#newsbox,#nycp,.vsc.vslru,.vspib,[src^="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"]
+enseries.io###InsidePlayer,div.AdsArea,.AdsArea a.adSecw,.aoa_overlay
 entreprise-sans-fautes.com###mc_embed_signup
 etools.ch##.sResult,.sResultStatus
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
+femmeactuelle.fr##.ratio-16-9 > div
+film-streaming.bz##.voir-b,.c-lefermeur
+film.hds-streaming.com##.textwidget
+film01stream.*###tabs-ad > .movieplay,a[target="_blank"]
+filmsrip.com##.Banners
+filmstoon.*##[href*="://out.filmstoon."],.yx-share,.fsect,.myButton
+filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
+filmstreaming1.top##.asgdc
+filmstreaminghd.club,filmstreaming2018.com,mamzouka.be##h5:nth-of-type(7),.col-md-8 div:nth-of-type(4),.col-md-8 div:nth-of-type(8),div.vital:nth-of-type(10),.vital div:nth-of-type(2),h5:nth-of-type(9),h5:nth-of-type(10),h5:nth-of-type(9)
+filmz.info###pub,.myButton
+filmzstream.cc###pub,[href="https://filmzstream.cc/voir2.html"],[src="https://filmzstream.cc/play.png"],#uwee div:nth-of-type(3),a.watch_sa
+filmzstream.vip##a.watch_sa
+filmzstreaming.org##h5
+forum-des-portables-asus.fr##.uix_noticeInner
 foupas.com###agrotis,#ilionmare
 fr.4k-streaming.com###ads
 fr.dpstream.site##.clearfix,.cp.px-2.py-2.float-lg-right,.px-2.py-2.lightSwitcher.float-lg-right,.flex-column.nav li.nav-item:nth-of-type(3) .nav-link,div.col-12.col-sm-2:nth-of-type(5) .flex-column.nav li.nav-item:nth-of-type(2) li.nav-item:nth-of-type(1) .nav-link,.phpdebugbar-minimized.phpdebugbar,.phpdebugbar-header,a.ebooks_orange_7289002:nth-of-type(1),a.ebooks_orange_7289002:nth-of-type(2),.col-player div,.col-player div:nth-of-type(1)
 fr.mappy.com###itinerary_annoncesjaunes
 fr.search.yahoo.com###right,.res.sc.sc-mprod
+fr.skstream.info##.toro-wrapper-inner
+fr.voir-films.zone##.tolro_b
+fr2.voirfilms.ch##div[class^="tolro_"],a[href*="://bit.ly"]
 framabee.org###framafooter
 framabee.org,framabin.org,framapic.org###framanav_donation,.btn-soutenir,.in.fade.alert-danger.alert
 france3-regions.francetvinfo.fr##.ui-widget-overlay
 french-manga.co##.center.cont div.clearfix.pages:nth-of-type(1)
+french-serie.co###bsl1,#bsl2
 french-stream.*###f22,.bx1,#\32 ad,[href*="://stakiwrisl.xyz/"],body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div,.banner
 frenchweb.fr##.visiblebox
+full-serie.*##.basetags,.block:nth-of-type(2) .blockshadow .padding,.blockshadow .block:nth-of-type(1) .padding,.block_metal .padding,.alert-info.alert
 full-stream.red###\31,.PapaGooGorHD,li:nth-of-type(3) p
+full-stream.zone##.PapaGooGorHD
 games.torchbrowser.com###social,#top_banner
+gamestorrents.nu##.middle
 geekob.com###cboxWrapper,#upprev_box
+gktorrent.biz###lpqvca7
 gofilm.fr###commentfb,#mv-keywords,.bp-btn-light.btn,.bp-btn-review.btn,.footer-subs.col-lg-4,.mv-rating,.top-content,center center
 google.com###prm
+google.com###prm-pt
+google.fr###footcnt
+google.fr##.gb_7d
+hds-streaming.com##.wp-tags,div.sbox:nth-of-type(10),.dt_social_single,#text-3
+hds.lc##[class="ads"],[class*="ads_"],[class*=".dt_social_"],[src^="blob:https://hds.lc/"],#_g5eqet .resizer ._1n3rxlt._00d5twg,#playerads,.list li .reco.wide,.lightSwitcher,#count,.contadorads
+hdslecteur.xyz##div[class*="__wrap"]
+hdssgratuit.co##a.btn-watch.btn-lg.btn-offer.btnoff,.X,#pub
 hellocoton.fr##.contest-promo,.pod.ad-container
 helpx.adobe.com###feedbackPod
+illimitefilm.org##a.roundRed.roundbutton,.movieBlock > .buttons
+illimitestreaming.to##.adblocker-fix,#adblock_fixed_0,.adblock_fixed
 insight.io##.Modal_appear_3wb6X-active.Modal_backdrop_12pBU
 ixquick.com###sponsored
 jdownloader.org###cookie_info
+jetanimes.com###fakeplayer
 journaldunet.com##.ccmcss_oic
 justwatch.com##.header.container-fluid jw-ad-block
+k-streaming.com##img[src="http://k-streaming.com/wp-content/uploads/300x250-4.jpg"]
 keepmymail.com###template01_border,#template01_shadow
 klekoon.com###d
 korben.info###samsarin_php_widget-5,.cc-banner,.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window,.g.g-2,.information,.widget.samsarin_php_widget,a[title="contenu seo"]
@@ -95,10 +144,13 @@ laposte.net###shoppingBox
 ldlc.com##.catactu,.odr
 leboncoin.fr##[id^="oas-"]
 lecourrierdeleure.fr###Widget-Pa,.mtl.mbl.pts.pbl.bbg1.btg1
+lefildentaire.com###back-lfd-pro-alert
+lefildentaire.com###lfd-pro-alert
 lejdd.fr##IMG[src="http://cdn1-lejdd.ladmedia.fr/design/lejdd/images/services/assurland_left.jpg"],IMG[src="http://cdn2-lejdd.ladmedia.fr/design/lejdd/images/npidf.jpg"]
 lemonde.fr##.conteneur_alerte.visible,.global.services.promo.bordt3.ombre_section
 lemoteur.fr##.resultBlock.slpartner
 leparisien.fr##.bloc300.immobilier.bloc-pratique,.notification
+lesseriestreaming.com###pub, .ebooks_orange_7289002, .d-md-block.d-none.my-3
 leveildepontaudemer.fr###Widget-Pa,.mtl.mbl.pts.pbl.bbg1.btg1
 leveilnormand.fr###Widget-Pa,.mtl.mbl.pts.pbl.bbg1.btg1
 lexpansion.lexpress.fr##.partners
@@ -108,23 +160,40 @@ linternaute.com##.ccmcss_oic
 linuxtopia.org###ezmobfooter
 login.live.com###msccBanner
 loukoum-cie.over-blog.com###dawandaWidgetContainer
+ls-streaming.com##.fullcontent .center,.PapaGooGorHD,.panel-container center
 mail.google.com##.acS,.nH.adC,.u5,.Zs
 mail.yahoo.com##.I_ZnwrMC.p_R.o_v.D_F
 malekal.com###bQtBNUghMoyn,#catapult-cookie-baroutlook.live.com,._1j7WZ-n7dxhS9AQV-FL8U7 ._2qPmszDwBfYpF7PO9Mn3KN,.code-block,.OFbYwOlAprEQ-bg,.ouXBxSIyKcZy,ins[id^="aswift_"]
+malekal.com###text-8
+malekal.com##.LRHqhwgCkDNa
+mamzouka.be###report_button,li.genre:nth-of-type(1),#favoris,.nav-stacked.nav-pills.nav li:nth-of-type(4),li.genre:nth-of-type(3) h4
+mamzouka.com##.dt_social_single, div.sbox:nth-of-type(9),p:nth-of-type(1), p:nth-of-type(2)
 mappy.com###PushHotelView,.pushItiSummary.covoiturage,.vsc
 marmiton.org###bloc-video
 mega-p2p.net###btn_59,#frag_30072,#txt_5601,.OBJ-7.ActiveButton.OBJ-6,[href*="/aff.php"],[href*="linkredirect"]
+mega-p2p.net##[href*="navigateur-brave"]
+mega-p2p.net##[href="https://brave.com/meg327"]
+milesbooster.fr###detect-extension
 msn.com##.euBanner
 music.torchbrowser.com##.currentTrackInfo__trackShare
 news.google.fr##.gb_lb.gb_ob.gb_za
 numerama.com###general_subpub,#newssuiv,.module_guide,.module_remixjob
+official-film-illimite.*,official-serie-illimite.*##.ads_728
 official-film-illimite.co###cookiedata
+onvid.host##.video_batman
+onvid.icu###rkm,body div:nth-of-type(6),body div:nth-of-type(7)
+oomoviz.com##.download.get
+otaku-attitude.net##.donate-button.donate
 ouakari.com###WebForm1
 outils-javascript.aliasdmc.fr###overlayaddblock
 outilsveille.com###dcssb-float
 outlook.live.com##._29KqToSCcntvfbDv_3xuuh ._1_ag99JsBHxI6S4FP5ayPv
 over-blog.com##.obbar-follow-overlay
 pagesjaunes.fr###blockPushGuide,#containerSectionSecondary,#pushBonsPlans,#pushBP,.PPub
+papstream.net##.fstory-favorites,.infobar-header
+papstream.xyz###playerOv
+papystreaming.is##.AdsArea,.adSecw,#playx
+papystreaming.so##div[id="bd_sp"]
 paris-normandie.fr###ultimedia_wrapper
 pcastuces.com##TD[bgcolor="#FFFF40"]
 peertube.mastodon.host##.ui-toast-bottom-right.ui-widget.ui-toast
@@ -132,52 +201,84 @@ peggo.net##[href^="https://4f2sm1y1ss.com/"]
 planet.fr###block-gc_ad-pave_bas,#layerAbo
 plus.google.com##.gb_gb.gb_jb.gb_wa,.Tg.Sb.GE,.Tg.Sb.sb
 pole-emploi.fr##.pub
+qwant.com###a_39,#c_223,#home__links,.extension_popin,.header__share-qwant--0.header__share-qwant,.header__textqwant.com,.home__snippet__extension--0.home__snippet__extension,.snippet,.trends--general
 qwant.com##.ribbon
 rantop.org###custom_html-4,#theme-my-login-2
 reddit.com##.amp.snackbar,.dNXRhH.kloj01-3 form,.navframe .xpromominimal.dualpartinterstitial,.xpromoadfeed,.promotedlink,.xpromopill
+responsinator.com##.jobAd
+revolvy.com###avntsPlayer0,#cookie_consent,#inline_0 .revolvyad_inner
+rtl.fr###modal-warning
 rue89.com###partenariat89_auto,#partenariat89_masterblock
 rueducommerce.fr##.banniere-menu-slider-home
 sarkofrance.ragemag.fr###ragelive
 scoop.it##.feedbackBannerContent
 search.seznam.cz###sklik-right
+serie-streaming.cc##center:nth-of-type(2)
+series.dpstreaming.to##.myButton,.button2,.filmborder:nth-of-type(1) > .filmcontent > div:nth-of-type(2)
+seriestream.*###pub,.X,.an,.hidefm,.movie-aye,.msg_info_player,.telecharger-film,li.streamer.dow
 sguru.org##.herald-ad
 similarsites.com###\5f mN_main_837788206_0_n,#\5f mN_main_837788206_2_n
 site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-lg-9.col-sm-8.col-xs-12,.tags.pad
+skstream.ink##div[class="responsive-ad"]
 socialmedia-max.com###vc_widget
+sokrostream.tv##.container.section div:nth-of-type(2),.global-background div,.top-padding-fix.column:nth-of-type(1) div:nth-of-type(1),.top-right.toasted-container,.is-hidden-mobile.over-player
 sordum.org##.sbar_social_div
 sourceforge.net##.sidebar-widget.jobs-widget
+spin-off.fr###container_prospect
+star.fr##img[src^="/typo3conf/ext/sta_crmvad/Resources/Public/opacite.png"]
 startpage.com###sponsored
+stream-complet.*##.c-lefermeur,.voir-b
+streamay.*##.ac,.ai,.pop-removable,.movie-download,.download_cta,.facebook_square
+streamcity.ml##.ads,.ads_heade,.ads_player
+streamcomplet.mobi##a[href*=".streamcomplet.mobi/player/"]
+streamdown.cc###carousel-home,#top-menu li:nth-of-type(5),#top-menu li:nth-of-type(6)
+streaming-planet.net##[href^="/friend.php"]
+streaming.streamiz.co###onesignal-bell-container
+streamingbb.tv###PapaGooGorHDVid
+streamingdivx.ch##a.Btndwn,.SectionADs,.f-inner,#pub,.X
+streamingdivx.club,streaming.ac,zonestreaming.info,01series.co,allseries.co,regardergratuit.org,vustream.co,illimitestreaming.to##.X,#pub,.myButton
+streaminzone.com###menu-item-4405,.col-sm-4 p,.like-bottons,.post-info-inner .kodex_buttons .kodex_like_button.kodex_button,.post-info-inner p:nth-of-type(2),.text-center.box-video.col-sm-8 span:nth-of-type(2),div.row:nth-of-type(2) div.col-sm-3:nth-of-type(2)
+streamiz-filmze.com###PapaGooGorHDVid
 studio.tailorbrands.com###ember1372
 studio.tailorbrands.com###ember3634
 studio.tailorbrands.com##.align-center.collapse.expanded.row
 swisscows.ch##.donation-web-results-wrap
+tameteo.com###bannerDerPC
 tdg.ch##.boxExclusiv.ad
 teamos-hkrg.com##.belowTopBreadcrumb.samCodeUnit
 teamos-hkrg.com##.threadViewAboveMessages.samCodeUnit
+tech-connect.info###ppsPopupBgOverlay
+tech-connect.info##.ppsPopupFbLikeShell.ppsPopupShell
 telecharger-jeuxpc.fr##.slidein-center-left.cp-slidein
 telerama.fr##.surheader-facebook
 tendanceouest.com###GB_overlay
 tendanceouest.com###GB_window
 terrafemina.com###adl_300x250
 terrafemina.com###popform
+tfarjo.com##a[href*=".amazon."]
 torrent.coopterre.net###lt_Precedent
 track.aliexpress.com##body .skiptranslate:nth-of-type(1)
 translate.google.com##.gb_g.gb_Tc.gb_ud
 translate.google.fr##.gb_ge
 translate.google.fr##.gp-footer
+tv.series-fr.net##.ebooks_orange_7289002,.X
 twittosphere.fr###bsajM7VWgc
 tx.proxfree.com###pfproxy
 tx.proxfree.com##.alerts-wrapper
+ultimate-catch.eu##.entry-footer:has-text(/Share/)
+ultime-streaming.com###commentfb,#switch-mode,.mvic-btn
 undernews.fr###fancybox-overlay
 undernews.fr###fancybox-tmp
 undernews.fr###fancybox-wrap
 undernews.fr##.deferredto-lazy
+universanimeiz.com##.banner,.yp6_desktop_classic.yp6_area.my6_widget_bg.my6_wrap
 userstyles.org###top_android_button
 userstyles.org##.android_button_banner
 userstyles.org##.android_button_button
 userstyles.org##.overlay_background
 userstyles.org##.walking
 uv9ieb2ohr.com##.fillme
+vf.dpstream.site##.ebooks_orange_7289002
 vfspace.co##.spu-bg
 vfspace.co##.spu-total-1.spu-centered.spu-box
 viamichelin.fr##.vm-box-mag.vm-box-mag-auto
@@ -185,43 +286,32 @@ viamichelin.fr##.vm-box-mag.vm-box-mag-resto
 viamichelin.fr##.vm-box-mag.vm-box-mag-voyage
 viamichelin.fr##.vm-pub-homevign.h124
 video.genyoutube.net###advert
-add0n.com##div.content:nth-of-type(1) > table > tbody
-youdbox.com##iframe[src="about:blank"],iframe
-femmeactuelle.fr##.ratio-16-9 > div
+vidlox.tv###play_limit_box
+vodfilms.org##.myButton
+voir.dpstream.site###pub
+voirfilmsenstreaming.com##[href*="://linkredirect."]
+vustream.co##center:nth-of-type(2),center:nth-of-type(1),.myButton > .masha_index,.myButton
+waaw.tv###disqus_thread
 webmail1k.orange.fr##.sidebar-external-services
 webmarketing-com.com###norilsk_overlay_div_5374
-widget.business-lounge.fr##.eshop
-wp.superpages.com##.sponsoredLinks2
-www.easytutoriel.com##.aNtFGijmACfM-bg
-www.forum-des-portables-asus.fr##.uix_noticeInner
-www.gamestorrents.nu##.middle
-www.gktorrent.biz###lpqvca7
-www.google.com###prm-pt
-www.google.fr###footcnt
-www.google.fr##.gb_7d
-www.lefildentaire.com###back-lfd-pro-alert
-www.lefildentaire.com###lfd-pro-alert
-www.malekal.com###text-8
-www.malekal.com##.LRHqhwgCkDNa
-www.mega-p2p.net##[href="https://brave.com/meg327"]
-www.milesbooster.fr###detect-extension
-www.official-film-illimite.*,www.official-serie-illimite.*##.ads_728
-www.otaku-attitude.net##.donate-button.donate
-qwant.com###a_39,#c_223,#home__links,.extension_popin,.header__share-qwant--0.header__share-qwant,.header__textqwant.com,.home__snippet__extension--0.home__snippet__extension,.snippet,.trends--general
-www.responsinator.com##.jobAd
-www.revolvy.com###avntsPlayer0,#cookie_consent,#inline_0 .revolvyad_inner
-www.rtl.fr###modal-warning
-spin-off.fr###container_prospect
-star.fr##img[src^="/typo3conf/ext/sta_crmvad/Resources/Public/opacite.png"]
-www.tameteo.com###bannerDerPC
-www.tech-connect.info###ppsPopupBgOverlay
-www.tech-connect.info##.ppsPopupFbLikeShell.ppsPopupShell
-www.tfarjo.com##a[href*=".amazon."]
 whatismybrowser.com##.extra,.responsive.fun
+widget.business-lounge.fr##.eshop
+wiflix.net##.myButton,.sadst
+wiiztube.com##.pps-h-auto-px.pps-w-640-px.pps-no-border.pps-popup,.__b-popup1__.b-modal
+wiki.wikiserie.com###pub, .btn-share.rounded-0.btn-sm.btn, .d-sm-block.my-3,.mr-3
+wikiserie.co##.my-3.text-center,a[class*="mr-3"],.social-share
+wikiserie.ink###pub,[href="/streaming.html"],[href="/download.html"],center center
+wikiseriestreaming.com##.X
 windy.com###articles
+wp.superpages.com##.sponsoredLinks2
 yahoo.com###UMU,.ads
+youdbox.com##iframe[src="about:blank"],iframe
 zdnet.fr###zrlnqtos
 zebulon.fr###popup_name.popup_block
+zone-stream.club##a#yell60,.salidor_register_contbutton
+zone-stream.site##.banner,.but,#ads
+zonestream.fun###ads,.banner,floatLayer,floatLayer div,floatLayer span,[src="/close.png"]
+zustream.*##a.redzz.action-buttonzz,.wgsda,.gws_bx,#plyb,.nb-layout-1-outer.nb-bottom-outer.nb-notice-outer-wrap,.nb-plain-text-wrap,.nb-layout-1.nb-bottom.nb-notice-wrap
 ! </ end dom css rules >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
