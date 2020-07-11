@@ -46,8 +46,6 @@ wz.de##+js(aopr.js, jsABLoaded)
 zippyshare.com##+js(acis.js, String.fromCharCode, decodeURIComponent)
 zone-stream.club##+js(aopr.js, check)
 twitch.tv##+js(twitch-videoad.js)
-! Stop detecting focus found in < https://openwhyd.org/js/whydPlayer.js >
-openwhyd.org##+js(aopw.js, document.hasFocus, false)
 
 ! </ end dom inject rules >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
