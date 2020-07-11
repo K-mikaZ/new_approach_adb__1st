@@ -3,28 +3,28 @@
 ! Google concern
 ! ——————————————
 !#if google-analytics.com
-||google-analytics.*/cx/api.js$script,important,redirect-rule=google-analytics_cx_api.js
-||google-analytics.*/inpage_linkid.js$script,important,redirect-rule=google-analytics_inpage_linkid.js
-||google-analytics.*/analytics.js$script,important,redirect-rule=google-analytics_analytics.js
-||google-analytics.*/ga.js$script,important,redirect-rule=google-analytics_ga.js
+||google-analytics.*/cx/api.js$script,redirect-rule=google-analytics_cx_api.js
+||google-analytics.*/inpage_linkid.js$script,redirect-rule=google-analytics_inpage_linkid.js
+||google-analytics.*/analytics.js$script,redirect-rule=google-analytics_analytics.js
+||google-analytics.*/ga.js$script,redirect-rule=google-analytics_ga.js
 !#endif
 
 !#if googlesyndication.com
-||googlesyndication.*/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+||googlesyndication.*/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js
 ! Fix missing : pagead2.googlesyndication is not take over the rule `||googlesyndication.*/pagead/js/adsbygoogle.js` (script concern, not xhr)
-||pagead2.googlesyndication.*/pagead/js/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+||pagead2.googlesyndication.*/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js
 !#endif
 
 !#if googletagmanager.com
-||googletagmanager.*/gtm.js$script,important,redirect-rule=googletagmanager_gtm.js
+||*googletagmanager.*/gtm.js$script,redirect-rule=googletagmanager_gtm.js
 ! Fix missing : googletagservices.com/tag/js/gpt.js using googletagmanager.com/gtag/js?
 ! see < https://support.google.com/analytics/answer/1034342?hl=en#RelatedResources >
 ! see < https://developers.google.com/analytics/devguides/collection/gtagjs >
-||*googletagmanager.com/gtag/js*$script,important,redirect-rule=google-analytics_analytics.js
+||*googletagmanager.com/gtag/js*$script,redirect-rule=google-analytics_analytics.js
 !#endif
 
 !#if googletagservices.com
-||googletagservices.*/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
+||*googletagservices.*/gpt.js$script,redirect-rule=googletagservices_gpt.js
 !#endif
 
 ! others concern
