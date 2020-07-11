@@ -1,0 +1,18 @@
+!
+! Title: [⚙][tool][beta] "Practical tools list (for automation)" - by K-mik@Z
+! Version: 1
+! Expires: 7 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_practical_tools.txt
+! Description: A list for automation.
+!
+
+! require Nano Defender integration
+! < https://jspenguin2017.github.io/uBlockProtector/#extra-installation-steps-for-ublock-origin >
+
+
+! Automatically clicks the start button to start the scan
+! ———————————————————————————————————————————————————————
+cryptojackingtest.com##+js(nanop-click-elements-onready.js, #start_btn)
+
+!
