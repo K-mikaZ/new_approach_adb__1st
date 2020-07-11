@@ -3,74 +3,74 @@
 ! Google concern
 ! ——————————————
 !#if google-analytics.com
-||google-analytics.*/cx/api.js$script,important,redirect-rule=google-analytics_cx_api.js
-||google-analytics.*/inpage_linkid.js$script,important,redirect-rule=google-analytics_inpage_linkid.js
-||google-analytics.*/analytics.js$script,important,redirect-rule=google-analytics_analytics.js
-||google-analytics.*/ga.js$script,important,redirect-rule=google-analytics_ga.js
+||*google-analytics.*/cx/api.js$script,important,redirect-rule=google-analytics_cx_api.js
+||*google-analytics.*/inpage_linkid.js$script,important,redirect-rule=google-analytics_inpage_linkid.js
+||*google-analytics.*/analytics.js$script,important,redirect-rule=google-analytics_analytics.js
+||*google-analytics.*/ga.js$script,important,redirect-rule=google-analytics_ga.js
 !#endif
 
 !#if googlesyndication.com
-||googlesyndication.*/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+||*googlesyndication.*/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
 ! Fix missing : pagead2.googlesyndication is not take over the rule `||googlesyndication.*/pagead/js/adsbygoogle.js` (script concern, not xhr)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
+||*pagead2.googlesyndication.*/pagead/js/adsbygoogle.js$script,important,redirect-rule=googlesyndication_adsbygoogle.js
 !#endif
 
 !#if googletagmanager.com
-||googletagmanager.*/gtm.js$script,important,redirect-rule=googletagmanager_gtm.js
+||*googletagmanager.*/gtm.js$script,important,redirect-rule=googletagmanager_gtm.js
 ! Fix missing : googletagservices.com/tag/js/gpt.js using googletagmanager.com/gtag/js?
 ! see < https://support.google.com/analytics/answer/1034342?hl=en#RelatedResources >
 ! see < https://developers.google.com/analytics/devguides/collection/gtagjs >
-||googletagmanager.com/gtag/js$script,important,redirect-rule=google-analytics_analytics.js
+||*googletagmanager.*/gtag/js$script,important,redirect-rule=google-analytics_analytics.js
 !#endif
 
 !#if googletagservices.com
-||googletagservices.*/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
+||*googletagservices.*/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
 !#endif
 
 ! others concern
 ! ——————————————
 !#if addthis.com
-||addthis.*/addthis_widget.js$script,important,redirect-rule=addthis_widget.js
+||*addthis.*/addthis_widget.js$script,important,redirect-rule=addthis_widget.js
 !#endif
 
 !#if amazon-adsystem.com
-||amazon-adsystem.*/amzn_ads.js$script,important,redirect-rule=amazon_ads.js
-||amazon-adsystem.*/apstag.js$script,important,redirect-rule=amazon_apstag.js
+||*amazon-adsystem.*/amzn_ads.js$script,important,redirect-rule=amazon_ads.js
+||*amazon-adsystem.*/apstag.js$script,important,redirect-rule=amazon_apstag.js
 !#endif
 
 !#if ampproject.org
-||cdn.ampproject.org/v0.js$script,important,redirect-rule=ampproject_v0.js
+||*cdn.ampproject.org/v0.js$script,important,redirect-rule=ampproject_v0.js
 !#endif
 
 !#if chartbeat.com
-||static.chartbeat.com/js/chartbeat.js$script,important,redirect-rule=chartbeat.js
+||*static.chartbeat.com/js/chartbeat.js$script,important,redirect-rule=chartbeat.js
 !#endif
 
 !#if doubleclick.net
-||doubleclick.*/ad_status.js$script,important,redirect-rule=doubleclick_instream_ad_status.js
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
+||*doubleclick.*/ad_status.js$script,important,redirect-rule=doubleclick_instream_ad_status.js
+||*securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect-rule=googletagservices_gpt.js
 !#endif
 
 !#if ligatus.com
-||ligatus.*/angular-tag.js$script,important,redirect-rule=ligatus_angular-tag.js
+||*ligatus.*/angular-tag.js$script,important,redirect-rule=ligatus_angular-tag.js
 !#endif
 
 !#if outbrain.com
-||widgets.outbrain.*/outbrain.js$script,important,redirect-rule=outbrain-widget.js
+||*widgets.outbrain.*/outbrain.js$script,important,redirect-rule=outbrain-widget.js
 !#endif
 
 !#if smartadserver.com
-||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
+||*smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
 !#endif
 
 !#if scorecardresearch.com
-||scorecardresearch.*/beacon.js$script,important,redirect-rule=scorecardresearch_beacon.js
+||*scorecardresearch.*/beacon.js$script,important,redirect-rule=scorecardresearch_beacon.js
 !#endif
 
 !#if disqus.com
 # redirect rules only, not blocking here (see antisocial third-party)
-||disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
-||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
+||*disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
+||*disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
 
 !#if (yandex.ru|webvisor.org)
