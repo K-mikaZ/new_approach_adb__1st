@@ -1,8 +1,0 @@
-
-!
-
-! Automatically clicks the start button to start the scan
-! ———————————————————————————————————————————————————————
-cryptojackingtest.com##+js(nanop-click-elements-onready.js, #start_btn)
-
-!
