@@ -38,3 +38,38 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redire
 metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
 
+// TEST
+function _instanceof(e,r){return null!=r&&"undefined"!=typeof Symbol&&r[Symbol.hasInstance]?!!r[Symbol.hasInstance](e):e instanceof r}
+function _slicedToArray(e,r){return _arrayWithHoles(e)||_iterableToArrayLimit(e,r)||_nonIterableRest()}
+function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}
+function _iterableToArrayLimit(e,r){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e)){var t=[],n=!0,a=!1,i=void 0;try{for(var o,l=e[Symbol.iterator]();!(n=(o=l.next()).done)&&(t.push(o.value),!r||t.length!==r);n=!0);}catch(e){a=!0,i=e}finally{try{n||null==l.return||l.return()}finally{if(a)throw i}}return t}}
+function _arrayWithHoles(e){if(Array.isArray(e))return e}
+function parseHeaders(e){/*Cross browsers support*/var r;e=e.toString();var t,n,a,i,o,l=/^\/\/ @(\S+)(?:\s+(.*))?/,c={},s=e.split(/[\r\n]+/).filter(function(e,r,t){return e.match(l)});for(var u in s){var f;switch(t=(r=_slicedToArray(s[u].replace(/\s+$/,"").match(l),3))[1],o=r[2],t){case"licence":t="license"}i=(f=_slicedToArray(t.split(/:/).reverse(),2))[0],n=f[1],i&&(n?(c[n]||(c[n]=new Object),a=c[n]):a=c,a[i]?(_instanceof(a[i],Array)||(a[i]=new Array(a[i])),a[i].push(o||"")):a[i]=o||"")}return c.license&&(c.licence=c.license),c}
+var fileMETA=parseHeaders(function(){
+  // ==UserScript==
+  // @name         torrent9 magnets link correctif
+  // @namespace    http://tampermonkey.net/
+  // @version      0.1
+  // @description  try to take over the world!
+  // @author       K-mik@Z
+  // @include      *torrent9.*/*
+  // @include      *oxtorrent\.(me)/*
+  // @grant        none
+  // ==/UserScript==
+});
+!function __main__magnet_link_correctif(){
+  var a=document.querySelectorAll("a[href*='magnet:?']")[0],i=document.querySelectorAll("a[href*='magnet:?'] > i")[0],t=a.textContent,n=new RegExp(/Magnet/i),_ico_DL="fa-download",_ico_U="fa-magnet",_txt_magnet="\u00a0 Lien Magnet";
+  if(typeof btoa!=="function"){ //Cannot encode data to Base64 because the btoa() function is not supported
+    var _replace_button_=!function(){
+      if(_ico_DL==i.classList){i.classList.remove(_ico_DL);} //only if icon download
+      if(_ico_U!=i.classList){i.classList.add(_ico_U);} //only if not icon magnet
+      if(t!=n){a.innerHTML=a.innerHTML.replace(t,_txt_magnet);} //only if not text magnet
+    }();}else{ //Ref <https://base64.guru/developers/javascript/btoa>
+      _replace_button_=btoa(!function(){
+        if(_ico_DL==i.classList){i.classList.remove(_ico_DL);} //only if icon download
+        if(_ico_U!=i.classList){i.classList.add(_ico_U);} //only if not icon magnet
+        if(t!=n){a.innerHTML=a.innerHTML.replace(t,_txt_magnet);} //only if not text magnet
+      }());
+    }
+  _replace_button_;
+}();
