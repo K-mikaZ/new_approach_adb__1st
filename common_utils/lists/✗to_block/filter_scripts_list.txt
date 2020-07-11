@@ -14,12 +14,12 @@
 !#if *googletagmanager.com
 ![fix] for ensure blocking (because other lists)
 ||www.googletagmanager.com^$badfilter
-||googletagmanager.*/gtag/js?$script
+||*googletagmanager.*/gtag/js*$script
 *googletagmanager.*^$script
 !#endif
 
 !#if *googletagservices.com
-||googletagservices.com^$script
+||*googletagservices.*$script
 !#endif
 
 !#if *addthis.com
