@@ -7,8 +7,11 @@
 ! Description: A list for automation.
 !
 
-! require Nano Defender integration
+! require Nano resources integration
 ! < https://jspenguin2017.github.io/uBlockProtector/#extra-installation-steps-for-ublock-origin >
+
+! or install mine (that include Nano resources integration, and some others):
+! < https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/userResourcesLocation.txt >
 
 
 ! Automatically clicks the start button to start the scan
