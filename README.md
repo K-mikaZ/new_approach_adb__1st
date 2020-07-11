@@ -1,4 +1,6 @@
-INSTALL LIST:
+INSTALL LIST:  
+https://abp:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2Fxxcriticxx%2F.pl-host-file%2Fmaster%2Fhosts.txt&amp;title=.pl-host-file
+
 <br>- ["Rules, Filtering and exception list"](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2FKmZ_filters.txt)<br>- ["Rules, Filtering, exception list and no-chromecast"](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2FKmZ_filters_no-chromecast.txt)<br>- ["Rules, filtering, exception list and blocking antisocial third-party"](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2FKmZ_filters_with_antisocial_third-part.txt)<br>- ["Rules, filtering, exception, blocking antisocial third-party and no chromecast"](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2FKmZ_filters_no-chromecast_with_antisocial_third-part.txt) (full)<br><br>
 
 For non french people: [Go to english explanation.](#english)  
