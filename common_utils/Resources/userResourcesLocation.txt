@@ -23,6 +23,8 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
+
+! IN TEST (ADGUARD INTEGRATION)
 // ----------------------------------------------------------------------------------------------------------------- //
 
 // **
@@ -37,64 +39,4 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redire
 
 metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
-
-! IN TEST (ADGUARD INTEGRATION)
-! lists/💣danger_zone/resources_to_test.txt
-prevent-window-open application/javascript
-function preventWindowOpen(source) {
-  var match = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  var search = arguments.length > 2 ? arguments[2] : undefined;
-  var replacement = arguments.length > 3 ? arguments[3] : undefined;
-  // Default value of 'match' is needed to prevent all `window.open` calls
-  // if the scriptlet is used without parameters
-  var nativeOpen = window.open; // unary plus converts 'match' to a number
-  // e.g.: +'1' -> 1; +false -> 0
-
-  match = +match > 0;
-  search = search ? toRegExp(search) : toRegExp('/.?/'); // eslint-disable-next-line consistent-return
-
-  var openWrapper = function openWrapper(str) {
-    if (match !== search.test(str)) {
-      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        args[_key - 1] = arguments[_key];
-      }
-
-      return nativeOpen.apply(window, [str].concat(args));
-    }
-
-    hit(source);
-    var result; // defaults to return noopFunc instead of window.open
-
-    if (!replacement) {
-      result = noopFunc;
-    } else if (replacement === 'trueFunc') {
-      result = trueFunc;
-    } else if (replacement.indexOf('=') > -1) {
-      // We should return noopFunc instead of window.open
-      // but with some property if website checks it (examples 5, 6)
-      // https://github.com/AdguardTeam/Scriptlets/issues/71
-      var isProp = startsWith(replacement, '{') && endsWith(replacement, '}');
-
-      if (isProp) {
-        var propertyPart = replacement.slice(1, -1);
-        var propertyName = substringBefore(propertyPart, '=');
-        var propertyValue = substringAfter(propertyPart, '=');
-
-        if (propertyValue === 'noopFunc') {
-          result = function result() {
-            var resObj = {};
-            resObj[propertyName] = noopFunc;
-            return resObj;
-          };
-        }
-      }
-    }
-
-    return result;
-  };
-
-  window.open = openWrapper;
-}
-preventWindowOpen.names = ['prevent-window-open', 'window.open-defuser.js', 'ubo-window.open-defuser.js'];
-preventWindowOpen.injections = [toRegExp, startsWith, endsWith, substringBefore, substringAfter, hit, noopFunc, trueFunc];
 
