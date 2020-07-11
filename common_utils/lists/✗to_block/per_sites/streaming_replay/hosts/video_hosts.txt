@@ -1,0 +1,108 @@
+
+!
+! < start video hosts sites rules >
+
+!#if clipwatching.com
+@@||clipwatching.com$generichide
+!#endif
+
+@@*$generichide,domain=playtovid.com|vidtodo.com|vidtood.com|widtodo.com
+
+!
+!#if dood.watch
+|https://$image,3p,domain=dood.watch,badfilter
+!#endif
+!
+!#if gounlimited.to
+!#if (script && 1p)
+||gounlimited.to/js/pop.js|$script,important
+!#endif
+@@||gounlimited.to$generichide
+!#endif
+!
+!#if hollywood.to
+@@||hollywood.to$generichide
+!#endif
+!
+!#if uptostream.com
+!#if (script && 1p)
+/uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
+!#endif
+@@||uptostream.com$generichide
+!#endif
+!
+!#if vidoza.net
+!#if (image && 1p)
+/vidoza\.(.{2,})\/(.*)\/(a(db_logo|t{2}ention))\./$image,1p,important
+!#endif
+!#if (script && 1p)
+! [fix] for apply correct redirect-rule
+||vidoza.*/sw.js$script,important
+!#endif
+!#if (dom && 1p)
+vidoza.net##.simpleToast,#asg-push-frame3,.vjs-topbar
+!#endif
+@@||vidoza.net$generichide
+!#endif
+!
+!
+!#if vidtodo.com
+!#if websocket
+*.vidto*.*$websocket,important
+!#endif
+! A vérifier
+||play.s01.vidtod.me^$all,important
+||vidtodo.com/*/lightsout.js$script,important
+@@||*.vidtodo.com/*/*.mp4$media
+@@||vidtodo.com/*/jwplayer.js$script
+@@||vidtodo.com/css/main.css$stylesheet
+@@||vidtodo.com/js/jquery.cookie.js$script,domain=vidtod.me
+@@||vidtodo.com/js/jquery.min.js$script
+@@||vidtodo.com/js/xupload.js?v=2$script,domain=vidtod.me
+!#endif
+@@||vidtodo.com$generichide
+!#endif
+!
+!#if videobin.co
+@@||videobin.co$generichide
+!#endif
+!
+!#if vizplay.icu
+@@||vizplay.icu$generichide
+!#endif
+
+!#if playtovid.com
+!#if dom
+playtovid.com###lkfyb,#isah7vt,#container-2e454816c2f0b2e3aeed71e38edfb86377331
+!#endif
+!#endif
+
+! [fix] for apply correct redirect-rule
+@@||hqq.tv^$script,1p,badfilter
+@@||waaw.tv^$script,1p,badfilter
+@@||netu.tv^$script,1p,badfilter
+! PREFER set in "dynamic filtering"
+!    * hqq.tv * noop
+!    * netu.tv * noop
+!    * waaw.tv * noop
+!    hqq.tv * 3p-frame block
+!    hqq.tv * 3p-script block
+!    hqq.tv hqq.tv * allow
+!    netu.tv * 3p-frame block
+!    netu.tv * 3p-script block
+!    netu.tv netu.tv * allow
+!    no-cosmetic-filtering: hqq.tv true
+!    no-cosmetic-filtering: netu.tv true
+!    no-cosmetic-filtering: waaw.tv true
+!    no-popups: hqq.tv true
+!    no-popups: netu.tv true
+!    no-popups: waaw.tv true
+!    no-strict-blocking: hqq.tv true
+!    no-strict-blocking: netu.tv true
+!    no-strict-blocking: waaw.tv true
+!    waaw.tv * 3p-frame block
+!    waaw.tv * 3p-script block
+!    waaw.tv waaw.tv * allow
+
+! </ end video hosts sites sites rules >
+!
