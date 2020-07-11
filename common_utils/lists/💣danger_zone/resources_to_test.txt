@@ -1,0 +1,5 @@
+// /**
+//  * AdGuard Scriptlets
+//  * Version 1.2.5
+//  */
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js)
