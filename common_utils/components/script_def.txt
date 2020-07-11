@@ -1,3 +1,5 @@
+
+!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !
 ! Noop script
@@ -5,16 +7,14 @@
 ! ——————————————————————————————————————————————————————————————————————————————————
 
 !#if script
-!
+
 !#include nofab_def.txt
-!
 *$script,redirect-rule=noop.js
 
 !#if !1p
 *$script,3p,redirect-rule=noop.js
-!
 !#include script-spec_def.txt
-!
+!#include components/monkeybroker_def.txt
 !#endif
 
 !#endif
