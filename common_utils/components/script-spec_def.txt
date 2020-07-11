@@ -25,6 +25,7 @@
 
 !#if googletagservices.com
 ||*googletagservices.*/gpt.js$script,redirect-rule=googletagservices_gpt.js
+*googletagservices.*gpt.js$script,redirect-rule=googletagservices_gpt.js
 !#endif
 
 ! others concern
