@@ -7,7 +7,7 @@
 //  * @author K-mik@Z
 //  * Try to optimize loading fonts
 //  */
- 
+
 function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){return void n(e)}u.done?r(s):Promise.resolve(s).then(t,a)}function _asyncToGenerator(u){return function(){var e=this,c=arguments;return new Promise(function(r,n){function t(e){asyncGeneratorStep(o,r,n,t,a,"next",e)}function a(e){asyncGeneratorStep(o,r,n,t,a,"throw",e)}var o=u.apply(e,c);t(void 0)})}}var grab=function(){var r=_asyncToGenerator(regeneratorRuntime.mark(function e(r){var n,t;return regeneratorRuntime.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,fetch(r);case 2:if((n=e.sent).ok)return e.next=6,n.text();e.next=10;break;case 6:return t=e.sent,e.abrupt("return",t);case 10:console.log("HTTP-Error: "+n.status);case 11:case"end":return e.stop()}},e)}));return function(e){return r.apply(this,arguments)}}()();
 
 
@@ -19,7 +19,7 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // * for the licence, see source:  https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
 // * For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
 // */
- 
+
 grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
@@ -31,45 +31,10 @@ grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippe
 // * source metrika-yandex-tag:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
- 
+
 metrika-yandex-tag application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js)
 
 metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
 
-// TEST
-function _instanceof(e,r){return null!=r&&"undefined"!=typeof Symbol&&r[Symbol.hasInstance]?!!r[Symbol.hasInstance](e):e instanceof r}
-function _slicedToArray(e,r){return _arrayWithHoles(e)||_iterableToArrayLimit(e,r)||_nonIterableRest()}
-function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}
-function _iterableToArrayLimit(e,r){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e)){var t=[],n=!0,a=!1,i=void 0;try{for(var o,l=e[Symbol.iterator]();!(n=(o=l.next()).done)&&(t.push(o.value),!r||t.length!==r);n=!0);}catch(e){a=!0,i=e}finally{try{n||null==l.return||l.return()}finally{if(a)throw i}}return t}}
-function _arrayWithHoles(e){if(Array.isArray(e))return e}
-function parseHeaders(e){/*Cross browsers support*/var r;e=e.toString();var t,n,a,i,o,l=/^\/\/ @(\S+)(?:\s+(.*))?/,c={},s=e.split(/[\r\n]+/).filter(function(e,r,t){return e.match(l)});for(var u in s){var f;switch(t=(r=_slicedToArray(s[u].replace(/\s+$/,"").match(l),3))[1],o=r[2],t){case"licence":t="license"}i=(f=_slicedToArray(t.split(/:/).reverse(),2))[0],n=f[1],i&&(n?(c[n]||(c[n]=new Object),a=c[n]):a=c,a[i]?(_instanceof(a[i],Array)||(a[i]=new Array(a[i])),a[i].push(o||"")):a[i]=o||"")}return c.license&&(c.licence=c.license),c}
-var fileMETA=parseHeaders(function(){
-  // ==UserScript==
-  // @name         torrent9 magnets link correctif
-  // @namespace    http://tampermonkey.net/
-  // @version      0.1
-  // @description  try to take over the world!
-  // @author       K-mik@Z
-  // @include      *torrent9.*/*
-  // @include      *oxtorrent\.(me)/*
-  // @grant        none
-  // ==/UserScript==
-});
-!function __main__magnet_link_correctif(){
-  var a=document.querySelectorAll("a[href*='magnet:?']")[0],i=document.querySelectorAll("a[href*='magnet:?'] > i")[0],t=a.textContent,n=new RegExp(/Magnet/i),_ico_DL="fa-download",_ico_U="fa-magnet",_txt_magnet="\u00a0 Lien Magnet";
-  if(typeof btoa!=="function"){ //Cannot encode data to Base64 because the btoa() function is not supported
-    var _replace_button_=!function(){
-      if(_ico_DL==i.classList){i.classList.remove(_ico_DL);} //only if icon download
-      if(_ico_U!=i.classList){i.classList.add(_ico_U);} //only if not icon magnet
-      if(t!=n){a.innerHTML=a.innerHTML.replace(t,_txt_magnet);} //only if not text magnet
-    }();}else{ //Ref <https://base64.guru/developers/javascript/btoa>
-      _replace_button_=btoa(!function(){
-        if(_ico_DL==i.classList){i.classList.remove(_ico_DL);} //only if icon download
-        if(_ico_U!=i.classList){i.classList.add(_ico_U);} //only if not icon magnet
-        if(t!=n){a.innerHTML=a.innerHTML.replace(t,_txt_magnet);} //only if not text magnet
-      }());
-    }
-  _replace_button_;
-}();
