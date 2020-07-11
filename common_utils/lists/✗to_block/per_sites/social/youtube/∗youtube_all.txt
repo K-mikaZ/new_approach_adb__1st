@@ -15,6 +15,10 @@
 !
 !#if dom
 youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
+!#if music.youtube.com
+! try disable pause
+music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
+!#endif
 !#endif
 !#if (ping && 1p)
 *$ping,1p,important,domain=youtube.com
