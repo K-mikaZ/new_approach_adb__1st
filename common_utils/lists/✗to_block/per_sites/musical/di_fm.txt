@@ -1,9 +1,5 @@
 
 !#if di.fm
-!#if (xhr && !1p)
-! VAST player concern
-@@||doubleclick.$domain=di.fm
-!#endif
 !#if dom
 di.fm##a:if(:has-text(/premium|trial/i))
 di.fm##[class*="premium"],#sponsor-region,.adsbygoogle.sidebar-ad-component
