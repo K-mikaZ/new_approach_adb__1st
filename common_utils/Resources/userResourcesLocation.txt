@@ -37,3 +37,6 @@ grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redire
 
 metrika-yandex-watch application/javascript
 grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js)
+
+! lists/💣danger_zone/resources_to_test.txt
+grab(https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js)
