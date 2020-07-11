@@ -1,0 +1,3 @@
+
+||*monke*broker*$script,redirect-rule=monkeybroker.js
+||*monke*broker*$script,redirect=monkeybroker.js
