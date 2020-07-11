@@ -10,6 +10,40 @@
 !                                       < https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#subjectxpatharg >
 ! ------------------------------------------------------------------
 !
+
+!#if film01stream.*
+film01stream.*#?#span:-abp-contains(/ads/)
+film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
+!#endif
+!
+!#if skstream.ink
+skstream.ink##center:if(> center > a[href*="/Inscription" i])
+!#endif
+!
+!#if kykfilmserie.com
+kykfilmserie.com##div:if(> [href*=".php"])
+!#endif
+!
+!#if french-stream.*
+french-stream.*#?#div:-abp-has(> div > a[id*="yell[0-9]{1,}"])
+!#endif
+!
+!#if fr2.voirfilms.ch|series.dpstreaming.*
+fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
+!#endif
+!
+!#if voirseries.*
+voirseries.*##.homi:if([class*="masha_"])
+!#endif
+!
+!#if voiranime.com
+voiranime.com##div:if(> div > a[href*="/signup/"])
+voiranime.com##li:if(> span > a:has-text(/VIP\#/))
+voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
+voiranime.com##iframe:style(max-width:110vh!important)
+voiranime.com##a[href*="/signup/"],a[href*="://network.nutaku.net/"]
+!#endif
+!
 ! ---- Global -----
 ! < start global CSS rules >
 *##[class="adsbygoogle"]
