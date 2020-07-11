@@ -1,0 +1,9 @@
+!
+!#if openwhyd.org
+!#if dom
+openwhyd.org##.error
+! Stop detecting focus found in < https://openwhyd.org/js/whydPlayer.js >
+openwhyd.org##+js(aopw.js, document.hasFocus, false)
+!#endif
+!#endif
+!
