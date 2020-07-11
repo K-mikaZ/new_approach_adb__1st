@@ -5,7 +5,8 @@
 @@||doubleclick.$domain=di.fm
 !#endif
 !#if dom
-di.fm##.adsbygoogle.sidebar-ad-component
+di.fm##a:if(:has-text(/premium|trial/i))
+di.fm##[class*="premium"],#sponsor-region,.adsbygoogle.sidebar-ad-component
 ! [fix] di.fm page margin because suppressing ads!
 di.fm###page-wrap:style(bottom:6vh!important)
 ! [fix] try suppress message "Are You Still There?"
