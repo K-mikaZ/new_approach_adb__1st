@@ -1,9 +1,12 @@
-# Nouvelle approche pour les bloqueurs de publicités<br>et première fois proposé (par K-mik@Z)  
-<br>
+
 
 For non french people: [Go to english explanation.](#english)  
 
-```STATUS:    in progress...    |    en cours...```
+```STATUS:    in progress...    |    en cours...```  
+<br>
+
+# Nouvelle approche pour les bloqueurs de publicités<br>et première fois proposé (par K-mik@Z)  
+<br>
 
 ## [FRANÇAIS](#français)  
 <details>
