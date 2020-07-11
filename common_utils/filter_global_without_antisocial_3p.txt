@@ -1,6 +1,3 @@
-!
-!#include lists/to_block.txt
-!
 
 !
 ! THEN, INCLUDE RULES!
@@ -11,4 +8,8 @@
 
 !
 !#include rules_def.txt
+!
+
+!
+!#include lists/to_block.txt
 !
