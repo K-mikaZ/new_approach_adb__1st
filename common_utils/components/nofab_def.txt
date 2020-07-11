@@ -19,12 +19,11 @@
 ||*/blockadblock.$script,important,redirect-rule=nofab.js
 ||*/sniffadblock.$script,important,redirect-rule=nofab.js
 ! [fix]try for unrecognized
-||*/fuckadb*$script,important,redirect=nofab.js
-||*/blockadb*$script,important,redirect=nofab.js
-||*/sniffadb*$script,important,redirect=nofab.js
+||*/fuckadb*.js$script,important,redirect=nofab.js
+||*/blockadb*.js$script,important,redirect=nofab.js
+||*/sniffadb*.js$script,important,redirect=nofab.js
 ! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
-*adblock*$script,important,redirect=nofab.js
 *hqq.tv/js/adv/fuckadblock.*?$script,important,redirect=nofab.js
 
 !
