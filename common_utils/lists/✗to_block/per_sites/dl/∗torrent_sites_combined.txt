@@ -2,8 +2,8 @@
 !
 ! torrent sites
 !
-*$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe
-@@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe
+*$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
+@@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 
 !#if yggtorrent.*
 !#if dom
