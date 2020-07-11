@@ -213,7 +213,6 @@ official-film-illimite.co###cookiedata
 onvid.host##.video_batman
 onvid.icu###rkm,body div:nth-of-type(6),body div:nth-of-type(7)
 oomoviz.com##.download.get
-openwhyd.org##.error
 ouakari.com###WebForm1
 skstream.ink##div[class="responsive-ad"]
 streaming-planet.net##[href^="/friend.php"]
@@ -249,7 +248,6 @@ site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-l
 socialmedia-max.com###vc_widget
 sokrostream.tv##.container.section div:nth-of-type(2),.global-background div,.top-padding-fix.column:nth-of-type(1) div:nth-of-type(1),.top-right.toasted-container
 sordum.org##.sbar_social_div
-soundcloud.com##.dashbox,.m-promotion
 sourceforge.net##.sidebar-widget.jobs-widget
 startpage.com###sponsored
 stream-complet.bz##.c-lefermeur,.voir-b,[src*="*/assets/images/voir-b.png"]
