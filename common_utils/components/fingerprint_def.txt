@@ -1,2 +1,2 @@
 ||*/fp2.js$script,redirect-rule=fingerprint2.js
-||*fingerprint2.js$script,redirect-rule=fingerprint2.js
+||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
