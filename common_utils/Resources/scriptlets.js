@@ -32,7 +32,7 @@ grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippe
 grab(https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js)
 
 
-! IN TEST (ADGUARD INTEGRATION)
+//! IN TEST (ADGUARD INTEGRATION)
 // ----------------------------------------------------------------------------------------------------------------- //
 
 // **
