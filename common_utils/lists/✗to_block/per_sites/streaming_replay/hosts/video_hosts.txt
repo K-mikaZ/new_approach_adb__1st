@@ -2,7 +2,7 @@
 !
 ! < start video hosts sites rules >
 
-@@*$generichide,domain=clipwatching.com|playtovid.com|vidtodo.com|vidtood.com|widtodo.com
+@@*$generichide,domain=clipwatching.com|gounlimited.to|hollywood.to|playtovid.com|uptostream.com|videobin.co|vidoza.net|vidtodo.com|vidtood.com|vizplay.icu|widtodo.com|hqq.tv|waaw.tv|netu.tv
 
 !#if dood.watch
 |https://$image,3p,domain=dood.watch,badfilter
@@ -21,18 +21,12 @@ feurl.com##+js(aopr.js, linkjs)
 !#if (script && 1p)
 ||gounlimited.to/js/pop.js|$script,important
 !#endif
-@@||gounlimited.to$generichide
 !#endif
 
-!#if hollywood.to
-@@||hollywood.to$generichide
-!#endif
-!
 !#if uptostream.com
 !#if (script && 1p)
 /uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
 !#endif
-@@||uptostream.com$generichide
 !#endif
 
 !#if vidoza.net
@@ -46,7 +40,6 @@ feurl.com##+js(aopr.js, linkjs)
 !#if (dom && 1p)
 vidoza.net##.simpleToast,#asg-push-frame3,.vjs-topbar
 !#endif
-@@||vidoza.net$generichide
 !#endif
 
 !#if vidtodo.com
@@ -63,15 +56,14 @@ vidoza.net##.simpleToast,#asg-push-frame3,.vjs-topbar
 @@||vidtodo.com/js/jquery.min.js$script
 @@||vidtodo.com/js/xupload.js?v=2$script,domain=vidtod.me
 !#endif
-@@||vidtodo.com$generichide
 !#endif
 
-!#if videobin.co
-@@||videobin.co$generichide
-!#endif
-
+/video.counters.js$badfilter
 !#if vizplay.icu
-@@||vizplay.icu$generichide
+!#if dom
+! see < https://vizplay.icu/js/video.counters.js >
+vizplay.icu##+js(aopr.js, Image)
+!#endif
 !#endif
 
 !#if playtovid.com
