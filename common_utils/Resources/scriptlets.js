@@ -22,14 +22,14 @@ grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scrip
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js.map
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts")
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js")
-// # sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
+//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
-//metrika-yandex-tag application/javascript
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
-//metrika-yandex-watch application/javascript
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
+metrika-yandex-tag application/javascript
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
+metrika-yandex-watch application/javascript
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
