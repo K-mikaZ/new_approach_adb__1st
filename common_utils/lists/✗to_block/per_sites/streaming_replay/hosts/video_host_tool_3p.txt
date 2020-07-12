@@ -1,0 +1,7 @@
+
+!#if fmax.xyz
+||fmax.xyz^$badfilter
+!#if dom
+fmax.xyz##+js(aopr.js, __Y)
+!#endif
+!#endif
