@@ -6569,11 +6569,18 @@ function noopFunc() {};
     
 })({"name":"metrika-yandex-watch","args":[]}, []);
 
+
+
+// ! VMAP -VPAID -VAST concern
+
+noopvmap-1.0 text/xml
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>
+
 noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
 noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
-noopvmap-1.0 text/xml
-<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>
+noopvast-4.0 text/xml
+<VAST version="4.0"></VAST>
