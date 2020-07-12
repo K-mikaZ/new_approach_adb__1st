@@ -17,7 +17,7 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // * for the licence, see source:  https://github.com/uBlock-user/uBO-Personal-Filters
 // */
 
-grab(https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js)
+//grab(https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js)
 
 
 // ----------------------------------------------------------------------------------------------------------------- //
