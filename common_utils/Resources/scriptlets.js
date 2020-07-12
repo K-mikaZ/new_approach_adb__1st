@@ -19,12 +19,12 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // Utils
 grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts")
 grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
-//# sourceMappingURL=scriptlets.js.map
+//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js.map
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts")
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js")
-// # sourceMappingURL=scriptletsCjs.js.map
+// # sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map
 grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
-//# sourceMappingURL=redirects.js.map
+//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
 //metrika-yandex-tag application/javascript
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
