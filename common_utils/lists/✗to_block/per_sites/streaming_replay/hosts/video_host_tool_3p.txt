@@ -1,7 +1,19 @@
+!
+
+! VAST - VPAID - VMAP ... concern
+! --------------------------------
+
+/player/plugins/vast-*.js$script,badfilter
+
+!#if plified.pro
+||plified.pro$xhr,redirect=noopvast-3.0
+!#endif
 
 !#if fmax.xyz
 ||fmax.xyz^$badfilter
+! breaks too many videos otherwise, prefer:
 !#if dom
+! see < https://a9.fmax.xyz/scripts/in/2020/dev/ops >
 fmax.xyz##+js(aopr.js, __Y)
 !#endif
 !#endif
