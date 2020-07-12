@@ -13,23 +13,23 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // ----------------------------------------------------------------------------------------------------------------- //
 
 // /**
+// * uBlock-user's scriptlet
+// * for the licence, see source:  https://github.com/uBlock-user/uBO-Personal-Filters
+// */
+
+grab(https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js)
+
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// /**
 // * Nano Core 2 - An adblocker
 // * Copyright (C) 2018-2019  Nano Core 2 contributors
 // * for the licence, see source:  https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
 // * For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
 // */
 
-grab("https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js")
-
-
-// ----------------------------------------------------------------------------------------------------------------- //
-
-// /**
-// * uBlock-user's scriptlet
-// * for the licence, see source:  https://github.com/uBlock-user/uBO-Personal-Filters
-// */
-
-grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js")
+grab(https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js)
 
 
 //! IN TEST (ADGUARD INTEGRATION)
@@ -43,10 +43,10 @@ grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/script
 // */
 
 metrika-yandex-tag application/javascript
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
 
 metrika-yandex-watch application/javascript
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
 
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
