@@ -42,11 +42,11 @@ grab("https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snipp
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
 
-metrika-yandex-tag application/javascript
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
+//metrika-yandex-tag application/javascript
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
 
-metrika-yandex-watch application/javascript
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
+//metrika-yandex-watch application/javascript
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
 
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
