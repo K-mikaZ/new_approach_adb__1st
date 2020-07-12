@@ -49,16 +49,6 @@ grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/script
 // * source metrika-yandex-tag:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-tag.js
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
-// Utils
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts");
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js");
-//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js.map
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts");
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js");
-//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js");
-//# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
-// redirect-rule
 //let metrika_yandex_tag_script = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js");
 //let metrika_yandex_watch_script = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js");
 metrika-yandex-tag application/javascript
