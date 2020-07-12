@@ -17,8 +17,8 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
 // Utils
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts")
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
 // redirect-rule
 metrika-yandex-tag application/javascript
