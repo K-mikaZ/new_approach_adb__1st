@@ -27,8 +27,10 @@ grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redir
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
 metrika-yandex-tag application/javascript
+metrika-yandex-tag
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
 metrika-yandex-watch application/javascript
+metrika-yandex-watch
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
 
 // ----------------------------------------------------------------------------------------------------------------- //
