@@ -26,9 +26,9 @@ grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scrip
 grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
-//metrika-yandex-tag application/javascript
+metrika-yandex-tag application/javascript
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
-//metrika-yandex-watch application/javascript
+metrika-yandex-watch application/javascript
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
 
 // ----------------------------------------------------------------------------------------------------------------- //
