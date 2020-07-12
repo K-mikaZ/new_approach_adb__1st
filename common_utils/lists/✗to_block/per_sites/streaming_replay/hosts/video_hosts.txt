@@ -12,7 +12,9 @@
 ! [fix] some videos can't load if blocking
 *$script,3p,domain=feurl.com,badfilter
 ||feurl.com/asset/barr.js$badfilter
+!#if dom
 feurl.com##+js(aopr.js, linkjs)
+!#endif
 !#endif
 
 !#if gounlimited.to
