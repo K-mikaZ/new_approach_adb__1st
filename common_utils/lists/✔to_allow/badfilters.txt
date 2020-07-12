@@ -10,21 +10,25 @@
 ! < start badfilters >
 
 !#if dom
-*#@#.ytp-pause-overlay
-*#@#.ad-alert-wrapper
+#@#+js(acis, atob, decodeURIComponent)
+#@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
+yggtorrent.*,voirseries.*#@#+js(nobab)
+gounlimited.to#@#+js(nowebrtc)
+voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
+motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
 torrent9.*#@#.download-btn + .download-btn a
 vidoza.org#@#.btn-social
 voirseries.*#@#.share-group
 searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
-#@#+js(acis, atob, decodeURIComponent)
 #@#.qc-cmp-ui-container.qc-cmp-showing,.qc-cmp-ui-container,.qc-cmp-persistent-link
-#@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
-yggtorrent.*,voirseries.*#@#+js(nobab)
-gounlimited.to#@#+js(nowebrtc)
-voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
-motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
+*#@#.ytp-pause-overlay
+*#@#.ad-alert-wrapper
+! cause too many recaptcha
+#@##cookie-alert
+! break video player site lequipe.fr
+#@#.np_DialogConsent
 !#endif
 
 !#if !dom
