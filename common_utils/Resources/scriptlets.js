@@ -17,19 +17,19 @@ function asyncGeneratorStep(e,r,n,t,a,o,c){try{var u=e[o](c),s=u.value}catch(e){
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
 // Utils
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts")
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/types/scriptlets.d.ts");
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js");
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js.map
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts")
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptlets.d.ts");
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js");
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js.map
-//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
+//grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js");
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
 metrika-yandex-tag application/javascript
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js");
 metrika-yandex-watch application/javascript
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js");
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
@@ -39,7 +39,7 @@ grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redir
 // * for the licence, see source:  https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
 // * For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
 // */
-grab("https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js")
+grab("https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snippets.js");
 
 
 // ----------------------------------------------------------------------------------------------------------------- //
@@ -48,5 +48,5 @@ grab("https://raw.githubusercontent.com/NanoAdblocker/NanoCore2/master/src/snipp
 // * uBlock-user's scriptlet
 // * for the licence, see source:  https://github.com/uBlock-user/uBO-Personal-Filters
 // */
-grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js")
+grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js");
 
