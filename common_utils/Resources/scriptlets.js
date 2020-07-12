@@ -42,7 +42,8 @@ grab("https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/script
 // * source metrika-yandex-watch:  https://github.com/AdguardTeam/Scriptlets/blob/master/dist/redirect-files/metrika-yandex-watch.js
 // */
 
-grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/cjs/scriptletsCjs.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js")
+grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scriptlets.js")
 //metrika-yandex-tag application/javascript
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js")
 
