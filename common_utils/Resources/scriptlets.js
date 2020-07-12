@@ -6569,5 +6569,11 @@ function noopFunc() {};
     
 })({"name":"metrika-yandex-watch","args":[]}, []);
 
-noopvmap-1.0 text/xml;base64
-PHZtYXA6Vk1BUCB4bWxuczp2bWFwPSJodHRwOi8vd3d3LmlhYi5uZXQvdmlkZW9zdWl0ZS92bWFwIiB2ZXJzaW9uPSIxLjAiPjwvdm1hcDpWTUFQPg==
+noopvast-2.0 text/xml
+<VAST version="2.0"></VAST>
+
+noopvast-3.0 text/xml
+<VAST version="3.0"></VAST>
+
+noopvmap-1.0 text/xml
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>
