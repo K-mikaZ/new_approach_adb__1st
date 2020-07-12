@@ -6568,3 +6568,6 @@ function noopFunc() {};
         metrikaYandexWatch.apply(this, updatedArgs);
     
 })({"name":"metrika-yandex-watch","args":[]}, []);
+
+noopvmap-1.0 text/xml;base64
+PHZtYXA6Vk1BUCB4bWxuczp2bWFwPSJodHRwOi8vd3d3LmlhYi5uZXQvdmlkZW9zdWl0ZS92bWFwIiB2ZXJzaW9uPSIxLjAiPjwvdm1hcDpWTUFQPg==
