@@ -26,10 +26,12 @@ grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/scrip
 //grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js");
 //# sourceMappingURL=https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirects.js.map
 // redirect-rule
+let metrika_yandex_tag_script = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js");
+let metrika_yandex_watch_script = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js");
 metrika-yandex-tag application/javascript
-metrika-yandex-tag = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-tag.js");
+metrika_yandex_tag_script;
 metrika-yandex-watch application/javascript
-metrika-yandex-watch = grab("https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/dist/redirect-files/metrika-yandex-watch.js");
+metrika_yandex_watch_script;
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
