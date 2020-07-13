@@ -6,6 +6,7 @@
 
 ! break too many videos
 /player/plugins/vast-*.js$script,badfilter
+||p.jwpcdn.com/player/plugins/vast/$badfilter
 
 ! prefer redirect-rule=noopvast-*, rather than blocking
 
