@@ -25,7 +25,7 @@ music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !/youtu(be)?\.(.{2,})(.*\/)?(api\/stats\/qoe)(.*)/$ping,important
 !#endif
 !#if (script && 1p)
-/youtu(be)?\.(.{2,})(.*\/)?(sw|miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
+/youtu(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
 !#endif
 !#if (script && !1p)
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
