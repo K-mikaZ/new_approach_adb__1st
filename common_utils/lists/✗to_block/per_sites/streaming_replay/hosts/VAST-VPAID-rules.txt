@@ -5,7 +5,7 @@
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
 
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
-||*doubleclick.*/gampad/live/ads*$xhr,redirect-rule=noopvast-4.0
+||*doubleclick.*/gampad/live/ads*$xhr,redirect=noopvast-4.0
 
 ! break too many videos
 /player/plugins/vast-*.js$script,badfilter
