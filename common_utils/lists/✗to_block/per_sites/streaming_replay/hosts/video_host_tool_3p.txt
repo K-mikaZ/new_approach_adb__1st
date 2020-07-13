@@ -1,13 +1,3 @@
-!
-
-! VAST - VPAID - VMAP ... concern
-! --------------------------------
-
-/player/plugins/vast-*.js$script,badfilter
-
-!#if plified.pro
-||plified.pro$xhr,redirect=noopvast-3.0
-!#endif
 
 !#if fmax.xyz
 ||fmax.xyz^$badfilter
