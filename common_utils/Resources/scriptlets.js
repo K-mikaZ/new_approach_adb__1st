@@ -20,7 +20,8 @@
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
-// For redirectable resources, see: https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
+// source:   https://github.com/NanoAdblocker/NanoCore2/blob/master/src/snippets.js
+// For redirectable resources, see:   https://github.com/NanoAdblocker/NanoCore2/tree/master/src/war
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
@@ -1478,9 +1479,9 @@ function noopFunc() {};
 
 
 
-// /**
-//  * VMAP -VPAID -VAST concern
-//  **/
+/**
+ * VMAP -VPAID -VAST concern
+ **/
 noopvmap-1.0 text/xml
 <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>
 
