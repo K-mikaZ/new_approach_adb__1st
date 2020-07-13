@@ -14,3 +14,12 @@
 
 ! plified.pro is VAST on hds.lc context hdslecteur.xyz
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
+
+||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
+||spotscenered.info$xhr,redirect-rule=noopvast-2.0
+
+||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
+||vidalak.com/api/vpaid?$xhr,redirect-rule=noopvast-3.0
+||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
+||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
+||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
