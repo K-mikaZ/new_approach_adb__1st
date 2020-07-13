@@ -4,7 +4,7 @@
 ! --------------------------------------------------------------
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
 
-!#if doubleclick.*
+!#if doubleclick.
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||*doubleclick.*/gampad/live/ads*$xhr,redirect-rule=noopvast-4.0
 !#endif
