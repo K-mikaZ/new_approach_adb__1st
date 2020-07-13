@@ -6,6 +6,7 @@
 
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||*doubleclick.*/gampad/live/ads*$xhr,important,redirect-rule=noopvast-4.0
+||*doubleclick.*/gampad/live/ads*$xhr,important
 
 ! break too many videos
 /player/plugins/vast-*.js$script,badfilter
