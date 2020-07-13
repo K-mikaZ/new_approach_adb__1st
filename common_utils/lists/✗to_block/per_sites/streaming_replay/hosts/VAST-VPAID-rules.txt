@@ -4,24 +4,30 @@
 ! --------------------------------------------------------------
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
 
+! break too many videos
+/player/plugins/vast-*.js$script,badfilter
+
+! prefer redirect-rule=noopvast-*, rather than blocking
+
+! VAST version 1
+||moviesprofit.com/watch.xml$xhr,redirect-rule=noopvast-1.0
+
+! VAST version 2
+||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
+||spotscenered.info$xhr,redirect-rule=noopvast-2.0
+
+! VAST version 3
+||plified.pro$xhr,redirect-rule=noopvast-3.0
+||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
+||vidalak.com/api/vpaid?$xhr,redirect-rule=noopvast-3.0
+||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
+||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
+||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
+
+! VAST version 4
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||*doubleclick.*/gampad/live/ads*$xhr,important,redirect-rule=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important,redirect=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important
 ! [fix] animedigitalnetwork.fr doesn't apply otherwise
 ||pubads.g.doubleclick.net/gampad/ads$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
-
-! break too many videos
-/player/plugins/vast-*.js$script,badfilter
-
-! plified.pro is VAST on hds.lc context hdslecteur.xyz
-||plified.pro$xhr,redirect-rule=noopvast-3.0
-
-||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
-||spotscenered.info$xhr,redirect-rule=noopvast-2.0
-
-||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
-||vidalak.com/api/vpaid?$xhr,redirect-rule=noopvast-3.0
-||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
-||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
-||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
