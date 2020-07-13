@@ -10,3 +10,4 @@
 !#include components/beacon_def.txt
 !#include components/media_def.txt
 !#include components/fingerprint_def.txt
+!#include components/vast_vpaid_def.txt
