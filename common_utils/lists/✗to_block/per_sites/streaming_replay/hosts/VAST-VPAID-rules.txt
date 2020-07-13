@@ -7,6 +7,8 @@
 ! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
 /player/plugins/vast-*.js$script,badfilter
 ||p.jwpcdn.com/player/plugins/vast/$badfilter
+! < https://developers.google.com/interactive-media-ads >
+||imasdk.googleapis.com$badfilter
 
 ! VAST version 1
 ! -----------------
