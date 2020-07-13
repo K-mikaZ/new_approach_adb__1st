@@ -1,9 +1,5 @@
 
 !
-!#include lists/to_block.txt
-!
-
-!
 ! THEN, INCLUDE RULES!   (IMPORTANT: Placed after the filters)
 ! It is not a list of filters but only a module.
 ! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
@@ -13,3 +9,8 @@
 !
 !#include rules_def.txt
 !
+
+!
+!#include lists/to_block.txt
+!
+
