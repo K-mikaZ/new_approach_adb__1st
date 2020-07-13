@@ -1,16 +1,14 @@
 
 
-!#if fstats.xyz
+! try to unbreak the world!
+
 ! break too many videos
 ! see < https://v3.fstats.xyz/watch >
 ||v3.fstats.xyz^$badfilter
 ||fstats.xyz^$3p,badfilter
-!#endif
-
-!#if feurl.com
-! break too many videos
 *$xmlhttprequest,3p,domain=feurl.com,badfilter
-!#endif
+*$xmlhttprequest,3p,domain=core1player.com,badfilter
+*$script,3p,domain=core1player.com,badfilter
 
 !#if inpagepush.com
 ||inpagepush.com^$important,badfilter
@@ -21,8 +19,9 @@ inpagepush.com##+js(aopr.js, $)
 
 !#if (hdslecteur.xyz && dom)
 hdslecteur.xyz##+js(aopr.js, this.iframe)
-hdslecteur.xyz##+js(aopr.js, _0x4057)
-hdslecteur.xyz##+js(aopr.js, _0x5751)
+hdslecteur.xyz##+js(aopr.js, /\_0x*/)
+!hdslecteur.xyz##+js(aopr.js, _0x5751)
+!hdslecteur.xyz##+js(aopr.js, _0x5f22)
 hdslecteur.xyz###lkm6j,#z7wsgp3
 !#endif
 
