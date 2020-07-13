@@ -6,10 +6,5 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
 !
-!#if *://*
-!
 !#include common_utils/filter_global_without_antisocial_3p.txt
-!
 !#include common_utils/allowing.txt
-!
-!#endif
