@@ -2352,6 +2352,7 @@ declare module 'scriptlets' {
     preventFab.names = ['prevent-fab-3.2.0', 'nofab.js', 'ubo-nofab.js', 'fuckadblock.js-3.2.0', 'ubo-fuckadblock.js-3.2.0'];
     preventFab.injections = [hit, noopFunc, noopThis];
 
+    set-popads-dummy application/javascript
     /* eslint-disable no-console, func-names, no-multi-assign */
     /**
      * @scriptlet set-popads-dummy
@@ -2367,7 +2368,7 @@ declare module 'scriptlets' {
      * example.org#%#//scriptlet('set-popads-dummy')
      * ```
      */
-    set-popads-dummy application/javascript
+
     function setPopadsDummy(source) {
       delete window.PopAds;
       delete window.popns;
