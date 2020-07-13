@@ -9,6 +9,7 @@
 ||p.jwpcdn.com/player/plugins/vast/$badfilter
 ! < https://developers.google.com/interactive-media-ads >
 ||imasdk.googleapis.com$badfilter
+@@*$script,domain=streamz.vg,badfilter
 
 ! VAST version 1
 ! -----------------
@@ -27,6 +28,9 @@
 ||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
 ||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
 ||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
+||fiorenetwork.com^$3p,badfilter
+||fiorenetwork.com$xhr,important
+||fiorenetwork.com$xhr,redirect-rule=noopvast-3.0
 
 ! VAST version 4
 ! -----------------
