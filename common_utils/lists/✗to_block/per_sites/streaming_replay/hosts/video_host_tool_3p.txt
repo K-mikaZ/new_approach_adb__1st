@@ -1,4 +1,34 @@
 
+
+!#if fstats.xyz
+! break too many videos
+! see < https://v3.fstats.xyz/watch >
+||v3.fstats.xyz^$badfilter
+||fstats.xyz^$3p,badfilter
+!#endif
+
+!#if feurl.com
+! break too many videos
+*$xmlhttprequest,3p,domain=feurl.com,badfilter
+!#endif
+
+!#if inpagepush.com
+||inpagepush.com^$important,badfilter
+!#if dom
+inpagepush.com##+js(aopr.js, $)
+!#endif
+!#endif
+
+!#if (hdslecteur.xyz && dom)
+hdslecteur.xyz##+js(aopr.js, this.iframe)
+hdslecteur.xyz##+js(aopr.js, _0x4057)
+hdslecteur.xyz##+js(aopr.js, _0x5751)
+!#endif
+
+!#if (bs0wvimoy99r.com && dom)
+bs0wvimoy99r.com##+js(popads-dummy.js)
+!#endif
+
 !#if fmax.xyz
 ||fmax.xyz^$badfilter
 ! breaks too many videos otherwise, prefer:
