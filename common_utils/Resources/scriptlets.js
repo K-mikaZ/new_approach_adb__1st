@@ -2367,7 +2367,7 @@ declare module 'scriptlets' {
      * example.org#%#//scriptlet('set-popads-dummy')
      * ```
      */
-
+    set-popads-dummy application/javascript
     function setPopadsDummy(source) {
       delete window.PopAds;
       delete window.popns;
