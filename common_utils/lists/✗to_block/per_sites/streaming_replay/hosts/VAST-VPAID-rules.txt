@@ -8,6 +8,8 @@
 ||*doubleclick.*/gampad/live/ads*$xhr,important,redirect-rule=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important,redirect=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important
+! [fix] animedigitalnetwork.fr doesn't apply otherwise
+||pubads.g.doubleclick.net/gampad/ads$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
 
 ! break too many videos
 /player/plugins/vast-*.js$script,badfilter
