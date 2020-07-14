@@ -6,8 +6,7 @@
 !#include components/xhr_def.txt
 !#include components/subdocument_def.txt
 !#include components/object-subrequest_def.txt
-!#include components/websocket_def.txt
+!!#include components/websocket_def.txt
 !#include components/beacon_def.txt
 !#include components/media_def.txt
 !#include components/fingerprint_def.txt
-!#include lists/✗to_block/per_sites/streaming_replay/hosts/VAST-VPAID-rules.txt
