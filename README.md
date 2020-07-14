@@ -25,7 +25,7 @@
   J'ai voulu proposer (sur un [site connu de la communauté](https://github.com/collinbarrett/FilterLists)) une simple liste (non pas de blocage, mais de [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatique), pour aider au *noop\** de tous les filtres de blocages (déjà présent dans votre bloqueur de pubs, mais aussi à venir) et qui utilisais pour cela des conditions ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ).
 ###### *\*noop: pour les non-initiés, équivalent à une réponse vide*.
 Mais je n'ai pas rencontrer un franc succès (non pas au niveau de l'hébergeur de listes lui-même, mais plus auprès de la team ublock-origin), [voyez par vous même](https://github.com/collinbarrett/FilterLists/issues/1731). Ma démarche à été critiquée, voire raillée.<br><br>
-Je n'ai jamais demandé de retoucher leurs codes. J'ai juste proposée une liste pour savoir qu'il suffisait d'installer ou non.
+Je n'ai jamais demandé de retoucher leurs codes, alors pourquoi tant d'hostilité. J'ai juste proposé une liste qu'il suffisait d'installer ou non.
 
 > La règle de redirection n'est pas d'accélérer le navigateur. Elle est utilisée pour réparer les cassures, anti-adblock et faciliter la rédaction de la liste.
 
@@ -62,7 +62,7 @@ Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/Fi
   I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but automatic [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule)), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
 ###### *\*noop: for the uninitiated, equivalent to an empty response*.
 But I did not meet a great success (not at the level of the list host itself, but more with the ublock-origin team), [see for yourself](https://github.com/collinbarrett/FilterLists/issues/1731). My approach has been criticized, even mocked.<br><br>
-I never asked to touch up their codes. I just proposed a list to know that it was enough to install or not.
+I never asked to touch up their codes, so why so much hostility. I just proposed a list whether to install or not.
 
 > The redirect rule is not to speed up the browser. It is used to repair breaks, anti-adblock and to facilitate the drafting of the list.
 
