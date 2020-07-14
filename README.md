@@ -33,7 +33,7 @@ OK, alors pourquoi ne pas l'automatisée pour qu'elle s'applique par elle-même 
 
 > Je ne pense pas que fournir une réponse sera plus rapide que d'annuler simplement une demande de réseau.
 
-Supposition. En effet, dans de nombreux langages informatiques, une réponse (même vide) vaut toujours mieux que pas de réponse. Cela évite de nombreuses erreurs (ou le non-retour de réponse, si attendue).
+Supposition. En effet, dans de nombreux langages informatiques, une réponse (même vide) vaut toujours mieux que pas de réponse. Cela évite de nombreuses erreurs (ou le non-retour de réponse, si attendue).<br><br>Et dans notre cas, bien souvent, `pas de réponse` = `bloqueurs` = `message "veuillez désactiver votre bloqueur de pubs"`
 
   ```STATUS: en cours d'écriture...```
 
@@ -44,7 +44,7 @@ Supposition. En effet, dans de nombreux langages informatiques, une réponse (m�
   Directives de pré-processeur pour les filtres:<br>J'ai décidé d'utiliser (tant que faire ce peut), les conditions ( !#if ) en partant de cet remarque:
 > Les conditions prennent en charge tous les opérateurs logiques de base. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br>Bah oui quoi! L'addon saurait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions.<br>Essayez pour voir si `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas!<br>Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
+Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br><br>Bah oui quoi! L'addon saurait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions.<br>Essayez pour voir si `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas!<br>Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
 
 </details>  
 <br>  
@@ -70,7 +70,7 @@ OK, so why not automate it so that it applies by itself (easier to write filters
 
 > I don't think that providing a response will be faster than simply canceling a network request.
 
-Assumption. Indeed, in many computer languages, a response (even empty) is always better than no response. This avoids many errors (or non-return of response, if expected).
+Assumption. Indeed, in many computer languages, a response (even empty) is always better than no response. This avoids many errors (or non-return of response, if expected).<br><br>And in our case, very often, `no response` = `blockers` = `message "please deactivate your ad blocker"`
   
   ```STATUS: being written ...```
     
@@ -81,5 +81,5 @@ Assumption. Indeed, in many computer languages, a response (even empty) is alway
   Pre-processor directives for filters:<br>I have decided to use (as much as I can) the conditions ( !#if ) starting from this remark:
 > The conditions support all the basic logical operators. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br>Well yes what! The addon could block elements, but would not recognize them with conditions.<br>Try to see if `google.com, *$image, *$xhr or *$1p` is not working!<br>So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
+And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br><br>Well yes what! The addon could block elements, but would not recognize them with conditions.<br>Try to see if `google.com, *$image, *$xhr or *$1p` is not working!<br>So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
 </details>
