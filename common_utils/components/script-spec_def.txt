@@ -76,9 +76,12 @@
 
 !#if (yandex.ru|webvisor.org)
 ! try adguard compatibility portage
-||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
-||*metrika*/tag.js$script,important,redirect-rule=metrika-yandex-tag
-||*/*metrica-watch/*$script,important,redirect-rule=metrika-yandex-tag
+||*/metrika/watch.js$script,redirect-rule=metrika-yandex-watch
+||*metrika*/tag.js$script,redirect-rule=metrika-yandex-tag
+||*/*metrica-watch/*$script,redirect-rule=metrika-yandex-tag
+/metrika/tag.js$script,redirect=metrika-yandex-tag
+/metrika/watch.js$script,redirect=metrika-yandex-watch
+/yandex-metrica-watch/tag.js$script,redirect=metrika-yandex-tag
 !#endif
 
 !
