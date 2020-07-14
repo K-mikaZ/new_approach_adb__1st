@@ -6,8 +6,9 @@
 !#include components/xhr_def.txt
 !#include components/subdocument_def.txt
 !#include components/object-subrequest_def.txt
-! seems useless
-! #include components/websocket_def.txt
-!#include components/beacon_def.txt
+!#include components/other_def.txt
 !#include components/media_def.txt
 !#include components/fingerprint_def.txt
+!#include components/monkeybroker_def.txt
+! seems useless
+! #include components/websocket_def.txt
