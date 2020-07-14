@@ -23,7 +23,8 @@
   <summary>Pour la petite histoire...</summary>
 
   J'ai voulu proposer (sur un [site connu de la communauté](https://github.com/collinbarrett/FilterLists)) une simple liste (non pas de blocage, mais de [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatique), pour aider au *noop\** de tous les filtres de blocages (déjà présent dans votre bloqueur de pubs, mais aussi à venir) et qui utilisais pour cela des conditions ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ).
-###### *\*noop: pour les non initiés, équivaut à une reponse vide*.
+###### *\*noop: pour les non-initiés, équivalent à une réponse vide*.
+Mais je n'ai pas rencontrer un franc succès (non pas au niveau de l'hébergeur de listes lui-même, mais plus auprès de la team ublock-origin), [voyez par vous même](https://github.com/collinbarrett/FilterLists/issues/1731). Ma démarche à été critiquée, voire raillée.
 
   ```STATUS: en cours d'écriture...```
 
@@ -31,7 +32,11 @@
 <details>
   <summary>Nouvelle approche! De quelle façon?</summary>
   
-  
+  Directives de pré-processeur pour les filtres:<br>J'ai décidé d'utiliser (tant que faire ce peut), les conditions ( !#if ) en partant de cet remarque:
+> Les conditions prennent en charge tous les opérateurs logiques de base. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
+
+Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br>Bah oui quoi! L'addon serait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions. Essayez pour voir si  `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas! Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
+
 </details>  
 <br>  
 
@@ -47,6 +52,7 @@
 
   I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but automatic [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule)), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
 ###### *\*noop: for the uninitiated, equivalent to an empty response*.
+But I did not meet a great success (not at the level of the list host itself, but more with the ublock-origin team), [see for yourself](https://github.com/collinbarrett/FilterLists/issues/1731). My approach has been criticized, even mocked.
   
   ```STATUS: being written ...```
     
@@ -54,5 +60,8 @@
 <details>
   <summary>New approach! How?</summary>
   
-  
+  Pre-processor directives for filters:<br>I have decided to use (as much as I can) the conditions ( !#if ) starting from this remark:
+> The conditions support all the basic logical operators. - [AdguardTeam] (https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
+
+And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br>Well yes what! The addon would block items, but would not recognize them with conditions. Try to see if `google.com, *$image, *$xhr or *$1p` is not working! So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
 </details>
