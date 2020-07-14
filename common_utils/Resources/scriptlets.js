@@ -4,6 +4,7 @@
 /**
  * AdGuard Scriptlets
  * Version 1.2.5
+ * Source  https://github.com/AdguardTeam/Scriptlets/tree/master/dist/cjs
  */
 declare module 'scriptlets' {
 
