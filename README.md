@@ -44,7 +44,9 @@ Supposition. En effet, dans de nombreux langages informatiques, une réponse (m�
   Directives de pré-processeur pour les filtres:<br>J'ai décidé d'utiliser (tant que faire ce peut), les conditions ( !#if ) en partant de cet remarque:
 > Les conditions prennent en charge tous les opérateurs logiques de base. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br><br>Bah oui quoi! L'addon saurait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions.<br>Essayez pour voir si `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas!<br>Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
+Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br><br>Bah oui quoi! L'addon saurait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions.<br>Essayez pour voir si `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas!<br>Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.<br><br>Et si vous n'essayez seulement que ce que vous savez, où est l'opportunité de progresser.
+
+> "Ils ne savaient pas que c'était impossible, alors ils l'ont fait." - Mark Twain
 
 </details>  
 <br>  
@@ -81,5 +83,8 @@ Assumption. Indeed, in many computer languages, a response (even empty) is alway
   Pre-processor directives for filters:<br>I have decided to use (as much as I can) the conditions ( !#if ) starting from this remark:
 > The conditions support all the basic logical operators. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br><br>Well yes what! The addon could block elements, but would not recognize them with conditions.<br>Try to see if `google.com, *$image, *$xhr or *$1p` is not working!<br>So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
+And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br><br>Well yes what! The addon could block elements, but would not recognize them with conditions.<br>Try to see if `google.com, *$image, *$xhr or *$1p` is not working!<br>So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.<br><br>And if you only try what you know, where is the opportunity to progress.
+
+> "They didn't know it was impossible, so they did it." - Mark Twain
+
 </details>
