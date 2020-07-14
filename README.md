@@ -29,7 +29,7 @@ Je n'ai jamais demandé de retoucher leurs codes, alors pourquoi tant d'hostilit
 
 > La règle de redirection n'est pas d'accélérer le navigateur. Elle est utilisée pour réparer les cassures, anti-adblock et faciliter la rédaction de la liste.
 
-OK, alors pourquoi ne pas l'automatisée pour qu'elle s'applique par elle-même (plus simple pour l'écriture de filtres, non?).<br>Je ne suis pas codeur, et je dois justifier (par des mesures que je ne peux pas faire car je ne connais pas les outils pour) tout ce que je propose.<br>Quant à mois, je dois me contenter d'hypothèses:
+OK, alors pourquoi ne pas l'automatisée pour qu'elle s'applique par elle-même (plus simple pour l'écriture de filtres, non?).<br><br>Je ne suis pas codeur, et je dois justifier (par des mesures que je ne peux pas faire car je ne connais pas les outils pour) tout ce que je propose.<br>Quant à moi, je dois me contenter d'hypothèses:
 
 > Je ne pense pas que fournir une réponse sera plus rapide que d'annuler simplement une demande de réseau.
 
@@ -66,7 +66,7 @@ I never asked to touch up their codes, so why so much hostility. I just proposed
 
 > The redirect rule is not to speed up the browser. It is used to repair breaks, anti-adblock and to facilitate the drafting of the list.
 
-OK, so why not automate it so that it applies by itself (easier to write filters, right?).<br>I'm not a coder, and I have to justify (by measures that I can not do because I do not know the tools for) everything I offer.<br>As for me, I have to settle for assumptions:
+OK, so why not automate it so that it applies by itself (easier to write filters, right?).<br><br>I'm not a coder, and I have to justify (by measures that I can not do because I do not know the tools for) everything I offer.<br>As for me, I have to settle for assumptions:
 
 > I don't think that providing a response will be faster than simply canceling a network request.
 
