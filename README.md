@@ -24,7 +24,16 @@
 
   J'ai voulu proposer (sur un [site connu de la communauté](https://github.com/collinbarrett/FilterLists)) une simple liste (non pas de blocage, mais de [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule) automatique), pour aider au *noop\** de tous les filtres de blocages (déjà présent dans votre bloqueur de pubs, mais aussi à venir) et qui utilisais pour cela des conditions ( [!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition) ).
 ###### *\*noop: pour les non-initiés, équivalent à une réponse vide*.
-Mais je n'ai pas rencontrer un franc succès (non pas au niveau de l'hébergeur de listes lui-même, mais plus auprès de la team ublock-origin), [voyez par vous même](https://github.com/collinbarrett/FilterLists/issues/1731). Ma démarche à été critiquée, voire raillée.
+Mais je n'ai pas rencontrer un franc succès (non pas au niveau de l'hébergeur de listes lui-même, mais plus auprès de la team ublock-origin), [voyez par vous même](https://github.com/collinbarrett/FilterLists/issues/1731). Ma démarche à été critiquée, voire raillée.<br><br>
+Je n'ai jamais demandé de retoucher leurs codes. J'ai juste proposée une liste pour savoir qu'il suffisait d'installer ou non.
+
+> La règle de redirection n'est pas d'accélérer le navigateur. Elle est utilisée pour réparer les cassures, anti-adblock et faciliter la rédaction de la liste.
+
+OK, alors pourquoi ne pas l'automatisée pour qu'elle s'applique par elle-même (plus simple pour l'écriture de filtres, non?).<br>Je ne suis pas codeur, et je dois justifier (par des mesures que je ne peux pas faire car je ne connais pas les outils pour) tout ce que je propose.<br>Quant à mois, je dois me contenter d'hypothèses:
+
+> Je ne pense pas que fournir une réponse sera plus rapide que d'annuler simplement une demande de réseau.
+
+Supposition. En effet, dans de nombreux langages informatiques, une réponse (même vide) vaut toujours mieux que pas de réponse. Cela évite de nombreuses erreurs (ou le non-retour de réponse, si attendue).
 
   ```STATUS: en cours d'écriture...```
 
@@ -35,7 +44,7 @@ Mais je n'ai pas rencontrer un franc succès (non pas au niveau de l'hébergeur 
   Directives de pré-processeur pour les filtres:<br>J'ai décidé d'utiliser (tant que faire ce peut), les conditions ( !#if ) en partant de cet remarque:
 > Les conditions prennent en charge tous les opérateurs logiques de base. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br>Bah oui quoi! L'addon serait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions. Essayez pour voir si  `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas! Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
+Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), je soutiens que les conditions simple sont reconnues.<br>Bah oui quoi! L'addon serait bloquer des éléments, mais ne serait pas les reconnaître avec des conditions.<br>Essayez pour voir si `google.com, *$image, *$xhr ou *$1p` ne fonctionne pas!<br>Alors pourquoi ne pas écrire `!#if google.com, !#if image ou !#if (xhr && 1p)` dans ce cas.
 
 </details>  
 <br>  
@@ -52,7 +61,16 @@ Et [contrairement à ce que pense notre ami](https://github.com/collinbarrett/Fi
 
   I wanted to offer (on a [site known to the community](https://github.com/collinbarrett/FilterLists)) a simple list (not of blocking, but automatic [redirect-rule](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule)), to help the *noop\** of all blocking filters (already present in your ad blocker, but also to come) and which used for that conditions ([!#if - !#endif](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#if-condition)).
 ###### *\*noop: for the uninitiated, equivalent to an empty response*.
-But I did not meet a great success (not at the level of the list host itself, but more with the ublock-origin team), [see for yourself](https://github.com/collinbarrett/FilterLists/issues/1731). My approach has been criticized, even mocked.
+But I did not meet a great success (not at the level of the list host itself, but more with the ublock-origin team), [see for yourself](https://github.com/collinbarrett/FilterLists/issues/1731). My approach has been criticized, even mocked.<br><br>
+I never asked to touch up their codes. I just proposed a list to know that it was enough to install or not.
+
+> The redirect rule is not to speed up the browser. It is used to repair breaks, anti-adblock and to facilitate the drafting of the list.
+
+OK, so why not automate it so that it applies by itself (easier to write filters, right?).<br>I'm not a coder, and I have to justify (by measures that I can not do because I do not know the tools for) everything I offer.<br>As for me, I have to settle for assumptions:
+
+> I don't think that providing a response will be faster than simply canceling a network request.
+
+Assumption. Indeed, in many computer languages, a response (even empty) is always better than no response. This avoids many errors (or non-return of response, if expected).
   
   ```STATUS: being written ...```
     
@@ -61,7 +79,7 @@ But I did not meet a great success (not at the level of the list host itself, bu
   <summary>New approach! How?</summary>
   
   Pre-processor directives for filters:<br>I have decided to use (as much as I can) the conditions ( !#if ) starting from this remark:
-> The conditions support all the basic logical operators. - [AdguardTeam] (https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
+> The conditions support all the basic logical operators. - [AdguardTeam](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917#issue-282353661-permalink)
 
-And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br>Well yes what! The addon would block items, but would not recognize them with conditions. Try to see if `google.com, *$image, *$xhr or *$1p` is not working! So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
+And [contrary to what our friend thinks](https://github.com/collinbarrett/FilterLists/issues/1731#issuecomment-651969310), I maintain that the simple conditions are recognized.<br>Well yes what! The addon would block items, but would not recognize them with conditions.<br>Try to see if `google.com, *$image, *$xhr or *$1p` is not working!<br>So why not write `!#if google.com, !#if image or !#if (xhr && 1p)` in this case.
 </details>
