@@ -5,7 +5,8 @@
 !
 ! ——————————————————————————————————————————————————————————————————————————————————
 !
-!!#include ping_def.txt
+! seems useless
+! #include ping_def.txt
 !
 !#include other_def.txt
 !
