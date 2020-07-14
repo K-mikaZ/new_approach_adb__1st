@@ -5,7 +5,7 @@
 !
 ! ——————————————————————————————————————————————————————————————————————————————————
 !
-!#include ping_def.txt
+!!#include ping_def.txt
 !
 !#include other_def.txt
 !
