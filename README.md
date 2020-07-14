@@ -1,3 +1,6 @@
+```STATUS:    in progress...    |    en cours...```  
+
+
 ###### <ins>Explanations / Explications</ins>:  
 [english](#english) | [français](#français)
 
@@ -10,8 +13,6 @@
 - "Rules, filtering, exception list and blocking antisocial third-party" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%20list%20and%20blocking%20antisocial%20third-party)
 - "Rules, filtering, exception, blocking antisocial third-party and no chromecast" (full) [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%2C%20blocking%20antisocial%20third-party%20and%20no%20chromecast)<br><br>
 
-
-```STATUS:    in progress...    |    en cours...```  
 <br>
 
 # Nouvelle approche pour les bloqueurs de publicités<br>et première fois proposé (par K-mik@Z)  
