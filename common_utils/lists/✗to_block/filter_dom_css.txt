@@ -12,6 +12,7 @@
 !
 
 !#if film01stream.*
+film01stream.*###ads
 film01stream.*#?#span:-abp-contains(/ads/)
 film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
 !#endif
