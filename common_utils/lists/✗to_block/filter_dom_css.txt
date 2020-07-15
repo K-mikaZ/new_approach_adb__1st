@@ -44,9 +44,19 @@ voiranime.com##iframe:style(max-width:110vh!important)
 voiranime.com##a[href*="/signup/"],a[href*="://network.nutaku.net/"]
 !#endif
 !
+!#if voiranime.to
+voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
+!#endif
+!
 !#if voirfilms.*
 voirfilms.*##center:if(.myButton)
 voirfilms.*##.salidor_inner,.salidor_b,.f-inner,.X,#pub
+!#endif
+!
+!#if filmgratuit.net
+filmgratuit.net##center:if(.myButton)
+filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
+filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !#endif
 !
 !
