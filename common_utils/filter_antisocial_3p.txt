@@ -65,6 +65,12 @@
 !||allocine-prod2.disqus.com/embed.js$script,important
 !||topreplay.disqus.com/embed.js$script,important
 !#endif
+
+! experimental click-to-load disqus
+!#if (disqus.com && !1p)
+||*.disqus.com/embed.js$script,3p
+!#endif
+
 ! </ end Disqus on demand >
 
 
