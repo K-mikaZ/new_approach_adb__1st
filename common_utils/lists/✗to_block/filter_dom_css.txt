@@ -12,7 +12,7 @@
 !
 
 !#if film01stream.*
-film01stream.*###ads
+film01stream.*###tabs-ad > .movieplay,a[target="_blank"],#ads
 film01stream.*#?#span:-abp-contains(/ads/)
 film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
 !#endif
@@ -50,12 +50,14 @@ voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 !#endif
 !
 !#if voirfilms.*
-voirfilms.*##center:if(.myButton)
 voirfilms.*##.salidor_inner,.salidor_b,.f-inner,.X,#pub
 !#endif
 !
+!#if (filmgratuit.net|voirfilms.*)
+voirfilms.*##center:if(.myButton)
+!#endif
+!
 !#if filmgratuit.net
-filmgratuit.net##center:if(.myButton)
 filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !#endif
@@ -135,7 +137,6 @@ feedspot.com###wrapper
 femmeactuelle.fr##.ratio-16-9 > div
 film-streaming.bz##.voir-b,.c-lefermeur
 film.hds-streaming.com##.textwidget
-film01stream.*###tabs-ad > .movieplay,a[target="_blank"]
 filmsrip.com##.Banners
 filmstoon.*##[href*="://out.filmstoon."],.yx-share,.fsect,.myButton
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
