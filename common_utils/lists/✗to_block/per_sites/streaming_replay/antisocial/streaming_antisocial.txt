@@ -4,6 +4,12 @@
 filmgratuit.net##.social,[href*="facebook."],[href*="twitter."],[href*="pinterest."],.wrap > .item > .tit
 !#endif
 
+!#if universanimeiz.com
+universanimeiz.com##.meta-share
+!#endif
+
+!#endif
+
 ! ------------------------------------------------------------------
 !
 ! Seepdup ADN by blocking comments (loading too long) --
@@ -25,5 +31,3 @@ animedigitalnetwork.fr##.vodshare,.link,.footer-social
 !#endif
 !#endif
 ! </ end ADN (animedigitalnetwork) rules >
-
-!#endif
