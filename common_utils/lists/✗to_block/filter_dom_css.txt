@@ -63,7 +63,7 @@ filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !
 ! ---- Global -----
 ! < start global CSS rules >
-*##[class="adsbygoogle"]
+!*##[class="adsbygoogle"]
 *##[class="google-ads"]
 *##[class="googleads"]
 *##[class^="salidor_"]
