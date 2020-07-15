@@ -10,6 +10,7 @@
 ! < start badfilters >
 
 !#if dom
+
 #@#+js(acis, atob, decodeURIComponent)
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
 yggtorrent.*,voirseries.*#@#+js(nobab)
@@ -29,9 +30,11 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@##cookie-alert
 ! break video player site lequipe.fr
 #@#.np_DialogConsent
+
 !#endif
 
 !#if !dom
+
 @@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
@@ -63,10 +66,11 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||pub.phyks.me^$badfilter
 ||hm.baidu.com^$badfilter
 ||fwmrm.net^$xhr,3p,badfilter
-.to/ads/$badfilter
-/ads/pop.$badfilter
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
+! [fix] to generic
+.to/ads/$badfilter
+/ads/pop.$badfilter
 ! [fix] datadome.co (Real-Time Bot Protection)
 ||datadome.co^$3p,badfilter
 ! [fix] are you still here di.fm
@@ -82,7 +86,11 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 /consentui/*$badfilter
 ! [fix] seems loading better with
 ||m6web.fr/statsd/$badfilter
-
+! [fix] not be detect
+||detectadblock.com/dfp.js$badfilter
+/dfp.js$badfilter
+! [fix] disable count in icon
+@@||detectadblock.com/dfp.js$badfilter
 ! Tracking urls
 ! I prefer use an addon for that for that:
 ! ————————————————————————————————————————
@@ -98,7 +106,9 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||lm.facebook.com$document,important,badfilter
 ||lm.messenger.com$document,important,badfilter
 !#endif
+
 !#endif
+
 ! </end badfilters >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
