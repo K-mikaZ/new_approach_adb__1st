@@ -26,11 +26,14 @@
 /Universal.mp4$media,important
 !#endif
 
+||site.dotvideo.cc^$important
+
 !#if dom
 film01stream.*###tab-ad
 voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
 streaminz.com##.playbtm
 fcine.*#?#div[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+kykfilmserie.com##.content > div:nth-of-type(2)
 streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
 streamcomplet.mobi##div:if(> [class*="fake_player"])
 streamcomplet.mobi##div:if(> a[target="_blank"])
