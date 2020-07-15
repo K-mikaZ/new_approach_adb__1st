@@ -2,5 +2,6 @@
 ! Chromecast concern
 
 !#if (script && !1p)
-*/cast_sender.js$script,3p,important
+! [fix] for those have error when chromecast blocking
+*/cast_sender.js$script,3p,important,domain=~canalplus.com
 !#endif
