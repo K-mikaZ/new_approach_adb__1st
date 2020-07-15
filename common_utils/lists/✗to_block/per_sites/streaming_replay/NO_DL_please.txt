@@ -1,0 +1,20 @@
+
+! ------------------------------------------------------------------
+!
+! No need download on streaming sites --
+! Pas besoin de téléchargement sur les sites de streaming --
+!
+! ------------------------------------------------------------------
+! < start no DL on streaming sites rules>
+
+!#if dom
+voirseries.ws##ul[class="downloads"]
+voirseries.ws#?#h3.h:if(> :-abp-contains(/Telechargement/))
+filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+series.dpstreaming.to#?#center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
+filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+!#endif
+
+! </ end no DL on streaming sites rules >
+!
