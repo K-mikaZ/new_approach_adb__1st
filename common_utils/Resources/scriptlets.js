@@ -1484,7 +1484,7 @@ function noopFunc() {};
 //  * VMAP -VPAID -VAST concern
 //  **/
 noopvmap-1.0 text/xml
-<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"></vmap:VMAP>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"></vmap:VMAP>
 
 noopvast-1.0 text/xml
 <VAST version="1.0"></VAST>
