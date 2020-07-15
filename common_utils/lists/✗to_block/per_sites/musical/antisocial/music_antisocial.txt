@@ -1,0 +1,11 @@
+
+!#if script
+! found on openwhyd.org
+/facebook.js$script,important,domain=~facebook.com
+!#endif
+
+!#if dom
+!#if di.fm
+di.fm##.footer-social,.share,.discuss-btn,.social-region,.discord-region
+!#endif
+!#endif
