@@ -91,6 +91,10 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 /dfp.js$badfilter
 ! [fix] disable count in icon
 @@||detectadblock.com/dfp.js$badfilter
+! [fix] allow adblockanalytics on adblockanalytics.com
+||adblockanalytics.com^$badfilter
+||adblockanalytics.com^$domain=~adblockanalytics.com
+!
 ! Tracking urls
 ! I prefer use an addon for that for that:
 ! ————————————————————————————————————————
