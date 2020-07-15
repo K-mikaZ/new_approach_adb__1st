@@ -2128,6 +2128,7 @@ exports["hide-if-contains"] = hideIfContains;
  *
  * @since Adblock Plus 3.6
  */
+hide-if-contains-visible-text application/javascript
 function hideIfContainsVisibleText(search, selector, searchSelector = null)
 {
   /**
