@@ -1,0 +1,48 @@
+
+! ------------------------------------------------------------------
+!
+! FAKE or VIP PLAYERS --
+!
+! ------------------------------------------------------------------
+! < start fake players rules >
+
+!#if css|xhr
+! fake player's (iframe only) "font" concerned
+/css?family=Montserrat$xhr,stylesheet,important,domain=seriestream.ws
+!#endif
+
+!#if subdocument
+||seriestream.*/vid*ming.html|$subdocument,1p,important
+||zone-stream.club/hd-streaming.php$subdocument,important
+||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
+!#endif
+
+!#if media
+! fake videos
+*.mp4$media,important,domain=zone-stream.club|voirseries.co
+*.dll$media,important,domain=streamz.vg
+||issue.mp4$media,important,domain=streamz.vg
+||https://googleads.github.io/googleads*html5/media/*.mp4$important
+/Universal.mp4$media,important
+!#endif
+
+!#if dom
+film01stream.*###tab-ad
+voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
+streaminz.com##.playbtm
+fcine.*#?#div[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
+streamcomplet.mobi##div:if(> [class*="fake_player"])
+streamcomplet.mobi##div:if(> a[target="_blank"])
+streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
+streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
+zustream.*##li:if(:has-text(/(VIP)(.*)?/))
+streaminggratuitvf.*##button:has-text(/1080p/)
+filmz.*##li:if(:-abp-has(i.player-hdplayer))
+streamay.co##.player-btn:if(:has-text(/HD 1080P/i))
+kykfilmserie.com##.dooplay_player:if(iframe[src*=".php?"])
+oomoviz.*,voirseries.*,vustream.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
+!#endif
+
+! </ end fake players rules >
+!
