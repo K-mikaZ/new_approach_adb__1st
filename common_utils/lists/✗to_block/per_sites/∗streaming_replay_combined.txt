@@ -1,6 +1,7 @@
 
 !#include streaming_replay/hosts/VAST-VPAID-rules.txt
 !#include streaming_replay/FAKE_VIP_players.txt
+!#include streaming_replay/NO_DL_please.txt
 !#include streaming_replay/hosts/video_hosts.txt
 !#include streaming_replay/hosts/video_host_tool_3p.txt
 !#include streaming_replay/allocine.txt
