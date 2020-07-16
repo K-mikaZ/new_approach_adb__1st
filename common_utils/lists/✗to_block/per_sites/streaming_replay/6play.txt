@@ -1,0 +1,42 @@
+
+!
+! ------------------------------------------------------------------
+!
+! 6play.fr --
+!
+! ------------------------------------------------------------------
+! < start 6play rules>
+
+!#if 6play.fr
+
+!#if dom
+! try to boost 6play
+! see view-source:https://www.6play.fr/reign-p_3286/saison-2-episode-6-c_11408962
+6play.fr##+js(aopr.js, getYouboraConfig)
+!#endif
+
+!#if xhr
+*.6cloud.*.jpg$xhr,important
+*.6play.*.jpg$xhr,important
+! don't block ||backend.dna-delivery.com^$xhr,important,domain=www.6play.fr
+||backend.dna-delivery.com$badfilter
+@@||gelf.m6web.fr^$xhr,domain=6play.fr
+@@||pc.middleware.6play.fr^$xhr,domain=6play.fr
+!#endif
+
+!#if (script && !1p)
+@@||gigya.com/js/gigya.js$script,domain=www.6play.fr
+!#endif
+
+!#if image
+@@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
+!#endif
+
+!#if (media && 1p)
+*.mp4$media,important,domain=6play.fr
+!#endif
+
+!#endif
+
+! </ end 6play rules>
+!
