@@ -46,6 +46,14 @@
 ||pinterest.^$all,3p,important
 !#endif
 
+!#if (tumblr.com && !1p)
+||tumblr.com^$all,3p,important
+!#endif
+
+!#if (imqq.com && !1p)
+||imqq.com^$all,3p,important
+!#endif
+
 !#if (twitter.com && !1p)
 ||*twitter.com^$all,3p,important
 ||analytics.twitter.com^$domain=~twitter.com
