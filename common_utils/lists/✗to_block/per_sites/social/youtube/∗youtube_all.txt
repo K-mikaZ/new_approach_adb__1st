@@ -14,28 +14,35 @@
 
 !
 !#if dom
+! No pause for player, thx
+youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
 youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 !#if music.youtube.com
 ! try disable pause
 music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
 !#endif
+
 !#if (ping && 1p)
 *$ping,1p,important,domain=youtube.com
 !/youtu(be)?\.(.{2,})(.*\/)?(api\/stats\/qoe)(.*)/$ping,important
 !#endif
+
 !#if (script && 1p)
 /youtu(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
 !#endif
+
 !#if (script && !1p)
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
 !#endif
+
 !#if image
 /generate_204$image,important
 /youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't stop reading my playlist fucking guys!
 ||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
 !#endif
+
 !#if (xhr && 1p)
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
@@ -50,23 +57,29 @@ music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !/ht{2}ps?\:\/{2}([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?youtu(be)?\.(.{2,})(.*\/)?((an{2}otations\_invideo)|(er{2}or\_204)|heartbeat|(service\_ajax\?name\=(updatedMetadata|signalService)Endpoint)|(get\_endscre{2}n))(.*)/$xhr,important
 !/((annotations\_invideo)|(error\_204)|heartbeat|(service_ajax\?name\=(updatedMetadata|signalService)Endpoint)|(get\_endscreen))/$xhr,important,domain=youtube.com
 !#endif
+
 !#if (subdocument && 1p)
 ||youtu*.*/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important
 ||youtu*.*/embed/*?ps=software*$subdocument,important
 !#endif
+
 !#if (object-subrequest && 1p)
 /youtu(be)?\.(.{2,})\/(an{2}otations\_invideo\?)(.*)/$object-subrequest,important
 !#endif
+
 !#if (object-subrequest && !1p)
 /y(t)?img\.(.{2,})(.*\/)?endscre{2}n\.swf/$object-subrequest,important
 !#endif
+
 !!#if other
 ! No pause for player, thx
 ||youtu*.*/manifest.json|$other,important
 !!#endif
+
 !#if (media && !1p)
 /^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com
 !#endif
+
 ! Somes fix
 /api/stats/watchtime$domain=youtube.com,badfilter
 ||youtube.com/api/stats/watchtime$badfilter
