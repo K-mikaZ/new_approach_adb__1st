@@ -19,6 +19,7 @@
 ! -----------------
 ||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
 ||spotscenered.info$xhr,redirect-rule=noopvast-2.0
+||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xhr,redirect-rule=noopvast-2.0
 
 ! VAST version 3
 ! -----------------
