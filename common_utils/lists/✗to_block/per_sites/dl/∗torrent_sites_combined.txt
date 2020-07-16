@@ -5,7 +5,7 @@
 *$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 @@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 
-!#if yggtorrent.*
+!#if yggtorrent.
 !#if dom
 yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notification,.animated.alert-success,.ad-alert-18-sub-title,.ad-alert-18.ad-alert-message
 !#endif
@@ -15,7 +15,7 @@ yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notificati
 ettvdl.com##[href*="://lookmovie."],.download_liinks_a,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"],#kr_cr,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"]
 !#endif
 
-!#if (torrent9.*|torrent09.uno|oxtorrent.me)
+!#if (torrent9.|torrent09.uno|oxtorrent.me)
 !#if dom
 ! [fix] liens sans inscription seulement
 torrent9.*,torrent09.uno,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))][(contains(@href,"register"))])
