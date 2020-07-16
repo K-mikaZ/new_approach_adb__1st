@@ -110,7 +110,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||*&__cf_chl_jschl_tk__=$badfilter
 ||*?__cf_chl_jschl_tk__=$badfilter
 !#if document
-! [fix] Practices for facebook. To block only if antisocial list
+! [fix] Practices for facebook. Block only if not using social.
 ?fbclid=$document,important,badfilter
 &fbclid=$document,important,badfilter
 ||l.facebook.com^$document,important,badfilter
