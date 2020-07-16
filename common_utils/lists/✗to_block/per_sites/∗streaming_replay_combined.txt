@@ -7,3 +7,4 @@
 !#include streaming_replay/6play.txt
 !#include streaming_replay/allocine.txt
 !#include streaming_replay/animedigitalnetwork.txt
+!#include streaming_replay/canal➕.txt
