@@ -14,4 +14,10 @@
 @@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 !#endif
 
+!#if media
+! [fix] because *$media,domain=canalplus.com break somes videos
+! see < https://www.canalplus.com/articles/cinema/44eme-ceremonie-des-cesar-2019-en-direct >
+@@*/WWWPLUS/STREAMING/*$media,domain=canalplus.com
+!#endif
+
 ! </ end whitelist >
