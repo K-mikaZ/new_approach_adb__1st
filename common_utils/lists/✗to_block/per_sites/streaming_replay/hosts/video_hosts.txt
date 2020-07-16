@@ -58,11 +58,13 @@ vidoza.net##.simpleToast,#asg-push-frame3,.vjs-topbar
 !#endif
 !#endif
 
-/video.counters.js$badfilter
 !#if vizplay.icu
 !#if dom
 ! see < https://vizplay.icu/js/video.counters.js >
 vizplay.icu##+js(aopr.js, Image)
+vizplay.icu##+js(aopr.js, 見妒見冰)
+vizplay.icu##+js(aopr.js, BetterJsPop)
+vizplay.icu##+js(set.js, adb, '1/')
 !#endif
 !#endif
 
