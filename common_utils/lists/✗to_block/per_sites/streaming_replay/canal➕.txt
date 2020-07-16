@@ -1,0 +1,17 @@
+
+! < start canal➕ rules >
+
+!#if canalplus.com
+
+!#if media
+! [fix] because *$media,domain=canalplus.com break somes videos
+! see < https://www.canalplus.com/articles/cinema/44eme-ceremonie-des-cesar-2019-en-direct >
+@@*/WWWPLUS/STREAMING/*$media,domain=canalplus.com
+!#if mp4
+! [fix] noop
+||static.canal-plus.net/pub$media,important,domain=canalplus.com,redirect=noop-1s.mp4
+!#endif
+!#endif
+
+!#endif
+! </ end canal➕ rules >
