@@ -38,9 +38,27 @@
 @@||cdninstagram.com^$3p
 !#endif
 
+!#if (linkedin.com && !1p)
+||linkedin.com^$all,3p,important
+!#endif
+
+!#if (pinterest. && !1p)
+||pinterest.^$all,3p,important
+!#endif
+
 !#if (twitter.com && !1p)
 ||*twitter.com^$all,3p,important
 ||analytics.twitter.com^$domain=~twitter.com
+!#endif
+
+!#if (chatango.com && !1p)
+||*.chatango.com^$all,important
+!#endif
+
+!#if (twitch.tv && !1p)
+||embed.twitch.tv$3p,important
+||twitch.tv^$3p,important,domain=~twitch.tv
+||ttvnw.net^$3p,important,domain=~twitch.tv
 !#endif
 
 !#if (disqus.com && !1p)
@@ -72,17 +90,6 @@
 !#endif
 
 ! </ end Disqus on demand >
-
-
-!#if (chatango.com && !1p)
-||*.chatango.com^$all,important
-!#endif
-
-!#if (twitch.tv && !1p)
-||embed.twitch.tv$3p,important
-||twitch.tv^$3p,important,domain=~twitch.tv
-||ttvnw.net^$3p,important,domain=~twitch.tv
-!#endif
 
 !
 !#include lists/✗to_block/bulk_antisocial.txt
