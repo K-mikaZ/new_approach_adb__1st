@@ -22,12 +22,14 @@
 
 ! VAST version 3
 ! -----------------
+||spotxchange.com^$xhr,important,redirect=noopvast-3.0
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
 ||vidalak.com/api/vpaid?$xhr,redirect-rule=noopvast-3.0
 ||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
 ||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
 ||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
+! [fix] for correct redirect
 ||fiorenetwork.com^$3p,badfilter
 ||fiorenetwork.com$xhr,important
 ||fiorenetwork.com$xhr,redirect-rule=noopvast-3.0
