@@ -23,6 +23,7 @@ canalplus.com##.ShareButtonWrapper,div.footer__section__column___21k-C:nth-of-ty
 ! < start ADN (animedigitalnetwork) rules >
 
 !#if animedigitalnetwork.fr
+
 !#if dom
 ! bloc comments concern
 animedigitalnetwork.fr#?#.adn-block-content:if(span:-abp-contains(/Avis sur /))
@@ -35,6 +36,7 @@ animedigitalnetwork.fr##.vodshare,.link,.footer-social
 ! font comments concerned
 */css?family=Poppins$stylesheet,important,domain=animedigitalnetwork.fr
 !#endif
+
 !#endif
 ! </ end ADN (animedigitalnetwork) rules >
 
