@@ -68,6 +68,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||fwmrm.net^$xhr,3p,badfilter
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
+! [fix] ?
+/video.counters.js$badfilter
 ! [fix] to generic
 .to/ads/$badfilter
 /ads/pop.$badfilter
