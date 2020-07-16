@@ -77,6 +77,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||gvt1.com^$badfilter
 ||redirector.gvt1.com^$badfilter
 !  [fix] "About Facebook Ads" page, not ads
+! see < https://www.facebook.com/about/ads >
 ||facebook.com/ads/$popup,inline-script,badfilter
 !  [fix] seems loading better with
 ||facebook.com/ajax/$ping,important,badfilter
