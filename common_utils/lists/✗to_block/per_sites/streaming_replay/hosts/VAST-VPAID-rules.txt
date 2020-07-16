@@ -22,6 +22,7 @@
 
 ! VAST version 3
 ! -----------------
+||springserve.com$xhr,redirect=noopvast-3.0
 ||spotxchange.com^$xhr,important,redirect=noopvast-3.0
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
