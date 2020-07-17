@@ -39,9 +39,9 @@ music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(
 
 !#if image
 /generate_204$image,important
-/youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
+!/youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't stop reading my playlist fucking guys!
-||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
+!||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
 !#endif
 
 !#if (xhr && 1p)
