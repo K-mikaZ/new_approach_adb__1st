@@ -1,1 +1,4 @@
 
+! TEST INCLUDE
+! her https://github.com/K-mikaZ/new_approach_adb__1st/edit/master/common_utils/lists/💣danger_zone
+!#include ......./AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt
