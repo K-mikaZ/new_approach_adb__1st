@@ -9,8 +9,3 @@
 !
 !#include to_test/misc.txt
 !
-
-!
-! Test include
-! #include FacebookZuckestionKiller_module
-!
