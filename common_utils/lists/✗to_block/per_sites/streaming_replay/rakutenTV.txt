@@ -1,0 +1,8 @@
+
+!#if rakuten.tv
+
+!#if dom
+rakuten.tv##+js(set.js, adBlockDetected, 0)
+!#endif
+
+!#endif
