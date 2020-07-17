@@ -16,8 +16,8 @@
 !#endif
 
 !#if xhr
-*.6cloud.*.jpg$xhr,important
-*.6play.*.jpg$xhr,important
+!*.6cloud.*.jpg$xhr,important
+!*.6play.*.jpg$xhr,important
 ! don't block ||backend.dna-delivery.com^$xhr,important,domain=www.6play.fr
 ||backend.dna-delivery.com$badfilter
 @@||gelf.m6web.fr^$xhr,domain=6play.fr
