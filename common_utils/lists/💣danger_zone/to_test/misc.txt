@@ -23,4 +23,4 @@ allocine.fr##+js(aopr.js, assets.allocine.fr, c.src)
 rakuten.tv##+js(aopr.js, adBlockDetected)
 !#endif
 
-||wss://bifrost.vivaldi.com*/ws$important
+!||wss://bifrost.vivaldi.com*/ws$important
