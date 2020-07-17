@@ -25,7 +25,7 @@ music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(
 !#endif
 
 !#if (ping && 1p)
-*$ping,1p,important,domain=youtube.com
+!*$ping,1p,important,domain=youtube.com
 !/youtu(be)?\.(.{2,})(.*\/)?(api\/stats\/qoe)(.*)/$ping,important
 !#endif
 
@@ -49,7 +49,7 @@ music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
 ! don't stop reading my playlist fucking guys!
-||youtu*.*/*/log_event?alt=json&*$xhr,important
+!||youtu*.*/*/log_event?alt=json&*$xhr,important
 !#if music.youtube.com
 ! try don't stop reading my playlist fucking guys!
 !||music.youtube.com/verify_session$xhr,1p,important
