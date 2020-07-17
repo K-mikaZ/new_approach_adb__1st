@@ -31,6 +31,7 @@
 ||vast.yomeno.xyz$xhr,redirect-rule=noopvast-3.0
 ||movcpm.com/watch.xml$xhr,redirect-rule=noopvast-3.0
 ||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
+||deliver.vkcdnservice.com$xhr,redirect-rule=noopvast-3.0
 ! [fix] for correct redirect
 ||fiorenetwork.com^$3p,badfilter
 ||fiorenetwork.com$xhr,important
