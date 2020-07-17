@@ -14,4 +14,8 @@
 @@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 !#endif
 
+!#if xhr
+@@||youborafds01.com^$xhr
+!#endif
+
 ! </ end whitelist >
