@@ -1,4 +1,5 @@
-
+!
+! FILTERS IN TEST (BETA)
 
 ! 17/07/2020 canalplus.com
 ! see :
@@ -11,3 +12,15 @@
 !#if canalplus.com
 /collecteUEM/log/*$xhr,domain=www.canalplus.com
 !#endif
+
+! not sure
+
+!#if allocine.fr
+allocine.fr##+js(aopr.js, assets.allocine.fr, c.src)
+!#endif
+
+!#if rakuten.tv
+rakuten.tv##+js(aopr.js, adBlockDetected)
+!#endif
+
+||wss://bifrost.vivaldi.com*/ws$important
