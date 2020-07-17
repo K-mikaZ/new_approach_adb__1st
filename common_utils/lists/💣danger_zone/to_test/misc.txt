@@ -1,1 +1,13 @@
 
+
+! 17/07/2020 canalplus.com
+! see :
+!     ||www.canalplus.com/nr.js$script,domain=www.canalplus.com
+!     ||static.canal-plus.net/gitlab/trcking/production/v2/trcking.min.js$script,domain=www.canalplus.com
+!     ||www.canalplus.com/serviceWorker.js$script,domain=www.canalplus.com
+!     ||*.js|$xhr,domain=www.canalplus.com
+!     ||*.js|$other,domain=www.canalplus.com
+!     ||*.css|$xhr,domain=www.canalplus.com
+!#if canalplus.com
+/collecteUEM/log/*$xhr,domain=www.canalplus.com
+!#endif
