@@ -103,6 +103,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ! Require for rakuten.tv, see the content of the request, it is a simple letter "a".
 ! Don't always block everything you see
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xhr
+! [fix] stop bypass pub if not on tab (canalplus.com, 6play.fr...)
+||fwmrm.net^$image,3p,badfilter
 
 !
 ! Tracking urls
