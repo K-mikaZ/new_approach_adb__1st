@@ -2,10 +2,12 @@
 
 
 ###### <ins>Explanations / Explications</ins>:  
-[english](#new-approach-for-adblockersand-first-proposed-by-k-mikz) | [français](#nouvelle-approche-pour-les-bloqueurs-de-publicitéset-première-fois-proposé-par-k-mikz)
+[english](#new-approach-for-adblockersand-first-proposed-by-k-mikz) | [français](#nouvelle-approche-pour-les-bloqueurs-de-publicitéset-première-fois-proposé-par-k-mikz)<br>   
 
 ###### <ins>Requirements</ins> ( for some filters to work / pour que certains filtres fonctionnent ):
-[Français] Accédez au tableau de bord "uBlock Origin/Nano Adblocker", sélectionnez <ins>***l'onglet Paramètres***</ins>, cochez <ins>***Activer les fonctionnalités avancées***</ins> puis cliquez sur <ins>***l'icône engrenages***</ins> ⚙ qui s'affiche. Pour <ins>***userResourcesLocation***</ins> (tout en bas), remplacez <ins>***unset***</ins> par [ce fichier de scriptlets](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copier/coller l'adresse du code raw `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).<br><br>[english] Go to the "uBlock Origin/Nano Adblocker" dashboard, select <ins>***the Settings tab***</ins>, check <ins>***Activate advanced features***</ins> then click on <ins>***the gears icon***</ins> ⚙ which is displayed. For <ins>***userResourcesLocation***</ins> (at the bottom) replace <ins>***unset***</ins> with [this scriptlets file](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copy/paste the address of the raw code `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).<br>    
+[Français] Accédez au tableau de bord "uBlock Origin/Nano Adblocker", sélectionnez <ins>***l'onglet Paramètres***</ins>, cochez <ins>***Activer les fonctionnalités avancées***</ins> puis cliquez sur <ins>***l'icône engrenages***</ins> ⚙ qui s'affiche. Pour <ins>***userResourcesLocation***</ins> (tout en bas), remplacez <ins>***unset***</ins> par [ce fichier de scriptlets](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copier/coller l'adresse du code raw `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).<br><br>[english] Go to the "uBlock Origin/Nano Adblocker" dashboard, select <ins>***the Settings tab***</ins>, check <ins>***Activate advanced features***</ins> then click on <ins>***the gears icon***</ins> ⚙ which is displayed. For <ins>***userResourcesLocation***</ins> (at the bottom) replace <ins>***unset***</ins> with [this scriptlets file](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copy/paste the address of the raw code `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).   
+<br><br>
+
 ###### <ins>Lists</ins> ( subscription / abonnement ):
 - "Rules, Filtering and exception list" [[ Install ]](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters.txt&amp;title=Rules%2C%20Filtering%20and%20exception%20list)
     > ###### *fr: "Règles, filtrage et liste d'exceptions"*
@@ -15,7 +17,7 @@
     > ###### *fr: "Règles, filtrage, liste d'exceptions et blocage de tiers antisociaux"*
 - "Rules, filtering, exception list, blocking antisocial third-party and no chromecast" (full) [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%2C%20blocking%20antisocial%20third-party%20and%20no%20chromecast)
     > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et aucun chromecast" (complet)*   
-<br>
+<br><br>
 
 ###### <ins>Disclaimer</ins>:
 [français] Comme il s'agit de mes propres listes de filtres (que je partage ici gracieusement), il peut y avoir des filtres avec lesquels vous n'êtes pas d'accord.<br>Si c'est le cas, n'hésitez pas à cliquer sur le bouton Fork et à créer votre propre liste.<br><br>[english] Since these are my own filter lists (which I am sharing here free of charge), there may be filters with which you do not agree.<br>If so, feel free to click the Fork button and create your own list.
