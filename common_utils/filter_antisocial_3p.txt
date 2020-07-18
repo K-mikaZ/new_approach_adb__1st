@@ -81,11 +81,11 @@
 # Works with following filters: disqus_forums_embed.js AND disqus_embed.js
 # Uncomment for blocking all
 !#if script
+! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
+! see example here: < https://einaregilsson.com/redirector/ >
 ||disqus.com/forums/*/embed.js$script
 ||disqus.com/embed.js$script
 !#endif
-! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
-! see example here: < https://einaregilsson.com/redirector/ >
 
 # If you want a site you regularly visit to always have the comment loaded,
 # just use an exception static filter. Example for wired.com:
