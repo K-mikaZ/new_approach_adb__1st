@@ -13,6 +13,9 @@
 /collecteUEM/log/*$xhr,domain=www.canalplus.com
 !#endif
 
+@@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
+||backend.dna-delivery.com^$xhr,important
+
 ! not sure
 
 !#if allocine.fr
