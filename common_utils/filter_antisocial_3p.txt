@@ -46,6 +46,10 @@
 ||pinterest.^$all,3p,important
 !#endif
 
+!#if (reddit.com && !1p)
+||reddit.com^$all,3p,important
+!#endif
+
 !#if (tumblr.com && !1p)
 ||tumblr.com^$all,3p,important
 !#endif
