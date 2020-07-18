@@ -43,6 +43,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 /stream[0-9]{1,}\.uqload\.(.{2,})/$badfilter
 /(.*)\.vkcache\.(.{2,})/$badfilter
 /bit(\.)?(ly)?\.(.{2,})/$badfilter
+||consensu.org^$badfilter
 ||hollywood.to$badfilter
 ||docs.plesk.com^$badfilter
 ||cdn.tagcommander.com^$badfilter
