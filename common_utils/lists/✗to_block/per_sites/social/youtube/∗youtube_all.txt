@@ -18,9 +18,9 @@
 youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
 youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 !#if music.youtube.com
-music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(1) > .ytmusic-popup-container.style-scope
+!music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(1) > .ytmusic-popup-container.style-scope
 ! try disable pause
-!music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
+music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
 !#endif
 
@@ -39,9 +39,9 @@ music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(
 
 !#if image
 /generate_204$image,important
-!/youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
+/youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't stop reading my playlist fucking guys!
-!||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
+||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
 !#endif
 
 !#if (xhr && 1p)
@@ -49,7 +49,7 @@ music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
 ! don't stop reading my playlist fucking guys!
-!||youtu*.*/*/log_event?alt=json&*$xhr,important
+||youtu*.*/*/log_event?alt=json&*$xhr,important
 !#if music.youtube.com
 ! try don't stop reading my playlist fucking guys!
 !||music.youtube.com/verify_session$xhr,1p,important
