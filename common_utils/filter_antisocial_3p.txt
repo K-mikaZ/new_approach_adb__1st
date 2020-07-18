@@ -7,7 +7,7 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
-!#if (facebook.com && !1p)
+!#if (facebook. && !1p)
 ||*.facebook.*$all,3p,important,domain=~facebook.com
 ||fbsbx.com^$all,3p,important,domain=~facebook.com
 ||fbcdn.net^$all,3p,important,domain=~facebook.com
