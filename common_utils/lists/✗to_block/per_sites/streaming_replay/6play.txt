@@ -9,7 +9,7 @@
 
 !#if 6play.fr
 
-||geo.6play.fr^$badfilter
+!||geo.6play.fr^$badfilter
 
 !#if dom
 ! try to boost 6play
