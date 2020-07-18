@@ -104,7 +104,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ! [fix] Require for rakuten.tv (not be detectable)
 ! Don't always block everything you see. The content of the request, it is a simple letter "a".
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xhr
-! [fix] stop bypass pub if not on tab (ex: canalplus.com ...)
+! [fix] stops bypass pub if not on tab (ex: canalplus.com ...)
 ||fwmrm.net^$image,3p,badfilter
 
 !
