@@ -14,7 +14,8 @@
 - "Rules, filtering, exception list and blocking antisocial third-party" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%20list%20and%20blocking%20antisocial%20third-party)
     > ###### *fr: "Règles, filtrage, liste d'exceptions et blocage de tiers antisociaux"*
 - "Rules, filtering, exception list, blocking antisocial third-party and no chromecast" (full) [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%2C%20blocking%20antisocial%20third-party%20and%20no%20chromecast)
-    > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et aucun chromecast" (complet)*   <br><br>
+    > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et aucun chromecast" (complet)*   
+<br>
 ###### <ins>Disclaimer</ins>:
 [français] Comme il s'agit de mes propres listes de filtres (que je partage ici gracieusement), il peut y avoir des filtres avec lesquels vous n'êtes pas d'accord.<br>Si c'est le cas, n'hésitez pas à cliquer sur le bouton Fork et à créer votre propre liste.<br><br>[english] Since these are my own filter lists (which I am sharing here free of charge), there may be filters with which you do not agree.<br>If so, feel free to click the Fork button and create your own list.
 
