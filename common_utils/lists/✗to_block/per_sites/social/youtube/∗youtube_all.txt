@@ -25,8 +25,8 @@ music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
 
 !#if (ping && 1p)
-!*$ping,1p,important,domain=youtube.com
-!/youtu(be)?\.(.{2,})(.*\/)?(api\/stats\/qoe)(.*)/$ping,important
+*$ping,1p,important,domain=youtube.com
+/youtu(be)?\.(.{2,})(.*\/)?(api\/stats\/qoe)(.*)/$ping,important
 !#endif
 
 !#if (script && 1p)
