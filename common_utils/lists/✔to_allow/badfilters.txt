@@ -89,7 +89,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 /consentui/*$badfilter
 ! [fix] seems loading better with
 ||m6web.fr/statsd/$badfilter
-! [fix] not be detect
+! [fix] not be detectable
 ||detectadblock.com/dfp.js$badfilter
 /dfp.js$badfilter
 ! [fix] disable count in icon
@@ -97,13 +97,13 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ! [fix] allow adblockanalytics on adblockanalytics.com
 ||adblockanalytics.com^$badfilter
 ||adblockanalytics.com^$domain=~adblockanalytics.com
-! [fix] message disable adblocker
+! [fix] message disable adblocker (not be detectable)
 /a/ads/*$xmlhttprequest,important,badfilter
 /a/ads/*$badfilter
-! Require for rakuten.tv, see the content of the request, it is a simple letter "a".
-! Don't always block everything you see
+! [fix] Require for rakuten.tv (not be detectable)
+! Don't always block everything you see. The content of the request, it is a simple letter "a".
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xhr
-! [fix] stop bypass pub if not on tab (canalplus.com, 6play.fr...)
+! [fix] stop bypass pub if not on tab (ex: canalplus.com ...)
 ||fwmrm.net^$image,3p,badfilter
 
 !
