@@ -16,10 +16,12 @@
 ! VAST version 1
 ! -----------------
 ||moviesprofit.com/watch.xml$xhr,redirect-rule=noopvast-1.0
+||spotxchange.com/vast/1.0$xhr,redirect-rule=noopvast-1.0
 
 ! VAST version 2
 ! -----------------
 ||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
+||spotxchange.com/vast/2.0$xhr,redirect-rule=noopvast-2.0
 ||spotscenered.info$xhr,redirect-rule=noopvast-2.0
 ||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xhr,redirect-rule=noopvast-2.0
 ||tpc.googlesyndication.com/ima3vpaid$xhr,redirect-rule=noopvast-2.0
@@ -27,8 +29,8 @@
 
 ! VAST version 3
 ! -----------------
+||spotxchange.com/vast/3.0$xhr,redirect-rule=noopvast-3.0
 ||springserve.com$xhr,redirect=noopvast-3.0
-||spotxchange.com^$xhr,important,redirect=noopvast-3.0
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
 ||vidalak.com/api/vpaid?$xhr,redirect-rule=noopvast-3.0
@@ -44,6 +46,7 @@
 
 ! VAST version 4
 ! -----------------
+||spotxchange.com/vast/4.0$xhr,redirect-rule=noopvast-4.0
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||*doubleclick.*/gampad/live/ads*$xhr,important,redirect-rule=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important,redirect=noopvast-4.0
