@@ -1,3 +1,7 @@
 ||geo.6play.fr^
 
+!#if (script && !1p)
+@@||gigya.com/js/gigya.js$script
+!#endif
+
 !#include 6play.txt
