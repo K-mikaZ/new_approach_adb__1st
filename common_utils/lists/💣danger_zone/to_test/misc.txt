@@ -32,3 +32,6 @@
 
 ||vipicmou.net^$all,important
 /cookieconsent*$script,important
+
+/tracking_
+
