@@ -5,13 +5,19 @@
 ! animedigitalnetwork --
 !
 ! ------------------------------------------------------------------
-!#if animedigitalnetwork.fr
 ! < start animedigitalnetwork rules>
+!#if animedigitalnetwork.fr
+
 !#if dom
 animedigitalnetwork.fr##.adn-opm2-block-rectangle,.adn-pave,#google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
 yatta.animedigitalnetwork.fr##.adn-header
 !#endif
-! </ end animedigitalnetwork rules>
+
+!#if script
+/animedigitalnetwork\.(.{2,})\/media\/analytics\/event\.min\.js/$script,important
 !#endif
+
+!#endif
+! </ end animedigitalnetwork rules>
 
 !
