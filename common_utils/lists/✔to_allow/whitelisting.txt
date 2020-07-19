@@ -16,6 +16,7 @@
 
 !#if xhr
 @@||youborafds01.com^$xhr
+@@||vendorlist.consensu.org/vendorlist.json
 !#endif
 
 !#if image
