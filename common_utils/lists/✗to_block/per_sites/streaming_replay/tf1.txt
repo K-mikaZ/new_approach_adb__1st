@@ -7,10 +7,6 @@
 !< start TF1 rules >
 !#if tf1.fr
 
-!#if xhr
-/video\-storyboards\.tf1\.(.{2,})\/(.*)/lsb\.vtt/$xhr,important
-!#endif
-
 !#if media
 /prod\-player\.tf1\.(.{2,})\/(.*)\/player/$media,important
 !#endif
