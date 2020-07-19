@@ -1,9 +1,6 @@
 !
 ! FILTERS IN TEST (BETA)
 
-
-*$ping,important
-
 !||wss://bifrost.vivaldi.com*/ws$important
 
 
