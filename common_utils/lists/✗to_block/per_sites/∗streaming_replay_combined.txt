@@ -8,4 +8,5 @@
 !#include streaming_replay/allocine.txt
 !#include streaming_replay/animedigitalnetwork.txt
 !#include streaming_replay/canal➕.txt
+!#include streaming_replay/playRTS.txt
 !#include streaming_replay/rakutenTV.txt
