@@ -1,25 +1,37 @@
 !
 ! FILTERS IN TEST (BETA)
 
-! 17/07/2020 canalplus.com
-! see :
-!     ||www.canalplus.com/nr.js$script,domain=www.canalplus.com
-!     ||static.canal-plus.net/gitlab/trcking/production/v2/trcking.min.js$script,domain=www.canalplus.com
-!     ||www.canalplus.com/serviceWorker.js$script,domain=www.canalplus.com
-!     ||*.js|$xhr,domain=www.canalplus.com
-!     ||*.js|$other,domain=www.canalplus.com
-!     ||*.css|$xhr,domain=www.canalplus.com
-!#if canalplus.com
-/collecteUEM/log/*$xhr,domain=www.canalplus.com
-!#endif
 
-@@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
-||backend.dna-delivery.com^$xhr,important
-
-! not sure
-
-!#if allocine.fr
-allocine.fr##+js(aopr.js, assets.allocine.fr, c.src)
-!#endif
+*$ping,important
 
 !||wss://bifrost.vivaldi.com*/ws$important
+
+
+||http*://*.club^$3p
+||http*://a.a^
+||31.220.3.200^
+||waust.at^$3p
+||d36zfztxfflmqo.cloudfront.net^$3p
+||eikegolehem.com^$3p
+||e2ertt.com^$3p
+||perf.cdnads.com/perf.gif^$image
+||inabsolor.com^$3p
+||vidalak.com^$3p
+||apprefaculty.pro^$3p
+||rwn1sdb4xqa2.com^$3p
+||ayeboagnu.com^$3p
+
+! socialbars-web1.com concern
+/sbar.json?key=$important
+/impr.gif$image,important
+/clk.gif$image,important
+
+||herokuapp.com/report$important
+||d1grmk7aafb6ck.cloudfront.net^
+
+
+||sdk.iad-01.braze.com^$3p
+
+
+||vipicmou.net^$all,important
+/cookieconsent*$script,important
