@@ -2,9 +2,7 @@
 
 ! PER SITES
 ! -------------------------------
-!
 !#include ✗to_block/filter_per_site_based.txt
-!
 
 !
 ! NOT SORTED - (BULK)
@@ -12,10 +10,8 @@
 
 ! DOM CONCERN
 !#if dom
-!
 !#include ✗to_block/filter_dom_script_inject.txt
 !#include ✗to_block/filter_dom_css.txt
-!
 !#endif
 
 ! SCIPTS CONCERN
