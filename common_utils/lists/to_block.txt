@@ -14,18 +14,14 @@
 !#if dom
 !
 !#include ✗to_block/filter_dom_script_inject.txt
-!
-
-!
 !#include ✗to_block/filter_dom_css.txt
 !
 !#endif
 
 ! SCIPTS CONCERN
-!#if script
-!
 !#include ✗to_block/filter_scripts_list.txt
-!
-!#endif
+
+! XHR CONCERN
+!#include lists/✗to_block/filter_xhr.txt
 
 !
