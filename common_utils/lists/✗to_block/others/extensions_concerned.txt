@@ -1,0 +1,16 @@
+
+
+!
+! Hola Free VPN Popup Remover
+! 
+!#if env_chromium
+!#if (chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio && dom)
+###_hola_popup_iframe__
+!#endif
+!#endif
+
+!#if env_firefox
+!#if (moz-extension://180b95ac-9634-4b47-947c-cc3b97f4641b && dom)
+###_hola_popup_iframe__
+!#endifenv_firefox
+!#endif
