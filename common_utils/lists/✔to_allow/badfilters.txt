@@ -69,6 +69,22 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||fwmrm.net^$xhr,3p,badfilter
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
+||herokuapp.com^$important,badfilter
+@@||gemius.pl^$script,badfilter
+! [fix] videos on rtlplay.be
+||videoplaza.tv^$xmlhttprequest,3p,badfilter
+||videoplaza.tv^$image,3p,badfilter
+! [fix] break boingtv.fr
+||cookielaw.org^$3p,badfilter
+||cookielaw.org/scripttemplates$script,domain=~rockpapershotgun.com|~usgamer.net|~rtlxl.nl|~eurogamer.net|~zdnet.com|~eurogamer.pl|~vg247.com,badfilter
+@@||cookielaw.org^
+! [fix] loading videos faster on rts.ch
+||wemfbox.ch^$badfilter
+||wemfbox.ch^$3p,badfilter
+||wt-eu02.net^$badfilter
+||wt-eu02.net^$3p,badfilter
+/wt?p=$badfilter
+/cgi-bin/ivw/*$badfilter
 ! [fix] ?
 /video.counters.js$badfilter
 ! [fix] to generic
