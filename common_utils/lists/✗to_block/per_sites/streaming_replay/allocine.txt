@@ -5,22 +5,25 @@
 ! Allocine --
 !
 ! ------------------------------------------------------------------
-!#if allocine.fr
 ! < start allocine rules >
+!#if allocine.fr
 
 !#if dom
 allocine.fr##.ico-play-yellow.ico-play,.js-sticky-btf.sticky-btf.sticky-ad-holder,.js-trigger-overlay-close.modal-layer,.label-sponso.label-md.label,.modal-email.modal,.overlay-content,.titlebar-btn-holder,#newsletter-anchor,#overlay,.megatooltip.modal.myfriends
+allocine.fr##+js(aopr.js, assets.allocine.fr, c.src)
 ! boost lancement de la B.A
 allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
 !#endif
+
 !#if image
 ||assets.allocine.fr/skin/img/loader*.svg
 !#endif
+
 ||autopromo.allocine.fr^$important
 ||acceptable.allocine.fr^$important
 
-! </ end allocine rules >
 !#endif
+! </ end allocine rules >
 
 !
