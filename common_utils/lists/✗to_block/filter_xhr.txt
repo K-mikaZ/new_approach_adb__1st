@@ -1,0 +1,6 @@
+
+!#if xhr
+
+||backend.dna-delivery.com^$xhr,important
+
+!#endif
