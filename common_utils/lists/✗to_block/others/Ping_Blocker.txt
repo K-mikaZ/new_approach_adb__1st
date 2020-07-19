@@ -1,0 +1,11 @@
+
+! Ping Blocker ( Stop sites from tracking the links you visit through hyperlink auditing. )
+
+! No need extension for that ( https://chrome.google.com/webstore/detail/ping-blocker/jkpocifanmihboebfhigkjcdihgfcdnb )
+
+! Verify if ping requests are currently sent by your browser with Ping Spotter.
+! < https://armin.dev/apps/ping-spotter >
+
+!#if ping
+*$ping,important
+!#endif
