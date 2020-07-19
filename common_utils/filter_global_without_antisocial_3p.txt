@@ -2,6 +2,8 @@
 !
 !#include lists/to_block.txt
 !
+!#include lists/✗to_block/others/extensions_concerned.txt
+!
 
 !
 ! ADD RULES
