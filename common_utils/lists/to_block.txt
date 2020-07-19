@@ -1,5 +1,9 @@
 !
 
+! PING BLOCKER
+! -------------------------------
+!#include ✗to_block/others/Ping_Blocker.txt
+
 ! PER SITES
 ! -------------------------------
 !#include ✗to_block/filter_per_site_based.txt
