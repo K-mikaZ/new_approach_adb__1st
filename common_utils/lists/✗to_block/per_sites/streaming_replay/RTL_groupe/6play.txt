@@ -20,6 +20,10 @@
 @@||pc.middleware.6play.fr^$xhr,domain=6play.fr
 !#endif
 
+!#if (script && !1p)
+@@||gigya.com/js/gigya.js$script,domain=www.6play.fr
+!#endif
+
 !#if image
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
 !#endif
