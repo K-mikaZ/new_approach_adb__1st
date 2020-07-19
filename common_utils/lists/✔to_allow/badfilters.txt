@@ -70,6 +70,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
 ||herokuapp.com^$important,badfilter
+@@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
 @@||gemius.pl^$script,badfilter
 ! [fix] videos on rtlplay.be
 ||videoplaza.tv^$xmlhttprequest,3p,badfilter
