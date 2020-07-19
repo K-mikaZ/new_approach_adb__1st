@@ -1,10 +1,14 @@
 
+! VAST - VPAID ...
 !#include streaming_replay/hosts/VAST-VPAID-rules.txt
+! VIDEOS HOST
 !#include streaming_replay/hosts/video_hosts.txt
 !#include streaming_replay/hosts/video_host_tool_3p.txt
+! FAKE PLAYERS
 !#include streaming_replay/FAKE_VIP_players.txt
 !#include streaming_replay/NO_DL_please.txt
-!#include streaming_replay/6play.txt
+! OTHERS
+!#include streaming_replay/RTL_groupe/RTL_groupe.txt
 !#include streaming_replay/allocine.txt
 !#include streaming_replay/animedigitalnetwork.txt
 !#include streaming_replay/canal➕.txt
