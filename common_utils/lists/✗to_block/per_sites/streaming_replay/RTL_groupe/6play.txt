@@ -9,8 +9,6 @@
 
 !#if 6play.fr
 
-!||geo.6play.fr^$badfilter
-
 !#if dom
 ! try to boost 6play
 ! see view-source:https://www.6play.fr/reign-p_3286/saison-2-episode-6-c_11408962
@@ -18,10 +16,6 @@
 !#endif
 
 !#if xhr
-!*.6cloud.*.jpg$xhr,important
-!*.6play.*.jpg$xhr,important
-! don't block ||backend.dna-delivery.com^$xhr,important,domain=www.6play.fr
-||backend.dna-delivery.com$badfilter
 @@||gelf.m6web.fr^$xhr,domain=6play.fr
 @@||pc.middleware.6play.fr^$xhr,domain=6play.fr
 !#endif
