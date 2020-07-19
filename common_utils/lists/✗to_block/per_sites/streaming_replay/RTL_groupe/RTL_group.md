@@ -1,4 +1,5 @@
 [Télévision](https://fr.wikipedia.org/wiki/RTL_Group#Liste_des_stations_de_radio_et_chaînes_de_télévision_par_pays) :
+voir https://www.rtlbelux.lu/notre-groupe/#view-map-classic et cliquer sur Voir la liste de nos chaînes en version accessible (texte)
 
 en FRANCE:
 
