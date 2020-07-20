@@ -16,6 +16,8 @@
 @@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 ! [fix] for captcha solving
 @@||cdn.ravenjs.com^$script,domain=hcaptcha.com
+! [fix] for rakuten.tv and some others
+@@||cdnjs.cloudflare.com/ajax/libs/rollbar.js/$script
 !#endif
 
 !#if xhr
@@ -31,5 +33,6 @@
 
 ! For Youtube's SponsorBlock addon ( see < https://sponsor.ajay.app > )
 @@||sponsor.ajay.app^
+
 
 ! </ end whitelist >
