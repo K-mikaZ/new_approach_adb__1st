@@ -4,8 +4,8 @@
 !||wss://bifrost.vivaldi.com*/ws$important
 
 
-||http*://*.club^$3p
-||http*://a.a^
+|http*://*.club^$3p
+|http*://a.a^
 ||31.220.3.200^
 ||waust.at^$3p
 ||d36zfztxfflmqo.cloudfront.net^$3p
