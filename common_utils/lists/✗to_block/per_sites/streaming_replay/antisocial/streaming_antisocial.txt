@@ -1,5 +1,9 @@
 !#if dom
 
+!#if streamingclic.
+streamingclic.site###share,section.disqus,.header-nav [href$=".com/streamingclic/"]
+!#endif
+
 !#if filmgratuit.net
 filmgratuit.net##.social,[href*="facebook."],[href*="twitter."],[href*="pinterest."],.wrap > .item > .tit
 !#endif
