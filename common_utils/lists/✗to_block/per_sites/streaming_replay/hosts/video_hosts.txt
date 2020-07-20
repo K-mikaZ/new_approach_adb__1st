@@ -2,7 +2,7 @@
 !
 ! < start video hosts sites rules >
 
-@@*$generichide,domain=allvid.co|clipwatching.com|gounlimited.to|hollywood.to|hqq.tv|netu.tv|playtovid.com|uptostream.com|videobin.co|vidoza.net|vidtodo.com|vidtood.com|vizplay.icu|waaw.tv|widtodo.com
+@@*$generichide,domain=allvid.co|clipwatching.com|core1player.com|dood.watch|feurl.com|gounlimited.to|hdslecteur.xyz|hollywood.to|hqq.tv|netu.tv|opsktp.com|playtovid.com|uptostream.com|videobin.co|vidoza.net|vidtodo.com|vidtood.com|vizplay.icu|waaw.tv|widtodo.com
 
 !#if dood.watch
 |https://$image,3p,domain=dood.watch,badfilter
