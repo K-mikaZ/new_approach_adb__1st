@@ -1,0 +1,22 @@
+
+!#if ampproject.org
+/amp-analytics-$important
+!#endif
+!#if cloudflareinsights.com
+||static.cloudflareinsights.com^$important
+!#endif
+!#if slgnt.eu
+||slgnt.eu$important,domain=~selligent.com|~emsecure.net|~slgnt.eu|~slgnt.us
+!#endif
+!#if grapeshot.co.uk
+||grapeshot.co.uk$important,domain=~grapeshot.co.uk
+!#endif
+!#if trustcommander.com
+||trustcommander.$important
+!#endif
+!#if mynativeplatform.com
+||mynativeplatform.com$important
+!#endif
+!#if disqusads.com
+||disqusads.com^$important
+!#endif
