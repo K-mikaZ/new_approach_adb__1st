@@ -10,7 +10,6 @@
 
 !#if dom
 allocine.fr##.ico-play-yellow.ico-play,.js-sticky-btf.sticky-btf.sticky-ad-holder,.js-trigger-overlay-close.modal-layer,.label-sponso.label-md.label,.modal-email.modal,.overlay-content,.titlebar-btn-holder,#newsletter-anchor,#overlay,.megatooltip.modal.myfriends
-allocine.fr##+js(aopr.js, assets.allocine.fr, c.src)
 ! boost lancement de la B.A
 allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
