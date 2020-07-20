@@ -3,7 +3,8 @@
 ! VAST - VPAID - VMAP ... concern ( video ad-serving protocols )
 ! --------------------------------------------------------------
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
-! see < https://github.com/InteractiveAdvertisingBureau/VAST_Samples >
+!      < https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags >
+! see also < https://github.com/InteractiveAdvertisingBureau/VAST_Samples >
 
 ! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
 /player/plugins/vast-*.js$script,badfilter
