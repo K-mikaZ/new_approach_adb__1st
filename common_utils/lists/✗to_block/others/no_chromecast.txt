@@ -2,6 +2,4 @@
 !#if (script && !1p)
 ! ChromeCast concern
 */cast_sender.js$script,3p,important
-! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
-/chromecast(.min)?\.js/$script,important
 !#endif
