@@ -3,7 +3,7 @@
 
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
-/(.*)\/chromecast(.min)?\.js/$script
+/(.*)\/chromecast(\.min)?\.js/$script
 
 !||wss://bifrost.vivaldi.com*/ws$important
 
