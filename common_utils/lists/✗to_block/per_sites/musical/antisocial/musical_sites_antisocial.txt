@@ -5,7 +5,14 @@
 !#endif
 
 !#if dom
+
+!#if deezer.com
+! Removes comments
+deezer.com##div.catalog-content:nth-of-type(2) > .container
+!#endif
+
 !#if di.fm
 di.fm##.footer-social,.share,.discuss-btn,.social-region,.discord-region
 !#endif
+
 !#endif
