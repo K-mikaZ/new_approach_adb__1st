@@ -123,6 +123,15 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xhr
 ! [fix] stops bypass pub if not on tab (ex: canalplus.com ...)
 ||fwmrm.net^$image,3p,badfilter
+!#if xhr
+! [fix] for noop vast correctly
+@@||search.spotxchange.com/vast/$xhr,domain=rakuten.tv,badfilter
+@@||search.spotxchange.com/vast/$xhr,badfilter
+@@||search.spotxchange.com/vast/$badfilter
+@@||search.spotxchange.com^$xhr,badfilter
+@@||spotxchange.com^$3p,badfilter
+!#endif
+||rollbar.com^$3p,badfilter
 
 !
 ! Tracking urls
