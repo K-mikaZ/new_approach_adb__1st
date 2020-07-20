@@ -3,5 +3,5 @@
 ! ChromeCast concern
 */cast_sender.js$script,3p,important
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
-*/chromecast*.js$script,important
+/chromecast(.min)?\.js/$script,important
 !#endif
