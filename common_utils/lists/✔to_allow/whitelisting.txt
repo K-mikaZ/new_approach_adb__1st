@@ -25,4 +25,7 @@
 @@/favicon*$image
 !#endif
 
+! For Youtube's SponsorBlock addon ( see < https://sponsor.ajay.app > )
+@@||sponsor.ajay.app^
+
 ! </ end whitelist >
