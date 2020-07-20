@@ -2,7 +2,7 @@
 
 ! PING BLOCKER
 ! -------------------------------
-!#include ✗to_block/others/Ping_Blocker.txt
+!! #include ✗to_block/others/Ping_Blocker.txt
 
 ! PER SITES
 ! -------------------------------
