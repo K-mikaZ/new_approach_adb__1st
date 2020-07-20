@@ -5,7 +5,7 @@
 ! Youtube --
 !
 ! ------------------------------------------------------------------
-!#if youtube.com|youtu.be
+!#if (youtube.com|youtu.be|yt.be)
 ! < start youtube rules >
 
 !
