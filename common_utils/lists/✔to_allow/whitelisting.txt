@@ -1,5 +1,5 @@
 
-!#include ./✗to_block/per_sites/streaming_replay/streaming_generichide.txt
+!#include streaming_generichide.txt
 
 !
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
