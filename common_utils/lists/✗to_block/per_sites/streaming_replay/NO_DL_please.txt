@@ -8,12 +8,32 @@
 ! < start no DL on streaming sites rules>
 
 !#if dom
+
+!#if voirseries.ws
 voirseries.ws##ul[class="downloads"]
 voirseries.ws#?#h3.h:if(> :-abp-contains(/Telechargement/))
+!#endif
+
+!#if papseries.net
+papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
+!#endif
+
+!#if filmstoon.
 filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+!#endif
+
+!#if series.dpstreaming.to
 series.dpstreaming.to#?#center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
+!#endif
+
+!#if (filmz.|zone-stream.club)
 filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+!#endif
+
+!#if (zustream.|vodfilms.|enseries.|vustream.|filmgratuit.|voirseries.|seriestream.|voirfilms.|streamingdivx.|skstream.ink|enstream.)
 zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+!#endif
+
 !#endif
 
 ! </ end no DL on streaming sites rules >
