@@ -17,14 +17,6 @@ inpagepush.com##+js(aopr.js, $)
 !#endif
 !#endif
 
-!#if (hdslecteur.xyz && dom)
-hdslecteur.xyz##+js(aopr.js, this.iframe)
-hdslecteur.xyz##+js(aopr.js, /\_0x*/)
-!hdslecteur.xyz##+js(aopr.js, _0x5751)
-!hdslecteur.xyz##+js(aopr.js, _0x5f22)
-hdslecteur.xyz###lkm6j,#z7wsgp3
-!#endif
-
 !#if (bs0wvimoy99r.com && dom)
 bs0wvimoy99r.com##+js(popads-dummy.js)
 !#endif
