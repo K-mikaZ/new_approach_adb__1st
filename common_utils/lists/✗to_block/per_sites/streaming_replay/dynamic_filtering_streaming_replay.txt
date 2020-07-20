@@ -1,5 +1,6 @@
 * hqq.tv * noop
 * netu.tv * noop
+* vizplay.icu * noop
 * waaw.tv * noop
 hqq.tv * 3p-frame block
 hqq.tv * 3p-script block
@@ -9,13 +10,19 @@ netu.tv * 3p-script block
 netu.tv netu.tv * allow
 no-cosmetic-filtering: hqq.tv true
 no-cosmetic-filtering: netu.tv true
+no-cosmetic-filtering: vizplay.icu true
 no-cosmetic-filtering: waaw.tv true
 no-popups: hqq.tv true
 no-popups: netu.tv true
+no-popups: vizplay.icu true
 no-popups: waaw.tv true
 no-strict-blocking: hqq.tv true
 no-strict-blocking: netu.tv true
+no-strict-blocking: vizplay.icu true
 no-strict-blocking: waaw.tv true
+vizplay.icu * 3p-frame block
+vizplay.icu * 3p-script block
+vizplay.icu vizplay.icu * allow
 waaw.tv * 3p-frame block
 waaw.tv * 3p-script block
 waaw.tv waaw.tv * allow
