@@ -1,8 +1,7 @@
 
 !#if (script && !1p)
 ! ChromeCast concern
-! [fix] for those have error when chromecast blocking
 */cast_sender.js$script,3p,important
-! [fix] see < https://flowplayer.com/developers/plugins/chromecast >
+! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 */chromecast*.js$script,important
 !#endif
