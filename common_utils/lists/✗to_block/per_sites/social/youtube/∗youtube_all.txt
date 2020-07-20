@@ -5,8 +5,8 @@
 ! Youtube --
 !
 ! ------------------------------------------------------------------
-!#if (youtube.com|youtu.be|yt.be)
 ! < start youtube rules >
+!#if (youtube.com|youtu.be|yt.be)
 
 !
 !#include youtube_parts_easylists.txt
@@ -20,11 +20,7 @@
 youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
 youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 !#if music.youtube.com
-!music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(1) > .ytmusic-popup-container.style-scope
-! try disable pause
 !music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
-! https://music.youtube.com/verify_session
-! json contains {"success":true}
 !#endif
 !#endif
 
@@ -39,7 +35,7 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 !#if image
 /generate_204$image,important
 /youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
-! don't stop reading my playlist fucking guys!
+! don't block this
 !||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
 !#endif
 
@@ -50,12 +46,10 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 ! don't stop reading my playlist fucking guys!
 ||youtu*.*/*/log_event?alt=json&*$xhr,important
 !#if music.youtube.com
-! try don't stop reading my playlist fucking guys!
+! https://music.youtube.com/verify_session
+! json contains {"success":true}
 !||music.youtube.com/verify_session$xhr,1p,important
 !#endif
-! A vérifier
-!/ht{2}ps?\:\/{2}([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?youtu(be)?\.(.{2,})(.*\/)?((an{2}otations\_invideo)|(er{2}or\_204)|heartbeat|(service\_ajax\?name\=(updatedMetadata|signalService)Endpoint)|(get\_endscre{2}n))(.*)/$xhr,important
-!/((annotations\_invideo)|(error\_204)|heartbeat|(service_ajax\?name\=(updatedMetadata|signalService)Endpoint)|(get\_endscreen))/$xhr,important,domain=youtube.com
 !#endif
 
 !#if (subdocument && 1p)
@@ -92,9 +86,6 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 @@||youtube.com/get_video_info$badfilter
 @@||www.youtube.com/get_video_info?*video_id*detailpage$xhr,domain=youtube.com,badfilter
 ||google.*/pagead/lvz?$image,important
-!  A verifier
-!/((live\_chat)|invalidation|heartbeat|(about\:blank)|(iframeResizer\.contentWindow\.map)|(^referrer^)|(\&event\=streamingstats\&))/$important,domain=youtube.com
-!/youtube\.(.{2,})\/youtubei\/(.*)\/log_interaction/$important
 
 !#endif
 ! </ end youtube rules >
