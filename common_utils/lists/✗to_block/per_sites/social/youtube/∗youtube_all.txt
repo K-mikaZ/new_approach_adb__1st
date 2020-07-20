@@ -20,7 +20,7 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 !#if music.youtube.com
 !music.youtube.com##paper-dialog.ytmusic-popup-container.style-scope:nth-of-type(1) > .ytmusic-popup-container.style-scope
 ! try disable pause
-music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
+!music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
 !#endif
 
@@ -36,7 +36,7 @@ music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 /generate_204$image,important
 /youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't stop reading my playlist fucking guys!
-||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
+!||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
 !#endif
 
 !#if (xhr && 1p)
