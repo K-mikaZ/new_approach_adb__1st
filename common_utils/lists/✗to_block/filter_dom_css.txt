@@ -364,6 +364,20 @@ zone-stream.club##a#yell60,.salidor_register_contbutton
 zone-stream.site##.banner,.but,#ads
 zonestream.fun###ads,.banner,floatLayer,floatLayer div,floatLayer span,[src="/close.png"]
 zustream.*##a.redzz.action-buttonzz,.wgsda,.gws_bx,#plyb,.nb-layout-1-outer.nb-bottom-outer.nb-notice-outer-wrap,.nb-plain-text-wrap,.nb-layout-1.nb-bottom.nb-notice-wrap
+cinez.net###playerOver,.report-pub
+! space after div !IMPORTANT
+french--stream.co##div :if(a.frenchpub)
+french--stream.co##div:if(> a#yell60)
+justwatch.com##.ad-unit
+le.topseriestreaming.com##.justify-content-center.row:if([class*="ebooks_"])
+mesfilms.net###wnb-bar
+! [fix] header repositioning (after removing bar)
+mesfilms.net#$##header.main{top:0}
+papseries.net##div:if(>.mr-3.btn)
+papseries.net###mv-keywords
+stream-serie.net##.justify-content-center.row:if([class*="ebooks_orange"])
+! [fix] resize div player (pour avoir accès au boutons)
+stream-serie.net#$##option-1{height:100%}
 ! </ end dom css rules >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
