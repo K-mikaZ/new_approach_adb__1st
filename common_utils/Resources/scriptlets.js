@@ -6649,3 +6649,9 @@ noopvast-3.0 text/xml
 
 noopvast-4.0 text/xml
 <VAST version="4.0"></VAST>
+
+noopvast-4.1 text/xml
+<VAST version="4.1"></VAST>
+
+noopvast-4.2 text/xml
+<VAST version="4.2"></VAST>
