@@ -130,8 +130,11 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||search.spotxchange.com/vast/$badfilter
 @@||search.spotxchange.com^$xhr,badfilter
 @@||spotxchange.com^$3p,badfilter
+||spotxchange.com^$badfilter
+||spotxchange.com^$3p,badfilter
 !#endif
 ||rollbar.com^$3p,badfilter
+@@||cdnjs.cloudflare.com/ajax/libs/rollbar.js/$script,domain=rakuten.tv,badfilter
 
 !
 ! Tracking urls
