@@ -1,12 +1,15 @@
 
 ! <start "play RTS" rules >
 !#if rts.ch
+
 !#if dom
 rts.ch##+js(aopr.js, Dr)
 !#endif
+
 !#if script
 ! [fix] try speedup rts
 ||hummingbird.rts.ch*/hummingbird.min*.js
 !#endif
+
 !#endif
 ! </ end "play RTS" rules >
