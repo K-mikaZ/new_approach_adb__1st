@@ -1,4 +1,5 @@
 
+!< start rakuten.tv rules >
 !#if rakuten.tv
 
 !#if dom
@@ -11,3 +12,4 @@ rakuten.tv##+js(set.js, isAdblockDetected, 0)
 !#endif
 
 !#endif
+!</ end rakuten.tv rules >
