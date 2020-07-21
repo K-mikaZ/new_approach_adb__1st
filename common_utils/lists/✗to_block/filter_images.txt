@@ -1,0 +1,71 @@
+
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+!
+! IMAGES RULES --
+!
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+!
+!#if image
+
+!#if gif
+|*.gif?partner^$image,important
+||perf.gif$image,important
+||empty_pixel.gif$image,important
+||*google.*/images/cleardot.gif|$image,important
+||*jwpltx.com/*/jwplayer*/ping.gif$image,important
+||cdn1.ftimg.com/images/x.gif$image,1p,important
+||r.mail.ru/*.gif$image,important
+!#if (hivos.com && !1p)
+||*.hivos.*.gif|$image,important
+!#endif
+!#endif
+
+!#if png
+||cdn.accuradio.com/static/images/*/adblock_warning_yellow.png^$image,important
+||full-serie.*/templates/Streaming/images/highlight.png^$image,important
+||ianimes.co/images/e-pubs.png^$image,important
+||thevideo.me/images/close_red_small.png^$image,important
+||universanimeiz.com/wp-content/uploads/*/*/Background1.png$image,important
+||uv9ieb2ohr.com/images/close_gray.png^$image,important
+||vidup.me/images/embed_bg_1.png$image,important
+||vidup.me/player/mute.png$image,important
+||voirfilmsenstreaming.com/wp-content/themes/dontz/images/bg.png$image,important
+||www.voirfilms.*/img/close_grey.png$image,important
+!#endif
+
+||feeds.feedburner.*?bg=$image,important
+||adnxs.com$image,important
+*/adservice.*$image,important
+||disneyhd.tk/films/pub3.jpg$image,1p,important
+||disneyhd.tk/shoutbox/*$image,1p,important
+||e2ertt.com/?jsonKey=*^$image,important
+||full-serie.*error404.php^$image,important
+||full-serie.*undefined^$image,important
+||image.tmdb.org/t/p/original/3sExYAo2rNhKgrHx8S37WMTJHZv.jpg$image,important
+||l2.visiblemeasures.com^$image,important
+||p-eu.acxiom-online.com/pixel/ema?*^$image,important
+||pixel*.*.*^$image,important
+||sync.ipredictive.com/d/sync/cookie/generic^$image,important
+||vf-stream.net/undefined^$image,important
+||electrodepot.fr/pub/media/wysiwyg/site/body-background.jpg$image
+||nowvideo.sx/embed/$image,important
+||numerama.com/content/themes/project-n-theme/resources/assets/images/icon/sponsoring.svg^$image,important
+||xddl.link$image
+/google\.(.{2,})\/[0-9a-z]{50,60}\/(src=\"data:image\/([a-zA-Z]*);base64,([^\"]*))$important,/^$image,important
+|*/cookie-forwarding?^$image,important
+|*/cookie/generic^$image,important
+|*/error404.php^$image,important
+|*/pixel?^$image,important
+|*/undefined^$image,important
+|*_type=hidden^$image,important
+||waaw.tv/images/adblock.jpg$image,important
+||*.google.*/ads/*$image,important
+||*dpstream.media/premium/*^$image,important
+||c2.accu.fm/banners/*^$image,important
+||c16.vidlox.tv/i/01/00523/sy05y705sc7r_xt.jpg$image,important
+||clickopen.win/x/assets/previews/*$image,1p,important
+||clickserv*.*.*^$image,important
+||collector.githubapp.com/github/page_view^$image,important
+
+!#endif
+!
