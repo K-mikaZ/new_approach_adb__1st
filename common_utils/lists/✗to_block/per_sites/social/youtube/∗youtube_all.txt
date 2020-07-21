@@ -43,8 +43,7 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
-! don't stop reading my playlist fucking guys!
-||youtu*.*/*/log_event?alt=json&*$xhr,important
+!||youtu*.*/*/log_event?alt=json&*$xhr,important
 !#if music.youtube.com
 ! https://music.youtube.com/verify_session
 ! json contains {"success":true}
@@ -75,8 +74,6 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 !#endif
 
 ! Somes fix
-/api/stats/watchtime$domain=youtube.com,badfilter
-||youtube.com/api/stats/watchtime$badfilter
 ! [fix] Require for Local YouTube Downloader < https://greasyfork.org/en/scripts/369400-local-youtube-downloader >
 /youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
 ||youtube.com/get_video_info$badfilter
@@ -85,7 +82,16 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 ! [fix] Disable count in bloker icon
 @@||youtube.com/get_video_info$badfilter
 @@||www.youtube.com/get_video_info?*video_id*detailpage$xhr,domain=youtube.com,badfilter
-||google.*/pagead/lvz?$image,important
+! [fix] YOUTUBE DELAY WATCH TIME
+||youtube.com/api/stats/qoe?$badfilter
+/api/stats/watchtime$domain=youtube.com,badfilter
+||youtube.com/api/stats/watchtime$badfilter||google.*/pagead/lvz?$image,important
+! [fix] Embed YouTube video via a cookieless domain
+! When embedding a video using youtube.com, Google uses DoubleClick to track your users.
+! When using youtube-nocookie.com, Google no longer uses DoubleClick to track your users.
+! < https://dri.es/how-to-remove-youtube-tracking >
+! read also < https://cmscanbesimple.org/blog/embed-youtube-video-via-a-cookieless-domain >
+||youtube-nocookie.com^$badfilter
 
 !#endif
 ! </ end youtube rules >
