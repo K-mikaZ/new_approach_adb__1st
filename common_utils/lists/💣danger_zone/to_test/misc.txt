@@ -5,6 +5,17 @@
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 /(.*)\/chromecast(\.min)?\.js/$script
 
+! 20/07/2020 https://wikiserie.co
+! try to block modal VPN
+! VOIR ICI < https://wikiserie.co/js/app.js > et < view-source:https://wikiserie.co/me02-this-is-us-en-streaming/saison/2/episode/2 >
+! PATCH en attendant
+!wikiserie.co##.modal-footer:after,.modal-header:after,.modal-footer:before,.modal-header:after,.modal-header:before,.modal-header,.modal-title,.modal-body,.modal-footer
+!wikiserie.co#$#.modal{background-color:transparent!important}
+wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
+! set/remove cookie ??
+! set.js, aopr.js, aopw.js ??
+!wikiserie.co##+js(aopr.js, MODAL)
+
 !||wss://bifrost.vivaldi.com*/ws$important
 
 
