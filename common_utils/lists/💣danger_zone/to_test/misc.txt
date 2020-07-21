@@ -14,7 +14,14 @@
 wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
 ! set/remove cookie ??
 ! set.js, aopr.js, aopw.js ??
-!wikiserie.co##+js(aopr.js, MODAL)
+!wikiserie.co##+js(aopr.js, MODAL)$
+
+! Comscore Analytics
+||comscore.com^$badfilter
+||www.comscore.com^$badfilter
+||comscore.com^$domain=~comscore.com
+! https://flowplayer.com/developers/plugins/comscore
+/comscore*.js
 
 !||wss://bifrost.vivaldi.com*/ws$important
 
