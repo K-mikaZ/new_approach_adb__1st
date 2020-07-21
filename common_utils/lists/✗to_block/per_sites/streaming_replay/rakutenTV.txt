@@ -2,6 +2,7 @@
 !#if rakuten.tv
 
 !#if dom
+! https://gizmo.rakuten.tv/v3/me/streamings/check.json
 rakuten.tv##+js(set.js, heartbeat, OK)
 !#endif
 
