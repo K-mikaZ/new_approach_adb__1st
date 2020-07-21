@@ -22,8 +22,12 @@
 !#include ✗to_block/filter_scripts_list.txt
 
 ! XHR CONCERN
-!#include lists/✗to_block/filter_xhr.txt
+!#include ✗to_block/filter_xhr.txt
 
+! IMAGES CONCERN
+!#include ✗to_block/filter_images.txt
+
+! OTHERS BULK
 !#include ✗to_block/filter_not_sorted_bulk.txt
 
 !
