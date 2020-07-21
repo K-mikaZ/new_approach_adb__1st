@@ -2,7 +2,7 @@
 !#if rakuten.tv
 
 !#if dom
-rakuten.tv##+js(set.js, adBlockDetected, 0)
+rakuten.tv##+js(set.js, heartbeat, OK)
 !#endif
 
 !#endif
