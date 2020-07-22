@@ -1,5 +1,5 @@
 *$3p,domain=soundcloud.com
-@@||sndcdn.com,domain=soundcloud.com
+@@||sndcdn.com
 !#if dom
 soundcloud.com##.dashbox,.m-promotion
 !#endif
