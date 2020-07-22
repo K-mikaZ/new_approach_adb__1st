@@ -1,5 +1,5 @@
 
-!< start torrent sites rules >
+! < start torrent sites rules >
 
 *$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 @@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
@@ -23,4 +23,4 @@ torrent9.*,torrent09.uno,oxtorrent.me##.col-xs-11:style(opacity:.25)
 !#endif
 !#endif
 
-!</ end torrent sites rules >
+! </ end torrent sites rules >
