@@ -30,6 +30,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@##cookie-alert
 ! break video player site lequipe.fr
 #@#.np_DialogConsent
+! [fix] too generic, break https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags
+#@#a[href^="//pubads.g.doubleclick.net/"]
 
 !#endif
 
