@@ -21,6 +21,8 @@
 !#if xhr
 @@||youborafds01.com^$xhr
 @@||vendorlist.consensu.org/vendorlist.json
+! [fix] break too many video loading
+@@||googleads.g.doubleclick.net/pagead/id$xhr
 !#endif
 
 !#if image
