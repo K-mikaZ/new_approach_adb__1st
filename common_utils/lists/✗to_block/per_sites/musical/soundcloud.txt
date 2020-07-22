@@ -1,4 +1,5 @@
-*$3p,important,domain=soundcloud.com
+*$3p,domain=soundcloud.com
+@@||sndcdn.com,domain=soundcloud.com
 !#if dom
 soundcloud.com##.dashbox,.m-promotion
 !#endif
