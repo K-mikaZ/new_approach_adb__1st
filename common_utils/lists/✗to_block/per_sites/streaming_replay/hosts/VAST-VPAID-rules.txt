@@ -63,8 +63,7 @@
 ||spotxchange.com/vast/4.1$xhr,redirect-rule=noopvast-4.1
 ||spotxchange.com/vast/4.2$xhr,redirect-rule=noopvast-4.2
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
-||*doubleclick.*/gampad/live/ads*$xhr,domain=allocine.fr,redirect-rule=noopvast-4.0
-||doubleclick.net/gampad/live/ads*$xhr,domain=allocine.fr,redirect=noopvast-4.0
+||pubads.g.doubleclick.net/gampad/live/ads*&cust_params=site%3Dallocine*$xhr,redirect-rule=noopvast-4.0
 ! [fix] animedigitalnetwork.fr doesn't apply otherwise
 ||pubads.g.doubleclick.net/gampad/ads$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
 
