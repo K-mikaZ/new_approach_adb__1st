@@ -223,6 +223,29 @@
 ||thunderclap.it^$all,3p,domain=~thunderclap.it
 !#endif
 
+!#if weheartit.com
+||weheartit.com^$all,3p,domain=~weheartit.com
+!#endif
+
+!#if tiktok.com
+||tiktok.com^$all,3p,domain=~tiktok.com
+!#endif
+
+!#if snapchat.com
+||snapchat.com^$all,3p,domain=~snapchat.com
+!#endif
+
+! Periscope (racheté par twitter)
+!#if pscp.tv
+||pscp.tv^$all,3p,domain=~pscp.tv
+!#endif
+
+! Le remplaçant de Vine
+!#if byte.co
+||byte.co^$all,3p,domain=~byte.co
+!#endif
+
+
 !
 !#include lists/✗to_block/bulk_antisocial.txt
 !
