@@ -65,6 +65,7 @@
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||pubads.g.doubleclick.net/gampad/live/ads*allocine*$xhr,redirect-rule=noopvast-4.0
 ! [fix] animedigitalnetwork.fr doesn't apply otherwise
-!||pubads.g.doubleclick.net/gampad/ads*animedigitalnetwork*$xhr,redirect-rule=noopvast-4.0
+||*doubleclick.*animedigitalnetwork*$xhr,domain=imasdk.googleapis.com,important,redirect-rule=noopvast-4.0
+||*animedigitalnetwork*$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
 
 !
