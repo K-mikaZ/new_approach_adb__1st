@@ -19,6 +19,8 @@
 ! -----------------
 ||moviesprofit.com/watch.xml$xhr,redirect-rule=noopvast-1.0
 ||spotxchange.com/vast/1.0$xhr,redirect-rule=noopvast-1.0
+||vast.doubleverify.com/v1$xhr,redirect-rule=noopvast-1.0
+||s3.amazonaws.com/vast/VAST-1.0$xhr,redirect-rule=noopvast-1.0
 
 ! VAST version 2
 ! -----------------
@@ -28,6 +30,8 @@
 ||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xhr,redirect-rule=noopvast-2.0
 ||tpc.googlesyndication.com/ima3vpaid$xhr,redirect-rule=noopvast-2.0
 ||svastx.moatads.com$xhr,redirect-rule=noopvast-2.0
+||vast.doubleverify.com/v2$xhr,redirect-rule=noopvast-2.0
+||s3.amazonaws.com/vast/VAST-2.0$xhr,redirect-rule=noopvast-2.0
 
 ! VAST version 3
 ! -----------------
@@ -41,13 +45,22 @@
 ||apprefaculty.pro$xhr,redirect-rule=noopvast-3.0
 ||deliver.vkcdnservice.com$xhr,redirect-rule=noopvast-3.0
 ||vast.adsafeprotected.com$xhr,redirect-rule=noopvast-3.0
+||vast.doubleverify.com/v3$xhr,redirect-rule=noopvast-3.0
+||s3.amazonaws.com/vast/VAST-3.0$xhr,redirect-rule=noopvast-3.0
 ! [fix] for correct redirect
 ||fiorenetwork.com^$3p,badfilter
 ||fiorenetwork.com$xhr,important
 ||fiorenetwork.com$xhr,redirect-rule=noopvast-3.0
 
-! VAST version 4
+! VAST version 4.*
 ! -----------------
+||vast.doubleverify.com/v4$xhr,redirect-rule=noopvast-4.0
+||s3.amazonaws.com/vast/VAST-4.0$xhr,redirect-rule=noopvast-4.0
+||s3.amazonaws.com/vast/VAST-4.1$xhr,redirect-rule=noopvast-4.1
+||s3.amazonaws.com/vast/VAST-4.2$xhr,redirect-rule=noopvast-4.2
+||spotxchange.com/vast/4.0$xhr,redirect-rule=noopvast-4.0
+||spotxchange.com/vast/4.1$xhr,redirect-rule=noopvast-4.1
+||spotxchange.com/vast/4.2$xhr,redirect-rule=noopvast-4.2
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 ||*doubleclick.*/gampad/live/ads*$xhr,important,redirect-rule=noopvast-4.0
 ||doubleclick.net/gampad/live/ads*$xhr,important,redirect=noopvast-4.0
@@ -55,11 +68,4 @@
 ! [fix] animedigitalnetwork.fr doesn't apply otherwise
 ||pubads.g.doubleclick.net/gampad/ads$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
 
-||s3.amazonaws.com/vast/VAST-4.0$xhr,redirect-rule=noopvast-4.0
-||s3.amazonaws.com/vast/VAST-4.1$xhr,redirect-rule=noopvast-4.1
-||s3.amazonaws.com/vast/VAST-4.2$xhr,redirect-rule=noopvast-4.2
-
-||spotxchange.com/vast/4.0$xhr,redirect-rule=noopvast-4.0
-||spotxchange.com/vast/4.1$xhr,redirect-rule=noopvast-4.1
-||spotxchange.com/vast/4.2$xhr,redirect-rule=noopvast-4.2
 !
