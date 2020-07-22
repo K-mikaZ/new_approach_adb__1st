@@ -67,7 +67,4 @@
 ! [fix] animedigitalnetwork.fr doesn't apply otherwise
 ||pubads.g.doubleclick.net/gampad/ads$xhr,domain=imasdk.googleapis.com,important,redirect=noopvast-4.0
 
-
-!||doubleclick.net/gampad/live/ads*$xhr,important
-
 !
