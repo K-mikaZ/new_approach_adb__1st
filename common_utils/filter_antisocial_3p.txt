@@ -17,8 +17,8 @@
 !#if script
 ! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
 ! see example here: < https://einaregilsson.com/redirector/ >
-||*disqus.com/forums/*/embed.js$script,3p
-||*disqus.com/embed.js$script,3p
+||disqus.com/forums/*/embed.js$script,3p
+||disqus.com/embed.js$script,3p
 !#endif
 # If you want a site you regularly visit to always have the comment loaded,
 # just use an exception static filter. Example for wired.com:
