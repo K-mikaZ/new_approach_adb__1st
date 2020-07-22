@@ -1,36 +1,33 @@
-!
-
-!
-! ------------------------------------------------------------------
-!
-! Spotify --
-!
-! ------------------------------------------------------------------
 ! < start spotify rules >
 !#if open.spotify.com
+
 !#if dom
 open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa11ca9390bd7-scss._2221af4e93029bedeab751d04fab4b8b-scss,.f8173b6c9c83185b5ba509aefd178eb8\.scss,._3c08e30e0b5018cc15edf990e21d3dc5-scss,._73caa39b8a3031fc2c408c9f442beb35-scss._1edf52628d509e6baded2387f6267588-scss._2221af4e93029bedeab751d04fab4b8b-scss
 !#endif
+
 !#if script
 /(.*)?pixel\-static\.spotify\.(.{2,})\/sync\.min\.js/$script,important
 !#endif
+
 !#if (image && !1p)
 ||spotify.demdex.net$image,important
 !#endif
+
 !#if xhr
 *.client.*.spotify.*sponsoredplaylist$xhr,important
 !#endif
+
 ! badfilters
 ||open.spotify.com^$badfilter
 ||wg.spotify.com$badfilter
 ||spclient.wg.spotify.com/ads/v2/config$badfilter
 ||sentry.io/api/*$badfilter
+
 ! allow
 @@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
 @@||adeventtracker.spotify.com/monitoring$xhr,domain=open.spotify.com
 @@||gew-dealer.spotify.com^$websocket,1p
 @@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
+
 !#endif
 ! </ end spotify rules >
-
-!
