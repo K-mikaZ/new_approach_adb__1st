@@ -65,6 +65,11 @@
 @@||cdninstagram.com^$3p
 !#endif
 
+!#if gravatar.com
+@@||gravatar.com/avatar$image,3p,badfilter
+||gravatar.com^$all,3p,domain=~gravatar.com
+!#endif
+
 !#if (linkedin.com && !1p)
 ||linkedin.com^$all,3p,domain=~linkedin.com
 !#endif
