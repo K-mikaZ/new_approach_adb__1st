@@ -26,9 +26,7 @@
 # Otherwise, leave commented and block on request per sites with example:
 !||allocine-prod2.disqus.com/embed.js$script,important
 !||topreplay.disqus.com/embed.js$script,important
-!#endif
 ! experimental click-to-load disqus
-!#if (disqus.com && !1p)
 ||*.disqus.com/embed.js$script,3p
 ! </ end Disqus on demand >
 !#endif
