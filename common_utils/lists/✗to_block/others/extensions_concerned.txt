@@ -5,13 +5,13 @@
 !
 
 !#if env_chromium
-!#if (chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio && dom)
+!#if (chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio)
 ###_hola_popup_iframe__
 !#endif
 !#endif
 
 !#if env_firefox
-!#if (moz-extension://180b95ac-9634-4b47-947c-cc3b97f4641b && dom)
+!#if (moz-extension://180b95ac-9634-4b47-947c-cc3b97f4641b)
 ###_hola_popup_iframe__
 !#endif
 !#endif
