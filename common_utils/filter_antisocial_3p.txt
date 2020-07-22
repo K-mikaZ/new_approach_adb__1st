@@ -7,11 +7,41 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
-!#if (facebook. && !1p)
-||*.facebook.*$all,3p,important,domain=~facebook.com
-||fbsbx.com^$all,3p,important,domain=~facebook.com
-||fbcdn.net^$all,3p,important,domain=~facebook.com
+!#if (disqus.com && !1p)
+! < start Disqus on demand >
+# Completely experimental: load Disqus on demand only. Purpose is to avoid
+# connecting to Disqus' servers, unless the user explicitly asks for the
+# comments to be loaded.
+# Works with following filters: disqus_forums_embed.js AND disqus_embed.js
+# Uncomment for blocking all
+!#if script
+! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
+! see example here: < https://einaregilsson.com/redirector/ >
+||disqus.com/forums/*/embed.js$script
+||disqus.com/embed.js$script
+!#endif
+# If you want a site you regularly visit to always have the comment loaded,
+# just use an exception static filter. Example for wired.com:
+# @@||wired.disqus.com/embed.js
+# Otherwise, leave commented and block on request per sites with example:
+!||allocine-prod2.disqus.com/embed.js$script,important
+!||topreplay.disqus.com/embed.js$script,important
+!#endif
+! experimental click-to-load disqus
+!#if (disqus.com && !1p)
+||*.disqus.com/embed.js$script,3p
+! </ end Disqus on demand >
+!#endif
 
+!#if (facebook. && !1p)
+||*.facebook.*$all,3p,domain=~facebook.com
+||fbsbx.com^$all,3p,domain=~facebook.com
+||fbcdn.net^$all,3p,domain=~facebook.com
+||fbcdn-profile-*.akamaihd.net^$all,3p,domain=~facebook.com
+||fbcdn-creative-*.akamaihd.net^$all,3p,domain=~facebook.com
+||fbexternal-*.akamaihd.net^$all,3p,domain=~facebook.com
+!||fbstatic-*.akamaihd.net^$all,3p,domain=~facebook.com
+!||fbcdn-sphotos-*.akamaihd.net^$all,3p,domain=~facebook.com
 !#if image
 |*/hsts-pixel.gif|$image,important,domain=~facebook.com
 !#endif
@@ -27,40 +57,43 @@
 !#endif
 
 !#if (google.com && !1p)
+||plus.google.com^$all,3p,domain=~plus.google.com
 !#if script
 *plusone*\.js/$script,3p,important,domain=~google.com
 !#endif
 !#endif
 
 !#if (instagram.com && !1p)
-||instagram.com^$all,3p,important
-||logger.instagram.com^$all,important
+||instagram.com^$all,3p,domain=~instagram.com
+||logger.instagram.com^$all,domain=~instagram.com
 @@||cdninstagram.com^$3p
 !#endif
 
 !#if (linkedin.com && !1p)
-||linkedin.com^$all,3p,important
+||linkedin.com^$all,3p,domain=~linkedin.com
 !#endif
 
 !#if (pinterest. && !1p)
-||pinterest.^$all,3p,important
+||pinterest.^$all,3p,domain=~pinterest.com
 !#endif
 
 !#if (reddit.com && !1p)
-||reddit.com^$all,3p,important
+||reddit.com^$all,3p,domain=~reddit.com
 !#endif
 
 !#if (tumblr.com && !1p)
-||tumblr.com^$all,3p,important
+||tumblr.com^$all,3p,domain=~tumblr.com
 !#endif
 
 !#if (imqq.com && !1p)
-||imqq.com^$all,3p,important
+||imqq.com^$all,3p,domain=~imqq.com
 !#endif
 
 !#if (twitter.com && !1p)
-||*twitter.com^$all,3p,important
 ||analytics.twitter.com^$domain=~twitter.com
+||*twitter.com^$all,3p,domain=~twitter.com
+||*twimg.com^$all,3p,domain=~twitter.com
+||twttr.*^$all,3p,domain=~twitter.com
 !#endif
 
 !#if (chatango.com && !1p)
@@ -73,35 +106,126 @@
 ||ttvnw.net^$3p,important,domain=~twitch.tv
 !#endif
 
-!#if (disqus.com && !1p)
-! < start Disqus on demand >
-# Completely experimental: load Disqus on demand only. Purpose is to avoid
-# connecting to Disqus' servers, unless the user explicitly asks for the
-# comments to be loaded.
-# Works with following filters: disqus_forums_embed.js AND disqus_embed.js
-# Uncomment for blocking all
-!#if script
-! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
-! see example here: < https://einaregilsson.com/redirector/ >
-||disqus.com/forums/*/embed.js$script
-||disqus.com/embed.js$script
+! The 25 Top Social Media Management Tools for Businesses of All Sizes
+! from < https://buffer.com/library/social-media-management-tools/ >
+
+!#if whatsapp.
+! because .net and .com
+||whatsapp.^$all,3p,domain=~whatsapp.com
 !#endif
 
-# If you want a site you regularly visit to always have the comment loaded,
-# just use an exception static filter. Example for wired.com:
-# @@||wired.disqus.com/embed.js
-
-# Otherwise, leave commented and block on request per sites with example:
-!||allocine-prod2.disqus.com/embed.js$script,important
-!||topreplay.disqus.com/embed.js$script,important
+!#if flickr.com
+||flickr.com^$all,3p,domain=~flickr.com
 !#endif
 
-! experimental click-to-load disqus
-!#if (disqus.com && !1p)
-||*.disqus.com/embed.js$script,3p
+!#if hootsuite.com
+||hootsuite.com^$all,3p,domain=~hootsuite.com
 !#endif
 
-! </ end Disqus on demand >
+!#if vine.co
+||vine.co^$all,3p,domain=~vine.co
+!#endif
+
+!#if buffer.com
+||buffer.com^$all,3p,domain=~buffer.com
+!#endif
+
+!#if sproutsocial.com
+||sproutsocial.com^$all,3p,domain=~sproutsocial.com
+!#endif
+
+!#if agorapulse.com
+||agorapulse.com^$all,3p,domain=~agorapulse.com
+!#endif
+
+!#if sendible.com
+||sendible.com^$all,3p,domain=~sendible.com
+!#endif
+
+!#if eclincher.com
+||eclincher.com^$all,3p,domain=~eclincher.com
+!#endif
+
+!#if socialpilot.co
+||socialpilot.co^$all,3p,domain=~socialpilot.co
+!#endif
+
+!#if coschedule.com
+||coschedule.com^$all,3p,domain=~coschedule.com
+!#endif
+
+!#if mavsocial.com
+||mavsocial.com^$all,3p,domain=~mavsocial.com
+!#endif
+
+!#if friendsplus.me
+||friendsplus.me^$all,3p,domain=~friendsplus.me
+!#endif
+
+!#if crowdfireapp.com
+||crowdfireapp.com^$all,3p,domain=~crowdfireapp.com
+!#endif
+
+!#if meetedgar.com
+||meetedgar.com^$all,3p,domain=~meetedgar.com
+!#endif
+
+!#if postplanner.com
+||postplanner.com^$all,3p,domain=~postplanner.com
+!#endif
+
+!#if tailwindapp.com
+||tailwindapp.com^$all,3p,domain=~tailwindapp.com
+!#endif
+
+!#if later.com
+||later.com^$all,3p,domain=~later.com
+!#endif
+
+!#if sprinklr.com
+||sprinklr.com^$all,3p,domain=~sprinklr.com
+!#endif
+
+!#if oktopost.com
+||oktopost.com^$all,3p,domain=~oktopost.com
+!#endif
+
+!#if falcon.io
+||falcon.io^$all,3p,domain=~falcon.io
+!#endif
+
+!#if hubspot.com
+||hubspot.com^$all,3p,domain=~hubspot.com
+!#endif
+
+!#if salesforce.com
+||salesforce.com^$all,3p,domain=~salesforce.com
+!#endif
+
+!#if socialhub.io
+||socialhub.io^$all,3p,domain=~socialhub.io
+!#endif
+
+!#if spredfast.com
+||spredfast.com^$all,3p,domain=~spredfast.com
+!#endif
+
+!#if likeablehub.com
+||likeablehub.com^$all,3p,domain=~likeablehub.com
+!#endif
+
+!#if socialflow.com
+||socialflow.com^$all,3p,domain=~socialflow.com
+!#endif
+
+!#if nuvi.com
+||nuvi.com^$all,3p,domain=~nuvi.com
+!#endif
+
+!#if thunderclap.it
+! not sure utils
+||thunderclap.it^$all,3p,domain=~thunderclap.it
+!#endif
 
 !
 !#include lists/✗to_block/bulk_antisocial.txt
