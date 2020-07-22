@@ -31,5 +31,7 @@
 
 ||google.*$image,redirect-rule=1x1.gif
 ||youtu*.*$image,redirect-rule=1x1.gif
+||crwdcntrl.net$image,redirect-rule=1x1.gif
+||adnxs.com$image,redirect-rule=1x1.gif
 
 !
