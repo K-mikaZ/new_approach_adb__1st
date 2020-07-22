@@ -15,3 +15,4 @@
 !#include streaming_replay/playRTS.txt
 !#include streaming_replay/rakutenTV.txt
 !#include streaming_replay/tf1.txt
+!#include streaming_replay/zudbo&co.txt
