@@ -3,7 +3,7 @@
 
 ! Block ads integration on somes sites
 ! see < https://wvw.hds.lc >
-!||youtube.com^$all,3p,domain=~youtube.com|~youtu.be|~yt.be
+||youtube.com^$all,3p,domain=~youtube.com|~youtu.be|~yt.be
 
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
