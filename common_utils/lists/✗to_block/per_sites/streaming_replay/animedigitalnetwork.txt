@@ -1,10 +1,4 @@
 
-!
-! ------------------------------------------------------------------
-!
-! animedigitalnetwork --
-!
-! ------------------------------------------------------------------
 ! < start animedigitalnetwork rules>
 !#if animedigitalnetwork.fr
 
@@ -19,5 +13,3 @@ yatta.animedigitalnetwork.fr##.adn-header
 
 !#endif
 ! </ end animedigitalnetwork rules>
-
-!
