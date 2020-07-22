@@ -20,6 +20,21 @@ canalplus.com##.ShareButtonWrapper,div.footer__section__column___21k-C:nth-of-ty
 papseries.net##.aa-share.nav-link
 !#endif
 
+!#if universanimeiz.
+universanimeiz.com###text-2
+!#endif
+
+! Antisocial Zudbo & co
+!
+ivmox.com,crebya.com,jexoom.com##[src*="/avatar.php?"]
+ivmox.com,crebya.com,jexoom.com###comments-form
+ivmox.com,crebya.com,jexoom.com###jc > h4
+!
+/com.php$subdocument,1p,important,domain=irdoz.com|eyobim.com
+irdoz.com,eyobim.com##[src*="/com.php"]
+! not sure (to test)
+!||fonts.googleapis.com/css?family=Raleway$xhr,css,domain=irdoz.com|eyobim.com,important
+
 !#endif
 
 ! ------------------------------------------------------------------
