@@ -1,5 +1,12 @@
+! < start soundcloud rules >
+!#if soundcloud.com
+
 *$3p,domain=soundcloud.com
 @@||sndcdn.com^$3p
+
 !#if dom
 soundcloud.com##.dashbox,.m-promotion
 !#endif
+
+!#endif
+! </ end soundcloud rules >
