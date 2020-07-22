@@ -21,7 +21,7 @@
 !#if xhr
 @@||youborafds01.com^$xhr
 @@||vendorlist.consensu.org/vendorlist.json
-! [fix] break too many video loading
+! [fix] break too many video loading ( example on hds.lc )
 @@||googleads.g.doubleclick.net/pagead/id$xhr
 !#endif
 
