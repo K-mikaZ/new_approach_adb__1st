@@ -13,12 +13,11 @@
 ! try to block modal VPN
 ! VOIR ICI < https://wikiserie.co/js/app.js > et < view-source:https://wikiserie.co/me02-this-is-us-en-streaming/saison/2/episode/2 >
 ! PATCH en attendant
-!wikiserie.co##.modal-footer:after,.modal-header:after,.modal-footer:before,.modal-header:after,.modal-header:before,.modal-header,.modal-title,.modal-body,.modal-footer
-!wikiserie.co#$#.modal{background-color:transparent!important}
+! do not block the modal (onclick function), otherwise, break the site
 wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
 ! set/remove cookie ??
 ! set.js, aopr.js, aopw.js ??
-!wikiserie.co##+js(aopr.js, MODAL)$
+! like wikiserie.co##+js(aopr.js, MODAL)
 
 ! https://github.com/theonion/videojs-vast-plugin#usage
 ! [fix] too generic
@@ -64,11 +63,10 @@ wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
 ||herokuapp.com/report$important
 ||d1grmk7aafb6ck.cloudfront.net^
 
-
 ||sdk.iad-01.braze.com^$3p
 
-
 ||vipicmou.net^$all,important
+||w00ur5z9jy3a.com^
 /cookieconsent*$script,important
 
 /tracking_
