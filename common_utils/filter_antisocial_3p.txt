@@ -17,8 +17,8 @@
 !#if script
 ! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
 ! see example here: < https://einaregilsson.com/redirector/ >
-||disqus.com/forums/*/embed.js$script
-||disqus.com/embed.js$script
+||disqus.com/forums/*/embed.js$script,3p
+||disqus.com/embed.js$script,3p
 !#endif
 # If you want a site you regularly visit to always have the comment loaded,
 # just use an exception static filter. Example for wired.com:
@@ -26,8 +26,6 @@
 # Otherwise, leave commented and block on request per sites with example:
 !||allocine-prod2.disqus.com/embed.js$script,important
 !||topreplay.disqus.com/embed.js$script,important
-! experimental click-to-load disqus
-||*.disqus.com/embed.js$script,3p
 ! </ end Disqus on demand >
 !#endif
 
