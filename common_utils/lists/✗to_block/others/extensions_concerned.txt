@@ -1,17 +1,24 @@
 
+! < start extensions concern >
 
-!
+!#if (env_chromium && chrome-extension://)
+
 ! Hola Free VPN Popup Remover
-!
-
-!#if env_chromium
-!#if (chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio)
+!#if (://gkojfkhlekighikafcpjkiklfbnlmeio)
+! if Hola Free VPN Proxy Unblocker
 ###_hola_popup_iframe__
 !#endif
+
 !#endif
 
-!#if env_firefox
-!#if (moz-extension://180b95ac-9634-4b47-947c-cc3b97f4641b)
+!#if (env_firefox && moz-extension://)
+
+! Hola Free VPN Popup Remover
+!#if (://180b95ac-9634-4b47-947c-cc3b97f4641b)
+! if Hola Free VPN Proxy Unblocker
 ###_hola_popup_iframe__
 !#endif
+
 !#endif
+
+! </ end extensions concern >
