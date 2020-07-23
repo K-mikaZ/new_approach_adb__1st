@@ -1,6 +1,5 @@
 
-! < start extensions concern >
-
+! < start chrome extensions concern >
 !#if (env_chromium && chrome-extension://)
 
 ! Hola Free VPN Popup Remover
@@ -10,7 +9,10 @@
 !#endif
 
 !#endif
+! </ end chrome extensions concern >
 
+
+! < start mozilla extensions concern >
 !#if (env_firefox && moz-extension://)
 
 ! Hola Free VPN Popup Remover
@@ -20,5 +22,4 @@
 !#endif
 
 !#endif
-
-! </ end extensions concern >
+! </ end mozilla extensions concern >
