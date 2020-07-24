@@ -18,7 +18,7 @@
 ! see < https://music.youtube.com/sw.js > point to < s.ytimg.com/yts/jsbin/serviceworker-music-vflk3r3Lp/serviceworker-music.js >
 ! see < https://www.youtube.com/sw.js > point to < https://www.youtube.com/s/desktop/9225b7fd/jsbin/serviceworker-notifications.vflset/serviceworker-notifications.js >
 youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
-youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area,ytm-promoted-sparkles-web-renderer
+youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area,ytm-promoted-sparkles-web-renderer,#old-browser-alert
 !#if music.youtube.com
 !music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
