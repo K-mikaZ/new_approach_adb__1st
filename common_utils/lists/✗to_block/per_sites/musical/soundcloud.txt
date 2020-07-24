@@ -1,8 +1,12 @@
 ! < start soundcloud rules >
 !#if soundcloud.com
 
+||promoted.soundcloud.com^
+
+!if !1p
 *$3p,domain=soundcloud.com
 @@||sndcdn.com^$3p
+!#endif
 
 !#if soundcloud.com
 ||soundcloud.com/audio-ad$xhr,1p
