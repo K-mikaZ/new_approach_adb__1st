@@ -15,4 +15,8 @@ deezer.com##div.catalog-content:nth-of-type(2) > .container
 di.fm##.footer-social,.share,.discuss-btn,.social-region,.discord-region
 !#endif
 
+!#if soundcloud.com
+soundcloud.com##.sc-button-share
+!#endif
+
 !#endif
