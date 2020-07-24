@@ -30,25 +30,25 @@
 !#endif
 
 !#if (facebook. && !1p)
-||*.facebook.*$all,3p,domain=~facebook.com
-||fbsbx.com^$all,3p,domain=~facebook.com
-||fbcdn.net^$all,3p,domain=~facebook.com
-||fbcdn-profile-*.akamaihd.net^$all,3p,domain=~facebook.com
-||fbcdn-creative-*.akamaihd.net^$all,3p,domain=~facebook.com
-||fbexternal-*.akamaihd.net^$all,3p,domain=~facebook.com
-!||fbstatic-*.akamaihd.net^$all,3p,domain=~facebook.com
-!||fbcdn-sphotos-*.akamaihd.net^$all,3p,domain=~facebook.com
+||*.facebook.*$all,3p,domain=~facebook.com|~fb.com
+||fbsbx.com^$all,3p,domain=~facebook.com|~fb.com
+||fbcdn.net^$all,3p,domain=~facebook.com|~fb.com
+||fbcdn-profile-*.akamaihd.net^$all,3p,domain=~facebook.com|~fb.com
+||fbcdn-creative-*.akamaihd.net^$all,3p,domain=~facebook.com|~fb.com
+||fbexternal-*.akamaihd.net^$all,3p,domain=~facebook.com|~fb.com
+!||fbstatic-*.akamaihd.net^$all,3p,domain=~facebook.com|~fb.com
+!||fbcdn-sphotos-*.akamaihd.net^$all,3p,domain=~facebook.com|~fb.com
 !#if image
-|*/hsts-pixel.gif|$image,important,domain=~facebook.com
+|*/hsts-pixel.gif|$image,important,domain=~facebook.com|~fb.com
 !#endif
 !#if script
-||facebook.*/*/sdk.js$script,3p,important,domain=~facebook.com
+||connect.facebook.net^$3p,domain=~facebook.com|~fb.com
 !#endif
 !#if subdocument
-||facebook.*/*/like.php$subdocument,3p,important,domain=~facebook.com
+||facebook.*/*/like.php$subdocument,3p,important,domain=~facebook.com|~fb.com
 !#endif
 !#if dom
-~facebook.com##[src*="facebook.com"]
+~facebook.com,~fb.com##[src*="facebook.com"]
 !#endif
 !#endif
 
