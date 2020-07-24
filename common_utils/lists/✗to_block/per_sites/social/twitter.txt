@@ -1,0 +1,16 @@
+
+! < start twitter rules >
+!#if (twitter.com && dom)
+
+! from https://forum.adguard.com/index.php?threads/block-twitter-“trends-for-you”-and-“what’s-happening”.39117/
+
+! "Trends for you" appears when you’re logged in twitter
+twitter.com##div[data-testid="trend"]
+twitter.com#?#div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
+twitter.com##a[href^="/i/trends"]
+! "What’s happening" appears when not logged in
+twitter.com#?#div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(What’s happening))
+twitter.com##a[href^="/i/events"]
+
+!#endif
+! </ end twitter rules >
