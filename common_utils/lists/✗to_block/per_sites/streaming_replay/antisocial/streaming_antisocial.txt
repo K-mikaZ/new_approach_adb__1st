@@ -1,5 +1,9 @@
 !#if dom
 
+!#if (hds-streaming.la|hds.lc)
+hds-streaming.la,hds.lc###comments
+!#endif
+
 !#if streamingclic.
 streamingclic.site###share,section.disqus,.header-nav [href$=".com/streamingclic/"]
 !#endif
