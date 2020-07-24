@@ -7,8 +7,9 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
-!#if (disqus.com && !1p)
 ! < start Disqus on demand >
+!#if (disqus.com && !1p)
+
 # Completely experimental: load Disqus on demand only. Purpose is to avoid
 # connecting to Disqus' servers, unless the user explicitly asks for the
 # comments to be loaded.
@@ -26,10 +27,13 @@
 # Otherwise, leave commented and block on request per sites with example:
 !||allocine-prod2.disqus.com/embed.js$script,important
 !||topreplay.disqus.com/embed.js$script,important
-! </ end Disqus on demand >
+
 !#endif
+! </ end Disqus on demand >
+
 
 !#if (facebook. && !1p)
+
 ||*.facebook.*$all,3p,domain=~facebook.com|~fb.com
 ||fbsbx.com^$all,3p,domain=~facebook.com|~fb.com
 ||fbcdn.net^$all,3p,domain=~facebook.com|~fb.com
@@ -50,7 +54,9 @@
 !#if dom
 ~facebook.com,~fb.com##[src*="facebook.com"]
 !#endif
+
 !#endif
+
 
 !#if (google.com && !1p)
 ||plus.google.com^$all,3p,domain=~plus.google.com
