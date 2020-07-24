@@ -3,7 +3,7 @@
 !#if deezer.com
 
 !#if dom
-deezer.com###cookies_banner,.alert-wrapper,.naboo .modal,.subscribe
+deezer.com###cookies_banner,.alert-wrapper,.naboo .modal,.subscribe,.conversion-banner
 !#endif
 
 !#if script
