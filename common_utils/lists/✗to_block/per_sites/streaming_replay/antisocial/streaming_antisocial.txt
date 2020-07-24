@@ -1,31 +1,39 @@
-!#if dom
 
-!#if (hds-streaming.la|hds.lc)
+!#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la,hds.lc###comments
 !#endif
 
-!#if streamingclic.
+!#if hds-streaming.la
+!#if script
+/comment-reply.min.js$script,domain=hds-streaming.la
+!#endif
+!#if dom
+hds-streaming.la##.dt_social_single
+!#endif
+!#endif
+
+!#if (lesseriestreaming.com && dom)
+lesseriestreaming.com##.my-3,.aa-share
+!#endif
+
+!#if (streamingclic. && dom)
 streamingclic.site###share,section.disqus,.header-nav [href$=".com/streamingclic/"]
 !#endif
 
-!#if filmgratuit.net
-filmgratuit.net##.social,[href*="facebook."],[href*="twitter."],[href*="pinterest."],.wrap > .item > .tit
+!#if (filmgratuit.net && dom)
+filmgratuit.net##.social,.wrap > .item > .tit
 !#endif
 
-!#if universanimeiz.com
-universanimeiz.com##.meta-share
+!#if (universanimeiz.com && dom)
+universanimeiz.com##.meta-share,#text-2
 !#endif
 
-!#if canalplus.com
+!#if (canalplus.com && dom)
 canalplus.com##.ShareButtonWrapper,div.footer__section__column___21k-C:nth-of-type(3) > div:nth-of-type(1)
 !#endif
 
-!#if papseries.net
+!#if (papseries.net && dom)
 papseries.net##.aa-share.nav-link
-!#endif
-
-!#if universanimeiz.
-universanimeiz.com###text-2
 !#endif
 
 ! Antisocial Zudbo & co
@@ -39,7 +47,6 @@ irdoz.com,eyobim.com##[src*="/com.php"]
 ! not sure (to test)
 !||fonts.googleapis.com/css?family=Raleway$xhr,css,domain=irdoz.com|eyobim.com,important
 
-!#endif
 
 ! ------------------------------------------------------------------
 !
