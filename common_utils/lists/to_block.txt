@@ -28,8 +28,11 @@
 !#include ✗to_block/filter_images.txt
 
 ! OTHERS BULK
-! some sites use youtube to embed ads (like hds.lc for example)
+! some sites use youtube to embed ads
+! like hds.lc for example:  ||www.youtube.com/embed/x0OMV5eaHBQ?rel=0&controls=1&showinfo=0&autoplay=0$subdocument,domain=wvw.hds.lc
 ||youtube.com^$all,3p,domain=~youtube.com|~youtu.be|~yt.be
+!
 !#include ✗to_block/filter_not_sorted_bulk.txt
+!
 
 !
