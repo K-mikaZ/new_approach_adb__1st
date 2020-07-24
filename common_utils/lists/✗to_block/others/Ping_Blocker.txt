@@ -7,5 +7,5 @@
 ! < https://armin.dev/apps/ping-spotter >
 
 !#if ping
-*$ping,important,domain=~yt.be|~youtu.be|~youtube.com
+*$ping,domain=~yt.be|~youtu.be|~youtube.com
 !#endif
