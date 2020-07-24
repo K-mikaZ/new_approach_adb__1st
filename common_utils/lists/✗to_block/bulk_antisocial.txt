@@ -11,3 +11,7 @@ fbpurity.com##.getsocial,#adcontaineretc
 hds-streaming.la##.dt_social_single
 !#endif
 !#endif
+
+!#if (lesseriestreaming.com && dom)
+lesseriestreaming.com##.my-3,.aa-share
+!#endif
