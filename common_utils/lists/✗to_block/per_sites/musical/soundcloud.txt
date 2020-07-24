@@ -13,7 +13,7 @@
 !#endif
 
 !#if dom
-soundcloud.com##.dashbox,.m-promotion
+soundcloud.com##.dashbox,.m-promotion,.playlistConsumerSubUpsell
 !#endif
 
 !#endif
