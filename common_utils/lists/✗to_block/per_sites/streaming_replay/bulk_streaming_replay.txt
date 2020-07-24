@@ -1,0 +1,6 @@
+
+!#if hds-streaming.la
+hds-streaming.la##.fbox
+! not ads, juste sanitize
+hds-streaming.la##div.sbox:if(:-abp-contains(/keywords/i))
+!#endif
