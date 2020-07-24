@@ -2,16 +2,3 @@
 !#if (fbpurity.com && dom)
 fbpurity.com##.getsocial,#adcontaineretc
 !#endif
-
-!#if hds-streaming.la
-!#if script
-/comment-reply.min.js$script,domain=hds-streaming.la
-!#endif
-!#if dom
-hds-streaming.la##.dt_social_single
-!#endif
-!#endif
-
-!#if (lesseriestreaming.com && dom)
-lesseriestreaming.com##.my-3,.aa-share
-!#endif
