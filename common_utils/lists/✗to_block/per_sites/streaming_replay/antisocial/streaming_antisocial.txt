@@ -1,13 +1,10 @@
 
-!#if ((hds-streaming.la|hds.lc) && dom)
-hds-streaming.la,hds.lc###comments
-!#endif
-
-!#if hds-streaming.la
+!#if (hds-streaming.la|hds.lc)
 !#if script
 /comment-reply.min.js$script,domain=hds-streaming.la
 !#endif
 !#if dom
+hds-streaming.la,hds.lc###comments
 hds-streaming.la##.dt_social_single
 !#endif
 !#endif
