@@ -8,7 +8,7 @@
 @@||sndcdn.com^$3p
 !#endif
 
-!#if soundcloud.com
+!#if xhr
 ||soundcloud.com/audio-ad$xhr,1p
 !#endif
 
