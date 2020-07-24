@@ -3,7 +3,7 @@
 !#if rakuten.tv
 
 ! prevent adblock warning
-!@@||rakuten.tv^$elemhide,generichide
+@@||rakuten.tv^$generichide,elemhide
 ! please set: no-cosmetic-filtering: rakuten.tv true
 ! in chrome-extension://xxxxxxxxxxxxxxxxxxxx/dashboard.html#dyna-rules.html (dynamic filtering tab)
 
