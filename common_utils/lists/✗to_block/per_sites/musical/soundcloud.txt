@@ -4,6 +4,10 @@
 *$3p,domain=soundcloud.com
 @@||sndcdn.com^$3p
 
+!#if soundcloud.com
+||soundcloud.com/audio-ad$xhr,1p
+!#endif
+
 !#if dom
 soundcloud.com##.dashbox,.m-promotion
 !#endif
