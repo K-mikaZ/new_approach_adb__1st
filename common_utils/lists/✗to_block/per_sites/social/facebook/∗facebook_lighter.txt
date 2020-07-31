@@ -16,7 +16,7 @@
 !
 
 !
-!#include ZuckestionKiller_ModuleConnections.txt
+!!#include ZuckestionKiller_ModuleConnections.txt
 !
 
 ! </ end facebook lighter >
