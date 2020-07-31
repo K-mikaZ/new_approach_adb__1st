@@ -15,8 +15,8 @@
 !#include facebook_adblockplus_me_all.txt
 !
 
-!
-!!#include ZuckestionKiller_ModuleConnections.txt
+!#if !adguard
+!#include ZuckestionKiller_ModuleConnections.txt
 !
 
 ! </ end facebook lighter >
