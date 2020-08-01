@@ -8,11 +8,11 @@
 ! < start facebook lighter >
 
 !
-!#include FBReblock_and_more.txt
+!! #include FBReblock_and_more.txt
 !
 
 !
-!#include facebook_adblockplus_me_all.txt
+!! #include facebook_adblockplus_me_all.txt
 !
 
 !
