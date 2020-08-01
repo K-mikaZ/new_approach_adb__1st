@@ -4,6 +4,7 @@
 ! Facebook --
 !
 ! ------------------------------------------------------------------
+!#if facebook.com
 ! < start facebook lighter >
 
 !
@@ -19,4 +20,5 @@
 !
 
 ! </ end facebook lighter >
+!#endif
 !
