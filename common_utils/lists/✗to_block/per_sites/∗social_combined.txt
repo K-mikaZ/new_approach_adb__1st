@@ -1,3 +1,7 @@
+! bug with adguard
+!#if (!adguard && !adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_ios && !adguard_ext_chromium && !adguard_ext_firefox && !adguard_ext_edge && !adguard_ext_safari && !adguard_ext_opera && !adguard_ext_android_cb)
 !#include social/facebook/∗facebook_lighter.txt
+!#endif
+
 !#include social/youtube/∗youtube_all.txt
 !#include social/twitter.txt
