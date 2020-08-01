@@ -25,8 +25,8 @@
 ||/*vmap$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr
-||animedigitalnetwork.fr/index.php?option=com_vodvideo&task=vmap.file&format=xml
-!||animedigitalnetwork.fr/index.php?option=com_vodvideo&task=vmap.file&format=xml$xhr,redirect=noopvmap-1.0
+! [fix] otherwise not applying redirection
+||animedigitalnetwork.fr/index.php?option=com_vodvideo&task=vmap.file&format=xml$xhr,redirect=noopvmap-1.0
 
 ! VAST version 1
 ! -----------------
