@@ -5,7 +5,10 @@
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
 !      < https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags >
 ! see also < https://github.com/InteractiveAdvertisingBureau/VAST_Samples >
-! tool < https://support.bluebillywig.com/vast-inspector#!/vast_type=vast_url/vast_url=%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D640x480%26iu%3D%2F124319096%2Fexternal%2Fsingle_ad_samples%26ciu_szs%3D300x250%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dvast%26unviewed_position_start%3D1%26cust_params%3Ddeployment%253Ddevsite%2526sample_ct%253Dlinear%26correlator%3D[timestamp]/position=preroll/ima_preload=on/hide_settings=off/hide_log=off >
+!
+! tools:
+! < https://www.jwplayer.com/developers/ad-tester/ >
+! < https://support.bluebillywig.com/vast-inspector#!/vast_type=vast_url/vast_url=%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D640x480%26iu%3D%2F124319096%2Fexternal%2Fsingle_ad_samples%26ciu_szs%3D300x250%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dvast%26unviewed_position_start%3D1%26cust_params%3Ddeployment%253Ddevsite%2526sample_ct%253Dlinear%26correlator%3D[timestamp]/position=preroll/ima_preload=on/hide_settings=off/hide_log=off >
 
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
 ! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
@@ -20,6 +23,8 @@
 ! VMAP version 1
 ! -----------------
 ||/*vmap$xhr,redirect-rule=noopvmap-1.0
+/vmap*.xml$xhr,redirect-rule=noopvmap-1.0
+/vmap*.xml$xhr
 ||animedigitalnetwork.fr/index.php?option=com_vodvideo&task=vmap.file&format=xml$xhr,redirect=noopvmap-1.0
 
 ! VAST version 1
@@ -45,6 +50,7 @@
 ||videoadex.com/unvrsltag$xhr,redirect-rule=noopvast-2.0
 ||stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0^$xhr,redirect-rule=noopvast-2.0
 ||video-ads.rubiconproject.com/*vast.xml$xhr,redirect-rule=noopvast-2.0
+||serving-sys.com/*&pl=VAST$xhr,redirect-rule=noopvast-2.0
 
 ! VAST version 3
 ! -----------------
