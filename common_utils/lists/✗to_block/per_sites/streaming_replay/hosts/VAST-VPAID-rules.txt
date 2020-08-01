@@ -43,6 +43,7 @@
 ||s3.amazonaws.com/vast/VAST-2.0$xhr,redirect-rule=noopvast-2.0
 ||videoadex.com/unvrsltag$xhr,redirect-rule=noopvast-2.0
 ||stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=2.0^$xhr,redirect-rule=noopvast-2.0
+||video-ads.rubiconproject.com/*vast.xml$xhr,redirect-rule=noopvast-2.0
 ||doubleclick.net*&output=xml_vast2$xhr,redirect-rule=noopvast-2.0
 
 ! VAST version 3
