@@ -4,11 +4,10 @@
 ! Facebook --
 !
 ! ------------------------------------------------------------------
-!#if facebook.com
 ! < start facebook lighter >
 
 !
-!! #include FBReblock_and_more.txt
+!#include FBReblock_and_more.txt
 !
 
 !
@@ -16,9 +15,8 @@
 !
 
 !
-!! #include ZuckestionKiller_ModuleConnections.txt
+!#include ZuckestionKiller_ModuleConnections.txt
 !
 
 ! </ end facebook lighter >
-!#endif
 !
