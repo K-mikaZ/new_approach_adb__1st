@@ -19,6 +19,7 @@
 
 ! VMAP version 1
 ! -----------------
+||/*vmap$xhr,redirect-rule=noopvmap-1.0
 ||animedigitalnetwork.fr/index.php?option=com_vodvideo&task=vmap.file&format=xml$xhr,redirect=noopvmap-1.0
 
 ! VAST version 1
