@@ -6,6 +6,7 @@
 !      < https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags >
 ! see also < https://github.com/InteractiveAdvertisingBureau/VAST_Samples >
 
+@@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
 ! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
 ||p.jwpcdn.com/player/plugins/vast/$badfilter
 /player/plugins/vast-*.js$script,badfilter
@@ -21,6 +22,7 @@
 
 ! VAST version 1
 ! -----------------
+||&output=xml_vast1$xhr,redirect-rule=noopvast-1.0
 ||moviesprofit.com/watch.xml$xhr,redirect-rule=noopvast-1.0
 ||spotxchange.com/vast/1.0$xhr,redirect-rule=noopvast-1.0
 ||vast.doubleverify.com/v1$xhr,redirect-rule=noopvast-1.0
@@ -30,6 +32,7 @@
 
 ! VAST version 2
 ! -----------------
+||&output=xml_vast2$xhr,redirect-rule=noopvast-2.0
 ||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
 ||spotxchange.com/vast/2.0$xhr,redirect-rule=noopvast-2.0
 ||spotscenered.info$xhr,redirect-rule=noopvast-2.0
@@ -44,6 +47,7 @@
 
 ! VAST version 3
 ! -----------------
+||&output=xml_vast3$xhr,redirect-rule=noopvast-3.0
 ||spotxchange.com/vast/3.0$xhr,redirect-rule=noopvast-3.0
 ||springserve.com$xhr,redirect=noopvast-3.0
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
@@ -66,6 +70,7 @@
 
 ! VAST version 4.*
 ! -----------------
+||&output=xml_vast4$xhr,redirect-rule=noopvast-4.0
 ||vast.doubleverify.com/v4$xhr,redirect-rule=noopvast-4.0
 ||s3.amazonaws.com/vast/VAST-4.0$xhr,redirect-rule=noopvast-4.0
 ||s3.amazonaws.com/vast/VAST-4.1$xhr,redirect-rule=noopvast-4.1
@@ -77,7 +82,7 @@
 ||doubleclick.net*&output=xml_vast4$xhr,redirect-rule=noopvast-4.0
 ! [fix] allocine.fr
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
-||pubads.g.doubleclick.net/gampad/live/ads*allocine*$xhr,redirect-rule=noopvast-4.0
+||pubads.g.doubleclick.net/gampad/live/ads$xhr,important
 
 
 !
