@@ -76,6 +76,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
 @@||gemius.pl^$script,badfilter
 @@||googletagmanager.com/gtag/js$script,domain=uptobox.com|uptostream.com,badfilter
+@@||facebook.com/ajax/bz$domain=facebook.com,badfilter
 ! [fix] videos on rtlplay.be
 ||videoplaza.tv^$xmlhttprequest,3p,badfilter
 ||videoplaza.tv^$image,3p,badfilter
