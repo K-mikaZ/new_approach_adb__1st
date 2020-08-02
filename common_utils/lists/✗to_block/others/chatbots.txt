@@ -1,6 +1,14 @@
 ! < start ChatBots rules >
 
-! found on www.star.fr 
+! found on www.star.fr
 ||botnation.ai
+
+! ometrics chat
+||ometrics.com^$domain=~ometrics.com
+|https://ochatbot.
+
+! generics
+_livechat/
+/chat/
 
 ! </ end ChatBots rules >
