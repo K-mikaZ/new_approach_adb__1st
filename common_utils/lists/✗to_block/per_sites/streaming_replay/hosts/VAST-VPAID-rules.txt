@@ -23,6 +23,7 @@
 ! VMAP version 1
 ! -----------------
 ||*&output=xml_vmap1$xhr,redirect-rule=noopvmap-1.0
+||*vmap*$xhr,redirect-rule=noopvmap-1.0
 ||/*vmap$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr
