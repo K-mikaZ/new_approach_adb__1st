@@ -24,6 +24,7 @@
 @@||youborafds01.com^$xhr
 @@||vendorlist.consensu.org/vendorlist.json
 ! [fix] break too many video loading ( example on hds.lc )
+@@||fstats.xyz/watch$xhr
 @@||googleads.g.doubleclick.net/pagead/id$xhr
 !#endif
 
@@ -35,6 +36,5 @@
 
 ! For Youtube's SponsorBlock addon ( see < https://sponsor.ajay.app > )
 @@||sponsor.ajay.app^
-
 
 ! </ end whitelist >
