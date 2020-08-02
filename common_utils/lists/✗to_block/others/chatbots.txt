@@ -1,5 +1,4 @@
 ! < start ChatBots rules >
-! ChatBots: Web Chat Apps For Websites
 
 ! found on www.star.fr 
 ||botnation.ai
