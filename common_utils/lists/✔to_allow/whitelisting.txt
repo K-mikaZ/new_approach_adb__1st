@@ -16,6 +16,8 @@
 @@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 ! [fix] for captcha solving
 @@||cdn.ravenjs.com^$script,domain=hcaptcha.com
+! [fix] because of jetload.net and some others
+@@||zencdn.net^$script
 !#endif
 
 !#if xhr
