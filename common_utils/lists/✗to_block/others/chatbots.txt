@@ -8,7 +8,7 @@
 |https://ochatbot.
 
 ! generics
-_livechat/
-/chat/
+\_livechat\/
+\/chat\/
 
 ! </ end ChatBots rules >
