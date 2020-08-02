@@ -7,6 +7,9 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
+! ChatBots: Web Chat Apps For Websites
+!#include lists/✗to_block/others/chatbots.txt
+
 ! < start Disqus on demand >
 !#if (disqus.com && !1p)
 
