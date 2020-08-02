@@ -1,16 +1,18 @@
+||bebreloomr.com^
+||fastenpaganhelm.com^
+||itnuzleafan.com^
+||libedgolart.com^
 ||mplexanno.club^
+||mplexanno.club^
+||nbf9b5aurl.com^
 ||nbf9b5aurl.com^
 ||obstanceder.pro^
-||fastenpaganhelm.com^
-||mplexanno.club^
-||nbf9b5aurl.com^
+||ovyiakt1wzqz.com^
+||qtbb6.com^
 ||residuestream.club^
 ||resultsgenou.club^
 ||rwn1sdb4xqa2.com^
-||bebreloomr.com^
-||libedgolart.com^
 ||tapixesa.pro^
-||itnuzleafan.com^
 ||unreshiramor.com^
 
 
@@ -32,9 +34,10 @@
 ||media-dl.co^$3p
 
 
+||d1qggq1at2gusn.cloudfront.net^
+||d3v3bqdndm4erx.cloudfront.net^
 ||d36zfztxfflmqo.cloudfront.net^
 ||dc5k8fg5ioc8s.cloudfront.net^
-||d3v3bqdndm4erx.cloudfront.net^
 
 ||*/cdn-cgi/bm/cv/*js|$script,important
 ||*/adsid/integrator.js|$script,important
