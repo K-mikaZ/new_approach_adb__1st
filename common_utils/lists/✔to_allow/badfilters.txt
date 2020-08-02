@@ -142,6 +142,9 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 /rollbar.js$badfilter
 @@||cdnjs.cloudflare.com/ajax/libs/rollbar.js/$script,domain=rakuten.tv,badfilter
 @@https://cdnjs.cloudflare.com/ajax/libs/rollbar.js
+! [fix]
+||pagead2.googlesyndication.com^$xhr,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animedigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io|vladan.fr,badfilter
+
 
 !
 ! Tracking urls
