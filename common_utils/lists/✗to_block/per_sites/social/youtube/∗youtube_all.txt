@@ -64,6 +64,10 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 /y(t)?img\.(.{2,})(.*\/)?endscre{2}n\.swf/$object-subrequest,important
 !#endif
 
+!!#if ping
+||youtube.com/api/stats/qoe?event=streamingstats*$ping,1p,important
+!!#endif
+
 !!#if other
 ! No pause for player, thx
 ||youtu*.*/manifest.json|$other,important
