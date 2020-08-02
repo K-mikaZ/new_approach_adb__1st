@@ -71,3 +71,7 @@ wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
 
 /tracking_
 
+! [misc]
+||apis.google.com/_/scs/*$3p
+||google.com/xjs/_/*$3p
+
