@@ -37,4 +37,7 @@
 ! For Youtube's SponsorBlock addon ( see < https://sponsor.ajay.app > )
 @@||sponsor.ajay.app^
 
+! [fix] missingkids.org
+@@||s7.addthis.*angular*.js$script
+
 ! </ end whitelist >
