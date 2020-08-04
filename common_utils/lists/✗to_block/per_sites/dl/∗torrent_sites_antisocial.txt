@@ -1,0 +1,9 @@
+
+!#if nyaa.si
+!#if dom
+nyaa.si###comments
+!#endif
+!#if !dom
+||cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/*$domain=nyaa.si,important
+!#endif
+!#endif
