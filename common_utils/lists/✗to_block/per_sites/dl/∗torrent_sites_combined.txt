@@ -24,4 +24,10 @@ torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
 !#endif
 !#endif
 
+!#if (thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.)
+!#if dom
+thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn-2"]
+!#endif
+!#endif
+
 ! </ end torrent sites rules >
