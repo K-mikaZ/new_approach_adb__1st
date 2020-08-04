@@ -267,6 +267,8 @@
 !
 !#include lists/✗to_block/per_sites/musical/antisocial/musical_sites_antisocial.txt
 !
+!#include lists/✗to_block/per_sites/dl/∗torrent_sites_antisocial.txt
+!
 
 ! </ end Antisocial third-party >
 !
