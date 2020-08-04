@@ -77,6 +77,9 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||gemius.pl^$script,badfilter
 @@||googletagmanager.com/gtag/js$script,domain=uptobox.com|uptostream.com,badfilter
 @@||facebook.com/ajax/bz$domain=facebook.com,badfilter
+! [fix] hls parser (don't block)
+||streamroot.io$badfilter
+streamroot.io$script,important,badfilter
 ! [fix] videos on rtlplay.be
 ||videoplaza.tv^$xmlhttprequest,3p,badfilter
 ||videoplaza.tv^$image,3p,badfilter
