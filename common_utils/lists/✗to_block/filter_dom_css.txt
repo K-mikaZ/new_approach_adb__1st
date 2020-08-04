@@ -62,10 +62,14 @@ filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !#endif
 !
+!#if lemonde.fr
+lemonde.fr###js-engagement-banner
+!#endif
+!
 !
 ! ---- Global -----
 ! < start global CSS rules >
-!*##[class="adsbygoogle"]
+*##[class="adsbygoogle"]
 *##[class="google-ads"]
 *##[class="googleads"]
 *##[class^="salidor_"]
@@ -75,6 +79,8 @@ filmgratuit.net##li.streamer:if(span[class*="download-server"])
 *##[id="pub"]:if(> [class="X"])
 *##a:if([class^="surge_"])
 *##a:if([class^="ebooks_"])
+! 22/07/2020 core1player.com
+##[class="afs_ads"]
 ! </ end global CSS rules >
 !
 ! ---- Per site -----
