@@ -1,0 +1,42 @@
+
+! ------------------------------------------------------------------
+!
+! Amazon, Amazonaws...
+!
+! ------------------------------------------------------------------
+
+!#if amazonaws.com
+!#if (media && 1p)
+/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
+!#endif
+!#if (script && 1p)
+/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
+/(.*)?amazonaws\.(.{2,})\/ki\.js\/(.*)\/b0R\.js/$script,important
+||s3.amazonaws.com/js-static/*$script,important
+!#endif
+||gtrk.s3.amazonaws.com^$all,important
+!#endif
+!
+!#if amazon-adsystem.com
+||amazon-adsystem.com^$all,important
+!#endif
+!
+!#if .amazon.
+/amazon\.(.{2,})\/ah\/ajax\/(counter|record-impressions)/$all,important
+||amazon.*/gp/uedata^$all,important
+||aan.amazon.com^$all,important
+||device-metrics-us.amazon.com^$all,important
+!#endif
+!
+!#if assoc-amazon.
+||assoc-amazon.*^$all,important
+!#endif
+
+!#if ssl-images-amazon.com
+!#if (script && 1p)
+||images-na.ssl-images-amazon.com/images/*/*/ads/*^$script,important
+!#endif
+!#if (image && 1p)
+||images-na.ssl-images-amazon.com/images/*/*/productAds/*^$image,important
+!#endif
+!#endif
