@@ -82,6 +82,12 @@
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,important,redirect=fingerprint2.js
 
+! Noop others adblocker
+||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
+
+! </ end script-spec_def >
+! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
 ! Services worker
 ! ---------------
 !#if (/sw.js && /sw_*.js && /service-worker.js)
@@ -161,7 +167,4 @@ http*://*.info/*.js^$script,3p,important
 /toro\-tags\.(.{2,})\/\_?tags\/(.*)\.js/$script,important
 /voir\.dpstream\.(site)\/pop\.js/$script,important
 
-! </ end script-spec_def >
-! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 !#endif
