@@ -82,6 +82,85 @@
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,important,redirect=fingerprint2.js
 
+! Services worker
+! ---------------
+!#if (/sw.js && /sw_*.js && /service-worker.js)
+*/sw.js|$script,important,domain=~youtube.com|~youtu.be|~yt.be
+*/sw_*.js$script,important
+*/service-worker.js$script,important,domain=~open.spotify.com
+!#endif
+
+! Global
+
+!#if youborafds01.com
+||*youborafds01*.js$script,important
+!#endif
+
+! /cryptojs.min.js !MORE RESTRICTIVE. Not use, blocking videos on animedigitalnetwork.fr (ADN)
+!#if /cryptojs.min.js
+/cryptojs.min.js$script,domain=~animedigitalnetwork.fr
+!#endif
+
+!#if 1p
+||*/cdn-cgi/apps/head/*$script,1p,important
+!#endif
+
+!#if !1p
+||*/1clkn/*$script,important
+||*/scrip*/compatibility.js|$script,important
+http*://*.bid/*.js^$script,3p,important
+http*://*.cafe/*.js^$script,3p,important
+http*://*.info/*.js^$script,3p,important
+||lfztmoamieum.com$script,3p,important
+||gcpjstirhbqjx.com$script,3p,important
+!#endif
+
+||*/sfp.js|$important
+! This product includes portions of other software.
+||*/play*/related.js|$script,domain=~feurl.com
+!||*/play*/plugins/vast-*.js$script
+! This product includes portions of other software.
+!||*jwpcdn.com/player/*/*/related.js^$script,important
+||*jwpcdn.com/player/*/*/sharing.js^$script,important
+! see < https://hdslecteur.xyz/asset/default/player/plugins/vast-8.4.13.js > not blocking
+
+! VOIR de plus près https://www.intellipopup.com/gpu.min.js   depuis  https://www.zustream.eu/    CRYPTOMINER ????
+/gpu.min.js|$important
+
+.top/advertisers.js|$script,important
+/(in(tegrations\/breadcrumbs|voke))\.js/$script,important
+/PartnersBox.js?$script,important
+/onFacebookReady.genemin.js|$script,important
+/MediamondAds.js|$script,important
+/LikeButton.js|$script,important
+/iAdvize.js|$script,important
+/jquery.lightbox-0.5.min.js|$script,important
+/authedmine.min.js$script,important
+/(.*\.)?filmstreaming[0-9]{1,}\.(pro)\/(adskeeper([0-9]{1,})\.js)/$script,important
+/(fb(\_(authentication|publiecomment)|events|(\(.|-)(gene)?(min))|generictracking).js|$script,important
+/212012198557.js|$script,important
+/connexion_facebook_nl_magelan.js|$script,important
+/figarotrack.js?$script,important
+/google-analytics-for-wordpress/$script,important
+/((o(pen)?|jet)load)\.(.{2,})\/cdn-cgi\/ap{2}s\/head\/([a-zA-Z0-9]{3,})\.js/$script,important
+/(.*)?(firstimpres{2}ion|highwebmedia|(((sentry\-)cdn)|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
+/(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/$script
+/(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/$script,important
+/(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
+/(.*)?stats\.wp\.(com)\/(.*).js/$script,important
+/(6zw2rcfd|hcg82f2b|dnzwjlbknhe|s20dh7e9dh|tu42het2{2}n)\.(com)\/(.*)\.js/$script,important
+/captched\.com\/jws\.js/$script,important
+/easylist\.(.{2,})\/(ados|popunder(.*))\.js/$script,important
+/e\-cdns\-files\.dzcdn\.net\/cache\/js\/ap{2}-web\.(.*)\.js/$script,important
+/french\-stream\.(in)\/templates\/(.*)\/js\/share\.js/$script,important
+/hostingcloud\.(.{2,})\/u83k\.js/$script,important
+/ie8eamus\.(.{2,})\/sfp\.js/$script,important
+/mou{2}hrprxixwrw\.(.{2,})\/prqi\.js/$script,important
+/static\.ad{2}toany\.(.{2,})\/(.*)\.js/$script,important
+/subscribers\.click\/fp{2}\.js/$script,important
+/toro\-tags\.(.{2,})\/\_?tags\/(.*)\.js/$script,important
+/voir\.dpstream\.(site)\/pop\.js/$script,important
+
 ! </ end script-spec_def >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
