@@ -1,7 +1,7 @@
 
 !#if nyaa.si
 !#if dom
-nyaa.si###comments
+nyaa.si###comments,.comments
 !#endif
 !#if !dom
 ||cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/*$domain=nyaa.si,important
