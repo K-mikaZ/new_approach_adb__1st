@@ -5,3 +5,9 @@ hds-streaming.la,hds.lc###oscuridad
 ! not ads, juste sanitize
 hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 !#endif
+
+!#if (voir.lesseriestreaming.com && dom)
+! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
+! < https://voir.lesseriestreaming.com/js/app.js >
+voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
+!#endif
