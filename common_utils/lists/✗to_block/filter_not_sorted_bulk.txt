@@ -26,7 +26,3 @@
 !#if disqusads.com
 ||disqusads.com^$important
 !#endif
-
-!#if lequipe.fr
-/(.*)[A]utopromo\./$domain=lequipe.fr
-!#endif
