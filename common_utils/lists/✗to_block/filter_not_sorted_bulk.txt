@@ -28,5 +28,5 @@
 !#endif
 
 !#if lequipe.fr
-/(.*)[A]utopromo\./$domain=www.lequipe.fr
+/(.*)[A]utopromo\./$domain=lequipe.fr
 !#endif
