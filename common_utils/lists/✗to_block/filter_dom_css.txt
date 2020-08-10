@@ -53,13 +53,9 @@ voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 voirfilms.*##.salidor_inner,.salidor_b,.f-inner,.X,#pub
 !#endif
 
-!#if (filmgratuit.net|voirfilms.)
-voirfilms.*##center:if(.myButton)
-!#endif
-
-!#if filmgratuit.net
-filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
-filmgratuit.net##li.streamer:if(span[class*="download-server"])
+!#if (filmgratuit.net|voirfilms.|streamavie.com|vfilms.me)
+streamavie.com,vfilms.me,voirfilms.*##center:if(.myButton)
+streamavie.com,vfilms.me,voirfilms.*##.myButton
 !#endif
 
 !#if lemonde.fr
