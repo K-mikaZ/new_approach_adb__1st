@@ -91,7 +91,7 @@
 ||stickyadstv.com/www/delivery/swfIndex.php?reqType=AdsSetup&protocolVersion=4.0^$xhr,redirect-rule=noopvast-4.0
 ! [fix] allocine.fr
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
-||pubads.g.doubleclick.net/gampad*/ads$xhr,important
+||pubads.g.doubleclick.net/gampad*/ads$xhr
 
 
 !
