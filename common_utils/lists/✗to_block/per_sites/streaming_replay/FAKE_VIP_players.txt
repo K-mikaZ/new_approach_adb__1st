@@ -30,6 +30,9 @@
 ||site.dotvideo.cc^$important
 
 !#if dom
+!#if filmgratuit.net
+filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
+!#endif
 4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
