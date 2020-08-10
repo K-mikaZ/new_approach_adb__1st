@@ -9,6 +9,10 @@
 
 !#if dom
 
+!#if filmgratuit.net
+filmgratuit.net##li.streamer:if(span[class*="download-server"])
+!#endif
+
 !#if voirseries.ws
 voirseries.ws##ul[class="downloads"]
 voirseries.ws#?#h3.h:if(> :-abp-contains(/Telechargement/))
