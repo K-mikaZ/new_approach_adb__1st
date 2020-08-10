@@ -74,16 +74,11 @@
 ||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
 
-!#if (yandex.ru|webvisor.org)
+!#if (*yandex.ru|*webvisor.org)
 ! try adguard compatibility portage
 ||*/metrika/watch.js$script,redirect-rule=metrika-yandex-watch
 ||*metrika*/tag.js$script,redirect-rule=metrika-yandex-tag
 ||*/*metrica-watch/*$script,redirect-rule=metrika-yandex-tag
-! [fix] for correct apply redirect
-/metrika/tag.js$script,redirect=metrika-yandex-tag
-/metrika/watch.js$script,redirect=metrika-yandex-watch
-/yandex-metrica-watch/tag.js$script,redirect=metrika-yandex-tag
-/yandex-metrica-watch/*$script
 !#endif
 
 !
