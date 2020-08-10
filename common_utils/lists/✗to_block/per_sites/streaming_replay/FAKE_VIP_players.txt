@@ -15,6 +15,7 @@
 ||seriestream.*/vid*ming.html|$subdocument,1p,important
 ||zone-stream.club/hd-streaming.php$subdocument,important
 ||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
+/top{1,}laye{1,}r{1,}\.php/$subdocument,1p,domain=4kstreamz.co,important
 !#endif
 
 !#if media
@@ -29,6 +30,7 @@
 ||site.dotvideo.cc^$important
 
 !#if dom
+4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
 streaminz.com##.playbtm
