@@ -28,6 +28,8 @@ open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa1
 @@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
 @@||gew-dealer.spotify.com^$websocket,1p
 @@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
+@@||pubads.g.doubleclick.net/pagead/conversion/*$xhr,domain=open.spotify.com
+@@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
 
 !#endif
 ! </ end spotify rules >
