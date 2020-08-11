@@ -11,3 +11,7 @@ hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 ! < https://voir.lesseriestreaming.com/js/app.js >
 voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 !#endif
+
+!#if enstream.to
+enstream.to##.movie-notice,a.adSecw
+!#endif
