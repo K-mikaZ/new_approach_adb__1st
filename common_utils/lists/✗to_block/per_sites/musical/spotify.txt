@@ -15,7 +15,6 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 !#if xhr
 *.client.*.spotify.*sponsoredplaylist$xhr,important
-||spclient.wg.spotify.com/metrics-backend/*/metric$xhr,1p,important
 !#endif
 
 ! badfilters
