@@ -12,6 +12,7 @@
 !#endif
 
 !#if subdocument
+||enstream.to/vip/*$subdocument,1p
 ||seriestream.*/vid*ming.html|$subdocument,1p,important
 ||zone-stream.club/hd-streaming.php$subdocument,important
 ||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
@@ -20,6 +21,7 @@
 
 !#if media
 ! fake videos
+||enstream.to/vip/*$media,1p
 *.mp4$media,important,domain=zone-stream.club|voirseries.co
 *.dll$media,important,domain=streamz.vg
 ||issue.mp4$media,important,domain=streamz.vg
@@ -30,9 +32,15 @@
 ||site.dotvideo.cc^$important
 
 !#if dom
+
 !#if filmgratuit.net
 filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 !#endif
+
+!#if enstream.to
+enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
+!#endif
+
 4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
@@ -50,6 +58,7 @@ filmz.*##li:if(:-abp-has(i.player-hdplayer))
 streamay.co##.player-btn:if(:has-text(/HD 1080P/i))
 kykfilmserie.com##.dooplay_player:if(iframe[src*=".php?"])
 oomoviz.*,voirseries.*,vustream.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
+
 !#endif
 
 ! </ end fake players rules >
