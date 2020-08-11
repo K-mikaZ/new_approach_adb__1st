@@ -26,8 +26,6 @@
 ! [fix] break too many video loading ( example on hds.lc )
 @@||fstats.xyz/watch$xhr
 @@||googleads.g.doubleclick.net/pagead/id$xhr
-! [fix] adblock alert rakuten.tv
-@@||search.spotxchange.com/vast$xhr,domain=rakuten.tv
 !#endif
 
 !#if image
