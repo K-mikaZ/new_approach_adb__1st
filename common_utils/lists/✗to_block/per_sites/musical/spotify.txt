@@ -24,7 +24,7 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 ||sentry.io/api/*$badfilter
 
 ! allow
-!#include .../✔to_allow/spotify_allowing.txt
+!#include https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✔to_allow/spotify_allowing.txt
 @@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
 @@||gew-dealer.spotify.com^$websocket,1p
 @@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
