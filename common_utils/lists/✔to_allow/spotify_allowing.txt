@@ -1,5 +1,0 @@
-@@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
-@@||gew-dealer.spotify.com^$websocket,1p
-@@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
-@@||pubads.g.doubleclick.net/pagead/conversion/*$xhr,domain=open.spotify.com
-@@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
