@@ -15,6 +15,7 @@ open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa1
 
 !#if xhr
 *.client.*.spotify.*sponsoredplaylist$xhr,important
+||spclient.wg.spotify.com/metrics-backend/*/metric$xhr,1p,important
 !#endif
 
 ! badfilters
@@ -25,7 +26,6 @@ open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa1
 
 ! allow
 @@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
-@@||adeventtracker.spotify.com/monitoring$xhr,domain=open.spotify.com
 @@||gew-dealer.spotify.com^$websocket,1p
 @@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
 
