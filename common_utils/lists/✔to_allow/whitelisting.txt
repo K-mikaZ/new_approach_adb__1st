@@ -26,9 +26,12 @@
 ! [fix] break too many video loading ( example on hds.lc )
 @@||fstats.xyz/watch$xhr
 @@||googleads.g.doubleclick.net/pagead/id$xhr
+! [fix] adblock alert rakuten.tv
+@@||search.spotxchange.com/vast$xhr,domain=rakuten.tv
 !#endif
 
 !#if image
+! [fix] adblock alert rakuten.tv
 @@||search.spotxchange.com^$image,domain=rakuten.tv
 ! [fix] because somes site use < https://www.google.com/s2/favicons?domain=vidoza.net >
 ! see < https://voir.lesseriestreaming.com/ZlxJ2eD-p-valley/saison/1/episode/2 >
