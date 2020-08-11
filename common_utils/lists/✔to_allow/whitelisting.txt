@@ -29,6 +29,7 @@
 !#endif
 
 !#if image
+@@||search.spotxchange.com^$image,domain=rakuten.tv
 ! [fix] because somes site use < https://www.google.com/s2/favicons?domain=vidoza.net >
 ! see < https://voir.lesseriestreaming.com/ZlxJ2eD-p-valley/saison/1/episode/2 >
 @@/favicon*$image
