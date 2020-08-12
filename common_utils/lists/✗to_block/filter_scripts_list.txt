@@ -91,9 +91,9 @@
 ! Services worker
 ! ---------------
 !#if (/sw.js && /sw_*.js && /service-worker.js)
-*/sw.js|$script,important,domain=~youtube.com|~youtu.be|~yt.be
-*/sw_*.js$script,important
-*/service-worker.js$script,important,domain=~open.spotify.com
+*/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be
+*/sw_*.js$script
+*/service-worker.js$script,domain=~open.spotify.com
 !#endif
 
 ! Global
@@ -121,7 +121,7 @@ http*://*.info/*.js^$script,3p,important
 ||gcpjstirhbqjx.com$script,3p,important
 !#endif
 
-||*/sfp.js|$important
+||*/sfp.js|$script
 ! This product includes portions of other software.
 ||*/play*/related.js|$script,domain=~feurl.com
 !||*/play*/plugins/vast-*.js$script
