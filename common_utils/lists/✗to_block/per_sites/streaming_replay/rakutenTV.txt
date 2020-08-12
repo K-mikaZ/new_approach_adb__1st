@@ -10,7 +10,12 @@
 !#endif
 
 !#if xhr
-||*spotxchange.com/vast/*$xhr,domain=rakuten.tv,important
+!||*spotxchange.com/vast/*$xhr,domain=rakuten.tv,important
+@@||search.spotxchange.com^$xhr,domain=rakuten.tv
+!#endif
+
+!#if image
+@@||event.spotxchange.com/vast/complete$image,domain=rakuten.tv
 !#endif
 
 !#if dom
