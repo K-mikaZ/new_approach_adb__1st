@@ -14,18 +14,20 @@
 @@/fuckadblock.$script,1p,badfilter
 
 @@/adblock.js$script,badfilter
-/adblock.js$script,redirect-rule=nofab.js
-/adblock.js$script,important
 
 ||*/\/(js\/adv\/)?(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\./*$script,important,redirect-rule=nofab.js
 
-||*/fuckadblock.$script,important,redirect-rule=nofab.js
-||*/blockadblock.$script,important,redirect-rule=nofab.js
-||*/sniffadblock.$script,important,redirect-rule=nofab.js
-! [fix]try for unrecognized
-||*/fuckadb*.js$script,important,redirect=nofab.js
-||*/blockadb*.js$script,important,redirect=nofab.js
-||*/sniffadb*.js$script,important,redirect=nofab.js
+||*/fuckadblock.$script,redirect-rule=nofab.js
+||*/blockadblock.$script,redirect-rule=nofab.js
+||*/sniffadblock.$script,redirect-rule=nofab.js
+/adblock.js$script,redirect-rule=nofab.js
+
+! [fix] for unrecognized
+||*/fuckadb*.js$script,important
+||*/blockadb*.js$script,important
+||*/sniffadb*.js$script,important
+/adblock.js$script,important
+
 ! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
 /fuckadblock.*?$script,important
