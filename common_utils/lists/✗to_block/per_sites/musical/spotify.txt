@@ -14,8 +14,10 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 !#endif
 
 !#if xhr
-*.client.*.spotify.*sponsoredplaylist$xhr,important
+||spclient.wg.spotify.com/sponsoredplaylist/*$xhr,domain=open.spotify.com,important
+||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
 !#endif
+
 
 ! badfilters
 ||open.spotify.com^$badfilter
@@ -28,6 +30,7 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 @@||gew-dealer.spotify.com^$websocket,1p
 @@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
 @@||pubads.g.doubleclick.net/pagead/conversion/*$xhr,domain=open.spotify.com
+@@||adeventtracker.spotify.com/monitoring?pload=$xhr,domain=open.spotify.com
 @@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
 
 !#endif
