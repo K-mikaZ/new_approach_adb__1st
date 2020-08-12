@@ -10,7 +10,7 @@
 !#if dom
 
 !#if papseries.net
-papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup/i))
+papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 !#endif
 
 !#if filmgratuit.net
