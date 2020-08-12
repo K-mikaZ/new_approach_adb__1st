@@ -12,6 +12,10 @@ hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 !#endif
 
-!#if enstream.to
+!#if (enstream.to && dom)
 enstream.to##.movie-notice,a.adSecw
+!#endif
+
+!#if spotxcdn.com
+||spotxcdn.com^$media
 !#endif
