@@ -9,6 +9,10 @@
 
 !#if dom
 
+!#if papseries.net
+papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup/i))
+!#endif
+
 !#if filmgratuit.net
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !#endif
