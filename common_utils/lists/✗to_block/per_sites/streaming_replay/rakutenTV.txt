@@ -2,10 +2,16 @@
 !< start rakuten.tv rules >
 !#if rakuten.tv
 
-! prevent adblock warning
+! try to prevent adblock warning
 @@||rakuten.tv^$generichide,elemhide
-! please set: no-cosmetic-filtering: rakuten.tv true
-! in chrome-extension://xxxxxxxxxxxxxxxxxxxx/dashboard.html#dyna-rules.html (dynamic filtering tab)
+
+!#if script
+||rakuten.tv/*/newrelic*.js$script,1p
+!#endif
+
+!#if xhr
+||*spotxchange.com/vast/*$xhr,domain=rakuten.tv,important
+!#endif
 
 ! see also < https://prod2-kraken-cloudfront.rakuten.tv/scripts/app-b855fd8288.js >
 
