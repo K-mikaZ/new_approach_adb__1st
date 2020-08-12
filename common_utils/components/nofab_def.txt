@@ -13,6 +13,10 @@
 */js/adv/*$script,important,redirect-rule=nofab.js
 @@/fuckadblock.$script,1p,badfilter
 
+@@/adblock.js$script,badfilter
+/adblock.js$script,redirect-rule=nofab.js
+/adblock.js$script,important
+
 ||*/\/(js\/adv\/)?(([fF]{1}u|[bB]{1}lo)ck|[sS]{1}ni[f]{2})[aA]{1}d[bB]{1}lock\./*$script,important,redirect-rule=nofab.js
 
 ||*/fuckadblock.$script,important,redirect-rule=nofab.js
