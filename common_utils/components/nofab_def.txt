@@ -28,6 +28,6 @@
 ||*/sniffadb*.js$script,important,redirect=nofab.js
 ! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
-*hqq.tv/js/adv/fuckadblock.*?$script,important,redirect=nofab.js
+/fuckadblock.*?$script,important
 
 !
