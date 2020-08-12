@@ -16,6 +16,7 @@
 ! see also < https://prod2-kraken-cloudfront.rakuten.tv/scripts/app-b855fd8288.js >
 
 !#if dom
+rakuten.tv##+js(aopr.js, e.FuckAdBlock)
 ! from https://gizmo.rakuten.tv/v3/me/streamings/check.json
 ! see < view-source:https://rakuten.tv/fr/streams/movie/chasseur-de-monstres? >
 ! "heartbeat":{"beat_url":"https:\u002F\u002Fprod-babieca.rakuten.tv\u002Fstreamings","check_url":"https:\u002F\u002Fgizmo.rakuten.tv\u002Fv3\u002Fme\u002Fstreamings\u002Fcheck.json","beat_interval":30,"check_interval":300,"token":"auWX6rShz6c73X0V9JfiOlTviql8PPOz2Urd92YRLpuL\u002FhEvtHTAYEdc6cZ7LNTNipv\u002FK0a18KQ5JlBILjCv6X4E2S+9RqEXXMLQv19mrDZ93jDkOGfe6deSPAWEk3IW93BUHqHD5hgsD9h4qt4uD49rh3LFzZ2tAx+zVsuEhjo=","position":0}
