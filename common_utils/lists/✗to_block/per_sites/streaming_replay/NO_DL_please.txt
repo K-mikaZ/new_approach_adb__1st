@@ -19,7 +19,7 @@ filmgratuit.net##li.streamer:if(span[class*="download-server"])
 
 !#if voirseries.ws
 voirseries.ws##ul[class="downloads"]
-voirseries.ws#?#h3.h:if(> :-abp-contains(/Telechargement/))
+voirseries.ws#?#h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 !#endif
 
 !#if papseries.net
