@@ -21,17 +21,17 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 ! badfilters
 ||open.spotify.com^$badfilter
-||wg.spotify.com$badfilter
-||spclient.wg.spotify.com/ads/v2/config$badfilter
-||sentry.io/api/*$badfilter
+!||wg.spotify.com$badfilter
+!||spclient.wg.spotify.com/ads/v2/config$badfilter
+!||sentry.io/api/*$badfilter
 
 ! allow
-@@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
-@@||gew-dealer.spotify.com^$websocket,1p
-@@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
-@@||pubads.g.doubleclick.net/pagead/conversion/*$xhr,domain=open.spotify.com
-@@||adeventtracker.spotify.com/monitoring?pload=$xhr,domain=open.spotify.com
-@@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
+!@@||audio-ak-spotify-com.akamaized.net/audio/*$xhr,domain=open.spotify.com
+!@@||gew-dealer.spotify.com^$websocket,1p
+!@@||gew-spclient.spotify.com^$xhr,domain=open.spotify.com
+!@@||pubads.g.doubleclick.net/pagead/conversion/*$xhr,domain=open.spotify.com
+!@@||adeventtracker.spotify.com/monitoring?pload=$xhr,domain=open.spotify.com
+!@@||securepubads.g.doubleclick.net/pcs/view$xhr,domain=open.spotify.com
 
 !#endif
 ! </ end spotify rules >
