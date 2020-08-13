@@ -7,6 +7,7 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 !#if script
 /(.*)?pixel\-static\.spotify\.(.{2,})\/sync\.min\.js/$script,important
+||open.spotify.com/service-worker.js$script,important
 !#endif
 
 !#if (image && !1p)
