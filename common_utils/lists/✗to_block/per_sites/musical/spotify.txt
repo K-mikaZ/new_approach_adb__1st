@@ -15,7 +15,8 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 !#if xhr
 ||spclient.wg.spotify.com/sponsoredplaylist/*$xhr,domain=open.spotify.com,important
-||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
+! does not memorize the position of the playlist if blocked
+!||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
 !#endif
 
 
