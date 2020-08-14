@@ -15,18 +15,44 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 !#endif
 
 !#if xhr
+/logging/jssdk_error$xhr,domain=open.spotify.com,important
 ||spclient.wg.spotify.com/sponsoredplaylist/*$xhr,domain=open.spotify.com,important
 ! does not memorize the position of the playlist if blocked
 !||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
-||adeventtracker.spotify.com^
 !#endif
 
 !#if media
 ||akamaized.net/audio/$media,domain=open.spotify.com
 !#endif
 
-! badfilters
+! [fix] badfilters
+||spotify.com^*/logging/$badfilter
 ||open.spotify.com^$badfilter
+! [fix] breaks playing spotify's playlists.
+#@#a[href^="https://adclick.g.doubleclick.net/"]
+
+! DNS filters
+||adeventtracker.spotify.com^$important
+||ads-fa.spotify.com^$important
+||analytics.spotify.com^$important
+||audio2.spotify.com^$important
+||log.spotify.com^$important
+||crashdump.spotify.com^$important
+||desktop.spotify.com^$important
+||weblb-wg.gslb.spotify.com^$important
+||partner.googleadservices.com^$important
+||tpc.googlesyndication.com^$important
+||video-ad-stats.googlesyndication.com^$important
+||d2gi7ultltnc2u.cloudfront.net^
+||d3rt1990lpmkn.cloudfront.net^
+||bounceexchange.com^
+||serving-sys.com^
+||content.bitsontherun.com^
+||core.insightexpressai.com^
+||gtssl2-ocsp.geotrust.com^
+||moatads.com^
+||media-match.com^
+||omaze.com^
 
 !#endif
 ! </ end spotify rules >
