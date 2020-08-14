@@ -1,5 +1,5 @@
 @@||fvs.io
 
-@@/((allvid)|(c(lipwatching|ore1player))|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|q{2}|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(m(y)?stream)|(netu)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2})|zplay)|oirfilms|udeo))|(w(a{2}w|ikiserie)))\.(.{2,})/$generichide
+@@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|q{2}|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(m(y)?stream)|(netu)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2})|zplay)|oirfilms|udeo))|(w(a{2}w|ikiserie)))\.(.{2,})/$generichide
 
-@@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|french-stream.work|mstream.website|netu.tv|streamingclic.site|papseries.net|jetload.net|waaw.tv
+@@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|french-stream.work|jetload.net|mstream.website|netu.tv|papseries.net|streamingclic.site|uqload.com|waaw.tv
