@@ -2,6 +2,7 @@
 !#if open.spotify.com
 
 !#if dom
+open.spotify.com##+js(nowebrtc.js)
 open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.Root__now-playing-bar>.now-playing-bar-container>._2UzxvZHwCBmRIowVNIeNvU,._3c08e30e0b5018cc15edf990e21d3dc5-scss,._6fe74cef24d5ae2ba99a619cab07aef4-scss._435d17cddae8437d6182df7623d0c41b-scss>._3dacc8e3519146f4a1357269f5dd5525-scss.link-subtle,._73caa39b8a3031fc2c408c9f442beb35-scss._1edf52628d509e6baded2387f6267588-scss._2221af4e93029bedeab751d04fab4b8b-scss,.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa11ca9390bd7-scss._2221af4e93029bedeab751d04fab4b8b-scss,.f8173b6c9c83185b5ba509aefd178eb8\.scss,[src="/blank"]
 !#endif
 
@@ -23,6 +24,10 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 !#if media
 ||akamaized.net/audio/$media,domain=open.spotify.com
+!#endif
+
+!#if websocket
+||gew-dealer.spotify.com/?access_token=$websocket,domain=open.spotify.com,important
 !#endif
 
 ! [fix] badfilters
