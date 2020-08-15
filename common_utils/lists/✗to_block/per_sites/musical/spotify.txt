@@ -35,30 +35,49 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 ! some from < https://wiki.archlinux.org/index.php/Spotify#Hosts_file >https://wiki.archlinux.org/index.php/Spotify#Hosts_file
 ! anothers from < https://pastebin.com/ZQQM7DYM >
 ! or < https://gist.github.com/teomaragakis/cb187d880c9a3ca2c8a2 >
+||104.154.126.8^
+||8.126.154.104.bc.googleusercontent.com^$important
 ||adeventtracker.spotify.com^$important
 ||ads-fa.spotify.com^$important
+||adsymptotic.com^
+||adserver.adtechus.com^
 ||analytics.spotify.com^$important
+||anycast.pixel.adsafeprotected.com^
+||audio-ec.spotify.com^
 ||audio2.spotify.com^$important
-||log.spotify.com^$important
-||crashdump.spotify.com^$important
-||desktop.spotify.com^$important
-||weblb-wg.gslb.spotify.com^$important
-||partner.googleadservices.com^$important
-||tpc.googlesyndication.com^$important
-||video-ad-stats.googlesyndication.com^$important
-||d2gi7ultltnc2u.cloudfront.net^
-||d3rt1990lpmkn.cloudfront.net^
 ||bounceexchange.com^
-||serving-sys.com^
 ||content.bitsontherun.com^
 ||core.insightexpressai.com^
+||crashdump.spotify.com^$important
+||wpc.edgecastcdn.net^
+||wpc.teliasoneracdn.net^
+||d2gi7ultltnc2u.cloudfront.net^
+||d361oi6ppvq2ym.cloudfront.net^
+||d3rt1990lpmkn.cloudfront.net^
+||desktop.spotify.com^$important
+||pubmatic.com^
+||geo3.ggpht.com^
+!||googlehosted.l.googleusercontent.com^
 ||gtssl2-ocsp.geotrust.com^
-||moatads.com^
+||heads-ec.spotify.com$important
+||http://audio2.spotify.com^$important
+||idsync-ext.rlcdn.com^
+||log.spotify.com^$important
 ||media-match.com^
+||moatads.com^
+||na.gmtdmp.com^
 ||omaze.com^
+!||pagead-googlehosted.l.google.com^
+!||partner.googleadservices.com^$important
+||prod.spotify.map.fastlylb.net^
+||serving-sys.com^
+||sto3.spotify.com^$important
+||tpc.googlesyndication.com^$important
+||u.scdn.co^
+||video-ad-stats.googlesyndication.com^$important
+||weblb-wg.gslb.spotify.com^$important
+||www.audio2.spotify.com^
 ||www.omaze.com^
-||8.126.154.104.bc.googleusercontent.com^$important
-||104.154.126.8^
 
 !#endif
 ! </ end spotify rules >
