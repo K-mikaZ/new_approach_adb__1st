@@ -1,8 +1,17 @@
 
 !#if script
+
+!#if open.spotify.com
+! facebook-pixel/implementation ( < https://developers.facebook.com/docs/facebook-pixel/implementation > )
+! see < https://open.scdn.co/cdn/js/fb.83cf1e53.js >
+/open\.scdn\.co\/cdn\/js\/([f][b])\.(([a-z]?[A-Z]?[0-9]?){4,})\.js/$script,domain=open.spotify.com,important
+!#endif
+
 ! found on openwhyd.org
 /facebook.js$script,important,domain=~facebook.com
+
 !#endif
+
 
 !#if dom
 
