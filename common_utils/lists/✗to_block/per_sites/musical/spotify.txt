@@ -61,8 +61,6 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 ||d3rt1990lpmkn.cloudfront.net^
 ||desktop.spotify.com^$important
 ||pubmatic.com^
-||geo3.ggpht.com^
-!||googlehosted.l.googleusercontent.com^
 ||gtssl2-ocsp.geotrust.com^
 ||heads-ec.spotify.com$important
 ||http://audio2.spotify.com^$important
@@ -72,8 +70,6 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 ||moatads.com^
 ||na.gmtdmp.com^
 ||omaze.com^
-!||pagead-googlehosted.l.google.com^
-!||partner.googleadservices.com^$important
 ||prod.spotify.map.fastlylb.net^
 ||serving-sys.com^
 ||sto3.spotify.com^$important
