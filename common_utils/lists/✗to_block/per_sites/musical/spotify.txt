@@ -33,6 +33,7 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 
 ! DNS filters
 ! some from < https://wiki.archlinux.org/index.php/Spotify#Hosts_file >https://wiki.archlinux.org/index.php/Spotify#Hosts_file
+! anothers from < https://pastebin.com/ZQQM7DYM >
 ||adeventtracker.spotify.com^$important
 ||ads-fa.spotify.com^$important
 ||analytics.spotify.com^$important
