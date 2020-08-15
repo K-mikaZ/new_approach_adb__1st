@@ -32,6 +32,7 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 #@#a[href^="https://adclick.g.doubleclick.net/"]
 
 ! DNS filters
+! some from < https://wiki.archlinux.org/index.php/Spotify#Hosts_file >https://wiki.archlinux.org/index.php/Spotify#Hosts_file
 ||adeventtracker.spotify.com^$important
 ||ads-fa.spotify.com^$important
 ||analytics.spotify.com^$important
@@ -53,6 +54,9 @@ open.spotify.com##.AdsContainer,.AdsContainer__inner>div,.Root__ads-container,.R
 ||moatads.com^
 ||media-match.com^
 ||omaze.com^
+||www.omaze.com^
+||8.126.154.104.bc.googleusercontent.com^$important
+||104.154.126.8^
 
 !#endif
 ! </ end spotify rules >
