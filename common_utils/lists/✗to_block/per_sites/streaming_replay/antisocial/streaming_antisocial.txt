@@ -33,6 +33,10 @@ canalplus.com##.ShareButtonWrapper,div.footer__section__column___21k-C:nth-of-ty
 papseries.net##.aa-share.nav-link
 !#endif
 
+!#if voirfilms.*
+||voirfilms.*/commentaire.
+!#endif
+
 ! Antisocial Zudbo & co
 !
 ivmox.com,crebya.com,jexoom.com##[src*="/avatar.php?"]
