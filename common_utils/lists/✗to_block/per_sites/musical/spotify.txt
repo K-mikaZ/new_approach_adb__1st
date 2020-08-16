@@ -48,6 +48,7 @@ open.spotify.com##[data-*="sponsor-"]
 #@#div > div[aria-live="polite"]
 @@||gstatic.com^$domain=open.spotify.com
 @@||googletagmanager.com^$domain=open.spotify.com
+@@||scdn.co/cdn/js/gtag.$script,domain=spotify.com
 ||adeventtracker.spotify.com^$badfilter
 
 !#endif
