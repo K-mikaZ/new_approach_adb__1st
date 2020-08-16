@@ -2,4 +2,7 @@
 
 @@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|q{2}|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(m(y)?stream)|(netu)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2})|zplay)|oirfilms|udeo))|(w(a{2}w|ikiserie)))\.(.{2,})/$generichide
 
+@@||voirfilms.*^$generichide
+@@||upvid.*^$generichide
+
 @@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|french-stream.work|gounlimited.to|jetload.net|mystream.to|mstream.website|netu.tv|papseries.net|streamingclic.site|uptostream.com|uqload.com|vidtobo.com|vidtodo.com|waaw.tv
