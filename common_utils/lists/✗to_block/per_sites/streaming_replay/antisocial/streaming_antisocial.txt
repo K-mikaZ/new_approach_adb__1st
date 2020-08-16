@@ -35,6 +35,9 @@ papseries.net##.aa-share.nav-link
 
 !#if voirfilms.*
 ||voirfilms.*/commentaire.
+!#if dom
+voirfilms.*##div[class="info"]:if(:has-text(/commentaire\:/i))
+!#endif
 !#endif
 
 ! Antisocial Zudbo & co
