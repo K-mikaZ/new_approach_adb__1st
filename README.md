@@ -19,6 +19,11 @@
     > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et bloque chromecast" (complet)*   
 <br><br>
 
+###### <ins>EXTRA</ins> ( subscription / abonnement ):
+- "Hola Free VPN Popup Remover" (for chrome and firefox, replaces [addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg)) [[ Install ]](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2Fcommon_utils%2Flists%2F%E2%9C%97to_block%2Fothers%2FHola_Free_VPN_Popup_Remover.txt&amp;title=Hola%20Free%20VPN%20Popup%20Remover)
+    > ###### *fr: "Hola Free VPN Popup Remover" (pour chrome et firefox, remplace l'[addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg))*
+<br><br>
+
 ###### <ins>Disclaimer</ins>:
 [français] Comme il s'agit de mes propres listes de filtres (que je partage ici gracieusement), il peut y avoir des filtres avec lesquels vous n'êtes pas d'accord.<br>Si c'est le cas, n'hésitez pas à cliquer sur le bouton Fork et à créer votre propre liste.<br><br>[english] Since these are my own filter lists (which I am sharing here free of charge), there may be filters with which you do not agree.<br>If so, feel free to click the Fork button and create your own list.
 
