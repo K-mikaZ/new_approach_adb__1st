@@ -5,11 +5,13 @@
 open.spotify.com##+js(nowebrtc.js)
 open.spotify.com##+js(aopr.js, sponsoredPlaylist)
 open.spotify.com##+js(aopr.js, ads.sponsoredPlaylist.previewAd)
-open.spotify.com##._3c08e30e0b5018cc15edf990e21d3dc5-scss
-open.spotify.com##._6fe74cef24d5ae2ba99a619cab07aef4-scss._435d17cddae8437d6182df7623d0c41b-scss>._3dacc8e3519146f4a1357269f5dd5525-scss.link-subtle
+open.spotify.com##[aria-label*="premium" i]
+open.spotify.com##a[class*="link-subtle"][href*="download"]
+!open.spotify.com##._3c08e30e0b5018cc15edf990e21d3dc5-scss
+!open.spotify.com##._6fe74cef24d5ae2ba99a619cab07aef4-scss._435d17cddae8437d6182df7623d0c41b-scss>._3dacc8e3519146f4a1357269f5dd5525-scss.link-subtle
 open.spotify.com##.a88f0b25501df313b75b70d458d9fe87-scss._56a12d0978529b654affa11ca9390bd7-scss._2221af4e93029bedeab751d04fab4b8b-scss
-open.spotify.com##[class*="sponsor-"]
-open.spotify.com##[data-*="sponsor-"]
+!open.spotify.com##[class*="sponsor-"]
+!open.spotify.com##[data-*="sponsor-"]
 !#endif
 
 !#if script
