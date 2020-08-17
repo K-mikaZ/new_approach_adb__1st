@@ -5,4 +5,4 @@
 @@||voirfilms.*^$generichide
 @@||upvid.*^$generichide
 
-@@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|french-stream.work|gounlimited.to|jetload.net|mystream.to|mstream.website|netu.tv|papseries.net|streamingclic.site|uptostream.com|uqload.com|vidtobo.com|vidtodo.com|waaw.tv
+@@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|french-stream.work|gounlimited.to|hdslecteur.xyz|jetload.net|mystream.to|mstream.website|netu.tv|papseries.net|streamingclic.site|uptostream.com|uqload.com|vidtobo.com|vidtodo.com|waaw.tv
