@@ -20,6 +20,7 @@
 !
 ! [fix] Unbreak the world!
 ||facebook.com/*?modules=quicklogactiontype$important,badfilter
+||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
 
 
 ! </ end facebook lighter >
