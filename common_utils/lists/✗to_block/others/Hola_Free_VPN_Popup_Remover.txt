@@ -1,6 +1,12 @@
+!
+! Title: [✔][addon] "Hola Free VPN Popup Remover" - by K-mik@Z
+! Version: 1
+! Expires: 12 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/Hola_Free_VPN_Popup_Remover.txt
+! Description: Hola Free VPN popup remover automatically removes (hides) Hola popup which initially appears in the bottom right corner of web pages which are accessed using Hola Free VPN service. (replace "Hola Free VPN Popup Remover" addon)
 
 ! < start Hola Free VPN Popup Remover >
-! REPLACE "Hola Free VPN Popup Remover" addon
 ! see < https://chrome.google.com/webstore/search/Hola Free VPN Popup Remover >
 !#if (env_chrome && chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio)
 *##:xpath(//*[@id="_hola_popup_iframe__"])
