@@ -18,6 +18,9 @@
 !
 !#include ZuckestionKiller_ModuleConnections.txt
 !
+! [fix] Unbreak the world!
+||facebook.com/*?modules=quicklogactiontype$important,badfilter
+
 
 ! </ end facebook lighter >
 !#endif
