@@ -1,29 +1,11 @@
 
-! < start chrome extensions concern >
-!#if env_chromium
-
-!#if chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio/
-! Hola Free VPN Popup Remover
-! Removes Hola Free VPN popup from web pages.
-! Hola Free VPN popup remover automatically removes (hides) Hola popup which initially appears
-! in the bottom right corner of web pages which are accessed using Hola Free VPN service.
-###_hola_popup_iframe__
+! < start Hola Free VPN Popup Remover >
+! REPLACE "Hola Free VPN Popup Remover"
+! see < https://chrome.google.com/webstore/search/Hola Free VPN Popup Remover >
+!#if (env_chrome && chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio)
+*##:xpath(//*[@id="_hola_popup_iframe__"])
 !#endif
-
+!#if (env_firefox && moz-extension://f7f625b8-beec-4726-b050-25a6cf6ac47c)
+*##:xpath(//*[@id="_hola_popup_iframe__"])
 !#endif
-! </ end chrome extensions concern >
-
-
-! < start mozilla extensions concern >
-!#if env_firefox
-
-!#if moz-extension://180b95ac-9634-4b47-947c-cc3b97f4641b/
-! Hola Free VPN Popup Remover
-! Removes Hola Free VPN popup from web pages.
-! Hola Free VPN popup remover automatically removes (hides) Hola popup which initially appears
-! in the bottom right corner of web pages which are accessed using Hola Free VPN service.
-###_hola_popup_iframe__
-!#endif
-
-!#endif
-! </ end mozilla extensions concern >
+! </ end Hola Free VPN Popup Remover >
