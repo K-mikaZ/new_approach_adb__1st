@@ -19,6 +19,7 @@
 !#include ZuckestionKiller_ModuleConnections.txt
 !
 ! [fix] Unbreak the world!
+||facebook.com/security/hsts-pixel.gif$image,important,badfilter
 ||facebook.com/*?modules=quicklogactiontype$important,badfilter
 ||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
 
