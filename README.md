@@ -1,6 +1,3 @@
-```STATUS:    in progress...    |    en cours...```  
-
-
 ###### <ins>Explanations / Explications</ins>:  
 [english](#new-approach-for-adblockersand-first-proposed-by-k-mikz) | [français](#nouvelle-approche-pour-les-bloqueurs-de-publicitéset-première-fois-proposé-par-k-mikz)<br>   
 
@@ -49,8 +46,6 @@ OK, alors pourquoi ne pas l'automatisée pour qu'elle s'applique par elle-même 
 
 Supposition. En effet, dans de nombreux langages informatiques, une réponse (même vide) vaut toujours mieux que pas de réponse. Cela évite de nombreuses erreurs (ou le non-retour de réponse, si attendue).<br><br>Et dans notre cas, bien souvent, `pas de réponse` = `bloqueurs` = `message "veuillez désactiver votre bloqueur de pubs"`
 
-  ```STATUS: en cours d'écriture...```
-
 </details>
 <details>
   <summary>Nouvelle approche! De quelle façon?</summary>
@@ -87,8 +82,7 @@ OK, so why not automate it so that it applies by itself (easier to write filters
 > I don't think that providing a response will be faster than simply canceling a network request.
 
 Assumption. Indeed, in many computer languages, a response (even empty) is always better than no response. This avoids many errors (or non-return of response, if expected).<br><br>And in our case, very often, `no response` = `blockers` = `message "please deactivate your ad blocker"`
-  
-  ```STATUS: being written ...```
+
     
 </details>
 <details>
