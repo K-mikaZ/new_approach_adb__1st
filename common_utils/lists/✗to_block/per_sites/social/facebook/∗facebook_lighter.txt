@@ -18,10 +18,11 @@
 !
 !#include ZuckestionKiller_ModuleConnections.txt
 !
-! [fix] Unbreak the world!
+! [FIX] Unbreak the world!
+www.facebook.com###facebook > div
 ||facebook.com/security/hsts-pixel.gif$image,important,badfilter
-||facebook.com/*?modules=quicklogactiontype$important,badfilter
-||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
+!||facebook.com/*?modules=quicklogactiontype$important,badfilter
+!||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
 
 
 ! </ end facebook lighter >
