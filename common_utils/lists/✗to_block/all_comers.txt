@@ -4,6 +4,7 @@
 ||cdn.insta.playbryte.com^
 ||cdn.msdwnld.com^
 ||cdn.mypcbackup.com^
+||e2wysbacctt1.com^
 ||fastenpaganhelm.com^
 ||inno.bisrv.com^
 ||inpagepush.com^
@@ -17,6 +18,7 @@
 ||nsis.bisrv.com^
 ||obstanceder.pro^
 ||ovyiakt1wzqz.com^
+||prepenseprepensedefiance.com^
 ||qtbb6.com^
 ||residuestream.club^
 ||resultsgenou.club^
@@ -25,6 +27,8 @@
 ||tapixesa.pro^
 ||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
+
+||remarketingpixel.com/stats
 
 
 ||adlightning.com^$badfilter
