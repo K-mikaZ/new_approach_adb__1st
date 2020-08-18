@@ -2,10 +2,16 @@
 ! < start torrent sites rules >
 
 *$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
-@@||*^$generichide,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 
-!#if yggtorrent.
-!#if dom
+@@||cpasbien.*^$generichide
+@@||torrent9.*^$generichide
+@@||gktorrent.*^$generichide
+@@||oxtorrent.*^$generichide
+@@||yggtorrent.*^$generichide
+@@||nyaa.*^$generichide
+@@||ettvdl.*^$generichide
+
+!#if ((yggtorrent.) && dom)
 yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notification,.animated.alert-success,.ad-alert-18-sub-title,.ad-alert-18.ad-alert-message
 !#endif
 !#endif
@@ -14,8 +20,7 @@ yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notificati
 ettvdl.com##[href*="://lookmovie."],.download_liinks_a,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"],#kr_cr,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"]
 !#endif
 
-!#if (torrent9.|torrent09.uno|oxtorrent.me)
-!#if dom
+!#if ((torrent9.|torrent09.|oxtorrent.me) && dom)
 ! [fix] liens sans inscription seulement
 torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh !important }
 torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
@@ -23,12 +28,9 @@ torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[conta
 torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"register"))])
 torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"extreme-download"))])
 !#endif
-!#endif
 
-!#if (thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.)
-!#if dom
+!#if ((thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.) && dom)
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn-2"]
-!#endif
 !#endif
 
 ! </ end torrent sites rules >
