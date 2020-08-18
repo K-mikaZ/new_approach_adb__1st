@@ -1,7 +1,7 @@
 !
 ! Title: [✔][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Version: 1
-! Expires: 7 days
+! Expires: 3 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
