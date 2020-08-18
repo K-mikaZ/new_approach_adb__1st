@@ -5,6 +5,7 @@
 
 @@||cpasbien.*^$generichide
 @@||torrent9.*^$generichide
+@@||torrent09.*^$generichide
 @@||gktorrent.*^$generichide
 @@||oxtorrent.*^$generichide
 @@||yggtorrent.*^$generichide
