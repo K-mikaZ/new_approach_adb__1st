@@ -1,10 +1,19 @@
-||bebreloomr.com^
+|||bebreloomr.com^
+||cdn.appround.biz^
+||cdn.download.sweetpacks.com^
+||cdn.insta.playbryte.com^
+||cdn.msdwnld.com^
+||cdn.mypcbackup.com^
 ||fastenpaganhelm.com^
+||inno.bisrv.com^
 ||inpagepush.com^
+||installer.betterinstaller.com^
+||installer.filebulldog.com^
 ||itnuzleafan.com^
 ||libedgolart.com^
 ||mplexanno.club^
 ||nbf9b5aurl.com^
+||nsis.bisrv.com^
 ||obstanceder.pro^
 ||ovyiakt1wzqz.com^
 ||qtbb6.com^
@@ -12,6 +21,7 @@
 ||resultsgenou.club^
 ||rwn1sdb4xqa2.com^
 ||tapixesa.pro^
+||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
 
 
