@@ -1,4 +1,4 @@
-|||bebreloomr.com^
+||bebreloomr.com^
 ||cdn.appround.biz^
 ||cdn.download.sweetpacks.com^
 ||cdn.insta.playbryte.com^
@@ -20,6 +20,7 @@
 ||residuestream.club^
 ||resultsgenou.club^
 ||rwn1sdb4xqa2.com^
+||sdk.privacy-center.org^
 ||tapixesa.pro^
 ||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
