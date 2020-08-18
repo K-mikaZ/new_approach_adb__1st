@@ -77,6 +77,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||gemius.pl^$script,badfilter
 @@||googletagmanager.com/gtag/js$script,domain=uptobox.com|uptostream.com,badfilter
 @@||facebook.com/ajax/bz$domain=facebook.com,badfilter
+! [FIX] gounlimited player
+|https://$script,3p,domain=gounlimited.to,badfilter
 ! [fix] don't block "youboranqs01.com", block only "youborafds01.com" scripts
 ||youboranqs01.com$badfilter
 ! [fix] hls parser (don't block)
