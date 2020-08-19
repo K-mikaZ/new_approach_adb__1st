@@ -1,23 +1,9 @@
 !
 ! FILTERS IN TEST (BETA)
 
-! Block ads integration on somes sites
-! see < https://wvw.hds.lc >
-!||youtube.com^$all,3p,domain=~youtube.com|~youtu.be|~yt.be
-
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 /(.*)\/chromecast(\.min)?\.js/$script
-
-! 20/07/2020 https://wikiserie.co
-! try to block modal VPN
-! VOIR ICI < https://wikiserie.co/js/app.js > et < view-source:https://wikiserie.co/me02-this-is-us-en-streaming/saison/2/episode/2 >
-! PATCH en attendant
-! do not block the modal (onclick function), otherwise, break the site
-wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
-! set/remove cookie ??
-! set.js, aopr.js, aopw.js ??
-! like wikiserie.co##+js(aopr.js, MODAL)
 
 ! https://github.com/theonion/videojs-vast-plugin#usage
 ! [fix] too generic
@@ -71,7 +57,18 @@ wikiserie.co##+js(nanop-click-elements-onready.js, .modal)
 
 /tracking_
 
+! TRY
+!*##+js(nowebrtc.js)
+
+! Advertising and Analytics (A&A) companies have used WebSockets
+! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
+!*$websocket
+wss://
+
 ! [misc]
-||apis.google.com/_/scs/*$3p
-||google.com/xjs/_/*$3p
+! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for use apis.google.com/_/scs/*
+||apis.google.com/_/scs/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
+@@||apis.google.com/_/scs/*$script,domain=cloudfront.net
+||google.com/xjs/_/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
+@@||google.com/xjs/_/*$script,domain=cloudfront.net
 
