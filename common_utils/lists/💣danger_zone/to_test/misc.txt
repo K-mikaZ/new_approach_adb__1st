@@ -18,16 +18,15 @@
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
 ||comscore.com^$domain=~comscore.com
+/comscore_beacon/*
 ! https://flowplayer.com/developers/plugins/comscore
 /comscore*.js
-
-!||wss://bifrost.vivaldi.com*/ws$important
-
 
 |http*://*.club^$3p
 |http*://a.a^
 ||31.220.3.200^
 ||waust.at^$3p
+||d1grmk7aafb6ck.cloudfront.net^$3p
 ||d36zfztxfflmqo.cloudfront.net^$3p
 ||eikegolehem.com^$3p
 ||e2ertt.com^$3p
@@ -47,7 +46,6 @@
 /clk.gif$image,important
 
 ||herokuapp.com/report$important
-||d1grmk7aafb6ck.cloudfront.net^
 
 ||sdk.iad-01.braze.com^$3p
 
@@ -66,7 +64,7 @@
 wss://
 
 ! [misc]
-! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for use apis.google.com/_/scs/*
+! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for apis.google.com/_/scs/*
 ||apis.google.com/_/scs/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
 @@||apis.google.com/_/scs/*$script,domain=cloudfront.net
 ||google.com/xjs/_/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
