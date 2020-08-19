@@ -7,5 +7,11 @@ openwhyd.org##.error
 openwhyd.org##+js(aopw.js, document.hasFocus, false)
 !#endif
 
+@@||d3qdgup1c3urcq.cloudfront.net^$domain=openwhyd.org
+
+!#if script
+@@||apis.google.com/_/scs/*$script,domain=d3qdgup1c3urcq.cloudfront.net
+!#endif
+
 !#endif
 ! </ end openwhyd rules >
