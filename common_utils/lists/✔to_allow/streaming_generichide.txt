@@ -2,13 +2,18 @@
 
 @@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|q{2}|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(m(y)?stream)|(netu)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2})|zplay)|oirfilms|udeo))|(w(a{2}w|ikiserie)))\.(.{2,})/$generichide
 
+@@||4kstreamz.$generichide
+@@||film01stream.$generichide
+@@||filmgratuit.$generichide
+@@||lesseriestreaming.$generichide
 @@||mystream.$generichide
 @@||seriestream.$generichide
 @@||streamingclic.$generichide
 @@||upvid.*^$generichide
 @@||voirfilms.*^$generichide
 @@||voirseries.$generichide
+@@||vustream.$generichide
 @@||wikiserie.$generichide
 @@||zustream.$generichide
 
-@@*$generichide,domain=clipwatching.com|core1player.com|fcine.tv|feurl.com|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mesfilms.net|mstream.website|netu.tv|papseries.net|uptostream.com|uqload.com|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|waaw.tv
+@@*$generichide,domain=clipwatching.com|core1player.com|dbserie.com|fcine.tv|feurl.com|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mesfilms.net|mstream.website|netu.tv|papseries.net|series-stream.net|stream-serie.net|uptostream.com|uqload.com|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|waaw.tv
