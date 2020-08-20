@@ -15,13 +15,12 @@
 
 !#if dom
 
-!#if deezer.com
-! Removes comments
-!deezer.com##div.catalog-content:nth-of-type(2) > .container
-!#endif
-
 !#if di.fm
-di.fm##.footer-social,.share,.discuss-btn,.social-region,.discord-region
+di.fm##.footer-social
+di.fm##.share
+di.fm##.discuss-btn
+di.fm##.social-region
+di.fm##.discord-region
 !#endif
 
 !#if soundcloud.com
