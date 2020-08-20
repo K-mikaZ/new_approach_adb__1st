@@ -2,7 +2,9 @@
 ! < start deezer rules >
 !#if deezer.com
 
-@@||deezer.$generichide,specifichide
+@@||deezer.$generichide
+! [FIX] ajout dans playlist
+@@||deezer.$specifichide
 
 !#if dom
 !deezer.com###cookies_banner
