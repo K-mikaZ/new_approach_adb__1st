@@ -102,6 +102,10 @@
 ||*youborafds01*.js$script,important
 !#endif
 
+!#if sascdn.com
+||sascdn.com/diff/$script
+!#endif
+
 ! /cryptojs.min.js !MORE RESTRICTIVE. Not use, blocking videos on animedigitalnetwork.fr (ADN)
 !#if /cryptojs.min.js
 /cryptojs.min.js$script,domain=~animedigitalnetwork.fr
