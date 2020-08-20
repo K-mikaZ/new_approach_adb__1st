@@ -2,8 +2,14 @@
 ! < start deezer rules >
 !#if deezer.com
 
+@@||deezer.$generichide,specifichide
+
 !#if dom
-deezer.com###cookies_banner,.alert-wrapper,.naboo .modal,.subscribe,.conversion-banner
+!deezer.com###cookies_banner
+!deezer.com##.alert-wrapper
+!deezer.com##.naboo .modal
+!deezer.com##.subscribe
+!deezer.com##.conversion-banner
 !#endif
 
 !#if script
