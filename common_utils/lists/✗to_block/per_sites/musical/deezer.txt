@@ -12,7 +12,13 @@
 !deezer.com##.conversion-banner
 !#endif
 
+!#if xhr
+||deezer.com/ajax/gw-light.php?method=user.getAllFeedbacks*$xhr,domain=deezer.com
+||deezer.com/ajax/gw-light.php?method=consent_getVendorList*$xhr,domain=deezer.com
+!#endif
+
 !#if script
+||apis.google.com/js/platform.js?onload=__DZR_GG_READY__$script,domain=deezer.com
 ||ak-ns.sascdn.com/diff/js/smart.js|^$script,important,domain=www.deezer.com
 !#endif
 
