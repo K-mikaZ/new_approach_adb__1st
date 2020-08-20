@@ -3,16 +3,6 @@
 !#if deezer.com
 
 @@||deezer.$generichide
-! [FIX] ajout dans playlist
-!@@||deezer.$specifichide
-
-!#if dom
-!deezer.com###cookies_banner
-!deezer.com##.alert-wrapper
-!deezer.com##.naboo .modal
-!deezer.com##.subscribe
-!deezer.com##.conversion-banner
-!#endif
 
 !#if xhr
 ||deezer.com/ajax/gw-light.php?method=user.getAllFeedbacks*$xhr,domain=deezer.com
@@ -21,7 +11,7 @@
 
 !#if script
 ||apis.google.com/js/platform.js?onload=__DZR_GG_READY__$script,domain=deezer.com
-||ak-ns.sascdn.com/diff/js/smart.js|^$script,important,domain=www.deezer.com
+||sascdn.com/diff/$script
 !#endif
 
 !#if websocket
@@ -29,9 +19,9 @@
 !#endif
 
 ! A vérifier
-/cdns-files\.dzcdn\.(.{2,})\/(.*)\/alert\-AppDownload\.(.*)\.js/$script,important
-/lightbox/*$important,domain=deezer.com
-/gw\-light\.php\*method\=(restriction_setTime|log\.listen|songkick\.getGeoEvents)/$important,domain=deezer.com
+!/cdns-files\.dzcdn\.(.{2,})\/(.*)\/alert\-AppDownload\.(.*)\.js/$script
+!/lightbox/*$important,domain=deezer.com
+!/gw\-light\.php\*method\=(restriction_setTime|log\.listen|songkick\.getGeoEvents)/$domain=deezer.com
 
 !#endif
 ! </end deezer rules >
