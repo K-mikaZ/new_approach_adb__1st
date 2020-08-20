@@ -19,6 +19,7 @@
 !#include ZuckestionKiller_ModuleConnections.txt
 !
 ! [FIX] Unbreak the world!
+facebook.com#@#body:style(overflow-x: hidden !important; overflow-y: scroll !important; padding-right: 0 !important;)
 www.facebook.com###facebook > div
 ||facebook.com/security/hsts-pixel.gif$image,important,badfilter
 !||facebook.com/*?modules=quicklogactiontype$important,badfilter
