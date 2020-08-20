@@ -4,7 +4,7 @@
 
 @@||deezer.$generichide
 ! [FIX] ajout dans playlist
-@@||deezer.$specifichide
+!@@||deezer.$specifichide
 
 !#if dom
 !deezer.com###cookies_banner
