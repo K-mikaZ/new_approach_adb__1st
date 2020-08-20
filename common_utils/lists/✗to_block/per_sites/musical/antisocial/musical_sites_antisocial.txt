@@ -19,6 +19,7 @@
 !#if dom
 
 !#if deezer.com
+deezer.com##[class="toolbar-item"]:if(> :-abp-contains(/Partager|Share/i))
 ! https://support.deezer.com
 deezer.com##.share
 deezer.com##.social-list
