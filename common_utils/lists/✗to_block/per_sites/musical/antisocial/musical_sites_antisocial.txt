@@ -1,4 +1,7 @@
 
+! apple connexion/authentification
+||apple.com/appleauth/
+
 !#if script
 
 !#if open.spotify.com
@@ -14,6 +17,14 @@
 
 
 !#if dom
+
+!#if deezer.com
+! https://support.deezer.com
+deezer.com##.share
+deezer.com##.social-list
+deezer.com##.social-list-item
+deezer.com##.social-list-link
+!#endif
 
 !#if di.fm
 di.fm##.footer-social
