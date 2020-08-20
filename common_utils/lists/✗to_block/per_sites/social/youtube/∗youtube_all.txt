@@ -24,7 +24,9 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 !#endif
 !#endif
 
-!#if (script && 1p)
+!#if script
+/serviceworker-notifications.js$script,domain=youtube.com|youtu.be|yt.be,important
+/sw.js$script,domain=youtube.com|youtu.be|yt.be,important
 /youtu(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
 !#endif
 
@@ -74,7 +76,7 @@ youtube.com##.opened,.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoi
 !!#endif
 
 !#if (media && !1p)
-/^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com
+/^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com|youtu.be|yt.be
 !#endif
 
 ! Somes fix
