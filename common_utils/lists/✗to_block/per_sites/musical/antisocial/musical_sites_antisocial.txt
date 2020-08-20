@@ -2,23 +2,12 @@
 ! apple connexion/authentification
 ||apple.com/appleauth/
 
-!#if script
-
-!#if open.spotify.com
-! facebook-pixel/implementation ( < https://developers.facebook.com/docs/facebook-pixel/implementation > )
-! see < https://open.scdn.co/cdn/js/fb.83cf1e53.js >
-/open\.scdn\.co\/cdn\/js\/([f][b])\.(([a-z]?[A-Z]?[0-9]?){4,})\.js/$script,domain=open.spotify.com,important
-!#endif
-
 ! found on openwhyd.org
 /facebook.js$script,important,domain=~facebook.com
 
-!#endif
-
-
-!#if dom
 
 !#if deezer.com
+!#if dom
 deezer.com##[class="toolbar-item"]:if(> :-abp-contains(/Partager|Share/i))
 ! https://support.deezer.com
 deezer.com##.share
@@ -26,8 +15,22 @@ deezer.com##.social-list
 deezer.com##.social-list-item
 deezer.com##.social-list-link
 !#endif
+! chat support
+!#if script
+||zdassets.com/web_widget/latest/chat-sdk.$script,domain=support.deezer.com
+!#endif
+!#if media
+||zdassets.com/web_widget/static/chat-incoming-message-notification.mp3$media,domain=support.deezer.com
+!#endif
+!#endif
 
-!#if di.fm
+!#if (open.spotify.com && script)
+! facebook-pixel/implementation ( < https://developers.facebook.com/docs/facebook-pixel/implementation > )
+! see < https://open.scdn.co/cdn/js/fb.83cf1e53.js >
+/open\.scdn\.co\/cdn\/js\/([f][b])\.(([a-z]?[A-Z]?[0-9]?){4,})\.js/$script,domain=open.spotify.com,important
+!#endif
+
+!#if (di.fm && dom)
 di.fm##.footer-social
 di.fm##.share
 di.fm##.discuss-btn
@@ -35,8 +38,6 @@ di.fm##.social-region
 di.fm##.discord-region
 !#endif
 
-!#if soundcloud.com
+!#if (soundcloud.com && dom)
 soundcloud.com##.sc-button-share
-!#endif
-
 !#endif
