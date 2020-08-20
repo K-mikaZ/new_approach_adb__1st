@@ -5,8 +5,7 @@
 @@||deezer.$generichide
 
 !#if xhr
-||deezer.com/ajax/gw-light.php?method=user.getAllFeedbacks*$xhr,domain=deezer.com
-||deezer.com/ajax/gw-light.php?method=consent_getVendorList*$xhr,domain=deezer.com
+/gw\-light\.php(.*)method\=(.*)get(VendorList|AllFeedbacks)/$xhr,domain=deezer.com
 !#endif
 
 !#if websocket
