@@ -9,11 +9,6 @@
 ||deezer.com/ajax/gw-light.php?method=consent_getVendorList*$xhr,domain=deezer.com
 !#endif
 
-!#if script
-||apis.google.com/js/platform.js?onload=__DZR_GG_READY__$script,domain=deezer.com
-||sascdn.com/diff/$script
-!#endif
-
 !#if websocket
 ||messaging.deezer.com/websocket$websocket,important
 !#endif
