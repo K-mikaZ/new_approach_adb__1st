@@ -8,6 +8,7 @@ openwhyd.org##+js(aopw.js, document.hasFocus, false)
 !#endif
 
 @@||cloudfront.net^$domain=openwhyd.org
+@@||openwhyd.org$generichide
 
 !#endif
 ! </ end openwhyd rules >
