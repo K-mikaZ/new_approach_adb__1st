@@ -222,7 +222,6 @@ login.live.com###msccBanner
 loukoum-cie.over-blog.com###dawandaWidgetContainer
 ls-streaming.com##.fullcontent .center,.PapaGooGorHD,.panel-container center
 mail.google.com##.acS,.nH.adC,.u5,.Zs
-mail.yahoo.com##.I_ZnwrMC.p_R.o_v.D_F
 malekal.com###bQtBNUghMoyn,#catapult-cookie-baroutlook.live.com,._1j7WZ-n7dxhS9AQV-FL8U7 ._2qPmszDwBfYpF7PO9Mn3KN,.code-block,.OFbYwOlAprEQ-bg,.ouXBxSIyKcZy,ins[id^="aswift_"]
 malekal.com###text-8
 malekal.com##.LRHqhwgCkDNa
