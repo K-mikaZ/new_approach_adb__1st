@@ -41,6 +41,12 @@ filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
 !#endif
 
+!#if fcine.*
+fcine.*#?#[class*="vip-server-select"]
+!fcine.*#?#div[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
+!#endif
+
 4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
