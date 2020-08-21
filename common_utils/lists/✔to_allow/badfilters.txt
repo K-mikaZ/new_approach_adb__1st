@@ -32,7 +32,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@#.np_DialogConsent
 ! [fix] too generic, break https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags
 #@#a[href^="//pubads.g.doubleclick.net/"]
-
+! [fix] parceque google.com/webhp sans dessus-dessous
+#@##searchform:style(position: absolute !important; top: 20px !important;)
 !#endif
 
 !#if !dom
