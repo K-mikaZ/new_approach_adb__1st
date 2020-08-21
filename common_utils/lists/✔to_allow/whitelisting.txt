@@ -42,4 +42,6 @@
 ! [fix] missingkids.org
 @@||s7.addthis.*angular*.js$script
 
+@@||canaltp.fr$generichide,specifichide
+
 ! </ end whitelist >
