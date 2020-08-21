@@ -43,7 +43,7 @@ enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
 
 !#if fcine.*
 fcine.*#?#[class*="vip-server-select"]
-fcine.*#?#[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+fcine.*#?#div[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 !#endif
 
