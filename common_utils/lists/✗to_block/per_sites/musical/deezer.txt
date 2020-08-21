@@ -2,8 +2,6 @@
 ! < start deezer rules >
 !#if deezer.com
 
-@@||deezer.$generichide
-
 !#if xhr
 /gw\-light\.php(.*)method\=(.*)get(VendorList|AllFeedbacks)/$xhr,domain=deezer.com
 !#endif
