@@ -1,4 +1,6 @@
 
+||freshchat.com^
+
 !#if (fbpurity.com && dom)
 fbpurity.com##.getsocial,#adcontaineretc
 !#endif
