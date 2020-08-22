@@ -37,7 +37,6 @@ di.fm##.discuss-btn
 di.fm##.social-region
 di.fm##.discord-region
 di.fm##[class*="discord"]
-di.fm##[class*="discord"]
 !#endif
 
 !#if (soundcloud.com && dom)
