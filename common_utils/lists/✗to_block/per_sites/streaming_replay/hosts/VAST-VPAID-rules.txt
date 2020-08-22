@@ -19,6 +19,7 @@
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$3p,badfilter
 @@*$script,domain=streamz.vg,badfilter
+@@||search.spotxchange.com^$xmlhttprequest,domain=rakuten.tv,badfilter
 
 ! VMAP version 1
 ! -----------------
