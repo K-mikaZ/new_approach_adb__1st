@@ -2,8 +2,11 @@
 !#if di.fm
 
 !#if dom
-di.fm##a:if(:has-text(/premium|trial/i))
-di.fm##[class*="premium"],#sponsor-region,.adsbygoogle.sidebar-ad-component
+!di.fm##a:if(:has-text(/premium|trial/i))
+di.fm##.adsbygoogle.sidebar-ad-component
+di.fm###sponsor-region
+di.fm##[class="premium-upsell-banner"]
+
 ! [fix] di.fm page margin because suppressing ads!
 di.fm###page-wrap:style(bottom:6vh!important)
 ! [fix] try suppress message "Are You Still There?"
