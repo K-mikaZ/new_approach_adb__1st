@@ -2,13 +2,21 @@
 !#if di.fm
 
 !#if dom
-!di.fm##a:if(:has-text(/premium|trial/i))
-di.fm##.adsbygoogle.sidebar-ad-component
 di.fm###sponsor-region
 di.fm##[class="premium-upsell-banner"]
+di.fm##.adsbygoogle.sidebar-ad-component
+
+! [fix] too generic
+!di.fm##a:if(:has-text(/premium|trial/i))
+! remove top right "premium trial" button
+di.fm##.go-premium-cta
+
+! [fix] break "di.fm/premium/all" and "di.fm/trial"
+di.fm#@#[class*="premium"]
 
 ! [fix] di.fm page margin because suppressing ads!
 di.fm###page-wrap:style(bottom:6vh!important)
+
 ! [fix] try suppress message "Are You Still There?"
 di.fm##+js(set.js, maxLoadTime, undefined)
 !#endif
