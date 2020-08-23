@@ -143,8 +143,8 @@ streamroot.io$script,important,badfilter
 @@||search.spotxchange.com/vast/$badfilter
 @@||search.spotxchange.com^$xhr,badfilter
 @@||spotxchange.com^$3p,badfilter
-||spotxchange.com^$badfilter
-||spotxchange.com^$3p,badfilter
+!||spotxchange.com^$badfilter
+!||spotxchange.com^$3p,badfilter
 !#endif
 ! [fix] Advanced Error Monitoring & Debugging
 ||rollbar.com^$3p,badfilter
@@ -162,7 +162,7 @@ streamroot.io$script,important,badfilter
 .prebid.$domain=~prebid.org,badfilter
 ||dmxleo.com^$badfilter
 ||iphdata.lequipe.fr^*/getinfapp.php?$badfilter
-! [fix] mstream.website
+! [fix] mstream.website need it
 ||warten-sie-mal.xyz^$badfilter
 ||warten-sie-mal.xyz^$3p,badfilter
 @@||warten-sie-mal.xyz^$script
