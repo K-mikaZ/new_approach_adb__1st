@@ -3,8 +3,8 @@
 
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
-open.spotify.com##+js(aopr.js, sponsoredPlaylist)
-open.spotify.com##+js(aopr.js, ads.sponsoredPlaylist.previewAd)
+!open.spotify.com##+js(aopr.js, sponsoredPlaylist)
+!open.spotify.com##+js(aopr.js, ads.sponsoredPlaylist.previewAd)
 open.spotify.com##[aria-label*="premium" i]
 open.spotify.com##a[class*="link-subtle"][href*="download"]
 open.spotify.com##[data-testid="test-ref-div"]
