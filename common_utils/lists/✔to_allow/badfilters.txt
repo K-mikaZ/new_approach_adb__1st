@@ -171,6 +171,9 @@ streamroot.io$script,important,badfilter
 ||warten-sie-mal.xyz^$badfilter
 ||warten-sie-mal.xyz^$3p,badfilter
 @@||warten-sie-mal.xyz^
+! [fix] unbreak clipwatching.com
+||clipwatching.com/pu/$badfilter
+@@||clipwatching.com/pu/*$script
 
 !
 ! Tracking urls
