@@ -5,6 +5,7 @@
 
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
+! [try] not sure for set
 open.spotify.com##+js(set.js, /[sS]ponso(.*)?([pP]laylist)?/, noopFunc)
 open.spotify.com##[data-template*="sponsored-"]
 open.spotify.com##[aria-label*="premium" i]
