@@ -165,7 +165,7 @@ streamroot.io$script,important,badfilter
 ! [fix] mstream.website need it
 ||warten-sie-mal.xyz^$badfilter
 ||warten-sie-mal.xyz^$3p,badfilter
-@@||warten-sie-mal.xyz^$script
+@@||warten-sie-mal.xyz^
 
 !
 ! Tracking urls
