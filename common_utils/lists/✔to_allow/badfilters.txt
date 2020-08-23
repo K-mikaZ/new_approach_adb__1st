@@ -162,7 +162,10 @@ streamroot.io$script,important,badfilter
 .prebid.$domain=~prebid.org,badfilter
 ||dmxleo.com^$badfilter
 ||iphdata.lequipe.fr^*/getinfapp.php?$badfilter
-
+! [fix] mstream.website
+||warten-sie-mal.xyz^$badfilter
+||warten-sie-mal.xyz^$3p,badfilter
+@@||warten-sie-mal.xyz^$script
 
 !
 ! Tracking urls
