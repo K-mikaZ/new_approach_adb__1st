@@ -21,13 +21,13 @@ yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notificati
 ettvdl.com##[href*="://lookmovie."],.download_liinks_a,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"],#kr_cr,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"]
 !#endif
 
-!#if ((torrent9.|torrent09.|oxtorrent.me) && dom)
+!#if ((torrenty.|torrent9.|torrent09.|oxtorrent.me) && dom)
 ! [fix] liens sans inscription seulement
-torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh !important }
-torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
-torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
-torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"register"))])
-torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"extreme-download"))])
+torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh !important }
+torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
+torrenty.*,torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
+torrenty.*,torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"register"))])
+torrenty.*,torrent9.*,torrent09.*,oxtorrent.me##div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"extreme-download"))])
 !#endif
 
 !#if ((thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.) && dom)
