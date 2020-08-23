@@ -13,12 +13,23 @@
 @@||ettvdl.*^$generichide
 
 !#if ((yggtorrent.) && dom)
-yggtorrent.*##[href*="marmota."],[href^="https://primexbt."],#over-18-notification,.animated.alert-success,.ad-alert-18-sub-title,.ad-alert-18.ad-alert-message
-!#endif
+yggtorrent.*##[href*="marmota."]
+yggtorrent.*##[href^="https://primexbt."]
+yggtorrent.*###over-18-notification
+yggtorrent.*##.animated.alert-success
+yggtorrent.*##.ad-alert-18-sub-title
+yggtorrent.*##.ad-alert-18.ad-alert-message
 !#endif
 
 !#if (ettvdl.com && dom)
-ettvdl.com##[href*="://lookmovie."],.download_liinks_a,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"],#kr_cr,a[href*=".my-privacy-protection."],#container-e7c9efeadc8a86436d24107e86ae655124512,[class*=pl-],[id*="vpn"]
+ettvdl.com##[href*="://lookmovie."]
+ettvdl.com##a[href*=".my-privacy-protection."]
+ettvdl.com##a[href*=".my-privacy-protection."]
+ettvdl.com###container-e7c9efeadc8a86436d24107e86ae655124512
+ettvdl.com##[class*=pl-]
+ettvdl.com##[id*="vpn"]
+ettvdl.com##.download_liinks_a
+ettvdl.com###kr_cr
 !#endif
 
 !#if ((torrenty.|torrent9.|torrent09.|oxtorrent.me) && dom)
