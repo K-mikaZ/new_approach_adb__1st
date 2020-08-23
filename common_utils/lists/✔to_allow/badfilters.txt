@@ -78,6 +78,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 @@||gemius.pl^$script,badfilter
 @@||googletagmanager.com/gtag/js$script,domain=uptobox.com|uptostream.com,badfilter
 @@||facebook.com/ajax/bz$domain=facebook.com,badfilter
+@@||vidlox.me^$script,1p,badfilter
 ! [FIX] gounlimited player
 |https://$script,3p,domain=gounlimited.to,badfilter
 ! [fix] don't block "youboranqs01.com", block only "youborafds01.com" scripts
@@ -88,6 +89,7 @@ streamroot.io$script,important,badfilter
 ! [fix] videos on rtlplay.be
 ||videoplaza.tv^$xmlhttprequest,3p,badfilter
 ||videoplaza.tv^$image,3p,badfilter
+@@||videoplaza.tv^
 ! [fix] break boingtv.fr
 ||cookielaw.org^$3p,badfilter
 ||cookielaw.org/scripttemplates$script,domain=~rockpapershotgun.com|~usgamer.net|~rtlxl.nl|~eurogamer.net|~zdnet.com|~eurogamer.pl|~vg247.com,badfilter
@@ -101,7 +103,7 @@ streamroot.io$script,important,badfilter
 /cgi-bin/ivw/*$badfilter
 ! [fix] ?
 /video.counters.js$badfilter
-! [fix] to generic
+! [fix] too generic
 .to/ads/$badfilter
 /ads/pop.$badfilter
 ! [fix] datadome.co (Real-Time Bot Protection)
