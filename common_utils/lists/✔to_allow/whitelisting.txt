@@ -42,8 +42,11 @@
 ! [fix] missingkids.org
 @@||s7.addthis.*angular*.js$script
 
-@@/ima3.js
-
+! for star.fr
 @@||canaltp.fr$generichide,specifichide
+
+! [fix] some streaming site need it
+@@||s0.2mdn.net/instream/video/client.js
+@@/ima3.js
 
 ! </ end whitelist >
