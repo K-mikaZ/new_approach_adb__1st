@@ -24,7 +24,6 @@ yggtorrent.*##.ad-alert-18.ad-alert-message
 !#if (ettvdl.com && dom)
 ettvdl.com##[href*="://lookmovie."]
 ettvdl.com##a[href*=".my-privacy-protection."]
-ettvdl.com##a[href*=".my-privacy-protection."]
 ettvdl.com###container-e7c9efeadc8a86436d24107e86ae655124512
 ettvdl.com##[class*=pl-]
 ettvdl.com##[id*="vpn"]
