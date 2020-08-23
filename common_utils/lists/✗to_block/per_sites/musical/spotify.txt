@@ -5,6 +5,8 @@
 
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
+open.spotify.com##+js(set.js, /[sS]ponso(.*)?([pP]laylist)?/, noopFunc)
+open.spotify.com##[data-template*="sponsored-"]
 open.spotify.com##[aria-label*="premium" i]
 open.spotify.com##a[class*="link-subtle"][href*="download"]
 open.spotify.com##[data-testid="test-ref-div"]
@@ -25,7 +27,7 @@ open.spotify.com##.verifiedBadge
 !#endif
 
 !#if xhr
-/logging/jssdk_error$xhr,domain=open.spotify.com,important
+!/logging/jssdk_error$xhr,domain=open.spotify.com,important
 ! does not memorize the position of the playlist if blocked
 @@||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
 !#endif
@@ -38,7 +40,9 @@ open.spotify.com##.verifiedBadge
 ||gew-dealer.spotify.com/?access_token=$websocket,domain=open.spotify.com,important
 !#endif
 
-/sponsored[pP]laylist/$important,domain=open.spotify.com
+/[sS]ponso(.*)?([pP]laylist)?/$important,domain=open.spotify.com
+||adclick.g.doubleclick.^
+||spotify.com/melody/*/logging/$important
 
 ! [fix] badfilters
 ||spotify.com^*/logging/$badfilter
