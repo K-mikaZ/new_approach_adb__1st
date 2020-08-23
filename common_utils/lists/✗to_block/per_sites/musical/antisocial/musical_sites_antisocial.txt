@@ -5,6 +5,8 @@
 ! found on openwhyd.org
 /facebook.js$script,important,domain=~facebook.com
 
+! facebook tracker: fb-track.js on myonlineradio.hu
+/\.([f][b]+)([^\w\d\s:.]+)track\.js/$domain=myonlineradio.hu
 
 !#if deezer.com
 !#if dom
