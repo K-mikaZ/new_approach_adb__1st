@@ -119,6 +119,7 @@ streamroot.io$script,important,badfilter
 !  [fix] seems loading better with
 ||facebook.com/ajax/$ping,important,badfilter
 ||facebook.com/ajax/bz$ping,badfilter
+||facebook.com/ajax/bz$xhr,badfilter
 ! [fix] require for google consent (I think)
 &adsafe=$badfilter
 /consentui/*$badfilter
