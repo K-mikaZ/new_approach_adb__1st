@@ -6,6 +6,7 @@
 !#if dom
 hds-streaming.la,hds.lc###comments
 hds-streaming.la##.dt_social_single
+hds.lc##[class*=".dt_social_"]
 !#endif
 !#endif
 
