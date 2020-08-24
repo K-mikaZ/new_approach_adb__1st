@@ -22,9 +22,15 @@ voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 !#endif
 
 !#if (enstream.to && dom)
-enstream.to##.movie-notice,a.adSecw
+enstream.to##.movie-notice
+enstream.to##a.adSecw
 !#endif
 
-!#if spotxcdn.com
+!#if (streamingclic. && dom)
+streamingclic.*##.header-nav [href$=".com/streamingclic/"]
+streamingclic.*##.rek
+!#endif
+
+!#if (spotxcdn.com && media)
 ||spotxcdn.com^$media
 !#endif
