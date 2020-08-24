@@ -60,10 +60,7 @@
 /sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be,badfilter
 ||vidoza.*/sw.js$script,important,badfilter
 @@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
-! service workers ( [^\w\d\s:] means non alphanumeric chars ( \w\d == [A-Za-z0-9] ), non spaces ( \s ) and non colons ( negate with ^ )
-/service([^\w\d\s:]+)?worker(\.min)?\.js/
-/sw([^\w\d\s:]+)([\d]+)\.js/
-/sw\.js/
+
 
 ! TRY
 !*##+js(nowebrtc.js)
