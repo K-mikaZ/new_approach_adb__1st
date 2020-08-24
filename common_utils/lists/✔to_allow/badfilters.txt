@@ -141,16 +141,12 @@ streamroot.io$script,important,badfilter
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xhr
 ! [fix] stops bypass pub if not on tab (ex: canalplus.com ...)
 ||fwmrm.net^$image,3p,badfilter
-!#if xhr
 ! [fix] for noop vast correctly
 @@||search.spotxchange.com/vast/$xhr,domain=rakuten.tv,badfilter
 @@||search.spotxchange.com/vast/$xhr,badfilter
 @@||search.spotxchange.com/vast/$badfilter
 @@||search.spotxchange.com^$xhr,badfilter
 @@||spotxchange.com^$3p,badfilter
-!||spotxchange.com^$badfilter
-!||spotxchange.com^$3p,badfilter
-!#endif
 ! [fix] Advanced Error Monitoring & Debugging
 ||rollbar.com^$3p,badfilter
 /rollbar.js$badfilter
@@ -159,8 +155,6 @@ streamroot.io$script,important,badfilter
 ! [fix]
 ||pagead2.googlesyndication.com^$xhr,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animedigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io|vladan.fr,badfilter
 ||pagead2.googlesyndication.com^$xhr,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animedigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io,badfilter
-! [fix]
-@@||pubads.g.doubleclick.net^$xhr,domain=developers-dot-devsite-v2-prod.appspot.com
 ! [fix] because of break lequipe.fr
 ||prebid.org^$badfilter
 ||prebid.org^$3p,badfilter
@@ -174,6 +168,9 @@ streamroot.io$script,important,badfilter
 ! [fix] unbreak clipwatching.com
 ||clipwatching.com/pu/$badfilter
 @@||clipwatching.com/pu/*$script
+
+||adservice.google.com^$badfilter
+||doubleclick.net/instream/ad_status.js$important,badfilter
 
 !
 ! Tracking urls
