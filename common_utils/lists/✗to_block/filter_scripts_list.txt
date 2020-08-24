@@ -98,6 +98,14 @@
 /s(ervice([^\w\d\s:]+)?)?w(orker)?(\.min)?\.js/
 /sw([^\w\d\s:]+)([\d]+)\.js/
 
+! WebSockets
+! -----------
+! Advertising and Analytics (A&A) companies have used WebSockets
+! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
+!*$websocket
+wss://tracker.$important
+wss://
+
 ! Global
 
 !#if youborafds01.com
