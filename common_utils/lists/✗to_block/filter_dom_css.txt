@@ -183,7 +183,6 @@ google.com###prm-pt
 google.fr###footcnt
 google.fr##.gb_7d
 hds-streaming.com##.wp-tags,div.sbox:nth-of-type(10),.dt_social_single,#text-3
-hds.lc##[class="ads"],[class*="ads_"],[class*=".dt_social_"],[src^="blob:https://hds.lc/"],#_g5eqet .resizer ._1n3rxlt._00d5twg,#playerads,.list li .reco.wide,.lightSwitcher,#count,.contadorads
 hdslecteur.xyz##div[class*="__wrap"]
 hdssgratuit.co##a.btn-watch.btn-lg.btn-offer.btnoff,.X,#pub
 hellocoton.fr##.contest-promo,.pod.ad-container
