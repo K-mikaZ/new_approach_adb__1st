@@ -61,16 +61,6 @@
 ||vidoza.*/sw.js$script,important,badfilter
 @@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
 
-
-! TRY
-!*##+js(nowebrtc.js)
-
-! Advertising and Analytics (A&A) companies have used WebSockets
-! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
-!*$websocket
-wss://
-wss://tracker.$important
-
 ! [misc]
 ! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for apis.google.com/_/scs/*
 ||apis.google.com/_/scs/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
