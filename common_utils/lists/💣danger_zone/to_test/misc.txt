@@ -72,6 +72,7 @@
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 !*$websocket
 wss://
+wss://tracker.$important
 
 ! [misc]
 ! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for apis.google.com/_/scs/*
