@@ -21,6 +21,8 @@
 @@*$script,domain=streamz.vg,badfilter
 @@||search.spotxchange.com^$xmlhttprequest,domain=rakuten.tv,badfilter
 
+/(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
+
 ! VMAP version 1
 ! -----------------
 ||*&output=xml_vmap1$xhr,redirect-rule=noopvmap-1.0
