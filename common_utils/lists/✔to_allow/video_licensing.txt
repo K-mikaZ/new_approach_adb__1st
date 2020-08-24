@@ -1,0 +1,5 @@
+
+! licenses
+@@||lic.drmtoday.com^$xhr
+@@||licensing.bitmovin.com^
+@@||perr.h-cdn.com/hola_player/license_init
