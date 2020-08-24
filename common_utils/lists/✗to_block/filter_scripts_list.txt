@@ -91,9 +91,13 @@
 ! Services worker
 ! ---------------
 !#if (/sw.js && /sw_*.js && /service-worker.js)
-*/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be
-*/sw_*.js$script
-*/service-worker.js$script,domain=~open.spotify.com
+!*/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be
+!*/sw_*.js$script
+!*/service-worker.js$script,domain=~open.spotify.com
+! [^\w\d\s:] means non alphanumeric chars ( \w\d == [A-Za-z0-9] ), non spaces ( \s ) and non colons ( negate with ^ )
+/service([^\w\d\s:]+)?worker(\.min)?\.js/
+/sw([^\w\d\s:]+)([\d]+)\.js/
+/sw\.js/
 !#endif
 
 ! Global
@@ -118,16 +122,16 @@
 !#if !1p
 ||*/1clkn/*$script,important
 ||*/scrip*/compatibility.js|$script,important
-http*://*.bid/*.js^$script,3p,important
-http*://*.cafe/*.js^$script,3p,important
-http*://*.info/*.js^$script,3p,important
+|http*://*.bid/*.js^$script,3p,important
+|http*://*.cafe/*.js^$script,3p,important
+|http*://*.info/*.js^$script,3p,important
 ||lfztmoamieum.com$script,3p,important
 ||gcpjstirhbqjx.com$script,3p,important
 !#endif
 
 ||*/sfp.js|$script
 ! This product includes portions of other software.
-||*/play*/related.js|$script,domain=~feurl.com
+||*/play*/related.js|$script,domain=~feurl.com|~core1player.com
 !||*/play*/plugins/vast-*.js$script
 ! This product includes portions of other software.
 !||*jwpcdn.com/player/*/*/related.js^$script,important
