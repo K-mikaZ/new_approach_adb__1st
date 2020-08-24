@@ -11,23 +11,28 @@ hds.lc##[class*=".dt_social_"]
 !#endif
 
 !#if (lesseriestreaming.com && dom)
-lesseriestreaming.com##.my-3,.aa-share
+lesseriestreaming.com##.my-3
+lesseriestreaming.com##.aa-share
 !#endif
 
 !#if (streamingclic. && dom)
-streamingclic.site###share,section.disqus,.header-nav [href$=".com/streamingclic/"]
+streamingclic.site###share
+streamingclic.site##section.disqus
 !#endif
 
 !#if (filmgratuit.net && dom)
-filmgratuit.net##.social,.wrap > .item > .tit
+filmgratuit.net##.social
+filmgratuit.net##.wrap > .item > .tit
 !#endif
 
 !#if (universanimeiz.com && dom)
-universanimeiz.com##.meta-share,#text-2
+universanimeiz.com##.meta-share
+universanimeiz.com###text-2
 !#endif
 
 !#if (canalplus.com && dom)
-canalplus.com##.ShareButtonWrapper,div.footer__section__column___21k-C:nth-of-type(3) > div:nth-of-type(1)
+canalplus.com##.ShareButtonWrapper
+canalplus.com##div.footer__section__column___21k-C:nth-of-type(3) > div:nth-of-type(1)
 !#endif
 
 !#if (papseries.net && dom)
