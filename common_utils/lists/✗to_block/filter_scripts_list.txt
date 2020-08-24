@@ -160,7 +160,6 @@
 /(.*)?(firstimpres{2}ion|highwebmedia|(((sentry\-)cdn)|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
 /(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/$script
 /(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/$script,important
-/(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 /(.*)?stats\.wp\.(com)\/(.*).js/$script,important
 /(6zw2rcfd|hcg82f2b|dnzwjlbknhe|s20dh7e9dh|tu42het2{2}n)\.(com)\/(.*)\.js/$script,important
 /captched\.com\/jws\.js/$script,important
