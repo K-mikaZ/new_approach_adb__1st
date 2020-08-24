@@ -41,8 +41,8 @@ open.spotify.com##.verifiedBadge
 ||gew-dealer.spotify.com/?access_token=$websocket,domain=open.spotify.com,important
 !#endif
 
-/[sS]ponso(.*)?([pP]laylist)?/$important,domain=open.spotify.com
-||adclick.g.doubleclick.^
+!/[sS]ponso(.*)?([pP]laylist)?/$important,domain=open.spotify.com
+||adclick.g.doubleclick.com^
 ||spotify.com/melody/*/logging/$important
 
 ! [fix] badfilters
