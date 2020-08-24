@@ -4,5 +4,13 @@
 !
 
 !
+!#include ✔to_allow/video_licensing.txt
+!
+
+!
+!#include ✔to_allow/streaming_generichide.txt
+!
+
+!
 !#include ✔to_allow/badfilters.txt
 !
