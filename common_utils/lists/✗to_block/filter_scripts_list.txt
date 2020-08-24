@@ -95,8 +95,7 @@
 !*/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be
 !*/sw_*.js$script
 !*/service-worker.js$script,domain=~open.spotify.com
-! concern "/sw.js" && "/sw_*.js" && "/service-worker(.min)?.js"
-! [^\W\d\s:] means non alphanumeric chars ( \W\d == [A-Za-z0-9] ), non spaces ( \s ) and non colons ( negate with ^ )
+! concern "/sw.js" && "/sw_*.js" && "/service(-_)?worker(-_)?(.*)?(.min)?.js" ...
 /\/s(ervice([^\d\s:]+)?)?w(orker)?([^\d\s:]+)?([\W,\d]+)?(\.min)?\.js/
 
 ! WebSockets
