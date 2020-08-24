@@ -7,6 +7,8 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
 
+@@||spotxchange.com^$domain=rakuten.tv
+
 !#if script
 @@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
 @@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
