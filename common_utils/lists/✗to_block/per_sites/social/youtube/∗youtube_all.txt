@@ -21,6 +21,7 @@ youtube.com##ytm-promoted-sparkles-web-renderer
 youtube.com###old-browser-alert
 youtube.com###dismissable.ytd-compact-promoted-item-renderer
 !#if music.youtube.com
+music.youtube.com##.ytmusic-popup-container.style-scope
 ! No pause for player, thx
 ! see < https://music.youtube.com/sw.js > point to < s.ytimg.com/yts/jsbin/serviceworker-music-vflk3r3Lp/serviceworker-music.js >
 ! see < https://www.youtube.com/sw.js > point to < https://www.youtube.com/s/desktop/9225b7fd/jsbin/serviceworker-notifications.vflset/serviceworker-notifications.js >
@@ -40,6 +41,8 @@ youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.
 !#endif
 
 !#if image
+||youtube.com/pcs/activeview$image,domain=youtube.com
+||*/activeview*$image,redirect-rule=1x1.gif
 /generate_204$image,important
 /youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
@@ -47,6 +50,7 @@ youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.
 !#endif
 
 !#if (xhr && 1p)
+||youtube.com/get_video_info?*adunit$domain=youtube.com,important
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
