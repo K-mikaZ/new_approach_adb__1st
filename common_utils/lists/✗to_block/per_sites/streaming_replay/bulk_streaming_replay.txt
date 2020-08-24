@@ -2,7 +2,16 @@
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
 hds-streaming.la,hds.lc###oscuridad
+hds.lc##[class="ads"]
+hds.lc##[class*="ads_"]
+hds.lc##[src^="blob:https://hds.lc/"]
+hds.lc###playerads
+hds.lc##.contadorads
 ! not ads, juste sanitize
+hds.lc###_g5eqet .resizer ._1n3rxlt._00d5twg
+hds.lc##.list li .reco.wide
+hds.lc##.lightSwitcher
+hds.lc###count
 hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 !#endif
 
