@@ -97,7 +97,7 @@
 !*/service-worker.js$script,domain=~open.spotify.com
 ! concern "/sw.js" && "/sw_*.js" && "/service-worker(.min)?.js"
 ! [^\W\d\s:] means non alphanumeric chars ( \W\d == [A-Za-z0-9] ), non spaces ( \s ) and non colons ( negate with ^ )
-/\/s(ervice([^\W\d\s:]+)?)?w(orker)?(([^\W\d\s:]+)([\W,\d]+))?(\.min)?\.js/
+/\/s(ervice([^\d\s:]+)?)?w(orker)?([^\d\s:]+)?([\W,\d]+)?(\.min)?\.js/
 
 ! WebSockets
 ! -----------
