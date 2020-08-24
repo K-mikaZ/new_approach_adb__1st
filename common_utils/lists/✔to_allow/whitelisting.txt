@@ -45,6 +45,9 @@
 ! for star.fr
 @@||canaltp.fr$generichide,specifichide
 
+! [fix]
+@@||pubads.g.doubleclick.net^$xhr,domain=developers-dot-devsite-v2-prod.appspot.com
+
 ! [fix] some streaming site need it
 @@||s0.2mdn.net/instream/video/client.js
 @@/ima3.js
