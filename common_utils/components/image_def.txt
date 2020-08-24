@@ -34,4 +34,11 @@
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
 ||adnxs.com$image,redirect-rule=1x1.gif
 
+! see rakuten.tv
+||*pixel?google_nid=spotxchange_*$image,redirect-rule=2x2.png
+||*_type=hidden*$image,redirect-rule=1x1.gif
+||turn.com/*$image,redirect-rule=1x1.gif
+||adform.net/*$image,redirect-rule=1x1.gif
+||*spotx*$image,redirect-rule=1x1.gif
+
 !
