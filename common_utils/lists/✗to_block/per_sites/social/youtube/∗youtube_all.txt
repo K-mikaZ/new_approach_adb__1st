@@ -19,6 +19,7 @@ youtube.com##.opened
 youtube.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 youtube.com##ytm-promoted-sparkles-web-renderer
 youtube.com###old-browser-alert
+youtube.com###dismissable.ytd-compact-promoted-item-renderer
 !#if music.youtube.com
 ! No pause for player, thx
 ! see < https://music.youtube.com/sw.js > point to < s.ytimg.com/yts/jsbin/serviceworker-music-vflk3r3Lp/serviceworker-music.js >
