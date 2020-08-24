@@ -17,3 +17,6 @@
 @@||zustream.$generichide
 
 @@*$generichide,domain=clipwatching.com|core1player.com|dbserie.com|fcine.tv|feurl.com|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mesfilms.net|mstream.website|netu.tv|papseries.net|series-stream.net|stream-serie.net|uptostream.com|uqload.com|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|waaw.tv
+
+! LICENSES
+!#include lists/✔to_allow/video_licensing.txt
