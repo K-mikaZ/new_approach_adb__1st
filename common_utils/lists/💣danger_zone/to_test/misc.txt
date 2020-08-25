@@ -1,6 +1,10 @@
 !
 ! FILTERS IN TEST (BETA)
 
+! see on tf1.fr
+||facil-iti.com^
+||api.ipify.org^$domain=~ipify.org
+
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 /(.*)\/chromecast(\.min)?\.js/$script
