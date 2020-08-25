@@ -1,4 +1,8 @@
 
+!#if (popup && !1p)
+||*$3p,popup,important,domain=clipwatching.com
+!#endif
+
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
 hds-streaming.la,hds.lc###oscuridad
@@ -33,4 +37,8 @@ streamingclic.*##.rek
 
 !#if (spotxcdn.com && media)
 ||spotxcdn.com^$media
+!#endif
+
+!#if (clipwatching.com && dom)
+clipwatching.com##.cover
 !#endif
