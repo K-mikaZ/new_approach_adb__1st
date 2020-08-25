@@ -11,17 +11,18 @@
 ! < https://support.bluebillywig.com/vast-inspector#!/vast_type=vast_url/vast_url=%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D640x480%26iu%3D%2F124319096%2Fexternal%2Fsingle_ad_samples%26ciu_szs%3D300x250%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dvast%26unviewed_position_start%3D1%26cust_params%3Ddeployment%253Ddevsite%2526sample_ct%253Dlinear%26correlator%3D[timestamp]/position=preroll/ima_preload=on/hide_settings=off/hide_log=off >
 
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
-! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
-!||p.jwpcdn.com/player/plugins/vast/$badfilter
-!/player/plugins/vast-*.js$script,badfilter
-@@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 ! < https://developers.google.com/interactive-media-ads >
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$3p,badfilter
 @@*$script,domain=streamz.vg,badfilter
 @@||search.spotxchange.com^$xmlhttprequest,domain=rakuten.tv,badfilter
 
+! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
+!||p.jwpcdn.com/player/plugins/vast/$badfilter
+!/player/plugins/vast-*.js$script,badfilter
+@@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
+||*://vast.*
 
 ! VMAP version 1
 ! -----------------
