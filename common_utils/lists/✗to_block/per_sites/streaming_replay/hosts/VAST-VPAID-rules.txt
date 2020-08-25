@@ -12,9 +12,9 @@
 
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
 ! break too many videos. Prefer redirect-rule=noopvast-*, rather than blocking
-||p.jwpcdn.com/player/plugins/vast/$badfilter
-/player/plugins/vast-*.js$script,badfilter
-@@/vast-*.js
+!||p.jwpcdn.com/player/plugins/vast/$badfilter
+!/player/plugins/vast-*.js$script,badfilter
+@@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 ! < https://developers.google.com/interactive-media-ads >
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$3p,badfilter
