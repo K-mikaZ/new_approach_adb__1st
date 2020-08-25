@@ -72,9 +72,11 @@ irdoz.com,eyobim.com##[src*="/com.php"]
 !#if animedigitalnetwork.fr
 
 !#if dom
+animedigitalnetwork.fr##.vodshare
+animedigitalnetwork.fr##.link
+animedigitalnetwork.fr##.footer-social
 ! bloc comments concern
 animedigitalnetwork.fr#?#.adn-block-content:if(span:-abp-contains(/Avis sur /))
-animedigitalnetwork.fr##.vodshare,.link,.footer-social
 !#endif
 
 !#if css|script
