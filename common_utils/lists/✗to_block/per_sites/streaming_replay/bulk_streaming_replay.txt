@@ -42,3 +42,8 @@ streamingclic.*##.rek
 !#if (clipwatching.com && dom)
 clipwatching.com##.cover
 !#endif
+
+!#if (wiflix. && dom)
+wiflix.*##.myButton
+wiflix.*##.sadst
+!#endif
