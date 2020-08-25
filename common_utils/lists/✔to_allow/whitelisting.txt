@@ -9,6 +9,8 @@
 
 @@||spotxchange.com^$domain=rakuten.tv
 
+@@||internet.nl^$generichide,specifichide
+
 !#if script
 @@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
 @@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
