@@ -21,6 +21,7 @@
 
 !#if media
 ! fake videos
+||wiflix.*/*.mp4$media
 ||enstream.to/vip/*$media,1p
 *.mp4$media,important,domain=zone-stream.club|voirseries.co
 *.dll$media,important,domain=streamz.vg
@@ -30,6 +31,7 @@
 !#endif
 
 ||site.dotvideo.cc^$important
+||wiflix.*/voir/play.php$important
 
 !#if dom
 
@@ -49,7 +51,9 @@ fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 
 4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
-voirseries.*##.custom-fake-media-info,a[href*="/download.php"],div[id="custom-media-player"]
+voirseries.*##.custom-fake-media-info
+voirseries.*##a[href*="/download.php"]
+voirseries.*##div[id="custom-media-player"]
 streaminz.com##.playbtm
 kykfilmserie.com##.content > div:nth-of-type(2)
 streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
