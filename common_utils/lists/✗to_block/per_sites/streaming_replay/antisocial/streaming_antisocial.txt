@@ -42,15 +42,22 @@ papseries.net##.aa-share.nav-link
 wiflix.*##.share-box
 !#endif
 
-!#if voirfilms.*
+!#if voirfilms.
 ||voirfilms.*/commentaire.
 !#if dom
 voirfilms.*##div[class="info"]:if(:has-text(/commentaire\:/i))
 !#endif
 !#endif
 
-! Antisocial Zudbo & co
+!#if (tf1.fr && dom)
+tf1.fr##[class*="ShareButton_"]
+tf1.fr##[class*="Footer_social_"]
+tf1.fr##[class="share"]
+!#endif
+
 !
+! Antisocial Zudbo & co
+! -----------------------
 ivmox.com,crebya.com,jexoom.com##[src*="/avatar.php?"]
 ivmox.com,crebya.com,jexoom.com###comments-form
 ivmox.com,crebya.com,jexoom.com###jc > h4
