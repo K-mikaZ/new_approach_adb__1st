@@ -3,7 +3,9 @@
 !#if animedigitalnetwork.fr
 
 !#if dom
-animedigitalnetwork.fr##.adn-opm2-block-rectangle,.adn-pave,#google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
+animedigitalnetwork.fr##.adn-opm2-block-rectangle
+animedigitalnetwork.fr##.adn-pave
+animedigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
 yatta.animedigitalnetwork.fr##.adn-header
 !#endif
 
