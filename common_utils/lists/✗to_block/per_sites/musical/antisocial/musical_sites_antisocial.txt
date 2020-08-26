@@ -43,4 +43,5 @@ di.fm##[class*="discord"]
 
 !#if (soundcloud.com && dom)
 soundcloud.com##.sc-button-share
+soundcloud.com##.soundLikesModule
 !#endif
