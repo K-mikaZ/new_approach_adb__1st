@@ -1,0 +1,10 @@
+
+! Services worker (are some times "Advertising Workers")
+! Using service worker you can hijack connections, fabricate, and filter responses.
+! read < https://developers.google.com/web/fundamentals/primers/service-workers >
+! ---------------
+!*/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be
+!*/sw_*.js$script
+!*/service-worker.js$script,domain=~open.spotify.com
+! concern "/sw.js" && "/sw_*.js" && "/service(-_)?worker(-_)?(.*)?(.min)?.js" ...
+/\/s(ervice([^\d\s:]+)?)?w(orker)?([^\d\s:]+)?([\W,\d]+)?(\.min)?\.js/
