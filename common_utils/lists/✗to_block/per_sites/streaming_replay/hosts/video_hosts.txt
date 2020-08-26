@@ -44,7 +44,9 @@ hdslecteur.xyz###lkm6j,#z7wsgp3
 ||vidoza.*/sw.js$script,important
 !#endif
 !#if (dom && 1p)
-vidoza.net##.simpleToast,#asg-push-frame3,.vjs-topbar
+vidoza.net##.simpleToast
+vidoza.net###asg-push-frame3
+vidoza.net##.vjs-topbar
 !#endif
 !#endif
 
@@ -76,7 +78,9 @@ vizplay.icu##+js(set.js, adb, '1/')
 
 !#if playtovid.com
 !#if dom
-playtovid.com###lkfyb,#isah7vt,#container-2e454816c2f0b2e3aeed71e38edfb86377331
+playtovid.com###lkfyb
+playtovid.com###isah7vt
+playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 !#endif
 !#endif
 
