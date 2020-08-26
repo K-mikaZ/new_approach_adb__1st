@@ -12,6 +12,8 @@
 !#include youtube_parts_easylists.txt
 !
 
+_204?$image,xhr,domain=youtube.com
+
 !
 !#if dom
 youtube.com##.ytp-impression-link
@@ -25,7 +27,8 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 ! No pause for player, thx
 ! see < https://music.youtube.com/sw.js > point to < s.ytimg.com/yts/jsbin/serviceworker-music-vflk3r3Lp/serviceworker-music.js >
 ! see < https://www.youtube.com/sw.js > point to < https://www.youtube.com/s/desktop/9225b7fd/jsbin/serviceworker-notifications.vflset/serviceworker-notifications.js >
-youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
+! I have test to block services-worker 
+!youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
 !music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
 !#endif
@@ -43,7 +46,6 @@ youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.
 !#if image
 ||youtube.com/pcs/activeview$image,domain=youtube.com
 ||*/activeview*$image,redirect-rule=1x1.gif
-/generate_204$image,important
 /youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
 !||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
@@ -107,6 +109,10 @@ youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.
 ! < https://dri.es/how-to-remove-youtube-tracking >
 ! read also < https://cmscanbesimple.org/blog/embed-youtube-video-via-a-cookieless-domain >
 ||youtube-nocookie.com^$badfilter
+! [fix] alert by overlay if accompte as changed
+youtube.com#@#iron-overlay-backdrop
+! [fix] acces to < https://www.youtube.com/ads/ >
+@@||ads.youtube.com
 
 !#endif
 ! </ end youtube rules >
