@@ -13,7 +13,12 @@
 !#endif
 
 !#if dom
-soundcloud.com##.dashbox,.m-promotion,.playlistConsumerSubUpsell
+soundcloud.com##.dashbox
+soundcloud.com##.m-promotion
+soundcloud.com##.upsellBanner
+soundcloud.com##.playlistConsumerSubUpsell
+soundcloud.com##.announcements
+soundcloud.com##.announcements > div.sc-list-nostyle
 !#endif
 
 !#endif
