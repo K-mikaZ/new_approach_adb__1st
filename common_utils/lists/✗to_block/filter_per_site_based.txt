@@ -3,3 +3,4 @@
 !#include per_sites/∗streaming_replay_combined.txt
 !#include per_sites/∗DL_combined.txt
 !#include per_sites/∗Others_combined.txt
+!#include per_sites/∗mail_all.txt
