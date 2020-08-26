@@ -19,6 +19,7 @@ soundcloud.com##.upsellBanner
 soundcloud.com##.playlistConsumerSubUpsell
 soundcloud.com##.announcements
 soundcloud.com##.announcements > div.sc-list-nostyle
+soundcloud.com##article.mobileApps
 !#endif
 
 !#endif
