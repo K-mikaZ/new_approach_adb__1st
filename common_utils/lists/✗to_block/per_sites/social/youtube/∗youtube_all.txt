@@ -92,6 +92,11 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 /^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com|youtu.be|yt.be
 !#endif
 
+! Fake youtube sites with viruses
+||yougube.com^$all,important
+||youtibe.com^$all,important
+||youtuhe.com^$all,important
+
 ! Somes fix
 ! [fix] Require for Local YouTube Downloader < https://greasyfork.org/en/scripts/369400-local-youtube-downloader >
 /youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
