@@ -1,0 +1,26 @@
+||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com,badfilter
+/rapidworker*.js$script,domain=mail.yahoo.com,important
+/darla/*/sfext-min.js$script,domain=s.yimg.com,important
+!/sdarla/php/client.php$script,domain=mail.yahoo.com,important
+||udc.yahoo.com^$xhr,domain=mail.yahoo.com
+||fc.yahoo.com^$domain=mail.yahoo.com
+! https://help.getadblock.com/support/solutions/articles/6000161392-custom-filters-for-some-annoyances-in-yahoo-mail
+mail.yahoo.com##.callout-default.left
+mail.yahoo.com##.rightRailAdContainer
+mail.yahoo.com###rightrailad-LREC
+!<td class="rightRailAdContainer" rowspan="2" ><div id="rightrailad-LREC"></div></td>
+||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
+! mail.yahoo.com Pro
+! see < https://www.reddit.com/r/uBlockOrigin/comments/emdovh/yahoo_webmail_again/#t1_fdqzath >
+mail.yahoo.com##[data-test-id="pencil-ad"]
+!mail.yahoo.com##[data-test-id="right-rail-ad"]
+mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
+mail.yahoo.com#$#.Z_qc, [data-test-id="comms-properties-bar"]{display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;flex-direction:column!important;-webkit-box-flex:1!important;flex-grow:1!important}
+mail.yahoo.com#$#.r_P.C_ZamTeg.cdPFi_ZamTeg.ab_C.D_F{position:absolute!important;top:4px!important}
+mail.yahoo.com#$#[data-test-id="comms-properties"]{display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;flex-direction:column!important}
+mail.yahoo.com#$#[data-test-id="comms-properties"]>*,[data-test-id="icon-btn-settings"]{margin:14px 0 0 0!important}
+mail.yahoo.com#$#[data-test-id="comms-properties-bar"]{height:unset!important;padding-top:70px!important}
+mail.yahoo.com##[data-test-id="right-rail-hidead-btn"]
+mail.yahoo.com##[title="Hide Advertisement"]
+mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
+mail.yahoo.com##[data-test-id="settings-link-label"]
