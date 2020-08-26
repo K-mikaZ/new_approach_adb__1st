@@ -7,4 +7,5 @@
 !*/sw_*.js$script
 !*/service-worker.js$script,domain=~open.spotify.com
 ! concern "/sw.js" && "/sw_*.js" && "/service(-_)?worker(-_)?(.*)?(.min)?.js" ...
-/\/s(ervice([^\d\s:]+)?)?w(orker)?([^\d\s:]+)?([\W,\d]+)?(\.min)?\.js/
+! [fix] because somes are using:  /socket\-worker(.*)?\.js/$domain=github.com
+/\/s(ocket|ervice)?([^\d\s:]+)?w(orker)?([^\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
