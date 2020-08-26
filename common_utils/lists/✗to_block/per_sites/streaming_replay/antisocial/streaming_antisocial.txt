@@ -42,6 +42,11 @@ papseries.net##.aa-share.nav-link
 wiflix.*##.share-box
 !#endif
 
+!#if (vidoza.net && dom)
+vidoza.net##.btn-social.btn
+vidoza.net##.btn-social
+!#endif
+
 !#if voirfilms.
 ||voirfilms.*/commentaire.
 !#if dom
