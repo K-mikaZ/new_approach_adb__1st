@@ -12,7 +12,7 @@
 !#include youtube_parts_easylists.txt
 !
 
-_204?$image,xhr,domain=youtube.com
+_204?$image,xhr,domain=youtube.com|youtu.be|yt.be
 
 !
 !#if dom
