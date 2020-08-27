@@ -2,6 +2,10 @@
 ! < start deezer rules >
 !#if deezer.com
 
+!#if dom
+deezer.com##.conversion-banner
+!#endif
+
 !#if xhr
 /gw\-light\.php(.*)method\=(.*)get(VendorList|AllFeedbacks)/$xhr,domain=deezer.com
 !#endif
