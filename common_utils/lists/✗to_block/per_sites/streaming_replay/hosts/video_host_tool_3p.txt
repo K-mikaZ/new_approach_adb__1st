@@ -6,9 +6,13 @@
 ! see < https://v3.fstats.xyz/watch >
 ||v3.fstats.xyz^$badfilter
 ||fstats.xyz^$3p,badfilter
-*$xmlhttprequest,3p,domain=feurl.com,badfilter
-*$xmlhttprequest,3p,domain=core1player.com,badfilter
+*$xhr,3p,domain=feurl.com,badfilter
+*$xhr,3p,domain=core1player.com,badfilter
 *$script,3p,domain=core1player.com,badfilter
+
+!#if (fstats.xyz && xhr)
+||fstats.xyz/log$xhr,important
+!#endif
 
 !#if inpagepush.com
 ||inpagepush.com^$important,badfilter
