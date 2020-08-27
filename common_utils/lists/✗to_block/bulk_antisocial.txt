@@ -7,3 +7,23 @@
 !#if (fbpurity.com && dom)
 fbpurity.com##.getsocial,#adcontaineretc
 !#endif
+
+/wp-emoji-
+##[src*="/images/share."]
+
+~google.com##a[href*="://plus.google."]
+~facebook.com,~fb.com##a[href*="://facebook."]
+~vkontakte.ru##a[href*="://vkontakte.ru"]
+~odnoklassniki.ru##a[href*=".odnoklassniki.ru"]
+~mail.ru##a[href*="://connect.mail.ru"]
+~twitter.com##a[href*="://twitter."]
+~livejournal.com##a[href*=".livejournal.com"]
+~twitter.com##a[href*="://twitter."]
+
+~tumblr.com##a[href*=".tumblr."]
+/showads.js$script,domain=tumblr.com
+||*tumblr.com^$3p,domain=~tumblr.com
+/share.js$script,domain=tumblr.com
+/tweets.js$domain=tumblr.com
+/like_iframe.html$subdocument,domain=tumblr.com
+/share_$image,domain=tumblr.com
