@@ -1,5 +1,5 @@
 ||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com,badfilter
-/rapidworker*.js$script,domain=mail.yahoo.com,important
+!/rapidworker*.js$script,domain=mail.yahoo.com,important
 /darla/*/sfext-min.js$script,domain=s.yimg.com,important
 !/sdarla/php/client.php$script,domain=mail.yahoo.com,important
 ||udc.yahoo.com^$xhr,domain=mail.yahoo.com
