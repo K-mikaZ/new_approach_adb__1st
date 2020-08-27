@@ -3,15 +3,6 @@
 
 *$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 
-@@||cpasbien.*^$generichide
-@@||torrent9.*^$generichide
-@@||torrent09.*^$generichide
-@@||gktorrent.*^$generichide
-@@||oxtorrent.*^$generichide
-@@||yggtorrent.*^$generichide
-@@||nyaa.*^$generichide
-@@||ettvdl.*^$generichide
-
 !#if ((yggtorrent.) && dom)
 yggtorrent.*##[href*="marmota."]
 yggtorrent.*##[href^="https://primexbt."]
