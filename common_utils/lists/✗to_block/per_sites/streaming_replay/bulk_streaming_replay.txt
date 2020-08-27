@@ -1,4 +1,7 @@
 
+! streaming
+/classes/masha/masha.js
+
 !#if (popup && !1p)
 ||*$3p,popup,important,domain=clipwatching.com
 !#endif
