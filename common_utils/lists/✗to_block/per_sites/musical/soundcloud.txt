@@ -3,9 +3,11 @@
 
 ||promoted.soundcloud.com^
 
+
 !if !1p
-*$3p,domain=soundcloud.com
-@@||sndcdn.com^$3p
+!*$3p,domain=soundcloud.com
+@@||sndcdn.com^$3p,badfilter
+@@||sndcdn.com$generichide
 !#endif
 
 !#if xhr
