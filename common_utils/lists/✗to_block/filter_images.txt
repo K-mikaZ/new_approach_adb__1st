@@ -12,7 +12,6 @@
 ||perf.gif$image,important
 ||empty_pixel.gif$image,important
 ||*google.*/images/cleardot.gif|$image,important
-||*jwpltx.com/*/jwplayer*/ping.gif$image,important
 ||cdn1.ftimg.com/images/x.gif$image,1p,important
 ||r.mail.ru/*.gif$image,important
 !#if (hivos.com && !1p)
