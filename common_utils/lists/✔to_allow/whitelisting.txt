@@ -12,6 +12,7 @@
 @@||internet.nl^$generichide,specifichide
 
 !#if script
+@@/streaminfo.js
 @@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
 @@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
 ! CSS prefix by Lea Verou concern
