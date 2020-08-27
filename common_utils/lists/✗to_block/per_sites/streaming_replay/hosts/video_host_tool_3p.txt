@@ -2,6 +2,7 @@
 
 ! try to unbreak the world!
 
+@@/dna-client.js
 ! break too many videos
 ! see < https://v3.fstats.xyz/watch >
 ||v3.fstats.xyz^$badfilter
