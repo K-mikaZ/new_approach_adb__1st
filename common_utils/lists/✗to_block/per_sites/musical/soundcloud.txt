@@ -3,7 +3,6 @@
 
 ||promoted.soundcloud.com^
 
-
 !if !1p
 !*$3p,domain=soundcloud.com
 @@||sndcdn.com^$3p,badfilter
