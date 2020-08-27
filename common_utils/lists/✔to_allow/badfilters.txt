@@ -40,6 +40,7 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 
 !#if !dom
 
+||frog.wix.com^$ping,badfilter
 @@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
