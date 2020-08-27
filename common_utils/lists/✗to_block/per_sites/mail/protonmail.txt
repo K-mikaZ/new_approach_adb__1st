@@ -1,0 +1,3 @@
+
+mail.protonmail.com##section:if(>.latest-upgrade)
+mail.protonmail.com##section:if(>[target="_blank"])
