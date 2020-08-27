@@ -1,4 +1,8 @@
 
+! stats collector
+://statscollector.
+||websimages.com/*/stats/collector.js
+
 !#if ampproject.org
 /amp-analytics-$important
 !#endif
