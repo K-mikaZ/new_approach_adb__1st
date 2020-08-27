@@ -168,6 +168,9 @@ streamroot.io$script,important,badfilter
 ! [fix] unbreak clipwatching.com
 ||clipwatching.com/pu/$badfilter
 @@||clipwatching.com/pu/*$script
+! [fix]
+||d3kle7qwymxpcy.cloudfront.net$badfilter
+@@||d3kle7qwymxpcy.cloudfront.net^
 
 ||adservice.google.com^$badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
