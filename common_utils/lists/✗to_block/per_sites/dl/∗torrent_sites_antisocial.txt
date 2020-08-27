@@ -1,4 +1,5 @@
 
 !#if (nyaa.si && dom)
-nyaa.si###comments,.comments
+nyaa.si###comments
+nyaa.si##.comments
 !#endif
