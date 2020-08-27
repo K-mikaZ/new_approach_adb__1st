@@ -21,6 +21,8 @@ soundcloud.com##.upsellBanner
 soundcloud.com##.playlistConsumerSubUpsell
 soundcloud.com##.announcements
 soundcloud.com##.announcements > div.sc-list-nostyle
+! sanitize
+soundcloud.com##.g-go-plus-marker-list
 soundcloud.com##article.mobileApps
 soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
 !#endif
