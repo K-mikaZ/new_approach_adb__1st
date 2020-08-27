@@ -1,4 +1,8 @@
 
+!#if (jwpcdn.com && script)
+||jwpcdn.com/player*/sharing.js$script,important
+!#endif
+
 !#if (hds-streaming.la|hds.lc)
 !#if script
 /comment-reply.min.js$script,domain=hds-streaming.la
