@@ -1,5 +1,6 @@
 
 !#if (nyaa.si && dom)
+nyaa.si##[href*="://twitter."]
 nyaa.si###comments
 nyaa.si##.comments
 !#endif
