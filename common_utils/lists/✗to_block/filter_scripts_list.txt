@@ -124,13 +124,6 @@
 !#endif
 
 ||*/sfp.js|$script
-! This product includes portions of other software.
-||*/play*/related.js|$script,domain=~feurl.com|~core1player.com
-!||*/play*/plugins/vast-*.js$script
-! This product includes portions of other software.
-!||*jwpcdn.com/player/*/*/related.js^$script,important
-||*jwpcdn.com/player/*/*/sharing.js^$script,important
-! see < https://hdslecteur.xyz/asset/default/player/plugins/vast-8.4.13.js > not blocking
 
 ! VOIR de plus près https://www.intellipopup.com/gpu.min.js   depuis  https://www.zustream.eu/    CRYPTOMINER ????
 /gpu.min.js|$important
