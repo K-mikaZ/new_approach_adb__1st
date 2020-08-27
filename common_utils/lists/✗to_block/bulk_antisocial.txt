@@ -11,16 +11,16 @@ fbpurity.com##.getsocial,#adcontaineretc
 /wp-emoji-
 ##[src*="/images/share."]
 
-~google.com##a[href*="://plus.google."]
-~facebook.com,~fb.com##a[href*="://facebook."]
-~vkontakte.ru##a[href*="://vkontakte.ru"]
-~odnoklassniki.ru##a[href*=".odnoklassniki.ru"]
-~mail.ru##a[href*="://connect.mail.ru"]
-~twitter.com##a[href*="://twitter."]
-~livejournal.com##a[href*=".livejournal.com"]
-~twitter.com##a[href*="://twitter."]
+~google.com##[href*="://plus.google."]
+~facebook.com,~fb.com##[href*="://facebook."]
+~vkontakte.ru##[href*="://vkontakte.ru"]
+~odnoklassniki.ru##[href*=".odnoklassniki.ru"]
+~mail.ru##[href*="://connect.mail.ru"]
+~twitter.com##[href*="://twitter."]
+~livejournal.com##[href*=".livejournal.com"]
+~twitter.com##[href*="://twitter."]
 
-~tumblr.com##a[href*=".tumblr."]
+~tumblr.com##[href*=".tumblr."]
 /showads.js$script,domain=tumblr.com
 ||*tumblr.com^$3p,domain=~tumblr.com
 /share.js$script,domain=tumblr.com
