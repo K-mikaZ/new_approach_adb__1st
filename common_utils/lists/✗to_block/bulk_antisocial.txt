@@ -18,7 +18,6 @@ fbpurity.com##.getsocial,#adcontaineretc
 ~mail.ru##[href*="://connect.mail.ru"]
 ~twitter.com##[href*="://twitter."]
 ~livejournal.com##[href*=".livejournal.com"]
-~twitter.com##[href*="://twitter."]
 
 ~tumblr.com##[href*=".tumblr."]
 /showads.js$script,domain=tumblr.com
