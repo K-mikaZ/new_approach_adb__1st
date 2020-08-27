@@ -10,6 +10,20 @@
 @@||spotxchange.com^$domain=rakuten.tv
 
 @@||internet.nl^$generichide,specifichide
+@@||cmb.fr$generichide
+@@||bytel.fr$generichide
+
+! star.fr
+@@||navitia.io^
+
+! wix.com
+@@||static.parastorage.com^$xhr
+
+! github
+@@||githubusercontent.com$generichide
+@@||github.com$generichide
+@@||githubapp.com$generichide
+@@||githubassets.com$generichide
 
 !#if script
 @@/streaminfo.js
