@@ -3,10 +3,11 @@
 // @namespace       tag:github.com,2020:K-mik@Z:YTNonStop:PreventsAnnoyingVideoPausedDialogsFromShowingUp:TryToTakeOverTheWorld
 // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
 // @downloadURL     https://github.com/K-mikaZ/new_approach_adb__1st/raw/master/common_utils/lists/%E2%9C%97to_block/per_sites/social/youtube/YTNonStop.user.js
-// @updateURL      https://github.com/K-mikaZ/new_approach_adb__1st/raw/master/common_utils/lists/%E2%9C%97to_block/per_sites/social/youtube/YTNonStop.user.js
-// @version         1.2.0
+// @updateURL       https://github.com/K-mikaZ/new_approach_adb__1st/raw/master/common_utils/lists/%E2%9C%97to_block/per_sites/social/youtube/YTNonStop.user.js
+// @version         1.2.1
 // @description     Prevents annoying "video paused" dialogs from showing up
 // @description:fr  Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause"
+// @description:it  Impedisce la visualizzazione di fastidiose finestre di dialogo "video in pausa"
 // @author          K-mik@Z
 // @include         /y(ou)?t(u)?(be)?\.(.{2,})\/(.*)/
 // @grant           none
