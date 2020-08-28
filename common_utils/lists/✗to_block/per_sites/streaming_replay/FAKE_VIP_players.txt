@@ -37,6 +37,7 @@
 
 !#if allseries.
 allseries.*##.hdplayer
+allseries.*##[src*="/video-streaming.html"]
 !#endif
 
 !#if voirseries.
