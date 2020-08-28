@@ -44,7 +44,7 @@ voirseries.*##div[id="custom-media-player"]
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
 !voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
 ! prefer to block bad, because some videos are missing, then the iframe will not load
-voirseries.*#?##lecteur:if(.load[src*=".php?p=2"])
+voirseries.*#?##lecteur:if(#videoplay[src*=".php?p=2"])
 !#endif
 
 !#if seriestream.
