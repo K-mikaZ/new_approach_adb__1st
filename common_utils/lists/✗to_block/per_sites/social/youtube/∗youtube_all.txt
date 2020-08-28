@@ -39,8 +39,7 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
 !/serviceworker-notifications.js$script,domain=youtube.com|youtu.be|yt.be,important
 !/sw.js$script,domain=youtube.com|youtu.be|yt.be,important
-!/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
-/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module))(\.min)?\.js/$script,important
+/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
 !#endif
 
 !#if (script && !1p)
@@ -105,19 +104,23 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 @@||youtube.com/get_video_info$badfilter
 @@||www.youtube.com/get_video_info?*video_id*detailpage$xhr,domain=youtube.com,badfilter
 ! [fix] YOUTUBE DELAY WATCH TIME
-||youtube.com/api/stats/qoe?$badfilter
-/api/stats/watchtime$domain=youtube.com,badfilter
-||youtube.com/api/stats/watchtime$badfilter||google.*/pagead/lvz?$image,important
+!||youtube.com/api/stats/qoe?$badfilter
+!/api/stats/watchtime$domain=youtube.com,badfilter
+!||youtube.com/api/stats/watchtime$badfilter
+!||google.*/pagead/lvz?$image,important
 ! [fix] Embed YouTube video via a cookieless domain
 ! When embedding a video using youtube.com, Google uses DoubleClick to track your users.
 ! When using youtube-nocookie.com, Google no longer uses DoubleClick to track your users.
 ! < https://dri.es/how-to-remove-youtube-tracking >
 ! read also < https://cmscanbesimple.org/blog/embed-youtube-video-via-a-cookieless-domain >
 ||youtube-nocookie.com^$badfilter
+@@||youtube-nocookie.com$generichide
 ! [fix] alert by overlay if accompte as changed
 youtube.com#@#iron-overlay-backdrop
 ! [fix] acces to < https://www.youtube.com/ads/ >
-@@||ads.youtube.com
+@@||ads.youtube.com$generichide
+! [fix] message error on video
+||youtube.com/get_video_info?*adunit$1p,badfilter
 
 !#endif
 ! </ end youtube rules >
