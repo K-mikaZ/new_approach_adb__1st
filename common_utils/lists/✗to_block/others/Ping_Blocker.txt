@@ -3,7 +3,7 @@
 
 ! No need extension for that ( https://chrome.google.com/webstore/detail/ping-blocker/jkpocifanmihboebfhigkjcdihgfcdnb )
 
-! Verify if ping requests are currently sent by your browser with Ping Spotter.
+! Verify if ping requests (but also beacon api && csp report) are currently sent by your browser with Ping Spotter.
 ! < https://armin.dev/apps/ping-spotter >
 
 !#if ping
