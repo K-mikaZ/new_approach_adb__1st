@@ -36,10 +36,11 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 
 !#if script
+!/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module))(\.min)?\.js/$script,important
+/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script,important
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
 !/serviceworker-notifications.js$script,domain=youtube.com|youtu.be|yt.be,important
 !/sw.js$script,domain=youtube.com|youtu.be|yt.be,important
-/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module))(\.min)?\.js/$script,important
 !#endif
 
 !#if (script && !1p)
@@ -120,7 +121,8 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] acces to < https://www.youtube.com/ads/ >
 @@||ads.youtube.com$generichide
 ! [fix] message error on loading video when refreshing
-||youtube.com/get_video_info?*adunit$1p,badfilter
+!||youtube.com/get_video_info?*adunit$1p,badfilter
+||youtube.com/api/stats/ads?$badfilter
 
 !#endif
 ! </ end youtube rules >
