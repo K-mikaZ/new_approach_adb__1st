@@ -6,6 +6,11 @@
 ||*$3p,popup,important,domain=clipwatching.com
 !#endif
 
+!#if (allseries. && dom)
+! sanitize (not ads)
+allseries.*#?#.jumbotron:if(.page-keywords)
+!#endif
+
 !#if (voirseries. && dom)
 voirseries.*##.movie-aye
 voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
