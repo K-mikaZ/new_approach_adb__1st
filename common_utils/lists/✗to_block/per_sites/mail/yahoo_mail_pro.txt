@@ -24,3 +24,5 @@ mail.yahoo.com##[data-test-id="right-rail-hidead-btn"]
 mail.yahoo.com##[title="Hide Advertisement"]
 mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
 mail.yahoo.com##[data-test-id="settings-link-label"]
+! whitelist
+@@?adcount=$xhr,domain=mail.yahoo.com
