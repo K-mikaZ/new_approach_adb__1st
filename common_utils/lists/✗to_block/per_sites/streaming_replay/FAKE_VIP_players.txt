@@ -42,14 +42,13 @@ voirseries.*##a[href*="/download.php"]
 voirseries.*##div[id="custom-media-player"]
 ! hidde lecteur if sources not start with *.php?p=1* ( bad source is start with *.php?p=2* )
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
-voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
+voirseries.*###lecteur:if(.load:not([src*="/streamer.php?p=1"]))
 !#endif
 
 !#if seriestream.
 ! hidde lecteur if sources not contains */streamer/* or contains */video-streaming.html
-!seriestream.*#?##lecteur:has(.load:not([src*="/streamer/"]))
-seriestream.*#?##lecteur:has(.load[src*="/video-streaming.html"])
-
+!seriestream.*###lecteur:if(.load:not([src*="/streamer/"]))
+seriestream.*###lecteur:if(.load[src*="/video-streaming.html"])
 !#endif
 
 !#if filmgratuit.net
@@ -57,16 +56,16 @@ filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 !#endif
 
 !#if enstream.to
-enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
+enstream.to#?#.player:if(:-abp-contains(/ENSTREAM HD/))
 !#endif
 
 !#if fcine.*
-fcine.*#?#[class*="vip-server-select"]
+fcine.*##[class*="vip-server-select"]
 fcine.*#?#[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 !#endif
 
-4kstreamz.co##.Players:if(:has-text(/4K Player/i))
+4kstreamz.co#?#.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 streaminz.com##.playbtm
 kykfilmserie.com##.content > div:nth-of-type(2)
