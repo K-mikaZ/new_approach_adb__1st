@@ -4,10 +4,13 @@
 // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
 // @downloadURL     https://github.com/K-mikaZ/new_approach_adb__1st/raw/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
 // @updateURL       https://github.com/K-mikaZ/new_approach_adb__1st/raw/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
-// @version         1.2.1
+// @version         1.2.2
 // @description     Prevents annoying "video paused" dialogs from showing up
+// @description:en  Prevents annoying "video paused" dialogs from showing up
+// @description:de  Verhindert, dass nervige "Video angehaltene" Dialoge angezeigt werden
 // @description:fr  Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause"
 // @description:it  Impedisce la visualizzazione di fastidiose finestre di dialogo "video in pausa"
+// @description:pt  Impede que diálogos "vídeo em pausa" irritantes apareçam
 // @author          K-mik@Z
 // @include         /y(ou)?t(u)?(be)?\.(.{2,})\/(.*)/
 // @grant           none
@@ -16,6 +19,7 @@
 // originally script from https://raw.githubusercontent.com/spmn/yt-dont-stop/master/js/payload.js
 (function() {
   "use strict";
+  // search _lact in example:  view-source:https://www.youtube.com/watch?v=-A87GERl-Nc&list=RDqSKK76h6h54&index=14
   const _lact = {
     set: () => 0,
     get: () => Date.now()
