@@ -49,9 +49,9 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 !#if image
 ||youtube.com/pcs/activeview$image,domain=youtube.com
 ||*/activeview*$image,redirect-rule=1x1.gif
-/youtu(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
+/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
-!||youtube.com/api/stats/playback?*&inview=NaN*$image,1p,important
+@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
 !#endif
 
 !#if (xhr && 1p)
@@ -59,12 +59,6 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
-!||youtu*.*/*/log_event?alt=json&*$xhr,important
-!#if music.youtube.com
-! https://music.youtube.com/verify_session
-! json contains {"success":true}
-!||music.youtube.com/verify_session$xhr,1p,important
-!#endif
 !#endif
 
 !#if (subdocument && 1p)
@@ -73,7 +67,7 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 
 !#if (object-subrequest && 1p)
-/youtu(be)?\.(.{2,})\/(an{2}otations\_invideo\?)(.*)/$object-subrequest,important
+/y(ou)?t(u)?(be)?\.(.{2,})\/(an{2}otations\_invideo\?)(.*)/$object-subrequest,important
 !#endif
 
 !#if (object-subrequest && !1p)
