@@ -21,6 +21,11 @@
     > ###### *fr: "Hola Free VPN Popup Remover" (pour chrome et firefox, remplace l'[addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg))*
 <br><br>
 
+###### <ins>UserScript</ins> ( for tampermonkey,greasemonkey ... / pour tampermonkey,greasemonkey ... ):
+- "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ Install ]](https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js){:target="_blank" rel="noopener"}
+    > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause")*
+<br><br>
+
 ###### <ins>Disclaimer</ins>:
 [français] Comme il s'agit de mes propres listes de filtres (que je partage ici gracieusement), il peut y avoir des filtres avec lesquels vous n'êtes pas d'accord.<br>Si c'est le cas, n'hésitez pas à cliquer sur le bouton Fork et à créer votre propre liste.<br><br>[english] Since these are my own filter lists (which I am sharing here free of charge), there may be filters with which you do not agree.<br>If so, feel free to click the Fork button and create your own list.
 
