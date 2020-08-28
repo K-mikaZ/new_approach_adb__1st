@@ -9,6 +9,10 @@
 
 !#if dom
 
+!#if allseries.
+allseries.*##.telecharger
+!#endif
+
 !#if papseries.net
 papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 !#endif
@@ -17,9 +21,9 @@ papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 !#endif
 
-!#if voirseries.ws
-voirseries.ws##ul[class="downloads"]
-voirseries.ws#?#h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+!#if voirseries.
+voirseries.*##ul[class="downloads"]
+voirseries.*#?#h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 !#endif
 
 !#if papseries.net
