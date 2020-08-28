@@ -35,6 +35,10 @@
 
 !#if dom
 
+!#if allseries.
+allseries.*##.hdplayer
+!#endif
+
 !#if voirseries.
 voirseries.*##.custom-fake-player
 voirseries.*##.custom-fake-media-info
