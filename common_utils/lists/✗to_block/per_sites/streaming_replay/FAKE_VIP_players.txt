@@ -42,7 +42,7 @@ voirseries.*##a[href*="/download.php"]
 voirseries.*##div[id="custom-media-player"]
 ! hidde lecteur if sources not start with *.php?p=1* ( bad source is start with *.php?p=2* )
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
-voirseries.*###lecteur:if(.load:not([src*="/streamer.php?p=1"]))
+voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
 !#endif
 
 !#if seriestream.
