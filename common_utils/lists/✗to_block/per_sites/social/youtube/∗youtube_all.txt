@@ -119,7 +119,7 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 youtube.com#@#iron-overlay-backdrop
 ! [fix] acces to < https://www.youtube.com/ads/ >
 @@||ads.youtube.com$generichide
-! [fix] message error on video
+! [fix] message error on loading video when refreshing
 ||youtube.com/get_video_info?*adunit$1p,badfilter
 
 !#endif
