@@ -6,6 +6,11 @@
 ||*$3p,popup,important,domain=clipwatching.com
 !#endif
 
+!#if (voirseries. && dom)
+voirseries.*##.movie-aye
+voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
+!#endif
+
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
 hds-streaming.la,hds.lc###oscuridad
