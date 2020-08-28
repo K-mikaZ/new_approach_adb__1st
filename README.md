@@ -3,7 +3,7 @@
 
 ###### <ins>Requirements</ins> ( for some filters to work / pour que certains filtres fonctionnent ):
 [Français] Accédez au tableau de bord "uBlock Origin/Nano Adblocker", sélectionnez <ins>***l'onglet Paramètres***</ins>, cochez <ins>***Activer les fonctionnalités avancées***</ins> puis cliquez sur <ins>***l'icône engrenages***</ins> ⚙ qui s'affiche. Pour <ins>***userResourcesLocation***</ins> (tout en bas), remplacez <ins>***unset***</ins> par [ce fichier de scriptlets](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copier/coller l'adresse du code raw `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).<br><br>[english] Go to the "uBlock Origin/Nano Adblocker" dashboard, select <ins>***the Settings tab***</ins>, check <ins>***Activate advanced features***</ins> then click on <ins>***the gears icon***</ins> ⚙ which is displayed. For <ins>***userResourcesLocation***</ins> (at the bottom) replace <ins>***unset***</ins> with [this scriptlets file](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/scriptlets.js) (copy/paste the address of the raw code `https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/scriptlets.js`).   
-<br><br>_lact
+<br><br>
 
 ###### <ins>Lists</ins> ( subscription / abonnement ):
 - "Rules, Filtering and exception list" [[ Install ]](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters.txt&amp;title=Rules%2C%20Filtering%20and%20exception%20list)
