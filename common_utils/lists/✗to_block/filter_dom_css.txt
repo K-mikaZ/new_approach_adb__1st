@@ -294,7 +294,7 @@ streaming-planet.net##[href^="/friend.php"]
 streaming.streamiz.co###onesignal-bell-container
 streamingbb.tv###PapaGooGorHDVid
 streamingdivx.ch##a.Btndwn,.SectionADs,.f-inner,#pub,.X
-streamingdivx.club,streaming.ac,zonestreaming.info,01series.co,allseries.co,regardergratuit.org,vustream.co,illimitestreaming.to##.X,#pub,.myButton
+streamingdivx.club,streaming.ac,zonestreaming.info,01series.co,regardergratuit.org,vustream.co,illimitestreaming.to##.X,#pub,.myButton
 streaminzone.com###menu-item-4405,.col-sm-4 p,.like-bottons,.post-info-inner .kodex_buttons .kodex_like_button.kodex_button,.post-info-inner p:nth-of-type(2),.text-center.box-video.col-sm-8 span:nth-of-type(2),div.row:nth-of-type(2) div.col-sm-3:nth-of-type(2)
 streamiz-filmze.com###PapaGooGorHDVid
 studio.tailorbrands.com###ember1372
