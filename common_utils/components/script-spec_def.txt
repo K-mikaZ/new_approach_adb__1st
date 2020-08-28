@@ -78,7 +78,8 @@
 ! try adguard compatibility portage
 ||*/metrika/watch.js$script,redirect-rule=metrika-yandex-watch
 ||*metrika*/tag.js$script,redirect-rule=metrika-yandex-tag
-||*/*metrica-watch/*$script,redirect-rule=metrika-yandex-tag
+||*/yandex-metrica-watch/watch$script,redirect-rule=metrika-yandex-watch
+||*/yandex-metrica-watch/tag$script,redirect-rule=metrika-yandex-tag
 !#endif
 
 !
