@@ -7,6 +7,9 @@
 !#endif
 
 !#if (allseries. && dom)
+allseries.*##.X
+allseries.*###pub
+allseries.*##.myButton
 ! sanitize (not ads)
 allseries.*#?#.jumbotron:if(.page-keywords)
 !#endif
