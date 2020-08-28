@@ -36,8 +36,12 @@
 !#if dom
 
 !#if voirseries.
+voirseries.*##.custom-fake-player
+voirseries.*##.custom-fake-media-info
+voirseries.*##a[href*="/download.php"]
+voirseries.*##div[id="custom-media-player"]
 ! hidde lecteur if sources not start with *.php?p=1* ( bad source is start with *.php?p=2* )
-voirseries.*###lecteur:if(.load:not([src*="/streamer.php?p=1"]))
+voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
 !#endif
 
 !#if filmgratuit.net
@@ -56,9 +60,6 @@ fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 
 4kstreamz.co##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
-voirseries.*##.custom-fake-media-info
-voirseries.*##a[href*="/download.php"]
-voirseries.*##div[id="custom-media-player"]
 streaminz.com##.playbtm
 kykfilmserie.com##.content > div:nth-of-type(2)
 streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
