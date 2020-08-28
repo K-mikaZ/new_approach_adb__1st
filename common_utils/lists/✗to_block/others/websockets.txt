@@ -6,3 +6,6 @@
 !*$websocket
 wss://tracker.$important
 wss://
+
+! somes allowing (if you want)
+@@||lastpass.com^$websocket
