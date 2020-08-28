@@ -35,6 +35,11 @@
 
 !#if dom
 
+!#if voirseries.
+! hidde lecteur if sources not start with *.php?p=1* ( bad source is start with *.php?p=2* )
+voirseries.*###lecteur:if(.load:not([src*="/streamer.php?p=1"]))
+!#endif
+
 !#if filmgratuit.net
 filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 !#endif
