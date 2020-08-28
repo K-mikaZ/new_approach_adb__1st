@@ -22,7 +22,7 @@
 <br><br>
 
 ###### <ins>UserScript</ins> ( for tampermonkey,greasemonkey ... / pour tampermonkey,greasemonkey ... ):
-- "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ Install ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js)
+- "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ Install ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js){:target="_blank" rel="noopener"}
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause")*
 <br><br>
 
