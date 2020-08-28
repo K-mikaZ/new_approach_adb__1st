@@ -40,15 +40,16 @@ voirseries.*##.custom-fake-player
 voirseries.*##.custom-fake-media-info
 voirseries.*##a[href*="/download.php"]
 voirseries.*##div[id="custom-media-player"]
-! hidde lecteur if sources not start with *.php?p=1* ( bad source is start with *.php?p=2* )
+! hidde lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
-voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
+voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
 !#endif
 
 !#if seriestream.
 ! hidde lecteur if sources not contains */streamer/* or contains */video-streaming.html
 !seriestream.*#?##lecteur:if(.load:not([src*="/streamer/"]))
-seriestream.*#?##lecteur:if(.load[src*="/video-streaming.html"])
+!seriestream.*#?##lecteur:if(.load[src*="/video-streaming.html"])
+seriestream.*#?##lecteur:if(.load[src*="/v*ing.html"])
 !#endif
 
 !#if filmgratuit.net
