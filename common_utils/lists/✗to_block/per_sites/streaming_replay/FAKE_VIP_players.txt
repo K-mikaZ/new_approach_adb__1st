@@ -47,8 +47,8 @@ voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
 
 !#if seriestream.
 ! hidde lecteur if sources not contains */streamer/* or contains */video-streaming.html
-!seriestream.*###lecteur:if(.load:not([src*="/streamer/"]))
-seriestream.*###lecteur:if(.load[src*="/video-streaming.html"])
+!seriestream.*#?##lecteur:if(.load:not([src*="/streamer/"]))
+seriestream.*#?##lecteur:if(.load[src*="/video-streaming.html"])
 !#endif
 
 !#if filmgratuit.net
