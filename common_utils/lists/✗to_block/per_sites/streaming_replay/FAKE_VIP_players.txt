@@ -45,6 +45,13 @@ voirseries.*##div[id="custom-media-player"]
 voirseries.*#?##lecteur:if(.load:not([src*="/streamer.php?p=1"]))
 !#endif
 
+!#if seriestream.
+! hidde lecteur if sources not contains */streamer/* or contains */video-streaming.html
+!seriestream.*#?##lecteur:has(.load:not([src*="/streamer/"]))
+seriestream.*#?##lecteur:has(.load[src*="/video-streaming.html"])
+
+!#endif
+
 !#if filmgratuit.net
 filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
 !#endif
