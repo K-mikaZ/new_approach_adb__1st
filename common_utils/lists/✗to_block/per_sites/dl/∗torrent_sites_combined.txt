@@ -13,7 +13,7 @@
 
 !#if ((yggtorrent.) && dom)
 yggtorrent.*##[href*="marmota."]
-yggtorrent.*##[href^="https://primexbt."]
+yggtorrent.*##[href*="://primexbt."]
 yggtorrent.*###over-18-notification
 yggtorrent.*##.animated.alert-success
 yggtorrent.*##.ad-alert-18-sub-title
@@ -43,7 +43,7 @@ torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpa
 !#endif
 
 !#if ((thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.) && dom)
-thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn-2"]
+thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
 !#endif
 
 ! </ end torrent sites rules >
