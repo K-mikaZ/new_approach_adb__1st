@@ -5,4 +5,5 @@
 ! ---------------
 ! concern "/sw.js" && "/sw_*.js" && "/(service|socket)(-_)?worker(-)?(.*)?(.min)?.js" ...
 ! [fix] because somes are using:  /socket\-worker(.*)?\.js/$domain=github.com
-/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
+! [fix] not "/swfobject.js" or "/swf.js"
+/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
