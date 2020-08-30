@@ -7,3 +7,5 @@
 ! [fix] because somes are using:  /socket\-worker(.*)?\.js/$domain=github.com
 ! [fix] not "/swfobject.js" or "/swf.js"
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
+! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
+/\/([\w]+)(_|[^\w\d\s:]+)sw\.js/
