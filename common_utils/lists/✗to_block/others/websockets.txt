@@ -1,12 +1,14 @@
 
 ! WebSockets
 ! -----------
+
 ! Advertising and Analytics (A&A) companies have used WebSockets
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
-!*$websocket
+
 wss://tracker.$important
 wss://
 
 ! somes allowing (if you want)
+
 @@||lastpass.com^$websocket
 @@||chat.twitch.tv^$websocket,1p
