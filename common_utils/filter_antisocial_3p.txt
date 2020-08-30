@@ -98,9 +98,9 @@
 
 !#if (twitter.com && !1p)
 ||analytics.twitter.com^$domain=~twitter.com
-!||*twitter.com^$all,3p,domain=~twitter.com
+||*twitter.com^$all,3p,domain=~twitter.com
 !||*twimg.com^$all,3p,domain=~twitter.com
-!||twttr.*^$all,3p,domain=~twitter.com
+||twttr.*^$all,3p,domain=~twitter.com
 !#endif
 
 !#if (chatango.com && !1p)
