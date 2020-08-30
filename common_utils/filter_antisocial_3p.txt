@@ -107,12 +107,6 @@
 ||*.chatango.com^$all,important
 !#endif
 
-!#if (twitch.tv && !1p)
-||embed.twitch.tv$3p,important
-||twitch.tv^$3p,important,domain=~twitch.tv
-||ttvnw.net^$3p,important,domain=~twitch.tv
-!#endif
-
 ! The 25 Top Social Media Management Tools for Businesses of All Sizes
 ! from < https://buffer.com/library/social-media-management-tools/ >
 
