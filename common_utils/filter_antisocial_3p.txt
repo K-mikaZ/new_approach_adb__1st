@@ -54,9 +54,6 @@
 !#if subdocument
 ||facebook.*/*/like.php$subdocument,3p,important,domain=~facebook.com|~fb.com
 !#endif
-!#if dom
-~facebook.com,~fb.com##[src*="facebook.com"]
-!#endif
 
 !#endif
 
@@ -101,9 +98,9 @@
 
 !#if (twitter.com && !1p)
 ||analytics.twitter.com^$domain=~twitter.com
-||*twitter.com^$all,3p,domain=~twitter.com
-||*twimg.com^$all,3p,domain=~twitter.com
-||twttr.*^$all,3p,domain=~twitter.com
+!||*twitter.com^$all,3p,domain=~twitter.com
+!||*twimg.com^$all,3p,domain=~twitter.com
+!||twttr.*^$all,3p,domain=~twitter.com
 !#endif
 
 !#if (chatango.com && !1p)
