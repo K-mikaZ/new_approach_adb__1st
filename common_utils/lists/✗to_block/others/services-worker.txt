@@ -5,7 +5,7 @@
 ! ---------------
 ! concern "/sw.js" && "/sw_*.js" && "/(service|socket)(-_)?worker(-)?(.*)?(.min)?.js" ...
 ! [fix] because somes are using:  /socket\-worker(.*)?\.js/$domain=github.com
-! [fix] not "/swfobject.js" or "/swf.js"
+! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
 /\/([\w]+)(_|[^\w\d\s:]+)sw\.js/
