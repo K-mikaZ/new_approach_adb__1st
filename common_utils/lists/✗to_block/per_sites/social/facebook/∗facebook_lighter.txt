@@ -24,7 +24,7 @@ www.facebook.com###facebook > div
 ||facebook.com/security/hsts-pixel.gif$image,important,badfilter
 !||facebook.com/*?modules=quicklogactiontype$important,badfilter
 !||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
-
+~facebook.com,~fb.com##[src*="facebook.com"]
 
 ! </ end facebook lighter >
 !#endif
