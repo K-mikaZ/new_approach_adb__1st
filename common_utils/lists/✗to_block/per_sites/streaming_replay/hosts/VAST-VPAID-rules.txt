@@ -23,7 +23,8 @@
 ! see < https://regex101.com/r/AwQGW7/1 >
 @@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
-!||*://vast.*
+! not sure
+||*://vast.*
 
 ! VMAP version 1
 ! -----------------
