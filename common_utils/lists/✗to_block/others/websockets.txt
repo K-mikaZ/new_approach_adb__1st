@@ -9,3 +9,4 @@ wss://
 
 ! somes allowing (if you want)
 @@||lastpass.com^$websocket
+@@||chat.twitch.tv^$websocket,1p
