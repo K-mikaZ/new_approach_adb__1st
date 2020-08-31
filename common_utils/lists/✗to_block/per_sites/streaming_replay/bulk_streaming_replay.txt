@@ -2,6 +2,9 @@
 ! streaming
 /classes/masha/masha.js
 
+||zone-stream.*^$popup
+||in.filmstoon.*^$popup
+
 !#if (popup && !1p)
 ||*$3p,popup,important,domain=clipwatching.com
 !#endif
