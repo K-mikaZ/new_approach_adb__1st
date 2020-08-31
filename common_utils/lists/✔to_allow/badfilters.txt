@@ -40,6 +40,10 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 
 !#if !dom
 
+! on zone-stream.club
+||ping.iamcdn.net^$badfilter
+@@||ping.iamcdn.net^
+
 ||frog.wix.com^$ping,badfilter
 @@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
