@@ -18,6 +18,9 @@
 !
 !#include ZuckestionKiller_ModuleConnections.txt
 !
+
+||*coronavirus*$xhr,domain=facebook.com
+
 ! [FIX] Unbreak the world!
 facebook.com#@#body:style(overflow-x: hidden !important; overflow-y: scroll !important; padding-right: 0 !important;)
 www.facebook.com###facebook > div
