@@ -4,6 +4,12 @@
 
 ||freshchat.com^
 
+!#if (twitch.tv && dom)
+twitch.tv##div.social-media-link__container
+twitch.tv##button[title="Partager"]
+twitch.tv##button[title="Share"]
+!#endif
+
 !#if (fbpurity.com && dom)
 fbpurity.com##.getsocial,#adcontaineretc
 !#endif
