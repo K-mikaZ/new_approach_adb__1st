@@ -1,21 +1,3 @@
-! * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-!
-! TEST ADDONS PORTAGE
-!     Add Nano Defender Integration before use (https://jspenguin2017.github.io/uBlockProtector/#extra-installation-steps-for-ublock-origin)
-!
-! API-Killer-Beacon℠ portage (‣︎ Beacon/Ping Headshot!)
-! homepage for chrome and firefox:  < https://github.com/eladkarako/chrome_extensions/ >
-! ——————————————————————————————————————————————————————————————————————————————————————
-! !#if env_chromium
-! *.*##+js(nano-hijack-script-create.js, /API-Killer-Beacon(var _0x6daf=['\x77\x70\x4d\x36\x53\x38\x4f\x6b\x77\x37\x54\x44\x6e\x4d\x4b\x4a\x77\x34\x52\x4c\x43\x51\x3d\x3d'\,'\x62\x63\x4b\x68\x77\x34\x58\x44\x6b\x4d\x4b\x59\x63\x78\x52\x35\x57\x4d\x4f\x5a\x77\x34\x63\x3d'\,'\x64\x55\x39\x33\x57\x38\x4b\x71\x46\x43\x42\x73\x77\x35\x7a\x43\x6f\x67\x3d\x3d'\,'\x77\x70\x4c\x44\x76\x63\x4b\x72\x77\x37\x55\x3d'];(function(_0x4c04c7\,_0x5c9eb6){var _0x38d708=function(_0xa71db3){while(--_0xa71db3){_0x4c04c7['push'](_0x4c04c7['shift']());}};_0x38d708(++_0x5c9eb6);}(_0x6daf\,0x100));var _0x3db9=function(_0x1cbb13\,_0x8145a7){_0x1cbb13=_0x1cbb13-0x0;var _0x3c9ab0=_0x6daf[_0x1cbb13];if(_0x3db9['YjvZrr']===undefined){(function(){var _0x446331=typeof window!=='undefined'?window:typeof process==='object'&&typeof require==='function'&&typeof global==='object'?global:this;var _0x46230d='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x446331['atob']||(_0x446331['atob']=function(_0x146307){var _0x3ebf92=String(_0x146307)['replace'](/=+$/\,'');for(var _0x309517=0x0\,_0x363249\,_0x55f7a5\,_0x569899=0x0\,_0x1699f7='';_0x55f7a5=_0x3ebf92['charAt'](_0x569899++);~_0x55f7a5&&(_0x363249=_0x309517%0x4?_0x363249*0x40+_0x55f7a5:_0x55f7a5\,_0x309517++%0x4)?_0x1699f7+=String['fromCharCode'](0xff&_0x363249>>(-0x2*_0x309517&0x6)):0x0){_0x55f7a5=_0x46230d['indexOf'](_0x55f7a5);}return _0x1699f7;});}());var _0x5b2ded=function(_0x11b6d5\,_0x8145a7){var _0x62b9d2=[]\,_0x35e7d7=0x0\,_0x2f41be\,_0x157555=''\,_0x503eb8='';_0x11b6d5=atob(_0x11b6d5);for(var _0x21d9a7=0x0\,_0x1dda16=_0x11b6d5['length'];_0x21d9a7<_0x1dda16;_0x21d9a7++){_0x503eb8+='%'+('00'+_0x11b6d5['charCodeAt'](_0x21d9a7)['toString'](0x10))['slice'](-0x2);}_0x11b6d5=decodeURIComponent(_0x503eb8);for(var _0x48df29=0x0;_0x48df29<0x100;_0x48df29++){_0x62b9d2[_0x48df29]=_0x48df29;}for(_0x48df29=0x0;_0x48df29<0x100;_0x48df29++){_0x35e7d7=(_0x35e7d7+_0x62b9d2[_0x48df29]+_0x8145a7['charCodeAt'](_0x48df29%_0x8145a7['length']))%0x100;_0x2f41be=_0x62b9d2[_0x48df29];_0x62b9d2[_0x48df29]=_0x62b9d2[_0x35e7d7];_0x62b9d2[_0x35e7d7]=_0x2f41be;}_0x48df29=0x0;_0x35e7d7=0x0;for(var _0x42e696=0x0;_0x42e696<_0x11b6d5['length'];_0x42e696++){_0x48df29=(_0x48df29+0x1)%0x100;_0x35e7d7=(_0x35e7d7+_0x62b9d2[_0x48df29])%0x100;_0x2f41be=_0x62b9d2[_0x48df29];_0x62b9d2[_0x48df29]=_0x62b9d2[_0x35e7d7];_0x62b9d2[_0x35e7d7]=_0x2f41be;_0x157555+=String['fromCharCode'](_0x11b6d5['charCodeAt'](_0x42e696)^_0x62b9d2[(_0x62b9d2[_0x48df29]+_0x62b9d2[_0x35e7d7])%0x100]);}return _0x157555;};_0x3db9['TKCXxO']=_0x5b2ded;_0x3db9['yutXRo']={};_0x3db9['YjvZrr']=!![];}var _0x47c775=_0x3db9['yutXRo'][_0x1cbb13];if(_0x47c775===undefined){if(_0x3db9['jKsobF']===undefined){_0x3db9['jKsobF']=!![];}_0x3c9ab0=_0x3db9['TKCXxO'](_0x3c9ab0\,_0x8145a7);_0x3db9['yutXRo'][_0x1cbb13]=_0x3c9ab0;}else{_0x3c9ab0=_0x47c775;}return _0x3c9ab0;};'use strict';var API=chrome||browser;API[_0x3db9('0x0'\,'\x56\x45\x4b\x45')]['\x6f\x6e\x42\x65\x66\x6f\x72\x65\x52\x65\x71\x75\x65\x73\x74'][_0x3db9('0x1'\,'\x6a\x5e\x6a\x37')](function(){return{'\x63\x61\x6e\x63\x65\x6c':!0x0};}\,{'\x75\x72\x6c\x73':[_0x3db9('0x2'\,'\x46\x49\x26\x6d')],'\x74\x79\x70\x65\x73':[_0x3db9('0x3'\,'\x75\x73\x55\x76')]}\,['\x62\x6c\x6f\x63\x6b\x69\x6e\x67']);)/)
-! !#endif
-! !#if env_firefox
-! Not sure for firefox
-! *.*##+js(nano-hijack-script-create.js, /API-Killer-Beacon("use strict";var API=chrome||browser;API.webRequest.onBeforeRequest.addListener(function(){return{cancel:true};}\,{urls:["<all_urls>"]\,types:["ping"]}\,["blocking"]);)/)
-! !#endif
-!
-! * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
 !
 ! FILTERS IN TEST (BETA)
 
