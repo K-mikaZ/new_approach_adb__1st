@@ -23,15 +23,21 @@
 ! fake videos
 ||wiflix.*/*.mp4$media
 ||enstream.to/vip/*$media,1p
-*.mp4$media,important,domain=zone-stream.club|voirseries.co
+*.mp4$media,domain=zone-stream.club|voirseries.co
 *.dll$media,important,domain=streamz.vg
 ||issue.mp4$media,important,domain=streamz.vg
 ||https://googleads.github.io/googleads*html5/media/*.mp4$important
-/Universal.mp4$media,important
+! universal medias
+! like "ptirgaux.com/pfe/current/universal.min.js?v=3.1.256$xhr" on filmstoon.icu
+! like "voirseries.co/media/Universal.mp4$media"
+/\/[uU]niversal(\.min)?\.(.{2,})/$media,xhr
 !#endif
+
 
 ||site.dotvideo.cc^$important
 ||wiflix.*/voir/play.php$important
+/\?go\=(regarder|telecharger)\-en\-hd/
+
 
 !#if dom
 
