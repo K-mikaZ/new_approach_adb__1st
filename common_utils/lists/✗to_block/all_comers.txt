@@ -27,6 +27,8 @@
 ||tapixesa.pro^
 ||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
+||ptirgaux.com^
+||phoossax.net^
 
 ||remarketingpixel.com/stats
 
