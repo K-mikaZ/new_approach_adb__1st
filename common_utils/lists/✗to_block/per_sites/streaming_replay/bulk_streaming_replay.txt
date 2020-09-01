@@ -2,11 +2,10 @@
 ! streaming
 /classes/masha/masha.js
 
-||zone-stream.*^$popup
-||in.filmstoon.*^$popup
-
 !#if (popup && !1p)
 ||*$3p,popup,important,domain=clipwatching.com
+||zone-stream.*^$popup
+||in.filmstoon.*^$popup
 !#endif
 
 !#if (allseries. && dom)
@@ -17,9 +16,22 @@ allseries.*##.myButton
 allseries.*#?#.jumbotron:if(.page-keywords)
 !#endif
 
-!#if (voirseries. && dom)
-voirseries.*##.movie-aye
-voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
+!#if (clipwatching.com && dom)
+clipwatching.com##.cover
+!#endif
+
+!#if (enstream.to && dom)
+enstream.to##.movie-notice
+enstream.to##a.adSecw
+!#endif
+
+!#if (french-stream. && dom)
+french-stream.*###f22
+french-stream.*##.bx1
+french-stream.*###\32 ad
+french-stream.*##[href*="://stakiwrisl./"]
+french-stream.*##body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div
+french-stream.*##.banner
 !#endif
 
 !#if ((hds-streaming.la|hds.lc) && dom)
@@ -38,17 +50,6 @@ hds.lc###count
 hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 !#endif
 
-!#if (voir.lesseriestreaming.com && dom)
-! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
-! < https://voir.lesseriestreaming.com/js/app.js >
-voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
-!#endif
-
-!#if (enstream.to && dom)
-enstream.to##.movie-notice
-enstream.to##a.adSecw
-!#endif
-
 !#if (streamingclic. && dom)
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
@@ -58,8 +59,15 @@ streamingclic.*##.rek
 ||spotxcdn.com^$media
 !#endif
 
-!#if (clipwatching.com && dom)
-clipwatching.com##.cover
+!#if (voir.lesseriestreaming.com && dom)
+! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
+! < https://voir.lesseriestreaming.com/js/app.js >
+voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
+!#endif
+
+!#if (voirseries. && dom)
+voirseries.*##.movie-aye
+voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
 !#endif
 
 !#if (wiflix. && dom)
