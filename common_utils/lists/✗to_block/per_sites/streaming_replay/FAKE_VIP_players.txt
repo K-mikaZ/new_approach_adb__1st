@@ -23,7 +23,7 @@
 ! fake videos
 ||wiflix.*/*.mp4$media
 ||enstream.to/vip/*$media,1p
-*.mp4$media,domain=zone-stream.club|voirseries.co
+*.mp4$media,domain=zone-stream.club
 *.dll$media,important,domain=streamz.vg
 ||issue.mp4$media,important,domain=streamz.vg
 ||https://googleads.github.io/googleads*html5/media/*.mp4$important
