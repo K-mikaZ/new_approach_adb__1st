@@ -119,7 +119,7 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] message error on loading video when refreshing
 ||youtube.com/api/stats/ads?$badfilter
 ! [fix] because of EasyList use " @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com "
-||youtube.com/get_video_info?*adunit$important
+||youtube.com/get_video_info?*=adunit&$important
 
 !#endif
 ! </ end youtube rules >
