@@ -168,7 +168,6 @@ framabee.org,framabin.org,framapic.org###framanav_donation,.btn-soutenir,.in.fad
 france3-regions.francetvinfo.fr##.ui-widget-overlay
 french-manga.co##.center.cont div.clearfix.pages:nth-of-type(1)
 french-serie.co###bsl1,#bsl2
-french-stream.*###f22,.bx1,#\32 ad,[href*="://stakiwrisl.xyz/"],body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div,.banner
 frenchweb.fr##.visiblebox
 full-serie.*##.basetags,.block:nth-of-type(2) .blockshadow .padding,.blockshadow .block:nth-of-type(1) .padding,.block_metal .padding,.alert-info.alert
 full-stream.red###\31,.PapaGooGorHD,li:nth-of-type(3) p
