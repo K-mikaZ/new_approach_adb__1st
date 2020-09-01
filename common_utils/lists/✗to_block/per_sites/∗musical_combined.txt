@@ -1,5 +1,5 @@
+!#include musical/audioaddict%26co.txt
 !#include musical/deezer.txt
-!#include musical/di_fm.txt
 !#include musical/openwhyd.txt
 !#include musical/soundcloud.txt
 !#include musical/spotify.txt
