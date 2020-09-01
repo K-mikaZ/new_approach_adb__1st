@@ -11,7 +11,12 @@ twitch.tv##button[title="Share"]
 !#endif
 
 !#if (fbpurity.com && dom)
-fbpurity.com##.getsocial,#adcontaineretc
+fbpurity.com##.getsocial
+fbpurity.com###adcontaineretc
+!#endif
+
+!#if (gaak.fr && dom)
+gaak.fr##.footer-socials > li:if(:not(> a[href*="mailto:"]))
 !#endif
 
 /wp-emoji-
@@ -24,6 +29,7 @@ fbpurity.com##.getsocial,#adcontaineretc
 ~mail.ru##[href*="://connect.mail.ru"]
 ~twitter.com##[href*="://twitter."]
 ~livejournal.com##[href*=".livejournal.com"]
+~pinterest.com,~pinterest.fr##[href*="://pinterest."]
 
 ~tumblr.com##[href*=".tumblr."]
 /showads.js$script,domain=tumblr.com
