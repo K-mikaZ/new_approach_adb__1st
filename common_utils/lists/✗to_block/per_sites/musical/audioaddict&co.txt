@@ -4,6 +4,7 @@
 
 !
 !#include audioaddict%26co/di_fm.txt
+!#include audioaddict%26co/zenradio.txt
 !
 
 ! </ end audioaddict.com rules >
