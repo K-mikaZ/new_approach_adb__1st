@@ -25,6 +25,12 @@ enstream.to##.movie-notice
 enstream.to##a.adSecw
 !#endif
 
+!#if (filmz. && dom)
+filmz.*##.masha_index
+filmz.*##.myButton
+filmz.*##center:if(.myButton)
+!#endif
+
 !#if (french-stream. && dom)
 french-stream.*###f22
 french-stream.*##.bx1
