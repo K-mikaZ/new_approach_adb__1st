@@ -8,6 +8,7 @@
 !
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start badfilters >
+! unbreak the world
 
 !#if dom
 
@@ -24,15 +25,17 @@ vidoza.org#@#.btn-social
 voirseries.*#@#.share-group
 searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@#.qc-cmp-ui-container.qc-cmp-showing,.qc-cmp-ui-container,.qc-cmp-persistent-link
-! [FIX] too generic
+! [fix] too generic
 #@#.AdBox
 #@#.post-ads
 *#@#.ad-alert-wrapper
-! cause too many recaptcha
+! [fix] too generic - break zenradio and somes other
+#@##consent-modal
+! [fix] cause too many recaptcha
 #@##cookie-alert
-! break video player site lequipe.fr
+! [fix] too generic - break video player site lequipe.fr
 #@#.np_DialogConsent
-! [fix] too generic, break https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags
+! [fix] too generic - break https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags
 #@#a[href^="//pubads.g.doubleclick.net/"]
 ! [fix] because "google.com/webhp" is upside down
 #@##searchform:style(position: absolute !important; top: 20px !important;)
