@@ -1,1 +1,9 @@
+
+!#if (wlnk.ec && dom)
 wlnk.ec##[href^="/telecharger"]
+!#endif
+
+!#if (zone-telechargement. && dom)
+zone-telechargement.casa##[src="/templates/zone/images/dl/telechargement-direct.png"]
+zone-telechargement.casa##[href*=".kfiopkln."]
+!#endif
