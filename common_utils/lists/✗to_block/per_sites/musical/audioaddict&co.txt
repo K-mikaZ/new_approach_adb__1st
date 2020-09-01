@@ -1,1 +1,9 @@
+! < start audioaddict.com rules >
 
+/cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
+
+!
+!#include audioaddict%26co/di_fm.txt
+!
+
+! </ end audioaddict.com rules >
