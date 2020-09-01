@@ -38,12 +38,14 @@ torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
 !torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"register"))])
 !torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"extreme-download"))])
 torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download") or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
-
-
 !#endif
 
 !#if ((thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.) && dom)
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
+!#endif
+
+!#if (gamestorrents.nu && dom)
+gamestorrents.nu##[href*="gamestorrents.nu/ayudanos-con-una-donacion/"]
 !#endif
 
 ! </ end torrent sites rules >
