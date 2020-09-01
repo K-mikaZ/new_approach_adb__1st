@@ -44,7 +44,6 @@
 ||l2.visiblemeasures.com^$image
 ||p-eu.acxiom-online.com/pixel/ema?*^$image
 ||sync.ipredictive.com/d/sync/cookie/generic^$image
-||vf-stream.net/undefined^$image,important
 ||electrodepot.fr/pub/media/wysiwyg/site/body-background.jpg$image
 ||nowvideo.sx/embed/$image
 ||numerama.com/content/themes/project-n-theme/resources/assets/images/icon/sponsoring.svg^$image
@@ -53,7 +52,6 @@
 |*/cookie-forwarding?^$image
 |*/cookie/generic^$image
 |*/error404.php^$image
-|*/undefined^$image
 |*_type=hidden^$image
 ||waaw.tv/images/adblock.jpg$image
 ||*.google.*/ads/*$image,important
@@ -63,6 +61,7 @@
 ||clickopen.win/x/assets/previews/*$image,1p,important
 ||clickserv*.*.*^$image,important
 ||collector.githubapp.com/github/page_view^$image,important
-
+! [fix] breaks loading some images on epicgames.com
+!|*/undefined^$image
 !#endif
 !
