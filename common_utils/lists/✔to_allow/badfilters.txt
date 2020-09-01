@@ -179,9 +179,14 @@ streamroot.io$script,important,badfilter
 ! [fix]
 ||d3kle7qwymxpcy.cloudfront.net$badfilter
 @@||d3kle7qwymxpcy.cloudfront.net^
+! [fix] too generic - break wakanim.tv
+/adsunauth?$badfilter
+&gdpr_consent=$badfilter
+
 
 ||adservice.google.com^$badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
+
 
 !
 ! Tracking urls
