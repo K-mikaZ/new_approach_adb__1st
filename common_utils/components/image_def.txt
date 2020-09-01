@@ -43,5 +43,7 @@
 ||turn.com/*$image,redirect-rule=1x1.gif
 ||adform.net/*$image,redirect-rule=1x1.gif
 ||*spotx*$image,redirect-rule=1x1.gif
+||bidr.io^$image,redirect-rule=1x1.gif
+||stickyadstv.com^$image,redirect-rule=1x1.gif
 
 !
