@@ -1,3 +1,4 @@
 !
 !#include dl/∗torrent_sites_combined.txt
+!#include dl/bulk_DL.txt
 !
