@@ -1,4 +1,5 @@
 ! < start audioaddict.com rules >
+! see < https://www.audioaddict.com >
 
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
 
