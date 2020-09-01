@@ -18,6 +18,11 @@ lesseriestreaming.com##.my-3
 lesseriestreaming.com##.aa-share
 !#endif
 
+!#if (voir-streaming.me && dom)
+voir-streaming.me###commentfb
+voir-streaming.me##.bp-btn-review.btn
+!#endif
+
 !#if (streamingclic. && dom)
 streamingclic.site###share
 streamingclic.site##section.disqus
