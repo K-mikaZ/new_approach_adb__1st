@@ -3,14 +3,20 @@
 !#if rakuten.tv
 
 @@||rakuten.tv^$generichide
-!@@||rakuten.tv^$elemhide
+_type=hidden^$image,important,badfilter
+_type=hidden^$image,domain=~rakuten.tv
+||sb.scorecardresearch.com^$badfilter
+||scorecardresearch.com^$3p,badfilter
+||sb.scorecardresearch.com^$domain=~rakuten.tv
+||scorecardresearch.com^$3p,domain=~rakuten.tv
+/rollbar.js$domain=rakuten.tv,important
 
 !#if script
 ||rakuten.tv/*/newrelic*.js$script,1p
 !#endif
 
 !#if xhr
-!||*spotxchange.com/vast/*$xhr,domain=rakuten.tv,important
+||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
 @@||search.spotxchange.com^$xhr,domain=rakuten.tv
 !#endif
 
@@ -19,9 +25,11 @@
 !#endif
 
 !#if dom
+rakuten.tv##div[class="video-advert-meta"]
 ! Disable message "You can watch this content for free with advertising" / "Vous pouvez regarder ce contenu gratuitement avec publicité"
 rakuten.tv##.detail__actions__message__text
 ! [fix] try to prevent adblock warning
+rakuten.tv##+js(bab-defuser.js)
 rakuten.tv##+js(aopr.js, e.FuckAdBlock)
 ! from https://gizmo.rakuten.tv/v3/me/streamings/check.json
 ! see < view-source:https://rakuten.tv/fr/streams/movie/chasseur-de-monstres? >
