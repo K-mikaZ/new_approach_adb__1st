@@ -69,14 +69,10 @@
 @@||s0.2mdn.net/instream/video/client.js
 
 ! [fix] some streaming site need it
-@@||googleapis.com/js/sdkloader/ima3.js$script,domain=uptobox.com|uptostream.com,badfilter
-@@/ima3.js$badfilter
-@@/ima3.js|$script,badfilter
 /ima3.js$badfilter
 ! allowing /ima.js && /ima3.js
 @@/\/ima([\d]{1})?\.js/$script
 ! allowing /googima.js
-!@@/googima.js|$script,badfilter
 @@/\/go{2}g(le)?([-_.])?ima(\.min)?\.js/$script
 
 ! </ end whitelist >
