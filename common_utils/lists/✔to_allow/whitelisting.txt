@@ -76,7 +76,7 @@
 ! allowing /ima.js && /ima3.js
 @@/\/ima([\d]{1})?\.js/$script
 ! allowing /googima.js
-@@/googima.js|$script,badfilter
+!@@/googima.js|$script,badfilter
 @@/\/go{2}g(le)?([-_.])?ima(\.min)?\.js/$script
 
 ! </ end whitelist >
