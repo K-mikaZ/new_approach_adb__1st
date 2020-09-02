@@ -71,13 +71,17 @@
 ! [fix] some streaming site need it
 /ima3.js$badfilter
 /ima3.js|$badfilter
+/ima3.js$script,badfilter
+/ima3.js|$script,badfilter
+@@/ima3.js$badfilter
+@@/ima3.js|$badfilter
 @@/ima3.js$script,badfilter
 @@/ima3.js|$script,badfilter
 /googima.js$badfilter
 /googima.js|$badfilter
-!@@/\/ima([\d]{1})?\.js/$script
-! allowing  /ima.js && /ima3.js /googima.js && /google-ima.js
-!@@/\/go{2}g(le)?([-_.]+)?ima([\d]{1})?(\.min)?\.js/$script
+/googima.js$script,badfilter
+/googima.js|$script,badfilter
+! allowing  /ima.js && /ima3.js /googima.js && /google-ima3.js with \.min or not
 @@/\/(go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js/$script
 
 ! </ end whitelist >
