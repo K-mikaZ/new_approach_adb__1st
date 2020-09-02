@@ -74,7 +74,7 @@
 @@/ima3.js|$script,badfilter
 /ima3.js$badfilter
 ! allowing /ima.js && /ima3.js
-@@/\/ima([\d]{1})?\.js$/$script
+@@/\/ima([\d]{1})?\.js/$script
 ! allowing /googima.js
 @@/\/go{2}g(le)?([-_.])?ima(\.min)?\.js/$script
 @@/googima.js|$script,badfilter
