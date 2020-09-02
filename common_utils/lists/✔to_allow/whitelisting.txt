@@ -73,11 +73,11 @@
 /ima3.js|$badfilter
 @@/ima3.js$script,badfilter
 @@/ima3.js|$script,badfilter
-! allowing /ima.js && /ima3.js
-@@/\/ima([\d]{1})?\.js/$script
-! allowing /googima.js && /google-ima.js
-!/googima.js$badfilter
-!/googima.js|$badfilter
-@@/\/go{2}g(le)?([-_.]+)?ima([\d]{1})?(\.min)?\.js/$script
+/googima.js$badfilter
+/googima.js|$badfilter
+!@@/\/ima([\d]{1})?\.js/$script
+! allowing  /ima.js && /ima3.js /googima.js && /google-ima.js
+!@@/\/go{2}g(le)?([-_.]+)?ima([\d]{1})?(\.min)?\.js/$script
+@@/\/(go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js/$script
 
 ! </ end whitelist >
