@@ -6630,6 +6630,42 @@ function noopFunc() {};
 })({"name":"metrika-yandex-watch","args":[]}, []);
 
 
+/**
+ * @scriptlet set-popads-dummy
+ *
+ * @description
+ * Sets static properties PopAds and popns.
+ *
+ * Related UBO scriptlet:
+ * https://github.com/gorhill/uBlock/wiki/Resources-Library#popads-dummyjs-
+ *
+ * **Syntax**
+ * ```
+ * example.org##+js('set-popads-dummy')
+ * ```
+ */
+set-popads-dummy application/javascript
+function setPopadsDummy(source) {
+  delete window.PopAds;
+  delete window.popns;
+  Object.defineProperties(window, {
+    PopAds: {
+      get: function get() {
+        hit(source);
+        return {};
+      }
+    },
+    popns: {
+      get: function get() {
+        hit(source);
+        return {};
+      }
+    }
+  });
+}
+setPopadsDummy.names = ['set-popads-dummy', 'popads-dummy.js', 'ubo-popads-dummy.js'];
+setPopadsDummy.injections = [hit];
+
 
 /**
  * VMAP -VPAID -VAST concern
