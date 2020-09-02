@@ -10,7 +10,12 @@
 
 !#if dom
 ! hide overlay
-allocine.fr#$#body,html{ overflow: visible !important; }
+! allocine.fr "PROMOTE_AFFINITY" overlay
+!||assets.allocine.fr/js/website/53.6e82c826cbf4526fdca7.js$script,1p
+/\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
+! or try:
+!allocine.fr##+js(overlay-buster.js)
+!allocine.fr#$#.open-modal body:after{display:none!important}
 ! boost lancement de la B.A
 allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
