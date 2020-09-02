@@ -77,7 +77,6 @@
 @@/\/ima([\d]{1})?\.js/$script
 ! allowing /googima.js
 @@/googima.js|$script,badfilter
-@@||imasdk.googleapis.com^$script,domain=1plus1.video|amc.com|arkadiumarena.com|aupetitparieur.com|babygames.com|click2houston.com|clickondetroit.com|clickorlando.com|flashgirlgames.com|gamak.tv|gazzetta.it|hqq.tv|hqq.watch|klix.ba|ksat.com|local10.com|mariogames.be|motorsport.tv|mypodboxx.com|news4jax.com|online-rossiya1.tv|onlinesudoku.games|player.tubia.com|polsatnews.pl|polsatsport.pl|stack.com|tubitv.com|tvp.info|tvp.pl|uptostream.com|usatoday.com|viki.com|waaw.tv|waaw1.tv|wifire.tv|wilmaa.com|wsls.com|wuxiaworld.com|x-link.pl|yandexcdn.com,badfilter
 @@/\/go{2}g(le)?([-_.])?ima(\.min)?\.js/$script
 
 ! </ end whitelist >
