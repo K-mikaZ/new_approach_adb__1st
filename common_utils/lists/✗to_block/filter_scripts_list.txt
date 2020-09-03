@@ -129,7 +129,6 @@
 /gpu.min.js|$important
 
 .top/advertisers.js|$script,important
-/\/apu\.(php|hh)\?/$important
 /(in(tegrations\/breadcrumbs|voke))\.js/$script,important
 /PartnersBox.js?$script,important
 /onFacebookReady.genemin.js|$script,important
