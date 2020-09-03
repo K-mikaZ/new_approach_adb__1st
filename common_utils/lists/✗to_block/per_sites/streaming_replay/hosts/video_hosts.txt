@@ -3,15 +3,17 @@
 ! < start video hosts sites rules >
 
 ! see < view-source:https://mstream.website/jyeefkvp8yg8 >
-! [fix] use _windowOpen regex
-mstream.website##+js(aopr.js, /\_{1\,}window[oO]pen/)
-embed.mystream.to##+js(aopr.js, /\_{1\,}window[oO]pen/)
-! [fix] block about:blank popup
-|about:$popup,important,domain=mstream.website
-|about:$popup,important,domain=embed.mystream.to
 ! [fix] in case of script change
 ||*^$popup,domain=mstream.website
 ||*^$popup,domain=embed.mystream.to
+! [fix] use _windowOpen regex
+mstream.website##+js(aopr.js, _windowOpen)
+embed.mystream.to##+js(aopr.js, _windowOpen)
+!mstream.website##+js(aopr.js, /\_{1\,}window[oO]pen/)
+!embed.mystream.to##+js(aopr.js, /\_{1\,}window[oO]pen/)
+! [fix] block about:blank popup
+|about:$popup,important,domain=mstream.website
+|about:$popup,important,domain=embed.mystream.to
 
 ||*^$popup,domain=streamtape.net
 
