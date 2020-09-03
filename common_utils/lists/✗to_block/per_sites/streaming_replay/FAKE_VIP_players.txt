@@ -23,13 +23,14 @@
 ! fake videos
 ||wiflix.*/*.mp4$media
 ||enstream.to/vip/*$media,1p
-*.dll$media,important,domain=streamz.vg
 ||issue.mp4$media,important,domain=streamz.vg
 ||https://googleads.github.io/googleads*html5/media/*.mp4$important
 ! universal medias
 ! like "ptirgaux.com/pfe/current/universal.min.js?v=3.1.256$xhr" on filmstoon.icu
 ! like "voirseries.co/media/Universal.mp4$media"
 /\/[uU]niversal(\.min)?\.(.{2,})/$media,xhr
+! [fix] break loading videos
+.dll$media,important,domain=streamz.vg,badfilter
 !#endif
 
 
