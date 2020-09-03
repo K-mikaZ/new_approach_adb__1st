@@ -2,12 +2,15 @@
 !
 ! < start video hosts sites rules >
 
+mstream.website##+js(aopr.js, _windowOpen)
+embed.mystream.to##+js(aopr.js, _windowOpen)
+|about:$popup,important,domain=mstream.website
+|about:$popup,important,domain=embed.mystream.to
+! in case of script change
 ||*^$popup,domain=mstream.website
 ||*^$popup,domain=embed.mystream.to
-||*^$popup,domain=streamtape.net
 
-mystream.to##+js(aopr.js, _windowOpen)
-mstream.website##+js(aopr.js, _windowOpen)
+||*^$popup,domain=streamtape.net
 
 !#if script
 ! This product includes portions of other software.
