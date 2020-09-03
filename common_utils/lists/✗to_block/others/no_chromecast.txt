@@ -3,11 +3,14 @@
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 ! [fix] exclude dood.to (break loading player)
-*/cast_sender.js$script,3p,important,domain=~dood.to
-/(\/|\-)chromecast([@])?(\.min)?/$script,important,domain=~dood.to
+/cast_sender.js$script,3p
+@@/cast_sender.js$script,3p,domain=dood.to
+/(\/|\-)chromecast([@])?(\.min)?/$script
+@@/(\/|\-)chromecast([@])?(\.min)?/$scriptdomain=~dood.to
 ! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
 ! test if not breaking with
-/play*/provider.cast.js$script,important,domain=~dood.to
+/play*/provider.cast.js$script
+!@@/play*/provider.cast.js$script,domain=
 !#endif
 
 !#if css
