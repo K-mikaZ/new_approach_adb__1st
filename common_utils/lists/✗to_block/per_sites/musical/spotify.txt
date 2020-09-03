@@ -50,12 +50,13 @@ open.spotify.com##.verifiedBadge
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
 ! [fix] breaks playing spotify's playlists.
 #@#a[href^="https://adclick.g.doubleclick.net/"]
-@@||gstatic.com^$domain=open.spotify.com
 @@||googletagmanager.com^$domain=open.spotify.com
 @@||scdn.co/cdn/js/gtag.$script,domain=spotify.com
 ! [fix] comments during an action (addition/removal in a playlist)
 #@#div[aria-live^="polite"]
 #@#div > div[aria-live="polite"]
+! [fix] chromecast concern
+!@@||gstatic.com^$domain=open.spotify.com
 
 !#endif
 ! </ end spotify rules >
