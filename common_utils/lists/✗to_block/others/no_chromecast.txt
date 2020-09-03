@@ -11,5 +11,8 @@
 !#endif
 
 !#if css
-/play*/cast.css$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
+! [fix] block: -chromecast.css and /cast.css
+!-chromecast.css$domain=animedigitalnetwork.fr
+!/play*/cast.css$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv,badfilter
+/[\-|\/](chrome)?cast\.cs{2}/
 !#endif
