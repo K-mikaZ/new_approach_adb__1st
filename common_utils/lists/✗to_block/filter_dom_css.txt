@@ -62,6 +62,12 @@ streamavie.com,vfilms.me,voirfilms.*##.myButton
 lemonde.fr###js-engagement-banner
 !#endif
 
+!#if linternaute.com
+linternaute.com##[id*="Crt-"]
+linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
+linternaute.com##.sns_avoidance_link.app_edito_btn
+!#endif
+
 !#if 4kstreamz.co
 4kstreamz.co##.register,.keywords,.mr-3,.DESCPP
 4kstreamz.co##.text-center:if(.mr-3)
