@@ -22,19 +22,34 @@ gaak.fr##.footer-socials > li:if(:not(> a[href*="mailto:"]))
 /wp-emoji-
 ##[src*="/images/share."]
 
+star.fr##.list-social-networks
+
 ~google.com##[href*="://plus.google."]
 ~facebook.com,~fb.com##[href*="://facebook."]
+~facebook.com,~fb.com##[href*=".facebook."]
 ~vkontakte.ru##[href*="://vkontakte.ru"]
-~odnoklassniki.ru##[href*=".odnoklassniki.ru"]
+~odnoklassniki.ru##[href*=".odnoklassniki."]
 ~mail.ru##[href*="://connect.mail.ru"]
 ~twitter.com##[href*="://twitter."]
 ~livejournal.com##[href*=".livejournal.com"]
 ~pinterest.com,~pinterest.fr##[href*="://pinterest."]
 
+~instagram.com##[href*=".instagram."]
+~instagram.com##[src*=".instagram."]
+~whatsapp.com##[href*=".whatsapp."]
+~whatsapp.com##[src*=".whatsapp."]
+~discord.com##[href*=".discord."]
+~discord.com##[src*=".discord."]
+
 ~tumblr.com##[href*=".tumblr."]
+~tumblr.com##[src*=".tumblr."]
 /showads.js$script,domain=tumblr.com
 ||*tumblr.com^$3p,domain=~tumblr.com
 /share.js$script,domain=tumblr.com
 /tweets.js$domain=tumblr.com
 /like_iframe.html$subdocument,domain=tumblr.com
 /share_$image,domain=tumblr.com
+
+! badfilter (some streaming sites use it for trailer)
+~youtube.com,~youtu.be,~yt.be#@#[href*=".youtube."]
+~youtube.com,~youtu.be,~yt.be#@#[src*=".youtube."]
