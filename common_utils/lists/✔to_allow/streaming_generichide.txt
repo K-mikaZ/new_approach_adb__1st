@@ -9,8 +9,8 @@
 @@||film01stream.$ghide
 @@||filmgratuit.$ghide
 @@||lesseriestreaming.$ghide
-!@@||mystream.$ghide // not sure because of popup
-!@@||mstream.$ghide // not sure because of popup
+@@||mystream.$ghide
+@@||mstream.$ghide
 @@||seriestream.$ghide
 @@||streamingclic.$ghide
 @@||upvid.$ghide
