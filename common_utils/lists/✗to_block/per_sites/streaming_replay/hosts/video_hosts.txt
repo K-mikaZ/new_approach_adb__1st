@@ -12,7 +12,6 @@
 |https://$script,3p,domain=upstream.to,badfilter
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js or cloudflare's & jsdelivr's scripts
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=clipwatching.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=dood.to
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=feurl.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=gounlimited.to
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=jetload.net
@@ -23,6 +22,7 @@
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=vidoza.net
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=core1player.com
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's & jsdelivr's scripts or those from the same "house"
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*doodcdn\.).*))/$script,3p,domain=dood.to
 !/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*\.core1player\.).*))/$script,3p,domain=core1player.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*\.m(y)?stream\.).*))/$script,3p,domain=embed.mystream.to|mstream.website
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*upvid\.).*))/$script,3p,domain=upvid.net
