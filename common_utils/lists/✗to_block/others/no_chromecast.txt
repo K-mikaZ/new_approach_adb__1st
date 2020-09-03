@@ -1,5 +1,11 @@
 
-!#if (script && !1p)
+!#if script
 ! ChromeCast concern
-*/cast_sender.js$script,3p,important
+! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
+! [fix] exclude dood.to (break loading player)
+*/cast_sender.js$script,3p,important,domain=~dood.to
+/(\/|\-)chromecast([@])?(\.min)?/$script,important,domain=~dood.to
+! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
+! test if not breaking with!
+/play*/provider.cast.js$script,important,domain=~dood.to
 !#endif
