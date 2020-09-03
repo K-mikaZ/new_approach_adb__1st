@@ -9,18 +9,17 @@
 @@||film01stream.$ghide
 @@||filmgratuit.$ghide
 @@||lesseriestreaming.$ghide
-@@||mystream.$ghide
+!@@||mystream.$ghide // not sure
 !@@||mstream.$ghide // not sure
 @@||seriestream.$ghide
 @@||streamingclic.$ghide
 @@||upvid.$ghide
 @@||voirfilms.$ghide
-@@||seriestream.$ghide
 @@||voirseries.$ghide
 @@||vustream.$ghide
+@@||wiflix.$ghide
 @@||wikiserie.$ghide
 @@||zustream.$ghide
-@@||wiflix.$ghide
 
 @@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dbserie.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mesfilms.net|mixdrop.to|mystream.to|netu.tv|papseries.net|play.hydracdn.network|protonvideo.to|secvideo1.online|series-stream.net|stream-serie.net|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vizplay.icu|vudeo.net|waaw.tv|youdbox.com
 
