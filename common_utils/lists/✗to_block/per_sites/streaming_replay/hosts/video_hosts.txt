@@ -2,8 +2,10 @@
 !
 ! < start video hosts sites rules >
 
-mstream.website##+js(aopr.js, _windowOpen)
-embed.mystream.to##+js(aopr.js, _windowOpen)
+mstream.website##+js(aopr.js, /\_{1\,}window[oO]pen/)
+!mstream.website##+js(aopr.js, _windowOpen)
+embed.mystream.to##+js(aopr.js, /\_{1\,}window[oO]pen/)
+!embed.mystream.to##+js(aopr.js, _windowOpen)
 |about:$popup,important,domain=mstream.website
 |about:$popup,important,domain=embed.mystream.to
 ! in case of script change
