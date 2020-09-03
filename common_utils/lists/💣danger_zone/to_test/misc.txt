@@ -8,6 +8,10 @@
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 /(.*)\/chromecast(\.min)?\.js/$script
+/\-chromecast(\.min)?\.js/$script,important
+/\-chromecast\@/$script,important
+! not sure for ( https://www.core1player.com/asset/default/player/provider.cast.js )
+/play*/provider.cast.js$script,important
 
 ! https://github.com/theonion/videojs-vast-plugin#usage
 ! [fix] too generic
