@@ -3,6 +3,10 @@
 ||jwpcdn.com/player*/sharing.js$script,important
 !#endif
 
+!#if (allocine.fr && dom)
+allocine.fr##.icon-share.icon
+!#endif
+
 !#if (hds-streaming.la|hds.lc)
 !#if script
 /comment-reply.min.js$script,domain=hds-streaming.la
@@ -36,6 +40,7 @@ filmgratuit.net##.wrap > .item > .tit
 !#if (universanimeiz.com && dom)
 universanimeiz.com##.meta-share
 universanimeiz.com###text-2
+universanimeiz.com###comments
 !#endif
 
 !#if (canalplus.com && dom)
@@ -68,6 +73,15 @@ tf1.fr##[class*="ShareButton_"]
 tf1.fr##[class*="Footer_social_"]
 tf1.fr##[class="share"]
 !#endif
+
+!#if (hqq.tv|netu.tv|vizplay.icu|waaw.tv)
+/*/share/*$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
+!#endif
+
+illimitestreaming.co##.bp-btn-review.btn
+
+! Global Antisocial
+##.jw-submenu-sharing
 
 !
 ! Antisocial Zudbo & co
