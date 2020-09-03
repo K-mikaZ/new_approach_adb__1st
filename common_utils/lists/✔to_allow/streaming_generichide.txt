@@ -15,6 +15,7 @@
 @@||streamingclic.^$ghide
 @@||upvid.^$ghide
 @@||voirfilms.^$ghide
+@@||seriestream.^$ghide
 @@||voirseries.^$ghide
 @@||vustream.^$ghide
 @@||wikiserie.^$ghide
