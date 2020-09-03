@@ -5,15 +5,6 @@
 ||facil-iti.com^
 ||api.ipify.org^$domain=~ipify.org
 
-! ChromeCast concern
-! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
-! [fix] exclude dood.to (break loading player)
-/(.*)\/chromecast(\.min)?\.js/$script,domain=~dood.to
-/\-chromecast(\.min)?\.js/$script,important,domain=~dood.to
-/\-chromecast\@/$script,important,domain=~dood.to
-! not sure for ( https://www.core1player.com/asset/default/player/provider.cast.js )
-/play*/provider.cast.js$script,important,domain=~dood.to
-
 ! https://github.com/theonion/videojs-vast-plugin#usage
 ! [fix] too generic
 /video.ads.$badfilter
