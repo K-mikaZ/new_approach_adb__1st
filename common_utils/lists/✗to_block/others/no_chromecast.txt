@@ -6,7 +6,7 @@
 /cast_sender.js$script,3p
 @@/cast_sender.js$script,3p,domain=dood.to
 /(\/|\-)chromecast([@])?(\.min)?/$script
-@@/(\/|\-)chromecast([@])?(\.min)?/$scriptdomain=~dood.to
+@@/(\/|\-)chromecast([@])?(\.min)?/$scriptdomain=dood.to
 ! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
 ! test if not breaking with
 /play*/provider.cast.js$script
