@@ -6,6 +6,9 @@
 ||*^$popup,domain=embed.mystream.to
 ||*^$popup,domain=streamtape.net
 
+mystream.to##+js(aopr.js, _windowOpen)
+mstream.website##+js(aopr.js, _windowOpen)
+
 !#if script
 ! This product includes portions of other software.
 ||*/play*/related.js$script,domain=~feurl.com|~core1player.com
