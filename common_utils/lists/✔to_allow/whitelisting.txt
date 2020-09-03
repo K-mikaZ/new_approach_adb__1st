@@ -13,6 +13,11 @@
 @@||cmb.fr$generichide
 @@||bytel.fr$generichide
 
+! linternaute.com
+@@||linternaute.com$generichide
+@@||googletagmanager.com/gtm.js$script,domain=linternaute.com
+@@/prebid$domain=linternaute.com
+
 ! star.fr
 @@||navitia.io^
 
