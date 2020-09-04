@@ -1,6 +1,8 @@
 !
 ! FILTERS IN TEST (BETA)
 
+##a[onclick*="window.open"]
+
 ! see on tf1.fr
 ||facil-iti.com^
 ||api.ipify.org^$domain=~ipify.org
