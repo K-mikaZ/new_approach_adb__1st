@@ -3,6 +3,7 @@
 !
 
 ||freshchat.com^
+||gravatar.$all,3p,important
 
 !#if (twitch.tv && dom)
 twitch.tv##div.social-media-link__container
