@@ -8,12 +8,13 @@
 !#include streaming_replay/FAKE_VIP_players.txt
 !#include streaming_replay/NO_DL_please.txt
 ! OTHERS
-!#include streaming_replay/bulk_streaming_replay.txt
-!#include streaming_replay/RTL_groupe/RTL_groupe.txt
 !#include streaming_replay/allocine.txt
 !#include streaming_replay/animedigitalnetwork.txt
+!#include streaming_replay/bulk_streaming_replay.txt
 !#include streaming_replay/canal➕.txt
 !#include streaming_replay/playRTS.txt
 !#include streaming_replay/rakutenTV.txt
 !#include streaming_replay/tf1.txt
+!#include streaming_replay/ultimate-catch.txt
 !#include streaming_replay/zudbo&co.txt
+!#include streaming_replay/RTL_groupe/RTL_groupe.txt
