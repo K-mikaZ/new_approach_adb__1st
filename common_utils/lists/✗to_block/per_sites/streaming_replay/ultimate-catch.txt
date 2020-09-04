@@ -1,0 +1,6 @@
+
+!#if ultimate-catch.eu
+ultimate-catch.eu##.header-ads
+ultimate-catch.eu##[href*=".play-asia."]
+ultimate-catch.eu##[id*="themoneytizer"]
+!#endif
