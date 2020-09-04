@@ -1,6 +1,7 @@
 
 !#if (ultimate-catch.eu && dom)
 ultimate-catch.eu##.header-ads
-ultimate-catch.eu##[href*=".play-asia."]
 ultimate-catch.eu##[id*="themoneytizer"]
+!ultimate-catch.eu##.single.small > [href*=".play-asia."]
+ultimate-catch.eu##.single.small > [href*=":"]
 !#endif
