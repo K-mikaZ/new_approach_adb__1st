@@ -25,14 +25,9 @@ youtube.com###old-browser-alert
 youtube.com###dismissable.ytd-compact-promoted-item-renderer
 !#if music.youtube.com
 music.youtube.com##.ytmusic-popup-container.style-scope
-! No pause for player, thx
-! see < https://music.youtube.com/sw.js > point to < s.ytimg.com/yts/jsbin/serviceworker-music-vflk3r3Lp/serviceworker-music.js >
-! see < https://www.youtube.com/sw.js > point to < https://www.youtube.com/s/desktop/9225b7fd/jsbin/serviceworker-notifications.vflset/serviceworker-notifications.js >
-! I have test to block services-worker
-! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
-!youtube.com##+js(nano-hijack-script-create.js, /^(ht{2}ps?\:\/\/)?(w{3}\.)?((s\.ytimg\.(.{2\,})\/yts)|(youtu(be)?\.(.{2\,})\/(.*)))\/jsbin\/serviceworker\-((music|notifications?)(.*))\/serviceworker\-(music|notifications?)\.js$/)
-!music.youtube.com##+js(aopr.js, html5_pause_on_nonforeground_platform_errors)
 !#endif
+! [fix] modal de connexion
+youtube.com##paper-dialog.ytd-popup-container
 !#endif
 
 !#if script
