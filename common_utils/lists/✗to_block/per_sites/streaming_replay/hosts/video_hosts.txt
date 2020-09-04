@@ -3,14 +3,12 @@
 ! < start video hosts sites rules >
 
 ! see < view-source:https://mstream.website/jyeefkvp8yg8 >
+! [fix] use /[a-zA-Z0-9]{10,50}/ regex for window.ku2esgskk01aw84auyojxgwrin5cq5lcj
+mstream.website##+js(acis.js, window, /[a-zA-Z0-9]{10\,50}/)
+mystream.to##+js(acis.js, window, /[a-zA-Z0-9]{10\,50}/)
 ! [fix] in case of script change
 ||*^$popup,domain=mstream.website
 ||*^$popup,domain=embed.mystream.to
-! [fix] use _windowOpen regex
-mstream.website##+js(aopr.js, _windowOpen)
-embed.mystream.to##+js(aopr.js, _windowOpen)
-!mstream.website##+js(aopr.js, /\_{1\,}window[oO]pen/)
-!embed.mystream.to##+js(aopr.js, /\_{1\,}window[oO]pen/)
 ! [fix] block about:blank popup
 |about:$popup,important,domain=mstream.website
 |about:$popup,important,domain=embed.mystream.to
