@@ -92,8 +92,8 @@ tf1.fr##[class*="Footer_social_"]
 tf1.fr##[class="share"]
 !#endif
 
-!#if (hqq.tv|netu.tv|vizplay.icu|waaw.tv)
-/*/share/*$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
+!#if (hqq.tv|netu.tv|vizplay.icu|waaw.)
+/*/share/*$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
 !#endif
 
 !#if (ggsplayer.xyz && dom)
