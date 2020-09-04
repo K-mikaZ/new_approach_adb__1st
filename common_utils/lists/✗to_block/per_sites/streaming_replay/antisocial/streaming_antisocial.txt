@@ -93,6 +93,10 @@ tf1.fr##[class="share"]
 /*/share/*$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
 !#endif
 
+!#if (ggsplayer.xyz && dom)
+ggsplayer.xyz##.jw-settings-submenu-button.jw-icon-settings.jw-reset.jw-button-color.jw-icon-inline.jw-icon
+!#endif
+
 illimitestreaming.co##.bp-btn-review.btn
 
 ! Global Antisocial
