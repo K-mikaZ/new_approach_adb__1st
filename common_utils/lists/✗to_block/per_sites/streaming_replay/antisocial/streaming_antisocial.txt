@@ -1,12 +1,15 @@
 
 
-!#if (ultimate-catch.eu && dom)
+!#if ultimate-catch.eu
+||twitch.tv^$all,domain=ultimate-catch.eu
+!#if dom
 ultimate-catch.eu###comments
 ultimate-catch.eu###menu-social
 ultimate-catch.eu##.icon-soci
 ultimate-catch.eu##.mg-social
 ultimate-catch.eu##[href="://utip.io"]
 ultimate-catch.eu##[href*=".twitch."]
+!#endif
 !#endif
 
 !#if (jwpcdn.com && script)
