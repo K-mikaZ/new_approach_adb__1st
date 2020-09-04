@@ -21,7 +21,7 @@
 @@||wikiserie.$ghide
 @@||zustream.$ghide
 
-! hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
+! [fix] boost loading > hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
 @@||hqq.$document
 @@||hqq.$inline-script
 @@||hqq.$ghide
