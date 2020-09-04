@@ -2,13 +2,15 @@
 !< start rakuten.tv rules >
 !#if rakuten.tv
 
-@@||rakuten.tv^$generichide
-_type=hidden^$image,important,badfilter
-_type=hidden^$image,domain=~rakuten.tv
-||sb.scorecardresearch.com^$badfilter
-||scorecardresearch.com^$3p,badfilter
-||sb.scorecardresearch.com^$domain=~rakuten.tv
-||scorecardresearch.com^$3p,domain=~rakuten.tv
+@@||rakuten.tv^$ghide
+@@||spotxchange.com^$domain=rakuten.tv,badfilter
+
+!_type=hidden^$image,important,badfilter
+!_type=hidden^$image,domain=~rakuten.tv
+!||sb.scorecardresearch.com^$badfilter
+!||scorecardresearch.com^$3p,badfilter
+!||sb.scorecardresearch.com^$domain=~rakuten.tv
+!||scorecardresearch.com^$3p,domain=~rakuten.tv
 /rollbar.js$domain=rakuten.tv,important
 
 !#if script
@@ -17,11 +19,13 @@ _type=hidden^$image,domain=~rakuten.tv
 
 !#if xhr
 ||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
-@@||search.spotxchange.com^$xhr,domain=rakuten.tv
+||adtracker.$xhr,domain=rakuten.tv
+?adCampaign$xhr,domain=rakuten.tv
+!@@||search.spotxchange.com^$xhr,domain=rakuten.tv
 !#endif
 
 !#if image
-@@||event.spotxchange.com/vast/complete$image,domain=rakuten.tv
+!@@||event.spotxchange.com/vast/complete$image,domain=rakuten.tv
 !#endif
 
 !#if dom
