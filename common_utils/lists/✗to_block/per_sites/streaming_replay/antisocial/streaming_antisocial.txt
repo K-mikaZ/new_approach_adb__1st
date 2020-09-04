@@ -78,6 +78,11 @@ voirfilms.*##div[class="info"]:if(:has-text(/commentaire\:/i))
 !#endif
 !#endif
 
+!#if (voiranime. && dom)
+voiranime.to##.comments-area
+voiranime.to###manga-discussion
+!#endif
+
 !#if (tf1.fr && dom)
 tf1.fr##[class*="ShareButton_"]
 tf1.fr##[class*="Footer_social_"]
