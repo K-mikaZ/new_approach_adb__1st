@@ -23,6 +23,8 @@ mail.yahoo.com#$#[data-test-id="comms-properties-bar"]{height:unset!important;pa
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"]
 mail.yahoo.com##[title="Hide Advertisement"]
 mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
+mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:upward(2)
+!mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:nth-of-type(2)
 mail.yahoo.com##[data-test-id="settings-link-label"]
 ! whitelist
 @@?adcount=$xhr,domain=mail.yahoo.com
