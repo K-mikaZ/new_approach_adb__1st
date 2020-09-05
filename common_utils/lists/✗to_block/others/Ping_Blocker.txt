@@ -11,6 +11,6 @@
 !#endif
 
 !#if xhr
-! [fix] for youboranqs01.com/ping$xhr,empty
+! [fix] for example "youboranqs01.com/ping"
 /ping?$xhr,empty
 !#endif
