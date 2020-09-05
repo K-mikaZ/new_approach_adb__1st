@@ -92,6 +92,10 @@ tf1.fr##[class*="Footer_social_"]
 tf1.fr##[class="share"]
 !#endif
 
+!#if (rakuten.tv && dom)
+rakuten.tv#?#.detail__content__interactions>:if(>:not([type="submit"]))
+!#endif
+
 !#if (hqq.tv|netu.tv|vizplay.icu|waaw.)
 /*/share/*$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
 !#endif
