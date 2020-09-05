@@ -2,20 +2,22 @@
 /\/pixel\/purs(t)?\?/
 /\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$all,3p,important
 ||2mdn.net/*$media,important
-||scorecardresearch.com^
+
+||1clic1don.fr^
 ||adtracker.^
-||e2wysbacctt1.com^
-||itnuzleafan.com^
-||unreshiramor.com^
-||tapixesa.pro^
-||libedgolart.com^
 ||bebreloomr.com^
+||betgorebysson.club^
+||cash-ads.com^
 ||cdn.appround.biz^
 ||cdn.download.sweetpacks.com^
 ||cdn.insta.playbryte.com^
 ||cdn.msdwnld.com^
 ||cdn.mypcbackup.com^
+||deliveryengine.adswizz.com^
 ||e2wysbacctt1.com^
+||eikegolehem.com^
+||eredunass.club^
+||ezmob.com^
 ||fastenpaganhelm.com^
 ||inno.bisrv.com^
 ||inpagepush.com^
@@ -28,31 +30,24 @@
 ||nbf9b5aurl.com^
 ||nsis.bisrv.com^
 ||obstanceder.pro^
+||onclickgenius.com^
 ||ovyiakt1wzqz.com^
+||phoossax.net^
 ||prepenseprepensedefiance.com^
+||ptirgaux.com^
 ||qtbb6.com^
 ||residuestream.club^
 ||resultsgenou.club^
 ||rwn1sdb4xqa2.com^
+||scorecardresearch.com^
 ||sdk.privacy-center.org^
 ||tapixesa.pro^
 ||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
-||ptirgaux.com^
-||phoossax.net^
-||eredunass.club^
-||onclickgenius.com^
-||1clic1don.fr^
-||betgorebysson.club^
-||cash-ads.com^
-||e2wysbacctt1.com^
-||eikegolehem.com^
-||ezmob.com^
-! radio.fr
-||script.ioam.
-
 ||remarketingpixel.com/stats
 
+! radio.fr
+||script.ioam.
 
 ||adlightning.com^$badfilter
 ||adlightning.com^$domain=~adlightning.com
