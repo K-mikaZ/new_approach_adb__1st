@@ -43,11 +43,12 @@ youtube.com#@#paper-dialog.ytd-popup-container
 !#endif
 
 !#if image
-||youtube.com/pcs/activeview$image,domain=youtube.com
-||*/activeview*$image,redirect-rule=1x1.gif
-/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
+@@||*$image,domain=youtube.com
+!||youtube.com/pcs/activeview$image,domain=youtube.com
+!||*/activeview*$image,redirect-rule=1x1.gif
+!/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
-@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
+!@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
 !#endif
 
 !#if (xhr && 1p)
@@ -70,7 +71,8 @@ youtube.com#@#paper-dialog.ytd-popup-container
 /y(t)?img\.(.{2,})(.*\/)?endscre{2}n\.swf/$object-subrequest,important
 !#endif
 
-!!#if other
+!!#if (other|ping)
+@@||youtube.com/api/stats/qoe$ping,domain=youtube.com
 ! No pause for player, thx
 ||youtu*.*/manifest.json|$other,important
 !!#endif
@@ -117,6 +119,8 @@ youtube.com#@#iron-overlay-backdrop
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
 ||youtube.com/get_video_info?*=adunit&$empty,important
+! [fix] prevent video blocking
+@@||tpc.googlesyndication.com/sodar/*$domain=youtube.com
 
 !#endif
 ! </ end youtube rules >
