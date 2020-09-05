@@ -18,6 +18,8 @@
 
 !
 !#if dom
+youtube.com##.ytp-chrome-top-buttons
+youtube.com##.ytp-chrome-top
 youtube.com##.ytp-impression-link
 youtube.com##.opened
 youtube.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
