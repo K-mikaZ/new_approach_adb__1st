@@ -7,6 +7,13 @@ animedigitalnetwork.fr##.adn-opm2-block-rectangle
 animedigitalnetwork.fr##.adn-pave
 animedigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
 yatta.animedigitalnetwork.fr##.adn-header
+! sanitize (not ads)
+animedigitalnetwork.fr##.videosummary-image
+! sanitize blank spaces
+animedigitalnetwork.fr##.adn-megaban-hide.adn-transparent-block
+animedigitalnetwork.fr##.adn-right>.adn-full-block-center.adn-transparent-block
+animedigitalnetwork.fr##.adn-playlist-right>.adn-full-block-center.adn-transparent-block
+animedigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-transparent-block
 !#endif
 
 !#if script
