@@ -55,7 +55,6 @@ youtube.com#@#paper-dialog.ytd-popup-container
 
 !#if (xhr && 1p)
 @@||youtube.com/api/stats/atr$xhr,domain=youtube.com
-!||youtube.com/get_video_info?*adunit$domain=youtube.com,important
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
@@ -66,18 +65,8 @@ youtube.com#@#paper-dialog.ytd-popup-container
 ||youtu*.*/embed/*?ps=software*$subdocument,important
 !#endif
 
-!#if (object-subrequest && 1p)
-/y(ou)?t(u)?(be)?\.(.{2,})\/(an{2}otations\_invideo\?)(.*)/$object-subrequest,important
-!#endif
-
-!#if (object-subrequest && !1p)
-/y(t)?img\.(.{2,})(.*\/)?endscre{2}n\.swf/$object-subrequest,important
-!#endif
-
 !!#if (other|ping)
 @@||youtube.com/api/stats/qoe$ping,domain=youtube.com
-! No pause for player, thx
-!||youtu*.*/manifest.json|$other,important
 !!#endif
 
 !#if (media && !1p)
@@ -100,11 +89,6 @@ youtube.com#@#paper-dialog.ytd-popup-container
 ! [fix] Disable count in bloker icon
 @@||youtube.com/get_video_info$badfilter
 @@||www.youtube.com/get_video_info?*video_id*detailpage$xhr,domain=youtube.com,badfilter
-! [fix] YOUTUBE DELAY WATCH TIME
-!||youtube.com/api/stats/qoe?$badfilter
-!/api/stats/watchtime$domain=youtube.com,badfilter
-!||youtube.com/api/stats/watchtime$badfilter
-!||google.*/pagead/lvz?$image,important
 ! [fix] Embed YouTube video via a cookieless domain
 ! When embedding a video using youtube.com, Google uses DoubleClick to track your users.
 ! When using youtube-nocookie.com, Google no longer uses DoubleClick to track your users.
@@ -122,8 +106,6 @@ youtube.com#@#iron-overlay-backdrop
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
 ||youtube.com/get_video_info?*=adunit&$empty,important
-! [fix] prevent video blocking
-@@||tpc.googlesyndication.com/sodar/*$domain=youtube.com
 
 !#endif
 ! </ end youtube rules >
