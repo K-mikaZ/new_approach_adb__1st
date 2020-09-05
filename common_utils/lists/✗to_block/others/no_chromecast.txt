@@ -1,20 +1,24 @@
 
 !#if script
+! --------------------
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 /cast_sender.js$script,3p
-/[\-|\/]chromecast([@])?(\.min)?/$script,3p
+/[\-|\/]chromecast([@])?(\.min)?/$script
 ! somes allowed
 ! [fix] exclude dood.to (break loading player)
 @@/cast_sender.js$script,3p,domain=dood.to
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
+! [fix] exclude "RTL group" (break loading site)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
-! [fix] upstream.to/player8/provider.cast.js
+! --------------------
 ! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
 ! test if not breaking with
+! [fix] upstream.to/player8/provider.cast.js
 /play*/provider.cast.js$script
 ! somes allowed
 !@@/play*/provider.cast.js$script,domain=
+! --------------------
 !#endif
 
 !#if css
