@@ -3,7 +3,10 @@
 !#if rakuten.tv
 
 @@||rakuten.tv^$ghide
-@@||spotxchange.com^$domain=rakuten.tv,badfilter
+
+@@||search.spotxchange.com^$image,domain=rakuten.tv
+@@||spotxchange.com^$domain=rakuten.tv
+||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
 
 /rollbar.js$domain=rakuten.tv,important
 
