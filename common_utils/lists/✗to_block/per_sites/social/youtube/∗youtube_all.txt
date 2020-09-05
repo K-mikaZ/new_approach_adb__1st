@@ -12,6 +12,7 @@
 !#include youtube_parts_easylists.txt
 !
 !_204?$image,xhr,document,domain=youtube.com|youtu.be|yt.be
+||tpc.googlesyndication.com^$subdocument,domain=youtube.com,important,badfilter
 @@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
 @@*/next?alt=json$domain=youtube.com|youtu.be|yt.be
 
