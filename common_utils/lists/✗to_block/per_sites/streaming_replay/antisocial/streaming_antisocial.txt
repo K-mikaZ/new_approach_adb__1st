@@ -16,6 +16,11 @@ ultimate-catch.eu##[href*=".twitch."]
 ||jwpcdn.com/player*/sharing.js$script,important
 !#endif
 
+!#if (mystream.to && dom)
+mystream.to##.social-links
+mystream.to##a.social-link
+!#endif
+
 !#if (allocine.fr && dom)
 allocine.fr##.icon-share.icon
 !#endif
