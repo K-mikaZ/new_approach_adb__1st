@@ -8,10 +8,6 @@
 ||google-analytics.com^$script
 !#endif
 
-!#if *googlesyndication.com
-*.googlesyndication.*^$script
-!#endif
-
 !#if *googletagmanager.com
 ![fix] for ensure blocking (because other lists)
 ||www.googletagmanager.com^$badfilter
