@@ -2,6 +2,7 @@
 !#if xhr
 
 ||backend.dna-delivery.com^$xhr,important
+/cdn-cgi/trace$xhr
 
 ! originally /^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$xhr,3p,domain=~amazon.com
 /^ht{2}ps?:\/\/s3\.amazonaws\.com\/[\w\d]{54,57}\/[\w,\d]{8,10}$/$xhr,3p,domain=~amazon.com
