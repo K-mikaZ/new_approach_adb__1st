@@ -27,7 +27,7 @@ youtube.com###dismissable.ytd-compact-promoted-item-renderer
 music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 ! [fix] modal de connexion
-youtube.com##paper-dialog.ytd-popup-container
+youtube.com#@#paper-dialog.ytd-popup-container
 !#endif
 
 !#if script
