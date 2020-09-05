@@ -69,6 +69,11 @@ papseries.net##.aa-share.nav-link
 wiflix.*##.share-box
 !#endif
 
+!#if (vidlox.me && dom)
+vidlox.me###share-button
+vidlox.me##.sharetabbedcontent
+!#endif
+
 !#if (vidoza.net && dom)
 vidoza.net##.btn-social.btn
 vidoza.net##.btn-social
