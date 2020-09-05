@@ -8,7 +8,7 @@
 ! [fix] exclude dood.to (break loading player)
 @@/cast_sender.js$script,3p,domain=dood.to
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
-@@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr,rtlplay.be
+@@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
 ! [fix] upstream.to/player8/provider.cast.js
 ! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
 ! test if not breaking with
