@@ -8,7 +8,7 @@
 ! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
-/\/([\w]+)(_|[^\w\d\s:]+)sw\.js/
+/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/
 
-! [fix] best loading of VideoSlide
+! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
