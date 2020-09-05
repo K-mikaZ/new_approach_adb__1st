@@ -3,6 +3,7 @@
 !#if rakuten.tv
 
 @@||rakuten.tv^$ghide
+||yb.rakuten.tv^
 
 @@||search.spotxchange.com^$image,domain=rakuten.tv
 @@||spotxchange.com^$domain=rakuten.tv
