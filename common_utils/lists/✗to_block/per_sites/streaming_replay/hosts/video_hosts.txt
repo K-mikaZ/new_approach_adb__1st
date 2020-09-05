@@ -5,8 +5,8 @@
 ! [fix] block about:blank popup (mean no-popups: mstream.website true)
 |about:$popup,important,domain=mstream.website
 |about:$popup,important,domain=embed.mystream.to
-||*^$popup,domain=mstream.website
-||*^$popup,domain=embed.mystream.to
+||*$popup,domain=mstream.website
+||*$popup,domain=embed.mystream.to
 
 ||*^$popup,domain=streamtape.net
 
