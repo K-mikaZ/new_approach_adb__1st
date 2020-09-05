@@ -12,5 +12,5 @@
 
 !#if xhr
 ! [fix] for youboranqs01.com/ping$xhr,empty
-/ping$xhr,empty
+/ping?$xhr,empty
 !#endif
