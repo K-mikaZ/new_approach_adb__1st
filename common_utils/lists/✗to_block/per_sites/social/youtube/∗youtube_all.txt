@@ -107,6 +107,7 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] because of EasyList use " @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com "
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
+=adunit&$xhr,redirect-rule=empty
 =adunit&$important,domain=youtube.com|youtu.be|yt.be
 
 !#endif
