@@ -35,7 +35,7 @@ youtube.com#@#paper-dialog.ytd-popup-container
 
 !#if script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
-/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
+!/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
 !/serviceworker-notifications.js$script,important,domain=youtube.com|youtu.be|yt.be
 !/sw.js$script,important,domain=youtube.com|youtu.be|yt.be
