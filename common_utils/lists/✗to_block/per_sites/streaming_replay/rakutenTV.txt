@@ -3,6 +3,8 @@
 !#if rakuten.tv
 
 @@||rakuten.tv^$ghide
+
+! concern youboranqs01
 ||yb.rakuten.tv^
 
 @@||search.spotxchange.com^$image,domain=rakuten.tv
