@@ -11,7 +11,6 @@
 !
 !#include youtube_parts_easylists.txt
 !
-!_204?$image,xhr,document,domain=youtube.com|youtu.be|yt.be
 @@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
 @@*/next?alt=json$domain=youtube.com|youtu.be|yt.be
 
