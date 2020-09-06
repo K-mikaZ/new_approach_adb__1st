@@ -113,6 +113,7 @@ youtube.com#@#iron-overlay-backdrop
 !||youtube.com/api/stats/atr$xhr,redirect-rule=empty
 @@=adunit&$ping,domain=youtube.com|youtu.be|yt.be
 @@||youtube.com/api/stats$1p
+_204$image,important,domain=youtube.com|youtu.be|yt.be
 
 !#endif
 ! </ end youtube rules >
