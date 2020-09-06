@@ -8,8 +8,8 @@ var fileMETA = parseHeaders((function () {
   // ==UserScript==
   // @name               You(Tube) nonstop!
   // @namespace          tag:github.com,2020:K-mik@Z:YTNonStop:PreventsAnnoyingVideoPausedDialogsFromShowingUp:TryToTakeOverTheWorld
-  // @author             K-mik@Z
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
+  // @author             K-mik@Z
   // @version            1.4.2
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
