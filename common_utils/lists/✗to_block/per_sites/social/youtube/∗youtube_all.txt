@@ -12,7 +12,7 @@
 !#include youtube_parts_easylists.txt
 !
 !_204?$image,xhr,document,domain=youtube.com|youtu.be|yt.be
-||tpc.googlesyndication.com^$subdocument,domain=youtube.com,important,badfilter
+!||tpc.googlesyndication.com^$subdocument,domain=youtube.com,important,badfilter
 @@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
 @@*/next?alt=json$domain=youtube.com|youtu.be|yt.be
 
@@ -36,7 +36,7 @@ youtube.com#@#paper-dialog.ytd-popup-container
 
 !#if script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
-!/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
+/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
 !/serviceworker-notifications.js$script,important,domain=youtube.com|youtu.be|yt.be
 !/sw.js$script,important,domain=youtube.com|youtu.be|yt.be
@@ -56,7 +56,7 @@ youtube.com#@#paper-dialog.ytd-popup-container
 !#endif
 
 !#if (xhr && 1p)
-@@||youtube.com/api/stats/atr$xhr,domain=youtube.com
+!@@||youtube.com/api/stats/atr$xhr,domain=youtube.com
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
@@ -68,7 +68,8 @@ youtube.com#@#paper-dialog.ytd-popup-container
 !#endif
 
 !!#if (other|ping)
-@@||youtube.com/api/stats/qoe$ping,domain=youtube.com
+!@@||youtube.com/api/stats/qoe$ping,domain=youtube.com
+||*$ping,important,domain=youtube.com|youtu.be|yt.be
 !!#endif
 
 !#if (media && !1p)
@@ -107,7 +108,7 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] because of EasyList use " @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com "
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
-||youtube.com/get_video_info?*=adunit&$empty,important
+=adunit&$important,domain=youtube.com|youtu.be|yt.be
 
 !#endif
 ! </ end youtube rules >
