@@ -24,6 +24,11 @@
 ###### <ins>UserScript</ins> ( for tampermonkey,greasemonkey ... / pour tampermonkey,greasemonkey ... ):
 - "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js#bypass=true)
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause") [ allez et cliquez sur le bouton raw ]*
+<br>
+
+###### <ins>ADDONS/PLUGINS</ins> ( advised / conseillés ):
+- "SponsorBlock for YouTube" [(Removes commercial messages and embedded ads)](https://sponsor.ajay.app)
+    > ###### *fr: "SponsorBlock pour YouTube" [(Supprime les messages commerciaux et publicités intégrées)](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg)*
 <br><br>
 
 ###### <ins>Disclaimer</ins>:
