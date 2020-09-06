@@ -27,8 +27,8 @@
 <br>
 
 ###### <ins>ADDONS/PLUGINS</ins> ( advised / conseillés ):
-- "SponsorBlock for YouTube" [(Removes commercial messages and embedded ads)](https://sponsor.ajay.app)
-    > ###### *fr: "SponsorBlock pour YouTube" [(Supprime les messages commerciaux et publicités intégrées)](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg)*
+- "SponsorBlock for YouTube" [(Removes commercial messages and embedded ads)](https://sponsor.ajay.app) - official site
+    > ###### *fr: "SponsorBlock pour YouTube" [(Supprime les messages commerciaux et publicités intégrées)](https://sponsor.ajay.app) - site officiel*
 <br><br>
 
 ###### <ins>Disclaimer</ins>:
