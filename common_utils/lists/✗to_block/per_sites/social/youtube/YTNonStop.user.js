@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace          tag:github.com,2020:K-mik@Z:YTNonStop:PreventsAnnoyingVideoPausedDialogsFromShowingUp:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.5.1
+  // @version            1.5.2
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
@@ -28,6 +28,6 @@ var fileMETA = parseHeaders((function () {
 }));
 // YTNS ==> Youtube Non Stop: originally script from < https://raw.githubusercontent.com/spmn/yt-dont-stop/master/js/payload.js >
 //          search for _lact in example:  view-source:https://www.youtube.com/watch?v=-A87GERl-Nc&list=RDqSKK76h6h54&index=14
-!function YTNS(){"use strict";const t={set:()=>0,get:()=>Date.now()};Object.defineProperty(window,"_lact",t)}();
+!function YTNS(){"use strict";const t={set:()=>0,get:()=>Date.now()};Object.defineProperty(window,"_lact",t);}();
 // APNRA ==> AutoPlay Next Right Away: originally script from < https://greasyfork.org/fr/scripts/23455-youtube-autoplay-next-right-away >
 setInterval(function APNRA(){var q=document.querySelector('.ytp-upnext:not([style="display: none;"]) a.ytp-upnext-autoplay-icon');q&&q.click()},400);
