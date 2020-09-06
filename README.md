@@ -27,8 +27,8 @@
 <br>
 
 ###### <ins>ADDONS/PLUGINS</ins> ( recommended / conseillés ):
-- "SponsorBlock for YouTube" [(Removes commercial messages and embedded ads)](https://sponsor.ajay.app) - official site
-    > ###### *fr: "SponsorBlock pour YouTube" [(Supprime les messages commerciaux et publicités intégrées)](https://sponsor.ajay.app) - site officiel*
+- "SponsorBlock for YouTube" [- Removes commercial messages and embedded ads (Enable "Auto Skip" in the settings/options)](https://sponsor.ajay.app)
+    > ###### *fr: "SponsorBlock pour YouTube" [- Supprime les messages commerciaux et publicités intégrées (Activez "Passage Automatique" dans les paramètres/options)](https://sponsor.ajay.app)*
 <br><br>
 
 ###### <ins>Disclaimer</ins>:
