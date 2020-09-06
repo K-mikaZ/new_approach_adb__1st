@@ -28,5 +28,6 @@ var fileMETA = parseHeaders((function () {
 }));
 // YTNS ==> Youtube Non Stop: originally script from < https://raw.githubusercontent.com/spmn/yt-dont-stop/master/js/payload.js >
 //          search for _lact in example:  view-source:https://www.youtube.com/watch?v=-A87GERl-Nc&list=RDqSKK76h6h54&index=14
+!function YTNS(){"use strict";const t={set:()=>0,get:()=>Date.now()};Object.defineProperty(window,"_lact",t)}();
 // APNRA ==> AutoPlay Next Right Away: originally script from < https://greasyfork.org/fr/scripts/23455-youtube-autoplay-next-right-away >
-!function YTNS(){"use strict";const t={set:()=>0,get:()=>Date.now()};Object.defineProperty(window,"_lact",t);setInterval(function APNRA(){var q=document.querySelector('.ytp-upnext:not([style="display: none;"]) a.ytp-upnext-autoplay-icon');q&&q.click()},400);}();
+setInterval(function APNRA(){var q=document.querySelector('.ytp-upnext:not([style="display: none;"]) a.ytp-upnext-autoplay-icon');q&&q.click()},400);
