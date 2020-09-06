@@ -110,7 +110,9 @@ youtube.com#@#iron-overlay-backdrop
 =adunit&$xhr,redirect-rule=noop-1s.mp4
 =adunit&$domain=youtube.com|youtu.be|yt.be
 ! [fix] message error on blocking "=adunit&"
-||youtube.com/api/stats/atr$xhr,redirect-rule=empty
+!||youtube.com/api/stats/atr$xhr,redirect-rule=empty
+@@=adunit&$ping,domain=youtube.com|youtu.be|yt.be
+@@||youtube.com/api/stats$1p
 
 !#endif
 ! </ end youtube rules >
