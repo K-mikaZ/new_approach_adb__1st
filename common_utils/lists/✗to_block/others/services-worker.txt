@@ -4,6 +4,7 @@
 ! read < https://developers.google.com/web/fundamentals/primers/service-workers >
 ! ---------------
 ! concern "/sw.js" && "/sw_*.js" && "/(service|socket)(-_)?worker(-)?(.*)?(.min)?.js" ...
+! [fix] exclude youtube
 ! [fix] because somes are using:  /socket\-worker(.*)?\.js/$domain=github.com
 ! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\w\d\s:]+)?([\d,\w]+)?(\.min)?\.js/$script,domain=~youtube.com|~youtu.be|~yt.be
