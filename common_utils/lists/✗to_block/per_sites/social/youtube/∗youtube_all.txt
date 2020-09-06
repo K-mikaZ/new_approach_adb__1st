@@ -68,7 +68,7 @@ youtube.com#@#paper-dialog.ytd-popup-container
 
 !!#if (other|ping)
 !@@||youtube.com/api/stats/qoe$ping,domain=youtube.com
-||*$ping,important,domain=youtube.com|youtu.be|yt.be
+||*$ping,domain=youtube.com|youtu.be|yt.be
 !!#endif
 
 !#if (media && !1p)
@@ -108,7 +108,7 @@ youtube.com#@#iron-overlay-backdrop
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
 =adunit&$xhr,redirect-rule=noop-1s.mp4
-=adunit&$important,domain=youtube.com|youtu.be|yt.be
+=adunit&$domain=youtube.com|youtu.be|yt.be
 ! [fix] message error on blocking "=adunit&"
 ||youtube.com/api/stats/atr$xhr,redirect-rule=empty
 
