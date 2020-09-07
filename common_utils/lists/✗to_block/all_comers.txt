@@ -46,8 +46,26 @@
 ||unreshiramor.com^
 ||remarketingpixel.com/stats
 
+|http*://*.club^$3p
+|http*://a.a^
+||31.220.3.200^
+||waust.at^$3p
+||d1grmk7aafb6ck.cloudfront.net^$3p
+||d36zfztxfflmqo.cloudfront.net^$3p
+||eikegolehem.com^$3p
+||e2ertt.com^$3p
+||perf.cdnads.com/perf.gif^$image
+||inabsolor.com^$3p
+||vidalak.com^$3p
+||apprefaculty.pro^$3p
+||rwn1sdb4xqa2.com^$3p
+||ayeboagnu.com^$3p
+
 ! radio.fr
 ||script.ioam.
+
+||facil-iti.com^
+||api.ipify.org^$domain=~ipify.org
 
 ||adlightning.com^$badfilter
 ||adlightning.com^$domain=~adlightning.com
