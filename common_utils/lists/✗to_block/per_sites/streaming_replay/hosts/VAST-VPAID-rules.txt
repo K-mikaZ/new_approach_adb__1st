@@ -44,7 +44,7 @@
 
 ! VAST version 1
 ! -----------------
-/(.*)\&output\=xml\_vast((?![2|3|4]+)|([1]+)?)(.*)?/$xhr,redirect-rule=noopvast-1.0,important
+/(.*)\&output\=xml\_vast((?![2|3|4]+)|([1]+)?)(.*)?/$xhr,redirect-rule=noopvast-1.0
 ||*&output=xml_vast1$xhr,redirect-rule=noopvast-1.0
 ||*&output=xml_vast&$xhr,redirect-rule=noopvast-1.0
 ||*/vast/1$xhr,redirect-rule=noopvast-1.0
@@ -56,7 +56,7 @@
 
 ! VAST version 2
 ! -----------------
-/(.*)\&output\=xml\_vast[2+](.*)?/$xhr,redirect-rule=noopvast-2.0,important
+/(.*)\&output\=xml\_vast[2+](.*)?/$xhr,redirect-rule=noopvast-2.0
 ||*&output=xml_vast2$xhr,redirect-rule=noopvast-2.0
 ||*/vast/2$xhr,redirect-rule=noopvast-2.0
 ||vast.*/v2$xhr,redirect-rule=noopvast-2.0
@@ -74,7 +74,7 @@
 
 ! VAST version 3
 ! -----------------
-/(.*)\&output\=xml\_vast[3+](.*)?/$xhr,redirect-rule=noopvast-3.0,important
+/(.*)\&output\=xml\_vast[3+](.*)?/$xhr,redirect-rule=noopvast-3.0
 ||*&output=xml_vast3$xhr,redirect-rule=noopvast-3.0
 ||vast.*/v3$xhr,redirect-rule=noopvast-3.0
 ||*/vast/3$xhr,redirect-rule=noopvast-3.0
@@ -102,7 +102,7 @@
 
 ! VAST version 4.*
 ! -----------------
-/(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(?![1-9]\d)[0]|(?![\.\-\_]+)(?!\d+))(.*)?/$xhr,redirect-rule=noopvast-4.0,important
+/(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(?![1-9]\d)[0]|(?![\.\-\_]+)(?!\d+))(.*)?/$xhr,redirect-rule=noopvast-4.0
 /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[1+](.*)?/$xhr,redirect-rule=noopvast-4.1,important
 /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[2+](.*)?/$xhr,redirect-rule=noopvast-4.2,important
 ||*&output=xml_vast4$xhr,redirect-rule=noopvast-4.0
