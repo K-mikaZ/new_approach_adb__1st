@@ -4,51 +4,6 @@
 ##a[onclick*="window.open"]
 ###fb-root:not(body):not(html)
 
-! see on tf1.fr
-||facil-iti.com^
-||api.ipify.org^$domain=~ipify.org
-
-! https://github.com/theonion/videojs-vast-plugin#usage
-! [fix] too generic
-/video.ads.$badfilter
-/video.ads.js$script
-! https://github.com/videojs/videojs-contrib-ads/blob/main/examples/basic-ad-plugin/index.html
-/videojs-contrib-ads.js$script
-
-! Comscore Analytics
-||comscore.com^$badfilter
-||www.comscore.com^$badfilter
-||comscore.com^$domain=~comscore.com
-/comscore_beacon/*
-/\/streamsense(\.min)?\.js/$script
-! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
-! see < https://github.com/Sergeyshall/jw-streamsense >
-/\/jw([0-9]{1})s{2}(\.min)?\.js/$script
-! for sure
-/jw-streamsense$script
-! https://flowplayer.com/developers/plugins/comscore
-/comscore*.js
-! comScore Stream Sense - tealium.com
-! see https://tealium.com/integrations/
-! ads integrations
-! analitycs integrations
-! ...
-
-|http*://*.club^$3p
-|http*://a.a^
-||31.220.3.200^
-||waust.at^$3p
-||d1grmk7aafb6ck.cloudfront.net^$3p
-||d36zfztxfflmqo.cloudfront.net^$3p
-||eikegolehem.com^$3p
-||e2ertt.com^$3p
-||perf.cdnads.com/perf.gif^$image
-||inabsolor.com^$3p
-||vidalak.com^$3p
-||apprefaculty.pro^$3p
-||rwn1sdb4xqa2.com^$3p
-||ayeboagnu.com^$3p
-
 ! VOIR de plus près https://www.intellipopup.com/gpu.min.js   depuis  https://www.zustream.eu/    MINER ????
 /gpu.min.js|$important
 
@@ -61,17 +16,14 @@
 
 ||sdk.iad-01.braze.com^$3p
 
-||vipicmou.net^$all,important
-||w00ur5z9jy3a.com^
 /cookieconsent*$script,important
 
 /tracking_
 
 ! service workers
-/sw.js$script,important,domain=youtube.com|youtu.be|yt.be,badfilter
-/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be,badfilter
-||vidoza.*/sw.js$script,important,badfilter
-@@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
+!/sw.js$script,important,domain=youtube.com|youtu.be|yt.be,badfilter
+!/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be,badfilter
+!||vidoza.*/sw.js$script,important,badfilter
 
 ! [misc]
 ! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for apis.google.com/_/scs/*
