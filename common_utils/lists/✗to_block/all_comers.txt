@@ -61,7 +61,13 @@
 ||rwn1sdb4xqa2.com^$3p
 ||ayeboagnu.com^$3p
 
-! radio.fr
+! found on 6play.fr
+||3wregie.eu^
+
+! found on tf1.fr
+||windows.net^
+
+! found on radio.fr
 ||script.ioam.
 
 ! Instagram Analytics and TikTok Analytics for any public Profile, Hashtag, or Followers.
