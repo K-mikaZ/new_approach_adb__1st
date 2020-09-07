@@ -18,7 +18,7 @@
 
 ###### <ins>EXTRA</ins> ( subscription / abonnement ):
 - "No WEBRTC" - Block WEBRTC (Web Real Time Communications), sometimes used for "real-time advertising" [[ Install ]](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2Fcommon_utils%2Flists%2F%E2%9C%97to_block%2Fothers%2Fno_webrtc.txt&amp;title=No%20WEBRTC)
-    > ###### *fr: "No WEBRTC" - Bloquer WEBRTC (Web Real Time Communications = littérallement communication web en temps réel), parfois utilisé pour "la publicité en temps réel"*
+    > ###### *fr: "No WEBRTC" - Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), parfois utilisé pour "la publicité en temps réel"*
 - "Hola Free VPN Popup Remover" (for chrome and firefox, replaces [addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg)) [[ Install ]](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2Fcommon_utils%2Flists%2F%E2%9C%97to_block%2Fothers%2FHola_Free_VPN_Popup_Remover.txt&amp;title=Hola%20Free%20VPN%20Popup%20Remover)
     > ###### *fr: "Hola Free VPN Popup Remover" (pour chrome et firefox, remplace l'[addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg))*
 <br>
