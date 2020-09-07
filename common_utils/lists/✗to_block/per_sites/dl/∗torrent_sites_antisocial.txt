@@ -5,5 +5,5 @@ nyaa.si##.comments
 !#endif
 
 !#if yggtorrent.
-yggtorrent.*##li:if([href*="://twitter."])
+yggtorrent.*#?#li:if([href*="://twitter."])
 !#endif
