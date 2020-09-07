@@ -90,11 +90,7 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 !#if (image && 1p)
 /vidoza\.(.{2,})\/(.*)\/(a(db_logo|t{2}ention))\./$image,1p,important
 !#endif
-!#if (script && 1p)
-! [fix] for apply correct redirect-rule
-||vidoza.*/sw.js$script,important
-!#endif
-!#if (dom && 1p)
+!#if dom
 vidoza.net##.simpleToast
 vidoza.net###asg-push-frame3
 vidoza.net##.vjs-topbar
