@@ -9,6 +9,7 @@
 
 !#if media
 /prod\-player\.tf1\.(.{2,})\/(.*)\/player/$media,important
+||*^$media,domain=tf1.fr
 !#endif
 
 !#endif
