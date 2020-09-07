@@ -1,7 +1,5 @@
 
 /\/pixel\/purs(t)?\?/
-/\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$all,3p,important
-||2mdn.net/*$media,important
 |http*://*.club^$3p
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
