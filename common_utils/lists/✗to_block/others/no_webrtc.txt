@@ -7,6 +7,9 @@
 ! Description: Block WEBRTC (Web Real Time Communications), sometimes used for "real-time advertising".
 ! Description fr: Bloquer WEBRTC (Web Real Time Communications = littérallement communication web en temps réel), parfois utilisé pour "la publicité en temps réel".
 
+! often used by imasdk.googleapis.com/js/core/bridge
+! souvent utilisé par imasdk.googleapis.com/js/core/bridge
+! see "network request log / journal des requêtes réseau" < https://animedigitalnetwork.fr/video/bleach/5532-episode-1-episode-1 >
 
 ! BLOCKING
 ! see:
