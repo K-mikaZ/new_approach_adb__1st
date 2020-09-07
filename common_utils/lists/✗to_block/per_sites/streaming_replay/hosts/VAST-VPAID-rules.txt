@@ -50,7 +50,7 @@
 ||*/vast/1$xhr,redirect-rule=noopvast-1.0
 ||vast.*/v1$xhr,redirect-rule=noopvast-1.0
 ||*/vast/VAST-1$xhr,redirect-rule=noopvast-1.0
-||*reqType=AdsSetup&protocolVersion=1$xhr,redirect-rule=noopvast-1.0
+||*AdsSetup&protocolVersion=1$xhr,redirect-rule=noopvast-1.0
 ||moviesprofit.com/watch.xml$xhr,redirect-rule=noopvast-1.0
 /vast/*_vast=1$xhr,redirect-rule=noopvast-1.0
 
@@ -61,7 +61,7 @@
 ||*/vast/2$xhr,redirect-rule=noopvast-2.0
 ||vast.*/v2$xhr,redirect-rule=noopvast-2.0
 ||*/vast/VAST-2$xhr,redirect-rule=noopvast-2.0
-||*reqType=AdsSetup&protocolVersion=2$xhr,redirect-rule=noopvast-2.0
+||*AdsSetup&protocolVersion=2$xhr,redirect-rule=noopvast-2.0
 ||video-ads.rubiconproject.com/*vast.xml$xhr,redirect-rule=noopvast-2.0
 ||serving-sys.com/*&pl=VAST$xhr,redirect-rule=noopvast-2.0
 ||xtremeserve.xyz$xhr,redirect-rule=noopvast-2.0
@@ -79,7 +79,7 @@
 ||vast.*/v3$xhr,redirect-rule=noopvast-3.0
 ||*/vast/3$xhr,redirect-rule=noopvast-3.0
 ||*/vast/VAST-3$xhr,redirect-rule=noopvast-3.0
-||*reqType=AdsSetup&protocolVersion=3$xhr,redirect-rule=noopvast-3.0
+||*AdsSetup&protocolVersion=3$xhr,redirect-rule=noopvast-3.0
 ||springserve.com$xhr,redirect=noopvast-3.0
 ||plified.pro$xhr,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xhr,redirect-rule=noopvast-3.0
@@ -114,9 +114,9 @@
 ||*/vast/4.1$xhr,redirect-rule=noopvast-4.1
 ||*/vast/4.2$xhr,redirect-rule=noopvast-4.2
 /vast/*_vast=4$xhr,redirect-rule=noopvast-4.0
-||*reqType=AdsSetup&protocolVersion=4.0$xhr,redirect-rule=noopvast-4.0
-||*reqType=AdsSetup&protocolVersion=4.1$xhr,redirect-rule=noopvast-4.1
-||*reqType=AdsSetup&protocolVersion=4.2$xhr,redirect-rule=noopvast-4.2
+||*AdsSetup&protocolVersion=4.0$xhr,redirect-rule=noopvast-4.0
+||*AdsSetup&protocolVersion=4.1$xhr,redirect-rule=noopvast-4.1
+||*AdsSetup&protocolVersion=4.2$xhr,redirect-rule=noopvast-4.2
 ! [fix] allocine.fr
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 !||pubads.g.doubleclick.net/gampad*/ads$xhr
