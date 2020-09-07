@@ -9,7 +9,7 @@
 
 @@||spotxchange.com^$domain=rakuten.tv
 
-@@/recaptcha/*
+@@/recaptcha/*$all
 
 @@||internet.nl^$generichide,specifichide
 @@||cmb.fr$generichide
