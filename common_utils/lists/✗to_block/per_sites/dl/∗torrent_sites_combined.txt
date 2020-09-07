@@ -22,6 +22,7 @@ yggtorrent.*##.animated.alert-success
 yggtorrent.*##.ad-alert-18-sub-title
 yggtorrent.*##.ad-alert-18.ad-alert-message
 yggtorrent.*##.safe_download
+yggtorrent.*#?#li.color:if([target="_blank"])
 !#endif
 
 !#if (ettvdl.com && dom)
