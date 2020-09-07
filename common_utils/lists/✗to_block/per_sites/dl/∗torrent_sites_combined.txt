@@ -3,7 +3,7 @@
 
 !*$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 ! try block all third-party except css and font.
-*$all,~css,~font,3p,important,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
+*$all,~css,~font,3p,important,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
 
 ! [fix] break search tool
 !||gktorrent.$inline-script
