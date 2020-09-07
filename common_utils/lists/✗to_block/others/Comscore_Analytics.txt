@@ -1,0 +1,21 @@
+
+! Comscore Analytics
+||comscore.com^$badfilter
+||www.comscore.com^$badfilter
+||comscore.com^$domain=~comscore.com
+/comscore_beacon/*
+/\/streamsense(\.min)?\.js/$script
+! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
+! see < https://github.com/Sergeyshall/jw-streamsense >
+/\/jw([0-9]{1})s{2}(\.min)?\.js/$script
+
+! for sure
+/jw-streamsense$script
+! https://flowplayer.com/developers/plugins/comscore
+/comscore*.js
+
+! comScore Stream Sense - tealium.com
+! see https://tealium.com/integrations/
+! ads integrations
+! analitycs integrations
+! ...
