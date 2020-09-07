@@ -1,0 +1,17 @@
+
+! EN TEST
+! -------
+! Block WEBRTC (Web Real Time Communications)
+! see:
+! < https://www.webrtcworld.com/topics/from-the-experts/articles/332745-where-we-place-ads-webrtc.htm >
+! < https://webrtc.ventures/2015/09/what-does-webrtc-mean-for-advertising-and-customer-service/ >
+! < https://www.geoedge.com/webrtc-is-the-newest-trickiest-front-in-the-fight-against-redirects/ >
+!
+! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]   example.com#@#+js(nowebrtc)
+*##+js(nowebrtc.js)
+
+! WHITELISTING
+!google.*#@#+js(nowebrtc)
+!youtube.*#@#+js(nowebrtc)
+
+canaltp.fr#@#+js(nowebrtc.js)
