@@ -2,7 +2,15 @@
 
 ! try to unbreak the world!
 
+! https://github.com/theonion/videojs-vast-plugin#usage
+! [fix] too generic
+/video.ads.$badfilter
+/video.ads.js$script
+! https://github.com/videojs/videojs-contrib-ads/blob/main/examples/basic-ad-plugin/index.html
+/videojs-contrib-ads.js$script
+
 @@/dna-client.js
+
 ! break too many videos
 ! see < https://v3.fstats.xyz/watch >
 ||v3.fstats.xyz^$badfilter
