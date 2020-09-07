@@ -32,6 +32,9 @@
 ||www.voirfilms.*/img/close_grey.png$image
 !#endif
 
+/exe/indexer.php$image,domain=ubuntu-fr.org
+*$image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
+
 ||feeds.feedburner.*?bg=$image
 ||adnxs.com$image
 */adservice.*$image
