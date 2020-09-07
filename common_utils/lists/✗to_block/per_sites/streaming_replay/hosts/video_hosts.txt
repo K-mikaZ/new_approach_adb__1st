@@ -18,8 +18,7 @@ streamtape.net##+js(window.open-defuser.js)
 ||*$popup,domain=streamtape.net
 
 !#if script
-! This product includes portions of other software.
-||*/play*/related.js$script,domain=~feurl.com|~core1player.com
+
 |https://$script,3p,domain=upstream.to,badfilter
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js or cloudflare's & jsdelivr's scripts
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=clipwatching.com
@@ -39,6 +38,13 @@ streamtape.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*upvid\.).*))/$script,3p,domain=upvid.net
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*uqload\.).*))/$script,3p,domain=uqload.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*vidto(b|d)o\.).*))/$script,3p,domain=vidtobo.com|vidtodo.com
+
+! This product includes portions of other software.
+||*/play*/related.js$script
+! somes allowing
+@@/play*/related.js$script,domain=feurl.com
+@@/play*/related.js$script,domain=core1player.com
+
 !#endif
 
 !#if dood.watch
@@ -49,15 +55,6 @@ streamtape.net##+js(window.open-defuser.js)
 ! [fix] some videos can't load if blocking
 *$script,3p,domain=feurl.com,badfilter
 ||feurl.com/asset/barr.js$badfilter
-!#if dom
-feurl.com##+js(aopr.js, linkjs)
-!#endif
-!#endif
-
-!#if gounlimited.to
-!#if (script && 1p)
-||gounlimited.to/js/pop.js|$script,important
-!#endif
 !#endif
 
 !#if (hdslecteur.xyz && dom)
@@ -70,7 +67,7 @@ hdslecteur.xyz###lkm6j,#z7wsgp3
 
 !#if (jwpcdn.com && script)
 ! This product includes portions of other software.
-||jwpcdn.com/player*/related.js$script,important
+||jwpcdn.com/play*/related.js$script,important
 !#endif
 
 !#if playtovid.com
