@@ -2,6 +2,7 @@
 ! FILTERS IN TEST (BETA)
 
 ##a[onclick*="window.open"]
+###fb-root:not(body):not(html)
 
 ! see on tf1.fr
 ||facil-iti.com^
@@ -11,8 +12,6 @@
 ! [fix] too generic
 /video.ads.$badfilter
 /video.ads.js$script
-!/videojs.vast.js$script
-!/vast-client.js$script
 ! https://github.com/videojs/videojs-contrib-ads/blob/main/examples/basic-ad-plugin/index.html
 /videojs-contrib-ads.js$script
 
