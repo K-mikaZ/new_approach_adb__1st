@@ -64,6 +64,13 @@
 ! radio.fr
 ||script.ioam.
 
+! Instagram Analytics and TikTok Analytics for any public Profile, Hashtag, or Followers.
+||analisa.io$domain=~analisa.io
+! others Analytics
+||iotechnologies.com^$badfilter
+||iotechnologies.com$domain=~iotechnologies.com
+||byteoversea.com$domain=~byteoversea.com
+
 ! see on tf1.fr
 ||facil-iti.com^
 ||api.ipify.org^$domain=~ipify.org
