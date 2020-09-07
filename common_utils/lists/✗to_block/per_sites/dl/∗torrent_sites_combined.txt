@@ -1,9 +1,8 @@
 
 ! < start torrent sites rules >
 
-!*$3p,script,frame,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si
 ! try block all third-party except images, css and font.
-*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
+*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
 
 ! [fix] break search tool
 !||gktorrent.$inline-script
@@ -26,14 +25,15 @@ yggtorrent.*##a[href*="/get_vpn"]
 yggtorrent.*#?#li.color:if([target="_blank"])
 !#endif
 
-!#if (ettvdl.com && dom)
-ettvdl.com##[href*="://lookmovie."]
-ettvdl.com##a[href*=".my-privacy-protection."]
-ettvdl.com###container-e7c9efeadc8a86436d24107e86ae655124512
-ettvdl.com##[class*=pl-]
-ettvdl.com##[id*="vpn"]
-ettvdl.com##.download_liinks_a
-ettvdl.com###kr_cr
+!#if ((ettvdl.com|ettvcentral.com) && dom)
+ettvdl.*,ettvcentral.*##[href*="://lookmovie."]
+ettvdl.*,ettvcentral.*##a[href*=".my-privacy-protection."]
+ettvdl.*,ettvcentral.*###container-e7c9efeadc8a86436d24107e86ae655124512
+ettvdl.*,ettvcentral.*##[class*=pl-]
+ettvdl.*,ettvcentral.*##[id*="vpn"]
+ettvdl.*,ettvcentral.*##.download_liinks_a
+ettvdl.*,ettvcentral.*###kr_cr
+ettvdl.*,ettvcentral.*##.kr_cr
 !#endif
 
 !#if ((torrenty.|torrent9.|torrent09.|oxtorrent.me) && dom)
