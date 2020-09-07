@@ -1,4 +1,9 @@
 
+
+/cdn-cgi/trace
+! [fix] because of https://www.cloudflare.com/ssl/encrypted-sni/
+@@encryptedsni.com/cdn-cgi/trace$xhr,domain=cloudflare.com
+
 /\/pixel\/purs(t)?\?/
 |http*://*.club^$3p
 |http*://a.a^
