@@ -21,6 +21,7 @@ yggtorrent.*###over-18-notification
 yggtorrent.*##.animated.alert-success
 yggtorrent.*##.ad-alert-18-sub-title
 yggtorrent.*##.ad-alert-18.ad-alert-message
+yggtorrent.*##.safe_download
 !#endif
 
 !#if (ettvdl.com && dom)
