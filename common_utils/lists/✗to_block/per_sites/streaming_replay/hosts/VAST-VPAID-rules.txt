@@ -26,6 +26,10 @@
 ! not sure
 ||*://vast.*
 
+! ???? to test
+!/videojs.vast.js$script
+!/vast-client.js$script
+
 ||vast.adsafeprotected.com/vast/*.js$xhr,redirect=noop.js
 
 ! VMAP version 1
