@@ -19,6 +19,9 @@
 *$xhr,3p,domain=core1player.com,badfilter
 *$script,3p,domain=core1player.com,badfilter
 
+/\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$all,3p,important
+||2mdn.net/*$media,important
+
 !#if (fstats.xyz && xhr)
 ||fstats.xyz/log$xhr,important
 !#endif
