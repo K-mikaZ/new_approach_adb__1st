@@ -31,4 +31,6 @@
 !#include ✗to_block/filter_not_sorted_bulk.txt
 !#include ✗to_block/all_comers.txt
 
+! COMSCORE ANALYTICS
+!#include ✗to_block/others/Comscore_Analytics.txt
 !
