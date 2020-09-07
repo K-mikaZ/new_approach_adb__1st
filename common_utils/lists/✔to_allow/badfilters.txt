@@ -15,7 +15,6 @@
 #@#+js(acis, atob, decodeURIComponent)
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
 yggtorrent.*,voirseries.*#@#+js(nobab)
-!gounlimited.to#@#+js(nowebrtc)
 voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
 motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
 malekal.com#@##adsense
