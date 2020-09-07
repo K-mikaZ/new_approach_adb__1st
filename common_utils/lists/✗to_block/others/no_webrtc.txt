@@ -22,4 +22,5 @@
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]   example.com#@#+js(nowebrtc.js)
 ! ------------
-canaltp.fr#@#+js(nowebrtc.js)
+! [fix] best loading map on star.fr
+!canaltp.fr#@#+js(nowebrtc.js)
