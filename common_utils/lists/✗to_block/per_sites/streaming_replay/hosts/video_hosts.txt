@@ -29,7 +29,7 @@ streamtape.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=upstream.to
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=vidlox.me
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=videobin.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=vidoza.net
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=vidoza.net|vidoza.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.).*))/$script,3p,domain=core1player.com
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's & jsdelivr's scripts or those from the same "house"
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*cdnjs\.|.*cloudflare\.com|.*\.jsdelivr\.|.*doodcdn\.).*))/$script,3p,domain=dood.to
@@ -85,6 +85,7 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 !#endif
 
 !#if vidoza.net
+@@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
 !#if (image && 1p)
 /vidoza\.(.{2,})\/(.*)\/(a(db_logo|t{2}ention))\./$image,1p,important
 !#endif
