@@ -49,13 +49,16 @@ enstream.to##.movie-notice
 enstream.to##a.adSecw
 !#endif
 
-!#if film01stream.
-film01stream.*###tabs-ad > .movieplay,a[target="_blank"],#ads
+!#if (film01stream. && dom)
+film01stream.*###tabs-ad > .movieplay
+film01stream.*##a[target="_blank"]
+film01stream.*###ads
 film01stream.*#?#span:-abp-contains(/ads/)
 film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
 !#endif
 
 !#if filmstoon.
+
 !#if dom
 filmstoon.*##[href*="://out.filmstoon."]
 filmstoon.*##.yx-share
@@ -68,8 +71,10 @@ filmstoon.*###qdiv
 ! concern #qdiv pixel: src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
 filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
 !#endif
+
 ! for sure (if dom change)
 ||in.filmstoon.*$popup
+
 !#endif
 
 !#if (filmz. && dom)
@@ -92,7 +97,7 @@ french-stream.*##.banner
 french-stream.*#?#div:-abp-has(> div > a[id*="yell[0-9]{1,}"])
 !#endif
 
-!#if kykfilmserie.com
+!#if (kykfilmserie.com && dom)
 kykfilmserie.com##div:if(> [href*=".php"])
 !#endif
 
