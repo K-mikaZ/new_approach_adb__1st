@@ -2,10 +2,12 @@
 ! streaming
 /classes/masha/masha.js
 
-!#if (popup && !1p)
-||*$3p,popup,important,domain=clipwatching.com
-||zone-stream.*^$popup
-||in.filmstoon.*^$popup
+!#if (zone-stream. && dom)
+zone-stream.*##+js(window.open-defuser)
+!#endif
+
+!#if (filmstoon. && dom)
+filmstoon.*##+js(window.open-defuser)
 !#endif
 
 !#if (allseries. && dom)
@@ -17,6 +19,7 @@ allseries.*#?#.jumbotron:if(.page-keywords)
 !#endif
 
 !#if (clipwatching.com && dom)
+clipwatching.com##+js(window.open-defuser)
 clipwatching.com##.cover
 !#endif
 
