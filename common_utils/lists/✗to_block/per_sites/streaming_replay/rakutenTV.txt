@@ -9,7 +9,7 @@
 
 @@||search.spotxchange.com^$image,domain=rakuten.tv
 @@||spotxchange.com^$domain=rakuten.tv
-||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
+!||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
 
 !#if xhr
 ||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
