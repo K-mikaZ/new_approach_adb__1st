@@ -28,6 +28,9 @@ www.facebook.com###facebook > div
 !||facebook.com/*?modules=quicklogactiontype$important,badfilter
 !||facebook.com/*?modules=messengerwebdeltastypedlogger$important,badfilter
 ~facebook.com,~fb.com##[src*="facebook.com"]
+! [fix] because of requires you to click twice on the avatar to connect
+||fbcdn.net/rsrc.php/*/-paxp-*.gif$important,badfilter
+||fbcdn.net/rsrc.php/*/-paxp-*.gif$image,important,badfilter
 
 ! </ end facebook lighter >
 !#endif
