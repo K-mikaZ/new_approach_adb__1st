@@ -1,3 +1,4 @@
+!#if (lequipe.fr && dom)
 ! block
 lequipe.fr##.Games
 lequipe.fr##.Paywall__subscriberButton
@@ -9,3 +10,4 @@ lequipe.fr###widget-image
 lequipe.fr#@#.Header__cta>.button--yellow.button
 ! styling
 lequipe.fr#$#.layout{max-width:85%;height:auto}
+!#endif
