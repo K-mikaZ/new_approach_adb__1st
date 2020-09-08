@@ -9,15 +9,17 @@
 ! [fix] exclude dood.to (break loading player)
 @@/cast_sender.js$script,3p,domain=dood.to
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
-! [fix] exclude "RTL group" (break loading site)
+! [fix] exclude "RTL group" (break loading sites)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
 ! --------------------
 ! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
 ! test if not breaking with
-! [fix] upstream.to/player8/provider.cast.js
-/play*/provider.cast.js$script
+! [fix] because of upstream.to/player8/provider.cast.js
+! [fix] because of cdn.fcine.tv/jwplayer/v/8.8.2_new/provider.cast.js
+/\/provider\.cast\.js/$script
 ! somes allowed
-!@@/play*/provider.cast.js$script,domain=
+! [fix] exclude domain.tld
+!@@/provider.cast.js$script,domain=
 ! --------------------
 !#endif
 
