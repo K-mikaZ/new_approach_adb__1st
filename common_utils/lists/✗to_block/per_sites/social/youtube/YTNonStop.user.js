@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace          tag:github.com,2020:K-mik@Z:YTNonStop:PreventsAnnoyingVideoPausedDialogsFromShowingUp:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.5.2
+  // @version            1.5.3
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js
@@ -18,7 +18,6 @@ var fileMETA = parseHeaders((function () {
   // @description:en     Prevents annoying "video paused" dialogs from appearing + auto play next video playing within 1 second of video ending.
   // @description:de     Verhindert, dass lästige "Video angehalten" -Dialoge innerhalb von 1 Sekunde nach Videoende angezeigt werden und das nächste Video automatisch wiedergegeben wird.
   // @description:fr     Empêche les boîtes de dialogue ennuyeuses «vidéo en pause» d'apparaître + lecture automatique de la vidéo suivante dans la seconde qui suit la fin de la vidéo.
-  // @description:fr-ca  Empêche les boîtes de dialogue ennuyeuses «vidéo en pause» d'apparaître + lecture automatique de la vidéo suivante dans la seconde qui suit la fin de la vidéo.
   // @description:it     Impedisce la visualizzazione di fastidiosi dialoghi "video in pausa" + riproduzione automatica del video successivo entro 1 secondo dalla fine del video.
   // @description:pt     Evita que diálogos irritantes de "vídeo em pausa" apareçam + reprodução automática do próximo vídeo em 1 segundo após o término do vídeo.
   // @include            /y(ou)?t(u)?(be)?\.(.{2,})\/(.*)/
