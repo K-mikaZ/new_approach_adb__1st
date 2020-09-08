@@ -2,8 +2,11 @@
 ! streaming
 /classes/masha/masha.js
 
-!#if 4kstreamz.co
-4kstreamz.co##.register,.keywords,.mr-3,.DESCPP
+!#if (4kstreamz.co && dom)
+4kstreamz.co##.register
+4kstreamz.co##.keywords
+4kstreamz.co##.DESCPP
+4kstreamz.co##.mr-3
 4kstreamz.co##.text-center:if(.mr-3)
 !#endif
 
