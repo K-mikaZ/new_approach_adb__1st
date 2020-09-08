@@ -1,1 +1,2 @@
 !#include others/amazon.txt
+!#include others/lequipeFR.txt
