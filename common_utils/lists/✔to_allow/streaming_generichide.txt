@@ -11,6 +11,7 @@
 @@||lesseriestreaming.$ghide
 @@||mystream.$ghide
 @@||mstream.$ghide
+@@||ok.ru$ghide
 @@||seriestream.$ghide
 @@||streamingclic.$ghide
 @@||upvid.$ghide
