@@ -1,6 +1,12 @@
-! ghide == generichide
 
 @@||fvs.io
+@@||streamroot.io^
+! for sure
+@@/videojs-hlsjs-plugin/
+
+! ghide === generichide
+! ----------------------
+
 @@||netflix.com$ghide
 
 @@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|oirfilms|udeo))|(wikiserie))\.(.{2,})/$ghide
