@@ -1,5 +1,7 @@
 
 
+/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,3p,domain=~amazon.com|~lemediatv.fr
+
 /cdn-cgi/trace
 ! [fix] because of https://www.cloudflare.com/ssl/encrypted-sni/
 @@encryptedsni.com/cdn-cgi/trace$xhr,domain=cloudflare.com
