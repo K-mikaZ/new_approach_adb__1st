@@ -5,23 +5,23 @@
 ||freshchat.com^
 ||gravatar.$all,3p,important
 
-!#if (twitch.tv && dom)
+!#if dom
+! < start dom antisocial rules >
+
+!#if twitch.tv
 twitch.tv##div.social-media-link__container
 twitch.tv##button[title="Partager"]
 twitch.tv##button[title="Share"]
 !#endif
 
-!#if (fbpurity.com && dom)
+!#if fbpurity.com
 fbpurity.com##.getsocial
 fbpurity.com###adcontaineretc
 !#endif
 
-!#if (gaak.fr && dom)
+!#if gaak.fr
 gaak.fr##.footer-socials > li:if(:not(> a[href*="mailto:"]))
 !#endif
-
-!#if dom
-! < start dom antisocial rules >
 
 !#if epicgames.com
 epicgames.com##:xpath(//*[@id="dieselReactWrapper"]/div/div[4]/main/div/div/div[2]/div/div[3]/div[2])
@@ -46,8 +46,9 @@ multiup.*##.breadcrumbs > li:not(>[href*="/contact"])
 ! </ end dom antisocial rules >
 !#endif
 
-/wp-emoji-
+! global filters
 ##[src*="/images/share."]
+/wp-emoji-
 
 ~google.com##[href*="://plus.google."]
 ~facebook.com,~fb.com##[href*="://facebook."]
