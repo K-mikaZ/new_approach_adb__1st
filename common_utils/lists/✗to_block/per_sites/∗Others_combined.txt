@@ -1,2 +1,3 @@
 !#include others/amazon.txt
 !#include others/lequipeFR.txt
+!#include others/multiUp.txt
