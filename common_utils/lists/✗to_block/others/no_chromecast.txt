@@ -1,31 +1,35 @@
 
 !#if script
 ! --------------------
+
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
-/cast_sender.js$script,3p
+/cast_sender.js$script
 /[\-|\/]chromecast([@])?(\.min)?/$script
+
 ! somes allowed
 ! [fix] exclude dood.to (break loading player)
 @@/cast_sender.js$script,3p,domain=dood.to
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
 ! [fix] exclude "RTL group" (break loading sites)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
+
 ! --------------------
-! not sure for https://www.core1player.com/asset/default/player/provider.cast.js
-! test if not breaking with
 ! [fix] because of upstream.to/player8/provider.cast.js
 ! [fix] because of cdn.fcine.tv/jwplayer/v/8.8.2_new/provider.cast.js
 /\/provider\.cast\.js/$script
+
 ! somes allowed
-! [fix] exclude domain.tld
-!@@/provider.cast.js$script,domain=
+! [fix] exclude core1player.com
+@@/provider.cast.js$script,domain=core1player.com
+@@/cast_sender.js$script,domain=core1player.com
+
 ! --------------------
 !#endif
 
 !#if css
 ! [fix] block: -chromecast.css and /cast.css
 !-chromecast.css$domain=animedigitalnetwork.fr
-!/play*/cast.css$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv,badfilter
+!/play*/cast.css$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
 /[\-|\/](chrome)?cast\.cs{2}/
 !#endif
