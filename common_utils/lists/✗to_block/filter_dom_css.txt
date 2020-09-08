@@ -11,51 +11,9 @@
 ! ------------------------------------------------------------------
 !
 
-!#if film01stream.
-film01stream.*###tabs-ad > .movieplay,a[target="_blank"],#ads
-film01stream.*#?#span:-abp-contains(/ads/)
-film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
-!#endif
-
-!#if skstream.ink
-skstream.ink##center:if(> center > a[href*="/Inscription" i])
-!#endif
-
-!#if kykfilmserie.com
-kykfilmserie.com##div:if(> [href*=".php"])
-!#endif
-
-!#if french-stream.
-french-stream.*#?#div:-abp-has(> div > a[id*="yell[0-9]{1,}"])
-!#endif
-
-!#if fr2.voirfilms.ch|series.dpstreaming.
-fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
-!#endif
-
-!#if voirseries.
-voirseries.*##.homi:if([class*="masha_"])
-!#endif
-
-!#if voiranime.com
-voiranime.com##div:if(> div > a[href*="/signup/"])
-voiranime.com##li:if(> span > a:has-text(/VIP\#/))
-voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
-voiranime.com##iframe:style(max-width:110vh!important)
-voiranime.com##a[href*="/signup/"],a[href*="://network.nutaku.net/"]
-!#endif
-
-!#if voiranime.to
-voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
-!#endif
-!
-!#if voirfilms.
-voirfilms.*##.salidor_inner,.salidor_b,.f-inner,.X,#pub
-!#endif
-
-!#if (filmgratuit.net|voirfilms.|streamavie.com|vfilms.me)
-streamavie.com,vfilms.me,voirfilms.*##center:if(.myButton)
-streamavie.com,vfilms.me,voirfilms.*##.myButton
+!#if imdb.com
+imdb.com###top_ad_wrapper
+imdb.com##.cornerstone_slot
 !#endif
 
 !#if lemonde.fr
@@ -66,16 +24,6 @@ lemonde.fr###js-engagement-banner
 linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
-!#endif
-
-!#if 4kstreamz.co
-4kstreamz.co##.register,.keywords,.mr-3,.DESCPP
-4kstreamz.co##.text-center:if(.mr-3)
-!#endif
-
-!#if imdb.com
-imdb.com###top_ad_wrapper
-imdb.com##.cornerstone_slot
 !#endif
 
 ! ---- Global -----
