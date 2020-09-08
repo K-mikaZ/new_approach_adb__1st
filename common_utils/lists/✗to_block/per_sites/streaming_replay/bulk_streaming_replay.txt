@@ -27,6 +27,10 @@ clipwatching.com##+js(window.open-defuser)
 clipwatching.com##.cover
 !#endif
 
+!#if (hds-movies.com && dom)
+hds-movies.com##button[onclick="myFunctionyt()"]
+!#endif
+
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
 hds-streaming.la##.module_single_ads
@@ -105,9 +109,19 @@ kykfilmserie.com##div:if(> [href*=".php"])
 skstream.ink##center:if(> center > a[href*="/Inscription" i])
 !#endif
 
+!#if (streamdivx. && dom)
+streamdivx.*##center:if(a.buttonxx)
+streamdivx.*##.buttonxx
+!#endif
+
 !#if (streamingclic. && dom)
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
+!#endif
+
+!#if (streamings-vf.com && dom)
+streamings-vf.com###ads
+streamings-vf.com##[href="#"]
 !#endif
 
 !#if (spotxcdn.com && media)
