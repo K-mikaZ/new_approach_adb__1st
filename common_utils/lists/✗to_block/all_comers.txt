@@ -9,10 +9,7 @@
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
 
-||vipicmou.net^$all,important
-||w00ur5z9jy3a.com^
 ||1clic1don.fr^
-||adtracker.^
 ||bebreloomr.com^
 ||betgorebysson.club^
 ||cash-ads.com^
@@ -25,8 +22,12 @@
 ||e2wysbacctt1.com^
 ||eikegolehem.com^
 ||eredunass.club^
+||ero-advertising.com^
+||exdynsrv.com^
+||exoclick.com^
 ||ezmob.com^
 ||fastenpaganhelm.com^
+||feverhappyjack.com^
 ||inno.bisrv.com^
 ||inpagepush.com^
 ||installer.betterinstaller.com^
@@ -44,6 +45,7 @@
 ||prepenseprepensedefiance.com^
 ||ptirgaux.com^
 ||qtbb6.com^
+||realsrv.com^
 ||residuestream.club^
 ||resultsgenou.club^
 ||rwn1sdb4xqa2.com^
@@ -52,6 +54,11 @@
 ||tapixesa.pro^
 ||tracking.opencandy.com.s3.amazonaws.com^
 ||unreshiramor.com^
+||vipicmou.net^$all,important
+||w00ur5z9jy3a.com^
+||webpinp.com^
+
+||adtracker.
 ||remarketingpixel.com/stats
 
 ||31.220.3.200^
