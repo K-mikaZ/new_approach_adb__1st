@@ -6,8 +6,16 @@
 zone-stream.*##+js(window.open-defuser)
 !#endif
 
-!#if (filmstoon. && dom)
-filmstoon.*##+js(window.open-defuser)
+!#if filmstoon.
+!#if dom
+! because of a href="https://in.filmstoon.icu/?blabla" target="_blank" onclick="hide('qdiv')"
+filmstoon.*##[target="_blank"]
+filmstoon.*###qdiv
+! concern #qdiv pixel: src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
+!#endif
+! for sure (if dom change)
+||in.filmstoon.*$popup
 !#endif
 
 !#if (allseries. && dom)
