@@ -42,6 +42,7 @@ french-stream.*##.banner
 
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
+hds-streaming.la##.module_single_ads
 hds-streaming.la,hds.lc###oscuridad
 hds.lc##[class="ads"]
 hds.lc##[class*="ads_"]
@@ -63,6 +64,14 @@ streamingclic.*##.rek
 
 !#if (spotxcdn.com && media)
 ||spotxcdn.com^$media
+!#endif
+
+!#if (boingtv.fr && dom)
+boingtv.fr##.leaderboard
+!#endif
+
+!#if (french--stream.co && dom)
+french--stream.co##.bx1
 !#endif
 
 !#if (voir.lesseriestreaming.com && dom)
