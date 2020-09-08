@@ -20,7 +20,7 @@
 /\/provider\.cast\.js/$script
 
 ! somes allowed
-! [fix] exclude core1player.com
+! [fix] exclude core1player.com (break loading player)
 @@/provider.cast.js$script,domain=core1player.com
 @@/cast_sender.js$script,domain=core1player.com
 
