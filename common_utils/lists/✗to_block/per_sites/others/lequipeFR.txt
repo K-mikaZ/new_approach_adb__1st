@@ -1,0 +1,11 @@
+! block
+lequipe.fr##.Games
+lequipe.fr##.Paywall__subscriberButton
+lequipe.fr##.ColAutopromo
+lequipe.fr##.OfferWidget
+lequipe.fr##[src*="/img/promo/"]
+lequipe.fr###widget-image
+! allow
+lequipe.fr#@#.Header__cta>.button--yellow.button
+! styling
+lequipe.fr#$#.layout{max-width:85%;height:auto}
