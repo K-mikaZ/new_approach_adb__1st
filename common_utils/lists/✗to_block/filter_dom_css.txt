@@ -73,6 +73,10 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 4kstreamz.co##.text-center:if(.mr-3)
 !#endif
 
+!#if imdb.com
+imdb.com###top_ad_wrapper
+imdb.com##.cornerstone_slot
+!#endif
 
 ! ---- Global -----
 ! < start global CSS rules >
@@ -152,7 +156,6 @@ femmeactuelle.fr##.ratio-16-9 > div
 film-streaming.bz##.voir-b,.c-lefermeur
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
-filmstoon.*##[href*="://out.filmstoon."],.yx-share,.fsect,.myButton
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
 filmstreaming1.top##.asgdc
 filmstreaminghd.club,filmstreaming2018.com,mamzouka.be##h5:nth-of-type(7),.col-md-8 div:nth-of-type(4),.col-md-8 div:nth-of-type(8),div.vital:nth-of-type(10),.vital div:nth-of-type(2),h5:nth-of-type(9),h5:nth-of-type(10),h5:nth-of-type(9)
