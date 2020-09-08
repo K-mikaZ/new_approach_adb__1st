@@ -2,25 +2,9 @@
 ! streaming
 /classes/masha/masha.js
 
-!#if (zone-stream. && dom)
-zone-stream.*##+js(window.open-defuser)
-!#endif
-
-!#if filmstoon.
-!#if dom
-filmstoon.*##[href*="://out.filmstoon."]
-filmstoon.*##.yx-share
-filmstoon.*##.fsect
-filmstoon.*##.myButton
-! popup concern:
-! because of a href="https://in.filmstoon.icu/?blabla" target="_blank" onclick="hide('qdiv')"
-filmstoon.*##[target="_blank"]
-filmstoon.*###qdiv
-! concern #qdiv pixel: src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
-!#endif
-! for sure (if dom change)
-||in.filmstoon.*$popup
+!#if 4kstreamz.co
+4kstreamz.co##.register,.keywords,.mr-3,.DESCPP
+4kstreamz.co##.text-center:if(.mr-3)
 !#endif
 
 !#if (allseries. && dom)
@@ -31,29 +15,13 @@ allseries.*##.myButton
 allseries.*#?#.jumbotron:if(.page-keywords)
 !#endif
 
+!#if (boingtv.fr && dom)
+boingtv.fr##.leaderboard
+!#endif
+
 !#if (clipwatching.com && dom)
 clipwatching.com##+js(window.open-defuser)
 clipwatching.com##.cover
-!#endif
-
-!#if (enstream.to && dom)
-enstream.to##.movie-notice
-enstream.to##a.adSecw
-!#endif
-
-!#if (filmz. && dom)
-filmz.*##.masha_index
-filmz.*##.myButton
-filmz.*##center:if(.myButton)
-!#endif
-
-!#if (french-stream. && dom)
-french-stream.*###f22
-french-stream.*##.bx1
-french-stream.*###\32 ad
-french-stream.*##[href*="://stakiwrisl./"]
-french-stream.*##body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div
-french-stream.*##.banner
 !#endif
 
 !#if ((hds-streaming.la|hds.lc) && dom)
@@ -73,6 +41,62 @@ hds.lc###count
 hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
 !#endif
 
+!#if (enstream.to && dom)
+enstream.to##.movie-notice
+enstream.to##a.adSecw
+!#endif
+
+!#if film01stream.
+film01stream.*###tabs-ad > .movieplay,a[target="_blank"],#ads
+film01stream.*#?#span:-abp-contains(/ads/)
+film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
+!#endif
+
+!#if filmstoon.
+!#if dom
+filmstoon.*##[href*="://out.filmstoon."]
+filmstoon.*##.yx-share
+filmstoon.*##.fsect
+filmstoon.*##.myButton
+! popup concern:
+! because of a href="https://in.filmstoon.icu/?blabla" target="_blank" onclick="hide('qdiv')"
+filmstoon.*##[target="_blank"]
+filmstoon.*###qdiv
+! concern #qdiv pixel: src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
+!#endif
+! for sure (if dom change)
+||in.filmstoon.*$popup
+!#endif
+
+!#if (filmz. && dom)
+filmz.*##.masha_index
+filmz.*##.myButton
+filmz.*##center:if(.myButton)
+!#endif
+
+!#if (french--stream.co && dom)
+french--stream.co##.bx1
+!#endif
+
+!#if (french-stream. && dom)
+french-stream.*###f22
+french-stream.*##.bx1
+french-stream.*###\32 ad
+french-stream.*##[href*="://stakiwrisl./"]
+french-stream.*##body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div
+french-stream.*##.banner
+french-stream.*#?#div:-abp-has(> div > a[id*="yell[0-9]{1,}"])
+!#endif
+
+!#if kykfilmserie.com
+kykfilmserie.com##div:if(> [href*=".php"])
+!#endif
+
+!#if (skstream.ink && dom)
+skstream.ink##center:if(> center > a[href*="/Inscription" i])
+!#endif
+
 !#if (streamingclic. && dom)
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
@@ -80,14 +104,6 @@ streamingclic.*##.rek
 
 !#if (spotxcdn.com && media)
 ||spotxcdn.com^$media
-!#endif
-
-!#if (boingtv.fr && dom)
-boingtv.fr##.leaderboard
-!#endif
-
-!#if (french--stream.co && dom)
-french--stream.co##.bx1
 !#endif
 
 !#if (voir.lesseriestreaming.com && dom)
@@ -99,9 +115,48 @@ voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 !#if (voirseries. && dom)
 voirseries.*##.movie-aye
 voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
+voirseries.*##.homi:if([class*="masha_"])
+!#endif
+
+!#if (voiranime.com && dom)
+voiranime.com##div:if(> div > a[href*="/signup/"])
+voiranime.com##li:if(> span > a:has-text(/VIP\#/))
+voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
+voiranime.com##iframe:style(max-width:110vh!important)
+voiranime.com##a[href*="/signup/"]
+voiranime.com##a[href*="://network.nutaku.net/"]
+!#endif
+
+!#if (voiranime.to && dom)
+voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
+!#endif
+!
+!#if (voirfilms. && dom)
+voirfilms.*##.salidor_inner
+voirfilms.*##.salidor_b
+voirfilms.*##.f-inner
+voirfilms.*##.X
+voirfilms.*###pub
 !#endif
 
 !#if (wiflix. && dom)
 wiflix.*##.myButton
 wiflix.*##.sadst
+!#endif
+
+!#if (zone-stream. && dom)
+zone-stream.*##+js(window.open-defuser)
+!#endif
+
+! =======
+! MULTI
+! =======
+
+!#if ((fr2.voirfilms.ch|series.dpstreaming.) && dom)
+fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
+!#endif
+
+!#if ((filmgratuit.net|voirfilms.|streamavie.com|vfilms.me) && dom)
+streamavie.com,vfilms.me,voirfilms.*##center:if(.myButton)
+streamavie.com,vfilms.me,voirfilms.*##.myButton
 !#endif
