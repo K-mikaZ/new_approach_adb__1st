@@ -8,6 +8,11 @@ zone-stream.*##+js(window.open-defuser)
 
 !#if filmstoon.
 !#if dom
+filmstoon.*##[href*="://out.filmstoon."]
+filmstoon.*##.yx-share
+filmstoon.*##.fsect
+filmstoon.*##.myButton
+! popup concern:
 ! because of a href="https://in.filmstoon.icu/?blabla" target="_blank" onclick="hide('qdiv')"
 filmstoon.*##[target="_blank"]
 filmstoon.*###qdiv
