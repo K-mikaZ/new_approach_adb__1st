@@ -1,0 +1,14 @@
+
+!#if multiup.
+
+!if dom
+multiup.*##.mfp-preloader
+multiup.*##[target="_blank"]
+multiup.*##.mfp-bg
+multiup.*##[class*="alert-info"]
+multiup.*##.mfp-ready.mfp-auto-cursor.mfp-wrap
+multiup.*##.col-md-4:if(.host[namehost="UseNet"])
+!#endif
+
+||multiup.*/welcome-message
+!#endif
