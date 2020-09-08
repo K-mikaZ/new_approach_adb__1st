@@ -21,15 +21,29 @@ gaak.fr##.footer-socials > li:if(:not(> a[href*="mailto:"]))
 !#endif
 
 !#if dom
+! < start dom antisocial rules >
+
 !#if epicgames.com
 epicgames.com##:xpath(//*[@id="dieselReactWrapper"]/div/div[4]/main/div/div/div[2]/div/div[3]/div[2])
 !#endif
+
 !#if linternaute.com
 linternaute.com##.app_btn_share:if(:not(>[class*="icon-mail"]))
 !#endif
+
 !#if star.fr
 star.fr##.list-social-networks
 !#endif
+
+!#if epicgames.com
+epicgames.com##.ipc-inline-list__item:if(.ipc-icon-link--external)
+!#endif
+
+!#if multiup.
+multiup.*##.breadcrumbs > li:not(>[href*="/contact"])
+!#endif
+
+! </ end dom antisocial rules >
 !#endif
 
 /wp-emoji-
