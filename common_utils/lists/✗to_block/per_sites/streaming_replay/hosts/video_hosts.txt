@@ -8,16 +8,6 @@ mystream.to##+js(window.open-defuser.js)
 streamtape.net##+js(window.open-defuser.js)
 fwmrm.net##+js(window.open-defuser.js)
 
-! [fix] block about:blank popup
-! mean (I think) `no-popups: mstream.website true` into ubo chrome-extension://xxxxx/dashboard.html#dyna-rules.html
-|about:$popup,important,domain=mstream.website
-|about:$popup,important,domain=embed.mystream.to
-|about:$popup,important,domain=streamtape.net
-
-||*$popup,domain=mstream.website
-||*$popup,domain=embed.mystream.to
-||*$popup,domain=streamtape.net
-
 !#if script
 
 |https://$script,3p,domain=upstream.to,badfilter
