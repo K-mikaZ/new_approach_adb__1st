@@ -41,6 +41,10 @@
 
 !#if dom
 
+!#if hds-streaming.
+hds-streaming.*##a[target="_blank"]
+!#endif
+
 !#if allseries.
 allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
@@ -79,20 +83,47 @@ fcine.*#?#[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 !#endif
 
-4kstreamz.co#?#.Players:if(:has-text(/4K Player/i))
+!#if 4kstreamz.
+4kstreamz.*#?#.Players:if(:has-text(/4K Player/i))
+!#endif
+
+!#if film01stream.
 film01stream.*###tab-ad
+!#endif
+
+!#if streaminz.com
 streaminz.com##.playbtm
-kykfilmserie.com##.content > div:nth-of-type(2)
+!#endif
+
+!#if kykfilmserie.
+kykfilmserie.*##.content > div:nth-of-type(2)
+kykfilmserie.*##.dooplay_player:if(iframe[src*=".php?"])
+!#endif
+
+!#if streamcomplet.mobi
 streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
 streamcomplet.mobi##div:if(> [class*="fake_player"])
 streamcomplet.mobi##div:if(> a[target="_blank"])
 streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
 streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
+!#endif
+
+!#if zustream.
 zustream.*##li:if(:has-text(/(VIP)(.*)?/))
+!#endif
+
+!#if streaminggratuitvf.
 streaminggratuitvf.*##button:has-text(/1080p/)
+!#endif
+
+!#if filmz.
 filmz.*##li:if(:-abp-has(i.player-hdplayer))
-streamay.co##.player-btn:if(:has-text(/HD 1080P/i))
-kykfilmserie.com##.dooplay_player:if(iframe[src*=".php?"])
+!#endif
+
+!#if streamay.
+streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
+!#endif
+
 oomoviz.*,voirseries.*,vustream.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
 
 !#endif
