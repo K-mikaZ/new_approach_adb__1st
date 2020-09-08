@@ -15,8 +15,7 @@
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
 
 ! --------------------
-! [fix] because of upstream.to/player8/provider.cast.js
-! [fix] because of cdn.fcine.tv/jwplayer/v/8.8.2_new/provider.cast.js
+! [fix] because of /player8/provider.cast.js or /jwplayer/v/8.8.2_new/provider.cast.js
 /\/provider\.cast\.js/$script
 
 ! somes allowed
