@@ -4,8 +4,8 @@
 ! Expires: 3 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/no_webrtc.txt
-! Description: Block WEBRTC (Web Real Time Communications), sometimes used for "real-time advertising".
-! Description fr: Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), parfois utilisé pour "la publicité en temps réel".
+! Description: Block WEBRTC (Web Real Time Communications), as soon as possible, sometimes used for "real-time advertising".
+! Description fr: Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), dès que possible, parfois utilisé pour "la publicité en temps réel".
 
 ! often used by imasdk.googleapis.com/js/core/bridge
 ! souvent utilisé par imasdk.googleapis.com/js/core/bridge
@@ -23,4 +23,6 @@
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
 ! example.com#@#+js(nowebrtc.js)
 ! ------------
+! [fix] break loading player
+jetload.*#@#+js(nowebrtc)
 
