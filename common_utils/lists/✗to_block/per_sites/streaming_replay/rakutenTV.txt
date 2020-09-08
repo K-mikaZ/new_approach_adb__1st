@@ -7,10 +7,6 @@
 ! concern youboranqs01
 ||yb.rakuten.tv^
 
-@@||search.spotxchange.com^$image,domain=rakuten.tv
-@@||spotxchange.com^$domain=rakuten.tv
-!||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
-
 !#if xhr
 ||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
 ||adtracker.$xhr,domain=rakuten.tv
@@ -37,8 +33,9 @@ rakuten.tv##+js(set.js, heartbeat, OK)
 ! !#endif
 
 ! [fix] try remove alert adblocker
-!||rakuten.tv/*/newrelic*.js$script,1p,badfilter
-!/rollbar.js$important,domain=rakuten.tv,badfilter
+@@||search.spotxchange.com^$image,domain=rakuten.tv
+!||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
+@@||spotxchange.com^$domain=rakuten.tv
 
 ! see also < https://prod2-kraken-cloudfront.rakuten.tv/scripts/app-b855fd8288.js >
 
