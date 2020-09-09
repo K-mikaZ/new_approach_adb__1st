@@ -8,7 +8,6 @@
 !#if dom
 ! < start dom antisocial rules >
 
-
 !#if lemediatv.fr
 lemediatv.fr##a[target="_blank"]:not([href*="video.lemediatv.fr"])
 !#endif
