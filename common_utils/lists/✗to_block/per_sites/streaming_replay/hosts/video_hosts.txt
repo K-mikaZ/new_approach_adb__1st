@@ -27,7 +27,8 @@ fwmrm.net##+js(window.open-defuser.js)
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
 !/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*m(y)?stream\.).*))/$script,frame,popup,3p,domain=mstream.website|embed.mystream.to
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*mixdrop\.).*))/$script,frame,popup,3p,domain=mixdrop.co
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*m(y)?stream\.).*))/$script,frame,popup,3p,domain=mstream.website|embed.mystream.to
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*streamtape\.).*))/$script,frame,popup,3p,domain=streamtape.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
@@ -64,12 +65,15 @@ hdslecteur.xyz###lkm6j,#z7wsgp3
 ||jwpcdn.com/play*/related.js$script,important
 !#endif
 
-!#if playtovid.com
-!#if dom
+!#if (mixdrop. && dom)
+! [fix] because of "Fuck Fuckadblock" filter
+mixdrop.*#@#+js(abort-current-inline-script, String.fromCharCode)
+!#endif
+
+!#if (playtovid.com && dom)
 playtovid.com###lkfyb
 playtovid.com###isah7vt
 playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
-!#endif
 !#endif
 
 !#if uptostream.com
