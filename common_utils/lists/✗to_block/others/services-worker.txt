@@ -17,7 +17,7 @@
 ! --------------
 
 ! [fix] exclude videobin.co (break load player)
-! see < https://videobin.co/js/sw_2333344.js >
+! see < https://videobin.co/js/sw_2333344.js > contains "var xRds = false; var tRds = true;"
 @@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$domain=videobin.co
 
 ! [fix] best loading of VideoSlide on epicgames
