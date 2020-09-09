@@ -14,7 +14,7 @@ fwmrm.net##+js(window.open-defuser.js)
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*allvid\.).*))/$script,frame,popup,3p,domain=allvid.co
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*clipwatching\.).*))/$script,frame,popup,3p,domain=clipwatching.com
-!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*feurl\.).*))/$script,frame,popup,3p,domain=feurl.com
