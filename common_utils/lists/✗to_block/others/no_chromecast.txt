@@ -3,15 +3,17 @@
 ! --------------------
 
 ! ChromeCast concern
-! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
 
-/cast_sender.js$script
+! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
+! [fix] because of /cast_framework.js & /cast_sender.js
+
+/\/cast\_(?:[\w]+)\.js/$script
 
 ! somes allowed
 ! [fix] exclude dood.to (break loading player)
-@@/cast_sender.js$script,3p,domain=dood.to
+@@/\/cast\_(?:[\w]+)\.js/$script,domain=dood.to
 ! [fix] exclude core1player.com (break loading player)
-@@/cast_sender.js$script,domain=core1player.com
+@@/\/cast\_(?:[\w]+)\.js/$script,domain=core1player.com
 
 /[\-|\/]chromecast([@])?(\.min)?/$script
 
@@ -28,7 +30,7 @@
 
 ! somes allowed
 ! [fix] exclude core1player.com (break loading player)
-@@/provider.cast.js$script,domain=core1player.com
+@@/\/provider\.cast\.js/$script,domain=core1player.com
 
 ! --------------------
 !#endif
