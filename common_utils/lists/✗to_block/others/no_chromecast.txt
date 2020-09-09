@@ -4,15 +4,23 @@
 
 ! ChromeCast concern
 ! [fix] for somes, see < https://flowplayer.com/developers/plugins/chromecast >
+
 /cast_sender.js$script
-/[\-|\/]chromecast([@])?(\.min)?/$script
 
 ! somes allowed
 ! [fix] exclude dood.to (break loading player)
 @@/cast_sender.js$script,3p,domain=dood.to
+! [fix] exclude core1player.com (break loading player)
+@@/cast_sender.js$script,domain=core1player.com
+
+/[\-|\/]chromecast([@])?(\.min)?/$script
+
+! somes allowed
+! [fix] exclude dood.to (break loading player)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
 ! [fix] exclude "RTL group" (break loading sites)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
+
 
 ! --------------------
 ! [fix] because of /player8/provider.cast.js or /jwplayer/v/8.8.2_new/provider.cast.js
@@ -21,7 +29,6 @@
 ! somes allowed
 ! [fix] exclude core1player.com (break loading player)
 @@/provider.cast.js$script,domain=core1player.com
-@@/cast_sender.js$script,domain=core1player.com
 
 ! --------------------
 !#endif
