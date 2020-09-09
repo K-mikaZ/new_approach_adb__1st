@@ -24,7 +24,7 @@
 ! example.com#@#+js(nowebrtc.js)
 ! ------------
 ! [fix] break loading player
-jetload.*#@#+js(nowebrtc)
+jetload.*#@#+js(nowebrtc.js)
 ! [fix] break loading player
-hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc)
+hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc.js)
 
