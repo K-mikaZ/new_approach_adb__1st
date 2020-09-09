@@ -26,16 +26,7 @@ rakuten.tv##+js(aopr.js, e.FuckAdBlock)
 rakuten.tv##+js(set.js, heartbeat, OK)
 !#endif
 
-!/rollbar.js$domain=rakuten.tv,important
-
-! !#if script
-!||rakuten.tv/*/newrelic*.js$script,1p
-! !#endif
-
-! [fix] try remove alert adblocker
-@@||search.spotxchange.com^$image,domain=rakuten.tv
-!||spotxchange.com/vast/$xhr,domain=rakuten.tv,important
-@@||spotxchange.com^$domain=rakuten.tv
+@@||spotxchange.com^$domain=rakuten.tv,badfilter
 
 ! see also < https://prod2-kraken-cloudfront.rakuten.tv/scripts/app-b855fd8288.js >
 
