@@ -8,6 +8,11 @@
 !#if dom
 ! < start dom antisocial rules >
 
+
+!#if lemediatv.fr
+lemediatv.fr##a[target="_blank"]:not([href*="video.lemediatv.fr"])
+!#endif
+
 !#if twitch.tv
 twitch.tv##div.social-media-link__container
 twitch.tv##button[title="Partager"]
