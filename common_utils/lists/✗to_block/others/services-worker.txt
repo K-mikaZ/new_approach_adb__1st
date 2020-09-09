@@ -5,20 +5,23 @@
 ! ---------------
 
 ! concern "/sw.js" && "/sw_*.js" && "/(service|socket)(-_)?worker(-)?(.*)?(.min)?.js" ...
-! [fix] because somes are using:  "github.com/socket-worker.js"
+! [fix] because somes are using:  "/socket-worker.js"
 ! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
-! [fix] for /service-worker-%num%.%word%.js example 6play.fr/service-worker-4.137.6.bundle.js
-/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/
-
+! [fix] for /service-worker-%num%.%word%.js example "6play.fr/service-worker-4.137.6.bundle.js"
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
-/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script,domain=~youtube.com|~youtu.be|~yt.be
+
+! Blocking
+! ---------
+
+/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script
+/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script
 
 ! Somes allowing
 ! --------------
 
 ! [fix] exclude videobin.co (break load player)
 ! see < https://videobin.co/js/sw_2333344.js > contains "var xRds = false; var tRds = true;"
-@@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$domain=videobin.co
+@@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script,domain=videobin.co
 
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
