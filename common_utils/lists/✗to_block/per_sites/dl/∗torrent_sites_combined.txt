@@ -2,7 +2,7 @@
 ! < start torrent sites rules >
 
 ! try block all third-party except images, css and font.
-*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
+*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
 ! [fix] because of imdb links
 *$popup,3p,domain=ettvcentral.com|ettvdl.com,badfilter
 
@@ -42,10 +42,7 @@ ettvdl.*,ettvcentral.*##.kr_cr
 ! [fix] liens sans inscription seulement
 torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh !important }
 torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
-!torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download")][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
-!torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"register"))])
-!torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download")][(contains(@href,"extreme-download"))])
-torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[contains(@class,"download") or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
+torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[(contains(@class,"download")) or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
 !#endif
 
 !#if ((thepiratebay0.|thepiratebay10.|pirateproxy.|thehiddenbay.|piratebay.|thepiratebay.|tpb.party|piratebayproxy.|thepiratebays.|piratebayblocked.) && dom)
