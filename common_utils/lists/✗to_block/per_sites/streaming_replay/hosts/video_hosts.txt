@@ -24,8 +24,8 @@ fwmrm.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=core1player.com
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's & jsdelivr's scripts or those from the same "house"
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
-!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*\.core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*\.m(y)?stream\.).*))/$script,frame,popup,3p,domain=embed.mystream.to|mstream.website
+!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*m(y)?stream\.).*))/$script,frame,popup,3p,domain=embed.mystream.to|mstream.website
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*vidto(b|d)o\.).*))/$script,frame,popup,3p,domain=vidtobo.com|vidtodo.com
