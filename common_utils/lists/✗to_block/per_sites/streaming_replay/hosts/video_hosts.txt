@@ -11,24 +11,24 @@ fwmrm.net##+js(window.open-defuser.js)
 !#if script
 
 |https://$script,3p,domain=upstream.to,badfilter
-! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js or cloudflare's, jquery's & jsdelivr's scripts
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|)\.).*))/$script,frame,popup,3p,domain=clipwatching.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|)\.).*))/$script,frame,popup,3p,domain=feurl.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|)\.).*))/$script,frame,popup,3p,domain=gounlimited.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=jetload.net
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=mixdrop.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=upstream.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=vidlox.me
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=videobin.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=vidoza.net|vidoza.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.).*))/$script,frame,popup,3p,domain=core1player.com
-! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's & jsdelivr's scripts or those from the same "house"
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
-!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
+! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js or cloudflare's, jquery's, jwpcdn's & jsdelivr's scripts
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=clipwatching.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=feurl.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=gounlimited.to
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=jetload.net
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=mixdrop.co
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=upstream.to
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=vidlox.me
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=videobin.co
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=vidoza.net|vidoza.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.).*))/$script,frame,popup,3p,domain=core1player.com
+! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
+!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*m(y)?stream\.).*))/$script,frame,popup,3p,domain=embed.mystream.to|mstream.website
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr)\.|.*vidto(b|d)o\.).*))/$script,frame,popup,3p,domain=vidtobo.com|vidtodo.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidto(b|d)o\.).*))/$script,frame,popup,3p,domain=vidtobo.com|vidtodo.com
 
 ! This product includes portions of other software.
 ||*/play*/related.js$script
