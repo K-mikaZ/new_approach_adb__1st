@@ -2,7 +2,7 @@
 
 /\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,3p
 @@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,3p,domain=amazon.com
-@@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,3p,domain=lemediatv.fr
+!@@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,3p,domain=lemediatv.fr
 
 /cdn-cgi/trace
 ! [fix] because of https://www.cloudflare.com/ssl/encrypted-sni/
