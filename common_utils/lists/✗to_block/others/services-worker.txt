@@ -13,5 +13,11 @@
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
 /\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script,domain=~youtube.com|~youtu.be|~yt.be
 
+! Somes allowing
+! --------------
+
+! [fix] exclude videobin.co (break load player)
+@@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$domain=videobin.co
+
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
