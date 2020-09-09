@@ -39,7 +39,7 @@ fwmrm.net##+js(window.open-defuser.js)
 ! This product includes portions of other software.
 ||*/play*/related.js$script
 ! somes allowing
-@@/play*/related.js$script,domain=feurl.com
+!@@/play*/related.js$script,domain=feurl.com
 @@/play*/related.js$script,domain=core1player.com
 @@/play*/related.js$script,domain=hydracdn.network
 
