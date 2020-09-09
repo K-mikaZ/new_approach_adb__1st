@@ -114,10 +114,23 @@ rakuten.tv#?#.detail__content__interactions>:if(>:not([type="submit"]))
 ggsplayer.xyz##.jw-settings-submenu-button.jw-icon-settings.jw-reset.jw-button-color.jw-icon-inline.jw-icon
 !#endif
 
+!#if (vudeo.net && dom)
+vudeo.net##[id*="share-"]
+!#endif
+
+!#if (fcine.tv && dom)
+fcine.tv##.footer1 > ul > li:if(a[target="_blank"])
+!#endif
+
+!#if (illimitestreaming.co && dom)
 illimitestreaming.co##.bp-btn-review.btn
+!#endif
+
+
 
 ! Global Antisocial
 ##.jw-submenu-sharing
+
 
 !
 ! Antisocial Zudbo & co
@@ -125,6 +138,7 @@ illimitestreaming.co##.bp-btn-review.btn
 ivmox.com,crebya.com,jexoom.com##[src*="/avatar.php?"]
 ivmox.com,crebya.com,jexoom.com###comments-form
 ivmox.com,crebya.com,jexoom.com###jc > h4
+ivmox.com,crebya.com,jexoom.com###comments-list-footer:if(.rss)
 !
 /com.php$subdocument,1p,important,domain=irdoz.com|eyobim.com
 irdoz.com,eyobim.com##[src*="/com.php"]
