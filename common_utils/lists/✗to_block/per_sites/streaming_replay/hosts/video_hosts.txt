@@ -17,7 +17,6 @@ fwmrm.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*clipwatching\.).*))/$script,frame,popup,3p,domain=clipwatching.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*feurl\.).*))/$script,frame,popup,3p,domain=feurl.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*filmlecteur\.).*))/$script,frame,popup,3p,domain=filmlecteur.info
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*gounlimited\.).*))/$script,frame,popup,3p,domain=gounlimited.to
@@ -35,6 +34,10 @@ fwmrm.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidoza\.).*))/$script,frame,popup,3p,domain=vidoza.net|vidoza.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidto(b|d)o\.).*))/$script,frame,popup,3p,domain=vidtobo.com|vidtodo.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vudeo\.).*))/$script,frame,popup,3p,domain=vudeo.net
+
+! sites, not players
+! [fix] because of youtube's trailers
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 
 ! This product includes portions of other software.
 ||*/play*/related.js$script
