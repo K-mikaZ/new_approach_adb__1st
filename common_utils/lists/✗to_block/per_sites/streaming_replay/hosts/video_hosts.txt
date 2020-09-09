@@ -37,7 +37,7 @@ fwmrm.net##+js(window.open-defuser.js)
 
 ! sites, not players
 ! [fix] because of youtube's trailers
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
+!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 
 ! This product includes portions of other software.
 ||*/play*/related.js$script
