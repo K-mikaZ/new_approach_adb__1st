@@ -25,4 +25,6 @@
 ! ------------
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc)
+! [fix] break loading player
+hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc)
 
