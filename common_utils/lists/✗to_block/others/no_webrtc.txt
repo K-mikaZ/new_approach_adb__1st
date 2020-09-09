@@ -7,15 +7,16 @@
 ! Description: Block WEBRTC (Web Real Time Communications), as soon as possible, sometimes used for "real-time advertising".
 ! Description fr: Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), dès que possible, parfois utilisé pour "la publicité en temps réel".
 
+! see:
+! < https://www.webrtcworld.com/topics/from-the-experts/articles/332745-where-we-place-ads-webrtc.htm >
+! < https://webrtc.ventures/2015/09/what-does-webrtc-mean-for-advertising-and-customer-service/ >
+! < https://www.geoedge.com/webrtc-is-the-newest-trickiest-front-in-the-fight-against-redirects/ >
+
 ! often used by imasdk.googleapis.com/js/core/bridge
 ! souvent utilisé par imasdk.googleapis.com/js/core/bridge
 ! see "network request log / journal des requêtes réseau" < https://animedigitalnetwork.fr/video/bleach/5532-episode-1-episode-1 >
 
 ! BLOCKING
-! see:
-! < https://www.webrtcworld.com/topics/from-the-experts/articles/332745-where-we-place-ads-webrtc.htm >
-! < https://webrtc.ventures/2015/09/what-does-webrtc-mean-for-advertising-and-customer-service/ >
-! < https://www.geoedge.com/webrtc-is-the-newest-trickiest-front-in-the-fight-against-redirects/ >
 ! -------
 *##+js(nowebrtc.js)
 
@@ -23,8 +24,10 @@
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
 ! example.com#@#+js(nowebrtc.js)
 ! ------------
+
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc.js)
+
 ! [fix] break loading player
 hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc.js)
 
