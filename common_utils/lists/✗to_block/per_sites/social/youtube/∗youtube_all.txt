@@ -31,6 +31,7 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 ! [fix] modal de connexion
 youtube.com,youtu.be,yt.be#@#paper-dialog.ytd-popup-container
+youtube.com,youtu.be,yt.be#@#ytd-popup-container
 !#endif
 
 !#if script
