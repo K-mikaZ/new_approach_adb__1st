@@ -190,6 +190,7 @@ streamroot.io$script,important,badfilter
 ||youboranqs01.com/ping$badfilter
 ! [fix] because of use "https://instant.page" addon
 ||instant.page^$badfilter
+@@||instant.page^$script
 
 !
 ! Tracking urls
