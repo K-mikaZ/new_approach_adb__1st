@@ -54,12 +54,14 @@ multiup.*##.breadcrumbs > li:not(>[href*="/contact"])
 ##[src*="/images/share."]
 /wp-emoji-
 
+! [fix] exclude all from google, because of search
+
 ~google.*##[href*="://plus.google."]
 ~facebook.com,~fb.com,~google.*##[href*="://facebook."]
 ~facebook.com,~fb.com,~google.*##[href*=".facebook."]
 ~vkontakte.ru,~google.*##[href*="://vkontakte.ru"]
 ~odnoklassniki.ru,~google.*##[href*=".odnoklassniki."]
-~mail.ru##[href*="://connect.mail.ru"]
+~mail.ru,~google.*##[href*="://connect.mail.ru"]
 ~twitter.com,~google.*##[href*="://twitter."]
 ~livejournal.com,~google.*##[href*=".livejournal.com"]
 ~pinterest.com,~pinterest.fr,~google.*##[href*="://pinterest."]
