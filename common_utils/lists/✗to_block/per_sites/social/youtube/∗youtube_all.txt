@@ -16,20 +16,21 @@
 
 !
 !#if dom
-youtube.com##.ytp-chrome-top-buttons
-youtube.com##.ytp-chrome-top
-youtube.com##.ytp-impression-link
-youtube.com##.opened
-youtube.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
-youtube.com##ytm-promoted-sparkles-web-renderer
-youtube.com###old-browser-alert
-youtube.com###dismissable.ytd-compact-promoted-item-renderer
-youtube.com##.badge-style-type-verified
+youtube.com,youtu.be,yt.be##.ytp-chrome-top-buttons
+youtube.com,youtu.be,yt.be##.ytp-chrome-top
+youtube.com,youtu.be,yt.be##.ytp-impression-link
+!youtube.com,youtu.be,yt.be##.opened
+youtube.com,youtu.be,yt.be##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
+youtube.com,youtu.be,yt.be##ytm-promoted-sparkles-web-renderer
+youtube.com,youtu.be,yt.be###old-browser-alert
+youtube.com,youtu.be,yt.be###dismissable.ytd-compact-promoted-item-renderer
+youtube.com,youtu.be,yt.be##.badge-style-type-verified
+youtube.com,youtu.be,yt.be###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
 !#if music.youtube.com
 music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 ! [fix] modal de connexion
-youtube.com#@#paper-dialog.ytd-popup-container
+youtube.com,youtu.be,yt.be#@#paper-dialog.ytd-popup-container
 !#endif
 
 !#if script
@@ -50,7 +51,7 @@ youtube.com#@#paper-dialog.ytd-popup-container
 !||*/activeview*$image,redirect-rule=1x1.gif
 !/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
-!@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
+@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
 !#endif
 
 !#if (xhr && 1p)
