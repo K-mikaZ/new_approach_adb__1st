@@ -186,6 +186,8 @@ streamroot.io$script,important,badfilter
 ! [fix]
 ||adservice.google.com^$badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
+! [fix] loading RTL Group's video faster
+||youboranqs01.com/ping$badfilter
 
 !
 ! Tracking urls
