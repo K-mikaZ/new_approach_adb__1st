@@ -45,17 +45,7 @@ youtube.com,youtu.be,yt.be#@#ytd-popup-container
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
 !#endif
 
-!#if image
-!@@||*$image,domain=youtube.com
-!||youtube.com/pcs/activeview$image,domain=youtube.com
-!||*/activeview*$image,redirect-rule=1x1.gif
-!/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
-! don't block this
-!@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
-!#endif
-
 !#if (xhr && 1p)
-!@@||youtube.com/api/stats/atr$xhr,domain=youtube.com
 ! block miniplayer when page changing (comment if you won't)
 ||youtu*.*/?pbj=1$xhr,important
 ||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
@@ -67,7 +57,6 @@ youtube.com,youtu.be,yt.be#@#ytd-popup-container
 !#endif
 
 !!#if (other|ping)
-!@@||youtube.com/api/stats/qoe$ping,domain=youtube.com
 ||*$ping,domain=youtube.com|youtu.be|yt.be
 !!#endif
 
@@ -110,9 +99,7 @@ youtube.com#@#iron-overlay-backdrop
 !=adunit&$xhr,redirect-rule=noop-1s.mp4
 =adunit&$xhr,redirect-rule=empty
 =adunit&$domain=youtube.com|youtu.be|yt.be
-! [fix] message error on blocking "=adunit&"
-!@@=adunit&$ping,domain=youtube.com|youtu.be|yt.be
-!@@||youtube.com/api/stats$1p
+! [fix] ensure blocking
 _204$image,important,domain=youtube.com|youtu.be|yt.be
 
 !#endif
