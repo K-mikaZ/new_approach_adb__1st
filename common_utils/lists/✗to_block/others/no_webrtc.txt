@@ -27,9 +27,8 @@
 
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc.js)
-
-! [fix] break loading player
 hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc.js)
+yandexcdn.com#@#+js(nowebrtc)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc.js)
