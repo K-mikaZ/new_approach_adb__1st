@@ -11,7 +11,6 @@
 !
 !#include youtube_parts_easylists.txt
 !
-@@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
 @@*/next?alt=json$domain=youtube.com|youtu.be|yt.be
 
 !
@@ -47,12 +46,12 @@ youtube.com,youtu.be,yt.be#@#ytd-popup-container
 !#endif
 
 !#if image
-@@||*$image,domain=youtube.com
+!@@||*$image,domain=youtube.com
 !||youtube.com/pcs/activeview$image,domain=youtube.com
 !||*/activeview*$image,redirect-rule=1x1.gif
 !/y(ou)?t(u)?(be)?\.(.{2,})\/((api\/stats\/(delayplay|watchtime))|p(agead|tracking))(.*)/$image,important
 ! don't block this
-@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
+!@@||youtube.com/api/stats/playback?*&inview=NaN*$image,1p
 !#endif
 
 !#if (xhr && 1p)
@@ -112,8 +111,8 @@ youtube.com#@#iron-overlay-backdrop
 =adunit&$xhr,redirect-rule=empty
 =adunit&$domain=youtube.com|youtu.be|yt.be
 ! [fix] message error on blocking "=adunit&"
-@@=adunit&$ping,domain=youtube.com|youtu.be|yt.be
-@@||youtube.com/api/stats$1p
+!@@=adunit&$ping,domain=youtube.com|youtu.be|yt.be
+!@@||youtube.com/api/stats$1p
 _204$image,important,domain=youtube.com|youtu.be|yt.be
 
 !#endif
