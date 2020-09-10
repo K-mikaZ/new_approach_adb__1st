@@ -188,6 +188,8 @@ streamroot.io$script,important,badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
 ! [fix] loading RTL Group's video faster
 ||youboranqs01.com/ping$badfilter
+! [fix] because of use "https://instant.page" addon
+||instant.page^$badfilter
 
 !
 ! Tracking urls
