@@ -12,6 +12,7 @@
 
 !#if dom
 
+#@#[src*="://consent.google."]
 #@#+js(acis, atob, decodeURIComponent)
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
 yggtorrent.*,voirseries.*#@#+js(nobab)
