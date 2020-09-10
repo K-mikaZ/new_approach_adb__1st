@@ -54,25 +54,25 @@ multiup.*##.breadcrumbs > li:not(>[href*="/contact"])
 ##[src*="/images/share."]
 /wp-emoji-
 
-~google.com##[href*="://plus.google."]
-~facebook.com,~fb.com##[href*="://facebook."]
-~facebook.com,~fb.com##[href*=".facebook."]
-~vkontakte.ru##[href*="://vkontakte.ru"]
-~odnoklassniki.ru##[href*=".odnoklassniki."]
+~google.*##[href*="://plus.google."]
+~facebook.com,~fb.com,~google.*##[href*="://facebook."]
+~facebook.com,~fb.com,~google.*##[href*=".facebook."]
+~vkontakte.ru,~google.*##[href*="://vkontakte.ru"]
+~odnoklassniki.ru,~google.*##[href*=".odnoklassniki."]
 ~mail.ru##[href*="://connect.mail.ru"]
-~twitter.com##[href*="://twitter."]
-~livejournal.com##[href*=".livejournal.com"]
-~pinterest.com,~pinterest.fr##[href*="://pinterest."]
+~twitter.com,~google.*##[href*="://twitter."]
+~livejournal.com,~google.*##[href*=".livejournal.com"]
+~pinterest.com,~pinterest.fr,~google.*##[href*="://pinterest."]
 
-~instagram.com##[href*=".instagram."]
-~instagram.com##[src*=".instagram."]
-~whatsapp.com##[href*=".whatsapp."]
-~whatsapp.com##[src*=".whatsapp."]
-~discord.com##[href*=".discord."]
-~discord.com##[src*=".discord."]
+~instagram.com,~google.*##[href*=".instagram."]
+~instagram.com,~google.*##[src*=".instagram."]
+~whatsapp.com,~google.*##[href*=".whatsapp."]
+~whatsapp.com,~google.*##[src*=".whatsapp."]
+~discord.com,~google.*##[href*=".discord."]
+~discord.com,~google.*##[src*=".discord."]
 
-~tumblr.com##[href*=".tumblr."]
-~tumblr.com##[src*=".tumblr."]
+~tumblr.com,~google.*##[href*=".tumblr."]
+~tumblr.com,~google.*##[src*=".tumblr."]
 /showads.js$script,domain=tumblr.com
 ||*tumblr.com^$3p,domain=~tumblr.com
 /share.js$script,domain=tumblr.com
