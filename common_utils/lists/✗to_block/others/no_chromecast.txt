@@ -35,9 +35,10 @@
 ! --------------------
 !#endif
 
-!#if css
 ! [fix] block: -chromecast.css and /cast.css
 !-chromecast.css$domain=animedigitalnetwork.fr
 !/play*/cast.css$domain=hqq.tv|netu.tv|vizplay.icu|waaw.tv
 /[\-|\/](chrome)?cast\.cs{2}/
-!#endif
+
+! [fix] exclude yandexcdn (break loading player)
+@@/[\-|\/](chrome)?cast\.cs{2}/$domain=yandexcdn.com
