@@ -126,6 +126,12 @@ fcine.tv##.footer1 > ul > li:if(a[target="_blank"])
 illimitestreaming.co##.bp-btn-review.btn
 !#endif
 
+!#if (mesfilms.net && dom)
+mesfilms.net##.dt_social
+mesfilms.net##.dt_social_single
+mesfilms.net##.sbox:if(.dt_social_single)
+!#endif
+
 
 
 ! Global Antisocial
