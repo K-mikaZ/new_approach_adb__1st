@@ -25,3 +25,6 @@
 
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
+
+! [fix] because break "https://static.xx.fbcdn.net/rsrc.php/v3inwR4/yW/l/fr_FR/nUYenkPrzsW.js?_nc_x=w3gyNCwVX4g"
+@@/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script,domain=facebook.com|fb.com
