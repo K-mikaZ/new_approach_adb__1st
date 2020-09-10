@@ -7,7 +7,7 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
 
-@@||spotxchange.com^$domain=rakuten.tv
+!@@||spotxchange.com^$domain=rakuten.tv
 
 @@/recaptcha/*$all
 
@@ -46,6 +46,7 @@
 
 !#if xhr
 @@||youborafds01.com^$xhr
+@@||youboranqs01.com/ping
 @@||vendorlist.consensu.org/vendorlist.json
 ! [fix] break too many video loading ( example on hds.lc )
 @@||fstats.xyz/watch$xhr
