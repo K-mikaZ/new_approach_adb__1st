@@ -28,7 +28,8 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ! [fix] too generic
 #@#.AdBox
 #@#.post-ads
-*#@#.ad-alert-wrapper
+#@#.ad-alert-wrapper
+#@#a[href^="https://www.googleadservices.com/pagead/aclk?"]
 ! [fix] too generic - break zenradio and somes other
 #@##consent-modal
 ! [fix] cause too many recaptcha
