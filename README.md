@@ -27,6 +27,8 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
 ###### <ins>UserScript</ins> ( for tampermonkey, greasemonkey ... / pour tampermonkey, greasemonkey ... ):
 - "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/social/youtube/YTNonStop.user.js#bypass=true)
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause") [ allez et cliquez sur le bouton raw ]*
+- "instant.page" (Make site pages instant and significantly improve conversion rate!) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/InstantPage.user.js)
+    > ###### *fr: "instant.page" (Rendez les pages de sites instantanées et améliorez sensiblement le taux de conversion!) [ allez et cliquez sur le bouton raw ]*
 <br>
 
 ###### <ins>ADDONS/PLUGINS</ins> ( recommended / conseillés ):
