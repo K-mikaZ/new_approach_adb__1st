@@ -24,11 +24,16 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
     > ###### *fr: "Hola Free VPN Popup Remover" (pour chrome et firefox, remplace l'[addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg))*
 <br>
 
-###### <ins>UserScript</ins> ( for tampermonkey, greasemonkey ... / pour tampermonkey, greasemonkey ... ):
+###### <ins>UserScript</ins> ( for tampermonkey, greasemonkey ... / pour tampermonkey, greasemonkey ... ):<br>
+###### USEFUL:
 - "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/YTNonStop.user.js)
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause") [ allez et cliquez sur le bouton raw ]*
+###### GAINFUL:
 - "instant.page" (Make site pages instant and significantly improve conversion rate!) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/InstantPage.user.js)
     > ###### *fr: "instant.page" (Rendez les pages de sites instantanées et améliorez sensiblement le taux de conversion!) [ allez et cliquez sur le bouton raw ]*
+###### PRIVACY / SECURITY:
+- "Trackerless Magnet URI" (Disconnect magnet links from trackers and other centralized forms of peer discovery, and use alternative distributed peer discovery methods instead.) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
+    > ###### *fr: "Trackerless Magnet URI" (Déconnecter les liens magnet des trackers et d'autres formes centralisées de découverte de pairs, et utiliser à la place des méthodes de découverte de pairs distribuées alternatives.) [ allez et cliquez sur le bouton raw ]*
 <br>
 
 ###### <ins>ADDONS/PLUGINS</ins> ( recommended / conseillés ):
