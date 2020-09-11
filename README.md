@@ -7,7 +7,7 @@
 LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
 ###### *fr: LEGENDE: Les listes avec 3 étoiles (⭒⭒⭒) sont en versions "beta"*
 <br><br>
-###### <ins>Lists</ins> ( subscription / abonnement ):
+###### <ins>LISTS</ins> ( subscription / abonnement ):
 - "Rules, Filtering and exception list" [[ Install ]](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters.txt&amp;title=Rules%2C%20Filtering%20and%20exception%20list)
     > ###### *fr: "Règles, filtrage et liste d'exceptions"*
 - "Rules, Filtering, exception list and <ins>no-chromecast</ins>" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast.txt&amp;title=Rules%2C%20Filtering%2C%20exception%20list%20and%20no-chromecast) ⭒⭒⭒
@@ -24,7 +24,7 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
     > ###### *fr: "Hola Free VPN Popup Remover" (pour chrome et firefox, remplace l'[addon](https://chrome.google.com/webstore/detail/hola-free-vpn-popup-remov/gmfaipdofemomnhpcllkoadpieibiefg))*
 <br>
 
-###### <ins>UserScript</ins> ( for tampermonkey, greasemonkey ... / pour tampermonkey, greasemonkey ... ):<br>
+###### <ins>USERSCRIPTS</ins> ( for tampermonkey, greasemonkey ... / pour tampermonkey, greasemonkey ... ):<br>
 ###### USEFUL:
 - "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/YTNonStop.user.js)
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause") [ allez et cliquez sur le bouton raw ]*
