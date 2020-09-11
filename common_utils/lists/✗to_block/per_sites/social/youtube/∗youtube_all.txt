@@ -58,15 +58,14 @@ youtube.com,youtu.be,yt.be#@#ytd-popup-container
 
 !!#if (other|ping)
 ||*$ping,domain=youtube.com|youtu.be|yt.be
+||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 !!#endif
 
 !#if (media && !1p)
 /^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com|youtu.be|yt.be
 !#endif
 
-||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 /1p-user-list/*$domain=youtube.com|youtu.be|yt.be
-!/pagead/viewthroughconversion/*$image
 
 ! Fake youtube sites with viruses
 ||yougube.com^$all,important
