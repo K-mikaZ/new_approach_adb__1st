@@ -66,6 +66,7 @@ youtube.com,youtu.be,yt.be#@#ytd-popup-container
 
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 /1p-user-list/*$domain=youtube.com|youtu.be|yt.be
+/pagead/viewthroughconversion/*$image
 
 ! Fake youtube sites with viruses
 ||yougube.com^$all,important
