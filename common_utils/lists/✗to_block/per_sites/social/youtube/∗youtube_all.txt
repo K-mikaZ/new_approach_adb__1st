@@ -99,6 +99,8 @@ youtube.com#@#iron-overlay-backdrop
 =adunit&$domain=youtube.com|youtu.be|yt.be
 ! [fix] ensure blocking
 _204$image,important,domain=youtube.com|youtu.be|yt.be
+! [fix] unblock dialog box
+youtube.com,youtu.be,yt.be#@#[id="dialog"]
 
 !#endif
 ! </ end youtube rules >
