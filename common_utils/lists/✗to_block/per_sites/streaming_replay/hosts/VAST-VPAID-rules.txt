@@ -32,6 +32,7 @@
 
 !/vast/*.js?*$xhr,redirect-rule=noop.js
 !||vast.adsafeprotected.com/vast/*.js$xhr,redirect=noop.js
+||adsafeprotected.com/vast/*skeleton.js$xhr,redirect-rule=noopvast-2.0
 
 ! VMAP version 1
 ! -----------------
