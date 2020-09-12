@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace       tag:github.com,2020:K-mik@Z:InstantPage:MakeSitePagesInstant:TryToTakeOverTheWorld
   // @copyright       2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author          K-mik@Z
-  // @version         1.0.1
+  // @version         1.1.0
   // @match           *://*/*
   // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/InstantPage.user.js
   // @downloadURL     https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/InstantPage.user.js
@@ -29,13 +29,18 @@ var fileMETA = parseHeaders((function () {
 // see < https://instant.page >
 !function() {
   "use strict";
-  // Disable Google optimisation Flicker
-  var t = document.getElementsByTagName("html"), e = !0, r = !1, a = void 0;
+  var t = document.getElementsByTagName("html"), e = !0, r = !1, a = void 0, style = document.createElement("style");
   try {
+    // Disable Google optimisation Flicker
     for (var i, l = t[Symbol.iterator](); !(e = (i = l.next()).done); e = !0) {
       var n = i.value, o = n.getAttribute("style") || "";
       n.setAttribute("style", o + "opacity:1 !important;"), n.classList.remove("async-hide");
     }
+    // `font-display` for the Masses
+    // https://css-tricks.com/font-display-masses/
+    style.textContent = "@font-face { font-display: swap; }", document.documentElement.appendChild(style);
+    var isFontDisplaySupported = -1 != style.sheet.cssRules[0].cssText.indexOf("font-display");
+    style.remove();
   } catch (t) {
     r = !0, a = t;
   } finally {
@@ -44,12 +49,14 @@ var fileMETA = parseHeaders((function () {
     } finally {
       if (r) throw a;
     }
-  };
-  // Insert Instant.Page
-  window.onload = async function() {
-    var s = document.createElement("script");
-    s.src = "//instant.page/5.1.0", s.type = "module", s.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw", 
-      document.getElementsByTagName("body")[0].appendChild(s);
+  }
+  !1 === isFontDisplaySupported && "fonts" in document ? (document.fonts.load("1em Open Sans Regular"),
+                                                          document.fonts.ready.then(function(e) {
+    document.documentElement.className += " fonts-loaded";
+  })) : document.documentElement.className += " fonts-loaded", window.onload = async function() {
+    // Insert Instant.Page
+    var e = document.createElement("script");
+    e.src = "//instant.page/5.1.0", e.type = "module", e.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw",
+      document.getElementsByTagName("body")[0].appendChild(e);
   };
 }();
-
