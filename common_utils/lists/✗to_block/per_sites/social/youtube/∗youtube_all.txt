@@ -18,7 +18,6 @@
 youtube.com,youtu.be,yt.be##.ytp-chrome-top-buttons
 youtube.com,youtu.be,yt.be##.ytp-chrome-top
 youtube.com,youtu.be,yt.be##.ytp-impression-link
-!youtube.com,youtu.be,yt.be##.opened
 youtube.com,youtu.be,yt.be##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
 youtube.com,youtu.be,yt.be##ytm-promoted-sparkles-web-renderer
 youtube.com,youtu.be,yt.be###old-browser-alert
@@ -31,6 +30,11 @@ music.youtube.com##.ytmusic-popup-container.style-scope
 ! [fix] modal de connexion
 youtube.com,youtu.be,yt.be#@#paper-dialog.ytd-popup-container
 youtube.com,youtu.be,yt.be#@#ytd-popup-container
+! [fix] unblock dialog box
+youtube.com,youtu.be,yt.be#@#[id="dialog"]
+! [fix]
+youtube.com,youtu.be,yt.be#@#.opened
+youtube.com,youtu.be,yt.be#@#.opened:remove()
 !#endif
 
 !#if script
@@ -102,8 +106,6 @@ youtube.com#@#iron-overlay-backdrop
 =adunit&$domain=youtube.com|youtu.be|yt.be
 ! [fix] ensure blocking
 _204$image,important,domain=youtube.com|youtu.be|yt.be
-! [fix] unblock dialog box
-youtube.com,youtu.be,yt.be#@#[id="dialog"]
 
 !#endif
 ! </ end youtube rules >
