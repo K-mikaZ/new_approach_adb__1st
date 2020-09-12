@@ -34,7 +34,7 @@ var fileMETA = parseHeaders((function () {
     // Disable Google optimisation Flicker
     for (var i, l = t[Symbol.iterator](); !(e = (i = l.next()).done); e = !0) {
       var n = i.value, o = n.getAttribute("style") || "";
-      n.setAttribute("style", o + "opacity:1 !important;"), n.classList.remove("async-hide");
+      n.setAttribute("style", o + " opacity:1 !important;"), n.classList.remove("async-hide");
     }
     // `font-display` for the Masses
     // https://css-tricks.com/font-display-masses/
