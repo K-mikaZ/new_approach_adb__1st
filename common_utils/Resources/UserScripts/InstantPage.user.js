@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace       tag:github.com,2020:K-mik@Z:InstantPage:MakeSitePagesInstant:TryToTakeOverTheWorld
   // @copyright       2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author          K-mik@Z
-  // @version         1.2.0
+  // @version         1.2.1
   // @match           *://*/*
   // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/InstantPage.user.js
   // @downloadURL     https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/InstantPage.user.js
@@ -44,16 +44,18 @@ var fileMETA = parseHeaders((function () {
     // `font-display` for the Masses, see < https://css-tricks.com/font-display-masses/ >
     var css = "@font-face{font-display:swap}"; // or style.textContent = "@font-face { font-display: swap; }";
     ////////////////////////////////////////////////////////////////////////////////////////////////
-    // /!\ IMPORTANT:  Don't use `UglifyJS 3 - Online JavaScript minifier` here, reduce performance
+    // /!\ IMPORTANT:  Don't use `UglifyJS 3 - Online JavaScript minifier` here,
+    //                 reduce performance. Prefer <https://javascript-minifier.com>
     /////////////////
-    if (s.styleSheet) {
+    /*if (s.styleSheet) {
       // This is required for IE8 and below.
       s.styleSheet.cssText = css;
     } else {
       s.appendChild(document.createTextNode(css));
-    }
-    ////////////////////////////////////////////////////////////////////////////////////////////////
+    }*/
+    s.styleSheet ? s.styleSheet.cssText = css : s.appendChild(document.createTextNode(css));
     document.documentElement.appendChild(s);
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     var isFontDisplaySupported = -1 != style.sheet.cssRules[0].cssText.indexOf("font-display");
     style.remove();
   } catch (t) {
