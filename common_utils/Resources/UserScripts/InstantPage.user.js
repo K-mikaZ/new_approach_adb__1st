@@ -27,7 +27,7 @@ var fileMETA = parseHeaders((function () {
 // replace instant.page addon
 // < https://chrome.google.com/webstore/detail/instant-page/hmjffbhgdpbhfemdjncjjpfcjiaiflbi >
 // see < https://instant.page >
-! function() {
+!function() {
     "use strict";
     var t = document.getElementsByTagName("html"),
         e = !0,
