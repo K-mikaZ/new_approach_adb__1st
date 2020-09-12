@@ -11,10 +11,10 @@ var fileMETA = parseHeaders((function () {
   // @name:fr            Magnets URL sans traqueurs
   // @name:it            Magneti URL senza tracker
   // @name:pt            Ímãs de URL sem rastreadores
-  // @namespace          tag:github.com,2020:K-mik@Z:TrackerlessMagnetURI:DisconnectMagnetLinksFromTrackersAndOtherCentralizedFormsOfPeerDiscoveryAndUseAlternativeDistributedPeerDiscoveryMethodsInstead:TryToTakeOverTheWorld
+  // @namespace          tag:github.com,2020:K-mik@Z:TrackerlessMagnetURI:RewritesAllMagnetURILinksToForcesBitTorrentClientsToUseTrackerlessRatherThanServerAssistedPeerDiscovery:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.1.0
+  // @version            1.1.1
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
@@ -23,10 +23,8 @@ var fileMETA = parseHeaders((function () {
   // @description:fr     Déconnecter les liens magnet des trackers et d'autres formes centralisées de découverte de pairs, et utiliser à la place des méthodes de découverte de pairs distribuées alternatives.
   // @description:it     Disconnetti i collegamenti magnetici dai tracker e da altre forme centralizzate di scoperta tra pari e utilizza invece metodi di scoperta tra pari distribuiti alternativi.
   // @description:pt     Desconecte os links magnéticos de rastreadores e outras formas centralizadas de descoberta de pares e use métodos alternativos de descoberta de pares distribuídos.
-  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(nya{2})\.(.{2,})\/*$/
-  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(et{2}v(.{2,8}))\.(.{2,})\/*$/
-  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?((.*)?tor{2}ent(.*)?)\.(.{2,})\/*$/
   // @match              */torrent/*
+  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:nya{2})\.(.{2,})\/*$/
   // @exclude            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:yg{2}tor{2}ent)\.(.{2,})\/*$/
   // @exclude            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:cpasbien)\.(.{2,})\/*$/
   // @grant              none
