@@ -27,14 +27,29 @@ var fileMETA = parseHeaders((function () {
 // replace instant.page addon
 // < https://chrome.google.com/webstore/detail/instant-page/hmjffbhgdpbhfemdjncjjpfcjiaiflbi >
 // see < https://instant.page >
-(function(){
-  'use strict';
-  var InstantPage = function InstantPage() {
-    var s=document.createElement("script");
-    s.src="//instant.page/5.1.0";
-    s.type="module";
-    s.integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw";
-    document.getElementsByTagName("body")[0].appendChild(s);
-  }
-  window.onload = InstantPage;
-})();
+!function() {
+  "use strict";
+  // Disable Google optimisation Flicker
+  var t = document.getElementsByTagName("html"), e = !0, r = !1, a = void 0;
+  try {
+    for (var i, l = t[Symbol.iterator](); !(e = (i = l.next()).done); e = !0) {
+      var n = i.value, o = n.getAttribute("style") || "";
+      n.setAttribute("style", o + "opacity:1 !important;"), n.classList.remove("async-hide");
+    }
+  } catch (t) {
+    r = !0, a = t;
+  } finally {
+    try {
+      e || null == l.return || l.return();
+    } finally {
+      if (r) throw a;
+    }
+  };
+  // Insert Instant.Page
+  window.onload = function() {
+    var s = document.createElement("script");
+    s.src = "//instant.page/5.1.0", s.type = "module", s.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw", 
+      document.getElementsByTagName("body")[0].appendChild(s);
+  };
+}();
+
