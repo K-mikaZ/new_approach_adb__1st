@@ -14,7 +14,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace          tag:github.com,2020:K-mik@Z:TrackerlessMagnetURI:DisconnectMagnetLinksFromTrackersAndOtherCentralizedFormsOfPeerDiscoveryAndUseAlternativeDistributedPeerDiscoveryMethodsInstead:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.0
+  // @version            1.1.0
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
@@ -23,8 +23,12 @@ var fileMETA = parseHeaders((function () {
   // @description:fr     Déconnecter les liens magnet des trackers et d'autres formes centralisées de découverte de pairs, et utiliser à la place des méthodes de découverte de pairs distribuées alternatives.
   // @description:it     Disconnetti i collegamenti magnetici dai tracker e da altre forme centralizzate di scoperta tra pari e utilizza invece metodi di scoperta tra pari distribuiti alternativi.
   // @description:pt     Desconecte os links magnéticos de rastreadores e outras formas centralizadas de descoberta de pares e use métodos alternativos de descoberta de pares distribuídos.
-  // @include            *://*/*
-  // @match              magnet:?xt=*
+  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(nya{2})\.(.{2,})\/*$/
+  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(et{2}v(.{2,8}))\.(.{2,})\/*$/
+  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?((.*)?tor{2}ent(.*)?)\.(.{2,})\/*$/
+  // @match              */torrent/*
+  // @exclude            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:yg{2}tor{2}ent)\.(.{2,})\/*$/
+  // @exclude            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:cpasbien)\.(.{2,})\/*$/
   // @grant              none
   // @icon               data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHdpZHRoPSIxMDAiPgogIDxwYXRoIGZpbGw9IiNkZWRlZGUiIGQ9Ik02LjY2NiA2LjY2NnYyMGgyNi42Njh2LTIwSDYuNjY2eiIvPgogIDxwYXRoIGQ9Ik0wIDB2ODYuNjY2aDYuNjY2djYuNjY4SDIwVjEwMGg2MHYtNi42NjZoMTMuMzM0di02LjY2OEgxMDBWMEg2MHYzMy4zMzRoNi42NjZWNjBINjB2Ni42NjZINDBWNjBoLTYuNjY2VjMzLjMzNEg0MFYwSDB6bTYuNjY2IDYuNjY2aDI2LjY2OHYyMGgtNi42Njh2NDBoNi42Njh2Ni42NjhoMzMuMzMydi02LjY2OGg2LjY2OHYtNDBoLTYuNjY4di0yMGgyNi42NjhWODBoLTYuNjY4djYuNjY2SDczLjMzNHY2LjY2OEgyNi42NjZ2LTYuNjY4SDEzLjMzNFY4MEg2LjY2NlY2LjY2NnoiLz4KICA8cGF0aCBmaWxsPSJyZWQiIGQ9Ik02LjY2NiAyNi42NjZWODBoNi42Njh2Ni42NjZoMTMuMzMydjYuNjY4aDQ2LjY2OHYtNi42NjhoMTMuMzMyVjgwaDYuNjY4VjI2LjY2NmgtMjB2NDAuMDAyaC02LjY2NnY2LjY2NmgtLjAwMnYtLjExNUg2MHYuMTE1SDQwdi0uMTE1aC02LjY2NnYuMTE1aC0uMDAydi02LjY2NmgtNi42NjZWMjYuNjY2aC0yMHoiLz4KICA8cGF0aCBmaWxsPSIjZGVkZWRlIiBkPSJNNjYuNjY2IDYuNjY2djIwaDI2LjY2OHYtMjBINjYuNjY2eiIvPgo8L3N2Zz4K
   // ==/UserScript==
