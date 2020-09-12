@@ -9,12 +9,13 @@
 ! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
 ! [fix] for /service-worker-%num%.%word%.js example "6play.fr/service-worker-4.137.6.bundle.js"
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
+! [fix] because break "https://static.xx.fbcdn.net/rsrc.php/v3inwR4/yW/l/fr_FR/nUYenkPrzsW.js?_nc_x=w3gyNCwVX4g"
 
 ! Blocking
 ! ---------
 
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script
-/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script
+/\/([\w]+)(?:[^\w\d\s:]+|[-~_.]+)sw\.js/$script
 
 ! Somes allowing
 ! --------------
@@ -26,5 +27,5 @@
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
 
-! [fix] because break "https://static.xx.fbcdn.net/rsrc.php/v3inwR4/yW/l/fr_FR/nUYenkPrzsW.js?_nc_x=w3gyNCwVX4g"
-@@/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script,domain=facebook.com|fb.com
+! [fix] because break some fbcdn.net scripts
+!@@/\/([\w]+)([^\W\d\s:]+|[-~_.])sw\.js/$script,domain=facebook.com|fb.com
