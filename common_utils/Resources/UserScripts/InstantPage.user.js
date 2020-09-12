@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace       tag:github.com,2020:K-mik@Z:InstantPage:MakeSitePagesInstant:TryToTakeOverTheWorld
   // @copyright       2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author          K-mik@Z
-  // @version         1.1.0
+  // @version         1.2.0
   // @match           *://*/*
   // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/InstantPage.user.js
   // @downloadURL     https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/InstantPage.user.js
@@ -27,18 +27,33 @@ var fileMETA = parseHeaders((function () {
 // replace instant.page addon
 // < https://chrome.google.com/webstore/detail/instant-page/hmjffbhgdpbhfemdjncjjpfcjiaiflbi >
 // see < https://instant.page >
-!function() {
+! function() {
   "use strict";
-  var t = document.getElementsByTagName("html"), e = !0, r = !1, a = void 0, style = document.createElement("style");
+  var t = document.getElementsByTagName("html"),e = !0, r = !1, a = void 0, s = document.createElement("style");
   try {
-    // Disable Google optimisation Flicker
+    // DISABLE "Google optimisation Flicker"
     for (var i, l = t[Symbol.iterator](); !(e = (i = l.next()).done); e = !0) {
-      var n = i.value, o = n.getAttribute("style") || "";
+      var n = i.value,
+          o = n.getAttribute("style") || "";
       n.setAttribute("style", o + " opacity:1 !important;"), n.classList.remove("async-hide");
     }
-    // `font-display` for the Masses
-    // https://css-tricks.com/font-display-masses/
-    style.textContent = "@font-face { font-display: swap; }", document.documentElement.appendChild(style);
+    // CSS OPTIMIZATION:
+    // it is recommended to nulling (reset) the onload handler once it is used, as some browsers will occasionally call the handler when switching the rel attribute to the stylesheet.
+    // https://github.com/filamentgroup/loadCSS#user-content-how-to-use-loadcss-recommended-example
+    s.type = "text/css", s.setAttribute("rel", "preload"), s.setAttribute("as", "style"), s.setAttribute("onload", "this.onload=null;this.rel='stylesheet'");
+    // `font-display` for the Masses, see < https://css-tricks.com/font-display-masses/ >
+    var css = "@font-face{font-display:swap}"; // or style.textContent = "@font-face { font-display: swap; }";
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // /!\ IMPORTANT:  Don't use `UglifyJS 3 - Online JavaScript minifier` here, reduce performance
+    /////////////////
+    if (s.styleSheet) {
+      // This is required for IE8 and below.
+      s.styleSheet.cssText = css;
+    } else {
+      s.appendChild(document.createTextNode(css));
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    document.documentElement.appendChild(s);
     var isFontDisplaySupported = -1 != style.sheet.cssRules[0].cssText.indexOf("font-display");
     style.remove();
   } catch (t) {
