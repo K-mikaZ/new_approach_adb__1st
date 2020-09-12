@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace       tag:github.com,2020:K-mik@Z:InstantPage:MakeSitePagesInstant:TryToTakeOverTheWorld
   // @copyright       2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author          K-mik@Z
-  // @version         1.0
+  // @version         1.0.1
   // @match           *://*/*
   // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/InstantPage.user.js
   // @downloadURL     https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/InstantPage.user.js
@@ -46,7 +46,7 @@ var fileMETA = parseHeaders((function () {
     }
   };
   // Insert Instant.Page
-  window.onload = function() {
+  window.onload = async function() {
     var s = document.createElement("script");
     s.src = "//instant.page/5.1.0", s.type = "module", s.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw", 
       document.getElementsByTagName("body")[0].appendChild(s);
