@@ -32,8 +32,8 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
 - "instant.page" (Make site pages instant and significantly improve conversion rate!) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/InstantPage.user.js)
     > ###### *fr: "instant.page" (Rendez les pages de sites instantanées et améliorez sensiblement le taux de conversion!) [ allez et cliquez sur le bouton raw ]*
 ###### PRIVACY / SECURITY:
-- "Trackerless Magnet URI" (Disconnect magnet links from trackers and other centralized forms of peer discovery, and use alternative distributed peer discovery methods instead.) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
-    > ###### *fr: "Trackerless Magnet URI" (Déconnecter les liens magnet des trackers et d'autres formes centralisées de découverte de pairs, et utiliser à la place des méthodes de découverte de pairs distribuées alternatives.) [ allez et cliquez sur le bouton raw ]*
+- "Trackerless Magnet URI" (Rewrites all Magnet URI links to forces BitTorrent clients to use trackerless rather than server-assisted peer-discovery.) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
+    > ###### *fr: "Trackerless Magnet URI" (Réécrit tous les liens URI Magnet pour obliger les clients BitTorrent à utiliser la découverte par les pairs sans suivi plutôt que par le serveur.) [ allez et cliquez sur le bouton raw ]*
 <br>
 
 ###### <ins>ADDONS/PLUGINS</ins> ( recommended / conseillés ):
