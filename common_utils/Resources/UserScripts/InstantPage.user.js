@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace       tag:github.com,2020:K-mik@Z:InstantPage:MakeSitePagesInstant:TryToTakeOverTheWorld
   // @copyright       2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author          K-mik@Z
-  // @version         1.2.1
+  // @version         1.2.2
   // @match           *://*/*
   // @homepageURL     https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/InstantPage.user.js
   // @downloadURL     https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/InstantPage.user.js
@@ -27,53 +27,52 @@ var fileMETA = parseHeaders((function () {
 // replace instant.page addon
 // < https://chrome.google.com/webstore/detail/instant-page/hmjffbhgdpbhfemdjncjjpfcjiaiflbi >
 // see < https://instant.page >
-!function() {
-  "use strict";
-  var t = document.getElementsByTagName("html"),e = !0, r = !1, a = void 0, s = document.createElement("style");
-  try {
-    // DISABLE "Google optimisation Flicker"
-    for (var i, l = t[Symbol.iterator](); !(e = (i = l.next()).done); e = !0) {
-      var n = i.value,
-          o = n.getAttribute("style") || "";
-      n.setAttribute("style", o + " opacity:1 !important;"), n.classList.remove("async-hide");
-    }
-    // CSS OPTIMIZATION:
-    // it is recommended to nulling (reset) the onload handler once it is used, as some browsers will occasionally call the handler when switching the rel attribute to the stylesheet.
-    // https://github.com/filamentgroup/loadCSS#user-content-how-to-use-loadcss-recommended-example
-    s.type = "text/css", s.setAttribute("rel", "preload"), s.setAttribute("as", "style"), s.setAttribute("onload", "this.onload=null;this.rel='stylesheet'");
-    // `font-display` for the Masses, see < https://css-tricks.com/font-display-masses/ >
-    var css = "@font-face{font-display:swap}"; // or style.textContent = "@font-face { font-display: swap; }";
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    // /!\ IMPORTANT:  Don't use `UglifyJS 3 - Online JavaScript minifier` here,
-    //                 reduce performance. Prefer <https://javascript-minifier.com>
-    /////////////////
-    /*if (s.styleSheet) {
-      // This is required for IE8 and below.
-      s.styleSheet.cssText = css;
-    } else {
-      s.appendChild(document.createTextNode(css));
-    }*/
-    s.styleSheet ? s.styleSheet.cssText = css : s.appendChild(document.createTextNode(css));
-    document.documentElement.appendChild(s);
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    var isFontDisplaySupported = -1 != style.sheet.cssRules[0].cssText.indexOf("font-display");
-    style.remove();
-  } catch (t) {
-    r = !0, a = t;
-  } finally {
+! function() {
+    "use strict";
+    var t = document.getElementsByTagName("html"),
+        e = !0,
+        n = !1,
+        a = void 0,
+        s = document.createElement("style");
     try {
-      e || null == l.return || l.return();
+        // DISABLE "Google optimisation Flicker"
+        for (var o, l = t[Symbol.iterator](); !(e = (o = l.next()).done); e = !0) {
+            var i = o.value,
+                d = i.getAttribute("style") || "";
+            i.setAttribute("style", d + " opacity:1 !important;"), i.classList.remove("async-hide");
+        }
+        // CSS OPTIMIZATION: `font-display` for the Masses, see < https://css-tricks.com/font-display-masses/ >
+        // it is recommended to nulling (reset) the onload handler once it is used, as some browsers will occasionally call the handler when switching the rel attribute to the stylesheet.
+        // https://github.com/filamentgroup/loadCSS#user-content-how-to-use-loadcss-recommended-example
+        s.type = "text/css", s.setAttribute("rel", "preload"), s.setAttribute("as", "style"),
+            s.setAttribute("onload", "this.onload=null;this.rel='stylesheet'");
+        var r = "@font-face{font-display:swap}";
+        s.styleSheet ? s.styleSheet.cssText = r : s.appendChild(document.createTextNode(r)),
+            document.documentElement.appendChild(s);
+        var m = -1 != s.sheet.cssRules[0].cssText.indexOf("font-display"); // is Font Display Supported
+        s.remove();
+    } catch (t) {
+        n = !0, a = t;
     } finally {
-      if (r) throw a;
-    }
-  }
-  !1 === isFontDisplaySupported && "fonts" in document ? (document.fonts.load("1em Open Sans Regular"),
-                                                          document.fonts.ready.then(function(e) {
-    document.documentElement.className += " fonts-loaded";
-  })) : document.documentElement.className += " fonts-loaded", window.onload = async function() {
-    // Insert Instant.Page
-    var e = document.createElement("script");
-    e.src = "//instant.page/5.1.0", e.type = "module", e.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw",
-      document.getElementsByTagName("body")[0].appendChild(e);
-  };
+        try {
+            e || null == l.return || l.return();
+        } finally {
+            if (n) throw a;
+        }
+    }!1 === m && "fonts" in document ? (document.fonts.load("1em Open Sans Regular"),
+        document.fonts.ready.then(function(t) {
+            document.documentElement.className += " fonts-loaded";
+        })) : document.documentElement.className += " fonts-loaded";
+    // FASTEST CSS ANIMATION
+    var c = Math.ceil(1e3 * Math.random()),
+        u = document.createElement("style");
+    u.id = `stylus-${c}`, u.className = "stylus", u.type = "text/css", u.setAttribute("rel", "preload"),
+        u.setAttribute("as", "style"), u.setAttribute("onload", "this.onload=null;this.rel='stylesheet'");
+    var y = "*{-webkit-animation-delay:0s!important;animation-delay:0!important}*[hidden]{display:none!important;visibility:hidden!important;opacity=0!important}video::-internal-media-controls-download-button{display:visible!important}video::-webkit-media-controls-panel{width:auto!important;}";
+    u.styleSheet ? u.styleSheet.cssText = y : u.appendChild(document.createTextNode(y)),
+        document.getElementsByTagName("head")[0].appendChild(u), window.onload = async function() {
+            var t = document.createElement("script");
+            t.src = "//instant.page/5.1.0", t.type = "module", t.integrity = "sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw",
+                document.getElementsByTagName("body")[0].appendChild(t); // Insert Instant.Page
+        };
 }();
