@@ -10,12 +10,13 @@
 ! [fix] for /service-worker-%num%.%word%.js example "6play.fr/service-worker-4.137.6.bundle.js"
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
 ! [fix] because break "https://static.xx.fbcdn.net/rsrc.php/v3inwR4/yW/l/fr_FR/nUYenkPrzsW.js?_nc_x=w3gyNCwVX4g"
+!       or "https://static.xx.fbcdn.net/rsrc.php/v3ia974/yr/l/fr_FR/Sw5vxwnGfRcMWka_6uZADnMRo0X4FkEszAd9GLyVsLYhAubyJwThWokOmWAYglHKxfRp22uuZ9z6-UV0yr2PSMaFNoFKPdQSsboXFSAnarUKI82QpEBwn2qOYWgB_eDbd81VSJDtIj8mBRI8KYwjaqkiKQkyxiN01nS9_LPHl0LwXNKYz07s7LZpdXc.js?_nc_x=w3gyNCwVX4g"
 
 ! Blocking
 ! ---------
 
 /\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script
-/\/([\w]+)(?:[^\w\d\s:]+|[-~_.]+)sw\.js/$script
+/\/([\w]+)(?:([^\w\d\s:]+|[-~_.]+)+)(?:[s][w]+)\.js/$script
 
 ! Somes allowing
 ! --------------
