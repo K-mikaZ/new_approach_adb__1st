@@ -5,12 +5,10 @@
 ###fb-root:not(body):not(html)
 
 ! IN TEST
+! block Ping, Beacon...
 ||*^$other
-! is this really necessary
-! ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 
-! WTF ???
-! about:blank ??
+! WTF ??? about:blank ??
 ://:0/
 
 ! VOIR de plus près https://www.intellipopup.com/gpu.min.js   depuis  https://www.zustream.eu/    MINER ????
