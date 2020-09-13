@@ -4,6 +4,15 @@
 ##a[onclick*="window.open"]
 ###fb-root:not(body):not(html)
 
+! IN TEST
+||*^$other
+! is this really necessary
+! ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
+
+! WTF ???
+! about:blank ??
+://:0/
+
 ! VOIR de plus près https://www.intellipopup.com/gpu.min.js   depuis  https://www.zustream.eu/    MINER ????
 /gpu.min.js|$important
 
