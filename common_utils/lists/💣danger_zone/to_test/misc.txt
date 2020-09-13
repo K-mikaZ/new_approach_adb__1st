@@ -7,6 +7,7 @@
 ! IN TEST
 ! block Ping, Beacon...
 ||*^$other
+! no really necessary: ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 
 ! WTF ??? about:blank ??
 ://:0/
