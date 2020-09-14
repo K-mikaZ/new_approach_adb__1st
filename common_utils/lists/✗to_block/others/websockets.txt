@@ -5,8 +5,8 @@
 ! Advertising and Analytics (A&A) companies have used WebSockets
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 
-wss://tracker.$important
-wss://
+/^ws{2}([\:]+)(([\/]{2})+)tracker([\.]+)/$important
+/^ws{2}([\:]+)(([\/]{2})+)/
 
 ! somes allowing (if you want)
 
