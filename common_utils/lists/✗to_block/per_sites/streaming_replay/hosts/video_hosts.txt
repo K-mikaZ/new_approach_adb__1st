@@ -10,14 +10,7 @@ fwmrm.net##+js(window.open-defuser.js)
 
 !#if script
 
-|https://$script,3p,domain=upstream.to,badfilter
-! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*allvid\.).*))/$script,frame,popup,3p,domain=allvid.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*aparat\.).*))/$script,frame,popup,3p,domain=aparat.cam
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*bidzen\.).*))/$script,frame,popup,3p,domain=bidzen.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*clipwatching\.).*))/$script,frame,popup,3p,domain=clipwatching.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*core1player\.).*))/$script,frame,popup,3p,domain=core1player.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, google's, github's, jquery's, jwpcdn's& jsdelivr's scripts or those from the same "house"
+|https://$script,3p,domain=upstream.to,badfilter! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, google's, github's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*allvid\.).*))/$script,frame,popup,3p,domain=allvid.co
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*aparat\.).*))/$script,frame,popup,3p,domain=aparat.cam
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*bidzen\.).*))/$script,frame,popup,3p,domain=bidzen.co
@@ -45,29 +38,7 @@ fwmrm.net##+js(window.open-defuser.js)
 
 ! sites, not players
 ! [fix] because of youtube's trailers
-!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*doodcdn\.).*))/$script,frame,popup,3p,domain=dood.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*feurl\.).*))/$script,frame,popup,3p,domain=feurl.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*filmlecteur\.).*))/$script,frame,popup,3p,domain=filmlecteur.info
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*gounlimited\.).*))/$script,frame,popup,3p,domain=gounlimited.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*hdslecteur\.).*))/$script,frame,popup,3p,domain=hdslecteur.xyz
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*((iam|hydra)cdn|playhydrax)\.).*))/$script,frame,popup,3p,domain=hydracdn.network
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*jetload\.).*))/$script,frame,popup,3p,domain=jetload.net
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*mixdrop\.).*))/$script,frame,popup,3p,domain=mixdrop.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*m(y)?stream\.).*))/$script,frame,popup,3p,domain=mstream.website|embed.mystream.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*mycdn\.).*))/$script,frame,popup,3p,domain=ok.ru
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*streamtape\.).*))/$script,frame,popup,3p,domain=streamtape.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upstream\.).*))/$script,frame,popup,3p,domain=upstream.to
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidlox\.).*))/$script,frame,popup,3p,domain=vidlox.me
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vid(eobin|lox)\.).*))/$script,frame,popup,3p,domain=videobin.co
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidoza\.).*))/$script,frame,popup,3p,domain=vidoza.net|vidoza.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidto(b|d)o\.).*))/$script,frame,popup,3p,domain=vidtobo.com|vidtodo.com
-/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vudeo\.).*))/$script,frame,popup,3p,domain=vudeo.net
-
-! sites, not players
-! [fix] because of youtube's trailers
-!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*google(apis)?\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
+!/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 
 ! This product includes portions of other software.
 ||*/play*/related.js$script
