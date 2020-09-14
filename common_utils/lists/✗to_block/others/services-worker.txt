@@ -15,20 +15,20 @@
 ! Blocking
 ! ---------
 
-/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script
-/\/([\w]+)(?:([^\w\d\s:]+|[-~_.]+)+)(?:[s][w]+)\.js/$script
+/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script
+/([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script
 
 ! Somes allowing
 ! --------------
 
 ! [fix] exclude videobin.co (break load player)
 ! see < https://videobin.co/js/sw_2333344.js > contains "var xRds = false; var tRds = true;"
-@@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script,domain=videobin.co
+@@([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script,domain=videobin.co
 
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
 
 ! [fix] because break some fbcdn.net scripts
-@@/\/([\w]+)(?:([^\w\d\s:]+|[-~_.]+)+)(?:[s][w]+)\.js/$script,domain=facebook.com|fb.com
-@@/\/s(ocket|ervice)?(_|[^\w\d\s:]+)?w(orker)?(?!f(object)?)([^\s:]+)?([\d,\w]+)?(\.min)?\.js/$script,domain=facebook.com|fb.com
+@@([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script,domain=facebook.com|fb.com
+@@([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script,domain=facebook.com|fb.com
 
