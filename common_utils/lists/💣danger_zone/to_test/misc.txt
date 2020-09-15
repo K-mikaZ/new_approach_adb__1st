@@ -7,6 +7,8 @@
 ! IN TEST
 ! block Ping, Beacon...
 ||*^$other
+! [fix] googlesource.com
+@@||*$other,domain=googlesource.com
 ! no really necessary: ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 
 ! WTF ??? about:blank ??
@@ -28,15 +30,154 @@
 
 /tracking_
 
-! service workers
-!/sw.js$script,important,domain=youtube.com|youtu.be|yt.be,badfilter
-!/sw.js|$script,domain=~youtube.com|~youtu.be|~yt.be,badfilter
-!||vidoza.*/sw.js$script,important,badfilter
+! 13/09/2020 browserleaks.com
+!/([\/]+)getconfig([\/]+)sodar/
+||tpc.googlesyndication.com^$badfilter
+/[\=\&\_\-\.\/\?\s\d]sodar[\=\&\_\-\.\/\?\s\d]/$3p
+
+!||inpagepush.com^$badfilter
+!||in-page-push.com^$badfilter
+! block inpagepush.* & in[-_]page[-_]push.*
+/([\.\/\s\d]+)in([\_\-\s\d]+)?page([\_\-\s\d]+)?push([\.\s\d]+)/$important
+
+/1clkn/*$script,important,badfilter
+/[\=\&\_\-\.\/\?\s\d]1clkn[\=\&\_\-\.\/\?\s\d]/$3p,important
+
+
+@@||instant.page^$script,badfilter
+@@/([\/]+)instant([\.]+)page([\/]+)/$script
+
+!/blank.$image
+/[\/]blank[\.]/$image
+
+! TO TEST: regex from Rule AdBlocker / Rule Blocker   < https://chrome.google.com/webstore/detail/rule-adblocker/eghccljfpccnmlhanhdjlckeonamodad >
+=adunit&$domain=youtube.com|youtu.be|yt.be,badfilter
+/\%22ad/$~font,~css
+/[\=\&\_\-\.\/\?\s\d]a(d|t)?fmt[\=\&\_\-\.\/\?\s\d]/
+/\.in{2}ovid\./
+/[\=\&\_\-\.\/\?\s\d]darla[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adunit[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adhost[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adview[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adsales[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adsystem[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]adserver[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]hostingcloud[\=\&\_\-\.\/\?\s\d]/$important
+
+!/1p-user-list/962985656/?backend=innertube&
+backend=innertube$domain=youtube.com|youtu.be|yt.be,badfilter
+_204$image,important,domain=youtube.com|youtu.be|yt.be,badfilter
+!/log_event$domain=youtube.com|youtu.be|yt.be,badfilter
+*$ping,domain=youtube.com,badfilter
+||youtube.com/api/stats/atr$badfilter
+||youtube.com/api/stats/qoe?$badfilter
+||youtube.com/ptracking?$badfilter
+||googlevideo.com/generate_204$image,badfilter
+!/[\_]204([\?]|$)/$important,domain=youtube.com|youtu.be|yt.be
+/[\_]204([\?]|$)/
+!/generate_204
+!/[\=\&\_\-\.\/\?\s\d]log[\_]event[\=\&\_\-\.\/\?\s\d]/$important,domain=youtube.com|youtu.be|yt.be
+/[\=\&\_\-\.\/\?\s\d]backend[=]innertube[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]paral{2}eladinteraction[\=\&\_\-\.\/\?\s\d]/$domain=youtube.com|youtu.be|yt.be
+
+||pagead2.googlesyndication.com^$script,important,domain=1shortlink.com|2pi.pw|4geek.co|9xbuddy.com|9xbuddy.org|abdoutech.com|activistpost.com|addictinginfo.com|addictinginfo.org|adnan-tech.com|akunssh.net|alfonzorachel.com|allenbwest.com|allenwestrepublic.com|allporncomic.com|allthingsvegas.com|alwalednet.blogspot.com|americanewshub.com|americasfreedomfighters.com|animedigitalnetwork.fr|animesanka.com|anitokyo.tv|apk.sekilastekno.com|appleeats.com|arlinadzgn.com|arponag.xyz|atv.pw|audiotag.info|baixarsoftware.com|barbwire.com|bb4sp.com|behealth-id.xyz|bestfunnyjokes4u.com|bighealthreport.com|bigleaguepolitics.com|bizpacreview.com|boomsbeat.com|botayit.com|boycracked.co|boycracked.com|breakingfirst.com|btgyama.blogspot.com|bugout.news|bulletsfirst.net|buzzlamp.com|canadafreepress.com|cdahd.ml|celebrity-gossip.net|cheapism.com|cheatsheet.com|chicksonright.com|clashamerica.com|clashdaily.com|classicalite.com|cloud.fw27.xyz|collapse.news|comicallyincorrect.com|conservativefiringline.com|constitution.com|coron.tech|craigjames.com|dailyheadlines.net|dailysurge.com|damnlol.com|deneenborelli.com|designbump.com|directexpose.com|dr-farfar.com|duellinksmeta.com|dvdgayonline.com|eaglerising.com|eiflix.com|elrellano.com|enstarz.com|evil.news|faithit.com|fcportables.com|felanovia.com|files2zip.com|firm-ware27.blogspot.com|firstinfreedomdaily.com|flash-reset.blogspot.com|folhabv.com.br|foreverymom.com|free-mp3-download.net|freedom.news|freedomdaily.com|freedomforce.com|freedomoutpost.com|freefilesync.org|freeiptv.life|freemcserver.net|frkmusic.cc|funnyand.com|gamer4k.com|gembelcit.net|glitch.news|glitterphoto.net|godfatherpolitics.com|godmods.com|gopocalypse.org|grammarist.com|greatamericanrepublic.com|gsmcracktools.blogspot.com|guardianlv.com|gulf-up.com|guns.news|hackspirit.com|hautereport.com|hispolitica.com|hngn.com|htnovo.net|hulblog.com|husseinezzat.com|icepop.com|idntheme.com|ifyouonlynews.com|infowars.com|instigatornews.com|insurance-corporate.blogspot.com|intellectualconservative.com|iptvbin.com|itechpost.com|iunlocked.org|janmorganmedia.com|jmusic.me|jobsnhire.com|joeforamerica.com|juicerhead.com|justdiy.com|kdramastars.com|keepandbear.com|kharisma-adzana.blogspot.com|kitploit.com|knowledgedish.com|kpopstarz.com|kurazone.net|lastresistance.com|latinpost.com|leechall.download|legalinsurrection.com|liberty.news|libertyunyielding.com|lidblog.com|lifebuzz.com|linkszone.in|madworldnews.com|magesy.blog|magesy.pro|majesy.com|marfilius.blogspot.com|masihbelajar.com|memoryhackers.org|mexashare.com|millionpictures.co|mitly.us|moneyversed.com|moongourd.com|musictimes.com|mylink.how|mylink.love|mysterious-dev.com|naminakiky.com|natural.news|naturalblaze.com|naturalsociety.com|natureworldnews.com|nsfw247.to|nsspot.net|nuggetroyale.io|nulledpremium.com|o4anews.com|okyanime.com|omglyrics.com|omgmusik.com|onedrive.booogle.net|onehack.us|onlinecoursebay.com|opednews.com,badfilter
+/[\=\&\_\-\.\/\?\s\d]pagead[\=\&\_\-\.\/\?]/
+
+
+/[\=\&\_\-\.\/\?\s\d]ptracking[\=\&\_\-\.\/\?\s\d]/
+
+! pageview (analytics)
+||collector.githubapp.com/github/page_view^$image,important,badfilter
+||collector.githubapp.com^$badfilter
+!||collector.githubapp.com^$badfilter
+!/comscore_beacon/*$badfilter
+/[\=\&\_\-\.\/\?\s\d](page|active)([\_\-\s\d])?view(s)?[\=\&\_\-\.\/\?\s\d]/
+/\/streamsense(\.min)?\.js/$script,badfilter
+/[\=\&\_\-\.\/\?\s\d]streamsense[\=\&\_\-\.\/\?\s\d]/$script
+
+
+*google.*/images/cleardot.gif|$image,important,badfilter
+/[\=\&\_\-\.\/\?\s\d]cleardot[\=\&\_\-\.\/\?\s\d]gif([\=\&\_\-\.\/\?\s\d]|$)/
+/[\=\&\_\-\.\/\?\s\d]p(i)?x((e)?l)?[\=\&\_\-\.\/\?\s\d]gif([\=\&\_\-\.\/\?\s\d]|$)/
+
+
+/scrip*/compatibility.js|$script,important,badfilter
+/[\=\&\_\-\.\/\?\s\d]compatibility[\=\&\_\-\.\/\?\s\d]js/$script,3p,important
+
+/(in(tegrations\/breadcrumbs|voke))\.js/$script,important,badfilter
+/[\=\&\_\-\.\/\?\s\d]invoke[\=\&\_\-\.\/\?\s\d]js/$script,3p,important
+/[\=\&\_\-\.\/\?\s\d]integrations[\/]breadcrumbs[\=\&\_\-\.\/\?\s\d]/
+
+/cdn-cgi/apps/head/*$script,1p,important,badfilter
+/cdn-cgi/apps/head/*$script,1p,badfilter
+/cdn-cgi/trace$badfilter
+||hqq.tv/cdn-cgi/trace$badfilter
+/[\=\&\_\-\.\/\?\s\d]cdn[\-]cgi[\/]trace([\=\&\_\-\.\/\?\s\d]|$)?/$1p
+/[\=\&\_\-\.\/\?\s\d]cdn[\-]cgi[\/]ap{2}s[\/]head[\=\&\_\-\.\/\?\s\d]?/$1p
+! [fix] because of "https://1.1.1.1/help"
+@@/cdn-cgi/trace$domain=1.1.1.1
+
+
+!/ads-iframe-display.php? or /a(d(s)?)?/display.php
+/[\=\&\_\-\.\/\?\s\d]a(d)?((s)?-iframe-|[\=\&\_\-\.\/\?\s\d])display[\.]php[\=\&\_\-\.\/\?\s\d]/$3p,important
+
+/\/apu\.(php|hh)\?/$important,badfilter
+!/\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$3p,important,badfilter
+/[\=\&\_\-\.\/\?\s\d]apu[\=\&\_\-\.\/\?\s\d](php|h{2})[\?]/$3p,important
+
+
+/\/cast\_(?:[\w]+)\.js/$script,badfilter
+/([\/]+)cast([\_]+)(?:[\w]+)\.js/$script
+
+||gew-dealer.spotify.com/?access_token=$websocket,domain=open.spotify.com,badfilter
+||messaging.deezer.com/websocket$websocket,important,badfilter
+
+
+! ANTISOCIAL
+/[\=\&\_\-\.\/\?\s\d]OneGoogleWidgetUi[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]SocialPeopleHovercardUi[\=\&\_\-\.\/\?\s\d]/
+/wp-emoji-$badfilter
+/[\=\&\_\-\.\/\?\s\d]emoji[\=\&\_\-\.\/\?\s\d]/
+
+! very generic CARREFULL
+||netflix.com/*/log|$badfilter
+||fstats.xyz/log$xhr,important,badfilter
+||fstats.xyz^$badfilter
+/[/]log([?/]|$)/
+
+/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/
+
+!/(.*)?(firstimpres{2}ion|highwebmedia|(((sentry\-)cdn)|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important,badfilter
+!||tagbucket.cc^$badfilter
+!||googletagmanager.com/gtag/$3p,badfilter
+!*googletagmanager.*/gtag/js*$script,badfilter
+!*googletagmanager.*^$script,badfilter
+/[\=\&\_\-\.\/\?\s\d](g)?tag(s)?[\=\&\_\-\.\/\?\s\d]/
+
+
+/newrelic-*.js$script,badfilter
+/rollbar.js$badfilter
+/rollbar.min.js$badfilter
+/[\=\&\_\-\.\/\?\s\d]rol{2}bar[\=\&\_\-\.\/\?\s\d]/
+/[\=\&\_\-\.\/\?\s\d]newrelic[\=\&\_\-\.\/\?\s\d]/
+
+
+||api.github.com/_private/browser/stats$important,badfilter
+/[\=\&\_\-\.\/\?\s\d]stats([\=\&\_\-\.\/\?\s\d]|$)/
+/[\=\&\_\-\.\/\?\s\d]col{2}ector([\=\&\_\-\/\?\s\d]|$)/
+/[\=\&\_\-\.\/\?\s\d]notrack([\=\&\_\-\.\/\?\s\d]|$)/
+/[\=\&\_\-\.\/\?\s\d]sendReport([\=\&\_\-\.\/\?\s\d]|$)/
+
+@@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr,badfilter
+@@/[\=\&\_\-\.\/\?\s\d]preroll[\=\&\_\-\.\/\?\s\d]/
+
 
 ! [misc]
 ! [FIX] ~cloudfront.net because of openwhyd.org use *.cloudfront.net for apis.google.com/_/scs/*
-||apis.google.com/_/scs/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
+||apis.google.com/_/scs/$3p,domain=~google.com|~googleapis.com|~googlesource.com|~chromium.org|~cloudfront.net
 @@||apis.google.com/_/scs/*$script,domain=cloudfront.net
+@@||apis.google.com^$script,domain=chromium.org
 ||google.com/xjs/_/*$3p,domain=~google.com|~googleapis.com|~cloudfront.net
 @@||google.com/xjs/_/*$script,domain=cloudfront.net
+
 
