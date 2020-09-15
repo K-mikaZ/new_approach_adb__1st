@@ -41,11 +41,10 @@ fwmrm.net##+js(window.open-defuser.js)
 !/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*y(ou)?t(u(be)?)?\.|.*fcine\.).*))/$script,frame,popup,3p,domain=fcine.tv
 
 ! This product includes portions of other software.
-||*/play*/related.js$script
+/[\/\s\d]related[\.\s\d]js/$script
 ! somes allowing
-!@@/play*/related.js$script,domain=feurl.com
-@@/play*/related.js$script,domain=core1player.com
-@@/play*/related.js$script,domain=hydracdn.network
+@@/related.js$script,domain=core1player.com
+@@/related.js$script,domain=hydracdn.network
 
 !#endif
 
@@ -65,11 +64,6 @@ hdslecteur.xyz##+js(aopr.js, /\_0x*/)
 !hdslecteur.xyz##+js(aopr.js, _0x5751)
 !hdslecteur.xyz##+js(aopr.js, _0x5f22)
 hdslecteur.xyz###lkm6j,#z7wsgp3
-!#endif
-
-!#if (jwpcdn.com && script)
-! This product includes portions of other software.
-||jwpcdn.com/play*/related.js$script,important
 !#endif
 
 !#if (mixdrop. && dom)
