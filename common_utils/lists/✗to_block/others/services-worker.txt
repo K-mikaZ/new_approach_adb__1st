@@ -24,12 +24,12 @@
 
 ! [fix] exclude videobin.co (break load player)
 ! see < https://videobin.co/js/sw_2333344.js > contains "var xRds = false; var tRds = true;"
-@@([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script,domain=videobin.co
+@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=videobin.co
 
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
 
 ! [fix] because break some fbcdn.net scripts
-!@@([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script,domain=facebook.com|fb.com
-!@@([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script,domain=facebook.com|fb.com
+!@@/([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script,domain=facebook.com|fb.com
+!@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=facebook.com|fb.com
 
