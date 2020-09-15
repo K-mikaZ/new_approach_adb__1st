@@ -136,8 +136,9 @@ _204$image,important,domain=youtube.com|youtu.be|yt.be,badfilter
 ! ANTISOCIAL
 /[\=\&\_\-\.\/\?\s\d]OneGoogleWidgetUi[\=\&\_\-\.\/\?\s\d]/
 /[\=\&\_\-\.\/\?\s\d]SocialPeopleHovercardUi[\=\&\_\-\.\/\?\s\d]/
-/wp-emoji-$badfilter
-/[\=\&\_\-\.\/\?\s\d]emoji[\=\&\_\-\.\/\?\s\d]/
+!/wp-emoji-$badfilter
+!/[\=\&\_\-\.\/\?\s\d]emoji[\=\&\_\-\.\/\?\s\d]/
+!@@/[\=\&\_\-\.\/\?\s\d]emoji[\=\&\_\-\.\/\?\s\d]/$domain=facebook.com|fb.com
 
 ! very generic CARREFULL
 ||netflix.com/*/log|$badfilter
