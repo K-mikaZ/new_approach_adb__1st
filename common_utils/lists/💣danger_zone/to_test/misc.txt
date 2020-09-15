@@ -153,7 +153,8 @@ _204$image,important,domain=youtube.com|youtu.be|yt.be,badfilter
 !||googletagmanager.com/gtag/$3p,badfilter
 !*googletagmanager.*/gtag/js*$script,badfilter
 !*googletagmanager.*^$script,badfilter
-/[\=\&\_\-\.\/\?\s\d](g)?tag(s)?[\=\&\_\-\.\/\?\s\d]/
+! [fix] because of blocking "&tag=[economie]|[entreprises]|[planete]|[energies]"
+/[\.\/](g)?tag(s)?[\.\/]/
 
 
 /newrelic-*.js$script,badfilter
