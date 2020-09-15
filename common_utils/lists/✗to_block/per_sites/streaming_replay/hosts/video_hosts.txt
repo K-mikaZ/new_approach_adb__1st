@@ -73,6 +73,10 @@ hdslecteur.xyz###lkm6j,#z7wsgp3
 !#endif
 
 !#if (mixdrop. && dom)
+! [fix] remove an unnecessary div (causes 2 clicks for launch play) 
+!mixdrop.*##div:xpath(/html/body/div[3])
+!mixdrop.*##div[style*="position:absolute;top:0;left:0;width: 100%;height: 100%;z-index:"]
+mixdrop.*##div[onclick*="$(this).remove();"]
 ! [fix] because of "Fuck Fuckadblock" filter
 mixdrop.*#@#+js(abort-current-inline-script, String.fromCharCode)
 !#endif
