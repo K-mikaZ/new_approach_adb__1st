@@ -9,13 +9,14 @@
 ! [fix] exclude "/swfobject.js" or "/swf.js" like "jexoom.com/31qs4xwcds87sd87qs/plugins/content/avreloaded/swfobject.js"
 ! [fix] for /service-worker-%num%.%word%.js example "6play.fr/service-worker-4.137.6.bundle.js"
 ! [fix] include "/*-sw.js" like "washingtonpost.com/notification-sw.js"
+! [fix] because of blocking "lemonde.fr/bucket/5d440cd94c396e148daf56fc961b2457ad7be12d/js/standalone/swg.js"
 ! [fix] because break "https://static.xx.fbcdn.net/rsrc.php/v3inwR4/yW/l/fr_FR/nUYenkPrzsW.js?_nc_x=w3gyNCwVX4g"
 !       or "https://static.xx.fbcdn.net/rsrc.php/v3ia974/yr/l/fr_FR/Sw5vxwnGfRcMWka_6uZADnMRo0X4FkEszAd9GLyVsLYhAubyJwThWokOmWAYglHKxfRp22uuZ9z6-UV0yr2PSMaFNoFKPdQSsboXFSAnarUKI82QpEBwn2qOYWgB_eDbd81VSJDtIj8mBRI8KYwjaqkiKQkyxiN01nS9_LPHl0LwXNKYz07s7LZpdXc.js?_nc_x=w3gyNCwVX4g"
 
 ! Blocking
 ! ---------
 
-/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?(?!f(object)?)([\D,\W,\d,\w])?([\d].*|[\.][\w]+)?\.js/$script
+/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script
 /([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script
 
 ! Somes allowing
