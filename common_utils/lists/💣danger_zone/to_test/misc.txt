@@ -52,7 +52,6 @@
 
 ! TO TEST: regex from Rule AdBlocker / Rule Blocker   < https://chrome.google.com/webstore/detail/rule-adblocker/eghccljfpccnmlhanhdjlckeonamodad >
 =adunit&$domain=youtube.com|youtu.be|yt.be,badfilter
-/\%22ad/$~font,~css
 /[\=\&\_\-\.\/\?\s\d]a(d|t)?fmt[\=\&\_\-\.\/\?\s\d]/
 /\.in{2}ovid\./
 /[\=\&\_\-\.\/\?\s\d]darla[\=\&\_\-\.\/\?\s\d]/
@@ -63,6 +62,8 @@
 /[\=\&\_\-\.\/\?\s\d]adsystem[\=\&\_\-\.\/\?\s\d]/
 /[\=\&\_\-\.\/\?\s\d]adserver[\=\&\_\-\.\/\?\s\d]/
 /[\=\&\_\-\.\/\?\s\d]hostingcloud[\=\&\_\-\.\/\?\s\d]/$important
+! to test
+!/\%22ad/$~font,~css
 
 !/1p-user-list/962985656/?backend=innertube&
 backend=innertube$domain=youtube.com|youtu.be|yt.be,badfilter
