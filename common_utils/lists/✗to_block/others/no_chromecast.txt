@@ -22,6 +22,10 @@
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
 ! [fix] exclude "RTL group" (break loading sites)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
+! [fix] exclude uqload.com,vudeo.net (break loading player)
+@@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=vudeo.net
+@@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=uqload.com
+uqload.com,vudeo.net##.chromecast-button
 
 
 ! --------------------
