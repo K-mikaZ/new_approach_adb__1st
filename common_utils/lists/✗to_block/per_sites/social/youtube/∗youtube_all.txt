@@ -105,7 +105,11 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] use to send advertisements via xhr
 !=adunit&$xhr,redirect-rule=noop-1s.mp4
 =adunit&$xhr,redirect-rule=empty
-=adunit&$domain=youtube.com|youtu.be|yt.be
+! set as badfilter and block it again disable ads and not block video on reload, why ???
+=adunit&$domain=youtube.com|youtu.be|yt.be,badfilter
+/get_video_info?*=adunit&*&autoplay=1$xhr,domain=youtube.com|youtu.be|yt.be
+! [fix] Try blocking fragments
+/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be
 ! [fix] ensure blocking
 _204$image,important,domain=youtube.com|youtu.be|yt.be
 
