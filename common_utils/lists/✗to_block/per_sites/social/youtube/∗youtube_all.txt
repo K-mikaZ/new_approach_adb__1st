@@ -15,6 +15,7 @@
 
 !
 !#if dom
+youtube.com,youtu.be,yt.be##.ytp-ce-element-show
 youtube.com,youtu.be,yt.be##.ytp-chrome-top-buttons
 youtube.com,youtu.be,yt.be##.ytp-chrome-top
 youtube.com,youtu.be,yt.be##.ytp-impression-link
@@ -32,6 +33,7 @@ youtube.com,youtu.be,yt.be#@#paper-dialog.ytd-popup-container
 youtube.com,youtu.be,yt.be#@#ytd-popup-container
 ! [fix] unblock dialog box
 youtube.com,youtu.be,yt.be#@#[id="dialog"]
+youtube.com,youtu.be,yt.be#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
 ! [fix]
 youtube.com,youtu.be,yt.be#@#.opened
 youtube.com,youtu.be,yt.be#@#.opened:remove()
