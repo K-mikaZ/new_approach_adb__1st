@@ -112,6 +112,8 @@ youtube.com#@#iron-overlay-backdrop
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
 !/get_video_info?*adunit*$xhr,domain=youtube.com|youtu.be|yt.be,redirect=noop-1s.mp4
+/get_video_info?*adunit*$xhr,domain=youtube.com|youtu.be|yt.be$badfilter
+/desktop\-polymer/$domain=youtube.com|youtu.be|yt.be
 ! [fix] Try blocking fragments
 !/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be
 ! [fix] ensure blocking
