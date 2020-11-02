@@ -111,12 +111,16 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix] because of EasyList use " @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com "
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
 ! [fix] use to send advertisements via xhr
-!/get_video_info?*adunit*$xhr,domain=youtube.com|youtu.be|yt.be
-/desktop-polymer/$important,xhr,domain=youtube.com|youtu.be|yt.be
+!/get_video_info?*adunit*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/desktop-polymer/$important,xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [fix] Try blocking fragments
-!/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be
+!/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [fix]
-_204$image,important,domain=youtube.com|youtu.be|yt.be,badfilter
+_204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+
+@@||googleads.g.doubleclick.net/pagead/id$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+@@||doubleclick.net^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#+js(nowebrtc)
 
 !#endif
 ! </ end youtube rules >
