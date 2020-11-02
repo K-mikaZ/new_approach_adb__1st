@@ -13,6 +13,8 @@
 
 @@/recaptcha/*$all
 
+@@||googlesyndication.com^$domain=googlesyndication.com
+
 @@||internet.nl^$generichide,specifichide
 @@||cmb.fr$generichide
 @@||bytel.fr$generichide
