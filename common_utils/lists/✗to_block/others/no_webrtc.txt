@@ -32,3 +32,6 @@ hqq.tv,netu.tv,vizplay.icu,waaw.*#@#+js(nowebrtc.js)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc.js)
+
+! [fix] error on refresh
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#+js(nowebrtc)
