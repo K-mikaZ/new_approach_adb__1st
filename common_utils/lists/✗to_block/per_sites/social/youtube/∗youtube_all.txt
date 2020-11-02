@@ -114,6 +114,9 @@ youtube.com#@#iron-overlay-backdrop
 !/get_video_info?*adunit*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !/desktop-polymer/$important,xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /live_chat/$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||r*-gonl.googlevideo.com^$domain=youtube.com
+/ad_companion/$domain=youtube.com
+/adcompanion/$domain=youtube.com
 ! [fix] Try blocking fragments
 !/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [fix]
