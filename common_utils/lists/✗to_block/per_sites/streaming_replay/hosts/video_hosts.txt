@@ -85,6 +85,13 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 !#if (script && 1p)
 /uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
 !#endif
+!#if (xhr && 1p)
+||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
+!#endif
+!#endif
+
+!#if uptobox.com
+||ftp.uptobox.com^$media
 !#endif
 
 !#if vidoza.net
