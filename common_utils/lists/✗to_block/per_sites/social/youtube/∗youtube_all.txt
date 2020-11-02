@@ -117,6 +117,7 @@ youtube.com#@#iron-overlay-backdrop
 !/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [fix]
 _204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+@@||tpc.googlesyndication.com^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 @@||googleads.g.doubleclick.net/pagead/id$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@||doubleclick.net^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
