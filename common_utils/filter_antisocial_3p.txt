@@ -7,6 +7,8 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
+!#include lists/✗to_block/per_sites/social/youtube/yt_antisocial.txt
+
 ! ChatBots: Web Chat Apps For Websites
 !#include lists/✗to_block/others/chatbots.txt
 
