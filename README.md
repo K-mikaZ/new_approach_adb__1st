@@ -28,9 +28,6 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
 ###### USEFUL:
 - "You(Tube) nonstop!" (Prevents annoying "video paused" dialogs from showing up) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/YTNonStop.user.js)
     > ###### *fr: "You(Tube) nonstop!" (Empêche l'affichage des boîtes de dialogue ennuyeuses "vidéo en pause") [ allez et cliquez sur le bouton raw ]*
-###### GAINFUL:
-- "instant.page" (Make site pages instant and significantly improve conversion rate!) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/InstantPage.user.js)
-    > ###### *fr: "instant.page" (Rendez les pages de sites instantanées et améliorez sensiblement le taux de conversion!) [ allez et cliquez sur le bouton raw ]*
 ###### PRIVACY / SECURITY:
 - "Trackerless Magnet URI" (Rewrites all Magnet URI links to forces BitTorrent clients to use trackerless rather than server-assisted peer-discovery.) [[ go and click on raw button ]](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
     > ###### *fr: "Trackerless Magnet URI" (Réécrit tous les liens URI Magnet pour obliger les clients BitTorrent à utiliser la découverte par les pairs sans suivi plutôt que par le serveur.) [ allez et cliquez sur le bouton raw ]*
