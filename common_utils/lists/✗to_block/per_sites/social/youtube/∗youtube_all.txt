@@ -74,10 +74,6 @@ youtube.com,youtu.be,yt.be#@#.opened:remove()
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
 !!#endif
 
-!#if media
-/^r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$media,important,domain=youtube.com|youtu.be|yt.be
-!#endif
-
 ! Fake youtube sites with viruses
 ||yougube.com^$all,important
 ||youtibe.com^$all,important
@@ -103,24 +99,18 @@ youtube.com,youtu.be,yt.be#@#.opened:remove()
 youtube.com#@#iron-overlay-backdrop
 ! [fix] acces to < https://www.youtube.com/ads/ >
 @@||ads.youtube.com$generichide
-! [fix] message error on loading video when refreshing
-!||youtube.com/api/stats/qoe?$badfilter
-!||youtube.com/api/stats/ads?$badfilter
 ! [fix] because of EasyList use " @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com "
 @@||youtube.com/get_video_info?$xhr,domain=music.youtube.com|tv.youtube.com,badfilter
-! [fix] use to send advertisements via xhr
-||r*-gonl.googlevideo.com^$domain=youtube.com
 ! [fix] Try blocking fragments
 !/watch?v=*=prefetch&frags=*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [fix]
 _204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-! [fix]
-!@@||tpc.googlesyndication.com^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-!@@||googleads.g.doubleclick.net/pagead/id$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-!@@||doubleclick.net^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
 /(\/api(\/stats)?\/(a(ds|tr)|qoe))|((=|&)ad\_?(unit|url|type)(&|=))|((-|/)pagead(-|/)id(.|$))|(\/ad_status.)|(\/pagead(\/lvz\?)?)|(\/(secure)?pubads(.|_))|(innovid\.com)|(flashtalking\.com)|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+
 !/r[0-9]*([-]{1,3}|.)sn-[a-z0-9]{4,}-[a-z0-9]{4,}\.googlevideo/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+! [fix] use to send advertisements via xhr
+!||r*-gonl.googlevideo.com^$domain=youtube.com
 
 !#endif
 ! </ end youtube rules >
