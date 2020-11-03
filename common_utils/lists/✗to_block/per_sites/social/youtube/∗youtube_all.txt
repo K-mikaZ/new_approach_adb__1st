@@ -6,7 +6,7 @@
 !
 ! ------------------------------------------------------------------
 ! < start youtube rules >
-!#if (youtube.com|youtu.be|yt.be)
+!#if (youtube.com|youtu.be|yt.be|youtube-nocookie.com)
 
 !
 !#include youtube_parts_easylists.txt
