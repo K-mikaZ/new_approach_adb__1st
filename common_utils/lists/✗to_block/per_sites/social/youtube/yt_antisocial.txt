@@ -1,0 +1,5 @@
+
+!#if (youtube.com|youtu.be|yt.be|youtube-nocookie.com)
+! ANTISOCIAL
+/get_(?!video\_info).*/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!#endif
