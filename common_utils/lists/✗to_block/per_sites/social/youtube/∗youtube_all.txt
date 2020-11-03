@@ -107,9 +107,6 @@ youtube.com#@#iron-overlay-backdrop
 _204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
 /(\/api(\/stats)?\/(a(ds|tr)|qoe))|((=|&)ad\_?(unit|url|type)(&|=))|(\/ad_status.)|(\/pagead\/lvz\?)|(\/(secure)?pubads(.|_))|(innovid\.com)|(flashtalking\.com)|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)|(tpc\.googlesyndication\.)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-
-|https://googleads.g.doubleclick.net/pagead/id$badfilter
-@@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /pagead\/((?!id$).*)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 !#endif
