@@ -119,8 +119,7 @@ _204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badf
 !@@||googleads.g.doubleclick.net/pagead/id$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !@@||doubleclick.net^$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
-/(\/api(\/stats)?\/a(ds|tr))|((=|&)ad\_?(unit|url|type)(&|=))|(-pagead-id.)|(\/ad_status.)|(\/googleads)|(\/pagead(\/lvz\?)?)|(\/(secure)?pubads(.|_))|(innovid\.com)|(flashtalking\.com)|(\/
-ptracking)|(\_midroll\_)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/(\/api(\/stats)?\/(a(ds|tr)|qoe))|((=|&)ad\_?(unit|url|type)(&|=))|(-pagead-id.)|(\/ad_status.)|(\/googleads)|(\/pagead(\/lvz\?)?)|(\/(secure)?pubads(.|_))|(innovid\.com)|(flashtalking\.com)|(\/ptracking)|(\_midroll\_)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 !#endif
 ! </ end youtube rules >
