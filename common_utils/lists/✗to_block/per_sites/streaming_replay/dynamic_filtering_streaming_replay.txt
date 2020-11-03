@@ -3,10 +3,25 @@ hqq.tv * 3p-frame block
 hqq.tv * 3p-script block
 hqq.tv hqq.tv * allow
 
+* hqq.to * noop
+hqq.to * 3p-frame block
+hqq.to * 3p-script block
+hqq.to hqq.to * allow
+
 * netu.tv * noop
 netu.tv * 3p-frame block
 netu.tv * 3p-script block
 netu.tv netu.tv * allow
+
+* netu.to * noop
+netu.to * 3p-frame block
+netu.to * 3p-script block
+netu.to netu.to * allow
+
+* netu.io * noop
+netu.io * 3p-frame block
+netu.io * 3p-script block
+netu.io netu.io * allow
 
 * vizplay.icu * noop
 vizplay.icu * 3p-frame block
@@ -18,11 +33,20 @@ waaw.tv * 3p-frame block
 waaw.tv * 3p-script block
 waaw.tv waaw.tv * allow
 
+* waaw.to * noop
+waaw.to * 3p-frame block
+waaw.to * 3p-script block
+waaw.to waaw.to * allow
+
 no-cosmetic-filtering: hqq.tv true
+no-cosmetic-filtering: hqq.to true
 no-cosmetic-filtering: netu.tv true
+no-cosmetic-filtering: netu.to true
+no-cosmetic-filtering: netu.io true
 no-cosmetic-filtering: rakuten.tv true
 no-cosmetic-filtering: vizplay.icu true
 no-cosmetic-filtering: waaw.tv true
+no-cosmetic-filtering: waaw.to true
 
 no-popups: allvid.co true
 no-popups: core1player.com true
@@ -41,12 +65,15 @@ no-popups: gounlimited.to true
 no-popups: hds.lc true
 no-popups: hdslecteur.xyz true
 no-popups: hqq.tv true
+no-popups: hqq.to true
 no-popups: jetload.net true
 no-popups: mixdrop.co true
 no-popups: mstream.press true
 no-popups: mstreamcdn.com true
 no-popups: mystream.to true
 no-popups: netu.tv true
+no-popups: netu.to true
+no-popups: netu.io true
 no-popups: o0-2.com true
 no-popups: o0-3.com true
 no-popups: o0-4.com true
@@ -72,11 +99,16 @@ no-popups: vizplay.icu true
 no-popups: voirfilms.club true
 no-popups: vudeo.net true
 no-popups: waaw.tv true
+no-popups: waaw.to true
 no-popups: widtodo.com true
 
 no-remote-fonts: wakanim.tv true
 
+no-strict-blocking: hqq.to true
 no-strict-blocking: hqq.tv true
+no-strict-blocking: netu.to true
 no-strict-blocking: netu.tv true
+no-strict-blocking: netu.io true
 no-strict-blocking: vizplay.icu true
+no-strict-blocking: waaw.to true
 no-strict-blocking: waaw.tv true
