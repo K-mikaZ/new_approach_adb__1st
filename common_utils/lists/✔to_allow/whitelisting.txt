@@ -11,6 +11,9 @@
 @@/[-._?&=#/]pop([au]nders?)?[-.0-9_?&=#/]/$script,1p
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 
+|https://googleads.g.doubleclick.net/pagead/id$badfilter
+@@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+
 @@/recaptcha/*$all
 
 @@||googlesyndication.com^$domain=googlesyndication.com
