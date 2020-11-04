@@ -44,6 +44,9 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 
 !#if !dom
 
+! [FIX] animedigitalnetwork.fr
+||sascdn.com/diff/$script,badfilter
+
 ! on zone-stream.club
 ||ping.iamcdn.net^$badfilter
 @@||ping.iamcdn.net^
