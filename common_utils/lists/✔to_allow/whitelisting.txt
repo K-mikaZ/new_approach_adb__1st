@@ -14,6 +14,9 @@
 |https://googleads.g.doubleclick.net/pagead/id$badfilter
 @@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
+@@/manifest.json$other,domain=cloud.google.com
+@@||gstatic.com^$script,domain=cloud.google.com
+
 @@/recaptcha/*$all
 
 @@||googlesyndication.com^$domain=googlesyndication.com
