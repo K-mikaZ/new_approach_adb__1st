@@ -47,6 +47,9 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ! [FIX] animedigitalnetwork.fr
 ||sascdn.com/diff/$script,badfilter
 
+! [FIX] block playing videos on rakuten.tv
+/fcgi-bin/*$image,badfilter
+
 ! on zone-stream.club
 ||ping.iamcdn.net^$badfilter
 @@||ping.iamcdn.net^
