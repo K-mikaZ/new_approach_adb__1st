@@ -11,5 +11,8 @@
 ||*$media,domain=tf1.fr
 !#endif
 
+||slpubmedias.tf1.fr^
+||metrics-broker.prod.p.tf1.fr^$xhr,domain=tf1.fr
+
 !#endif
 !</ end TF1 rules >
