@@ -12,6 +12,9 @@
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
 
+||innovid.com$domain=~innovid.com
+||flashtalking.com$domain=~flashtalking.com
+
 ||1clic1don.fr^
 ||bebreloomr.com^
 ||betgorebysson.club^
