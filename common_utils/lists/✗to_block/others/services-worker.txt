@@ -33,3 +33,5 @@
 !@@/([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script,domain=facebook.com|fb.com
 !@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=facebook.com|fb.com
 
+! [fix] 
+||washingtonpost.com/notification-sw.js$badfilter
