@@ -15,6 +15,9 @@
 ||innovid.com$domain=~innovid.com
 ||flashtalking.com$domain=~flashtalking.com
 
+||naggingrugcolossal.com^
+||teachcoexist.com^
+||platitudefivesnack.com^
 ||1clic1don.fr^
 ||bebreloomr.com^
 ||betgorebysson.club^
