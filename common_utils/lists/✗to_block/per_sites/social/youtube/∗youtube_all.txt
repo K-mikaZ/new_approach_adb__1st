@@ -103,9 +103,8 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 ! [fix] acces to < https://www.youtube.com/ads/ >
 ||ads.youtube.com^$badfilter
 @@||ads.youtube.com$generichide
-! [fix]
-_204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
+! and some others
 /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)|qoe))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\&(lact|frags)\=)|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [FIX] because of allow "googleads.g.doubleclick.net/pagead/id"
 /pagead\/((?!id$).*)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
