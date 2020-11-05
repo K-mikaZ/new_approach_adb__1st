@@ -15,37 +15,38 @@
 
 !
 !#if dom
-youtube.com,youtu.be,yt.be##.ytp-ce-element-show
-youtube.com,youtu.be,yt.be##.ytp-chrome-top-buttons
-youtube.com,youtu.be,yt.be##.ytp-chrome-top
-youtube.com,youtu.be,yt.be##.ytp-impression-link
-youtube.com,youtu.be,yt.be##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
-youtube.com,youtu.be,yt.be##ytm-promoted-sparkles-web-renderer
-youtube.com,youtu.be,yt.be###old-browser-alert
-youtube.com,youtu.be,yt.be###dismissable.ytd-compact-promoted-item-renderer
-youtube.com,youtu.be,yt.be##.badge-style-type-verified
-youtube.com,youtu.be,yt.be###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
-youtube.com,youtu.be,yt.be##.ytd-display-ad-renderer
-youtube.com,youtu.be,yt.be##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
-youtube.com,youtu.be,yt.be###offer-module
-youtube.com,youtu.be,yt.be###root
-youtube.com,youtu.be,yt.be###root-container
-youtube.com,youtu.be,yt.be##.ytd-carousel-ad-renderer
-youtube.com,youtu.be,yt.be###merch-shelf
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-ce-element-show
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top-buttons
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-impression-link
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytm-promoted-sparkles-web-renderer
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###old-browser-alert
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###dismissable.ytd-compact-promoted-item-renderer
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.badge-style-type-verified
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-display-ad-renderer
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###offer-module
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###root
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
+youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
 !#if music.youtube.com
 music.youtube.com##.ytmusic-popup-container.style-scope
 !#endif
 ! [fix] modal de connexion
-youtube.com,youtu.be,yt.be#@#paper-dialog.ytd-popup-container
-youtube.com,youtu.be,yt.be#@#ytd-popup-container
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
 ! [fix] unblock dialog box
-youtube.com,youtu.be,yt.be#@#[id="dialog"]
-youtube.com,youtu.be,yt.be#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
 ! [fix]
-youtube.com,youtu.be,yt.be#@#.opened
-youtube.com,youtu.be,yt.be#@#.opened:remove()
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened:remove()
 ! [fix] alert by overlay if accompte as changed
-youtube.com#@#iron-overlay-backdrop
+youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 !#endif
 
 !#if script
