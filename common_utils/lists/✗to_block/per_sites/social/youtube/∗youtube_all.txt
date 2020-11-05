@@ -106,7 +106,7 @@ youtube.com#@#iron-overlay-backdrop
 ! [fix]
 _204$image,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
-/(\/api(\/stats)?\/(a(ds|tr)|qoe))|((\=|\&)ad\_?(url|type)(\&|\=))|(\/ad_status.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/(\/api(\/stats)?\/(a(ds|tr)|qoe))|((\=|\&|\_)ad\_?(url|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /pagead\/((?!id$).*)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [FIX] 
 !/\=adunit\&/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
