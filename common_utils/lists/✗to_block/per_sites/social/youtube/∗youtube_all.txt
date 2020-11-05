@@ -11,7 +11,7 @@
 !
 !#include youtube_parts_easylists.txt
 !
-@@*/next?alt=json$domain=youtube.com|youtu.be|yt.be
+@@*/next?alt=json$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 !
 !#if dom
@@ -50,8 +50,8 @@ youtube.com,youtu.be,yt.be#@#.opened:remove()
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
-!/serviceworker-notifications.js$script,important,domain=youtube.com|youtu.be|yt.be
-!/sw.js$script,important,domain=youtube.com|youtu.be|yt.be
+!/serviceworker-notifications.js$script,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!/sw.js$script,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
 
 !#if (script && !1p)
@@ -65,13 +65,13 @@ youtube.com,youtu.be,yt.be#@#.opened:remove()
 !#endif
 
 !#if (subdocument && 1p)
-||youtu*.*/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important
-||youtu*.*/embed/*?ps=software*$subdocument,important
+/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
 
 !!#if (other|ping)
-||*$ping,domain=youtube.com|youtu.be|yt.be
-||youtube.com^$other,domain=youtube.com|youtu.be|yt.be
+||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !!#endif
 
 ! Fake youtube sites with viruses
