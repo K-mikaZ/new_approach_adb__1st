@@ -14,7 +14,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace          tag:github.com,2020:K-mik@Z:TrackerlessMagnetURI:RewritesAllMagnetURILinksToForcesBitTorrentClientsToUseTrackerlessRatherThanServerAssistedPeerDiscovery:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.1.2
+  // @version            1.1.3
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
@@ -30,6 +30,7 @@ var fileMETA = parseHeaders((function () {
   // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:glodls)\.(.{2,})\/*$/
   // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:limetor{2}ent(s)?)\.(.{2,})\/*$/
   // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:nya{2})\.(.{2,})\/*$/
+  // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:tor{2}ent\-music)\.(.{2,})\/*$/
   // @include            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:yts)\.(.{2,})\/*$/
   //
   // @exclude            /^https?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?(?:cpasbien)\.(.{2,})\/*$/
@@ -38,4 +39,6 @@ var fileMETA = parseHeaders((function () {
 }));
 // originally from "https://github.com/da2x/trackerless-magnets/blob/master/webextensions/data/content-script.js"
 // read < https://www.ctrl.blog/entry/trackerless-magnets-extension.html >
-!function(a){"use strict";var r=document.querySelectorAll("a[href^='magnet:']");if(r)for(a in r)if(null!=r[a]&&null!=r[a].href){var e=new URL(r[a].href);if(e.searchParams.has("xt")){var s=`magnet:?xt=${e.searchParams.getAll("xt")}`;e.searchParams.has("xl")&&(s+=`&xl=${e.searchParams.getAll("xl")}`),e.searchParams.has("dn")&&(s+=`&dn=${e.searchParams.getAll("dn")}`),r[a].href=s}}}();
+!function(a){
+  "use strict";var r=document.querySelectorAll("a[href^='magnet:']");if(r)for(a in r)if(null!=r[a]&&null!=r[a].href){var e=new URL(r[a].href);if(e.searchParams.has("xt")){var s=`magnet:?xt=${e.searchParams.getAll("xt")}`;e.searchParams.has("xl")&&(s+=`&xl=${e.searchParams.getAll("xl")}`),e.searchParams.has("dn")&&(s+=`&dn=${e.searchParams.getAll("dn")}`),r[a].href=s}}
+}();
