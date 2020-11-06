@@ -9,6 +9,8 @@ facebook.com###u_jsonp_3_s,#u_ps_0_0_2,#u_ps_jsonp_2_0_m,.bottomborder.uiBoxGray
 
 facebook.com##.pagelet-group .pagelet:if(a:has-text(/Sponsored/i))
 facebook.com##.pagelet-group .pagelet:if(a:has-text(/Sponsorisé/i))
+!facebook.com##div[data-pagelet="RightRail"] div[class] h3[dir]:has(span[dir]:has-text(Sponsored)):upward(7)
+!facebook.com##div[data-pagelet="RightRail"] div[class] h3[dir]:has(span[dir]:has-text(広告)):upward(7)
 facebook.com##div[id^="mount_"] div[data-pagelet="RightRail"] > div:not([data-vc-ignore-dynamic]) > div:not([class])
 !#endif
 
