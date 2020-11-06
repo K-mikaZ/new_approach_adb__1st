@@ -31,6 +31,12 @@ www.facebook.com###facebook > div
 ||fbcdn.net/rsrc.php/*/-paxp-*.gif$important,badfilter
 ||fbcdn.net/rsrc.php/*/-paxp-*.gif$image,important,badfilter
 
+@@||facebook.com/ajax/feed/filter_action/dialog_direct_action_ads?$xmlhttprequest,domain=facebook.com
+||facebook.com/ads/$badfilter
+||facebook.com/ads/$inline-font,badfilter
+||fbcdn.net/*?*facebook.com%2fads%2f$important,badfilter
+@@||facebook.com/ads/$ghide
+
 ! </ end facebook lighter >
 !#endif
 !
