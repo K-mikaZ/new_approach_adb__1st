@@ -6,8 +6,10 @@
 facebook.com##DIV[id^="substream_"] ._5jmm[data-dedupekey][data-cursor][data-xt][data-xt-vimpr="1"][data-ftr="1"][data-fte="1"]
 ! more
 facebook.com###u_jsonp_3_s,#u_ps_0_0_2,#u_ps_jsonp_2_0_m,.bottomborder.uiBoxGray._3d9x.fbPageBanner.pam,.ego_section,.mvs._5j5u._5jqk.clearfix,.promotedPostFlyoutContainer,.uiContextualLayer.uiContextualLayerAboveRight,._1dwg,._1yv,._2bex,._4-u2.mvm._54bx._54bz.clearfix,DIV[data-ownerid^="tl_unit_"],div[id^=hyperfeed_story_id_]:has(span[data-ft="{\"tn\":\"j\"}"]),[data-referrer*="_advertiser_"],[data-referrer="substream_1"],[div*="data-xt-vimp"],[id*="_advertiser_"],[id*="_ego_"],[id="substream_1"],[id^="hyperfeed_story_"],DIV[data-xt-vimp],#pagelet_side_ads
+
 facebook.com##.pagelet-group .pagelet:if(a:has-text(/Sponsored/i))
 facebook.com##.pagelet-group .pagelet:if(a:has-text(/Sponsorisé/i))
+facebook.com##div[id^="mount_"] div[data-pagelet="RightRail"] > div:not([data-vc-ignore-dynamic]) > div:not([class])
 !#endif
 
 |https://www.facebook.com/pubcontent/
