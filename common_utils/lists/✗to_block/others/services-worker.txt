@@ -30,7 +30,11 @@
 @@/workbox-sw.js$script,domain=epicgames.com
 
 ! [fix] because break some fbcdn.net scripts
-/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=facebook.com|fb.com
+!/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=facebook.com|fb.com
+@@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=fb.com|facebook.com|facebookcorewwwi.onion
 
 ! [fix] 
 ||washingtonpost.com/notification-sw.js$badfilter
+
+! [FIX] missing
+/firebase-messaging-sw.js$script,domain=lenouvelliste.ch
