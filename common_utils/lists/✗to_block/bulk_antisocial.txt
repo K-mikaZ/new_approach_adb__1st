@@ -62,7 +62,7 @@ multiup.*##.breadcrumbs > li:not(>[href*="/contact"])
 ~vkontakte.ru,~google.*##[href*="://vkontakte.ru"]
 ~odnoklassniki.ru,~google.*##[href*=".odnoklassniki."]
 ~mail.ru,~google.*##[href*="://connect.mail.ru"]
-~twitter.com,~google.*##[href*="://twitter."]
+!~twitter.com,~google.*##[href*="://twitter."]
 ~livejournal.com,~google.*##[href*=".livejournal.com"]
 ~pinterest.com,~pinterest.fr,~google.*##[href*="://pinterest."]
 
