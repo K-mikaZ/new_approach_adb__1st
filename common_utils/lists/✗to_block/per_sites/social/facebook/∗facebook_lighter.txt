@@ -20,6 +20,13 @@
 !
 
 ||*coronavirus*$xhr,domain=facebook.com
+fb.com,facebook.com,facebookcorewwwi.onion##div:nth-of-type(1) > ul > li:nth-of-type(1):if([href*="coronavirus"])
+/facebo{2}k\.(.{2,})\/(nw)[\/|$]/$xhr,domain=fb.com|facebook.com|facebookcorewwwi.onion
+
+fb.com,facebook.com,facebookcorewwwi.onion##body > .AdBox.Ad.advert:style(display:block!important;)
+! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
+! http://www.naddalim.com/forum/viewtopic.php?f=7&t=2822
+fb.com,facebook.com,facebookcorewwwi.onion##div[data-pagelet*="FeedUnit"]:has(:scope div:last-of-type span:has-text(/^Suggested Events|^Suggested for You|^Événements suggérés|^Suggestions pour vous/i))
 
 ! [FIX] Unbreak the world!
 facebook.com#@#body:style(overflow-x: hidden !important; overflow-y: scroll !important; padding-right: 0 !important;)
