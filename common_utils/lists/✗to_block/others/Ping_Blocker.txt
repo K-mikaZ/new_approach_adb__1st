@@ -8,6 +8,11 @@
 
 !#if ping
 *$ping
+! [FIX] memory consumption too high
+@@/player-events/log/partial$ping,domain=vimeo.com
+! because "AdGuard Tracking Protection filter"
+||vimeocdn.com/add/player-stats?beacon=$badfilter
+@@/player-stats?beacon=$ping,domain=vimeo.com
 !#endif
 
 !#if xhr
