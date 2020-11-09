@@ -10,7 +10,7 @@ var fileMETA = parseHeaders((function () {
   // @namespace          tag:github.com,2020:K-mik@Z:YTNonStop:EmancipatedVersionOfYT:TryToTakeOverTheWorld
   // @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ)
   // @author             K-mik@Z
-  // @version            1.6.0
+  // @version            1.6.1
   // @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/YTNonStop.user.js
   // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/YTNonStop.user.js
   // @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/YTNonStop.user.js
@@ -29,6 +29,106 @@ var fileMETA = parseHeaders((function () {
 }));
 'use strict';
 (function(open) {
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+  ///
+  /// name:             Youtube Audio Mode
+  /// author:           Calum; https://greasyfork.org/en/users/195276-calum
+  /// description:      Add button too listen to only the audio on YouTube without loading the video.
+  ///                   It doesn't support Youtube live videos.
+  /// originally from:  https://greasyfork.org/en/scripts/372074-youtube-audio-mode
+  /// license:          GPL-3.0+; http://www.gnu.org/licenses/gpl-3.0.txt
+  ///
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+  /**
+   * @return {undefined}
+   */
+  async function audioMode() {
+    if (location.pathname == "/watch") {
+      let video = document.getElementsByTagName("video")[0];
+      let audioMode = await GM.getValue("ytAudioMode");
+      addToMenu(audioMode);
+      if (audioMode) {
+        setPoster(video, ["maxres", "hq", "sd"]);
+        watchStream(video);
+      }
+    }
+  }
+  /**
+   * @param {!Object} video
+   * @return {undefined}
+   */
+  function watchStream(video) {
+    /**
+     * @param {string} method
+     * @param {string} url
+     * @param {(boolean|null)=} p2
+     * @param {(null|string)=} p3
+     * @param {(null|string)=} p4
+     * @return {undefined}
+     */
+    XMLHttpRequest.prototype.open = function(method, url) {
+      let validStream = /^(?!.*live=1).+audio.+$/;
+      if (validStream.test(url) && !video.src.includes("audio")) {
+        video.pause();
+        /** @type {string} */
+        video.src = url.split("&range")[0];
+        video.play();
+      }
+      open.apply(this, arguments);
+    };
+  }
+  /**
+   * @param {!Function} audioMode
+   * @return {undefined}
+   */
+  async function addToMenu(audioMode) {
+    let panel = document.getElementsByClassName("ytp-panel-menu")[0];
+    if (!panel.innerHTML.includes("Audio Mode")) {
+      panel.innerHTML += `\n            <div class="ytp-menuitem"\n                aria-checked="${audioMode}"\n                id="audio-mode">\n                <div class="ytp-menuitem-icon"></div>\n                <div class="ytp-menuitem-label">Audio Mode</div>\n                <div class="ytp-menuitem-content">\n                    <div class="ytp-menuitem-toggle-checkbox">\n                </div>\n            </div>`;
+      let audioToggle = document.getElementById("audio-mode");
+      /**
+       * @return {undefined}
+       */
+      audioToggle.onclick = async function() {
+        let audioMode = !await GM.getValue("ytAudioMode");
+        this.setAttribute("aria-checked", audioMode);
+        GM.setValue("ytAudioMode", audioMode);
+        location.reload();
+      };
+    }
+  }
+  /**
+   * @param {!Node} video
+   * @param {!Array} fmts
+   * @return {undefined}
+   */
+  async function setPoster(video, fmts) {
+    let img = new Image;
+    let videoId = location.search.match(/v=(.+?)(&|$)/)[1];
+    img.src = `//i.ytimg.com/vi/${videoId}/${fmts.shift()}default.jpg`;
+    /**
+     * @return {undefined}
+     */
+    img.onload = function() {
+      if (img.height <= 90) {
+        setPoster(video, fmts);
+      } else {
+        video.style.background = `url(${img.src}) no-repeat center`;
+        /** @type {string} */
+        video.style.backgroundSize = "contain";
+      }
+    };
+  }
+  window.addEventListener("yt-navigate-finish", audioMode);
+  window.onYouTubeIframeAPIReady = audioMode();
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+  ///
+  /// name:             Youtube - dismiss sign-in
+  /// author:           Achernar; https://greasyfork.org/en/users/435938-achernar
+  /// description:      Hide the "sign-in" and cookies dialogs. Prevent the dialogs from pausing the video.
+  /// originally from:  https://greasyfork.org/en/scripts/412178-youtube-dismiss-sign-in
+  ///
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
   /**
    * @return {undefined}
    */
@@ -284,97 +384,6 @@ var fileMETA = parseHeaders((function () {
     }
     count++;
   }, 1000);
-  ///////////////////////////////////////////////////////////////////////////////////////////////////
-  ///
-  /// name:             Youtube Audio Mode
-  /// author:           Calum; https://greasyfork.org/en/users/195276-calum
-  /// description:      Add button too listen to only the audio on YouTube without loading the video.
-  /// originally from:  https://greasyfork.org/en/scripts/372074-youtube-audio-mode
-  /// license:          GPL-3.0+; http://www.gnu.org/licenses/gpl-3.0.txt
-  ///
-  ///////////////////////////////////////////////////////////////////////////////////////////////////
-  /**
-   * @return {undefined}
-   */
-  async function audioMode() {
-    if (location.pathname == "/watch") {
-      let video = document.getElementsByTagName("video")[0];
-      let audioMode = await GM.getValue("ytAudioMode");
-      addToMenu(audioMode);
-      if (audioMode) {
-        setPoster(video, ["maxres", "hq", "sd"]);
-        watchStream(video);
-      }
-    }
-  }
-  /**
-   * @param {!Object} video
-   * @return {undefined}
-   */
-  function watchStream(video) {
-    /**
-     * @param {string} method
-     * @param {string} url
-     * @param {(boolean|null)=} p2
-     * @param {(null|string)=} p3
-     * @param {(null|string)=} p4
-     * @return {undefined}
-     */
-    XMLHttpRequest.prototype.open = function(method, url) {
-      let validStream = /^(?!.*live=1).+audio.+$/;
-      if (validStream.test(url) && !video.src.includes("audio")) {
-        video.pause();
-        /** @type {string} */
-        video.src = url.split("&range")[0];
-        video.play();
-      }
-      open.apply(this, arguments);
-    };
-  }
-  /**
-   * @param {!Function} audioMode
-   * @return {undefined}
-   */
-  async function addToMenu(audioMode) {
-    let panel = document.getElementsByClassName("ytp-panel-menu")[0];
-    if (!panel.innerHTML.includes("Audio Mode")) {
-      panel.innerHTML += `\n            <div class="ytp-menuitem"\n                aria-checked="${audioMode}"\n                id="audio-mode">\n                <div class="ytp-menuitem-icon"></div>\n                <div class="ytp-menuitem-label">Audio Mode</div>\n                <div class="ytp-menuitem-content">\n                    <div class="ytp-menuitem-toggle-checkbox">\n                </div>\n            </div>`;
-      let audioToggle = document.getElementById("audio-mode");
-      /**
-       * @return {undefined}
-       */
-      audioToggle.onclick = async function() {
-        let audioMode = !await GM.getValue("ytAudioMode");
-        this.setAttribute("aria-checked", audioMode);
-        GM.setValue("ytAudioMode", audioMode);
-        location.reload();
-      };
-    }
-  }
-  /**
-   * @param {!Node} video
-   * @param {!Array} fmts
-   * @return {undefined}
-   */
-  async function setPoster(video, fmts) {
-    let img = new Image;
-    let videoId = location.search.match(/v=(.+?)(&|$)/)[1];
-    img.src = `//i.ytimg.com/vi/${videoId}/${fmts.shift()}default.jpg`;
-    /**
-     * @return {undefined}
-     */
-    img.onload = function() {
-      if (img.height <= 90) {
-        setPoster(video, fmts);
-      } else {
-        video.style.background = `url(${img.src}) no-repeat center`;
-        /** @type {string} */
-        video.style.backgroundSize = "contain";
-      }
-    };
-  }
-  window.addEventListener("yt-navigate-finish", audioMode);
-  window.onYouTubeIframeAPIReady = audioMode();
   ///////////////////////////////////////////////////////////////////////////////////
   ///
   /// name:             Bypass YouTube age verification
