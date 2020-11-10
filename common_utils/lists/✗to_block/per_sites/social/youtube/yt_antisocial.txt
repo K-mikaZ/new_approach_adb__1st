@@ -1,5 +1,5 @@
 
 !#if (youtube.com|youtu.be|yt.be|youtube-nocookie.com)
 ! ANTISOCIAL
-/get_(?!(video\_info|search_suggestions|registration_token)).*/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/get_(?!(comments|video\_info|search\_suggestions|registration\_token)(\=)?).*/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
