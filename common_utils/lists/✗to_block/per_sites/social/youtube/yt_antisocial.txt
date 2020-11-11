@@ -1,5 +1,6 @@
 
 !#if (youtube.com|youtu.be|yt.be|youtube-nocookie.com)
 ! ANTISOCIAL
-/get\_(?!(com{2}ents|video\_info|se(arch\_sug{2}estions|t{2}ing)|registration\_token)(\=|\?)?).*/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+! trop contraignant
+!/get\_(?!(com{2}ents|registration\_token|se(arch\_sug{2}estions|t{2}ing)|transcript|video\_info)(\=|\?)?).*/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
