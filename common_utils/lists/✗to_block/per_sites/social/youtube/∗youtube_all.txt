@@ -75,6 +75,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 !!#if (other|ping)
 ||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+@@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !!#endif
 
 ! Fake youtube sites with viruses
