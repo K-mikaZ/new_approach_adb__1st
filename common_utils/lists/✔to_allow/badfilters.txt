@@ -198,6 +198,8 @@ streamroot.io$script,important,badfilter
 ||instant.page^$badfilter
 @@||instant.page^$script
 
+/cookiesmanager.$badfilter
+
 !
 ! Tracking urls
 ! I prefer use an addon for that for that:
@@ -213,6 +215,10 @@ streamroot.io$script,important,badfilter
 ||l.messenger.com$document,important,badfilter
 ||lm.facebook.com$document,important,badfilter
 ||lm.messenger.com$document,important,badfilter
+||l.facebook.com^$subdocument,important,badfilter
+||l.messenger.com$subdocument,important,badfilter
+||lm.facebook.com$subdocument,important,badfilter
+||lm.messenger.com$subdocument,important,badfilter
 !#endif
 
 !#endif
