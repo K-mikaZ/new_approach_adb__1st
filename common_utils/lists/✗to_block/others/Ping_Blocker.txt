@@ -8,6 +8,9 @@
 
 !#if ping
 *$ping
+! [FIX]
+*$ping,domain=domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+@@||*^$ping,domain=domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! [FIX] memory consumption too high
 @@/player-events/log/partial$ping,domain=vimeo.com
 ! because "AdGuard Tracking Protection filter"
