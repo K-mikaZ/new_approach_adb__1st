@@ -33,6 +33,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
 youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
+youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 !#if music.youtube.com
 music.youtube.com#@#.ytmusic-popup-container.style-scope
 !#endif
@@ -49,6 +50,8 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened:remove()
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 !#endif
 
+||*$3p,subdocument,domain=youtube.com|~github.com|~googlevideo.com
+
 !#if script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
@@ -62,9 +65,10 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 !#endif
 
 !#if (xhr && 1p)
+||googlevideo.com/videoplayback?*&mime=video%2Fmp4&*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! block miniplayer when page changing (comment if you won't)
-||youtu*.*/?pbj=1$xhr,important
-||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
+!||youtu*.*/?pbj=1$xhr,important
+!||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
 !#endif
 
 !#if (subdocument && 1p)
@@ -73,7 +77,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 !#endif
 
 !!#if (other|ping)
-||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !!#endif
