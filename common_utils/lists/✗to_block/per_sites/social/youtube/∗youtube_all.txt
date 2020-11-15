@@ -52,7 +52,6 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 !#endif
 
-||*$3p,subdocument,domain=youtube.com|~github.com|~googlevideo.com
 
 !#if script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
@@ -67,13 +66,13 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 !#endif
 
 !#if (xhr && 1p)
-!||googlevideo.com/videoplayback?*&mime=video%2Fmp4&*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! block miniplayer when page changing (comment if you won't)
 !||youtu*.*/?pbj=1$xhr,important
 !||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
 !#endif
 
 !#if (subdocument && 1p)
+||*$3p,subdocument,domain=youtube.com|~github.com|~googlevideo.com
 /embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
