@@ -27,7 +27,7 @@
 @@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=videobin.co
 
 ! [fix] exclude youtube.com/sw.js
-@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 ! [fix] best loading of VideoSlide on epicgames
 @@/workbox-sw.js$script,domain=epicgames.com
