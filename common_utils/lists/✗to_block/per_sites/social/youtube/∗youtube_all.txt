@@ -67,7 +67,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 !#endif
 
 !#if (xhr && 1p)
-||googlevideo.com/videoplayback?*&mime=video%2Fmp4&*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!||googlevideo.com/videoplayback?*&mime=video%2Fmp4&*$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ! block miniplayer when page changing (comment if you won't)
 !||youtu*.*/?pbj=1$xhr,important
 !||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
