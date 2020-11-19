@@ -34,7 +34,8 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
 youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
 !#if music.youtube.com
-music.youtube.com#@#.ytmusic-popup-container.style-scope
+!music.youtube.com#@#.ytmusic-popup-container.style-scope
+music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
 !#endif
 ! [fix] modal de connexion
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
@@ -54,6 +55,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 
 
 !#if script
+||google./js/bg/*$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,important
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|(an{2}otations\_module))(\.min)?\.js/$script
 ! see < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/services-worker.txt >
@@ -65,10 +67,11 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
 !#endif
 
-!#if (xhr && 1p)
+!#if xhr
 ! block miniplayer when page changing (comment if you won't)
 !||youtu*.*/?pbj=1$xhr,important
 !||youtu*.*/watch?v=*&pbj=miniplayer$xhr,important
+/log_event?alt=json$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
 
 !#if (subdocument && 1p)
@@ -76,11 +79,17 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 /embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
 
-!!#if (other|ping)
+!#if (other|ping)
 !||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-!!#endif
+!#endif
+
+!#if image
+/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+!#endif
+
+||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 ! Fake youtube sites with viruses
 ||yougube.com^$all,important
