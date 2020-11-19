@@ -28,10 +28,12 @@
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc.js)
 hqq.*,netu.*,vizplay.icu,waaw.*#@#+js(nowebrtc.js)
-!yandexcdn.com#@#+js(nowebrtc)
+upvid.*#@#+js(nowebrtc)
+femax20.com,fembed.com#@#+js(nowebrtc)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc.js)
 
 ! [fix] error on refresh
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#+js(nowebrtc)
+
