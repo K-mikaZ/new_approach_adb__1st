@@ -28,6 +28,8 @@
 @@||wiflix.$ghide
 @@||wikiserie.$ghide
 @@||zustream.$ghide
+@@*$ghide,domain=dustreaming.co
+@@*$ghide,domain=femax20.com|fembed.com
 
 ! [fix] boost loading > hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
 @@||hqq.$document
