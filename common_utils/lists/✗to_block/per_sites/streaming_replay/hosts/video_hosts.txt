@@ -45,6 +45,7 @@ fwmrm.net##+js(window.open-defuser.js)
 ! somes allowing
 @@/related.js$script,domain=core1player.com
 @@/related.js$script,domain=hydracdn.network
+@@/related.js$script,domain=femax20.com|fembed.com
 
 !#endif
 
