@@ -15,6 +15,10 @@
 
 !
 !#if dom
+youtube.com,youtu.be,yt.be##[class="video-ads ytp-ad-module"]
+youtube.com,youtu.be,yt.be##.iv-branding
+youtube.com,youtu.be,yt.be##.annotation-type-custom
+youtube.com,youtu.be,yt.be##.annotation
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-ce-element-show
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top-buttons
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top
