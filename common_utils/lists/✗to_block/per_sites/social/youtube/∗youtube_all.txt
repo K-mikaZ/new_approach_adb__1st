@@ -121,6 +121,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
 ! and some others
 !/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)|qoe))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(annotations\_module)|(ad(_)?companion)|(backend\=innertube)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$important,~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/(\\%22ad)|(\\&adfmt\\=)|(\\.atdmt\\.)|(watch7ad\\_)|(\\/api\\/ads)|(\\.innovid\\.)|(\\/adsales\\/)|(\\/adserver\\/)|(\\.fwmrm\\.net)|(\\/stats\\/ads)|(ad\\d-\\w*\\.swf$)|(:\\/\\/.*\\.google\\.com\\/uds\\/afs)|(\\/csi\\?v\\=\\d+\\&s\\=youtube\\&action\\=)|[\\=\\&\\_\\-\\.\\/\\?\\s]ad[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]ads[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]adid[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]adunit[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]adhost[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]adview[\\=\\&\\_\\-\\.\\/\\?\\s]|[\\=\\&\\_\\-\\.\\/\\?\\s]pagead[\\=\\&\\_\\-\\.\\/\\?\\s\\d]|[\\=\\&\\_\\-\\.\\/\\?\\s]googleads[\\=\\&\\_\\-\\.\\/\\?\\s]/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 ! [FIX] because breaks too much video loading
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
