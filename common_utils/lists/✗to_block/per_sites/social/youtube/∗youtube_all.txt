@@ -120,7 +120,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 
 ! [FIX] from Adblock pour Youtube™ < https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk >
 ! and some others
-!/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(annotations\_module)|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)||(\/csi\?v\=(.*)\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 
 ! [FIX] because breaks too much video loading
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
