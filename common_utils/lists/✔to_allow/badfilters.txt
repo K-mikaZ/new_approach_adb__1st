@@ -198,6 +198,7 @@ streamroot.io$script,important,badfilter
 ||instant.page^$badfilter
 @@||instant.page^$script
 ! [FIX] because of "Fuck Fuckadblock" filters
+! clipwatching.com need it
 /\/pu\/[.a-s]{1,5}\.js$/$script,1p,important,badfilter
 
 /cookiesmanager.$badfilter
