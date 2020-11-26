@@ -197,6 +197,8 @@ streamroot.io$script,important,badfilter
 ! [fix] because of use "https://instant.page" addon
 ||instant.page^$badfilter
 @@||instant.page^$script
+! [FIX] because of "Fuck Fuckadblock" filters
+/\/pu\/[.a-s]{1,5}\.js$/$script,1p,important,badfilter
 
 /cookiesmanager.$badfilter
 
