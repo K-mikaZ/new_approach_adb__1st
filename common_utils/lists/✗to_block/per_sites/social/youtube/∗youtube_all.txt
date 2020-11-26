@@ -15,6 +15,12 @@
 
 !
 !#if dom
+!#if !env_mobile
+youtube.com,youtu.be,yt.be##[id="button"]:if([aria-label*="vocal"])
+!#endif
+youtube.com,youtu.be,yt.be###root
+youtube.com,youtu.be,yt.be##.ytd-display-ad-renderer
+youtube.com,youtu.be,yt.be##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
 youtube.com,youtu.be,yt.be##[class="video-ads ytp-ad-module"]
 youtube.com,youtu.be,yt.be##.iv-branding
 youtube.com,youtu.be,yt.be##.annotation-type-custom
