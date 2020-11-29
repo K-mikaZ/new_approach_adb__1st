@@ -37,3 +37,6 @@ ok.ru#@#+js(nowebrtc.js)
 ! [fix] error on refresh
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#+js(nowebrtc)
 
+! [FIX] packetlosstest.com
+! This site uses cutting-edge WebRTC technology to check your Internet connection's packet loss, latency, and latency jitter in your browser for free.
+packetlosstest.com#@#+js(nowebrtc)
