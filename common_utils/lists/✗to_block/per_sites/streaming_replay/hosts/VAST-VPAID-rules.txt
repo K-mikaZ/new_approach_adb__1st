@@ -102,6 +102,8 @@
 ||fiorenetwork.com$xhr,redirect-rule=noopvast-3.0
 ! [fix] di.fm noop vast
 ||pubads.g.doubleclick.net/gampad/ads?sz=300x250*&output=vast*$xhr,redirect-rule=noopvast-3.0
+! [FIX] imasdk.googleapis.com
+/ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
 
 ! VAST version 4.*
 ! -----------------
