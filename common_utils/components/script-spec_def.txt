@@ -74,7 +74,7 @@
 ||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
 
-!#if (*yandex.ru|*webvisor.org)
+!#if (yandex.ru|webvisor.org)
 ! try adguard compatibility portage
 ||*/metrika/watch.js$script,redirect-rule=metrika-yandex-watch
 ||*metrika*/tag.js$script,redirect-rule=metrika-yandex-tag
