@@ -18,6 +18,7 @@
 ! [FIX] P2P video delivery
 @@||tracker.openwebtorrent.com^$websocket
 @@||tracker.novage.com.ua^$websocket
+@@wss://*tracker$websocket
 
 ! [FIX] spotify
 @@/?access_token=*$websocket,domain=spotify.com
