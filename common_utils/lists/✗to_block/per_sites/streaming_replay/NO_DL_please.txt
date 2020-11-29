@@ -42,7 +42,7 @@ series.dpstreaming.to#?#center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
 filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 !#endif
 
-!#if (zustream.|vodfilms.|enseries.|vustream.|filmgratuit.|voirseries.|seriestream.|voirfilms.|streamingdivx.|skstream.ink|enstream.)
+!#if (zustream.|vodfilms.|enseries.|vustream.|filmgratuit.|voirseries.|seriestream.|voirfilms.|voir-film.cc|streamingdivx.|skstream.ink|enstream.)
 zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 !#endif
 
