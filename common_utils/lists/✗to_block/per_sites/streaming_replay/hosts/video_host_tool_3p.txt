@@ -37,6 +37,10 @@ inpagepush.com##+js(aopr.js, $)
 bs0wvimoy99r.com##+js(popads-dummy.js)
 !#endif
 
+!#if (imasdk.googleapis.com && xhr)
+/ads_billets.xml$xhr,domain=imasdk.googleapis.com,important
+!#endif
+
 !#if fmax.xyz
 ||fmax.xyz^$badfilter
 ! breaks too many videos otherwise, prefer:
