@@ -83,6 +83,9 @@
 @@||canaltp.fr$generichide,specifichide
 
 ! [fix]
+@@||*$other,domain=packetlosstest.com
+
+! [fix]
 @@||pubads.g.doubleclick.net^$xhr,domain=developers-dot-devsite-v2-prod.appspot.com
 
 ! [fix] some streaming site need it
