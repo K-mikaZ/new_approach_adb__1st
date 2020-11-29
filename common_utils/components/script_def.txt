@@ -9,13 +9,18 @@
 !#if script
 
 !#include nofab_def.txt
+
+!#if !(yandex.ru|webvisor.org)
 *$script,redirect-rule=noop.js
 
 !#if !1p
 *$script,3p,redirect-rule=noop.js
+!#endif
+
+!#endif
+
 !#include script-spec_def.txt
 !#include monkeybroker_def.txt
-!#endif
 
 !#endif
 
