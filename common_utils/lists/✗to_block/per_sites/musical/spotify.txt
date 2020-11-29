@@ -13,8 +13,9 @@ open.spotify.com##a[class*="link-subtle"][href*="download"]
 open.spotify.com##[data-testid="test-ref-div"]
 open.spotify.com##[class*="sponsor-"]
 open.spotify.com##[data-*="sponsor-"]
-! sanitize
+! sanitize "verified Badge"
 open.spotify.com##.verifiedBadge
+open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 !#endif
 
 !#if script
@@ -36,13 +37,11 @@ open.spotify.com##.verifiedBadge
 ||akamaized.net/audio/$media,domain=open.spotify.com
 !#endif
 
-!#if websocket
-||gew-dealer.spotify.com/?access_token=$websocket,domain=open.spotify.com
-!#endif
-
 !/[sS]ponso(.*)?([pP]laylist)?/$important,domain=open.spotify.com
 ||adclick.g.doubleclick.com^
-||spotify.com/melody/*/logging/$important
+! [FIX] too much information on ublock badge
+!||spotify.com/melody/*/logging/$important
+||spotify.com/melody/*/logging/$important,badfilter
 
 ! [fix] badfilters
 ||spotify.com^*/logging/$badfilter
@@ -50,13 +49,14 @@ open.spotify.com##.verifiedBadge
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
 ! [fix] breaks playing spotify's playlists.
 #@#a[href^="https://adclick.g.doubleclick.net/"]
-@@||googletagmanager.com^$domain=open.spotify.com
-@@||scdn.co/cdn/js/gtag.$script,domain=spotify.com
 ! [fix] comments during an action (addition/removal in a playlist)
 #@#div[aria-live^="polite"]
 #@#div > div[aria-live="polite"]
 ! [fix] chromecast concern
 !@@||gstatic.com^$domain=open.spotify.com
+! [FIX] Analytics
+@@||googletagmanager.com^$domain=open.spotify.com,badfilter
+/\/gtag\.(\d+)\.js($)?/$script,domain=open.spotify.com,redirect=google-analytics_analytics.js
 
 !#endif
 ! </ end spotify rules >
