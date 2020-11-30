@@ -9,7 +9,7 @@
 !#if script
 
 !#if !(addthis.com|amazon-adsystem.com|ampproject.org|chartbeat.com|disqus.com|doubleclick.net|google-analytics.com|googlesyndication.com|googletagmanager.com|googletagservices.com|ligatus.com|outbrain.com|scorecardresearch.com|smartadserver.com|yandex.ru|webvisor.org)
-*$script,redirect-rule=noop.js
+/(.*)(\.min)?(\.js)?/$script,important,redirect-rule=noop.js
 !#endif
 
 !#include nofab_def.txt
