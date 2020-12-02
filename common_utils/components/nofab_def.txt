@@ -23,13 +23,13 @@
 /adblock.js$script,redirect-rule=nofab.js
 
 ! [fix] for unrecognized
-||*/fuckadb*.js$script,important
-||*/blockadb*.js$script,important
-||*/sniffadb*.js$script,important
-/adblock.js$script,important
+||*/fuckadb*.js$script
+||*/blockadb*.js$script
+||*/sniffadb*.js$script
+/adblock.js$script
 
 ! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
-/fuckadblock.*?$script,important
+/fuckadblock.*?$script
 
 !
