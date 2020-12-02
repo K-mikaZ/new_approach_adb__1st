@@ -95,6 +95,8 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 ||ftp.uptobox.com^$media
 !#endif
 
+||*$popup,domain=upvid.biz|upvid.co
+
 !#if vidoza.net
 @@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
 !#if (image && 1p)
