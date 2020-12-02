@@ -2,6 +2,8 @@
 ! < start animedigitalnetwork rules>
 !#if animedigitalnetwork.fr
 
+||animedigitalnetwork.fr/vendor/ads/*$1p,important
+
 !#if dom
 animedigitalnetwork.fr##.adn-opm2-block-rectangle
 animedigitalnetwork.fr##.adn-pave
