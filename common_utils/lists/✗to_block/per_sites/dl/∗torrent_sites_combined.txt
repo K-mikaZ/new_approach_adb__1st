@@ -15,6 +15,11 @@
 !||torrenty.$inline-script
 !||ettvdl.com$inline-script
 
+!#if ((cpasbien.|gktorrent.|oxtorrent.) && dom)
+cpasbien.*,gktorrent.*,oxtorrent.*###vpnvpn
+cpasbien.*,gktorrent.*,oxtorrent.*##.trusted
+!#endif
+
 !#if ((yggtorrent.) && dom)
 yggtorrent.*##[href*="marmota."]
 yggtorrent.*##[href*="://primexbt."]
