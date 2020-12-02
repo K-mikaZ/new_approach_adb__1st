@@ -19,6 +19,7 @@
 ||steepto.com^$domain=~steepto.com
 ||iptautup.com^$domain=~iptautup.com
 
+||itrustzone.site^
 ||syndication.optimizesrv.com^
 ||yourwebbars.com^
 ||relevantairbornefantastic.com^
