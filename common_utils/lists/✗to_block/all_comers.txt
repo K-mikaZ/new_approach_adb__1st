@@ -309,4 +309,4 @@
 ||stats-irl.sxp.smartclip.net^
 ||tv-static.scdn.co^
 ||tv.deezer.com^
-||xml.opera.com
+||xml.opera.com^
