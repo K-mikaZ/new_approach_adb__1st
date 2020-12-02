@@ -123,12 +123,24 @@ vidoza.net##.vjs-topbar
 !#endif
 !#endif
 
+
+!#if (hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com)
+
+!#if popup
+||*$popup,3p,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
+!#endif
+!#if script
+@@/fuckadblock.js?$script,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
+!#endif
+
 !#if (dom && vizplay.icu)
 ! see < https://vizplay.icu/js/video.counters.js >
 vizplay.icu##+js(aopr.js, Image)
 vizplay.icu##+js(aopr.js, 見妒見冰)
 vizplay.icu##+js(aopr.js, BetterJsPop)
 vizplay.icu##+js(set.js, adb, '1/')
+!#endif
+
 !#endif
 
 ! [fix] for apply correct redirect-rule
