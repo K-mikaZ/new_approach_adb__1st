@@ -15,6 +15,10 @@
 ||innovid.com$domain=~innovid.com
 ||flashtalking.com$domain=~flashtalking.com
 
+||syndication.optimizesrv.com^
+||yourwebbars.com^
+||relevantairbornefantastic.com^
+||facilitategovernor.com^
 ||iclickcdn.com^
 ||in-page-push.com^
 ||inpagepush.com^
