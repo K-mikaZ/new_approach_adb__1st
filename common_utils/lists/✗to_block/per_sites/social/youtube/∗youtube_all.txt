@@ -64,6 +64,9 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 !#endif
 
 
+||youtube.com/[[computeEmptyGif_()]]$image
+||youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
+
 !#if script
 ||google./js/bg/*$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,important
 !/y(ou)?t(u)?(be)?\.(.{2,})(.*\/)?(miniplayer|endscre{2}n|(an{2}otations\_module)|(.*\-next\-lite))(\.min)?\.js/$script
