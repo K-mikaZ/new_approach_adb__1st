@@ -18,7 +18,11 @@
 ||mgid.com^$domain=~mgid.com
 ||steepto.com^$domain=~steepto.com
 ||iptautup.com^$domain=~iptautup.com
+||rtmark.net^$domain=~rtmark.net
 
+||awaitcola.com^
+||datadoghq-browser-agent.com^
+||datadoghq.com^
 ||itrustzone.site^
 ||syndication.optimizesrv.com^
 ||yourwebbars.com^
