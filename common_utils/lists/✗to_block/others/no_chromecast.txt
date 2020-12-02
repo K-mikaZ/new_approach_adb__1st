@@ -18,16 +18,15 @@
 /[\-|\/]chromecast([@])?(\.min)?/$script
 
 ! somes allowed
-! [fix] exclude dood.to (break loading player)
+! [fix] break loading player
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=dood.to
-! [fix] exclude "RTL group" (break loading sites)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=6play.fr|rtlplay.be
-! [fix] exclude uqload.com,vudeo.net (break loading player)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=vudeo.net
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=uqload.com
-uqload.com,vudeo.net##.chromecast-button
-! [fix] exclude waaw.* (break loading player)
 @@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=waaw.to|waaw.tv
+@@/[\-|\/]chromecast([@])?(\.min)?/$script,domain=playtube.ws
+
+uqload.com,vudeo.net##.chromecast-button
 
 ! --------------------
 ! [fix] because of /player8/provider.cast.js or /jwplayer/v/8.8.2_new/provider.cast.js
