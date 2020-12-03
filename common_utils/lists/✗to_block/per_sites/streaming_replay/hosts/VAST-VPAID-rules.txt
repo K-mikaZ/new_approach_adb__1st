@@ -92,8 +92,8 @@
 ||deliver.vkcdnservice.com$xhr,redirect-rule=noopvast-3.0
 ||vast.adsafeprotected.com$xhr,redirect-rule=noopvast-3.0
 ||vast.smilewanted.com/ads/*$xhr,redirect-rule=noopvast-3.0
-||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
 /vast/*_vast=3$xhr,redirect-rule=noopvast-3.0
+/streamzvast/anavast.php*$xhr,redirect-rule=noopvast-3.0
 ||vkcdnservice.com/api/spots/*$xhr,redirect-rule=noopvast-3.0
 ! [fix] see < https://www.fluidplayer.com/video-advertising >
 ||syndication.exdynsrv.com/splash.php$xhr,redirect-rule=noopvast-3.0
@@ -104,7 +104,8 @@
 ! [fix] di.fm noop vast
 ||pubads.g.doubleclick.net/gampad/ads?sz=300x250*&output=vast*$xhr,redirect-rule=noopvast-3.0
 ! [FIX] imasdk.googleapis.com
-/ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
+/\/ads(_billets)?.xml/$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
+!||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
 
 ! VAST version 4.*
 ! -----------------
