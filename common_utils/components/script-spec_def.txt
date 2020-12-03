@@ -48,7 +48,7 @@
 !#endif
 
 !#if doubleclick.net
-||doubleclick.*/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
+||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect=googletagservices_gpt.js
 !#endif
 
@@ -65,13 +65,14 @@
 !#endif
 
 !#if scorecardresearch.com
-||scorecardresearch.*/beacon.js$script,important,redirect=scorecardresearch_beacon.js
+||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
 !#endif
 
 !#if disqus.com
+! DEPRECIATE
 # redirect rules only, not blocking here (see antisocial third-party)
-||disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
-||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
+!||disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
+!||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
 
 !#if (yandex.ru|webvisor.org)
