@@ -6721,7 +6721,7 @@ disqus_embed.js application/javascript
     @@||wired.disqus.com/embed.js
 
 */
-disqus_forums_embed.js
+disqus_forums_embed.js application/javascript
 (function() {
     'use strict';
     const ee = document.getElementsByTagName('script');
