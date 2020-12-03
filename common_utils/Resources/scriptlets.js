@@ -21,7 +21,7 @@
     Home: https://github.com/gorhill/uBlock
 */
 /// disqus_embed.js
-disqus_embed.js application/javascript
+disqus_embed application/javascript
 (function() {
     'use strict';
     const p = document.getElementById(window.disqus_container_id || 'disqus_thread');
@@ -94,7 +94,7 @@ disqus_embed.js application/javascript
 
 */
 /// disqus_forums_embed.js
-disqus_forums_embed.js application/javascript
+disqus_forums_embed application/javascript
 (function() {
     'use strict';
     const ee = document.getElementsByTagName('script');
