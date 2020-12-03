@@ -48,6 +48,7 @@
 !#endif
 
 !#if doubleclick.net
+||doubleclick.net/instream/ad_status.js$script,redirect-rule=doubleclick.net/instream/ad_status.js,badfilter
 ||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
 ||securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect=googletagservices_gpt.js
 !#endif
@@ -65,6 +66,7 @@
 !#endif
 
 !#if scorecardresearch.com
+||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch.com/beacon.js,badfilter
 ||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
 !#endif
 
