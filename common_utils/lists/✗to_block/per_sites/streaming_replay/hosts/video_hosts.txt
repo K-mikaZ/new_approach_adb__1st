@@ -99,13 +99,14 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 
 !#if vidoza.net
 @@||vidoza.net^$script,domain=heapfiles.com|vidoza.co|vidoza.net,badfilter
-!#if (image && 1p)
-/vidoza\.(.{2,})\/(.*)\/(a(db_logo|t{2}ention))\./$image,1p,important
-!#endif
 !#if dom
 vidoza.net##.simpleToast
 vidoza.net###asg-push-frame3
 vidoza.net##.vjs-topbar
+vidoza.net##.asg-vjs-overlay
+vidoza.net##.asg-container
+vidoza.net##.asg-vast-overlay
+vidoza.net##.asg-label
 !#endif
 !#endif
 
