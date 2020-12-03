@@ -6649,7 +6649,7 @@ function noopFunc() {};
 
     Home: https://github.com/gorhill/uBlock
 */
-disqus_embed.js application/javascript
+disqus_embed application/javascript
 (function() {
     'use strict';
     const p = document.getElementById(window.disqus_container_id || 'disqus_thread');
@@ -6686,7 +6686,7 @@ disqus_embed.js application/javascript
         ev.stopPropagation();
     };
     b.addEventListener('click', loadDisqus, { once: true });
-})();
+})({"name":"disqus_embed","args":[]}, []);
 
 /*******************************************************************************
 
@@ -6721,7 +6721,7 @@ disqus_embed.js application/javascript
     @@||wired.disqus.com/embed.js
 
 */
-disqus_forums_embed.js application/javascript
+disqus_forums_embed application/javascript
 (function() {
     'use strict';
     const ee = document.getElementsByTagName('script');
@@ -6739,7 +6739,7 @@ disqus_forums_embed.js application/javascript
     e.async = true;
     e.src = '//' + window.disqus_shortname + '.disqus.com/embed.js';
     document.body.appendChild(e);
-})();
+})({"name":"disqus_forums_embed","args":[]}, []);
 
 
 /**
