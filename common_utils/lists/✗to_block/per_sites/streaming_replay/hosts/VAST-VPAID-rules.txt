@@ -49,7 +49,7 @@
 /(.*)\&output\=xml\_vast((?![2|3|4]+)|([1]+)?)(.*)?/$xhr,redirect-rule=noopvast-1.0
 ||*&output=xml_vast1$xhr,redirect-rule=noopvast-1.0
 ||*&output=xml_vast&$xhr,redirect-rule=noopvast-1.0
-||*/vast/1$xhr,redirect-rule=noopvast-1.0
+||*/vast/1$xhr,domain=~rakuten.tv,redirect-rule=noopvast-1.0
 ||vast.*/v1$xhr,redirect-rule=noopvast-1.0
 ||*/vast/VAST-1$xhr,redirect-rule=noopvast-1.0
 ||*AdsSetup&protocolVersion=1$xhr,redirect-rule=noopvast-1.0
@@ -60,7 +60,7 @@
 ! -----------------
 /(.*)\&output\=xml\_vast[2+](.*)?/$xhr,redirect-rule=noopvast-2.0
 ||*&output=xml_vast2$xhr,redirect-rule=noopvast-2.0
-||*/vast/2$xhr,redirect-rule=noopvast-2.0
+||*/vast/2$xhr,domain=~rakuten.tv,redirect-rule=noopvast-2.0
 ||vast.*/v2$xhr,redirect-rule=noopvast-2.0
 ||*/vast/VAST-2$xhr,redirect-rule=noopvast-2.0
 ||*AdsSetup&protocolVersion=2$xhr,redirect-rule=noopvast-2.0
@@ -79,7 +79,8 @@
 /(.*)\&output\=xml\_vast[3+](.*)?/$xhr,redirect-rule=noopvast-3.0
 ||*&output=xml_vast3$xhr,redirect-rule=noopvast-3.0
 ||vast.*/v3$xhr,redirect-rule=noopvast-3.0
-||*/vast/3$xhr,redirect-rule=noopvast-3.0
+||*/vast/3$xhr,domain=~rakuten.tv,redirect-rule=noopvast-3.0
+/vast/3$xhr,domain=rakuten.tv,redirect-rule=noop.txt
 ||*/vast/VAST-3$xhr,redirect-rule=noopvast-3.0
 ||*AdsSetup&protocolVersion=3$xhr,redirect-rule=noopvast-3.0
 ||springserve.com$xhr,redirect=noopvast-3.0
@@ -107,8 +108,6 @@
 /ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
 /ads.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
 
-!||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
-
 ! VAST version 4.*
 ! -----------------
 /(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(?![1-9]\d)[0]|(?![\.\-\_]+)(?!\d+))(.*)?/$xhr,redirect-rule=noopvast-4.0
@@ -119,9 +118,9 @@
 ||*/vast/VAST-4.0$xhr,redirect-rule=noopvast-4.0
 ||*/vast/VAST-4.1$xhr,redirect-rule=noopvast-4.1
 ||*/vast/VAST-4.2$xhr,redirect-rule=noopvast-4.2
-||*/vast/4.0$xhr,redirect-rule=noopvast-4.0
-||*/vast/4.1$xhr,redirect-rule=noopvast-4.1
-||*/vast/4.2$xhr,redirect-rule=noopvast-4.2
+||*/vast/4.0$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.0
+||*/vast/4.1$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.1
+||*/vast/4.2$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.2
 /vast/*_vast=4$xhr,redirect-rule=noopvast-4.0
 ||*AdsSetup&protocolVersion=4.0$xhr,redirect-rule=noopvast-4.0
 ||*AdsSetup&protocolVersion=4.1$xhr,redirect-rule=noopvast-4.1
