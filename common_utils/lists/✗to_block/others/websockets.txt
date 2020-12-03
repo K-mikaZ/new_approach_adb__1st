@@ -28,4 +28,5 @@
 @@||lastpass.com^$websocket
 ! @@/^ws{2}(([\:][\/]{2})+)/$domain=chat.twitch.tv
 @@||chat.twitch.tv^$websocket
-@@/^ws{2}(([\:][\/]{2})+)/$websocket,domain=packetlosstest.com
+@@/^ws{2}(([\:][\/]{2})+)/$domain=packetlosstest.com
+@@/^ws{2}(([\:][\/]{2})+)/$domain=dns-oarc.net
