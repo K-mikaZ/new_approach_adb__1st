@@ -92,6 +92,7 @@
 ||deliver.vkcdnservice.com$xhr,redirect-rule=noopvast-3.0
 ||vast.adsafeprotected.com$xhr,redirect-rule=noopvast-3.0
 ||vast.smilewanted.com/ads/*$xhr,redirect-rule=noopvast-3.0
+||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
 /vast/*_vast=3$xhr,redirect-rule=noopvast-3.0
 ||vkcdnservice.com/api/spots/*$xhr,redirect-rule=noopvast-3.0
 ! [fix] see < https://www.fluidplayer.com/video-advertising >
