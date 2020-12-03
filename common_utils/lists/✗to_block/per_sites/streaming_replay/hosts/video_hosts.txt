@@ -30,6 +30,7 @@ fwmrm.net##+js(window.open-defuser.js)
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*streamtape\.).*))/$script,frame,popup,3p,domain=streamtape.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*uqload\.).*))/$script,frame,popup,3p,domain=uqload.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upstream\.).*))/$script,frame,popup,3p,domain=upstream.to
+/http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*uptostream\.).*))/$script,frame,popup,3p,domain=uptostream.com
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*upvid\.).*))/$script,frame,popup,3p,domain=upvid.net
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vidlox\.).*))/$script,frame,popup,3p,domain=vidlox.me
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*vid(eobin|lox)\.).*))/$script,frame,popup,3p,domain=videobin.co
@@ -93,7 +94,7 @@ playtovid.com###container-2e454816c2f0b2e3aeed71e38edfb86377331
 /uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
 !#endif
 !#if (xhr && 1p)
-||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
+||uptostream.com/assets/ads.xml$xhr,important
 !#endif
 !#endif
 
