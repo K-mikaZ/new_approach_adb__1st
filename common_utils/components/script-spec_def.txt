@@ -68,6 +68,7 @@
 !#if scorecardresearch.com
 ||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch.com/beacon.js,badfilter
 ||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
+||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch_beacon.js
 !#endif
 
 !#if disqus.com
