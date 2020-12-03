@@ -104,7 +104,9 @@
 ! [fix] di.fm noop vast
 ||pubads.g.doubleclick.net/gampad/ads?sz=300x250*&output=vast*$xhr,redirect-rule=noopvast-3.0
 ! [FIX] imasdk.googleapis.com
-/\/ads(_billets)?\.xml/$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
+/ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
+/ads.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
+
 !||uptostream.com/assets/ads.xml$xhr,redirect-rule=noopvast-3.0
 
 ! VAST version 4.*
