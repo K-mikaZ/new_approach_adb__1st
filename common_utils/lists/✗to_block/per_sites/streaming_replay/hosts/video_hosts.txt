@@ -10,7 +10,8 @@ fwmrm.net##+js(window.open-defuser.js)
 
 !#if script
 
-|https://$script,3p,domain=upstream.to,badfilter! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, google's, github's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
+|https://$script,3p,domain=upstream.to,badfilter
+! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, google's, github's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*allvid\.).*))/$script,frame,popup,3p,domain=allvid.co
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*aparat\.).*))/$script,frame,popup,3p,domain=aparat.cam
 /http((?!(.*((go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js)|.*cast\_(?:[\w]+)\.js|.*g(oogle(apis)?|ithub)\.|.*c(dnjs|loudflare)\.|.*\.j(query|sdelivr|wpcdn)\.|.*bidzen\.).*))/$script,frame,popup,3p,domain=bidzen.co
@@ -47,6 +48,11 @@ fwmrm.net##+js(window.open-defuser.js)
 @@/related.js$script,domain=hydracdn.network
 @@/related.js$script,domain=femax20.com|fembed.com
 
+!#endif
+
+
+!#if (clipwatching.com && script)
+||clipwatching.com/pu/*.js$script,1p,important
 !#endif
 
 !#if dood.watch
