@@ -86,4 +86,17 @@
 ||*/yandex-metrica-watch/tag$script,redirect=metrika-yandex-tag
 !#endif
 
+! [FIX] for correct redirects
+! ___________________________
+||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,badfilter
+||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js,badfilter
+||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js,badfilter
+||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js,badfilter
+||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
+||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js,badfilter
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager.com/gtm.js,badfilter
+||widgets.outbrain.com/outbrain.js$script,redirect=widgets.outbrain.com/outbrain.js,badfilter
+||google-analytics.com/analytics.js$important,script,redirect=google-analytics.com/analytics.js,domain=support.amd.com,badfilter
+||googletagmanager.com/gtm.js$important,script,redirect=googletagmanager.com/gtm.js,domain=support.amd.com,badfilter
+
 !
