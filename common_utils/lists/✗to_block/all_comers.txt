@@ -12,13 +12,23 @@
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
 
-||innovid.com$domain=~innovid.com
-||flashtalking.com$domain=~flashtalking.com
-
+||innovid.com^$domain=~innovid.com
+||flashtalking.com^$domain=~flashtalking.com
 ||mgid.com^$domain=~mgid.com
 ||steepto.com^$domain=~steepto.com
 ||iptautup.com^$domain=~iptautup.com
 ||rtmark.net^$domain=~rtmark.net
+||spotxchange.com^$domain=~spotxchange.com
+||adsrvr.org^$domain=~adsrvr.org
+||qualaroo.com^$domain=~qualaroo.com
+||criteo.com^$domain=~criteo.com
+||redfast.com^$domain=~redfast.com
+||redfastlabs.com^$domain=~redfastlabs.com
+||ads.tremorhub.com^$domain=~tremorhub.com
+||criteo.net^$domain=~criteo.net
+||segment.io^$domain=~segment.io
+||trustarc.com^$domain=~trustarc.com
+||turner.com^$domain=~turner.com
 
 ||1clic1don.fr^
 ||awaitcola.com^
