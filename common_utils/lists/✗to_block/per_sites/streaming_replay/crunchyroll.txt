@@ -8,7 +8,8 @@ crunchyroll.com###series_promo_banner
 /js/tracking/*$script,domain=crunchyroll.com,important
 ||getpublica.com^$xhr,domain=crunchyroll.com,important,redirect=noopvast-2
 ||fwmrm.net/*crunchyroll.com*midroll*$xhr,redirect=noopvast-2.0
-||*/crunchyroll-web.json$xhr,domain=crunchyroll.com,important
+!||*/crunchyroll-web.json$xhr,domain=crunchyroll.com,important
+/crunchyroll-web.json$xhr,domain=crunchyroll.com,redirect=empty
 
 @@/track$ping,domain=crunchyroll.com
 
