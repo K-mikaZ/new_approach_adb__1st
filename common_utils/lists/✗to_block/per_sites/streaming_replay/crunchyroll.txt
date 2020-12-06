@@ -1,0 +1,11 @@
+!#if crunchyroll.com
+
+/prebid$xhr,domain=crunchyroll.com,important
+/js/tracking/*$script,domain=crunchyroll.com,important
+||fwmrm.net^$domain=crunchyroll.com
+||getpublica.com^$xhr,domain=crunchyroll.com,important,redirect=noopvast-2
+||fwmrm.net/*crunchyroll.com*midroll*$xhr,redirect=noopvast-2.0
+||*/crunchyroll-web.json$xhr,domain=crunchyroll.com,important
+@@/track$ping,domain=crunchyroll.com
+
+!#endif
