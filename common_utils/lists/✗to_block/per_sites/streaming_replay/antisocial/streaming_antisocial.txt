@@ -12,6 +12,16 @@ ultimate-catch.eu##[href*=".twitch."]
 !#endif
 !#endif
 
+
+!#if crunchyroll.com
+!#if dom
+crunchyroll.com##.comments
+!#endif
+!#if xhr
+/comments$xhr,domain=crunchyroll.com
+!#endif
+!#endif
+
 !#if (jwpcdn.com && script)
 ||jwpcdn.com/player*/sharing.js$script,important
 !#endif
