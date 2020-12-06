@@ -27,8 +27,6 @@
 ||ads.tremorhub.com^$domain=~tremorhub.com
 ||criteo.net^$domain=~criteo.net
 ||segment.io^$domain=~segment.io
-||trustarc.com^$domain=~trustarc.com
-||turner.com^$domain=~turner.com
 
 ||1clic1don.fr^
 ||awaitcola.com^
