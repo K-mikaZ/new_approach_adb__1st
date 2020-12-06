@@ -7,6 +7,10 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
 
+! [FIX] AdChoices crunchyroll.com
+@@||trustarc.com^
+@@||turner.com^
+
 ! from "Fuck Fuckadblock"
 @@/[-._?&=#/]pop([au]nders?)?[-.0-9_?&=#/]/$script,1p
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
