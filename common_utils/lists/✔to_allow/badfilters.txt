@@ -224,6 +224,10 @@ streamroot.io$script,important,badfilter
 ||lm.messenger.com$subdocument,important,badfilter
 !#endif
 
+! [Fix] AdChoices crunchyroll.com
+||trustarc.com^,badfilter
+||turner.com^,badfilter
+
 !#endif
 
 ! </end badfilters >
