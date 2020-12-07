@@ -6,9 +6,10 @@
 /cdn-cgi/trace
 ! [fix] because of https://www.cloudflare.com/ssl/encrypted-sni/
 @@encryptedsni.com/cdn-cgi/trace$xhr,domain=cloudflare.com
+@@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,1p
 
 /\/pixel\/pu(clc|rs(t)?)\?/
-|http*://*.club^$3p
+!|http*://*.club^$3p
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
 
@@ -27,6 +28,7 @@
 ||spotxchange.com^$domain=~spotxchange.com
 ||steepto.com^$domain=~steepto.com
 ||tremorhub.com^$domain=~tremorhub.com
+||xiti.com^$domain=~xiti.com
 
 ||1clic1don.fr^
 ||adentifi.com^
