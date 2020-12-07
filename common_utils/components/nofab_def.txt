@@ -21,6 +21,7 @@
 ||*/blockadblock.$script,redirect-rule=nofab.js
 ||*/sniffadblock.$script,redirect-rule=nofab.js
 /adblock.js$script,redirect-rule=nofab.js
+*/wp-adblock-$script,redirect=nofab.js
 
 ! [fix] for unrecognized
 ||*/fuckadb*.js$script
