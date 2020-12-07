@@ -27,6 +27,8 @@ rakuten.tv##+js(set.js, heartbeat, OK)
 !#endif
 
 @@||spotxchange.com^$domain=rakuten.tv,badfilter
+@@||search.spotxchange.com^$image,domain=rakuten.tv,badfilter
+@@||spotxchange.com/vast/$xhr,domain=rakuten.tv
 
 ! see also < https://prod2-kraken-cloudfront.rakuten.tv/scripts/app-b855fd8288.js >
 
