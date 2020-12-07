@@ -14,6 +14,7 @@
 ||perf.cdnads.com/perf.gif^$image
 
 ||adsrvr.org^$domain=~adsrvr.org
+||atera.com^$domain=~atera.com
 ||criteo.com^$domain=~criteo.com
 ||criteo.net^$domain=~criteo.net
 ||flashtalking.com^$domain=~flashtalking.com
