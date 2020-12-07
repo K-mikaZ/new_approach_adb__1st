@@ -14,5 +14,8 @@
 ||slpubmedias.tf1.fr^
 ||metrics-broker.prod.p.tf1.fr^$xhr,domain=tf1.fr
 
+! TF1 Digital Publicite
+||formatfactory.biz^
+
 !#endif
 !</ end TF1 rules >
