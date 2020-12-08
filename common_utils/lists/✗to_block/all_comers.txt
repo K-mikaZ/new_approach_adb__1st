@@ -30,7 +30,17 @@
 ||steepto.com^$domain=~steepto.com
 ||tremorhub.com^$domain=~tremorhub.com
 ||xiti.com^$domain=~xiti.com
+||offerimage.com^$domain=~offerimage.com
 
+||onstunkyr.com^
+||geedoovu.net^
+||jomtingi.net^
+||opsoomet.net^
+||optimizesrv.com^
+||ruwertur.com^
+||sheenaup.net^
+||whoavaud.net^
+||googleoptimize.com^
 ||1clic1don.fr^
 ||adentifi.com^
 ||awaitcola.com^
