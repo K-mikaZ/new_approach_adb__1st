@@ -21,16 +21,17 @@
 ||innovid.com^$domain=~innovid.com
 ||iptautup.com^$domain=~iptautup.com
 ||mgid.com^$domain=~mgid.com
+||offerimage.com^$domain=~offerimage.com
 ||qualaroo.com^$domain=~qualaroo.com
 ||redfast.com^$domain=~redfast.com
 ||redfastlabs.com^$domain=~redfastlabs.com
 ||rtmark.net^$domain=~rtmark.net
 ||segment.io^$domain=~segment.io
+||sentry.io^$domain=~sentry.io
 ||spotxchange.com^$domain=~spotxchange.com
 ||steepto.com^$domain=~steepto.com
 ||tremorhub.com^$domain=~tremorhub.com
 ||xiti.com^$domain=~xiti.com
-||offerimage.com^$domain=~offerimage.com
 
 ||onstunkyr.com^
 ||geedoovu.net^
