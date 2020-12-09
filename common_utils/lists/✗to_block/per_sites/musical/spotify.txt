@@ -38,6 +38,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 
 !#if xhr
 /(.*)spotify(.*)\.akamaized\.net/$xhr,redirect-rule=empty
+!/(.*)spotify(.*)\.akamaized\.net/$xhr,redirect-rule=noop-1s.mp4
 ! does not memorize the position of the playlist if blocked
 @@||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=open.spotify.com,important
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
@@ -53,7 +54,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 /(.*)spotify(.*)\.akamaized\.net/$media,redirect-rule=noop-0.1s.mp3
 !#endif
 
-/(.*)spotify(.*)\.akamaized\.net/
+/(.*)spotify(.*)\.akamaized\.net/$important
 /api((\-)?partner)?\.spotify\.com/
 
 ||adclick.g.doubleclick.com^
