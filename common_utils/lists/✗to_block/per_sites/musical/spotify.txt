@@ -40,7 +40,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 /(.*)spotify(.*)\.akamaized\.net/$xhr,redirect-rule=empty
 !/(.*)spotify(.*)\.akamaized\.net/$xhr,redirect-rule=noop-1s.mp4
 ! does not memorize the position of the playlist if blocked
-@@||api.spotify.com/v1/tracks?ids=*&market=from_token$xhr,domain=spotify.com
+@@||api.spotify.com/*/tracks?ids=*&market=from_token$xhr,domain=spotify.com
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
 !||gew-spclient.spotify.com/quicksilver/v2/triggers?trig_type=URI&trig_type=CLIENT_EVENT&ctv_type=web-modal&$xhr,domain=spotify.com
 /quick(.*)\/(.*)(web(\-)?)?modal/$domain=spotify.com,important
