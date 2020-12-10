@@ -56,7 +56,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 !#endif
 
 /(.*)spotify(.*)\.akamaized\.net/$important
-/api(?!(\-)?partner)?\.spotify\.com/
 
 ||adclick.g.doubleclick.com^
 ! [FIX] too much information on ublock badge
