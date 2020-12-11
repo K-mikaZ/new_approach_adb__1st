@@ -1,8 +1,6 @@
 ! < start spotify rules >
 !#if open.spotify.com
 
-||adeventtracker.spotify.com^
-
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
 ! [try] not sure for set
@@ -63,6 +61,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||spotify.com/melody/*/logging/$important,badfilter
 
 ! [fix] badfilters
+||adeventtracker.spotify.com^$badfilter
 ||spotify.com^*/logging/$badfilter
 ||open.spotify.com^$badfilter
 ! [fix] chromecast concern
