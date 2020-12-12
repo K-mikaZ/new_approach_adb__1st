@@ -110,6 +110,7 @@
 ||sdk.privacy-center.org^
 ||sheenaup.net^
 ||syndication.optimizesrv.com^
+||tagbom.com^
 ||tapixesa.pro^
 ||teachcoexist.com^
 ||tidaltv.com^
@@ -118,6 +119,7 @@
 ||unreshiramor.com^
 ||unrulymedia.com^
 ||vaipsouw.com^
+||validbox.xyz^
 ||vipicmou.net^$all,important
 ||w00ur5z9jy3a.com^
 ||webpinp.com^
