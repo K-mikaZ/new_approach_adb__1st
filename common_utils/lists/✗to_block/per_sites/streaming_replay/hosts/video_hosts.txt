@@ -141,6 +141,8 @@ vidoza.net##.asg-label
 !#if (hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com)
 
 !#if popup
+!|about:$popup,domain=hqq.tv
+/out.php$popup,domain=domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 ||*$popup,3p,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 !#endif
 !#if script
