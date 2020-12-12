@@ -62,6 +62,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||spotify.com/melody/*/logging/$important,badfilter
 
 ! [fix] badfilters
+@@||doubleclick.$domain=spotify.com
 ||adeventtracker.spotify.com^$badfilter
 ||spotify.com^*/logging/$badfilter
 ||open.spotify.com^$badfilter
