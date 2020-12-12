@@ -53,7 +53,7 @@
 ||doubleverify.com^$domain=~doubleverify.com
 ||downdetector.com^$domain=~downdetector.com
 ||dyntrk.com^$domain=~dyntrk.com
-||edaa.eu^$domain=~edaa.eu
+||knorex.com^$domain=~knorex.com
 ||emerse.com^$domain=~emerse.com
 ||everesttech.net^$domain=~everesttech.net
 ||exelator.com^$domain=~exelator.com
