@@ -22,6 +22,10 @@ allseries.*#?#.jumbotron:if(.page-keywords)
 boingtv.fr##.leaderboard
 !#endif
 
+!#if wow-films.
+wow-films.*##+js(ra.js, href|rel|target, #clickfakeplayer)
+!#endif
+
 !#if (clipwatching.com && dom)
 clipwatching.com##+js(window.open-defuser)
 clipwatching.com##.cover
