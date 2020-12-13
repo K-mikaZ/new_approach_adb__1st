@@ -79,6 +79,7 @@
 ||mynsystems.com^$domain=~mynsystems.com
 ||ncaudienceexchange.com^$domain=~ncaudienceexchange.com
 ||neodatagroup.com^$domain=~neodatagroup.com
+||newrelic.com^$domain=~newrelic.com
 ||nexage.com^$domain=~nexage.com
 ||nxtck.com^$domain=~nxtck.com
 ||oath.com^$domain=~oath.com
@@ -135,6 +136,8 @@
 
 ||1clic1don.fr^
 ||adentifi.com^
+||adsco.re^
+||adservice.google.com^
 ||awaitcola.com^
 ||azoaltou.com^
 ||bebreloomr.com^
@@ -146,10 +149,14 @@
 ||cdn.insta.playbryte.com^
 ||cdn.msdwnld.com^
 ||cdn.mypcbackup.com^
+||cdn4ads.com^
 ||datadoghq-browser-agent.com^
 ||datadoghq.com^
 ||deliveryengine.adswizz.com^
+||denetsuk.com^
 ||doufoacu.net^
+||dyntrk.com^
+||e2ertt.com^
 ||e2wysbacctt1.com^
 ||easy-bars.com^
 ||eikegolehem.com^
@@ -170,6 +177,7 @@
 ||inpagepush.com^
 ||installer.betterinstaller.com^
 ||installer.filebulldog.com^
+||intnotif.club^
 ||itnuzleafan.com^
 ||itrustzone.site^
 ||jomtingi.net^
@@ -179,32 +187,44 @@
 ||moatads.com^
 ||mocmubse.net^
 ||mplexanno.club^
+||mwgol.com^
 ||naggingrugcolossal.com^
 ||nbf9b5aurl.com^
+||nr-data.net^
 ||nsis.bisrv.com^
 ||obstanceder.pro^
+||offerimage.com^
+||omisingcur.fun^
 ||onclickgenius.com^
 ||onclicksuper.com^
+||onmarshtompor.com^
 ||onstunkyr.com^
 ||opsoomet.net^
 ||optimizesrv.com^
 ||ovyiakt1wzqz.com^
 ||phoossax.net^
+||pisism.com^
 ||platitudefivesnack.com^
 ||prepenseprepensedefiance.com^
+||psensuds.net^
 ||ptirgaux.com^
 ||pubmatic.com^
 ||qtbb6.com^
 ||realsrv.com^
 ||relevantairbornefantastic.com^
+||remarketingpixel.com^
 ||residuestream.club^
 ||resultsgenou.club^
+||rtmark.net^
 ||rubiconproject.com^
 ||ruwertur.com^
 ||rwn1sdb4xqa2.com^
 ||scorecardresearch.com^
 ||sdk.privacy-center.org^
 ||sheenaup.net^
+||splittingpick.com^
+||ssaimg.com^
+||stawhoph.com^
 ||syndication.optimizesrv.com^
 ||tagbom.com^
 ||tapixesa.pro^
@@ -218,8 +238,10 @@
 ||validbox.xyz^
 ||vipicmou.net^$all,important
 ||w00ur5z9jy3a.com^
+||waust.at^
 ||webpinp.com^
 ||whoavaud.net^
+||wmgtr.com^
 ||yourwebbars.com^
 
 /ad{2}this(edge)?\.com/
@@ -228,7 +250,6 @@
 ||remarketingpixel.com/stats
 
 ||31.220.3.200^
-||waust.at^$3p
 ||d1grmk7aafb6ck.cloudfront.net^$3p
 ||d36zfztxfflmqo.cloudfront.net^$3p
 ||eikegolehem.com^$3p
