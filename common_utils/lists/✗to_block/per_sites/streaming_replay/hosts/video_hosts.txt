@@ -168,6 +168,7 @@ vizplay.icu##+js(set.js, adb, '1/')
 @@||netu.to^$script,1p,badfilter
 @@||netu.tv^$script,1p,badfilter
 @@||vizplay.icu^$script,1p,badfilter
+@@||younetu.com^$script,1p,badfilter
 
 ! PREFER set in "dynamic filtering"
 !
