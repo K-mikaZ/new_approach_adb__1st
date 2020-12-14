@@ -64,8 +64,12 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 ! SEE:
 ! https://www.youtube.com/get_video_info?html5=1&video_id=HcSrx9YolyI&cpn=AbREsHXz6mBI2k90&eurl&ps=desktop-polymer&el=adunit&hl=fr_FR&aqi=l22xX7PKH_GP7_UP0bCzkAI&sts=18578&lact=166&cbr=Chrome&cbrver=86.0.4240.198&c=WEB&cver=2.20201112.04.01&cplayer=UNIPLAYER&cos=X11&adformat=15_2_1&break_type=1&encoded_ad_playback_context=CA8QAhgBKgtWSjNaaGlCVjlla0IXbDIyeFg3UEtIX0dQN19VUDBiQ3prQUlgAXUmfHo_&iv_load_policy=1&autoplay=1&width=729&height=410&content_v=VJ3ZhiBV9ek&living_room_app_mode=LIVING_ROOM_APP_MODE_UNSPECIFIED
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
+! [FIX] consent
+youtube.com#@##consent-bump:remove()
 !#endif
 
+! [FIX] consent
+@@||consent.youtube.com^$domain=youtube.com
 
 ||youtube.com/[[computeEmptyGif_()]]$image
 ||youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
