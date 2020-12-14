@@ -58,7 +58,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
 ! [fix]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened:remove()
+!youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened:remove()
 ! [fix] alert by overlay if accompte as changed
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 ! SEE:
