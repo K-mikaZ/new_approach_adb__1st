@@ -4,6 +4,8 @@
 crunchyroll.com###series_promo_banner
 !#endif
 
+@@/analytics/*$domain=crunchyroll.com
+
 /prebid$xhr,domain=crunchyroll.com,important
 /js/tracking/*$script,domain=crunchyroll.com,important
 ||getpublica.com^$xhr,domain=crunchyroll.com,important,redirect=noopvast-2
