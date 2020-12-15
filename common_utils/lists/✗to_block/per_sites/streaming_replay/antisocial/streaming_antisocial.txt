@@ -152,9 +152,9 @@ mesfilms.net##.sbox:if(.dt_social_single)
 ! Antisocial Zudbo & co
 ! -----------------------
 ivmox.com,crebya.com,jexoom.com##[src*="/avatar.php?"]
-ivmox.com,crebya.com,jexoom.com###comments-form
-ivmox.com,crebya.com,jexoom.com###jc > h4
-ivmox.com,crebya.com,jexoom.com###comments-list-footer:if(.rss)
+!ivmox.com,crebya.com,jexoom.com###comments-form
+!ivmox.com,crebya.com,jexoom.com###jc > h4
+!ivmox.com,crebya.com,jexoom.com###comments-list-footer:if(.rss)
 !
 /com.php$subdocument,1p,important,domain=irdoz.com|eyobim.com
 irdoz.com,eyobim.com##[src*="/com.php"]
