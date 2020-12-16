@@ -47,7 +47,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 !/[sS]ponso(.*)?([pP]laylist)?/$important,domain=spotify.com
 /gabo-receiver-service/*$xhr,domain=spotify.com,important
 ||adeventtracker.spotify.com^$xhr,important,domain=spotify.com
-||api.spotify.com/*/me/tracks/contains?ids=*%2*$xhr,domain=spotify.com
+/me\/tracks\/contains\?ids\=(([a-zA-Z0-9]+)\%2){1,}/$xhr,domain=spotify.com
 !/jssdk_error$xhr,domain=spotify.com,important
 !#endif
 
