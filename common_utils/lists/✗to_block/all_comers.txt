@@ -102,7 +102,7 @@
 ||segment.io^$domain=~segment.io
 ||semasio.net^$domain=~semasio.net
 ||sentry.io^$domain=~sentry.io
-||serving-sys.com^$domain=~serving-sys.com
+!||serving-sys.com^$domain=~serving-sys.com
 ||sharethis.com^$domain=~sharethis.com
 ||skimresources.com^$domain=~skimresources.com
 ||smartclip.net^$domain=~smartclip.net
