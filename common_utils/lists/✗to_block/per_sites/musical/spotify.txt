@@ -60,8 +60,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 
 /api(?!(\-)?partner)?\.spotify\.com/$badfilter
 
-||adclick.g.doubleclick.com^
-
 ||spclient.wg.spotify.com/ads/*
 ||spclient.wg.spotify.com/ad-logic/*
 
@@ -78,6 +76,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 !@@||gstatic.com^$domain=open.spotify.com
 ! [FIX] break auto bypass ads on open.spotify.com
 ||serving-sys.com^$badfilter
+@@||adclick.$domain=open.spotify.com
 
 !#endif
 ! </ end spotify rules >
