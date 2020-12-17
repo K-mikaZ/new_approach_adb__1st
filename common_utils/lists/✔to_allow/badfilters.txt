@@ -203,6 +203,8 @@ streamroot.io$script,important,badfilter
 
 /cookiesmanager.$badfilter
 
+||serving-sys.com^$badfilter
+
 !
 ! Tracking urls
 ! I prefer use an addon for that for that:
