@@ -203,6 +203,7 @@ streamroot.io$script,important,badfilter
 
 /cookiesmanager.$badfilter
 
+! [FIX] break auto bypass ads on open.spotify.com
 ||serving-sys.com^$badfilter
 
 !
