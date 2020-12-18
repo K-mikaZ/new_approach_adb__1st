@@ -10,12 +10,12 @@ LEGEND: Lists with 3 stars (⭒⭒⭒) are in "beta" versions
 ###### <ins>LISTS</ins> ( subscription / abonnement ):
 - "Rules, Filtering and exception list" [[ Install ]](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters.txt&amp;title=Rules%2C%20Filtering%20and%20exception%20list)
     > ###### *fr: "Règles, filtrage et liste d'exceptions"*
-- "Rules, Filtering, exception list and <ins>no-chromecast</ins>" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast.txt&amp;title=Rules%2C%20Filtering%2C%20exception%20list%20and%20no-chromecast) ⭒⭒⭒
+~~- "Rules, Filtering, exception list and <ins>no-chromecast</ins>" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast.txt&amp;title=Rules%2C%20Filtering%2C%20exception%20list%20and%20no-chromecast) ⭒⭒⭒
     > ###### *fr: "Règles, filtrage, liste d'exceptions et bloque chromecast"*
 - "Rules, filtering, exception list and blocking antisocial third-party" [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%20list%20and%20blocking%20antisocial%20third-party)
-    > ###### *fr: "Règles, filtrage, liste d'exceptions et blocage de tiers antisociaux"*
-- "Rules, filtering, exception list, blocking antisocial third-party and <ins>no-chromecast</ins>" (full) [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%2C%20blocking%20antisocial%20third-party%20and%20no%20chromecast) ⭒⭒⭒
-    > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et bloque chromecast" (complet)*   
+    ~~> ###### *fr: "Règles, filtrage, liste d'exceptions et blocage de tiers antisociaux"*
+~~- "Rules, filtering, exception list, blocking antisocial third-party and <ins>no-chromecast</ins>" (full) [[ Install ]](https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/KmZ_filters_no-chromecast_with_antisocial_third-part.txt&amp;title=Rules%2C%20filtering%2C%20exception%2C%20blocking%20antisocial%20third-party%20and%20no%20chromecast) ⭒⭒⭒
+    > ###### *fr: "Règles, filtrage, liste d'exceptions, blocage de tiers antisociaux et bloque chromecast" (complet)*  
 
 ###### <ins>EXTRA</ins> ( subscription / abonnement ):
 - "No WEBRTC" - Block WEBRTC (Web Real Time Communications), sometimes used for "real-time advertising" [[ Install ]](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FK-mikaZ%2Fnew_approach_adb__1st%2Fmaster%2Fcommon_utils%2Flists%2F%E2%9C%97to_block%2Fothers%2Fno_webrtc.txt&amp;title=No%20WEBRTC) ⭒⭒⭒
