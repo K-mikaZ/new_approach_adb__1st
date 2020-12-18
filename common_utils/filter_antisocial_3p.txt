@@ -15,21 +15,21 @@
 ! < start Disqus on demand >
 !#if (disqus.com && !1p)
 
-# Completely experimental: load Disqus on demand only. Purpose is to avoid
-# connecting to Disqus' servers, unless the user explicitly asks for the
-# comments to be loaded.
-# Works with following filters: disqus_forums_embed.js AND disqus_embed.js
-# Uncomment for blocking all
+! Completely experimental: load Disqus on demand only. Purpose is to avoid
+! connecting to Disqus' servers, unless the user explicitly asks for the
+! comments to be loaded.
+! Works with following filters: disqus_forums_embed.js AND disqus_embed.js
+! Uncomment for blocking all
 !#if script
 ! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
 ! see example here: < https://einaregilsson.com/redirector/ >
 ||disqus.com/forums/*/embed.js$script,3p
 ||disqus.com/embed.js$script,3p
 !#endif
-# If you want a site you regularly visit to always have the comment loaded,
-# just use an exception static filter. Example for wired.com:
-# @@||wired.disqus.com/embed.js
-# Otherwise, leave commented and block on request per sites with example:
+! If you want a site you regularly visit to always have the comment loaded,
+! just use an exception static filter. Example for wired.com:
+! @@||wired.disqus.com/embed.js
+! Otherwise, leave commented and block on request per sites with example:
 !||allocine-prod2.disqus.com/embed.js$script,important
 !||topreplay.disqus.com/embed.js$script,important
 
