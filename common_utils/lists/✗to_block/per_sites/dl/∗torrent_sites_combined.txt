@@ -2,7 +2,7 @@
 ! < start torrent sites rules >
 
 ! try block all third-party except images, css and font.
-*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw|yggtorrent.se|yggtorrent.pe|yggtorrent.si|yggtorrent.gg
+*$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 ! [fix] because of imdb links
 *$popup,3p,domain=ettvcentral.com|ettvdl.com,badfilter
 
