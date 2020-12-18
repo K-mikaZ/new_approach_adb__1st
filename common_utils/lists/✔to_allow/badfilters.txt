@@ -228,6 +228,9 @@ streamroot.io$script,important,badfilter
 ||trustarc.com^,badfilter
 ||turner.com^,badfilter
 
+! [FIX] unblock auto bypass ads on open.spotify.com 
+||doubleclick.net^$3p,badfilter
+
 !#endif
 
 ! </end badfilters >
