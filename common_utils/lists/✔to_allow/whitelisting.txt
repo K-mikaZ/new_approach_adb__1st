@@ -11,6 +11,17 @@
 @@||trustarc.com^
 @@||turner.com^
 
+*##+js(no-fetch-if, /adsbygoogle.js$/)
+/pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
+@@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
+@@/^https?:\/\/(www\.)?.*\/(?!adsbygo{2}gle.*)ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script
+@@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
+@@/^https?:\/\/(www\.)?.*\/(?!adsbygo{2}gle.*)ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
+
+! unbreak tf1.fr
+! because ://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro... in "uBlock filters – Unbreak" list
+@@||ads.stickyadstv.com^
+
 ! from "Fuck Fuckadblock"
 @@/[-._?&=#/]pop([au]nders?)?[-.0-9_?&=#/]/$script,1p
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
