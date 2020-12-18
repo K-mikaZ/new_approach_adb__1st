@@ -73,7 +73,7 @@
 
 !#if disqus.com
 ! DEPRECIATE
-# redirect rules only, not blocking here (see antisocial third-party)
+! redirect rules only, not blocking here (see antisocial third-party)
 !||disqus.com/forums/*/embed.js$script,redirect-rule=disqus_forums_embed.js
 !||disqus.com/embed.js$script,redirect-rule=disqus_embed.js
 !#endif
