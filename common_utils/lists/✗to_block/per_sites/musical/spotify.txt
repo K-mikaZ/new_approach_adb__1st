@@ -77,7 +77,8 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ! [FIX] break auto bypass ads on open.spotify.com
 ||serving-sys.com^$badfilter
 @@||adclick.$domain=open.spotify.com
-@@/trackclk/$domain=open.spotify.com
+!@@/trackclk/$domain=open.spotify.com
+@@/cl(i)?k/$domain=open.spotify.com
 
 !#endif
 ! </ end spotify rules >
