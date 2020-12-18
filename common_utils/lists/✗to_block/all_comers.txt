@@ -277,6 +277,8 @@
 /ad{2}this(edge)?\.com/
 /in(\-)?page(\-)?push\.com/
 
+/script/*.php?*$image
+
 ||remarketingpixel.com/stats
 
 ||31.220.3.200^
