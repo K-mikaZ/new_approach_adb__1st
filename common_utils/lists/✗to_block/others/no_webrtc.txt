@@ -19,6 +19,8 @@
 ! BLOCKING
 ! -------
 *##+js(nowebrtc.js)
+! adguard rule
+stun:
 
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
