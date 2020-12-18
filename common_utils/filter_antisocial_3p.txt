@@ -7,7 +7,7 @@
 ! ------------------------------------------------------------------
 ! < start Antisocial third-party >
 
-!#include lists/✗to_block/per_sites/social/youtube/yt_antisocial.txt
+!#include lists/to_block/per_sites/social/youtube/yt_antisocial.txt
 
 ! ChatBots: Web Chat Apps For Websites
 !#include lists/✗to_block/others/chatbots.txt
@@ -23,8 +23,8 @@
 !#if script
 ! DO NOT USE IMPORTANT HERE, TO BE ABLE TO UNLOCK IT WITH A CLICK ON THE APPROPRIATE BUTTON
 ! see example here: < https://einaregilsson.com/redirector/ >
-||disqus.com/forums/*/embed.js$script,3p
-||disqus.com/embed.js$script,3p
+!||disqus.com/forums/*/embed.js$script,3p
+!||disqus.com/embed.js$script,3p
 !#endif
 ! If you want a site you regularly visit to always have the comment loaded,
 ! just use an exception static filter. Example for wired.com:
@@ -254,13 +254,13 @@
 
 
 !
-!#include lists/✗to_block/bulk_antisocial.txt
+!#include lists/to_block/bulk_antisocial.txt
 !
-!#include lists/✗to_block/per_sites/streaming_replay/antisocial/streaming_antisocial.txt
+!#include lists/to_block/per_sites/streaming_replay/antisocial/streaming_antisocial.txt
 !
-!#include lists/✗to_block/per_sites/musical/antisocial/musical_sites_antisocial.txt
+!#include lists/to_block/per_sites/musical/antisocial/musical_sites_antisocial.txt
 !
-!#include lists/✗to_block/per_sites/dl/∗torrent_sites_antisocial.txt
+!#include lists/to_block/per_sites/dl/torrent_sites_antisocial.txt
 !
 
 ! </ end Antisocial third-party >
