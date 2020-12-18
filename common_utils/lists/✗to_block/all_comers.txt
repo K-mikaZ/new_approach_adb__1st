@@ -154,6 +154,7 @@
 ||rszimg.com^
 ||rtmark.net^
 ||totogetica.com^
+||onclickalgo.com^
 ||waubasou.com^
 ||wowreality.info^
 ||ackcdn.net^
