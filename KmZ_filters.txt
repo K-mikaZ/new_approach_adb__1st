@@ -5,7 +5,6 @@
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
-!
 ! PING BLOCKER
 ! -------------------------------
 ! Ping Blocker ( Stop sites from tracking the links you visit through hyperlink auditing. )
@@ -25,19 +24,13 @@
 ! example "youboranqs01.com/ping"
 /ping?$xhr,empty
 !#endif
-!
 ! PER SITES
 ! -------------------------------
-!
 ! ------------------------------------------------------------------
-!
 ! Facebook --
-!
 ! ------------------------------------------------------------------
 !#if facebook.com
 ! < start facebook lighter >
-!
-!
 !#if dom
 ! FB reblock: ad-blocking community finds workaround to Facebook
 ! see < https://adblockplus.org/blog/fb-reblock-ad-blocking-community-finds-workaround-to-facebook >
@@ -51,10 +44,6 @@ facebook.com##.pagelet-group .pagelet:if(a:has-text(/Sponsorisé/i))
 facebook.com##div[id^="mount_"] div[data-pagelet="RightRail"] > div:not([data-vc-ignore-dynamic]) > div:not([class])
 !#endif
 |https://www.facebook.com/pubcontent/
-!
-!
-!
-!
 !#if dom
 ! #Homepage: http://facebook.adblockplus.me/
 ! #source: https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt
@@ -122,19 +111,10 @@ apps.facebook.com###rightCol
 ! "People You May Know" on profile page
 facebook.com###pagelet_pymk_timeline
 !#endif
-!
-!
-!
-!
-!
 ! ------------------------------------------------------------------
-!
 ! Zuckestion Killer + Module connections list --
-!
 ! ------------------------------------------------------------------
-!
 ! from https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/facebook
-!
 ! < start ZK_MC facebook >
 !#if facebook.com
 ! Modules concern
@@ -1029,8 +1009,7 @@ m.facebook.com,mtouch.facebook.com,touch.facebook.com###pages_msite_body_content
 !#endif
 !#endif
 ! </end ZK_MC facebook >
-!
-||*coronavirus*$xhr,domain=facebook.com
+!||*coronavirus*$xhr,domain=facebook.com
 fb.com,facebook.com,facebookcorewwwi.onion##div:nth-of-type(1) > ul > li:nth-of-type(1):if([href*="coronavirus"])
 /facebo{2}k\.(.{2,})\/(nw)[\/|$]/$xhr,domain=fb.com|facebook.com|facebookcorewwwi.onion
 fb.com,facebook.com,facebookcorewwwi.onion##body > .AdBox.Ad.advert:style(display:block!important;)
@@ -1053,17 +1032,11 @@ www.facebook.com###facebook > div
 @@||facebook.com/ads/$ghide
 ! </ end facebook lighter >
 !#endif
-!
-!
 ! ------------------------------------------------------------------
-!
 ! Youtube --
-!
 ! ------------------------------------------------------------------
 ! < start youtube rules >
 !#if (youtube.com|youtu.be|yt.be|youtube-nocookie.com)
-!
-!
 ! #Homepage: http://youtube.adblockplus.me/
 ! < start yt_annoyances_suggestions >
 ! #Source:   https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt
@@ -1088,7 +1061,6 @@ youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-co
 youtube.com,youtu.be,yt.be###channel-subscription-promo-in-feed
 !#endif
 ! </ end yt_annoyances_suggestions >
-!
 ! < start yt_annoyances_other.txt >
 ! #Source:   https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt
 ! Removes all annotations in videos
@@ -1107,9 +1079,7 @@ youtube.com,youtu.be,yt.be##.yt-uix-button[data-trigger-for="action-panel-share"
 !#endif
 ! </end yt_annoyances_other.txt >
 !
-!
 @@*/next?alt=json$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-!
 !#if dom
 !#if !env_mobile
 youtube.com,youtu.be,yt.be##[id="button"]:if([aria-label*="vocal"])
@@ -1230,7 +1200,6 @@ youtube.com#@##consent-bump:remove()
 /pagead\/((?!id$).*)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 !#endif
 ! </ end youtube rules >
-!
 ! < start twitter rules >
 !#if (twitter.com && dom)
 ! from https://forum.adguard.com/index.php?threads/block-twitter-“trends-for-you”-and-“what’s-happening”.39117/
@@ -1246,7 +1215,6 @@ twitter.com##a[href^="/i/events"]
 ! < start audioaddict.com rules >
 ! see < https://www.audioaddict.com >
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
-!
 ! < start di.fm rules >
 !#if di.fm
 !#if dom
@@ -1267,7 +1235,6 @@ di.fm##+js(set.js, maxLoadTime, undefined)
 !#endif
 ! </ end di.fm rules >
 zenradio.com##.remove-ads-component
-!
 ! </ end audioaddict.com rules >
 ! < start deezer rules >
 !#if deezer.com
@@ -1396,13 +1363,11 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 !#endif
 ! </ end spotify rules >
 ! VAST - VPAID ...
-!
 ! VAST - VPAID - VMAP ... concern ( video ad-serving protocols )
 ! --------------------------------------------------------------
 ! read < https://clearcode.cc/blog/vast-vpaid-vmap-mraid/ >
 !      < https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/tags >
 ! see also < https://github.com/InteractiveAdvertisingBureau/VAST_Samples >
-!
 ! tools:
 ! < https://www.jwplayer.com/developers/ad-tester/ >
 ! < https://support.bluebillywig.com/vast-inspector#!/vast_type=vast_url/vast_url=%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D640x480%26iu%3D%2F124319096%2Fexternal%2Fsingle_ad_samples%26ciu_szs%3D300x250%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dvast%26unviewed_position_start%3D1%26cust_params%3Ddeployment%253Ddevsite%2526sample_ct%253Dlinear%26correlator%3D[timestamp]/position=preroll/ima_preload=on/hide_settings=off/hide_log=off >
@@ -1516,9 +1481,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ! [fix] allocine.fr
 ! see < http://www.allocine.fr/video/player_gen_cmedia=19585745&cfilm=265572.html >
 !||pubads.g.doubleclick.net/gampad*/ads$xhr
-!
 ! VIDEOS HOST
-!
 ! < start video hosts sites rules >
 mstream.*##+js(abort-on-property-read.js, open)
 mystream.to##+js(abort-on-property-read.js, open)
@@ -1665,7 +1628,6 @@ vizplay.icu##+js(set.js, adb, '1/')
 @@||vizplay.icu^$script,1p,badfilter
 @@||younetu.com^$script,1p,badfilter
 ! PREFER set in "dynamic filtering"
-!
 !    * hqq.tv * noop
 !    hqq.tv * 3p-frame block
 !    hqq.tv * 3p-script block
@@ -1673,12 +1635,9 @@ vizplay.icu##+js(set.js, adb, '1/')
 !    no-cosmetic-filtering: hqq.tv true
 !    no-popups: hqq.tv true
 !    no-strict-blocking: hqq.tv true
-!
 !    >> same for waaw.tv, netu.tv, vizplay.icu
 !    see:  < https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/per_sites/streaming_replay/dynamic_filtering_streaming_replay.txt >
-!
 ! </ end video hosts sites sites rules >
-!
 ! try to unbreak the world!
 ! https://github.com/theonion/videojs-vast-plugin#usage
 ! [fix] too generic
@@ -1721,9 +1680,7 @@ fmax.xyz##+js(aopr.js, __Y)
 !#endif
 ! FAKE PLAYERS
 ! ------------------------------------------------------------------
-!
 ! FAKE or VIP PLAYERS --
-!
 ! ------------------------------------------------------------------
 ! < start fake players rules >
 !#if css|xhr
@@ -1824,12 +1781,9 @@ streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
 oomoviz.*,voirseries.*,vustream.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
 !#endif
 ! </ end fake players rules >
-!
 ! ------------------------------------------------------------------
-!
 ! No need download on streaming sites --
 ! Pas besoin de téléchargement sur les sites de streaming --
-!
 ! ------------------------------------------------------------------
 ! < start no DL on streaming sites rules>
 !#if dom
@@ -1866,13 +1820,9 @@ zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestre
 !#endif
 !#endif
 ! </ end no DL on streaming sites rules >
-!
 ! OTHERS
-!
 ! ------------------------------------------------------------------
-!
 ! Allocine --
-!
 ! ------------------------------------------------------------------
 ! < start allocine rules >
 !#if allocine.fr
@@ -1895,7 +1845,6 @@ allocine.fr##+js(aopr.js, wadsBeforeStart)
 ||acceptable.allocine.fr^$important
 !#endif
 ! </ end allocine rules >
-!
 ! < start animedigitalnetwork rules>
 !#if animedigitalnetwork.fr
 ||animedigitalnetwork.fr/vendor/ads/*$1p,important
@@ -2048,7 +1997,6 @@ voiranime.com##a[href*="://network.nutaku.net/"]
 !#if (voiranime.to && dom)
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 !#endif
-!
 !#if (voirfilms. && dom)
 voirfilms.*##.salidor_inner
 voirfilms.*##.salidor_b
@@ -2143,9 +2091,7 @@ rakuten.tv##+js(set.js, heartbeat, OK)
 !#endif
 !</ end rakuten.tv rules >
 ! ------------------------------------------------------------------
-!
 ! tf1.fr --
-!
 ! ------------------------------------------------------------------
 !< start TF1 rules >
 !#if tf1.fr
@@ -2178,11 +2124,8 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 !#if (script && !1p)
 @@||gigya.com/js/gigya.js$script
 !#endif
-!
 ! ------------------------------------------------------------------
-!
 ! 6play.fr --
-!
 ! ------------------------------------------------------------------
 ! < start 6play rules>
 !#if 6play.fr
@@ -2203,7 +2146,6 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 !#endif
 !#endif
 ! </ end 6play rules>
-!
 !
 ! < start torrent sites rules >
 ! try block all third-party except images, css and font.
@@ -2263,11 +2205,8 @@ wlnk.ec##[href^="/telecharger"]
 zone-telechargement.casa##[src="/templates/zone/images/dl/telechargement-direct.png"]
 zone-telechargement.casa##[href*=".kfiopkln."]
 !#endif
-!
 ! ------------------------------------------------------------------
-!
 ! Amazon, Amazonaws...
-!
 ! ------------------------------------------------------------------
 !#if amazonaws.com
 !#if (media && 1p)
@@ -2280,18 +2219,15 @@ zone-telechargement.casa##[href*=".kfiopkln."]
 !#endif
 ||gtrk.s3.amazonaws.com^$all,important
 !#endif
-!
 !#if amazon-adsystem.com
 ||amazon-adsystem.com^$all,important
 !#endif
-!
 !#if .amazon.
 /amazon\.(.{2,})\/ah\/ajax\/(counter|record-impressions)/$all,important
 ||amazon.*/gp/uedata^$all,important
 ||aan.amazon.com^$all,important
 ||device-metrics-us.amazon.com^$all,important
 !#endif
-!
 !#if assoc-amazon.
 ||assoc-amazon.*^$all,important
 !#endif
@@ -2359,12 +2295,10 @@ mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:if(a[target="_blank"])
 @@?adcount=$xhr,domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
-!
 ! NOT SORTED - (BULK)
 ! -------------------------------
 ! DOM CONCERN
 !#if dom
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start dom inject rules >                                          [concern] common_utils/lists/filter_dom_script_inject.txt
 1337x.to##+js(aeld.js, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
@@ -2413,17 +2347,14 @@ twitch.tv##+js(twitch-videoad.js)
 ! </ end dom inject rules >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 !
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start dom css rules >                                                      [concern] common_utils/lists/filter_dom_css.txt!
 ! ------------------------------------------------------------------
-!
 ! Advanced filters --                                 < https://adblockplus.org/filter-cheatsheet#elementhidingemulation-ex1 >
 !                                                     < https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors >
 ! Filtres avancés --                                  rc.js < https://github.com/gorhill/uBlock/wiki/Resources-Library#rcjs- >
 !                                       < https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#subjectxpatharg >
 ! ------------------------------------------------------------------
-!
 !#if imdb.com
 imdb.com###top_ad_wrapper
 imdb.com##.cornerstone_slot
@@ -2451,7 +2382,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! 22/07/2020 core1player.com
 ##[class="afs_ads"]
 ! </ end global CSS rules >
-!
 ! ---- Per site -----
 ! Not optimized - to sort
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
@@ -2752,11 +2682,9 @@ stream-serie.net##.justify-content-center.row:if([class*="ebooks_orange"])
 stream-serie.net#$##option-1{height:100%}
 ! </ end dom css rules >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 !#endif
 ! SCIPTS CONCERN
 !#if script
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start script-spec_def >                                              [concern] common_utils/components/script-spec_def.txt
 !#if *google-analytics.com
@@ -2822,7 +2750,6 @@ stream-serie.net#$##option-1{height:100%}
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
 ! </ end script-spec_def >
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 ! Services worker (are some times "Advertising Workers")
 ! Using service worker you can hijack connections, fabricate, and filter responses.
 ! read < https://developers.google.com/web/fundamentals/primers/service-workers >
@@ -2855,7 +2782,6 @@ stream-serie.net#$##option-1{height:100%}
 ||washingtonpost.com/notification-sw.js$badfilter
 ! [FIX] missing
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
-!
 ! WebSockets
 ! -----------
 ! REAL-TIME WEB TEST – DOES HTML5 WEBSOCKETS WORK FOR YOU?
@@ -2880,7 +2806,6 @@ stream-serie.net#$##option-1{height:100%}
 @@||chat.twitch.tv^$websocket
 @@/^ws{2}(([\:][\/]{2})+)/$domain=packetlosstest.com
 @@/^ws{2}(([\:][\/]{2})+)/$domain=dns-oarc.net
-!
 ! Global
 !#if youborafds01.com
 ||*youborafds01*.js$script,important
@@ -2947,11 +2872,8 @@ stream-serie.net#$##option-1{height:100%}
 !#endif
 ! IMAGES CONCERN
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 ! IMAGES RULES --
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 !#if image
 !#if gif
 |*.gif?partner^$image,important
@@ -3010,7 +2932,6 @@ stream-serie.net#$##option-1{height:100%}
 ! [fix] breaks loading some images on epicgames.com
 !|*/undefined^$image
 !#endif
-!
 ! OTHERS BULK
 ! stats collector
 ://statscollector.
@@ -3395,8 +3316,7 @@ stream-serie.net#$##option-1{height:100%}
 ! **************************************************************************************
 ! from http://forcet.fr/shared/pihole/Samsung-TV.txt
 ! see < https://nicolasforcet.com/2019/01/01/smart-tv-samsung-supprimer-pubs-rakuten-smarthub-tracking/ >
-!
-||abtauthprd.samsungcloudsolution.com^
+!||abtauthprd.samsungcloudsolution.com^
 ||acr0.samsungcloudsolution.com^
 ||ad.samsungadhub.com^
 ||ads.samsungads.com^
@@ -3536,26 +3456,18 @@ stream-serie.net#$##option-1{height:100%}
 ! analitycs integrations
 ! ...
 !
-!
-!
 ! ADD RULES
 ! It is not a list of filters but only a module.
 ! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
 ! #read also < https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule >
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop inline-script
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (inline-script)
 *$inline-script,redirect-rule=noop.js
 !#endif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop css
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (css && 1p)
 *$css,redirect-rule=noop.txt
@@ -3564,17 +3476,13 @@ stream-serie.net#$##option-1{height:100%}
 *$css,3p,redirect-rule=noop.txt
 !#endif
 !
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop script
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if script
 !#if !(addthis.com|amazon-adsystem.com|ampproject.org|chartbeat.com|disqus.com|doubleclick.net|google-analytics.com|googlesyndication.com|googletagmanager.com|googletagservices.com|ligatus.com|outbrain.com|scorecardresearch.com|smartadserver.com|yandex.ru|webvisor.org)
 /(.*)(\.min)?(\.js)?/$script,important,redirect-rule=noop.js
 !#endif
-!
 ! Adblocker redirect to neutered
 ! ——————————————————————————————
 ! < start Adblocker redirect >
@@ -3601,7 +3509,6 @@ stream-serie.net#$##option-1{height:100%}
 ! [fix] try for hqq.tv/js/adv/fuckadblock.js not working
 ! < https://www.universanimeiz.com/bort-vostfr/boruto-naruto-next-generations-154-vostfr/ >
 /fuckadblock.*?$script
-!
 !
 ! Google concern
 ! ——————————————
@@ -3688,13 +3595,9 @@ stream-serie.net#$##option-1{height:100%}
 ||widgets.outbrain.com/outbrain.js$script,redirect=widgets.outbrain.com/outbrain.js,badfilter
 ||google-analytics.com/analytics.js$important,script,redirect=google-analytics.com/analytics.js,domain=support.amd.com,badfilter
 ||googletagmanager.com/gtm.js$important,script,redirect=googletagmanager.com/gtm.js,domain=support.amd.com,badfilter
-!
 !#endif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop image
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (image && png && 1p)
 *.png$image,redirect-rule=2x2.png
@@ -3728,11 +3631,8 @@ stream-serie.net#$##option-1{height:100%}
 ||*spotx*$image,redirect-rule=1x1.gif
 ||bidr.io^$image,redirect-rule=1x1.gif
 ||stickyadstv.com^$image,redirect-rule=1x1.gif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop xhr
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (xhr && 1p)
 *$xhr,redirect-rule=noop.txt
@@ -3743,11 +3643,8 @@ stream-serie.net#$##option-1{height:100%}
 ! specific xhr conversion 1x1.gif (example on open.spotify.com)
 !||*&label=vast_creativeview*$xhr,redirect-rule=1x1.gif
 !||*/pagead/conversion/*$xhr,redirect-rule=1x1.gif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop subdocument
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (subdocument && 1p)
 *$subdocument,redirect-rule=noop.html
@@ -3755,11 +3652,8 @@ stream-serie.net#$##option-1{height:100%}
 !#if (subdocument && !1p)
 *$subdocument,3p,redirect-rule=noop.html
 !#endif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop object-subrequest
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (object-subrequest && 1p)
 *$object-subrequest,redirect-rule=empty
@@ -3767,11 +3661,8 @@ stream-serie.net#$##option-1{height:100%}
 !#if (object-subrequest && !1p)
 *$object-subrequest,3p,redirect-rule=empty
 !#endif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop other
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (other && 1p)
 *$other,redirect-rule=empty
@@ -3779,11 +3670,8 @@ stream-serie.net#$##option-1{height:100%}
 !#if (other && !1p)
 *$other,3p,redirect-rule=empty
 !#endif
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
-!
 ! Noop media
-!
 ! ——————————————————————————————————————————————————————————————————————————————————
 !#if (media && mp3 && 1p)
 *.mp3$media,redirect-rule=noop-0.1s.mp3
@@ -3803,21 +3691,15 @@ stream-serie.net#$##option-1{height:100%}
 !#if (media && !mp3 && !mp4 && !1p)
 *$media,3p,redirect-rule=empty
 !#endif
-!
-||*/fp2.js$script,redirect-rule=fingerprint2.js
+!||*/fp2.js$script,redirect-rule=fingerprint2.js
 ||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
 ||*monke*broker*$script,redirect-rule=monkeybroker.js
 ||*monke*broker*$script,important
 ! seems useless
 ! #include components/websocket_def.txt
 !
-!
-!
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 ! WHITELISTING (prefer badfilter instead, see bellow)
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
 ! [FIX] AdChoices crunchyroll.com
@@ -3913,12 +3795,10 @@ stream-serie.net#$##option-1{height:100%}
 @@/\/(go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js/$script
 ! </ end whitelist >
 !
-!
 ! licenses
 @@||lic.drmtoday.com^$xhr
 @@||licensing.bitmovin.com^
 @@||perr.h-cdn.com/hola_player/license_init
-!
 !
 @@||fvs.io
 @@||streamroot.io^
@@ -3967,14 +3847,10 @@ stream-serie.net#$##option-1{height:100%}
 @@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dbserie.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mg-play.info|mesfilms.net|mixdrop.to|papseries.net|play.hydracdn.network|protonvideo.to|secvideo1.online|series-stream.net|stream-serie.net|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 ! LICENSES
 !
-!
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-!
 ! BAD FILTRES --
 ! MAUVAIS FILTRES --                                 < https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#badfilter >
 !                                   < https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#badfilter-examples >
-!
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start badfilters >
 ! unbreak the world
@@ -4163,7 +4039,6 @@ streamroot.io$script,important,badfilter
 ! clipwatching.com need it
 /\/pu\/[.a-s]{1,5}\.js$/$script,1p,important,badfilter
 /cookiesmanager.$badfilter
-!
 ! Tracking urls
 ! I prefer use an addon for that for that:
 ! ————————————————————————————————————————
