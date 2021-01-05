@@ -1979,8 +1979,6 @@ streamings-vf.com##[href="#"]
 ! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
 ! < https://voir.lesseriestreaming.com/js/app.js >
 voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
-!lesseriestreaming.com###pub
-!lesseriestreaming.com##.ebooks_orange_7289002
 lesseriestreaming.com##.d-md-block.d-none.my-3
 !#endif
 !#if (voirseries. && dom)
@@ -3762,9 +3760,6 @@ stream-serie.net#$##option-1{height:100%}
 !#if image
 ! [fix] adblock alert rakuten.tv
 @@||search.spotxchange.com^$image,domain=rakuten.tv
-! [fix] because somes site use < https://www.google.com/s2/favicons?domain=vidoza.net >
-! see < https://voir.lesseriestreaming.com/ZlxJ2eD-p-valley/saison/1/episode/2 >
-@@/favicon*$image
 !#endif
 ! For Youtube's SponsorBlock addon ( see < https://sponsor.ajay.app > )
 @@||sponsor.ajay.app^
