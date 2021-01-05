@@ -1979,6 +1979,9 @@ streamings-vf.com##[href="#"]
 ! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
 ! < https://voir.lesseriestreaming.com/js/app.js >
 voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
+!lesseriestreaming.com###pub
+!lesseriestreaming.com##.ebooks_orange_7289002
+lesseriestreaming.com##.d-md-block.d-none.my-3
 !#endif
 !#if (voirseries. && dom)
 voirseries.*##.movie-aye
@@ -2503,7 +2506,6 @@ lejdd.fr##IMG[src="http://cdn1-lejdd.ladmedia.fr/design/lejdd/images/services/as
 lemonde.fr##.conteneur_alerte.visible,.global.services.promo.bordt3.ombre_section
 lemoteur.fr##.resultBlock.slpartner
 leparisien.fr##.bloc300.immobilier.bloc-pratique,.notification
-lesseriestreaming.com###pub, .ebooks_orange_7289002, .d-md-block.d-none.my-3
 leveildepontaudemer.fr###Widget-Pa,.mtl.mbl.pts.pbl.bbg1.btg1
 leveilnormand.fr###Widget-Pa,.mtl.mbl.pts.pbl.bbg1.btg1
 lexpansion.lexpress.fr##.partners
