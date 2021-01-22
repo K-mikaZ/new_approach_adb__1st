@@ -1865,16 +1865,14 @@ animedigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-transpar
 ! </ end animedigitalnetwork rules>
 ! streaming
 /classes/masha/masha.js
-!#if (4kstreamz.co && dom)
-4kstreamz.co##.register
-4kstreamz.co##.keywords
-4kstreamz.co##.DESCPP
-4kstreamz.co##.mr-3
-4kstreamz.co##.text-center:if(.mr-3)
+!#if (4kstreamz. && dom)
+4kstreamz.*##.register
+4kstreamz.*##.keywords
+4kstreamz.*##.DESCPP
+4kstreamz.*##.text-center:if(.mr-3)
 !#endif
 !#if (allseries. && dom)
 allseries.*##.X
-allseries.*###pub
 allseries.*##.myButton
 ! sanitize (not ads)
 allseries.*#?#.jumbotron:if(.page-keywords)
