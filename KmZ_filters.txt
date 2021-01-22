@@ -3839,7 +3839,7 @@ stream-serie.net#$##option-1{height:100%}
 @@||waaw.$document
 @@||waaw.$inline-script
 @@||waaw.$ghide
-@@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dbserie.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mg-play.info|mesfilms.net|mixdrop.to|papseries.net|play.hydracdn.network|protonvideo.to|secvideo1.online|series-stream.net|stream-serie.net|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
+@@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dbserie.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mg-play.info|mesfilms.net|mixdrop.to|papseries.net|play.hydracdn.network|protonvideo.to|secvideo1.online|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 ! LICENSES
 !
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
