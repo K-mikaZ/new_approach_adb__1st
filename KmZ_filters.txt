@@ -3800,29 +3800,14 @@ stream-serie.net#$##option-1{height:100%}
 ! ghide === generichide
 ! ----------------------
 @@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|oirfilms|udeo))|(wikiserie))\.(.{2,})/$ghide
-@@||4kstreamz.$ghide
 @@||bidzen.$ghide
-@@||film01stream.$ghide
-@@||filmgratuit.$ghide
-@@||lesseriestreaming.$ghide
 @@||mystream.$ghide
 @@||mstream.$ghide
 @@||ok.ru$ghide
-@@||seriestream.$ghide
-@@||streamingclic.$ghide
 @@||upvid.$ghide
-@@||voirfilms.$ghide
-@@||voirseries.$ghide
-@@||vustream.$ghide
-@@||wiflix.$ghide
-@@||wikiserie.$ghide
-@@||zustream.$ghide
 @@||videodelivery.$ghide
-@@||streamingdivx.$ghide
 @@||vidzstore.$ghide
-@@||sokrostream.$ghide
 @@||netflix.com$ghide
-@@*$ghide,domain=dustreaming.co
 @@*$ghide,domain=femax20.com|fembed.com
 ! [fix] boost loading > hqq.tv|netu.tv|vizplay.icu|waaw.tv|waaw.to
 @@||hqq.$document
@@ -3837,7 +3822,7 @@ stream-serie.net#$##option-1{height:100%}
 @@||waaw.$document
 @@||waaw.$inline-script
 @@||waaw.$ghide
-@@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dbserie.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds-streaming.la|hds.lc|hdslecteur.xyz|jetload.net|mg-play.info|mesfilms.net|mixdrop.to|papseries.net|play.hydracdn.network|protonvideo.to|secvideo1.online|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
+@@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|fcine.tv|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hds.lc|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamtape.net|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 ! LICENSES
 !
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
