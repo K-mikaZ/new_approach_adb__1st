@@ -3799,7 +3799,7 @@ stream-serie.net#$##option-1{height:100%}
 @@/videojs-hlsjs-plugin/
 ! ghide === generichide
 ! ----------------------
-@@/((allvid)|(d(o{2}d(stream)?)|pstream)|(f(ilmlecteur|eurl|rench(\-{1,})?stream))|(gounlimited)|(h(d(filme|s(lecteur|\-streaming)))|ol{2}ywo{2}d)|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid|rostream))|(re\.zu\-lien)|(stream(ing(clic|divx)|z))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|oirfilms|udeo))|(wikiserie))\.(.{2,})/$ghide
+@@/((allvid)|(d(o{2}d(stream)?))|(f(ilmlecteur|eurl)|(gounlimited)|(h(d(s(lecteur))))|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid))|(re\.zu\-lien))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|udeo)))\.(.{2,})/$ghide
 @@||bidzen.$ghide
 @@||mystream.$ghide
 @@||mstream.$ghide
