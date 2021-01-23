@@ -1715,24 +1715,6 @@ hds-streaming.*##a[target="_blank"]
 allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
 !#endif
-!#if voirseries.
-voirseries.*##a[href*="/download.php"]
-!voirseries.*##div[id="custom-media-player"]
-! hide lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
-! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
-!voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
-! prefer to block bad, because some videos are missing, then the iframe will not load
-!voirseries.*#?##lecteur:if(.load[src*=".php?p=2"])
-!#endif
-!#if seriestream.
-! hide lecteur if sources not contains */streamer/* or contains */video-streaming.html
-!seriestream.*#?##lecteur:if(.load:not([src*="/streamer/"]))
-! prefer to block bad, because some videos are missing, then the iframe will not load
-!seriestream.*#?##lecteur:if(.load[src*="/video-streaming.html"])
-!#endif
-!#if filmgratuit.net
-filmgratuit.net##li.streamer:if(span[class*="player-hdplayer"])
-!#endif
 !#if enstream.to
 enstream.to#?#.player:if(:-abp-contains(/ENSTREAM HD/))
 !#endif
