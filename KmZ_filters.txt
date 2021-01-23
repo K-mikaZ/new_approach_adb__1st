@@ -1716,10 +1716,8 @@ allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
 !#endif
 !#if voirseries.
-voirseries.*##.custom-fake-player
-voirseries.*##.custom-fake-media-info
 voirseries.*##a[href*="/download.php"]
-voirseries.*##div[id="custom-media-player"]
+!voirseries.*##div[id="custom-media-player"]
 ! hide lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
 !voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
