@@ -2661,8 +2661,12 @@ zebulon.fr###popup_name.popup_block
 zone-stream.club##a#yell60,.salidor_register_contbutton
 zone-stream.site##.banner,.but,#ads
 zonestream.fun###ads,.banner,floatLayer,floatLayer div,floatLayer span,[src="/close.png"]
-zustream.*##a.redzz.action-buttonzz,.wgsda,.gws_bx,#plyb,.nb-layout-1-outer.nb-bottom-outer.nb-notice-outer-wrap,.nb-plain-text-wrap,.nb-layout-1.nb-bottom.nb-notice-wrap
-cinez.net###playerOver,.report-pub
+zustream.*##[class="redzz"]
+zustream.*##[class="wgsda"]
+zustream.*##[class^="gws_"]
+zustream.*##[class|="nb-"]
+cinez.net###playerOver
+cinez.net##.report-pub
 ! space after div !IMPORTANT
 french--stream.co##div :if(a.frenchpub)
 french--stream.co##div:if(> a#yell60)
