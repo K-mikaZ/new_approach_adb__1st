@@ -2648,9 +2648,11 @@ whatismybrowser.com##.extra,.responsive.fun
 widget.business-lounge.fr##.eshop
 wiflix.net##.myButton,.sadst
 wiiztube.com##.pps-h-auto-px.pps-w-640-px.pps-no-border.pps-popup,.__b-popup1__.b-modal
-wiki.wikiserie.com###pub, .btn-share.rounded-0.btn-sm.btn, .d-sm-block.my-3,.mr-3
-wikiserie.co##.my-3.text-center,a[class*="mr-3"],.social-share
-wikiserie.ink###pub,[href="/streaming.html"],[href="/download.html"],center center
+wikiserie.*##.btn-share.rounded-0.btn-sm.btn
+wikiserie.*##.social-share
+wikiserie.ink##[href="/streaming.html"]
+wikiserie.ink##[href="/download.html"]
+wikiserie.ink##center center
 wikiseriestreaming.com##.X
 windy.com###articles
 wp.superpages.com##.sponsoredLinks2
