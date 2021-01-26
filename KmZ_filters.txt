@@ -1960,7 +1960,11 @@ voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 lesseriestreaming.com##.d-md-block.d-none.my-3
 !#endif
 !#if (voirseries. && dom)
-voirseries.*##.movie-aye
+! hide lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
+! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
+!voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
+! prefer to block bad, because some videos are missing, then the iframe will not load
+voirseries.*#$##lecteur:if(#videoplay[src*=".php?p=2"]){ display: none }
 voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
 voirseries.*##.homi:if([class*="masha_"])
 !#endif
@@ -2545,8 +2549,19 @@ scoop.it##.feedbackBannerContent
 search.seznam.cz###sklik-right
 serie-streaming.cc##center:nth-of-type(2)
 series.dpstreaming.to##.myButton,.button2,.filmborder:nth-of-type(1) > .filmcontent > div:nth-of-type(2)
-seriestream.*###pub,.X,.an,.hidefm,.movie-aye,.msg_info_player,.telecharger-film,li.streamer.dow
-sguru.org##.herald-ad
+!#if (seriestream. && dom)
+! hide lecteur if sources not contains */streamer/* or contains */video-streaming.html
+!seriestream.*#?##lecteur:if(.load:not([src*="/streamer/"]))
+! prefer to block bad, because some videos are missing, then the iframe will not load
+!seriestream.*###videoplay[src="/video-streaming.html"]
+seriestream.*#$#.player:if([class="play-button"]){ display: none }
+seriestream.*##[data-url="/video-streaming.html"]
+seriestream.*##[class*="streamer"][class*="dow"]
+seriestream.*##[class$="-aye"]
+seriestream.*##[class="an"]
+seriestream.*##[class="X"]
+seriestream.*##[class="hidefm"]
+!#endifsguru.org##.herald-ad
 similarsites.com###\5f mN_main_837788206_0_n,#\5f mN_main_837788206_2_n
 site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-lg-9.col-sm-8.col-xs-12,.tags.pad
 skstream.ink##div[class="responsive-ad"]
