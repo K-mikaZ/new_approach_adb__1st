@@ -40,9 +40,12 @@
 ##[id^="playerPub"]
 ##[id="oscuridad"]
 ##[id^="contenidobloqueado"]
-##[id^="rn_ad_native"]
-!##[id*="_ad_native_"]
+!##[id^="rn_ad_native"]
+##[id*="_ad_native_"]
 ##[id="player_v_DIV_1"]
+!filmoflix.*##div[id^="playerOver"]
+!cinez.*##[id^="playerOver"]
+##[id^="playerOver"]
 
 !cpasmieux.*##[class*="lefermeur"]
 ##[class*="lefermeur"][href]
@@ -60,6 +63,8 @@
 !##[class="surge_yellow"]
 ##[class^="surge_"][href]
 ##[class*="btn"][class*="mr-3"][href]
+
+##[class="report-pub"]
 
 ! https://supportcenter.devexpress.com/ticket/details/q462080/timeline-view-a-part-of-the-current-time-marker-is-not-visible-in-firefox
 !malekal.com##[class="topad"]
