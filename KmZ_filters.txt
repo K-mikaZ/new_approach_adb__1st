@@ -2059,7 +2059,7 @@ streamings-vf.com##[href="#"]
 ! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
 ! < https://voir.lesseriestreaming.com/js/app.js >
 lesseriestreaming.com#$#body,html{ overflow: visible !important; }
-lesseriestreaming.com##[class="my-3"]
+lesseriestreaming.com##[class*="my-3"]
 !#endif
 !#if (voirseries. && dom)
 ! hide lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
