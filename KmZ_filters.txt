@@ -26,6 +26,98 @@
 /ping?$xhr,empty
 !#endif
 !
+
+! GENERIC FILTERS
+! -------------------------------
+
+!lesseriestreaming.com,filmvf.*,papseries.*,voirseries.*,wikiserie.*##div[id="pub"]
+##div[id="pub"]
+##[id^="playerPub"]
+##[id="oscuridad"]
+##[id^="contenidobloqueado"]
+##[id^="rn_ad_native"]
+!##[id*="_ad_native_"]
+##[id="player_v_DIV_1"]
+
+!cpasmieux.*##[class*="lefermeur"]
+##[class*="lefermeur"][href]
+##[class*="myButton"][href]
+##[class*="mButton"][href]
+##[class|="custom-fake"]
+##[class^="masha_"]
+##[class*="contadorads"]
+!voir-film.cc##div[class^="tolro_"]
+##[class^="tolro_"]
+!cpasmieux.*,filmvf.*,filmoflix.*,filmstream-vf.*,lesseriestreaming.com,wikiserie.*##div[class^="salidor_"]
+##[class^="salidor_"]
+!lesseriestreaming.com,filmvf.*##a[class^="ebooks_"]
+##[class^="ebooks_orange_"][href]
+!##[class="surge_yellow"]
+##[class^="surge_"][href]
+##[class*="btn"][class*="mr-3"][href]
+
+! https://supportcenter.devexpress.com/ticket/details/q462080/timeline-view-a-part-of-the-current-time-marker-is-not-visible-in-firefox
+!malekal.com##[class="topad"]
+!malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
+##[class="topad"]
+##[id="topad"]
+##[class="bottomad"]
+##[id="bottomad"]
+##[class="leftad"]
+##[id="leftad"]
+##[class="rightad"]
+##[id="rightad"]
+##[class^="oio"]
+##[id^="oio"]
+##[href*="/oiopub-"]
+##[href*="smartadserver.com"]
+##[id*="smartlink" i]
+##[class*="smartlink" i]
+##[href*="smartad" i]
+##[src*="smartad"]
+##[class*="smartad" i]
+##[id*="smartad" i]
+! some others
+##[class*="top-ads"]
+##[class*="bottom-ads"]
+##[class*="left-ads"]
+##[class*="right-ads"]
+##[class*="ads-top"]
+##[class*="ads-bottom"]
+##[class*="ads-left"]
+##[class*="ads-right"]
+##[class="ad"][class="c-ads"]
+##[id="ads"]
+##[id="ads4"]
+
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999px"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999px"]
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]
+##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]
+##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]
+! [style*="visibility: hidden"] or [style*="overflow: hidden"] or [hidden="hidden"]
+##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]
+##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]
+##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
+##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
+! for those with non height or width to 0|1 px
+##[style*="position:"][style*=": -9999px"]
+##[style*="z-index:"][style*="display: none"]
+! break mystream.to,mstream.xyz,mstream.website filtering
+! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
+!##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
+
+! In case "not" because animations (https://www.k-twirl.com/)
+!##[style*="width: 1px;"][style*="height: 1px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+!##[style*="width: 0px;"][style*="height: 0px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+! block too much ( example at https://www.universanimeizy.com/beyblade-sparking/beyblade-burst-sparking-41-vostfr )
+!##iframe[src="about:blank"]
+! break https://www.youtube.com/iridium-settings
+!##[style*="display: none"]
+
 ! PER SITES
 ! -------------------------------
 ! ------------------------------------------------------------------
@@ -2535,8 +2627,18 @@ peggo.net##[href^="https://4f2sm1y1ss.com/"]
 planet.fr###block-gc_ad-pave_bas,#layerAbo
 plus.google.com##.gb_gb.gb_jb.gb_wa,.Tg.Sb.GE,.Tg.Sb.sb
 pole-emploi.fr##.pub
-qwant.com###a_39,#c_223,#home__links,.extension_popin,.header__share-qwant--0.header__share-qwant,.header__textqwant.com,.home__snippet__extension--0.home__snippet__extension,.snippet,.trends--general
+!#if (qwant. && dom)
+qwant.com###a_39
+qwant.com###c_223
+qwant.com###home__links
+qwant.com##.extension_popin
+qwant.com##.header__share-qwant--0.header__share-qwant
+qwant.com##.header__textqwant.com
+qwant.com##.home__snippet__extension--0.home__snippet__extension
+qwant.com##.snippet
+qwant.com##.trends--general
 qwant.com##.ribbon
+!#endif
 rantop.org###custom_html-4,#theme-my-login-2
 reddit.com##.amp.snackbar,.dNXRhH.kloj01-3 form,.navframe .xpromominimal.dualpartinterstitial,.xpromoadfeed,.promotedlink,.xpromopill
 responsinator.com##.jobAd
@@ -2548,7 +2650,10 @@ sarkofrance.ragemag.fr###ragelive
 scoop.it##.feedbackBannerContent
 search.seznam.cz###sklik-right
 serie-streaming.cc##center:nth-of-type(2)
-series.dpstreaming.to##.myButton,.button2,.filmborder:nth-of-type(1) > .filmcontent > div:nth-of-type(2)
+!#if (dpstreaming. && dom)
+series.dpstreaming.to##.button2
+series.dpstreaming.to##.filmborder:nth-of-type(1) > .filmcontent > div:nth-of-type(2)
+!#endif
 !#if (seriestream. && dom)
 ! hide lecteur if sources not contains */streamer/* or contains */video-streaming.html
 !seriestream.*#?##lecteur:if(.load:not([src*="/streamer/"]))
