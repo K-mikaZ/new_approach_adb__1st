@@ -30,6 +30,11 @@
 ! GENERIC FILTERS
 ! -------------------------------
 
+! tracker found on allocine.fr (example)
+! https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
+! https://docs.clickio.com/books/clickio-gdpr-consent-tool/page/cmp-api-usage
+##iframe[name^="__tcfapi"]
+
 !lesseriestreaming.com,filmvf.*,papseries.*,voirseries.*,wikiserie.*##div[id="pub"]
 ##div[id="pub"]
 ##[id^="playerPub"]
