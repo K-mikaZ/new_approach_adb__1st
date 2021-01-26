@@ -2561,7 +2561,8 @@ seriestream.*##[class$="-aye"]
 seriestream.*##[class="an"]
 seriestream.*##[class="X"]
 seriestream.*##[class="hidefm"]
-!#endifsguru.org##.herald-ad
+!#endif
+sguru.org##.herald-ad
 similarsites.com###\5f mN_main_837788206_0_n,#\5f mN_main_837788206_2_n
 site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-lg-9.col-sm-8.col-xs-12,.tags.pad
 skstream.ink##div[class="responsive-ad"]
