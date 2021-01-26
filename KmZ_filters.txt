@@ -65,6 +65,8 @@
 ##[class*="btn"][class*="mr-3"][href]
 
 ##[class="report-pub"]
+##[class="FirstLoad"]
+##[class="responsive-ad"]
 
 ! https://supportcenter.devexpress.com/ticket/details/q462080/timeline-view-a-part-of-the-current-time-marker-is-not-visible-in-firefox
 !malekal.com##[class="topad"]
@@ -2018,8 +2020,6 @@ filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
 ||in.filmstoon.*$popup
 !#endif
 !#if (filmz. && dom)
-filmz.*##.masha_index
-filmz.*##.myButton
 filmz.*##center:if(.myButton)
 !#endif
 !#if (french--stream.co && dom)
@@ -2055,11 +2055,11 @@ streamings-vf.com##[href="#"]
 !#if (spotxcdn.com && media)
 ||spotxcdn.com^$media
 !#endif
-!#if (voir.lesseriestreaming.com && dom)
+!#if (lesseriestreaming.com && dom)
 ! https://forum.adguard.com/index.php?threads/resolved-help-for-blocking-a-modal-on-voir-lesseriestreaming-com.39168/
 ! < https://voir.lesseriestreaming.com/js/app.js >
-voir.lesseriestreaming.com#$#body,html{ overflow: visible !important; }
-lesseriestreaming.com##.d-md-block.d-none.my-3
+lesseriestreaming.com#$#body,html{ overflow: visible !important; }
+lesseriestreaming.com##[class="my-3"]
 !#endif
 !#if (voirseries. && dom)
 ! hide lecteur if sources not start with *streamer.php?p=1* ( bad source is start with *streamer.php?p=2* )
