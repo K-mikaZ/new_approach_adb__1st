@@ -64,6 +64,9 @@
 ##[class^="surge_"][href]
 ##[class*="btn"][class*="mr-3"][href]
 
+##[class="OUTBRAIN"]
+!rugames.org##.Advrt
+##[class="Advrt"]
 ##[class="report-pub"]
 ##[class="FirstLoad"]
 ##[class="responsive-ad"]
@@ -104,8 +107,8 @@
 
 ##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]
 ##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999px"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999px"]
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]
 ##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]
 ##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]
 ##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]
@@ -116,7 +119,8 @@
 ##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
 ##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
 ! for those with non height or width to 0|1 px
-##[style*="position:"][style*=": -9999px"]
+##[style*="position:"][style*=": -9999"]
+##[style*="position:"][style*=": -10000"]
 ##[style*="z-index:"][style*="display: none"]
 ! break mystream.to,mstream.xyz,mstream.website filtering
 ! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
@@ -1979,12 +1983,10 @@ hds-movies.com##button[onclick="myFunctionyt()"]
 !#if ((hds-streaming.la|hds.lc) && dom)
 hds-streaming.la##.fbox
 hds-streaming.la##.module_single_ads
-hds-streaming.la,hds.lc###oscuridad
 hds.lc##[class="ads"]
 hds.lc##[class*="ads_"]
 hds.lc##[src^="blob:https://hds.lc/"]
 hds.lc###playerads
-hds.lc##.contadorads
 ! not ads, juste sanitize
 hds.lc###_g5eqet .resizer ._1n3rxlt._00d5twg
 hds.lc##.list li .reco.wide
