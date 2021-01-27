@@ -20,7 +20,9 @@
 ! -------
 *##+js(nowebrtc.js)
 ! adguard rule
-!stun:
+!#if (adguard)
+stun:*
+!#endif
 
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
