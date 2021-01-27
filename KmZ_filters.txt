@@ -1923,9 +1923,6 @@ zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestre
 allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
 !#endif
-!#if image
-||assets.allocine.fr/skin/img/loader*.svg
-!#endif
 ||autopromo.allocine.fr^$important
 ||acceptable.allocine.fr^$important
 !#endif
