@@ -1822,9 +1822,7 @@ hds-streaming.*##a[target="_blank"]
 !#if allseries.
 allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
-allseries.*##a[href$="er.html"][class|="ref"]
-allseries.*##div[class|="col-md"]:if(a[href$="er.html"][class|="ref"])
-allseries.*##[class$="-download-watch"]
+allseries.*##[class*="-download-watch"]
 !#endif
 !#if enstream.to
 enstream.to#?#.player:if(:-abp-contains(/ENSTREAM HD/))
