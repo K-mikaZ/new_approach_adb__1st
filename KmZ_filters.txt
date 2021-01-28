@@ -2475,7 +2475,8 @@ absoluporn.com##.clickable_overlay
 accuradio.com##.js_lb_overlay.lb_overlay,#div-gpt-ad-1394228394731-0,#pageSidebarWrapper,#registerForm
 add0n.com##div.content:nth-of-type(1) > table > tbody
 aliceadsl.fr###dfp_banner-basse-bf
-allseries.co##.big-btn.btn-info.btn
+allseries.*##a[href$="er.html"][class|="ref"]
+allseries.*##div[class|="col-md"]:if(a[href$="er.html"][class|="ref"])
 alvinet.com###itedkjrx,#pvgsoihc,#saybnkwd,#zsawqobp
 amazon.com###desktop-ad-atf
 amazon.fr###DAnsm
