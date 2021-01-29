@@ -119,9 +119,12 @@
 ##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
 ##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
 ! for those with non height or width to 0|1 px
+##[style*="width:100%"][style*="height:100%"][style*="display:none"]
+##[style*="width:100%"][style*="height:100%"][style*=": hidden"]
+##[style*="width:100%"][style*="height:100%"][hidden="hidden"]
+##[style*="z-index:"][style*="display: none"]
 ##[style*="position:"][style*=": -9999"]
 ##[style*="position:"][style*=": -10000"]
-##[style*="z-index:"][style*="display: none"]
 ! break mystream.to,mstream.xyz,mstream.website filtering
 ! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
 !##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
@@ -133,6 +136,14 @@
 !##iframe[src="about:blank"]
 ! break https://www.youtube.com/iridium-settings
 !##[style*="display: none"]
+
+! aparat.cam/dl, clipwatching.com/dl, videobin.co/dl, vudeo.net/dl, vidlox.me/dl, vidoza.net/cgi-bin/index_dl ...
+!https://vidoza.net/cgi-bin/index_dl.fcgi?op=view&file_code=qte6k8pakwqu&hash=27597440-176-143-1610137855-aff5800ccda9775907d580659aa64004&embed=1&adb=0
+!https://clipwatching.com/dl?op=view&file_code=pmnk0c61my0z&hash=32510242-21-220-1610138078-ac449abd2404efcddb8fc5f886f47a1f&embed=1&adb=0
+!https://vidlox.me/dl?op=view&file_code=7phrtgd0ehma&hash=16988191-176-143-1611913644-11b934861cce9f6ccaf95bb71d511fef
+!/\?(op\=view)+\&(file\_code\=[^\n]{6,})+\&(hash\=[^\n]{6,})/$xhr,1p,important
+/\?(op\=view)+\&(file\_code\=[^\n]{6,})+\&(hash\=[^\n]{6,})(\&(embed\=\d)+\&(adb\=\d))?/$xhr,1p,important
+
 
 ! PER SITES
 ! -------------------------------
@@ -1819,6 +1830,13 @@ fmax.xyz##+js(aopr.js, __Y)
 !#if hds-streaming.
 hds-streaming.*##a[target="_blank"]
 !#endif
+!#if vidlox.
+vidlox.*##+js(window.open-defuser)
+vidlox.*##[id="play_limit_box"]
+||vidlox.*/favicon.ico
+! because of FuckFuckAdblock
+||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
+!#endif
 !#if allseries.
 allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
@@ -2746,7 +2764,6 @@ viamichelin.fr##.vm-box-mag.vm-box-mag-resto
 viamichelin.fr##.vm-box-mag.vm-box-mag-voyage
 viamichelin.fr##.vm-pub-homevign.h124
 video.genyoutube.net###advert
-vidlox.tv###play_limit_box
 vodfilms.org##.myButton
 voir.dpstream.site###pub
 voirfilmsenstreaming.com##[href*="://linkredirect."]
@@ -3199,7 +3216,38 @@ stream-serie.net#$##option-1{height:100%}
 ||zdbb.net^$domain=~zdbb.net
 ||zemanta.com^$domain=~zemanta.com
 ||ziffdavis.com^$domain=~ziffdavis.com
+||clickio.com^$domain=~clickio.com
 ||ads2.uptobox.com^
+||tfzznclztl.com^
+||etoro.com^
+||cdn77.org^
+||zuphaims.com^
+||d2wy8f7a9ursnm.cloudfront.net^
+||uknown.uknown^
+||icoawhou.com^
+||gompoozu.net^$important
+||alawachi.net^$important
+||optimizesrv.com^$important
+||iwhugaul.com^
+||kumteerg.com^
+||toglooman.com^
+||propeller-tracking.com^
+||interstitial-07.com^
+||wowreality.info^
+||viifan.com^
+||realtime-bid.com^
+||poisism.com^
+||lalaping.com^
+||onmarshtompor.com^
+||totogetica.com^
+||inspikon.com^
+||omareeper.com^
+||d36zfztxfflmqo.cloudfront.net^
+||ereenerall.fun^
+||katherinelyman.xyz^
+||ouftukoo.net^
+||haldest.com^
+||kaurouby.net^
 ||ascraftan.com^
 ||chautcho.com^
 ||daibusee.com^
