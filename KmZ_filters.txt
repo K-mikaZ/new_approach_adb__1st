@@ -2386,7 +2386,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="btn"][class*="mr-3"][href]
 
 ##[class="OUTBRAIN"]
-!rugames.org##.Advrt
 ##[class="Advrt"]
 ##[class="report-pub"]
 ##[class="FirstLoad"]
@@ -2497,7 +2496,6 @@ blogs.mediapart.fr##.tiroir
 brefmail.com###template01_shadow
 bwp.download.cnet.com##.bwp
 causeur.fr###popin-newsletter-block
-cinecomplet.net###playerOver
 cineiz.cc##.VF.full-quality
 cinemey.com##.X
 cmb.fr##.portletReseauxSociaux
@@ -2773,9 +2771,7 @@ zonestream.fun###ads,.banner,floatLayer,floatLayer div,floatLayer span,[src="/cl
 zustream.*##[class="redzz"]
 zustream.*##[class="wgsda"]
 zustream.*##[class^="gws_"]
-zustream.*##[class|="nb"]
-cinez.net###playerOver
-cinez.net##.report-pub
+zustream.*##[class*="nb-bottom"]
 ! space after div !IMPORTANT
 french--stream.co##div :if(a.frenchpub)
 french--stream.co##div:if(> a#yell60)
