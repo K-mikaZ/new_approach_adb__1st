@@ -30,113 +30,6 @@
 ! GENERIC FILTERS
 ! -------------------------------
 
-! tracker found on allocine.fr (example)
-! https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
-! https://docs.clickio.com/books/clickio-gdpr-consent-tool/page/cmp-api-usage
-##iframe[name^="__tcfapi"]
-
-!lesseriestreaming.com,filmvf.*,papseries.*,voirseries.*,wikiserie.*##div[id="pub"]
-##div[id="pub"]
-##[id^="playerPub"]
-##[id="oscuridad"]
-##[id^="contenidobloqueado"]
-!##[id^="rn_ad_native"]
-##[id*="_ad_native_"]
-##[id="player_v_DIV_1"]
-!filmoflix.*##div[id^="playerOver"]
-!cinez.*##[id^="playerOver"]
-##[id^="playerOver"]
-
-!cpasmieux.*##[class*="lefermeur"]
-##[class*="lefermeur"][href]
-##[class*="myButton"][href]
-##[class*="mButton"][href]
-##[class|="custom-fake"]
-##[class^="masha_"]
-##[class*="contadorads"]
-!voir-film.cc##div[class^="tolro_"]
-##[class^="tolro_"]
-!cpasmieux.*,filmvf.*,filmoflix.*,filmstream-vf.*,lesseriestreaming.com,wikiserie.*##div[class^="salidor_"]
-##[class^="salidor_"]
-!lesseriestreaming.com,filmvf.*##a[class^="ebooks_"]
-##[class^="ebooks_orange_"][href]
-!##[class="surge_yellow"]
-##[class^="surge_"][href]
-##[class*="btn"][class*="mr-3"][href]
-
-##[class="OUTBRAIN"]
-!rugames.org##.Advrt
-##[class="Advrt"]
-##[class="report-pub"]
-##[class="FirstLoad"]
-##[class="responsive-ad"]
-
-! https://supportcenter.devexpress.com/ticket/details/q462080/timeline-view-a-part-of-the-current-time-marker-is-not-visible-in-firefox
-!malekal.com##[class="topad"]
-!malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-##[class="topad"]
-##[id="topad"]
-##[class="bottomad"]
-##[id="bottomad"]
-##[class="leftad"]
-##[id="leftad"]
-##[class="rightad"]
-##[id="rightad"]
-##[class^="oio"]
-##[id^="oio"]
-##[href*="/oiopub-"]
-##[href*="smartadserver.com"]
-##[id*="smartlink" i]
-##[class*="smartlink" i]
-##[href*="smartad" i]
-##[src*="smartad"]
-##[class*="smartad" i]
-##[id*="smartad" i]
-! some others
-##[class*="top-ads"]
-##[class*="bottom-ads"]
-##[class*="left-ads"]
-##[class*="right-ads"]
-##[class*="ads-top"]
-##[class*="ads-bottom"]
-##[class*="ads-left"]
-##[class*="ads-right"]
-##[class="ad"][class="c-ads"]
-##[id="ads"]
-##[id="ads4"]
-
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]
-##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]
-##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]
-! [style*="visibility: hidden"] or [style*="overflow: hidden"] or [hidden="hidden"]
-##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]
-##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]
-##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
-##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
-! for those with non height or width to 0|1 px
-##[style*="width:100%"][style*="height:100%"][style*="display:none"]
-##[style*="width:100%"][style*="height:100%"][style*=": hidden"]
-##[style*="width:100%"][style*="height:100%"][hidden="hidden"]
-##[style*="z-index:"][style*="display: none"]
-##[style*="position:"][style*=": -9999"]
-##[style*="position:"][style*=": -10000"]
-! break mystream.to,mstream.xyz,mstream.website filtering
-! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
-!##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
-
-! In case "not" because animations (https://www.k-twirl.com/)
-!##[style*="width: 1px;"][style*="height: 1px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-!##[style*="width: 0px;"][style*="height: 0px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-! block too much ( example at https://www.universanimeizy.com/beyblade-sparking/beyblade-burst-sparking-41-vostfr )
-!##iframe[src="about:blank"]
-! break https://www.youtube.com/iridium-settings
-!##[style*="display: none"]
-
 ! aparat.cam/dl, clipwatching.com/dl, videobin.co/dl, vudeo.net/dl, vidlox.me/dl, vidoza.net/cgi-bin/index_dl ...
 !https://vidoza.net/cgi-bin/index_dl.fcgi?op=view&file_code=qte6k8pakwqu&hash=27597440-176-143-1610137855-aff5800ccda9775907d580659aa64004&embed=1&adb=0
 !https://clipwatching.com/dl?op=view&file_code=pmnk0c61my0z&hash=32510242-21-220-1610138078-ac449abd2404efcddb8fc5f886f47a1f&embed=1&adb=0
@@ -1977,7 +1870,6 @@ animedigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-transpar
 !#endif
 !#if (allseries. && dom)
 allseries.*##.X
-allseries.*##.myButton
 ! sanitize (not ads)
 allseries.*#?#.jumbotron:if(.page-keywords)
 !#endif
@@ -2026,7 +1918,6 @@ film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
 filmstoon.*##[href*="://out.filmstoon."]
 filmstoon.*##.yx-share
 filmstoon.*##.fsect
-filmstoon.*##.myButton
 ! popup concern:
 ! because of a href="https://in.filmstoon.icu/?blabla" target="_blank" onclick="hide('qdiv')"
 filmstoon.*##[target="_blank"]
@@ -2036,9 +1927,6 @@ filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
 !#endif
 ! for sure (if dom change)
 ||in.filmstoon.*$popup
-!#endif
-!#if (filmz. && dom)
-filmz.*##center:if(.myButton)
 !#endif
 !#if (french--stream.co && dom)
 french--stream.co##.bx1
@@ -2100,14 +1988,10 @@ voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 !#endif
 !#if (voirfilms. && dom)
-voirfilms.*##.salidor_inner
-voirfilms.*##.salidor_b
 voirfilms.*##.f-inner
 voirfilms.*##.X
-voirfilms.*###pub
 !#endif
 !#if (wiflix. && dom)
-wiflix.*##.myButton
 wiflix.*##.sadst
 !#endif
 !#if (zone-stream. && dom)
@@ -2119,9 +2003,8 @@ zone-stream.*##+js(window.open-defuser)
 !#if ((fr2.voirfilms.ch|series.dpstreaming.) && dom)
 fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
 !#endif
-!#if ((filmgratuit.net|voirfilms.|streamavie.com|vfilms.me) && dom)
-streamavie.com,vfilms.me,voirfilms.*##center:if(.myButton)
-streamavie.com,vfilms.me,voirfilms.*##.myButton
+!#if ((filmgratuit.|filmz.|voirfilms.|streamavie.|vfilms.me) && dom)
+filmgratuit.*,filmz.*,streamavie.*,vfilms.me,voirfilms.*##center:if(.myButton)
 !#endif
 ! < start canal➕ rules >
 !#if canalplus.com
@@ -2469,18 +2352,120 @@ linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--be
 linternaute.com##.sns_avoidance_link.app_edito_btn
 !#endif
 ! ---- Global -----
-! < start global CSS rules >
-*##[class="adsbygoogle"]
-*##[class="google-ads"]
-*##[class="googleads"]
-*##[class^="salidor_"]
-*##[class^="tolro_"]
-*##[class*="ezoic-ad"]
-*##[class^="pub-"]:has-text(/Publicités?/i)
-*##[id="pub"]:if(> [class="X"])
-*##a:if([class^="surge_"])
-*##a:if([class^="ebooks_"])
-! 22/07/2020 core1player.com
+! < start global CSS rules >! tracker found on allocine.fr (example)
+! https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
+! https://docs.clickio.com/books/clickio-gdpr-consent-tool/page/cmp-api-usage
+##iframe[name^="__tcfapi"]
+
+!lesseriestreaming.com,filmvf.*,papseries.*,voirseries.*,wikiserie.*##div[id="pub"]
+##div[id="pub"]
+##[id^="playerPub"]
+##[id="oscuridad"]
+##[id^="contenidobloqueado"]
+!##[id^="rn_ad_native"]
+##[id*="_ad_native_"]
+##[id="player_v_DIV_1"]
+!filmoflix.*##div[id^="playerOver"]
+!cinez.*##[id^="playerOver"]
+##[id^="playerOver"]
+
+##[class*="lefermeur"]
+##[class*="myButton"][href]
+##[class*="mButton"][href]
+##[class|="custom-fake"]
+##[class^="masha_"]
+##[class*="contadorads"]
+!voir-film.cc##div[class^="tolro_"]
+##[class^="tolro_"]
+!cpasmieux.*,filmvf.*,filmoflix.*,filmstream-vf.*,lesseriestreaming.com,wikiserie.*##div[class^="salidor_"]
+##[class^="salidor_"]
+!lesseriestreaming.com,filmvf.*##a[class^="ebooks_"]
+##[class^="ebooks_orange_"][href]
+!##[class="surge_yellow"]
+##[class^="surge_"][href]
+##[class*="btn"][class*="mr-3"][href]
+
+##[class="OUTBRAIN"]
+!rugames.org##.Advrt
+##[class="Advrt"]
+##[class="report-pub"]
+##[class="FirstLoad"]
+##[class="responsive-ad"]
+
+##a[href*="-en-hd"][rel^="no"]
+
+! https://supportcenter.devexpress.com/ticket/details/q462080/timeline-view-a-part-of-the-current-time-marker-is-not-visible-in-firefox
+!malekal.com##[class="topad"]
+!malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
+##[class="topad"]
+##[id="topad"]
+##[class="bottomad"]
+##[id="bottomad"]
+##[class="leftad"]
+##[id="leftad"]
+##[class="rightad"]
+##[id="rightad"]
+##[class^="oio"]
+##[id^="oio"]
+##[href*="/oiopub-"]
+##[href*="smartadserver.com"]
+##[id*="smartlink" i]
+##[class*="smartlink" i]
+##[href*="smartad" i]
+##[src*="smartad"]
+##[class*="smartad" i]
+##[id*="smartad" i]
+! some others
+##[class*="top-ads"]
+##[class*="bottom-ads"]
+##[class*="left-ads"]
+##[class*="right-ads"]
+##[class*="ads-top"]
+##[class*="ads-bottom"]
+##[class*="ads-left"]
+##[class*="ads-right"]
+##[class="ad"][class="c-ads"]
+##[id="ads"]
+##[id="ads4"]
+
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]
+##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]
+##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]
+! [style*="visibility: hidden"] or [style*="overflow: hidden"] or [hidden="hidden"]
+##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]
+##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]
+##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
+##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
+! for those with non height or width to 0|1 px
+##[style*="width:100%"][style*="height:100%"][style*="display:none"]
+##[style*="width:100%"][style*="height:100%"][style*=": hidden"]
+##[style*="width:100%"][style*="height:100%"][hidden="hidden"]
+##[style*="z-index:"][style*="display: none"]
+##[style*="position:"][style*=": -9999"]
+##[style*="position:"][style*=": -10000"]
+! break mystream.to,mstream.xyz,mstream.website filtering
+! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
+!##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
+
+! In case "not" because animations (https://www.k-twirl.com/)
+!##[style*="width: 1px;"][style*="height: 1px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+!##[style*="width: 0px;"][style*="height: 0px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+! block too much ( example at https://www.universanimeizy.com/beyblade-sparking/beyblade-burst-sparking-41-vostfr )
+!##iframe[src="about:blank"]
+! break https://www.youtube.com/iridium-settings
+!##[style*="display: none"]
+
+##[class="adsbygoogle"]
+##[class="google-ads"]
+##[class="googleads"]
+##[class*="ezoic-ad"]
+##[class^="pub-"]:has-text(/Publicités?/i)
+##[id="pub"]:if(> [class="X"])
 ##[class="afs_ads"]
 ! </ end global CSS rules >
 ! ---- Per site -----
@@ -2514,18 +2499,18 @@ bwp.download.cnet.com##.bwp
 causeur.fr###popin-newsletter-block
 cinecomplet.net###playerOver
 cineiz.cc##.VF.full-quality
-cinemey.com###pub,.X,.ebooks_orange_7289002
+cinemey.com##.X
 cmb.fr##.portletReseauxSociaux
 cocostreaming.com##.rose.dropdown
 courrierinternational.com##.div-content-csprivacy
 cours-informatique-gratuit.fr##.advertise--ribbon
-cpasmieux.*###playerOverClose, .social-here, .report-pub, .log-buts, .reg-link, #show-login
+cpasmieux.*##.social-here, .log-buts, .reg-link, #show-login
 crowdstream.ml###best_submitters
 da.feedsportal.com###clicker
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
 daylimovies.net##.download.get
 degrouptest.com###icdkgher
-derniers-films.com##.myButton,[href="/regarder.html"] > span
+derniers-films.com##[href="/regarder.html"] > span
 deviantart.com##.ad-container,.adpool-pen,.da-custom-ad-box
 disneyhd.tk###boutonpubregarder,#chat_contain,a[href^="http://zulu.r867qq.net/offer"]
 dpstream.cc###jba0
@@ -2541,14 +2526,12 @@ etools.ch##.sResult,.sResultStatus
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
 femmeactuelle.fr##.ratio-16-9 > div
-film-streaming.bz##.voir-b,.c-lefermeur
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
 filmstreaming1.top##.asgdc
 filmstreaminghd.club,filmstreaming2018.com,mamzouka.be##h5:nth-of-type(7),.col-md-8 div:nth-of-type(4),.col-md-8 div:nth-of-type(8),div.vital:nth-of-type(10),.vital div:nth-of-type(2),h5:nth-of-type(9),h5:nth-of-type(10),h5:nth-of-type(9)
-filmz.info###pub,.myButton
-filmzstream.cc###pub,[href="https://filmzstream.cc/voir2.html"],[src="https://filmzstream.cc/play.png"],#uwee div:nth-of-type(3),a.watch_sa
+filmzstream.cc##[href="https://filmzstream.cc/voir2.html"],[src="https://filmzstream.cc/play.png"],#uwee div:nth-of-type(3),a.watch_sa
 filmzstream.vip##a.watch_sa
 filmzstreaming.org##h5
 forum-des-portables-asus.fr##.uix_noticeInner
@@ -2580,7 +2563,7 @@ google.fr###footcnt
 google.fr##.gb_7d
 hds-streaming.com##.wp-tags,div.sbox:nth-of-type(10),.dt_social_single,#text-3
 hdslecteur.xyz##div[class*="__wrap"]
-hdssgratuit.co##a.btn-watch.btn-lg.btn-offer.btnoff,.X,#pub
+hdssgratuit.co##a.btn-watch.btn-lg.btn-offer.btnoff,.X
 hellocoton.fr##.contest-promo,.pod.ad-container
 helpx.adobe.com###feedbackPod
 illimitefilm.org##a.roundRed.roundbutton,.movieBlock > .buttons
@@ -2705,7 +2688,6 @@ sourceforge.net##.sidebar-widget.jobs-widget
 spin-off.fr###container_prospect
 star.fr##img[src^="/typo3conf/ext/sta_crmvad/Resources/Public/opacite.png"]
 startpage.com###sponsored
-stream-complet.*##.c-lefermeur,.voir-b
 streamay.*##.ac,.ai,.pop-removable,.movie-download,.download_cta,.facebook_square
 streamcity.ml##.ads,.ads_heade,.ads_player
 streamcomplet.mobi##a[href*=".streamcomplet.mobi/player/"]
@@ -2713,8 +2695,8 @@ streamdown.cc###carousel-home,#top-menu li:nth-of-type(5),#top-menu li:nth-of-ty
 streaming-planet.net##[href^="/friend.php"]
 streaming.streamiz.co###onesignal-bell-container
 streamingbb.tv###PapaGooGorHDVid
-streamingdivx.ch##a.Btndwn,.SectionADs,.f-inner,#pub,.X
-streamingdivx.club,streaming.ac,zonestreaming.info,01series.co,regardergratuit.org,vustream.co,illimitestreaming.to##.X,#pub,.myButton
+streamingdivx.ch##a.Btndwn,.SectionADs,.f-inner,.X
+streamingdivx.club,streaming.ac,zonestreaming.info,01series.co,regardergratuit.org,vustream.co,illimitestreaming.to##.X
 streaminzone.com###menu-item-4405,.col-sm-4 p,.like-bottons,.post-info-inner .kodex_buttons .kodex_like_button.kodex_button,.post-info-inner p:nth-of-type(2),.text-center.box-video.col-sm-8 span:nth-of-type(2),div.row:nth-of-type(2) div.col-sm-3:nth-of-type(2)
 streamiz-filmze.com###PapaGooGorHDVid
 studio.tailorbrands.com###ember1372
@@ -2764,16 +2746,14 @@ viamichelin.fr##.vm-box-mag.vm-box-mag-resto
 viamichelin.fr##.vm-box-mag.vm-box-mag-voyage
 viamichelin.fr##.vm-pub-homevign.h124
 video.genyoutube.net###advert
-vodfilms.org##.myButton
-voir.dpstream.site###pub
 voirfilmsenstreaming.com##[href*="://linkredirect."]
-vustream.co##center:nth-of-type(2),center:nth-of-type(1),.myButton > .masha_index,.myButton
+vustream.co##center:nth-of-type(2),center:nth-of-type(1)
 waaw.tv###disqus_thread
 webmail1k.orange.fr##.sidebar-external-services
 webmarketing-com.com###norilsk_overlay_div_5374
 whatismybrowser.com##.extra,.responsive.fun
 widget.business-lounge.fr##.eshop
-wiflix.net##.myButton,.sadst
+wiflix.net##.sadst
 wiiztube.com##.pps-h-auto-px.pps-w-640-px.pps-no-border.pps-popup,.__b-popup1__.b-modal
 wikiserie.*##.btn-share.rounded-0.btn-sm.btn
 wikiserie.*##.social-share
