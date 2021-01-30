@@ -3441,7 +3441,6 @@ stream-serie.net#$##option-1{height:100%}
 ||www.planet-streaming.net/zakaz/zakaz.js|$script
 ||gounlimited.to/js/pop.js|$script
 ||o333o.*$script
-||js.stripe.com$script
 ||bat.bing.com/bat.js|$script
 ||adroll.com/*.js|$script
 ||coolcpms.*$script
