@@ -1738,8 +1738,11 @@ allseries.*##[class*="-download-watch"]
 !#if enstream.to
 enstream.to#?#.player:if(:-abp-contains(/ENSTREAM HD/))
 !#endif
+!#if (mystream.|mstream.)
+mystream.*,mstream.*##[id^="_0."]
+!#endif
 !#if fcine.*
-fcine.*##[class*="vip-server-select"]
+fcine.*##[class|="vip-server"]
 fcine.*#?#[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 !#endif
@@ -1973,8 +1976,10 @@ lesseriestreaming.com##[class*="my-3"]
 !voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
 ! prefer to block bad, because some videos are missing, then the iframe will not load
 voirseries.*#$##lecteur:if(#videoplay[src*=".php?p=2"]){ display: none }
-voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
+!voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
 voirseries.*##.homi:if([class*="masha_"])
+voirseries.*##[class|="md"]
+voirseries.*##[class|="custom-fake"]
 !#endif
 !#if (voiranime.com && dom)
 voiranime.com##div:if(> div > a[href*="/signup/"])
@@ -3838,6 +3843,7 @@ stream-serie.net#$##option-1{height:100%}
 ! WHITELISTING (prefer badfilter instead, see bellow)
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! < start whitelist >
+voirseries.*#@#.adsBox
 ! [FIX] AdChoices crunchyroll.com
 @@||trustarc.com^
 @@||turner.com^
@@ -3848,6 +3854,7 @@ stream-serie.net#$##option-1{height:100%}
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/(?!adsbygo{2}gle.*)ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 ! unbreak tf1.fr
+@@||compte.tf1.fr^$domain=tf1.fr
 ! because ://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro... in "uBlock filters – Unbreak" list
 @@||ads.stickyadstv.com^
 ! from "Fuck Fuckadblock"
