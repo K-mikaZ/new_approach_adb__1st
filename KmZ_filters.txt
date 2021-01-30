@@ -1233,7 +1233,8 @@ twitter.com##a[href^="/i/events"]
 !#if dom
 di.fm##[id|="sponsor"]
 di.fm##[class*="upsell"]
-!di.fm##.adsbygoogle.sidebar-ad-component
+![class="ad-content"], [class="sidebar-ad-component"]
+di.fm##[class*="ad-co"]
 ! [fix] too generic
 !di.fm##a:if(:has-text(/premium|trial/i))
 ! remove top right "premium trial" button
@@ -2467,9 +2468,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! break https://www.youtube.com/iridium-settings
 !##[style*="display: none"]
 
-##[class*="adsbygoogle"]
-##[class*="google-ads"]
-##[class*="googleads"]
+##[class="adsbygoogle"]
+##[class="google-ads"]
+##[class="googleads"]
 ##[class*="ezoic-ad"]
 ##[class^="pub-"]:has-text(/Publicités?/i)
 ##[id="pub"]:if(> [class="X"])
