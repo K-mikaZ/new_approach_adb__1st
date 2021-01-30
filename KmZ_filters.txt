@@ -2467,9 +2467,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! break https://www.youtube.com/iridium-settings
 !##[style*="display: none"]
 
-##[class="adsbygoogle"]
-##[class="google-ads"]
-##[class="googleads"]
+##[class*="adsbygoogle"]
+##[class*="google-ads"]
+##[class*="googleads"]
 ##[class*="ezoic-ad"]
 ##[class^="pub-"]:has-text(/Publicités?/i)
 ##[id="pub"]:if(> [class="X"])
