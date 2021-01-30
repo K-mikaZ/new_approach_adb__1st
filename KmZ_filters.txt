@@ -1231,13 +1231,13 @@ twitter.com##a[href^="/i/events"]
 ! < start di.fm rules >
 !#if di.fm
 !#if dom
-di.fm###sponsor-region
-di.fm##[class="premium-upsell-banner"]
-di.fm##.adsbygoogle.sidebar-ad-component
+di.fm##[id|="sponsor"]
+di.fm##[class*="upsell"]
+!di.fm##.adsbygoogle.sidebar-ad-component
 ! [fix] too generic
 !di.fm##a:if(:has-text(/premium|trial/i))
 ! remove top right "premium trial" button
-di.fm##.go-premium-cta
+di.fm##[class|="go-premium"]
 ! [fix] break "di.fm/premium/all" and "di.fm/trial"
 di.fm#@#[class*="premium"]
 ! [fix] di.fm page margin because suppressing ads!
@@ -1247,7 +1247,7 @@ di.fm##+js(set.js, maxLoadTime, undefined)
 !#endif
 !#endif
 ! </ end di.fm rules >
-zenradio.com##.remove-ads-component
+zenradio.com##[class|="remove-ads"]
 ! </ end audioaddict.com rules >
 ! < start deezer rules >
 !#if deezer.com
@@ -2373,7 +2373,10 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 !filmoflix.*##div[id^="playerOver"]
 !cinez.*##[id^="playerOver"]
 ##[id^="playerOver"]
+! open.spotify.com
+##[id|="ad-tracking"][style*="display: none"]
 
+##[class="X"]
 ##[class*="lefermeur"]
 ##[class*="myButton"][href]
 ##[class*="mButton"][href]
