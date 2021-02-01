@@ -4187,8 +4187,8 @@ streamroot.io$script,important,badfilter
 ||lm.messenger.com$subdocument,important,badfilter
 !#endif
 ! [Fix] AdChoices crunchyroll.com
-||trustarc.com^,badfilter
-||turner.com^,badfilter
+||trustarc.com^$badfilter
+||turner.com^$badfilter
 ! [FIX] unblock auto bypass ads on open.spotify.com
 ||doubleclick.net^$3p,badfilter
 !#endif
