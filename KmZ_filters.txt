@@ -1307,6 +1307,7 @@ soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
 ! </ end soundcloud rules >
 ! < start spotify rules >
 !#if open.spotify.com
+||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$xhr,domain=spotify.com
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
 ! [try] not sure for set
@@ -1656,17 +1657,18 @@ vizplay.icu##+js(set.js, adb, '1/')
 ! https://github.com/videojs/videojs-contrib-ads/blob/main/examples/basic-ad-plugin/index.html
 /videojs-contrib-ads.js$script
 @@/dna-client.js
-! break too many videos
-! see < https://v3.fstats.xyz/watch >
-||v3.fstats.xyz^$badfilter
-||fstats.xyz^$3p,badfilter
 *$xhr,3p,domain=feurl.com,badfilter
 *$xhr,3p,domain=core1player.com,badfilter
 *$script,3p,domain=core1player.com,badfilter
 /\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$all,3p,important
 ||2mdn.net/*$media,important
 !#if (fstats.xyz && xhr)
+! [fix] break too many video loading ( example on hds.lc )
+!||v3.fstats.xyz^$badfilter
+||fstats.xyz^$3p,badfilter
 ||fstats.xyz/log$xhr,important
+!@@||fstats.xyz/watch$xhr
+||v3.fstats.xyz^$domain=fembed.com
 !#endif
 !#if inpagepush.com
 ||inpagepush.com^$important,badfilter
@@ -3901,8 +3903,6 @@ voirseries.*#@#.adsBox
 @@||youborafds01.com^$xhr
 @@||youboranqs01.com/ping
 @@||vendorlist.consensu.org/vendorlist.json
-! [fix] break too many video loading ( example on hds.lc )
-@@||fstats.xyz/watch$xhr
 @@||googleads.g.doubleclick.net/pagead/id$xhr
 !#endif
 !#if image
