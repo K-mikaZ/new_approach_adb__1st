@@ -2042,7 +2042,7 @@ crunchyroll.com###series_promo_banner
 !||*/crunchyroll-web.json$xhr,domain=crunchyroll.com,important
 /crunchyroll-web.json$xhr,domain=crunchyroll.com,redirect=empty
 ||*$popup,domain=crunchyroll.com
-@@/track$ping,domain=crunchyroll.com
+||eec.crunchyroll.com^
 !#endif
 ! <start "play RTS" rules >
 !#if rts.ch
