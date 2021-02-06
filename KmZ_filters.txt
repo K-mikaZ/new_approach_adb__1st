@@ -2471,7 +2471,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 !##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
 
 ! Unbreak the world
-pinterest.*#@#[style*="position:"][style*=": -9999"]
+pinterest.*#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
