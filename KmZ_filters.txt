@@ -2446,37 +2446,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id="ads"]
 ##[id="ads4"]
 
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]
-##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]
-##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]
-! [style*="visibility: hidden"] or [style*="overflow: hidden"] or [hidden="hidden"]
-##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]
-##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]
-##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]
-##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]
-! for those with non height or width to 0|1 px
-##[style*="width:100%"][style*="height:100%"][style*="display:none"]
-##[style*="width:100%"][style*="height:100%"][style*=": hidden"]
-##[style*="width:100%"][style*="height:100%"][hidden="hidden"]
-##[style*="z-index:"][style*="display: none"]
-##[style*="position:"][style*=": -9999"]
-##[style*="position:"][style*=": -10000"]
-! break mystream.to,mstream.xyz,mstream.website filtering
-! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
-!##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
 
-! In case "not" because animations (https://www.k-twirl.com/)
-!##[style*="width: 1px;"][style*="height: 1px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-!##[style*="width: 0px;"][style*="height: 0px;"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-! block too much ( example at https://www.universanimeizy.com/beyblade-sparking/beyblade-burst-sparking-41-vostfr )
-!##iframe[src="about:blank"]
-! break https://www.youtube.com/iridium-settings
-!##[style*="display: none"]
 
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
