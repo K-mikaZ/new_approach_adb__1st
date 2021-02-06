@@ -1183,6 +1183,8 @@ youtube.com#@##consent-bump:remove()
 ||youtibe.com^$all,important
 ||youtuhe.com^$all,important
 ! Somes fix
+! [fix] Try blocking ads video
+/r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/
 ! [fix] Require for Local YouTube Downloader < https://greasyfork.org/en/scripts/369400-local-youtube-downloader >
 /youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
 ||youtube.com/get_video_info$badfilter
@@ -2087,6 +2089,8 @@ rakuten.tv##+js(set.js, heartbeat, OK)
 ! ------------------------------------------------------------------
 !< start TF1 rules >
 !#if tf1.fr
+tf1.fr##a[rel*="sponsored"]
+tf1.fr##div[class^="Freemium" i]
 !#if media
 ||*$media,domain=tf1.fr
 !#endif
@@ -2152,6 +2156,7 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 !||torrent09.$inline-script
 !||torrenty.$inline-script
 !||ettvdl.com$inline-script
+oxtorrent.*#@#p:empty
 !#if ((cpasbien.|gktorrent.|oxtorrent.) && dom)
 cpasbien.*,gktorrent.*,oxtorrent.*###vpnvpn
 cpasbien.*,gktorrent.*,oxtorrent.*##.trusted
@@ -2261,6 +2266,10 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 !/sdarla/php/client.php$script,domain=mail.yahoo.com,important
 ||udc.yahoo.com^$xhr,domain=mail.yahoo.com
 ||fc.yahoo.com^$domain=mail.yahoo.com
+||ybp.yahoo.com^
+||analytics.yahoo.com^
+||gemini.yahoo.com^
+||geo.query.yahoo.com^
 ! https://help.getadblock.com/support/solutions/articles/6000161392-custom-filters-for-some-annoyances-in-yahoo-mail
 mail.yahoo.com##.callout-default.left
 mail.yahoo.com##.rightRailAdContainer
