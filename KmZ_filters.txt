@@ -2971,7 +2971,6 @@ stream-serie.net#$##option-1{height:100%}
 /(6zw2rcfd|hcg82f2b|dnzwjlbknhe|s20dh7e9dh|tu42het2{2}n)\.(com)\/(.*)\.js/$script,important
 /captched\.com\/jws\.js/$script,important
 /easylist\.(.{2,})\/(ados|popunder(.*))\.js/$script,important
-/e\-cdns\-files\.dzcdn\.net\/cache\/js\/ap{2}-web\.(.*)\.js/$script,important
 /french\-stream\.(in)\/templates\/(.*)\/js\/share\.js/$script,important
 /hostingcloud\.(.{2,})\/u83k\.js/$script,important
 /ie8eamus\.(.{2,})\/sfp\.js/$script,important
