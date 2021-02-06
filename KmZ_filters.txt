@@ -2446,7 +2446,32 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id="ads"]
 ##[id="ads4"]
 
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+! [style*="visibility: hidden"] or [style*="overflow: hidden"] or [hidden="hidden"]
+##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+! for those with non height or width to 0|1 px
+##[style*="width:100%"][style*="height:100%"][style*="display:none"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width:100%"][style*="height:100%"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="width:100%"][style*="height:100%"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="z-index:"][style*="display: none"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+##[style*="position:"][style*=": -10000"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+! break mystream.to,mstream.xyz,mstream.website filtering
+! test on https://fr.seriestream.ws/series/losing-alice-saison-1-episode-2-56847.html
+!##[style*="position:"][style*="inset: 0px;"][style*="z-index:"][style*="background: transparent"]
 
+! Unbreak the world
+pinterest.*#@#[style*="position:"][style*=": -9999"]
 
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
