@@ -1979,7 +1979,7 @@ lesseriestreaming.com##[class*="my-3"]
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
 !voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
 ! prefer to block bad, because some videos are missing, then the iframe will not load
-voirseries.*#$##lecteur:if(#videoplay[src*=".php?p=2"]){ display: none }
+!voirseries.*#$##lecteur:if(#videoplay[src*=".php?p=2"]){ display: none }
 !voirseries.*#?#.ddddddddddd:if(:has-text(/inscri(re|vez)/i))
 voirseries.*##.homi:if([class*="masha_"])
 voirseries.*##[class|="md"]
