@@ -1996,6 +1996,7 @@ voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999 !important }
 voirseries.*#$##video-responsive, iframe#videoplay { top: -3px !important; }
 voirseries.*#$#.holder .backdrobb { top: 0px !important; bottom: 99px !important; position: absolute; }
 voirseries.*#$#[id="videoplay"]{ top: -10px !important; }
+voirseries.*#$##video-responsive .load { top: -30px !important; }
 !#endif
 !#if (voiranime.com && dom)
 voiranime.com##div:if(> div > a[href*="/signup/"])
