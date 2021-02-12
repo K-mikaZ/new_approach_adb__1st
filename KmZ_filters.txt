@@ -1979,6 +1979,14 @@ lesseriestreaming.com##[class*="my-3"]
 ! see < https://forum.adguard.com/index.php?threads/is-there-any-way-to-get-help-on-an-xpath-filter-please.39514/ >
 !voirseries.*#?##lecteur:if(.load:not([src*=".php?p=1"]))
 ! prefer to block bad, because some videos are missing, then the iframe will not load
+||i.ibb.co/*/*-annuler-*.png
+voirseries.*##.homi:if([class*="masha_"])
+voirseries.*##[class|="md"]
+voirseries.*##[class|="custom-fake"]
+voirseries.*##[class|="fake"]
+voirseries.*##[id|="fake"]
+voirseries.*##.AV
+! fuck inscription forcing
 voirseries.*#$#[id^="lecteur"]{display: inline !important}
 voirseries.*#$#[id^="GoPlayer"]{display: inline !important}
 voirseries.*###GoPlayer > i.insideIframe:first-child
@@ -1987,12 +1995,7 @@ voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
 voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999 !important }
 voirseries.*#$##video-responsive, iframe#videoplay { top: -3px; }
 voirseries.*#$#.holder .backdrobb { bottom: 99px !important; }
-voirseries.*##.homi:if([class*="masha_"])
-voirseries.*##[class|="md"]
-voirseries.*##[class|="custom-fake"]
-voirseries.*##[class|="fake"]
-voirseries.*##[id|="fake"]
-voirseries.*##.AV
+voirseries.*#$#[id="videoplay"]{ top:-40px !important; }
 !#endif
 !#if (voiranime.com && dom)
 voiranime.com##div:if(> div > a[href*="/signup/"])
