@@ -1995,6 +1995,7 @@ voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
 voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999 !important }
 voirseries.*#$##video-responsive, iframe#videoplay { top: -3px !important; }
 voirseries.*#$#.holder .backdrobb { top: 0px !important; bottom: 99px !important; position: absolute; }
+voirseries.*#$#.backdrobb .material-icons { position: absolute; top: 30% !important; transform: translateX(-50%) translateY(-60%) !important; }
 voirseries.*#$#[id="videoplay"]{ top: -10px !important; }
 !#endif
 !#if (voiranime.com && dom)
