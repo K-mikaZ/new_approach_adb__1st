@@ -1309,6 +1309,8 @@ soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
 ! </ end soundcloud rules >
 ! < start spotify rules >
 !#if open.spotify.com
+! https://gist.github.com/mrprobot/257f3af652c0b4599634c7c063ec2d88#file-spotify_eliminate_advertisements
+||audio-fa.scdn.co^
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
 ! [try] not sure for set
