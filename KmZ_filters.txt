@@ -1309,7 +1309,6 @@ soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
 ! </ end soundcloud rules >
 ! < start spotify rules >
 !#if open.spotify.com
-||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$xhr,domain=spotify.com
 !#if dom
 open.spotify.com##+js(nowebrtc.js)
 ! [try] not sure for set
