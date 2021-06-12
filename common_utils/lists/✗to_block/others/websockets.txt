@@ -7,7 +7,11 @@
 ! Advertising and Analytics (A&A) companies have used WebSockets
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 
-/^ws{2}(([\:][\/]{2})+)/
+! fix because of wss:// and ws://
+!/^ws{2}(([\:][\/]{2})+)/
+!/^wss?(([\:][\/]{2})+)/
+! more generic
+||*$websocket
 
 ! somes allowing (if you want)
 
@@ -24,9 +28,25 @@
 @@/?access_token=*$websocket,domain=spotify.com
 
 ! [FIX] utils
-! @@/^ws{2}(([\:][\/]{2})+)/$domain=lastpass.com
 @@||lastpass.com^$websocket
-! @@/^ws{2}(([\:][\/]{2})+)/$domain=chat.twitch.tv
+! @@||chat.twitch.tv^$websocket
 @@||chat.twitch.tv^$websocket
-@@/^ws{2}(([\:][\/]{2})+)/$domain=packetlosstest.com
-@@/^ws{2}(([\:][\/]{2})+)/$domain=dns-oarc.net
+@@||packetlosstest.com^$websocket
+@@||dns-oarc.net^$websocket
+
+
+@@||edge-chat.*/chat$websocket,domain=facebook.com
+
+! blocking
+! -------------------------------------
+! speedtest
+@@||nperf.net^$websocket
+@@||cox.net^$websocket
+! -------------------------------------
+/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
+wss://net-announce*$websocket,important
+||clearadnetwork.com$websocket,important
+||*.hostcontent.live$websocket,important
+||*.space:*$websocket,important
+||alugha.com/graphql$websocket,important
+||socket.tidio.co$websocket,important
