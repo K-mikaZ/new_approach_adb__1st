@@ -33,9 +33,9 @@
 !https://vidoza.net/cgi-bin/index_dl.fcgi?op=view&file_code=qte6k8pakwqu&hash=27597440-176-143-1610137855-aff5800ccda9775907d580659aa64004&embed=1&adb=0
 !https://clipwatching.com/dl?op=view&file_code=pmnk0c61my0z&hash=32510242-21-220-1610138078-ac449abd2404efcddb8fc5f886f47a1f&embed=1&adb=0
 !https://vidlox.me/dl?op=view&file_code=7phrtgd0ehma&hash=16988191-176-143-1611913644-11b934861cce9f6ccaf95bb71d511fef
-!/\?(op\=view)+\&(file\_code\=[^\n]{6,})+\&(hash\=[^\n]{6,})/$xhr,1p,important
-/\?(op\=view)+\&(file\_code\=[^\n]{6,})+\&(hash\=[^\n]{6,})(\&(embed\=\d)+\&(adb\=\d))?/$xhr,1p,important
-
+!https://dood.la/dood?op=watch&hash=25698357-40-180-1623588823-e05f4c77a98a2d98980e2876023e92e5&token=m6wnsaptjjcrbxo6wcglwczv&embed=1&ref2=https%3A%2F%2Fwiflix-stream.com%2F&adb=0&rct=wv7&etoken=03AGdBq25ZLFMI6yUJLH699KTem3r4Dx9YbkFI8i8T6XHh_ADLvlmEDSVXRVoGlsrzBatlRCH3bXjRUQYHl8_cvSKCE98hzQyKQsJo7uP4NCK3kAcF9hzVS3_ru2wON23o2z5BX8QpKrQnm9pbIMYM7pNObinzClY1JvthO6EbnMe0wrdbQMqAnc-oEob9WOZRYLF1V378q0KU8ZL3Z2hqacakL4Pd6u93f6aSuVLxDkKuwRzoXbCSTu6UAqYlwoCbhsIV8hykFrjOsIFCMYTAimVxa1w-esGIzoHB-DbMv5rfEdh8ZZukA0iEAkd8qomorn6PIe7cS2tXvqLHMbnR-oxThmAVCKqKEYjedUo0EfJkB6vSdwjSK4P1lkBvUDQHuT-PH8RROvi1lYdmJSuQ85EmLhSynK-IZdi_vl5D6eIcgDp8ipGH12mA_C1z01FirIZUckR7mKbLYjLypaT8ryAh7qJSVPK2H-_BhjsK1_aLH6SA6uK56tGMw94aHsAt3MSwwWGDvgvj
+!/\?(op\=view)+\&(file\_code\=[^\n]{6,})+\&(hash\=[^\n]{6,})(\&(embed\=\d)+\&(adb\=\d))?/$xhr,1p,important
+/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,important
 
 ! PER SITES
 ! -------------------------------
