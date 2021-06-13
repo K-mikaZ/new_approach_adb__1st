@@ -17,7 +17,7 @@
 
 ! BLOCKING
 ! -------
-!*##+js(nowebrtc.js)
+*##+js(nowebrtc.js)
 ||*$webrtc
 ! adguard rule
 !#if (adguard)
