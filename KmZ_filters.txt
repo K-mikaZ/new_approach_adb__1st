@@ -5005,8 +5005,8 @@ uqload.com#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', '
 ##[class|="report-pub"]
 ||czwidgets.fr^
 ||pausefun.com^
-##[class^="movie-"][class*="aye"]
-##[id^="movie-"][id*="aye"]
+##[class|="movie"][class*="-aye"]
+##[id|="movie"][id*="-aye"]
 ##[class^="custom-"][class*="fake-"][class*="media"]
 ##[id^="custom-"][id*="fake-"][id*="media"]
 ##[class^="fake-"][class*="custom-"][class*="media"]
