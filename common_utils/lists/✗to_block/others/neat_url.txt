@@ -3,6 +3,7 @@
 ! Description: A list I created to block tracking via urls
 ! Url tracking 
 ! utm - itm
-*$queryprune=/[i|u]tm_.*/
+*$queryprune=/utm_.*/
+*$queryprune=/itm_.*/
 ! Google url tracking
 google.*$document,queryprune=client
