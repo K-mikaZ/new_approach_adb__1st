@@ -16,26 +16,38 @@
 !          &   https://github.com/jparise/chrome-utm-stripper/blob/master/background.js
 !              from  "Tracking Token Stripper" (https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob)
 !
+!
+! collector.githubapp.com
+! -----------------------
+! example on https://gist.github.com/danbst/92c5c445bcb6096b307d206960e1a490
+! https://collector.githubapp.com/github/page_view?dimensions[page]=https%3A%2F%2Fgithub.com%2FSmile4ever%2FNeat-URL&dimensions[title]=Smile4ever%2FNeat-URL%3A%20Neat%20URL%20cleans%20URLs%2C%20removing%20parameters%20such%20as%20Google%20Analytics%27%20utm%20parameters.&dimensions[referrer]=https%3A%2F%2Fwww.google.com%2F&dimensions[user_agent]=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64%3B%20rv%3A89.0)%20Gecko%2F20100101%20Firefox%2F89.0&dimensions[screen_resolution]=1920x1080&dimensions[pixel_ratio]=1&dimensions[browser_resolution]=1920x922&dimensions[tz_seconds]=7200&dimensions[timestamp]=1623678672439&dimensions[referrer]=https%3A%2F%2Fgithub.com%2F&dimensions[request_id]=AABE%3A36AC%3A4247DA7%3A44240F6%3A60C75EC7&dimensions[visitor_id]=2759041667783933888&dimensions[region_edge]=fra&dimensions[region_render]=iad&dimensions[user_id]=544411&dimensions[user_login]=Smile4ever&dimensions[repository_id]=140750622&dimensions[repository_nwo]=Smile4ever%2FNeat-URL&dimensions[repository_public]=true&dimensions[repository_is_fork]=false&dimensions[repository_network_root_id]=140750622&dimensions[repository_network_root_nwo]=Smile4ever%2FNeat-URL&&measures[performance_timing]=1-200-130-9169-8683-8645-8448-7984-130-72-2--9169-0---200-986-824-158-7991-7984&&dimensions[actor_id]=35837568&dimensions[actor_login]=K-mikaZ&dimensions[actor_hash]=c0835f86d143319ff333bccc367db814bb5a9c64dec11f161edcdbee6ad0d1ba&dimensions[cid]=642389447.1623408576
+||githubapp.com^$removeparam=/dimensions\[(\w+)\]\=/
+||githubapp.com^$removeparam=/measures\[(\w+)\]\=/
+!
 ! Campaign tracking,  "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
 ! ------------------
 !    Google's Urchin Tracking Module & Google Adwords  [utm.*], [itm.*], [gclid]
-*$removeparam=utm_cid
-*$removeparam=utm_campaign
-*$removeparam=utm_medium
-*$removeparam=utm_source
-*$removeparam=utm_content
-*$removeparam=utm_term
-*$removeparam=utm_name
-*$removeparam=utm_reader
-*$removeparam=utm_viz_id
-*$removeparam=utm_pubreferrer
-*$removeparam=utm_swu
-*$removeparam=itm_campaign
-*$removeparam=itm_medium
-*$removeparam=itm_source
-*$removeparam=itm_content
-*$removeparam=itm_term
+!*$removeparam=utm_cid
+!*$removeparam=utm_campaign
+!*$removeparam=utm_medium
+!*$removeparam=utm_source
+!*$removeparam=utm_content
+!*$removeparam=utm_term
+!*$removeparam=utm_name
+!*$removeparam=utm_reader
+!*$removeparam=utm_viz_id
+!*$removeparam=utm_pubreferrer
+!*$removeparam=utm_swu
+!*$removeparam=itm_campaign
+!*$removeparam=itm_medium
+!*$removeparam=itm_source
+!*$removeparam=itm_content
+!*$removeparam=itm_term
+!*$removeparam=/^utm_(\w+)\=/
+*$removeparam=/utm_(.*)/
+*$removeparam=/itm_(.*)/
 *$removeparam=gclid
+*$removeparam=dclid
 !    [...]
 *$removeparam=mbid
 *$removeparam=cmpid
