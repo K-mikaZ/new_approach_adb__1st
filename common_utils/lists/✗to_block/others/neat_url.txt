@@ -1,9 +1,24 @@
 ! Title: [⚙][addon] "Neat_url (Anti url-tracking)" - by K-mik@Z
 ! Expires: 1 day
 ! Description: A list I created to block tracking via urls
-! Url tracking 
-! utm - itm
-*$queryprune=/utm_.*/
-*$queryprune=/itm_.*/
+! Example
+!   Before:   http://www.phoronix.com/scan.php?page=news_item&px=Ioquake3-Auto-Updater&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Phoronix+(Phoronix)
+!   After:    http://www.phoronix.com/scan.php?page=news_item&px=Ioquake3-Auto-Updater
+!
+! $queryprune === $removeparam
+! see:   https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#removeparam-modifier
+!
+! based on:
+! https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
+!
+! Campaign tracking (utm), "params": ["utm_*"]
+! --------------------------------------------
+*$removeparam=/utm_.*/
+!
+! Campaign tracking (itm), "params": ["itm_*"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
+! ---------------------------------------------
+*$removeparam=/itm_.*/
+!
 ! Google url tracking
-google.*$document,queryprune=client
+! -------------------
+google.*$document,removeparam=client
