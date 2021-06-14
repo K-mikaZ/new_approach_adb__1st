@@ -8,8 +8,7 @@
 ! $queryprune === $removeparam
 ! see:   https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#removeparam-modifier
 !
-! based on:
-! https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
+! BASED ON:   https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
 !
 ! Campaign tracking (utm), "params": ["utm_*"]
 ! --------------------------------------------
@@ -22,3 +21,5 @@
 ! Google url tracking
 ! -------------------
 google.*$document,removeparam=client
+!
+! TRY ADD SUPPORT OF:   URL Tracking Stripper & Redirect Skipper (https://chrome.google.com/webstore/detail/url-tracking-stripper-red/flnagcobkfofedknnnmofijmmkbgfamf)
