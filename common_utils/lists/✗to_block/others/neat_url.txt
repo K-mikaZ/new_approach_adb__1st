@@ -11,6 +11,11 @@
 ! BASED ON:    https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
 ! AND:         https://github.com/newhouse/url-tracking-stripper
 !
+! SEE ALSO :   https://github.com/mihaip/utm-stripper/blob/master/extension/background.js
+!              from  "Google Analytics Parameter Stripper" (https://chrome.google.com/webstore/detail/google-analytics-paramete/jbgedkkfkohoehhkknnmlodlobbhafge)
+!          &   https://github.com/jparise/chrome-utm-stripper/blob/master/background.js
+!              from  "Tracking Token Stripper" (https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob)
+!
 ! Campaign tracking,  "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
 ! ------------------
 !    Google's Urchin Tracking Module & Google Adwords  [utm.*], [itm.*], [gclid]
