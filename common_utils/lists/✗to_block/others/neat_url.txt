@@ -1,0 +1,8 @@
+! Title: [⚙][addon] "Neat_url (Anti url-tracking)" - by K-mik@Z
+! Expires: 1 day
+! Description: A list I created to block tracking via urls
+! Url tracking 
+! utm - itm
+*$removeparam=/[i|u]tm_.*/
+! Google url tracking
+google.*$document,queryprune=client
