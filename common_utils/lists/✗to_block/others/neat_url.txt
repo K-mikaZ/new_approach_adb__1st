@@ -5,26 +5,33 @@
 !   Before:   http://www.phoronix.com/scan.php?page=news_item&px=Ioquake3-Auto-Updater&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Phoronix+(Phoronix)
 !   After:    http://www.phoronix.com/scan.php?page=news_item&px=Ioquake3-Auto-Updater
 !
-! "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
-!
 ! $queryprune === $removeparam
 ! see:   https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#removeparam-modifier
 !
-! BASED ON:   https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
+! BASED ON:    https://github.com/Smile4ever/Neat-URL#default-blocked-parameters
+! AND:         https://github.com/newhouse/url-tracking-stripper
 !
-! Campaign tracking
+! Campaign tracking,  "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
 ! ------------------
+!    Google's Urchin Tracking Module & Google Adwords  [utm.*], [itm.*], [gclid]
 *$removeparam=utm_cid
 *$removeparam=utm_campaign
 *$removeparam=utm_medium
 *$removeparam=utm_source
 *$removeparam=utm_content
 *$removeparam=utm_term
+*$removeparam=utm_name
+*$removeparam=utm_reader
+*$removeparam=utm_viz_id
+*$removeparam=utm_pubreferrer
+*$removeparam=utm_swu
 *$removeparam=itm_campaign
 *$removeparam=itm_medium
 *$removeparam=itm_source
 *$removeparam=itm_content
 *$removeparam=itm_term
+*$removeparam=gclid
+!    [...]
 *$removeparam=mbid
 *$removeparam=cmpid
 *$removeparam=cid
@@ -34,8 +41,53 @@
 *$removeparam=Campaign
 *$removeparam=pk_campaign
 !
+! Action Map
+! ----------
+*$removeparam=action_object_map
+*$removeparam=action_type_map
+*$removeparam=action_ref_map
+!
+! AliExpress.com
+! --------------
+! https://www.aliexpress.com/item/33013414492.html?spm=a2g0o.productlist.0.0.12071ec2MsabWz&algo_pvid=
+!*$removeparam=spm@*.aliexpress.com
+!*$removeparam=scm@*.aliexpress.com
+!*$removeparam=spm
+!*$removeparam=scm
+*$removeparam=aff_platform
+*$removeparam=aff_trace_key
+!
+! Amazon
+! ------
+!*$removeparam=pd_rd_*@amazon.*
+!*$removeparam=_encoding@amazon.*
+!*$removeparam=psc@amazon.*
+!*$removeparam=tag@amazon.*
+!*$removeparam=ref_@amazon.*
+!*$removeparam=pf_rd_*@amazon.*
+!        { "name": "Bilibili.com", "params": ["callback@bilibili.com"]},
+!        { "name": "Bing", "params": ["cvid@bing.com", "form@bing.com", "sk@bing.com", "sp@bing.com", "sc@bing.com", "qs@bing.com", "pq@bing.com"]},
+!        { "name": "Campaign tracking (Adobe Analytics)", "params": ["sc_cid"]},
+!        { "name": "Campaign tracking (Adobe Marketo)", "params": ["mkt_tok"]},
+!        { "name": "Campaign tracking (Amazon Kendra)", "params": ["trk", "trkCampaign"]},
+!        { "name": "Campaign tracking (ga, Google Analytics)", "params": ["ga_*"]},
+!        { "name": "Campaign tracking (Humble Bundle)", "params": ["hmb_campaign", "hmb_medium", "hmb_source"]},
+!        { "name": "Campaign tracking (itm)", "params": ["itm_*"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
+!        { "name": "Campaign tracking (pk)", "params": ["pk_*"]},
+!        { "name": "Campaign tracking (sc)", "params": ["sc_campaign", "sc_channel", "sc_content", "sc_medium", "sc_outcome", "sc_geo", "sc_country"]},
+!        { "name": "Campaign tracking (utm)", "params": ["utm_*"]},
+!        { "name": "Campaign tracking (Yandex)", "params": ["yclid", "_openstat"], "docs": "https://yandex.com/support/direct/statistics/url-tags.html"},
+!        { "name": "Campaign tracking (others)", "params": ["mbid", "cmpid", "cid", "c_id", "campaign_id", "Campaign"], "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"},
+!        { "name": "Facebook", "params": ["fb_action_ids", "fb_action_types", "fb_ref", "fb_source", "fbclid"]},
+!        { "name": "Google", "params": ["gs_l", "ved@google.*", "ei@google.*", "sei@google.*", "gws_rd@google.*"]},
+!        { "name": "Hubspot", "params": ["_hsenc", "_hsmi", "__hssc", "__hstc", "hsCtaTracking"]},
+!        { "name": "IBM Acoustic Campaign", "params": ["spReportId", "spJobID", "spUserID", "spMailingID"]},
+!        { "name": "Oracle Eloqua", "params": ["elqTrackId", "elqTrack", "assetType", "assetId", "recipientId", "campaignId", "siteId"]},
+!        { "name": "SourceForge.net", "params": ["source@sourceforge.net", "position@sourceforge.net"]},
+!        { "name": "YouTube", "params": ["feature@youtube.com", "gclid@youtube.com", "kw@youtube.com"]},
+!        { "name": "Zeit.de", "params": ["wt_zmc"]}
+!
 ! Google url tracking
 ! -------------------
 google.*$document,removeparam=client
 !
-! TRY ADD SUPPORT OF:   URL Tracking Stripper & Redirect Skipper (https://chrome.google.com/webstore/detail/url-tracking-stripper-red/flnagcobkfofedknnnmofijmmkbgfamf)
