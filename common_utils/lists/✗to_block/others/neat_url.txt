@@ -46,7 +46,7 @@ page_view?$removeparam=/measures\[(\w+)\]\=/
 !adview?$removeparam=/([sx])?ai/
 !adview?$removeparam=/sig([h])?/
 adview?$removeparam
-! more generic ( ex: https://pagead2.googlesyndication.com/pagead/*, https://www.googleadservices.com/pagead/aclk?*)
+! more generic ( ex: pagead2.googlesyndication.com/pagead/*, googleadservices.com/pagead/aclk?*, googleads.g.doubleclick.net/pagead/*, google.*/pagead/lvz?* )
 /pagead/$removeparam
 !
 ! Campaign tracking,  "docs": "https://www.parse.ly/help/post/4843/campaign-data-tracking/"
