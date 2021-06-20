@@ -2417,7 +2417,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 !##[class="surge_yellow"]
 ##[class^="surge_"][href]
 !##[class*="btn"][class*="mr-3"][href]
-##[class*="btn"][class|="mr"][href]
+##[class*="btn"][class*="mr-"][href]
 
 ##[class="OUTBRAIN"]
 ##[class="Advrt"]
@@ -2460,6 +2460,23 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="ad"][class="c-ads"]
 ##[id="ads"]
 ##[id="ads4"]
+
+##[id*="playerbro"]
+!streamdeouf.net##[class*="adsvp-movie_collage_blue-"]
+!gocine.*##[class="adsvp-movie_collage_blue-wrapper"]
+!cinez.*,gocine.*##[class|="adsvp-movie_collage_blue"]
+!##[class|="adsvp-movie_collage_blue"]
+##[class|="adsvp"]
+##[class|="report-pub"]
+!##[class|="movie"][class*="-aye"]
+##[class|="movie"][class$="-aye"]
+!##[id|="movie"][id*="-aye"]
+##[id|="movie"][id$="-aye"]
+##[class^="custom-"][class*="fake-"][class*="media"]
+##[id^="custom-"][id*="fake-"][id*="media"]
+##[class^="fake-"][class*="custom-"][class*="media"]
+##[id^="fake-"][id*="custom-"][id*="media"]
+##[class|="ad-display"]
 
 ##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
@@ -4999,21 +5016,8 @@ voirseries.*##+js(window.open-defuser)
 *#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
 uqload.com#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
 @@||highstream.tv/player8/related.js
-!streamdeouf.net##[class*="adsvp-movie_collage_blue-"]
-!gocine.*##[class="adsvp-movie_collage_blue-wrapper"]
-!cinez.*,gocine.*##[class|="adsvp-movie_collage_blue"]
-!##[class|="adsvp-movie_collage_blue"]
-##[class|="adsvp"]
-##[class|="report-pub"]
 ||czwidgets.fr^
 ||pausefun.com^
-##[class|="movie"][class*="-aye"]
-##[id|="movie"][id*="-aye"]
-##[class^="custom-"][class*="fake-"][class*="media"]
-##[id^="custom-"][id*="fake-"][id*="media"]
-##[class^="fake-"][class*="custom-"][class*="media"]
-##[id^="fake-"][id*="custom-"][id*="media"]
-##[class|="ad-display"]
 33seriestreaming.com###player-overlay
 33seriestreaming.com##.signup-window
 !33seriestreaming.*##.pframe:if(:not(.metaframe))
@@ -5022,10 +5026,9 @@ uqload.com#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', '
 ||filelox.com/paper.html$domain=vidlox.me
 cpasmieux.tv##.tabs-block__content.video-inside.video-responsive
 cpasmieux.tv###oframeplayerbro
-##[id*="playerbro"]
 /Sony.mp4$domain=cpasmieux.tv
 !!PostInk Technology is a software solution provider dedicated to supporting law enforcement agencies and their officers.
-||postink.^
+||postlnk.^
 digitaltendances.com##.ui-corner-all
 seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||cfeucdn.com/video_short.mp4
