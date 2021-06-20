@@ -2415,7 +2415,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class^="ebooks_orange_"][href]
 !##[class="surge_yellow"]
 ##[class^="surge_"][href]
-##[class*="btn"][class*="mr-3"][href]
+!##[class*="btn"][class*="mr-3"][href]
+##[class*="btn"][class|="mr"][href]
 
 ##[class="OUTBRAIN"]
 ##[class="Advrt"]
