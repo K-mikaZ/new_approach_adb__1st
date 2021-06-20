@@ -1500,6 +1500,7 @@ mystream.to##+js(abort-on-property-read.js, open)
 mystream.to##+js(window.open-defuser.js)
 streamtape.net##+js(window.open-defuser.js)
 fwmrm.net##+js(window.open-defuser.js)
+uqload.*##+js(window.open-defuser.js)
 !#if script
 |https://$script,3p,domain=upstream.to,badfilter
 ! block only if not /googima.js, /ima3.js, /cast_sender.js, /cast_framework.js, cloudflare's, google's, github's, jquery's, jwpcdn's & jsdelivr's scripts or those from the same "house"
