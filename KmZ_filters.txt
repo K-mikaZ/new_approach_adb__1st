@@ -3656,32 +3656,6 @@ wss://net-announce*$websocket,important
 ! ...
 !
 ! ADD RULES
-! It is not a list of filters but only a module.
-! #ref < https://github.com/gorhill/uBlock/blob/master/src/web_accessible_resources >
-! #read also < https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#redirect-rule >
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop inline-script
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if (inline-script)
-*$inline-script,redirect-rule=noop.js
-!#endif
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop css
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if (css && 1p)
-*$css,redirect-rule=noop.txt
-!#endif
-!#if (css && !1p)
-*$css,3p,redirect-rule=noop.txt
-!#endif
-!
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop script
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if script
-!#if !(addthis.com|amazon-adsystem.com|ampproject.org|chartbeat.com|disqus.com|doubleclick.net|google-analytics.com|googlesyndication.com|googletagmanager.com|googletagservices.com|ligatus.com|outbrain.com|scorecardresearch.com|smartadserver.com|yandex.ru|webvisor.org)
-/(.*)(\.min)?(\.js)?/$script,important,redirect-rule=noop.js
-!#endif
 ! Adblocker redirect to neutered
 ! ——————————————————————————————
 ! < start Adblocker redirect >
@@ -3798,24 +3772,6 @@ wss://net-announce*$websocket,important
 ! ——————————————————————————————————————————————————————————————————————————————————
 ! Noop image
 ! ——————————————————————————————————————————————————————————————————————————————————
-!#if (image && png && 1p)
-*.png$image,redirect-rule=2x2.png
-!#endif
-!#if (image && png && !1p)
-*.png$image,3p,redirect-rule=2x2.png
-!#endif
-!#if (image && gif && 1p)
-*.gif$image,redirect-rule=1x1.gif
-!#endif
-!#if (image && gif && !1p)
-*.gif$image,3p,redirect-rule=1x1.gif
-!#endif
-!#if (image && !gif && !png && 1p)
-*$image,redirect-rule=empty
-!#endif
-!#if (image && !gif && !png && !1p)
-*$image,3p,redirect-rule=empty
-!#endif
 ||google.*$image,redirect-rule=1x1.gif
 ||youtu*.*$image,redirect-rule=1x1.gif
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
@@ -3833,12 +3789,6 @@ wss://net-announce*$websocket,important
 ! ——————————————————————————————————————————————————————————————————————————————————
 ! Noop xhr
 ! ——————————————————————————————————————————————————————————————————————————————————
-!#if (xhr && 1p)
-*$xhr,redirect-rule=noop.txt
-!#endif
-!#if (xhr && !1p)
-*$xhr,3p,redirect-rule=noop.txt
-!#endif
 ! specific xhr conversion 1x1.gif (example on open.spotify.com)
 !||*&label=vast_creativeview*$xhr,redirect-rule=1x1.gif
 !||*/pagead/conversion/*$xhr,redirect-rule=1x1.gif
@@ -3872,18 +3822,6 @@ wss://net-announce*$websocket,important
 ! ——————————————————————————————————————————————————————————————————————————————————
 ! Noop media
 ! ——————————————————————————————————————————————————————————————————————————————————
-!#if (media && mp3 && 1p)
-*.mp3$media,redirect-rule=noop-0.1s.mp3
-!#endif
-!#if (media && mp3 && !1p)
-*.mp3$media,3p,redirect-rule=noop-0.1s.mp3
-!#endif
-!#if (media && mp4 && 1p)
-*.mp4$media,redirect-rule=noop-1s.mp4
-!#endif
-!#if (media && mp4 && !1p)
-*.mp4$media,3p,redirect-rule=noop-1s.mp4
-!#endif
 !||*/fp2.js$script,redirect-rule=fingerprint2.js
 ||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
 ||*monke*broker*$script,redirect-rule=monkeybroker.js
