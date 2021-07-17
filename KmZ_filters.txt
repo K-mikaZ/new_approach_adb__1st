@@ -3787,39 +3787,6 @@ wss://net-announce*$websocket,important
 ||bidr.io^$image,redirect-rule=1x1.gif
 ||stickyadstv.com^$image,redirect-rule=1x1.gif
 ! ——————————————————————————————————————————————————————————————————————————————————
-! Noop xhr
-! ——————————————————————————————————————————————————————————————————————————————————
-! specific xhr conversion 1x1.gif (example on open.spotify.com)
-!||*&label=vast_creativeview*$xhr,redirect-rule=1x1.gif
-!||*/pagead/conversion/*$xhr,redirect-rule=1x1.gif
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop subdocument
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if (subdocument && 1p)
-*$subdocument,redirect-rule=noop.html
-!#endif
-!#if (subdocument && !1p)
-*$subdocument,3p,redirect-rule=noop.html
-!#endif
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop object-subrequest
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if (object-subrequest && 1p)
-*$object-subrequest,redirect-rule=empty
-!#endif
-!#if (object-subrequest && !1p)
-*$object-subrequest,3p,redirect-rule=empty
-!#endif
-! ——————————————————————————————————————————————————————————————————————————————————
-! Noop other
-! ——————————————————————————————————————————————————————————————————————————————————
-!#if (other && 1p)
-*$other,redirect-rule=empty
-!#endif
-!#if (other && !1p)
-*$other,3p,redirect-rule=empty
-!#endif
-! ——————————————————————————————————————————————————————————————————————————————————
 ! Noop media
 ! ——————————————————————————————————————————————————————————————————————————————————
 !||*/fp2.js$script,redirect-rule=fingerprint2.js
