@@ -4480,7 +4480,7 @@ greasyfork.org##.ad-content
 ! 2020-11-10 https://x2convert.com
 x2convert.com##.open.center-popup-cont.modal-container
 x2convert.com##.mgbox,.mgline,.image-with-text
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##^script:has-text(googlesyndication)
+! youtube.com,youtu.be,yt.be,youtube-nocookie.com##^script:has-text(googlesyndication)
 ! 2020-11-29 https://www.facebook.com
 @@/ajax/bnzai$ping,domain=www.facebook.com
 y2mate.com##.js-extension.extension
