@@ -4858,7 +4858,7 @@ open.spotify.com#@#+js(nowebrtc.js)
 !voirseries.*###videoplay:not([src*=".php?p=1"])
 @@||vshare.eu/player_sda.html
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
-/uptostream\.(.{3})\/as{2}ets\//$xhr,subdocument,script
+/uptostream\.(.{3})\/as{2}ets\//$subdocument
 /crunchyroll\.(.{3})\/(.*\/)?track(er|ing)/
 /(.*)\.6(cloud|play)\.(.{2})\/(.*)\/bw[.-]+(.*)/
 younetu.*#@#+js(nowebrtc)
