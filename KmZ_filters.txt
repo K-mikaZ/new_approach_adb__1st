@@ -4626,15 +4626,15 @@ streamingvf.casa##[href^="https://dereferer.co/"]
 ultimate-catch.eu##[href^="https://www.play-asia.com"]
 ultimate-catch.eu##[src^="https://www.play-asia.com"]
 ||littlecdn.com^$domain=~littlecdn.com
-||aulteeby.net^$important
-||jomtingi.net^$important
-||denetsuk.com^$important
-||matchaix.net^$important
-||buipovexhav.com^$important
-||hedrvszms.com^$important
-||ptairtug.net^$important
-||pignuwoa.com^$important
-||1294335e830c6f.com^$important
+||aulteeby.net^
+||jomtingi.net^
+||denetsuk.com^
+||matchaix.net^
+||buipovexhav.com^
+||hedrvszms.com^
+||ptairtug.net^
+||pignuwoa.com^
+||1294335e830c6f.com^
 ||ddmax20.xyz^
 ||c3t-system-err.club^
 ||cepractliq.top^
@@ -4839,7 +4839,7 @@ dpstream.*##.player:has-text(/1fichier|uptobox/)
 ||fwmrm.net/ad/*/*?*$important
 !/router/az|
 ! tf1 .fr
-@@||tf1.fr^$generichide
+@@||tf1.fr$generichide,elemhide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
 *$xhr,redirect-rule=nooptext,domain=tf1.fr
@@ -4940,12 +4940,12 @@ canaltp.fr#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', '
 ||arc.io/widget$third-party,badfilter
 ||tracker.arc.io^$badfilter
 @@||arc.io^$websocket
-@@||arc.io^$generichide
+@@||arc.io$generichide
 ! -------------------------------------
-@@||vshare.eu^$generichide
-@@||vidzstore.com^$generichide
-@@||mxdcontent.^$generichide
-@@||mixdrop.^$generichide
+@@||vshare.eu$generichide
+@@||vidzstore.com$generichide
+@@||mxdcontent.$generichide
+@@||mixdrop.$generichide
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
