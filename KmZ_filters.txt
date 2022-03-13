@@ -1755,7 +1755,7 @@ wss://net-announce*$websocket,important
 ||*/cdn-cgi/apps/head/*$script,1p,important
 !#endif
 !#if !1p
-||*/1clkn/*$script,important
+/^https?:\/\/[^\s]+\/1clkn\/[0-9]{4,5}$/$third-party,important,script
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,3p,important
 |http*://*.cafe/*.js^$script,3p,important
