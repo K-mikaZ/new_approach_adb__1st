@@ -1167,7 +1167,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 
 ##[class="X"]
 ##[class*="lefermeur"]
-##[class*="myButton"][href]
+##[class*="myButton"][href*=".php"]
 ##[class*="mButton"][href]
 ##[class|="custom-fake"]
 ##[class^="masha_"]
