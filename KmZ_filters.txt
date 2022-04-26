@@ -894,7 +894,6 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 !#endif
 ! </ end Zudbo & co rules>
 ! [FIX] break rtlplay.be
-@@||geo.6play.fr^
 !#if (script && !1p)
 @@||gigya.com/js/gigya.js$script
 !#endif
