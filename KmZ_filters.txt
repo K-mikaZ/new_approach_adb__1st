@@ -11,7 +11,6 @@
 @@/player-stats?beacon=$ping,domain=vimeo.com
 /ping?$xhr,empty
 /\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,important
-youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item > .related-video
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
@@ -33,9 +32,6 @@ youtube.com,youtu.be,yt.be##.yt-uix-button[data-trigger-for="action-panel-share"
 youtube.com,youtu.be,yt.be###masthead-ad
 youtube.com,youtu.be,yt.be###carousel-item
 youtube.com,youtu.be,yt.be##.banner-visible-area
-youtube.com,youtu.be,yt.be###root
-youtube.com,youtu.be,yt.be##.ytd-display-ad-renderer
-youtube.com,youtu.be,yt.be##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
 youtube.com,youtu.be,yt.be##[class="video-ads ytp-ad-module"]
 youtube.com,youtu.be,yt.be##.iv-branding
 youtube.com,youtu.be,yt.be##.annotation-type-custom
@@ -73,7 +69,6 @@ youtube.com#@##consent-bump:remove()
 /log_event?alt=json$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -125,7 +120,6 @@ soundcloud.com##.m-promotion
 soundcloud.com##.upsellBanner
 soundcloud.com##.playlistConsumerSubUpsell
 soundcloud.com##.announcements
-soundcloud.com##.announcements > div.sc-list-nostyle
 soundcloud.com##.g-go-plus-marker-list
 soundcloud.com##article.mobileApps
 soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
@@ -246,31 +240,6 @@ streamtape.net##+js(window.open-defuser.js)
 fwmrm.net##+js(window.open-defuser.js)
 uqload.*##+js(window.open-defuser.js)
 |https://$script,3p,domain=upstream.to,badfilter
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
-/http((?
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
 @@/related.js$script,domain=hydracdn.network
@@ -468,7 +437,6 @@ streamdivx.*##center:if(a.buttonxx)
 streamdivx.*##.buttonxx
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
-streamings-vf.com###ads
 streamings-vf.com##[href="#"]
 ||spotxcdn.com^$media
 lesseriestreaming.com#$#body,html{ overflow: visible
@@ -482,7 +450,6 @@ voirseries.*##[id|="fake"]
 voirseries.*##.AV
 voirseries.*#$#[id^="lecteur"]{display: inline
 voirseries.*#$#[id^="GoPlayer"]{display: inline
-voirseries.*###GoPlayer > i.insideIframe:first-child
 voirseries.*#$#[id^="vide"][src*="/online.php?"] { margin-top: 0px
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
 voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999
@@ -535,7 +502,6 @@ tf1.fr##div[class^="Freemium" i]
 ||*$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^
 ||metrics-broker.prod.p.tf1.fr^$xhr,domain=tf1.fr
-||formatfactory.biz^$domain=~formatfactory.biz
 ultimate-catch.eu##.header-ads
 ultimate-catch.eu##[id*="themoneytizer"]
 ultimate-catch.eu##.single.small > [href*=":"]
@@ -705,7 +671,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="btn"][class*="mr-"][href]
 ##[class="OUTBRAIN"]
 ##[class="Advrt"]
-##[class="report-pub"]
 ##[class="FirstLoad"]
 ##[class="responsive-ad"]
 ##a[href*="-en-hd"][rel^="no"]
@@ -750,8 +715,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class|="ad-display"]
 ##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
@@ -839,7 +802,6 @@ filmzstream.vip##a.watch_sa
 filmzstreaming.org##h5
 forum-des-portables-asus.fr##.uix_noticeInner
 foupas.com###agrotis,#ilionmare
-fr.4k-streaming.com###ads
 fr.dpstream.site##.clearfix,.cp.px-2.py-2.float-lg-right,.px-2.py-2.lightSwitcher.float-lg-right,.flex-column.nav li.nav-item:nth-of-type(3) .nav-link,div.col-12.col-sm-2:nth-of-type(5) .flex-column.nav li.nav-item:nth-of-type(2) li.nav-item:nth-of-type(1) .nav-link,.phpdebugbar-minimized.phpdebugbar,.phpdebugbar-header,a.ebooks_orange_7289002:nth-of-type(1),a.ebooks_orange_7289002:nth-of-type(2),.col-player div,.col-player div:nth-of-type(1)
 fr.mappy.com###itinerary_annoncesjaunes
 fr.search.yahoo.com###right,.res.sc.sc-mprod
@@ -874,7 +836,6 @@ illimitestreaming.to##.adblocker-fix,#adblock_fixed_0,.adblock_fixed
 insight.io##.Modal_appear_3wb6X-active.Modal_backdrop_12pBU
 ixquick.com###sponsored
 jdownloader.org###cookie_info
-jetanimes.com###fakeplayer
 journaldunet.com##.ccmcss_oic
 justwatch.com##.header.container-fluid jw-ad-block
 k-streaming.com##img[src="http://k-streaming.com/wp-content/uploads/300x250-4.jpg"]
@@ -973,7 +934,6 @@ seriestream.*##[class="hidefm"]
 sguru.org##.herald-ad
 similarsites.com###\5f mN_main_837788206_0_n,#\5f mN_main_837788206_2_n
 site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-lg-9.col-sm-8.col-xs-12,.tags.pad
-skstream.ink##div[class="responsive-ad"]
 socialmedia-max.com###vc_widget
 sokrostream.tv##.container.section div:nth-of-type(2),.global-background div,.top-padding-fix.column:nth-of-type(1) div:nth-of-type(1),.top-right.toasted-container,.is-hidden-mobile.over-player
 sordum.org##.sbar_social_div
@@ -1079,7 +1039,6 @@ stream-serie.net##.justify-content-center.row:if([class*="ebooks_orange"])
 stream-serie.net#$##option-1{height:100%}
 ||google-analytics.com^$script
 ||www.googletagmanager.com^$badfilter
-||*googletagmanager.*/gtag/js*$script
 *googletagmanager.*^$script
 ||*googletagservices.*$script
 ||addthis.com^$script
@@ -1104,7 +1063,6 @@ stream-serie.net#$##option-1{height:100%}
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,important,redirect=fingerprint2.js
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
-/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?
 /([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script
 @@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?
 @@/workbox-sw.js$script,domain=epicgames.com
@@ -1201,13 +1159,11 @@ wss://net-announce*$websocket,important
 */adservice.*$image
 ||disneyhd.tk/films/pub3.jpg$image,1p
 ||disneyhd.tk/shoutbox/*$image,1p
-||e2ertt.com/?jsonKey=*^$image
 ||full-serie.*error404.php^$image
 ||full-serie.*undefined^$image
 ||image.tmdb.org/t/p/original/3sExYAo2rNhKgrHx8S37WMTJHZv.jpg$image
 ||l2.visiblemeasures.com^$image
 ||p-eu.acxiom-online.com/pixel/ema?*^$image
-||sync.ipredictive.com/d/sync/cookie/generic^$image
 ||electrodepot.fr/pub/media/wysiwyg/site/body-background.jpg$image
 ||nowvideo.sx/embed/$image
 ||numerama.com/content/themes/project-n-theme/resources/assets/images/icon/sponsoring.svg^$image
@@ -1254,7 +1210,6 @@ wss://net-announce*$websocket,important
 ||adform.net^$domain=~adform.net
 ||adgrx.com^$domain=~adgrx.com
 ||adition.com^$domain=~adition.com
-||adnxs.com^$domain=~adnxs.com
 ||adroll.com^$domain=~adroll.com
 ||adsrvr.org^$domain=~adsrvr.org
 ||adtech.de^$domain=~adtech.de
@@ -1262,7 +1217,6 @@ wss://net-announce*$websocket,important
 ||adtechus.com^$domain=~adtechus.com
 ||advertising.com^$domain=~advertising.com
 ||affec.tv^$domain=~affec.tv
-||agkn.com^$domain=~agkn.com
 ||amazon-adsystem.com^$domain=~amazon-adsystem.com
 ||amgdgt.com^$domain=~amgdgt.com
 ||atera.com^$domain=~atera.com
@@ -1281,7 +1235,6 @@ wss://net-announce*$websocket,important
 ||doubleclick.net^$domain=~doubleclick.net
 ||doubleverify.com^$domain=~doubleverify.com
 ||downdetector.com^$domain=~downdetector.com
-||dyntrk.com^$domain=~dyntrk.com
 ||knorex.com^$domain=~knorex.com
 ||emerse.com^$domain=~emerse.com
 ||everesttech.net^$domain=~everesttech.net
@@ -1312,7 +1265,6 @@ wss://net-announce*$websocket,important
 ||nexage.com^$domain=~nexage.com
 ||nxtck.com^$domain=~nxtck.com
 ||oath.com^$domain=~oath.com
-||offerimage.com^$domain=~offerimage.com
 ||opecloud.com^$domain=~opecloud.com
 ||openx.net^$domain=~openx.net
 ||orangeads.fr^$domain=~orangeads.fr
@@ -1324,9 +1276,6 @@ wss://net-announce*$websocket,important
 ||redfast.com^$domain=~redfast.com
 ||redfastlabs.com^$domain=~redfastlabs.com
 ||redirectingat.com^$domain=~redirectingat.com
-||rlcdn.com^$domain=~rlcdn.com
-||rtmark.net^$domain=~rtmark.net
-||rubiconproject.com^$domain=~rubiconproject.com
 ||scoota.co^$domain=~scoota.co
 ||segment.io^$domain=~segment.io
 ||semasio.net^$domain=~semasio.net
@@ -1344,8 +1293,6 @@ wss://net-announce*$websocket,important
 ||tapad.com^$domain=~tapad.com
 ||teads.tv^$domain=~teads.tv
 ||theadex.com^$domain=~theadex.com
-||tidaltv.com^$domain=~tidaltv.com
-||tremorhub.com^$domain=~tremorhub.com
 ||tribalfusion.com^$domain=~tribalfusion.com
 ||turn.com^$domain=~turn.com
 ||tynt.com^$domain=~tynt.com
@@ -1399,23 +1346,14 @@ wss://net-announce*$websocket,important
 ||daibusee.com^
 ||encythan.online^
 ||inabsolor.com^
-||inspikon.com^
-||interstitial-07.com^
 ||kingithinref.club^
-||lalaping.com^
 ||louchees.net^
-||omareeper.com^
 ||omisingcur.fun^
-||onmarshtompor.com^
-||propeller-tracking.com^
 ||pushsar.com^
-||realtime-bid.com^
 ||rszimg.com^
 ||rtmark.net^
-||totogetica.com^
 ||onclickalgo.com^
 ||waubasou.com^
-||wowreality.info^
 ||ackcdn.net^
 ||banesnorttat.cam^
 ||c3t-system-err.club^
@@ -1483,10 +1421,8 @@ wss://net-announce*$websocket,important
 ||nsis.bisrv.com^
 ||obstanceder.pro^
 ||offerimage.com^
-||omisingcur.fun^
 ||onclickgenius.com^
 ||onclicksuper.com^
-||onmarshtompor.com^
 ||onstunkyr.com^
 ||opsoomet.net^
 ||optimizesrv.com^
@@ -1504,7 +1440,6 @@ wss://net-announce*$websocket,important
 ||remarketingpixel.com^
 ||residuestream.club^
 ||resultsgenou.club^
-||rtmark.net^
 ||rubiconproject.com^
 ||ruwertur.com^
 ||rwn1sdb4xqa2.com^
@@ -1514,7 +1449,6 @@ wss://net-announce*$websocket,important
 ||splittingpick.com^
 ||ssaimg.com^
 ||stawhoph.com^
-||syndication.optimizesrv.com^
 ||tagbom.com^
 ||tapixesa.pro^
 ||teachcoexist.com^
@@ -1535,7 +1469,6 @@ wss://net-announce*$websocket,important
 /ad{2}this(edge)?\.com/
 /in(\-)?page(\-)?push\.com/
 /script/*.php?*$image
-||remarketingpixel.com/stats
 ||31.220.3.200^
 ||d1grmk7aafb6ck.cloudfront.net^$3p
 ||d36zfztxfflmqo.cloudfront.net^$3p
@@ -1570,7 +1503,6 @@ wss://net-announce*$websocket,important
 ||media-dl.co^$3p
 ||d1qggq1at2gusn.cloudfront.net^
 ||d3v3bqdndm4erx.cloudfront.net^
-||d36zfztxfflmqo.cloudfront.net^
 ||dc5k8fg5ioc8s.cloudfront.net^
 ||*/cdn-cgi/bm/cv/*js|$script
 ||*/adsid/integrator.js|$script
@@ -1611,16 +1543,10 @@ wss://net-announce*$websocket,important
 ||vgw35hwr4w6x.*$script
 ||6yag4bmwyhs4.com$script
 ||stats.wp.com$script,important
-||acr0.samsungcloudsolution.com^
-||ad.samsungadhub.com^
 ||ads.samsungads.com^
-||amauthprd.samsungcloudsolution.com^
 ||api-hub.samsungyosemite.com^
 ||az43064.vo.msecnd.net^
-||cdn.samsungcloudsolution.net^
-||configprd.samsungcloudsolution.net^
 ||Coordinator-Production-28516768.us-east-1.elb.amazonaws.com^
-||cpu.samsungelectronics.com^
 ||d179kwmlpc4o47.cloudfront.^
 ||d1jwpcr0q4pcq0.cloudfront.net^
 ||d1oxlq5h9kq8q5.cloudfront.net^
@@ -1629,75 +1555,31 @@ wss://net-announce*$websocket,important
 ||d37ju0xanoz6gh.cloudfront.net^
 ||dev-multiscreen.samsung.com^
 ||device-metrics-us.amazon.com^
-||fkp.samsungcloudsolution.com^
-||fkp.samsungcloudsolution.net^
 ||game.internetat.tv^
-||gld.samsungosp.com^
-||gpm.samsungqbe.com^
 ||i-stream.pl^
 ||infolink.pavv.co.k^
-||infolink.pavv.co.kr^
-||lcprd1.samsungcloudsolution.net^
-||log-1.samsungacr.com^
-||log-2.samsungacr.com^
-||log-3.samsungacr.com^
-||log-ingestion.samsungacr.com^
-||log-ingestion-eu.samsungacr.com^
 ||log.internetat.tv^
 ||multiscreen.samsung.com^
-||musicid.samsungcloudsolution.com^
-||notice.samsungcloudsolution.com^
-||noticecdn.samsungcloudsolution.com^
-||noticefile.samsungcloudsolution.com^
 ||ns11.whois.co.kr^
-||oempprd.samsungcloudsolution.com^
-||oempprd.samsungcloudsolution.net^
 ||openapi.samsung.com^
-||osb-apps.samsungqbe.com^
-||osb-krsvc.samsungqbe.com^
-||osb-eusvc.samsungqbe.com^
-||osb.samsungqbe.com^
-||otnprd10.samsungcloudsolution.net^
-||otnprd11.samsungcloudsolution.net^
-||otnprd8.samsungcloudsolution.net^
-||otnprd9.samsungcloudsolution.net^
 ||pavv.co.kr^
 ||pipeaota.com^
 ||premium-videos.telly.com^
-||prov.samsungcloudsolution.com^
-||rd.samsungadhub.com^
-||rwww.samsungotn.net^
 ||samsungacr.com^
 ||samsungadhub.com^
 ||samsungcloudsolution.com^
 ||samsungcloudsolution.net^
-||cdn.samsungcloudsolution.com^
 ||samsungosp.com^
 ||samsungotn.net^
 ||samsungqbe.com^
 ||samsungrm.net^
-||sas.samsungcloudsolution.com^
 ||sca.samsung.com^
 ||sso.internetat.tv^
 ||syncplusconfig.s3.amazonaws.com^
-||targeted-config-test.samsungacr.com^
-||test.samsungrm.net^
 ||us-api.samsungyosemite.com^
 ||vd.emp.prd.s3.amazonaws.com^
-||vdterms.samsungcloudsolution.com^
-||www.samsungotn.net^
-||www.samsungrm.net^
 ||samsungelectronics.com^
-||apu.samsungelectronics.com^
-||bpu.samsungelectronics.com^
-||dpu.samsungelectronics.com^
-||kpu.samsungelectronics.com^
-||upu.samsungelectronics.com^
-||zpu.samsungelectronics.com^
-||xpu.samsungelectronics.com^
-||ypu.samsungelectronics.com^
 ||vd.contents.prod.eu.s3.amazonaws.com^
-||log-ingestion-eu.samsungacr.com^
 ||ichnaea.netflix.com^
 ||customerevents.netflix.com^
 ||nrdp.nccp.netflix.com^
@@ -1711,12 +1593,10 @@ wss://net-announce*$websocket,important
 ||geo.opera.com^
 ||googleads.g.doubleclick.net^
 ||itv.ard.de^
-||itv.ard.de^
 ||nbc-jite.nbcuni.com^
 ||redbutton-adproxy-lb-prod.redbutton.de^
 ||redbutton-lb-prod.redbutton.de^
 ||redbutton.sim-technik.de^
-||script.ioam.de^
 ||start.digitaltext.rtl.de^
 ||stats-irl.sxp.smartclip.net^
 ||tv-static.scdn.co^
@@ -1809,7 +1689,6 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/(?
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
-@@/^https?:\/\/(www\.)?.*\/(?
 @@||compte.tf1.fr^$domain=tf1.fr
 @@||ads.stickyadstv.com^
 @@/[-._?&=#/]pop([au]nders?)?[-.0-9_?&=#/]/$script,1p
@@ -1826,7 +1705,6 @@ voirseries.*#@#.adsBox
 @@||bytel.fr$generichide
 @@||linternaute.com$generichide
 @@||googletagmanager.com/gtm.js$script,domain=linternaute.com
-@@/prebid$domain=linternaute.com
 @@||navitia.io^
 @@||static.parastorage.com^$xhr
 @@||githubusercontent.com$generichide
@@ -1836,7 +1714,6 @@ voirseries.*#@#.adsBox
 @@/streaminfo.js
 @@||cryptojs.min.js$script,domain=animedigitalnetwork.fr
 @@/(.*)\.(.{2,})\/yts\/jsbin(.*)widgetapi\.js/$script
-@@||cdnjs.cloudflare.com/ajax/libs/prefixfree/*/prefixfree.*js$script
 @@||cdn.ravenjs.com^$script,domain=hcaptcha.com
 @@||zencdn.net^$script
 @@||youboranqs01.com/ping
@@ -2064,7 +1941,6 @@ streamroot.io$script,important,badfilter
 @@||freegeoip.app$generichide
 @@||spapi.searchencrypt.com$generichide
 @@||unpkg.com$generichide
-||atera.com^$domain=~atera.com
 ||support.google.com/ads?*
 ||adssettings.google.com^$domain=~google.com
 /pagead/aclk?*
@@ -2088,7 +1964,6 @@ twitch.tv##.tw-elevation-3
 hdss.to##.myButton
 hdss.to##.homi:if(.myButton)
 hdss.to##.tr-description
-hdss.to#$#.btnsplyr{ top: -30vh
 /comment-reply.min.js$script,domain=hdss.to
 hdss.to##.comment-respond
 ok.ru##.html5-vpl_ac_i
@@ -2108,12 +1983,10 @@ numerama.com##.hb__ad
 extrem-down.vip##center > [href^="/download"]
 livingto100.club##.boxzilla-container
 realityripple.com##.donate
-justwatch.com##.ad-unit
 mabbox.bytel.fr##.no-rules.row
 mabbox.bytel.fr##:xpath(/html/body/div[8]/div[2]/div[1])
 /[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com
 _getListConcours.php$domain=lequipe.fr
-||doubleclick.net/instream/ad_status.js$important
 ||https://static.doubleclick.net/instream/ad_status.js$important
 @@/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/$domain=youtube.com|youtu.be|yt.be
 search.lilo.org##.top.addivwhite2
@@ -2124,8 +1997,6 @@ search.lilo.org##.top.addivwhite2
 ||spotxcdn.com^$third-party,badfilter
 */a/ads/*$xhr,important,badfilter
 ||cstatic.weborama.fr^$media
-||yahoo.com/sync/spotx/*$image
-##.ezoic-ad
 ||entitlements.jwplayer.com^
 /jwpsrv.js$script
 /googima.js$script,important
@@ -2152,7 +2023,6 @@ narkive.com##.pbs__player
 mshares.co##.in.fade.modal
 mshares.co##.modal-backdrop
 ||reasonzoodeport.com^
-||platitudefivesnack.com^
 ||ensuedinbornsubdivide.com^
 /\/pagead/(.*)(show_ads_)/
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,oxtorrent.*,torrent09.*,torrent9.*,torrenty.*##div[onclick*="/go/"]
@@ -2198,11 +2068,9 @@ m.facebook.com,mtouch.facebook.com,touch.facebook.com##.-hardstate-ads #root div
 m.facebook.com,mtouch.facebook.com,touch.facebook.com##.-hardstate-ads #root div[class] article div[id][class] div[class]:has(div[class][data-sigil*="adprefssurvey"])
 ||facebook.com/dlite/skywalker_topic$xmlhttprequest,important,badfilter
 ||crunchyroll.com/showmedia$popup,1p
-||*house_ads*$popup,domain=crunchyroll.com
 ||fwmrm.net/ad/*$domain=crunchyroll.com
 mega-p2p.net###splashbox-advcorner
 ||videos-on-demand.link^$popup
-||syndication.optimizesrv.com^$popup
 filmsrip.net##.share-botton
 filmsrip.net##.Banners
 filmsrip.net##.tags-list
@@ -2246,7 +2114,6 @@ facebook.com,fb.com#@#+js(nowebrtc)
 passeportsante.net##.dynInFeed
 #@#[href*=".instagram."]
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-/notifications*manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 *$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
@@ -2278,7 +2145,6 @@ seriestream.*#?##lecteur:if(#videoplay[src*="/video-streaming.html"])
 vfilms.me##a[href*="://go.trackitalltheway."]
 hdss.to#$#.btnsplyr{top:-30vh
 /\%22ad/$~font,~css,badfilter
-google.com##div.uEierd
 ||dev-nano.com/socket.io$important
 @@/prebid/
 @@||facebook.com/*/plugins/post.php$inline-font
@@ -2297,9 +2163,6 @@ voir-film.*##li:if(:-abp-contains(/1fichier|uptobox|rapidgator|dd(own)?[l](oad)?
 voir-film.*##.menu_streaming > ul > li:if(:-abp-contains(/demande[s|z|r]/i))
 voir-film.*##.allvideolink > div:nth-of-type(2)
 @@||rapidstream.*$generichide
-||mocmubse.net^
-||glaiwhee.net^
-||vaipsouw.com^
 @@||check.ddos-guard.net$script
 ||yahoo.com/*/spotx
 clipwatching.com###coverAds
@@ -2334,7 +2197,6 @@ deezer.com##.ab-page-blocker
 ||googlepositions.com^
 ||gtssl2-ocsp.geotrust.com^
 ||heads-fab.spotify.com^
-||js.moatads.com^
 ||log.spotify.com^
 ||edgesuite.net^
 ||m4.afs.googleadservices.com^
@@ -2354,7 +2216,6 @@ deezer.com##.ab-page-blocker
 ||omaze.com^
 ||pagead-googlehosted.l.google.com^
 ||partnerad.l.google.com^
-||pubmatic.com^
 ||ravenjs.com^
 ||redirector.gvt1.com^
 ||rlcdn.com^
@@ -2363,7 +2224,6 @@ deezer.com##.ab-page-blocker
 ||video-stats.video.google.com^
 ||wintricksbanner.googlepages.com^
 ||www-google-analytics.l.google.com^
-||www.adwords.google.lloymlincs.com^
 ||www.doubleclickbygoogle.com^
 ||www.google-analytics.com^
 ||www.google-docs.info^
@@ -2391,7 +2251,6 @@ deezer.com##.ab-page-blocker
 @@/cookiejs/*$script,domain=crunchyroll.com
 ||fwmrm.net^$popup,important
 ||mc.yandex.ru^$image
-||optimizesrv.com^$important
 ||exdynsrv.com^$important
 ||tsyndicate.com/*/vast?*$xhr,redirect=noopvast-3.0
 teen19porn.com###player_ad
@@ -2417,7 +2276,6 @@ youporn.com##.cSzepHjuLt1
 ||trafficjunky.net^$domain=~trafficjunky.net
 ||trafficfactory.biz^$domain=~trafficfactory.biz
 ||vfghe.com^$domain=~vfghe.com
-||serving-sys.com^$domain=~serving-sys.com
 ||play-asia.com^$domain=~play-asia.com
 ||bebi.com^$domain=~bebi.com
 ||adspeed.com^$domain=~adspeed.com
@@ -2428,8 +2286,6 @@ ultimate-catch.eu##[href^="https://www.play-asia.com"]
 ultimate-catch.eu##[src^="https://www.play-asia.com"]
 ||littlecdn.com^$domain=~littlecdn.com
 ||aulteeby.net^
-||jomtingi.net^
-||denetsuk.com^
 ||matchaix.net^
 ||buipovexhav.com^
 ||hedrvszms.com^
@@ -2437,19 +2293,15 @@ ultimate-catch.eu##[src^="https://www.play-asia.com"]
 ||pignuwoa.com^
 ||1294335e830c6f.com^
 ||ddmax20.xyz^
-||c3t-system-err.club^
 ||cepractliq.top^
 ||cloudimagesa.com^
 ||dq3yxnlzwhcys.cloudfront.net^
 ||impulsepicky.com^
 ||kiolim.com^
-||omisingcur.fun^
 ||oversightbullet.com^
 ||presentlyarch.com^
-||remarketingpixel.com^
 ||squeezedthoughtfully.com^
 ||tremblingkeyboardassistant.com^
-||wmgtr.com^
 ||bugsnag.com^
 ||radiancethedevice.com^
 ||auweelta.net^
@@ -2553,7 +2405,6 @@ streaming-vostfr.net##.player-btn:if(:-abp-contains(/t(e|é)l(e|é)charge(r|ment
 @@/[\/\s\d]related[\.\s\d]js/$script,domain=down-paradise.com
 hds.*##[id^="media_image-"]
 vidoza.*##[class="prevent-first-click"]
-||imasdk.googleapis.com^$3p,badfilter
 @@/^ht{2}ps?\:\/{2}imasdk\.go{2}\w{7}\.(.{3})\/\w{2}\/\w{4}\/\w{6}\d{1}\.\d+\.\d\_\w+\.\w{4}[\D\d]{4,}/
 ||doubleclick.net^$important,domain=spotify.com
 stream-complet.*##[class="showIt"]
@@ -2670,14 +2521,10 @@ developpez.com###A90f4a144fdc79d5e5b245B
 @@||googletagmanager.com/gtag/*$domain=srek.net
 @@||googletagmanager.com/gtag/*$domain=cookuve.com
 @@||google-analytics.com^$domain=cookuve.com
-||upvid.biz/img/computer.png$domain=upvid.biz
-||upvid.biz/img/world.png$domain=upvid.biz
-@@||upvid.*^$domain=upvid.biz
 @@||uqload.org^$domain=uqload.com
 voirseries.*##+js(window.open-defuser)
 ||abostimp.com^$domain=upvid.biz
 *#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
-uqload.com#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
 @@||highstream.tv/player8/related.js
 ||czwidgets.fr^
 ||pausefun.com^
@@ -2687,7 +2534,6 @@ uqload.com#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', '
 /classes/masha/masha.js$badfilter
 ||filelox.com/paper.html$domain=vidlox.me
 cpasmieux.tv##.tabs-block__content.video-inside.video-responsive
-cpasmieux.tv###oframeplayerbro
 /Sony.mp4$domain=cpasmieux.tv
 ||postlnk.^
 digitaltendances.com##.ui-corner-all
@@ -2695,7 +2541,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||cfeucdn.com/video_short.mp4
 ||hqq.*/ajax.php?mode=insertLog
 ||easyads28.mobi/vast/*
-canaltp.fr#@%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
 @@||canaltp.fr$generichide
 ||arc.io/widget$third-party,badfilter
 ||tracker.arc.io^$badfilter
