@@ -12,6 +12,7 @@
 /ping?$xhr,empty
 !/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,important
 /\?op\=([\w]+)(.+)?\&embed\=[1](.+)?\&adb\=[\d]{1}/$xmlhttprequest,_,important
+||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
@@ -1116,7 +1117,8 @@ wss://net-announce*$websocket,important
 ||socket.tidio.co$websocket,important
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
-/cryptojs.min.js$script,domain=~animedigitalnetwork.fr
+/cryptojs.min.js$script,___,domain=~animedigitalnetwork.fr
+@@/cryptojs.min.js$script,_,important,___,domain=animedigitalnetwork.fr
 ||*/cdn-cgi/apps/head/*$script,1p,important
 ||*/cdn-cgi/trace|$xmlhttprequest,_,~third-party,important
 /^https?:\/\/[^\s]+\/1clkn\/[0-9]{4,5}$/$third-party,important,script
@@ -1927,7 +1929,7 @@ streamroot.io$script,important,badfilter
 ||trustarc.com^$badfilter
 ||turner.com^$badfilter
 ||doubleclick.net^$3p,badfilter
-*/ad/banner/*$xhr,important
+/(.+)\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){3}/$xmlhttprequest,important
 /\/as{2}et\/bul{2}\.js(.*)?/$xhr,1p,important
 ||*.spotscenered.info$xhr,important
 ||greedseed.world$xhr,important
@@ -2564,12 +2566,16 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 /\/prebid(\/|$)/$important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
 @@||*.css$stylesheet,_,~third-party
+@@/.*/$font,_,~third-party
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=youtube/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||fonts.gstatic.com^
 @@/embed$subdocument,media,_,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
 ||dood.video/favicon.ico?
+@@||jetload.net$subdocument,media
+@@||dotvideo.cc^$subdocument,image,script,font
+@@||dotvideo.cc/player.php$xhr
 @@||vudeo.*^$~xmlhttprequest,___,domain=vudeo.net
 ||vudeo.net/embed$xmlhttprequest,_,important
 @@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
