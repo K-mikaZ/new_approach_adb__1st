@@ -1927,7 +1927,7 @@ streamroot.io$script,important,badfilter
 ||trustarc.com^$badfilter
 ||turner.com^$badfilter
 ||doubleclick.net^$3p,badfilter
-/(.+)\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){3}/$xmlhttprequest,important
+/(.+)\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){2,3}/$xmlhttprequest,important
 /\/as{2}et\/bul{2}\.js(.*)?/$xhr,1p,important
 ||*.spotscenered.info$xhr,important
 ||greedseed.world$xhr,important
