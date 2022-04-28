@@ -385,7 +385,7 @@ zustream.*##li:if(:has-text(/(VIP)(.*)?/))
 streaminggratuitvf.*##button:has-text(/1080p/)
 filmz.*##li:if(:-abp-has(i.player-hdplayer))
 streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
-oomoviz.*,voirseries.*,vustream.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
+oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
 allseries.*##.telecharger
 papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
