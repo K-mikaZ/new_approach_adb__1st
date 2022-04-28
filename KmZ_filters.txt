@@ -1117,8 +1117,6 @@ wss://net-announce*$websocket,important
 ||socket.tidio.co$websocket,important
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
-/cryptojs.min.js$script,___,domain=~animedigitalnetwork.fr
-@@/cryptojs.min.js$script,_,important,___,domain=animedigitalnetwork.fr
 ||*/cdn-cgi/apps/head/*$script,1p,important
 ||*/cdn-cgi/trace|$xmlhttprequest,_,~third-party,important
 /^https?:\/\/[^\s]+\/1clkn\/[0-9]{4,5}$/$third-party,important,script
@@ -2580,3 +2578,4 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||vudeo.net/embed$xmlhttprequest,_,important
 @@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
 ||*$websocket,_,~third-party,important,___,domain=deezer.com
+##a[href*="/Russia_Vs_Ukraine_War3"][target]
