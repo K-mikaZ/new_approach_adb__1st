@@ -10,7 +10,8 @@
 ||vimeocdn.com/add/player-stats?beacon=$badfilter
 @@/player-stats?beacon=$ping,domain=vimeo.com
 /ping?$xhr,empty
-/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,important
+!/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,important
+/\?op\=([\w]+)(.+)?\&embed\=[1](.+)?\&adb\=[\d]{1}/$xmlhttprequest,_,important
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
@@ -167,7 +168,18 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||/*vmap$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr,redirect-rule=noopvmap-1.0
 /vmap*.xml$xhr
-/(.*)\&output\=xml\_vast((?
+||tremorhub.com/*$xhr,domain=crunchyroll.com,redirect-rule=noopvast-2.0
+||getpublica.com/*&format=vast*$xhr,domain=crunchyroll.com,redirect-rule=noopvast-2.0
+://ads.$xhr,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,redirect-rule=noopvast-2.0
+/vast/v3?$xhr,redirect=noopvast-3.0
+||bid.g.doubleclick.net/dbm/vast$important,third-party,redirect=noopvast-4.0
+! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md
+||spotx.tv^$third-party,badfilter
+||spotx.tv^$badfilter
+||tv.ads.spotx.tv^$important,redirect=noopvast-3.0
+||rubiconproject.com/*/vast.xml?*$xhr,redirect-rule=noopvast-2.0
+||lkqd.net/*&output=vastvpaid&*$xhr,redirect-rule=noopvast-2.0
+||tsyndicate.com/*/vast?*$xhr,redirect=noopvast-3.0
 ||*&output=xml_vast1$xhr,redirect-rule=noopvast-1.0
 ||*&output=xml_vast&$xhr,redirect-rule=noopvast-1.0
 ||*/vast/1$xhr,domain=~rakuten.tv,redirect-rule=noopvast-1.0
@@ -218,7 +230,12 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||pubads.g.doubleclick.net/gampad/ads?sz=300x250*&output=vast*$xhr,redirect-rule=noopvast-3.0
 /ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
 /ads.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
-/(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(?
+! https://support.google.com/admanager/answer/10678356?hl=en
+output=xml_vmap1$xhr,important,redirect=noopvmap-1.0
+output=xml_vmap1_vast2$xhr,important,redirect=noopvast-2.0
+output=xml_vmap1_vast3$xhr,important,redirect=noopvast-3.0
+output=xml_vmap1_vast4$xhr,important,redirect=noopvast-4.0
+/(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(.*)?/$xhr,redirect-rule=noopvast-4.0,important
 /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[1+](.*)?/$xhr,redirect-rule=noopvast-4.1,important
 /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[2+](.*)?/$xhr,redirect-rule=noopvast-4.2,important
 ||*&output=xml_vast4$xhr,redirect-rule=noopvast-4.0
@@ -230,9 +247,22 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||*/vast/4.1$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.1
 ||*/vast/4.2$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.2
 /vast/*_vast=4$xhr,redirect-rule=noopvast-4.0
-||*AdsSetup&protocolVersion=4.0$xhr,redirect-rule=noopvast-4.0
-||*AdsSetup&protocolVersion=4.1$xhr,redirect-rule=noopvast-4.1
-||*AdsSetup&protocolVersion=4.2$xhr,redirect-rule=noopvast-4.2
+||*AdsSetup&protocolVersion=4.0$xhr,redirect=noopvast-4.0
+||*AdsSetup&protocolVersion=4.1$xhr,redirect=noopvast-4.1
+||*AdsSetup&protocolVersion=4.2$xhr,redirect=noopvast-4.2
+! https://videos.allocine.fr/p-dp-vast2/ or https://goutee.top/p-dp-vast2/ ...
+/\/p\-dp\-vast2\//$redirect=noopvast-2.0,_,important
+/\/p\-dp\-vast3\//$redirect=noopvast-3.0,_,important
+/\/p\-dp\-vast4\//$redirect=noopvast-4.0,_,important
+! https://gw.api.animedigitalnetwork.fr/player/video/18042/configuration
+||gw.api.animedigitalnetwork.fr/player/video/*/vmap$xhr,important,redirect=noopvmap-1.0
+||videoadex.com/unvrsltag?*$xhr,important,redirect=noopvast-2.0
+||vast.aniview.com/*/vast/*$xhr,important,redirect=noopvast-2.0
+||vast.smilewanted.com/ads/*$xhr,important,redirect=noopvast-3.0
+||vast.yomeno.xyz^$xhr,important,redirect=noopvast-3.0
+||kts.vasstycom.com/in/in_stream/*$xhr,important,redirect=noopvast-3.0
+||doubleclick.net/dbm/vast?*$xhr,important,redirect=noopvast-4.0
+||unified.adsafeprotected.com/v2/*$xhr,important,redirect=noopvast-4.0
 mstream.*##+js(abort-on-property-read.js, open)
 mystream.to##+js(abort-on-property-read.js, open)
 mystream.to##+js(window.open-defuser.js)
@@ -1037,10 +1067,7 @@ papseries.net##div:if(>.mr-3.btn)
 papseries.net###mv-keywords
 stream-serie.net##.justify-content-center.row:if([class*="ebooks_orange"])
 stream-serie.net#$##option-1{height:100%}
-||google-analytics.com^$script
 ||www.googletagmanager.com^$badfilter
-*googletagmanager.*^$script
-||*googletagservices.*$script
 ||addthis.com^$script
 ||amazon-adsystem.com^$script
 ||cdn.ampproject.org/v0.js
@@ -1050,8 +1077,6 @@ stream-serie.net#$##option-1{height:100%}
 ||smartadserver.^$important
 ||scorecardresearch.^$important
 @@||doubleclick.net/instream/ad_status.js$badfilter
-||doubleclick.net/instream/ad_status.js$important
-*.doubleclick.*$script
 ||disqus.com/count.js$script
 @@||disqus.com/embed.js?_=1457540*$script
 ||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
@@ -1094,6 +1119,7 @@ wss://net-announce*$websocket,important
 ||sascdn.com/diff/$script
 /cryptojs.min.js$script,domain=~animedigitalnetwork.fr
 ||*/cdn-cgi/apps/head/*$script,1p,important
+||*/cdn-cgi/trace|$xmlhttprequest,_,~third-party,important
 /^https?:\/\/[^\s]+\/1clkn\/[0-9]{4,5}$/$third-party,important,script
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,3p,important
@@ -1104,7 +1130,6 @@ wss://net-announce*$websocket,important
 ||*/sfp.js|$script
 /gpu.min.js|$important
 .top/advertisers.js|$script,important
-/(in(tegrations\/breadcrumbs|voke))\.js/$script,important
 /PartnersBox.js?$script,important
 /onFacebookReady.genemin.js|$script,important
 /MediamondAds.js|$script,important
@@ -1118,7 +1143,6 @@ wss://net-announce*$websocket,important
 /connexion_facebook_nl_magelan.js|$script,important
 /figarotrack.js?$script,important
 /google-analytics-for-wordpress/$script,important
-/((o(pen)?|jet)load)\.(.{2,})\/cdn-cgi\/ap{2}s\/head\/([a-zA-Z0-9]{3,})\.js/$script,important
 /(.*)?(firstimpres{2}ion|highwebmedia|(((sentry\-)cdn)|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
 /(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/$script
 /(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/$script,important
@@ -1155,10 +1179,7 @@ wss://net-announce*$websocket,important
 /exe/indexer.php$image,domain=ubuntu-fr.org
 *$image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||feeds.feedburner.*?bg=$image
-||adnxs.com$image
 */adservice.*$image
-||disneyhd.tk/films/pub3.jpg$image,1p
-||disneyhd.tk/shoutbox/*$image,1p
 ||full-serie.*error404.php^$image
 ||full-serie.*undefined^$image
 ||image.tmdb.org/t/p/original/3sExYAo2rNhKgrHx8S37WMTJHZv.jpg$image
@@ -1627,14 +1648,6 @@ wss://net-announce*$websocket,important
 /fuckadblock.*?$script
 ||google-analytics.*/cx/api.js$script,redirect=google-analytics_cx_api.js
 ||google-analytics.*/inpage_linkid.js$script,redirect=google-analytics_inpage_linkid.js
-||google-analytics.*/analytics.js$script,redirect=google-analytics_analytics.js
-||google-analytics.*/ga.js$script,redirect=google-analytics_ga.js
-||googlesyndication.*/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js
-||pagead2.googlesyndication.*/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js
-||*googletagmanager.*/gtm.js$script,redirect=googletagmanager_gtm.js
-||*googletagmanager.com/gtag/js*$script,redirect=google-analytics_analytics.js
-||*googletagservices.*/gpt.js$script,redirect=googletagservices_gpt.js
-||*googletagservices.*gpt.js$script,redirect=googletagservices_gpt.js
 ||addthis.*/addthis_widget.js$script,important,redirect=addthis_widget.js
 ||amazon-adsystem.*/amzn_ads.js$script,important,redirect=amazon_ads.js
 ||amazon-adsystem.*/apstag.js$script,important,redirect=amazon_apstag.js
@@ -1642,7 +1655,6 @@ wss://net-announce*$websocket,important
 ||static.chartbeat.com/js/chartbeat.js$script,important,redirect=chartbeat.js
 ||doubleclick.net/instream/ad_status.js$script,redirect-rule=doubleclick.net/instream/ad_status.js,badfilter
 ||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,important,redirect=googletagservices_gpt.js
 ||ligatus.*/angular-tag.js$script,important,redirect=ligatus_angular-tag.js
 ||widgets.outbrain.*/outbrain.js$script,important,redirect=outbrain-widget.js
 ||smartadserver.*.js$script,important,redirect=smartadserver.com.js
@@ -1668,7 +1680,6 @@ wss://net-announce*$websocket,important
 ||google.*$image,redirect-rule=1x1.gif
 ||youtu*.*$image,redirect-rule=1x1.gif
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
-||adnxs.com$image,redirect-rule=1x1.gif
 ||*.ru/watch/*$image,redirect-rule=1x1.gif
 ||yadro.ru$image,redirect-rule=1x1.gif
 ||*pixel?google_nid=spotxchange_*$image,redirect-rule=2x2.png
@@ -1691,7 +1702,6 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@||compte.tf1.fr^$domain=tf1.fr
 @@||ads.stickyadstv.com^
-@@/[-._?&=#/]pop([au]nders?)?[-.0-9_?&=#/]/$script,1p
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 |https://googleads.g.doubleclick.net/pagead/id$badfilter
 @@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -1998,8 +2008,7 @@ search.lilo.org##.top.addivwhite2
 */a/ads/*$xhr,important,badfilter
 ||cstatic.weborama.fr^$media
 ||entitlements.jwplayer.com^
-/jwpsrv.js$script
-/googima.js$script,important
+/(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important
 /wp-content/plugins/lazy-load/images/1x1.trans.gif$image
 @@||kmz-bandwidth-hero.herokuapp.com^$image
 /promoted-ads$domain=namemeaningsdictionary.com,subdocument
@@ -2141,12 +2150,10 @@ tamdor.com,epiog.com##[src*="/avatar.php"]
 tirexo.pro##[href*="/get_link-"]
 tirexo.pro##.content > p:if(a[href="/premium.html"][class="btn btn-danger"])
 seriestream.*#?##lecteur:if(#videoplay[src*="/video-streaming.html"])
-||googlevideo.com/generate_204$image
 vfilms.me##a[href*="://go.trackitalltheway."]
 hdss.to#$#.btnsplyr{top:-30vh
 /\%22ad/$~font,~css,badfilter
 ||dev-nano.com/socket.io$important
-@@/prebid/
 @@||facebook.com/*/plugins/post.php$inline-font
 facebook.com#@#[src*="facebook.com"]
 facebook.com#@#[href*=".facebook."]
@@ -2243,16 +2250,10 @@ deezer.com##.ab-page-blocker
 ||www.wwwgoogles.com^
 ||weblb-wg.dual-gslb.spotify.com^
 ||weblb-wg.gslb.spotify.com^
-||tremorhub.com/*$xhr,domain=crunchyroll.com,redirect-rule=noopvast-2.0
-||getpublica.com/*&format=vast*$xhr,domain=crunchyroll.com,redirect-rule=noopvast-2.0
-://ads.$xhr,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,redirect-rule=noopvast-2.0
-||rubiconproject.com/*/vast.xml?*$xhr,redirect-rule=noopvast-2.0
-||lkqd.net/*&output=vastvpaid&*$xhr,redirect-rule=noopvast-2.0
 @@/cookiejs/*$script,domain=crunchyroll.com
 ||fwmrm.net^$popup,important
 ||mc.yandex.ru^$image
 ||exdynsrv.com^$important
-||tsyndicate.com/*/vast?*$xhr,redirect=noopvast-3.0
 teen19porn.com###player_ad
 xhamster.com##.player-add-overlay
 xhamster.com##.underplayer
@@ -2403,6 +2404,7 @@ streaming-vostfr.net##.player-btn:if(:-abp-contains(/t(e|é)l(e|é)charge(r|ment
 @@||playhydrax.com/?v=$subdocument
 @@*$generichide,domain=redirect-ads.com
 @@/[\/\s\d]related[\.\s\d]js/$script,domain=down-paradise.com
+@@||vidcloud.*^/player/related.js|
 hds.*##[id^="media_image-"]
 vidoza.*##[class="prevent-first-click"]
 @@/^ht{2}ps?\:\/{2}imasdk\.go{2}\w{7}\.(.{3})\/\w{2}\/\w{4}\/\w{6}\d{1}\.\d+\.\d\_\w+\.\w{4}[\D\d]{4,}/
