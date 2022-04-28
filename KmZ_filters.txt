@@ -65,7 +65,6 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 youtube.com#@##consent-bump:remove()
 @@||consent.youtube.com^$domain=youtube.com
-||google./js/bg/*$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,important
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
 /log_event?alt=json$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -1707,7 +1706,6 @@ voirseries.*#@#.adsBox
 @@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
-@@/recaptcha/*$all
 @@||googlesyndication.com^$domain=googlesyndication.com
 @@||loggly.com^
 @@||internet.nl^$generichide,specifichide
@@ -2555,3 +2553,24 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
+||pbstck.com^$third-party
+||estat.com^$third-party
+||*googletagmanager.com/gtag/js*$script,redirect=google-analytics,_,badfilter
+! https://videos.allocine.fr/p-cp-async/allocine_fr/playercinema@postroll/ or https://goutee.top/p-c-async/allocine_fr/playercinema/
+/\/[a-z]{1}\-[a-z]{1,2}\-async\/(.+)\/playercinema(.+)?/$script,_,important
+/pixel.png?/domain=$xmlhttprequest,___,domain=allocine.fr
+||allocine.fr/_/tvty/get$xmlhttprequest,_,important,___,domain=allocine.fr
+/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
+/\/prebid(\/|$)/$important,___,domain=allocine.fr
+/(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
+@@||*.css$stylesheet,_,~third-party
+@@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=youtube/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+@@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+@@||fonts.gstatic.com^
+@@/embed$subdocument,media,_,third-party
+@@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
+||dood.video/favicon.ico?
+@@||vudeo.*^$~xmlhttprequest,___,domain=vudeo.net
+||vudeo.net/embed$xmlhttprequest,_,important
+@@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
+||*$websocket,_,~third-party,important,___,domain=deezer.com
