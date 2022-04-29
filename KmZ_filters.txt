@@ -2055,7 +2055,7 @@ hds.lc###lkzpr
 hds.lc###s:style(background-color:transparent
 time2watch.io##a#movie_300_60_yellow
 time2watch.io###no_our_shit_us
-imsdb.pw##.mx-auto
+imsdb.pw#@#.mx-auto
 imsdb.pw##[href="https://imsdb.pw/"]
 imsdb.pw##[href*="/playimsdb"]
 uptobox.stream##.Modal-Box
@@ -2652,6 +2652,59 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||vudeo.*^$~xmlhttprequest,___,domain=vudeo.net
 ||vudeo.net/embed$xmlhttprequest,_,important
 @@||tomacloud.com^$xmlhttprequest,subdocument,media,image
+@@||evosrv.com^$xmlhttprequest,stylesheet,media,image
+@@||evoload.io^$xmlhttprequest,subdocument,image
+@@||uptostream.com^$xmlhttprequest,___,domain=uptostream.com
+@@||uptostream.com^$subdocument,media,_,third-party
 @@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
 ||*$websocket,_,~third-party,important,___,domain=deezer.com
 ##a[href*="/Russia_Vs_Ukraine_War3"][target]
+@@||windows.net^
+!
+!
+!example.com#%#//scriptlet('prevent-element-src-loading', 'iframe' ,'about:blank')
+!
+! PREVENT XHR
+! -----------
+! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#-%EF%B8%8F-prevent-xhr
+! https://github.com/gorhill/uBlock/wiki/Resources-Library#no-xhr-ifjs-
+! -----------
+*#@#+js(no-xhr-if, servedby.adbility-media.com)
+gounlimited.to##+js(no-xhr-if, s3.amazonaws.com)
+animedigitalnetwork.fr##+js(no-xhr-if, choices.consentframework.com)
+!imasdk.googleapis.com##+js(no-xhr-if, gw.api.animedigitalnetwork.fr method:GET)
+!imasdk.googleapis.com##+js(no-xhr-if, /(fwmrm\.net\/ad/g\/1\?)/ method:GET)
+imasdk.googleapis.com##+js(no-xhr-if, method:GET)
+soundcloud.com##+js(no-xhr-if, /(promoted|audio-ads\?)/ method:GET)
+!vudeo.net#%#//scriptlet('prevent-xhr', 'method:HEAD')
+vudeo.net##+js(no-xhr-if, method:HEAD)
+streaming.voir-film.cc##+js(no-xhr-if, method:GET)
+youtube.com##+js(no-xhr-if, jnn-pa.googleapis.com method:POST)
+mail.yahoo.com##+js(no-xhr-if, udc.yahoo.com method:POST)
+cuisine.journaldesfemmes.fr##+js(no-xhr-if, method:GET)
+*##+js(no-xhr-if, google-analytics.com method:POST)
+*##+js(no-xhr-if, doubleclick.net method:POST)
+*##+js(no-xhr-if, optimizely.com)
+*##+js(no-xhr-if, videosworks.com)
+*##+js(no-xhr-if, youborafds01.com)
+*##+js(no-xhr-if, graph.facebook.com)
+*##+js(no-xhr-if, vaipsouw.com)
+*##+js(no-xhr-if, glaiwhee.net)
+*##+js(no-xhr-if, altynamoan.com)
+*##+js(no-xhr-if, mocmubse.net)
+*##+js(no-xhr-if, apprefaculty.pro)
+*##+js(no-xhr-if, buyseoblog.com)
+*##+js(no-xhr-if, reyden-x.com)
+*##+js(no-xhr-if, tagbom.com)
+*##+js(no-xhr-if, yomeno.xyz)
+*##+js(no-xhr-if, easyads28.mobi)
+*##+js(no-xhr-if, condolencessumcomics.com)
+*##+js(no-xhr-if, ausoafab.net)
+*##+js(no-xhr-if, psairees.net)
+*##+js(no-xhr-if, agloowie.com)
+*##+js(no-xhr-if, adnxs.com)
+*##+js(no-xhr-if, fundingchoicesmessages.google.com)
+*##+js(no-xhr-if, simplewebanalysis.com)
+*##+js(no-xhr-if, thawbootsamplitude.com)
+*##+js(no-xhr-if, furstraitsbrowse.com)
+*##+js(no-xhr-if, qualitydestructionhouse.com)
