@@ -2664,6 +2664,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 !
 !example.com#%#//scriptlet('prevent-element-src-loading', 'iframe' ,'about:blank')
 !
+!
 ! PREVENT XHR
 ! -----------
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#-%EF%B8%8F-prevent-xhr
@@ -2708,3 +2709,5 @@ cuisine.journaldesfemmes.fr##+js(no-xhr-if, method:GET)
 *##+js(no-xhr-if, thawbootsamplitude.com)
 *##+js(no-xhr-if, furstraitsbrowse.com)
 *##+js(no-xhr-if, qualitydestructionhouse.com)
+*##+js(no-xhr-if, maltunfaithfulpredominant.com)
+*##+js(no-xhr-if, knownwarn.com)
