@@ -57,6 +57,9 @@ cuisine.journaldesfemmes.fr##+js(no-xhr-if, method:GET)
 *##+js(no-xhr-if, maltunfaithfulpredominant.com)
 *##+js(no-xhr-if, knownwarn.com)
 *##+js(no-xhr-if, planningunavoidablenull.com)
+*##+js(no-xhr-if, waisheph.com)
+*##+js(no-xhr-if, thawbootsamplitude.com)
+*##+js(no-xhr-if, planningunavoidablenull.com)
 ! -----------
 !
 !
