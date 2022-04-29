@@ -2514,8 +2514,8 @@ voirseries.*##.MailWrapper:nth-child(n+3)
 upvid.biz##[class^="lk"]
 upvid.*##+js(window.open-defuser.js)
 ||vidlox.*^$important,badfilter,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;
-||*$3p,domain=upvid.biz
-@@||upvid.*$domain=upvid.biz
+||*$3p,domain=upvid.*
+@@||upvid.*$domain=upvid.*
 ||upvid.biz/js/ad_pop.js$domain=upvid.biz,important
 developpez.com###A90f4a144fdc79d5e5b245B
 @@||googletagmanager.com/gtag/*$domain=srek.net
