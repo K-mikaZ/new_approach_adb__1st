@@ -19,6 +19,7 @@
 ! EXCLUDED
 *#@#+js(no-xhr-if, servedby.adbility-media.com)
 *#@#+js(no-fetch-if, youborafds01.com)
+*##+js(no-fetch-if, url:/\/ad\/banner\/_adsense_\/_adserver\/_adview_\.ad\.json/ method:GET)
 !
 ! RETURNING
 !imasdk.googleapis.com##+js(no-xhr-if, 'gw.api.animedigitalnetwork.fr method:GET')
@@ -29,7 +30,6 @@ imasdk.googleapis.com##+js(no-xhr-if, method:GET)
 *##+js(no-xhr-if, doubleclick.net method:POST)
 *##+js(no-fetch-if, google-analytics.com method:POST)
 *##+js(no-xhr-if, google-analytics.com method:POST)
-*##+js(no-fetch-if, url:/\/ad\/banner\/_adsense_\/_adserver\/_adview_\.ad\.json/ method:GET)
 *##+js(no-xhr-if, url:/\/ad\/banner\/_adsense_\/_adserver\/_adview_\.ad\.json/ method:GET)
 *##+js(no-fetch-if, url:/\/cdn-cgi\/trace$/ method:GET)
 *##+js(no-xhr-if, url:/\/cdn-cgi\/trace$/ method:GET)
