@@ -2,7 +2,7 @@
 ! Title: [✔][list] "Prevent-XHR" - by K-mik@Z
 ! Expires: 3 days
 ! Author: K-mik@Z
-! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/new/master/common_utils/lists/✗to_block/others/prevent-xhr.txt
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/prevent-xhr.txt
 ! Description: Prevents `xhr` calls. Defuses XMLHttpRequest network requests by returning empty response.
 !
 !
