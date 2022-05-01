@@ -2645,6 +2645,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@/.*/$font,_,~third-party
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=youtube/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+||googlevideo.com/videoplayback?*&source=yt_otf&*$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||fonts.gstatic.com^
 @@/embed$subdocument,media,_,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
