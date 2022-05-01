@@ -22,6 +22,21 @@
 !
 ! example.com#%#//scriptlet('prevent-element-src-loading', 'iframe', '__tcfapiLocator')
 !
+!#if (adguard)
+!  !#include /androidspecific.txt
+*#%#//scriptlet('prevent-element-src-loading', 'img', '/viewthroughconversion/')
+*#%#//scriptlet('prevent-element-src-loading', 'img', '/(.+)\/collect\?v=[\d]{1}(.+)?/')
+*#%#//scriptlet('prevent-element-src-loading', 'script', 'yieldlove.com')
+*#%#//scriptlet('prevent-element-src-loading', 'script', 'adservice.google.com/adsid/integrator.js')
+*#%#//scriptlet('prevent-element-src-loading', 'script', 'hotjar.com')
+*#%#//scriptlet('prevent-element-src-loading', 'script', 'sddan.com')
+! *#%#//scriptlet('prevent-element-src-loading', 'script', 'player.pepsia.com/sdk.js')
+animedigitalnetwork.fr#%#//scriptlet('prevent-element-src-loading', 'script', 'kompanion.min.js')
+animedigitalnetwork.fr#%#//scriptlet('prevent-element-src-loading', 'script', 'googletagmanager.com')
+!animedigitalnetwork.fr#%#//scriptlet('prevent-element-src-loading', 'script', 'consentframework.com')
+!youtube.com#%#//scriptlet('prevent-element-src-loading', 'script', 'annotations_module.js')
+!#endif
+!
 ! EXCLUDED
 ! ---------
 *#@#+js(no-xhr-if, servedby.adbility-media.com)
@@ -29,6 +44,13 @@
 !
 ! RETURNING
 ! ---------
+!
+*##+js(no-fetch-if, yieldlove.com)
+*##+js(no-fetch-if, /adservice\.google\.com\/adsid\/integrator\.js/)
+*##+js(no-fetch-if, hotjar.com)
+*##+js(no-fetch-if, sddan.com)
+*##+js(no-fetch-if, newrelic.com)
+!
 !imasdk.googleapis.com##+js(no-xhr-if, 'gw.api.animedigitalnetwork.fr method:GET')
 !imasdk.googleapis.com##+js(no-xhr-if, '/(fwmrm\.net\/ad/g\/1\?)/ method:GET')
 imasdk.googleapis.com##+js(no-fetch-if, method:GET)
@@ -68,6 +90,10 @@ imasdk.googleapis.com##+js(no-xhr-if, method:GET)
 *##+js(no-xhr-if, url:/\/youtubei\/(.+)\/log_event\?alt\=json/ method:POST)
 *##+js(no-fetch-if, /\/curveball\/ads\/.*/ method:GET)
 *##+js(no-xhr-if, /\/curveball\/ads\/.*/ method:GET)
+*##+js(no-fetch-if, /(\/ad_break\?)/ method:POST)
+*##+js(no-xhr-if, /(\/ad_break\?)/ method:POST)
+*##+js(no-fetch-if, /(prod-babieca\.rakuten\.tv\/streamings)/ method:PUT)
+*##+js(no-xhr-if, /(prod-babieca\.rakuten\.tv\/streamings)/ method:PUT)
 allocine.fr##+js(no-fetch-if, url:/\/prebid(\/|$)/)
 allocine.fr##+js(no-xhr-if, url:/\/prebid(\/|$)/)
 highstream.tv##+js(no-fetch-if, url:/\/dl\?op\=/ method:GET)
@@ -176,6 +202,8 @@ suzihaza.com##+js(no-xhr-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
 *##+js(no-fetch-if, qiota.com)
 *##+js(no-xhr-if, edge-mcdn.secure.yahoo.com)
 *##+js(no-fetch-if, edge-mcdn.secure.yahoo.com)
+*##+js(no-xhr-if, ads.spotx.tv)
+*##+js(no-fetch-if, ads.spotx.tv)
 allocine.fr##+js(no-fetch-if, doubleclick.net)
 allocine.fr##+js(no-xhr-if, doubleclick.net)
 animedigitalnetwork.fr##+js(no-fetch-if, choices.consentframework.com)
@@ -184,6 +212,8 @@ cuisine.journaldesfemmes.fr##+js(no-xhr-if, method:GET)
 gounlimited.to##+js(no-fetch-if, s3.amazonaws.com)
 gounlimited.to##+js(no-xhr-if, s3.amazonaws.com)
 mail.yahoo.com##+js(no-xhr-if, udc.yahoo.com method:POST)
+rakuten.tv##+js(no-xhr-if, yb.rakuten.tv)
+rakuten.tv##+js(no-fetch-if, yb.rakuten.tv)
 streaming.voir-film.cc##+js(no-fetch-if, method:GET)
 streaming.voir-film.cc##+js(no-xhr-if, method:GET)
 vudeo.net##+js(no-fetch-if, method:HEAD)
