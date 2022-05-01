@@ -1128,7 +1128,8 @@ wss://net-announce*$websocket,important
 |http*://*.info/*.js^$script,3p,important
 ||lfztmoamieum.com$script,3p,important
 ||gcpjstirhbqjx.com$script,3p,important
-||*/sfp.js|$script
+/^https?:\/\/[^\s]+\.com\/sfp\.js$/$script,_,third-party
+/^https?:\/\/[^\s]+\.com\/script\/nasu\.js$/$script,_,third-party
 /gpu.min.js|$important
 .top/advertisers.js|$script,important
 /PartnersBox.js?$script,important
