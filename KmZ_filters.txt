@@ -2467,7 +2467,7 @@ dpstream.*##.player:has-text(/1fichier|uptobox/)
 @@||vendorlist.consensu.org/vendorlist.json$xhr,domain=tf1.fr
 @@||cdn.tagcommander.com/cmp-api/cmp.js$script,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,1p,redirect=noopmp3-0.1s
-||*.tf1.fr/*/youbora*
+||*.tf1.fr/*youbora*
 youtube.com#$#iframe[name="passive_signin"]{ display: none
 youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none
 youtube.com##.ytd-consent-bump-lightbox
