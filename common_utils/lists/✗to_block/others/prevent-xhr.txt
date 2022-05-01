@@ -23,7 +23,7 @@
 ! example.com#%#//scriptlet('prevent-element-src-loading', 'iframe', '__tcfapiLocator')
 !
 !#if (adguard)
-!  !#include /androidspecific.txt
+!  !#include /adguardspecific.txt
 *#%#//scriptlet('prevent-element-src-loading', 'img', '/viewthroughconversion/')
 *#%#//scriptlet('prevent-element-src-loading', 'img', '/(.+)\/collect\?v=[\d]{1}(.+)?/')
 *#%#//scriptlet('prevent-element-src-loading', 'script', 'yieldlove.com')
