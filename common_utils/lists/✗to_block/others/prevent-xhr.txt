@@ -6,7 +6,8 @@
 ! Description: Prevents `xhr` calls. Defuses XMLHttpRequest network requests by returning empty response.
 !
 !
-!example.com#%#//scriptlet('prevent-element-src-loading', 'iframe' ,'about:blank')
+! SEE also:  https://github.com/AdguardTeam/Scriptlets/blob/master/src/scriptlets/prevent-element-src-loading.js
+!            https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#-%EF%B8%8F-prevent-element-src-loading
 !
 !
 ! PREVENT XHR
@@ -18,6 +19,8 @@
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/compatibility-table.md
 ! see: https://github.com/uBlockOrigin/uAssets/blob/master/filters/privacy.txt
 ! -----------
+!
+! example.com#%#//scriptlet('prevent-element-src-loading', 'iframe', '__tcfapiLocator')
 !
 ! EXCLUDED
 ! ---------
@@ -48,17 +51,27 @@ imasdk.googleapis.com##+js(no-xhr-if, method:GET)
 *##+js(no-xhr-if, url:/\?op\=([\w]+)(.+)?\&embed\=[1](.+)?\&adb\=[\d]{1}/ method:GET)
 *##+js(no-fetch-if, url:/\/backend\/.*\.php\?url\=/ method:GET)
 *##+js(no-xhr-if, url:/\/backend\/.*\.php\?url\=/ method:GET)
-*##+js(no-fetch-if, url:/^https:\/\/v3\.fstats\.xyz\/log\?/ method:GET)
-*##+js(no-xhr-if, url:/^https:\/\/v3\.fstats\.xyz\/log\?/ method:GET)
-*##+js(no-fetch-if, url:/^https:\/\/v3\.fstats\.xyz\/watch$/ method:POST)
+!*##+js(no-fetch-if, url:/^https:\/\/v3\.fstats\.xyz\/log\?/ method:GET)
+!*##+js(no-xhr-if, url:/^https:\/\/v3\.fstats\.xyz\/log\?/ method:GET)
+!*##+js(no-fetch-if, url:/^https:\/\/v3\.fstats\.xyz\/watch$/ method:POST)
+*##+js(no-xhr-if, v3.fstats.xyz method:/GET|POST/)
+*##+js(no-fetch-if, v3.fstats.xyz method:/GET|POST/)
 *##+js(no-fetch-if, url:/\/casalemedia\.com\/cygnus\?/)
 *##+js(no-xhr-if, url:/\/casalemedia\.com\/cygnus\?/)
+*##+js(no-fetch-if, url:/\/admax\/(.+)/)
+*##+js(no-xhr-if, url:/\/admax\/(.+)/)
+*##+js(no-fetch-if, url:/(\/s){2}\/suo\.php/ method:GET)
+*##+js(no-xhr-if, url:/(\/s){2}\/suo\.php/ method:GET)
+*##+js(no-fetch-if, url:/^https:\/\/play\.google\.com\/log\?format\=json\&hasfast\=true/ method:POST)
+*##+js(no-xhr-if, url:/^https:\/\/play\.google\.com\/log\?format\=json\&hasfast\=true/ method:POST)
+*##+js(no-fetch-if, url:/\/youtubei\/(.+)\/log_event\?alt\=json/ method:POST)
+*##+js(no-xhr-if, url:/\/youtubei\/(.+)\/log_event\?alt\=json/ method:POST)
 allocine.fr##+js(no-fetch-if, url:/\/prebid(\/|$)/)
 allocine.fr##+js(no-xhr-if, url:/\/prebid(\/|$)/)
 highstream.tv##+js(no-fetch-if, url:/\/dl\?op\=/ method:GET)
 highstream.tv##+js(no-xhr-if, url:/\/dl\?op\=/ method:GET)
-reddit.com##+js(no-fetch-if, url:/^https:\/\/www\.reddit\.com$/ method:post)
-reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
+reddit.com##+js(no-fetch-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
+reddit.com##+js(no-xhr-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
 soundcloud.com##+js(no-fetch-if, /(promoted|audio-ads\?)/ method:GET)
 soundcloud.com##+js(no-xhr-if, /(promoted|audio-ads\?)/ method:GET)
 suzihaza.com##+js(no-fetch-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
@@ -147,6 +160,16 @@ suzihaza.com##+js(no-xhr-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
 *##+js(no-fetch-if, indexww.com)
 *##+js(no-xhr-if, etahub.com)
 *##+js(no-fetch-if, etahub.com)
+*##+js(no-fetch-if, he7ll.com method:POST)
+*##+js(no-xhr-if, he7ll.com method:POST)
+*##+js(no-xhr-if, adsrvr.org)
+*##+js(no-fetch-if, adsrvr.org)
+*##+js(no-xhr-if, zikroarg.com)
+*##+js(no-fetch-if, zikroarg.com)
+*##+js(no-xhr-if, rndskittytor.com)
+*##+js(no-fetch-if, rndskittytor.com)
+*##+js(no-xhr-if, qiota.com)
+*##+js(no-fetch-if, qiota.com)
 allocine.fr##+js(no-fetch-if, doubleclick.net)
 allocine.fr##+js(no-xhr-if, doubleclick.net)
 animedigitalnetwork.fr##+js(no-fetch-if, choices.consentframework.com)
