@@ -2636,9 +2636,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||*googletagmanager.com/gtag/js*$script,redirect=google-analytics,_,badfilter
 ! https://videos.allocine.fr/p-cp-async/allocine_fr/playercinema@postroll/ or https://goutee.top/p-c-async/allocine_fr/playercinema/
 /\/[a-z]{1}\-[a-z]{1,2}\-async\/(.+)\/playercinema(.+)?/$script,_,important
-/pixel.png?/domain=$xmlhttprequest,___,domain=allocine.fr
-||allocine.fr/_/tvty/get$xmlhttprequest,_,important,___,domain=allocine.fr
-/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
+!/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /\/prebid(\/|$)/$important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
 @@||*.css$stylesheet,_,~third-party
