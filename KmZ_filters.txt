@@ -2662,3 +2662,455 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||*$websocket,_,~third-party,important,___,domain=deezer.com
 ##a[href*="/Russia_Vs_Ukraine_War3"][target]
 @@||windows.net^
+! --------------
+!
+!
+! YOUR PERSONAL FILTERS BELOW  --
+! VOS FILTRES PERSO CI-DESSOUS --
+!
+&adPlayhead=$badfilter
+&adsExpected=$badfilter
+|http*://vidoza.net/sw.js$important,badfilter
+||adeventtracker.spotify.com^$badfilter
+||cfeucdn.com/video_short.mp4$badfilter
+||*$media,domain=tf1.fr,badfilter
+||*$websocket,badfilter,domain=netflix.com
+||*^$badfilter,csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||doubleclick.net/instream/ad_status.js$badfilter
+||doubleclick.net/instream/ad_status.js$script,badfilter
+||doubleclick.net/instream/ad_status.js$script,important,badfilter
+||doubleclick.net^$important,domain=spotify.com,badfilter
+||geo.opera.com^$badfilter
+||google-analytics.*/analytics.js$script,redirect=google-analytics_analytics.js,badfilter
+||google-analytics.*/ga.js$script,redirect=google-analytics_ga.js,badfilter
+||google-analytics.com/analytics.js$badfilter
+||google-analytics.com^$badfilter
+||google-analytics.com^$script,badfilter
+||googlesyndication.com^$badfilter
+||googlevideo.com/generate_204$image,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com|youtube-nocookie.com,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.youtube.com|music.youtube.com,badfilter
+||hqq.*/ajax.php?mode=insertLog$badfilter
+||metrics-broker.prod.p.tf1.fr^$badfilter
+||metrics-broker.prod.p.tf1.fr^$xhr,domain=tf1.fr,badfilter
+||net/sw.js?$script,1p,badfilter
+||netflix.com/api/ftl/probe?monotonic=$badfilter
+||netflix.com/msl/playapi/cadmium/logblob/$badfilter
+||sentry.io^$domain=~sentry.io,badfilter
+||trustcommander.$important,badfilter
+||trustcommander.net$badfilter
+||trustcommander.net$script,badfilter
+||www.google-analytics.com^$badfilter
+||www.googleadservices.com^$badfilter
+||xiti.com$badfilter
+||xiti.com$image,badfilter
+||y2mate.com/*.gif$image,badfilter
+||youtube.com/ptracking?$badfilter
+||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+||cdn.spotxcdn.com/media/videos/orig/*$xhr,domain=rakuten.tv,badfilter
+*$subdocument,csp=worker-src 'none',domain=123moviesgo.nl|300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv|annuaire-bleu.net|arnaques-internet.info|atk-exotics.com|atkebony.com|bamekoohrang.ir|bigspeeds.com|bmovies123.me|centrum-dramy.pl|chemikino.ru|clipwatching.com|coinfaucet.eu|cracklists.com|crictime.com|crictime.is|crimedocumentary.com|deltabit.co|descargas2020.com|domnuleprimar.ro|dragonballzpolo.blogspot.com|eduardolegatti.blogspot.com|emuleed2k.com|extratorrent.si|fileone.tv|filmovix.com|filmovix.net|filmovix.org|firstone.tv|firstonetv.eu|firstonetv.live|flashx.net|flashx.pw|flashx.tv|fmoviesgo.me|full-mp3.com|funtik.tv|genashowalter.com|gomovie123.me|hdvid.fun|hdvid.tv|hentai-online.pl|hospital.plus|ianimes.co|ianimes.org|ianimes.top|indiaproxydl.org|javbros.com|lewd.ninja|luckybitco.in|mobology.ir|movie4k.is|nahnoji.cz|neurozinzin.com|novator.az|ukpass.co|openload.cc|ovid.tv|ovid.xyz|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|powvideo.net|protect-link.biz|salon.com|seriesenlinea.net|shush.se|sickrage.ca|skytorrents.me|sorteosrd.com|studio100.it|szukajka.tv|tapemovie.com|theappguruz.com|thepiratebay.vip|onion.pet|onion.ly|hdvid.online|thepiratebay.cr|thepiratebay.org|thepiratebay.se.net|thevideo.me|tomadivx.tv|torrentrapid.com|tubetitties.com|unblocked2.vip|unblocked.app|unblockit.dev|unblocked.gdn|unblocked.is|unblocked.lc|unblocked.vet|uptobox.com|uptostream.com|vidoza.co|vidoza.net|vidtod.com|vidtodo.com|vidop.icu|vidup.io|void.cat|wallpoper.com|wearesaudis.net|yazilir.com,badfilter
+://ads.$xmlhttprequest,redirect-rule=noopvast-2.0,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
+.mp4$media,important,badfilter,domain=6play.fr
+||thepiratebay.*/*.php?$badfilter
+/pagead\/((?!id$).*)/$important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/\/me\/(.*)\/contains\?ids\=(([a-zA-Z0-9]+(.*))(\%2)?){1,}/$xmlhttprequest,important,domain=spotify.com,badfilter
+/pubads.$badfilter
+/adtech_$domain=~adtech.co.uk,badfilter
+/adservice.$image,badfilter
+/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com,badfilter
+/^https?:\/\/str((eam)?ta(pe)?|cloud)\.[\w]+\//$badfilter,important,csp=script-src 'self' data: 'unsafe-inline' 'unsafe-eval' *.google.com *.gstatic.com local.adguard.org injections.adguard.org;
+!
+###arc-widget-launcher-iframe
+##+js(set, Document.prototype.interestCohort, undefined)
+##[class*="ad-unit"]
+##[class*="adunit"]
+##[class^="movie-aye"]
+##[class^="van_vid_carousel"]
+##[data-ad-client*="-pub-"]
+##[data-ad-host*="-pub-"]
+##[data-ad-text="PUBLICITE"]
+##[data-adsbygoogle-status]
+##[data-placeholder-text="Ad"]
+#@#.advertisement:not(body)
+#@#+js(no-fetch-if, /adsbygoogle.js$/)
+#@#+js(remove-attr, data-tracking-id, a)
+#@#+js(remove-attr, data-tracking-id, button)
+#@#+js(remove-attr, data-tracking-id, label)
+#%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
+#?#.player:-abp-has(>[data-ads-core])
+*##.adsbygoogle
+*##+js(ra, data-tracking-id, a)
+*##+js(ra, data-tracking-id, button)
+*##+js(ra, data-tracking-id, label)
+*##[id*="aswift_"]
+*##[id="google_esf"]
+*##[id^="google_ads_iframe_"]
+*#$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+*$removeparam=fbclid
+*$removeparam=yclid
+*$script,3p,domain=uqload.com
+*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
+*youtube.com*embed*playsinline*enablejsapi*origin*$subdocument,redirect-rule=noop.html
+6play.fr#@##fb-root:not(body):not(html)
+6play.fr#?#li:if(>[href*="/freemium/"])
+6play.fr#?#li:if(>[src*="/freemium/"])
+!
+@@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
+@@/cookieconsent.$script,1p
+@@/doubleclick_dmm/*$xhr,domain=rakuten.tv
+@@/hit.xiti$image,domain=www.tf1.fr
+!@@/vendor/ads/*.css$domain=animedigitalnetwork.fr
+@@||forum.qt.io/socket.io/*$websocket
+@@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
+@@||wss.analyticacdn.com^$websocket
+@@/ws{1,}[:]\/{2}/$domain=netflix.com
+@@||*$websocket,domain=discord.com
+@@||*$websocket,domain=geoip.redirect-ads.com
+@@||*$websocket,domain=www.speedtest.net
+@@||api.company-target.com^$xhr,domain=degreed.com
+@@||canaltp.fr$cookie
+@@||canaltp.fr$removeparam
+@@||canaltp.fr^$elemhide
+@@||canaltp.fr^$generichide
+@@||cdn.speedcurve.com^$domain=developer.mozilla.org
+@@||chatbox.botnation.ai/plugins/ping$domain=star.fr
+@@||doubleclick.net/pcs/*$xhr,domain=open.spotify.com
+@@||evoload.io/js/plausible.js$domain=evoload.io
+@@||google-analytics.com^$domain=star.fr|canaltp.fr
+@@||googletagmanager.com^$domain=star.fr
+@@||gw.api.animedigitalnetwork.fr^$removeparam
+@@||knowledia.com$removeparam
+@@||mixer.zippycast.io^$removeparam
+@@||mozilla.org$cookie
+@@||navitia.io$removeparam
+@@||navitia.io^$elemhide
+@@||navitia.io^$generichide
+@@||nitrocdn.com^
+@@||privacymanager.io^$domain=rakuten.tv
+@@||rawgit.com
+@@||ssl.google-analytics.com/r/__utm.gif$domain=cineville.fr
+@@||star.fr$all
+@@||star.fr$cookie
+@@||star.fr$elemhide
+@@||star.fr$generichide
+@@||star.fr$removeparam
+@@||static.6cloud.fr/*/onboarding/*.mp4
+@@||tf1.fr$generichide
+@@||trustcommander.net
+@@||uqload.com$ghide
+@@||vidlox.me$cookie
+@@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
+@@||www-google-analytics.l.google.com^$script,domain=degreed.com
+@@||www.google-analytics.com^$domain=degreed.com
+@@||xiti.com$image
+@@||youtube.com/api/stats/*$domain=youtube.com
+accuweather.com###connatix
+addictivetips.com##.mv-ad-box
+akceleratorbiznesu.eu###featured-links
+akceleratorbiznesu.eu##.shadow
+akceleratorbiznesu.eu##[src*="/dating/"]
+akceleratorbiznesu.eu##[src*="/imagesnp/"]
+allthings.how##.mv-ad-box
+!animedigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
+animedigitalnetwork.fr#%#AG_onLoad(function() { if(window.location.href.indexOf("/onboarding") != -1){ window.location.href = "https://animedigitalnetwork.fr"; } });
+answerstoall.com###rc-widget-618603
+autoprefixer.github.io##div.ads
+br.atsit.in##.entry-content > div:if(ins[class=adsbygoogle])
+cdnjs.com#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
+chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
+chefsimon.com##[class*="pt-1 pb-3"]
+collect?$removeparam,domain=doubleclick.net|google-analytics.com
+cpasbien.*,gktorrents.*,torrent911.com##[class^="truste"]
+cpasmieux.site##.down
+cpasmieux.site##.lien:if(:-abp-contains(/ vip/))
+cpasmieux.site##[class$="-xyz"]
+cpasmieux.site#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
+cpasmieux.tv##[id|="kino"] > noindex
+cuisineaz.com##[id^="dynInfeed"]
+cyberciti.biz##[class|="amp-wp"]:if(:-abp-contains(/advertisement/i))
+deezer.com##.react-cookie
+deezer.com##[class="alert-wrapper"]
+deezer.com#$#.page-alerts { display: none !important }
+developer.mozilla.org#@#+js(set, Document.prototype.interestCohort, undefined)
+digit.in##.add
+digit.in##.adsAdvert
+digitalcitizen.life##.block--ad
+dood.la###video_player > div.vjs-poster:nth-child(2)
+ducine.*,streamfilms.*##.player
+ducine.*,streamfilms.*##li [class*="dow"]
+ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
+ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
+ducine.*#$#.wrap { padding-top: 4vw!important; }
+eliteseries.club##.play_down
+emule-island.eu##.gplay-box
+enstream.club##a[class^="btn_"][href*=".php?"]
+enstream.club##[class="FPlayer"]
+eslint.org##.ea-type-text,.ea-placement
+/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,badfilter
+/adsbygoogle.js$script,important,domain=emule-island.eu
+/adsid/integrator.js$script,important
+/\.(.{2,})\/[s][w]\.(js)([^\w])?/
+/\?(op\=([\w]+))(\&(token\=[^\n]{6,}))?(\&error\_code\=\d)/$important
+/bouton_ads/*$image,domain=universanime.co
+filmcomplet.vip###syndic
+ghacks.net##.column-ad
+ghacks.net##.wide-ad
+gktorrents.net###vpnvpn
+google.*#@##bottomads
+google.*#@#a[href*="/aclk?"][data-al]:upward(2)
+groovypost.com##[class|="groov-adsense"]
+guru3d.com##.content3 > div:if(:-abp-contains(/Advertisement/))
+haenselblatt.com##p > div:if([id|=zx_ad_place])
+howtogeek.com##[class*="adslot"]
+howtogeek.com##[data-nosnippet="data-nosnippet"]
+illimitestreaming.co##[href^="https://syndication.optimizesrv.com/"]
+journaldesfemmes.fr##[id*="ctn_native_"]
+journaldesfemmes.fr##[id="ctn_infeed"]
+journaldunet.fr##.ads--insertor-casper,[id="ctn_infeed"]
+journaldunet.fr##[id^="ctn_native_"]
+justabouttv.fr#$#.wp-block-embed__wrapper:before { padding-top: 0 !important; }
+lacuillere.com##.advertisement
+laptopmag.com##.dfp-leaderboard-container
+laptopmag.com##.vid-present.van_vid_carousel
+laptopmag.com##[class*="taboola"]
+laptopmag.com##[data-feat-ref*="-feat-id-"]
+laptopmag.com##[id*="google_ads_iframe"]
+laptopmag.com##[id*="static-slot"]:if([id*="-preemptive-ad-"])
+lecrabeinfo.net##.langouste_abDetected
+livemint.com##.smartcastAd
+livemint.com##.trendingSimilarHeight
+livemint.com##[id^="adHeightstory"][class^="adHeight"]
+luxuretv.com##.adver,.adver-header,#vz_im_ad
+mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
+mail.yahoo.com##._yb_18qvw
+mail.yahoo.com##path:nth-of-type(3)
+majorgeeks.com##.highlight.content font:if(:-abp-contains(/-=- Advertisement -=-/))
+majorgeeks.com#$#.navigation-light { display: none !important; visibility: hidden !important; }
+maketecheasier.com##.in-content-ad
+!marmiton.org##+js(ta, preload, video)
+marmiton.org##[data-ad-cls="true"]
+!marmiton.org##[data-ad="banner_atf"]
+media-play.co##+js(window.open-defuser)
+mediafire.com#@#+js(addEventListener-defuser, /^(?:click|mousedown)$/)
+mediafire.com#@#+js(window.open-defuser)
+microsoft.com##.f-active
+microsoft.com##.switchOfficeHeroFirst
+mirrored.to##.centered > .row
+mirrored.to##.col-md-12.col-lg-4.col-sm-12 > .centered
+msn.com##.nativead
+msn.com##[data-nativead="1"]
+onextrapixel.com##.banner-container-content-ad
+open.spotify.com##._5c12c73a4f38b98340ea33803209fdc8-scss
+open.spotify.com##[class^="GenericModal__overlay"]
+oxtorrent.*##.truster
+oxtorrent.*##[href="/go/vpn"]
+oxtorrent.unblockit.bz###vpnvpn
+papystreamings.net##.Players:if(:-abp-contains(/4K/))
+papystreamings.net##.Playersbelba
+pcmag.com##ins [id|="incontent"]
+phhsnews.com##ins div:if(:-abp-contains(/Advertisement/))
+pornbraze.com###closeButton
+pornhub.com#$##pb_block { background-color: transparent !important; }
+pornhub.com#$#.adsbytrafficjunky,.adLinks,#pb_top_bar { display: none !important; visibility: hidden !important; }
+youporn.com#@#video[autoplay][loop]
+youporn.com##[id^="new_zone_"]
+@@||app.titsx.com^$domain=porn-plus.com
+programme-tv.net##.esiCard:if(*>[href*="jeu-concours"])
+programmersought.com##.adsloading
+rakuten.tv##.ogSVm.styles__StyledText-sc-q929yx-0
+ranker.com##.ad
+raw.githubusercontent.com#@#+js(set, Document.prototype.interestCohort, undefined)
+reddit.com##.promotedlink
+reddit.com#$#.promotedlink { display: none !important; visibility: hidden !important; }
+rjno1.com###qr4cd31
+rjno1.com#@#.adsbygoogle:upward(1)
+searchenginejournal.com##.avert-text
+searchenginejournal.com##.sss_slot
+searchenterprisedesktop.techtarget.com##.ad
+serie-streaming.io###videoplayer
+serie-streaming.io##[class^="btn_"][class$="_"]
+series-stream.*##[id|="fake-player"]
+series-stream.*#?##lecteur:if(#videoplay[src*="/streamer.php?p=2"])
+series-stream.*#?#.player:if([class*="download"])
+series-stream.*#?#.player:if([class*="hdplayer"])
+series-stream.co##li [data-url*="1fichier."]
+series-stream.co##li [data-url*="uptobox."]
+series-stream.co##li [data-url*="videovip."]
+series-stream.co##[class|="an"][class$="-xpb"][target]
+star.fr,canaltp.fr#@#+js(set, Document.prototype.interestCohort, undefined)
+streamdeouf.net##li:if([onclick^="goDown"])
+streamfilms.*##li:if(:-abp-contains(/stream hd/))
+streamfilms.co##.an-adn
+streaming1.co##.dow
+streaming1.co#$##videoplay[src*="videostreaming.html"] { display: none !important; visibility: hidden !important; }
+streamingfrance.com##iframe:nth-of-type(3)
+streamingfrance.com#@#[class*="btn"][class*="mr-"][href]
+teamos-hkrg.com##[class^="AdskeeperC"]
+teamos-hkrg.com##[href*="debrid-link-premium-link-generator-and-seedbox"]
+teamos-hkrg.com##[id*="ScriptRoot"]
+teamos-hkrg.com##[id^="AdskeeperC"]
+techradar.com###in-article.ad-unit
+techradar.com##.ad-unit
+techradar.com##.vid-present.van_vid_carousel
+telecharger.freedownloadmanager.org##.ad_strip_noline.adv_wrap
+telerama.fr##.cmp-refuse
+thegayuk.com##.code-block
+tomsguide.fr##.ad-banner
+universanime.co##[src*="/bouton_ads/"]
+unixmen.com##.adthrive-ad
+vad.cineville.fr#@#+js(set, Document.prototype.interestCohort, undefined)
+vars.hotjar.com#@#+js(set, Document.prototype.interestCohort, undefined)
+voirfilms1.net,xcloud1.money##[class^=pubButton]
+voirfilms1.net,xcloud1.money#$#a [class|="btn"] { visibility: hidden; }
+voirseries.fun##.fx-row.lien:if(.t_down)
+vshare.eu#@#+js(aopr.js, BetterJsPop)
+vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
+webcrawler.com,results.excite.com##[class^="ads-"]
+webtor.io##.ad
+webtor.io##.mejs__logo-button.mejs__button
+wiflix.*##+js(ra, target|href, .video-player a)
+wiflix.*##+js(window.open-defuser)
+wincert.net##.primisslate
+windowscentral.com##div:nth-of-type(7)
+www.addictivetips.com##.mv-ad-box
+www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
+www.universanime.co##[src*="/bouton_ads/"]
+yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
+younetu.com##+js(window.open-defuser)
+!youtube.com###clarify-box
+youtube.com###YtKevlarVisibilityIdentifier
+!youtube.com#$##clarify-box { display: none !important; visibility: hidden !important; }
+youtube.com#@##clarify-box
+youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
+youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
+youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
+youtube.com#@##merch-shelf
+youtube.com#@##offer-module
+youtube.com#@#.appbar-guide-menu-layout, .gstl_50.sbdd_a, .js-yt-header.yt-header, ytd-mini-guide-renderer.ytd-app, app-drawer[opened=""][persistent=""], ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer:style(position: absolute !important;)
+youtube.com#@#.html5-endscreen
+youtube.com#@#.ytp-chrome-top
+youtube.com#@#.ytp-chrome-top-buttons
+youtube.com#@#.ytp-paid-content-overlay
+youtube.com#@#.ytp-share-button
+youtube.com#@#+js(aopr.js, watermark)
+youtube.com#@#+js(remove-attr, data-tracking-id, a)
+youtube.com#@#+js(remove-attr, data-tracking-id, button)
+youtube.com#@#+js(remove-attr, data-tracking-id, label)
+youtube.com#@#[id="button"]:has([aria-label*="vocal"])
+||*.cloudfront.net^*realytics*.js
+||*google*^linkredirect?dest=*youtube.com*$redirect=noop.txt
+||*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
+||2mdn.net/*.mp4$important,redirect=noop-1s.mp4
+||2mdn.net^$media,redirect=noop-1s.mp4
+||adclick.g.doubleclick.net/*/click$removeparam
+||developpez.com^compter-*$image,domain=developpez.net,important
+||googleads.g.doubleclick.net/pagead/*$subdocument,important
+||letsmakeiteasy.tech/detroitchicago/*
+||mixer.zippycast.io/*/stream?$removeparam=/(.*\_id|url)/
+||networkmanag.com/lu/desk/*.php$subdocument
+||serving-sys.com^$media,redirect=noop-1s.mp4
+||spotxcdn.com^$media,redirect=noop-1s.mp4
+||ssl.google-analytics.com/__utm.gif$image,important
+||wiflix.*/*.mp4$media
+||wiflix.*/voir/*.php$subdocument
+||www.google.com/images/cleardot.gif$image
+||yahoodns.net/i.gif$image
+||voirfilms.al/analytics/*
+||translate.google.*/_/TranslateWebserverUi/gen204/*$removeparam
+!
+||barscreative1.com^
+||befirstcdn.com^
+||benoopto.com^
+||bepiletussar.casa^
+||besmeargleor.com^
+||betotodilea.com^
+||blbpinivsxwnf.xyz^
+||boriskink.com^
+||buyseoblog.com^
+||c90752b0b5.com^
+||caiteesh.net^
+||cdnativepush.com^
+||saunasupposedly.com^
+||chatango.com^$3p
+!
+!/piwik.js$script,redirect=matomo
+ettvdl.*,ettvcentral.*#@#[class*=pl-]
+###vpnvpn
+@@||socketio.cloudconvert.com^
+extreme-down.plus#@#a[href*=".php"]
+://$script,third-party,domain=oxtorrent.be|oxtorrent.com|oxtorrent.cc|oxtorrent.bz|oxtorrent.pw|oxtorrent.ws|oxtorrent.cx|oxtorrent.pe|oxtorrent.ph|oxtorrent.tv|oxtorrent.io|oxtorrent.nz|oxtorrent.sh|oxtorrent.pl|oxtorrent.vc
+sourceforge.net#@#.cmpboxWelcomeGDPR
+tpbpiratebayproxy.com##.nord-stiky
+tpbpiratebayproxy.com##.nord-stiky--on
+tpbproxypirate.com##[id="float"]
+##[id*="vpnvpn"]
+##a[href^="https://vpn"][target]
+##a[data-tracking*="vpn"][target]
+glodls.*,gtdb.*##a[href*="://bit.ly/"]
+##.dssdffds
+1337x.*#@#a[href*=" "]
+tagbom.com/*/vast.php$important,redirect=noopvast-2.0
+@@||weather.opera-api.com^$third-party,app=opera.exe
+@@||autoupdate.geo.opera.com^$important,app=opera.exe
+||merchandise.opera-api.com/api/teaser-gx^$important,app=opera.exe
+/192\.243\.59\.(\w+)/$network
+/45\.133\.44\.(\w+)/$network
+/142\.0\.204\.(\w+)/$network
+/168\.119\.25\.(\w+)/$network
+/\[(2a01\:4f8\:)+([\w:]+)+([\w:+])+:+([\w]+)\]/$network
+@@||www.cmb.fr^$important,document
+@@||www.rjno1.com^$important,document
+@@||facemorph.me^$important,document
+commentcamarche.net##.ads--insertor-avoid
+@@||sdk.privacy-center.org^
+streamdeouf.*##.g-buttons
+#@#:xpath(//div[.//div[contains(@tabindex,"-1") and contains(@aria-modal,"true")]])
+skdesu.com##.code-block
+/\?op\=([\w]+)(.+)?/$xmlhttprequest,_,important,redirect-rule==nooptext
+/vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,___,domain=imasdk.googleapis.com
+streamingvf.fun##[id^=ads_]
+||*.tf1.fr/*youbora*
+!tf1.fr##[class^="MaxBanner_container_"]
+!tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
+mail.yahoo.com##[data-test-id="right-rail-ad"]
+mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
+!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithForm', 'trueFunc')
+!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithImage', 'trueFunc')
+!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithScript', 'trueFunc')
+!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest', 'trueFunc')
+!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest', 'trueFunc')
+||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,domain=tf1.fr
+||trafficjunky.net^$popup
+||cdn.jsdelivr.net/gh/prebid/$xmlhttprequest,_,important
+! VOIR PB video marmiton: https://www.marmiton.org/recettes/recette_pate-brisee-vite-faite_31639.aspx
+@@||vidoza.net$media,_,~third-party
+@@||uloadcdn.com^$media
+@@||userload.co^$subdocument
+||permutive.com/*/watson$domain=marmiton.org
+||qiota.com^
+@@||geo.dailymotion.com$subdocument,media
+||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
+||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
+/generate_204$xhr,domain=youtube.com
+||heatmap.it^$domain=marmiton.org,important
+@@||uqload.com^$script,image,_,~third-party
+||googleoptimize.com^$important
+/sentry(-cdn)?\.(io|com)/
+@@||ads.stickyadstv.com^$badfilter
+||ads.stickyadstv.com^$important,___,domain=tf1.fr
+||trafficjunky.com/invocation/popunder$redirect=popads-dummy
+!||mediarithmics.com^$domain=tf1.fr
+||mediarithmics.com^
+! COLOR iframe fix
+/vidoza\.net/embed/#$#body { color: whitesmoke; }
+/uptostream\.com\/iframe/#$#body { color: whitesmoke; }
+!
+!parismatch.com##[id^="match2_"]
+parismatch.com##[class|="lmn"]
+@@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
+##a[onclick="openAuc();"]
+![title*="Free money"]
