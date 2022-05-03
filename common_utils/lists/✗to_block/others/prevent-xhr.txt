@@ -42,11 +42,12 @@
 !*#%#//scriptlet('prevent-element-src-loading', 'img', '/xiti\.com\/hit\.xiti')
 animedigitalnetwork.fr#%#//scriptlet('prevent-element-src-loading', 'script', 'kompanion.min.js')
 animedigitalnetwork.fr#%#//scriptlet('prevent-element-src-loading', 'script', 'googletagmanager.com')
-!#%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1') for vudeo.net script '/400/*/?oo=1&aab=1' && dood.pm script '/5/*/?oo=1&aab=1'
+! example #%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1') for vudeo.net script '/400/*/?oo=1&aab=1' && dood.pm script '/5/*/?oo=1&aab=1'
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1')
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.min.js')
-!*#%#//scriptlet('prevent-element-src-loading', 'script', '/sentry\.io\/.*\/\?sentry\_/')
-~facebook.com#%#//scriptlet('prevent-element-src-loading', 'img', '/facebook\.com\/tr\?id\=/')
+uqload.com#%#//scriptlet('prevent-element-src-loading', 'script', '/5/')
+uqload.com#%#//scriptlet('prevent-element-src-loading', 'script', '/400/')
+~facebook.com#%#//scriptlet('prevent-element-src-loading', 'img', 'facebook.com/tr?id=')
 !#endif
 !
 !
@@ -140,9 +141,10 @@ suzihaza.com##+js(no-fetch-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
 suzihaza.com##+js(no-xhr-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
 tf1.fr##+js(no-fetch-if, url:/\/(.+)youbora(.+)/ method:GET)
 vidoza.net##+js(abort-current-inline-script, document.createElement, script, /\/vidoz{1,2}a\.js/)
-vudeo.net##+js(abort-current-inline-script, document.createElement, script, /_(\w+|\d+)/)
+uqload.com,vudeo.net##+js(abort-current-inline-script, document.createElement, script, /_(\w+|\d+)/)
 vudeo.net##+js(no-fetch-if, method:GET)
 vudeo.net##+js(no-xhr-if, method:GET)
+!dood.pm,uqload.com,vudeo.net##+js(no-fetch-if, url:/^https?\:\/\/[^\s]+\/[45](00)?\/\d{7}/)
 !dood.pm,vudeo.net##+js(no-fetch-if, url:/^https?:\/\/[^\s]+\.(com|net)\/[\w]+\.js(on)?$/ method:GET)
 !dood.pm,vudeo.net##+js(no-xhr-if, url:/^https?:\/\/[^\s]+\.(com|net)\/[\w]+\.js(on)?$/ method:GET)
 !dood.pm##+js(no-fetch-if, /(?!(dood(.+)?\.(.{2,})).*)/, method:GET)
@@ -288,3 +290,4 @@ youtube.com##+js(no-xhr-if, jnn-pa.googleapis.com method:POST)
 ! ---------
 !*#@#+js(no-xhr-if, servedby.adbility-media.com)
 !hqq.tv,yandexcdn.com#@#+js(no-fetch-if, url:/\/video_ads\/(.+)/ method:GET)
+
