@@ -3109,9 +3109,9 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 !||mediarithmics.com^$domain=tf1.fr
 ||mediarithmics.com^
 ! COLOR iframe fix
-/uqload\.com\/embed/#$#body { color: whitesmoke; }
-/vidoza\.net\/embed/#$#body { color: whitesmoke; }
-/uptostream\.com\/iframe/#$#body { color: whitesmoke; }
+uqload.com#$#body { color: whitesmoke; }
+vidoza.net#$#body { color: whitesmoke!important; }
+uptostream.com#$#body { color: whitesmoke; }
 !
 !parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
