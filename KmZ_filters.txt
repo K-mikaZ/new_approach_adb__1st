@@ -3112,5 +3112,7 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 !parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
-##a[onclick="openAuc();"]
-![title*="Free money"]
+##a[onclick="openAuc();"][title*="Free money"]
+@@||viewsb.com^$subdocument
+||animedigitalnetwork.fr/vendor/ads/*$~third-party,important,badfilter
+pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
