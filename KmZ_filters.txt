@@ -105,7 +105,7 @@ di.fm##[class*="upsell"]
 di.fm##[class*="ad-co"]
 di.fm##[class|="go-premium"]
 di.fm#@#[class*="premium"]
-di.fm###page-wrap:style(bottom:6vh
+!di.fm###page-wrap:style(bottom:6vh
 di.fm##+js(set.js, maxLoadTime, undefined)
 zenradio.com##[class|="remove-ads"]
 deezer.com##.conversion-banner
@@ -471,7 +471,7 @@ streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
 streamings-vf.com##[href="#"]
 ||spotxcdn.com^$media
-lesseriestreaming.com#$#body,html{ overflow: visible
+lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 lesseriestreaming.com##[class*="my-3"]
 ||i.ibb.co/*/*-annuler-*.png
 voirseries.*##.homi:if([class*="masha_"])
@@ -480,19 +480,19 @@ voirseries.*##[class|="custom-fake"]
 voirseries.*##[class|="fake"]
 voirseries.*##[id|="fake"]
 voirseries.*##.AV
-voirseries.*#$#[id^="lecteur"]{display: inline
-voirseries.*#$#[id^="GoPlayer"]{display: inline
-voirseries.*#$#[id^="vide"][src*="/online.php?"] { margin-top: 0px
+!!!voirseries.*#$#[id^="lecteur"]{display: inline
+!!!voirseries.*#$#[id^="GoPlayer"]{display: inline
+!!!voirseries.*#$#[id^="vide"][src*="/online.php?"] { margin-top: 0px
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
-voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999
-voirseries.*#$##video-responsive, iframe#videoplay { top: -3px
-voirseries.*#$#.holder .backdrobb { top: 0px
-voirseries.*#$#[id="videoplay"]{ top: -10px
-voirseries.*#$##video-responsive .load { top: -30px
+!!!voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999
+!!!voirseries.*#$##video-responsive, iframe#videoplay { top: -3px
+!!!voirseries.*#$#.holder .backdrobb { top: 0px
+!!!voirseries.*#$#[id="videoplay"]{ top: -10px
+!!!voirseries.*#$##video-responsive .load { top: -30px
 voiranime.com##div:if(> div > a[href*="/signup/"])
 voiranime.com##li:if(> span > a:has-text(/VIP\#/))
 voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
-voiranime.com##iframe:style(max-width:110vh
+!!!voiranime.com##iframe:style(max-width:110vh
 voiranime.com##a[href*="/signup/"]
 voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
@@ -569,7 +569,7 @@ ettvdl.*,ettvcentral.*##[id*="vpn"]
 ettvdl.*,ettvcentral.*##.download_liinks_a
 ettvdl.*,ettvcentral.*###kr_cr
 ettvdl.*,ettvcentral.*##.kr_cr
-torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh
+!!!torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh
 torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
 torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[(contains(@class,"download")) or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
@@ -619,14 +619,14 @@ mail.yahoo.com###rightrailad-LREC
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 mail.yahoo.com##[data-test-id="pencil-ad"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
-mail.yahoo.com#$#.Z_qc, [data-test-id="comms-properties-bar"]{display:flex
-mail.yahoo.com#$#.r_P.C_ZamTeg.cdPFi_ZamTeg.ab_C.D_F{position:absolute
-mail.yahoo.com#$#[data-test-id="comms-properties"]{display:flex
-mail.yahoo.com#$#[data-test-id="comms-properties"]>*,[data-test-id="icon-btn-settings"]{margin:14px 0 0 0
-mail.yahoo.com#$#[data-test-id="comms-properties-bar"]{height:unset
+!!!mail.yahoo.com#$#.Z_qc, [data-test-id="comms-properties-bar"]{display:flex
+!!!mail.yahoo.com#$#.r_P.C_ZamTeg.cdPFi_ZamTeg.ab_C.D_F{position:absolute
+!!!mail.yahoo.com#$#[data-test-id="comms-properties"]{display:flex
+!!!mail.yahoo.com#$#[data-test-id="comms-properties"]>*,[data-test-id="icon-btn-settings"]{margin:14px 0 0 0
+!!!mail.yahoo.com#$#[data-test-id="comms-properties-bar"]{height:unset
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"]
 mail.yahoo.com##[title="Hide Advertisement"]
-mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
+!!!mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
 mail.yahoo.com##[data-test-id="settings-link-label"]
 mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:if(a[target="_blank"])
 @@?adcount=$xhr,domain=mail.yahoo.com
