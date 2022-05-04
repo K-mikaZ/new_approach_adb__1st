@@ -613,22 +613,25 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||analytics.yahoo.com^
 ||gemini.yahoo.com^
 ||geo.query.yahoo.com^
+||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 mail.yahoo.com##.callout-default.left
 mail.yahoo.com##.rightRailAdContainer
 mail.yahoo.com###rightrailad-LREC
-||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 mail.yahoo.com##[data-test-id="pencil-ad"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
-!!!mail.yahoo.com#$#.Z_qc, [data-test-id="comms-properties-bar"]{display:flex
-!!!mail.yahoo.com#$#.r_P.C_ZamTeg.cdPFi_ZamTeg.ab_C.D_F{position:absolute
-!!!mail.yahoo.com#$#[data-test-id="comms-properties"]{display:flex
-!!!mail.yahoo.com#$#[data-test-id="comms-properties"]>*,[data-test-id="icon-btn-settings"]{margin:14px 0 0 0
-!!!mail.yahoo.com#$#[data-test-id="comms-properties-bar"]{height:unset
-mail.yahoo.com##[data-test-id="right-rail-hidead-btn"]
-mail.yahoo.com##[title="Hide Advertisement"]
-!!!mail.yahoo.com##[data-test-id="right-rail-ad"]:upward(1)
+! https://www.reddit.com/r/uBlockOrigin/search/?q=Yahoo%20mail&restrict_sr=1&sr_nsfw=
+! https://www.reddit.com/r/uBlockOrigin/comments/gsp9hf/how_to_hide_the_entire_yahoo_mail_classic_side_ad/#t1_fseo5s9
 mail.yahoo.com##[data-test-id="settings-link-label"]
 mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:if(a[target="_blank"])
+mail.yahoo.com##.Z_qc, [data-test-id="comms-properties-bar"]:style(display: flex !important; -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; flex-direction: column !important; -webkit-box-flex: 1 !important; flex-grow: 1 !important;)
+mail.yahoo.com##.r_P.C_ZamTeg.cdPFi_ZamTeg.ab_C.D_F:style(position: absolute !important; top: 4px !important;)
+mail.yahoo.com##[data-test-id="comms-properties"]:style(display: flex !important; -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; flex-direction: column !important;)
+mail.yahoo.com##[data-test-id="comms-properties"]>* , [data-test-id="icon-btn-settings"]:style(margin: 14px 0 0 0 !important;)
+mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !important; padding-top: 70px !important;)
+mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
+mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
+mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
+mail.yahoo.com##[data-test-id="right-rail-ad"]
 @@?adcount=$xhr,domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
