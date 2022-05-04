@@ -405,7 +405,6 @@ allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
 allocine.fr##+js(aopr.js, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
 ||acceptable.allocine.fr^$important
-||animedigitalnetwork.fr/vendor/ads/*$1p,important
 animedigitalnetwork.fr##.adn-opm2-block-rectangle
 animedigitalnetwork.fr##.adn-pave
 animedigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
@@ -1706,7 +1705,6 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/(?
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@||compte.tf1.fr^$domain=tf1.fr
-@@||ads.stickyadstv.com^
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 |https://googleads.g.doubleclick.net/pagead/id$badfilter
 @@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -3103,7 +3101,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 @@||uqload.com^$script,image,_,~third-party
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
-@@||ads.stickyadstv.com^$badfilter
 ||ads.stickyadstv.com^$important,___,domain=tf1.fr
 ||trafficjunky.com/invocation/popunder$redirect=popads-dummy
 !||mediarithmics.com^$domain=tf1.fr
@@ -3112,11 +3109,11 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 uqload.com#$#body { color: whitesmoke; }
 vidoza.net#$#body { color: whitesmoke!important; }
 uptostream.com#$#body { color: whitesmoke; }
-!
 !parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
 ##a[onclick="openAuc();"][title*="Free money"]
 @@||viewsb.com^$subdocument
-||animedigitalnetwork.fr/vendor/ads/*$~third-party,important,badfilter
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
+@@||faphouse.com^$subdocument,third-party$domain=xhamster.com
+||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
