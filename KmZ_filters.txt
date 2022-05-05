@@ -2449,8 +2449,6 @@ youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 @@||videobin.co/hls
 radiotunes.com,di.fm##[class*="premium"]
 dpstream.*##[href^="/Inscription" i]
-dpstream.*#$#div:if(> h3:has-text(/KEYWORDS :/)) p{ color: transparent
-dpstream.*#$#div:if(> h3:has-text(/KEYWORDS :/)) h3{ color: transparent
 dpstream.*#$#.fstory-content { display: none
 dpstream.*##.player:has-text(/1fichier|uptobox/)
 /(run(ative)?\-|t)syndicate\.(.{3})/
@@ -2469,13 +2467,6 @@ dpstream.*##.player:has-text(/1fichier|uptobox/)
 @@||vendorlist.consensu.org/vendorlist.json$xhr,domain=tf1.fr
 @@||cdn.tagcommander.com/cmp-api/cmp.js$script,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,1p,redirect=noopmp3-0.1s
-||*.tf1.fr/*youbora*
-youtube.com#$#iframe[name="passive_signin"]{ display: none
-youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none
-youtube.com##.ytd-consent-bump-lightbox
-youtube.com###content-wrapper
-youtube.com##.yt-live-chat-banner-renderer
-youtube.com###visible-banners > .yt-live-chat-banner-manager
 open.spotify.com#@#+js(nowebrtc.js)
 @@||vshare.eu/player_sda.html
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
@@ -2981,10 +2972,16 @@ www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="ad
 www.universanime.co##[src*="/bouton_ads/"]
 yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
 younetu.com##+js(window.open-defuser)
+youtube.com#$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
+youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none !important; visibility: hidden !important; }
+youtube.com##.ytd-consent-bump-lightbox
+youtube.com###content-wrapper
+youtube.com##.yt-live-chat-banner-renderer
+youtube.com###visible-banners > .yt-live-chat-banner-manager
 !youtube.com###clarify-box
-youtube.com###YtKevlarVisibilityIdentifier
 !youtube.com#$##clarify-box { display: none !important; visibility: hidden !important; }
 youtube.com#@##clarify-box
+youtube.com###YtKevlarVisibilityIdentifier
 youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
 youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
 youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
