@@ -3117,3 +3117,11 @@ parismatch.com##[class|="lmn"]
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
 @@||faphouse.com^$subdocument,third-party$domain=xhamster.com
 ||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
+@@||faphouse.com^$subdocument,third-party$domain=xhamster.com
+||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
+! anti adblock detect
+@@||adnxs.com^$image,important
+||appconsent.io^$badfilter
+@@||appconsent.io^$important
+@@||amplify.outbrain.com^$important
+!
