@@ -26,10 +26,6 @@
 !  !#include /adguardspecific.txt
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1')
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.min.js')
-~facebook.com#%#//scriptlet('prevent-element-src-loading', 'img', 'facebook.com/tr?id=')
-#%#//scriptlet('prevent-element-src-loading', 'script', 'impertinentitaliangeological.com')
-#%#//scriptlet('prevent-element-src-loading', 'script', 'waust.at')
-#%#//scriptlet('prevent-element-src-loading', 'script', 'amung.us')
 !#endif
 !
 !
@@ -103,10 +99,10 @@ highstream.tv##+js(no-fetch-if, url:/\/dl\?op\=/ method:GET)
 highstream.tv##+js(no-xhr-if, url:/\/dl\?op\=/ method:GET)
 rakuten.tv##+js(no-fetch-if, /(prod-babieca\.rakuten\.tv\/streamings$)/ method:PUT)
 rakuten.tv##+js(no-xhr-if, /(prod-babieca\.rakuten\.tv\/streamings$)/ method:PUT)
-reddit.com##+js(no-fetch-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
-reddit.com##+js(no-xhr-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
-reddit.com##+js(no-fetch-if, url:/reddit\.com\/api\/jail\//)
-reddit.com##+js(no-xhr-if, url:/reddit\.com\/api\/jail\//)
+!reddit.com##+js(no-fetch-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
+!reddit.com##+js(no-xhr-if, url:/^https:\/\/www\.reddit\.com$/ method:POST)
+!reddit.com##+js(no-fetch-if, url:/reddit\.com\/api\/jail\//)
+!reddit.com##+js(no-xhr-if, url:/reddit\.com\/api\/jail\//)
 soundcloud.com##+js(no-fetch-if, /(promoted|audio-ads\?)/ method:GET)
 soundcloud.com##+js(no-xhr-if, /(promoted|audio-ads\?)/ method:GET)
 suzihaza.com##+js(no-fetch-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
