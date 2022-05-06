@@ -2129,6 +2129,7 @@ passeportsante.net##.dynInFeed
 /((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 *$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /\/prebid(-)?/$script
+@@/\/prebid(-)?/$script,domain=marmiton.org,important
 ||facebook.com/dlite/skywalker_topic$xhr,badfilter
 voir-film.*##[class="tagssz"]
 voir-film.*##.nnbg13 > div:nth-of-type(2)
