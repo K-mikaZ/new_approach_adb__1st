@@ -27,6 +27,9 @@
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1')
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.min.js')
 ~facebook.com#%#//scriptlet('prevent-element-src-loading', 'img', 'facebook.com/tr?id=')
+#%#//scriptlet('prevent-element-src-loading', 'script', 'impertinentitaliangeological.com')
+#%#//scriptlet('prevent-element-src-loading', 'script', 'waust.at')
+#%#//scriptlet('prevent-element-src-loading', 'script', 'amung.us')
 !#endif
 !
 !
@@ -46,7 +49,6 @@ dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.m
 !*##+js(no-fetch-if, amung.us)
 !*##+js(no-fetch-if, 7vid.net)
 !*##+js(no-fetch-if, o333o.com)
-!*##+js(no-fetch-if, waust.at)
 !*##+js(no-fetch-if, impertinentitaliangeological.com)
 !*##+js(no-fetch-if, qualaroo.com)
 !*##+js(no-fetch-if, criteo.net)
@@ -56,8 +58,7 @@ dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.m
 !*##+js(no-fetch-if, abtasty.com)
 !*##+js(no-fetch-if, cpx.to)
 !
-!imasdk.googleapis.com##+js(no-xhr-if, 'gw.api.animedigitalnetwork.fr method:GET')
-!imasdk.googleapis.com##+js(no-xhr-if, '/(fwmrm\.net\/ad/g\/1\?)/ method:GET')
+! Ads inject with imasdk.googleapis.com, like  imasdk.googleapis.com##+js(no-xhr-if, 'gw.api.animedigitalnetwork.fr method:GET'),  imasdk.googleapis.com##+js(no-xhr-if, '/(fwmrm\.net\/ad/g\/1\?)/ method:GET')
 imasdk.googleapis.com##+js(no-fetch-if, method:GET)
 imasdk.googleapis.com##+js(no-xhr-if, method:GET)
 !
@@ -136,6 +137,8 @@ hqq.to,hqq.tv,yandexcdn.com,younetu.com##+js(no-xhr-if, url:/^https?:\/\/[0-9a-z
 hqq.to,hqq.tv,yandexcdn.com,younetu.com##+js(no-fetch-if, url:/^https?:\/\/[^\s]+\.com\/([a-z0-9]{2}\/){3}[0-9a-f]{32}\.js(on)?$/)
 hqq.to,hqq.tv,yandexcdn.com,younetu.com##+js(no-xhr-if, url:/^https?:\/\/[^\s]+\.com\/([a-z0-9]{2}\/){3}[0-9a-f]{32}\.js(on)?$/ method:GET)
 !
+!*##+js(no-fetch-if, amplitude.com)
+!*##+js(no-xhr-if, amplitude.com)
 !*##+js(no-fetch-if, adnxs.com)
 !*##+js(no-xhr-if, adnxs.com)
 !*##+js(no-fetch-if, agloowie.com)
@@ -204,6 +207,8 @@ hqq.to,hqq.tv,yandexcdn.com,younetu.com##+js(no-xhr-if, url:/^https?:\/\/[^\s]+\
 !*##+js(no-xhr-if, estat.com)
 !*##+js(no-fetch-if, segment.io)
 !*##+js(no-xhr-if, segment.io method:POST)
+!*##+js(no-fetch-if, barscreative1.com)
+!*##+js(no-xhr-if, barscreative1.com)
 *##+js(no-fetch-if, ads.spotx.tv)
 *##+js(no-xhr-if, ads.spotx.tv)
 *##+js(no-fetch-if, apprefaculty.pro)
