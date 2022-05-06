@@ -271,6 +271,10 @@ youtube.com##+js(no-xhr-if, jnn-pa.googleapis.com method:POST)
 ~newrelic.com##+js(no-fetch-if, newrelic.com)
 ~smartadserver.*##+js(no-fetch-if, smartadserver.com)
 ~smartadserver.*##+js(no-xhr-if, smartadserver.com)
+!marmiton.org (not working for dmxleo.dailymotion.com & estat.com)
+marmiton.org##+js(no-fetch-if, /(pagead2.googlesyndication.com)/ method:GET)
+marmiton.org##+js(no-xhr-if, /(3lift.com|4dex.io|adnxs.com|criteo.com|justpremium.com|permutive.com|pubgw.yahoo.com|pubmatic.com|richaudience.com)/ method:POST)
+marmiton.org##+js(no-xhr-if, /(bliink.io|casalemedia.com|fundingchoicesmessages.google.com|pagead2.googlesyndication.com|rlcdn.com|rubiconproject.com|stickyadstv.com)/ method:GET)
 !
 ! does not work
 !*##+js(no-fetch-if, sentry.io)
