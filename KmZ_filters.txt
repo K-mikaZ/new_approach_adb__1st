@@ -2655,7 +2655,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
 ||*$websocket,_,~third-party,important,___,domain=deezer.com
 ##a[href*="/Russia_Vs_Ukraine_War3"][target]
-@@||windows.net^
 ! --------------
 !
 !
