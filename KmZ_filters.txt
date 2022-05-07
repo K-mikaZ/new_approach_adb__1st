@@ -65,7 +65,6 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##+js(aopr.js, watermark)
 youtube.com#@##consent-bump:remove()
 @@||consent.youtube.com^$domain=youtube.com
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
@@ -93,7 +92,6 @@ youtube.com#@##consent-bump:remove()
 /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 &frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-/pagead\/((?
 twitter.com##div[data-testid="trend"]
 twitter.com#?#div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
 twitter.com##a[href^="/i/trends"]
@@ -149,7 +147,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 /gabo-receiver-service/*$xhr,domain=spotify.com,important
 ||adeventtracker.spotify.com^$xhr,important,domain=spotify.com,badfilter
 /(.*)spotify(.*)\.akamaized\.net/$media,redirect=noop-0.1s.mp3
-/api(?
 ||spclient.wg.spotify.com/ads/*
 ||spclient.wg.spotify.com/ad-logic/*
 ||spotify.com/melody/*/logging/$important,badfilter
@@ -472,26 +469,16 @@ streamings-vf.com##[href="#"]
 ||spotxcdn.com^$media
 lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 lesseriestreaming.com##[class*="my-3"]
-||i.ibb.co/*/*-annuler-*.png
 voirseries.*##.homi:if([class*="masha_"])
 voirseries.*##[class|="md"]
 voirseries.*##[class|="custom-fake"]
 voirseries.*##[class|="fake"]
 voirseries.*##[id|="fake"]
 voirseries.*##.AV
-!!!voirseries.*#$#[id^="lecteur"]{display: inline
-!!!voirseries.*#$#[id^="GoPlayer"]{display: inline
-!!!voirseries.*#$#[id^="vide"][src*="/online.php?"] { margin-top: 0px
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
-!!!voirseries.*#$#[id^="vide"][src*="/streamer.php?"]{ z-index: 99999
-!!!voirseries.*#$##video-responsive, iframe#videoplay { top: -3px
-!!!voirseries.*#$#.holder .backdrobb { top: 0px
-!!!voirseries.*#$#[id="videoplay"]{ top: -10px
-!!!voirseries.*#$##video-responsive .load { top: -30px
 voiranime.com##div:if(> div > a[href*="/signup/"])
 voiranime.com##li:if(> span > a:has-text(/VIP\#/))
 voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
-!!!voiranime.com##iframe:style(max-width:110vh
 voiranime.com##a[href*="/signup/"]
 voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
@@ -541,7 +528,7 @@ ultimate-catch.eu#?#.mg-widget:if(:-abp-has([src*=":"]))
 ultimate-catch.eu#?#.mg-widget:if(> :-abp-contains(/abonne/i))
 irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gigya.com/js/gigya.js$script
-6play.fr##+js(aopr.js, getYouboraConfig)
+!!! 6play.fr##+js(aopr.js, getYouboraConfig)
 @@||gelf.m6web.fr^$xhr,domain=6play.fr
 @@||pc.middleware.6play.fr^$xhr,domain=6play.fr
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
