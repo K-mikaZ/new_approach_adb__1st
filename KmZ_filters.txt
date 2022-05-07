@@ -3112,3 +3112,20 @@ pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][
 !
 ||zebestof.com^$important,third-party,___,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
+
+@@/\/prebid(-)?/$script,domain=marmiton.org,important
+@@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
+@@||googletagmanager.com^$domain=marmiton.org,important
+@@||amazon-adsystem.com^$domain=marmiton.org,important
+||bliink.io/vast/*$xhr,redirect-rule=noopvast-4.0,important
+||api.permutive.com^
+||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
+##[id^="google_ads_iframe_"]
+marmiton.org##[id^="pegasus_banner_atf"]
+marmiton.org##.unfyas, .pegasus_status_rendered
+||beop.io^$domain=marmiton.org,important
+||sskzlabs.com^$domain=marmiton.org,important
+||mediasquare.fr^$domain=marmiton.org,important
+||cloudfunctions.net^$domain=marmiton.org,important
+@@||lequipe.fr/thirdparty/prebid.js
+||currency.prebid.org/latest.json$xmlhttprequest,third-party
