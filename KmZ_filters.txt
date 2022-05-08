@@ -1081,6 +1081,7 @@ stream-serie.net#$##option-1{height:100%}
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
 /([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
 /service-worker.js$script,~third-party
+||nsaneforums.com/index.php?*serviceworker*
 @@/workbox-sw.js$script,domain=epicgames.com
 @@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
@@ -1812,7 +1813,6 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||easyplayer.cc^$badfilter
 ||pxlad.io^$badfilter
 ||fr.vid.web.acsta.net^$badfilter
-||abtasty.com^$badfilter
 ||gscounters.eu1.gigya.com^$badfilter
 ||tse1.mm.bing.net^$badfilter
 ||mm.bing.net^$badfilter
@@ -3055,7 +3055,7 @@ skdesu.com##.code-block
 /\?op\=([\w]+)(.+)?/$xmlhttprequest,_,important,redirect-rule==nooptext
 /vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,___,domain=imasdk.googleapis.com
 streamingvf.fun##[id^=ads_]
-||*.tf1.fr/*youbora*
+||*.tf1.fr/*youbora*$script,redirect=noopjs
 !tf1.fr##[class^="MaxBanner_container_"]
 !tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
 mail.yahoo.com##[data-test-id="right-rail-ad"]
@@ -3106,10 +3106,8 @@ pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][
 ||appconsent.io^$badfilter
 @@||appconsent.io^$important
 @@||amplify.outbrain.com^$important
-!
 ||zebestof.com^$important,third-party,___,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
-
 @@/\/prebid(-)?/$script,domain=marmiton.org,important
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 @@||googletagmanager.com^$domain=marmiton.org,important
@@ -3126,3 +3124,5 @@ marmiton.org##.unfyas, .pegasus_status_rendered
 ||cloudfunctions.net^$domain=marmiton.org,important
 @@||lequipe.fr/thirdparty/prebid.js
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
+||abtasty.com^
+||imasdk.googleapis.com^$badfilter
