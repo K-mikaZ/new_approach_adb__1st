@@ -26,13 +26,15 @@
 !  !#include /adguardspecific.txt
 !  !IMPORTANT, DO NOT USE REGEX HERE
 !
+*#@%#//scriptlet('prevent-element-src-loading', 'script', 'fwmrm.net')
+!
 *#%#//scriptlet('prevent-element-src-loading', 'img', '/ads.stickyadstv.com|ade.googlesyndication.com|adsafeprotected.com|doubleclick.net|exelator.com|fwmrm.net|google-analytics.com|imrworldwide.com|rlcdn.com|serving-sys.com|tapad.com|yadro.ru|mc.yandex.ru|ybp.yahoo.com/')
 rakuten.fr#%#//scriptlet('prevent-element-src-loading', 'img', '/?cpkg_none=')
 tf1.fr#%#//scriptlet('prevent-element-src-loading', 'img', 'slpubmedias.tf1.fr')
 mail.yahoo.com#%#//scriptlet('prevent-element-src-loading', 'img', '/comscore_beacon/')
 !*#%#//scriptlet('prevent-element-src-loading', 'img', 'facebook.com/tr?id=') ! DOES NOT WORK
 !mc.yandex.ru#%#//scriptlet('prevent-element-src-loading', 'img', '/watch/') ! DOES NOT WORK
-*#%#//scriptlet('prevent-element-src-loading', 'script', '/adswizz.com|amung.us|estat.com|fwmrm.net|mediarithmics.com|newrelic.com|optimizesrv.com|quantserve.com|scorecardresearch.com|sentry-cdn.com|static.cloudflareinsights.com|waust.at/')
+*#%#//scriptlet('prevent-element-src-loading', 'script', '/adswizz.com|amung.us|estat.com|mediarithmics.com|newrelic.com|optimizesrv.com|quantserve.com|scorecardresearch.com|sentry-cdn.com|static.cloudflareinsights.com|waust.at/')
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/?oo=1&aab=1')
 dood.pm,vudeo.net#%#//scriptlet('prevent-element-src-loading', 'script', '/tag.min.js')
 *#%#//scriptlet('prevent-element-src-loading', 'script', '/script/ncsu.js')
@@ -283,7 +285,7 @@ soundcloud.com##+js(no-xhr-if, /(promoted|audio-ads\?)/ method:GET)
 soundcloud.com##+js(no-xhr-if, method:POST)
 suzihaza.com##+js(no-fetch-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
 suzihaza.com##+js(no-xhr-if, /(\/asset\/.*\.min\.js\?.*\=.*\&)/ method:GET)
-tf1.fr##+js(no-fetch-if, /2mdn.net|fwmrm.net|slpubmedias.tf1.fr|tr.snapchat.com/)
+tf1.fr##+js(no-fetch-if, /2mdn.net|slpubmedias.tf1.fr|tr.snapchat.com/)
 tf1.fr##+js(no-fetch-if, method:HEAD)
 tf1.fr##+js(no-fetch-if, url:/(.+)delivery\.tf1\.fr\/pub(.*)/)
 tf1.fr##+js(no-fetch-if, url:/\/(.+)youbora(.+)/ method:GET)
