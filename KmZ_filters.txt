@@ -1079,8 +1079,8 @@ stream-serie.net#$##option-1{height:100%}
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,important,redirect=fingerprint2.js
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
-/([\/]+)([\w]+(?:([-~_.]+))+)(?:[s][w]+)\.js/$script
-@@/([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?
+/([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
+/service-worker.js$script,~third-party
 @@/workbox-sw.js$script,domain=epicgames.com
 @@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
@@ -2329,7 +2329,6 @@ jetanimes.com,wow-films.*,streampourvous.com##+js(ra.js, target|href|rel, #click
 jetanimes.com#@##fakeplayer
 ||cinez.*/acceder-video.php
 mstream.website###adbdetect
-|http*://vidoza.net/sw.js$important
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class|="sticky-ad"]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class^="webedia"]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
@@ -2650,7 +2649,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 !
 &adPlayhead=$badfilter
 &adsExpected=$badfilter
-|http*://vidoza.net/sw.js$important,badfilter
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
 ||*$media,domain=tf1.fr,badfilter
@@ -2832,7 +2830,6 @@ eslint.org##.ea-type-text,.ea-placement
 /([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,badfilter
 /adsbygoogle.js$script,important,domain=emule-island.eu
 /adsid/integrator.js$script,important
-/\.(.{2,})\/[s][w]\.(js)([^\w])?/
 /\?(op\=([\w]+))(\&(token\=[^\n]{6,}))?(\&error\_code\=\d)/$important
 /bouton_ads/*$image,domain=universanime.co
 filmcomplet.vip###syndic
