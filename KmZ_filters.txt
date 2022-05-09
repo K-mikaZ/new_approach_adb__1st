@@ -398,10 +398,9 @@ filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
 zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
-allocine.fr##+js(aopr.js, wadsBeforeStart)
+!allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
+!allocine.fr##+js(aopr.js, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
-||acceptable.allocine.fr^$important
 animedigitalnetwork.fr##.adn-opm2-block-rectangle
 animedigitalnetwork.fr##.adn-pave
 animedigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
