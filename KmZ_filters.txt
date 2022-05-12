@@ -1085,7 +1085,6 @@ stream-serie.net#$##option-1{height:100%}
 @@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
-||*$websocket
 @@||hlsplay.com^$websocket
 @@||wss.jetload.net/cache$websocket,1p
 @@||tracker.openwebtorrent.com^$websocket
@@ -1099,6 +1098,7 @@ stream-serie.net#$##option-1{height:100%}
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 @@||nperf.net^$websocket
 @@||cox.net^$websocket
+@@||commentsengine.com^$websocket
 /ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
 wss://net-announce*$websocket,important
 ||clearadnetwork.com$websocket,important
