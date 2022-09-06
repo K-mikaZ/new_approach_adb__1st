@@ -1,3 +1,4 @@
+[uBlock Origin]
 !
 ! Title: [✔][list][new wave] "Rules, filtering, exception list and blocking antisocial third-party" - by K-mik@Z
 ! Version: 1

@@ -1,3 +1,4 @@
+[uBlock Origin]
 !
 ! Title: [✔][list][new wave] "Rules, Filtering, exception list and no-chromecast" - by K-mik@Z
 ! Version: 1
