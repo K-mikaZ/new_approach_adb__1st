@@ -2446,7 +2446,7 @@ dpstream.*##.player:has-text(/1fichier|uptobox/)
 ||fwmrm.net^$~object,third-party,badfilter
 @@||v.fwmrm.net/ad/g/1$domain=6play.fr,badfilter
 ||fwmrm.net/ad/*/*?*$important
-@@||tf1.fr$generichide,elemhide
+@@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
 *$xhr,redirect-rule=nooptext,domain=tf1.fr
