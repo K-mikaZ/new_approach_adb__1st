@@ -674,13 +674,12 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id="oscuridad"]
 ##[id^="contenidobloqueado"]
 ##[id*="_ad_native_"]
-##[id="player_v_DIV_1"]
 ##[id^="playerOver"]
 ##[id|="ad-tracking"][style*="display: none"]
 ##[class="X"]
 ##[class*="lefermeur"]
-##[class*="mButton"][href*=".php"][target="_blank"]
-##[class*="myButton"][href*=".php"][target="_blank"]
+##[class*="mButton"][href*=".php"][target]
+##[class*="myButton"][href*=".php"][target]
 ##[class|="custom-fake"]
 ##[class^="masha_"]
 ##[class*="contadorads"]
@@ -2918,7 +2917,13 @@ series-stream.co##li [data-url*="uptobox."]
 series-stream.co##li [data-url*="videovip."]
 series-stream.co##[class|="an"][class$="-xpb"][target]
 star.fr,canaltp.fr#@#+js(set, Document.prototype.interestCohort, undefined)
-streamdeouf.net##li:if([onclick^="goDown"])
+streamdeouf.*##li:if([onclick^="goDown"])
+streamdeouf.*##.player[data-url="/video-streaming.html"]
+streamdeouf.*###lecteur:if([src*="/video-streaming.html"])
+streamdeouf.*##.lien.fx-row[data-url="/videovip.html"]
+streamdeouf.*##[id|="fake-player"]
+streamdeouf.*##[class="movie-xpb"]
+streamdeouf.*##[class="an-xpb"]
 streamfilms.*##li:if(:-abp-contains(/stream hd/))
 streamfilms.co##.an-adn
 streaming1.co##.dow
