@@ -3131,3 +3131,17 @@ marmiton.org##.unfyas, .pegasus_status_rendered
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||abtasty.com^
 ||imasdk.googleapis.com^$badfilter
+younetu.com#$#body { color: whitesmoke; }
+||eiendomsmegler1.no^
+||affluentshinymulticultural.com^
+||blockadsnot.com^
+||tipcatscarola.com^
+*##.placeholder-pub_dfp
+terrafemina.com##.fc-dialog-overlay
+evous.fr##div.pub
+/video-vip.html$domain=juststream.org
+juststream.org##.movie-xyz
+dood.*#$#body { color: whitesmoke!important; }
+||testingmetriksbre.ru^$third-party
+||plainmarshyaltered.com^$third-party
+||freighthealaudience.com^$third-party
