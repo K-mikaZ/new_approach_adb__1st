@@ -2919,7 +2919,7 @@ series-stream.co##[class|="an"][class$="-xpb"][target]
 star.fr,canaltp.fr#@#+js(set, Document.prototype.interestCohort, undefined)
 streamdeouf.*##li:if([onclick^="goDown"])
 streamdeouf.*##.player[data-url="/video-streaming.html"]
-streamdeouf.*###lecteur:if([src*="/video-streaming.html"])
+!streamdeouf.*###lecteur:if([src*="/video-streaming.html"])
 streamdeouf.*##.lien.fx-row[data-url="/videovip.html"]
 streamdeouf.*##[id|="fake-player"]
 streamdeouf.*##[class="movie-xpb"]
