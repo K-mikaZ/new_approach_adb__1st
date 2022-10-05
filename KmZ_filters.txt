@@ -682,6 +682,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="myButton"][href*=".php"][target]
 ##[class*="mButton"][href*=".php"][rel^="no"]
 ##[class*="myButton"][href*=".php"][rel^="no"]
+##a[href*=".php"][rel^="no"][target]
 ##[class|="custom-fake"]
 ##[class^="masha_"]
 ##[class*="contadorads"]
@@ -3134,16 +3135,25 @@ marmiton.org##.unfyas, .pegasus_status_rendered
 ||abtasty.com^
 ||imasdk.googleapis.com^$badfilter
 younetu.com#$#body { color: whitesmoke; }
-||eiendomsmegler1.no^
-||affluentshinymulticultural.com^
-||blockadsnot.com^
-||tipcatscarola.com^
 *##.placeholder-pub_dfp
 terrafemina.com##.fc-dialog-overlay
 evous.fr##div.pub
 /video-vip.html$domain=juststream.org
 juststream.org##.movie-xyz
+###btnpub
 dood.*#$#body { color: whitesmoke!important; }
-||testingmetriksbre.ru^$third-party
-||plainmarshyaltered.com^$third-party
-||freighthealaudience.com^$third-party
+||testingmetriksbre.ru^
+||plainmarshyaltered.com^
+||freighthealaudience.com^
+||quiaresp.com^
+||thraxgawks.guru^
+||collenwhr.website^
+||juristarx.cam^
+||syenitetatler.tech^
+||bigramtawed.tech^
+||puffwigtaxin.com^
+||eiendomsmegler1.no^
+||affluentshinymulticultural.com^
+||blockadsnot.com^
+||tipcatscarola.com^
+||histats.com^$third-party
