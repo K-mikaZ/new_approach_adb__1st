@@ -680,6 +680,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="lefermeur"]
 ##[class*="mButton"][href*=".php"][target]
 ##[class*="myButton"][href*=".php"][target]
+##[class*="mButton"][href*=".php"][rel^="no"]
+##[class*="myButton"][href*=".php"][rel^="no"]
 ##[class|="custom-fake"]
 ##[class^="masha_"]
 ##[class*="contadorads"]
