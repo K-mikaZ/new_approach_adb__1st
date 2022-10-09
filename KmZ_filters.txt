@@ -679,7 +679,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="X"]
 ##[class*="lefermeur"]
 ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
-##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])))
+##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
 ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 ##[class|="custom-fake"]
 ##[class^="masha_"]
