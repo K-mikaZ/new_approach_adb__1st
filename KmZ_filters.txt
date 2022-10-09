@@ -682,7 +682,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="myButton"][href*=".php"][target]
 ##[class*="mButton"][href*=".php"][rel^="no"]
 ##[class*="myButton"][href*=".php"][rel^="no"]
-##a[href*=".php"][rel^="no"][target]
 ##[class|="custom-fake"]
 ##[class^="masha_"]
 ##[class*="contadorads"]
