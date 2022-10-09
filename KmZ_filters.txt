@@ -3154,3 +3154,7 @@ dood.*#$#body { color: whitesmoke!important; }
 ||blockadsnot.com^
 ||tipcatscarola.com^
 ||histats.com^$third-party
+@@/cdn-cgi/challenge-platform/$xhr,script
+@@/pass_md5/$xhr
+||adsafeprotected.com^$badfilter
+||2mdn.net^$badfilter
