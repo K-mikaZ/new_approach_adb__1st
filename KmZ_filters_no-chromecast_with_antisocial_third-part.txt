@@ -1,3 +1,4 @@
+[uBlock Origin]
 !
 ! Title: [✔][list][new wave] "Rules, filtering, exception, blocking antisocial third-party and no chromecast" - by K-mik@Z
 ! Version: 1
