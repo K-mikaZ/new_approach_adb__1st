@@ -311,9 +311,10 @@ vidoza.net##.asg-label
 @@||vidtodo.com/js/jquery.min.js$script
 @@||vidtodo.com/js/xupload.js?v=2$script,domain=vidtod.me
 hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com##a[href*="mailto:support@netu.tv?subject=Video advertising"]
-/out.php$popup,domain=domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
+/out.php$popup,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 ||*$popup,3p,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 @@/fuckadblock.js?$script,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
+/js/disqusloader.js$important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 vizplay.icu##+js(aopr.js, Image)
 vizplay.icu##+js(aopr.js, 見妒見冰)
 vizplay.icu##+js(aopr.js, BetterJsPop)
