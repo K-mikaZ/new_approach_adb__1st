@@ -3168,3 +3168,4 @@ misterfilm.co###fakevideo
 ###fakevideo
 fakeplayer$~third-party
 *##.player:has(iframe[src*="fakeplayer"])
+@@||cfeucdn.com^$third-party,media,image,xhr
