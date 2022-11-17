@@ -1756,13 +1756,10 @@ voirseries.*#@#.adsBox
 @@||vidzstore.$ghide
 @@||netflix.com$ghide
 @@*$ghide,domain=femax20.com|fembed.com
-@@||hqq.$document
 @@||hqq.$inline-script
 @@||hqq.$ghide
-@@||netu.$document
 @@||netu.$inline-script
 @@||netu.$ghide
-@@||vizplay.$document
 @@||vizplay.$inline-script
 @@||vizplay.$ghide
 @@||waaw.$inline-script
@@ -2432,7 +2429,6 @@ youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 ||api.ipify.org^$domain=~ipify.org,badfilter
 @@||mc.yandex.ru^$~script,badfilter
 @@||hqq.*^$script,xhr,1p,badfilter
-@@||vizplay.$document,badfilter
 @@||mc.yandex.ru/metrika/*$domain=embed.mystream.to
 @@||videobin.co/hls
 radiotunes.com,di.fm##[class*="premium"]
