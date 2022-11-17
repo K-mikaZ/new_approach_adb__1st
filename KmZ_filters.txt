@@ -2710,7 +2710,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 !##[data-ad-host*="-pub-"]
 ##[data-ad-text="PUBLICITE"]
 ##[data-placeholder-text="Ad"]
-##div:if(>ins.adsbygoogle)
 #@#.advertisement:not(body)
 #@#+js(no-fetch-if, /adsbygoogle.js$/)
 #@#+js(remove-attr, data-tracking-id, a)
@@ -2719,6 +2718,8 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 #?#.player:-abp-has(>[data-ads-core])
 *##.adsbygoogle
+#@#div:if(>ins.adsbygoogle)
+latendresseencuisine.com##div:if(>ins.adsbygoogle)
 *##+js(ra, data-tracking-id, a)
 *##+js(ra, data-tracking-id, button)
 *##+js(ra, data-tracking-id, label)
