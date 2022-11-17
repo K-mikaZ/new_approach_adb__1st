@@ -3153,7 +3153,16 @@ dood.*#$#body { color: whitesmoke!important; }
 ||blockadsnot.com^
 ||tipcatscarola.com^
 ||histats.com^$third-party
+||rndskittytor.com^
+||cdnativepush.com^
 @@/cdn-cgi/challenge-platform/$xhr,script
 @@/pass_md5/$xhr
 ||adsafeprotected.com^$badfilter
 ||2mdn.net^$badfilter
+||youtube.com/embed/$domain=lunchboards.com,important
+@@||pagead2.googlesyndication.com^$domain=arte.tv
+||arte.tv/log-player/
+misterfilm.co###fakevideo
+###fakevideo
+fakeplayer$~third-party
+*##.player:has(iframe[src*="fakeplayer"])
