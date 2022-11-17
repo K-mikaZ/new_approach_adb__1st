@@ -1757,13 +1757,13 @@ voirseries.*#@#.adsBox
 @@||netflix.com$ghide
 @@*$ghide,domain=femax20.com|fembed.com
 @@||hqq.$inline-script
-@@||hqq.$ghide
+!@@||hqq.$ghide
 @@||netu.$inline-script
-@@||netu.$ghide
+!@@||netu.$ghide
 @@||vizplay.$inline-script
 @@||vizplay.$ghide
 @@||waaw.$inline-script
-@@||waaw.$ghide
+!@@||waaw.$ghide
 @@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 #@#[src*="://consent.google."]
 #@#+js(acis, atob, decodeURIComponent)
