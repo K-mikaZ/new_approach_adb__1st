@@ -1100,7 +1100,7 @@ stream-serie.net#$##option-1{height:100%}
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 @@||nperf.net^$websocket
 @@||cox.net^$websocket
-@@||commentsengine.com^$websocket
+@@||commentsengine.com^$websocket,script
 /ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
 wss://net-announce*$websocket,important
 ||clearadnetwork.com$websocket,important
