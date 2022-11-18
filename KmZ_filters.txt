@@ -227,6 +227,9 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||fiorenetwork.com^$3p,badfilter
 ||fiorenetwork.com$xhr,important
 ||fiorenetwork.com$xhr,redirect-rule=noopvast-3.0
+||bliink.io/vast/*$xhr,redirect-rule=noopvast-4.0,important
+||engine.phn.doublepimp.com/preroll.engine$third-party,redirect=noopvast-2.0
+||impactserving.com/preroll.engine$third-party,redirect=noopvast-2.0
 ||pubads.g.doubleclick.net/gampad/ads?sz=300x250*&output=vast*$xhr,redirect-rule=noopvast-3.0
 /ads_billets.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
 /ads.xml$xhr,domain=imasdk.googleapis.com,redirect-rule=noopvast-3.0
@@ -2619,10 +2622,12 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
 @@||*.css$stylesheet,_,~third-party
 @@/.*/$font,_,~third-party
-/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+!/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+@@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=(goodput|y(outube|t_live_broadcast))/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
+||jnn-pa.googleapis.com^$domain=youtube.com
 @@||fonts.gstatic.com^
 @@/embed$subdocument,media,_,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
@@ -3103,8 +3108,11 @@ parismatch.com##[class|="lmn"]
 @@||viewsb.com^$subdocument
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
 @@||faphouse.com^$subdocument,third-party$domain=xhamster.com
+lxax.com###parrot
+lxax.com##[class="hide"]
+||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
+||t.fujejo.xyz/redirect/$third-party
 ||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
-@@||faphouse.com^$subdocument,third-party$domain=xhamster.com
 ||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
 ! anti adblock detect
 @@||adnxs.com^$image,important
@@ -3117,7 +3125,6 @@ pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 @@||googletagmanager.com^$domain=marmiton.org,important
 @@||amazon-adsystem.com^$domain=marmiton.org,important
-||bliink.io/vast/*$xhr,redirect-rule=noopvast-4.0,important
 ||api.permutive.com^
 ||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
 ##[id^="google_ads_iframe_"]
