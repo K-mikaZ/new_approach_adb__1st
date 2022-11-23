@@ -163,6 +163,7 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
 ||adsafeprotected.com/vast/*skeleton.js$xhr,redirect-rule=noopvast-2.0
+||dailymotion.com/vast/video/*.xml?$important,redirect=noopvmap-1.0
 ||*&output=xml_vmap1$xhr,redirect-rule=noopvmap-1.0
 ||*vmap*$xhr,redirect-rule=noopvmap-1.0
 ||/*vmap$xhr,redirect-rule=noopvmap-1.0
@@ -266,6 +267,10 @@ output=xml_vmap1_vast4$xhr,important,redirect=noopvast-4.0
 ||kts.vasstycom.com/in/in_stream/*$xhr,important,redirect=noopvast-3.0
 ||doubleclick.net/dbm/vast?*$xhr,important,redirect=noopvast-4.0
 ||unified.adsafeprotected.com/v2/*$xhr,important,redirect=noopvast-4.0
+!||ads.stickyadstv.com^/*AdsSetup&protocolVersion=4*$redirect-rule=noopvast-4.0,important
+ads.*AdsSetup&protocolVersion=4*$xhr,redirect-rule=noopvast-4.0
+ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
+@@||cdn.viously.com/player/*/prebid.js
 mstream.*##+js(abort-on-property-read.js, open)
 mystream.to##+js(abort-on-property-read.js, open)
 mystream.to##+js(window.open-defuser.js)
@@ -1280,7 +1285,7 @@ wss://net-announce*$websocket,important
 ||mynsystems.com^$domain=~mynsystems.com
 ||ncaudienceexchange.com^$domain=~ncaudienceexchange.com
 ||neodatagroup.com^$domain=~neodatagroup.com
-||newrelic.com^$domain=~newrelic.com
+!||newrelic.com^$domain=~newrelic.com
 ||nexage.com^$domain=~nexage.com
 ||nxtck.com^$domain=~nxtck.com
 ||oath.com^$domain=~oath.com
@@ -1332,7 +1337,6 @@ wss://net-announce*$websocket,important
 ||ads2.uptobox.com^
 ||tfzznclztl.com^
 ||etoro.com^
-||cdn77.org^
 ||zuphaims.com^
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||uknown.uknown^
@@ -2248,6 +2252,11 @@ deezer.com##.ab-page-blocker
 ||mc.yandex.ru^$image
 ||exdynsrv.com^$important
 teen19porn.com###player_ad
+tnaflix.com##.improveADS
+freeporn.digital##.integrate,.artist,.whose
+xxxvideos.ink##.operation
+xhamster.com##.wio-pcam-thumb .item-container, .wio-pcams-widget .item-container
+@@||xhamster.com/embed/$important
 xhamster.com##.player-add-overlay
 xhamster.com##.underplayer
 xhamster.com##.ts-interstitial
@@ -2627,7 +2636,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=(goodput|y(outube|t_live_broadcast))/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
-||jnn-pa.googleapis.com^$domain=youtube.com
 @@||fonts.gstatic.com^
 @@/embed$subdocument,media,_,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
@@ -3169,7 +3177,7 @@ dood.*#$#body { color: whitesmoke!important; }
 ||2mdn.net^$badfilter
 ||youtube.com/embed/$domain=lunchboards.com,important
 @@||pagead2.googlesyndication.com^$domain=arte.tv
-||arte.tv/log-player/
+!||arte.tv/log-player/
 misterfilm.co###fakevideo
 ###fakevideo
 fakeplayer$~third-party
