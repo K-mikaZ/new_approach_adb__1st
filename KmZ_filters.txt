@@ -3196,4 +3196,4 @@ fakeplayer$~third-party
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 @@||gigya.com^$cookie
 @@||tf1.fr^$cookie
-!@@||mediainfo.tf1.fr^$domain=prod-player.tf1.fr
+@@||mediainfo.tf1.fr^$domain=tf1.fr
