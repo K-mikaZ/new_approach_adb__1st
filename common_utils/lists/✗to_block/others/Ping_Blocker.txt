@@ -10,20 +10,18 @@
 ! Verify if ping requests (but also beacon api && csp report) are currently sent by your browser with Ping Spotter.
 ! < https://armin.dev/apps/ping-spotter >
 
-!#if ping
-*$ping
+||*^$ping
+
 ! [FIX]
 !*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 !@@||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+
 ! [FIX] memory consumption too high
 @@/player-events/log/partial$ping,domain=vimeo.com
 ! because "AdGuard Tracking Protection filter"
 ||vimeocdn.com/add/player-stats?beacon=$badfilter
 @@/player-stats?beacon=$ping,domain=vimeo.com
-!#endif
 
-!#if xhr
 ! [fix] for those ping via xhr
 ! example "youboranqs01.com/ping"
 /ping?$xhr,empty
-!#endif
