@@ -3169,6 +3169,15 @@ dood.*#$#body { color: whitesmoke!important; }
 ||histats.com^$third-party
 ||rndskittytor.com^
 ||cdnativepush.com^
+||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
+!||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
+@@||dmcdn.net^
+@@||geo.dailymotion.com^
+@@||dm-event.net^$domain=geo.dailymotion.com
+@@||dmxleo.com^$domain=geo.dailymotion.com
+@@*$websocket,domain=geo.dailymotion.com
+||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
+||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@/cdn-cgi/challenge-platform/$xhr,script
 @@/pass_md5/$xhr
 ||adsafeprotected.com^$badfilter
