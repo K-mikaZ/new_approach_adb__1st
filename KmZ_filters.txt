@@ -125,7 +125,6 @@ soundcloud.com##.announcements
 soundcloud.com##.g-go-plus-marker-list
 soundcloud.com##article.mobileApps
 soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
-||audio-fa.scdn.co^
 open.spotify.com##+js(nowebrtc.js)
 open.spotify.com##[data-template*="sponsored-"]
 open.spotify.com##[aria-label*="premium" i]
@@ -3182,4 +3181,11 @@ misterfilm.co###fakevideo
 ###fakevideo
 fakeplayer$~third-party
 *##.player:has(iframe[src*="fakeplayer"])
-@@||cfeucdn.com^$third-party,media,image,xhr
+@@||cfeucdn.com^$third-party,media,image,xhr! Le cookie Cloudflare:
+! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
+! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
+@@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+@@||youtube.com^$cookie=VISITOR_INFO1_LIVE
+@@||gigya.com^$cookie
+@@||tf1.fr^$cookie
+@@||mediainfo.tf1.fr^$domain=prod-player.tf1.fr
