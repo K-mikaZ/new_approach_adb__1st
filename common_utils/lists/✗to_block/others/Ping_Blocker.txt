@@ -1,5 +1,9 @@
+!
+! Title: [⚙][addon] "Ping Blocker" - by K-mik@Z
+! Expires: 1 days
+! Author: K-mik@Z
 
-! Ping Blocker ( Stop sites from tracking the links you visit through hyperlink auditing. )
+! Description: ( Stop sites from tracking the links you visit through hyperlink auditing. )
 
 ! No need extension for that ( https://chrome.google.com/webstore/detail/ping-blocker/jkpocifanmihboebfhigkjcdihgfcdnb )
 
