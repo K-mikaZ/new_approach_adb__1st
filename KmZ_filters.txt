@@ -2459,7 +2459,7 @@ dpstream.*##.player:has-text(/1fichier|uptobox/)
 @@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
-*$xhr,redirect-rule=nooptext,domain=tf1.fr
+||*$xhr,redirect-rule=nooptext,domain=tf1.fr
 @@||footprint.net^$xhr,domain=prod-player.tf1.fr
 @@||vendorlist.consensu.org/vendorlist.json$xhr,domain=tf1.fr
 @@||cdn.tagcommander.com/cmp-api/cmp.js$script,domain=tf1.fr
@@ -3188,4 +3188,4 @@ fakeplayer$~third-party
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 @@||gigya.com^$cookie
 @@||tf1.fr^$cookie
-@@||mediainfo.tf1.fr^$domain=prod-player.tf1.fr
+!@@||mediainfo.tf1.fr^$domain=prod-player.tf1.fr
