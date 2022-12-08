@@ -1659,13 +1659,10 @@ wss://net-announce*$websocket,important
 ||ligatus.*/angular-tag.js$script,important,redirect=ligatus_angular-tag.js
 ||widgets.outbrain.*/outbrain.js$script,important,redirect=outbrain-widget.js
 ||smartadserver.*.js$script,important,redirect=smartadserver.com.js
-||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch.com/beacon.js,badfilter
 ||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
 ||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch_beacon.js
-||*/metrika/watch.js$script,redirect=metrika-yandex-watch
-||*metrika*/tag.js$script,redirect=metrika-yandex-tag
-||*/yandex-metrica-watch/watch$script,redirect=metrika-yandex-watch
-||*/yandex-metrica-watch/tag$script,redirect=metrika-yandex-tag
+/(.*)[\W]{1}metri[c|k]a[\W]{1}watch(.*)/$important,script,redirect=metrika-yandex-watch
+/(.*)[\W]{1}metri[c|k]a[\W]{1}tag(.*)/$important,script,redirect=metrika-yandex-tag
 ||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
 ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
 ||google-analytics.com/analytics.js$script,redirect-rule=google-analytics.com/analytics.js,badfilter
