@@ -2627,16 +2627,15 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 !/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /\/prebid(\/|$)/$important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
-@@||*.css$stylesheet,_,~third-party
-@@/.*/$font,_,~third-party
 !/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=(goodput|y(outube|t_live_broadcast))/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
-@@||fonts.gstatic.com^
+@@/.*/$stylesheet,font,_,~third-party
 @@/embed$subdocument,media,_,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
+@@||fonts.gstatic.com^
 ||dood.video/favicon.ico?
 @@||jetload.net$subdocument,media
 @@||dotvideo.cc^$subdocument,image,script,font
@@ -2651,6 +2650,21 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
 ||*$websocket,_,~third-party,important,___,domain=deezer.com
 ##a[href*="/Russia_Vs_Ukraine_War3"][target]
+@@||mediainfo.tf1.fr^$domain=tf1.fr
+!!! https://github.com/AdguardTeam/AdguardFilters/pull/102134
+! Bonus n°1  —  Websites from the TF1 galaxy …
+! TODO: Change AG_defineProperty to scriptlet when this issue will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/65
+tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithForm', 'trueFunc')
+tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithImage', 'trueFunc')
+tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithScript', 'trueFunc')
+tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest', 'trueFunc')
+tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest', 'trueFunc')
+! Bonus n°2  —  Hides the bottom banner (self-promotion)
+www.tf1.fr##div[class^="MaxBanner_container_"]
+www.tf1.fr##div[class^="App_bannerContainer_"]
+! Bonus n°3  —  In order to be consistent
+||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,domain=tf1.fr
 ! --------------
 !
 !
