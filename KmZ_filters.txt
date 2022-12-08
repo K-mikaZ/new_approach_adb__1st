@@ -3182,6 +3182,13 @@ dood.*#$#body { color: whitesmoke!important; }
 ||cdnativepush.com^
 ||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
 !||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
+/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
+wss://net-announce*$websocket,important
+||clearadnetwork.com$websocket,important
+||*.hostcontent.live$websocket,important
+||*.space:*$websocket,important
+||alugha.com/graphql$websocket,important
+||socket.tidio.co$websocket,important
 @@||dmcdn.net^
 @@||geo.dailymotion.com^
 @@||dm-event.net^$domain=geo.dailymotion.com
@@ -3189,6 +3196,8 @@ dood.*#$#body { color: whitesmoke!important; }
 @@*$websocket,domain=geo.dailymotion.com
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
+@@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
+@@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xhr,script
 @@/pass_md5/$xhr
 ||adsafeprotected.com^$badfilter
