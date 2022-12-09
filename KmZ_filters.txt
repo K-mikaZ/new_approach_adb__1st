@@ -267,7 +267,7 @@ output=xml_vmap1_vast4$xhr,important,redirect=noopvast-4.0
 ||doubleclick.net/dbm/vast?*$xhr,important,redirect=noopvast-4.0
 ||unified.adsafeprotected.com/v2/*$xhr,important,redirect=noopvast-4.0
 !||ads.stickyadstv.com^/*AdsSetup&protocolVersion=4*$redirect-rule=noopvast-4.0,important
-ads.*AdsSetup&protocolVersion=4*$xhr,redirect-rule=noopvast-4.0
+ads.*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect-rule=noopvast-4.0
 ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
 @@||cdn.viously.com/player/*/prebid.js
 mstream.*##+js(abort-on-property-read.js, open)
