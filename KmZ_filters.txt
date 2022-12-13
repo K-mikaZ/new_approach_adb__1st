@@ -3108,7 +3108,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 /generate_204$xhr,domain=youtube.com
-||heatmap.it^$domain=marmiton.org,important
 @@||uqload.com^$script,image,_,~third-party
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
@@ -3149,10 +3148,6 @@ lxax.com##[class="hide"]
 ##[id^="google_ads_iframe_"]
 marmiton.org##[id^="pegasus_banner_atf"]
 marmiton.org##.unfyas, .pegasus_status_rendered
-||beop.io^$domain=marmiton.org,important
-||sskzlabs.com^$domain=marmiton.org,important
-||mediasquare.fr^$domain=marmiton.org,important
-||cloudfunctions.net^$domain=marmiton.org,important
 @@||lequipe.fr/thirdparty/prebid.js
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||abtasty.com^
