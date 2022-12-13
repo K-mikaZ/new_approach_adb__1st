@@ -3214,3 +3214,24 @@ fakeplayer$~third-party
 @@||gigya.com^$cookie
 @@||tf1.fr^$cookie
 @@||mediainfo.tf1.fr^$domain=tf1.fr
+@@||youtube.com$generichide
+@@||youtube.com/youtubei/*/log_event
+||commandersact.com^$badfilter
+toonanime.*#$##adslot { min-height: 15px !important; }
+marmiton.org##div[data-ad="banner_atf"]
+@@|http*:*/ima3.js|$script,xmlhttprequest,badfilter
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
+@@||freeplayervideo.com^$subdocument,websocket
+@@||telyn610zoanthropy.com^$subdocument,image,script
+@@||voe.sx^$subdocument
+@@||sbfull.com^$subdocument
+@@||sblongvu.com^$subdocument,image,script
+@@||analytics.tiktok.com^$domain=marmiton.org,important
+||pegasus.unifygroup.com^$important
+||prismamedia-com.videoplayerhub.com^
+||prismamedia.com^
+||sirdata.io^
+||px-cloud.net^
+||myvisualiq.net^
+||marazma.com^
