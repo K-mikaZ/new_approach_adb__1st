@@ -49,3 +49,6 @@ packetlosstest.com#@#+js(nowebrtc)
 
 ! [FIX] discord.com
 discord.com#@#+js(nowebrtc)
+
+@@stun:stun.toonanime.xyz^$domain=lb.toonanime.xyz,important
+
