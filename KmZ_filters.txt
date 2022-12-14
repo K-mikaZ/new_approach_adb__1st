@@ -3230,8 +3230,26 @@ marmiton.org##div[data-ad="banner_atf"]
 @@||analytics.tiktok.com^$domain=marmiton.org,important
 ||pegasus.unifygroup.com^$important
 ||prismamedia-com.videoplayerhub.com^
-||prismamedia.com^
+||wysistat.com^
+||api.optinproject.com^
+||prismashop.commander1.com^
+||img-static.com^
+||id5-sync.com^
+/prisma.gif?
+/prisma-tag/
+||ct.pinterest.com^
+||zeotap.com^
+||prismamedia.com^$~1p
 ||sirdata.io^
 ||px-cloud.net^
 ||myvisualiq.net^
 ||marazma.com^
+! ADS (from Allow nonintrusive advertising, but inverted)
+||^upapi=true
+/pcs/*view?xai=$ping,xmlhttprequest
+!
+||prismamedia-com.*
+||d1z2jf7jlzjs58.cloudfront.net^
+||cdn.parsely.com^
+||parsely.com^
+||nexx360.io^
