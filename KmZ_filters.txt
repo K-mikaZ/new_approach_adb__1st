@@ -251,8 +251,8 @@ output=xml_vmap1_vast4$xhr,important,redirect=noopvast-4.0
 ||*/vast/4.2$xhr,domain=~rakuten.tv,redirect-rule=noopvast-4.2
 /vast/*_vast=4$xhr,redirect-rule=noopvast-4.0
 ||*AdsSetup&protocolVersion=4.0$xhr,redirect=noopvast-4.0
-||*AdsSetup&protocolVersion=4.1$xhr,redirect=noopvast-4.1
-||*AdsSetup&protocolVersion=4.2$xhr,redirect=noopvast-4.2
+!||*AdsSetup&protocolVersion=4.1$xhr,redirect=noopvast-4.1
+!||*AdsSetup&protocolVersion=4.2$xhr,redirect=noopvast-4.2
 ! https://videos.allocine.fr/p-dp-vast2/ or https://goutee.top/p-dp-vast2/ ...
 /\/p\-dp\-vast2\//$redirect=noopvast-2.0,_,important
 /\/p\-dp\-vast3\//$redirect=noopvast-3.0,_,important
