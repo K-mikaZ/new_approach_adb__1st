@@ -1255,8 +1255,6 @@ wss://net-announce*$websocket,important
 ||brand-display.com^$domain=~brand-display.com
 ||cpx.to^$domain=~cpx.to
 ||creative-serving.com^$domain=~creative-serving.com
-||criteo.com^$domain=~criteo.com
-||criteo.net^$domain=~criteo.net
 ||crwdcntrl.net^$domain=~crwdcntrl.net
 ||datafront.co^$domain=~datafront.co
 ||de17a.com^$domain=~de17a.com
