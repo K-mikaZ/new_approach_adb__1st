@@ -3135,10 +3135,8 @@ lxax.com##[class="hide"]
 @@||adnxs.com^$image,important
 ||appconsent.io^$badfilter
 @@||appconsent.io^$important
-@@||amplify.outbrain.com^$important
 ||zebestof.com^$important,third-party,___,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
-@@/\/prebid(-)?/$script,domain=marmiton.org,important
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 @@||googletagmanager.com^$domain=marmiton.org,important
 ||permutive.com^
@@ -3274,6 +3272,7 @@ marmiton.org##div[data-ad="banner_atf"]
 ||digidip.net^$important
 ||cedexis.com^
 @@/ad.js$domain=streamtape.com|streamta.pe|stapadblockuser.*
+!@@/\/prebid(-)?/$script,domain=marmiton.org,important
 streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(rc.js, ad|google-ad|doubleclick|skyscraper, #adb)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(ra.js, style, #adb)
