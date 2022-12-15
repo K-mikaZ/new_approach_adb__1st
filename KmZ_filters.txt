@@ -265,7 +265,10 @@ output=xml_vmap1_vast4$xhr,important,redirect=noopvast-4.0
 ||vast.yomeno.xyz^$xhr,important,redirect=noopvast-3.0
 ||kts.vasstycom.com/in/in_stream/*$xhr,important,redirect=noopvast-3.0
 ||doubleclick.net/dbm/vast?*$xhr,important,redirect=noopvast-4.0
-||unified.adsafeprotected.com/v2/*$xhr,important,redirect=noopvast-4.0
+||unified.adsafeprotected.com/*&vastVersion=1&*$important,redirect=noopvast-1.0
+||unified.adsafeprotected.com/*&vastVersion=2&*$important,redirect=noopvast-2.0
+||unified.adsafeprotected.com/*&vastVersion=3&*$important,redirect=noopvast-3.0
+||unified.adsafeprotected.com/*&vastVersion=4&*$important,redirect=noopvast-4.0
 !||ads.stickyadstv.com^/*AdsSetup&protocolVersion=4*$redirect-rule=noopvast-4.0,important
 ads.*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect-rule=noopvast-4.0
 ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
