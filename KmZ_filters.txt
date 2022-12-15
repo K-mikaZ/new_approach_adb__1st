@@ -1750,7 +1750,6 @@ voirseries.*#@#.adsBox
 /googima.js|$badfilter
 /googima.js$script,badfilter
 /googima.js|$script,badfilter
-@@/\/(go{2}g(le)?([-_.]+)?)?ima([\d]{1})?(\.min)?\.js/$script
 @@||lic.drmtoday.com^$xhr
 @@||licensing.bitmovin.com^
 @@||perr.h-cdn.com/hola_player/license_init
@@ -3223,8 +3222,8 @@ fakeplayer$~third-party
 toonanime.*#$##adslot { min-height: 15px !important; }
 marmiton.org##div[data-ad="banner_atf"]
 @@|http*:*/ima3.js|$script,xmlhttprequest,badfilter
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima3
+/googima.js$script,important,redirect=google-ima3
 @@||freeplayervideo.com^$subdocument,websocket
 @@||telyn610zoanthropy.com^$subdocument,image,script
 @@||voe.sx^$subdocument
