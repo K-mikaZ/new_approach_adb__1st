@@ -2316,19 +2316,19 @@ ultimate-catch.eu##[src^="https://www.play-asia.com"]
 ||chivoufe.com^
 ||psaughun.com^
 @@||streamta.pe^$generichide
-/stat/view*$domain=streamta.pe|streamtape.com
+/stat/view*$domain=streamta.pe|streamtape.com|stapadblockuser.*
 ||streamtape.*/ad.js$script,important,badfilter
 ||streamta.pe/ad.js$script,important,badfilter
-@@/ad.js$domain=streamtape.com|streamta.pe
-streamtape.com,streamta.pe##+js(window.open-defuser.js)
-streamtape.com,streamta.pe##+js(rc.js, ad|google-ad|doubleclick|skyscraper, #adb)
-streamtape.com,streamta.pe##+js(ra.js, style, #adb)
-streamtape.com,streamta.pe##+js(ra.js, class, #adb)
-streamtape.com,streamta.pe##[id="adb"]
-streamtape.com,streamta.pe##body > div:nth-child(2)
-streamtape.com,streamta.pe#@#.plyr-overlay
-streamtape.com,streamta.pe##div:nth-of-type(6)
-streamtape.com,streamta.pe##div[style*="position:"][style*="inset: 0px"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index:"]
+@@/ad.js$domain=streamtape.com|streamta.pe|stapadblockuser.*
+streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
+streamtape.com,streamta.pe,stapadblockuser.*##+js(rc.js, ad|google-ad|doubleclick|skyscraper, #adb)
+streamtape.com,streamta.pe,stapadblockuser.*##+js(ra.js, style, #adb)
+streamtape.com,streamta.pe,stapadblockuser.*##+js(ra.js, class, #adb)
+streamtape.com,streamta.pe,stapadblockuser.*##[id="adb"]
+streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
+streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
+streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
+streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="inset: 0px"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index:"]
 ||adeventtracker.spotify.com^$xhr,important,domain=spotify.com,redirect=empty
 /gabo-receiver-service/*$xhr,domain=spotify.com,important,badfilter
 @@||cdnjs.cloudflare.com^$important
@@ -3261,4 +3261,3 @@ marmiton.org##div[data-ad="banner_atf"]
 @@||tapecontent.net^$image,media,domain=stapadblockuser.xyz
 @@||stapadblockuser.xyz^$generichide,subdocument,xmlhttprequest,script,image,media
 @@||stapadblockuser.xyz/get_video$media
-streamtape.com,streamta.pe,stapadblockuser.xyz##+js(window.open-defuser.js)
