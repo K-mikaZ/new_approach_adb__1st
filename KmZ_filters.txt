@@ -3144,8 +3144,7 @@ lxax.com##[class="hide"]
 @@/\/prebid(-)?/$script,domain=marmiton.org,important
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 @@||googletagmanager.com^$domain=marmiton.org,important
-@@||amazon-adsystem.com^$domain=marmiton.org,important
-||api.permutive.com^
+||permutive.com^
 ||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
 ##[id^="google_ads_iframe_"]
 marmiton.org##[id^="pegasus_banner_atf"]
@@ -3229,7 +3228,6 @@ marmiton.org##div[data-ad="banner_atf"]
 @@||voe.sx^$subdocument
 @@||sbfull.com^$subdocument
 @@||sblongvu.com^$subdocument,image,script
-@@||analytics.tiktok.com^$domain=marmiton.org,important
 ||pegasus.unifygroup.com^$important
 ||prismamedia-com.videoplayerhub.com^
 ||wysistat.com^
@@ -3255,3 +3253,12 @@ marmiton.org##div[data-ad="banner_atf"]
 ||cdn.parsely.com^
 ||parsely.com^
 ||nexx360.io^
+||notifpush.com^
+||prmutv.co^
+*/extraanalyticsdata/*^$important
+||analytics.tiktok.com^
+||map.cookieless-data.com^$image
+@@||tapecontent.net^$image,media,domain=stapadblockuser.xyz
+@@||stapadblockuser.xyz^$generichide,subdocument,xmlhttprequest,script,image,media
+@@||stapadblockuser.xyz/get_video$media
+streamtape.com,streamta.pe,stapadblockuser.xyz##+js(window.open-defuser.js)
