@@ -1703,7 +1703,7 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@||compte.tf1.fr^$domain=tf1.fr
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
-youtube.com#%#//scriptlet('prevent-fetch', '/.*\/pagead\/(.*)?/ method:/GET/', 'noopPromiseResolve')
+||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
 youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
