@@ -1705,7 +1705,7 @@ voirseries.*#@#.adsBox
 @@||compte.tf1.fr^$domain=tf1.fr
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 |https://googleads.g.doubleclick.net/pagead/id$badfilter
-@@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})/pagead/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||googleads.g.doubleclick.net/pagead/id$xhr,domain=youtube.com,important
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
 @@||googlesyndication.com^$domain=googlesyndication.com
