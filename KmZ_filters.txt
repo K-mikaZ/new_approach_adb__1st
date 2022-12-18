@@ -695,7 +695,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 !##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
 !##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
 !##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
-##a:is([class*="mButton"], [class*="myButton"]):is([href*="/regarder.php"], [href*="/telecharger.php"], [target], [rel^="no"])
+##a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])
 ##a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])
 ##[class|="custom-fake"]
 ##[class^="masha_"]
@@ -1424,7 +1424,7 @@ wss://net-announce*$websocket,important
 ||formatfactory.biz^
 ||geedoovu.net^
 ||glaiwhee.net^
-||googleoptimize.com^
+||www.googleoptimize.com^
 ||iclickcdn.com^
 ||inno.bisrv.com^
 ||inpagepush.com^
@@ -3282,3 +3282,25 @@ streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
 streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
 streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
 streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="inset: 0px"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index:"]
+||criteo.*^
+@@||tiqcdn.com^
+||gigya.com$third-party,badfilter
+||lumupu.xyz^
+||plodqkexxg.com^
+@@||ravenjs.com^
+||mediego.com^
+||btloader.com^
+||tk.prismashop.fr^
+||stickyadstv.com^
+||privacymanager.io^
+@@||360.audion.fm^
+||mathads.com^
+||stickyadstv.com^$important
+||bidswitch.net^
+||www.datadoghq-browser-agent.com^$important
+||track.hubspot.com^
+||stickyadstv.com^
+||dailymotion.com/logger/
+||wpc.nucdn.net^
+||bpt.webedia-group.com^
+||sc-static.net^
