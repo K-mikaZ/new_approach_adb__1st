@@ -2445,9 +2445,6 @@ youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 @@||mc.yandex.ru/metrika/*$domain=embed.mystream.to
 @@||videobin.co/hls
 radiotunes.com,di.fm##[class*="premium"]
-dpstream.*##[href^="/Inscription" i]
-dpstream.*#$#.fstory-content { display: none
-dpstream.*##.player:has-text(/1fichier|uptobox/)
 /(run(ative)?\-|t)syndicate\.(.{3})/
 /in(-)?page(-)?push\.(.{3})/
 ||facil-iti.com^$important
