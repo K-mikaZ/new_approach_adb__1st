@@ -1704,7 +1704,13 @@ voirseries.*#@#.adsBox
 @@||compte.tf1.fr^$domain=tf1.fr
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
+!#if (ext_ublock)
+dailymotion.com##+js(no-xhr-if, url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET)
+!#endif
+!#if (adguard && !adguard_ext_safari)
+dailymotion.com#%#//scriptlet('prevent-xhr', 'url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
 youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
+!#endif
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
 @@||googlesyndication.com^$domain=googlesyndication.com
