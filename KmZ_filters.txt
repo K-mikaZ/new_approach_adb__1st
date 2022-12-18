@@ -3299,3 +3299,11 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||wpc.nucdn.net^
 ||bpt.webedia-group.com^
 ||sc-static.net^
+||getjad.io^
+@@||highload.to^$subdocument
+@@||vanfem.com^$subdocument
+||onetag-sys.com^$third-party
+||casalemedia.com^$third-party
+@@||doodstream.com*?op=enc_status*$domain=dood.*
+||doubleclick.net/pagead/html/^$important,redirect-rule=noopframe
+||gfiypuneou.com^
