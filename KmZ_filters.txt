@@ -3241,7 +3241,6 @@ marmiton.org##div[data-ad="banner_atf"]
 ||marazma.com^
 ! ADS (from Allow nonintrusive advertising, but inverted)
 ||^upapi=true
-/pcs/*view?xai=$ping,xmlhttprequest
 !
 ||prismamedia-com.*
 ||d1z2jf7jlzjs58.cloudfront.net^
