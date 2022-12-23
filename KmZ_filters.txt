@@ -515,7 +515,6 @@ rts.ch##+js(aopr.js, Dr)
 @@||rakuten.tv^$ghide
 ||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
 ||adtracker.$xhr,domain=rakuten.tv
-?adCampaign$xhr,domain=rakuten.tv
 rakuten.tv##div[class="video-advert-meta"]
 rakuten.tv##.detail__actions__message__text
 rakuten.tv##+js(bab-defuser.js)
