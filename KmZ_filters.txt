@@ -346,7 +346,6 @@ vizplay.icu##+js(set.js, adb, '1/')
 *$xhr,3p,domain=core1player.com,badfilter
 *$script,3p,domain=core1player.com,badfilter
 /\:\/\/[a-z0-9]{5,26}\.com\/apu\.(.{2,})\?zoneid=[0-9]{7,20}/$all,3p,important
-||2mdn.net/*$media,important
 ||fstats.xyz^$3p,badfilter
 ||fstats.xyz/log$xhr,important
 ||v3.fstats.xyz^$domain=fembed.com
@@ -478,7 +477,6 @@ streamdivx.*##.buttonxx
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
 streamingclic.*##.rek
 streamings-vf.com##[href="#"]
-||spotxcdn.com^$media
 lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 lesseriestreaming.com##[class*="my-3"]
 voirseries.*##.homi:if([class*="masha_"])
@@ -515,7 +513,6 @@ crunchyroll.com###series_promo_banner
 rts.ch##+js(aopr.js, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
 @@||rakuten.tv^$ghide
-||yb.rakuten.tv^
 ||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
 ||adtracker.$xhr,domain=rakuten.tv
 ?adCampaign$xhr,domain=rakuten.tv
@@ -1239,7 +1236,6 @@ wss://net-announce*$websocket,important
 ||adgrx.com^$domain=~adgrx.com
 ||adition.com^$domain=~adition.com
 ||adroll.com^$domain=~adroll.com
-||adsrvr.org^$domain=~adsrvr.org
 ||adtech.de^$domain=~adtech.de
 ||adtechjp.com^$domain=~adtechjp.com
 ||adtechus.com^$domain=~adtechus.com
@@ -1313,7 +1309,6 @@ wss://net-announce*$websocket,important
 ||sojern.com^$domain=~sojern.com
 ||sportradarserving.com^$domain=~sportradarserving.com
 ||spot.im^$domain=~spot.im
-||spotxchange.com^$domain=~spotxchange.com
 ||steepto.com^$domain=~steepto.com
 ||taboola.com^$domain=~taboola.com
 ||tapad.com^$domain=~tapad.com
@@ -3269,7 +3264,6 @@ marmiton.org##div[data-ad="banner_atf"]
 ||connect.facebook.net/en_US/fbevents.js$important
 ||speedcurve.com^$important
 ||digidip.net^$important
-||cedexis.com^
 @@/ad.js$domain=streamtape.com|streamta.pe|stapadblockuser.*
 !@@/\/prebid(-)?/$script,domain=marmiton.org,important
 streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
@@ -3314,7 +3308,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||doubleclick.net^$domain=cuisineactuelle.fr
 /(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 ||*.json$third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
-
+@@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
 @@||googleadservices.com^$domain=ipv6-test.com
 @@||google.*^$domain=ipv6-test.com,important
