@@ -522,7 +522,6 @@ rakuten.tv##+js(bab-defuser.js)
 rakuten.tv##+js(aopr.js, e.FuckAdBlock)
 rakuten.tv##+js(set.js, heartbeat, OK)
 @@||spotxchange.com^$domain=rakuten.tv,badfilter
-@@||search.spotxchange.com^$image,domain=rakuten.tv,badfilter
 @@||spotxchange.com/vast/$xhr,domain=rakuten.tv
 tf1.fr##a[rel*="sponsored"]
 tf1.fr##div[class^="Freemium" i]
@@ -3009,8 +3008,6 @@ youtube.com#@#[id="button"]:has([aria-label*="vocal"])
 ||*.cloudfront.net^*realytics*.js
 ||*google*^linkredirect?dest=*youtube.com*$redirect=noop.txt
 ||*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
-||2mdn.net/*.mp4$important,redirect=noop-1s.mp4
-||2mdn.net^$media,redirect=noop-1s.mp4
 ||adclick.g.doubleclick.net/*/click$removeparam
 ||developpez.com^compter-*$image,domain=developpez.net,important
 ||googleads.g.doubleclick.net/pagead/*$subdocument,important
@@ -3018,7 +3015,6 @@ youtube.com#@#[id="button"]:has([aria-label*="vocal"])
 ||mixer.zippycast.io/*/stream?$removeparam=/(.*\_id|url)/
 ||networkmanag.com/lu/desk/*.php$subdocument
 ||serving-sys.com^$media,redirect=noop-1s.mp4
-||spotxcdn.com^$media,redirect=noop-1s.mp4
 ||ssl.google-analytics.com/__utm.gif$image,important
 ||wiflix.*/*.mp4$media
 ||wiflix.*/voir/*.php$subdocument
