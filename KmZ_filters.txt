@@ -2620,9 +2620,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 !/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /\/prebid(\/|$)/$important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
-!/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
-@@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=yt_otf/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
-@@/(.+)googlevideo\.com\/videoplayback\?(.+)\&source\=(goodput|y(outube|t_live_broadcast))/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,___,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
