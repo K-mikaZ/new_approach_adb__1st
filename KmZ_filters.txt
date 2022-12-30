@@ -1095,7 +1095,6 @@ stream-serie.net#$##option-1{height:100%}
 @@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
-*$websocket
 @@||hlsplay.com^$websocket
 @@||wss.jetload.net/cache$websocket,1p
 @@||tracker.openwebtorrent.com^$websocket
