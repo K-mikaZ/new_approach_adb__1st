@@ -320,7 +320,6 @@ vidoza.net##.asg-label
 @@||vidtodo.com/js/jquery.cookie.js$script,domain=vidtod.me
 @@||vidtodo.com/js/jquery.min.js$script
 @@||vidtodo.com/js/xupload.js?v=2$script,domain=vidtod.me
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com##a[href*="mailto:support@netu.tv?subject=Video advertising"]
 /out.php$popup,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 ||*$popup,3p,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 @@/fuckadblock.js?$script,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
