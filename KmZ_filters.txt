@@ -1078,10 +1078,6 @@ stream-serie.net#$##option-1{height:100%}
 @@||doubleclick.net/instream/ad_status.js$badfilter
 ||disqus.com/count.js$script
 @@||disqus.com/embed.js?_=1457540*$script
-||*/metrika/watch.js$script,important,redirect-rule=metrika-yandex-watch
-||*/*metrica-watch/*watch.js$script,important,redirect-rule=metrika-yandex-watch
-||*metrika*/tag.js$script,important,redirect-rule=metrika-yandex-tag
-||*/*metrica-watch/*tag.js$script,important,redirect-rule=metrika-yandex-tag
 ||.yandex.ru^$important
 ||.webvisor.org^$important
 */fingerprint2.js$script,important,redirect=fingerprint2.js
