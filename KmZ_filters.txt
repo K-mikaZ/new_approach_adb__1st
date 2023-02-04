@@ -735,23 +735,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class^="fake-"][class*="custom-"][class*="media"]
 ##[id^="fake-"][id*="custom-"][id*="media"]
 ##[class|="ad-display"]
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="background: transparent"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 1px"][style*="height: 1px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 1px"][style*="height: 1px"][style*="opacity: 0"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][style*="opacity: 0"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 1px"][style*="height: 1px"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 1px"][style*="height: 1px"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width: 0px"][style*="height: 0px"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width:100%"][style*="height:100%"][style*="display:none"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width:100%"][style*="height:100%"][style*=": hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="width:100%"][style*="height:100%"][hidden="hidden"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="z-index:"][style*="display: none"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-##[style*="position:"][style*=": -10000"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
-pinterest.*#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
@@ -759,6 +742,12 @@ pinterest.*#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):n
 ##[class|="pub"]:has-text(/Publicités?/i)
 ##[id="pub"]:if(> [class="X"])
 ##[class="afs_ads"]
+! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
+!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
+!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
+!##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
+##a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])
+##a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
 01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
