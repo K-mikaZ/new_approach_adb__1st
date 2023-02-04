@@ -683,12 +683,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id^="playerOver"]
 ##[id|="ad-tracking"][style*="display: none"]
 ##[class*="lefermeur"]
-! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
-!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
-!##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
-##a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])
-##a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])
 ##[class|="custom-fake"]
 ##[class^="masha_"]
 ##[class*="contadorads"]
