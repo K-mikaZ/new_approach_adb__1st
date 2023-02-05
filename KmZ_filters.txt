@@ -1669,12 +1669,8 @@ wss://net-announce*$websocket,important
 ||smartadserver.*.js$script,important,redirect=smartadserver.com.js
 ||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
 ||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch_beacon.js
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}([tw]a(\w){1,3})(?:(.+))/$important,script,match-case
-!#if ext_ublock
-! ...   ☝️  metrika's module
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$redirect=metrika-yandex-watch
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$redirect=metrika-yandex-tag
-!#endif
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
 ||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
 ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
 ||google-analytics.com/analytics.js$script,redirect-rule=google-analytics.com/analytics.js,badfilter
