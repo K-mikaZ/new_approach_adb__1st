@@ -684,6 +684,16 @@ linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
 ##iframe[name^="__tcfapi"]
+##[id*="aswift_"]
+##[id="google_esf"]
+##[class*="ad-unit"]
+##[class*="adunit"]
+##[class^="movie-aye"]
+##[class^="van_vid_carousel"]
+!##[data-ad-client*="-pub-"]
+!##[data-ad-host*="-pub-"]
+##[data-ad-text="PUBLICITE"]
+##[data-placeholder-text="Ad"]
 ##div[id="pub"]
 ##[id^="playerPub"]
 ##[id="oscuridad"]
@@ -744,9 +754,23 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class^="fake-"][class*="custom-"][class*="media"]
 ##[id^="fake-"][id*="custom-"][id*="media"]
 ##[class|="ad-display"]
+##[id^="google_ads_iframe_"]
+#$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+##.adsbygoogle
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
+##ins[class*="adsbygoogle"]
+!babeltechreviews.com, ezoic ads concerns
+||ezoiccdn.com$third-party
+||ezodn.com$third-party
+||ezoic.net$third-party
+##[ezaw][ezah]
+##[data-ez-name]
+##[data-ezsrcset]
+! fallback in case
+##[class*="ezo_ad"]
+##[class*="ezasloaded"]
 ##[class|="ezoic"]
 ##[class|="pub"]:has-text(/Publicités?/i)
 ##[id="pub"]:if(> [class="X"])
@@ -2697,14 +2721,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 !
 ###arc-widget-launcher-iframe
 ##+js(set, Document.prototype.interestCohort, undefined)
-##[class*="ad-unit"]
-##[class*="adunit"]
-##[class^="movie-aye"]
-##[class^="van_vid_carousel"]
-!##[data-ad-client*="-pub-"]
-!##[data-ad-host*="-pub-"]
-##[data-ad-text="PUBLICITE"]
-##[data-placeholder-text="Ad"]
 #@#.advertisement:not(body)
 #@#+js(no-fetch-if, /adsbygoogle.js$/)
 #@#+js(remove-attr, data-tracking-id, a)
@@ -2712,15 +2728,10 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 #@#+js(remove-attr, data-tracking-id, label)
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 #?#.player:-abp-has(>[data-ads-core])
-*##.adsbygoogle
 latendresseencuisine.com##div:if(>ins.adsbygoogle)
-*##+js(ra, data-tracking-id, a)
-*##+js(ra, data-tracking-id, button)
-*##+js(ra, data-tracking-id, label)
-*##[id*="aswift_"]
-*##[id="google_esf"]
-*##[id^="google_ads_iframe_"]
-*#$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+!##+js(ra, data-tracking-id, a)
+!##+js(ra, data-tracking-id, button)
+!##+js(ra, data-tracking-id, label)
 *$removeparam=fbclid
 *$removeparam=yclid
 *$script,3p,domain=uqload.com
@@ -3400,16 +3411,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||googletagservices.com^$domain=googlesyndication.com,important
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
-!babeltechreviews.com, ezoic ads concerns
-||ezoiccdn.com$third-party
-||ezodn.com$third-party
-||ezoic.net$third-party
-##[ezaw][ezah]
-##[data-ez-name]
-##[data-ezsrcset]
-! fallback in case
-##[class*="ezo_ad"]
-##[class*="ezasloaded"]
 uqload.*###play_limit_box
 /^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
 !/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
