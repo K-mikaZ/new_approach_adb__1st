@@ -3398,12 +3398,13 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||ezoiccdn.com$third-party
 ||ezodn.com$third-party
 ||ezoic.net$third-party
-*##[ezaw][ezah]
-*##[data-ez-name]
-*##[data-ezsrcset]
+##[ezaw][ezah]
+##[data-ez-name]
+##[data-ezsrcset]
 ! fallback in case
-*##[class*="ezo_ad"]
-*##[class*="ezasloaded"]
+##[class*="ezo_ad"]
+##[class*="ezasloaded"]
+uqload.*###play_limit_box
 /^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
 !/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
