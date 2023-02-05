@@ -275,6 +275,7 @@ ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
 ||ssp.bidvol.com/vast/
 ||serv01001.xyz^$redirect=noopvast-3.0
 ||rocketme.top/vast.php?$redirect=noopvast-3.0
+||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
 @@||cdn.viously.com/player/*/prebid.js
 mstream.*##+js(abort-on-property-read.js, open)
 mystream.to##+js(abort-on-property-read.js, open)
@@ -3245,7 +3246,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||videosprofitnetwork.com^$redirect=empty
 ||q.reyden-x.com^
 ||videosworks.com^
-||serving.viewtraff.com^
 ||serving.stat-rock.com^
 ||criteo.*^
 ||gigya.com$third-party,badfilter
