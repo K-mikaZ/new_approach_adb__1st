@@ -3088,7 +3088,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 @@||vidoza.net$media,_,~third-party
 @@||uloadcdn.com^$media
 @@||userload.co^$subdocument
-||permutive.com/*/watson$domain=marmiton.org
 ||qiota.com^
 @@||geo.dailymotion.com$subdocument,media
 ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
@@ -3126,7 +3125,8 @@ lxax.com##[class="hide"]
 /pandg-sdk.js$important,third-party
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 @@||googletagmanager.com^$domain=marmiton.org,important
-||permutive.com^
+||permutive.com^$third-party
+||permutive.app^$important,third-party
 ||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
 ##[id^="google_ads_iframe_"]
 marmiton.org##[id^="pegasus_banner_atf"]
@@ -3248,7 +3248,6 @@ marmiton.org##div[data-ad="banner_atf"]
 ||facebook.com/tr/$important
 ||taboola.com^$important
 ||implcit.com^$important
-||permutive.com^$important
 ||beop.io^$important
 ||confiant-integrations.global.ssl.fastly.net^$important
 ||heatmap.it^$important
