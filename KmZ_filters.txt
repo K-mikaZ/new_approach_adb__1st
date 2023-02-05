@@ -3071,10 +3071,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 @@||facemorph.me^$important,document
 commentcamarche.net##.ads--insertor-avoid
 @@||sdk.privacy-center.org^
-streamdeouf.*##.g-buttons
 #@#:xpath(//div[.//div[contains(@tabindex,"-1") and contains(@aria-modal,"true")]])
 skdesu.com##.code-block
-/\?op\=([\w]+)(.+)?/$xmlhttprequest,_,important,redirect-rule==nooptext
 /vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,___,domain=imasdk.googleapis.com
 streamingvf.fun##[id^=ads_]
 ||*.tf1.fr/*youbora*$script,redirect=noopjs
