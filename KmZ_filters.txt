@@ -374,6 +374,10 @@ fmax.xyz##+js(aopr.js, __Y)
 ||wiflix.*/voir/play.php$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
+||*^$script,3p,domain=dood.*
+||*^$domain=dood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+@@||doodcdn.*$script,domain=dood.*
+dood.*##+js(no-xhr-if, method:HEAD, emptyObj)
 vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
