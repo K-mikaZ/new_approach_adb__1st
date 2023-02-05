@@ -2527,6 +2527,9 @@ voirseries.*##+js(window.open-defuser)
 cpasmieux.tv##.tabs-block__content.video-inside.video-responsive
 /Sony.mp4$domain=cpasmieux.tv
 ||postlnk.^
+||eethilsi.com^
+||ahrdcxmhli.com^
+||daiwheew.com^
 digitaltendances.com##.ui-corner-all
 seriescultes.*,sotipsters.*##[id|="custom_html"]
 ||cfeucdn.com/video_short.mp4
@@ -3412,6 +3415,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
 uqload.*###play_limit_box
+||*^$xmlhttprequest,script,subdocument,third-party,domain=uqload.co
 /^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
 !/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
