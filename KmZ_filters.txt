@@ -3367,7 +3367,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||casalemedia.com^$third-party
 ||doubleclick.net/pagead/html/^$important,redirect-rule=noopframe
 ||gfiypuneou.com^
-/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 ||*.json$third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
@@ -3400,3 +3399,5 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 *##[class*="ezo_ad"]
 *##[class*="ezasloaded"]
 /^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
+!/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
+/^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
