@@ -765,9 +765,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="googleads"]
 ##ins[class*="adsbygoogle"]
 !babeltechreviews.com, ezoic ads concerns
-||ezoiccdn.com$third-party
-||ezodn.com$third-party
-||ezoic.net$third-party
+||ezoiccdn.com$third-party,important
+||ezodn.com$third-party,important
+||ezoic.net$third-party,important
 ##[class|="ezoic"]
 ##[id|="ezoic"]
 ##[ezaw][ezah]
