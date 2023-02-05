@@ -14,7 +14,7 @@
 @@/player-stats?beacon=$ping,domain=vimeo.com
 !/ping?$xhr,empty
 !/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,match-case,important
-/(?:.+)\?op\=(?!watch.([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
+/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
