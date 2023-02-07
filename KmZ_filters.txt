@@ -547,9 +547,16 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gelf.m6web.fr^$xhr,domain=6play.fr
 @@||pc.middleware.6play.fr^$xhr,domain=6play.fr
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
+6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
+||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
+||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,3p,domain=ettvcentral.com|ettvdl.com,badfilter
-cpasbien.*,gktorrent.*,gktorrents.*,t911.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz##div:has(> a:is([href*="/go/vpn"]))
+||*$third-party,xmlhttprequest,script,domain=oxtorrent.*
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*###vpnvpn
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##:is([class^="truste"])
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##div[onclick*="/go/vpn"]
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##div:has(> a:is([href*="/go/vpn"]))
 oxtorrent.*#@#p:empty
 yggtorrent.*##[href*="marmota."]
 yggtorrent.*##[href*="://primexbt."]
@@ -682,6 +689,7 @@ lemonde.fr###js-engagement-banner
 linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
+##.ad-masthead
 ##iframe[name^="__tcfapi"]
 ##[id*="aswift_"]
 ##[id="google_esf"]
@@ -2817,7 +2825,6 @@ cdnjs.com#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not
 chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
 chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
-cpasbien.*,gktorrents.*,torrent911.com##[class^="truste"]
 cpasmieux.site##.down
 cpasmieux.site##.lien:if(:-abp-contains(/ vip/))
 cpasmieux.site##[class$="-xyz"]
@@ -3291,6 +3298,12 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||getjad.io^
 ||freighthealaudience.com^
 ||d1f05vr3sjsuy7.cloudfront.net^
+||pogothere.xyz^
+||amutheastse.com^
+||itwasbrghttohwe.xyz^
+||solidlyrotches.guru^
+||selungdunker.website^
+||solidlyrotches.guru^
 ||www.xlwaluyw.com^
 ||xlwaluyw.com^
 ||ku2d3a7pa8mdi.com^
