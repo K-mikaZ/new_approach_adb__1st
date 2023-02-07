@@ -549,9 +549,8 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
 *$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,3p,domain=ettvcentral.com|ettvdl.com,badfilter
+cpasbien.*,gktorrent.*,gktorrents.*,t911.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz##div:has(> a:is([href*="/go/vpn"]))
 oxtorrent.*#@#p:empty
-cpasbien.*,gktorrent.*,oxtorrent.*###vpnvpn
-cpasbien.*,gktorrent.*,oxtorrent.*##.trusted
 yggtorrent.*##[href*="marmota."]
 yggtorrent.*##[href*="://primexbt."]
 yggtorrent.*###over-18-notification
@@ -2901,9 +2900,6 @@ msn.com##[data-nativead="1"]
 onextrapixel.com##.banner-container-content-ad
 open.spotify.com##._5c12c73a4f38b98340ea33803209fdc8-scss
 open.spotify.com##[class^="GenericModal__overlay"]
-oxtorrent.*##.truster
-oxtorrent.*##[href="/go/vpn"]
-oxtorrent.unblockit.bz###vpnvpn
 papystreamings.net##.Players:if(:-abp-contains(/4K/))
 papystreamings.net##.Playersbelba
 pcmag.com##ins [id|="incontent"]
