@@ -750,7 +750,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 !##[id="ads"]
 ##[id="ads4"]
 ##[id*="playerbro"]
-##[class|="adsvp"]
 ##[class|="report-pub"]
 ##[class|="movie"][class$="-aye"]
 ##[id|="movie"][id$="-aye"]
@@ -766,7 +765,11 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="google-ads"]
 ##[class="googleads"]
 ##ins[class*="adsbygoogle"]
-##div[id|="div-gpt-ad"]
+! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
+!##[class|="adsvp"]
+!##div[id|="div-gpt-ad"]
+##div:is( [class|="adsvp"]:first-of-type )
+##div:is( [class|="div-gpt-ad"]:first-of-type )
 !babeltechreviews.com, ezoic ads concerns
 ||ezoiccdn.com$third-party,important
 ||ezodn.com$third-party,important
