@@ -3289,6 +3289,9 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||d1f05vr3sjsuy7.cloudfront.net^
 ||pogothere.xyz^
 ||amutheastse.com^
+||postaffiliatepro.com^$third-party
+||wyylde.com^$third-party
+||youradexchange.com^$third-party
 ||itwasbrghttohwe.xyz^
 ||solidlyrotches.guru^
 ||selungdunker.website^
