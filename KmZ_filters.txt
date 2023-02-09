@@ -3415,3 +3415,7 @@ uqload.*###play_limit_box
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
 demotivateur.fr##[data-actirise-slot]
+aufeminin.com,marmiton.org##div:has(>[data-ad$="_atf"])
+aufeminin.com,marmiton.org##div:is([data-ad$="_atf"])
+aufeminin.com##div:has(>[data-ad="dyninfeed"])
+marmiton.org##div:has(>[data-ad="native_shopping"])
