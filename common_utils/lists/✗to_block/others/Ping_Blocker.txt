@@ -29,3 +29,16 @@
 
 ! [FIX] some video loading time
 @@||viously.com^$ping
+
+||ping.iamcdn.net^$badfilter
+@@||ping.iamcdn.net^
+||frog.wix.com^$ping,badfilter
+@@/ajax/bnzai$ping,domain=www.facebook.com
+@@||inputtools.google.com/ping$ping,domain=translate.google.com
+@@||play.google.com^$ping,domain=translate.google.com
+||google-analytics.*/*/collect$ping,_,important
+||youboranqs01.com/ping$badfilter
+||facebook.com/ajax/$ping,important,badfilter
+||facebook.com/ajax/bz$ping,badfilter
+@@*^$script,ping,third-party,domain=marmiton.org
+@@||chatbox.botnation.ai/plugins/ping$domain=star.fr
