@@ -8,11 +8,6 @@
 !
 !
 !
-*$ping
-@@/player-events/log/partial$ping,domain=vimeo.com
-||vimeocdn.com/add/player-stats?beacon=$badfilter
-@@/player-stats?beacon=$ping,domain=vimeo.com
-!/ping?$xhr,empty
 !/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xhr,1p,match-case,important
 /(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
@@ -1814,9 +1809,6 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@##searchform:style(position: absolute
 ||sascdn.com/diff/$script,badfilter
 /fcgi-bin/*$image,badfilter
-||ping.iamcdn.net^$badfilter
-@@||ping.iamcdn.net^
-||frog.wix.com^$ping,badfilter
 @@||imasdk.googleapis.com^$script,badfilter
 /[a-z]{1}\.adroll\.(.{2,})/$badfilter
 /(.*).consensu\.(.{2,})/$badfilter
@@ -1880,8 +1872,6 @@ streamroot.io$script,important,badfilter
 ||gvt1.com^$badfilter
 ||redirector.gvt1.com^$badfilter
 ||facebook.com/ads/$popup,inline-script,badfilter
-||facebook.com/ajax/$ping,important,badfilter
-||facebook.com/ajax/bz$ping,badfilter
 ||facebook.com/ajax/bz$xhr,badfilter
 &adsafe=$badfilter
 /consentui/*$badfilter
@@ -1921,7 +1911,6 @@ streamroot.io$script,important,badfilter
 @@||googleads.g.doubleclick.net/pagead/ads$subdocument,3p,domain=~afreesms.com,badfilter
 ||adservice.google.com^$badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
-||youboranqs01.com/ping$badfilter
 ||instant.page^$badfilter
 @@||instant.page^$script
 /\/pu\/[.a-s]{1,5}\.js$/$script,1p,important,badfilter
@@ -1948,7 +1937,6 @@ streamroot.io$script,important,badfilter
 ||xtremeserve.xyz$xmlhttprequest,_,important
 ||apprefaculty.pro$xmlhttprequest,_,important
 ||vidalak.com$xmlhttprequest,_,important
-||google-analytics.*/*/collect$ping,_,important
 ||tag.leadplace.fr/wckr.php?id=*^$image,_,important
 ||cloudfront-hls-media-vod-ellation.vip4-ams1.dlvr1.net^$object,_,important
 *$popup,important,domain=esf397vsf1nk.com|itnuzleafan.com|unreshiramor.com
@@ -2123,8 +2111,6 @@ y2mate.com##.table-bordered.table > tbody > tr > .text-center
 youtube-nocookie.com##.ytp-pause-overlay
 youtube-nocookie.com##.ytp-youtube-button
 torrent-word.com###spn-popover-container
-@@||inputtools.google.com/ping$ping,domain=translate.google.com
-@@||play.google.com^$ping,domain=translate.google.com
 rugames.org##[href^="https://galodamber.com/api/redirect"]
 rugames.org##.Advrt
 .facebook.$popup,3p,domain=~facebook.com|~fb.com,badfilter
@@ -2177,7 +2163,6 @@ greasyfork.org##.ad-entry
 greasyfork.org##.ad-content
 x2convert.com##.open.center-popup-cont.modal-container
 x2convert.com##.mgbox,.mgline,.image-with-text
-@@/ajax/bnzai$ping,domain=www.facebook.com
 y2mate.com##.js-extension.extension
 voir-film.*##li:if(:-abp-contains(/1fichier|uptobox|rapidgator|dd(own)?[l](oad)?/))
 voir-film.*##.menu_streaming > ul > li:if(:-abp-contains(/demande[s|z|r]/i))
@@ -2779,7 +2764,6 @@ latendresseencuisine.com##div:if(>ins.adsbygoogle)
 @@||canaltp.fr^$elemhide
 @@||canaltp.fr^$generichide
 @@||cdn.speedcurve.com^$domain=developer.mozilla.org
-@@||chatbox.botnation.ai/plugins/ping$domain=star.fr
 @@||doubleclick.net/pcs/*$xhr,domain=open.spotify.com
 @@||evoload.io/js/plausible.js$domain=evoload.io
 @@||google-analytics.com^$domain=star.fr|canaltp.fr
@@ -3083,11 +3067,6 @@ streamingvf.fun##[id^=ads_]
 !tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
 mail.yahoo.com##[data-test-id="right-rail-ad"]
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
-!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithForm', 'trueFunc')
-!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithImage', 'trueFunc')
-!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithScript', 'trueFunc')
-!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest', 'trueFunc')
-!tf1.fr#%#//scriptlet('set-constant', 'tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest', 'trueFunc')
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 ||trafficjunky.net^$popup
@@ -3424,7 +3403,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||doodstream.com*?op=enc_status*$domain=dood.*
 ||dailymotion.com/cdn/$media,script,badfilter
 @@||dmxleo.dailymotion.com/cdn/
-@@*^$script,ping,third-party,domain=marmiton.org
 @@||googlesyndication.com^$domain=marmiton.org
 @@||adservice.google.*^$domain=marmiton.org,important
 @@||googletagservices.com^$domain=googlesyndication.com,important
@@ -3435,3 +3413,6 @@ uqload.*###play_limit_box
 /^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
 !/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
+jtrouver.com##div[class*="afxshop-grid"]
+demotivateur.fr##.ads
+demotivateur.fr##[data-actirise-slot]
