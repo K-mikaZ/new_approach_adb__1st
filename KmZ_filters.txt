@@ -766,15 +766,15 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##ins[class*="adsbygoogle"]
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 !##[class|="adsvp"]
-##div:is( [class|="adsvp"]:first-of-type )
+##div:is( [class|="adsvp"] ):first-of-type
 !##div[id|="div-gpt-ad"]
-##div:is( [class|="div-gpt-ad"]:first-of-type )
+##div:is( [class|="div-gpt-ad"] ):first-of-type
 !##[class^="salidor_"]
-##div:is( [class^="salidor_"]:first-of-type )
+##div:is( [class^="salidor_"] ):first-of-type
 !##[class^="masha_"]
-##div:is( [class^="masha_"]:first-of-type )
+##div:is( [class^="masha_"] ):first-of-type
 !##[class^="tolro_"]
-##div:is( [class^="tolro_"]:first-of-type )
+##div:is( [class^="tolro_"]) :first-of-type
 !babeltechreviews.com, ezoic ads concerns
 ||ezoiccdn.com$third-party,important
 ||ezodn.com$third-party,important
