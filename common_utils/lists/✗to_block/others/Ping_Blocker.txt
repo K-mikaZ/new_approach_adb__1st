@@ -2,6 +2,7 @@
 ! Title: [⚙][addon] "Ping Blocker" - by K-mik@Z
 ! Expires: 1 days
 ! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/%E2%9C%97to_block/others/Ping_Blocker.txt
 
 ! Description: ( Stop sites from tracking the links you visit through hyperlink auditing. )
 
@@ -25,3 +26,6 @@
 ! [fix] for those ping via xhr
 ! example "youboranqs01.com/ping"
 /ping?$xhr,empty
+
+! [FIX] some video loading time
+@@||viously.com^$ping
