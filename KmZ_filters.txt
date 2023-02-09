@@ -3188,7 +3188,6 @@ fakeplayer$~third-party
 @@||youtube.com/youtubei/*/log_event
 ||commandersact.com^$badfilter
 toonanime.*#$##adslot { min-height: 15px !important; }
-marmiton.org##div[data-ad="banner_atf"]
 @@|http*:*/ima3.js|$script,xmlhttprequest,badfilter
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima3
 /googima.js$script,important,redirect=google-ima3
