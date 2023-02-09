@@ -770,8 +770,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 !##[class|="adsvp"]
 ##div:is( [class|="adsvp"] ):first-of-type
-##div:has(> div:is( [class|="adsvp"] )):first-of-type
-!streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
+streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
 !##div[id|="div-gpt-ad"]
 ##div:is( [class|="div-gpt-ad"] ):first-of-type
 !##[class^="salidor_"]
