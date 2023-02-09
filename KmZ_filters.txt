@@ -63,6 +63,8 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dial
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com#@##consent-bump:remove()
+@@||youtube.com$removeparam=gl
+@@||youtube.com$removeparam=hl
 @@||consent.youtube.com^$domain=youtube.com
 /y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
 /log_event?alt=json$xhr,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -2930,6 +2932,7 @@ series-stream.co##[class|="an"][class$="-xpb"][target]
 star.fr,canaltp.fr#@#+js(set, Document.prototype.interestCohort, undefined)
 streamdeouf.*##li:if([onclick^="goDown"])
 streamdeouf.*##.player[data-url="/video-streaming.html"]
+streamdeouf.*##iframe#videoplay[src="/video-streaming.html"]
 !streamdeouf.*###lecteur:if([src*="/video-streaming.html"])
 streamdeouf.*##.lien.fx-row[data-url="/videovip.html"]
 streamdeouf.*##[id|="fake-player"]
