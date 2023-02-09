@@ -3388,7 +3388,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||casalemedia.com^$third-party
 ||doubleclick.net/pagead/html/^$important,redirect-rule=noopframe
 ||gfiypuneou.com^
-||*.json$third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
