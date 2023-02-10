@@ -3407,6 +3407,11 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||casalemedia.com^$third-party
 ||doubleclick.net/pagead/html/^$important,redirect-rule=noopframe
 ||gfiypuneou.com^
+||prismamedia.com^$badfilter
+||playnext.prismamediadigital.com^
+||api-content.prismamedia.com^
+||key-value.prismamedia.com^
+||prismamedia-com.videoplayerhub.com^
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
