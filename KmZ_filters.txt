@@ -637,7 +637,10 @@ mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !impor
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
-mail.yahoo.com##[data-test-id="right-rail-ad"]
+mail.yahoo.com##div:has(> [data-test-id|="-rail-ad"]:first-of-type )
+!mail.yahoo.com##[data-test-id|="-rail-ad"]
+!||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*fr-FR$domain=mail.yahoo.com,important
+||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
 @@?adcount=$xhr,domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
@@ -3425,8 +3428,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@|/exoSubId.min.js$domain=xcafe.com
 uqload.*###play_limit_box
 ||*^$xmlhttprequest,script,subdocument,third-party,domain=uqload.co
-/^(?:(?:\b.+([.-_=\/]prebid\b(?:(?:[.-\/]|$))?)))/$xmlhttprequest,script,third-party,important,match-case
-!/(pre|\/)bid(.*)?/$xmlhttprequest,third-party,important,domain=www.femmeactuelle.fr|cuisineactuelle.fr
+/^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
