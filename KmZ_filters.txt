@@ -554,9 +554,9 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 *$popup,3p,domain=ettvcentral.com|ettvdl.com,badfilter
 ||*$third-party,xmlhttprequest,script,domain=oxtorrent.*
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*###vpnvpn
-cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##:is([class^="truste"])
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#?#:is([class^="truste"])
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##div[onclick*="/go/vpn"]
-cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##div:has(> a:is([href*="/go/vpn"]))
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#?#div:has(> a:is([href*="/go/vpn"]))
 oxtorrent.*#@#p:empty
 yggtorrent.*##[href*="marmota."]
 yggtorrent.*##[href*="://primexbt."]
@@ -637,7 +637,7 @@ mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !impor
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
-mail.yahoo.com##div:has(> [data-test-id|="-rail-ad"]:first-of-type )
+mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
 !mail.yahoo.com##[data-test-id|="-rail-ad"]
 !||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*fr-FR$domain=mail.yahoo.com,important
 ||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
@@ -693,7 +693,7 @@ linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
 ##.ad-masthead
-##iframe[name^="__tcfapi"]
+##iframe[name^="_"][name$="apiLocator"]:remove()
 ##[id*="aswift_"]
 ##[id="google_esf"]
 ##[class*="ad-unit"]
@@ -771,17 +771,12 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="googleads"]
 ##ins[class*="adsbygoogle"]
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
-!##[class|="adsvp"]
-##div:is( [class|="adsvp"] ):first-of-type
-streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
-!##div[id|="div-gpt-ad"]
-##div:is( [class|="div-gpt-ad"] ):first-of-type
-!##[class^="salidor_"]
-##div:is( [class^="salidor_"] ):first-of-type
-!##[class^="masha_"]
-##div:is( [class^="masha_"] ):first-of-type
-!##[class^="tolro_"]
-##div:is( [class^="tolro_"]) :first-of-type
+!streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
+#?#div:is( [class|="adsvp"] ):first-of-type
+#?#div:is( [class|="div-gpt-ad"] ):first-of-type
+#?#div:is( [class^="salidor_"] ):first-of-type
+#?#div:is( [class^="masha_"] ):first-of-type
+#?#div:is( [class^="tolro_"]) :first-of-type
 !babeltechreviews.com, ezoic ads concerns
 ||ezoiccdn.com$third-party,important
 ||ezodn.com$third-party,important
@@ -801,8 +796,8 @@ streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
 !##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
 !##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
 !##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
-##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
 01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
@@ -3192,7 +3187,7 @@ wss://net-announce*$websocket,important
 misterfilm.co###fakevideo
 ###fakevideo
 fakeplayer$~third-party
-*##.player:has(iframe[src*="fakeplayer"])
+#?#.player:has(iframe[src*="fakeplayer"])
 @@||cfeucdn.com^$third-party,media,image,xhr! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
@@ -3438,10 +3433,10 @@ uqload.*###play_limit_box
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
 demotivateur.fr##[data-actirise-slot]
-aufeminin.com,marmiton.org##div:has(>[data-ad$="_atf"])
-aufeminin.com,marmiton.org##div:is([data-ad$="_atf"])
-aufeminin.com##div:has(>[data-ad="dyninfeed"])
-marmiton.org##div:has(>[data-ad="native_shopping"])
+aufeminin.com,marmiton.org#?#div:has(>[data-ad$="_atf"])
+aufeminin.com,marmiton.org#?#div:is([data-ad$="_atf"])
+aufeminin.com#?#div:has(>[data-ad="dyninfeed"])
+marmiton.org#?#div:has(>[data-ad="native_shopping"])
 dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||deezer.com/Wte_5yUoDe9N/*$script,domain=deezer.com,redirect=noopjs
 @@||media.deezer.com/*/get_url
