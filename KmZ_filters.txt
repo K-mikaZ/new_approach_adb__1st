@@ -909,6 +909,11 @@ insight.io##.Modal_appear_3wb6X-active.Modal_backdrop_12pBU
 ixquick.com###sponsored
 jdownloader.org###cookie_info
 journaldunet.com##.ccmcss_oic
+@@||googlesyndication.com^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
+@@||adservice.google.*^$important,domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
+journaldunet.*#$#:root { --reservation-space: 2em !important; }
+journaldunet.*##[class*="_oas_"]:first-of-type
+journaldunet.*#%#//scriptlet('abort-current-inline-script', 'OAS_AD')
 justwatch.com##.header.container-fluid jw-ad-block
 k-streaming.com##img[src="http://k-streaming.com/wp-content/uploads/300x250-4.jpg"]
 keepmymail.com###template01_border,#template01_shadow
@@ -3469,3 +3474,11 @@ coflix.tv#@%#//scriptlet("prevent-bab")
 @@||adservice.google.fr^$domain=coflix.tv,important
 @@||adservice.google.com^$domain=coflix.tv,important
 coflix.tv#?#ad-host:first-of-type:remove()
+||www./gtm.js$domain=calmradio.com,redirect=googletagmanager-gtm
+||calmradio.com/modules/mod_calmradio_popup/$script,domain=calmradio.com,redirect=noopjs
+||*^$third-party,important,domain=calmradio.com
+||app-stats.calmradio.com^$important
+!||videos.calmradio.com^$important
+/videos/$important,domain=calmradio.com
+||*/jfbconnect.js?*
+||*?sentry_*$important
