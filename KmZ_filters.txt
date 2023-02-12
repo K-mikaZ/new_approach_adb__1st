@@ -277,6 +277,13 @@ ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
 ||serv01001.xyz^$redirect=noopvast-3.0
 ||rocketme.top/vast.php?$redirect=noopvast-3.0
 ||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
+||videosworks.com/add.php?$redirect=nooptext
+||ssp.bidvol.com/vast/$redirect=empty
+||serv01001.xyz^$redirect=noopvast-3.0
+!||videosprofitnetwork.com^$redirect=empty
+||videosprofitnetwork.com/watch.xml?$redirect=noopvmap-1.0
+||reyden-x.com/*/pre-roll/*$third-party,redirect=noopvast-2.0
+||lumupu.xyz/vast/?$redirect=noopjson
 @@||cdn.viously.com/player/*/prebid.js
 mstream.*##+js(abort-on-property-read.js, open)
 mystream.to##+js(abort-on-property-read.js, open)
@@ -771,7 +778,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="googleads"]
 ##ins[class*="adsbygoogle"]
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
-!streamdeouf.*##[class|="adsvp"][class$="-wrapper"]
+streamdeouf.*#$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 #?#div:is( [class|="adsvp"] ):first-of-type
 #?#div:is( [class|="div-gpt-ad"] ):first-of-type
 #?#div:is( [class^="salidor_"] ):first-of-type
