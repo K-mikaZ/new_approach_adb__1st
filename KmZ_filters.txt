@@ -700,7 +700,7 @@ linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
 ##.ad-masthead
-##iframe[name^="_"][name$="apiLocator"]:remove()
+#$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
 ##[id*="aswift_"]
 ##[id="google_esf"]
 ##[class*="ad-unit"]
@@ -776,7 +776,11 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
-##ins[class*="adsbygoogle"]
+#?#ins[class*="adsbygoogle"]:remove()
+#?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
+#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
+! fallback, in case
+#?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 streamdeouf.*#$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 #?#div:is( [class|="adsvp"] ):first-of-type
@@ -3450,3 +3454,18 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||*.mp3$media,third-party,domain=deezer.com,redirect=noopmp3-0.1s
 @@||deezer.com^$generichide
 deezer.com#%#(function() { var noopfn = function() {;}; var Fab = function() {}; Fab.prototype.check = noopfn; Fab.prototype.clearEvent = noopfn;  Fab.prototype.emitEvent = noopfn; Fab.prototype.on = function(a, b) { if ( !a ) { b(); } return this; }; Fab.prototype.onDetected = function() {  return this; }; Fab.prototype.onNotDetected = function(a) { a(); return this; }; Fab.prototype.setOption = noopfn; var fab = new Fab(),  getSetFab = { get: function() { return Fab; }, set: function() {} }, getsetfab = { get: function() { return fab; }, set: function() {} }; if ( window.hasOwnProperty('FuckAdBlock') ) { window.FuckAdBlock = Fab; } else { Object.defineProperty(window, 'FuckAdBlock', getSetFab); } if ( window.hasOwnProperty('BlockAdBlock') ) { window.BlockAdBlock = Fab; } else {Object.defineProperty(window, 'BlockAdBlock', getSetFab); } if ( window.hasOwnProperty('SniffAdBlock') ) { window.SniffAdBlock = Fab; } else { Object.defineProperty(window, 'SniffAdBlock', getSetFab); } if ( window.hasOwnProperty('fuckAdBlock') ) { window.fuckAdBlock = fab; } else { Object.defineProperty(window, 'fuckAdBlock', getsetfab); } if ( window.hasOwnProperty('blockAdBlock') ) { window.blockAdBlock = fab; } else { Object.defineProperty(window, 'blockAdBlock', getsetfab); } if ( window.hasOwnProperty('sniffAdBlock') ) { window.sniffAdBlock = fab; } else { Object.defineProperty(window, 'sniffAdBlock', getsetfab); } })();
+coflix.tv#@%#//scriptlet("prevent-bab")
+@@||*/cdn-cgi/apps/head/*$script,~third-party,important,domain=coflix.tv
+@@||googleads.g.doubleclick.net/pagead/*$subdocument,important,domain=coflix.tv
+@@||*^$image,xmlhttprequest,media,~third-party,domain=coflix.tv
+@@||coflix.tv^$generichide
+@@coflix.tv^$cookie=/.+/
+@@||iptvforyou.fr^$media,subdocument
+@@||web.webpushs.com^$third-party,script,domain=coflix.tv
+@@||googletagmanager.com/gtag/js$domain=coflix.tv
+@@||googlesyndication.com^$domain=coflix.tv
+@@||google-analytics.com^$domain=coflix.tv
+@@||googleadservices.com^$domain=coflix.tv
+@@||adservice.google.fr^$domain=coflix.tv,important
+@@||adservice.google.com^$domain=coflix.tv,important
+coflix.tv#?#ad-host:first-of-type:remove()
