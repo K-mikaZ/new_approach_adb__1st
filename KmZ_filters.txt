@@ -603,10 +603,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[href*="smartadserver.com"]
 ##[id*="smartlink" i]
 ##[class*="smartlink" i]
-##[href*="smartad" i]
-##[src*="smartad"]
-##[class*="smartad" i]
-##[id*="smartad" i]
 ##[class*="top-ads"]
 ##[class*="bottom-ads"]
 ##[class*="left-ads"]
@@ -754,6 +750,15 @@ gamestorrents.nu##.middle
 geekob.com###cboxWrapper,#upprev_box
 gktorrent.biz###lpqvca7
 gofilm.fr###commentfb,#mv-keywords,.bp-btn-light.btn,.bp-btn-review.btn,.footer-subs.col-lg-4,.mv-rating,.top-content,center center
+_getListConcours.php$domain=lequipe.fr
+lequipe.fr##.Games
+lequipe.fr##.Paywall__subscriberButton
+lequipe.fr##.ColAutopromo
+lequipe.fr##.OfferWidget
+lequipe.fr##[src*="/img/promo/"]
+lequipe.fr###widget-image
+lequipe.fr#@#.Header__cta>.button--yellow.button
+lequipe.fr#$#.layout{max-width:85%;height:auto}
 google.com###prm
 google.com###prm-pt
 google.fr###footcnt
