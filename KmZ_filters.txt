@@ -759,6 +759,7 @@ lequipe.fr##[src*="/img/promo/"]
 lequipe.fr###widget-image
 lequipe.fr#@#.Header__cta>.button--yellow.button
 lequipe.fr#$#.layout{max-width:85%;height:auto}
+lequipe.fr#@$#div[aria-expanded="true"] { display: none !important; }
 google.com###prm
 google.com###prm-pt
 google.fr###footcnt
@@ -3323,6 +3324,11 @@ coflix.tv#?#ad-host:first-of-type:remove()
 /videos/$important,domain=calmradio.com
 ||*/jfbconnect.js?*
 ||*?sentry_*$important
+||facebook.com^$third-party,cookie=c_user
+@@||fundingchoicesmessages.google.com^$domain=marmiton.org
+||ssl.broadcast.pm/alliance/file/*.mp4$media,domain=geo.dailymotion.com,redirect=noopmp4-1s
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
+||appboycdn.com^
 
 ! ====== PREBID ======
 
@@ -3485,4 +3491,5 @@ ad.piximedia.com/vast/$xhr,redirect=noopvast-2.0
 tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
+||*/videojs-vast-vpaid*$script,important,redirect=noopjs
 ! ====================
