@@ -471,14 +471,6 @@ zone-telechargement.casa##[href*=".kfiopkln."]
 ||assoc-amazon.*^$all,important
 ||images-na.ssl-images-amazon.com/images/*/*/ads/*^$script,important
 ||images-na.ssl-images-amazon.com/images/*/*/productAds/*^$image,important
-lequipe.fr##.Games
-lequipe.fr##.Paywall__subscriberButton
-lequipe.fr##.ColAutopromo
-lequipe.fr##.OfferWidget
-lequipe.fr##[src*="/img/promo/"]
-lequipe.fr###widget-image
-lequipe.fr#@#.Header__cta>.button--yellow.button
-lequipe.fr#$#.layout{max-width:85%;height:auto}
 multiup.*##.mfp-preloader
 multiup.*##[target="_blank"]
 multiup.*##.mfp-bg
@@ -1783,7 +1775,6 @@ streamroot.io$script,important,badfilter
 ||pagead2.googlesyndication.com^$xhr,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animationdigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io|vladan.fr,badfilter
 ||pagead2.googlesyndication.com^$xhr,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animationdigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io,badfilter
 ||dmxleo.com^$badfilter
-||iphdata.lequipe.fr^*/getinfapp.php?$badfilter
 ||warten-sie-mal.xyz^$badfilter
 ||warten-sie-mal.xyz^$3p,badfilter
 @@||warten-sie-mal.xyz^
@@ -1883,7 +1874,6 @@ realityripple.com##.donate
 mabbox.bytel.fr##.no-rules.row
 mabbox.bytel.fr##:xpath(/html/body/div[8]/div[2]/div[1])
 /[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com
-_getListConcours.php$domain=lequipe.fr
 ||https://static.doubleclick.net/instream/ad_status.js$important
 @@/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/$domain=youtube.com|youtu.be|yt.be
 search.lilo.org##.top.addivwhite2
@@ -3341,7 +3331,6 @@ coflix.tv#?#ad-host:first-of-type:remove()
 !.prebid.$domain=~prebid.org,badfilter
 !/prebid$xhr,domain=crunchyroll.com,important
 @@||cdn.viously.com/player/*/prebid.js
-@@||lequipe.fr/thirdparty/prebid.js
 !@@/\/prebid(-)?/$script,domain=marmiton.org,important
 
 
