@@ -3513,6 +3513,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ##div:is( [class^="masha_"] ):first-of-type
 ##div:is( [class^="tolro_"] ):first-of-type
 
+
 !#if !ext_ublock
 
 ! ----[ IFRAMES ]------------------------------------------------------------
@@ -3522,12 +3523,10 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
-
 ! ----[ INS ]----------------------------------------------------------------
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
-
 ! ----[ DIV ]----------------------------------------------------------------
 ! #?#div:has( > script:contains(/adsbygoogle/):only-of-type ):remove()
 ! #?#div:has( > script:contains(/adsbyexoclick/):only-of-type ):remove()
@@ -3550,16 +3549,13 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 !#if cap_html_filtering
 ! *** Equivalent of adguard's ` #?#elem:remove() `
 ! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
-
 ! ----[ IFRAMES ]------------------------------------------------------------
 *##^iframe:is( [name*="apiLocator"] )
 *##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
 *##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
 *##^iframe:is( [src*="/pagead/"] ):first-of-type
-
 ! ----[ INS ]----------------------------------------------------------------
 *##^ins[class*="adsby"]
-
 ! ----[ DIV ]----------------------------------------------------------------
 *##^div[class="AdPlaceholder"]:first-of-type
 *##^div:is( [class|="adsvp"]:last-of-type )
@@ -3569,17 +3565,14 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! *##^div:has( > script:contains(/adsbyexoclick/):only-of-type )
 *##^div:has( > script:contains(/adsby/):only-of-type )
 *##^div:has( > ins[class="adsbygoogle"]:only-of-type )
-
 !#endif
 
 !#if !cap_html_filtering
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
-
 ! ----[ INS ]----------------------------------------------------------------
 *##ins[class*="adsby"]
-
 ! ----[ DIV ]----------------------------------------------------------------
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:last-of-type )
@@ -3590,7 +3583,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 !*##div[class="g-buttons"] > a
 *##div:has(> a:not( :not([class*="mButton"]):not([class*="myButton"]):not([target]):not([href$=".php"]):not([href*=".php"]):not([rel^="no"]) ) )
 *##div:has(> a:not( :not([href*="/regarder.php"]):not([href*="/telecharger.php"]):not([target]):not([rel^="no"]) ) )
-
 !#endif
 
 !#endif
