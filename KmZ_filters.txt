@@ -686,8 +686,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 !#if ext_ublock
-##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+##div[class="g-buttons"] > a
 !#endif
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
