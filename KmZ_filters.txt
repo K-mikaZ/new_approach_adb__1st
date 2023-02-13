@@ -1656,7 +1656,6 @@ wss://net-announce*$websocket,important
 voirseries.*#@#.adsBox
 @@||trustarc.com^
 @@||turner.com^
-*##+js(no-fetch-if, /adsbygoogle.js$/)
 /pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/(?
@@ -2664,10 +2663,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 ###arc-widget-launcher-iframe
 ##+js(set, Document.prototype.interestCohort, undefined)
 #@#.advertisement:not(body)
-#@#+js(no-fetch-if, /adsbygoogle.js$/)
-#@#+js(remove-attr, data-tracking-id, a)
-#@#+js(remove-attr, data-tracking-id, button)
-#@#+js(remove-attr, data-tracking-id, label)
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 #?#.player:-abp-has(>[data-ads-core])
 latendresseencuisine.com##div:if(>ins.adsbygoogle)
@@ -2931,9 +2926,6 @@ youtube.com#@#.ytp-chrome-top-buttons
 youtube.com#@#.ytp-paid-content-overlay
 youtube.com#@#.ytp-share-button
 youtube.com#@#+js(aopr.js, watermark)
-youtube.com#@#+js(remove-attr, data-tracking-id, a)
-youtube.com#@#+js(remove-attr, data-tracking-id, button)
-youtube.com#@#+js(remove-attr, data-tracking-id, label)
 youtube.com#@#[id="button"]:has([aria-label*="vocal"])
 ||*.cloudfront.net^*realytics*.js
 ||*google*^linkredirect?dest=*youtube.com*$redirect=noop.txt
