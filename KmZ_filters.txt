@@ -627,14 +627,14 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id^="fake-"][id*="custom-"][id*="media"]
 ##[class|="ad-display"]
 ##[id^="google_ads_iframe_"]
-#$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
-##.adsbygoogle
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
+! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+! ##.adsbygoogle
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
-#?#ins[class*="adsby"]:first-of-type:remove()
+#?#ins[class*="adsby"]:remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
