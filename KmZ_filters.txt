@@ -560,7 +560,6 @@ linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
 ##.ad-masthead
-#$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
 ##[id*="aswift_"]
 ##[id="google_esf"]
 ##[class*="ad-unit"]
@@ -630,13 +629,14 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
-! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
 ! ##.adsbygoogle
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
 ! fallback, in case
 #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+!#$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
+#?#iframe:is( [name*="apiLocator"] ):remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
@@ -644,11 +644,11 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 streamdeouf.*#$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
-#?#div:is( [class|="adsvp"] ):first-of-type
+#?#div:is( [class|="adsvp"] ):first-of-type:remove()
 #?#div:is( [class|="div-gpt-ad"] ):first-of-type
 #?#div:is( [class^="salidor_"] ):first-of-type
 #?#div:is( [class^="masha_"] ):first-of-type
-#?#div:is( [class^="tolro_"]) :first-of-type
+#?#div:is( [class^="tolro_"] ):first-of-type
 !babeltechreviews.com, ezoic ads concerns
 ||ezoiccdn.com$third-party,important
 ||ezodn.com$third-party,important
