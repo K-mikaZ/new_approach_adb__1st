@@ -589,7 +589,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="FirstLoad"]
 ##[class="responsive-ad"]
 ##a[href*="-en-hd"][rel^="no"]
-##[class="topad"]
 ##[id="topad"]
 ##[class="bottomad"]
 ##[id="bottomad"]
@@ -637,9 +636,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
-!#if ext_ublock
-##ins[class*="adsby"]
-!#endif
 ! fallback, in case
 #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
 ! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
@@ -649,17 +645,11 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
-!#if ext_ublock
-##div[class="AdPlaceholder"]:first-of-type
-!#endif
 ! #?#div:is( [class|="adsvp"] ):first-of-type:remove()
 ! fix for somes wont removed like on streamdeouf.net
 ! wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 ! #?#div:is( [class|="adsvp"] ):remove()
 #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
-!#if ext_ublock
-##div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
-!#endif
 ##div:is( [class|="div-gpt-ad"] ):first-of-type
 ##div:is( [class^="salidor_"] ):first-of-type
 ##div:is( [class^="masha_"] ):first-of-type
@@ -685,8 +675,37 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-!#if ext_ublock
-##div[class="g-buttons"] > a
+!#if ext_ublock && cap_html_filtering
+! *** Equivalent of adguard's ` #?#elem:remove() `
+! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
+! ----[ IFRAMES ]------------------------------------------------------------
+*##^iframe:is( [name*="apiLocator"] )
+*##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
+*##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
+*##^iframe:is( [src*="/pagead/"] ):first-of-type
+! ----[ INS ]----------------------------------------------------------------
+*##^ins[class*="adsby"]
+! ----[ DIV ]----------------------------------------------------------------
+*##^div[class="AdPlaceholder"]:first-of-type
+*##^div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
+*##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+*##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+*##^div:has( > script:contains('adsbygoogle') ):first-of-type
+*##^div:has( > ins[class="adsbygoogle"]:only-of-type )
+!#endif
+!#if ext_ublock && !cap_html_filtering
+! *** Here, element deletion is not supported. Hide those that can be hidden instead.
+! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
+! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
+! ----[ INS ]----------------------------------------------------------------
+*##ins[class*="adsby"]
+! ----[ DIV ]----------------------------------------------------------------
+*##div[class="AdPlaceholder"]:first-of-type
+*##div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
+*##div:has( > script:contains('adsbygoogle') ):first-of-type
+*##div:has( > ins[class="adsbygoogle"]:only-of-type )
+! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+*##div[class="g-buttons"] > a
 !#endif
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
