@@ -95,9 +95,9 @@ youtube.com#@##consent-bump:remove()
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 &frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 twitter.com##div[data-testid="trend"]
-twitter.com#?#div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
+twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
 twitter.com##a[href^="/i/trends"]
-twitter.com#?#div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(What’s happening))
+twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(What’s happening))
 twitter.com##a[href^="/i/events"]
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
 di.fm##[id|="sponsor"]
@@ -266,17 +266,17 @@ vidlox.*##[id="play_limit_box"]
 allseries.*##.hdplayer
 allseries.*##[src*="/video-streaming.html"]
 allseries.*##[class*="-download-watch"]
-enstream.to#?#.player:if(:-abp-contains(/ENSTREAM HD/))
+enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
 mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
-fcine.*#?#[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
-fcine.*#?#[class*="jw-settings-content-item"]:-abp-contains(/1080/)
-4kstreamz.*#?#.Players:if(:has-text(/4K Player/i))
+fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
+4kstreamz.*##.Players:if(:has-text(/4K Player/i))
 film01stream.*###tab-ad
 streaminz.com##.playbtm
 kykfilmserie.*##.content > div:nth-of-type(2)
 kykfilmserie.*##.dooplay_player:if(iframe[src*=".php?"])
-streamcomplet.mobi#?#div:-abp-has(> .fakes_player)
+streamcomplet.mobi##div:-abp-has(> .fakes_player)
 streamcomplet.mobi##div:if(> [class*="fake_player"])
 streamcomplet.mobi##div:if(> a[target="_blank"])
 streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
@@ -290,10 +290,10 @@ allseries.*##.telecharger
 papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 voirseries.*##ul[class="downloads"]
-voirseries.*#?#h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
 filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
-series.dpstreaming.to#?#center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
+series.dpstreaming.to##center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
 filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
@@ -317,7 +317,7 @@ animationdigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-tran
 4kstreamz.*##.DESCPP
 4kstreamz.*##.text-center:if(.mr-3)
 allseries.*##.X
-allseries.*#?#.jumbotron:if(.page-keywords)
+allseries.*##.jumbotron:if(.page-keywords)
 boingtv.fr##.leaderboard
 wow-films.*##+js(ra.js, href|rel|target, #clickfakeplayer)
 clipwatching.*##+js(window.open-defuser)
@@ -341,8 +341,8 @@ enstream.to##a.adSecw
 film01stream.*###tabs-ad > .movieplay
 film01stream.*##a[target="_blank"]
 film01stream.*###ads
-film01stream.*#?#span:-abp-contains(/ads/)
-film01stream.*#?#div:-abp-has(> div > div > [class*="surge_"])
+film01stream.*##span:-abp-contains(/ads/)
+film01stream.*##div:-abp-has(> div > div > [class*="surge_"])
 filmstoon.*##[href*="://out.filmstoon."]
 filmstoon.*##.yx-share
 filmstoon.*##.fsect
@@ -3369,6 +3369,9 @@ coflix.tv#?#ad-host:first-of-type:remove()
 @@/cdn-cgi/challenge/
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
 cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
+!#if ext_ublock
+cuisineaz.com,fourchette-et-bikini.fr##div:has(> script:contains(/.*(displayAd|prebid).*/))
+!#endif
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 
 
