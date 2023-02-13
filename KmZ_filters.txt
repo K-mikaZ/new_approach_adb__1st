@@ -635,6 +635,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! ##.adsbygoogle
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
+#?#div:has( > script:contains(/adsbygoogle/):only-of-type ):remove()
+#?#div:has( > script:contains(/adsbyexoclick/):only-of-type ):remove()
 #?#ins[class*="adsby"]:remove()
 ! fallback, in case
 #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
@@ -690,7 +692,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 *##^div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
 *##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##^div:has( > script:contains('adsbygoogle') ):first-of-type
+*##^div:has( > script:contains(/adsbygoogle/):only-of-type )
+*##^div:has( > script:contains(/adsbyexoclick/):only-of-type )
 *##^div:has( > ins[class="adsbygoogle"]:only-of-type )
 !#endif
 !#if ext_ublock && !cap_html_filtering
@@ -702,8 +705,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! ----[ DIV ]----------------------------------------------------------------
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
-*##div:has( > script:contains('adsbygoogle') ):first-of-type
-*##div:has( > ins[class="adsbygoogle"]:only-of-type )
+*##div:has( > script:contains(/adsbygoogle/):only-of-type )
+*##div:has( > script:contains(/adsbyexoclick/):only-of-type )
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 *##div[class="g-buttons"] > a
 !#endif
