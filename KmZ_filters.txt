@@ -653,7 +653,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! fix for somes wont removed like on streamdeouf.net
 ! wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 ! #?#div:is( [class|="adsvp"] ):remove()
-#?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
+! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
+#?#div:is( [class|="adsvp"]:last-of-type ):remove()
 ##div:is( [class|="div-gpt-ad"] ):first-of-type
 ##div:is( [class^="salidor_"] ):first-of-type
 ##div:is( [class^="masha_"] ):first-of-type
@@ -2839,6 +2840,7 @@ youporn.com##[id^="new_zone_"]
 programme-tv.net##.esiCard:if(*>[href*="jeu-concours"])
 programmersought.com##.adsloading
 rakuten.tv##.ogSVm.styles__StyledText-sc-q929yx-0
+rakuten.tv##+js(prevent-xhr, cdn.spotxcdn.com/media/)
 ranker.com##.ad
 raw.githubusercontent.com#@#+js(set, Document.prototype.interestCohort, undefined)
 reddit.com##.promotedlink
@@ -3399,7 +3401,10 @@ cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|
 cuisineaz.com,fourchette-et-bikini.fr##div:has(> script:contains(/.*(displayAd|prebid).*/))
 !#endif
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
-
+!#if !ext_ublock
+! from ublock filter
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
+!#endif
 
 ! ====== PREBID ======
 
