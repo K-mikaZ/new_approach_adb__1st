@@ -646,10 +646,11 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
-#?#div:is( [class|="adsvp"] ):first-of-type:remove()
+!#?#div:is( [class|="adsvp"] ):first-of-type:remove()
 ! fix for somes wont removed like on streamdeouf.net
-wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
-#?#div:is( [class|="adsvp"] ):remove()
+!wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
+!#?#div:is( [class|="adsvp"] ):remove()
+#?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
 #?#div:is( [class|="div-gpt-ad"] ):first-of-type
 #?#div:is( [class^="salidor_"] ):first-of-type
 #?#div:is( [class^="masha_"] ):first-of-type
