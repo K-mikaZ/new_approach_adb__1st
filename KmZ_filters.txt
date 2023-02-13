@@ -630,6 +630,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
+! https://github.com/AdguardTeam/ExtendedCss
+! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
+! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 ! ##.adsbygoogle
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
@@ -642,8 +645,6 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
-! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
-streamdeouf.*#$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
 #?#div:is( [class|="adsvp"] ):first-of-type:remove()
 ! fix for somes wont removed like on streamdeouf.net
