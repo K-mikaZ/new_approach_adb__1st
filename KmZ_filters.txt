@@ -3507,6 +3507,14 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
 #$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
+! ----[ DIV ]----------------------------------------------------------------
+##div:is( [class|="div-gpt-ad"] ):first-of-type
+##div:is( [class^="salidor_"] ):first-of-type
+##div:is( [class^="masha_"] ):first-of-type
+##div:is( [class^="tolro_"] ):first-of-type
+
+!#if !ext_ublock
+
 ! ----[ IFRAMES ]------------------------------------------------------------
 ! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
 #?#iframe:is( [name*="apiLocator"] ):remove()
@@ -3533,10 +3541,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-##div:is( [class|="div-gpt-ad"] ):first-of-type
-##div:is( [class^="salidor_"] ):first-of-type
-##div:is( [class^="masha_"] ):first-of-type
-##div:is( [class^="tolro_"] ):first-of-type
+
+!#endif
+
 
 !#if ext_ublock
 
@@ -3580,7 +3587,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! *##div:has( > script:contains(/adsbyexoclick/):only-of-type )
 *##div:has( > script:contains(/adsby/):only-of-type )
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##div[class="g-buttons"] > a
+!*##div[class="g-buttons"] > a
+*##div:has(> a:not( :not([class*="mButton"]):not([class*="myButton"]):not([target]):not([href$=".php"]):not([href*=".php"]):not([rel^="no"]) ) )
+*##div:has(> a:not( :not([href*="/regarder.php"]):not([href*="/telecharger.php"]):not([target]):not([rel^="no"]) ) )
 
 !#endif
 
