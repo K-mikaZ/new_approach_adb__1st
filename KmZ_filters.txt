@@ -692,7 +692,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 *##^ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
 *##^div[class="AdPlaceholder"]:first-of-type
-*##^div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
+*##^div:is( [class|="adsvp"]:last-of-type )
 *##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 ! *##^div:has( > script:contains(/adsbygoogle/):only-of-type )
@@ -708,7 +708,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
 *##div[class="AdPlaceholder"]:first-of-type
-*##div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
+*##div:is( [class|="adsvp"]:last-of-type )
 ! *##div:has( > script:contains(/adsbygoogle/):only-of-type )
 ! *##div:has( > script:contains(/adsbyexoclick/):only-of-type )
 *##div:has( > script:contains(/adsby/):only-of-type )
