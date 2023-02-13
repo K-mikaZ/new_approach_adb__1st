@@ -3580,7 +3580,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! *##div:has( > script:contains(/adsbyexoclick/):only-of-type )
 *##div:has( > script:contains(/adsby/):only-of-type )
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-!*##div[class="g-buttons"] > a
+! *##div[class="g-buttons"] > a
 *##div:has(> a:not( :not([class*="mButton"]):not([class*="myButton"]):not([target]):not([href$=".php"]):not([href*=".php"]):not([rel^="no"]) ) )
 *##div:has(> a:not( :not([href*="/regarder.php"]):not([href*="/telecharger.php"]):not([target]):not([rel^="no"]) ) )
 !#endif
