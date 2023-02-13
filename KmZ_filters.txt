@@ -567,8 +567,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class*="adunit"]
 ##[class^="movie-aye"]
 ##[class^="van_vid_carousel"]
-!##[data-ad-client*="-pub-"]
-!##[data-ad-host*="-pub-"]
+! ##[data-ad-client*="-pub-"]
+! ##[data-ad-host*="-pub-"]
 ##[data-ad-text="PUBLICITE"]
 ##[data-placeholder-text="Ad"]
 ##div[id="pub"]
@@ -615,7 +615,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id^=AdThrive_]
 ##[class|="adthrive"]
 ##[class^="AdsenseAd_"]
-!##[id="ads"]
+! ##[id="ads"]
 ##[id="ads4"]
 ##[id*="playerbro"]
 ##[class|="report-pub"]
@@ -639,17 +639,17 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 #?#ins[class*="adsby"]:remove()
 ! fallback, in case
 #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
-!#$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
+! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
 #?#iframe:is( [name*="apiLocator"] ):remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
-!#?#div:is( [class|="adsvp"] ):first-of-type:remove()
+! #?#div:is( [class|="adsvp"] ):first-of-type:remove()
 ! fix for somes wont removed like on streamdeouf.net
-!wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
-!#?#div:is( [class|="adsvp"] ):remove()
+! wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
+! #?#div:is( [class|="adsvp"] ):remove()
 #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
 #?#div:is( [class|="div-gpt-ad"] ):first-of-type
 #?#div:is( [class^="salidor_"] ):first-of-type
@@ -671,9 +671,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[id="pub"]:if(> [class="X"])
 ##[class="afs_ads"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
-!##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
-!##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
+! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
+! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
+! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
@@ -2630,9 +2630,9 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 #?#.player:-abp-has(>[data-ads-core])
 latendresseencuisine.com##div:if(>ins.adsbygoogle)
-!##+js(ra, data-tracking-id, a)
-!##+js(ra, data-tracking-id, button)
-!##+js(ra, data-tracking-id, label)
+! ##+js(ra, data-tracking-id, a)
+! ##+js(ra, data-tracking-id, button)
+! ##+js(ra, data-tracking-id, label)
 *$removeparam=fbclid
 *$removeparam=yclid
 *$script,3p,domain=uqload.com
