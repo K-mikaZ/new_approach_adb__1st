@@ -3507,6 +3507,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
 #$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
+*##[class*="player"] li:has( > [class~=down] )
+*##[class*="player"] li:has( > [data-url="/streamingvip.html"] )
+
 ! ----[ DIV ]----------------------------------------------------------------
 *##div:is( [class|="div-gpt-ad"] ):first-of-type
 *##div:is( [class^="salidor_"] ):first-of-type
