@@ -634,7 +634,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="googleads"]
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
-#?#ins[class^="adsby"]:first-of-type:remove()
+#?#ins[class*="adsby"]:first-of-type:remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
@@ -3342,6 +3342,9 @@ coflix.tv#?#ad-host:first-of-type:remove()
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
+/(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
+cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
+fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 
 
 ! ====== PREBID ======
