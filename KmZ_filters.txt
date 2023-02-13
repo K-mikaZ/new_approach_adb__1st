@@ -559,164 +559,6 @@ lemonde.fr###js-engagement-banner
 linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
-##.ad-masthead
-##.mb-3
-##[id*="aswift_"]
-##[id="google_esf"]
-##[class*="ad-unit"]
-##[class*="adunit"]
-##[class^="movie-aye"]
-##[class^="van_vid_carousel"]
-! ##[data-ad-client*="-pub-"]
-! ##[data-ad-host*="-pub-"]
-##[data-ad-text="PUBLICITE"]
-##[data-placeholder-text="Ad"]
-##div[id="pub"]
-##[id^="playerPub"]
-##[id="oscuridad"]
-##[id^="contenidobloqueado"]
-##[id*="_ad_native_"]
-##[id^="playerOver"]
-##[id|="ad-tracking"][style*="display: none"]
-##[class*="lefermeur"]
-##[class|="custom-fake"]
-##[class*="contadorads"]
-##[class^="ebooks_orange_"][href]
-##[class^="surge_"][href]
-##[class*="btn"][class*="mr-"][href]
-##[class="OUTBRAIN"]
-##[class="Advrt"]
-##[class="FirstLoad"]
-##[class="responsive-ad"]
-##a[href*="-en-hd"][rel^="no"]
-##[class="topad"]
-##[id="topad"]
-##[class="bottomad"]
-##[id="bottomad"]
-##[class="leftad"]
-##[id="leftad"]
-##[class="rightad"]
-##[id="rightad"]
-##[class^="oio"]
-##[id^="oio"]
-##[href*="/oiopub-"]
-##[href*="smartadserver.com"]
-##[id*="smartlink" i]
-##[class*="smartlink" i]
-##[class*="top-ads"]
-##[class*="bottom-ads"]
-##[class*="left-ads"]
-##[class*="right-ads"]
-##[class*="ads-top"]
-##[class*="ads-bottom"]
-##[class*="ads-left"]
-##[class*="ads-right"]
-##[class="ad"][class="c-ads"]
-##[id^=AdThrive_]
-##[class|="adthrive"]
-##[class^="AdsenseAd_"]
-! ##[id="ads"]
-##[id="ads4"]
-##[id*="playerbro"]
-##[class|="report-pub"]
-##[class|="movie"][class$="-aye"]
-##[id|="movie"][id$="-aye"]
-##[class^="custom-"][class*="fake-"][class*="media"]
-##[id^="custom-"][id*="fake-"][id*="media"]
-##[class^="fake-"][class*="custom-"][class*="media"]
-##[id^="fake-"][id*="custom-"][id*="media"]
-##[class|="ad-display"]
-##[id^="google_ads_iframe_"]
-##[class="adsbygoogle"]
-##[class="google-ads"]
-##[class="googleads"]
-! https://github.com/AdguardTeam/ExtendedCss
-! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
-! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
-! ##.adsbygoogle
-! #?#ins[class*="adsbygoogle"]:remove()
-! #?#ins[class*="adsbyexoclick"]:remove()
-! #?#div:has( > script:contains(/adsbygoogle/):only-of-type ):remove()
-! #?#div:has( > script:contains(/adsbyexoclick/):only-of-type ):remove()
-#?#div:has( > script:contains(/adsby/):only-of-type ):remove()
-#?#ins[class*="adsby"]:remove()
-! fallback, in case
-#$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
-! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
-#?#iframe:is( [name*="apiLocator"] ):remove()
-#?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
-#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
-! fallback, in case
-#?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
-#?#div[class="AdPlaceholder"]:first-of-type:remove()
-! #?#div:is( [class|="adsvp"] ):first-of-type:remove()
-! fix for somes wont removed like on streamdeouf.net
-! wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
-! #?#div:is( [class|="adsvp"] ):remove()
-! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
-#?#div:is( [class|="adsvp"]:last-of-type ):remove()
-##div:is( [class|="div-gpt-ad"] ):first-of-type
-##div:is( [class^="salidor_"] ):first-of-type
-##div:is( [class^="masha_"] ):first-of-type
-##div:is( [class^="tolro_"] ):first-of-type
-!babeltechreviews.com, ezoic ads concerns
-||ezoiccdn.com$third-party,important
-||ezodn.com$third-party,important
-||ezoic.net$third-party,important
-##[class|="ezoic"]
-##[id|="ezoic"]
-##[ezaw][ezah]
-##[data-ez-name]
-##[data-ezsrcset]
-! fallback in case
-##[class*="ezo_ad"]
-##[class*="ezasloaded"]
-##[class|="pub"]:has-text(/Publicités?/i)
-##[id="pub"]:if(> [class="X"])
-##[class="afs_ads"]
-! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
-! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
-! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
-#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
-#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-!#if ext_ublock
-!#if cap_html_filtering
-! *** Equivalent of adguard's ` #?#elem:remove() `
-! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
-! ----[ IFRAMES ]------------------------------------------------------------
-*##^iframe:is( [name*="apiLocator"] )
-*##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
-*##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
-*##^iframe:is( [src*="/pagead/"] ):first-of-type
-! ----[ INS ]----------------------------------------------------------------
-*##^ins[class*="adsby"]
-! ----[ DIV ]----------------------------------------------------------------
-*##^div[class="AdPlaceholder"]:first-of-type
-*##^div:is( [class|="adsvp"]:last-of-type )
-*##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-*##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-! *##^div:has( > script:contains(/adsbygoogle/):only-of-type )
-! *##^div:has( > script:contains(/adsbyexoclick/):only-of-type )
-*##^div:has( > script:contains(/adsby/):only-of-type )
-*##^div:has( > ins[class="adsbygoogle"]:only-of-type )
-!#endif
-!#if !cap_html_filtering
-! *** Here, element deletion is not supported. Hide those that can be hidden instead.
-! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
-! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
-! ----[ INS ]----------------------------------------------------------------
-*##ins[class*="adsby"]
-! ----[ DIV ]----------------------------------------------------------------
-*##div[class="AdPlaceholder"]:first-of-type
-*##div:is( [class|="adsvp"]:last-of-type )
-! *##div:has( > script:contains(/adsbygoogle/):only-of-type )
-! *##div:has( > script:contains(/adsbyexoclick/):only-of-type )
-*##div:has( > script:contains(/adsby/):only-of-type )
-! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##div[class="g-buttons"] > a
-!#endif
-!#endif
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
 01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
@@ -3562,4 +3404,184 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important,redirect=noopjs
-! ====================
+
+! ======= COSMETIC =======
+
+! -------------------- generic ---------------------
+
+##.ad-masthead
+##.mb-3
+##[id*="aswift_"]
+##[id="google_esf"]
+##[class*="ad-unit"]
+##[class*="adunit"]
+##[class^="movie-aye"]
+##[class^="van_vid_carousel"]
+! ##[data-ad-client*="-pub-"]
+! ##[data-ad-host*="-pub-"]
+##[data-ad-text="PUBLICITE"]
+##[data-placeholder-text="Ad"]
+##div[id="pub"]
+##[id^="playerPub"]
+##[id="oscuridad"]
+##[id^="contenidobloqueado"]
+##[id*="_ad_native_"]
+##[id^="playerOver"]
+##[id|="ad-tracking"][style*="display: none"]
+##[class*="lefermeur"]
+##[class|="custom-fake"]
+##[class*="contadorads"]
+##[class^="ebooks_orange_"][href]
+##[class^="surge_"][href]
+##[class*="btn"][class*="mr-"][href]
+##[class="OUTBRAIN"]
+##[class="Advrt"]
+##[class="FirstLoad"]
+##[class="responsive-ad"]
+##a[href*="-en-hd"][rel^="no"]
+##[class="topad"]
+##[id="topad"]
+##[class="bottomad"]
+##[id="bottomad"]
+##[class="leftad"]
+##[id="leftad"]
+##[class="rightad"]
+##[id="rightad"]
+##[class^="oio"]
+##[id^="oio"]
+##[href*="/oiopub-"]
+##[href*="smartadserver.com"]
+##[id*="smartlink" i]
+##[class*="smartlink" i]
+##[class*="top-ads"]
+##[class*="bottom-ads"]
+##[class*="left-ads"]
+##[class*="right-ads"]
+##[class*="ads-top"]
+##[class*="ads-bottom"]
+##[class*="ads-left"]
+##[class*="ads-right"]
+##[class="ad"][class="c-ads"]
+##[id^=AdThrive_]
+##[class|="adthrive"]
+##[class^="AdsenseAd_"]
+! ##[id="ads"]
+##[id="ads4"]
+##[id*="playerbro"]
+##[class|="report-pub"]
+##[class|="movie"][class$="-aye"]
+##[id|="movie"][id$="-aye"]
+##[class^="custom-"][class*="fake-"][class*="media"]
+##[id^="custom-"][id*="fake-"][id*="media"]
+##[class^="fake-"][class*="custom-"][class*="media"]
+##[id^="fake-"][id*="custom-"][id*="media"]
+##[class|="ad-display"]
+##[id^="google_ads_iframe_"]
+##[class="adsbygoogle"]
+##[class="google-ads"]
+##[class="googleads"]
+! ezoic ads concerns (test on babeltechreviews.com)
+||ezoiccdn.com$third-party,important
+||ezodn.com$third-party,important
+||ezoic.net$third-party,important
+##[class|="ezoic"]
+##[id|="ezoic"]
+##[ezaw][ezah]
+##[data-ez-name]
+##[data-ezsrcset]
+! fallback in case
+##[class*="ezo_ad"]
+##[class*="ezasloaded"]
+##[class|="pub"]:has-text(/Publicités?/i)
+##[id="pub"]:if(> [class="X"])
+##[class="afs_ads"]
+
+! -------------------- ExtendedCss ---------------------
+
+! https://github.com/AdguardTeam/ExtendedCss
+! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
+! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
+
+! ##.adsbygoogle, .adsbyexoclick
+! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
+#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
+
+! ----[ IFRAMES ]------------------------------------------------------------
+! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
+#?#iframe:is( [name*="apiLocator"] ):remove()
+#?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
+#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
+! fallback, in case
+#?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
+
+! ----[ INS ]----------------------------------------------------------------
+! #?#ins[class*="adsbygoogle"]:remove()
+! #?#ins[class*="adsbyexoclick"]:remove()
+#?#ins[class*="adsby"]:remove()
+
+! ----[ DIV ]----------------------------------------------------------------
+! #?#div:has( > script:contains(/adsbygoogle/):only-of-type ):remove()
+! #?#div:has( > script:contains(/adsbyexoclick/):only-of-type ):remove()
+#?#div:has( > script:contains(/adsby/):only-of-type ):remove()
+#?#div[class="AdPlaceholder"]:first-of-type:remove()
+! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
+#?#div:is( [class|="adsvp"]:last-of-type ):remove()
+! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
+! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
+! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
+! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
+#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
+#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
+##div:is( [class|="div-gpt-ad"] ):first-of-type
+##div:is( [class^="salidor_"] ):first-of-type
+##div:is( [class^="masha_"] ):first-of-type
+##div:is( [class^="tolro_"] ):first-of-type
+
+!#if ext_ublock
+
+!#if cap_html_filtering
+! *** Equivalent of adguard's ` #?#elem:remove() `
+! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
+
+! ----[ IFRAMES ]------------------------------------------------------------
+*##^iframe:is( [name*="apiLocator"] )
+*##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
+*##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
+*##^iframe:is( [src*="/pagead/"] ):first-of-type
+
+! ----[ INS ]----------------------------------------------------------------
+*##^ins[class*="adsby"]
+
+! ----[ DIV ]----------------------------------------------------------------
+*##^div[class="AdPlaceholder"]:first-of-type
+*##^div:is( [class|="adsvp"]:last-of-type )
+*##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+*##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+! *##^div:has( > script:contains(/adsbygoogle/):only-of-type )
+! *##^div:has( > script:contains(/adsbyexoclick/):only-of-type )
+*##^div:has( > script:contains(/adsby/):only-of-type )
+*##^div:has( > ins[class="adsbygoogle"]:only-of-type )
+
+!#endif
+
+!#if !cap_html_filtering
+! *** Here, element deletion is not supported. Hide those that can be hidden instead.
+! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
+! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
+
+! ----[ INS ]----------------------------------------------------------------
+*##ins[class*="adsby"]
+
+! ----[ DIV ]----------------------------------------------------------------
+*##div[class="AdPlaceholder"]:first-of-type
+*##div:is( [class|="adsvp"]:last-of-type )
+! *##div:has( > script:contains(/adsbygoogle/):only-of-type )
+! *##div:has( > script:contains(/adsbyexoclick/):only-of-type )
+*##div:has( > script:contains(/adsby/):only-of-type )
+! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+*##div[class="g-buttons"] > a
+
+!#endif
+
+!#endif
