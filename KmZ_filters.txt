@@ -680,7 +680,8 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-!#if ext_ublock && cap_html_filtering
+!#if ext_ublock
+!#if cap_html_filtering
 ! *** Equivalent of adguard's ` #?#elem:remove() `
 ! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
 ! ----[ IFRAMES ]------------------------------------------------------------
@@ -700,7 +701,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 *##^div:has( > script:contains(/adsby/):only-of-type )
 *##^div:has( > ins[class="adsbygoogle"]:only-of-type )
 !#endif
-!#if ext_ublock && !cap_html_filtering
+!#if !cap_html_filtering
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
@@ -714,6 +715,7 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 *##div:has( > script:contains(/adsby/):only-of-type )
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 *##div[class="g-buttons"] > a
+!#endif
 !#endif
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
