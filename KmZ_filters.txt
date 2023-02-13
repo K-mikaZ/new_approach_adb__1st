@@ -637,6 +637,9 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! #?#ins[class*="adsbygoogle"]:remove()
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
+!#if ext_ublock
+##ins[class*="adsby"]
+!#endif
 ! fallback, in case
 #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
 ! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
@@ -646,15 +649,21 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
+!#if ext_ublock
+##div[class="AdPlaceholder"]:first-of-type
+!#endif
 ! #?#div:is( [class|="adsvp"] ):first-of-type:remove()
 ! fix for somes wont removed like on streamdeouf.net
 ! wwv.streamdeouf.net#@$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
 ! #?#div:is( [class|="adsvp"] ):remove()
 #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
-#?#div:is( [class|="div-gpt-ad"] ):first-of-type
-#?#div:is( [class^="salidor_"] ):first-of-type
-#?#div:is( [class^="masha_"] ):first-of-type
-#?#div:is( [class^="tolro_"] ):first-of-type
+!#if ext_ublock
+##div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type )
+!#endif
+##div:is( [class|="div-gpt-ad"] ):first-of-type
+##div:is( [class^="salidor_"] ):first-of-type
+##div:is( [class^="masha_"] ):first-of-type
+##div:is( [class^="tolro_"] ):first-of-type
 !babeltechreviews.com, ezoic ads concerns
 ||ezoiccdn.com$third-party,important
 ||ezodn.com$third-party,important
@@ -676,6 +685,10 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
+!#if ext_ublock
+##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+!#endif
 fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 *.wixsite.com###WIX_ADS
 01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
