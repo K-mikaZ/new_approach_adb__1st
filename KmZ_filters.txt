@@ -632,13 +632,16 @@ linternaute.com##.sns_avoidance_link.app_edito_btn
 ##[class="adsbygoogle"]
 ##[class="google-ads"]
 ##[class="googleads"]
-#?#ins[class*="adsbygoogle"]:remove()
+! #?#ins[class*="adsbygoogle"]:remove()
+! #?#ins[class*="adsbyexoclick"]:remove()
+#?#ins[class^="adsby"]:first-of-type:remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
 #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 streamdeouf.*#$#div.adsvp-movie_collage_blue-wrapper{ height: 0 !important; }
+#?#div[class="AdPlaceholder"]:first-of-type:remove()
 #?#div:is( [class|="adsvp"] ):first-of-type
 #?#div:is( [class|="div-gpt-ad"] ):first-of-type
 #?#div:is( [class^="salidor_"] ):first-of-type
@@ -720,6 +723,13 @@ etools.ch##.sResult,.sResultStatus
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
 femmeactuelle.fr##.ratio-16-9 > div
+femmeactuelle.fr###click-zone
+femmeactuelle.fr##.ads-placeholder
+femmeactuelle.fr##.ad.banniere-haute
+femmeactuelle.fr#$##corps { padding-top: 0px; !important; }
+femmeactuelle.fr###bt-softwall
+femmeactuelle.fr#%#//scriptlet('set-attr', '#corps', 'style', 'padding-top: 0px; !important;')
+website.informer.com#@?#.adsbygoogle:upward(1)
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
@@ -2703,6 +2713,7 @@ digit.in##.adsAdvert
 digitalcitizen.life##.block--ad
 dood.la###video_player > div.vjs-poster:nth-child(2)
 ducine.*,streamfilms.*##.player
+ducine.*##li [data-url="/streaming-vip.html"]
 ducine.*,streamfilms.*##li [class*="dow"]
 ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
 ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
@@ -3323,12 +3334,15 @@ coflix.tv#?#ad-host:first-of-type:remove()
 ||app-stats.calmradio.com^$important
 /videos/$important,domain=calmradio.com
 ||*/jfbconnect.js?*
-||*?sentry_*$important
+||*?sentry_*$important,third-party
 ||facebook.com^$third-party,cookie=c_user
 @@||fundingchoicesmessages.google.com^$domain=marmiton.org
 ||ssl.broadcast.pm/alliance/file/*.mp4$media,domain=geo.dailymotion.com,redirect=noopmp4-1s
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
-||appboycdn.com^
+||appboycdn.com^$third-party
+||orbsrv.com^$third-party
+@@/cdn-cgi/challenge/
+
 
 ! ====== PREBID ======
 
