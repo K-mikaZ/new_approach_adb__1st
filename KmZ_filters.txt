@@ -285,7 +285,7 @@ zustream.*##li:if(:has-text(/(VIP)(.*)?/))
 streaminggratuitvf.*##button:has-text(/1080p/)
 filmz.*##li:if(:-abp-has(i.player-hdplayer))
 streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
-oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(:has-text(/(HD|VIP)(.*)?/))
+oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(>:has-text(/(HD|VIP)(.*)?/))
 allseries.*##.telecharger
 papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
@@ -295,7 +295,7 @@ papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
 filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 series.dpstreaming.to##center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
 filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(>:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 !allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
