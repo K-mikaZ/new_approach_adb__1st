@@ -3425,9 +3425,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 !#if !ext_ublock
 
 ! ----[ IFRAMES ]------------------------------------------------------------
-! #$#iframe[name^="_"][name$="apiLocator"]:first-of-type{ remove: true; }
 #?#iframe:is( [name*="apiLocator"] ):remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
+#?#iframe:is( [id^="google_ads_iframe_"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
 ! #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
@@ -3490,6 +3490,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ----[ IFRAMES ]------------------------------------------------------------
 *##^iframe:is( [name*="apiLocator"] )
 *##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
+*##^iframe:is( [id^="google_ads_iframe_"] ):first-of-type
 *##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
 ! *##^iframe:is( [src*="/pagead/"] ):first-of-type
 *##^iframe:is( [src*="doubleclick"] ):first-of-type
@@ -3552,7 +3553,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##.ad-masthead
 *##.mb-3
 *##[id*="aswift_"]
-*##[id="google_esf"]
 *##[class^="movie-aye"]
 *##[class^="van_vid_carousel"]
 ! *##[data-ad-client*="-pub-"]
@@ -3614,8 +3614,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##[class^="fake-"][class*="custom-"][class*="media"]
 *##[id^="fake-"][id*="custom-"][id*="media"]
 *##[class|="ad-display"]
-*##[id^="google_ads_iframe_"]
-*##[class="adsbygoogle"]
 *##[class="google-ads"]
 *##[class="googleads"]
 *##[class|="pub"]:has-text(/Publicités?/i)
