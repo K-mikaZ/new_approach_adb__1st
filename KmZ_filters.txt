@@ -3512,7 +3512,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
 ! ----[ DIV ]----------------------------------------------------------------
-#?#div:is( [class*="adsby"] ):remove()
+#?#div[class*="adsby"]:remove()
 ! #?#div:has( > script:contains(adsbygoogle):only-of-type ):remove()
 ! #?#div:has( > script:contains(adsbyexoclick):only-of-type ):remove()
 #?#div:has( > script:contains(adsby):only-of-type ):remove()
@@ -3543,6 +3543,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ----[ INS ]----------------------------------------------------------------
 *##^ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
+*##^div[class*="adsby"]:remove()
 *##^div[class="AdPlaceholder"]:first-of-type
 *##^div:is( [class|="adsvp"]:last-of-type )
 *##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
@@ -3560,6 +3561,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ----[ INS ]----------------------------------------------------------------
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
+*##div[class*="adsby"]
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:last-of-type )
 ! *##div:has( > script:contains(adsbygoogle):only-of-type )
