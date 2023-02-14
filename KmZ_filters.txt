@@ -3535,8 +3535,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
 #$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
-*##[class*="player"] li:has( > [class~=down] )
-*##[class*="player"] li:has( > [data-url="/streamingvip.html"] )
+*##[class*="player" i] li:has( > [class~=down] )
+*##[class*="player" i] li:has( > [data-url="/streamingvip.html"] )
 
 ! ----[ DIV ]----------------------------------------------------------------
 *#@#div[aria-live^="polite"]
