@@ -3435,7 +3435,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:has( > script:contains(adsbygoogle):only-of-type ):remove()
 ! #?#div:has( > script:contains(adsbyexoclick):only-of-type ):remove()
 #?#div:has( > script:contains(adsby):only-of-type ):remove()
-#?#div:is( [class*="ezmob"] ):remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
 ! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
 #?#div:is( [class|="adsvp"]:last-of-type ):remove()
@@ -3446,8 +3445,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 ! ----[ SPAN ]----------------------------------------------------------------
-#?#span[class|="ezoic"]:remove()
-#?#span[id|="ezoic"]:remove()
+! ----[ EZOIC ADS ]-----------------------------------------------------------
+#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! *** Test on animationdigitalnetwork.fr
