@@ -3401,95 +3401,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 
 ! ======= COSMETIC =======
 
-! -------------------- generic ---------------------
-
-*##.ad-masthead
-*##.mb-3
-*##[id*="aswift_"]
-*##[id="google_esf"]
-*##[class*="ad-unit"]
-*##[class*="adunit"]
-*##[class^="movie-aye"]
-*##[class^="van_vid_carousel"]
-! ##[data-ad-client*="-pub-"]
-! ##[data-ad-host*="-pub-"]
-*##[data-ad-text="PUBLICITE"]
-*##[data-placeholder-text="Ad"]
-*##div[id="pub"]
-*##[id^="playerPub"]
-*##[id="oscuridad"]
-*##[id^="contenidobloqueado"]
-*##[id*="_ad_native_"]
-*##[id^="playerOver"]
-*##[id|="ad-tracking"][style*="display: none"]
-*##[class*="lefermeur"]
-*##[class|="custom-fake"]
-*##[class*="contadorads"]
-*##[class^="ebooks_orange_"][href]
-*##[class^="surge_"][href]
-*##[class*="btn"][class*="mr-"][href]
-*##[class="OUTBRAIN"]
-*##[class="Advrt"]
-*##[class="FirstLoad"]
-*##[class="responsive-ad"]
-*##a[href*="-en-hd"][rel^="no"]
-*##[class="topad"]
-*##[id="topad"]
-*##[class="bottomad"]
-*##[id="bottomad"]
-*##[class="leftad"]
-*##[id="leftad"]
-*##[class="rightad"]
-*##[id="rightad"]
-*##[class^="oio"]
-*##[id^="oio"]
-*##[href*="/oiopub-"]
-*##[href*="smartadserver.com"]
-*##[id*="smartlink" i]
-*##[class*="smartlink" i]
-*##[class*="top-ads"]
-*##[class*="bottom-ads"]
-*##[class*="left-ads"]
-*##[class*="right-ads"]
-*##[class*="ads-top"]
-*##[class*="ads-bottom"]
-*##[class*="ads-left"]
-*##[class*="ads-right"]
-*##[class="ad"][class="c-ads"]
-*##[id^=AdThrive_]
-*##[class|="adthrive"]
-*##[class^="AdsenseAd_"]
-! ##[id="ads"]
-*##[id="ads4"]
-*##[id*="playerbro"]
-*##[class|="report-pub"]
-*##[class|="movie"][class$="-aye"]
-*##[id|="movie"][id$="-aye"]
-*##[class^="custom-"][class*="fake-"][class*="media"]
-*##[id^="custom-"][id*="fake-"][id*="media"]
-*##[class^="fake-"][class*="custom-"][class*="media"]
-*##[id^="fake-"][id*="custom-"][id*="media"]
-*##[class|="ad-display"]
-*##[id^="google_ads_iframe_"]
-*##[class="adsbygoogle"]
-*##[class="google-ads"]
-*##[class="googleads"]
-! ezoic ads concerns (test on babeltechreviews.com)
-||ezoiccdn.com$third-party,important
-||ezodn.com$third-party,important
-||ezoic.net$third-party,important
-*##[class|="ezoic"]
-*##[id|="ezoic"]
-*##[ezaw][ezah]
-*##[data-ez-name]
-*##[data-ezsrcset]
-! fallback in case
-*##[class*="ezo_ad"]
-*##[class*="ezasloaded"]
-*##[class|="pub"]:has-text(/Publicités?/i)
-*##[id="pub"]:if(> [class="X"])
-*##[class="afs_ads"]
-
 ! -------------------- ExtendedCss ---------------------
 
 ! https://github.com/AdguardTeam/ExtendedCss
@@ -3526,6 +3437,12 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
+! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
+! *** Test on animationdigitalnetwork.fr
+#$#noscript:contains(/iframe src=.+googletagmanager.+/) { remove: true; }
+#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
+! break "animationdigitalnetwork.fr"
+! #?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 #$#noscript:contains(/img height="1" width="1"/) { remove: true; }
 #$#noscript:contains(/img height="0" width="0"/) { remove: true; }
 #?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
@@ -3601,4 +3518,94 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##div:is( [class^="salidor_"] ):first-of-type
 *##div:is( [class^="masha_"] ):first-of-type
 *##div:is( [class^="tolro_"] ):first-of-type
+
+! -------------------- generic ---------------------
+
+*##.ad-masthead
+*##.mb-3
+*##[id*="aswift_"]
+*##[id="google_esf"]
+*##[class*="ad-unit"]
+*##[class*="adunit"]
+*##[class^="movie-aye"]
+*##[class^="van_vid_carousel"]
+! *##[data-ad-client*="-pub-"]
+! *##[data-ad-host*="-pub-"]
+*##[data-ad-text="PUBLICITE"]
+*##[data-placeholder-text="Ad"]
+*##div[id="pub"]
+*##[id^="playerPub"]
+*##[id="oscuridad"]
+*##[id^="contenidobloqueado"]
+*##[id*="_ad_native_"]
+*##[id^="playerOver"]
+*##[id|="ad-tracking"][style*="display: none"]
+*##[class*="lefermeur"]
+*##[class|="custom-fake"]
+*##[class*="contadorads"]
+*##[class^="ebooks_orange_"][href]
+*##[class^="surge_"][href]
+*##[class*="btn"][class*="mr-"][href]
+*##[class="OUTBRAIN"]
+*##[class="Advrt"]
+*##[class="FirstLoad"]
+*##[class="responsive-ad"]
+*##a[href*="-en-hd"][rel^="no"]
+*##[class="topad"]
+*##[id="topad"]
+*##[class="bottomad"]
+*##[id="bottomad"]
+*##[class="leftad"]
+*##[id="leftad"]
+*##[class="rightad"]
+*##[id="rightad"]
+*##[class^="oio"]
+*##[id^="oio"]
+*##[href*="/oiopub-"]
+*##[href*="smartadserver.com"]
+*##[id*="smartlink" i]
+*##[class*="smartlink" i]
+*##[class*="top-ads"]
+*##[class*="bottom-ads"]
+*##[class*="left-ads"]
+*##[class*="right-ads"]
+*##[class*="ads-top"]
+*##[class*="ads-bottom"]
+*##[class*="ads-left"]
+*##[class*="ads-right"]
+*##[class="ad"][class="c-ads"]
+*##[id^=AdThrive_]
+*##[class|="adthrive"]
+*##[class^="AdsenseAd_"]
+! *##[id="ads"]
+*##[id="ads4"]
+*##[id*="playerbro"]
+*##[class|="report-pub"]
+*##[class|="movie"][class$="-aye"]
+*##[id|="movie"][id$="-aye"]
+*##[class^="custom-"][class*="fake-"][class*="media"]
+*##[id^="custom-"][id*="fake-"][id*="media"]
+*##[class^="fake-"][class*="custom-"][class*="media"]
+*##[id^="fake-"][id*="custom-"][id*="media"]
+*##[class|="ad-display"]
+*##[id^="google_ads_iframe_"]
+*##[class="adsbygoogle"]
+*##[class="google-ads"]
+*##[class="googleads"]
+! ezoic ads concerns (test on babeltechreviews.com)
+||ezoiccdn.com$third-party,important
+||ezodn.com$third-party,important
+||ezoic.net$third-party,important
+*##[class|="ezoic"]
+*##[id|="ezoic"]
+*##[ezaw][ezah]
+*##[data-ez-name]
+*##[data-ezsrcset]
+! fallback in case
+*##[class*="ezo_ad"]
+*##[class*="ezasloaded"]
+*##[class|="pub"]:has-text(/Publicités?/i)
+*##[id="pub"]:if(> [class="X"])
+*##[class="afs_ads"]
+
 
