@@ -3231,6 +3231,13 @@ cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|
 cuisineaz.com,fourchette-et-bikini.fr##div:has(> script:contains(/.*(displayAd|prebid).*/))
 !#endif
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
+||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
+||hjuyyeuvhvq.com^$important,third-party,subdocument,redirect=noopframe
+||doubleclick.net/activityi*$subdocument,important,redirect=noopframe
+||ezodn.com$third-party,important
+@@||ezoic.net$third-party,important
+@@||ezoiccdn.com$third-party,important
+
 !#if !ext_ublock
 ! from ublock filter
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
@@ -3398,9 +3405,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important,redirect=noopjs
-||ezodn.com$third-party,important
-@@||ezoic.net$third-party,important
-@@||ezoiccdn.com$third-party,important
 
 
 
@@ -3466,7 +3470,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
 #?#div:is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
-#?#div:is( [class*="ad-unit"], [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+#?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 #?#span[id|="div-gpt-ad"]:remove()
 ! ----[ ADS ]----------------------------------------------------------------
 #?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
