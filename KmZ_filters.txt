@@ -3399,6 +3399,11 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important,redirect=noopjs
 
+
+
+! block too many sites and web players (e.g. animationdigitalnetwork.fr)
+@@||googlesyndication.com^
+
 ! ======= COSMETIC =======
 
 ! -------------------- ExtendedCss ---------------------
@@ -3452,6 +3457,11 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
 #?#div:is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
+! ----[ ADS ]----------------------------------------------------------------
+#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
+#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
+
+
 
 !#endif
 
