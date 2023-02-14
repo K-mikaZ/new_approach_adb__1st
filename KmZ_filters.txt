@@ -1745,7 +1745,6 @@ tirexo.*##.content > p:if(a[href="/premium.html"][class="btn btn-danger"])
 tirexo.*##[href*="prodebrid.com"]
 fullstream.*##a[class*="kplayer"]
 multistre.am##.player-twitch.chat.audio.streamoverlay
-pinterest.fr#$##HeaderContent{ top: -40px
 awesomeopensource.com##.aos_project_container:if(>:-abp-contains(/?sponsored/i))
 /spclient\.wg\.spotify\.com/ad(s|(\-logic))\//
 rtlplay.be##+js(aopr, getYouboraConfig)
@@ -1931,7 +1930,6 @@ tirexo.pro##[href*="/get_link-"]
 tirexo.pro##.content > p:if(a[href="/premium.html"][class="btn btn-danger"])
 seriestream.*#?##lecteur:if(#videoplay[src*="/video-streaming.html"])
 vfilms.me##a[href*="://go.trackitalltheway."]
-hdss.to#$#.btnsplyr{top:-30vh
 /\%22ad/$~font,~css,badfilter
 ||dev-nano.com/socket.io$important
 @@||facebook.com/*/plugins/post.php$inline-font
@@ -2174,7 +2172,6 @@ youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer {
 @@||cdn.bootcdn.net^
 aparat.*##[target="_top"]
 aparat.*##[target="_blank"]
-monstreams.info#$##content-embed { display: block
 monstreams.info,derniers-films.com##a[target="_blank"]
 my.mail.ru##+js(window.open-defuser.js)
 @@/\/streamsense(\.min)?\.js/$script,domain=my.mail.ru
@@ -2272,9 +2269,6 @@ dl-protect.best##[href^="/geturl?"]
 dl-protect.best##[target="_blank"]
 voirseries.*##+js(ra.js, target|href|rel, #iWatch)
 voirseries.*###GoPlayer > i.insideIframe
-voirseries.*#@$##video-responsive, iframe#videoplay { top: -3px
-voirseries.*#@$##video-responsive .load { top: -30px
-voirseries.*#$##GoPlayer { background-image: none
 voirseries.*###CloseiWatch
 voirseries.*##.MailWrapper:nth-child(n+3)
 ||adsafeprotected.com^$third-party,badfilter
@@ -2871,7 +2865,7 @@ parismatch.com##[class|="lmn"]
 ##a[onclick="openAuc();"][title*=" money"]
 @@||viewsb.com^$subdocument
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
-@@||faphouse.com^$subdocument,third-party$domain=xhamster.com
+@@||faphouse.com^$subdocument,third-party,domain=xhamster.com
 lxax.com###parrot
 lxax.com##[class="hide"]
 ||t.fujejo.xyz/redirect/$third-party
