@@ -3496,22 +3496,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
 ! https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-of-type
 
-! ##.adsbygoogle, .adsbyexoclick
-! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
-! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
-#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
-
-*##[class*="player"] li:has( > [class~=down] )
-*##[class*="player"] li:has( > [data-url="/streamingvip.html"] )
-
-! ----[ DIV ]----------------------------------------------------------------
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
-*##div:is( [class|="div-gpt-ad"] ):first-of-type
-*##div:is( [class^="salidor_"] ):first-of-type
-*##div:is( [class^="masha_"] ):first-of-type
-*##div:is( [class^="tolro_"] ):first-of-type
-
 
 !#if !ext_ublock
 
@@ -3528,6 +3512,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#ins[class*="adsbyexoclick"]:remove()
 #?#ins[class*="adsby"]:remove()
 ! ----[ DIV ]----------------------------------------------------------------
+#?#div:is( [class*="adsby"] ):remove()
 ! #?#div:has( > script:contains(adsbygoogle):only-of-type ):remove()
 ! #?#div:has( > script:contains(adsbyexoclick):only-of-type ):remove()
 #?#div:has( > script:contains(adsby):only-of-type ):remove()
@@ -3587,3 +3572,21 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 !#endif
 
 !#endif
+
+! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
+! <div class="adsbyrunactive" style="height: 0px; width: 0px;">
+! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
+! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
+#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
+
+*##[class*="player"] li:has( > [class~=down] )
+*##[class*="player"] li:has( > [data-url="/streamingvip.html"] )
+
+! ----[ DIV ]----------------------------------------------------------------
+*#@#div[aria-live^="polite"]
+*#@#div > div[aria-live="polite"]
+*##div:is( [class|="div-gpt-ad"] ):first-of-type
+*##div:is( [class^="salidor_"] ):first-of-type
+*##div:is( [class^="masha_"] ):first-of-type
+*##div:is( [class^="tolro_"] ):first-of-type
+
