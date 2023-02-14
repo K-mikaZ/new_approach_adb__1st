@@ -3410,6 +3410,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ======= COSMETIC =======
 
 ! -------------------- ExtendedCss ---------------------
+! *** Please, set generic rules after ExtendedCss, avoid running twice
+! *** Some generic rules can be called in case (fallback)
 
 ! https://github.com/AdguardTeam/ExtendedCss
 ! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
@@ -3446,6 +3448,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
+! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
 #?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
@@ -3538,6 +3541,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##div:is( [class^="tolro_"] ):first-of-type
 
 ! -------------------- generic ---------------------
+! *** Please, set generic rules after ExtendedCss, avoid running twice
+! *** Some generic rules can be called in case (fallback)
 
 *##.ad-masthead
 *##.mb-3
@@ -3608,17 +3613,16 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##[class="adsbygoogle"]
 *##[class="google-ads"]
 *##[class="googleads"]
-! ezoic ads concerns (test on babeltechreviews.com)
-#@#[data-ezsrcset]
+*##[class|="pub"]:has-text(/Publicités?/i)
+*##[id="pub"]:if(> [class="X"])
+*##[class="afs_ads"]
+! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
+*#@#[data-ezsrcset]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
 *##[ezaw][ezah]
 *##[data-ez-name]
-! fallback in case
 *##[class*="ezo_ad"]
 *##[class*="ezasloaded"]
-*##[class|="pub"]:has-text(/Publicités?/i)
-*##[id="pub"]:if(> [class="X"])
-*##[class="afs_ads"]
 
 
