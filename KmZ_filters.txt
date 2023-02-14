@@ -3398,6 +3398,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important,redirect=noopjs
+||ezodn.com$third-party,important
+@@||ezoic.net$third-party,important
+@@||ezoiccdn.com$third-party,important
 
 
 
@@ -3432,6 +3435,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:has( > script:contains(adsbygoogle):only-of-type ):remove()
 ! #?#div:has( > script:contains(adsbyexoclick):only-of-type ):remove()
 #?#div:has( > script:contains(adsby):only-of-type ):remove()
+#?#div:is( [class*="ezmob"] ):remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
 ! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
 #?#div:is( [class|="adsvp"]:last-of-type ):remove()
@@ -3441,6 +3445,9 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
+! ----[ SPAN ]----------------------------------------------------------------
+#?#span[class|="ezoic"]:remove()
+#?#span[id|="ezoic"]:remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! *** Test on animationdigitalnetwork.fr
@@ -3457,6 +3464,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
 #?#div:is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
+#?#div:is( [class*="ad-unit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+#?#span[id|="div-gpt-ad"]:remove()
 ! ----[ ADS ]----------------------------------------------------------------
 #?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
 #?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
@@ -3498,7 +3507,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! ----[ INS ]----------------------------------------------------------------
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
-*##div[class*="adsby"]
+! *##div[class*="adsby"]
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:last-of-type )
 ! *##div:has( > script:contains(adsbygoogle):only-of-type )
@@ -3603,14 +3612,11 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 *##[class="google-ads"]
 *##[class="googleads"]
 ! ezoic ads concerns (test on babeltechreviews.com)
-||ezoiccdn.com$third-party,important
-||ezodn.com$third-party,important
-||ezoic.net$third-party,important
+#@#[data-ezsrcset]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
 *##[ezaw][ezah]
 *##[data-ez-name]
-*##[data-ezsrcset]
 ! fallback in case
 *##[class*="ezo_ad"]
 *##[class*="ezasloaded"]
