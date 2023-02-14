@@ -3470,7 +3470,8 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
 #?#div:is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
-#?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 #?#span[id|="div-gpt-ad"]:remove()
 ! ----[ ADS ]----------------------------------------------------------------
 #?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
