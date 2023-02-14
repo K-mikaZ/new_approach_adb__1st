@@ -2039,7 +2039,7 @@ xhamster.com##.player-add-overlay
 xhamster.com##.underplayer
 xhamster.com##.ts-interstitial
 xhamster.com##[class^="xplayer-banner"]
-xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster20.*,xhamster22.*,xhamster23.*,xhamster25.*,xhamster26.*,xhamster27.*,xhamster3.*,xhamster31.*,xhamster32.*,xhamster34.*,xhamster35.*,xhamster36.*,xhamster37.*,xhamster38.*,xhamster39.*,xhamster4.*,xhamster40.*,xhamster5.*,xhamster500.*,xhamster7.*,xhamster8.*,xhamster9.*,xhamsterpremium.*stripchat.*,,xhopen.*,fullxh.*,openxh.*,openxh1.*,openxh2.*##[class|="wio"]
+xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster20.*,xhamster22.*,xhamster23.*,xhamster25.*,xhamster26.*,xhamster27.*,xhamster3.*,xhamster31.*,xhamster32.*,xhamster34.*,xhamster35.*,xhamster36.*,xhamster37.*,xhamster38.*,xhamster39.*,xhamster4.*,xhamster40.*,xhamster5.*,xhamster500.*,xhamster7.*,xhamster8.*,xhamster9.*,xhamsterpremium.*stripchat.*,xhopen.*,fullxh.*,openxh.*,openxh1.*,openxh2.*##[class|="wio"]
 /tracking.js$script,domain=xnxx.com
 /blank.mp4$media
 eporner.com##.vjs-inplayer-container
@@ -3521,7 +3521,7 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
 #?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
 ! fallback, in case
-!#?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
+! #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#iframe:is( [src*="doubleclick"] ):first-of-type:remove()
 ! ----[ INS ]----------------------------------------------------------------
 ! #?#ins[class*="adsbygoogle"]:remove()
