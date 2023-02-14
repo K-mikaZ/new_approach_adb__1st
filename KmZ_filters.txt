@@ -2769,6 +2769,8 @@ youtube.com#@#.ytp-paid-content-overlay
 youtube.com#@#.ytp-share-button
 youtube.com#@#+js(aopr.js, watermark)
 youtube.com#@#[id="button"]:has([aria-label*="vocal"])
+scan-manga.com#@##ab_bg
+scan-manga.com#@##carouselTOPContainer
 ||*.cloudfront.net^*realytics*.js
 ||*google*^linkredirect?dest=*youtube.com*$redirect=noop.txt
 ||*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
