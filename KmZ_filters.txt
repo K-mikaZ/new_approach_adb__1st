@@ -41,6 +41,10 @@
 #?#div:is( [class|="adsvp"]:last-of-type ):remove()
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
+#?#div[class="ads-placeholder"]:remove()
+#?#div[class="containerAds"]:remove()
+#?#[data-ads-core]:remove()
+#?#div[class="OUTBRAIN"]:remove()
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
@@ -95,6 +99,10 @@
 *##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 *##^div:has( > script:contains(adsby):only-of-type )
 *##^div:has( > ins[class*="adsby"]:only-of-type )
+*##^div[class="ads-placeholder"]
+*##^div[class="containerAds"]
+*##^[data-ads-core]
+*##^div[class="OUTBRAIN"]
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 *##^div:is( [class*="ima-ad-"] )
