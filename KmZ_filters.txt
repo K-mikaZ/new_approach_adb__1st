@@ -3477,8 +3477,6 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 #?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
 #?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 
-
-
 !#endif
 
 
@@ -3535,97 +3533,97 @@ tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
 #$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
-*##[class*="player"] li:has( > [class~=down] )
-*##[class*="player"] li:has( > [data-url="/streamingvip.html"] )
+##[class*="player" i] li:has( > [class~=down] )
+##[class*="player" i] li:has( > [data-url="/streamingvip.html"] )
 
 ! ----[ DIV ]----------------------------------------------------------------
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
-*##div:is( [class|="div-gpt-ad"] ):first-of-type
-*##div:is( [class^="salidor_"] ):first-of-type
-*##div:is( [class^="masha_"] ):first-of-type
-*##div:is( [class^="tolro_"] ):first-of-type
+#@#div[aria-live^="polite"]
+#@#div > div[aria-live="polite"]
+##div:is( [class|="div-gpt-ad"] ):first-of-type
+##div:is( [class^="salidor_"] ):first-of-type
+##div:is( [class^="masha_"] ):first-of-type
+##div:is( [class^="tolro_"] ):first-of-type
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
 ! *** Some generic rules can be called in case (fallback)
 
-*##.ad-masthead
-*##.mb-3
-*##[id*="aswift_"]
-*##[class^="movie-aye"]
-*##[class^="van_vid_carousel"]
-! *##[data-ad-client*="-pub-"]
-! *##[data-ad-host*="-pub-"]
-*##[data-ad-text="PUBLICITE"]
-*##[data-placeholder-text="Ad"]
-*##div[id="pub"]
-*##[id^="playerPub"]
-*##[id="oscuridad"]
-*##[id^="contenidobloqueado"]
-*##[id*="_ad_native_"]
-*##[id^="playerOver"]
-*##[id|="ad-tracking"][style*="display: none"]
-*##[class*="lefermeur"]
-*##[class|="custom-fake"]
-*##[class*="contadorads"]
-*##[class^="ebooks_orange_"][href]
-*##[class^="surge_"][href]
-*##[class*="btn"][class*="mr-"][href]
-*##[class="OUTBRAIN"]
-*##[class="Advrt"]
-*##[class="FirstLoad"]
-*##[class="responsive-ad"]
-*##a[href*="-en-hd"][rel^="no"]
-*##[class="topad"]
-*##[id="topad"]
-*##[class="bottomad"]
-*##[id="bottomad"]
-*##[class="leftad"]
-*##[id="leftad"]
-*##[class="rightad"]
-*##[id="rightad"]
-*##[class^="oio"]
-*##[id^="oio"]
-*##[href*="/oiopub-"]
-*##[href*="smartadserver.com"]
-*##[id*="smartlink" i]
-*##[class*="smartlink" i]
-*##[class*="top-ads"]
-*##[class*="bottom-ads"]
-*##[class*="left-ads"]
-*##[class*="right-ads"]
-*##[class*="ads-top"]
-*##[class*="ads-bottom"]
-*##[class*="ads-left"]
-*##[class*="ads-right"]
-*##[class="ad"][class="c-ads"]
-*##[id^=AdThrive_]
-*##[class|="adthrive"]
-*##[class^="AdsenseAd_"]
-! *##[id="ads"]
-*##[id="ads4"]
-*##[id*="playerbro"]
-*##[class|="report-pub"]
-*##[class|="movie"][class$="-aye"]
-*##[id|="movie"][id$="-aye"]
-*##[class^="custom-"][class*="fake-"][class*="media"]
-*##[id^="custom-"][id*="fake-"][id*="media"]
-*##[class^="fake-"][class*="custom-"][class*="media"]
-*##[id^="fake-"][id*="custom-"][id*="media"]
-*##[class|="ad-display"]
-*##[class="google-ads"]
-*##[class="googleads"]
-*##[class|="pub"]:has-text(/Publicités?/i)
-*##[id="pub"]:if(> [class="X"])
-*##[class="afs_ads"]
+##.ad-masthead
+##.mb-3
+##[id*="aswift_"]
+! ##[class^="movie-aye"]
+! ##[class|="movie"][class$="-aye"]
+! ##[id|="movie"][id$="-aye"]
+##[class^="van_vid_carousel"]
+! ##[data-ad-client*="-pub-"]
+! ##[data-ad-host*="-pub-"]
+##[data-ad-text="PUBLICITE"]
+##[data-placeholder-text="Ad"]
+##div[id="pub"]
+##[id^="playerPub"]
+##[id="oscuridad"]
+##[id^="contenidobloqueado"]
+##[id*="_ad_native_"]
+##[id^="playerOver"]
+##[id|="ad-tracking"][style*="display: none"]
+##[class*="lefermeur"]
+##[class|="custom-fake"]
+##[class*="contadorads"]
+##[class^="ebooks_orange_"][href]
+##[class^="surge_"][href]
+##[class*="btn"][class*="mr-"][href]
+##[class="OUTBRAIN"]
+##[class="Advrt"]
+##[class="FirstLoad"]
+##[class="responsive-ad"]
+##a[href*="-en-hd"][rel^="no"]
+##[class="topad"]
+##[id="topad"]
+##[class="bottomad"]
+##[id="bottomad"]
+##[class="leftad"]
+##[id="leftad"]
+##[class="rightad"]
+##[id="rightad"]
+##[class^="oio"]
+##[id^="oio"]
+##[href*="/oiopub-"]
+##[href*="smartadserver.com"]
+##[id*="smartlink" i]
+##[class*="smartlink" i]
+##[class*="top-ads"]
+##[class*="bottom-ads"]
+##[class*="left-ads"]
+##[class*="right-ads"]
+##[class*="ads-top"]
+##[class*="ads-bottom"]
+##[class*="ads-left"]
+##[class*="ads-right"]
+##[class="ad"][class="c-ads"]
+##[id^=AdThrive_]
+##[class|="adthrive"]
+##[class^="AdsenseAd_"]
+! ##[id="ads"]
+##[id="ads4"]
+##[id*="playerbro"]
+##[class|="report-pub"]
+##[class^="custom-"][class*="fake-"][class*="media"]
+##[id^="custom-"][id*="fake-"][id*="media"]
+##[class^="fake-"][class*="custom-"][class*="media"]
+##[id^="fake-"][id*="custom-"][id*="media"]
+##[class|="ad-display"]
+##[class="google-ads"]
+##[class="googleads"]
+##[class|="pub"]:has-text(/Publicités?/i)
+##[id="pub"]:if(> [class="X"])
+##[class="afs_ads"]
 ! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
-*#@#[data-ezsrcset]
-*##[class|="ezoic"]
-*##[id|="ezoic"]
-*##[ezaw][ezah]
-*##[data-ez-name]
-*##[class*="ezo_ad"]
-*##[class*="ezasloaded"]
+#@#[data-ezsrcset]
+##[class|="ezoic"]
+##[id|="ezoic"]
+##[ezaw][ezah]
+##[data-ez-name]
+##[class*="ezo_ad"]
+##[class*="ezasloaded"]
 
 
