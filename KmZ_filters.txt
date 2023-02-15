@@ -49,8 +49,8 @@
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! *** Test on animationdigitalnetwork.fr
 #$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-#$#noscript:contains(img):contains(/height="1"):contains(/width="1"/) { remove: true; }
-#$#noscript:contains(img):contains(/height="0"):contains(/width="0"/) { remove: true; }
+#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
 #?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
 ! break "animationdigitalnetwork.fr"
 ! #?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
@@ -229,6 +229,8 @@
 /(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
+/\/offline(\/|\.htm(l)?)?$/$xmlhttprequest,~third-party
+/\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
