@@ -3260,13 +3260,13 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||mediego.com^
 ||btloader.com^
 ||tk.prismashop.fr^
-||stickyadstv.com^
-||mathads.com^
 ||stickyadstv.com^$important
+||mathads.com^
+||ovibospeseta.com^
+||wiglessernes.com^
 ||bidswitch.net^
 ||www.datadoghq-browser-agent.com^$important
 ||track.hubspot.com^
-||stickyadstv.com^
 ||dailymotion.com/logger/
 ||wpc.nucdn.net^
 ||bpt.webedia-group.com^
