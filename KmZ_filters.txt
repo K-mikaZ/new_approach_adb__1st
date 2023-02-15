@@ -2823,8 +2823,6 @@ digit.in##.adsAdvert
 digitalcitizen.life##.block--ad
 dood.la###video_player > div.vjs-poster:nth-child(2)
 ducine.*,streamfilms.*##.player
-ducine.*##li [data-url="/streaming-vip.html"]
-ducine.*,streamfilms.*##li [class*="dow"]
 ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
 ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
 ducine.*#$#.wrap { padding-top: 4vw!important; }
