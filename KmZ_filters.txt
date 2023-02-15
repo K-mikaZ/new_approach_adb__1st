@@ -157,6 +157,7 @@
 ! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
+! ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
 *##[class*="player"] li:has( > [class~=down] )
 *##[class*="player"] li:has( > [data-url*="vip.htm"] )
 
@@ -2825,7 +2826,6 @@ digitalcitizen.life##.block--ad
 dood.la###video_player > div.vjs-poster:nth-child(2)
 ducine.*,streamfilms.*##.player
 ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
-ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
 ducine.*#$#.wrap { padding-top: 4vw!important; }
 eliteseries.club##.play_down
 emule-island.eu##.gplay-box
