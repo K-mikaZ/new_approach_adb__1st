@@ -157,8 +157,8 @@
 ! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
-*##[class*="player" i] li:has( > [class~=down] )
-*##[class*="player" i] li:has( > [data-url*="vip.htm"] )
+*##[class*="player"] li:has( > [class~=down] )
+*##[class*="player"] li:has( > [data-url*="vip.htm"] )
 
 *##.ad-masthead
 *##.mb-3
