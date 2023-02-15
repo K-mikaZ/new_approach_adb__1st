@@ -52,18 +52,21 @@
 #?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-! Facebook Pixel 
+#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
+! histats
+#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
+#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
+! Facebook Pixel
 #?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
 #$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
 #?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
 #$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
 ! *** Test on animationdigitalnetwork.fr
 #$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
 #?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
 ! break "animationdigitalnetwork.fr"
-! #?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
+#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 #?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 #?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
