@@ -628,13 +628,14 @@ crunchyroll.com###series_promo_banner
 rts.ch##+js(aopr.js, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
 @@||rakuten.tv^$ghide
-||prod-babieca.rakuten.tv/streamings$xhr,1p,important,redirect=empty
-||adtracker.$xhr,domain=rakuten.tv
-rakuten.tv##div[class="video-advert-meta"]
-rakuten.tv##.detail__actions__message__text
-rakuten.tv##+js(bab-defuser.js)
-rakuten.tv##+js(aopr.js, e.FuckAdBlock)
-rakuten.tv##+js(set.js, heartbeat, OK)
+! rakuten.tv##div[class="video-advert-meta"]
+! rakuten.tv##.detail__actions__message__text
+rakuten.tv##+js(nobab)
+rakuten.tv##+js(abort-on-property-read, e.FuckAdBlock)
+rakuten.tv##+js(set-constant, heartbeat, OK)
+! rakuten.tv use youboranqs01 for play/pause when click on video
+rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
+rakuten.tv##+js(no-xhr-if, /spotx/)
 tf1.fr##a[rel*="sponsored"]
 tf1.fr##div[class^="Freemium" i]
 ||*$media,domain=tf1.fr
