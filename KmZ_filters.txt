@@ -6,7 +6,8 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
 !
-!
+
+
 ! ======= COSMETIC =======
 
 ! -------------------- ExtendedCss ---------------------
@@ -30,21 +31,14 @@
 ! #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
 #?#iframe:is( [src*="doubleclick"] ):first-of-type:remove()
 ! ----[ INS ]----------------------------------------------------------------
-! #?#ins[class*="adsbygoogle"]:remove()
-! #?#ins[class*="adsbyexoclick"]:remove()
+! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 #?#ins[class*="adsby"]:remove()
 ! ----[ DIV ]----------------------------------------------------------------
-! #?#div[class*="adsby"]:remove()
-! #?#div:has( > script:contains(adsbygoogle):only-of-type ):remove()
-! #?#div:has( > script:contains(adsbyexoclick):only-of-type ):remove()
+! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 #?#div:has( > script:contains(adsby):only-of-type ):remove()
 #?#div[class="AdPlaceholder"]:first-of-type:remove()
 ! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
 #?#div:is( [class|="adsvp"]:last-of-type ):remove()
-! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([target]):not([rel^="no"]))
-! ##a:not(:not([class*="mButton"]):not([class*="myButton"])):not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"]))
-! ##a:not(:not([href*="/regarder.php"]):not([href*="/telecharger.php"])):not(:not([target]):not([rel^="no"]))
 #?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
 #?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 ! ----[ SPAN ]----------------------------------------------------------------
@@ -61,10 +55,7 @@
 #$#noscript:contains(/img height="1" width="1"/) { remove: true; }
 #$#noscript:contains(/img height="0" width="0"/) { remove: true; }
 #?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height:1px;"][style*="width:1px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height: 0px;"][style*="width: 0px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
+! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 #?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
 ! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
@@ -90,22 +81,19 @@
 ! *##^iframe:is( [src*="/pagead/"] ):first-of-type
 *##^iframe:is( [src*="doubleclick"] ):first-of-type
 ! ----[ INS ]----------------------------------------------------------------
+! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *##^ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
-! *##^div[class*="adsby"]
 *##^div[class="AdPlaceholder"]:first-of-type
 *##^div:is( [class|="adsvp"]:last-of-type )
 *##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 *##^div:has( > script:contains(adsby):only-of-type )
-*##^div:has( > ins[class="adsbygoogle"]:only-of-type )
+*##^div:has( > ins[class*="adsby"]:only-of-type )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 #?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height:1px;"][style*="width:1px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height: 0px;"][style*="width: 0px;"] ):remove()
-! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
+! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##^:is( span, div ):is( [id|="div-gpt-ad"] )
 *##^div:is( [id*="aswift_"] )
 *##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
@@ -119,6 +107,7 @@
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
 
 ! ----[ INS ]----------------------------------------------------------------
+! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
 *#@#div[aria-live^="polite"]
@@ -134,9 +123,7 @@
 *##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-! *##div[class="g-buttons"] > a
-*##div:has(> a:not( :not([class*="mButton"]):not([class*="myButton"]):not([target]):not([href$=".php"]):not([href*=".php"]):not([rel^="no"]) ) )
-*##div:has(> a:not( :not([href*="/regarder.php"]):not([href*="/telecharger.php"]):not([target]):not([rel^="no"]) ) )
+*##div[class="g-buttons"] > a
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
@@ -154,9 +141,6 @@
 
 
 ! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
-! <div class="adsbyrunactive" style="height: 0px; width: 0px;">
-! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
-! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
 *##[class*="player" i] li:has( > [class~=down] )
