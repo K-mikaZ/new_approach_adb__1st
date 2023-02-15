@@ -1,4 +1,3 @@
-[uBlock Origin; AdGuard]
 !
 ! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Expires: 1 days
