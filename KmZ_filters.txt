@@ -48,12 +48,12 @@
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! *** Test on animationdigitalnetwork.fr
-#$#noscript:contains(/iframe src=.+googletagmanager.+/) { remove: true; }
+#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
+#$#noscript:contains(img):contains(/height="1"):contains(/width="1"/) { remove: true; }
+#$#noscript:contains(img):contains(/height="0"):contains(/width="0"/) { remove: true; }
 #?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
 ! break "animationdigitalnetwork.fr"
 ! #?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
-#$#noscript:contains(/img height="1" width="1"/) { remove: true; }
-#$#noscript:contains(/img height="0" width="0"/) { remove: true; }
 #?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 #?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
@@ -92,7 +92,7 @@
 *##^div:has( > ins[class*="adsby"]:only-of-type )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
+*##^div:is( [class*="ima-ad-"] )
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##^:is( span, div ):is( [id|="div-gpt-ad"] )
 *##^div:is( [id*="aswift_"] )
