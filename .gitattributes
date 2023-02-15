@@ -1,1 +1,1 @@
-*.txt linguist-language=AdBlock linguist-detectable
+*.txt text linguist-language=AdBlock linguist-detectable eol=crlf
