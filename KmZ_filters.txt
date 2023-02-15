@@ -65,14 +65,13 @@
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:1px;"][style*="width:1px;"] ):remove()
 ! #?#div:is( [id|="div-gpt-ad"][style*="height: 0px;"][style*="width: 0px;"] ):remove()
 ! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
-#?#div:is( [id|="div-gpt-ad"] ):remove()
+#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
 #?#div:is( [id*="aswift_"] ):remove()
 ! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 #?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
-#?#span[id|="div-gpt-ad"]:remove()
 ! ----[ ADS ]----------------------------------------------------------------
-! #?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
-! #?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
+#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
+#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 
 !#endif
 
@@ -98,61 +97,75 @@
 *##^div:is( [class|="adsvp"]:last-of-type )
 *##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-! *##^div:has( > script:contains(adsbygoogle):only-of-type )
-! *##^div:has( > script:contains(adsbyexoclick):only-of-type )
 *##^div:has( > script:contains(adsby):only-of-type )
 *##^div:has( > ins[class="adsbygoogle"]:only-of-type )
+! ----[ PIXEL ]----------------------------------------------------------------
+! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
+#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
+! #?#div:is( [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"] ):remove()
+! #?#div:is( [id|="div-gpt-ad"][style*="height:1px;"][style*="width:1px;"] ):remove()
+! #?#div:is( [id|="div-gpt-ad"][style*="height: 0px;"][style*="width: 0px;"] ):remove()
+! #?#div:is( [id|="div-gpt-ad"][style*="height:0px;"][style*="width:0px;"] ):remove()
+*##^:is( span, div ):is( [id|="div-gpt-ad"] )
+*##^div:is( [id*="aswift_"] )
+*##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 !#endif
 
-!#if !cap_html_filtering
+!#endif
+
+
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
+
 ! ----[ INS ]----------------------------------------------------------------
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
-! *##div[class*="adsby"]
+*#@#div[aria-live^="polite"]
+*#@#div > div[aria-live="polite"]
+*##div:has( > script:contains(adsby):only-of-type )
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:last-of-type )
-! *##div:has( > script:contains(adsbygoogle):only-of-type )
-! *##div:has( > script:contains(adsbyexoclick):only-of-type )
-*##div:has( > script:contains(adsby):only-of-type )
+*##div:is( [class|="div-gpt-ad"] ):first-of-type
+*##div:is( [class^="salidor_"] ):first-of-type
+*##div:is( [class^="masha_"] ):first-of-type
+*##div:is( [class^="tolro_"] ):first-of-type
+! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
+*##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+*##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 ! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 ! *##div[class="g-buttons"] > a
 *##div:has(> a:not( :not([class*="mButton"]):not([class*="myButton"]):not([target]):not([href$=".php"]):not([href*=".php"]):not([rel^="no"]) ) )
 *##div:has(> a:not( :not([href*="/regarder.php"]):not([href*="/telecharger.php"]):not([target]):not([rel^="no"]) ) )
-!#endif
+! ----[ SPAN ]----------------------------------------------------------------
+! ----[ EZOIC ADS ]-----------------------------------------------------------
+! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
+*##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+! ----[ PIXEL ]----------------------------------------------------------------
+! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
+*##div:matches-attr( "class"="/ima-ad-.+/" )
+*##:is( span, div ):is( [id|="div-gpt-ad"] )
+*##div:is( [id*="aswift_"] )
+*##div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 
-!#endif
+! -------------------- generic ---------------------
+! *** Please, set generic rules after ExtendedCss, avoid running twice
+! *** Some generic rules can be called in case (fallback)
 
 
 ! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 ! <div class="adsbyrunactive" style="height: 0px; width: 0px;">
 ! #$#[class="adsbygoogle"] { display: none !important; visibility: hidden !important; }
 ! #$#[class="adsbyexoclick"] { display: none !important; visibility: hidden !important; }
-#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
+*#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
 *##[class*="player" i] li:has( > [class~=down] )
 *##[class*="player" i] li:has( > [data-url="/streamingvip.html"] )
-
-! ----[ DIV ]----------------------------------------------------------------
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
-*##div:is( [class|="div-gpt-ad"] ):first-of-type
-*##div:is( [class^="salidor_"] ):first-of-type
-*##div:is( [class^="masha_"] ):first-of-type
-*##div:is( [class^="tolro_"] ):first-of-type
-
-! -------------------- generic ---------------------
-! *** Please, set generic rules after ExtendedCss, avoid running twice
-! *** Some generic rules can be called in case (fallback)
 
 *##.ad-masthead
 *##.mb-3
 *##[id*="aswift_"]
 *##div[class^="movie-aye"]
-! ##[class|="movie"][class$="-aye"]
-! ##[id|="movie"][id$="-aye"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
 ! ##[data-ad-host*="-pub-"]
@@ -169,55 +182,55 @@
 *##[class|="custom-fake"]
 *##[class*="contadorads"]
 *##[class^="ebooks_orange_"][href]
-##[class^="surge_"][href]
-##[class*="btn"][class*="mr-"][href]
-##[class="OUTBRAIN"]
-##[class="Advrt"]
-##[class="FirstLoad"]
-##[class="responsive-ad"]
-##a[href*="-en-hd"][rel^="no"]
-##[class="topad"]
-##[id="topad"]
-##[class="bottomad"]
-##[id="bottomad"]
-##[class="leftad"]
-##[id="leftad"]
-##[class="rightad"]
-##[id="rightad"]
-##[class^="oio"]
-##[id^="oio"]
-##[href*="/oiopub-"]
-##[href*="smartadserver.com"]
-##[id*="smartlink" i]
-##[class*="smartlink" i]
-##[class*="top-ads"]
-##[class*="bottom-ads"]
-##[class*="left-ads"]
-##[class*="right-ads"]
-##[class*="ads-top"]
-##[class*="ads-bottom"]
-##[class*="ads-left"]
-##[class*="ads-right"]
-##[class="ad"][class="c-ads"]
-##[id^=AdThrive_]
-##[class|="adthrive"]
-##[class^="AdsenseAd_"]
+*##[class^="surge_"][href]
+*##[class*="btn"][class*="mr-"][href]
+*##[class="OUTBRAIN"]
+*##[class="Advrt"]
+*##[class="FirstLoad"]
+*##[class="responsive-ad"]
+*##a[href*="-en-hd"][rel^="no"]
+*##[class="topad"]
+*##[id="topad"]
+*##[class="bottomad"]
+*##[id="bottomad"]
+*##[class="leftad"]
+*##[id="leftad"]
+*##[class="rightad"]
+*##[id="rightad"]
+*##[class^="oio"]
+*##[id^="oio"]
+*##[href*="/oiopub-"]
+*##[href*="smartadserver.com"]
+*##[id*="smartlink" i]
+*##[class*="smartlink" i]
+*##[class*="top-ads"]
+*##[class*="bottom-ads"]
+*##[class*="left-ads"]
+*##[class*="right-ads"]
+*##[class*="ads-top"]
+*##[class*="ads-bottom"]
+*##[class*="ads-left"]
+*##[class*="ads-right"]
+*##[class="ad"][class="c-ads"]
+*##[id^=AdThrive_]
+*##[class|="adthrive"]
+*##[class^="AdsenseAd_"]
 ! ##[id="ads"]
-##[id="ads4"]
-##[id*="playerbro"]
-##[class|="report-pub"]
-##[class^="custom-"][class*="fake-"][class*="media"]
-##[id^="custom-"][id*="fake-"][id*="media"]
-##[class^="fake-"][class*="custom-"][class*="media"]
-##[id^="fake-"][id*="custom-"][id*="media"]
-##[class|="ad-display"]
-##[class="google-ads"]
-##[class="googleads"]
-##[class|="pub"]:has-text(/Publicités?/i)
-##[id="pub"]:if(> [class="X"])
-##[class="afs_ads"]
+*##[id="ads4"]
+*##[id*="playerbro"]
+*##[class|="report-pub"]
+*##[class^="custom-"][class*="fake-"][class*="media"]
+*##[id^="custom-"][id*="fake-"][id*="media"]
+*##[class^="fake-"][class*="custom-"][class*="media"]
+*##[id^="fake-"][id*="custom-"][id*="media"]
+*##[class|="ad-display"]
+*##[class="google-ads"]
+*##[class="googleads"]
+*##[class|="pub"]:has-text(/Publicités?/i)
+*##[id="pub"]:if(> [class="X"])
+*##[class="afs_ads"]
 ! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
-#@#[data-ezsrcset]
+*#@#[data-ezsrcset]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
 *##[ezaw][ezah]
