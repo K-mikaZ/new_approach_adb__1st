@@ -630,7 +630,7 @@ crunchyroll.com###series_promo_banner
 rts.ch##+js(aopr.js, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
 @@||rakuten.tv^$ghide
-||prod-babieca.rakuten.tv/streamings$xhr,1p,important,empty
+||prod-babieca.rakuten.tv/streamings$xhr,1p,important,redirect=empty
 ||adtracker.$xhr,domain=rakuten.tv
 rakuten.tv##div[class="video-advert-meta"]
 rakuten.tv##.detail__actions__message__text
