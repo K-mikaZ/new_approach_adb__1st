@@ -1,6 +1,10 @@
 # THIS IS ONLY FOR THE gitattributes REPOSITORY.
 # Handle line endings automatically for files detected as text
 # and leave all files detected as binary untouched.
+# https://rehansaeed.com/gitattributes-best-practices/
+# https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
+
+# Set default behaviour to automatically normalize line endings.
 *               text=auto
 
 #
