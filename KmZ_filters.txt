@@ -169,7 +169,7 @@
 *##.ad-masthead
 *##.mb-3
 *##[id*="aswift_"]
-##[id^="google_ads_iframe_"]
+*##[id^="google_ads_iframe_"]
 *##div[class^="movie-aye"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
