@@ -23,6 +23,8 @@
 
 !#if !ext_ublock
 
+6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
+
 ! ----[ IFRAMES ]------------------------------------------------------------
 #?#iframe:is( [name*="apiLocator"] ):remove()
 #?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
@@ -117,19 +119,14 @@
 *##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 !#endif
 
-!#endif
-
-
+!#if !cap_html_filtering
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
-
 ! ----[ INS ]----------------------------------------------------------------
 ! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
 *##div:has( > script:contains(adsby):only-of-type )
 *##div[class="AdPlaceholder"]:first-of-type
 *##div:is( [class|="adsvp"]:last-of-type )
@@ -148,15 +145,21 @@
 *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-*##div:matches-attr( "class"="/ima-ad-.+/" )
 *##:is( span, div ):is( [id|="div-gpt-ad"] )
 *##div:is( [id*="aswift_"] )
 *##div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+!#endif
+
+!#endif
+
+
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
 ! *** Some generic rules can be called in case (fallback)
 
+*#@#div[aria-live^="polite"]
+*#@#div > div[aria-live="polite"]
 
 ! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
@@ -345,7 +348,7 @@ di.fm##[class*="upsell"]
 di.fm##[class*="ad-co"]
 di.fm##[class|="go-premium"]
 di.fm#@#[class*="premium"]
-di.fm##+js(set.js, maxLoadTime, undefined)
+di.fm##+js(set-constant, maxLoadTime, undefined)
 zenradio.com##[class|="remove-ads"]
 deezer.com##.conversion-banner
 ||messaging.deezer.com/websocket$websocket,important
@@ -395,12 +398,12 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$3p,badfilter
 @@*$script,domain=streamz.vg,badfilter
-mstream.*##+js(abort-on-property-read.js, open)
-mystream.to##+js(abort-on-property-read.js, open)
-mystream.to##+js(window.open-defuser.js)
-streamtape.net##+js(window.open-defuser.js)
-fwmrm.net##+js(window.open-defuser.js)
-uqload.*##+js(window.open-defuser.js)
+mstream.*##+js(abort-on-property-read, open)
+mystream.to##+js(abort-on-property-read, open)
+mystream.to##+js(window.open-defuser)
+streamtape.net##+js(window.open-defuser)
+fwmrm.net##+js(window.open-defuser)
+uqload.*##+js(window.open-defuser)
 |https://$script,3p,domain=upstream.to,badfilter
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
@@ -413,8 +416,8 @@ uqload.*##+js(window.open-defuser.js)
 |https://$image,3p,domain=dood.watch,badfilter
 *$script,3p,domain=feurl.com,badfilter
 ||feurl.com/asset/barr.js$badfilter
-hdslecteur.xyz##+js(aopr.js, this.iframe)
-hdslecteur.xyz##+js(aopr.js, /\_0x*/)
+hdslecteur.xyz##+js(abort-on-property-read, this.iframe)
+hdslecteur.xyz##+js(abort-on-property-read, /\_0x*/)
 hdslecteur.xyz###lkm6j,#z7wsgp3
 mixdrop.*##div[onclick*="$(this).remove();"]
 mixdrop.*#@#+js(abort-current-inline-script, String.fromCharCode)
@@ -446,10 +449,10 @@ vidoza.net##.asg-label
 ||*$popup,3p,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 @@/fuckadblock.js?$script,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 /js/disqusloader.js$important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
-vizplay.icu##+js(aopr.js, Image)
-vizplay.icu##+js(aopr.js, ????)
-vizplay.icu##+js(aopr.js, BetterJsPop)
-vizplay.icu##+js(set.js, adb, '1/')
+vizplay.icu##+js(abort-on-property-read, Image)
+vizplay.icu##+js(abort-on-property-read, ????)
+vizplay.icu##+js(abort-on-property-read, BetterJsPop)
+vizplay.icu##+js(set-constant, adb, '1/')
 @@||hqq.tv^$script,1p,badfilter
 @@||hqq.to^$script,1p,badfilter
 @@||waaw.to^$script,1p,badfilter
@@ -471,11 +474,11 @@ vizplay.icu##+js(set.js, adb, '1/')
 ||fstats.xyz/log$xhr,important
 ||v3.fstats.xyz^$domain=fembed.com
 ||inpagepush.com^$important,badfilter
-inpagepush.com##+js(aopr.js, $)
+inpagepush.com##+js(abort-on-property-read, $)
 bs0wvimoy99r.com##+js(popads-dummy.js)
 /ads_billets.xml$xhr,domain=imasdk.googleapis.com,important
 ||fmax.xyz^$badfilter
-fmax.xyz##+js(aopr.js, __Y)
+fmax.xyz##+js(abort-on-property-read, __Y)
 /css?family=Montserrat$xhr,stylesheet,important,domain=seriestream.ws
 ||enstream.to/vip/*$subdocument,1p
 ||seriestream.*/vid*ming.html|$subdocument,1p,important
@@ -535,8 +538,8 @@ filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
 ! zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(>:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-!allocine.fr##+js(set.js, wadsBeforeStartAlreadyDone, true)
-!allocine.fr##+js(aopr.js, wadsBeforeStart)
+!allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
+!allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
 animationdigitalnetwork.fr##.adn-opm2-block-rectangle
 animationdigitalnetwork.fr##.adn-pave
@@ -632,7 +635,7 @@ crunchyroll.com###series_promo_banner
 /crunchyroll-web.json$xhr,domain=crunchyroll.com,redirect=empty
 ||*$popup,domain=crunchyroll.com
 ||eec.crunchyroll.com^
-rts.ch##+js(aopr.js, Dr)
+rts.ch##+js(abort-on-property-read, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
 @@||rakuten.tv^$ghide
 ! rakuten.tv##div[class="video-advert-meta"]
@@ -659,7 +662,6 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gelf.m6web.fr^$xhr,domain=6play.fr
 @@||pc.middleware.6play.fr^$xhr,domain=6play.fr
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
-6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
 ||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
 ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$3p,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
@@ -754,41 +756,41 @@ cwtv.com##+js(aopw.js, wallConfig)
 download.mokeedev.com##+js(std.js, alert-danger-enabled)
 eurogamer.net,rockpapershotgun.com,vg247.com##+js(aopw.js, yafaIt)
 fullmatchesandshows.com,mediafire.com,newser.com,pornhub.com,rlslog.net,scienceworldreport.com,streamcloud.eu,tinypic.com##+js(aopw.js, UAParser)
-gamer.com.tw##+js(aopr.js, AntiAd.check)
+gamer.com.tw##+js(abort-on-property-read, AntiAd.check)
 hackintosh.zone##+js(acis.js, document.readyState, /(?:\\x[0-9a-f]{2}){20}/)
-hackintosh.zone##+js(aopr.js, document.write)
-hdfilme.tv##+js(aopr.js, x3B5W)
+hackintosh.zone##+js(abort-on-property-read, document.write)
+hdfilme.tv##+js(abort-on-property-read, x3B5W)
 hdfilme.tv##+js(aeld.js, system.popunder)
-kbb.com##+js(aopr.js, KBB.DetectBlockerExtensions)
+kbb.com##+js(abort-on-property-read, KBB.DetectBlockerExtensions)
 knowyourmeme.com##+js(aopw.js, upManager)
 korrespondent.net,nnm-club.name,nnmclub.to##+js(acis.js, MutationObserver, 676574456c656d656e747342795461674e616d65)
 math-aids.com##+js(aopw.js, __drizzleSettings)
-monova.org,salefiles.com##+js(aopr.js, adblock)
+monova.org,salefiles.com##+js(abort-on-property-read, adblock)
 navigaweb.net##+js(alert-buster.js)
-newser.com##+js(aopr.js, checkAds)
-newser.com##+js(aopr.js, oio)
+newser.com##+js(abort-on-property-read, checkAds)
+newser.com##+js(abort-on-property-read, oio)
 pornhub.com##+js(aopw.js, isAdblockOn)
-vidnow.to,vshare.eu##+js(aopr.js, BetterJsPop)
+vidnow.to,vshare.eu##+js(abort-on-property-read, BetterJsPop)
 rapidvideo.com##+js(aopw.js, executed)
-tvad.me##+js(aopr.js, app.adblockPop)
-rarbg.to##+js(aopr.js, _wm3)
+tvad.me##+js(abort-on-property-read, app.adblockPop)
+rarbg.to##+js(abort-on-property-read, _wm3)
 serienstream.to##+js(acis.js, /(?:\\x[0-9a-f]{2}){20}/)
-shink.in##+js(aopr.js, blockAdBlock)
-shink.in##+js(aopr.js, jsPopunder)
-shink.in##+js(aopr.js, RunAds)
+shink.in##+js(abort-on-property-read, blockAdBlock)
+shink.in##+js(abort-on-property-read, jsPopunder)
+shink.in##+js(abort-on-property-read, RunAds)
 shink.in##+js(aopw.js, _pop)
-speedtest.net##+js(aopr.js, _sp_)
+speedtest.net##+js(abort-on-property-read, _sp_)
 streamlive.to##+js(acis.js, parseInt, charAt)
-thevideo.me##+js(aopr.js, app.main.adblock)
-thevideo.me##+js(aopr.js, MarketGidJSON)
+thevideo.me##+js(abort-on-property-read, app.main.adblock)
+thevideo.me##+js(abort-on-property-read, MarketGidJSON)
 thevideo.me##+js(aeld.js, click, void)
 userscloud.com##+js(aopw.js, open)
-vidup.me##+js(aopr.js, adsShowPopup)
+vidup.me##+js(abort-on-property-read, adsShowPopup)
 watchcartoonsonline.eu##+js(acis.js, 676574456c656d656e747342795461674e616d65)
 watchcartoonsonline.eu##+js(acis.js, document.createElement, jsc.mgid.com)
-wz.de##+js(aopr.js, jsABLoaded)
+wz.de##+js(abort-on-property-read, jsABLoaded)
 zippyshare.com##+js(acis.js, String.fromCharCode, decodeURIComponent)
-zone-stream.club##+js(aopr.js, check)
+zone-stream.club##+js(abort-on-property-read, check)
 twitch.tv##+js(twitch-videoad.js)
 imdb.com###top_ad_wrapper
 imdb.com##.cornerstone_slot
@@ -1811,7 +1813,7 @@ youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', '
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
 yggtorrent.*,voirseries.*#@#+js(nobab)
 voirseries.*#@#+js(setInterval-defuser, visibility, 1000)
-motherless.com#@#script:inject(abort-on-property-read.js, _ml_ads_ns)
+motherless.com#@#script:inject(abort-on-property-read, _ml_ads_ns)
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
 torrent9.*#@#.download-btn + .download-btn a
@@ -1827,7 +1829,6 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 #@##cookie-alert
 #@#.np_DialogConsent
 #@#a[href^="//pubads.g.doubleclick.net/"]
-#@##searchform:style(position: absolute
 ||sascdn.com/diff/$script,badfilter
 /fcgi-bin/*$image,badfilter
 @@||imasdk.googleapis.com^$script,badfilter
@@ -2948,7 +2949,7 @@ vars.hotjar.com#@#+js(set, Document.prototype.interestCohort, undefined)
 voirfilms1.net,xcloud1.money##[class^=pubButton]
 voirfilms1.net,xcloud1.money#$#a [class|="btn"] { visibility: hidden; }
 voirseries.fun##.fx-row.lien:if(.t_down)
-vshare.eu#@#+js(aopr.js, BetterJsPop)
+vshare.eu#@#+js(abort-on-property-read, BetterJsPop)
 vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
 webcrawler.com,results.excite.com##[class^="ads-"]
 webtor.io##.ad
@@ -2983,7 +2984,7 @@ youtube.com#@#.ytp-chrome-top
 youtube.com#@#.ytp-chrome-top-buttons
 youtube.com#@#.ytp-paid-content-overlay
 youtube.com#@#.ytp-share-button
-youtube.com#@#+js(aopr.js, watermark)
+youtube.com#@#+js(abort-on-property-read, watermark)
 youtube.com#@#[id="button"]:has([aria-label*="vocal"])
 scan-manga.com#@##ab_bg
 scan-manga.com#@##carouselTOPContainer
