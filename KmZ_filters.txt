@@ -431,7 +431,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 ||www.youtube.com^$csp=worker-src 'self'
 !
 
-
+! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
 @@||abysscdn.com^$subdocument
 abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
@@ -440,6 +440,8 @@ abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 ||cdn.freeimagecdn.net^$third-party
 ||iamcdn.net^*/related.js$important
 ||iamcdn.net^*/jwpsrv.js$important
+! --------------------------------------------------------
+
 ||popmonetizer.net^$important
 ||jpcuthdkmuonwc.com^$third-party
 !/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
