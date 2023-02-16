@@ -21,7 +21,7 @@
 
 
 
-!#if !ext_ublock
+!#if !(ext_ublock)
 
 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
 
@@ -84,9 +84,9 @@
 
 
 
-!#if ext_ublock
+!#if (ext_ublock)
 
-!#if cap_html_filtering
+!#if (cap_html_filtering)
 ! *** Equivalent of adguard's ` #?#elem:remove() `
 ! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
 ! ----[ IFRAMES ]------------------------------------------------------------
@@ -119,7 +119,7 @@
 *##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 !#endif
 
-!#if !cap_html_filtering
+!#if !(cap_html_filtering)
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
@@ -3452,7 +3452,7 @@ coflix.tv#?#ad-host:first-of-type:remove()
 @@/cdn-cgi/challenge/
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
 cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
-!#if ext_ublock
+!#if (ext_ublock)
 cuisineaz.com,fourchette-et-bikini.fr##div:has(> script:contains(/.*(displayAd|prebid).*/))
 !#endif
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
@@ -3463,7 +3463,7 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 @@||ezoic.net$third-party,important
 @@||ezoiccdn.com$third-party,important
 
-!#if !ext_ublock
+!#if !(ext_ublock)
 ! from ublock filter
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 !#endif
