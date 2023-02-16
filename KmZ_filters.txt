@@ -1345,27 +1345,6 @@ stream-serie.net#$##option-1{height:100%}
 @@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
-@@||hlsplay.com^$websocket
-@@||wss.jetload.net/cache$websocket,~third-party
-@@||tracker.openwebtorrent.com^$websocket
-@@||tracker.novage.com.ua^$websocket
-@@wss://*tracker$websocket
-@@/?access_token=*$websocket,domain=spotify.com
-@@||lastpass.com^$websocket
-@@||chat.twitch.tv^$websocket
-@@||packetlosstest.com^$websocket
-@@||dns-oarc.net^$websocket
-@@||edge-chat.*/chat$websocket,domain=facebook.com
-@@||nperf.net^$websocket
-@@||cox.net^$websocket
-@@||commentsengine.com^$websocket,script
-/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
-wss://net-announce*$websocket,important
-||clearadnetwork.com$websocket,important
-||*.hostcontent.live$websocket,important
-||*.space:*$websocket,important
-||alugha.com/graphql$websocket,important
-||socket.tidio.co$websocket,important
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
 ||*/cdn-cgi/apps/head/*$script,~third-party,important
@@ -3649,27 +3628,6 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 
 ! ======= WEBSOCKETS =======
 
-! [FIX] streaming sites
-@@||hlsplay.com^$websocket
-@@||wss.jetload.net/cache$websocket,1p
-! [FIX] P2P video delivery
-@@||tracker.openwebtorrent.com^$websocket
-@@||tracker.novage.com.ua^$websocket
-@@wss://*tracker$websocket
-! [FIX] spotify
-@@/?access_token=*$websocket,domain=spotify.com
-! [FIX] utils
-@@||lastpass.com^$websocket
-! @@||chat.twitch.tv^$websocket
-@@||chat.twitch.tv^$websocket
-@@||packetlosstest.com^$websocket
-@@||dns-oarc.net^$websocket
-@@||edge-chat.*/chat$websocket,domain=facebook.com
-! [FIX] short.ink, abysscdn.com, iamcdn.net players
-@@||websocketgate.com^$websocket
-! [FIX] speedtest
-@@||nperf.net^$websocket
-@@||cox.net^$websocket
 ! ensure blocking
 ! -------------------------------------
 /ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
@@ -3681,6 +3639,31 @@ wss://net-announce*$websocket,important
 ||socket.tidio.co$websocket,important
 ||*.private-api.com$websocket,important
 ||*.idocdn.com$websocket,important
+
+! allowing
+! -------------------------------------
+! [FIX] streaming sites
+@@||hlsplay.com^$websocket
+@@||wss.jetload.net/cache$websocket,~third-party
+! [FIX] P2P video delivery
+@@||tracker.openwebtorrent.com^$websocket
+@@||tracker.novage.com.ua^$websocket
+@@wss://*tracker$websocket
+! [FIX] spotify
+@@/?access_token=*$websocket,domain=spotify.com
+! [FIX] utils
+@@||lastpass.com^$websocket
+@@||chat.twitch.tv^$websocket
+@@||packetlosstest.com^$websocket
+@@||dns-oarc.net^$websocket
+@@||edge-chat.*/chat$websocket,domain=facebook.com
+! [FIX] short.ink, abysscdn.com, iamcdn.net players
+@@||websocketgate.com^$websocket
+! [FIX] speedtest
+@@||nperf.net^$websocket
+@@||cox.net^$websocket
+! [FIX] waaw, netu...
+@@||commentsengine.com^$websocket,script
 
 
 ! ====== PREBID ======
