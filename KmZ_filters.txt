@@ -3645,6 +3645,10 @@ wss://net-announce*$websocket,important
 ! [FIX] streaming sites
 @@||hlsplay.com^$websocket
 @@||wss.jetload.net/cache$websocket,~third-party
+! [FIX] waaw, netu...
+@@||commentsengine.com^$websocket,script
+! [FIX] short.ink, abysscdn.com, iamcdn.net players
+@@||websocketgate.com^$websocket
 ! [FIX] P2P video delivery
 @@||tracker.openwebtorrent.com^$websocket
 @@||tracker.novage.com.ua^$websocket
@@ -3657,13 +3661,9 @@ wss://net-announce*$websocket,important
 @@||packetlosstest.com^$websocket
 @@||dns-oarc.net^$websocket
 @@||edge-chat.*/chat$websocket,domain=facebook.com
-! [FIX] short.ink, abysscdn.com, iamcdn.net players
-@@||websocketgate.com^$websocket
 ! [FIX] speedtest
 @@||nperf.net^$websocket
 @@||cox.net^$websocket
-! [FIX] waaw, netu...
-@@||commentsengine.com^$websocket,script
 
 
 ! ====== PREBID ======
