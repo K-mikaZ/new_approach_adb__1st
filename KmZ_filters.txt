@@ -68,12 +68,12 @@
 ! break "animationdigitalnetwork.fr"
 *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 *#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
-! [id|="div-gpt-ad"][style*="height: ~third-partyx;"][style*="width: ~third-partyx;"]
+! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
 *#?#div:is( [id*="aswift_"] ):remove()
 *#?#:is( [class="afs_ads"] ):remove()
-! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": ~third-partyx;"], [style*=":~third-partyx;"] ):remove()
-*#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": ~third-partyx;"], [style*=":~third-partyx;"] ):remove()
+! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+*#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 ! ----[ ADS ]----------------------------------------------------------------
 *#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
 *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
@@ -113,10 +113,10 @@
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 *##^div:is( [class*="ima-ad-"] )
-! [id|="div-gpt-ad"][style*="height: ~third-partyx;"][style*="width: ~third-partyx;"]
+! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##^:is( span, div ):is( [id|="div-gpt-ad"] )
 *##^div:is( [id*="aswift_"] )
-*##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": ~third-partyx;"], [style*=":~third-partyx;"] )
+*##^div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 ! !#endif
 
 ! !#if !(cap_html_filtering)
@@ -147,7 +147,7 @@
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 *##:is( span, div ):is( [id|="div-gpt-ad"] )
 *##div:is( [id*="aswift_"] )
-*##div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": ~third-partyx;"], [style*=":~third-partyx;"] ):remove()
+*##div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 ! !#endif
 
 ! !#endif
