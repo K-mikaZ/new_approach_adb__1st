@@ -25,12 +25,12 @@
 
 ! ----[ IFRAMES ]------------------------------------------------------------
 #?#iframe:is( [name*="apiLocator"] ):remove()
-#?#iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type:remove()
-#?#iframe:is( [id^="google_ads_iframe_"] ):first-of-type:remove()
-#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type:remove()
+#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
+#?#iframe:is( [id^="google_ads_iframe_"] ):remove()
+#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
 ! fallback, in case
-! #?#iframe:is( [src*="/pagead/"] ):first-of-type:remove()
-#?#iframe:is( [src*="doubleclick"] ):first-of-type:remove()
+! #?#iframe:is( [src*="/pagead/"] ):remove()
+#?#iframe:is( [src*="doubleclick"] ):remove()
 ! ----[ INS ]----------------------------------------------------------------
 ! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 #?#ins[class*="adsby"]:remove()
@@ -89,11 +89,11 @@
 ! *** @ref { @link: https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters }
 ! ----[ IFRAMES ]------------------------------------------------------------
 *##^iframe:is( [name*="apiLocator"] )
-*##^iframe:is( [id="google_esf"], [name="google_esf"] ):first-of-type
-*##^iframe:is( [id^="google_ads_iframe_"] ):first-of-type
-*##^iframe:is( [id^="aswift_"], [name^="aswift_"] ):first-of-type
-! *##^iframe:is( [src*="/pagead/"] ):first-of-type
-*##^iframe:is( [src*="doubleclick"] ):first-of-type
+*##^iframe:is( [id="google_esf"], [name="google_esf"] )
+*##^iframe:is( [id^="google_ads_iframe_"] )
+*##^iframe:is( [id^="aswift_"], [name^="aswift_"] )
+! *##^iframe:is( [src*="/pagead/"] )
+*##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
 *##^ins[class*="adsby"]
@@ -169,6 +169,7 @@
 *##.ad-masthead
 *##.mb-3
 *##[id*="aswift_"]
+##[id^="google_ads_iframe_"]
 *##div[class^="movie-aye"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
@@ -3282,7 +3283,6 @@ lxax.com##[class="hide"]
 ||permutive.com^$third-party
 ||permutive.app^$important,third-party
 ||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
-##[id^="google_ads_iframe_"]
 marmiton.org##[id^="pegasus_banner_atf"]
 marmiton.org##.unfyas, .pegasus_status_rendered
 ||abtasty.com^
