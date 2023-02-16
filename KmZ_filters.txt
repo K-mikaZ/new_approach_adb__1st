@@ -32,7 +32,7 @@
 ! #?#iframe:is( [src*="/pagead/"] ):remove()
 *#?#iframe:is( [src*="doubleclick"] ):remove()
 ! ----[ INS ]----------------------------------------------------------------
-! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
+! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbyvli (dunebook.com)
 *#?#ins[class*="adsby"]:remove()
 ! ----[ DIV ]----------------------------------------------------------------
 ! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
