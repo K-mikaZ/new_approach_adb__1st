@@ -185,12 +185,18 @@
 ! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
-! ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
-*##[class*="player" i] li:has( > [class~=down] )
-*##[class*="player" i] li:has( > [data-url*="vip.htm"] )
+
+! Fake button watching
 *##a[href*="premium"][href*=".php"][class*="btn"]
+*##div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+! Download links, not watching links
+*##[class*="player" i] li:has( > [class~=down] )
+! Fake watching player
+*##[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
+
+
 
 *##.ad-masthead
 *##.mb-3
