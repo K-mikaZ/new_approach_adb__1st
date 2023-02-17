@@ -196,6 +196,7 @@
 *##[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *##li[data-plink="/streamvip.html"]
+*#$##videoplay[src*="vip.htm"] { display: none !important; visibility: hidden !important; }
 
 *##.ad-masthead
 *##.mb-3
@@ -560,16 +561,6 @@ youtube.com#@##consent-bump:remove()
 /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 &frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-
-seriestream.*#?#:is( #lecteur, [class*="player" i] ):has(#videoplay[src*="vip.htm"] )
-seriestream.*#$#:is( #lecteur, [class*="player" i] ):has([class="play-button"]){ display: none }
-seriestream.*##[data-url="/video-streaming.html"]
-! seriestream.*##[class*="streamer"][class*="dow"]
-! seriestream.*##[class$="-aye"]
-! seriestream.*##[class="an"]
-! seriestream.*##[class="X"]
-! seriestream.*##[class="hidefm"]
-! ||seriestream.*/vid*ming.html|$subdocument,~third-party,important
 
 
 twitter.com##div[data-testid="trend"]
