@@ -3047,7 +3047,7 @@ open.spotify.com##[class^="GenericModal__overlay"]
 papystreamings.net##.Playersbelba
 pcmag.com##ins [id|="incontent"]
 pornbraze.com###closeButton
-! pornhub.com##+js(abort-on-property-write, isAdblockOn)
+pornhub.com##+js(abort-on-property-write, isAdblockOn)
 pornhub.com###pb_template
 pornhub.com#$##pb_block { background-color: transparent !important; }
 pornhub.com#$#.adLinks,#pb_top_bar { display: none !important; visibility: hidden !important; }
