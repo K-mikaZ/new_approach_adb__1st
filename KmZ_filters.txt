@@ -533,6 +533,15 @@ youtube.com#@##consent-bump:remove()
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 &frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 
+seriestream.*#?#:is( #lecteur, [class*="player" i] ):has(#videoplay[src*="vip.htm"] )
+seriestream.*#$#:is( #lecteur, [class*="player" i] ):has([class="play-button"]){ display: none }
+seriestream.*##[data-url="/video-streaming.html"]
+! seriestream.*##[class*="streamer"][class*="dow"]
+! seriestream.*##[class$="-aye"]
+! seriestream.*##[class="an"]
+! seriestream.*##[class="X"]
+! seriestream.*##[class="hidefm"]
+! ||seriestream.*/vid*ming.html|$subdocument,~third-party,important
 
 
 twitter.com##div[data-testid="trend"]
@@ -679,7 +688,6 @@ bs0wvimoy99r.com##+js(popads-dummy.js)
 fmax.xyz##+js(abort-on-property-read, __Y)
 /css?family=Montserrat$xmlhttprequest,stylesheet,important,domain=seriestream.ws
 ||enstream.to/vip/*$subdocument,~third-party
-||seriestream.*/vid*ming.html|$subdocument,~third-party,important
 ||zone-stream.club/hd-streaming.php$subdocument,important
 ||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
 /top{1,}laye{1,}r{1,}\.php/$subdocument,~third-party,domain=4kstreamz.co,important
@@ -719,6 +727,10 @@ streamcomplet.mobi##div:if(> [class*="fake_player"])
 streamcomplet.mobi##div:if(> a[target="_blank"])
 streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
 streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
+33seriestreaming.com###player-overlay
+33seriestreaming.com##.signup-window
+33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
+33seriestreaming.org##div[class*="btn"] > a[href="#"]
 zustream.*##li:if(:has-text(/(VIP)(.*)?/))
 streaminggratuitvf.*##button:has-text(/1080p/)
 ! filmz.*##li:if(:-abp-has(i.player-hdplayer))
@@ -1205,13 +1217,6 @@ search.seznam.cz###sklik-right
 serie-streaming.cc##center:nth-of-type(2)
 series.dpstreaming.to##.button2
 series.dpstreaming.to##.filmborder:nth-of-type(1) > .filmcontent > div:nth-of-type(2)
-seriestream.*#$#.player:if([class="play-button"]){ display: none }
-seriestream.*##[data-url="/video-streaming.html"]
-seriestream.*##[class*="streamer"][class*="dow"]
-seriestream.*##[class$="-aye"]
-seriestream.*##[class="an"]
-seriestream.*##[class="X"]
-seriestream.*##[class="hidefm"]
 sguru.org##.herald-ad
 similarsites.com###\5f mN_main_837788206_0_n,#\5f mN_main_837788206_2_n
 site.serie-streaming.ws##.alert-warning.alert,.btn-warning.btn,.container .col-lg-9.col-sm-8.col-xs-12,.tags.pad
@@ -2321,7 +2326,6 @@ tamdor.com,epiog.com##[src*="/avatar.php"]
 /com.php$subdocument,~third-party,important,domain=irdoz.com|eyobim.com|flidom.com|snimaf.com
 tirexo.pro##[href*="/get_link-"]
 tirexo.pro##.content > p:if(a[href="/premium.html"][class="btn btn-danger"])
-seriestream.*#?##lecteur:if(#videoplay[src*="/video-streaming.html"])
 vfilms.me##a[href*="://go.trackitalltheway."]
 /\%22ad/$~font,~css,badfilter
 ||dev-nano.com/socket.io$important
@@ -2681,9 +2685,6 @@ voirseries.*##+js(window.open-defuser)
 @@||highstream.tv/player8/related.js
 ||czwidgets.fr^
 ||pausefun.com^
-33seriestreaming.com###player-overlay
-33seriestreaming.com##.signup-window
-33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 /classes/masha/masha.js$badfilter
 ||filelox.com/paper.html$domain=vidlox.me
 cpasmieux.tv##.tabs-block__content.video-inside.video-responsive
