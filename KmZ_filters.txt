@@ -79,6 +79,7 @@
 *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
 *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
+*#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! !#endif
 
