@@ -22,7 +22,7 @@
 
 
 ! !#if !(ext_ublock)
-! [FIX] pornhub.com is slow down with this method
+! [FIX] pornhub.com is slow down with this method (but only with Adguard)
 ! ----[ IFRAMES ]------------------------------------------------------------
 *#?#iframe:is( [name*="apiLocator"] ):remove()
 *#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
@@ -65,9 +65,9 @@
 ! *** Test on animationdigitalnetwork.fr
 ~pornhub.com#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
 ~pornhub.com#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
-! break "animationdigitalnetwork.fr"
-*#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 ~pornhub.com#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
+! break "animationdigitalnetwork.fr"
+~pornhub.com,~animationdigitalnetwork.fr#?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 ~pornhub.com#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
 ~pornhub.com#?#div:is( [id*="aswift_"] ):remove()
@@ -79,7 +79,7 @@
 *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
 *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
-
+! ----[ WHITELIST ]----------------------------------------------------------------
 ! !#endif
 
 
