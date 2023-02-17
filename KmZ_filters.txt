@@ -3833,8 +3833,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 
 ! block too many sites and web players (e.g. animationdigitalnetwork.fr)
 @@||googlesyndication.com^
+! block too many sites (e.g. 6play.fr use for login to the site)
 @@||gigya.com^
-||analytics.gigyahosting1.com^$important
-||gigcount.com^$important
 
 
