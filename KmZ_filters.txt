@@ -952,7 +952,6 @@ mail.protonmail.com##section:if(>[target="_blank"])
 cwtv.com##+js(abort-on-property-write, wallConfig)
 ! download.mokeedev.com##+js(std.js, alert-danger-enabled)
 eurogamer.net,rockpapershotgun.com,vg247.com##+js(abort-on-property-write, yafaIt)
-fullmatchesandshows.com,mediafire.com,newser.com,pornhub.com,rlslog.net,scienceworldreport.com,streamcloud.eu,tinypic.com##+js(abort-on-property-write, UAParser)
 gamer.com.tw##+js(abort-on-property-read, AntiAd.check)
 hackintosh.zone##+js(abort-current-inline-script, document.readyState, /(?:\\x[0-9a-f]{2}){20}/)
 hackintosh.zone##+js(abort-on-property-read, document.write)
@@ -966,7 +965,6 @@ monova.org,salefiles.com##+js(abort-on-property-read, adblock)
 navigaweb.net##+js(alert-buster.js)
 newser.com##+js(abort-on-property-read, checkAds)
 newser.com##+js(abort-on-property-read, oio)
-pornhub.com##+js(abort-on-property-write, isAdblockOn)
 vidnow.to,vshare.eu##+js(abort-on-property-read, BetterJsPop)
 rapidvideo.com##+js(abort-on-property-write, executed)
 tvad.me##+js(abort-on-property-read, app.adblockPop)
@@ -2202,7 +2200,6 @@ search.lilo.org##.top.addivwhite2
 /async-ads.js$script,important
 #@#+js(abort-current-inline-script, document.createElement, script)
 tubeon.com##.drt-spot-visible.no-buttons.drt-spot-box
-pornhub.com###pb_template
 google.com##.uEierd
 google.com###tadsb
 google.com###bottomads
@@ -3050,8 +3047,10 @@ open.spotify.com##[class^="GenericModal__overlay"]
 papystreamings.net##.Playersbelba
 pcmag.com##ins [id|="incontent"]
 pornbraze.com###closeButton
+! pornhub.com##+js(abort-on-property-write, isAdblockOn)
+pornhub.com###pb_template
 pornhub.com#$##pb_block { background-color: transparent !important; }
-pornhub.com#$#.adsbytrafficjunky,.adLinks,#pb_top_bar { display: none !important; visibility: hidden !important; }
+pornhub.com#$#.adLinks,#pb_top_bar { display: none !important; visibility: hidden !important; }
 youporn.com#@#video[autoplay][loop]
 youporn.com##[id^="new_zone_"]
 @@||app.titsx.com^$domain=porn-plus.com
