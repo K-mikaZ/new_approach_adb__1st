@@ -3011,8 +3011,9 @@ digit.in##.add
 digit.in##.adsAdvert
 digitalcitizen.life##.block--ad
 dood.la###video_player > div.vjs-poster:nth-child(2)
-ducine.*,streamfilms.*##.player
-ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
+! ducine.*,streamfilms.*##.player
+! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
+/stream*vip.htm$subdocument,~third-party
 ducine.*#$#.wrap { padding-top: 4vw!important; }
 eliteseries.club##.play_down
 emule-island.eu##.gplay-box
