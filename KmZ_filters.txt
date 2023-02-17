@@ -185,10 +185,11 @@
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
 *##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##div[class="g-buttons"] > a
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *##div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+! Fallback Fake button watching
+*##div[class^="movie-aye"]
+*##div[class="g-buttons"] > a
 ! Download links, not watching links
 *##[class*="player" i] li:has( > [class~=down] )
 ! Fake watching player
@@ -202,7 +203,6 @@
 *##.mb-3
 *##[id*="aswift_"]
 ! *##[id^="google_ads_iframe_"]
-*##div[class^="movie-aye"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
 ! ##[data-ad-host*="-pub-"]
