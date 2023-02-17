@@ -158,11 +158,6 @@
 *##div:is( [class^="salidor_"] ):first-of-type
 *##div:is( [class^="masha_"] ):first-of-type
 *##div:is( [class^="tolro_"] ):first-of-type
-! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-*##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-*##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##div[class="g-buttons"] > a
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
@@ -187,6 +182,11 @@
 
 
 ! Fake button watching
+! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
+*##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+*##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+! fix for ##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])) && ##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+*##div[class="g-buttons"] > a
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *##div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 ! Download links, not watching links
