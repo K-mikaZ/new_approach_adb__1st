@@ -53,22 +53,6 @@
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ~pornhub.com#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
-~pornhub.com#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-!#if (ext_ublock)
-*#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-*#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
-*#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
-*#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-*#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
-*#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
-*#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-!#endif
 ~pornhub.com#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
 ~pornhub.com#?#script:matches-attr( "src"="/.+mc.yandex.ru.+/" ):remove()
 ~pornhub.com#?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
@@ -81,6 +65,28 @@
 ~pornhub.com#$#script:contains(/.+facebook.com/tr?.+/) { remove: true; }
 ~pornhub.com#$#script:contains(/.+googletagmanager.+/) { remove: true; }
 ~pornhub.com#$#script:contains(/.+static.ads-twitter.com.+/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
+~pornhub.com#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
+~pornhub.com#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
+~pornhub.com#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
+!#if (ext_ublock)
+*#$#script:contains(/.+histats.+/) { remove: true; }
+*#$#script:contains(/.+mc.yandex.ru.+/) { remove: true; }
+*#$#script:contains(/.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
+*#$#script:contains(/.+facebook.com/tr?.+/) { remove: true; }
+*#$#script:contains(/.+googletagmanager.+/) { remove: true; }
+*#$#script:contains(/.+static.ads-twitter.com.+/) { remove: true; }
+*#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+*#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
+*#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
+*#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
+*#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
+*#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
+*#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
+!#endif
 ! break "animationdigitalnetwork.fr"
 ! *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
