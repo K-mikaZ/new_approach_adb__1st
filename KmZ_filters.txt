@@ -46,7 +46,6 @@
 ~pornhub.com#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 ~pornhub.com#?#div[class="ads-placeholder"]:remove()
 ~pornhub.com#?#div[class="containerAds"]:remove()
-~pornhub.com#?#[data-ads-core]:remove()
 ~pornhub.com#?#div[class="OUTBRAIN"]:remove()
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
@@ -97,7 +96,6 @@
 *#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
 *#?#div[class="ads-placeholder"]:remove()
 *#?#div[class="containerAds"]:remove()
-*#?#[data-ads-core]:remove()
 *#?#div[class="OUTBRAIN"]:remove()
 *#?#ins[class*="adsby"]:remove()
 *#?#div:has( > script:contains(adsby):only-of-type ):remove()
@@ -143,6 +141,11 @@
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
 *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
+*#@?#script[src*="sddan.com"]:remove()
+*#@?#script[data-cmp-src*="hotjar."]:remove()
+*#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
+! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
+*#@?#[data-ads-core]:remove()
 
 
 
