@@ -208,8 +208,8 @@
 *##[class*="player" i] li:has( > [class~=down] )
 *##[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *##a[href*="premium"][href*=".php"][class*="btn"]
-*##li[data-plink="/streamvip.html"]
-*#$##videoplay[src*="vip.htm"] { display: none !important; visibility: hidden !important; }
+*##li[data-plink*="stream"][data-plink*="vip.htm"]
+*#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
 
 *##.ad-masthead
 *##.mb-3
