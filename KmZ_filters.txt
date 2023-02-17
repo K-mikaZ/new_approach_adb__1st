@@ -59,6 +59,7 @@
 ~pornhub.com#?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
 ~pornhub.com#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
 ~pornhub.com#?#script:matches-attr( "src"="/.+static.ads-twitter.com.+/" ):remove()
+~pornhub.com#?#script:matches-attr( "src"="/.+google-analytics.com/analytics.+/" ):remove()
 ~pornhub.com#?#script:contains(/src=.+histats.+/):remove()
 ~pornhub.com#?#script:contains(/src=.+mc.yandex.ru.+/):remove()
 ~pornhub.com#?#script:contains(/src=.+connect.facebook.net/en_US/fbevents.js/):remove()
@@ -77,6 +78,14 @@
 ~pornhub.com#$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
 ~pornhub.com#$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
 !#if (ext_ublock)
+*#?#div[class*="ima-ad-"]:remove()
+*#?#script[src*="histats"]:remove()
+*#?#script[src*="mc.yandex.ru"]:remove()
+*#?#script[src*="connect.facebook.net/en_US/fbevents.js"]:remove()
+*#?#script[src*="facebook.com/tr?"]:remove()
+*#?#script[src*="googletagmanager"]:remove()
+*#?#script[src*="static.ads-twitter.com"]:remove()
+*#?#script[src*="google-analytics.com/analytics"]:remove()
 *#?#script:contains(/src=.+histats.+/):remove()
 *#?#script:contains(/src=.+mc.yandex.ru.+/):remove()
 *#?#script:contains(/src=.+connect.facebook.net/en_US/fbevents.js/):remove()
