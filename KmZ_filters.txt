@@ -22,7 +22,7 @@
 
 
 ! !#if !(ext_ublock)
-
+! [FIX] pornhub.com is slow down with this method
 ! ----[ IFRAMES ]------------------------------------------------------------
 *#?#iframe:is( [name*="apiLocator"] ):remove()
 *#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
@@ -32,48 +32,48 @@
 ! #?#iframe:is( [src*="/pagead/"] ):remove()
 *#?#iframe:is( [src*="doubleclick"] ):remove()
 ! ----[ INS ]----------------------------------------------------------------
-! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbyvli (dunebook.com)
-*#?#ins[class*="adsby"]:remove()
+! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
+~pornhub.com#?#ins[class*="adsby"]:remove()
 ! ----[ DIV ]----------------------------------------------------------------
-! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
-*#?#div:has( > script:contains(adsby):only-of-type ):remove()
-*#?#div[class="AdPlaceholder"]:first-of-type:remove()
+! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
+~pornhub.com#?#div:has( > script:contains(adsby):only-of-type ):remove()
+~pornhub.com#?#div[class="AdPlaceholder"]:first-of-type:remove()
 ! #?#div:is( [class|="adsvp"]:first-of-type, [class|="adsvp"]:last-of-type ):remove()
-*#?#div:is( [class|="adsvp"]:last-of-type ):remove()
-*#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
-*#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-*#?#div[class="ads-placeholder"]:remove()
-*#?#div[class="containerAds"]:remove()
-*#?#[data-ads-core]:remove()
-*#?#div[class="OUTBRAIN"]:remove()
+~pornhub.com#?#div:is( [class|="adsvp"]:last-of-type ):remove()
+~pornhub.com#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
+~pornhub.com#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
+~pornhub.com#?#div[class="ads-placeholder"]:remove()
+~pornhub.com#?#div[class="containerAds"]:remove()
+~pornhub.com#?#[data-ads-core]:remove()
+~pornhub.com#?#div[class="OUTBRAIN"]:remove()
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
-*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
+~pornhub.com#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-*#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-*#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+~pornhub.com#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
 ! histats
-*#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
-*#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
+~pornhub.com#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
+~pornhub.com#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
 ! Facebook Pixel
-*#?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
-*#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
-*#?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
-*#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
+~pornhub.com#?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
+~pornhub.com#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
+~pornhub.com#?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
+~pornhub.com#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
 ! *** Test on animationdigitalnetwork.fr
-*#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-*#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
+~pornhub.com#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
+~pornhub.com#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
 ! break "animationdigitalnetwork.fr"
 *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
-*#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
+~pornhub.com#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
-*#?#div:is( [id*="aswift_"] ):remove()
-*#?#:is( [class="afs_ads"] ):remove()
+~pornhub.com#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
+~pornhub.com#?#div:is( [id*="aswift_"] ):remove()
+~pornhub.com#?#:is( [class="afs_ads"] ):remove()
 ! #?#div:is( [class*="ad-unit"], [class*="adunit"], [class*="textads"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
-*#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
+~pornhub.com#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 ! ----[ ADS ]----------------------------------------------------------------
 *#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
 *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
@@ -97,7 +97,7 @@
 ! *##^iframe:is( [src*="/pagead/"] )
 *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
-! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
+! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 *##^ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
 *##^div[class="AdPlaceholder"]:first-of-type
@@ -124,8 +124,6 @@
 ! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
 ! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
 ! ----[ INS ]----------------------------------------------------------------
-! adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
-*##ins[class*="adsby"]
 ! ----[ DIV ]----------------------------------------------------------------
 *##div:has( > script:contains(adsby):only-of-type )
 *##div[class="AdPlaceholder"]:first-of-type
@@ -161,7 +159,7 @@
 *#@#div[aria-live^="polite"]
 *#@#div > div[aria-live="polite"]
 
-! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive
+! fallback for adsby: ##.adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
 ! ducine.*,streaming1.co##li:if(:-abp-contains(/HD /))
