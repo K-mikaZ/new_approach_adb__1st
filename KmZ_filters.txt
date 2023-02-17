@@ -48,22 +48,12 @@
 ~pornhub.com#?#div[class="containerAds"]:remove()
 ~pornhub.com#?#[data-ads-core]:remove()
 ~pornhub.com#?#div[class="OUTBRAIN"]:remove()
-*##^div[class="AdPlaceholder"]:first-of-type
-*##^div:is( [class|="adsvp"]:last-of-type )
-*##^div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-*##^div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
-*##^div[class="ads-placeholder"]
-*##^div[class="containerAds"]
-*##^[data-ads-core]
-*##^div[class="OUTBRAIN"]
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
 ~pornhub.com#?#ins[class*="adsby"]:remove()
 ~pornhub.com#?#div:has( > script:contains(adsby):only-of-type ):remove()
 ! ~pornhub.com#?#div:has( > ins[class*="adsby"]:only-of-type ):remove()
-*##^ins[class*="adsby"]
-*##^div:has( > script:contains(adsby):only-of-type ):remove()
 ! *##^div:has( > ins[class*="adsby"]:only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
@@ -3865,5 +3855,3 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 @@||googlesyndication.com^
 ! block too many sites (e.g. 6play.fr use for login to the site)
 @@||gigya.com^
-
-
