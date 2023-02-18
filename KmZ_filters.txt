@@ -352,7 +352,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ! !#if (adguard)
 ! ... [forum.adguard.com](https://tinyurl.com/2z56vox2)
 ! ... error with microformat
-!youtube-nocookie.com,youtube.com#%#(function(){var overrideObject=function(obj,propertyName,overrideValue){var overriden=false;for(var key in obj)if(obj.hasOwnProperty(key)&&key===propertyName){obj[key]=overrideValue;overriden=true}else if(obj.hasOwnProperty(key)&&typeof obj[key]==="object")if(overrideObject(obj[key],propertyName,overrideValue))overriden=true;return overriden};var smartJSONParseOverride=function(propertyName,overrideValue,reStack){var realParse=JSON.parse;JSON.parse=function(text,reviver){var obj=realParse(text,reviver);if(!obj)return obj;var stackTrace=(new Error).stack;if(reStack.test(stackTrace))if(overrideObject(obj,propertyName,overrideValue));return obj}};smartJSONParseOverride("adPlacements",[],/.*/);smartJSONParseOverride("playerAds",[],/.*/)})();
+! youtube-nocookie.com,youtube.com#%#(function(){var overrideObject=function(obj,propertyName,overrideValue){var overriden=false;for(var key in obj)if(obj.hasOwnProperty(key)&&key===propertyName){obj[key]=overrideValue;overriden=true}else if(obj.hasOwnProperty(key)&&typeof obj[key]==="object")if(overrideObject(obj[key],propertyName,overrideValue))overriden=true;return overriden};var smartJSONParseOverride=function(propertyName,overrideValue,reStack){var realParse=JSON.parse;JSON.parse=function(text,reviver){var obj=realParse(text,reviver);if(!obj)return obj;var stackTrace=(new Error).stack;if(reStack.test(stackTrace))if(overrideObject(obj,propertyName,overrideValue));return obj}};smartJSONParseOverride("adPlacements",[],/.*/);smartJSONParseOverride("playerAds",[],/.*/)})();
 ! !#endif
 !
 ! ...
@@ -365,7 +365,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
 ! ...
 ! ¦¦¦¦¦¦¦¦ [TIP] NON-COSMETIC FILTERS TO REMOVE JUNK FROM YOUTUBE
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tcswua/tip_noncosmetic_filters_to_remove_junk_from/>
