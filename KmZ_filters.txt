@@ -328,10 +328,22 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-
+!
+! ¦¦¦¦¦¦¦¦ [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
+! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
+! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
+! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
+||music.youtube.com^$csp=worker-src 'none'
+||www.youtube.com^$csp=worker-src 'none'
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+!
 ! ...
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
@@ -440,7 +452,7 @@ music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIG
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /(doubleclick|jnn\-pa\.googleapis|tpc\.googlesyndication)\.\D{3}/ )
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/stats\// method:POST)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/log.*\=json\&/ method:POST)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
 ! !#endif
 !
 ! ¦¦¦¦¦¦¦¦ [FIX] ADS ATTEMPT TO LAUNCH ON YOUTUBE, BUT GIVE "AN ERROR HAS OCCURRED" AND IT'S REAL ANNOYING.
@@ -448,14 +460,6 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{
 @@||youtube.com/get_video_info
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
-!
-! ¦¦¦¦¦¦¦¦ [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
-! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
-! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
-! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
-||music.youtube.com^$csp=worker-src 'self'
-||youtube-nocookie.com^$csp=worker-src 'self'
-||www.youtube.com^$csp=worker-src 'self'
 !
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
