@@ -326,20 +326,15 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 ! ... youtube.com##+js(json-prune, adPlacements) && youtube.com##+js(json-prune, playerAds)
 ! ... to get a ad free experience.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.richGridRenderer.masthead)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+
 ! ...
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, "PLAYBACK_MODE_DISALLOW")
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, "PLAYBACK_MODE_DISALLOW")
 
 ! !#if (adguard)
 ! ... [forum.adguard.com](https://tinyurl.com/2z56vox2)
@@ -354,7 +349,6 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ||music.youtube.com/cspreport$other
 ||m.youtube.com/cspreport$other
 ||youtube-nocookie.com/cspreport$other
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playbackTracking.*Url)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
@@ -375,7 +369,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, endscreen)
 ! ? REMOVES "SHORTS" BUTTON
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
 ! ? REMOVES VOICE SEARCH BUTTON (ONLY WORKS ON WATCH PAGE)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
 ! ? REMOVES THE "INCLUDES PAID PROMOTION MESSAGE"
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, paidContentOverlay)
 ! ? REMOVES SIDEBAR ADS
@@ -386,7 +380,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoCo
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
 ! ? REMOVES INFO PANELS UNDER VIDEOS
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
 ! ? REMOVES MERCHANDISE SHELF
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
 ! ? REMOVES AUTO PLAYING CHANNEL TRAILERS
@@ -398,53 +392,53 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoCo
 ! ? REMOVE AUTOPLAYING VIDEO CAROUSEL FROM GAMING TAB
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, header.carouselHeaderRenderer)
 ! ? REMOVE FEATURED PLAYLIST FROM DESCRIPTION
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
 ! ...
 !
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, inlineAdsInterval, undefined)
-!youtube.com##+js(remove-attr, 'example', 'div[class="inner"]')
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, inlineAdsInterval, undefined)
+! youtube.com##+js(remove-attr, 'example', 'div[class="inner"]')
 ! ... youtube-nocookie.com  https://core.trac.wordpress.org/ticket/44610
 ! ...
 ! ... window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl,
 !     // https://www.youtube.com/embed/LsFkObHdXnU  »»»  https://www.youtube-nocookie.com/embed/SwpkPf63304
-!youtube.com#%#const videoID = window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl.split('/')[4]; const noCookieURL = `https://www.youtube-nocookie.com/embed/${videoID}`; Object.defineProperty(window, 'ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl', { get: function() { return noCookieURL; }})
-!youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', '#movie_player > div.html5-video-container > video', 'controlslist', '')
-!youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', 'div.html5-video-container > video', 'controls', '2')
+! youtube.com#%#const videoID = window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl.split('/')[4]; const noCookieURL = `https://www.youtube-nocookie.com/embed/${videoID}`; Object.defineProperty(window, 'ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl', { get: function() { return noCookieURL; }})
+! youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', '#movie_player > div.html5-video-container > video', 'controlslist', '')
+! youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', 'div.html5-video-container > video', 'controls', '2')
 
 
 ! ¦¦¦¦¦¦¦¦ [TIP] OTHER PARAMS ... yt.config_.EXPERIMENT_FLAGS
 ! ... FIXME: Not working here
 ! [MISC] ??? youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.USE_EMBEDDED_INNERTUBE_DATA, true)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_memberships_and_purchases, false)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_premium_voluntary_pause, false)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.html5_web_enable_halftime_preroll, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.h5_set_masthead_ads_asynchronously, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.verify_ads_itag_early, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_push_enabled, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.music_web_enable_service_worker, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.h5_set_masthead_ads_asynchronously, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.verify_ads_itag_early, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_push_enabled, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.music_web_enable_service_worker, false)
 !
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.masthead, emptyArr)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.header.feedFilterChipBarRenderer, emptyArr)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.masthead, emptyArr)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.header.feedFilterChipBarRenderer, emptyArr)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
 ! ...
 music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
 ! ...
 ! ¦¦¦¦¦¦¦¦ [TIP] APPARENCE PARAMS
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
 ! ...
 ! ¦¦¦¦¦¦¦¦ [TIP] PREVENT INTENSIF TRAFIC
 ! !#if (ext_ublock)
 ! ...   ??   because adguard slowly with those params
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(youtube\.com/sw\.js)/)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(go{2}\D{3}(?!.*(apis|usercontent|video)).*\.\D{3,8}\/)/)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, method:HEAD)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /\/(stats|tracking|verify)\// method:GET)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /(doubleclick|jnn\-pa\.googleapis|tpc\.googlesyndication)\.\D{3}/ )
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/stats\// method:POST)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/log.*\=json\&/ method:POST)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(youtube\.com/sw\.js)/)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(go{2}\D{3}(?!.*(apis|usercontent|video)).*\.\D{3,8}\/)/)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, method:HEAD)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /\/(stats|tracking|verify)\// method:GET)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /(doubleclick|jnn\-pa\.googleapis|tpc\.googlesyndication)\.\D{3}/ )
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/stats\// method:POST)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/log.*\=json\&/ method:POST)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
 ! !#endif
 !
