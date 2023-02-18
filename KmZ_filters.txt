@@ -477,7 +477,7 @@ abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
 /\/offline(\/|\.htm(l)?)?$/$xmlhttprequest,~third-party
-/\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
+! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
