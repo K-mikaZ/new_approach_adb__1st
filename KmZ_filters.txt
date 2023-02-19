@@ -521,9 +521,27 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dial
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com#@##consent-bump:remove()
+youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
+youtube.com#$#ytd-mealbar-promo-renderer { display: none !important; visibility: hidden !important; }
+youtube.com##.ytd-consent-bump-lightbox
+youtube.com###content-wrapper
+youtube.com##.yt-live-chat-banner-renderer
+youtube.com###visible-banners > .yt-live-chat-banner-manager
+youtube.com#@##clarify-box
+youtube.com###YtKevlarVisibilityIdentifier
+youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
+youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
+youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
+youtube.com#@#.appbar-guide-menu-layout, .gstl_50.sbdd_a, .js-yt-header.yt-header, ytd-mini-guide-renderer.ytd-app, app-drawer[opened=""][persistent=""], ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer:style(position: absolute !important;)
+youtube.com#@#.ytp-chrome-top
+youtube.com#@#.ytp-chrome-top-buttons
+youtube.com#@#.ytp-share-button
+! youtube.com#@#+js(abort-on-property-read, watermark)
+youtube.com#@#[id="button"]:has([aria-label*="vocal"])
+music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
 @@||youtube.com$removeparam=gl
 @@||youtube.com$removeparam=hl
-@@||consent.youtube.com^$domain=youtube.com
+@@||consent.youtube.com^
 ||ads.youtube.com^$badfilter
 @@||ads.youtube.com$generichide
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
@@ -3136,27 +3154,6 @@ www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="ad
 www.universanime.co##[src*="/bouton_ads/"]
 yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
 younetu.com##+js(window.open-defuser)
-youtube.com#$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
-youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none !important; visibility: hidden !important; }
-youtube.com##.ytd-consent-bump-lightbox
-youtube.com###content-wrapper
-youtube.com##.yt-live-chat-banner-renderer
-youtube.com###visible-banners > .yt-live-chat-banner-manager
-youtube.com#@##clarify-box
-youtube.com###YtKevlarVisibilityIdentifier
-youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
-youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
-youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
-youtube.com#@##merch-shelf
-youtube.com#@##offer-module
-youtube.com#@#.appbar-guide-menu-layout, .gstl_50.sbdd_a, .js-yt-header.yt-header, ytd-mini-guide-renderer.ytd-app, app-drawer[opened=""][persistent=""], ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer:style(position: absolute !important;)
-youtube.com#@#.html5-endscreen
-youtube.com#@#.ytp-chrome-top
-youtube.com#@#.ytp-chrome-top-buttons
-youtube.com#@#.ytp-paid-content-overlay
-youtube.com#@#.ytp-share-button
-youtube.com#@#+js(abort-on-property-read, watermark)
-youtube.com#@#[id="button"]:has([aria-label*="vocal"])
 scan-manga.com#@##ab_bg
 scan-manga.com#@##carouselTOPContainer
 ||*.cloudfront.net^*realytics*.js
