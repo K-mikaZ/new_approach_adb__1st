@@ -722,14 +722,12 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 ||zone-stream.club/hd-streaming.php$subdocument,important
 ||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
 /top{1,}laye{1,}r{1,}\.php/$subdocument,~third-party,domain=4kstreamz.co,important
-||wiflix.*/*.mp4$media
 ||enstream.to/vip/*$media,~third-party
 ||issue.mp4$media,important,domain=streamz.vg
 ||https://googleads.github.io/googleads*html5/media/*.mp4$important
 /\/[uU]niversal(\.min)?\.(.{2,})/$media,xmlhttprequest
 .dll$media,important,domain=streamz.vg,badfilter
 ||site.dotvideo.cc^$important
-||wiflix.*/voir/play.php$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
 ||*^$script,third-party,domain=dood.*
@@ -863,7 +861,6 @@ voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 voirfilms.*##.f-inner
 voirfilms.*##.X
-wiflix.*##.sadst
 zone-stream.*##+js(window.open-defuser)
 fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
 filmgratuit.*,filmz.*,streamavie.*,vfilms.me,voirfilms.*##center:if(.myButton)
@@ -1323,7 +1320,6 @@ webmail1k.orange.fr##.sidebar-external-services
 webmarketing-com.com###norilsk_overlay_div_5374
 whatismybrowser.com##.extra,.responsive.fun
 widget.business-lounge.fr##.eshop
-wiflix.net##.sadst
 wiiztube.com##.pps-h-auto-px.pps-w-640-px.pps-no-border.pps-popup,.__b-popup1__.b-modal
 wikiserie.*##.btn-share.rounded-0.btn-sm.btn
 wikiserie.*##.social-share
@@ -2925,9 +2921,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 !#endif
 #?#.player:-abp-has(>[data-ads-core])
 ! latendresseencuisine.com##div:if(>ins.adsbygoogle)
-! ##+js(ra, data-tracking-id, a)
-! ##+js(ra, data-tracking-id, button)
-! ##+js(ra, data-tracking-id, label)
 *$removeparam=fbclid
 *$removeparam=yclid
 *$script,third-party,domain=uqload.com
@@ -3145,14 +3138,23 @@ vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
 webcrawler.com,results.excite.com##[class^="ads-"]
 webtor.io##.ad
 webtor.io##.mejs__logo-button.mejs__button
-wiflix.*##+js(ra, target|href, .video-player a)
+wiflix.*##.sadst
+wiflix.*##+js(remove-attr, target|href, .video-player a)
 wiflix.*##+js(window.open-defuser)
+||wiflix.*/*.mp4$media
+||wiflix.*/voir/play.php$important
 @@||vido.lol^$subdocument
 @@||sbbrisk.com^$subdocument
 sbbrisk.com##+js(window.open-defuser)
 ||*^$third-party,domain=sbbrisk.com,denyallow=akamai-cdn-content.com|akamai-cdn-images.com
 @@||akamai-cdn-content.com^$third-party
 @@||akamai-cdn-images.com^$third-party
+@@||streamhide.to^$subdocument
+streamhide.to##+js(window.open-defuser)
+||*^$third-party,domain=streamhide.to,denyallow=sh-content.com|sh-content.xyz
+@@||sh-content.com^$third-party
+@@||sh-content.xyz^$third-party
+/empty.srt$~third-party
 wincert.net##.primisslate
 www.addictivetips.com##.mv-ad-box
 www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
