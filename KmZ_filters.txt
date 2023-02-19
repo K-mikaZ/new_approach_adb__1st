@@ -356,9 +356,9 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ||music.youtube.com/cspreport$other
 ||m.youtube.com/cspreport$other
 ||youtube-nocookie.com/cspreport$other
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
 ! ...
 ! ¦¦¦¦¦¦¦¦ [TIP] NON-COSMETIC FILTERS TO REMOVE JUNK FROM YOUTUBE
@@ -456,6 +456,11 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
 
+! /generate_204$xmlhttprequest,domain=youtube.com
+! ||youtube.com/*_204?$~xmlhttprequest
+! /generate_204$image,other,script
+! /gen_204?$image,script
+
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
 @@||abysscdn.com^$subdocument
@@ -527,9 +532,6 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dial
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com#@##consent-bump:remove()
-||youtube.com/*_204?$~xmlhttprequest
-/generate_204$image,other,script
-/gen_204?$image,script
 @@||youtube.com$removeparam=gl
 @@||youtube.com$removeparam=hl
 @@||consent.youtube.com^$domain=youtube.com
@@ -3243,7 +3245,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 @@||geo.dailymotion.com$subdocument,media
 ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
-/generate_204$xmlhttprequest,domain=youtube.com
 @@||uqload.com^$script,image,_,~third-party
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
