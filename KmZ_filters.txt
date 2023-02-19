@@ -320,10 +320,10 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 ! ... youtube.com##+js(json-prune, adPlacements) && youtube.com##+js(json-prune, playerAds)
 ! ... to get a ad free experience.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
+youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 !
 ! ¦¦¦¦¦¦¦¦ [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
@@ -455,31 +455,6 @@ music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIG
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
-
-! /generate_204$xmlhttprequest,domain=youtube.com
-! ||youtube.com/*_204?$~xmlhttprequest
-! /generate_204$image,other,script
-! /gen_204?$image,script
-
-! --- short.ink concerns: Test on 33seriestreaming.org ---
-@@||short.ink^$subdocument
-@@||abysscdn.com^$subdocument
-abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
-||*^$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com
-||*^$third-party,domain=websocketgate.com
-||cdn.freeimagecdn.net^$third-party
-||iamcdn.net^*/related.js$important
-||iamcdn.net^*/jwpsrv.js$important
-! --------------------------------------------------------
-
-||popmonetizer.net^$important
-||jpcuthdkmuonwc.com^$third-party
-!/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
-/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
-/(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
-/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
-||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
-/\/offline(\/|\.htm(l)?)?$/$xmlhttprequest,~third-party
 ! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
@@ -525,6 +500,20 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
 youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
 music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
+/y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
+/log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+@@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/
+/youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
+||youtube.com/get_video_info$badfilter
+||www.youtube.com/get_video_info?*=detailpage$xmlhttprequest,domain=youtube.com,badfilter
+||youtube.com/get_video_info?$~third-party,badfilter
+||youtube-nocookie.com^$badfilter
+@@||youtube-nocookie.com$generichide
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
@@ -535,32 +524,38 @@ youtube.com#@##consent-bump:remove()
 @@||youtube.com$removeparam=gl
 @@||youtube.com$removeparam=hl
 @@||consent.youtube.com^$domain=youtube.com
-/y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
-/log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-@@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||ads.youtube.com^$badfilter
+@@||ads.youtube.com$generichide
+&lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+&frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+! /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+! /generate_204$xmlhttprequest,domain=youtube.com
+! ||youtube.com/*_204?$~xmlhttprequest
+! /generate_204$image,other,script
+! /gen_204?$image,script
+
+! --- short.ink concerns: Test on 33seriestreaming.org ---
+@@||short.ink^$subdocument
+@@||abysscdn.com^$subdocument
+abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
+||*^$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com
+||*^$third-party,domain=websocketgate.com
+||cdn.freeimagecdn.net^$third-party
+||iamcdn.net^*/related.js$important
+||iamcdn.net^*/jwpsrv.js$important
+! --------------------------------------------------------
+
 ||yougube.com^$all,important
 ||youtibe.com^$all,important
 ||youtuhe.com^$all,important
-/r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/
-/youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
-||youtube.com/get_video_info$badfilter
-||www.youtube.com/get_video_info?*=detailpage$xmlhttprequest,domain=youtube.com,badfilter
-||youtube.com/get_video_info?$~third-party,badfilter
-@@||youtube.com/get_video_info$badfilter
-@@||www.youtube.com/get_video_info?*video_id*detailpage$xmlhttprequest,domain=youtube.com,badfilter
-@@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com,badfilter
-||youtube-nocookie.com^$badfilter
-@@||youtube-nocookie.com$generichide
-||ads.youtube.com^$badfilter
-@@||ads.youtube.com$generichide
-/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-&lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-&frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-
+||popmonetizer.net^$important
+||jpcuthdkmuonwc.com^$third-party
+!/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
+/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
+/(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
+||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
+/\/offline(\/|\.htm(l)?)?$/$xmlhttprequest,~third-party
 
 twitter.com##div[data-testid="trend"]
 twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
