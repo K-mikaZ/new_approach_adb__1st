@@ -28,7 +28,7 @@
 *#?#iframe:is( [name*="apiLocator"] ):remove()
 *#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
 ! *#?#iframe:is( [id^="google_ads_iframe_"] ):remove()
-*#?#:is( iframe, div ):is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
+*#?#iframe:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
 *#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
 *##^iframe:is( [name*="apiLocator"] )
 *##^iframe:is( [id="google_esf"], [name="google_esf"] )
@@ -41,29 +41,29 @@
 *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-~pornhub.com#?#div[class="AdPlaceholder"]:first-of-type:remove()
-~pornhub.com#?#div:is( [class|="adsvp"]:last-of-type ):remove()
-~pornhub.com#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
-~pornhub.com#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-~pornhub.com#?#div[class="ads-placeholder"]:remove()
-~pornhub.com#?#div[class="containerAds"]:remove()
-~pornhub.com#?#div[class="OUTBRAIN"]:remove()
+*#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
+*#?#div[class="AdPlaceholder"]:first-of-type
+*#?#div:is( [class|="adsvp"]:last-of-type )
+*#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
+*#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
+*#?#div[class="ads-placeholder"]
+*#?#div[class="containerAds"]
+*#?#div[class="OUTBRAIN"]
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
-~pornhub.com#?#ins[class*="adsby"]:remove()
-~pornhub.com#?#div:has( > script:contains(adsby):only-of-type ):remove()
-! ~pornhub.com#?#div:has( > ins[class*="adsby"]:only-of-type ):remove()
-! *##^div:has( > ins[class*="adsby"]:only-of-type )
+*#?#ins[class*="adsby"]
+*#?#div:has( > script:contains(adsby):only-of-type )
+! *#?#div:has( > ins[class*="adsby"]:only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-~pornhub.com#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
+*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-~pornhub.com#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
-~pornhub.com#?#div:is( [id*="aswift_"] ):remove()
-~pornhub.com#?#:is( [class="afs_ads"] ):remove()
+*#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
+*#?#div:is( [id*="aswift_"] ):remove()
+*#?#:is( [class="afs_ads"] ):remove()
 ~pornhub.com#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
 ~pornhub.com#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
 ~pornhub.com#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
