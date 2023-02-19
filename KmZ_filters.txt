@@ -3147,8 +3147,13 @@ webtor.io##.ad
 webtor.io##.mejs__logo-button.mejs__button
 wiflix.*##+js(ra, target|href, .video-player a)
 wiflix.*##+js(window.open-defuser)
+@@||vido.lol^$subdocument
+@@||sbbrisk.com^$subdocument
+sbbrisk.com##+js(window.open-defuser)
+||*^$third-party,domain=sbbrisk.com,denyallow=akamai-cdn-content.com|akamai-cdn-images.com
+@@||akamai-cdn-content.com^$third-party
+@@||akamai-cdn-images.com^$third-party
 wincert.net##.primisslate
-windowscentral.com##div:nth-of-type(7)
 www.addictivetips.com##.mv-ad-box
 www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
 www.universanime.co##[src*="/bouton_ads/"]
