@@ -3151,7 +3151,9 @@ sbbrisk.com##+js(window.open-defuser)
 @@||akamai-cdn-images.com^$third-party
 @@||streamhide.to^$subdocument
 streamhide.to##+js(window.open-defuser)
-||*^$third-party,domain=streamhide.to,denyallow=sh-content.com|sh-content.xyz
+streamhide.to##div[style*="inset:"][style*="z-index"][style*="background"]
+||streamhide.to/assets/jquery/$script,~third-party
+||*^$third-party,domain=streamhide.to,denyallow=streamhide.to|sh-content.com|sh-content.xyz
 @@||sh-content.com^$third-party
 @@||sh-content.xyz^$third-party
 /empty.srt$~third-party
