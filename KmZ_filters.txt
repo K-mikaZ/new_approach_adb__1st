@@ -1313,7 +1313,7 @@ stream-serie.net#$##option-1{height:100%}
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
 ||*/cdn-cgi/apps/head/*$script,~third-party,important
-||*/cdn-cgi/trace|$xmlhttprequest,_,~third-party,important
+||*/cdn-cgi/trace|$xmlhttprequest,~third-party,redirect=empty
 /^https?:\/\/[^\s]+\/1clkn\/[0-9]{4,5}$/$third-party,important,script
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,third-party,important
@@ -1408,7 +1408,6 @@ stream-serie.net#$##option-1{height:100%}
 ||disqusads.com^$important
 /\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party
 @@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party,domain=amazon.com
-/cdn-cgi/trace
 @@encryptedsni.com/cdn-cgi/trace$xmlhttprequest,domain=cloudflare.com
 @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,~third-party
 /\/pixel\/pu(clc|rs(t)?)\?/
@@ -3633,14 +3632,13 @@ wss://net-announce*$websocket,important
 /^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
-!||cdn.jsdelivr.net/gh/prebid/$xmlhttprequest,_,important
-!/\/prebid(-)?/$script
-!||prebid.org^$badfilter
-!||prebid.org^$third-party,badfilter
-!.prebid.$domain=~prebid.org,badfilter
-!/prebid$xmlhttprequest,domain=crunchyroll.com,important
+! ||cdn.jsdelivr.net/gh/prebid/$xmlhttprequest,_,important
+! /\/prebid(-)?/$script
+! ||prebid.org^$badfilter
+! ||prebid.org^$third-party,badfilter
+! .prebid.$domain=~prebid.org,badfilter
+! /prebid$xmlhttprequest,domain=crunchyroll.com,important
 @@||cdn.viously.com/player/*/prebid.js
-!@@/\/prebid(-)?/$script,domain=marmiton.org,important
 
 
 ! ======= VMAP =======
