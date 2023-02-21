@@ -580,7 +580,6 @@ mystream.to##+js(abort-on-property-read, open)
 mystream.to##+js(window.open-defuser)
 streamtape.net##+js(window.open-defuser)
 fwmrm.net##+js(window.open-defuser)
-uqload.*##+js(window.open-defuser)
 |https://$script,third-party,domain=upstream.to,badfilter
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
@@ -2644,7 +2643,6 @@ developpez.com###A90f4a144fdc79d5e5b245B
 @@||googletagmanager.com/gtag/*$domain=srek.net
 @@||googletagmanager.com/gtag/*$domain=cookuve.com
 @@||google-analytics.com^$domain=cookuve.com
-@@||uqload.org^$domain=uqload.com
 voirseries.*##+js(window.open-defuser)
 ||abostimp.com^$domain=upvid.biz
 @@||highstream.tv/player8/related.js
@@ -2862,7 +2860,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 ! latendresseencuisine.com##div:if(>ins.adsbygoogle)
 *$removeparam=fbclid
 *$removeparam=yclid
-*$script,third-party,domain=uqload.com
 *youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
 *youtube.com*embed*playsinline*enablejsapi*origin*$subdocument,redirect-rule=noop.html
 6play.fr#@##fb-root:not(body):not(html)
@@ -2908,7 +2905,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 @@||static.6cloud.fr/*/onboarding/*.mp4
 @@||tf1.fr$generichide
 @@||trustcommander.net
-@@||uqload.com$ghide
 @@||vidlox.me$cookie
 @@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
 @@||www-google-analytics.l.google.com^$script,domain=degreed.com
@@ -3185,7 +3181,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 @@||geo.dailymotion.com$subdocument,media
 ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
-@@||uqload.com^$script,image,_,~third-party
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
 ||ads.stickyadstv.com^$important,domain=tf1.fr
@@ -3521,7 +3516,11 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
 uqload.*###play_limit_box
-||*^$xmlhttprequest,script,subdocument,third-party,domain=uqload.co
+@@||uqload.com$ghide
+@@||uqload.co$ghide
+uqload.*##+js(window.open-defuser)
+@@||*^$script,image,~third-party,domain=uqload.co|uqload.com
+||*^$third-party,domain=uqload.co|uqload.com,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
 demotivateur.fr##[data-actirise-slot]
