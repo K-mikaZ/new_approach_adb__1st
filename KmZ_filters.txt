@@ -41,29 +41,29 @@
 ! *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-*#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-*#?#div:is( [class|="adsvp"]:last-of-type )
-*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
-*#?#div[class="AdPlaceholder"]:first-of-type
-*#?#div[class="ads-placeholder"]
-*#?#div[class="containerAds"]
-*#?#div[class="OUTBRAIN"]
+*##div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
+*##div:is( [class|="adsvp"]:last-of-type )
+*##div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
+*##div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
+*##div[class="AdPlaceholder"]:first-of-type
+*##div[class="ads-placeholder"]
+*##div[class="containerAds"]
+*##div[class="OUTBRAIN"]
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
 ! *#?#div:has( > ins[class*="adsby"]:only-of-type )
-*#?#ins[class*="adsby"]
-*#?#div:has( > script:contains(adsby):only-of-type )
+! *#?#ins[class*="adsby"]
+*##div:has( > script:contains(adsby):only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+*##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*#?#:is( span, div ):is( [id|="div-gpt-ad"] )
-*#?#div:is( [id*="aswift_"] )
-*#?#:is( [class="afs_ads"] )
+*##:is( span, div ):is( [id|="div-gpt-ad"] )
+*##div:is( [id*="aswift_"] )
+*##:is( [class="afs_ads"] )
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 *##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
@@ -91,11 +91,11 @@
 ! #$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
 ! #$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
 ! ----[ ADS ]----------------------------------------------------------------
-*#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
-*#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
-*#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
-*#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
-*#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
+! *#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
+! *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
+! *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
+! *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
+! *#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
 ! *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
