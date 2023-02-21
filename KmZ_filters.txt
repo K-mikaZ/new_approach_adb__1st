@@ -1308,7 +1308,6 @@ stream-serie.net#$##option-1{height:100%}
 /service-worker.js$script,~third-party
 ||nsaneforums.com/index.php?*serviceworker*
 @@/workbox-sw.js$script,domain=epicgames.com
-@@/(.*fbcdn.net.*)([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)[w](orker)?((?
 ||washingtonpost.com/notification-sw.js$badfilter
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
 ||*youborafds01*.js$script,important
@@ -1929,6 +1928,9 @@ youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', '
 /googima.js|$badfilter
 /googima.js$script,badfilter
 /googima.js|$script,badfilter
+@@*/silverlight/*
+@@*/secip/*
+@@preroll$domain=geo.dailymotion.com
 @@||lic.drmtoday.com^$xmlhttprequest
 @@||licensing.bitmovin.com^
 @@||perr.h-cdn.com/hola_player/license_init
@@ -2669,6 +2671,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||vidzstore.com$generichide
 @@||mxdcontent.$generichide
 @@||mixdrop.$generichide
+@@||younetu.com^$subdocument
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.vwview, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
@@ -3496,6 +3499,10 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||api-content.prismamedia.com^
 ||key-value.prismamedia.com^
 ||prismamedia-com.videoplayerhub.com^
+||dogiedimepupae.com^
+||pyxiscablese.com^
+||apathylahuli.website^
+||amung.us^$third-party
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
