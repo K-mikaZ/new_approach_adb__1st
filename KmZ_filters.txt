@@ -2676,7 +2676,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.numAttempts, 0)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.fadbk, false)
+hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com#@#+js(set-constant, my_config.fadbk, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
 ||zap.buzz^
 ||popxyz.com^
