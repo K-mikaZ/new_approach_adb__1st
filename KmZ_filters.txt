@@ -41,10 +41,10 @@
 *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-*#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
-*#?#div:is( [class|="adsvp"]:last-of-type ):remove()
-*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )):remove()
-*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )):remove()
+*#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
+*#?#div:is( [class|="adsvp"]:last-of-type )
+*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
+*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
 *#?#div[class="AdPlaceholder"]:first-of-type
 *#?#div[class="ads-placeholder"]
 *#?#div[class="containerAds"]
@@ -53,7 +53,7 @@
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
 ! *#?#div:has( > ins[class*="adsby"]:only-of-type )
-#?#ins[class*="adsby"]:remove()
+#?#ins[class*="adsby"]
 #?#div:has( > script:contains(adsby):only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
@@ -61,78 +61,35 @@
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-~pornhub.com#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
-~pornhub.com#?#div:is( [id*="aswift_"] ):remove()
-~pornhub.com#?#:is( [class="afs_ads"] ):remove()
-~pornhub.com#?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
-~pornhub.com#?#div:matches-attr( "class"="/ima-ad-.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+histats.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+mc.yandex.ru.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+static.ads-twitter.com.+/" ):remove()
-~pornhub.com#?#script:matches-attr( "src"="/.+google-analytics.com/analytics.+/" ):remove()
-~pornhub.com#?#script:contains(/src=.+histats.+/):remove()
-~pornhub.com#?#script:contains(/src=.+mc.yandex.ru.+/):remove()
-~pornhub.com#?#script:contains(/src=.+connect.facebook.net/en_US/fbevents.js/):remove()
-~pornhub.com#?#script:contains(/src=.+facebook.com/tr?.+/):remove()
-~pornhub.com#?#script:contains(/src=.+googletagmanager.+/):remove()
-~pornhub.com#?#script:contains(/src=.+static.ads-twitter.com.+/):remove()
-~pornhub.com#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+histats.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
-~pornhub.com#$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
-!#if (ext_ublock)
-*#?#div[class="AdPlaceholder"]:first-of-type:remove()
-*#?#div:is( [class|="adsvp"]:last-of-type ):remove()
-*#?#div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"])):remove()
-*#?#div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"])):remove()
-*#?#div[class="ads-placeholder"]:remove()
-*#?#div[class="containerAds"]:remove()
-*#?#div[class="OUTBRAIN"]:remove()
-*#?#ins[class*="adsby"]:remove()
-*#?#div:has( > script:contains(adsby):only-of-type ):remove()
-! *#?#div:has( > ins[class*="adsby"]:only-of-type ):remove()
-*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] ):remove()
-! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*#?#:is( span, div ):is( [id|="div-gpt-ad"] ):remove()
-*#?#div:is( [id*="aswift_"] ):remove()
-*#?#:is( [class="afs_ads"] ):remove()
-*#?#div:is( [class*="textads"], [class*="ad-unit"]:not([class*="text-ads"]), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] ):remove()
-*#?#div[class*="ima-ad-"]:remove()
-*#?#script[src*="histats"]:remove()
-*#?#script[src*="mc.yandex.ru"]:remove()
-*#?#script[src*="connect.facebook.net/en_US/fbevents.js"]:remove()
-*#?#script[src*="facebook.com/tr?"]:remove()
-*#?#script[src*="googletagmanager"]:remove()
-*#?#script[src*="static.ads-twitter.com"]:remove()
-*#?#script[src*="google-analytics.com/analytics"]:remove()
-*#?#script:contains(/src=.+histats.+/):remove()
-*#?#script:contains(/src=.+mc.yandex.ru.+/):remove()
-*#?#script:contains(/src=.+connect.facebook.net/en_US/fbevents.js/):remove()
-*#?#script:contains(/src=.+facebook.com/tr?.+/):remove()
-*#?#script:contains(/src=.+googletagmanager.+/):remove()
-*#?#script:contains(/src=.+static.ads-twitter.com.+/):remove()
-*#$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
-*#$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
-*#$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
-*#$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-*#$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
-*#$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
-*#$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
-*#$#noscript:contains(/src=.+histats.+/) { remove: true; }
-*#$#noscript:contains(/src=.+mc.yandex.ru.+/) { remove: true; }
-*#$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
-*#$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
-!#endif
+#?#:is( span, div ):is( [id|="div-gpt-ad"] )
+#?#div:is( [id*="aswift_"] )
+#?#:is( [class="afs_ads"] )
+! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
+#?#div[class*="ima-ad-"]
+! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
+! #?#script:matches-attr( "src"="/.+mc.yandex.ru.+/" ):remove()
+! #?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
+! #?#script:matches-attr( "src"="/.+facebook.com/tr?.+/" ):remove()
+! #?#script:matches-attr( "src"="/.+googletagmanager.+/" ):remove()
+! #?#script:matches-attr( "src"="/.+static.ads-twitter.com.+/" ):remove()
+! #?#script:matches-attr( "src"="/.+google-analytics.com/analytics.+/" ):remove()
+! #?#script:contains(/src=.+histats.+/):remove()
+! #?#script:contains(/src=.+mc.yandex.ru.+/):remove()
+! #?#script:contains(/src=.+connect.facebook.net/en_US/fbevents.js/):remove()
+! #?#script:contains(/src=.+facebook.com/tr?.+/):remove()
+! #?#script:contains(/src=.+googletagmanager.+/):remove()
+! #?#script:contains(/src=.+static.ads-twitter.com.+/):remove()
+! #$#noscript:contains(img):contains(/height="1"/):contains(/width="1"/) { remove: true; }
+! #$#noscript:contains(img):contains(/height="0"/):contains(/width="0"/) { remove: true; }
+! #$#noscript:contains(img):contains(/src=.+histats.+/) { remove: true; }
+! #$#noscript:contains(img):contains(/src=.+mc.yandex.ru.+/) { remove: true; }
+! #$#noscript:contains(iframe):contains(/src=.+googletagmanager.+/) { remove: true; }
+! #$#noscript:contains(/src=.+connect.facebook.net/en_US/fbevents.js/) { remove: true; }
+! #$#noscript:contains(/src=.+facebook.com/tr?.+/) { remove: true; }
+! #$#noscript:contains(/src=.+histats.+/) { remove: true; }
+! #$#noscript:contains(/src=.+mc.yandex.ru.+/) { remove: true; }
+! #$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
+! #$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
 ! ----[ ADS ]----------------------------------------------------------------
 *#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
 *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
@@ -147,7 +104,6 @@
 *#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
 ! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
 *#@?#[data-ads-core]:remove()
-
 
 
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
