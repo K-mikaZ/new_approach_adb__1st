@@ -2670,13 +2670,13 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mxdcontent.$generichide
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.vwview, false)
+hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
+hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.numAttempts, 0)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com#@#+js(set-constant, my_config.fadbk, false)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
+! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.numAttempts, 0)
+! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.fadbk, false)
+! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.vwview, false)
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
