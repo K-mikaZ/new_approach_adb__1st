@@ -25,20 +25,20 @@
 
 ! [FIX] pornhub.com is slow down with this method (but only with Adguard)
 ! ----[ IFRAMES ]------------------------------------------------------------
-*#?#iframe:is( [name*="apiLocator"] ):remove()
-*#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
+! *#?#iframe:is( [name*="apiLocator"] ):remove()
+! *#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
 ! *#?#iframe:is( [id^="google_ads_iframe_"] ):remove()
-*#?#iframe:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
-*#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
-*##^iframe:is( [name*="apiLocator"] )
-*##^iframe:is( [id="google_esf"], [name="google_esf"] )
-*##^iframe:is( [id^="google_ads_iframe_"] )
-*##^iframe:is( [id^="aswift_"], [name^="aswift_"] )
+! *#?#iframe:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
+! *#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
+! *##^iframe:is( [name*="apiLocator"] )
+! *##^iframe:is( [id="google_esf"], [name="google_esf"] )
+! *##^iframe:is( [id^="google_ads_iframe_"] )
+! *##^iframe:is( [id^="aswift_"], [name^="aswift_"] )
 ! fallback, in case
 ! #?#iframe:is( [src*="/pagead/"] ):remove()
 ! *##^iframe:is( [src*="/pagead/"] )
-*#?#iframe:is( [src*="doubleclick"] ):remove()
-*##^iframe:is( [src*="doubleclick"] )
+! *#?#iframe:is( [src*="doubleclick"] ):remove()
+! *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
@@ -53,19 +53,19 @@
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
 ! *#?#div:has( > ins[class*="adsby"]:only-of-type )
-#?#ins[class*="adsby"]
-#?#div:has( > script:contains(adsby):only-of-type )
+*#?#ins[class*="adsby"]
+*#?#div:has( > script:contains(adsby):only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-#?#:is( span, div ):is( [id|="div-gpt-ad"] )
-#?#div:is( [id*="aswift_"] )
-#?#:is( [class="afs_ads"] )
+*#?#:is( span, div ):is( [id|="div-gpt-ad"] )
+*#?#div:is( [id*="aswift_"] )
+*#?#:is( [class="afs_ads"] )
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
-#?#div[class*="ima-ad-"]
+*##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
 ! #?#script:matches-attr( "src"="/.+mc.yandex.ru.+/" ):remove()
 ! #?#script:matches-attr( "src"="/.+connect.facebook.net/en_US/fbevents.js/" ):remove()
@@ -98,12 +98,12 @@
 *#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
-*#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
-*#@?#script[src*="sddan.com"]:remove()
-*#@?#script[data-cmp-src*="hotjar."]:remove()
-*#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
+! *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
+! *#@?#script[src*="sddan.com"]:remove()
+! *#@?#script[data-cmp-src*="hotjar."]:remove()
+! *#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
 ! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
-*#@?#[data-ads-core]:remove()
+! *#@?#[data-ads-core]:remove()
 
 
 ! *** Here, element deletion is not supported. Hide those that can be hidden instead.
