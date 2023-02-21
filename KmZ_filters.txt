@@ -41,10 +41,14 @@
 ! *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-*##div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-*##div:is( [class|="adsvp"]:last-of-type )
-*##div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*##div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
+*#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
+*#?#div:is( [class|="adsvp"]:last-of-type )
+*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
+*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
+*#?#div:is( [class|="div-gpt-ad"] ):first-of-type
+*#?#div:is( [class^="salidor_"] ):first-of-type
+*#?#div:is( [class^="masha_"] ):first-of-type
+*#?#div:is( [class^="tolro_"] ):first-of-type
 *##div[class="AdPlaceholder"]:first-of-type
 *##div[class="ads-placeholder"]
 *##div[class="containerAds"]
@@ -52,18 +56,17 @@
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
-! *#?#div:has( > ins[class*="adsby"]:only-of-type )
-! *#?#ins[class*="adsby"]
-*##div:has( > script:contains(adsby):only-of-type )
+*##ins[class*="adsby"]
+*#?#div:has( > script:contains(adsby):only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-*##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*##:is( span, div ):is( [id|="div-gpt-ad"] )
-*##div:is( [id*="aswift_"] )
-*##:is( [class="afs_ads"] )
+*#?#:is( span, div ):is( [id|="div-gpt-ad"] )
+*#?#div:is( [id*="aswift_"] )
+*#?#:is( [class="afs_ads"] )
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 *##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
@@ -106,23 +109,6 @@
 ! *#@?#[data-ads-core]:remove()
 
 
-! *** Here, element deletion is not supported. Hide those that can be hidden instead.
-! *** Native :has() pseudo-class does not allow :has(), :is(), :where() inside :has()
-! *** @ref { @link: https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-has-limitations }
-! ----[ INS ]----------------------------------------------------------------
-! ----[ DIV ]----------------------------------------------------------------
-*##div:has( > script:contains(adsby):only-of-type )
-*##div[class="AdPlaceholder"]:first-of-type
-*##div:is( [class|="adsvp"]:last-of-type )
-*##div:is( [class|="div-gpt-ad"] ):first-of-type
-*##div:is( [class^="salidor_"] ):first-of-type
-*##div:is( [class^="masha_"] ):first-of-type
-*##div:is( [class^="tolro_"] ):first-of-type
-! ----[ SPAN ]----------------------------------------------------------------
-! ----[ EZOIC ADS ]-----------------------------------------------------------
-! ezoic ads concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
-*##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
-
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
@@ -131,23 +117,22 @@
 *#@#div[aria-live^="polite"]
 *#@#div > div[aria-live="polite"]
 
+
 ! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
 
 ! Fake button watching
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-*##div:has(> a:is([class*="mButton"], [class*="myButton"]):is([href$=".php"], [href*=".php"], [target], [rel^="no"]))
-*##div:has(> a:is([href*="/regarder.php"], [href*="/telecharger.php"]):is([target], [rel^="no"]))
 *##a[href*="premium"][href*=".php"][class*="btn"]
-*##div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+*#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 ! Fallback Fake button watching
 *##div[class^="movie-aye"]
 *##div[class="g-buttons"] > a
 ! Download links, not watching links
-*##[class*="player" i] li:has( > [class~=down] )
+*#?#[class*="player" i] li:has( > [class~=down] )
 ! Fake watching player
-*##[class*="player" i] li:has( > [data-url*="vip.htm"] )
+*#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
 
