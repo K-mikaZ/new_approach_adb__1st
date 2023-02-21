@@ -199,7 +199,7 @@
 *##[class="googleads"]
 *##[class|="pub"]:has-text(/Publicités?/i)
 *##[id="pub"]:if(> [class="X"])
-*##[class="afs_ads"]
+! *##[class="afs_ads"]
 ! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
 *#@#[data-ezsrcset]
 *##[class|="ezoic"]
@@ -2668,6 +2668,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 hqq.tv#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
+hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc();"][title*=" money"]
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
@@ -3193,7 +3194,6 @@ uptostream.com#$#body { color: whitesmoke; }
 !parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
-##a[onclick="openAuc();"][title*=" money"]
 @@||viewsb.com^$subdocument
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
 @@||faphouse.com^$subdocument,third-party,domain=xhamster.com
