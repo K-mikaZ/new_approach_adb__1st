@@ -197,13 +197,14 @@
 *##[class|="ad-display"]
 *##[class="google-ads"]
 *##[class="googleads"]
-*##[class|="pub"]:has-text(/Publicités?/i)
-*##[id="pub"]:if(> [class="X"])
-! *##[class="afs_ads"]
+! *##[class|="pub"]:has-text(/Publicités?/i)
+*#?#[id="pub"]:has(> [class="X"])
+*##[class="afs_ads"]
 ! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
 *#@#[data-ezsrcset]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
+*##[class*="ezmob"]
 *##[ezaw][ezah]
 *##[data-ez-name]
 *##[class*="ezo_ad"]
