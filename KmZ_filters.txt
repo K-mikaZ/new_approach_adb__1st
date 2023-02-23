@@ -3588,6 +3588,12 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
 @@||commentsmodule.com^
+www.inspiration-cuisine.fr###tdi_47
+chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
+chefcuisto.com##div[id^="publicite_"]
+mafourchette.com##div[data-hbdbrk-parent="true"]
+chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
+
 
 
 ! ======= WEBSOCKETS =======
@@ -3798,6 +3804,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! ======[ EOF ]==========================================================
 
 ! block too many sites and web players (e.g. animationdigitalnetwork.fr)
-@@||googlesyndication.com^
+@@||googlesyndication.com^$important
 ! block too many sites (e.g. 6play.fr use for login to the site)
-@@||gigya.com^
+@@||gigya.com^$important
+@@||usabilla.com^$important
