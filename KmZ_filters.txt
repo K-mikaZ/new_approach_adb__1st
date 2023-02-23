@@ -2473,7 +2473,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-class, ad|google-ad|doubleclick|skyscraper, #adb)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, style, #adb)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, class, #adb)
-! streamtape.com,streamta.pe,stapadblockuser.*##[id="adb"]
 streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
 streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
 streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
@@ -3357,16 +3356,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||connect.facebook.net/en_US/fbevents.js$important
 ||speedcurve.com^$important
 ||digidip.net^$important
-streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-class, ad|google-ad|doubleclick|skyscraper, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, style, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, class, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##[id="adb"]
-streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
-streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
-streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
-streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="inset: 0px"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index:"]
-@@/ad.js$domain=streamtape.com|streamta.pe|stapadblockuser.*
 ||videosprofitnetwork.com^$redirect=empty
 ||q.reyden-x.com^
 ||videosworks.com^
