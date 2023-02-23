@@ -419,7 +419,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
 ! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
-youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
+youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/' 'method:/POST|GET/', 'noopPromiseResolve')
 !#if (ext_ublock)
 youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
 !#endif
