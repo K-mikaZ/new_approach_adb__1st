@@ -137,6 +137,7 @@
 
 *##.ad-masthead
 *##.mb-3
+*##[class|="report-pub"]
 *##[id*="aswift_"]
 ! *##[id^="google_ads_iframe_"]
 *##[class^="van_vid_carousel"]
