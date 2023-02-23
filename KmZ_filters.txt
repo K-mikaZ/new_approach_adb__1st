@@ -95,7 +95,6 @@
 ! *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 ! *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
 ! *#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
-*##:is( [data-ads-core] )
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
 ! *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
@@ -419,10 +418,10 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
 ! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
-!#if (ext_ublock)
-youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
-!#endif
-youtube.com#%#//scriptlet('ubo-no-fetch-if.js', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
+! !#if (ext_ublock)
+! youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
+! !#endif
+! youtube.com#%#//scriptlet('ubo-no-fetch-if.js', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
@@ -3274,12 +3273,12 @@ wss://net-announce*$websocket,important
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-!#if (ext_ublock)
-dailymotion.com##+js(no-fetch-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, noopPromiseResolve)
-dailymotion.com##+js(no-xhr-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, emptyObj)
-!#endif
-dailymotion.com#%#//scriptlet('ubo-no-fetch-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
-dailymotion.com#%#//scriptlet('ubo-no-xhr-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'emptyObj')
+! !#if (ext_ublock)
+! dailymotion.com##+js(no-fetch-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, noopPromiseResolve)
+! dailymotion.com##+js(no-xhr-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, emptyObj)
+! !#endif
+! dailymotion.com#%#//scriptlet('ubo-no-fetch-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
+! dailymotion.com#%#//scriptlet('ubo-no-xhr-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'emptyObj')
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
