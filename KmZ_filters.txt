@@ -41,8 +41,8 @@
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-! *##div[class|="adsvp"]
-*##div:is( [class|="adsvp"]:last-of-type )
+*##div[class|="adsvp"]:last-of-type
+! *##div:is( [class|="adsvp"]:last-of-type )
 *##div[class|="div-gpt-ad"]
 *##div[class^="salidor_"]
 *##div[class^="masha_"]
@@ -138,6 +138,39 @@
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 
+! voiranime.com##li:if(> span > a:has-text(/VIP\#/))allseries.*##.hdplayer
+allseries.*##[class*="-download-watch"]
+! enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
+! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
+! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
+! 4kstreamz.*##.Players:if(:has-text(/4K Player/i))
+! papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
+filmgratuit.net##li.streamer:if(span[class*="download-server"])
+voirseries.*##ul[class="downloads"]
+! voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
+! zustream.*##li:if(:has-text(/(VIP)(.*)?/))
+! streaminggratuitvf.*##button:has-text(/1080p/)
+! filmz.*##li:if(:-abp-has(i.player-hdplayer))
+! streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
+! filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+! series.dpstreaming.to##center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
+! filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
+! oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(>:has-text(/(HD|VIP)(.*)?/))
+! zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(>:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
+! 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
+mystream.*,mstream.*##[id^="_0."]
+fcine.*##[class|="vip-server"]
+film01stream.*###tab-ad
+streaminz.com##.playbtm
+kykfilmserie.*##.content > div:nth-of-type(2)
+kykfilmserie.*##.dooplay_player:if(iframe[src*=".php?"])
+! streamcomplet.mobi##div:-abp-has(> .fakes_player)
+streamcomplet.mobi##div:if(> [class*="fake_player"])
+streamcomplet.mobi##div:if(> a[target="_blank"])
+streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
+! streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
+
 
 
 www.inspiration-cuisine.fr###tdi_47
@@ -220,11 +253,10 @@ wikipedia.org##[class^="frb"]
 *##[class*="ads-left"]
 *##[class*="ads-right"]
 *##[class="ad"][class="c-ads"]
-! *##[class~="ad"][class~="onlyDesktop"]  to  *##[class~="ad"][data-block-devices]
-! *##[class~="ad"][class~="onlyMobile"]  to  *##[class~="ad"][data-block-devices]
+! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  *##[class~="ad"][data-block-devices]
 *##[class~="ad"][data-block-devices]
-*##[class~="ad"][class*="banniere"]
 *##[class~="ad"][class*="outbrain"]
+*##[class~="ad"][class*="banniere"]
 *##[id^=AdThrive_]
 *##[class|="adthrive"]
 *##[class^="AdsenseAd_"]
@@ -715,44 +747,12 @@ vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
 ||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
-allseries.*##.hdplayer
-allseries.*##[src*="/video-streaming.html"]
-allseries.*##[class*="-download-watch"]
-! enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
-mystream.*,mstream.*##[id^="_0."]
-fcine.*##[class|="vip-server"]
-! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
-! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
-4kstreamz.*##.Players:if(:has-text(/4K Player/i))
-film01stream.*###tab-ad
-streaminz.com##.playbtm
-kykfilmserie.*##.content > div:nth-of-type(2)
-kykfilmserie.*##.dooplay_player:if(iframe[src*=".php?"])
-! streamcomplet.mobi##div:-abp-has(> .fakes_player)
-streamcomplet.mobi##div:if(> [class*="fake_player"])
-streamcomplet.mobi##div:if(> a[target="_blank"])
-streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
-streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
+
 33seriestreaming.com###player-overlay
 33seriestreaming.com##.signup-window
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
-zustream.*##li:if(:has-text(/(VIP)(.*)?/))
-streaminggratuitvf.*##button:has-text(/1080p/)
-! filmz.*##li:if(:-abp-has(i.player-hdplayer))
-streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
 allseries.*##.telecharger
-! papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
-filmgratuit.net##li.streamer:if(span[class*="download-server"])
-voirseries.*##ul[class="downloads"]
-! voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
-filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
-! series.dpstreaming.to##center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
-! filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-! oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(>:has-text(/(HD|VIP)(.*)?/))
-! zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(>:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
-4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 !allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
 !allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
@@ -831,7 +831,6 @@ voirseries.*##[id|="fake"]
 voirseries.*##.AV
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
 voiranime.com##div:if(> div > a[href*="/signup/"])
-voiranime.com##li:if(> span > a:has-text(/VIP\#/))
 voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
 voiranime.com##a[href*="/signup/"]
 voiranime.com##a[href*="://network.nutaku.net/"]
@@ -1267,7 +1266,7 @@ tv.series-fr.net##.ebooks_orange_7289002,.X
 twittosphere.fr###bsajM7VWgc
 tx.proxfree.com###pfproxy
 tx.proxfree.com##.alerts-wrapper
-ultimate-catch.eu##.entry-footer:has-text(/Share/)
+! ultimate-catch.eu##.entry-footer:has-text(/Share/)
 ultime-streaming.com###commentfb,#switch-mode,.mvic-btn
 undernews.fr###fancybox-overlay
 undernews.fr###fancybox-tmp
@@ -2226,7 +2225,7 @@ limetorrents.info,torrentdownloads.me##[href*="://affiliate."]
 torrentdownloads.me##li:if([href^="/max1.php"])
 torrentdownloads.me##[href^="/max1.php"]
 ##[class="nrd-general-d-box"] a[href$="/k/?q=q"]
-rarbg.to,rarbgaccessed.org##tr:nth-of-type(2) > td > div > .lista > tbody > tr:nth-of-type(2):if(:has-text(/GET VPN/))
+! rarbg.to,rarbgaccessed.org##tr:nth-of-type(2) > td > div > .lista > tbody > tr:nth-of-type(2):if(:has-text(/GET VPN/))
 uptobox.stream##.ListSocial > li:if(:not([class*="Up"]))
 uptobox.stream##.ListPOpt > li:if([rel="nofollow"])
 @@||imsdb.pw$generichide
@@ -2581,7 +2580,7 @@ vidoza.*##[class="prevent-first-click"]
 stream-complet.*##[class="showIt"]
 /(upvid|cpasbien|(gk|ox)torrent|torrent[0]?9)\.(.{2,})\/config\.json/
 cpasbien.reviews,cpasbien.to,extreme-download.im,extreme-download.me,oxtorrent.me,torrent9.gg,torrent9.is,torrent9.so,torrent9.to,yggtorrent.me#@#a[href$="/"]
-korben.info##.entry-container:if(.entry-title:has-text(/TU CHERCHES UN JOB .* LAOU (.*)?/i))
+! korben.info##.entry-container:if(.entry-title:has-text(/TU CHERCHES UN JOB .* LAOU (.*)?/i))
 korben.info##.entry-content [class*="hentry"]
 ||hypestat.com^$domain=~hypestat.com
 /manifest.json$domain=vidlox.me
