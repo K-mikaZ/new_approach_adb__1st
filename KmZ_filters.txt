@@ -2870,7 +2870,7 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 !#if !(ext_ublock)
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 !#endif
-#?#.player:-abp-has(>[data-ads-core])
+! #?#.player:-abp-has(>[data-ads-core])
 ! latendresseencuisine.com##div:if(>ins.adsbygoogle)
 *$removeparam=fbclid
 *$removeparam=yclid
