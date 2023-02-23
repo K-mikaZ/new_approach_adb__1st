@@ -2474,7 +2474,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-class, ad|google-ad|doubleclick|skyscraper, #adb)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, style, #adb)
 streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, class, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##[id="adb"]
+! streamtape.com,streamta.pe,stapadblockuser.*##[id="adb"]
 streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
 streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
 streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
