@@ -136,7 +136,7 @@
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
 ! /video-vip.html$domain=juststream.org
 ! seriestream.fun/streamingvip.html
-/(vid|stream).+vip\.htm/$subdocument,~third-party
+/(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 
 
 
