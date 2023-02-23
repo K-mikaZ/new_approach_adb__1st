@@ -43,12 +43,12 @@
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
 *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
 *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
-*##div[class|="adsvp"]:last-of-type
-*##div[class|="div-gpt-ad"]:first-of-type
-*##div[class^="salidor_"]:first-of-type
-*##div[class^="masha_"]:first-of-type
-*##div[class^="tolro_"]:first-of-type
-*##div[class="AdPlaceholder"]:first-of-type
+*##div[class|="adsvp"]
+*##div[class|="div-gpt-ad"]
+*##div[class^="salidor_"]
+*##div[class^="masha_"]
+*##div[class^="tolro_"]
+*##div[class="AdPlaceholder"]
 *##div[class="ads-placeholder"]
 *##div[class="containerAds"]
 *##div[class="OUTBRAIN"]
@@ -59,11 +59,11 @@
 *#?#div:has( > script:contains(adsby):only-of-type )
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-*#?#:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*#?#:is( span, div ):is( [id|="div-gpt-ad"] )
+*##[id|="div-gpt-ad"]
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 *##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
