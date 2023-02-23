@@ -43,7 +43,8 @@
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
 *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
 *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
-*##div[class|="adsvp"]
+! *##div[class|="adsvp"]
+*##div:is( [class|="adsvp"]:last-of-type )
 *##div[class|="div-gpt-ad"]
 *##div[class^="salidor_"]
 *##div[class^="masha_"]
