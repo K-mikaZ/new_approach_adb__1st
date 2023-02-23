@@ -128,17 +128,25 @@
 *##div[class^="movie-aye"]
 *##div[class="g-buttons"] > a
 ! Download links, not watching links
-*#?#[class*="player" i] li:has( > [class~=down] )
+! *#?#[class*="player" i] li:has( > [class~=down] )
+! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
+! streamdeouf.*##li:if([onclick^="goDown"])
+*#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
 ! Fake watching player
+*##[id|="fake-player"]
+*##[id*="fake-"][id*="media"]
+*##[class^="fake-"][class*="media"]
 *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
+! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
+! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
-
+! /video-vip.html$domain=juststream.org
+/(vid|stream).+vip.htm/$subdocument,~third-party
 
 
 *##.ad-masthead
 *##.mb-3
-*##[class|="report-pub"]
 *##[id*="aswift_"]
 ! *##[id^="google_ads_iframe_"]
 *##[class^="van_vid_carousel"]
@@ -147,11 +155,12 @@
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
 *##div[id="pub"]
+*##[id^="playerOver"]
 *##[id^="playerPub"]
+*##[id*="playerbro"]
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
-*##[id^="playerOver"]
 *##[id|="ad-tracking"][style*="display: none"]
 *##[class*="lefermeur"]
 *##[class|="custom-fake"]
@@ -192,15 +201,12 @@
 *##[class^="AdsenseAd_"]
 ! ##[id="ads"]
 *##[id="ads4"]
-*##[id*="playerbro"]
 *##[class|="report-pub"]
-*##[id*="fake-"][id*="media"]
-*##[class^="fake-"][class*="media"]
 *##[class|="ad-display"]
 *##[class="google-ads"]
 *##[class="googleads"]
 ! *##[class|="pub"]:has-text(/Publicités?/i)
-*#?#[id="pub"]:has(> [class="X"])
+*##[id="pub"]
 *##[class="afs_ads"]
 ! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
 *#@#[data-ezsrcset]
@@ -2935,7 +2941,6 @@ chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
 cpasmieux.site##.down
 cpasmieux.site##[class$="-xyz"]
-cpasmieux.site#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
 cpasmieux.tv##[id|="kino"] > noindex
 cuisineaz.com##[id^="dynInfeed"]
 deezer.com##.react-cookie
@@ -2946,9 +2951,6 @@ digit.in##.add
 digit.in##.adsAdvert
 digitalcitizen.life##.block--ad
 dood.la###video_player > div.vjs-poster:nth-child(2)
-! ducine.*,streamfilms.*##.player
-! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
-/stream*vip.htm$subdocument,~third-party
 ducine.*#$#.wrap { padding-top: 4vw!important; }
 eliteseries.club##.play_down
 emule-island.eu##.gplay-box
@@ -3041,12 +3043,6 @@ series-stream.co##li [data-url*="uptobox."]
 series-stream.co##li [data-url*="videovip."]
 series-stream.co##[class|="an"][class$="-xpb"][target]
 star.fr,canaltp.fr#@#+js(set, Document.prototype.interestCohort, undefined)
-streamdeouf.*##li:if([onclick^="goDown"])
-streamdeouf.*##.player[data-url="/video-streaming.html"]
-streamdeouf.*##iframe#videoplay[src="/video-streaming.html"]
-!streamdeouf.*###lecteur:if([src*="/video-streaming.html"])
-streamdeouf.*##.lien.fx-row[data-url="/videovip.html"]
-streamdeouf.*##[id|="fake-player"]
 streamdeouf.*##[class="movie-xpb"]
 streamdeouf.*##[class="an-xpb"]
 streamfilms.co##.an-adn
@@ -3224,8 +3220,6 @@ marmiton.org##.unfyas, .pegasus_status_rendered
 younetu.com#$#body { color: whitesmoke; }
 *##.placeholder-pub_dfp
 terrafemina.com##.fc-dialog-overlay
-evous.fr##div.pub
-/video-vip.html$domain=juststream.org
 juststream.org##.movie-xyz
 ###btnpub
 dood.*#$#body { color: whitesmoke!important; }
