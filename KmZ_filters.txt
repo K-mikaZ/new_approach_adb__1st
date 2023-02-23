@@ -133,7 +133,9 @@
 ! streamdeouf.*##li:if([onclick^="goDown"])
 *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
 ! Fake watching player
-*##[id|="fake-player"]
+! *##[id|="fake-player"]
+*##[id*="fake-"][id*="player"]
+*##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
 *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
@@ -142,7 +144,8 @@
 ! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
 ! /video-vip.html$domain=juststream.org
-/(vid|stream).+vip.htm/$subdocument,~third-party
+! seriestream.fun/streamingvip.html
+/(vid|stream).+vip\.htm/$subdocument,~third-party
 
 
 *##.ad-masthead
