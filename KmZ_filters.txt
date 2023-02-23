@@ -3598,6 +3598,8 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||cfglobalcdn.com^$badfilter
 @@||commentsmodule.com^
 themoneytizer$important,script,redirect=noopjs
+||popmonetizer.net^$important,subdocument,redirect=noopframe
+
 
 
 
