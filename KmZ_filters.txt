@@ -3190,7 +3190,6 @@ mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 @@||uloadcdn.com^$media
 @@||userload.co^$subdocument
 ||qiota.com^
-@@||geo.dailymotion.com$subdocument,media
 ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 ||googleoptimize.com^$important
@@ -3224,7 +3223,6 @@ lxax.com##[class="hide"]
 @@||googletagmanager.com^$domain=marmiton.org,important
 ||permutive.com^$third-party
 ||permutive.app^$important,third-party
-||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
 marmiton.org##[id^="pegasus_banner_atf"]
 marmiton.org##.unfyas, .pegasus_status_rendered
 ||abtasty.com^
@@ -3266,6 +3264,10 @@ wss://net-announce*$websocket,important
 @@||dm-event.net^$domain=geo.dailymotion.com
 @@||dmxleo.com^$domain=geo.dailymotion.com
 @@*$websocket,domain=geo.dailymotion.com
+||dailymotion.com/logger/
+||dailymotion.com/cdn/$media,script,badfilter
+@@||dmxleo.dailymotion.com/cdn/
+||dmxleo.dailymotion.com/cdn/manifest/video/$xmlhttprequest,redirect-rule=noopvmap-1.0,important
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
@@ -3381,7 +3383,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||bidswitch.net^
 ||www.datadoghq-browser-agent.com^$important
 ||track.hubspot.com^
-||dailymotion.com/logger/
 ||wpc.nucdn.net^
 ||bpt.webedia-group.com^
 ||sc-static.net^
@@ -3523,8 +3524,6 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||vanfem.com^$subdocument
 @@||doubleclick.net^$domain=cuisineactuelle.fr
 @@||doodstream.com*?op=enc_status*$domain=dood.*
-||dailymotion.com/cdn/$media,script,badfilter
-@@||dmxleo.dailymotion.com/cdn/
 @@||googlesyndication.com^$domain=marmiton.org
 @@||adservice.google.*^$domain=marmiton.org,important
 @@||googletagservices.com^$domain=googlesyndication.com,important
