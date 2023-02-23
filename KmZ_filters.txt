@@ -3271,7 +3271,10 @@ wss://net-announce*$websocket,important
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
+!#if (ext_ublock)
 dailymotion.com##+js(no-xhr-if, url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, noopPromiseResolve)
+!#endif
+dailymotion.com#%#//scriptlet('prevent-xhr', 'url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
