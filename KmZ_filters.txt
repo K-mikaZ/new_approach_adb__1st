@@ -136,6 +136,8 @@
 ! /video-vip.html$domain=juststream.org
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
+/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
+/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
 
 ! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 ! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
@@ -866,7 +868,7 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 *$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 ||*$third-party,xmlhttprequest,script,domain=oxtorrent.*
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*###vpnvpn
-cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#?#:is([class^="truste"])
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##[class^="truste"]
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##div[onclick*="/go/vpn"]
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#?#div:has(> a:is([href*="/go/vpn"]))
 oxtorrent.*#@#p:empty
@@ -895,8 +897,6 @@ gamestorrents.nu##[href*="gamestorrents.nu/ayudanos-con-una-donacion/"]
 wlnk.ec##[href^="/telecharger"]
 zone-telechargement.casa##[src="/templates/zone/images/dl/telechargement-direct.png"]
 zone-telechargement.casa##[href*=".kfiopkln."]
-/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
-/(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
 /(.*)?amazonaws\.(.{2,})\/ki\.js\/(.*)\/b0R\.js/$script,important
 ||s3.amazonaws.com/js-static/*$script,important
 ||gtrk.s3.amazonaws.com^$all,important
