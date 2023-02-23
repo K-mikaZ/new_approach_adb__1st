@@ -95,6 +95,7 @@
 ! *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 ! *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
 ! *#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
+*##:is( [data-ads-core] )
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
 ! *#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
@@ -133,6 +134,7 @@
 ! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
 ! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
+*#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 ! /video-vip.html$domain=juststream.org
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
