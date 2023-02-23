@@ -3267,8 +3267,9 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 dailymotion.com##+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET, noopPromiseResolve)
 dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 !#endif
-! dailymotion.com#%#//scriptlet('prevent-fetch', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video)/ method:GET', 'noopPromiseResolve')
-! dailymotion.com#%#//scriptlet('prevent-xhr', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET')
+allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
+dailymotion.com#%#//scriptlet('prevent-fetch', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video)/ method:GET', 'noopPromiseResolve')
+dailymotion.com#%#//scriptlet('prevent-xhr', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET')
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
