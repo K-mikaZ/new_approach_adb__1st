@@ -419,10 +419,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
 ! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
-youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
-!#if (ext_ublock)
 youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
-!#endif
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
@@ -3274,12 +3271,8 @@ wss://net-announce*$websocket,important
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-!#if (ext_ublock)
-dailymotion.com##+js(no-fetch-if, url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, noopPromiseResolve)
-dailymotion.com##+js(no-xhr-if, url:/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, emptyObj)
-!#endif
-dailymotion.com#%#//scriptlet('prevent-fetch', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
-dailymotion.com#%#//scriptlet('prevent-xhr', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'emptyObj')
+dailymotion.com##+js(no-fetch-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, noopPromiseResolve)
+dailymotion.com##+js(no-xhr-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, emptyObj)
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
