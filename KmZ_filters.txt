@@ -155,8 +155,6 @@ voirseries.*##ul[class="downloads"]
 ! 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
-film01stream.*###tab-ad
-streaminz.com##.playbtm
 
 
 
@@ -239,7 +237,8 @@ wikipedia.org##[class^="frb"]
 *##[class*="ads-bottom"]
 *##[class*="ads-left"]
 *##[class*="ads-right"]
-*##[class="ad"][class="c-ads"]
+*##[class~="ad"][class~="c-ads"]
+*##[class~="ad"][class~="doubleclick"]
 ! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  *##[class~="ad"][data-block-devices]
 *##[class~="ad"][data-block-devices]
 *##[class~="ad"][class*="outbrain"]
@@ -249,6 +248,8 @@ wikipedia.org##[class^="frb"]
 *##[class^="AdsenseAd_"]
 ! ##[id="ads"]
 *##[id="ads4"]
+*##[id*="themoneytizer"]
+*##[class*="themoneytizer"]
 *##[class|="report-pub"]
 *##[class|="ad-display"]
 *##[class="google-ads"]
@@ -849,7 +850,6 @@ tf1.fr##div[class^="Freemium" i]
 ||slpubmedias.tf1.fr^
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
 ultimate-catch.eu##.header-ads
-ultimate-catch.eu##[id*="themoneytizer"]
 ultimate-catch.eu##[href*="play-asia.com"]
 ultimate-catch.eu##[src*="play-asia.com"]
 ultimate-catch.eu##.single.small > [href*=":"]
