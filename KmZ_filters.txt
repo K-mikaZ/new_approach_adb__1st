@@ -106,7 +106,6 @@
 
 
 
-
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
@@ -138,6 +137,16 @@
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 
+
+
+www.inspiration-cuisine.fr###tdi_47
+chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
+chefcuisto.com##div[id^="publicite_"]
+mafourchette.com##div[data-hbdbrk-parent="true"]
+chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
+cuisineaz.com##[class="cazAd"],[class="ldbtop-container"]
+femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
+femmeactuelle.fr,cuisineactuelle.fr#@#[data-ads-core]
 
 
 ! -------------------- generic ---------------------
@@ -3588,11 +3597,6 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
 @@||commentsmodule.com^
-www.inspiration-cuisine.fr###tdi_47
-chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
-chefcuisto.com##div[id^="publicite_"]
-mafourchette.com##div[data-hbdbrk-parent="true"]
-chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
 
 
 
