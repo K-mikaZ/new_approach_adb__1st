@@ -3520,6 +3520,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||pyxiscablese.com^
 ||apathylahuli.website^
 ||amung.us^$third-party
+||a-mx.com^
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
@@ -3602,6 +3603,7 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
 @@||commentsmodule.com^
+themoneytizer$important,script,redirect=noopjs
 
 
 
