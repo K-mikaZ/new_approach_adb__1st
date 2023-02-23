@@ -420,6 +420,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
 !
 ! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
 youtube.com#%#//scriptlet('prevent-fetch', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
+youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
 youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
 youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
