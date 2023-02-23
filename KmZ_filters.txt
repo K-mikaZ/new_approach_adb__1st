@@ -164,7 +164,7 @@
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
-*##[id|="ad-tracking"][style*="display: none"]
+! *##[id|="ad-tracking"][style*="display: none"]
 *##[class*="lefermeur"]
 *##[class|="custom-fake"]
 *##[class*="contadorads"]
