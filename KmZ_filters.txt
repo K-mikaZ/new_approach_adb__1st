@@ -41,8 +41,6 @@
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
 ! *##div[class|="adsvp"]
 *##div:is( [class|="adsvp"]:last-of-type )
 *##div[class|="div-gpt-ad"]
@@ -108,31 +106,24 @@
 
 
 
-! -------------------- generic ---------------------
-! *** Please, set generic rules after ExtendedCss, avoid running twice
-! *** Some generic rules can be called in case (fallback)
 
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
-
-
-! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
-*#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
-
-
-! Fake button watching
+! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
+*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
+*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 ! Fallback Fake button watching
 *##div[class^="movie-aye"]
 *##div[class="g-buttons"] > a
-! Download links, not watching links
+
+! -------------------- Download links, not watching links ---------------------
 ! *#?#[class*="player" i] li:has( > [class~=down] )
 ! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
 ! streamdeouf.*##li:if([onclick^="goDown"])
 *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
-! Fake watching player
+
+! -------------------- Fake watching player ---------------------
 ! *##[id|="fake-player"]
 *##[id*="fake-"][id*="player"]
 *##[class^="fake-"][class*="player"]
@@ -146,6 +137,19 @@
 ! /video-vip.html$domain=juststream.org
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,~third-party
+
+
+
+! -------------------- generic ---------------------
+! *** Please, set generic rules after ExtendedCss, avoid running twice
+! *** Some generic rules can be called in case (fallback)
+
+*#@#div[aria-live^="polite"]
+*#@#div > div[aria-live="polite"]
+
+
+! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
+*#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 
 
 *##.ad-masthead
