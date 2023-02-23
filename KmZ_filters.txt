@@ -138,17 +138,14 @@
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 
-! voiranime.com##li:if(> span > a:has-text(/VIP\#/))allseries.*##.hdplayer
-allseries.*##[class*="-download-watch"]
+! voiranime.com##li:if(> span > a:has-text(/VIP\#/))
 ! enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
 ! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 ! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 ! 4kstreamz.*##.Players:if(:has-text(/4K Player/i))
-! papseries.net##.ply:if(:-abp-contains(/rapidgator|megaup|uploaded/i))
 filmgratuit.net##li.streamer:if(span[class*="download-server"])
 voirseries.*##ul[class="downloads"]
 ! voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-papseries.net##div[data-url*="1fichier"],div[data-url*="uptobox"]
 ! zustream.*##li:if(:has-text(/(VIP)(.*)?/))
 ! streaminggratuitvf.*##button:has-text(/1080p/)
 ! filmz.*##li:if(:-abp-has(i.player-hdplayer))
@@ -163,13 +160,6 @@ mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
 film01stream.*###tab-ad
 streaminz.com##.playbtm
-kykfilmserie.*##.content > div:nth-of-type(2)
-kykfilmserie.*##.dooplay_player:if(iframe[src*=".php?"])
-! streamcomplet.mobi##div:-abp-has(> .fakes_player)
-streamcomplet.mobi##div:if(> [class*="fake_player"])
-streamcomplet.mobi##div:if(> a[target="_blank"])
-streamcomplet.mobi##center:if(> a[href*=".streamcomplet.mobi/player/"])
-! streamcomplet.mobi##li:if(div[class="les-title"]:has-text(/HD Server/))
 
 
 
@@ -3532,6 +3522,7 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 ||apathylahuli.website^
 ||amung.us^$third-party
 ||a-mx.com^
+||streamcomplet2.info^
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
