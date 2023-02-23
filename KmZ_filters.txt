@@ -138,12 +138,9 @@
 ! seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 
-! voiranime.com##li:if(> span > a:has-text(/VIP\#/))
-! enstream.to##.player:if(:-abp-contains(/ENSTREAM HD/))
 ! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
 ! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
 ! 4kstreamz.*##.Players:if(:has-text(/4K Player/i))
-filmgratuit.net##li.streamer:if(span[class*="download-server"])
 voirseries.*##ul[class="downloads"]
 ! voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
 ! zustream.*##li:if(:has-text(/(VIP)(.*)?/))
@@ -717,11 +714,9 @@ bs0wvimoy99r.com##+js(popads-dummy.js)
 ||fmax.xyz^$badfilter
 fmax.xyz##+js(abort-on-property-read, __Y)
 /css?family=Montserrat$xmlhttprequest,stylesheet,important,domain=seriestream.ws
-||enstream.to/vip/*$subdocument,~third-party
 ||zone-stream.club/hd-streaming.php$subdocument,important
 ||plus.google.com^$subdocument,domain=hdslecteur.xyz,important
 /top{1,}laye{1,}r{1,}\.php/$subdocument,~third-party,domain=4kstreamz.co,important
-||enstream.to/vip/*$media,~third-party
 ||issue.mp4$media,important,domain=streamz.vg
 ||https://googleads.github.io/googleads*html5/media/*.mp4$important
 /\/[uU]niversal(\.min)?\.(.{2,})/$media,xmlhttprequest
@@ -782,8 +777,6 @@ hds.lc##.list li .reco.wide
 hds.lc##.lightSwitcher
 hds.lc###count
 ! hds-streaming.la,hds.lc##div.sbox:if(:-abp-contains(/keywords/i))
-enstream.to##.movie-notice
-enstream.to##a.adSecw
 film01stream.*###tabs-ad > .movieplay
 film01stream.*##a[target="_blank"]
 film01stream.*###ads
@@ -828,7 +821,7 @@ voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 voirfilms.*##.f-inner
 voirfilms.*##.X
 zone-stream.*##+js(window.open-defuser)
-fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
+! fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
 filmgratuit.*,filmz.*,streamavie.*,vfilms.me,voirfilms.*##center:if(.myButton)
 /collecteUEM/log/*$xmlhttprequest,domain=www.canalplus.com
 @@*/WWWPLUS/STREAMING/*$media,domain=canalplus.com
@@ -857,10 +850,12 @@ tf1.fr##div[class^="Freemium" i]
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
 ultimate-catch.eu##.header-ads
 ultimate-catch.eu##[id*="themoneytizer"]
+ultimate-catch.eu##[href*="play-asia.com"]
+ultimate-catch.eu##[src*="play-asia.com"]
 ultimate-catch.eu##.single.small > [href*=":"]
-ultimate-catch.eu#?#.mg-widget:if(>:-abp-has([src*="themoneytizer"]))
-ultimate-catch.eu#?#.mg-widget:if(:-abp-has([src*=":"]))
-ultimate-catch.eu#?#.mg-widget:if(> :-abp-contains(/abonne/i))
+! ultimate-catch.eu#?#.mg-widget:if(>:-abp-has([src*="themoneytizer"]))
+! ultimate-catch.eu#?#.mg-widget:if(:-abp-has([src*=":"]))
+! ultimate-catch.eu#?#.mg-widget:if(> :-abp-contains(/abonne/i))
 irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gigya.com/js/gigya.js$script
 @@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr
@@ -976,7 +971,6 @@ vidnow.to,vshare.eu##+js(abort-on-property-read, BetterJsPop)
 rapidvideo.com##+js(abort-on-property-write, executed)
 tvad.me##+js(abort-on-property-read, app.adblockPop)
 rarbg.to##+js(abort-on-property-read, _wm3)
-serienstream.to##+js(abort-current-inline-script, /(?:\\x[0-9a-f]{2}){20}/)
 shink.in##+js(abort-on-property-read, blockAdBlock)
 shink.in##+js(abort-on-property-read, jsPopunder)
 shink.in##+js(abort-on-property-read, RunAds)
@@ -987,6 +981,7 @@ thevideo.me##+js(abort-on-property-read, app.main.adblock)
 thevideo.me##+js(abort-on-property-read, MarketGidJSON)
 thevideo.me##+js(addEventListener-defuser, click, void)
 userscloud.com##+js(abort-on-property-write, open)
+serienstream.to##+js(abort-current-inline-script, /(?:\\x[0-9a-f]{2}){20}/)
 vidup.me##+js(abort-on-property-read, adsShowPopup)
 watchcartoonsonline.eu##+js(abort-current-inline-script, 676574456c656d656e747342795461674e616d65)
 watchcartoonsonline.eu##+js(abort-current-inline-script, document.createElement, jsc.mgid.com)
@@ -1000,7 +995,6 @@ lemonde.fr###js-engagement-banner
 linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
 linternaute.com##.sns_avoidance_link.app_edito_btn
-! fcine.tv##div.alert:if(:-abp-contains(/Tag:/))
 wixsite.com###WIX_ADS
 01streamingvf.*,streaminggratuitvf.com###page > div:nth-child(2),.col-md-8 div:nth-of-type(3) div,.col-md-8 div div:nth-of-type(1) div,div:nth-of-type(6) div,div:nth-of-type(6) div:nth-of-type(1)
 76actu.fr###headerpub,#Widget-Francebillet,.mtl.mbl.pts.pbl.bbg1.btg1
@@ -2444,8 +2438,6 @@ youporn.com##.cSzepHjuLt1
 @@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})\/pagead\/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,badfilter
 streamingvf.casa##[href^="https://dereferer.co/"]
-ultimate-catch.eu##[href^="https://www.play-asia.com"]
-ultimate-catch.eu##[src^="https://www.play-asia.com"]
 ||littlecdn.com^$domain=~littlecdn.com
 ||aulteeby.net^
 ||matchaix.net^
