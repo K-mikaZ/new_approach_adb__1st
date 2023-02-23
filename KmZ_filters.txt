@@ -149,6 +149,13 @@ cuisineaz.com##[class="cazAd"],[class="ldbtop-container"]
 femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 femmeactuelle.fr,cuisineactuelle.fr#@#[data-ads-core]
 
+cineserie.com##.skeleton-single
+cineserie.com##[id^="ebam_"]
+cineserie.com##[class^="ebam_"]
+linternaute.*##.incentive-banner
+linternaute.*###ctn_native_atf
+linternaute.*##div[id^="Crt-"]
+wikipedia.org##[class^="frb"]
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
@@ -1056,8 +1063,7 @@ feedspot.com###wrapper
 femmeactuelle.fr##.ratio-16-9 > div
 femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
-femmeactuelle.fr##.ad.banniere-haute
-femmeactuelle.fr#$##corps { padding-top: 0px; !important; }
+femmeactuelle.fr#$##corps { padding-top: 0; !important; }
 femmeactuelle.fr###bt-softwall
 !#if !(ext_ublock)
 femmeactuelle.fr#%#//scriptlet('set-attr', '#corps', 'style', 'padding-top: 0px; !important;')
