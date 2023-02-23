@@ -3290,7 +3290,6 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 ! !#endif
 ! dailymotion.com#%#//scriptlet('ubo-no-fetch-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'noopPromiseResolve')
 ! dailymotion.com#%#//scriptlet('ubo-no-xhr-if.js', '/(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET', 'emptyObj')
-dailymotion.com##+js(no-xhr-if, /(dmxleo\.dailymotion\.com\/cdn\/manifest\/video\/)/ method:GET, emptyObj)
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
