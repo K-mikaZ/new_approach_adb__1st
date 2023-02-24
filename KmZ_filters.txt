@@ -115,7 +115,7 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf ...
-*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 
@@ -125,7 +125,7 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
-*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 ! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none!important; visibility: hidden!important; }
