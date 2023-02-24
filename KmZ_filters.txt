@@ -245,7 +245,7 @@ wikipedia.org##[class^="frb"]
 !+ NOT_PLATFORM(android, ext_android_cb, ios)
 *##[class~="ad"][class~="onlyDesktop"]
 ! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  [class~="ad"][data-block-devices]
-*##[class~="ad"][data-block-devices]
+! *##[class~="ad"][data-block-devices]
 *##[class~="ad"][class*="outbrain"]
 *##[data-src*="outbrain.com"]
 *##[class~="OUTBRAIN"]
@@ -1963,13 +1963,13 @@ voirseries.*#@#.adsBox
 @@||vidzstore.$ghide
 @@||netflix.com$ghide
 @@*$ghide,domain=femax20.com|fembed.com
-@@||hqq.$inline-script
+! @@||hqq.$inline-script
 !@@||hqq.$ghide
-@@||netu.$inline-script
+! @@||netu.$inline-script
 !@@||netu.$ghide
-@@||vizplay.$inline-script
+! @@||vizplay.$inline-script
 @@||vizplay.$ghide
-@@||waaw.$inline-script
+! @@||waaw.$inline-script
 !@@||waaw.$ghide
 @@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 #@#[src*="://consent.google."]
@@ -2311,7 +2311,7 @@ tirexo.pro##.content > p:if(a[href="/premium.html"][class="btn btn-danger"])
 vfilms.me##a[href*="://go.trackitalltheway."]
 /\%22ad/$~font,~css,badfilter
 ||dev-nano.com/socket.io$important
-@@||facebook.com/*/plugins/post.php$inline-font
+! @@||facebook.com/*/plugins/post.php$inline-font
 facebook.com#@#[src*="facebook.com"]
 facebook.com#@#[href*=".facebook."]
 ||facebook.com/ajax/typeahead/record_basic_metrics.php$important,badfilter
@@ -2515,6 +2515,7 @@ youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer {
 @@||code.jquery.com^
 @@||cdn.jsdelivr.net^
 @@||fonts.googleapis.com^
+@@//\.wof{2}([\d])?/$font
 @@||yastatic.net^
 @@||yandex.st^
 @@||apps.bdimg.com^
