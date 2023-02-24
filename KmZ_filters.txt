@@ -11,8 +11,8 @@
 
 
 ! -------------------- ExtendedCss ---------------------
-! *** Please, set generic rules after ExtendedCss, avoid running twice
-! *** Some generic rules can be called in case (fallback)
+! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
+! I use `:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) )` asap for avoid running twice
 
 ! https://github.com/AdguardTeam/ExtendedCss
 ! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
@@ -56,7 +56,6 @@
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 *#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
-! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##[id|="div-gpt-ad"]
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
