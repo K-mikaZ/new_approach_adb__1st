@@ -7,7 +7,7 @@
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
 # https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 [attr]adb      linguist-detectable linguist-language=AdBlock
-[attr]md       linguist-detectable linguist-language=Markdown
+[attr]md       -linguist-detectable linguist-language=Markdown
 [attr]attrib   -linguist-detectable linguist-language=gitattributes
 
 # Set default behaviour to automatically normalize line endings.
@@ -34,3 +34,5 @@
 *.txt           adb
 
 *.md            md
+
+*.js            -linguist-detectable
