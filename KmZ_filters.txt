@@ -108,14 +108,14 @@
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 ! *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none !important; }
+*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none !important; visibility: hidden !important; }
 ! *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
-*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none !important; }
+*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none !important; visibility: hidden !important; }
 *##a[href*="premium"][href*=".php"][class*="btn"]
 ! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
-*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none !important; }
+*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none !important; visibility: hidden !important; }
 ! Fallback Fake button watching
-*##div[class^="movie-aye"]
+*#$#div[class^="movie-aye"]:not([style*="display: none"]) { display: none !important; visibility: hidden !important; }
 *##div[class="g-buttons"] > a
 
 ! -------------------- Download links, not watching links ---------------------
@@ -123,7 +123,7 @@
 ! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
 ! streamdeouf.*##li:if([onclick^="goDown"])
 ! *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
-*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none !important; }
+*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none !important; visibility: hidden !important; }
 
 
 
@@ -134,7 +134,7 @@
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
 ! *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
-*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none !important; }
+*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none !important; visibility: hidden !important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 ! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
 ! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
