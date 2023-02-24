@@ -192,6 +192,7 @@ wikipedia.org##[class^="frb"]
 *##.mb-3
 *##[id^="aswift_"]
 *##[name^="aswift_"]
+*##[class|="sponsoredPrisma"]
 ! *##[id^="google_ads_iframe_"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
