@@ -503,6 +503,11 @@ music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-contain
 ||youtube.com/get_video_info?$~third-party,badfilter
 ||youtube-nocookie.com^$badfilter
 @@||youtube-nocookie.com$generichide
+! <start DandelionSprout YouTubeEvenMorePureVideoExperience (https://github.com/DandelionSprout/adfilt)>
+youtube.com#@##related
+youtube.com#@##comments
+youtube.com#@$?##logo { pointer-events: none !important; cursor: default !important }
+! </end DandelionSprout YouTubeEvenMorePureVideoExperience>
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
@@ -2091,7 +2096,7 @@ streamroot.io$script,important,badfilter
 ||trustarc.com^$badfilter
 ||turner.com^$badfilter
 ||doubleclick.net^$third-party,badfilter
-/\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){2,3}/$xmlhttprequest,important,redirect=noopjson
+/\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){2,3}/$xmlhttprequest,important
 /\/as{2}et\/bul{2}\.js(.*)?/$xmlhttprequest,_,~third-party,important
 ||*.spotscenered.info$xmlhttprequest,_,important
 ||greedseed.world$xmlhttprequest,important
@@ -2937,7 +2942,6 @@ collect?$removeparam,domain=doubleclick.net|google-analytics.com
 cpasmieux.site##.down
 cpasmieux.site##[class$="-xyz"]
 cpasmieux.tv##[id|="kino"] > noindex
-cuisineaz.com##[id^="dynInfeed"]
 deezer.com##.react-cookie
 deezer.com##[class="alert-wrapper"]
 deezer.com#$#.page-alerts { display: none !important }
@@ -3561,10 +3565,10 @@ coflix.tv#?#ad-host:first-of-type:remove()
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
+cuisineaz.com##[id^="dynInfeed"]
+! fix header
+cuisineaz.com#$#body:not(.body-modal) { padding-top: 7.5em !important; } @media screen and (min-width: 64em) { body:not(.body-modal), body:not(.body-modal):not(.small-header) { padding-top: 13em !important; } }
 cuisineaz.com,fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
-!#if (ext_ublock)
-cuisineaz.com,fourchette-et-bikini.fr##div:has(> script:contains(/.*(displayAd|prebid).*/))
-!#endif
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
 ||hjuyyeuvhvq.com^$important,third-party,subdocument,redirect=noopframe
