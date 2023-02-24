@@ -125,11 +125,18 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
-! *##li[data-plink*="stream"][data-plink*="vip.htm"]
 *#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 ! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
+voirseries.*#$#div[class*="lien"][onclick*="'player'); return false;"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+||french-stream.*/voir/$domain=french-stream.*
+french-stream.*##li[data-plink*="/voir/voir_.html?"]
+french-stream.*##*[class|="fake"]
+french-stream.*##*[id|="fake"]
+*###fakevideo
+fakeplayer$~third-party
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
@@ -3271,15 +3278,6 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 ||youtube.com/embed/$domain=lunchboards.com,important
 @@||pagead2.googlesyndication.com^$domain=arte.tv
 !||arte.tv/log-player/
-misterfilm.co###fakevideo
-###fakevideo
-fakeplayer$~third-party
-#?#.player:has(iframe[src*="fakeplayer"])
-||french-stream.*/voir/$domain=french-stream.*
-french-stream.*##li[data-plink*="/voir/voir_.html?"]
-french-stream.*##*[class|="fake"]
-french-stream.*##*[id|="fake"]
-voirseries.*##div[class*="lien"][class*="active"][onclick*="'player');"]
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
