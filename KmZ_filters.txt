@@ -1,4 +1,4 @@
-[uBlock Origin; Adguard]
+! [uBlock Origin; Adguard]
 !
 ! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Expires: 1 days
@@ -190,14 +190,15 @@ wikipedia.org##[class^="frb"]
 
 *##.ad-masthead
 *##.mb-3
-*##[id*="aswift_"]
+*##[id^="aswift_"]
+*##[name^="aswift_"]
 ! *##[id^="google_ads_iframe_"]
 *##[class^="van_vid_carousel"]
 ! ##[data-ad-client*="-pub-"]
 ! ##[data-ad-host*="-pub-"]
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
-*##div[id="pub"]
+*##[id="pub"]
 *##[id^="playerOver"]
 *##[id^="playerPub"]
 *##[id*="playerbro"]
