@@ -41,7 +41,8 @@
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-*##div[class|="adsvp"]:last-of-type
+*#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none !important; visibility: hidden !important; }
+! *##div[class|="adsvp"]:last-of-type
 ! *##div:is( [class|="adsvp"]:last-of-type )
 *##div[class|="div-gpt-ad"]
 *##div[class^="salidor_"]
