@@ -119,7 +119,11 @@
 ! *#?#[class*="player" i] li:has( > [class~=down] )
 ! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
 ! streamdeouf.*##li:if([onclick^="goDown"])
-*#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
+! *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
+*#?#[class*="player" i] li > [class~=down]
+*#?#[class*="player" i] li > [onclick*="window.open"]
+*#?#[class*="player" i] li > [onclick^="goDown"]
+
 
 ! -------------------- Fake watching player ---------------------
 ! *##[id|="fake-player"]
