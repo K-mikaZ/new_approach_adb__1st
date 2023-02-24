@@ -55,9 +55,6 @@
 *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 *#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { height: 1px!important; visibility: hidden!important; }
-! ----[ EZOIC ADS ]-----------------------------------------------------------
-! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
@@ -147,9 +144,9 @@ chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
 chefcuisto.com##div[id^="publicite_"]
 mafourchette.com##div[data-hbdbrk-parent="true"]
 chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
-cuisineaz.com##[class="cazAd"],[class="ldbtop-container"]
+cuisineaz.com##[class~="cazAd"]
 femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
-femmeactuelle.fr,cuisineactuelle.fr#@#[data-ads-core]
+! femmeactuelle.fr,cuisineactuelle.fr#@#[data-ads-core]
 
 cineserie.com##.skeleton-single
 cineserie.com##[id^="ebam_"]
@@ -167,7 +164,6 @@ wikipedia.org##[class^="frb"]
 *#@#div > div[aria-live="polite"]
 
 
-
 *##.ad-masthead
 *##.mb-3
 *##[id^="aswift_"]
@@ -180,9 +176,10 @@ wikipedia.org##[class^="frb"]
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
 *##[id="pub"]
-*##[id^="playerOver"]
-*##[id^="playerPub"]
-*##[id*="playerbro"]
+*#$#[id*="player"]:is( [id*="Over"],[id*="Pub"],[id*="bro"] ) { display: none!important; visibility: hidden!important; }
+! *##[id^="playerOver"]
+! *##[id^="playerPub"]
+! *##[id*="playerbro"]
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
@@ -245,10 +242,10 @@ wikipedia.org##[class^="frb"]
 *##[class|="ad-display"]
 *##[class~="google-ads"]
 *##[class~="googleads"]
-! *##[class|="pub"]:has-text(/Publicités?/i)
-*##[id="pub"]
 *##[class~="afs_ads"]
-! ezoic ads fallback concerns (test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/)
+! ----[ EZOIC ADS ]-----------------------------------------------------------
+! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
+! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
 *#@#[data-ezsrcset]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
