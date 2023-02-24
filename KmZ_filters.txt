@@ -53,9 +53,11 @@
 *##div[class="containerAds"]
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
-! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
-! *##ins[class*="adsby"]
+! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 *#$#div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
+#@#ins.adsbygoogle
+! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
+*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }! *##ins[class*="adsby"]
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
 ! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
@@ -192,12 +194,6 @@ wikipedia.org##[class^="frb"]
 *#@#div > div[aria-live="polite"]
 
 
-! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
-#@#ins.adsbygoogle
-! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }
-
-
 
 *##.ad-masthead
 *##.mb-3
@@ -230,6 +226,7 @@ wikipedia.org##[class^="frb"]
 *##[class~="FirstLoad"]
 *##[class~="responsive-ad"]
 *##a[href*="-en-hd"][rel^="no"]
+! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
 *#$#[class~="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
 *#$#[id="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
 *##[class~="bottomad"]
