@@ -811,11 +811,7 @@ streamingclic.*##.rek
 streamings-vf.com##[href="#"]
 lesseriestreaming.com#$#body,html{ overflow: visible !important; }
 lesseriestreaming.com##[class*="my-3"]
-voirseries.*##.homi:if([class*="masha_"])
 voirseries.*##[class|="md"]
-voirseries.*##[class|="custom-fake"]
-voirseries.*##[class|="fake"]
-voirseries.*##[id|="fake"]
 voirseries.*##.AV
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
 voiranime.com##div:if(> div > a[href*="/signup/"])
