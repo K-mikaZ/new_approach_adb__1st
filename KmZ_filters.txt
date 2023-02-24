@@ -130,7 +130,7 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
-voirseries.*#$#div[class*="lien"][onclick*="'player'); return false;"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 ||french-stream.*/voir/$domain=french-stream.*
 french-stream.*##li[data-plink*="/voir/voir_.html?"]
 french-stream.*##*[class|="fake"]
