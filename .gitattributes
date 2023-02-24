@@ -5,10 +5,14 @@
 # https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
-# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
-[attr]adb      linguist-detectable linguist-language=AdBlock
-[attr]md       -linguist-detectable linguist-language=Markdown
-[attr]attrib   -linguist-detectable linguist-language=gitattributes
+# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L230
+[attr]adb              linguist-detectable linguist-language=AdBlock
+# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3948
+[attr]pandoc          -linguist-detectable linguist-language=Markdown
+# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L2330
+[attr]gitattributes   -linguist-detectable linguist-language=gitattributes
+# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3212
+[attr]js              -linguist-detectable
 
 # Set default behaviour to automatically normalize line endings.
 *               text=auto
@@ -28,11 +32,11 @@
 .gitignore      export-ignore
 
 # Enable syntax highlighting for files with `.gitattributes` extensions.
-*.gitattributes attrib
+*.gitattributes gitattributes
 
 # Enable syntax highlighting for files with `.txt` extensions.
 *.txt           adb
 
-*.md            md
+*.md            pandoc
 
-*.js            -linguist-detectable
+*.js            js
