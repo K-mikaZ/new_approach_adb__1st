@@ -230,8 +230,8 @@ wikipedia.org##[class^="frb"]
 *##[class~="FirstLoad"]
 *##[class~="responsive-ad"]
 *##a[href*="-en-hd"][rel^="no"]
-*##[class~="topad"]
-*##[id="topad"]
+*#$#[class~="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
+*#$#[id="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
 *##[class~="bottomad"]
 *##[id="bottomad"]
 *##[class~="leftad"]
