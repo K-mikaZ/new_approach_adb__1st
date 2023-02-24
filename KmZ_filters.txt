@@ -156,6 +156,9 @@ linternaute.*##.incentive-banner
 linternaute.*###ctn_native_atf
 linternaute.*##div[id^="Crt-"]
 wikipedia.org##[class^="frb"]
+toptechpal.com##div.main-container.blocker-enabled-check.popup:first-child > div.blocker-overlay
+toptechpal.com##.blocker-notice
+
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
