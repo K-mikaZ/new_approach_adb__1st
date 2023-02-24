@@ -194,7 +194,7 @@ wikipedia.org##[class^="frb"]
 
 ! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 ! *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
-*#$#[class*="adsby"]:not([style*="display: none"]) { display: none !important; visibility: hidden !important; }
+*#$#[class*="adsby"]:not( [style*="display: none"] ) { display: none !important; visibility: hidden !important; }
 
 
 *##.ad-masthead
