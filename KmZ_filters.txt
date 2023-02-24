@@ -193,8 +193,8 @@ wikipedia.org##[class^="frb"]
 
 
 ! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
-! *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
 #@#ins.adsbygoogle
+! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 *#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }
 
 
