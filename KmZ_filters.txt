@@ -99,6 +99,7 @@
 ! *#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
 ! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
 ! *#@?#[data-ads-core]:remove()
+website.informer.com#@?#.adsbygoogle:upward(1)
 
 
 
