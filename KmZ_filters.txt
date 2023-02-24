@@ -54,7 +54,7 @@
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com) ...
-*##ins[class*="adsby"]
+! *##ins[class*="adsby"]
 *#$#div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
@@ -116,7 +116,7 @@
 ! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none !important; visibility: hidden !important; }
 ! Fallback Fake button watching
-*#$#div[class^="movie-aye"]:not([style*="display: none"]) { display: none !important; visibility: hidden !important; }
+*#$#div[class^="movie-aye"]:not( [style*="display: none"] ) { display: none !important; visibility: hidden !important; }
 *##div[class="g-buttons"] > a
 
 ! -------------------- Download links, not watching links ---------------------
@@ -193,7 +193,8 @@ wikipedia.org##[class^="frb"]
 
 
 ! fallback for adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
-*#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
+! *#$#[class*="adsby"] { display: none !important; visibility: hidden !important; }
+*#$#[class*="adsby"]:not([style*="display: none"]) { display: none !important; visibility: hidden !important; }
 
 
 *##.ad-masthead
