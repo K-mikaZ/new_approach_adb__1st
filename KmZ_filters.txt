@@ -220,6 +220,7 @@ toptechpal.com##.blocker-notice
 *##[href*="smartadserver.com"]
 *##[id*="smartlink" i]
 *##[class*="smartlink" i]
+*##[class~="ad-item"]
 *##[class*="top-ads"]
 *##[class*="bottom-ads"]
 *##[class*="left-ads"]
