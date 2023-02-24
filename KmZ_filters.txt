@@ -1,4 +1,4 @@
-! [uBlock Origin; Adguard]
+[uBlock Origin; Adguard]
 !
 ! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Expires: 1 days
@@ -107,10 +107,13 @@
 
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-*#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
+! *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
+*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none !important; }
+! *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
+*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none !important; }
 *##a[href*="premium"][href*=".php"][class*="btn"]
-*#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none !important; }
 ! Fallback Fake button watching
 *##div[class^="movie-aye"]
 *##div[class="g-buttons"] > a
@@ -120,9 +123,8 @@
 ! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
 ! streamdeouf.*##li:if([onclick^="goDown"])
 ! *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
-*#?#[class*="player" i] li > [class~=down]
-*#?#[class*="player" i] li > [onclick*="window.open"]
-*#?#[class*="player" i] li > [onclick^="goDown"]
+*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none !important; }
+
 
 
 ! -------------------- Fake watching player ---------------------
@@ -131,7 +133,8 @@
 *##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
-*#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
+! *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
+*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none !important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 ! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
 ! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
@@ -248,9 +251,9 @@ wikipedia.org##[class^="frb"]
 *##[class~="ad"][class~="c-ads"]
 *##[class~="ad"][class~="doubleclick"]
 *##[class~="ad"][class*="banniere"]
-! !+ PLATFORM(android, ext_android_cb, ios)
+!+ PLATFORM(android, ext_android_cb, ios)
 *##[class~="ad"][class~="onlyMobile"]
-! !+ NOT_PLATFORM(android, ext_android_cb, ios)
+!+ NOT_PLATFORM(android, ext_android_cb, ios)
 *##[class~="ad"][class~="onlyDesktop"]
 ! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  [class~="ad"][data-block-devices]
 *##[class~="ad"][data-block-devices]
