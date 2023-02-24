@@ -54,10 +54,10 @@
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
-*#$#div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
 #@#ins.adsbygoogle
+*#$#div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }! *##ins[class*="adsby"]
+*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
 ! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
