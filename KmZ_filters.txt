@@ -513,11 +513,12 @@ music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-contain
 ||youtube.com/get_video_info?$~third-party,badfilter
 ||youtube-nocookie.com^$badfilter
 @@||youtube-nocookie.com$generichide
-! start DandelionSprout YouTubeEvenMorePureVideoExperience (https://github.com/DandelionSprout/adfilt)
+! <start DandelionSprout YouTubeEvenMorePureVideoExperience (https://github.com/DandelionSprout/adfilt) >
 youtube.com#@##related
+youtube.com#@#ytd-live-chat-frame
 youtube.com#@##comments
 youtube.com#@$?##logo { pointer-events: none !important; cursor: default !important }
-! end DandelionSprout YouTubeEvenMorePureVideoExperience
+! </end DandelionSprout YouTubeEvenMorePureVideoExperience >
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
