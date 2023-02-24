@@ -364,8 +364,10 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 !youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
 ! ? REMOVES "INVIDEO" INFO CARDS:
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, cards)
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'cards')
 ! ? REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, annotations)
+youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'annotations')
 ! ? REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, endscreen)
 ! ? REMOVES "SHORTS" BUTTON
