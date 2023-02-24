@@ -42,9 +42,9 @@
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
 ! *##div[class|="adsvp"]:last-of-type
-*#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none !important; visibility: hidden !important; }
+*#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display:none!important; visibility:hidden!important; }
 ! *##div[class^="salidor_"]
-*#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none !important; visibility: hidden !important; }
+*#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display:none!important; visibility:hidden!important; }
 *##div[class|="div-gpt-ad"]
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
@@ -55,9 +55,9 @@
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 #@#ins.adsbygoogle
-*#$#div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
+*#$#div:has( > script:contains(adsby):only-of-type ) { display:none!important; visibility:hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px !important; visibility: hidden !important; }
+*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display:none"] )) { height:1px!important; visibility:hidden!important; }
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
 ! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
@@ -111,22 +111,22 @@
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 ! *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
-*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none !important; visibility: hidden !important; }
+*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display:none!important; visibility:hidden!important; }
 ! *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
-*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none !important; visibility: hidden !important; }
+*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display:none!important; visibility:hidden!important; }
 *##a[href*="premium"][href*=".php"][class*="btn"]
 ! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
-*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none !important; visibility: hidden !important; }
+*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display:none!important; visibility:hidden!important; }
 ! Fallback Fake button watching
-*#$#div[class^="movie-aye"]:not( [style*="display: none"] ) { display: none !important; visibility: hidden !important; }
-*##div[class="g-buttons"] > a
+*#$#div[class^="movie-aye"]:not( [style*="display:none"] ) { display:none!important; visibility:hidden!important; }
+*#$#div[class="g-buttons"]:not( [style*="display:none"] ):has( > a[href] ) { display:none!important; visibility:hidden!important; }
 
 ! -------------------- Download links, not watching links ---------------------
 ! *#?#[class*="player" i] li:has( > [class~=down] )
 ! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
 ! streamdeouf.*##li:if([onclick^="goDown"])
 ! *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
-*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none !important; visibility: hidden !important; }
+*#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display:none!important; visibility:hidden!important; }
 
 
 
@@ -137,11 +137,11 @@
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
 ! *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
-*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none !important; visibility: hidden !important; }
+*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display:none!important; visibility:hidden!important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
-! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none !important; visibility: hidden !important; }
-! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none !important; visibility: hidden !important; }
-*#$##videoplay[src*="stream"][src*="vip.htm"] { display: none !important; visibility: hidden !important; }
+! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display:none!important; visibility:hidden!important; }
+! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display:none!important; visibility:hidden!important; }
+*#$##videoplay[src*="stream"][src*="vip.htm"] { display:none!important; visibility:hidden!important; }
 *#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 ! /video-vip.html$domain=juststream.org
 ! seriestream.fun/streamingvip.html
@@ -226,9 +226,9 @@ wikipedia.org##[class^="frb"]
 *##[class~="FirstLoad"]
 *##[class~="responsive-ad"]
 *##a[href*="-en-hd"][rel^="no"]
-! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none !important; visibility: hidden !important; }
-*#$#[class~="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
-*#$#[id="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none !important; visibility: hidden !important; }
+! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display:none!important; visibility:hidden!important; }
+*#$#[class~="topad"]:is(:not( [style*="hidden"] ):not( [style*="display:none"] )) { display:none!important; visibility:hidden!important; }
+*#$#[id="topad"]:is(:not( [style*="hidden"] ):not( [style*="display:none"] )) { display:none!important; visibility:hidden!important; }
 *##[class~="bottomad"]
 *##[id="bottomad"]
 *##[class~="leftad"]
