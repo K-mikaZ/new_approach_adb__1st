@@ -1049,10 +1049,10 @@ feedspot.com###wrapper
 femmeactuelle.fr##.ratio-16-9 > div
 femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
-femmeactuelle.fr#$##corps { padding-top: 0; !important; }
+femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
 !#if !(ext_ublock)
-femmeactuelle.fr#%#//scriptlet('set-attr', '#corps', 'style', 'padding-top: 0px; !important;')
+femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
 website.informer.com#@?#.adsbygoogle:upward(1)
 film.hds-streaming.com##.textwidget
@@ -2680,7 +2680,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-hqq.tv#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
+hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc"]
 hqq.to,hqq.tv##a[onclick^="openAuc"]
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
@@ -3267,9 +3267,8 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 dailymotion.com##+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET, noopPromiseResolve)
 dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 !#endif
-allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
-dailymotion.com#%#//scriptlet('prevent-fetch', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video)/ method:GET', 'noopPromiseResolve')
-dailymotion.com#%#//scriptlet('prevent-xhr', '/dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET')
+dailymotion.com#%#//scriptlet("prevent-fetch", "/dmxleo\.dailymotion\.com\/cdn\/manifest\/video)/ method:GET", "noopPromiseResolve")
+dailymotion.com#%#//scriptlet("prevent-xhr", "/dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET")
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
