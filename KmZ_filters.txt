@@ -277,7 +277,7 @@ toptechpal.com##.blocker-notice
 deezer.com#%#(function() { var noopfn = function() {;}; var Fab = function() {}; Fab.prototype.check = noopfn; Fab.prototype.clearEvent = noopfn;  Fab.prototype.emitEvent = noopfn; Fab.prototype.on = function(a, b) { if ( !a ) { b(); } return this; }; Fab.prototype.onDetected = function() {  return this; }; Fab.prototype.onNotDetected = function(a) { a(); return this; }; Fab.prototype.setOption = noopfn; var fab = new Fab(),  getSetFab = { get: function() { return Fab; }, set: function() {} }, getsetfab = { get: function() { return fab; }, set: function() {} }; if ( window.hasOwnProperty('FuckAdBlock') ) { window.FuckAdBlock = Fab; } else { Object.defineProperty(window, 'FuckAdBlock', getSetFab); } if ( window.hasOwnProperty('BlockAdBlock') ) { window.BlockAdBlock = Fab; } else {Object.defineProperty(window, 'BlockAdBlock', getSetFab); } if ( window.hasOwnProperty('SniffAdBlock') ) { window.SniffAdBlock = Fab; } else { Object.defineProperty(window, 'SniffAdBlock', getSetFab); } if ( window.hasOwnProperty('fuckAdBlock') ) { window.fuckAdBlock = fab; } else { Object.defineProperty(window, 'fuckAdBlock', getsetfab); } if ( window.hasOwnProperty('blockAdBlock') ) { window.blockAdBlock = fab; } else { Object.defineProperty(window, 'blockAdBlock', getsetfab); } if ( window.hasOwnProperty('sniffAdBlock') ) { window.sniffAdBlock = fab; } else { Object.defineProperty(window, 'sniffAdBlock', getsetfab); } })();
 !#endif
 
-! ¦¦¦¦¦¦¦¦ [FIX] Youtube speed fix (How To Fix Slow YouTube Buffering)
+! #### [FIX] Youtube speed fix (How To Fix Slow YouTube Buffering)
 !#if !(ext_ublock)
 !...
 !#if !(env_chromium)
@@ -294,11 +294,11 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 ! ...                          [reduced-ua.glitch.me](https://tinyurl.com/2gfgkhw2)
 !#endif
 !...
-! ? The DNS Sinkhole. Disabling Youtube's built-in throttling options. »»» [reddit](https://tinyurl.com/2k5zvzus)
+! The DNS Sinkhole. Disabling Youtube's built-in throttling options. »»» [reddit](https://tinyurl.com/2k5zvzus)
 ! ... ??? Edit your hosts file and add:   »»» How to: [google](https://tinyurl.com/2l24yknf)
 ! ... 127.0.0.1 c.youtube.com
 !...
-! ? ISP is throttling Youtube videos. »»» [reddit](https://www.reddit.com/r/linux/comments/19gpzd/how_to_stop_isps_sucking_at_youtube/)
+! ISP is throttling Youtube videos. »»» [reddit](https://www.reddit.com/r/linux/comments/19gpzd/how_to_stop_isps_sucking_at_youtube/)
 ! ... ??? Block CDNs to directly access YouTube videos
 ! ... WINDOWS: $cmd> netsh advfirewall firewall add rule name="YouTubeCacheTweak" description="Youtube Speed Fix" dir=in action=block remoteip=173.194.55.0/24,206.111.0.0/16 enable=yes
 ! ...   LINUX: $cmd> sudo iptables -A INPUT -s 173.194.55.0/24 -j REJECT -m comment --comment "YouTubeCacheTweak: Youtube Speed Fix"
@@ -311,7 +311,7 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 /(206\.1{3}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
 !#endif
 ! ...
-! ¦¦¦¦¦¦¦¦ [ADS] IN FACT, IF YOU WERE TO DISABLE ALL FILTERS, you would only need ...
+! #### [ADS] IN FACT, IF YOU WERE TO DISABLE ALL FILTERS, you would only need ...
 ! ... youtube.com##+js(json-prune, adPlacements) && youtube.com##+js(json-prune, playerAds)
 ! ... to get a ad free experience.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
@@ -321,7 +321,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPla
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 !
-! ¦¦¦¦¦¦¦¦ [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
+! #### [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
 ! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
 ! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
@@ -345,7 +345,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ! !#endif
 !
 ! ...
-! ¦¦¦¦¦¦¦¦ [TRACKING] cspreport, (atrUrl, ptrackingUrl, qoeUrl does not work here)
+! #### [TRACKING] cspreport, (atrUrl, ptrackingUrl, qoeUrl does not work here)
 ! ... window.ytInitialPlayerResponse
 ||www.youtube.com/cspreport$other
 ||music.youtube.com/cspreport$other
@@ -356,46 +356,44 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
 ! ...
-! ¦¦¦¦¦¦¦¦ [TIP] NON-COSMETIC FILTERS TO REMOVE JUNK FROM YOUTUBE
+! #### [TIP] NON-COSMETIC FILTERS TO REMOVE JUNK FROM YOUTUBE
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tcswua/tip_noncosmetic_filters_to_remove_junk_from/>
 ! »»» <https://www.google.com/search?q=NON-COSMETIC+FILTERS+TO+REMOVE+JUNK+FROM+YOUTUBE+site:www.reddit.com>
-! ? REMOVES ANNOYING POP MESSAGES ON THE BOTTOM LEFT OF THE SCREEN
+! REMOVES ANNOYING POP MESSAGES ON THE BOTTOM LEFT OF THE SCREEN
 !youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, messages.*.youThereRenderer)
 !youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
-! ? REMOVES "INVIDEO" INFO CARDS:
+! REMOVES "INVIDEO" INFO CARDS:
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, cards)
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'cards')
-! ? REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+! REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, annotations)
-youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', 'annotations')
-! ? REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+! REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, endscreen)
-! ? REMOVES "SHORTS" BUTTON
+! REMOVES "SHORTS" BUTTON
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
-! ? REMOVES VOICE SEARCH BUTTON (ONLY WORKS ON WATCH PAGE)
+! REMOVES VOICE SEARCH BUTTON (ONLY WORKS ON WATCH PAGE)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
-! ? REMOVES THE "INCLUDES PAID PROMOTION MESSAGE"
+! REMOVES THE "INCLUDES PAID PROMOTION MESSAGE"
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, paidContentOverlay)
-! ? REMOVES SIDEBAR ADS
+! REMOVES SIDEBAR ADS
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.promotedSparklesWebRenderer)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.compactPromotedVideoRenderer)
-! ? REMOVES ADS IN SEARCH RESULTS
+! REMOVES ADS IN SEARCH RESULTS
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.searchPyvRenderer.ads)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
-! ? REMOVES INFO PANELS UNDER VIDEOS
+! REMOVES INFO PANELS UNDER VIDEOS
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
-! ? REMOVES MERCHANDISE SHELF
+! REMOVES MERCHANDISE SHELF
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
-! ? REMOVES AUTO PLAYING CHANNEL TRAILERS
+! REMOVES AUTO PLAYING CHANNEL TRAILERS
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.0.itemSectionRenderer.contents.0.channelVideoPlayerRenderer)
-! ? REMOVES SHORTS SHELF FROM CHANNEL PAGES
+! REMOVES SHORTS SHELF FROM CHANNEL PAGES
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)
-! ? REMOVES MOVIE/SHOW UPSELL BANNERS ON SIDEBAR (EXAMPLE: GO TO A&E COURT CAM VIDEO TO SEE WHAT IM TALKING ABOUT AS THOSE VIDEOS HAVE THESE)
+! REMOVES MOVIE/SHOW UPSELL BANNERS ON SIDEBAR (EXAMPLE: GO TO A&E COURT CAM VIDEO TO SEE WHAT IM TALKING ABOUT AS THOSE VIDEOS HAVE THESE)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.offerModule)
-! ? REMOVE AUTOPLAYING VIDEO CAROUSEL FROM GAMING TAB
+! REMOVE AUTOPLAYING VIDEO CAROUSEL FROM GAMING TAB
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, header.carouselHeaderRenderer)
-! ? REMOVE FEATURED PLAYLIST FROM DESCRIPTION
+! REMOVE FEATURED PLAYLIST FROM DESCRIPTION
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
 ! ...
 !
@@ -410,7 +408,7 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, header.carouse
 ! youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', 'div.html5-video-container > video', 'controls', '2')
 
 
-! ¦¦¦¦¦¦¦¦ [TIP] OTHER PARAMS ... yt.config_.EXPERIMENT_FLAGS
+! #### [TIP] OTHER PARAMS ... yt.config_.EXPERIMENT_FLAGS
 ! ... FIXME: Not working here
 ! [MISC] ??? youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.USE_EMBEDDED_INNERTUBE_DATA, true)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
@@ -430,10 +428,10 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.E
 ! ...
 music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
 ! ...
-! ¦¦¦¦¦¦¦¦ [TIP] APPARENCE PARAMS
+! #### [TIP] APPARENCE PARAMS
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
 ! ...
-! ¦¦¦¦¦¦¦¦ [TIP] PREVENT INTENSIF TRAFIC
+! #### [TIP] PREVENT INTENSIF TRAFIC
 ! !#if (ext_ublock)
 ! ...   ??   because adguard slowly with those params
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(youtube\.com/sw\.js)/)
@@ -446,7 +444,7 @@ music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIG
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
 ! !#endif
 !
-! ¦¦¦¦¦¦¦¦ [FIX] ADS ATTEMPT TO LAUNCH ON YOUTUBE, BUT GIVE "AN ERROR HAS OCCURRED" AND IT'S REAL ANNOYING.
+! #### [FIX] ADS ATTEMPT TO LAUNCH ON YOUTUBE, BUT GIVE "AN ERROR HAS OCCURRED" AND IT'S REAL ANNOYING.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/ggcmkp/comment/fpzkwhq/?utm_source=share&utm_medium=web2x&context=3>
 @@||youtube.com/get_video_info
 youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
