@@ -127,7 +127,8 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 ! *##[class^="fake-"][class*="media"]
 !  french-stream.*:  [class|="fake"], [id|="fake"]
 ! *#$#div:is( [id^="fake-"], [class^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#div:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
 *#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 ! ducine.*, streamfilms.*, cpasmieux.* ...
