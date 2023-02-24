@@ -125,11 +125,11 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
-*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
 ! ducine.*, streamfilms.*, cpasmieux.* ...
-*#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none !important; visibility: hidden !important; }
+*#$##videoplay[src*="stream"][src*="vip.htm"] { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
