@@ -4,6 +4,10 @@
 # https://rehansaeed.com/gitattributes-best-practices/
 # https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
 
+# Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
+[attr]adb      linguist-detectable linguist-language=AdBlock
+[attr]attrib   -linguist-detectable linguist-language=gitattributes
+
 # Set default behaviour to automatically normalize line endings.
 *               text=auto
 
@@ -22,9 +26,9 @@
 .gitignore      export-ignore
 
 # Enable syntax highlighting for files with `.gitattributes` extensions.
-*.gitattributes linguist-language=gitattributes
+*.gitattributes attrib
 
 # Enable syntax highlighting for files with `.txt` extensions.
-*.txt           linguist-language=AdBlock linguist-detectable
+*.txt           adb
 
 *.md            linguist-detectable
