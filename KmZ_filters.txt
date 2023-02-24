@@ -57,7 +57,7 @@
 #@#ins.adsbygoogle
 *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { height: 1px!important; visibility: hidden!important; }
+*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
 ! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
@@ -118,8 +118,8 @@
 ! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
-*#$#div[class^="movie-aye"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none!important; visibility: hidden!important; }
-*#$#div[class="g-buttons"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )):has( > a[href] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 
 ! -------------------- Download links, not watching links ---------------------
 ! *#?#[class*="player" i] li:has( > [class~=down] )
@@ -227,8 +227,8 @@ wikipedia.org##[class^="frb"]
 *##[class~="responsive-ad"]
 *##a[href*="-en-hd"][rel^="no"]
 ! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
-*#$#[class~="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none!important; visibility: hidden!important; }
-*#$#[id="topad"]:is(:not( [style*="hidden"] ):not( [style*="display: none"] )) { display: none!important; visibility: hidden!important; }
+*#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *##[class~="bottomad"]
 *##[id="bottomad"]
 *##[class~="leftad"]
