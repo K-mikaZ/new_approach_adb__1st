@@ -40,10 +40,7 @@
 ! *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-! *#?#div:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] )
-! *##div[class|="adsvp"]:last-of-type
 *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-! *##div[class^="salidor_"]
 *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *##div[class|="div-gpt-ad"]
 *##div[class^="masha_"]
@@ -110,60 +107,36 @@
 
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-! *#?#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] ))
 *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
-! *#?#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] ))
 *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 *##a[href*="premium"][href*=".php"][class*="btn"]
-! *#?#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 
 ! -------------------- Download links, not watching links ---------------------
-! *#?#[class*="player" i] li:has( > [class~=down] )
-! gocine.*#?#[class*="player" i] li:has( > [onclick*="window.open"] )
-! streamdeouf.*##li:if([onclick^="goDown"])
-! *#?#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) )
+! gocine, streamdeouf ...
 *#$#[class*="player" i] li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 
 ! -------------------- Fake watching player ---------------------
-! *##[id|="fake-player"]
 *##[id*="fake-"][id*="player"]
 *##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
 *##[class^="fake-"][class*="media"]
-! *#?#[class*="player" i] li:has( > [data-url*="vip.htm"] )
 *#$#[class*="player" i] li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
 *##li[data-plink*="stream"][data-plink*="vip.htm"]
-! ducine.*,streamfilms.*#$##videoplay[src$="-vip.html"] { display: none!important; visibility: hidden!important; }
-! cpasmieux.*#$##videoplay[src*="streamvip.html"] { display: none!important; visibility: hidden!important; }
+! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"] { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
-! /video-vip.html$domain=juststream.org
-! seriestream.fun/streamingvip.html
+! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
 
-! fcine.*##[class*="movie_episode_wrapper"]:-abp-contains(/VIP/)
-! fcine.*##[class*="jw-settings-content-item"]:-abp-contains(/1080/)
-! 4kstreamz.*##.Players:if(:has-text(/4K Player/i))
 voirseries.*##ul[class="downloads"]
-! voirseries.*##h3.h:if(> :-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-! zustream.*##li:if(:has-text(/(VIP)(.*)?/))
-! streaminggratuitvf.*##button:has-text(/1080p/)
-! filmz.*##li:if(:-abp-has(i.player-hdplayer))
-! streamay.*##.player-btn:if(:has-text(/HD 1080P/i))
-! filmstoon.*##span:if(:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
-! series.dpstreaming.to##center:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i)
-! filmz.*,zone-stream.club##li:if(:-abp-contains(/T[e|é]l[e|é]charge(r|ment)?/i))
-! oomoviz.*,voirseries.*,voirfilms.*,seriestream.*,filmsrip.*,streamay.*,*.mmfilms.*,film01stream.*,zone-stream.club##li:if(>:has-text(/(HD|VIP)(.*)?/))
-! zustream.*,vodfilms.*,enseries.*,vustream.*,filmgratuit.*,voirseries.*,seriestream.*,voirfilms.*,streamingdivx.*,skstream.ink,enstream.*##li:if(>:has-text(/(1FICHIER|UPTOBOX|T[e|é]l[e|é]charge(r|ment)?)/i))
-! 4kstreamz.co##.player:if(:has-text(/1fichier|uptobox/i))
 mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
 
