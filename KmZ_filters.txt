@@ -119,6 +119,7 @@
 
 
 ! -------------------- Fake watching player ---------------------
+*##[class|="custom-fake"]
 *##[id*="fake-"][id*="player"]
 *##[class^="fake-"][class*="player"]
 *##[id*="fake-"][id*="media"]
@@ -185,7 +186,6 @@ wikipedia.org##[class^="frb"]
 *##[id*="_ads_fluid"]
 ! *##[id|="ad-tracking"][style*="display: none"]
 *##[class*="lefermeur"]
-*##[class|="custom-fake"]
 *##[class*="contadorads"]
 *##[class^="ebooks_orange_"][href]
 *##[class^="surge_"][href]
