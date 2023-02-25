@@ -149,6 +149,8 @@ voirseries.*##ul[class="downloads"]
 mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
 
+! *##[id^="playerOver"], *##[id^="playerPub"], *##[id*="playerbro"]
+*#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 www.inspiration-cuisine.fr###tdi_47
@@ -171,6 +173,7 @@ toptechpal.com##div.main-container.blocker-enabled-check.popup:first-child > div
 toptechpal.com##.blocker-notice
 
 
+
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
 ! *** Some generic rules can be called in case (fallback)
@@ -178,6 +181,10 @@ toptechpal.com##.blocker-notice
 *#@#div[aria-live^="polite"]
 *#@#div > div[aria-live="polite"]
 
+
+! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
+*#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 
 *##.ad-masthead
 *##.mb-3
@@ -191,14 +198,11 @@ toptechpal.com##.blocker-notice
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
 *##[id="pub"]
-! *##[id^="playerOver"], *##[id^="playerPub"], *##[id*="playerbro"]
-*#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
 *##[class*="_ads_fluid"]
 *##[id*="_ads_fluid"]
-! *##[id|="ad-tracking"][style*="display: none"]
 *##[class*="lefermeur"]
 *##[class*="contadorads"]
 *##[class^="ebooks_orange_"][href]
@@ -208,9 +212,6 @@ toptechpal.com##.blocker-notice
 *##[class~="FirstLoad"]
 *##[class~="responsive-ad"]
 *##a[href*="-en-hd"][rel^="no"]
-! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
-*#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 *##[class~="bottomad"]
 *##[id="bottomad"]
 *##[class~="leftad"]
@@ -235,10 +236,10 @@ toptechpal.com##.blocker-notice
 *##[class~="ad"][class~="c-ads"]
 *##[class~="ad"][class~="doubleclick"]
 *##[class~="ad"][class*="banniere"]
-!+ PLATFORM(android, ext_android_cb, ios)
-*##[class~="ad"][class~="onlyMobile"]
-!+ NOT_PLATFORM(android, ext_android_cb, ios)
-*##[class~="ad"][class~="onlyDesktop"]
+! ### !+ PLATFORM(android, ext_android_cb, ios)
+! ### *##[class~="ad"][class~="onlyMobile"]
+! ### !+ NOT_PLATFORM(android, ext_android_cb, ios)
+! ### *##[class~="ad"][class~="onlyDesktop"]
 ! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  [class~="ad"][data-block-devices]
 *##[class~="ad"][data-block-devices]
 *##[class~="ad"][class*="outbrain"]
@@ -327,16 +328,16 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerRespo
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
 ||music.youtube.com^$csp=worker-src 'none'
 ||www.youtube.com^$csp=worker-src 'none'
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
 !
 ! ...
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, "PLAYBACK_MODE_DISALLOW")
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, PLAYBACK_MODE_DISALLOW)
 
 ! !#if (adguard)
 ! ... [forum.adguard.com](https://tinyurl.com/2z56vox2)
