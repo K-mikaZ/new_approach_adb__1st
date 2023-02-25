@@ -3771,9 +3771,10 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 
 ! ======[ EOF ]==========================================================
 
-! block too many sites and web players (e.g. animationdigitalnetwork.fr)
+! block too many sites and web players (e.g. animationdigitalnetwork.fr, 6play.fr)
+! not only trackers, but somes utils (use for login to the site, ...)
 @@||googlesyndication.com^$important
-! block too many sites (e.g. 6play.fr use for login to the site)
+@@||sddan.com^$important
 @@||gigya.com^$important
 @@||usabilla.com^$important
 
