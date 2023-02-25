@@ -23,7 +23,7 @@
 ! Test here: https://reduced-ua.glitch.me/
 reduced-ua.glitch.me#%#const match = navigator.platform; const major = navigator.userAgent.split('/')[3].slice(0,5); let platform; const unifiedPlatform = {'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7','X11; C': 'X11; CrOS x86_64','X11; L': 'X11; Linux x86_64'}; Object.entries(unifiedPlatform).forEach(entry => { const [key, value] = entry; if (match.indexOf(key) > -1){ platform = value } }); const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
 
-! Because of rakuten.tv block linux users
+! Because of rakuten.tv block linux users, set UA = Windows NT 10.0; Win64
 !+ PLATFORM(ext_ff, ext_edge, ext_opera, ext_chromium, ext_safari)
 rakuten.tv#%#const major = navigator.userAgent.split('/')[3].slice(0,5); let platform = 'Windows NT 10.0; Win64; x64'; const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
 
