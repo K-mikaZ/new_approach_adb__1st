@@ -54,7 +54,7 @@
 #@#ins.adsbygoogle
 ! *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) { height: 1px!important; visibility: hidden!important; }
+*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##[id|="div-gpt-ad"]
@@ -109,7 +109,7 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
-*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 
 ! -------------------- Download links, not watching links ---------------------
