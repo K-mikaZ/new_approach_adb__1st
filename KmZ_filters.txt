@@ -12,7 +12,7 @@
 
 ! -------------------- ExtendedCss ---------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-! I use `:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) )` asap for avoid running twice
+! I use `:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )` asap for avoid running twice
 
 ! https://github.com/AdguardTeam/ExtendedCss
 ! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
@@ -54,7 +54,7 @@
 #@#ins.adsbygoogle
 ! *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { height: 1px!important; visibility: hidden!important; }
+*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
 *##[id|="div-gpt-ad"]
@@ -109,25 +109,25 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
-*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf ...
-*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 
 ! -------------------- Fake watching player ---------------------
-*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
-*#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
+*#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! ducine.*, streamfilms.*, cpasmieux.* ...
-*#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
-*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
-voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
+*#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
+voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class|="fake"], [id|="fake"]
-*#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *##[class|="custom-fake"]
 *###fakevideo
@@ -142,7 +142,7 @@ mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
 
 ! *##[id^="playerOver"], *##[id^="playerPub"], *##[id*="playerbro"]
-*#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 www.inspiration-cuisine.fr###tdi_47
@@ -173,15 +173,13 @@ toptechpal.com##.blocker-notice
 *#@#div[aria-live^="polite"]
 *#@#div > div[aria-live="polite"]
 
-
-! because topad on malekal.com is div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
-*#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 ! *##[class*="ads-top"], [class*="ads-bottom"], [class*="ads-left"], [class*="ads-right"]
-*#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
-*#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 *##.ad-masthead
 *##.mb-3
