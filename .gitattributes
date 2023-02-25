@@ -22,14 +22,12 @@
 #
 
 # These files are text and should be normalized (Convert crlf => lf)
-*.gitattributes text
+*.gitattributes text gitattributes
 .gitignore      text
-*.md            text diff=markdown
-*.txt           text
+*.md            text pandoc diff=markdown
+*.txt           text adb
+*.js            text js
 
 # Exclude files from exporting
 .gitattributes  export-ignore
 .gitignore      export-ignore
-
-# Enable syntax highlighting for files with `.gitattributes` extensions.
-*.gitattributes gitattributes
