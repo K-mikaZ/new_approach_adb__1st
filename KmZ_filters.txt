@@ -52,7 +52,7 @@
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 #@#ins.adsbygoogle
-*#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
+! *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 *#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
@@ -780,14 +780,11 @@ film01stream.*##a[target="_blank"]
 film01stream.*###ads
 ! film01stream.*##span:-abp-contains(/ads/)
 ! film01stream.*##div:-abp-has(> div > div > [class*="surge_"])
-filmstoon.*##[href*="://out.filmstoon."]
-filmstoon.*##.yx-share
-filmstoon.*##.fsect
-filmstoon.*##[target="_blank"]
-filmstoon.*###qdiv
-! filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
-||in.filmstoon.*$popup
+! https://french-stream.gg
+french-stream.*#$#:is( :not( [class*="menu"] ):has( > [href*="//is.gd/"] ), [id="banning"] ) { display: none!important; visibility: hidden!important; }
+french-stream.*,fr.french-manga.net##br
 french-stream.*##.bx1
+
 kykfilmserie.com##div:if(> [href*=".php"])
 skstream.ink##center:if(> center > a[href*="/Inscription" i])
 streamdivx.*##center:if(a.buttonxx)
