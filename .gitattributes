@@ -6,16 +6,16 @@
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
 # https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L230
-[attr]adb              linguist-detectable linguist-language=AdBlock
+[attr]adb             text linguist-detectable linguist-language=AdBlock
 # https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3948
-[attr]pandoc          -linguist-detectable linguist-language=Markdown
+[attr]pandoc          text -linguist-detectable linguist-language=Markdown
 # https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L2330
-[attr]gitattributes   -linguist-detectable linguist-language=gitattributes
+[attr]gitattributes   text -linguist-detectable linguist-language=gitattributes
 # https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3212
-[attr]js              -linguist-detectable
+[attr]js              text -linguist-detectable
 
 # Set default behaviour to automatically normalize line endings.
-*               text=auto
+# *               text=auto
 
 #
 # The above will handle all files NOT found below
@@ -25,7 +25,7 @@
 *.gitattributes text
 .gitignore      text
 *.md            text diff=markdown
-*.txt           text eol=lf
+*.txt           text
 
 # Exclude files from exporting
 .gitattributes  export-ignore
