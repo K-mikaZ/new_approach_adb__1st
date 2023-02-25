@@ -3771,7 +3771,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
-||*/videojs-vast-vpaid*$script,important,redirect=noopjs
+||*/videojs-vast-vpaid*$script
 
 
 ! ======[ EOF ]==========================================================
