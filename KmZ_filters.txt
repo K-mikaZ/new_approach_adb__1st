@@ -260,19 +260,25 @@ toptechpal.com##.blocker-notice
 
 ! ======= MISC =======
 
-!#if (!ext_ublock)
+!#if (adguard)
+! ... READ  ...   User-Agent reduction snippets
+! ...                 Code snippets to transform the current Chrome user-agent to the reduced format.
+! ...                 https://developer.chrome.com/docs/privacy-sandbox/user-agent/snippets/#javascript
+! ...                 [reduced-ua.glitch.me](https://tinyurl.com/2gfgkhw2)
+reduced-ua.glitch.me#%#const match = navigator.platform; const major = navigator.userAgent.split('/')[3].slice(0,5); let platform; const unifiedPlatform = {'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7','X11; C': 'X11; CrOS x86_64','X11; L': 'X11; Linux x86_64'}; Object.entries(unifiedPlatform).forEach(entry => { const [key, value] = entry; if (match.indexOf(key) > -1){ platform = value } }); const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
+! Because of rakuten.tv block linux users
+!+ PLATFORM(ext_ff, ext_edge, ext_opera, ext_chromium, ext_safari)
+rakuten.tv#%#const major = navigator.userAgent.split('/')[3].slice(0,5); let platform = 'Windows NT 10.0; Win64; x64'; const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
 deezer.com#%#(function() { var noopfn = function() {;}; var Fab = function() {}; Fab.prototype.check = noopfn; Fab.prototype.clearEvent = noopfn;  Fab.prototype.emitEvent = noopfn; Fab.prototype.on = function(a, b) { if ( !a ) { b(); } return this; }; Fab.prototype.onDetected = function() {  return this; }; Fab.prototype.onNotDetected = function(a) { a(); return this; }; Fab.prototype.setOption = noopfn; var fab = new Fab(),  getSetFab = { get: function() { return Fab; }, set: function() {} }, getsetfab = { get: function() { return fab; }, set: function() {} }; if ( window.hasOwnProperty('FuckAdBlock') ) { window.FuckAdBlock = Fab; } else { Object.defineProperty(window, 'FuckAdBlock', getSetFab); } if ( window.hasOwnProperty('BlockAdBlock') ) { window.BlockAdBlock = Fab; } else {Object.defineProperty(window, 'BlockAdBlock', getSetFab); } if ( window.hasOwnProperty('SniffAdBlock') ) { window.SniffAdBlock = Fab; } else { Object.defineProperty(window, 'SniffAdBlock', getSetFab); } if ( window.hasOwnProperty('fuckAdBlock') ) { window.fuckAdBlock = fab; } else { Object.defineProperty(window, 'fuckAdBlock', getsetfab); } if ( window.hasOwnProperty('blockAdBlock') ) { window.blockAdBlock = fab; } else { Object.defineProperty(window, 'blockAdBlock', getsetfab); } if ( window.hasOwnProperty('sniffAdBlock') ) { window.sniffAdBlock = fab; } else { Object.defineProperty(window, 'sniffAdBlock', getsetfab); } })();
 !#endif
 
 ! #### [FIX] Youtube speed fix (How To Fix Slow YouTube Buffering)
-!#if (!ext_ublock)
+!#if (adguard)
 !...
-!#if (!env_chromium)
 ! ? Google's YouTube load slower in non-Google browsers, specifically Firefox and Edge.
 ! ... ??? Mock the User-Agent:   »»» [forum adguard](https://tinyurl.com/2h67v45g)
 !     Latest Chrome User Agents on different plateform: [whatismybrowser.com - The latest user agents for Chrome](https://tinyurl.com/spnnb7p)
-music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitch.me#%#const match = navigator.platform; const major = navigator.userAgent.split('/')[3].slice(0,5); let platform; const unifiedPlatform = {'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7','X11; C': 'X11; CrOS x86_64','X11; L': 'X11; Linux x86_64'}; Object.entries(unifiedPlatform).forEach(entry => { const [key, value] = entry; if (match.indexOf(key) > -1){ platform = value } }); const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
 ! ... for more setting (platform): https://github.com/facebook/jest/issues/717 !Object.defineProperty(window.navigator, 'platform', { value: '', writable: true }); navigator.platform = 'Mac-Intel';
 ! ... READ ALSO  ...   Prevent covert tracking with User-Agent reduction: https://developer.chrome.com/docs/privacy-sandbox/user-agent/
 ! ...                          Limit passively shared browser data to reduce the volume of sensitive information which leads to fingerprinting.
@@ -280,7 +286,8 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com,reduced-ua.glitc
 ! ...                          Code snippets to transform the current Chrome user-agent to the reduced format.
 ! ...                          https://developer.chrome.com/docs/privacy-sandbox/user-agent/snippets/#javascript
 ! ...                          [reduced-ua.glitch.me](https://tinyurl.com/2gfgkhw2)
-!#endif
+!+ PLATFORM(ext_ff, ext_edge, ext_opera)
+music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#const match = navigator.platform; const major = navigator.userAgent.split('/')[3].slice(0,5); let platform; const unifiedPlatform = {'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7','X11; C': 'X11; CrOS x86_64','X11; L': 'X11; Linux x86_64'}; Object.entries(unifiedPlatform).forEach(entry => { const [key, value] = entry; if (match.indexOf(key) > -1){ platform = value } }); const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } });
 !...
 ! The DNS Sinkhole. Disabling Youtube's built-in throttling options. »»» [reddit](https://tinyurl.com/2k5zvzus)
 ! ... ??? Edit your hosts file and add:   »»» How to: [google](https://tinyurl.com/2l24yknf)
@@ -1035,7 +1042,7 @@ femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
 femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
-!#if (!ext_ublock)
+!#if (adguard)
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
 website.informer.com#@?#.adsbygoogle:upward(1)
@@ -2848,7 +2855,7 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 ###arc-widget-launcher-iframe
 ##+js(set, Document.prototype.interestCohort, undefined)
 #@#.advertisement:not(body)
-!#if (!ext_ublock)
+!#if (adguard)
 #%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
 !#endif
 ! #?#.player:-abp-has(>[data-ads-core])
@@ -2914,7 +2921,7 @@ akceleratorbiznesu.eu##[src*="/dating/"]
 akceleratorbiznesu.eu##[src*="/imagesnp/"]
 allthings.how##.mv-ad-box
 !animationdigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
-!#if (!ext_ublock)
+!#if (adguard)
 animationdigitalnetwork.fr#%#AG_onLoad(function() { if(window.location.href.indexOf("/onboarding") != -1){ window.location.href = "https://animationdigitalnetwork.fr"; } });
 !#endif
 answerstoall.com###rc-widget-618603
@@ -3129,7 +3136,7 @@ tpbproxypirate.com##[id="float"]
 glodls.*,gtdb.*##a[href*="://bit.ly/"]
 ##.dssdffds
 1337x.*#@#a[href*=" "]
-!#if (!ext_ublock)
+!#if (adguard)
 @@||weather.opera-api.com^$third-party,app=opera.exe
 @@||autoupdate.geo.opera.com^$important,app=opera.exe
 ||merchandise.opera-api.com/api/teaser-gx^$important,app=opera.exe
@@ -3522,7 +3529,7 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 @@||googleadservices.com^$domain=coflix.tv
 @@||adservice.google.fr^$domain=coflix.tv,important
 @@||adservice.google.com^$domain=coflix.tv,important
-!#if (!ext_ublock)
+!#if (adguard)
 coflix.tv#@%#//scriptlet("prevent-bab")
 !#endif
 coflix.tv#?#ad-host:first-of-type:remove()
