@@ -728,7 +728,6 @@ vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
 ||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
-
 33seriestreaming.com###player-overlay
 33seriestreaming.com##.signup-window
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
@@ -738,6 +737,11 @@ allseries.*##.telecharger
 !allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
 !allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
+! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
+malekal.com##+js(set-constant, window.adsbygoogle, [])
+malekal.com##+js(abort-current-inline-script, adsbygoogle)
+malekal.com#@##adsense
+malekal.com#@#.an-advert-banner
 animationdigitalnetwork.fr##.adn-opm2-block-rectangle
 animationdigitalnetwork.fr##.adn-pave
 animationdigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
@@ -1121,9 +1125,6 @@ login.live.com###msccBanner
 loukoum-cie.over-blog.com###dawandaWidgetContainer
 ls-streaming.com##.fullcontent .center,.PapaGooGorHD,.panel-container center
 mail.google.com##.acS,.nH.adC,.u5,.Zs
-malekal.com###bQtBNUghMoyn,#catapult-cookie-baroutlook.live.com,._1j7WZ-n7dxhS9AQV-FL8U7 ._2qPmszDwBfYpF7PO9Mn3KN,.code-block,.OFbYwOlAprEQ-bg,.ouXBxSIyKcZy,ins[id^="aswift_"]
-malekal.com###text-8
-malekal.com##.LRHqhwgCkDNa
 mamzouka.be###report_button,li.genre:nth-of-type(1),#favoris,.nav-stacked.nav-pills.nav li:nth-of-type(4),li.genre:nth-of-type(3) h4
 mamzouka.com##.dt_social_single, div.sbox:nth-of-type(9),p:nth-of-type(1), p:nth-of-type(2)
 mappy.com###PushHotelView,.pushItiSummary.covoiturage,.vsc
@@ -1952,8 +1953,6 @@ voirseries.*#@#.adsBox
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
 yggtorrent.*,voirseries.*#@#+js(nobab)
 motherless.com#@#+js(abort-on-property-read, _ml_ads_ns)
-malekal.com#@##adsense
-malekal.com#@#.an-advert-banner
 torrent9.*#@#.download-btn + .download-btn a
 vidoza.org#@#.btn-social
 voirseries.*#@#.share-group
