@@ -119,16 +119,6 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 
 
 ! -------------------- Fake watching player ---------------------
-*##[class|="custom-fake"]
-! *##[id*="fake-"][id*="player"]
-! *##[class^="fake-"][class*="player"]
-! *##[id*="fake-"][id*="media"]
-! *##[id*="fake-"][id*="video"]
-! *##[class^="fake-"][class*="media"]
-!  french-stream.*:  [class|="fake"], [id|="fake"]
-! *#$#div:is( [id^="fake-"], [class^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; visibility: hidden!important; }
 *#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
 ! ducine.*, streamfilms.*, cpasmieux.* ...
@@ -136,8 +126,10 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
 voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
-||french-stream.*/voir/$domain=french-stream.*
-french-stream.*##li[data-plink*="/voir/voir_.html?"]
+! *##[class|="fake"], [id|="fake"]
+*#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display: none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
+*##[class|="custom-fake"]
 *###fakevideo
 fakeplayer$~third-party
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
@@ -795,14 +787,7 @@ filmstoon.*##[target="_blank"]
 filmstoon.*###qdiv
 ! filmstoon.*##:xpath(//*[@id="qdiv"]/a/img)
 ||in.filmstoon.*$popup
-french--stream.co##.bx1
-french-stream.*###f22
 french-stream.*##.bx1
-french-stream.*###\32 ad
-french-stream.*##[href*="://stakiwrisl./"]
-french-stream.*##body > div.wrap.have-brand > div.wrap-in > div > div.fmain > div:nth-child(1) > div
-french-stream.*##.banner
-! french-stream.*#?#div:-abp-has(> div > a[id*="yell[0-9]{1,}"])
 kykfilmserie.com##div:if(> [href*=".php"])
 skstream.ink##center:if(> center > a[href*="/Inscription" i])
 streamdivx.*##center:if(a.buttonxx)
