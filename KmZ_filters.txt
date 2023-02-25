@@ -3463,7 +3463,7 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||fastclick.com^
 ||onetag-sys.com^$third-party
 ||casalemedia.com^$third-party
-||doubleclick.net/pagead/html/^$important,redirect-rule=noopframe
+||doubleclick.net/pagead/html/*$important,redirect-rule=noopframe
 ||gfiypuneou.com^
 ||prismamedia.com^$badfilter
 ||playnext.prismamediadigital.com^
