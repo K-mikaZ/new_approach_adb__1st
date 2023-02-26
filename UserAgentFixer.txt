@@ -14,10 +14,11 @@
 ! ... What are the latest user agents: https://www.whatismybrowser.com/guides/the-latest-user-agent
 !---------------------------------------------------------------------------------------------!
 ! chromium-based Browser
-#%#var AG_chromiumBasedBrowser=/^Mozilla\/5\.0 \(((?<platform>Lin|Win|Mac|X11; C|X11; L)+[^\)]+)\) AppleWebKit\/537.36 \(KHTML, like Gecko\) Chrome\/(?<major>\d+)[\d\.]+(?<mobile>[ Mobile]*) Safari\/537\.36(.+)?$/;
+#%#var AG_chromiumBasedBrowser = /^Mozilla\/5\.0 \(((?<platform>Lin|Win|Mac|X11; C|X11; L)+[^\)]+)\) AppleWebKit\/537.36 \(KHTML, like Gecko\) Chrome\/(?<major>\d+)[\d\.]+(?<mobile>[ Mobile]*) Safari\/537\.36(.+)?$/;
 ! gecko-based Browser ( replace `Chrome` from AG_chromiumBasedBrowser with `(.+)` ).
-#%#var AG_geckoBasedBrowser=/^Mozilla\/5\.0 \(((?<platform>Lin|Win|Mac|X11; C|X11; L)+[^\)]+)\) AppleWebKit\/537.36 \(KHTML, like Gecko\) (.+)\/(?<major>\d+)[\d\.]+(?<mobile>[ Mobile]*) Safari\/537\.36(.+)?$/;
-
+#%#var AG_geckoBasedBrowser = /^Mozilla\/5\.0 \(((?<platform>Lin|Win|Mac|X11; C|X11; L)+[^\)]+)\) AppleWebKit\/537.36 \(KHTML, like Gecko\) (.+)\/(?<major>\d+)[\d\.]+(?<mobile>[ Mobile]*) Safari\/537\.36(.+)?$/;
+! The unifiedPlatform value comes from taking the short platform match and replacing it with the appropriate reduced value.
+#%#var AG_unifiedPlatform = { 'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7', 'X11; C': 'X11; CrOS x86_64', 'X11; L': 'X11; Linux x86_64' };
 
 !---------------------------------------------------------------------------------------------!
 ! ... User-Agent reduction snippets
@@ -36,7 +37,7 @@
 !---------------------------------------------------------------------------------------------!
 ! reduce UA `only if chromium-based browser`.
 !+ NOT_PLATFORM(ios)
-*#%#(function(){ const matched = AG_chromiumBasedBrowser.exec(navigator.userAgent); if (matched) { const unifiedPlatform = { 'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7', 'X11; C': 'X11; CrOS x86_64', 'X11; L': 'X11; Linux x86_64' }; const mockUA = `Mozilla/5.0 (${unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; })();
+*#%#(function(){ const matched = AG_chromiumBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; })();
 
 
 !---------------------------------------------------------------------------------------------!
@@ -49,6 +50,6 @@ rakuten.tv#%#(function(){ const matched = AG_geckoBasedBrowser.exec(navigator.us
 
 ! #### [FIX] Google's YouTube load slower in non-Google browsers, specifically Firefox and Edge. Set UA to `chrome`.
 !+ NOT_PLATFORM(ios, ext_chromium)
-music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#(function(){ const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const unifiedPlatform = { 'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7', 'X11; C': 'X11; CrOS x86_64', 'X11; L': 'X11; Linux x86_64' }; const mockUA = `Mozilla/5.0 (${unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; })();
+music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#(function(){ const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; })();
 
 !#endif
