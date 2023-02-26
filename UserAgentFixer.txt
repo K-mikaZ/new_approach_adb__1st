@@ -23,8 +23,8 @@
 ! ...     No current plans for User-Agent Reduction on iOS and Android WebView at this time.
 ! ...     https://www.chromium.org/updates/ua-reduction/#applicable-platforms
 
-! reduce UA only if matched (chromium based browser)
-!+ NOT_PLATFORM(ios,android)
+! reduce UA only if matched (chromeUAs.exec(navigator.userAgent))
+!+ NOT_PLATFORM(ios, android)
 *#%#(function(){ const chromeUAs = /^Mozilla\/5\.0 \(((?<platform>Lin|Win|Mac|X11; C|X11; L)+[^\)]+)\) AppleWebKit\/537.36 \(KHTML, like Gecko\) Chrome\/(?<major>\d+)[\d\.]+(?<mobile>[ Mobile]*) Safari\/537\.36(.+)?$/; const matched = chromeUAs.exec(navigator.userAgent); if (matched) { const unifiedPlatform = { 'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7', 'X11; C': 'X11; CrOS x86_64', 'X11; L': 'X11; Linux x86_64' }; const mockUA = `Mozilla/5.0 (${unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; })();
 
 
@@ -32,12 +32,13 @@
 ! ... What are the latest user agents for Chrome? https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
 
 ! Because of rakuten.tv block linux users, set UA from Windows;
-!+ NOT_PLATFORM(ios,android,windows) PLATFORM(ext_ff, ext_edge, ext_opera, ext_chromium)
+!+ NOT_PLATFORM(ios, android, windows) PLATFORM(ext_ff, ext_edge, ext_opera, ext_chromium)
 rakuten.tv#%#(function(){ const major = navigator.userAgent.split('/')[3].slice(0,5); const mockUA = `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); })();
 
 ! #### [FIX] Youtube speed fix (How To Fix Slow YouTube Buffering)
 ! #### Google's YouTube load slower in non-Google browsers, specifically Firefox and Edge.
-!+ NOT_PLATFORM(ios,android) PLATFORM(ext_ff, ext_edge, ext_opera)
+!+ NOT_PLATFORM(ios, android) PLATFORM(ext_ff, ext_edge, ext_opera)
 music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#(function(){ const match = navigator.platform; const major = navigator.userAgent.split('/')[3].slice(0,5); let platform; const unifiedPlatform = {'Lin': 'Linux; Android 10; K', 'Win': 'Windows NT 10.0; Win64; x64', 'Mac': 'Macintosh; Intel Mac OS X 10_15_7','X11; C': 'X11; CrOS x86_64','X11; L': 'X11; Linux x86_64'}; Object.entries(unifiedPlatform).forEach(entry => { const [key, value] = entry; if (match.indexOf(key) > -1){ platform = value } }); const mockUA = `Mozilla/5.0 (${platform}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${major}.0.0 Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); })();
+
 
 !#endif
