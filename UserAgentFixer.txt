@@ -13,6 +13,8 @@
 !----------------------------- start General JS API ------------------------------------------!
 !---------------------------------------------------------------------------------------------!
 
+! Error executing AG js: TypeError: Cannot redefine property: userAgent
+
 !---------------------------------------------------------------------------------------------!
 ! ... Helper variables
 ! ... What are the latest user agents: https://www.whatismybrowser.com/guides/the-latest-user-agent
