@@ -2957,7 +2957,6 @@ eslint.org##.ea-type-text,.ea-placement
 filmcomplet.vip###syndic
 ghacks.net##.column-ad
 ghacks.net##.wide-ad
-gktorrents.net###vpnvpn
 google.*#@##bottomads
 google.*#@#a[href*="/aclk?"][data-al]:upward(2)
 groovypost.com##[class|="groov-adsense"]
@@ -3121,7 +3120,6 @@ scan-manga.com#@##carouselTOPContainer
 ||saunasupposedly.com^
 ||chatango.com^$third-party
 ettvdl.*,ettvcentral.*#@#[class*=pl-]
-###vpnvpn
 @@||socketio.cloudconvert.com^
 extreme-down.plus#@#a[href*=".php"]
 ://$script,third-party,domain=oxtorrent.be|oxtorrent.com|oxtorrent.cc|oxtorrent.bz|oxtorrent.pw|oxtorrent.ws|oxtorrent.cx|oxtorrent.pe|oxtorrent.ph|oxtorrent.tv|oxtorrent.io|oxtorrent.nz|oxtorrent.sh|oxtorrent.pl|oxtorrent.vc
