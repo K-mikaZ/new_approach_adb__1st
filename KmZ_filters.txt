@@ -731,6 +731,7 @@ hds-streaming.*##a[target="_blank"]
 ||*^$domain=dood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 @@||doodcdn.*$script,domain=dood.*
 dood.*##+js(no-xhr-if, method:HEAD, emptyObj)
+dood.*#%#//scriptlet("abort-current-inline-script", "check")
 vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
