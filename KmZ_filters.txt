@@ -256,7 +256,7 @@ toptechpal.com##.blocker-notice
 *##[class~="ezo_ad"]
 ! *##[class~="ezasloaded"]
 
-huffingtonpost.fr##[class~="ads"], [class="before-text "]
+huffingtonpost.fr##[class="before-text "]
 
 ! ======= MISC =======
 
