@@ -101,7 +101,6 @@
 website.informer.com#@?#.adsbygoogle:upward(1)
 
 
-
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
@@ -112,10 +111,10 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 
+
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf ...
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
-
 
 
 ! -------------------- Fake watching player ---------------------
@@ -141,18 +140,17 @@ voirseries.*##ul[class="downloads"]
 mystream.*,mstream.*##[id^="_0."]
 fcine.*##[class|="vip-server"]
 
-! *##[id^="playerOver"], *##[id^="playerPub"], *##[id*="playerbro"]
+! *##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
 *#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 
-www.inspiration-cuisine.fr###tdi_47
+inspiration-cuisine.fr###tdi_47
 chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
 chefcuisto.com##div[id^="publicite_"]
 mafourchette.com##div[data-hbdbrk-parent="true"]
 chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
 cuisineaz.com##[class~="cazAd"]
 femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
-! femmeactuelle.fr,cuisineactuelle.fr#@#[data-ads-core]
 
 cineserie.com##.skeleton-single
 cineserie.com##[id^="ebam_"]
@@ -180,6 +178,8 @@ toptechpal.com##.blocker-notice
 *#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
 *#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! *##.ads.c-ads, .ads.doubleclick, .ads.onlyMobile, .ads.onlyDesktop ...
+*#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 *##.ad-masthead
 *##.mb-3
@@ -220,16 +220,6 @@ toptechpal.com##.blocker-notice
 *##[id*="smartlink" i]
 *##[class*="smartlink" i]
 *##[class~="ad-item"]
-*##[class~="ad"][class~="c-ads"]
-*##[class~="ad"][class~="doubleclick"]
-*##[class~="ad"][class*="banniere"]
-! ### !+ PLATFORM(android, ext_android_cb, ios)
-! ### *##[class~="ad"][class~="onlyMobile"]
-! ### !+ NOT_PLATFORM(android, ext_android_cb, ios)
-! ### *##[class~="ad"][class~="onlyDesktop"]
-! *##[class~="onlyDesktop"], [class~="onlyMobile"]  to  [class~="ad"][data-block-devices]
-*##[class~="ad"][data-block-devices]
-*##[class~="ad"][class*="outbrain"]
 *##[data-src*="outbrain.com"]
 *##[class~="OUTBRAIN"]
 *##[id^=AdThrive_]
