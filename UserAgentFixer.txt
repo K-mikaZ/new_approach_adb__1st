@@ -7,6 +7,13 @@
 ! Description: User agent mocker.
 !
 
+!---------------------------------------------------------------------------------------------!
+! ...     No current plans for User-Agent Reduction on iOS and Android WebView at this time.
+! ...     https://www.chromium.org/updates/ua-reduction/#applicable-platforms
+! ...     https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#platform-and-not_platform-hints
+!---------------------------------------------------------------------------------------------!
+
+
 !#if adguard
 
 ! Error executing AG js: TypeError: Cannot redefine property: userAgent
@@ -62,10 +69,6 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#AG_setGeckoBas
 ! ... READ ALSO
 ! ...     Prevent covert tracking with User-Agent reduction: https://developer.chrome.com/docs/privacy-sandbox/user-agent/
 ! ...     Limit passively shared browser data to reduce the volume of sensitive information which leads to fingerprinting.
-!
-! ...     No current plans for User-Agent Reduction on iOS and Android WebView at this time.
-! ...     https://www.chromium.org/updates/ua-reduction/#applicable-platforms
-! ...     https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#platform-and-not_platform-hints
 !---------------------------------------------------------------------------------------------!
 ! reduce UA `only if chromium-based browser`.
 !+ NOT_PLATFORM(ios)
