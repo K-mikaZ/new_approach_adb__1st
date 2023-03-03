@@ -110,7 +110,9 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 ! Fallback Fake button watching
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
-
+! Others
+voirseries.*##ul[class="downloads"]
+fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf ...
@@ -136,9 +138,7 @@ fakeplayer$~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
 
-voirseries.*##ul[class="downloads"]
 mystream.*,mstream.*##[id^="_0."]
-fcine.*##[class|="vip-server"]
 
 ! *##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
 *#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
