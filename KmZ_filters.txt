@@ -194,7 +194,7 @@ capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidd
 ! ##[data-ad-host*="-pub-"]
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
-*##[id="pub"]
+*##[id~="pub"]
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
