@@ -180,7 +180,7 @@ toptechpal.com##.blocker-notice
 *#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##.ads.c-ads, .ads.doubleclick, .ads.onlyMobile, .ads.onlyDesktop ...
 *#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-capital.fr#$#:is( div, span ):is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 
 *##.ad-masthead
