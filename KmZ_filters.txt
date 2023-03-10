@@ -177,8 +177,9 @@ toptechpal.com##.blocker-notice
 *#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
 *#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-! *##.ads.c-ads, .ads.doubleclick, .ads.onlyMobile, .ads.onlyDesktop ...
+! *##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
 *#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+
 capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 
@@ -831,6 +832,13 @@ rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 rakuten.tv##+js(no-xhr-if, /spotx/)
 tf1.fr##a[rel*="sponsored"]
 tf1.fr##div[class^="Freemium" i]
+! offer promo
+tf1.fr##a[href*="/offre-max"]
+prod-player.tf1.fr##ntrs-top-toolbar
+! remove img header
+prod-player.tf1.fr##ntrs-edito-img
+! custom font-size (on fullscreen, coming-next...)
+prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
 ||*$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
