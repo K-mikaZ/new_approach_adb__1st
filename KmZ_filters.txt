@@ -98,6 +98,8 @@
 ! *#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
 ! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
 ! *#@?#[data-ads-core]:remove()
+*#@#div[aria-live^="polite"]
+*#@#div > div[aria-live="polite"]
 website.informer.com#@?#.adsbygoogle:upward(1)
 
 
@@ -168,9 +170,6 @@ toptechpal.com##.blocker-notice
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
 ! *** Some generic rules can be called in case (fallback)
 
-*#@#div[aria-live^="polite"]
-*#@#div > div[aria-live="polite"]
-
 *#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
@@ -181,10 +180,10 @@ toptechpal.com##.blocker-notice
 ! *##.ads.c-ads, .ads.doubleclick, .ads.onlyMobile, .ads.onlyDesktop ...
 *#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 
 
 *##.ad-masthead
-*##.mb-3
 *##[id^="aswift_"]
 *##[name^="aswift_"]
 *##[class|="sponsoredPrisma"]
@@ -249,6 +248,7 @@ capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidd
 ! *##[class~="ezasloaded"]
 
 huffingtonpost.fr##[class="before-text "]
+~freeformatter.com##.mb-3
 
 ! ======= MISC =======
 
