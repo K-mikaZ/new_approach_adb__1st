@@ -120,6 +120,7 @@ fcine.*##[class|="vip-server"]
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf ...
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
+voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
 
 
 ! -------------------- Fake watching player ---------------------
