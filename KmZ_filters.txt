@@ -128,7 +128,8 @@ fcine.*##[class|="vip-server"]
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > [src*="stream"][src*="vip.htm"]) { display: none !important; visibility: hidden !important; }
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
-voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class|="fake"], [id|="fake"]
 *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
