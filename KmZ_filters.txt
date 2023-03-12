@@ -106,7 +106,8 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
-*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
+! *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
+*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
