@@ -937,6 +937,7 @@ mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisemen
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
+mail.yahoo.com##[data-ylk*="mail_plus"]
 !mail.yahoo.com##[data-test-id|="-rail-ad"]
 !||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*fr-FR$domain=mail.yahoo.com,important
 ||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
