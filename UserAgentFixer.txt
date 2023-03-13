@@ -37,11 +37,9 @@
 ! ... Functions for simplify setting UA browser
 !---------------------------------------------------------------------------------------------!
 ! Set UA to `chrome`, platform `Windows`.
-! #%#var AG_setGeckoBasedBrowserAsChromePlatformWindows=function setUA(){ try { const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
-#%#var AG_setGeckoBasedBrowserAsChromePlatformWindows=function setUA(){ try { const matched = new RegExp(AG_geckoBasedBrowser).test.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
+#%#var AG_setGeckoBasedBrowserAsChromePlatformWindows=function setUA(){ try { const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
 ! Set UA to `chrome` (no platform change).
-! #%#var AG_setGeckoBasedBrowserAsChrome=function setUA(){ try { const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
-#%#var AG_setGeckoBasedBrowserAsChrome=function setUA(){ try { const matched = new RegExp(AG_geckoBasedBrowser).test(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
+#%#var AG_setGeckoBasedBrowserAsChrome=function setUA(){ try { const matched = AG_geckoBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; } catch(e){} };
 
 !---------------------------------------------------------------------------------------------!
 !------------------------------- end General JS API ------------------------------------------!
@@ -74,8 +72,7 @@ music.youtube.com,m.youtube.com,youtubekids.com,www.youtube.com#%#AG_setGeckoBas
 !---------------------------------------------------------------------------------------------!
 ! reduce UA `only if chromium-based browser`.
 !+ NOT_PLATFORM(ios)
-#%#(function(){ try { const matched = new RegExp(AG_chromiumBasedBrowser).test(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; }catch(e){} })();
-! #%#(function(){ try { const matched = AG_chromiumBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; }catch(e){} })();
+#%#(function(){ try { const matched = AG_chromiumBasedBrowser.exec(navigator.userAgent); if (matched) { const mockUA = `Mozilla/5.0 (${AG_unifiedPlatform[matched.groups.platform]}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${matched.groups.major}.0.0.0${matched.groups.mobile} Safari/537.36`; Object.defineProperty(navigator, 'userAgent', { get: function() { return mockUA; } }); }; }catch(e){} })();
 
 
 !#endif
