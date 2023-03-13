@@ -918,6 +918,9 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||gemini.yahoo.com^
 ||geo.query.yahoo.com^
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
+mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
+mail.yahoo.com##._yb_18qvw
+mail.yahoo.com##path:nth-of-type(3)
 mail.yahoo.com##.callout-default.left
 mail.yahoo.com##.rightRailAdContainer
 mail.yahoo.com###rightrailad-LREC
@@ -933,6 +936,7 @@ mail.yahoo.com##[data-test-id="comms-properties"]:style(display: flex !important
 mail.yahoo.com##[data-test-id="comms-properties"]>* , [data-test-id="icon-btn-settings"]:style(margin: 14px 0 0 0 !important;)
 mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !important; padding-top: 70px !important;)
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
+! mail.yahoo.com##[data-test-id="right-rail-ad"]
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
 mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
@@ -2984,9 +2988,6 @@ livemint.com##.smartcastAd
 livemint.com##.trendingSimilarHeight
 livemint.com##[id^="adHeightstory"][class^="adHeight"]
 luxuretv.com##.adver,.adver-header,#vz_im_ad
-mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
-mail.yahoo.com##._yb_18qvw
-mail.yahoo.com##path:nth-of-type(3)
 majorgeeks.com#$#.navigation-light { display: none !important; visibility: hidden !important; }
 maketecheasier.com##.in-content-ad
 !marmiton.org##+js(ta, preload, video)
@@ -3159,8 +3160,6 @@ streamingvf.fun##[id^=ads_]
 ||*.tf1.fr/*youbora*$script,redirect=noopjs
 !tf1.fr##[class^="MaxBanner_container_"]
 !tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
-mail.yahoo.com##[data-test-id="right-rail-ad"]
-mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 ||trafficjunky.net^$popup
