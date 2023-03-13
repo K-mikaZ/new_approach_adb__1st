@@ -915,9 +915,10 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||fc.yahoo.com^$domain=mail.yahoo.com
 ||ybp.yahoo.com^
 ||analytics.yahoo.com^
-||gemini.yahoo.com^
+! ||gemini.yahoo.com^
 ||geo.query.yahoo.com^
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
+mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
 mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
 mail.yahoo.com##._yb_18qvw
 ! mail.yahoo.com##path:nth-of-type(3)
