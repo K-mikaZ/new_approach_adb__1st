@@ -918,7 +918,7 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ! ||gemini.yahoo.com^
 ||geo.query.yahoo.com^
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
-mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
+! mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
 mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
 mail.yahoo.com##._yb_18qvw
 ! mail.yahoo.com##path:nth-of-type(3)
@@ -941,8 +941,9 @@ mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisemen
 ! mail.yahoo.com##[data-test-id="right-rail-ad"]
 ! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
 ! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
-mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
+! mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
 mail.yahoo.com#?#[data-ylk*="mail_plus"]
+mail.yahoo.com#?#[aria-labelledby*="-sticky-pencil-ad-"]
 ! ||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*$domain=mail.yahoo.com,important
 ! ||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
 ! @@?adcount=$xmlhttprequest,domain=mail.yahoo.com
