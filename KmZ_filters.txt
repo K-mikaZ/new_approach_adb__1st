@@ -177,7 +177,8 @@ toptechpal.com##.blocker-notice
 *#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 ! *##[class*="ads-top"], [class*="ads-bottom"], [class*="ads-left"], [class*="ads-right"], [class*="ads-article-next"], [class*="ads-desktop"]
-*#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! *#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:not( [id~="header"] ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
 *#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
