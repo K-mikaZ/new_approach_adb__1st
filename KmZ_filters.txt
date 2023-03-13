@@ -920,7 +920,7 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
 mail.yahoo.com##._yb_18qvw
-mail.yahoo.com##path:nth-of-type(3)
+! mail.yahoo.com##path:nth-of-type(3)
 mail.yahoo.com##.callout-default.left
 mail.yahoo.com##.rightRailAdContainer
 mail.yahoo.com###rightrailad-LREC
@@ -928,6 +928,7 @@ mail.yahoo.com##[data-test-id="pencil-ad"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
 ! https://www.reddit.com/r/uBlockOrigin/search/?q=Yahoo%20mail&restrict_sr=1&sr_nsfw=
 ! https://www.reddit.com/r/uBlockOrigin/comments/gsp9hf/how_to_hide_the_entire_yahoo_mail_classic_side_ad/#t1_fseo5s9
+! mail.yahoo.com##[data-test-id|="-rail-ad"]
 mail.yahoo.com##[data-test-id="settings-link-label"]
 mail.yahoo.com##li.R_0.L_0.p_a.hd_n.H_A:if(a[target="_blank"])
 mail.yahoo.com##.Z_qc, [data-test-id="comms-properties-bar"]:style(display: flex !important; -webkit-box-orient: vertical !important; -webkit-box-direction: normal !important; flex-direction: column !important; -webkit-box-flex: 1 !important; flex-grow: 1 !important;)
@@ -937,14 +938,13 @@ mail.yahoo.com##[data-test-id="comms-properties"]>* , [data-test-id="icon-btn-se
 mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !important; padding-top: 70px !important;)
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
 ! mail.yahoo.com##[data-test-id="right-rail-ad"]
-mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
-mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
+! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
+! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
 mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
-mail.yahoo.com##[data-ylk*="mail_plus"]
-!mail.yahoo.com##[data-test-id|="-rail-ad"]
-!||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*fr-FR$domain=mail.yahoo.com,important
-||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
-@@?adcount=$xmlhttprequest,domain=mail.yahoo.com
+mail.yahoo.com#?#[data-ylk*="mail_plus"]
+||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*$domain=mail.yahoo.com,important
+! ||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
+! @@?adcount=$xmlhttprequest,domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
 1337x.to##+js(addEventListener-defuser, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
