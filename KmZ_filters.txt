@@ -114,7 +114,6 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 ! Others
-voirseries.*##ul[class="downloads"]
 fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
