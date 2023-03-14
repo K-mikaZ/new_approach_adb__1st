@@ -1332,6 +1332,7 @@ stream-serie.net#$##option-1{height:100%}
 ||*/cdn-cgi/apps/head/*$script,~third-party,important
 ||*/cdn-cgi/trace|$xmlhttprequest,~third-party
 /^https?:\/\/[^\s]+\/1clkn\/\d{4,5}$/$script,third-party,match-case,important
+/^https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xmlhttprequest,third-party,match-case,important
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,third-party,important
 |http*://*.cafe/*.js^$script,third-party,important
