@@ -101,6 +101,7 @@
 *#@#div[aria-live^="polite"]
 *#@#div > div[aria-live="polite"]
 website.informer.com#@?#.adsbygoogle:upward(1)
+femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 
 
 ! -------------------- Fake button watching ---------------------
@@ -157,7 +158,6 @@ chefcuisto.com##div[id^="publicite_"]
 mafourchette.com##div[data-hbdbrk-parent="true"]
 chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
 cuisineaz.com##[class~="cazAd"]
-femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 
 cineserie.com##.skeleton-single
 cineserie.com##[id^="ebam_"]
@@ -1049,7 +1049,6 @@ entreprise-sans-fautes.com###mc_embed_signup
 etools.ch##.sResult,.sResultStatus
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
-femmeactuelle.fr##.ratio-16-9 > div
 femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
 femmeactuelle.fr#$##corps { padding-top: 0 !important; }
@@ -1057,7 +1056,6 @@ femmeactuelle.fr###bt-softwall
 !#if (adguard)
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
-website.informer.com#@?#.adsbygoogle:upward(1)
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
