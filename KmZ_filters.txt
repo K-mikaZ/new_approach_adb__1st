@@ -191,8 +191,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 
 ! [id^="aswift_"], [name^="aswift_"]
 *#$#:is( [id^="aswift_"], [name^="aswift_"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-! ~freeformatter.com##.mb-3
-*#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! ~freeformatter.com##.mb-3 (see https://www.freeformatter.com/xml-validator-xsd.html)
+! *#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [class*="widget"], [class~="btn"] ):is( [class~="mb-3"] ):has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 *##.ad-masthead
 *##[class|="sponsoredPrisma"]
