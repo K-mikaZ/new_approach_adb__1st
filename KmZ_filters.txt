@@ -46,8 +46,9 @@
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
 *##div[class="AdPlaceholder"]
-*##div[class="ads-placeholder"]
+*##div[class="ad-placeholder"]
 *##div[class="containerAds"]
+*##div[class*="coreads_"]
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
