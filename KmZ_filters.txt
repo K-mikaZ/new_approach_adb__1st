@@ -2100,7 +2100,7 @@ streamroot.io$script,important,badfilter
 ||trustarc.com^$badfilter
 ||turner.com^$badfilter
 ||doubleclick.net^$third-party,badfilter
-/\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){2,3}/$xmlhttprequest,important
+/\/ad\/banner\/(_ad([\w]+)(\/)?){3}\.ad\.json\?(ad([\w]+)=(.|\s)*(\&)?){2,3}/$xmlhttprequest,match-case,important
 /\/as{2}et\/bul{2}\.js(.*)?/$xmlhttprequest,_,~third-party,important
 ||*.spotscenered.info$xmlhttprequest,_,important
 ||greedseed.world$xmlhttprequest,important
