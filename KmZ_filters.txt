@@ -117,7 +117,6 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *##a[href*="-en-hd"][rel^="no"]
 *##[class^="ebooks_orange_"][href]
 *##[class^="surge_"][href]
-*##[class~="btn"][class*="mr-"][href]
 fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
@@ -194,6 +193,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! ~freeformatter.com##.mb-3 (see https://www.freeformatter.com/xml-validator-xsd.html)
 ! *#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [class*="widget"], [class~="btn"] ):is( [class~="mb-3"] ):has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class~="btn"][class*="mr-"][href]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 *##.ad-masthead
 *##[class|="sponsoredPrisma"]
