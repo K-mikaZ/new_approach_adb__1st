@@ -187,6 +187,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 
 ! [id^="aswift_"], [name^="aswift_"]
 *#$#:is( [id^="aswift_"], [name^="aswift_"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! ~freeformatter.com##.mb-3
+*##[class~="mb-3"]:has( ~ :not( [textarea] ) )
 
 *##.ad-masthead
 *##[class|="sponsoredPrisma"]
@@ -251,7 +253,6 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! *##[class~="ezasloaded"]
 
 huffingtonpost.fr##[class="before-text "]
-~freeformatter.com##.mb-3
 
 ! ======= MISC =======
 
