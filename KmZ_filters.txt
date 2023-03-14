@@ -2682,8 +2682,10 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc"]
-hqq.to,hqq.tv##a[onclick^="openAuc"]
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
+##a[onclick^="openAuc"]
+##a[href^="mailto:support@netu.tv"]
+! hqq.to,hqq.tv##a[onclick^="openAuc"]
+! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
