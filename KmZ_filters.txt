@@ -3617,8 +3617,10 @@ wss://net-announce*$websocket,important
 
 ! ====== PREBID ======
 
-/^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
-/^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
+! /^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
+/^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
+! /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
+/^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ! ||cdn.jsdelivr.net/gh/prebid/$xmlhttprequest,_,important
 ! /\/prebid(-)?/$script
