@@ -114,6 +114,10 @@ website.informer.com#@?#.adsbygoogle:upward(1)
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 ! Others
+*##a[href*="-en-hd"][rel^="no"]
+*##[class^="ebooks_orange_"][href]
+*##[class^="surge_"][href]
+*##[class~="btn"][class*="mr-"][href]
 fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
@@ -206,13 +210,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[id*="_ads_fluid"]
 *##[class*="lefermeur"]
 *##[class*="contadorads"]
-*##[class^="ebooks_orange_"][href]
-*##[class^="surge_"][href]
-*##[class~="btn"][class*="mr-"][href]
 *##[class~="Advrt"]
 *##[class~="FirstLoad"]
 *##[class~="responsive-ad"]
-*##a[href*="-en-hd"][rel^="no"]
 *##[class~="bottomad"]
 *##[id="bottomad"]
 *##[class~="leftad"]
