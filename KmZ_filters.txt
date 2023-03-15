@@ -110,6 +110,7 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 ! *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
 *##a[href*="premium"][href*=".php"][class*="btn"]
 *#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Fallback Fake button watching
@@ -136,6 +137,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( iframe[src*="fakeplayer"] ) { display: none !important; visibility: hidden !important; }
 ! voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! sokroflix.uno
+*##li[class~="nopls"][data-plink*="/voir/voir"]
 ! *##[class|="fake"], [id|="fake"]
 *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
