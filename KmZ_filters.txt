@@ -3606,7 +3606,7 @@ wss://net-announce*$websocket,important
 @@||hlsplay.com^$websocket
 @@||wss.jetload.net/cache$websocket,~third-party
 ! [FIX] waaw, netu...
-@@||commentsengine.com^$websocket,script
+@@||commentsengine.com^$websocket,xmlhttprequest
 ! [FIX] short.ink, abysscdn.com, iamcdn.net players
 @@||websocketgate.com^$websocket
 ! [FIX] P2P video delivery
