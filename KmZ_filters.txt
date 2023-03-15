@@ -46,7 +46,8 @@
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
 *##div[class~="AdPlaceholder"]
-*#$#div[class~="ad-placeholder"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class~="ad-placeholder"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class~="ads-core-placer"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *##div[class~="containerAds"]
 *##div[class*="coreads_"]
 ! ----[ SPAN ]----------------------------------------------------------------
