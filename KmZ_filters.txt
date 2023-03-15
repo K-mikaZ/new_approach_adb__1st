@@ -142,11 +142,13 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 ! *##[class|="fake"], [id|="fake"]
 *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; visibility: hidden!important; }
+*#$#[class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]){ display: none!important }
 *##[class|="custom-fake"]
 *###fakevideo
 fakeplayer$~third-party
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
 /(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
+/(\/voir){2}(_)?\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
 
