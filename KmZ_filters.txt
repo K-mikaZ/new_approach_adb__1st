@@ -45,11 +45,14 @@
 *##div[class|="div-gpt-ad"]
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
-*##div[class~="AdPlaceholder"]
+! ------------------------
 #@#.ads-core-placer
-*#$#:is( [class~="ad-placeholder"], [class~="ads-core-placer"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+#@#.ad-placeholder
+*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"], [class*="AdPlaceholder"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! ------------------------
 #@#div[data-google-query-id]
 *#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! ------------------------
 *##div[class~="containerAds"]
 *##div[class*="coreads_"]
 ! ----[ SPAN ]----------------------------------------------------------------
