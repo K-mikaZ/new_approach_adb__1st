@@ -3266,12 +3266,8 @@ wss://net-announce*$websocket,important
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-! !#if (ext_ublock)
-! dailymotion.com##+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-! dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-! !#endif
-! dailymotion.com#%#//scriptlet("prevent-fetch", "/dmxleo\.dailymotion\.com\/cdn\/manifest\/video)/ method:GET")
-! dailymotion.com#%#//scriptlet("prevent-xhr", "/dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET")
+dailymotion.com##+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET, noopPromiseResolve)
+dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
@@ -3281,6 +3277,7 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 @@||pagead2.googlesyndication.com^$domain=arte.tv
 !||arte.tv/log-player/
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
+!#if adguard
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
@@ -3288,6 +3285,7 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 @@||gigya.com^$cookie
 @@||tf1.fr^$cookie
+!#endif
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
