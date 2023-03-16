@@ -153,7 +153,7 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *###fakevideo
 fakeplayer$~third-party
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
-/(vid|stream).+vip\.htm/$subdocument,match-case,~third-party
+/(vid|stream)(.+)?vip\.htm/$subdocument,match-case,~third-party
 /(\/voir){2}(_)?\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
@@ -2955,9 +2955,8 @@ cdnjs.com#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not
 chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
 chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
-cpasmieux.site##.down
-cpasmieux.site##[class$="-xyz"]
-cpasmieux.tv##[id|="kino"] > noindex
+cpasmieux.*##.down
+cpasmieux.*#$#[class$="-xyz"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }cpasmieux.tv##[id|="kino"] > noindex
 deezer.com##.react-cookie
 deezer.com##[class="alert-wrapper"]
 deezer.com#$#.page-alerts { display: none !important }
