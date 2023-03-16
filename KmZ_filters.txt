@@ -129,7 +129,7 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
-! gocine, streamdeouf ...
+! gocine, streamdeouf, cpasmieux.* ...
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
 voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
 
@@ -2955,7 +2955,6 @@ cdnjs.com#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not
 chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
 chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
-cpasmieux.*##.down
 cpasmieux.*#$#[class$="-xyz"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }cpasmieux.tv##[id|="kino"] > noindex
 deezer.com##.react-cookie
 deezer.com##[class="alert-wrapper"]
