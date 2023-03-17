@@ -1112,7 +1112,6 @@ google.com###prm
 google.com###prm-pt
 google.fr###footcnt
 google.fr##.gb_7d
-guru3d.com##[src*="index.php?"]
 hds-streaming.com##.wp-tags,div.sbox:nth-of-type(10),.dt_social_single,#text-3
 hdslecteur.xyz##div[class*="__wrap"]
 hdssgratuit.co##a.btn-watch.btn-lg.btn-offer.btnoff,.X
