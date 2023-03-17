@@ -42,7 +42,6 @@
 ! ----[ DIV ]----------------------------------------------------------------
 *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-*##div[class|="div-gpt-ad"]
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
 ! ------------------------
@@ -63,8 +62,8 @@
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 *#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { height: 1px!important; visibility: hidden!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
-! [id|="div-gpt-ad"][style*="height: 1px;"][style*="width: 1px;"]
-*##[id|="div-gpt-ad"]
+! [id|="div-gpt-ad"], div[class|="div-gpt-ad"]
+*#$#:is( [class^="div-gpt-ad"], [id^="div-gpt-ad"]) { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 ! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
 *##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
