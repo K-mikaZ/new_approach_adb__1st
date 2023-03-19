@@ -3174,8 +3174,8 @@ skdesu.com##.code-block
 /vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
 streamingvf.fun##[id^=ads_]
 ||*.tf1.fr/*youbora*$script,redirect=noopjs
-!tf1.fr##[class^="MaxBanner_container_"]
-!tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
+! tf1.fr##[class^="MaxBanner_container_"]
+! tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 ||trafficjunky.net^$popup
@@ -3190,13 +3190,13 @@ streamingvf.fun##[id^=ads_]
 /sentry(-cdn)?\.(io|com)/
 ||ads.stickyadstv.com^$important,domain=tf1.fr
 ||trafficjunky.com/invocation/popunder$redirect=popads-dummy
-!||mediarithmics.com^$domain=tf1.fr
+! ||mediarithmics.com^$domain=tf1.fr
 ||mediarithmics.com^
 ! COLOR iframe fix
 uqload.com#$#body { color: whitesmoke; }
 vidoza.net#$#body { color: whitesmoke!important; }
-uptostream.com#$#body { color: whitesmoke; }
-!parismatch.com##[id^="match2_"]
+uptostream.com#$#body ~ :not( [class~="file-title"] ) { color: whitesmoke; }
+! parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
 @@||viewsb.com^$subdocument
