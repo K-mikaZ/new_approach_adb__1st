@@ -140,6 +140,7 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; }
 *#$#[class*="player" i]:has( iframe[src*="fakeplayer"] ) { display: none !important; }
+*#$#[id~="lecteur"]:has( iframe[src*="video"][src*="streaming"][src*=".htm"] ) { display: none!important; }
 ! voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *#$#:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 ! sokroflix.uno
