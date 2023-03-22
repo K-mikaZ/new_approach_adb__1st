@@ -129,8 +129,8 @@ fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf, cpasmieux.* ...
-*#$#:is( [class~="streamer"], [class*="player" i] )):is( [class~="dow"], :has( > :is( [class*="download"], [id*="download"] ) ), :has( > [data-url*="/video-streaming.html"] ), :has( > [data-url*="/telecharger/"] ), :has( > [class="download-server"] ), li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) ) { display: none!important; visibility: hidden!important; }
-! voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
+*#$#:is( [class~="streamer"], [class*="player" i] ):is( [class~="dow"], :has( > [data-url*="/video-streaming.html"] ), :has( > [data-url*="/telecharger/"] ), :has( > [class="download-server"] ), li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) ) { display: none!important; visibility: hidden!important; }
+voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
 
 
 ! -------------------- Fake watching player ---------------------
