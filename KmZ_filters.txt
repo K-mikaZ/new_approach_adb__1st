@@ -114,14 +114,13 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
-! *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
-*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-*##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
-*##a[href*="premium"][href*=".php"][class*="btn"]
-*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
-! Fallback Fake button watching
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
+*#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
+! Fallback Fake button watching
+*##a[href*="premium"][href*=".php"][class*="btn"]
+*#$#div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) ) { display: none!important; visibility: hidden!important; }
 ! Others
 *##a[href*="-en-hd"][rel^="no"]
 *##[class^="ebooks_orange_"][href]
@@ -152,8 +151,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *##[class|="custom-fake"]
 *###fakevideo
 fakeplayer$~third-party
-! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html
-/(vid|stream)(.+)?vip\.htm/$subdocument,match-case,~third-party
+! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html, fr.dufilms.net/video-streaming.html
+/((vid.+)?|stream(.+)?)(stream(.+)?|vip)\.htm/$subdocument,match-case,~third-party
 /(\/voir){2}(_)?\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
