@@ -170,7 +170,6 @@ chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
 chefcuisto.com##div[id^="publicite_"]
 mafourchette.com##div[data-hbdbrk-parent="true"]
 chefsimon.com#$#[class*="bg-gray-for-bg"][class*="text-center"][class*="print:hidden"] { display: none !important; }
-cuisineaz.com##[class~="cazAd"]
 
 cineserie.com##.skeleton-single
 cineserie.com##[id^="ebam_"]
@@ -3565,11 +3564,11 @@ coflix.tv#?#ad-host:first-of-type:remove()
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
+cuisineaz.com##div[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 ! fix header
 cuisineaz.com#$#body:not(.body-modal) { padding-top: 7.5em !important; } @media screen and (min-width: 64em) { body:not(.body-modal), body:not(.body-modal):not(.small-header) { padding-top: 13em !important; } }
 cuisineaz.com#$#.c-controls{ flex-direction: unset!important; }.c-controlBar__button--fullscreen,.c-controlBar__button--report,.c-controlBar__logo-container { display:none!important; }
-cuisineaz.com##div[id="aff-container"]
 fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
