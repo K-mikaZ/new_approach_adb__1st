@@ -2793,7 +2793,8 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
-@@/embed$subdocument,media,_,third-party
+! @@/videoembed/$subdocument,media,third-party, @@/embed/$subdocument,media,third-party
+@@/.+\/(\w+)?embed\/.+/$subdocument,media,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
 @@||fonts.gstatic.com^
 ||dood.video/favicon.ico?
@@ -3524,6 +3525,7 @@ demotivateur.fr##.ads
 demotivateur.fr##[data-actirise-slot]
 aufeminin.com,marmiton.org#?#div:has(>[data-ad$="_atf"])
 aufeminin.com,marmiton.org#?#div:is([data-ad$="_atf"])
+aufeminin.com,marmiton.org##.ad-container
 aufeminin.com#?#div:has(>[data-ad="dyninfeed"])
 marmiton.org#?#div:has(>[data-ad="native_shopping"])
 dcode.fr##+js(set-constant, insertAds, noopFunc)
