@@ -3564,7 +3564,7 @@ coflix.tv#?#ad-host:first-of-type:remove()
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
-cuisineaz.com##div[id="aff-container"]
+cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 ! fix header
 cuisineaz.com#$#body:not(.body-modal) { padding-top: 7.5em !important; } @media screen and (min-width: 64em) { body:not(.body-modal), body:not(.body-modal):not(.small-header) { padding-top: 13em !important; } }
