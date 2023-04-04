@@ -3741,8 +3741,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
-!#include https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
-!#include https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/%E2%9C%97to_block/others/websockets.txt
+!#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
+!#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
 ! ======[ EOF ]==========================================================
 
