@@ -3793,7 +3793,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important
 
-! ======[ INCLUDE ]======================================================
+! ======[ INCLUDES ]=====================================================
+! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
 !#include .../common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
 
