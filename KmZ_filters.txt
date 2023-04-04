@@ -3793,6 +3793,11 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important
 
+! ======[ INCLUDE ]======================================================
+
+!#include .../common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
+
+
 ! ======[ EOF ]==========================================================
 
 ! block too many sites and web players (e.g. animationdigitalnetwork.fr, 6play.fr)
