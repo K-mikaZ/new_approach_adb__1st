@@ -3525,7 +3525,7 @@ demotivateur.fr##[data-actirise-slot]
 aufeminin.com,marmiton.org#?#div:has(>[data-ad$="_atf"])
 aufeminin.com,marmiton.org#?#div:is([data-ad$="_atf"])
 aufeminin.com,marmiton.org##.ad-container
-aufeminin.com#?#div:has(>[data-ad="dyninfeed"])
+! aufeminin.com#?#div:has(>[data-ad="dyninfeed"])
 marmiton.org#?#div:has(>[data-ad="native_shopping"])
 dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||deezer.com/Wte_5yUoDe9N/*$script,domain=deezer.com,redirect=noopjs
