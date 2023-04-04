@@ -1837,12 +1837,6 @@ stream-serie.net#$##option-1{height:100%}
 ||stats-irl.sxp.smartclip.net^
 ||tv-static.scdn.co^
 ||tv.deezer.com^
-||comscore.com^$third-party
-/comscore_beacon/*
-/\/streamsense(\.min)?\.js/$script
-/\/jw([0-9]{1})s{2}(\.min)?\.js/$script
-/jw-streamsense$script
-/comscore*.js
 /js/adv/*$badfilter
 */js/adv/*$script,important,redirect-rule=nofab.js
 @@/fuckadblock.$script,~third-party,badfilter
@@ -3747,8 +3741,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
-!#include ../common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
-!#include ../common_utils/lists/%E2%9C%97to_block/others/websockets.txt
+!#include https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
+!#include https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
 ! ======[ EOF ]==========================================================
 
