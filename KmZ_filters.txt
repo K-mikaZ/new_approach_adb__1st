@@ -3247,18 +3247,10 @@ dood.*#$#body { color: whitesmoke!important; }
 ||cdnativepush.com^
 ||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
 !||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
-/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
-wss://net-announce*$websocket,important
-||clearadnetwork.com$websocket,important
-||*.hostcontent.live$websocket,important
-||*.space:*$websocket,important
-||alugha.com/graphql$websocket,important
-||socket.tidio.co$websocket,important
 @@||dmcdn.net^
 @@||geo.dailymotion.com^
 @@||dm-event.net^$domain=geo.dailymotion.com
 @@||dmxleo.com^$domain=geo.dailymotion.com
-@@*$websocket,domain=geo.dailymotion.com
 ||dailymotion.com/logger/
 ||dailymotion.com/cdn/$media,script,badfilter
 @@||dmxleo.dailymotion.com/cdn/
@@ -3586,47 +3578,6 @@ themoneytizer$important,script,redirect=noopjs
 
 
 
-
-! ======= WEBSOCKETS =======
-
-! ensure blocking
-! -------------------------------------
-/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
-wss://net-announce*$websocket,important
-||clearadnetwork.com$websocket,important
-||*.hostcontent.live$websocket,important
-||*.space:*$websocket,important
-||alugha.com/graphql$websocket,important
-||socket.tidio.co$websocket,important
-||*.private-api.com$websocket,important
-||*.idocdn.com$websocket,important
-
-! allowing
-! -------------------------------------
-! [FIX] streaming sites
-@@||hlsplay.com^$websocket
-@@||wss.jetload.net/cache$websocket,~third-party
-! [FIX] waaw, netu...
-@@||commentsengine.com^$websocket,xmlhttprequest
-! [FIX] short.ink, abysscdn.com, iamcdn.net players
-@@||websocketgate.com^$websocket
-! [FIX] P2P video delivery
-@@||tracker.openwebtorrent.com^$websocket
-@@||tracker.novage.com.ua^$websocket
-@@wss://*tracker$websocket
-! [FIX] spotify
-@@/?access_token=*$websocket,domain=spotify.com
-! [FIX] utils
-@@||lastpass.com^$websocket
-@@||chat.twitch.tv^$websocket
-@@||packetlosstest.com^$websocket
-@@||dns-oarc.net^$websocket
-@@||edge-chat.*/chat$websocket,domain=facebook.com
-! [FIX] speedtest
-@@||nperf.net^$websocket
-@@||cox.net^$websocket
-
-
 ! ====== PREBID ======
 
 ! /^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
@@ -3797,7 +3748,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
 !#include .../common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
-
+!#include .../common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
 ! ======[ EOF ]==========================================================
 
