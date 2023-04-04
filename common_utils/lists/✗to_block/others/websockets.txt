@@ -8,8 +8,8 @@
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 
 ! fix because of wss:// and ws://
-!/^ws{2}(([\:][\/]{2})+)/
-!/^wss?(([\:][\/]{2})+)/
+! /^ws{1,2}(([\:][\/]{2})+)/
+! /^wss?(([\:][\/]{2})+)/
 ! more generic
 ||*$websocket
 
@@ -19,7 +19,10 @@
 
 ! [FIX] streaming sites
 @@||hlsplay.com^$websocket
-@@||wss.jetload.net/cache$websocket,1p
+@@||wss.jetload.net/cache$websocket,~third-party
+
+! [FIX] waaw, netu...
+@@||commentsengine.com^$websocket,xmlhttprequest
 
 ! [FIX] P2P video delivery
 @@||tracker.openwebtorrent.com^$websocket
@@ -36,7 +39,6 @@
 @@||packetlosstest.com^$websocket
 @@||dns-oarc.net^$websocket
 
-
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 
 ! [FIX] short.ink, abysscdn.com, iamcdn.net players
@@ -45,6 +47,9 @@
 ! [FIX] speedtest
 @@||nperf.net^$websocket
 @@||cox.net^$websocket
+
+! [FIX] dailymotion
+@@*$websocket,domain=geo.dailymotion.com
 
 
 ! ensure blocking
