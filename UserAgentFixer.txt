@@ -4,7 +4,7 @@
 ! Expires: 1 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/UserAgentFixer.txt
-! Description: User agent mocker.
+! Description: User agent mocker for adguard.
 !
 
 !---------------------------------------------------------------------------------------------!
