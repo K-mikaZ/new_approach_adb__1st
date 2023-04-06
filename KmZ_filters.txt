@@ -154,7 +154,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *###fakevideo
 fakeplayer$~third-party
 ! /video-vip.html$domain=juststream.org, seriestream.fun/streamingvip.html, fr.dufilms.net/video-streaming.html
-/((vid.+)?|stream(.+)?)(stream(.+)?|vip)\.htm/$subdocument,match-case,~third-party
+/((vid.+)?|stream(.+)?)(stream(.+)?|vip)\.htm/$subdocument,match-case,~third-party,domain=~www.google.com
+
 /(\/voir){2}(_)?\.htm/$subdocument,match-case,~third-party
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)/$media,important
 /(.*)?amazonaws\.(.{2,})\/adsurge\-as{2}ets\/(.*)\/dark\_player\/(.*)\.js/$script,important
