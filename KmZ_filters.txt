@@ -7,6 +7,8 @@
 ! Description: My first blocking list.
 !
 
+!#include UserAgentFixer.txt
+
 ! ======= COSMETIC =======
 
 
