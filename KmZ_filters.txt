@@ -137,6 +137,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 ! -------------------- Fake watching player ---------------------
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; }
 *#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+! hdss.show
+*##[class*="player" i] > li[data-link*="/player/online.htm"]
 ! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; }
