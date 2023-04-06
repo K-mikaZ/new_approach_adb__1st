@@ -3528,9 +3528,10 @@ coflix.tv#?#ad-host:first-of-type:remove()
 /(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
+cuisineaz.com##div[id^="advi"]
 ! fix header
 cuisineaz.com#$#body:not(.body-modal) { padding-top: 7.5em !important; } @media screen and (min-width: 64em) { body:not(.body-modal), body:not(.body-modal):not(.small-header) { padding-top: 13em !important; } }
-cuisineaz.com#$#.c-controls{ flex-direction: unset!important; }.c-controlBar__button--fullscreen,.c-controlBar__button--report,.c-controlBar__logo-container { display:none!important; }
+cuisineaz.com#$#.c-controls{ flex-direction: unset!important; }.c-controlBar__button--fullscreen,.c-controlBar__button--report,.c-controlBar__logo-container { display:none!important; }#viously-ui.inside { top:1.5em!important; }
 fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
