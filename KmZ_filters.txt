@@ -1266,7 +1266,6 @@ undernews.fr###fancybox-overlay
 undernews.fr###fancybox-tmp
 undernews.fr###fancybox-wrap
 undernews.fr##.deferredto-lazy
-universanimeiz.com##.banner,.yp6_desktop_classic.yp6_area.my6_widget_bg.my6_wrap
 userstyles.org###top_android_button
 userstyles.org##.android_button_banner
 userstyles.org##.android_button_button
@@ -1396,7 +1395,6 @@ stream-serie.net#$##option-1{height:100%}
 ||full-serie.*/templates/Streaming/images/highlight.png^$image
 ||ianimes.co/images/e-pubs.png^$image
 ||thevideo.me/images/close_red_small.png^$image
-||universanimeiz.com/wp-content/uploads/*/*/Background1.png$image
 ||uv9ieb2ohr.com/images/close_gray.png^$image
 ||vidup.me/images/embed_bg_1.png$image
 ||vidup.me/player/mute.png$image
@@ -2972,7 +2970,6 @@ eslint.org##.ea-type-text,.ea-placement
 /adsbygoogle.js$script,important,domain=emule-island.eu
 /adsid/integrator.js$script,important
 /\?(op\=([\w]+))(\&(token\=[^\n]{6,}))?(\&error\_code\=\d)/$important
-/bouton_ads/*$image,domain=universanime.co
 filmcomplet.vip###syndic
 ghacks.net##.column-ad
 ghacks.net##.wide-ad
@@ -3066,7 +3063,6 @@ telecharger.freedownloadmanager.org##.ad_strip_noline.adv_wrap
 telerama.fr##.cmp-refuse
 thegayuk.com##.code-block
 tomsguide.fr##.ad-banner
-universanime.co##[src*="/bouton_ads/"]
 unixmen.com##.adthrive-ad
 vad.cineville.fr#@#+js(set, Document.prototype.interestCohort, undefined)
 vars.hotjar.com#@#+js(set, Document.prototype.interestCohort, undefined)
@@ -3100,7 +3096,8 @@ streamhide.to##div[style*="inset:"][style*="z-index"][style*="background"]
 wincert.net##.primisslate
 www.addictivetips.com##.mv-ad-box
 www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
-www.universanime.co##[src*="/bouton_ads/"]
+universanime.co##[src*="/bouton_ads/"]
+/bouton_ads/*$image,domain=universanime.co
 yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
 younetu.com##+js(window.open-defuser)
 scan-manga.com#@##ab_bg
