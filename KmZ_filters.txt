@@ -2667,8 +2667,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc"]
 ##a[onclick^="openAuc"]
 ##a[href^="mailto:support@netu.tv"]
-! hqq.to,hqq.tv##a[onclick^="openAuc"]
-! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href*="mailto:"][href*="advertising"]
+hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
 hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
@@ -3075,6 +3074,7 @@ streamhide.to##div[style*="inset:"][style*="z-index"][style*="background"]
 wincert.net##.primisslate
 www.addictivetips.com##.mv-ad-box
 www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
+@@||universanime.co^$generichide
 universanime.co##[src*="/bouton_ads/"]
 /bouton_ads/*$image,domain=universanime.co
 yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
