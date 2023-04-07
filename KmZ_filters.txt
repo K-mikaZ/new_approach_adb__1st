@@ -49,6 +49,8 @@
 #@#.ads-core-placer
 #@#.ad-placeholder
 *#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"], [class*="AdPlaceholder"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! 750g.com
+*##.ads-pholder
 ! ------------------------
 #@#div[data-google-query-id]
 *#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
