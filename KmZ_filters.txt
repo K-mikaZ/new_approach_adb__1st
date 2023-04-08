@@ -270,7 +270,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[ezaw][ezah]
 *##[class~="ezo_ad"]
 ! *##[class~="ezasloaded"]
-silentinstallhq.com#@#[data-ez-name]
+@@||silentinstallhq.com^$generichide
+silentinstallhq.com#$#[class|="ezoic"],[id|="ezoic"],[id*="ezmob"],[class*="ezmob"] { display:none!important;visibility:hidden!important; }
 
 huffingtonpost.fr##[class="before-text "]
 
