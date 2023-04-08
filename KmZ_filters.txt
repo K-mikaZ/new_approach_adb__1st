@@ -2308,7 +2308,8 @@ x2convert.com##.mgbox,.mgline,.image-with-text
 y2mate.com##.js-extension.extension
 voir-film.*##.allvideolink > div:nth-of-type(2)
 @@||rapidstream.*$generichide
-@@||check.ddos-guard.net$script
+! @@||check.ddos-guard.net$script
+@@/[^\s]+d{2}os\-guard[^\s]+/$match-case
 ||yahoo.com/*/spotx
 clipwatching.com###coverAds
 deezer.com##.ab-show
@@ -2769,10 +2770,12 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
+@@/.*/$font,third-party
 ! @@/videoembed/$subdocument,media,third-party, @@/embed/$subdocument,media,third-party
 @@/.+\/(\w+)?embed\/.+/$subdocument,media,third-party
 @@/dood(cdn|stream)?\.(.{2,5})/$subdocument,media,image,_,third-party
 @@||fonts.gstatic.com^
+@@||msecnd.net^$domain=microsoft.com,third-party
 ||dood.video/favicon.ico?
 @@||jetload.net$subdocument,media
 @@||dotvideo.cc^$subdocument,image,script,font
