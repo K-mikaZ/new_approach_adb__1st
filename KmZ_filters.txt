@@ -261,8 +261,13 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="afs_ads"]
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! ezoic ads concerns ( test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/ )
-! *##:is( span, div ):is( [class|="ezoic"], [id|="ezoic"], [class*="ezmob"] )
+! Because some use ezoic for host images (not always ads) - ads remove with my [ EZOIC ADS ] css rules, see below
+@@||ezoic.net$third-party,important
+@@||ezoiccdn.com$third-party,important
 *#@#[data-ezsrcset]
+||videosvc.ezoic.com^
+*##[id|="ez-video"]
+*##[class|="ez-video"]
 *##[class|="ezoic"]
 *##[id|="ezoic"]
 *##[id*="ezmob"]
@@ -271,7 +276,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="ezo_ad"]
 ! *##[class~="ezasloaded"]
 @@||silentinstallhq.com^$generichide
-silentinstallhq.com#$#[class|="ezoic"],[id|="ezoic"],[id*="ezmob"],[class*="ezmob"] { display:none!important;visibility:hidden!important; }
+silentinstallhq.com#$#[class|="ezoic"],[id|="ezoic"],[id*="ezmob"],[class*="ezmob"],[ezaw][ezah],[class~="ezo_ad"],[id|="ez-video"],[class|="ez-video"] { display:none!important;visibility:hidden!important; }
 
 huffingtonpost.fr##[class="before-text "]
 
@@ -3547,9 +3552,6 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
 ||hjuyyeuvhvq.com^$important,third-party,subdocument,redirect=noopframe
 ||doubleclick.net/activityi*$subdocument,important,redirect=noopframe
-! Because some use ezoic for host images (not always ads) - ads remove with my [ EZOIC ADS ] css rules, see below
-@@||ezoic.net$third-party,important
-@@||ezoiccdn.com$third-party,important
 ! from ublock filter
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
