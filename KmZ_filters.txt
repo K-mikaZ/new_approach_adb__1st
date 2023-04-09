@@ -927,6 +927,8 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||geo.query.yahoo.com^
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 ! mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
+mail.yahoo.com##div[data-test-id|="right-rail-ad"]
+mail.yahoo.com##a[href][target][data-ylk*="mail_plus_upsell"]
 mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
 mail.yahoo.com##._yb_18qvw
 ! mail.yahoo.com##path:nth-of-type(3)
