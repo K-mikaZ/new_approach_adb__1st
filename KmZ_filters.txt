@@ -839,7 +839,8 @@ rakuten.tv##+js(abort-on-property-read, e.FuckAdBlock)
 rakuten.tv##+js(set-constant, heartbeat, OK)
 ! rakuten.tv use youboranqs01 for play/pause when click on video
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
-rakuten.tv##+js(no-xhr-if, /spotx/)
+! rakuten.tv##+js(no-xhr-if, /spotx/)
+rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 tf1.fr##a[rel*="sponsored"]
 tf1.fr##div[class^="Freemium" i]
 ! offer promo
