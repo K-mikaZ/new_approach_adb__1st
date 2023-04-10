@@ -2873,9 +2873,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 ###arc-widget-launcher-iframe
 ##+js(set, Document.prototype.interestCohort, undefined)
 #@#.advertisement:not(body)
-!#if (adguard)
-#%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
-!#endif
 ! #?#.player:-abp-has(>[data-ads-core])
 ! latendresseencuisine.com##div:if(>ins.adsbygoogle)
 *$removeparam=fbclid
