@@ -5,9 +5,9 @@
 ||comscore.com^$domain=~comscore.com
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js
-/comscore_beacon/*
+! /comscore_beacon/*
 /[\s\S]*comscore[\s\S]*/$important,third-party
-/[\s\S]*comscore[\s\S]*/$script,important
+/[\s\S]*comscore[\s\S]*/$script,image,important
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
 ! see < https://github.com/Sergeyshall/jw-streamsense >
 /\/jw([0-9]{1})s{2}(\.min)?\.js/$script
