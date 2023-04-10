@@ -12,7 +12,7 @@
 ! /comscore*.js
 ! /comscore_beacon/*
 ! /[\s\S]*comscore[\s\S]*/$important,third-party
-/[\s\S]*comscore[\s\S]*/$script,image,third-party,important
+/[\s\S]*comscore[\s\S]*/$script,image,important,domain=~comscore.com
 
 ||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
 
