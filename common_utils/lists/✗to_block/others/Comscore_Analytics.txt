@@ -1,7 +1,9 @@
 
-! Comscore Analytics
-
-||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
+! comScore Stream Sense - tealium.com
+! see https://tealium.com/integrations/
+! ads integrations
+! analitycs integrations
+! ...
 
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
@@ -11,18 +13,11 @@
 ! /comscore_beacon/*
 ! /[\s\S]*comscore[\s\S]*/$important,third-party
 /[\s\S]*comscore[\s\S]*/$script,image,important
+
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
 ! see < https://github.com/Sergeyshall/jw-streamsense >
 /\/jw([0-9]{1})s{2}(\.min)?\.js/$script
-
-
-! /jw-streamsense$script
-! /streamsense(\.min)?\.js/$script
+! /streamsense(\.min)?\.js/$script like "https://assets.allocine.fr/bundles/engagement/js/streamsense.min.js"
 /[\s\S]*streamsense[\s\S]*/$script,important
 
-
-! comScore Stream Sense - tealium.com
-! see https://tealium.com/integrations/
-! ads integrations
-! analitycs integrations
-! ...
+||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
