@@ -1,5 +1,8 @@
 
 ! Comscore Analytics
+
+||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
+
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
 ||comscore.com^$domain=~comscore.com
