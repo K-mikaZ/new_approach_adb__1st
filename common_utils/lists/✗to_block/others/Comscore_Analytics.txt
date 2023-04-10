@@ -28,10 +28,10 @@
 ! Owned by comScore, Inc.
 ! https://whotracks.me/trackers/scorecard_research_beacon.html
 ! OPERATES UNDER:
-||scorecardresearch.com^$third-party
-||scoreresearch.com^$third-party
-||scrsrch.com^$third-party
-||securestudies.com^$third-party
+||scorecardresearch.com^
+||scoreresearch.com^
+||scrsrch.com^
+||securestudies.com^
 ! --------------------------------------------------------------
 ||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch_beacon.js
 
