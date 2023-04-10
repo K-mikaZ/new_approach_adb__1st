@@ -3502,7 +3502,7 @@ uqload.*##+js(window.open-defuser)
 ||*^$third-party,domain=uqload.co|uqload.com,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
-demotivateur.fr##[data-actirise-slot]
+demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
 aufeminin.com,marmiton.org#?#div:has(>[data-ad$="_atf"])
 aufeminin.com,marmiton.org#?#div:is([data-ad$="_atf"])
 aufeminin.com,marmiton.org##.ad-container
