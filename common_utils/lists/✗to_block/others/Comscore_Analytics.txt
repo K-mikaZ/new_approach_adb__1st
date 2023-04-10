@@ -3,7 +3,7 @@
 ! see https://tealium.com/integrations/
 ! ads integrations
 ! analitycs integrations
-! ...
+! --------------------------------------------------------------
 
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
@@ -14,10 +14,20 @@
 ! /[\s\S]*comscore[\s\S]*/$important,third-party
 /[\s\S]*comscore[\s\S]*/$script,image,important
 
+||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
+
+
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
 ! see < https://github.com/Sergeyshall/jw-streamsense >
+! --------------------------------------------------------------
 /\/jw([0-9]{1})s{2}(\.min)?\.js/$script
 ! /streamsense(\.min)?\.js/$script like "https://assets.allocine.fr/bundles/engagement/js/streamsense.min.js"
 /[\s\S]*streamsense[\s\S]*/$script,important
 
-||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
+
+! Owned by comScore, Inc.
+! https://whotracks.me/trackers/scorecard_research_beacon.html
+! --------------------------------------------------------------
+||scorecardresearch.com^$third-party
+||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch_beacon.js
+@@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
