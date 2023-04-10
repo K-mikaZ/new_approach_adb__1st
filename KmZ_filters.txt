@@ -1679,7 +1679,6 @@ stream-serie.net#$##option-1{height:100%}
 ||rubiconproject.com^$third-party
 ||ruwertur.com^$third-party
 ||rwn1sdb4xqa2.com^$third-party
-||scorecardresearch.com^$third-party
 ||sdk.privacy-center.org^$third-party
 ||sheenaup.net^$third-party
 ||splittingpick.com^$third-party
@@ -1861,8 +1860,6 @@ stream-serie.net#$##option-1{height:100%}
 ||widgets.outbrain.*/outbrain.js$script,important,redirect=outbrain-widget.js
 ||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
 ||smartadserver.com^$third-party,domain=~smartadserver.de|~smartadserver.fr
-||scorecardresearch.com/beacon.js$script,important,redirect=scorecardresearch_beacon.js
-||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch_beacon.js
 /(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
 /(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
 ||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
@@ -1871,7 +1868,6 @@ stream-serie.net#$##option-1{height:100%}
 ||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,badfilter
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js,badfilter
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js,badfilter
-||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js,badfilter
 ||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js,badfilter
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager.com/gtm.js,badfilter
 ||widgets.outbrain.com/outbrain.js$script,redirect=widgets.outbrain.com/outbrain.js,badfilter
@@ -3188,7 +3184,6 @@ vidoza.net#$#body { color: whitesmoke!important; }
 uptostream.com#$#body ~ :not( [class~="file-title"] ) { color: whitesmoke; }
 ! parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
-@@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
 @@||viewsb.com^$subdocument
 pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][style*="left: 0;"][style*="top: 0;"][style*="position: fixed;"][style*="width: 100%;"][style*="z-index: "]
 @@||faphouse.com^$subdocument,third-party,domain=xhamster.com
