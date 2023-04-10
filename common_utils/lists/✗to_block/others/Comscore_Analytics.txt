@@ -3,16 +3,20 @@
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
 ||comscore.com^$domain=~comscore.com
+! https://flowplayer.com/developers/plugins/comscore
+! /comscore*.js
 /comscore_beacon/*
-/\/streamsense(\.min)?\.js/$script
+/[\s\S]*comscore[\s\S]*/$important,third-party
+/[\s\S]*comscore[\s\S]*/$script,important
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js"
 ! see < https://github.com/Sergeyshall/jw-streamsense >
 /\/jw([0-9]{1})s{2}(\.min)?\.js/$script
 
-! for sure
-/jw-streamsense$script
-! https://flowplayer.com/developers/plugins/comscore
-/comscore*.js
+
+! /jw-streamsense$script
+! /streamsense(\.min)?\.js/$script
+/[\s\S]*streamsense[\s\S]*/$script,important
+
 
 ! comScore Stream Sense - tealium.com
 ! see https://tealium.com/integrations/
