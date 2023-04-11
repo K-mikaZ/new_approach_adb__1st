@@ -258,7 +258,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="google-ads"]
 *##[class~="googleads"]
 *##[class~="afs_ads"]
-! actirise ads: https://www.actirise.com/
+! ----[ ACTIRISE ADS ]-----------------------------------------------------------
+! https://www.actirise.com/
 *##div[data-hbdbrk-parent="true"]
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
