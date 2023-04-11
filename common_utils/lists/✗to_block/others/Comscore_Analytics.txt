@@ -33,6 +33,6 @@
 ||scrsrch.com^
 ||securestudies.com^
 ! --------------------------------------------------------------
-||scorecardresearch.com/beacon.js$script,redirect-rule=scorecardresearch_beacon.js
+||scorecardresearch.*beacon.js$third-party,script,redirect-rule=scorecardresearch_beacon.js,important
 
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
