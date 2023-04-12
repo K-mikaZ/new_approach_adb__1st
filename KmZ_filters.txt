@@ -41,8 +41,9 @@
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-*#$#div[class|="adsvp"]:has( > [class|="adsvp"] ) { display: none!important; visibility: hidden!important; }
-! *#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
+! *#$#div[class|="adsvp"]:has( > [class|="adsvp"] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
+! *##div[class|="adsvp"]
 *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
@@ -116,7 +117,8 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
-*#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
+*#$#:where(div > a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
+! *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
 *#$#div:has(> a:is( [href*="/regarder.php"], [href*="/telecharger.php"] ):is( [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
