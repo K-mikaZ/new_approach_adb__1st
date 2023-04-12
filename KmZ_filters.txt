@@ -585,6 +585,12 @@ twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> d
 twitter.com##a[href^="/i/trends"]
 twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(What’s happening))
 twitter.com##a[href^="/i/events"]
+deezer.com##.conversion-banner
+deezer.com##.react-cookie
+deezer.com##[class="alert-wrapper"]
+deezer.com##.ab-show
+deezer.com##.ab-page-blocker
+deezer.com#$#.page-alerts { display: none !important }
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
 di.fm##[id|="sponsor"]
 di.fm##[class*="upsell"]
@@ -593,7 +599,6 @@ di.fm##[class|="go-premium"]
 di.fm#@#[class*="premium"]
 di.fm##+js(set-constant, maxLoadTime, undefined)
 zenradio.com##[class|="remove-ads"]
-deezer.com##.conversion-banner
 ||messaging.deezer.com/websocket$websocket,important
 openwhyd.org##.error
 openwhyd.org##+js(abort-on-property-write, document.hasFocus, false)
@@ -940,9 +945,8 @@ mail.yahoo.com##.rightRailAdContainer
 mail.yahoo.com###rightrailad-LREC
 mail.yahoo.com##[data-test-id="pencil-ad"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
-! mail.yahoo.com#?#[data-ylk*="mail_plus"]
 mail.yahoo.com#$#a[href][target][data-ylk*="mail_plus_upsell"] { display: none!important; visibility: hidden!important; }
-mail.yahoo.com#?#[aria-labelledby*="-sticky-pencil-ad-"]
+mail.yahoo.com##[aria-labelledby*="-sticky-pencil-ad-"]
 ! https://www.reddit.com/r/uBlockOrigin/search/?q=Yahoo%20mail&restrict_sr=1&sr_nsfw=
 ! https://www.reddit.com/r/uBlockOrigin/comments/gsp9hf/how_to_hide_the_entire_yahoo_mail_classic_side_ad/#t1_fseo5s9
 ! mail.yahoo.com##[data-test-id|="-rail-ad"]
@@ -2321,8 +2325,6 @@ voir-film.*##.allvideolink > div:nth-of-type(2)
 @@/[^\s]+d{2}os\-guard[^\s]+/$match-case
 ||yahoo.com/*/spotx
 clipwatching.com###coverAds
-deezer.com##.ab-show
-deezer.com##.ab-page-blocker
 ||dxfk10a9rrp2x.cloudfront.net
 ||adeventtracker.spotify.com^
 ||adnxs.com^
@@ -2943,9 +2945,6 @@ chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
 chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
 cpasmieux.*#$#[class$="-xyz"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }cpasmieux.tv##[id|="kino"] > noindex
-deezer.com##.react-cookie
-deezer.com##[class="alert-wrapper"]
-deezer.com#$#.page-alerts { display: none !important }
 developer.mozilla.org#@#+js(set-constant, Document.prototype.interestCohort, undefined)
 digit.in##.add
 digit.in##.adsAdvert
