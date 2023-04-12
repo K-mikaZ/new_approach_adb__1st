@@ -360,8 +360,8 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.W
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tcswua/tip_noncosmetic_filters_to_remove_junk_from/>
 ! »»» <https://www.google.com/search?q=NON-COSMETIC+FILTERS+TO+REMOVE+JUNK+FROM+YOUTUBE+site:www.reddit.com>
 ! REMOVES ANNOYING POP MESSAGES ON THE BOTTOM LEFT OF THE SCREEN
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, messages.*.youThereRenderer)
-!youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, messages.*.youThereRenderer)
+! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
 ! REMOVES "INVIDEO" INFO CARDS:
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, cards)
 ! REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
@@ -573,7 +573,7 @@ abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 ||youtuhe.com^$all,important
 ||popmonetizer.net^$important
 ||jpcuthdkmuonwc.com^$third-party
-!/\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
+! /\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
 /(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
@@ -746,8 +746,8 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-!allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
-!allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
+! allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
+! allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
 ! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
 malekal.com##+js(set-constant, window.adsbygoogle, [])
@@ -895,7 +895,6 @@ ettvdl.*,ettvcentral.*##[id*="vpn"]
 ettvdl.*,ettvcentral.*##.download_liinks_a
 ettvdl.*,ettvcentral.*###kr_cr
 ettvdl.*,ettvcentral.*##.kr_cr
-!!!torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.trust { max-height: 27vh
 torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
 torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[(contains(@class,"download")) or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
@@ -1959,13 +1958,13 @@ voirseries.*#@#.adsBox
 @@||netflix.com$ghide
 @@*$ghide,domain=femax20.com|fembed.com
 ! @@||hqq.$inline-script
-!@@||hqq.$ghide
+! @@||hqq.$ghide
 ! @@||netu.$inline-script
-!@@||netu.$ghide
+! @@||netu.$ghide
 ! @@||vizplay.$inline-script
 @@||vizplay.$ghide
 ! @@||waaw.$inline-script
-!@@||waaw.$ghide
+! @@||waaw.$ghide
 @@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 #@#[src*="://consent.google."]
 #@#+js(acis, atob, decodeURIComponent)
@@ -2774,7 +2773,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||*googletagmanager.com/gtag/js*$script,redirect=google-analytics,_,badfilter
 ! https://videos.allocine.fr/p-cp-async/allocine_fr/playercinema@postroll/ or https://goutee.top/p-c-async/allocine_fr/playercinema/
 /\/[a-z]{1}\-[a-z]{1,2}\-async\/(.+)\/playercinema(.+)?/$script,_,important
-!/(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
+! /(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com^$image,_,third-party,domain=www.youtube.com|m.youtube.com|music.youtube.com
@@ -2800,7 +2799,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||*$websocket,_,~third-party,important,domain=deezer.com
 ##a[href*="/Russia_Vs_Ukraine_War3"][target]
 @@||mediainfo.tf1.fr^$domain=tf1.fr
-!!! https://github.com/AdguardTeam/AdguardFilters/pull/102134
+! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
 ! TODO: Change AG_defineProperty to scriptlet when this issue will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/65
 tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
@@ -2883,7 +2882,7 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
 @@/cookieconsent.$script,~third-party
 @@/hit.xiti$image,domain=www.tf1.fr
-!@@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
+! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
 @@||forum.qt.io/socket.io/*$websocket
 @@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
 @@||wss.analyticacdn.com^$websocket
@@ -2932,7 +2931,7 @@ akceleratorbiznesu.eu##.shadow
 akceleratorbiznesu.eu##[src*="/dating/"]
 akceleratorbiznesu.eu##[src*="/imagesnp/"]
 allthings.how##.mv-ad-box
-!animationdigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
+! animationdigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
 !#if (adguard)
 animationdigitalnetwork.fr#%#AG_onLoad(function() { if(window.location.href.indexOf("/onboarding") != -1){ window.location.href = "https://animationdigitalnetwork.fr"; } });
 !#endif
@@ -2992,9 +2991,9 @@ livemint.com##[id^="adHeightstory"][class^="adHeight"]
 luxuretv.com##.adver,.adver-header,#vz_im_ad
 majorgeeks.com#$#.navigation-light { display: none !important; visibility: hidden !important; }
 maketecheasier.com##.in-content-ad
-!marmiton.org##+js(ta, preload, video)
+! marmiton.org##+js(ta, preload, video)
 marmiton.org##[data-ad-cls="true"]
-!marmiton.org##[data-ad="banner_atf"]
+! marmiton.org##[data-ad="banner_atf"]
 media-play.co##+js(window.open-defuser)
 mediafire.com#@#+js(addEventListener-defuser, /^(?:click|mousedown)$/)
 mediafire.com#@#+js(window.open-defuser)
@@ -3166,7 +3165,6 @@ streamingvf.fun##[id^=ads_]
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 ||trafficjunky.net^$popup
-! VOIR PB video marmiton: https://www.marmiton.org/recettes/recette_pate-brisee-vite-faite_31639.aspx
 @@||vidoza.net$media,_,~third-party
 @@||uloadcdn.com^$media
 @@||userload.co^$subdocument
@@ -3231,7 +3229,7 @@ dood.*#$#body { color: whitesmoke!important; }
 ||rndskittytor.com^
 ||cdnativepush.com^
 ||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
-!||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
+! ||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
 @@||dmcdn.net^
 @@||geo.dailymotion.com^
 @@||dm-event.net^$domain=geo.dailymotion.com
@@ -3252,7 +3250,7 @@ dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/
 ||2mdn.net^$badfilter
 ||youtube.com/embed/$domain=lunchboards.com,important
 @@||pagead2.googlesyndication.com^$domain=arte.tv
-!||arte.tv/log-player/
+! ||arte.tv/log-player/
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
 !#if adguard
 ! Le cookie Cloudflare:
@@ -3689,8 +3687,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! ||*/vast/VAST-4.2$xmlhttprequest,redirect-rule=noopvast-4.2
 ||/vast/*_vast=4$xmlhttprequest,redirect-rule=noopvast-4.0
 ||*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect=noopvast-4.0
-!||*AdsSetup&protocolVersion=4.1$xmlhttprequest,redirect=noopvast-4.1
-!||*AdsSetup&protocolVersion=4.2$xmlhttprequest,redirect=noopvast-4.2
+! ||*AdsSetup&protocolVersion=4.1$xmlhttprequest,redirect=noopvast-4.1
+! ||*AdsSetup&protocolVersion=4.2$xmlhttprequest,redirect=noopvast-4.2
 ! https://videos.allocine.fr/p-dp-vast2/ or https://goutee.top/p-dp-vast2/ ...
 /\/p\-dp\-vast2\//$redirect=noopvast-2.0,_,important
 /\/p\-dp\-vast3\//$redirect=noopvast-3.0,_,important
@@ -3705,7 +3703,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||unified.adsafeprotected.com/*&vastVersion=2&*$important,redirect=noopvast-2.0
 ||unified.adsafeprotected.com/*&vastVersion=3&*$important,redirect=noopvast-3.0
 ||unified.adsafeprotected.com/*&vastVersion=4&*$important,redirect=noopvast-4.0
-!||ads.stickyadstv.com^/*AdsSetup&protocolVersion=4*$redirect-rule=noopvast-4.0,important
+! ||ads.stickyadstv.com^/*AdsSetup&protocolVersion=4*$redirect-rule=noopvast-4.0,important
 ||ads.*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect-rule=noopvast-4.0
 ||ad.piximedia.com/vast/$xmlhttprequest,redirect=noopvast-2.0
 ||ssp.bidvol.com/vast/
@@ -3715,7 +3713,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||videosworks.com/add.php?$redirect=nooptext
 ||ssp.bidvol.com/vast/$redirect=empty
 ||serv01001.xyz^$redirect=noopvast-3.0
-!||videosprofitnetwork.com^$redirect=empty
+! ||videosprofitnetwork.com^$redirect=empty
 ||reyden-x.com/*/pre-roll/*$third-party,redirect=noopvast-2.0
 ||lumupu.xyz/vast/?$redirect=noopjson
 ||getpublica.com^$xmlhttprequest,domain=crunchyroll.com,important,redirect=noopvast-2
