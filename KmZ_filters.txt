@@ -2789,15 +2789,14 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@||dotvideo.cc^$subdocument,image,script,font
 @@||dotvideo.cc/player.php$xmlhttprequest
 @@||vudeo.*^$~xmlhttprequest,domain=vudeo.net
-||vudeo.net/embed$xmlhttprequest,_,important
+||vudeo.net/embed$xmlhttprequest,important
 @@||tomacloud.com^$xmlhttprequest,subdocument,media,image
 @@||evosrv.com^$xmlhttprequest,stylesheet,media,image
 @@||evoload.io^$xmlhttprequest,subdocument,image
 @@||uptostream.com^$xmlhttprequest,domain=uptostream.com
-@@||uptostream.com^$subdocument,media,_,third-party
-@@/(.+)\/cast\_([\w]+)\.js((.+)|$)/$script,_,third-party
+@@||uptostream.com^$subdocument,media,third-party
+@@/(.+)\/cast\_([\w]+)\.js(.+)?/$script,third-party
 ||*$websocket,_,~third-party,important,domain=deezer.com
-##a[href*="/Russia_Vs_Ukraine_War3"][target]
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
