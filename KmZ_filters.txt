@@ -41,7 +41,8 @@
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ! *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-*#$#div[class|="adsvp"]:has( > [class|="adsvp"] ) { display: none!important; visibility: hidden!important; }
+! *#$#div[class|="adsvp"]:has( > [class|="adsvp"] ) { display: none!important; visibility: hidden!important; }
+*#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
 *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 *##div[class^="masha_"]
 *##div[class^="tolro_"]
