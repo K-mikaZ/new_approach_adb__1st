@@ -585,12 +585,9 @@ twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> d
 twitter.com##a[href^="/i/trends"]
 twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(What’s happening))
 twitter.com##a[href^="/i/events"]
-deezer.com##.conversion-banner
-deezer.com##.react-cookie
-deezer.com##[class="alert-wrapper"]
-deezer.com##.ab-show
-deezer.com##.ab-page-blocker
-deezer.com#$#.page-alerts { display: none !important }
+! deezer.com##.conversion-banner
+! deezer.com#$#.page-alerts { display: none !important }
+deezer.com#$?#[id*="modal"],[class|="modal"],.page-alerts,.conversion-banner{ display: none!important; }
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
 di.fm##[id|="sponsor"]
 di.fm##[class*="upsell"]
