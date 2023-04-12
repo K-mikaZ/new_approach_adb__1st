@@ -261,7 +261,10 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="afs_ads"]
 ! ----[ ACTIRISE ADS ]-----------------------------------------------------------
 ! https://www.actirise.com/
+! demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
+! *##data-actirise="true"]
 *##div[data-hbdbrk-parent="true"]
+demotivateur.fr##div[data-actirise-slot]
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
 @@||ezoic.net$third-party,important
@@ -3490,7 +3493,6 @@ uqload.*##+js(window.open-defuser)
 ||*^$third-party,domain=uqload.co|uqload.com,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
-demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
 aufeminin.com,marmiton.org#?#div:has(>[data-ad$="_atf"])
 aufeminin.com,marmiton.org#?#div:is([data-ad$="_atf"])
 aufeminin.com,marmiton.org##.ad-container
