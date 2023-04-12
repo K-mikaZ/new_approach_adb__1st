@@ -3507,24 +3507,8 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 @@||media.deezer.com/*/get_url
 ||*.mp3$media,third-party,domain=deezer.com,redirect=noopmp3-0.1s
 @@||deezer.com^$generichide
-@@||*/cdn-cgi/apps/head/*$script,~third-party,important,domain=coflix.tv
-@@||googleads.g.doubleclick.net/pagead/*$subdocument,important,domain=coflix.tv
-@@||*^$image,xmlhttprequest,media,~third-party,domain=coflix.tv
-@@||coflix.tv^$generichide
-@@coflix.tv^$cookie=/.+/
 @@||iptvforyou.fr^$media,subdocument
-@@||web.webpushs.com^$third-party,script,domain=coflix.tv
-@@||googletagmanager.com/gtag/js$domain=coflix.tv
-@@||googlesyndication.com^$domain=coflix.tv
-@@||google-analytics.com^$domain=coflix.tv
-@@||googleadservices.com^$domain=coflix.tv
-@@||adservice.google.fr^$domain=coflix.tv,important
-@@||adservice.google.com^$domain=coflix.tv,important
-!#if (adguard)
-coflix.tv#@%#//scriptlet("prevent-bab")
-!#endif
-coflix.tv#?#ad-host:first-of-type:remove()
-||www./gtm.js$domain=calmradio.com,redirect=googletagmanager-gtm
+/gtm.js$domain=calmradio.com,redirect=googletagmanager-gtm
 ||calmradio.com/modules/mod_calmradio_popup/$script,domain=calmradio.com,redirect=noopjs
 ||*^$third-party,important,domain=calmradio.com
 ||app-stats.calmradio.com^$important
