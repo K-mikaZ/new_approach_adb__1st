@@ -3636,7 +3636,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||*/vast/VAST-3$xmlhttprequest,redirect-rule=noopvast-3.0
 ||*AdsSetup&protocolVersion=3$xmlhttprequest,redirect-rule=noopvast-3.0
 ||springserve.com$xmlhttprequest,redirect=noopvast-3.0
-||plified.pro$xmlhttprequest,redirect-rule=noopvast-3.0
+! ||plified.pro$xmlhttprequest,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xmlhttprequest,redirect-rule=noopvast-3.0
 ||vidalak.com/api/vpaid?$xmlhttprequest,redirect-rule=noopvast-3.0
 ||vast.yomeno.xyz$xmlhttprequest,redirect-rule=noopvast-3.0
@@ -3712,8 +3712,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
-! !#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
-! !#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
+!#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
+!#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
 ! ======[ EOF ]==========================================================
 
