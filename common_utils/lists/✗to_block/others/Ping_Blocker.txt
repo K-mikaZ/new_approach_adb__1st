@@ -13,10 +13,6 @@
 
 ||*^$ping
 
-! [FIX]
-!*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-!@@||*$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-
 ! [FIX] memory consumption too high
 @@/player-events/log/partial$ping,domain=vimeo.com
 ! because "AdGuard Tracking Protection filter"
@@ -25,7 +21,7 @@
 
 ! [fix] for those ping via xhr
 ! example "youboranqs01.com/ping"
-/ping?$xhr,empty
+/ping?$xmlhttprequest,redirect-rule=empty
 
 ! [FIX] some video loading time
 @@||viously.com^$ping
@@ -42,3 +38,6 @@
 ||facebook.com/ajax/bz$ping,badfilter
 @@*^$script,ping,third-party,domain=marmiton.org
 @@||chatbox.botnation.ai/plugins/ping$domain=star.fr
+
+||logs*.xiti.com^$redirect-rule=nooptext,important
+||mesure*.estat.com^$redirect-rule=noop.txt,important
