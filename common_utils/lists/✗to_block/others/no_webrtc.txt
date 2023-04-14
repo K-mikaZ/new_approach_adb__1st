@@ -25,6 +25,9 @@
 stun:*
 !#endif
 
+||*$webrtc,redirect-rule=empty
+stun:*$redirect-rule=empty
+
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
 ! example.com#@#+js(nowebrtc)
