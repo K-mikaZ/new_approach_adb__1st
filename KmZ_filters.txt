@@ -3469,7 +3469,7 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||a-mx.com^
 ||streamcomplet2.info^
 ||tagcommander.com$third-party
-@@||cdn.tagcommander.com/*/tc_TF1*.js$domain=tf1.fr|tf1info.fr,badfilter
+! @@||cdn.tagcommander.com/*/tc_TF1*.js$domain=tf1.fr|tf1info.fr,badfilter
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
