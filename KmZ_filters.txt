@@ -2023,12 +2023,10 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||ipinfo.io^$badfilter
 ||pub.phyks.me^$badfilter
 ||hm.baidu.com^$badfilter
-||fwmrm.net^$xmlhttprequest,third-party,badfilter
 ||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
 ||herokuapp.com^$important,badfilter
 ||ghbtns.com/github-btn.html$third-party,badfilter
-@@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
 @@||gemius.pl^$script,badfilter
 @@||googletagmanager.com/gtag/js$script,domain=uptobox.com|uptostream.com,badfilter
 @@||facebook.com/ajax/bz$domain=facebook.com,badfilter
@@ -2067,7 +2065,6 @@ streamroot.io$script,important,badfilter
 /a/ads/*$xmlhttprequest,important,badfilter
 /a/ads/*$badfilter
 @@||a.zxcvads.com/a/ads/-image-ad_ads.html$xmlhttprequest
-||fwmrm.net^$image,third-party,badfilter
 @@||spotxchange.com^$third-party,badfilter
 ||pagead2.googlesyndication.com^$xmlhttprequest,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animationdigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io|vladan.fr,badfilter
 ||pagead2.googlesyndication.com^$xmlhttprequest,important,domain=9xbuddy.app|9xbuddy.com|9xbuddy.org|simsdom.com|unlockapk.com|cdahd.ml|popkulturysci.pl|anitokyo.tv|animationdigitalnetwork.fr|zobacz.ws|botayit.com|magesy.blog|dvdgayonline.com|rte.ie|magesy.pro|baixarsoftware.com|dr-farfar.com|fcportables.com|webphanmem.com|nulledpremium.com|nsfw247.to|boycracked.co|elrellano.com|masihbelajar.com|leechall.download|btgyama.blogspot.com|frkmusic.cc|prepostseo.com|freemcserver.net|1shortlink.com|viki.com|scat.gold|iunlocked.org|jmusic.me|onlinecoursebay.com|arponag.xyz|nuggetroyale.io,badfilter
@@ -2240,7 +2237,6 @@ m.facebook.com,mtouch.facebook.com,touch.facebook.com##.-hardstate-ads #root div
 m.facebook.com,mtouch.facebook.com,touch.facebook.com##.-hardstate-ads #root div[class] article div[id][class] div[class]:has(div[class][data-sigil*="adprefssurvey"])
 ||facebook.com/dlite/skywalker_topic$xmlhttprequest,important,badfilter
 ||crunchyroll.com/showmedia$popup,~third-party
-||fwmrm.net/ad/*$domain=crunchyroll.com
 mega-p2p.net###splashbox-advcorner
 ||videos-on-demand.link^$popup
 filmsrip.net##.share-botton
@@ -2403,7 +2399,6 @@ clipwatching.com###coverAds
 ||weblb-wg.dual-gslb.spotify.com^
 ||weblb-wg.gslb.spotify.com^
 @@/cookiejs/*$script,domain=crunchyroll.com
-||fwmrm.net^$popup,important
 ||mc.yandex.ru^$image
 ||exdynsrv.com^$important
 teen19porn.com###player_ad
@@ -2603,9 +2598,15 @@ radiotunes.com,di.fm##[class*="premium"]
 ||facil-iti.com^$important
 ||dev.appboy.com^
 ||woawouru.net^
-||fwmrm.net^$~object,third-party,badfilter
-@@||v.fwmrm.net/ad/g/1$domain=6play.fr,badfilter
-||fwmrm.net/ad/*/*?*$important
+! ||fwmrm.net^$~object,third-party,badfilter
+! @@||v.fwmrm.net/ad/g/1$domain=6play.fr,badfilter
+! ||fwmrm.net/ad/*$domain=crunchyroll.com
+! ||fwmrm.net^$image,third-party,badfilter
+! @@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
+! ||fwmrm.net^$xmlhttprequest,third-party,badfilter
+||fwmrm.net^$popup,important
+||fwmrm.net^$third-party
+||fwmrm.net$xmlhttprequest,third-party,redirect-rule=empty
 @@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
