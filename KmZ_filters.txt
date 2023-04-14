@@ -871,7 +871,6 @@ ultimate-catch.eu##.single.small > [href*=":"]
 ! ultimate-catch.eu#?#.mg-widget:if(:-abp-has([src*=":"]))
 ! ultimate-catch.eu#?#.mg-widget:if(> :-abp-contains(/abonne/i))
 irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
-@@||gigya.com/js/gigya.js$script
 @@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr
 @@||pc.middleware.6play.fr^$xmlhttprequest,domain=6play.fr
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
