@@ -3725,5 +3725,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||gigya.com$badfilter
 ||gigya.com$third-party,badfilter
 @@||gigya.com^$important
+||usabilla.com$badfilter
+||usabilla.com$third-party,badfilter
 @@||usabilla.com^$important
 
