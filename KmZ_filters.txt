@@ -2004,7 +2004,6 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||consensu.org^$badfilter
 ||hollywood.to$badfilter
 ||docs.plesk.com^$badfilter
-||cdn.tagcommander.com^$badfilter
 ||netdna-ssl.com^$badfilter
 ||cdn.cookielaw.org^$badfilter
 ||weborama.fr^$badfilter
@@ -2023,7 +2022,6 @@ searchenginejournal.com#@##sej-popup-wrapper:has(:scope > div)
 ||ipinfo.io^$badfilter
 ||pub.phyks.me^$badfilter
 ||hm.baidu.com^$badfilter
-||tagcommander.com^$important,badfilter
 ||tpc.googlesyndication.com/safeframe/*$badfilter
 ||herokuapp.com^$important,badfilter
 ||ghbtns.com/github-btn.html$third-party,badfilter
@@ -2612,7 +2610,6 @@ radiotunes.com,di.fm##[class*="premium"]
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
 @@||footprint.net^$xmlhttprequest,domain=prod-player.tf1.fr
 @@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=tf1.fr
-@@||cdn.tagcommander.com/cmp-api/cmp.js$script,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,~third-party,redirect=noopmp3-0.1s
 open.spotify.com#@#+js(nowebrtc)
 @@||vshare.eu/player_sda.html
@@ -3473,6 +3470,8 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||amung.us^$third-party
 ||a-mx.com^
 ||streamcomplet2.info^
+||tagcommander.com$third-party
+@@||cdn.tagcommander.com/*/tc_TF1*.js$domain=tf1.fr|tf1info.fr,badfilter
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
