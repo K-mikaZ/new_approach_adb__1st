@@ -3371,7 +3371,7 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||s.pinimg.com^
 ||sc-static.net^
 ||cdn.ravenjs.com^
-||connect.facebook.net^
+||connect.facebook.net^$third-party
 ||optimize.google.com^
 ||www.googleoptimize.com^
 ||www.fastly-insights.com^
@@ -3381,7 +3381,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||redditstatic.com/ads/pixel.js^
 ||cdn.speedcurve.com^
 ||marketingplatform.google.com^$domain=d3ward.github.io
-||metrics.mzstatic.com^$domain=d3ward.github.io
 ||marketingplatform.google.com^
 ||metrics.mzstatic.com^
 ||metrics.icloud.com^
@@ -3453,8 +3452,8 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||fastclick.com^
 ||onetag-sys.com^$third-party
 ||casalemedia.com^$third-party
-||doubleclick.net/pagead/html/*$subdocument,important,redirect-rule=noopframe
-||googleads.g.doubleclick.net/pagead/*$subdocument,important,redirect=noopframe
+||doubleclick.net/pagead/html/*$subdocument,important,redirect-rule=noop.html
+||googleads.g.doubleclick.net/pagead/*$subdocument,important,redirect=noop.html
 ||gfiypuneou.com^
 ||prismamedia.com^$badfilter
 ||playnext.prismamediadigital.com^
