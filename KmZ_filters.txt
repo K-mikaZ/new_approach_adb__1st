@@ -1069,6 +1069,8 @@ femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
 femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
+@@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
+@@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
 !#if (adguard)
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
@@ -1903,6 +1905,8 @@ voirseries.*#@#.adsBox
 @@||compte.tf1.fr^$domain=tf1.fr
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
+||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
+||securepubads.g.doubleclick.net/pagead/ppub_config?$xmlhttprequest,redirect-rule=noop.txt,important
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
 @@||googlesyndication.com^$domain=googlesyndication.com
