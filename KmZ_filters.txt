@@ -265,9 +265,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! ----[ ACTIRISE ADS ]-----------------------------------------------------------
 ! https://www.actirise.com/
 ! demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
-! *##data-actirise="true"]
+! *##[data-actirise="true"]
 *##div[data-hbdbrk-parent="true"]
-demotivateur.fr##div[data-actirise-slot]
+*##div[data-actirise-slot]
 ! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
 @@||ezoic.net$third-party,important
