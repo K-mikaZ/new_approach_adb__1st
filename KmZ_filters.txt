@@ -147,6 +147,7 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *##[class*="player" i] > li[data-link*="/player/online.htm"]
 ! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+*#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *#$#[class*="player" i]:has( > [src*="stream"][src*="vip.htm"]) { display: none !important; }
 *#$#[class*="player" i]:has( iframe[src*="fakeplayer"] ) { display: none !important; }
 *#$#[id~="lecteur"]:has( iframe[src*="video"][src*="streaming"][src*=".htm"] ) { display: none!important; }
@@ -3027,7 +3028,6 @@ rjno1.com#@#.adsbygoogle:upward(1)
 searchenginejournal.com##.avert-text
 searchenginejournal.com##.sss_slot
 searchenterprisedesktop.techtarget.com##.ad
-serie-streaming.io###videoplayer
 serie-streaming.io##[class^="btn_"][class$="_"]
 series-stream.*##[id|="fake-player"]
 series-stream.*#?##lecteur:if(#videoplay[src*="/streamer.php?p=2"])
@@ -3042,7 +3042,6 @@ streamdeouf.*##[class="movie-xpb"]
 streamdeouf.*##[class="an-xpb"]
 streamfilms.co##.an-adn
 streaming1.co##.dow
-streaming1.co#$##videoplay[src*="videostreaming.html"] { display: none !important; visibility: hidden !important; }
 streamingfrance.com##iframe:nth-of-type(3)
 streamingfrance.com#@#[class*="btn"][class*="mr-"][href]
 teamos-hkrg.com##[class^="AdskeeperC"]
