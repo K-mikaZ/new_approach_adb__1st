@@ -3545,6 +3545,18 @@ themoneytizer$important,script,redirect=noopjs
 ||popmonetizer.net^$important,subdocument,redirect=noopframe
 
 
+||go-mpulse.net^$third-party
+/mpulse.$script,~third-party,redirect=noop.js
+||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
+||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noop.txt,important
+!+ NOT_PLATFORM(ext_ublock)
+/mpulse.$script,~third-party,redirect=noopjs
+!+ NOT_PLATFORM(ext_ublock)
+||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
+!+ NOT_PLATFORM(ext_ublock)
+||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
+
+
 
 ! ====== PREBID ======
 
