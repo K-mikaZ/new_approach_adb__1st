@@ -3179,7 +3179,6 @@ streamingvf.fun##[id^=ads_]
 ! COLOR iframe fix
 uqload.com#$#body { color: whitesmoke; }
 vidoza.net#$#body { color: whitesmoke!important; }
-uptostream.com#$#body ~ :not( [class~="file-title"] ) { color: whitesmoke; }
 ! parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||viewsb.com^$subdocument
