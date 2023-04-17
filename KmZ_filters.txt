@@ -1038,6 +1038,11 @@ bloginfo.u.yuku.com##.ka-advertisement.ka-module
 blogs.mediapart.fr##.tiroir
 brefmail.com###template01_shadow
 bwp.download.cnet.com##.bwp
+cnet.com##div[data-campaign]
+cnet.com##div[data-ad-callout="Advertisement"][class~="blank"]
+cnet.com##.c-adSkyBox
+cnet.com##body .ad-slot
+cnet.com##.c-adDisplay_container
 causeur.fr###popin-newsletter-block
 cineiz.cc##.VF.full-quality
 cinemey.com##.X
