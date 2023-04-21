@@ -3559,17 +3559,10 @@ themoneytizer$important,script,redirect=noopjs
 
 ! ====== PREBID ======
 
-! /^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,important,match-case
 /^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
-! /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,script,third-party,important,match-case
 /^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
-! ||cdn.jsdelivr.net/gh/prebid/$xmlhttprequest,_,important
-! /\/prebid(-)?/$script
-! ||prebid.org^$badfilter
-! ||prebid.org^$third-party,badfilter
-! .prebid.$domain=~prebid.org,badfilter
-! /prebid$xmlhttprequest,domain=crunchyroll.com,important
+||mediasquare.fr/msq_prebid
 @@||cdn.viously.com/player/*/prebid.js
 
 
