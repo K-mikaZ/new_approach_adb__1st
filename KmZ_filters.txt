@@ -3342,7 +3342,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||bidswitch.net^
 ||www.datadoghq-browser-agent.com^$important
 ||track.hubspot.com^
-||wpc.nucdn.net^
 ||bpt.webedia-group.com^
 ||sc-static.net^
 ||getjad.io^
