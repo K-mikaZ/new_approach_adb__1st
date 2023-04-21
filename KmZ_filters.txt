@@ -3329,7 +3329,7 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||q.reyden-x.com^
 ||videosworks.com^
 ||serving.stat-rock.com^
-||criteo.*^
+||criteo.*^$third-party
 ||lumupu.xyz^
 ||plodqkexxg.com^
 ||mediego.com^
@@ -3561,7 +3561,6 @@ themoneytizer$important,script,redirect=noopjs
 
 /(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
 /(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party,important,match-case
-||bidder.criteo.com^
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||mediasquare.fr/msq_prebid
