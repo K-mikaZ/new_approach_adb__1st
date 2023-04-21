@@ -3559,8 +3559,9 @@ themoneytizer$important,script,redirect=noopjs
 
 ! ====== PREBID ======
 
-/^(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
-/^(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
+/(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
+/(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
+||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||mediasquare.fr/msq_prebid
 @@||cdn.viously.com/player/*/prebid.js
