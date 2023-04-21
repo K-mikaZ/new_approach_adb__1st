@@ -3292,7 +3292,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 /prisma-tag/
 ||ct.pinterest.com^
 ||zeotap.com^
-||prismamedia.com^$~third-party
 ||sirdata.io^
 ||px-cloud.net^
 ||myvisualiq.net^
@@ -3463,7 +3462,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||doubleclick.net/pagead/html/*$subdocument,important,redirect-rule=noop.html
 ||googleads.g.doubleclick.net/pagead/*$subdocument,important,redirect=noop.html
 ||gfiypuneou.com^
-||prismamedia.com^$badfilter
 ||playnext.prismamediadigital.com^
 ||api-content.prismamedia.com^
 ||key-value.prismamedia.com^
@@ -3736,6 +3734,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 
 ! block too many sites and web players (e.g. animationdigitalnetwork.fr, 6play.fr)
 ! not only trackers, but somes utils (use for login to the site, ...)
+@@||consents.prismamedia.com^
 @@||googlesyndication.com^
 ||sddan.com$badfilter
 ||sddan.com$third-party,badfilter
