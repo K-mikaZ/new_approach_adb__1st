@@ -3564,6 +3564,7 @@ themoneytizer$important,script,redirect=noopjs
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||mediasquare.fr/msq_prebid
+@@||cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json
 @@||cdn.viously.com/player/*/prebid.js
 
 
