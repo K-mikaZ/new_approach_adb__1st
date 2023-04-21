@@ -3560,7 +3560,9 @@ themoneytizer$important,script,redirect=noopjs
 ! ====== PREBID ======
 
 /(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,important,match-case
-/(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
+! /(?:[\/])\bbid([\w-.]+|$)\b/$xmlhttprequest,third-party,important,match-case
+/(?:[\/])\b[Bb]id((-request$)|\/.+|$)\b/$xmlhttprequest,third-party,important,match-case
+||bidder.criteo.com^
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||mediasquare.fr/msq_prebid
@@ -3717,6 +3719,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
 ! ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important
+||bid.g.doubleclick.net/dbm/vast?dbm_c=*
+||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
 
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
