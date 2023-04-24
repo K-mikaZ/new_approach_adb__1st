@@ -310,7 +310,9 @@ deezer.com#%#(function() { var noopfn = function() {;}; var Fab = function() {};
 ! ... WINDOWS (cmd): $> netsh advfirewall firewall add rule name="YouTubeCacheTweak" description="Youtube Speed Fix" dir=in action=block remoteip=173.194.55.0/24,206.111.0.0/16 enable=yes
 ! ...         LINUX: $> sudo iptables -A INPUT -s 173.194.55.0/24 -j REJECT -m comment --comment "YouTubeCacheTweak: Youtube Speed Fix"
 !                    $> sudo iptables -A INPUT -s 206.111.0.0/16 -j REJECT -m comment --comment "YouTubeCacheTweak: Youtube Speed Fix"
-!                          - [You will need the iptables comment module to add comments to a rule](https://tinyurl.com/2kkqfdl3)
+!                - [You will need the iptables comment module to add comments to a rule](https://tinyurl.com/2kkqfdl3)
+!                - Depending on your distribution, you may need to load the 'ipt_comment' or 'xt_comment' modules into your running kernel first.
+!                  like: 'modprobe ipt_comment'
 ! Regex Numeric Range Generator: https://3widgets.com/
 ! 173.194.55.0 ~ 173.194.55.255
 /(173\.194\.5{2}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
