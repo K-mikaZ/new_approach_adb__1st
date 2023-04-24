@@ -946,7 +946,7 @@ mail.yahoo.com###rightrailad-LREC
 mail.yahoo.com##[data-test-id="pencil-ad"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
 mail.yahoo.com#$#a[href][target][data-ylk*="mail_plus_upsell"] { display: none!important; visibility: hidden!important; }
-mail.yahoo.com##[aria-labelledby*="-sticky-pencil-ad-"]
+mail.yahoo.com#$#[aria-labelledby*="-sticky-pencil-ad-"] { display: none!important; visibility: hidden!important; }
 ! https://www.reddit.com/r/uBlockOrigin/search/?q=Yahoo%20mail&restrict_sr=1&sr_nsfw=
 ! https://www.reddit.com/r/uBlockOrigin/comments/gsp9hf/how_to_hide_the_entire_yahoo_mail_classic_side_ad/#t1_fseo5s9
 ! mail.yahoo.com##[data-test-id|="-rail-ad"]
@@ -958,13 +958,10 @@ mail.yahoo.com##[data-test-id="comms-properties"]:style(display: flex !important
 mail.yahoo.com##[data-test-id="comms-properties"]>* , [data-test-id="icon-btn-settings"]:style(margin: 14px 0 0 0 !important;)
 mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !important; padding-top: 70px !important;)
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
-! mail.yahoo.com##[data-test-id="right-rail-ad"]
-! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:nth-ancestor(1)
-! mail.yahoo.com#@#[data-test-id="right-rail-ad"]:upward(1)
-! mail.yahoo.com#?#div:has(> [data-test-id|="-rail-ad"]:first-of-type )
-! ||mail.yahoo.com/d/gemini_api/?adCount*&contentType=video*$domain=mail.yahoo.com,important
-! ||mail.yahoo.com/d/gemini_api/?adCount*$domain=mail.yahoo.com,important
-! @@?adcount=$xmlhttprequest,domain=mail.yahoo.com
+! ||mail.yahoo.com/*/gemini_api/?*&contentType=video*&locale=*
+! ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail*&locale=*
+/(\w+)\_api/(\w+)?\?.+\&locale\=.+/$domain=mail.yahoo.com
+||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
 1337x.to##+js(addEventListener-defuser, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
@@ -3175,8 +3172,6 @@ streamingvf.fun##[id^=ads_]
 @@||uloadcdn.com^$media
 @@||userload.co^$subdocument
 ||qiota.com^
-||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail
-||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
 ||ads.stickyadstv.com^$important,domain=tf1.fr
