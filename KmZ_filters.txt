@@ -962,7 +962,7 @@ mail.yahoo.com##[data-test-id="comms-properties-bar"]:style(height: unset !impor
 mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisement"]
 ! ||mail.yahoo.com/*/gemini_api/?*&contentType=video*&locale=*
 ! ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail*&locale=*
-/(\w+)\_api/(\w+)?\?.+\&locale\=.+/$domain=mail.yahoo.com
+/\/\w\/\w+\_api\/(\w+)?\?.+\&locale\=.+/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
