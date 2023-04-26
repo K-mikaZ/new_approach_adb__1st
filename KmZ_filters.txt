@@ -2952,7 +2952,8 @@ cdnjs.com#@#[style*="position:"][style*=": -9999"]:not([style*="transform"]):not
 chatbox.botnation.ai#@#+js(set, Document.prototype.interestCohort, undefined)
 chefsimon.com##[class*="pt-1 pb-3"]
 collect?$removeparam,domain=doubleclick.net|google-analytics.com
-cpasmieux.*#$#[class$="-xyz"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }cpasmieux.tv##[id|="kino"] > noindex
+cpasmieux.*#$#[class$="-xyz"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+cpasmieux.tv##[id|="kino"] > noindex
 developer.mozilla.org#@#+js(set-constant, Document.prototype.interestCohort, undefined)
 digit.in##.add
 digit.in##.adsAdvert
