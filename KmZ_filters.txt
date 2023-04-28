@@ -2612,7 +2612,6 @@ radiotunes.com,di.fm##[class*="premium"]
 ! ||fwmrm.net^$xmlhttprequest,third-party,badfilter
 ||fwmrm.net^$popup,important
 ||fwmrm.net^$third-party
-||fwmrm.net$xmlhttprequest,third-party,redirect-rule=empty
 @@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
