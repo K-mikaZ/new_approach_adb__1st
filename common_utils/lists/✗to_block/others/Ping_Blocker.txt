@@ -39,5 +39,5 @@
 @@*^$script,ping,third-party,domain=marmiton.org
 @@||chatbox.botnation.ai/plugins/ping$domain=star.fr
 
-! ||logs*.xiti.com^$redirect-rule=noop.txt,important
-! ||mesure*.estat.com^$redirect-rule=noop.txt,important
+||logs*.xiti.com^$redirect-rule=noop.txt,important
+||mesure*.estat.com^$redirect-rule=noop.txt,important
