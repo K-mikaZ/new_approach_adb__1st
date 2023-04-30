@@ -856,7 +856,7 @@ rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 ! offer promo
 tf1.fr##a[rel*="sponsored"]
 ! tf1.fr##div[class^="Freemium" i]
-tf1.fr##a:where([class*="focus-visible:"][href*="/offre-max"])
+tf1.fr##a:where([href*="/offre-max"])
 prod-player.tf1.fr##ntrs-top-toolbar
 ! remove img header
 prod-player.tf1.fr##ntrs-edito-img
