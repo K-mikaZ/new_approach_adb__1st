@@ -3746,3 +3746,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||api.ipify.org^$badfilter
 ||api.ipify.org^$third-party,badfilter
 @@||api.ipify.org^$important
+||tealiumiq.com^$badfilter
+||tealiumiq.com^$third-party,badfilter
+@@||tealiumiq.com^$important
+
