@@ -3743,4 +3743,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||usabilla.com$badfilter
 ||usabilla.com$third-party,badfilter
 @@||usabilla.com^$important
-
+||api.ipify.org^$badfilter
+||api.ipify.org^$third-party,badfilter
+@@||api.ipify.org^$important
