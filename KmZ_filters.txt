@@ -1732,7 +1732,6 @@ stream-serie.net#$##option-1{height:100%}
 ||iotechnologies.com^$third-party
 ||byteoversea.com^$third-party
 ||facil-iti.com^$third-party
-||api.ipify.org^$third-party
 ||adlightning.com^$third-party
 ||yieldbird.com^$third-party
 ||zedo.com^$third-party
