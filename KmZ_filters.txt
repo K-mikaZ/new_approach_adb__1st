@@ -2649,7 +2649,6 @@ voirseries.*##+js(remove-attr, target|href|rel, #iWatch)
 voirseries.*###GoPlayer > i.insideIframe
 voirseries.*###CloseiWatch
 voirseries.*##.MailWrapper:nth-child(n+3)
-||adsafeprotected.com^$third-party,badfilter
 @@||accounts.youtube.com/accounts/CheckConnection$domain=accounts.google.com,csp
 upvid.biz##[class^="lk"]
 upvid.*##+js(window.open-defuser.js)
@@ -3247,7 +3246,6 @@ dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
-||adsafeprotected.com^$badfilter
 ||2mdn.net^$badfilter
 ||youtube.com/embed/$domain=lunchboards.com,important
 @@||pagead2.googlesyndication.com^$domain=arte.tv
@@ -3563,8 +3561,6 @@ themoneytizer$important,script,redirect=noopjs
 @@||cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json
 @@||cdn.viously.com/player/*/prebid.js
 
-! !+ NOT_PLATFORM(ext_ublock)
-! /(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,script,third-party,match-case,redirect-rule=prebid
 !+ NOT_PLATFORM(ext_ublock)
 prebid-ads$script,redirect=prebid-ads
 
