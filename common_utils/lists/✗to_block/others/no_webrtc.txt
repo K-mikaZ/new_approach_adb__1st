@@ -18,12 +18,13 @@
 ! BLOCKING
 ! -------
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
+!+ NOT_PLATFORM(adguard)
 *##+js(nowebrtc)
-||*$webrtc,redirect=empty
 ! adguard rule
-!#if (adguard)
+!+ NOT_PLATFORM(ext_ublock)
 |stun:*$redirect=empty
-!#endif
+
+||*$webrtc,redirect=empty
 
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
