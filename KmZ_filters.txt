@@ -2455,7 +2455,6 @@ streamingvf.casa##[href^="https://dereferer.co/"]
 ||presentlyarch.com^
 ||squeezedthoughtfully.com^
 ||tremblingkeyboardassistant.com^
-||bugsnag.com^
 ||radiancethedevice.com^
 ||auweelta.net^
 ||viatepigan.com^
