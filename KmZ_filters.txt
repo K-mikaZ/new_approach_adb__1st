@@ -604,7 +604,6 @@ di.fm##[class|="go-premium"]
 di.fm#@#[class*="premium"]
 di.fm##+js(set-constant, maxLoadTime, undefined)
 zenradio.com##[class|="remove-ads"]
-||messaging.deezer.com/websocket$websocket,important
 openwhyd.org##.error
 openwhyd.org##+js(abort-on-property-write, document.hasFocus, false)
 @@||cloudfront.net^$domain=openwhyd.org
@@ -688,7 +687,6 @@ vidoza.net##.asg-vjs-overlay
 vidoza.net##.asg-container
 vidoza.net##.asg-vast-overlay
 vidoza.net##.asg-label
-*.vidto*.*$websocket,important
 ||play.s01.vidtod.me^$all,important
 ||vidtodo.com/*/lightsout.js$script,important
 @@||*.vidtodo.com/*/*.mp4$media
@@ -2678,7 +2676,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||canaltp.fr$generichide
 ||arc.io/widget$third-party,badfilter
 ||tracker.arc.io^$badfilter
-@@||arc.io^$websocket
 @@||arc.io$generichide
 @@||vshare.eu$generichide
 @@||vidzstore.com$generichide
@@ -2686,7 +2683,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc"]
 ##a[onclick^="openAuc"]
 ##a[href^="mailto:support@netu.tv"]
@@ -2803,7 +2799,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@||uptostream.com^$xmlhttprequest,domain=uptostream.com
 @@||uptostream.com^$subdocument,media,third-party
 @@/(.+)\/cast\_([\w]+)\.js(.+)?/$script,third-party
-||*$websocket,_,~third-party,important,domain=deezer.com
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
@@ -2830,7 +2825,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
 ||*$media,domain=tf1.fr,badfilter
-||*$websocket,badfilter,domain=netflix.com
 ||*^$badfilter,csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$script,badfilter
@@ -2889,13 +2883,6 @@ www.tf1.fr##div[class^="App_bannerContainer_"]
 @@/cookieconsent.$script,~third-party
 @@/hit.xiti$image,domain=www.tf1.fr
 ! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
-@@||forum.qt.io/socket.io/*$websocket
-@@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
-@@||wss.analyticacdn.com^$websocket
-@@/ws{1,}[:]\/{2}/$domain=netflix.com
-@@||*$websocket,domain=discord.com
-@@||*$websocket,domain=geoip.redirect-ads.com
-@@||*$websocket,domain=www.speedtest.net
 @@||api.company-target.com^$xmlhttprequest,domain=degreed.com
 @@||canaltp.fr$cookie
 @@||canaltp.fr$removeparam
