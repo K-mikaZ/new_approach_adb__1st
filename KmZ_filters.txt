@@ -3140,7 +3140,7 @@ glodls.*,gtdb.*##a[href*="://bit.ly/"]
 /\[(2a01\:4f8\:)+([\w:]+)+([\w:+])+:+([\w]+)\]/$network
 !#endif
 @@||www.cmb.fr^$important,document
-@@||www.rjno1.com^$important,document
+@@||cpro.baidu.com/cpro/$domain=rjno1.com,important
 @@||facemorph.me^$important,document
 commentcamarche.net##.ads--insertor-avoid
 @@||sdk.privacy-center.org^
