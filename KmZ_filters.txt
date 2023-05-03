@@ -3302,7 +3302,6 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||confiant-integrations.global.ssl.fastly.net^$important
 ||heatmap.it^$important
 ||analytics.tiktok.com^$important
-||connect.facebook.net/en_US/fbevents.js$important
 ||speedcurve.com^$important
 ||digidip.net^$important
 ||videosprofitnetwork.com^$redirect=empty
