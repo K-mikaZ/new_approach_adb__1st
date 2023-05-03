@@ -11,7 +11,7 @@
 ! /^ws{1,2}(([\:][\/]{2})+)/
 ! /^wss?(([\:][\/]{2})+)/
 ! more generic
-||*^$websocket
+! ||*^$websocket
 
 
 ! somes allowing (if you want)
@@ -53,7 +53,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@||*^$websocket,domain=www.speedtest.net
 
 ! [FIX] dailymotion
-@@*^$websocket,domain=geo.dailymotion.com
+@@||*^$websocket,domain=geo.dailymotion.com
 
 ||*^$websocket,badfilter,domain=netflix.com
 @@/ws{1,}[:]\/{2}/$domain=netflix.com
@@ -62,13 +62,12 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
 @@||wss.analyticacdn.com^$websocket
 @@||*^$websocket,domain=geoip.redirect-ads.com
-||messaging.deezer.com/websocket$websocket,important
 
 ! ensure blocking
 ! -------------------------------------
 
 /ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
-wss://net-announce*^$websocket,important
+wss://net-announce*^$websocket,
 ||clearadnetwork.com^$websocket,important
 ||*.hostcontent.live^$websocket,important
 ||*.space:*^$websocket,important
@@ -76,5 +75,6 @@ wss://net-announce*^$websocket,important
 ||alugha.com/graphql$websocket,important
 ||socket.tidio.co^$websocket,important
 ||*.private-api.com^$websocket,important
-||*.idocdn.com^$websocket,important
-||*^$websocket,_,~third-party,important,domain=deezer.com
+||*.idocdn.com^$websocket,importantimportant
+!! ||messaging.deezer.com/websocket$websocket,important
+||*^$websocket,~third-party,important,domain=deezer.com
