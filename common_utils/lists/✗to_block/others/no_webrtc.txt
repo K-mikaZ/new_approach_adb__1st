@@ -15,16 +15,15 @@
 ! souvent utilisé par imasdk.googleapis.com/js/core/bridge
 ! see "network request log / journal des requêtes réseau" < https://animedigitalnetwork.fr/video/bleach/5532-episode-1-episode-1 >
 
-! BLOCKING
-! -------
-! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
-!+ NOT_PLATFORM(adguard)
+!! BLOCKING
+!! -------
+!! ||*$webrtc
+!! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
 *##+js(nowebrtc)
-! adguard rule
+!! adguard rule
 !+ NOT_PLATFORM(ext_ublock)
 |stun:*
 
-! ||*$webrtc
 
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
