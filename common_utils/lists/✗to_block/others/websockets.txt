@@ -67,7 +67,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! -------------------------------------
 
 /ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
-wss://net-announce*^$websocket,
+wss://net-announce*^$websocket,important
 ||clearadnetwork.com^$websocket,important
 ||*.hostcontent.live^$websocket,important
 ||*.space:*^$websocket,important
