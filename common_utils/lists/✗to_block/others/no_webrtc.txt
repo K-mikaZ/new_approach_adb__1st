@@ -22,9 +22,9 @@
 *##+js(nowebrtc)
 ! adguard rule
 !+ NOT_PLATFORM(ext_ublock)
-|stun:*$redirect=empty
+|stun:*
 
-||*$webrtc,redirect-rule=empty
+! ||*$webrtc
 
 ! WHITELISTING
 ! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
