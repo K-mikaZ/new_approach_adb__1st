@@ -13,6 +13,8 @@
 
 ||*^$ping
 
+||pixels.afcdn.com^$important
+
 ! [FIX] memory consumption too high
 @@/player-events/log/partial$ping,domain=vimeo.com
 ! because "AdGuard Tracking Protection filter"
