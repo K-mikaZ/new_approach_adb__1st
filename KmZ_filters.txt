@@ -654,7 +654,6 @@ mstream.*##+js(abort-on-property-read, open)
 mystream.to##+js(abort-on-property-read, open)
 mystream.to##+js(window.open-defuser)
 streamtape.net##+js(window.open-defuser)
-fwmrm.net##+js(window.open-defuser)
 |https://$script,third-party,domain=upstream.to,badfilter
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
@@ -2605,6 +2604,7 @@ radiotunes.com,di.fm##[class*="premium"]
 ! ||fwmrm.net^$image,third-party,badfilter
 ! @@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
 ! ||fwmrm.net^$xmlhttprequest,third-party,badfilter
+fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
 ||fwmrm.net^$third-party
 @@||tf1.fr$generichide
