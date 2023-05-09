@@ -119,6 +119,7 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 ! -------------------- Fake button watching ---------------------
 ! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 *#$#:where(div > a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
+*#$#:where(center > a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 ! *#$#div:has(> a:is( [class*="mButton"], [class*="myButton"] ):is( [href$=".php"], [href*=".php"], [target], [rel^="no"] )) { display: none!important; visibility: hidden!important; }
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ) { display: none!important; visibility: hidden!important; }
@@ -595,7 +596,7 @@ twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> d
 twitter.com##a[href^="/i/events"]
 ! deezer.com##.conversion-banner
 ! deezer.com#$#.page-alerts { display: none !important }
-deezer.com#$?#[id*="modal"],[class|="modal"],.page-alerts,.conversion-banner{ display: none!important; }
+! deezer.com#$?#[id*="modal"],[class|="modal"],.page-alerts,.conversion-banner{ display: none!important; }
 /cdn\.audioaddict\.com\/(.*)\/assets\/branch\-[0-9a-z]{20,}\.js/
 di.fm##[id|="sponsor"]
 di.fm##[class*="upsell"]
@@ -873,8 +874,8 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr
 @@||pc.middleware.6play.fr^$xmlhttprequest,domain=6play.fr
 @@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
-||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
-||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
+! ||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
+! ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 ||*$third-party,xmlhttprequest,script,domain=oxtorrent.*
@@ -925,6 +926,8 @@ multiup.*##[class*="alert-info"]
 multiup.*##.mfp-ready.mfp-auto-cursor.mfp-wrap
 multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||multiup.*/welcome-message
+||vk.com$third-party,badfilter
+@@||vk.com^$subdocument
 ||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com,badfilter
 /darla/*/sfext-min.js$script,domain=s.yimg.com,important
 ||udc.yahoo.com^$xmlhttprequest,domain=mail.yahoo.com
@@ -2566,6 +2569,8 @@ korben.info##.entry-content [class*="hentry"]
 ||jetload.net/count
 jetload.net##.vjs-poster
 vizplay.*##+js(window.open-defuser)
+@@||vudeo.io^$subdocument,third-party,important
+@@||vudeo.co^
 vudeo.*##+js(window.open-defuser)
 vudeo.*#@#+js(abort-current-inline-script, document.createElement, "delete window")
 wow-films.*##+js(window.open-defuser)
