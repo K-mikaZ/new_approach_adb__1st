@@ -10,6 +10,7 @@
 ! < https://www.webrtcworld.com/topics/from-the-experts/articles/332745-where-we-place-ads-webrtc.htm >
 ! < https://webrtc.ventures/2015/09/what-does-webrtc-mean-for-advertising-and-customer-service/ >
 ! < https://www.geoedge.com/webrtc-is-the-newest-trickiest-front-in-the-fight-against-redirects/ >
+! < https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Protocols >
 
 ! often used by imasdk.googleapis.com/js/core/bridge
 ! souvent utilisé par imasdk.googleapis.com/js/core/bridge
