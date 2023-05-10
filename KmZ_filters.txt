@@ -142,6 +142,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 
 
 ! -------------------- Fake watching player ---------------------
+! *##:where([data-url="/video-vip.html"])
+*##:where([data-url*="vip.htm"])
 *#$#[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > [data-url*="vip.htm"] ) { display: none!important; }
 *#$#li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 ! hdss.show
@@ -189,7 +191,12 @@ linternaute.*##div[id^="Crt-"]
 wikipedia.org##[class^="frb"]
 toptechpal.com##div.main-container.blocker-enabled-check.popup:first-child > div.blocker-overlay
 toptechpal.com##.blocker-notice
-
+bettybossi.ch##.ad-bc.used
+! cine974.com##:where(div):is([class~="msgPromo"],[class~="cine-div-opti"])
+cine974.com##div:where([class~="msgPromo"],[class~="cine-div-opti"])
+! cuisinez.telequebec.tv
+*##div:where([data-component="Pub"])
+*##div:where([class*="outbrain"])
 
 
 ! -------------------- generic ---------------------
@@ -1842,6 +1849,33 @@ stream-serie.net#$##option-1{height:100%}
 ||stats-irl.sxp.smartclip.net^
 ||tv-static.scdn.co^
 ||tv.deezer.com^
+||multipulter.com^$important
+||prd.jwpltx.com^$important
+||adsmediabox.com^$important
+||ae.dmxleo.com^$important
+||pixels.afcdn.com^$important
+||insight.adsrvr.org^$important
+||0i0i0i0.com^$important
+||braze.com^$third-party
+||events.newsroom.bi^
+||hsadspixel.net^
+||hs-analytics.net^
+||analytics.pop2watch.com^
+||emlytics.me^
+||clarity.ms^
+||insight.adsrvr.org^
+||cdn.scarabresearch.com^
+||kvmkcdjgo.xyz^
+||freighthealaudience.com^
+||replacementreluctance.com^
+||alleviatepracticableaddicted.com^
+||uqtsfstsubept.com^
+||silagecircaea.com^
+||okdvkidls.xyz^
+||shoooot.us^
+||ovibospeseta.com^
+||swefbxikfhshx.xyz^
+||txdcwpavwlsqo.com^
 /js/adv/*$badfilter
 */js/adv/*$script,important,redirect-rule=nofab.js
 @@/fuckadblock.$script,~third-party,badfilter
@@ -3152,7 +3186,8 @@ commentcamarche.net##.ads--insertor-avoid
 skdesu.com##.code-block
 /vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
 streamingvf.fun##[id^=ads_]
-||*.tf1.fr/*youbora*$script,redirect=noopjs
+! ||*.tf1.fr/*youbora*$script,redirect=noopjs
+@@||*.tf1.fr/*youbora*$script
 ! tf1.fr##[class^="MaxBanner_container_"]
 ! tf1.fr#$#[class^="App_bannerContainer"],[class^="MaxBanner_container_"] { display: none!important; visibility: hidden!important; }
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
@@ -3164,6 +3199,7 @@ streamingvf.fun##[id^=ads_]
 ||qiota.com^
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
+||cdn.jsdelivr.net*@sentry/*.js$important
 ||ads.stickyadstv.com^$important,domain=tf1.fr
 ||trafficjunky.com/invocation/popunder$redirect=popads-dummy
 ! ||mediarithmics.com^$domain=tf1.fr
