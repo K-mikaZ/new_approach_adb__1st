@@ -11,6 +11,15 @@
 ! Verify if ping requests (but also beacon api && csp report) are currently sent by your browser with Ping Spotter.
 ! < https://armin.dev/apps/ping-spotter >
 
+
+! //🎉 for browser supports sendBeacon, Block analytics data send
+! if('sendBeacon' in navigator){ navigator.sendBeacon=function(url, data){ return true } };
+! https://www.jsdelivr.com/package/npm/navigator.sendbeacon
+#%#var AG_pingBlocker=function pingBlocker(){ if('sendBeacon' in navigator){ navigator.sendBeacon=function(url, data){ return true } } }
+!+ NOT_PLATFORM(ext_ublock)
+*#%#AG_pingBlocker()
+
+
 ||*^$ping
 
 ||pixels.afcdn.com^$important
