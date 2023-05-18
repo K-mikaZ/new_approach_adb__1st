@@ -43,9 +43,9 @@
 !! *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 !! *#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
 *#$#:where(div[class|="adsvp"][class*="wrapper"]):last-of-type { display: none!important; visibility: hidden!important; }
-! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-*#$#div[class^="salidor_"] { display: none!important; visibility: hidden!important; }
-! *##div[class^="tolro_"]
+!! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
+*#$#div:where([class^="salidor_"]:last-of-type) :where( [class^="salidor_"]:first-of-type ) { display: none!important; visibility: hidden!important; }
+!! *##div[class^="tolro_"]
 *#$#div[class^="tolro_"] { display: none!important; visibility: hidden!important; }
 *##div[class^="masha_"]
 ! ------------------------
