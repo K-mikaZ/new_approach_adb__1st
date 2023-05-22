@@ -3661,7 +3661,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 ||spotscenered.info$xmlhttprequest,redirect-rule=noopvast-2.0
 ||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xmlhttprequest,redirect-rule=noopvast-2.0
 ||tpc.googlesyndication.com/ima3vpaid$xmlhttprequest,redirect-rule=noopvast-2.0
-||svastx.moatads.com$xmlhttprequest,redirect-rule=noopvast-2.0
+!! ||svastx.moatads.com$xmlhttprequest,redirect-rule=noopvast-2.0
 ||videoadex.com/unvrsltag$xmlhttprequest,redirect-rule=noopvast-2.0
 ||/vast/*_vast=2$xmlhttprequest,redirect-rule=noopvast-2.0
 /(.*)\&output\=xml\_vast[3+](.*)?/$xmlhttprequest,redirect-rule=noopvast-3.0
