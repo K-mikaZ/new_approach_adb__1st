@@ -3356,7 +3356,7 @@ toonanime.*#$##adslot { min-height: 15px !important; }
 ||mediego.com^
 ||btloader.com^
 ||tk.prismashop.fr^
-||stickyadstv.com^$important
+||stickyadstv.com^$~image,important
 ||mathads.com^
 ||ovibospeseta.com^
 ||wiglessernes.com^
@@ -3629,6 +3629,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
 @@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
+||vast.adsafeprotected.com^$important
 ||adsafeprotected.com/vast/*skeleton.js$xmlhttprequest,redirect-rule=noopvast-2.0
 ||tremorhub.com/*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ||getpublica.com/*&format=vast*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
