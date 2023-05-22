@@ -781,7 +781,7 @@ animationdigitalnetwork.fr##.adn-right>.adn-full-block-center.adn-transparent-bl
 animationdigitalnetwork.fr##.adn-playlist-right>.adn-full-block-center.adn-transparent-block
 animationdigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-transparent-block
 /animationdigitalnetwork\.(.{2,})\/media\/analytics\/event\.min\.js/$script,important
-/classes/masha/masha.js
+!! /classes/masha/masha.js
 4kstreamz.*##.register
 4kstreamz.*##.keywords
 4kstreamz.*##.DESCPP
