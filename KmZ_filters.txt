@@ -2647,6 +2647,9 @@ radiotunes.com,di.fm##[class*="premium"]
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
 ||fwmrm.net^$third-party
+||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
+!+ NOT_PLATFORM(ext_ublock)
+||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
 @@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
@@ -2658,7 +2661,7 @@ open.spotify.com#@#+js(nowebrtc)
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
 /uptostream\.(.{3})\/as{2}ets\//$subdocument
 /crunchyroll\.(.{3})\/(.*\/)?track(er|ing)/
-/(.*)\.6(cloud|play)\.(.{2})\/(.*)\/bw[.-]+(.*)/
+!! /(.*)\.6(cloud|play)\.(.{2})\/(.*)\/bw[.-]+(.*)/
 younetu.*#@#+js(nowebrtc)
 @@||hostingcloud.racing^$domain=pourcesoir.in
 fcine.tv#@#[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
