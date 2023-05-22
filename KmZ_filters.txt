@@ -2638,18 +2638,15 @@ radiotunes.com,di.fm##[class*="premium"]
 ||facil-iti.com^$important
 ||dev.appboy.com^
 ||woawouru.net^
-! ||fwmrm.net^$~object,third-party,badfilter
-! @@||v.fwmrm.net/ad/g/1$domain=6play.fr,badfilter
-! ||fwmrm.net/ad/*$domain=crunchyroll.com
-! ||fwmrm.net^$image,third-party,badfilter
-! @@||v.fwmrm.net/ad/g/*_html5_live$script,domain=6play.fr,badfilter
-! ||fwmrm.net^$xmlhttprequest,third-party,badfilter
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
 ||fwmrm.net^$third-party
 ||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
 !+ NOT_PLATFORM(ext_ublock)
 ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
+||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
+!+ NOT_PLATFORM(ext_ublock)
+||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noopjson,important
 @@||tf1.fr$generichide
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
 ||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
