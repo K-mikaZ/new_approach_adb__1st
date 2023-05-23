@@ -3592,8 +3592,9 @@ prebid-ads$script,redirect=prebid-ads
 ! ======= VMAP =======
 
 ||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noopvmap-1.0
+!! ||dmxleo.dailymotion.com/cdn/manifest/video/*$xmlhttprequest,redirect=noopvmap-1.0,important
+||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noopvmap-1.0
-||dmxleo.dailymotion.com/cdn/manifest/video/*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noopvmap-1.0
 ||*vmap*$xmlhttprequest,redirect-rule=noopvmap-1.0
 ||/*vmap$xmlhttprequest,redirect-rule=noopvmap-1.0
