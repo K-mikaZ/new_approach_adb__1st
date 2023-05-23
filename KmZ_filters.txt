@@ -1185,8 +1185,6 @@ msn.com##.euBanner
 music.torchbrowser.com##.currentTrackInfo__trackShare
 news.google.fr##.gb_lb.gb_ob.gb_za
 numerama.com###general_subpub,#newssuiv,.module_guide,.module_remixjob
-official-film-illimite.*,official-serie-illimite.*##.ads_728
-official-film-illimite.co###cookiedata
 onvid.host##.video_batman
 onvid.icu###rkm,body div:nth-of-type(6),body div:nth-of-type(7)
 oomoviz.com##.download.get
