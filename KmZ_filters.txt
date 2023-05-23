@@ -3184,7 +3184,6 @@ commentcamarche.net##.ads--insertor-avoid
 @@||sdk.privacy-center.org^
 #@#:xpath(//div[.//div[contains(@tabindex,"-1") and contains(@aria-modal,"true")]])
 skdesu.com##.code-block
-/vmap?$xmlhttprequest,_,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
 streamingvf.fun##[id^=ads_]
 ! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
@@ -3595,6 +3594,7 @@ prebid-ads$script,redirect=prebid-ads
 !! ||dmxleo.dailymotion.com/cdn/manifest/video/*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noopvmap-1.0
+/vmap?$xmlhttprequest,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
 ||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noopvmap-1.0
 ||*vmap*$xmlhttprequest,redirect-rule=noopvmap-1.0
 ||/*vmap$xmlhttprequest,redirect-rule=noopvmap-1.0
