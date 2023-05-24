@@ -3559,13 +3559,11 @@ themoneytizer$important,script,redirect=noopjs
 /mpulse.$script,~third-party,redirect=noop.js
 ||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noop.txt,important
-!+ NOT_PLATFORM(ext_ublock)
+!#if adguard
 /mpulse.$script,~third-party,redirect=noopjs
-!+ NOT_PLATFORM(ext_ublock)
 ||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
-!+ NOT_PLATFORM(ext_ublock)
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
-
+!#endif
 
 ! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
