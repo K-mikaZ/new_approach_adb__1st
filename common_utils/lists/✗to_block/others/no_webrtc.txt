@@ -26,7 +26,8 @@
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_stun
 !! e.g: global.stun.twilio.com, stun2.l.google.com, stun.l.google.com, stun:stun.voip.blackberry.com, etc...
 !! /(?:(((?:.+)?stun\d?\.)).+)/$important
-!+ NOT_PLATFORM(ext_ublock)
+!! !+ NOT_PLATFORM(ext_ublock)
+!+ PLATFORM(adguard)
 |stun:*
 
 
