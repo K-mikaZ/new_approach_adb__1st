@@ -1360,7 +1360,6 @@ stream-serie.net#$##option-1{height:100%}
 ||*/cdn-cgi/apps/head/*$script,~third-party,important
 ||*/cdn-cgi/trace|$xmlhttprequest,~third-party
 /^https?:\/\/[^\s]+\/1clkn\/\d{4,5}$/$script,third-party,match-case,important
-/^https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xmlhttprequest,third-party,match-case,important
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,third-party,important
 |http*://*.cafe/*.js^$script,third-party,important
@@ -3563,6 +3562,15 @@ themoneytizer$important,script,redirect=noopjs
 ||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
 !#endif
+
+/(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
+/(?:.+)\/[0-9a-f]{32}\/invoke\.js$/$script,third-party,important,match-case
+/^https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xmlhttprequest,third-party,match-case,important
+/^https?:\/\/[^\s]+\/[45](0[01])?\/\d{7}$/$third-party,important,script,match-case
+/^https?:\/\/[^\s]+\/[a-zA-Z0-9]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
+/^https?:\/\/[^\s]+\.com\/([a-z0-9]{2}\/){3}[0-9a-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party,match-case
+/^https?:\/\/www\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$third-party,important,script,match-case
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
