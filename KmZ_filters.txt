@@ -3588,7 +3588,6 @@ prebid-ads$script,redirect=prebid-ads
 ! ======= VMAP =======
 
 ||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noopvmap-1.0
-!! ||dmxleo.dailymotion.com/cdn/manifest/video/*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noopvmap-1.0,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noopvmap-1.0
 /vmap?$xmlhttprequest,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
@@ -3598,6 +3597,7 @@ prebid-ads$script,redirect=prebid-ads
 /vmap*.xml$xmlhttprequest,redirect=noopvmap-1.0
 ||videosprofitnetwork.com/watch.xml?$redirect=noopvmap-1.0
 output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
+||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noopvmap-1.0,domain=canalplus.com,important
 
 
 ! ======= VAST =======
