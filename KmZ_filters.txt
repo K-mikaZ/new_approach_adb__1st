@@ -3283,8 +3283,8 @@ geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\
 ||commandersact.com^$badfilter
 toonanime.*#$##adslot { min-height: 15px !important; }
 @@|http*:*/ima3.js|$script,xmlhttprequest,badfilter
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima3
-/googima.js$script,important,redirect=google-ima3
+!! ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima3
+!! /googima.js$script,important,redirect=google-ima3
 @@||freeplayervideo.com^$subdocument,websocket
 @@||telyn610zoanthropy.com^$subdocument,image,script
 @@||voe.sx^$subdocument
