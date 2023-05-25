@@ -1856,7 +1856,6 @@ stream-serie.net#$##option-1{height:100%}
 ||insight.adsrvr.org^$important
 ||0i0i0i0.com^$important
 ||braze.com^$third-party
-||events.newsroom.bi^
 ||hsadspixel.net^
 ||hs-analytics.net^
 ||analytics.pop2watch.com^
