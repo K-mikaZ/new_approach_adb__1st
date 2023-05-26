@@ -767,6 +767,10 @@ allseries.*##.telecharger
 ! allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
 ! allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
+!! found on allocine.fr : push subscription
+||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
+!! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
+||storage.googleapis.com/fledge-tests/otToken.js
 ! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
 malekal.com##+js(set-constant, window.adsbygoogle, [])
 malekal.com##+js(abort-current-inline-script, adsbygoogle)
@@ -2511,7 +2515,8 @@ streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="in
 @@||cdnjs.cloudflare.com^$important
 torrent9.*,torrentx.*,torrenty.*##.btn.download:not([href*="magnet:"]):not([href*="javascript:"]):not([href*="torrent"])
 yggtorrent.*##a[href*="/go_vpn"]
-yggtorrent.*##a[href*="/donate"]
+yggtorrent.*##:where(a[href*="/donate"][rel])
+yggtorrent.*##:where([class~="promoblock"])
 yggtorrent.*##li:if(a[href*="://terraiptv.com/"])
 hds1.co,jetanimes.co##+js(disable-newtab-links.js)
 ||frenchstream.tube/Paramount.mp4$media,~third-party
