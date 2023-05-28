@@ -2623,6 +2623,9 @@ imsdb.pw##+js(window.open-defuser)
 firesticktricks.com##+js(window.open-defuser)
 player.universanimevf.com##+js(window.open-defuser)
 ddl-francais.com##+js(window.open-defuser)
+||*$xmlhttprequest,third-party,denyallow=animesultra.net|toonanime.xyz,domain=toonanime.*
+@@||toonanime.*$xmlhttprequest,media,subdocument
+@@||toonanime.*$generichide
 toonanime.*##+js(window.open-defuser.js)
 mixdrop.*##div[class*="-track-"][class*="display"]
 vodfilms.*#@#[href*="postlnk.com"]
