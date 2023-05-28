@@ -763,6 +763,10 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
+!#if adguard
+allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
+allocine.fr#%#AG_onLoad(function(){window.AC=window.AC||{}; window.AC.config=window.AC.config||{}; AC.config.ads={}; AC.config.player=AC.config.player||{}; AC.config.player.dfp={}; AC.config.player.mediametrie={}; AC.config.player.comscore={}; AC.config.player.gtm=AC.config.player.gtm||{}; AC.config.player.gtm.active=false; AC.config.flags=AC.config.flags||{}; AC.config.flags.brandHasStickyAds=false; AC.config.flags.brandHasDmVastFallback=false; AC.config.flags.brandHasGoIpAdserver=false; AC.config.flags.brandHasMqDfpFirstLevel=false; })
+!#endif
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ! allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
 ! allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
@@ -864,14 +868,21 @@ rakuten.tv##+js(set-constant, heartbeat, OK)
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
+!#if adguard
+tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired', 'false')
+tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.serverRequest', 'false')
+www.tf1.fr#%#AG_onLoad(function(){window.__TF1_CONFIG__=window.__TF1_CONFIG__||{}; window.__TF1_CONFIG__.adblock=window.__TF1_CONFIG__.adblock||{}; __TF1_CONFIG__.adblock.serverRequest=false; __TF1_CONFIG__.adblock.checkUrl=null; window.__TF1_CONFIG__.featureFlag=window.__TF1_CONFIG__.featureFlag||{}; window.__TF1_CONFIG__.featureFlag.contentAccess=window.__TF1_CONFIG__.featureFlag.contentAccess||{}; __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired=false; window.__TF1_CONFIG__.serviceWorker=window.__TF1_CONFIG__.serviceWorker||{}; __TF1_CONFIG__.serviceWorker.enabled=false; window.__TF1_CONFIG__.sentry=window.__TF1_CONFIG__.sentry||{}; __TF1_CONFIG__.sentry.enabled=false; window.__TF1_CONFIG__.thirdparty=window.__TF1_CONFIG__.thirdparty||{}; window.__TF1_CONFIG__.thirdparty.abtasty=window.__TF1_CONFIG__.thirdparty.abtasty||{}; __TF1_CONFIG__.thirdparty.abtasty.enabled=false; window.__TF1_CONFIG__.thirdparty.tagco=window.__TF1_CONFIG__.thirdparty.tagco||{}; __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled=false; })
+tf1info.fr#@%#//scriptlet('set-constant', '__NEXT_DATA__.runtimeConfig.playerTF1.ads.enable', 'false')
+tf1info.fr#@%#//scriptlet('set-constant', '__NEXT_DATA__.runtimeConfig.adBlock.enable', 'false')
+tf1info.fr#@%#//scriptlet('set-constant', '__NEXT_DATA__.runtimeConfig.adBlock.serverRequest', 'false')
+www.tf1info.fr#%#AG_onLoad(function(){window.__NEXT_DATA__=window.__NEXT_DATA__||{}; window.__NEXT_DATA__.runtimeConfig=window.__NEXT_DATA__.runtimeConfig||{}; window.__NEXT_DATA__.runtimeConfig.playerTF1=window.__NEXT_DATA__.runtimeConfig.playerTF1||{}; window.__NEXT_DATA__.runtimeConfig.adBlock=window.__NEXT_DATA__.runtimeConfig.adBlock||{}; __NEXT_DATA__.runtimeConfig.playerTF1.ads.enable=false; __NEXT_DATA__.runtimeConfig.playerTF1.ads.forceVisibility=false; __NEXT_DATA__.runtimeConfig.adBlock.serverRequest=false; __NEXT_DATA__.runtimeConfig.adBlock.serverUrl=null; __NEXT_DATA__.runtimeConfig.adBlock.enable=false; })
+!#endif
+||prod-player.tf1.fr/*/player/undefined$redirect=empty
 ! offer promo
-tf1.fr##a[rel*="sponsored"]
-! tf1.fr##div[class^="Freemium" i]
-tf1.fr##a:where([href*="/offre-max"])
-prod-player.tf1.fr##ntrs-top-toolbar
-! remove img header
-prod-player.tf1.fr##ntrs-edito-img
-! custom font-size (on fullscreen, coming-next...)
+www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"])
+prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
+!! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
 ||*$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^
@@ -1353,7 +1364,7 @@ stream-serie.net#$##option-1{height:100%}
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,redirect=fingerprint2.js
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
-/([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
+!! /([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
 /service-worker.js$script,~third-party
 ||nsaneforums.com/index.php?*serviceworker*
 @@/workbox-sw.js$script,domain=epicgames.com
@@ -2004,6 +2015,7 @@ voirseries.*#@#.adsBox
 @@||vidzstore.$ghide
 @@||netflix.com$ghide
 @@*$ghide,domain=femax20.com|fembed.com
+@@||fembed.*$subdocument
 ! @@||hqq.$inline-script
 ! @@||hqq.$ghide
 ! @@||netu.$inline-script
