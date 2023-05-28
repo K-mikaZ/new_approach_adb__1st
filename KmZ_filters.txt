@@ -3600,17 +3600,17 @@ prebid-ads$script,redirect=prebid-ads
 
 ! ======= VMAP =======
 
-||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noopvmap-1.0
-||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noopvmap-1.0,important
-||dailymotion.com/vast/video/*.xml?$important,redirect=noopvmap-1.0
-/vmap?$xmlhttprequest,redirect=noopvmap-1.0,important,domain=imasdk.googleapis.com
-||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noopvmap-1.0
-||*vmap*$xmlhttprequest,redirect-rule=noopvmap-1.0
-||/*vmap$xmlhttprequest,redirect-rule=noopvmap-1.0
-/vmap*.xml$xmlhttprequest,redirect=noopvmap-1.0
-||videosprofitnetwork.com/watch.xml?$redirect=noopvmap-1.0
-output=xml_vmap1$xmlhttprequest,important,redirect=noopvmap-1.0
-||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noopvmap-1.0,domain=canalplus.com,important
+||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noop-vmap1.0.xml
+||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
+||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
+/vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
+||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
+||*vmap*$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
+||/*vmap$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
+/vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml
+||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
+output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
+||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,domain=canalplus.com,important
 
 
 ! ======= VAST =======
