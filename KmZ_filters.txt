@@ -136,7 +136,7 @@ fcine.*##[class|="vip-server"]
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf, cpasmieux.* ...
 !! *#$#:is( [class~="streamer"], [class*="player" i] ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#:is( [class~="streamer"], [class*="player" i] ) li :where( :is( [class~=down], [class~="dow"], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [class~="streamer"], [class*="player" i] ) li :where( :is( [class~=down], [class~="dow"], [onclick*="window.open"], [onclick^="goDown"], [onclick^="getxfie()"] ) ) { display: none!important; visibility: hidden!important; }
 *#$#:is( [class~="streamer"], [class*="player" i] ):is( [class~="dow"], :has( > [data-url*="/video-streaming.html"] ), :has( > [data-url*="/telecharger/"] ), :has( > [class="download-server"] ) ) { display: none!important; visibility: hidden!important; }
 voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
 
