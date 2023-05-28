@@ -262,7 +262,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="OUTBRAIN"]
 !! *##[id^=AdThrive_]
 *##[class~="adthrive-ad"]
-*##[class~="adthrive-content"]
+!! *##[class~="adthrive-content"]
 *##[class^="AdsenseAd_"]
 ! ##[id="ads"]
 *##[id~="ads4"]
