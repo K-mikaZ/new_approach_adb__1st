@@ -228,10 +228,10 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 
 *##.ad-masthead
 *##[class|="sponsoredPrisma"]
-! *##[id^="google_ads_iframe_"]
+!! *##[id^="google_ads_iframe_"]
 *##[class^="van_vid_carousel"]
-! ##[data-ad-client*="-pub-"]
-! ##[data-ad-host*="-pub-"]
+!! *##[data-ad-client*="-pub-"]
+!! *##[data-ad-host*="-pub-"]
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
 *##[id~="pub"]
@@ -260,11 +260,12 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="ad-item"]
 *##[data-src*="outbrain.com"]
 *##[class~="OUTBRAIN"]
-!! *##[id^=AdThrive_]
+!! test on http://www.html5canvastutorials.com/
 *##[class~="adthrive-ad"]
 !! *##[class~="adthrive-content"]
+!! *##[id^=AdThrive_]
 *##[class^="AdsenseAd_"]
-! ##[id="ads"]
+!! *##[id="ads"]
 *##[id~="ads4"]
 *##[id*="themoneytizer"]
 *##[class*="themoneytizer"]
@@ -273,19 +274,19 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[class~="google-ads"]
 *##[class~="googleads"]
 *##[class~="afs_ads"]
-! ----[ ACTIRISE ADS ]-----------------------------------------------------------
-! https://www.actirise.com/
-! demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
-! *##[data-actirise="true"]
+!! ----[ ACTIRISE ADS ]-----------------------------------------------------------
+!! https://www.actirise.com/
+!! demotivateur.fr##div:where( [data-hbdbrk-parent], [data-actirise-slot] )
+!! *##[data-actirise="true"]
 *##div[data-hbdbrk-parent="true"]
 *##div[data-actirise-slot]
-! ----[ EZOIC ADS ]-----------------------------------------------------------
-! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
+!! ----[ EZOIC ADS ]-----------------------------------------------------------
+!! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
 @@||ezoic.net$third-party,important
 @@||ezoiccdn.com$third-party,important
 *#@#[data-ezsrcset]
-! *##[class~="ezasloaded"]
-! ezoic ads concerns
+!! *##[class~="ezasloaded"]
+!! ezoic ads concerns
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
 *##[id|="ez-video"]
