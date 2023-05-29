@@ -11,7 +11,7 @@
 !! Verify if ping requests (but also beacon api && csp report) are currently sent by your browser with Ping Spotter.
 !! Ping Block test:  < https://armin.dev/apps/ping-spotter >
 
-!! Ping Blocker addon:  < https://github.com/dessant/ping-blocker/tree/main >
+!! Ping Blocker addon (also blocks csp reports):  < https://github.com/dessant/ping-blocker/tree/main >
 
 !! read also:   < https://scotthelme.co.uk/combat-ad-injectors-with-csp/ >
 
