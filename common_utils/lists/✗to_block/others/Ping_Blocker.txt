@@ -15,9 +15,9 @@
 !! //🎉 for browser supports sendBeacon, Block analytics data send
 !! https://adguard.com/kb/general/ad-filtering/create-own-filters/#ping-modifier:~:text=attribute%20on%20links.-,Compatibility%20with%20different%20versions%20of%20AdGuard,-AdGuard%20for%20Windows
 !! https://www.jsdelivr.com/package/npm/navigator.sendbeacon
-!+ NOT_PLATFORM(ext_ublock)
-*#%#(function pingBlocker(){ if('sendBeacon' in navigator){ navigator.sendBeacon=function(url, data){ return true } } })();
-
+!#if adguard
+*#%#(function pingBlocker(){ if('sendBeacon' in navigator){ try { navigator.sendBeacon=function(url, data){ return true } } catch(e){} } })();
+!#endif
 
 ||*^$ping
 
