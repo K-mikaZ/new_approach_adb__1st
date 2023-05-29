@@ -36,8 +36,6 @@
 ! [FIX] some video loading time
 @@||viously.com^$ping
 
-!! [FIX] www.france.tv 
-!! @@||xiti.com^$ping
 
 ||ping.iamcdn.net^$badfilter
 @@||ping.iamcdn.net^
@@ -52,4 +50,5 @@
 @@*^$script,ping,third-party,domain=marmiton.org
 @@||chatbox.botnation.ai/plugins/ping$domain=star.fr
 
+||logs*.xiti.com^$redirect-rule=nooptext,important
 ||mesure*.estat.com^$redirect-rule=noop.txt,important
