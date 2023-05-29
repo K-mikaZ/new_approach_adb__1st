@@ -7,7 +7,7 @@
 ! Description: Rules for test.
 !
 !
-!#if !adguard
+!! !#if !adguard
 !! bad var
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 !! tf1.fr - fixing delay in the video player
@@ -31,7 +31,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! vast ads (ensure, in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
-!#endif
+!! !#endif
 
 !! !#if adguard
 !! bad var
