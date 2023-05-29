@@ -765,6 +765,7 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
+
 !#if ext_ublock
 !! tracking
 allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
@@ -779,7 +780,6 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! vast ads (ensure, in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !#endif
-!#if !ext_ublock
 !! tracking
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.dfp.baseUrl', '')
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.mediametrie.libUrl', '')
@@ -792,7 +792,7 @@ allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasStickyAds', '
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasMqDfpFirstLevel', 'false')
 !! vast ads (ensure, in case)
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasDmVastFallback', 'false')
-!#endif
+
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
@@ -912,8 +912,7 @@ tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 !#endif
-!#if !ext_ublock
-tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.checkUrl', '')
@@ -921,7 +920,6 @@ tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.enabled', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.url', '')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled', 'false')
-!#endif
 
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
