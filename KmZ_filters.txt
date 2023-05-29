@@ -779,7 +779,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! vast ads (ensure, in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !#endif
-!#if adguard
+!#if !ext_ublock
 !! tracking
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.dfp.baseUrl', '')
 allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.mediametrie.libUrl', '')
@@ -912,7 +912,7 @@ tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 !#endif
-!#if adguard
+!#if !ext_ublock
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
