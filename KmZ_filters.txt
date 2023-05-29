@@ -892,7 +892,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! offer promo
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"], div[class^="MaxBanner_container_"])
-tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
