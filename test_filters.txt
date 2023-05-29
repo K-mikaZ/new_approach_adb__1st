@@ -13,26 +13,27 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 
 !! tf1.fr - fixing delay in the video player
-!! tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
-!! tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, "")
+!! tf1.fr - tracking - prevent loading script
 tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, "")
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
 !! allocine.fr - fixing delay in the video player
-!! tracking - prevent loading script
+allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+!! allocine.fr - tracking - prevent loading script
 allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
 allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
 allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
 allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
-!! vast ads (ensure, in case)
+!! allocine.fr - vast ads (ensure, in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
-!! ads
+!! allocine.fr - ads
 allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+
+!! misc
 !! allocine.fr##+js(set-constant, AC.config.flags.brandHasGoIpAdserver, false)
-allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! allocine.fr##+js(set-constant, JadConfig.adsMapping, {})
 !! CUSTOMCONFIG = "set-ads-config"
-allocine.fr##+js(set-constant, _dmpesplayer.C.CUSTOMCONFIG, "")
+!! allocine.fr##+js(set-constant, _dmpesplayer.C.CUSTOMCONFIG, "")
