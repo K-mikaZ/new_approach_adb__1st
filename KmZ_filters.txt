@@ -52,7 +52,8 @@
 ! ------------------------
 #@#.ads-core-placer
 #@#.ad-placeholder
-*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"], [class*="AdPlaceholder"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!! uBlock filters – Ads
+*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! 750g.com
 *##.ads-pholder
 ! ------------------------
