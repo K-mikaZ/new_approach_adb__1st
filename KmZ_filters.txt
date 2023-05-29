@@ -765,23 +765,34 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
+!#if ext_ublock
 !! tracking
 allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
 allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
 allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
 allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
 !! ads
-!#if adguard
-allocine.fr##+js(set-constant, JadConfig.adsMapping, emptyObj)
-!#endif
-!#if !adguard
 allocine.fr##+js(set-constant, JadConfig.adsMapping, {})
-!#endif
 allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 !! allocine.fr##+js(set-constant, AC.config.flags.brandHasGoIpAdserver, false)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! vast ads (ensure, in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
+!#endif
+!#if adguard
+!! tracking
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.dfp.baseUrl', '')
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.mediametrie.libUrl', '')
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.comscore.clientId', '')
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.gtm.active', 'false')
+!! ads
+allocine.fr#%#//scriptlet('set-constant', 'JadConfig.adsMapping', 'emptyObj')
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasStickyAds', 'false')
+!! allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasGoIpAdserver', 'false')
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasMqDfpFirstLevel', 'false')
+!! vast ads (ensure, in case)
+allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasDmVastFallback', 'false')
+!#endif
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
@@ -892,7 +903,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! offer promo
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"], div[class^="MaxBanner_container_"])
-tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+!#if ext_ublock
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
@@ -900,6 +911,17 @@ tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+!#endif
+!#if adguard
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired', 'false')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.checkUrl', '')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.enabled', 'false')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.url', '')
+tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled', 'false')
+!#endif
 
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
