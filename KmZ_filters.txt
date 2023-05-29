@@ -903,15 +903,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! offer promo
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"], div[class^="MaxBanner_container_"])
-!#if ext_ublock
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
-tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
-!#endif
+
 tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired', 'false')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.sentry.enabled', 'false')
@@ -921,18 +913,18 @@ tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.enabled'
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.abtasty.url', '')
 tf1.fr#%#//scriptlet('set-constant', '__TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled', 'false')
 
+!! !#if ext_ublock
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
+tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+!! !#endif
+
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
-! Bonus n°1  —  Websites from the TF1 galaxy …
-! TODO: Change AG_defineProperty to scriptlet when this issue will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/65
-tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
-tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.pingURLWithImage, trueFunc)
-tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.pingURLWithScript, trueFunc)
-tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest, trueFunc)
-tf1.fr##+js(set-constant, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest, trueFunc)
-! Bonus n°2  —  Hides the bottom banner (self-promotion)
-!! www.tf1.fr##div[class^="MaxBanner_container_"]
-!! www.tf1.fr##div[class^="App_bannerContainer_"]
-! Bonus n°3  —  In order to be consistent
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 
