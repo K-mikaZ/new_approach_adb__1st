@@ -765,13 +765,24 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
-!! !#if adguard
-!! allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
-!! allocine.fr#%#AG_onLoad(function(){window.AC=window.AC||{}; window.AC.config=window.AC.config||{}; AC.config.ads={}; AC.config.player=AC.config.player||{}; AC.config.player.dfp={}; AC.config.player.mediametrie={}; AC.config.player.comscore={}; AC.config.player.gtm=AC.config.player.gtm||{}; AC.config.player.gtm.active=false; AC.config.flags=AC.config.flags||{}; AC.config.flags.brandHasStickyAds=false; AC.config.flags.brandHasDmVastFallback=false; AC.config.flags.brandHasGoIpAdserver=false; AC.config.flags.brandHasMqDfpFirstLevel=false; })
-!! !#endif
+!! tracking
+allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
+allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
+allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
+allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
+!! ads
+!#if adguard
+allocine.fr##+js(set-constant, JadConfig.adsMapping, emptyObj)
+!#endif
+!#if !adguard
+allocine.fr##+js(set-constant, JadConfig.adsMapping, {})
+!#endif
+allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+!! allocine.fr##+js(set-constant, AC.config.flags.brandHasGoIpAdserver, false)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+!! vast ads (ensure, in case)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-! allocine.fr##+js(set-constant, wadsBeforeStartAlreadyDone, true)
-! allocine.fr##+js(abort-on-property-read, wadsBeforeStart)
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
 ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
@@ -873,14 +884,23 @@ rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 ! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$redirect=empty
-! offer promo
-www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"])
 prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
 !! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
 !! ||*$media,domain=tf1.fr
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
 @@||mediainfo.tf1.fr^$domain=tf1.fr
+! offer promo
+www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"], div[class^="App_bannerContainer_"], div[class^="MaxBanner_container_"])
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.serverRequest, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.featureFlag.contentAccess.isAdblockCheckRequired, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
+tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ! Bonus n°1  —  Websites from the TF1 galaxy …
 ! TODO: Change AG_defineProperty to scriptlet when this issue will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/65
@@ -3266,8 +3286,6 @@ dood.*#$#body { color: whitesmoke!important; }
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-geo.dailymotion.com##+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 @@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
@@ -3601,7 +3619,8 @@ prebid-ads$script,redirect=prebid-ads
 
 ! ======= VMAP =======
 
-||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noop-vmap1.0.xml
+geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
+!! geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 ||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
 /vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
@@ -3612,6 +3631,7 @@ prebid-ads$script,redirect=prebid-ads
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
 output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,domain=canalplus.com,important
+||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 
 ! ======= VAST =======
