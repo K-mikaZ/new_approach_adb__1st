@@ -913,14 +913,15 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ||storage.googleapis.com/fledge-tests/otToken.js
 
 
-!! test on https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
+!! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
+!! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
 !! site:geo.dailymotion.com (embedded) - disable tracking
-geo.dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED, null)
-geo.dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
+dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED, null)
+dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
 !! site:geo.dailymotion.com (embedded) - disable ads
-geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
-geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
+dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
 !! site:geo.dailymotion.com (embedded) - misc
