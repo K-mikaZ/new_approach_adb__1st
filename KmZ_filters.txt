@@ -884,26 +884,27 @@ www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_containe
 !! bad var
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
-!! tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
+!! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
 tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, "")
-!! tf1.fr - prevent loading script '//try.abtasty.com/78cb84f9b3158bdce6932109a6d7c7c1.js'
+!! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, "")
-!! tf1.fr - disable tracking
+!! site:tf1.fr - disable tracking
 tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
-!! allocine.fr - fixing delay in the video player
+!! site:allocine.fr - fixing delay in the video player
 allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
-!! allocine.fr - tracking
+!! site:allocine.fr - tracking
 allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
 allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
-!! allocine.fr - tracking - prevent loading script
+!! site:allocine.fr - tracking - prevent loading script
 allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
 allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
-!! allocine.fr - vast ads (already sets, but ensure in case)
+!! site:allocine.fr - vast ads (already sets, but ensure in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
+
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
@@ -911,12 +912,20 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
 ||storage.googleapis.com/fledge-tests/otToken.js
 
+
+!! test on https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
+!! site:geo.dailymotion.com (embedded) - disable tracking
+geo.dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED, null)
 geo.dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+!! site:geo.dailymotion.com (embedded) - disable ads
 geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
 geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+!! site:geo.dailymotion.com (embedded) - misc
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
+!!geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
 
 ultimate-catch.eu##.header-ads
