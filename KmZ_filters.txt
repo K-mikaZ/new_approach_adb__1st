@@ -765,42 +765,7 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
-
-!! !#if ext_ublock
-!! tracking
-allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
-allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
-allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
-allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
-!! ads
-allocine.fr##+js(set-constant, JadConfig.adsMapping, {})
-allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
-!! allocine.fr##+js(set-constant, AC.config.flags.brandHasGoIpAdserver, false)
-allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
-!! vast ads (ensure, in case)
-allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
-!! !#endif
-
-!! tracking
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.dfp.baseUrl', '')
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.mediametrie.libUrl', '')
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.comscore.clientId', '')
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.player.gtm.active', 'false')
-!! ads
-allocine.fr#%#//scriptlet('set-constant', 'JadConfig.adsMapping', 'emptyObj')
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasStickyAds', 'false')
-!! allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasGoIpAdserver', 'false')
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasMqDfpFirstLevel', 'false')
-!! vast ads (ensure, in case)
-allocine.fr#%#//scriptlet('set-constant', 'AC.config.flags.brandHasDmVastFallback', 'false')
-
-/\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-||autopromo.allocine.fr^$important
-!! found on allocine.fr : push subscription
-||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
-!! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
-||storage.googleapis.com/fledge-tests/otToken.js
-! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
+!! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
 malekal.com##+js(set-constant, window.adsbygoogle, [])
 malekal.com##+js(abort-current-inline-script, adsbygoogle)
 malekal.com#@##adsense
@@ -893,7 +858,8 @@ rakuten.tv##+js(set-constant, heartbeat, OK)
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
-! ||*.tf1.fr/*youbora*$script,redirect=noopjs
+
+!! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$redirect=empty
 prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
@@ -902,6 +868,10 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 !! ||*$media,domain=tf1.fr
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
 @@||mediainfo.tf1.fr^$domain=tf1.fr
+! https://github.com/AdguardTeam/AdguardFilters/pull/102134
+||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,domain=tf1.fr
+
 www.tf1.fr##:where(div[class^="usabilla"])
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
 www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
@@ -917,10 +887,23 @@ tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
-
-! https://github.com/AdguardTeam/AdguardFilters/pull/102134
-||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
-||slpubmedias.tf1.fr^$media,domain=tf1.fr
+!! allocine.fr - fixing delay in the video player
+allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+!! allocine.fr - tracking
+allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
+allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+!! allocine.fr - tracking - prevent loading script
+allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
+allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
+!! allocine.fr - vast ads (already sets, but ensure in case)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
+/\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
+||autopromo.allocine.fr^$important
+!! found on allocine.fr : push subscription
+||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
+!! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
+||storage.googleapis.com/fledge-tests/otToken.js
 
 ultimate-catch.eu##.header-ads
 ultimate-catch.eu##[href*="play-asia.com"]
