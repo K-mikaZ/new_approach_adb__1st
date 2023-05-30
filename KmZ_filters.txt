@@ -913,7 +913,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ||storage.googleapis.com/fledge-tests/otToken.js
 
 
-!! url:www.dailymotion.com/video/* - disable tracking
+!! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2
 !! tracker:https://whotracks.me/trackers/hubvisor.io.html
 www.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
