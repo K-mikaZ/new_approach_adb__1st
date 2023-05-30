@@ -877,6 +877,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 
+
 www.tf1.fr##:where(div[class^="usabilla"])
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
 www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
@@ -909,6 +910,14 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
 !! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
 ||storage.googleapis.com/fledge-tests/otToken.js
+
+geo.dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
+geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
+geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+
 
 ultimate-catch.eu##.header-ads
 ultimate-catch.eu##[href*="play-asia.com"]
@@ -3240,7 +3249,6 @@ lxax.com##[class="hide"]
 ||zebestof.com^$important,third-party,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
-@@||googletagmanager.com^$domain=marmiton.org,important
 ||permutive.com^$third-party
 ||permutive.app^$important,third-party
 marmiton.org##[id^="pegasus_banner_atf"]
