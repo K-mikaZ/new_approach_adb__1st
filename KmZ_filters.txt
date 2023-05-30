@@ -914,8 +914,8 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 
 !! url:www.dailymotion.com/video/* - disable tracking
-!! tracker:https://whotracks.me/trackers/hubvisor.io.html
 !! test on: https://www.dailymotion.com/video/x5t6gh2
+!! tracker:https://whotracks.me/trackers/hubvisor.io.html
 www.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
 
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
