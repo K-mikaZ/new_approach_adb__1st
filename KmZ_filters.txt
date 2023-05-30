@@ -913,20 +913,37 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ||storage.googleapis.com/fledge-tests/otToken.js
 
 
+!! site:www.dailymotion.com - disable tracking
+!! tracker:https://whotracks.me/trackers/hubvisor.io.html
+!! test on: https://www.dailymotion.com/video/x5t6gh2
+www.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
 !! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
-!! site:geo.dailymotion.com (embedded) - disable tracking
+!! site:www.dailymotion.com|geo.dailymotion.com - disable tracking
 dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED, null)
 dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
-!! site:geo.dailymotion.com (embedded) - disable ads
+!! site:www.dailymotion.com|geo.dailymotion.com - disable ads
+!!      if (window.DMP_ENABLE_ADS) {
+!!        injectRessourceHint('https://dmxleo.dailymotion.com', {
+!!          rel: 'preconnect', crossorigin: 'use-credentials'
+!!        })
+!!        if (window.DMP_PRELOAD_IMA) {
+!!          injectRessourceHint('https://imasdk.googleapis.com/js/sdkloader/ima3.js', )
+!!        }
+!!      }
+!! dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
-dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+
+!! site:geo.dailymotion.com (embedded) - disable ads
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
+!! site:geo.dailymotion.com (embedded) - disable tracking
+geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
 !! site:geo.dailymotion.com (embedded) - misc
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !!geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
+
 
 
 ultimate-catch.eu##.header-ads
