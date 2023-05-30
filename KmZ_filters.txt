@@ -227,6 +227,11 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! exclude somes (github: [class~="d-none"])
 *#$#[class~="btn"][class*="mr-"][href]:is( :not( [class~="d-none"] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
+*##[class="ad-footer"]
+*##[class="ad-wrap"]
+*##[class~="aside-pub"]
+*##div[class^="site-pub-"]:is( [class*="top"], [class*="bottom"], [class*="interstitiel"] )
+
 *##.ad-masthead
 *##[class|="sponsoredPrisma"]
 !! *##[id^="google_ads_iframe_"]
@@ -988,6 +993,7 @@ mail.yahoo.com##.callout-default.left
 mail.yahoo.com##.rightRailAdContainer
 mail.yahoo.com###rightrailad-LREC
 mail.yahoo.com##[data-test-id="pencil-ad"]
+mail.yahoo.com##button[data-test-id="ad-reporter"]
 mail.yahoo.com#@#.I_ZnwrMC.p_R.o_v.D_F
 mail.yahoo.com#$#a[href][target][data-ylk*="mail_plus_upsell"] { display: none!important; visibility: hidden!important; }
 mail.yahoo.com#$#[aria-labelledby*="-sticky-pencil-ad-"] { display: none!important; visibility: hidden!important; }
