@@ -913,10 +913,11 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ||storage.googleapis.com/fledge-tests/otToken.js
 
 
+
 !! url:www.dailymotion.com/video/* - disable ads
-!! test on: https://www.dailymotion.com/video/x5t6gh2
+!! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tracker:https://whotracks.me/trackers/hubvisor.io.html
-www.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
 
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
 !! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
@@ -932,18 +933,20 @@ dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, null)
 !!          injectRessourceHint('https://imasdk.googleapis.com/js/sdkloader/ima3.js', )
 !!        }
 !!      }
-!! dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
 
 !! site:geo.dailymotion.com (embedded) - disable ads
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
-!! site:geo.dailymotion.com (embedded) - disable tracking
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
+dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
 !! site:geo.dailymotion.com (embedded) - misc
-geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
+dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !!geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
+!! bad
+!! site:geo.dailymotion.com (embedded) - disable tracking
+!! dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+!! try edit https://www.dailymotion.com/player/metadata/video/x8jk187?embedder=https%3A%2F%2Fwww.allocine.fr%2F&geo=1&player-id=x1hyz&locale=fr&dmV1st=875360a3-bf77-4099-bf80-a36cb65958f5&dmTs=410295&is_native_app=0
 
 !! site:geo.dailymotion.com (embedded) - disable ads
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
@@ -953,6 +956,7 @@ geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enab
 !! site:geo.dailymotion.com (embedded) - misc
 geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !!geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
+
 
 
 
