@@ -906,9 +906,9 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
-||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
+!! ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
 !! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
-||storage.googleapis.com/fledge-tests/otToken.js
+!! ||storage.googleapis.com/fledge-tests/otToken.js
 
 
 
