@@ -1534,6 +1534,7 @@ stream-serie.net#$##option-1{height:100%}
 @@encryptedsni.com/cdn-cgi/trace$xmlhttprequest,domain=cloudflare.com
 @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,~third-party
 /\/pixel\/pu(clc|rs(t)?)\?/
+||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
 ||perf.cdnads.com/perf.gif^$image
 ||3lift.com^$third-party
