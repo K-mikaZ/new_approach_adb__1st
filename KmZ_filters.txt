@@ -1613,7 +1613,7 @@ stream-serie.net#$##option-1{height:100%}
 ||opecloud.com^$third-party
 ||openx.net^$third-party
 ||orangeads.fr^$third-party
-||outbrain.com^
+||outbrain.com
 ||widgets.outbrain.com/outbrain.js$script,redirect=outbrain-widget.js:5,domain=~vice.com
 ||plista.com^$third-party
 ||programattik.com^$third-party
