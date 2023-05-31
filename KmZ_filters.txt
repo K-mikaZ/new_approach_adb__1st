@@ -2916,9 +2916,8 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@||uptostream.*$xmlhttprequest,domain=uptostream.*
 @@||uptostream.*$subdocument,media
 /uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
-/uptostream\.(.{2,})\/as{2}ets\/ads(\w)?\.xml/$important
-||*://uptostream.*/assets/coins.*
-||*://uptostream.*/assets/*.xml$redirect-rule=noopvast-3.0
+/uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$important,redirect=noopvast-3.0
+*://uptostream.*/assets/coins.*$important
 @@/(.+)\/cast\_([\w]+)\.js(.+)?/$script,third-party
 ! --------------
 !
