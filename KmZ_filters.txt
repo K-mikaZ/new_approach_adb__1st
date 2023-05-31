@@ -1166,16 +1166,16 @@ femmeactuelle.fr###bt-softwall
 !#if adguard
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
-femmeactuelle.fr,marmiton.org#?#div:is([data-ad$="_atf"])
-femmeactuelle.fr,marmiton.org#?#div:has(>[data-ad$="_atf"])
-femmeactuelle.fr,marmiton.org#?#div:has(>[data-ad="native_shopping"])
+marmiton.org#?#div:is([data-ad$="_atf"])
+marmiton.org#?#div:has(>[data-ad$="_atf"])
+marmiton.org#?#div:has(>[data-ad="native_shopping"])
+!! marmiton.org##[id^="pegasus_banner_atf"]
+!! marmiton.org##.unfyas, .pegasus_status_rendered
+!! marmiton.org##[data-ad-cls="true"]
 @@||fundingchoicesmessages.google.com^$domain=marmiton.org
 @@||googlesyndication.com^$domain=marmiton.org
 @@||adservice.google.*^$domain=marmiton.org,important
 @@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
-marmiton.org##[id^="pegasus_banner_atf"]
-marmiton.org##.unfyas, .pegasus_status_rendered
-marmiton.org##[data-ad-cls="true"]
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
