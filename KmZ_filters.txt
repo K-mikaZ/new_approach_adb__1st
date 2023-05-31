@@ -916,7 +916,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tool that can help: https://iframely.com/domains/dailymotion
 !! tracker:https://whotracks.me/trackers/hubvisor.io.html
-dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+!! dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
 
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
 !! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
