@@ -1163,9 +1163,19 @@ femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
 @@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
 @@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
-!#if (adguard)
+!#if adguard
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
+femmeactuelle.fr,marmiton.org#?#div:is([data-ad$="_atf"])
+femmeactuelle.fr,marmiton.org#?#div:has(>[data-ad$="_atf"])
+femmeactuelle.fr,marmiton.org#?#div:has(>[data-ad="native_shopping"])
+@@||fundingchoicesmessages.google.com^$domain=marmiton.org
+@@||googlesyndication.com^$domain=marmiton.org
+@@||adservice.google.*^$domain=marmiton.org,important
+@@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
+marmiton.org##[id^="pegasus_banner_atf"]
+marmiton.org##.unfyas, .pegasus_status_rendered
+marmiton.org##[data-ad-cls="true"]
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
@@ -1255,7 +1265,6 @@ mail.google.com##.acS,.nH.adC,.u5,.Zs
 mamzouka.be###report_button,li.genre:nth-of-type(1),#favoris,.nav-stacked.nav-pills.nav li:nth-of-type(4),li.genre:nth-of-type(3) h4
 mamzouka.com##.dt_social_single, div.sbox:nth-of-type(9),p:nth-of-type(1), p:nth-of-type(2)
 mappy.com###PushHotelView,.pushItiSummary.covoiturage,.vsc
-marmiton.org###bloc-video
 mega-p2p.net###btn_59,#frag_30072,#txt_5601,.OBJ-7.ActiveButton.OBJ-6,[href*="/aff.php"],[href*="linkredirect"]
 mega-p2p.net##[href*="navigateur-brave"]
 mega-p2p.net##[href="https://brave.com/meg327"]
@@ -3088,9 +3097,6 @@ livemint.com##[id^="adHeightstory"][class^="adHeight"]
 luxuretv.com##.adver,.adver-header,#vz_im_ad
 majorgeeks.com#$#.navigation-light { display: none !important; visibility: hidden !important; }
 maketecheasier.com##.in-content-ad
-! marmiton.org##+js(ta, preload, video)
-marmiton.org##[data-ad-cls="true"]
-! marmiton.org##[data-ad="banner_atf"]
 media-play.co##+js(window.open-defuser)
 mediafire.com#@#+js(addEventListener-defuser, /^(?:click|mousedown)$/)
 mediafire.com#@#+js(window.open-defuser)
@@ -3283,11 +3289,8 @@ lxax.com##[class="hide"]
 @@||appconsent.io^$important
 ||zebestof.com^$important,third-party,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
-@@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
 ||permutive.com^$third-party
 ||permutive.app^$important,third-party
-marmiton.org##[id^="pegasus_banner_atf"]
-marmiton.org##.unfyas, .pegasus_status_rendered
 ||abtasty.com^
 ||imasdk.googleapis.com^$badfilter
 younetu.com#$#body { color: whitesmoke; }
@@ -3557,8 +3560,6 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 @@||vanfem.com^$subdocument
 @@||doubleclick.net^$domain=cuisineactuelle.fr
 @@||doodstream.com*?op=enc_status*$domain=dood.*
-@@||googlesyndication.com^$domain=marmiton.org
-@@||adservice.google.*^$domain=marmiton.org,important
 @@||googletagservices.com^$domain=googlesyndication.com,important
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
@@ -3584,7 +3585,6 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||*/jfbconnect.js?*
 ||*?sentry_*$important,third-party
 ||facebook.com^$third-party,cookie=c_user
-@@||fundingchoicesmessages.google.com^$domain=marmiton.org
 ||ssl.broadcast.pm/alliance/file/*.mp4$media,domain=geo.dailymotion.com,redirect=noopmp4-1s
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
 ||appboycdn.com^$third-party
