@@ -3647,6 +3647,10 @@ france.tv##:where(div[id|="didomi"])
 prebid-ads$script,redirect=prebid-ads
 
 
+
+
+!#if !adguard
+
 ! ======= VMAP =======
 
 geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
@@ -3804,6 +3808,10 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||*/videojs-vast-vpaid*$script,important
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
+
+!#endif
+
+
 
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
