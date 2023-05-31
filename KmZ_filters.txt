@@ -1428,7 +1428,6 @@ stream-serie.net#$##option-1{height:100%}
 ||cdn.ampproject.org/v0.js
 *.chartbeat.*^$important
 ||ligatus.^$important
-||outbrain.^$important
 ||smartadserver.^$important
 ||scorecardresearch.^$important
 @@||doubleclick.net/instream/ad_status.js$badfilter
@@ -1613,7 +1612,6 @@ stream-serie.net#$##option-1{height:100%}
 ||opecloud.com^$third-party
 ||openx.net^$third-party
 ||orangeads.fr^$third-party
-||outbrain.com
 ||widgets.outbrain.com/outbrain.js$script,redirect=outbrain-widget.js:5,domain=~vice.com
 ||plista.com^$third-party
 ||programattik.com^$third-party
