@@ -1978,7 +1978,6 @@ stream-serie.net#$##option-1{height:100%}
 ||*/sniffadb*.js$script
 /adblock.js$script
 /fuckadblock.*?$script
-||google-analytics.*/cx/api.js$script,redirect=google-analytics_cx_api.js
 ||google-analytics.*/inpage_linkid.js$script,redirect=google-analytics_inpage_linkid.js
 ||addthis.*/addthis_widget.js$script,important,redirect=addthis_widget.js
 ||amazon-adsystem.*/amzn_ads.js$script,important,redirect=amazon_ads.js
@@ -1988,7 +1987,6 @@ stream-serie.net#$##option-1{height:100%}
 ||doubleclick.net/instream/ad_status.js$script,redirect-rule=doubleclick.net/instream/ad_status.js,badfilter
 ||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
 ||ligatus.*/angular-tag.js$script,important,redirect=ligatus_angular-tag.js
-||widgets.outbrain.*/outbrain.js$script,important,redirect=outbrain-widget.js
 ||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
 ||smartadserver.com^$third-party,domain=~smartadserver.de|~smartadserver.fr
 /(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
