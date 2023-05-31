@@ -3417,7 +3417,6 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 ||track.hubspot.com^
 ||bpt.webedia-group.com^
 ||sc-static.net^
-||getjad.io^
 ||freighthealaudience.com^
 ||d1f05vr3sjsuy7.cloudfront.net^
 ||pogothere.xyz^
@@ -3637,6 +3636,20 @@ france.tv##:where(div[id|="didomi"])
 
 
 ! ====== PREBID ======
+
+!! Mocks the prebid.js header bidding suit.
+!! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid
+!! see: http://cdn.lib.getjad.io/
+!#if adguard
+||getjad.io^$badfilter
+/getjad\.io/prebid/.+/.+/$redirect=prebid
+/getjad\.io/dmp/.+/.+/$redirect=noopjs
+!#endif
+!#if !adguard
+||getjad.io^
+/getjad\.io/library/.+/.+/$redirect-rule=noop.txt
+!#endif
+
 
 /(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,match-case
 /(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party,match-case
