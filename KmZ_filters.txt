@@ -1157,6 +1157,7 @@ entreprise-sans-fautes.com###mc_embed_signup
 etools.ch##.sResult,.sResultStatus
 fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
+femmeactuelle.fr##+js(set-constant, videoAdsAllowed, false)
 femmeactuelle.fr###click-zone
 femmeactuelle.fr##.ads-placeholder
 femmeactuelle.fr#$##corps { padding-top: 0 !important; }
