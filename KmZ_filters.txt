@@ -904,6 +904,7 @@ allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
+||google-analytics.com/analytics.js$domain=allocine.fr,important
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
 !! ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
@@ -1992,7 +1993,6 @@ stream-serie.net#$##option-1{height:100%}
 /(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
 ||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
 ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
-||google-analytics.com/analytics.js$script,redirect-rule=google-analytics.com/analytics.js,badfilter
 ||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,badfilter
 ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js,badfilter
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js,badfilter
@@ -2945,7 +2945,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||geo.opera.com^$badfilter
 ||google-analytics.*/analytics.js$script,redirect=google-analytics_analytics.js,badfilter
 ||google-analytics.*/ga.js$script,redirect=google-analytics_ga.js,badfilter
-||google-analytics.com/analytics.js$badfilter
 ||google-analytics.com^$badfilter
 ||google-analytics.com^$script,badfilter
 ||googlesyndication.com^$badfilter
