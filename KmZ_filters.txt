@@ -862,6 +862,8 @@ rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 
+! ======[ tf1.fr ]=====================================================
+
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$redirect=empty
@@ -875,7 +877,25 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 
+!#if adguard
+@@||tf1.fr^$cookie
+!#endif
+@@||mediainfo.tf1.fr^$domain=tf1.fr
+||ads.stickyadstv.com^$important,domain=tf1.fr
+@@/hit.xiti$image,domain=www.tf1.fr
+||metrics-broker.prod.p.tf1.fr^$badfilter
+||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
+||*$media,domain=tf1.fr,badfilter
+@@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
+@@||tf1.fr$generichide
+@@||compte.tf1.fr^$domain=tf1.fr
+||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
+||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
+@@||footprint.net^$xmlhttprequest,domain=prod-player.tf1.fr
+@@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,~third-party,redirect=noopmp3-0.1s
 
+!! site:tf1.fr
 www.tf1.fr##:where(div[class^="usabilla"])
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
 www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
@@ -883,27 +903,39 @@ www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_containe
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 !! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, "")
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
 !! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, "")
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 !! site:tf1.fr - disable tracking
 tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
+
+! ======[ allocine.fr ]=====================================================
+
+!! site:allocine.fr - advertisement - fixing delay in the video player [ ads mapping into player ]
+|https://assets.allocine.fr/js/website/script-*.js$redirect=noop.js
 !! site:allocine.fr - fixing delay in the video player
+!!allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
+allocine.fr##+js(set-constant, AC.config.ads, emptyObj)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! site:allocine.fr - tracking
-allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
+!!allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, '')
+allocine.fr##+js(set-constant, AC.config.player.comscore, emptyObj)
 allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 !! site:allocine.fr - tracking - prevent loading script
-allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
-allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
+!!allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, '')
+allocine.fr##+js(set-constant, AC.config.player.dfp, emptyObj)
+!!allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, '')
+allocine.fr##+js(set-constant, AC.config.player.mediametrie, emptyObj)
+allocine.fr##+js(set-constant, AC.config.player.gemius, emptyObj)
 !! site:allocine.fr - vast ads (already sets, but ensure in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
-!! /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
+
+||google-analytics.com/analytics.js$domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
 !! ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
@@ -911,6 +943,8 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! ||storage.googleapis.com/fledge-tests/otToken.js
 
 
+
+! ======[ dailymotion.com ]=====================================================
 
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
@@ -936,11 +970,16 @@ dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
 
 !! site:geo.dailymotion.com (embedded) - disable ads
-dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
+!!dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.context.advertising.ima, false)
 dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
 !! site:geo.dailymotion.com (embedded) - misc
 dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !!geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
+
+
+!! https://www.dailymotion.com/player/metadata/video/x8km2fm?embedder=https%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19600816%26cfilm%3D301066.html&geo=1&player-id=x1hyz&locale=fr&dmV1st=3baf8ab8-d200-4392-8e14-8432ad89d6c2&dmTs=527408&is_native_app=0
+!! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+!! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 
 !! bad
 !! site:geo.dailymotion.com (embedded) - disable tracking
@@ -948,6 +987,8 @@ dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, fals
 !! try edit https://www.dailymotion.com/player/metadata/video/x8jk187?embedder=https%3A%2F%2Fwww.allocine.fr%2F&geo=1&player-id=x1hyz&locale=fr&dmV1st=875360a3-bf77-4099-bf80-a36cb65958f5&dmTs=410295&is_native_app=0
 
 
+
+! ======[ ]=====================================================
 
 
 ultimate-catch.eu##.header-ads
@@ -2020,7 +2061,6 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/(?
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
-@@||compte.tf1.fr^$domain=tf1.fr
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
 ||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
@@ -2730,12 +2770,6 @@ fwmrm.net##+js(window.open-defuser)
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
 !+ NOT_PLATFORM(ext_ublock)
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noopjson,important
-@@||tf1.fr$generichide
-||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
-||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
-@@||footprint.net^$xmlhttprequest,domain=prod-player.tf1.fr
-@@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=tf1.fr
-||slpubmedias.tf1.fr^$media,~third-party,redirect=noopmp3-0.1s
 open.spotify.com#@#+js(nowebrtc)
 @@||vshare.eu/player_sda.html
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
@@ -2752,7 +2786,6 @@ openwhyd.org##+js(no-setInterval-if, updateFocusState)
 @@/^ws{2}(([\:][\/]{2})+)/$domain=wolframalpha.com
 /log_event?$badfilter
 /log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-@@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
 @@||survey.g.doubleclick.net^/$domain=replay.fr
 tirexo.*##.p-3:if(a[href="/premium.html"])
 interactive-sta$domain=pluto.tv
@@ -2934,7 +2967,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 &adsExpected=$badfilter
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
-||*$media,domain=tf1.fr,badfilter
 ||*^$badfilter,csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$script,badfilter
@@ -2950,8 +2982,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com|youtube-nocookie.com,badfilter
 ||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.youtube.com|music.youtube.com,badfilter
 ||hqq.*/ajax.php?mode=insertLog$badfilter
-||metrics-broker.prod.p.tf1.fr^$badfilter
-||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
 ||net/sw.js?$script,~third-party,badfilter
 ||netflix.com/api/ftl/probe?monotonic=$badfilter
 ||netflix.com/msl/playapi/cadmium/logblob/$badfilter
@@ -2990,7 +3020,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 !
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
 @@/cookieconsent.$script,~third-party
-@@/hit.xiti$image,domain=www.tf1.fr
 ! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
 @@||api.company-target.com^$xmlhttprequest,domain=degreed.com
 @@||canaltp.fr$cookie
@@ -3018,7 +3047,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@||star.fr$generichide
 @@||star.fr$removeparam
 @@||static.6cloud.fr/*/onboarding/*.mp4
-@@||tf1.fr$generichide
 @@||trustcommander.net
 @@||vidlox.me$cookie
 @@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
@@ -3260,9 +3288,7 @@ streamingvf.fun##[id^=ads_]
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
 ||cdn.jsdelivr.net*@sentry/*.js$important
-||ads.stickyadstv.com^$important,domain=tf1.fr
 ||trafficjunky.com/invocation/popunder$redirect=popads-dummy
-! ||mediarithmics.com^$domain=tf1.fr
 ||mediarithmics.com^
 ! COLOR iframe fix
 uqload.com#$#body { color: whitesmoke; }
@@ -3336,9 +3362,7 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 @@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 @@||gigya.com^$cookie
-@@||tf1.fr^$cookie
 !#endif
-@@||mediainfo.tf1.fr^$domain=tf1.fr
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
 ||commandersact.com^$badfilter
