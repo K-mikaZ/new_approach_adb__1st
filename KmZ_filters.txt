@@ -903,8 +903,7 @@ allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
 !! site:allocine.fr - vast ads (already sets, but ensure in case)
 allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
-/\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
-||google-analytics.com/analytics.js$domain=allocine.fr,important
+!! /\/js\/website\/([5+][3+]\.([a-z0-9]{10,30}))(\.min)?\.js/$script,domain=allocine.fr
 ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
 !! ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
