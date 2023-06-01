@@ -3640,17 +3640,17 @@ france.tv##:where(div[id|="didomi"])
 !! Mocks the prebid.js header bidding suit.
 !! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid
 !! see: http://cdn.lib.getjad.io/
-||getjad.io^
-!#if adguard
-!! ||getjad.io^$badfilter
-/getjad\.io/prebid/.+/.+/$redirect-rule=prebid
-/getjad\.io/dmp/.+/.+/$redirect-rule=noopjs
-!#endif
-!#if !adguard
-!! allocine.fr##+js(set-constant, jad, {})
-/getjad\.io/library/.+/.+/$redirect-rule=noop.txt
-/getjad\.io/dmp/.+/.+/$redirect-rule=noop.js
-!#endif
+!! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
+!!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
+
+
+!! @@/.+:\/\/cdn\.lib\.getjad\.io\/library\/.+\/.+/
+!! /.+:\/\/cdn\.lib\.getjad\.io\/dmp\/.+\/.+/$redirect=noop.js,important
+
+!! !#if adguard
+!! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/9518146/$script,redirect=prebid,important
+!! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/21831724030/$script,redirect=prebid,important
+!! !#endif
 
 
 /(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,match-case
@@ -3668,13 +3668,16 @@ france.tv##:where(div[id|="didomi"])
 !! * - `isAdBlockActive`: `false`
 !! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid-ads
 !#if adguard
-!! prebid-ads$script,redirect=prebid-ads
+!! someURLs$script,redirect=prebid-ads
 !#endif
 
 
 
+! ======= ADS =======
 
-!#if adguard
+!! async ads script loading
+||dmxleo.dailymotion.com/cdn/manifest/video/$script,redirect=noop.js,important
+
 
 ! ======= VMAP =======
 
@@ -3691,6 +3694,10 @@ geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/v
 output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,domain=canalplus.com,important
 ||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noop-vmap1.0.xml
+
+
+
+!#if adguard
 
 
 ! ======= VAST =======
