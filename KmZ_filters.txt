@@ -1950,7 +1950,6 @@ stream-serie.net#$##option-1{height:100%}
 ||analytics.pop2watch.com^
 ||emlytics.me^
 ||clarity.ms^
-||insight.adsrvr.org^
 ||cdn.scarabresearch.com^
 ||kvmkcdjgo.xyz^
 ||freighthealaudience.com^
