@@ -1214,6 +1214,7 @@ marmiton.org#?#div:has(>[data-ad="native_shopping"])
 !! marmiton.org##[id^="pegasus_banner_atf"]
 !! marmiton.org##.unfyas, .pegasus_status_rendered
 !! marmiton.org##[data-ad-cls="true"]
+||googletagmanager.com/gtm.js$domain=marmiton.org,important
 @@||fundingchoicesmessages.google.com^$domain=marmiton.org
 @@||googlesyndication.com^$domain=marmiton.org
 @@||adservice.google.*^$domain=marmiton.org,important
@@ -3663,10 +3664,6 @@ france.tv##:where(div[id|="didomi"])
 !! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
 !!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
 
-
-!! @@/.+:\/\/cdn\.lib\.getjad\.io\/library\/.+\/.+/
-!! /.+:\/\/cdn\.lib\.getjad\.io\/dmp\/.+\/.+/$redirect=noop.js,important
-
 !! !#if adguard
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/9518146/$script,redirect=prebid,important
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/21831724030/$script,redirect=prebid,important
@@ -3680,6 +3677,8 @@ france.tv##:where(div[id|="didomi"])
 ||mediasquare.fr/msq_prebid
 @@||cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json
 @@||cdn.viously.com/player/*/prebid.js
+!! PREBID's unifygroup.com concerns
+|https://pegasus.unifygroup.com/lib/pegasus.min.js$redirect=noop.js
 
 
 !! * Sets predefined constants on a page:
