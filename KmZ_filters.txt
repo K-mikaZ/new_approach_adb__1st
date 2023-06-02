@@ -2334,7 +2334,6 @@ search.lilo.org##.top.addivwhite2
 */a/ads/*$xmlhttprequest,important,badfilter
 ||cstatic.weborama.fr^$media
 ||entitlements.jwplayer.com^
-/(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important
 /wp-content/plugins/lazy-load/images/1x1.trans.gif$image
 @@||kmz-bandwidth-hero.herokuapp.com^$image
 /promoted-ads$domain=namemeaningsdictionary.com,subdocument
@@ -3608,7 +3607,10 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
-/(.+)\.jwpcdn\.com/(.+)/(googima|jwpsrv)\.js/$script,_,important,redirect=noop.js
+!! ublock
+/.+\.jwpcdn\.com+.+(googima|jwpsrv)\.js/$important,redirect=noop.js
+!! adguard
+/.+\.jwpcdn\.com+.+(googima|jwpsrv)\.js/$important,redirect=noopjs
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
