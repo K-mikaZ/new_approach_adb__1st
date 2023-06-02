@@ -916,8 +916,12 @@ tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, f
 
 ! ======[ allocine.fr ]=====================================================
 
-!! site:allocine.fr - advertisement - fixing delay in the video player [ ads mapping into player ]
-/.+\:\/\/as{2}ets\.al{2}ocine\.(.{2,})\/js\/website\/script[\w-]\d+\.[\d\w]{15,}\.js/$redirect=noop.js
+allocine.fr##.main-banner
+
+!! site:allocine.fr - advertisement - fixing delay in the video player
+!! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
+!! |https://assets.allocine.fr/js/website/script-03.3ba7bebbbef1bdc2c198.js
+/.+\:\/\/as{2}ets\.al{2}ocine\.(.{2,})\/js\/website\/script[\w-]\d+\.[\d\w]{15,}(\.min)?\.js/$redirect=noop.js
 !! site:allocine.fr - fixing delay in the video player
 !!allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
 allocine.fr##+js(set-constant, AC.config.ads, emptyObj)
