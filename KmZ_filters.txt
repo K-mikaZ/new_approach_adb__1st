@@ -980,6 +980,8 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false
 
 !! site:geo.dailymotion.com (embedded) - disable ads
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
+!! site:geo.dailymotion.com (Advertising Config)
+!! https://developers.dailymotion.com/pass-information-to-your-vast-tag/#understand-customconfig
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
 !! site:geo.dailymotion.com (embedded) - misc
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
@@ -999,7 +1001,6 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 !!||dailymotion.com/player/metadata/video/*$replace=/("advertising":\{)*\}/\$1\}/,important
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
-
 
 
 
