@@ -3672,6 +3672,7 @@ france.tv##:where(div[id|="didomi"])
 !! !#if adguard
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/9518146/$script,redirect=prebid,important
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/21831724030/$script,redirect=prebid,important
+||astatic.ccmbg.com/*/prebid/prebid.*.js$redirect-rule=prebid
 !! !#endif
 
 
