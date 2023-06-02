@@ -948,6 +948,9 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 ! ======[ dailymotion.com ]=====================================================
 
+@@||dailymotion.com^$subdocument
+||dailymotion.co*/log*/video*$redirect=noop.txt,important
+
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tool that can help: https://iframely.com/domains/dailymotion
@@ -987,6 +990,12 @@ dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, fals
 !! site:geo.dailymotion.com (embedded) - disable tracking
 !! dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
 !! try edit https://www.dailymotion.com/player/metadata/video/x8jk187?embedder=https%3A%2F%2Fwww.allocine.fr%2F&geo=1&player-id=x1hyz&locale=fr&dmV1st=875360a3-bf77-4099-bf80-a36cb65958f5&dmTs=410295&is_native_app=0
+
+
+!!||dailymotion.com/player/metadata/video/*$replace=/("advertising":\{)*\}/\$1\}/,important
+!!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+!!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+
 
 
 
