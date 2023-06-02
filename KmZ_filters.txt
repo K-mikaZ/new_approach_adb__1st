@@ -3377,7 +3377,7 @@ dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.r
 @@||sbfull.com^$subdocument
 @@||sblongvu.com^$subdocument,image,script
 ||reddit.com/sw.*.js$script
-||github.com/_alive
+!! ||github.com/_alive
 ||pegasus.unifygroup.com^$important
 ||prismamedia-com.videoplayerhub.com^
 ||wysistat.com^
