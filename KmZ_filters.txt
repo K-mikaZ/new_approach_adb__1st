@@ -953,7 +953,18 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ! ======[ dailymotion.com ]=====================================================
 
 @@||dailymotion.com^$subdocument
+@@||geo.dailymotion.com^
 ||dailymotion.co*/log*/video*$redirect=noop.txt,important
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
+@@||dmcdn.net^
+@@||dm-event.net^$domain=geo.dailymotion.com
+||dmxleo.com^$badfilter
+@@||dmxleo.com^$domain=geo.dailymotion.com
+||dailymotion.com/cdn/$media,script,badfilter
+||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
+@@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
+!! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
+!! @@||pmdstatic.net^$important
 
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
@@ -3353,17 +3364,6 @@ dood.*#$#body { color: whitesmoke!important; }
 ||rndskittytor.com^
 ||cdnativepush.com^
 ||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
-! ||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=femmeactuelle.fr,redirect=noopjs,important
-@@||dmcdn.net^
-@@||geo.dailymotion.com^
-@@||dm-event.net^$domain=geo.dailymotion.com
-||dmxleo.com^$badfilter
-@@||dmxleo.com^$domain=geo.dailymotion.com
-||dailymotion.com/cdn/$media,script,badfilter
-||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
-@@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
-dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-@@||pmdstatic.net^$important
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
 ||2mdn.net^$badfilter
@@ -3619,7 +3619,6 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||*?sentry_*$important,third-party
 ||facebook.com^$third-party,cookie=c_user
 ||ssl.broadcast.pm/alliance/file/*.mp4$media,domain=geo.dailymotion.com,redirect=noopmp4-1s
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
