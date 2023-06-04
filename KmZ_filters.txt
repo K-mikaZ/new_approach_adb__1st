@@ -240,7 +240,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 !! *##[data-ad-host*="-pub-"]
 *##[data-ad-text="PUBLICITE"]
 *##[data-placeholder-text="Ad"]
-*##[id~="pub"]
+*##div[id~="pub"]
+*##div[class~="pub"]
 *##[id="oscuridad"]
 *##[id^="contenidobloqueado"]
 *##[id*="_ad_native_"]
@@ -754,10 +755,12 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 ||site.dotvideo.cc^$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
+!! @@||doodstream.com*?op=enc_status*$domain=dood.*
 ||*^$script,third-party,domain=dood.*
 ||*^$domain=dood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 @@||doodcdn.*$script,domain=dood.*|dooood.*
 @@||dood.*$script,domain=dood.*|dooood.*
+@@||dooood.com^$subdocument
 dood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
 dood.*,dooood.*#%#//scriptlet("abort-current-inline-script", "check")
 /(do{2,}d\.(.{2,})\/sw\.js$)/$important
@@ -819,7 +822,6 @@ film01stream.*###ads
 french-stream.*#$#:is( :not( [class*="menu"] ):has( > [href*="//is.gd/"] ), [id="banning"] ) { display: none!important; visibility: hidden!important; }
 french-stream.*,fr.french-manga.net##br
 french-stream.*##.bx1
-
 kykfilmserie.com##div:if(> [href*=".php"])
 skstream.ink##center:if(> center > a[href*="/Inscription" i])
 streamdivx.*##center:if(a.buttonxx)
@@ -863,6 +865,10 @@ rakuten.tv##+js(set-constant, heartbeat, OK)
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
+/gampad/ads?$important
+/pagead/ppub_config$important
+@@/pubads_impl.js$important
+
 
 ! ======[ tf1.fr ]=====================================================
 
@@ -3591,8 +3597,6 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||ravenjs.com^
 @@||highload.to^$subdocument
 @@||vanfem.com^$subdocument
-@@||doubleclick.net^$domain=cuisineactuelle.fr
-@@||doodstream.com*?op=enc_status*$domain=dood.*
 @@||googletagservices.com^$domain=googlesyndication.com,important
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
