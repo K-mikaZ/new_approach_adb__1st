@@ -879,7 +879,6 @@ prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
 !! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
 !! ||*$media,domain=tf1.fr
-||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
@@ -889,9 +888,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||tf1.fr^$cookie
 !#endif
 @@||mediainfo.tf1.fr^$domain=tf1.fr
-||ads.stickyadstv.com^$important,domain=tf1.fr
 @@/hit.xiti$image,domain=www.tf1.fr
-||metrics-broker.prod.p.tf1.fr^$badfilter
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
 ||*$media,domain=tf1.fr,badfilter
 @@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
@@ -902,6 +899,8 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||footprint.net^$xmlhttprequest,domain=prod-player.tf1.fr
 @@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=tf1.fr
 ||slpubmedias.tf1.fr^$media,~third-party,redirect=noopmp3-0.1s
+||delivery.tf1.fr/pub*.mp3$media,domain=tf1.fr,redirect=noopmp3-0.1s,important
+||delivery.tf1.fr/pub*.mp4$media,domain=tf1.fr,redirect=noopmp4-1s,important
 
 !! site:tf1.fr
 www.tf1.fr##:where(div[class^="usabilla"])
@@ -3605,7 +3604,7 @@ uqload.*###play_limit_box
 @@||uqload.co$ghide
 uqload.*##+js(window.open-defuser)
 @@||*^$script,image,~third-party,domain=uqload.co|uqload.com
-||*^$third-party,domain=uqload.co|uqload.com,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com
+||*^$third-party,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com,domain=uqload.*
 jtrouver.com##div[class*="afxshop-grid"]
 demotivateur.fr##.ads
 dcode.fr##+js(set-constant, insertAds, noopFunc)
