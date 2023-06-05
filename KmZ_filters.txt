@@ -3616,9 +3616,7 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 @@||iptvforyou.fr^$media,subdocument
 /gtm.js$domain=calmradio.com,redirect=googletagmanager-gtm
 ||calmradio.com/modules/mod_calmradio_popup/$script,domain=calmradio.com,redirect=noopjs
-||*^$third-party,important,domain=calmradio.com
 ||app-stats.calmradio.com^$important
-/videos/$important,domain=calmradio.com
 ||*/jfbconnect.js?*
 ||*?sentry_*$important,third-party
 ||facebook.com^$third-party,cookie=c_user
