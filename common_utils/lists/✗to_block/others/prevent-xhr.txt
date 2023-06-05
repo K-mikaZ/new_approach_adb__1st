@@ -26,7 +26,7 @@
 !  !#include /adguardspecific.txt
 !  !IMPORTANT, DO NOT USE REGEX HERE
 !
-*#@%#//scriptlet('prevent-element-src-loading', 'script', 'fwmrm.net')
+!*#@%#//scriptlet('prevent-element-src-loading', 'script', 'fwmrm.net')
 !
 *#%#//scriptlet('prevent-element-src-loading', 'img', '/ads.stickyadstv.com|ade.googlesyndication.com|adsafeprotected.com|doubleclick.net|exelator.com|fwmrm.net|google-analytics.com|imrworldwide.com|rlcdn.com|serving-sys.com|tapad.com|yadro.ru|mc.yandex.ru|ybp.yahoo.com/')
 rakuten.fr#%#//scriptlet('prevent-element-src-loading', 'img', '/?cpkg_none=')
