@@ -2096,8 +2096,8 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/(?
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
-||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
-||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
+!! ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
+!! ||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
 ||securepubads.g.doubleclick.net/pagead/ppub_config?$xmlhttprequest,redirect-rule=noop.txt,important
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
