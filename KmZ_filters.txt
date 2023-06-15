@@ -3734,9 +3734,8 @@ geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/v
 /vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
 output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
-||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,domain=canalplus.com,important
-||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$xmlhttprequest,important,redirect=noop-vmap1.0.xml
-
+||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,important
+||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$important,redirect=noop-vmap1.0.xml
 
 
 !#if adguard
