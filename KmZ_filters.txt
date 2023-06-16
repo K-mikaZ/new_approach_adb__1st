@@ -2795,11 +2795,10 @@ radiotunes.com,di.fm##[class*="premium"]
 ||woawouru.net^
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
-||fwmrm.net^$third-party
 ||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
+||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
 !+ NOT_PLATFORM(ext_ublock)
 ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
-||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
 !+ NOT_PLATFORM(ext_ublock)
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noopjson,important
 open.spotify.com#@#+js(nowebrtc)
@@ -3900,7 +3899,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
 @@||fwmrm.net^
-||fwmrm.net^$third-party,script,important,redirect=noopjs
+!! ||fwmrm.net^$third-party,script,important,redirect=noopjs
 
 !! block too many sites and web players (e.g. animationdigitalnetwork.fr, 6play.fr)
 !! not only trackers, but somes utils (use for login to the site, ...)
