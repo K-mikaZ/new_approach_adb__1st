@@ -874,7 +874,7 @@ rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 !! @@||*.tf1.fr/*youbora*$script
-||prod-player.tf1.fr/*/player/undefined$redirect=empty
+!! ||prod-player.tf1.fr/*/player/undefined$redirect=empty
 prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
 !! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
@@ -884,11 +884,23 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 !! ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 !! ||pub-mp4.cdn-0.diff.tf1.fr^$media,domain=tf1.fr
 !! ||delivery.tf1.fr/pub$media,domain=tf1.fr
-||*^$media,important,domain=tf1.fr,denyallow=www.tf1.fr
-||*^$media,redirect-rule=noopmp4-1s,important,domain=tf1.fr
+||*^$media,domain=tf1.fr,denyallow=www.tf1.fr|delivery.tf1.fr
+!! ||*^$media,important,domain=diff.tf1.fr,~third-party,redirect-rule=noopmp4-1s
+!! ||*^$media,important,domain=tf1.fr,third-party,redirect-rule=noopmp4-1s
+||delivery.tf1.fr/pub$media,domain=tf1.fr,badfilter
+||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr,badfilter
+!! ||delivery.tf1.fr/pub$media,redirect=empty,important
+@@||delivery.tf1.fr/pub
+||pub-mp4.cdn-0.diff.tf1.fr^$media,important,redirect-rule=noopmp3-0.1s
+||gcdn.2mdn.net^$media,important,redirect-rule=noopmp3-0.1s
+@@||static.adsafeprotected.com/favicon.ico$domain=tf1.fr|tf1info.fr
 
 !#if adguard
 @@||tf1.fr^$cookie
+!! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-google-analytics
+!! ||googletagmanager.com/gtag/js$script,xhr,redirect-rule=google-analytics
+!! ||googletagmanager.com/gtm.js$script,redirect-rule=google-analytics
+!! ||googletagmanager.com/gtag/js$important,redirect=google-analytics,domain=tf1.fr
 !#endif
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 @@/hit.xiti$image,domain=www.tf1.fr
@@ -907,13 +919,13 @@ www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_containe
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 !! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
+!! tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
 !! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
+!! tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 !! site:tf1.fr - disable tracking
-tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+!! tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
+!! tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
+!! tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
 
 ! ======[ allocine.fr ]=====================================================
