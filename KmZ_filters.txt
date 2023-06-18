@@ -2792,10 +2792,10 @@ radiotunes.com,di.fm##[class*="premium"]
 ||woawouru.net^
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
-||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
+!! ||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
-!+ NOT_PLATFORM(ext_ublock)
-||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
+!! !+ NOT_PLATFORM(ext_ublock)
+!! ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
 !+ NOT_PLATFORM(ext_ublock)
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noopjson,important
 open.spotify.com#@#+js(nowebrtc)
