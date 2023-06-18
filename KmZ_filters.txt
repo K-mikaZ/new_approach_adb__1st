@@ -3508,7 +3508,6 @@ dood.*#$#body { color: whitesmoke!important; }
 ||analytics.tiktok.com^
 ||redditstatic.com/ads/pixel.js^
 ||cdn.speedcurve.com^
-||marketingplatform.google.com^$domain=d3ward.github.io
 ||marketingplatform.google.com^
 ||metrics.mzstatic.com^
 ||metrics.icloud.com^
@@ -3593,7 +3592,6 @@ dood.*#$#body { color: whitesmoke!important; }
 ||amung.us^$third-party
 ||a-mx.com^
 ||streamcomplet2.info^
-||tagcommander.com$third-party
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
