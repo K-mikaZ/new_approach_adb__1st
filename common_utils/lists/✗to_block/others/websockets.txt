@@ -78,3 +78,4 @@ wss://net-announce*^$websocket,important
 ||*.idocdn.com^$websocket,importantimportant
 !! ||messaging.deezer.com/websocket$websocket,important
 ||*^$websocket,~third-party,important,domain=deezer.com
+||*^$websocket,~third-party,important,domain=tf1.fr
