@@ -884,7 +884,8 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 !! ||slpubmedias.tf1.fr^$media,domain=tf1.fr
 !! ||pub-mp4.cdn-0.diff.tf1.fr^$media,domain=tf1.fr
 !! ||delivery.tf1.fr/pub$media,domain=tf1.fr
-||*^$media,domain=tf1.fr,denyallow=www.tf1.fr|delivery.tf1.fr
+||*^$media,domain=tf1.fr,denyallow=www.tf1.fr|prod-player.tf1.fr
+!! denyallow=www.tf1.fr|prod-player.tf1.fr|delivery.tf1.fr
 !! ||*^$media,important,domain=diff.tf1.fr,~third-party,redirect-rule=noopmp4-1s
 !! ||*^$media,important,domain=tf1.fr,third-party,redirect-rule=noopmp4-1s
 ||delivery.tf1.fr/pub$media,domain=tf1.fr,badfilter
