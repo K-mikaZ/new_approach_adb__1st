@@ -2093,7 +2093,6 @@ stream-serie.net#$##option-1{height:100%}
 ||adform.net/*$image,redirect-rule=1x1.gif
 ||*spotx*$image,redirect-rule=1x1.gif
 ||bidr.io^$image,redirect-rule=1x1.gif
-||stickyadstv.com^$image,redirect-rule=1x1.gif
 ||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
 ||*monke*broker*$script,redirect-rule=monkeybroker.js
 ||*monke*broker*$script,important
