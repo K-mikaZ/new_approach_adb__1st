@@ -904,7 +904,6 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 !! ||googletagmanager.com/gtag/js$important,redirect=google-analytics,domain=tf1.fr
 !#endif
 @@||mediainfo.tf1.fr^$domain=tf1.fr
-@@/hit.xiti$image,domain=www.tf1.fr
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
 @@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
 @@||tf1.fr^$generichide
@@ -3031,8 +3030,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||trustcommander.net$script,badfilter
 ||www.google-analytics.com^$badfilter
 ||www.googleadservices.com^$badfilter
-||xiti.com$badfilter
-||xiti.com$image,badfilter
 ||y2mate.com/*.gif$image,badfilter
 ||youtube.com/ptracking?$badfilter
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
@@ -3092,7 +3089,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 @@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
 @@||www-google-analytics.l.google.com^$script,domain=degreed.com
 @@||www.google-analytics.com^$domain=degreed.com
-@@||xiti.com$image
 @@||youtube.com/api/stats/*$domain=youtube.com
 accuweather.com###connatix
 addictivetips.com##.mv-ad-box
