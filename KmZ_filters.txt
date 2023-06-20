@@ -1008,7 +1008,8 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, fals
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
 !! site:geo.dailymotion.com (Advertising Config)
 !! https://developers.dailymotion.com/pass-information-to-your-vast-tag/#understand-customconfig
-www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
+!! bad, break video e.g. https://www.programme-tv.net/news/people/243790-ines-reg-elle-fait-une-drole-de-proposition-a-aya-nakamura-la-chanteuse-lui-repond-video/
+!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
 !! site:geo.dailymotion.com (embedded) - misc
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
