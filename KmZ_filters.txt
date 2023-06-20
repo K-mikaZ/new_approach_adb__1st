@@ -1100,6 +1100,14 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 @@||vk.com^$subdocument
 ||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com,badfilter
 /darla/*/sfext-min.js$script,domain=s.yimg.com,important
+
+! Owned by AT Internet, OPERATES UNDER: ati-host.net, aticdn.net, xiti.com
+! https://whotracks.me/trackers/at_internet.html
+||ati-host.net^$third-party
+||aticdn.net^$third-party
+||xiti.com^$third-party
+||xiti.com^$image,redirect-rule=noop.txt,important
+
 ||udc.yahoo.com^$xmlhttprequest,domain=mail.yahoo.com
 ||fc.yahoo.com^$domain=mail.yahoo.com
 ||ybp.yahoo.com^
@@ -1135,6 +1143,7 @@ mail.yahoo.com##[data-test-id="right-rail-hidead-btn"],[title="Hide Advertisemen
 ! ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail*&locale=*
 /\/\w\/\w+\_api\/(\w+)?\?.+\&locale\=.+/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
+
 mail.protonmail.com##section:if(>.latest-upgrade)
 mail.protonmail.com##section:if(>[target="_blank"])
 1337x.to##+js(addEventListener-defuser, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
