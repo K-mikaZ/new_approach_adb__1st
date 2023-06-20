@@ -870,6 +870,11 @@ rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 @@/pubads_impl.js$important
 
 
+! ======[ france.tv ]=====================================================
+
+france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+
+
 ! ======[ tf1.fr ]=====================================================
 
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
