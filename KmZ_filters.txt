@@ -981,6 +981,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
 !! @@||pmdstatic.net^$important
 
+
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tool that can help: https://iframely.com/domains/dailymotion
@@ -1003,6 +1004,9 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED,
 !!      }
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+
+geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
+!! geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 
 !! site:geo.dailymotion.com (embedded) - disable ads
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
@@ -3734,8 +3738,6 @@ france.tv##:where(div[id|="didomi"])
 
 ! ======= VMAP =======
 
-geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-!! geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
 ||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
 /vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
@@ -3888,7 +3890,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||ads.spotx.tv/*_preroll&*$important,redirect=noopvast-3.0
 ||tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
-! ||dailymotion.com/vast/video/*.xml$redirect=noopvast-2.0
 ||*/videojs-vast-vpaid*$script,important
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
