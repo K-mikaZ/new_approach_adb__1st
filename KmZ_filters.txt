@@ -892,8 +892,8 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 ||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr,badfilter
 !! ||delivery.tf1.fr/pub$media,redirect=empty,important
 @@||delivery.tf1.fr/pub
-||pub-mp4.cdn-0.diff.tf1.fr^$media,important,redirect-rule=noopmp3-0.1s
-||gcdn.2mdn.net^$media,important,redirect-rule=noopmp3-0.1s
+!! ||pub-mp4.cdn-0.diff.tf1.fr^$media,important,redirect-rule=noopmp3-0.1s
+!! ||gcdn.2mdn.net^$media,important,redirect-rule=noopmp3-0.1s
 @@||static.adsafeprotected.com/favicon.ico$domain=tf1.fr|tf1info.fr
 
 !#if adguard
