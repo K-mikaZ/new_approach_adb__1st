@@ -971,11 +971,13 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 ! ======[ dailymotion.com ]=====================================================
 
-@@||dailymotion.com^$cookie
 @@||dailymotion.com^$subdocument
+!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+||dailymotion.com^$cookie
+@@||dailymotion.com^$cookie=/.+euconsent.+/
 @@||geo.dailymotion.com^
 ||dailymotion.co*/log*/video*$redirect=noop.txt,important
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
+!!@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
 @@||dmcdn.net^
 @@||dm-event.net^$domain=geo.dailymotion.com
 ||dmxleo.com^$badfilter
@@ -986,12 +988,12 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
 !! @@||pmdstatic.net^$important
 
-
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tool that can help: https://iframely.com/domains/dailymotion
 !! tracker:https://whotracks.me/trackers/hubvisor.io.html
-!! dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_ENABLE_ONLY_HUBVISOR_MIDROLL, true)
 
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
 !! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
@@ -1010,18 +1012,18 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED,
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
 
-geo.dailymotion.com#@#+js(no-xhr-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-!! geo.dailymotion.com#@#+js(no-fetch-if, /dmxleo\.dailymotion\.com\/cdn\/manifest\/video/ method:GET)
-
 !! site:geo.dailymotion.com (embedded) - disable ads
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
 !! site:geo.dailymotion.com (Advertising Config)
 !! https://developers.dailymotion.com/pass-information-to-your-vast-tag/#understand-customconfig
-!! bad, break video e.g. https://www.programme-tv.net/news/people/243790-ines-reg-elle-fait-une-drole-de-proposition-a-aya-nakamura-la-chanteuse-lui-repond-video/
-!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
+!! bad, break video on https://www.programme-tv.net/news/people/243790-ines-reg-elle-fait-une-drole-de-proposition-a-aya-nakamura-la-chanteuse-lui-repond-video/
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
 !! site:geo.dailymotion.com (embedded) - misc
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
+
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
+
 
 
 !! https://www.dailymotion.com/player/metadata/video/x8km2fm?embedder=https%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19600816%26cfilm%3D301066.html&geo=1&player-id=x1hyz&locale=fr&dmV1st=3baf8ab8-d200-4392-8e14-8432ad89d6c2&dmTs=527408&is_native_app=0
@@ -1037,7 +1039,6 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 !!||dailymotion.com/player/metadata/video/*$replace=/("advertising":\{)*\}/\$1\}/,important
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
-
 
 
 ! ======[ ]=====================================================
