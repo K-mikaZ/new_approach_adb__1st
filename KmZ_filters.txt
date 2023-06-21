@@ -265,7 +265,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[id*="smartlink" i]
 *##[class*="smartlink" i]
 !! *##[id|="dfp"][class~="ad-item"]
-*##[id|="dfp"]:is([class*="js-"],[class*="ad-"])
+*##[id|="dfp"]:is( [class*="js-"][class*="ad-"], [class~="ad-item"] )
 *##[data-src*="outbrain.com"]
 *##[class~="OUTBRAIN"]
 !! test on http://www.html5canvastutorials.com/
