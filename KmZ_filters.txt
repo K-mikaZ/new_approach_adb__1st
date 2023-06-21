@@ -902,7 +902,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 !! ||gcdn.2mdn.net^$media,important,redirect-rule=noopmp3-0.1s
 @@||static.adsafeprotected.com/favicon.ico$domain=tf1.fr|tf1info.fr
 
-!#if adguard
+!#if (adguard)
 @@||tf1.fr^$cookie
 !! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-google-analytics
 !! ||googletagmanager.com/gtag/js$script,xhr,redirect-rule=google-analytics
@@ -1280,7 +1280,7 @@ femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
 @@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
 @@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
-!#if adguard
+!#if (adguard)
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
 marmiton.org#?#div:is([data-ad$="_atf"])
@@ -3412,7 +3412,7 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||pagead2.googlesyndication.com^$domain=arte.tv
 ! ||arte.tv/log-player/
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
-!#if adguard
+!#if (adguard)
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
@@ -3686,7 +3686,7 @@ themoneytizer$important,script,redirect=noopjs
 /mpulse.$script,~third-party,redirect=noop.js
 ||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noop.txt,important
-!#if adguard
+!#if (adguard)
 /mpulse.$script,~third-party,redirect=noopjs
 ||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
@@ -3707,7 +3707,7 @@ themoneytizer$important,script,redirect=noopjs
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
-!#if adguard
+!#if (adguard)
 ||sdk.privacy-center.org/*/loader.js$script,redirect-rule=didomi-loader
 !#endif
 
@@ -3720,7 +3720,7 @@ france.tv##:where(div[id|="didomi"])
 !! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
 !!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
 
-!! !#if adguard
+!! !#if (adguard)
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/9518146/$script,redirect=prebid,important
 !! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/21831724030/$script,redirect=prebid,important
 ||astatic.ccmbg.com/*/prebid/prebid.*.js$redirect-rule=prebid
@@ -3743,7 +3743,7 @@ france.tv##:where(div[id|="didomi"])
 !! * - `canRunAds`: `true`
 !! * - `isAdBlockActive`: `false`
 !! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid-ads
-!#if adguard
+!#if (adguard)
 !! someURLs$script,redirect=prebid-ads
 !#endif
 
@@ -3770,7 +3770,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$important,redirect=noop-vmap1.0.xml
 
 
-!#if adguard
+!#if (adguard)
 
 
 ! ======= VAST =======
