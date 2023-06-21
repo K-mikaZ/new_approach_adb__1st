@@ -172,3 +172,10 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 !!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 
+
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+www.dailymotion.com,geo.dailymotion.com#%#//scriptlet("set-constant", "__GKS__.NEON_DISABLE_HUBVISOR", "true")
+www.dailymotion.com,geo.dailymotion.com#%#//scriptlet("set-constant", "DMP_TRACKING_ALLOWED", "null")
+www.dailymotion.com,geo.dailymotion.com#%#//scriptlet("set-constant", "DMP_ENABLE_ADS", "false")
+www.dailymotion.com,geo.dailymotion.com#%#//scriptlet("set-constant", "DMP_PRELOAD_IMA", "false")
+!!www.dailymotion.com,geo.dailymotion.com#%#//scriptlet("set-constant", "dataLayer", "emptyArr")
