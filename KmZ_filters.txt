@@ -68,7 +68,7 @@
 #@#ins.adsbygoogle
 ! *#$#div:has( > script:contains(adsby):only-of-type ) { display: none!important; visibility: hidden!important; }
 ! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
-*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { height: 1px!important; visibility: hidden!important; }
+*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { height: 1px!important; display: none!important; }
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! [id|="div-gpt-ad"], div[class|="div-gpt-ad"]
 *#$#:is( [class|="div-gpt-ad"], [id|="div-gpt-ad"] ):not( [style*="opacity:0"] ) { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
