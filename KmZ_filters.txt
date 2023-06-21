@@ -974,15 +974,17 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
-@@||dailymotion.com^$~third-party,cookie=/^(?!(?:dm[ax]id|damd|_gads|[N]ielsen|mics(_(lts|vid)|-uaid)|bito([I]s[S]ecure)?|_g(a|id)|uid))/
-||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|[N]ielsen|mics(_(lts|vid)|-uaid)|bito([I]s[S]ecure)?|_g(a|id)|uid)/
+@@||dailymotion.com^$cookie=/^(?!(?:dm[ax]id|damd|_gads|[Nn]ielsen|mics(_(lts|vid)|-uaid)|bito([Ii]s[Ss]ecure)?|_g(a|id)|uid))/
+||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|[Nn]ielsen|mics(_(lts|vid)|-uaid)|bito([Ii]s[Ss]ecure)?|_g(a|id)|uid)/
+!!||dailymotion.com^$cookie=/^(?!(?:dm-euconsent-v2|[Uu]sprivacy|v1st|ts|ff|sdx|dmvk|_TEST_|([Cc]lient|[Aa]ccess|[Rr]efresh)_token|[Ll]ang|1stsearch))/
+!! Cookie de pression publicitaire.: Vc(vcount)
 !! Advertising cookies
 ||dailymotion.com/cookie/dmaid
 ||*^$important,cookie=/^(dm[ax]id|damd|_gads)/
 ||*^$important,cookie=/^(mics(_(lts|vid)|-uaid))/
 !! Analytical cookies
-||*^$important,cookie=/^([N]ielsen)/
-||*^$important,cookie=/^(bito([I]s[S]ecure)?)/
+||*^$important,cookie=/^([Nn]ielsen)/
+||*^$important,cookie=/^(bito([Ii]s[Ss]ecure)?)/
 
 @@||dailymotion.com^$subdocument
 @@||geo.dailymotion.com^
