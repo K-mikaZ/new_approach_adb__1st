@@ -972,9 +972,7 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 ! ======[ dailymotion.com ]=====================================================
 
 @@||dailymotion.com^$subdocument
-!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
-||dailymotion.com^$cookie
-@@||dailymotion.com^$cookie=/.+euconsent.+/
+@@||dailymotion.com^$cookie
 @@||geo.dailymotion.com^
 ||dailymotion.co*/log*/video*$redirect=noop.txt,important
 !!@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
