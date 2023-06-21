@@ -7,32 +7,168 @@
 ! Description: Rules for test.
 !
 
-!! bad var
-tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
-tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+! ======[ tf1.fr ]=====================================================
 
-!! site:tf1.fr - fixing delay in the video player
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, "")
-!! site:tf1.fr - tracking - prevent loading script
+!! ||*.tf1.fr/*youbora*$script,redirect=noopjs
+@@||*.tf1.fr/*youbora*$script
+||prod-player.tf1.fr/*/player/undefined$redirect=empty
+prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
+!! custom font-size (on fullscreen, coming-next...)
+prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
+!! ||*$media,domain=tf1.fr
+||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr
+@@||mediainfo.tf1.fr^$domain=tf1.fr
+! https://github.com/AdguardTeam/AdguardFilters/pull/102134
+||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,domain=tf1.fr
+!!/\.mp\d/$media,domain=tf1.fr,denyallow=www.tf1.fr|prod-player.tf1.fr|photos.tf1.fr|vidpreviews.tf1.fr
+||*.mp4$media,domain=tf1.fr,denyallow=www.tf1.fr|prod-player.tf1.fr|photos.tf1.fr|vidpreviews.tf1.fr
+
+!#if adguard
+@@||tf1.fr^$cookie
+!#endif
+@@||mediainfo.tf1.fr^$domain=tf1.fr
+||metrics-broker.prod.p.tf1.fr^$badfilter
+||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
+!!||*$media,domain=tf1.fr,badfilter
+@@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
+@@||tf1.fr$generichide
+@@||compte.tf1.fr^$domain=tf1.fr
+||delivery.tf1.fr/pub$media,redirect=noopmp3-0.1s,domain=tf1.fr
+||dnl-adv-ssl.tf1.fr/$media,redirect=noopmp3-0.1s,domain=tf1.fr
+@@||footprint.net^$xmlhttprequest,domain=prod-player.tf1.fr
+@@||vendorlist.consensu.org/vendorlist.json$xmlhttprequest,domain=tf1.fr
+||slpubmedias.tf1.fr^$media,~third-party,redirect=noopmp3-0.1s
+
+!! site:tf1.fr
+www.tf1.fr##:where(div[class^="usabilla"])
+www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
+www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
+!! bad var
+!!tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
+!!tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+!! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
+tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
+!! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
+tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
+!! site:tf1.fr - disable tracking
 tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, "")
 tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
 
-!! site:allocine.fr - fixing delay in the video player
-allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
-!! site:allocine.fr - tracking - prevent loading script
-allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, "")
-allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, "")
-allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, "")
-allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
-!! site:allocine.fr - vast ads (ensure, in case)
-allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
-!! site:allocine.fr - ads
-allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 
-!! misc
-!! allocine.fr##+js(set-constant, AC.config.flags.brandHasGoIpAdserver, false)
-!! allocine.fr##+js(set-constant, JadConfig.adsMapping, {})
-!! CUSTOMCONFIG = "set-ads-config"
-!! allocine.fr##+js(set-constant, _dmpesplayer.C.CUSTOMCONFIG, "")
+! ======[ allocine.fr ]=====================================================
+
+allocine.fr##.main-banner
+
+!! site:allocine.fr - advertisement - fixing delay in the video player
+!! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
+!! |https://assets.allocine.fr/js/website/script-03.3ba7bebbbef1bdc2c198.js
+/.+\:\/\/as{2}ets\.al{2}ocine\.(.{2,})\/js\/website\/script[\w-]\d+\.[\d\w]{15,}(\.min)?\.js/$redirect=noop.js
+!! site:allocine.fr - fixing delay in the video player
+!!allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
+allocine.fr##+js(set-constant, AC.config.ads, emptyObj)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+!! site:allocine.fr - tracking
+!!allocine.fr##+js(set-constant, AC.config.player.comscore.clientId, '')
+allocine.fr##+js(set-constant, AC.config.player.comscore, emptyObj)
+allocine.fr##+js(set-constant, AC.config.player.gtm.active, false)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+!! site:allocine.fr - tracking - prevent loading script
+!!allocine.fr##+js(set-constant, AC.config.player.dfp.baseUrl, '')
+allocine.fr##+js(set-constant, AC.config.player.dfp, emptyObj)
+!!allocine.fr##+js(set-constant, AC.config.player.mediametrie.libUrl, '')
+allocine.fr##+js(set-constant, AC.config.player.mediametrie, emptyObj)
+allocine.fr##+js(set-constant, AC.config.player.gemius, emptyObj)
+!! site:allocine.fr - vast ads (already sets, but ensure in case)
+allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
+
+||autopromo.allocine.fr^$important
+||google-analytics.com/analytics.js$script,domain=allocine.fr
+||googletagmanager.com/gtm.js$script,domain=allocine.fr
+||d-bi.fr^$domain=allocine.fr
+!! found on allocine.fr : push subscription
+!! ||www.allocine.fr/batchsdk-worker-loader.js$script,domain=www.allocine.fr
+!! found on allocine.fr : base64 content of otToken => PrivacySandboxAdsAPIs
+!! ||storage.googleapis.com/fledge-tests/otToken.js
+
+
+! ======[ dailymotion.com ]=====================================================
+
+@@||dailymotion.com^$subdocument
+@@||dailymotion.com^$~third-party,cookie
+||dailymotion.com^$third-party,cookie
+!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+!!||dailymotion.com^$cookie,third-party
+!!@@||dailymotion.com^$cookie,~third-party
+@@||geo.dailymotion.com^
+||dailymotion.co*/log*/video*$redirect=noop.txt,important
+!!@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
+@@||dmcdn.net^
+@@||dm-event.net^$domain=geo.dailymotion.com
+||dmxleo.com^$badfilter
+@@||dmxleo.com^$domain=geo.dailymotion.com
+||dailymotion.com/cdn/$media,script,badfilter
+||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
+@@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
+!! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
+!! @@||pmdstatic.net^$important
+
+
+
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_COOKIES_1ST_PARTY_AVAILABLE, true)
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
+
+
+!! url:www.dailymotion.com/video/* - disable ads
+!! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
+!! tool that can help: https://iframely.com/domains/dailymotion
+!! tracker:https://whotracks.me/trackers/hubvisor.io.html
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_ENABLE_ONLY_HUBVISOR_MIDROLL, true)
+
+!! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
+!! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
+!! site:www.dailymotion.com|geo.dailymotion.com - disable tracking
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_TRACKING_ALLOWED, null)
+!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, null)
+!! site:www.dailymotion.com|geo.dailymotion.com - disable ads
+!!      if (window.DMP_ENABLE_ADS) {
+!!        injectRessourceHint('https://dmxleo.dailymotion.com', {
+!!          rel: 'preconnect', crossorigin: 'use-credentials'
+!!        })
+!!        if (window.DMP_PRELOAD_IMA) {
+!!          injectRessourceHint('https://imasdk.googleapis.com/js/sdkloader/ima3.js', )
+!!        }
+!!      }
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_ENABLE_ADS, false)
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, DMP_PRELOAD_IMA, false)
+
+!! site:geo.dailymotion.com (embedded) - disable ads
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAds, false)
+!! site:geo.dailymotion.com (Advertising Config)
+!! https://developers.dailymotion.com/pass-information-to-your-vast-tag/#understand-customconfig
+!! bad, break video on https://www.programme-tv.net/news/people/243790-ines-reg-elle-fait-une-drole-de-proposition-a-aya-nakamura-la-chanteuse-lui-repond-video/
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableWaitForCustomConfig, false)
+!! site:geo.dailymotion.com (embedded) - misc
+www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
+!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
+
+!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
+
+
+
+!! https://www.dailymotion.com/player/metadata/video/x8km2fm?embedder=https%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19600816%26cfilm%3D301066.html&geo=1&player-id=x1hyz&locale=fr&dmV1st=3baf8ab8-d200-4392-8e14-8432ad89d6c2&dmTs=527408&is_native_app=0
+!! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+!! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+
+!! bad
+!! site:geo.dailymotion.com (embedded) - disable tracking
+!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.metadata.reporting.enable, false)
+!! try edit https://www.dailymotion.com/player/metadata/video/x8jk187?embedder=https%3A%2F%2Fwww.allocine.fr%2F&geo=1&player-id=x1hyz&locale=fr&dmV1st=875360a3-bf77-4099-bf80-a36cb65958f5&dmTs=410295&is_native_app=0
+
+
+!!||dailymotion.com/player/metadata/video/*$replace=/("advertising":\{)*\}/\$1\}/,important
+!!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+!!||www.dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
+
