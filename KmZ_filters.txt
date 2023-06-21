@@ -972,6 +972,8 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 ! ======[ dailymotion.com ]=====================================================
 
+!#if (adguard)
+
 !! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
@@ -988,6 +990,8 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! Analytical cookies
 !! ||*^$important,cookie=/^(?:nielsen)/
 !! ||*^$important,cookie=/^(?:bito(issecure)?)/
+
+!#endif
 
 @@||dailymotion.com^$subdocument
 @@||geo.dailymotion.com^
