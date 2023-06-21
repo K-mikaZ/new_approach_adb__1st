@@ -100,7 +100,6 @@ allocine.fr##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
 @@||dailymotion.com^$~third-party,cookie=/^(?!dm[ax]id|damd|_gads|[N]ielsen|mics(_(lts|vid)|-uaid)|bito([I]s[S]ecure)?)/
-!! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
 ||*^$important,cookie=/^(dm[ax]id|damd|_gads)/
 ||*^$important,cookie=/^([N]ielsen|mics(_(lts|vid)|-uaid)|bito([I]s[S]ecure)?)/
 @@||geo.dailymotion.com^
