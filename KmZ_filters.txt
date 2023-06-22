@@ -594,7 +594,6 @@ short.ink,abysscdn.com##+js(window.open-defuser)
 ||*^$third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
 ||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
-||*/jwplayer/*/jwpsrv.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
 
 ||yougube.com^$all,important
@@ -3666,9 +3665,9 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
 !! ublock
-/.+\.jwpcdn\.com+.+(googima|jwpsrv)\.js/$important,redirect=noop.js
+/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important,redirect=noop.js
 !! adguard
-/.+\.jwpcdn\.com+.+(googima|jwpsrv)\.js/$important,redirect=noopjs
+/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important,redirect=noopjs
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
