@@ -3668,7 +3668,11 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
+!! concerns "jwpcdn.com*jwpsrv.js" && "*/jwplayer/*jwpsrv.js"
 /.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important
+!! IMPORTANT, no redirect for "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
+!!/.+jwpcdn\.com+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
+/.+((?!jwplayer)jwp(\w+))+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
