@@ -2935,7 +2935,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ||popxyz.com^
 ||yuppyads.com^
 ||pbstck.com^$third-party
-||estat.com^$third-party
 ||yourtubetvs.site^
 ||ytimm.com^$third-party
 ||zantbowsing.cam^
