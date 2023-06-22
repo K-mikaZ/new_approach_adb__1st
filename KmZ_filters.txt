@@ -586,14 +586,14 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 ! /gen_204?$image,script
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
-@@||short.ink^$subdocument
-@@||abysscdn.com^$subdocument
-abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
+@@||*^$subdocument,domain=short.ink|abysscdn.com
+short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
+short.ink,abysscdn.com##+js(window.open-defuser)
 ||*^$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com
 ||*^$third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
-||iamcdn.net^*/related.js$important
-||iamcdn.net^*/jwpsrv.js$important
+||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
+||*/jwplayer/*/jwpsrv.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
 
 ||yougube.com^$all,important
@@ -601,6 +601,7 @@ abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 ||youtuhe.com^$all,important
 ||popmonetizer.net^$important
 ||jpcuthdkmuonwc.com^$third-party
+||duimspruer.life^
 ! /\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
 /(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
