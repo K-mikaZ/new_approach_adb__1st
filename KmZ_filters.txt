@@ -770,6 +770,10 @@ vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
 ||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
+@@||embed.filmsplay.*$subdocument
+@@||vizcloud.co^$subdocument
+@@||filemoon.sx^$subdocument
+@@||mp4upload.com^$subdocument
 33seriestreaming.com###player-overlay
 33seriestreaming.com##.signup-window
 33seriestreaming.com##[class$="frame"]:if(:not([class^="meta"]))
