@@ -3664,10 +3664,7 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
-!! ublock
-/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important,redirect=noop.js
-!! adguard
-/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important,redirect=noopjs
+/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
