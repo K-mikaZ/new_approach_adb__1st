@@ -56,3 +56,5 @@
 
 !! ||logs*.xiti.com^$redirect-rule=nooptext,important
 !! ||mesure*.estat.com^$redirect-rule=noop.txt,important
+@@||logs*.xiti.com/event$ping
+
