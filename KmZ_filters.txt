@@ -946,7 +946,7 @@ allocine.fr##.main-banner
 !! site:allocine.fr - advertisement - fixing delay in the video player
 !! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
 !! |https://assets.allocine.fr/js/website/script-03.3ba7bebbbef1bdc2c198.js
-/.+\:\/\/as{2}ets\.al{2}ocine\.(.{2,})\/js\/website\/script[\w-]\d+\.[\d\w]{15,}(\.min)?\.js/$redirect=noop.js
+/.+\:\/\/as{2}ets\.al{2}ocine\.(.{2,})\/js\/website\/script[\w-]\d+\.[\d\w]{15,}(\.min)?\.js/$redirect=noopjs
 !! site:allocine.fr - fixing delay in the video player
 !!allocine.fr#@%#//scriptlet("set-constant", "AC.config.ads", "emptyObj")
 allocine.fr##+js(set-constant, AC.config.ads, emptyObj)
@@ -2846,7 +2846,7 @@ radiotunes.com,di.fm##[class*="premium"]
 ||woawouru.net^
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
-!! ||fwmrm.net^$third-party,script,important,redirect-rule=noop.js
+!! ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
 ||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
 !! !+ NOT_PLATFORM(ext_ublock)
 !! ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
@@ -3672,7 +3672,7 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 /.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important
 !! IMPORTANT, no redirect for "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
 !! /.+jwpcdn\.com+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
-!! /.+((?!jwplayer)jwp(\w+))+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noop.js
+!! /.+((?!jwplayer)jwp(\w+))+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
 /.+((?!jwplayer)jwp(\w+))+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
@@ -3696,12 +3696,12 @@ themoneytizer$important,script,redirect=noopjs
 ||4dex.io^
 
 ||go-mpulse.net^$third-party
-/mpulse.$script,~third-party,redirect=noop.js
-||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
+/mpulse.$script,~third-party,redirect=noopjs
+||go-mpulse.net$script,third-party,redirect-rule=noopjs,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noop.txt,important
 !#if (adguard)
 /mpulse.$script,~third-party,redirect=noopjs
-||go-mpulse.net$script,third-party,redirect-rule=noop.js,important
+||go-mpulse.net$script,third-party,redirect-rule=noopjs,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
 !#endif
 
@@ -3748,7 +3748,7 @@ france.tv##:where(div[id|="didomi"])
 @@||cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json
 @@||cdn.viously.com/player/*/prebid.js
 !! PREBID's unifygroup.com concerns
-|https://pegasus.unifygroup.com/lib/pegasus.min.js$redirect=noop.js
+|https://pegasus.unifygroup.com/lib/pegasus.min.js$redirect=noopjs
 
 
 !! * Sets predefined constants on a page:
@@ -3765,7 +3765,7 @@ france.tv##:where(div[id|="didomi"])
 ! ======= ADS =======
 
 !! async ads script loading
-||dmxleo.dailymotion.com/cdn/manifest/video/$script,redirect=noop.js,important
+||dmxleo.dailymotion.com/cdn/manifest/video/$script,redirect=noopjs,important
 
 
 ! ======= VMAP =======
@@ -3921,7 +3921,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||easyads28.mobi/vast/*
 ||ads.spotx.tv/*_preroll&*$important,redirect=noopvast-3.0
 ||tagbom.com/*/vast.php$important,redirect=noopvast-2.0
-||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noop.js
+||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noopjs
 ||*/videojs-vast-vpaid*$script,important
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
