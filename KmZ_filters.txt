@@ -3938,6 +3938,9 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 ! ======[ EOF ]==========================================================
 
+!! tracker categories: Essential
+!! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
+
 !! critical to the functionality of some website
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
