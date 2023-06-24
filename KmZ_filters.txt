@@ -3970,4 +3970,3 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||tealiumiq.com^$badfilter
 ||tealiumiq.com^$third-party,badfilter
 @@||tealiumiq.com^$important
-!! @@||datadoghq-browser-agent.com^$third-party
