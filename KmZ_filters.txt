@@ -3619,8 +3619,8 @@ dood.*#$#body { color: whitesmoke!important; }
 ||doubleclick.net/pagead/html/*$subdocument,important,redirect-rule=noop.html
 ||googleads.g.doubleclick.net/pagead/*$subdocument,important,redirect=noop.html
 ||gfiypuneou.com^
-||playnext.prismamediadigital.com^
-||api-content.prismamedia.com^
+!! ||playnext.prismamediadigital.com^
+!! ||api-content.prismamedia.com^
 ||key-value.prismamedia.com^
 ||prismamedia-com.videoplayerhub.com^
 ||dogiedimepupae.com^
