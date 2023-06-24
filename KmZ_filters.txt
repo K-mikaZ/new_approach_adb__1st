@@ -1846,7 +1846,6 @@ stream-serie.net#$##option-1{height:100%}
 ||cdn.msdwnld.com^$third-party
 ||cdn.mypcbackup.com^$third-party
 ||cdn4ads.com^$third-party
-||datadoghq-browser-agent.com^$third-party
 ||datadoghq.com^$third-party
 ||deliveryengine.adswizz.com^$third-party
 ||denetsuk.com^$third-party
@@ -3969,3 +3968,4 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||tealiumiq.com^$badfilter
 ||tealiumiq.com^$third-party,badfilter
 @@||tealiumiq.com^$important
+@@||datadoghq-browser-agent.com^$third-party
