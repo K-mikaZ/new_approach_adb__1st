@@ -3928,6 +3928,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
+||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 
 !#endif
 
