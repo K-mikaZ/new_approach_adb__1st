@@ -301,6 +301,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##[id|="ez-video"]
 *##[class|="ez-video"]
 *##[class|="ezoic"]
+*##span[id^="ezoic-pub-"]
 *##[id|="ezoic"]
 *##[id*="ezmob"]
 *##[class*="ezmob"]
@@ -316,6 +317,8 @@ huffingtonpost.fr##[class="before-text "]
 
 !#if (adguard)
 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
+!! break site loading
+6play.fr#@%#(function(){let callCounter=0;const nativeJSONParse=JSON.parse;const handler={apply(){callCounter++;const obj=Reflect.apply(...arguments);if(callCounter<=10){if(obj.hasOwnProperty('appName')){obj.applaunch.data.player.features.ad.enabled=false;obj.applaunch.data.player.features.ad.dai.enabled=false;}}else{JSON.parse=nativeJSONParse;}return obj;}};JSON.parse=new Proxy(JSON.parse,handler);})();
 !#endif
 
 ! #### [FIX] Youtube speed fix (How To Fix Slow YouTube Buffering)
@@ -3096,6 +3099,8 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 6play.fr#@##fb-root:not(body):not(html)
 6play.fr#?#li:if(>[href*="/freemium/"])
 6play.fr#?#li:if(>[src*="/freemium/"])
+!! https://mon.m6.bedrock.tech/statsd/m6web.m6group_web.client.advertisement.display.error.adblock/increment?token=aed5d109f491259c004cbe8ebc3a7a6e
+6play.fr##+js(no-xhr-if, /\.advertisement\.display\.error\.adblock/, true)
 !
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
 @@/cookieconsent.$script,~third-party
@@ -3621,7 +3626,7 @@ dood.*#$#body { color: whitesmoke!important; }
 ||gfiypuneou.com^
 !! ||playnext.prismamediadigital.com^
 !! ||api-content.prismamedia.com^
-||key-value.prismamedia.com^
+!! ||key-value.prismamedia.com^
 ||prismamedia-com.videoplayerhub.com^
 ||dogiedimepupae.com^
 ||pyxiscablese.com^
@@ -3921,6 +3926,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||*/videojs-vast-vpaid*$script,important
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
+||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 
 !#endif
 
