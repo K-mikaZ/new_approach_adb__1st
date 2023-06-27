@@ -50,9 +50,9 @@
 *#$#div[class^="tolro_"] { display: none!important; visibility: hidden!important; }
 *##div[class^="masha_"]
 ! ------------------------
+!! uBlock filters – Ads
 #@#.ads-core-placer
 #@#.ad-placeholder
-!! uBlock filters – Ads
 *#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! 750g.com
 *##.ads-pholder
