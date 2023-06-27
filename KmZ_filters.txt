@@ -3673,7 +3673,7 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
 !! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
-/.+jwp(\w+)+.+(go{2}gima|jwpsrv)\.js/$important
+/.+jwp(\w+)+.+(go{2}gima|jwpsrv|vast)\.js/$important,match-case
 !! IMPORTANT, no redirect for "*/jwplayer/*jwpsrv.js" but only "jwpcdn.com*jwpsrv.js"
 /.+((?!jwplayer)jwp(\w+))+.+(go{2}gima|jwpsrv)\.js/$important,redirect-rule=noopjs
 cuisineaz.com##[id="aff-container"]
