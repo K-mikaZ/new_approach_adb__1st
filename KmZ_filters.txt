@@ -3719,6 +3719,8 @@ themoneytizer$important,script,redirect=noopjs
 /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
+!! ads concerns
+/\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
