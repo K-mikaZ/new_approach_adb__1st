@@ -36,7 +36,7 @@
 
 ! [fix] for those ping via xhr
 ! example "youboranqs01.com/ping"
-/ping?$xmlhttprequest,redirect-rule=empty
+!! /ping?$xmlhttprequest,redirect-rule=empty
 
 ! [FIX] some video loading time
 @@||viously.com^$ping
