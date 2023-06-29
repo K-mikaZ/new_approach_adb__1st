@@ -3708,7 +3708,7 @@ themoneytizer$important,script,redirect=noopjs
 !#endif
 
 /^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
-/^ht{2}ps:\/{2}[\da-f]{10}\.[\da-f]{10}\.com\/[\da-f]{32}\.js$/$script,third-party,match-case
+/^ht{2}ps?:\/{2}[\da-f]{10}\.[\da-f]{10}\.com\/[\da-f]{32}\.js$/$script,third-party,match-case
 /^ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+$/$third-party,important,script,match-case
 /^ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
 /^ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
@@ -3721,7 +3721,7 @@ themoneytizer$important,script,redirect=noopjs
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
 !! on https://t911.org/z-5451051, https://www.gktorrents.cc/z-5861466, ... that call https://judied.com/script/cdn.js
-/^ht{2}ps:\/{2}\S+\.\w+\/z[-]\d+$/$script,match-case,~third-party
+/^ht{2}ps?:\/{2}\S+\.\w+\/z[-]\d+$/$script,match-case,~third-party
 !! ads concerns
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
 
