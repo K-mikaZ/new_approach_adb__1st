@@ -3707,18 +3707,20 @@ themoneytizer$important,script,redirect=noopjs
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
 !#endif
 
-/^ht{2}ps?:\/\/[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8}$/$script,xmlhttprequest,third-party,match-case,important
-/^ht{2}ps?:\/\/\S+\/[45](0[01])?\/\d{7}$/$third-party,important,script,match-case
-/^ht{2}ps?:\/\/\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
-/^ht{2}ps?:\/\/\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
-/^ht{2}ps?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party,match-case
-/^ht{2}ps?:\/\/w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$third-party,important,script,match-case
-/^ht{2}ps?:\/\/s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
-/^ht{2}ps?:\/\/.*\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
-/^ht{2}ps?:\/\/\S+\/1clkn\/\d{4,5}$/$script,third-party,match-case,important
+/^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
+/^ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+$/$third-party,important,script,match-case
+/^ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
+/^ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
+/^ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party,match-case
+/^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$third-party,important,script,match-case
+/^ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
+/^ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
+/^ht{2}ps?:\/{2}\S+\/1clkn\/\d+$/$script,third-party,match-case,important
 /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
+!! on https://t911.org/z-5451051, https://www.gktorrents.cc/z-5861466, ... that call https://judied.com/script/cdn.js
+/^ht{2}ps:\/{2}\S+\.\w+\/z[-]\d+$/$script,match-case,~third-party
 !! ads concerns
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
 
