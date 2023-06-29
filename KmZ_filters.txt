@@ -3708,6 +3708,7 @@ themoneytizer$important,script,redirect=noopjs
 !#endif
 
 /^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
+/^ht{2}ps:\/{2}[\da-f]{10}\.[\da-f]{10}\.com\/[\da-f]{32}\.js$/$script,third-party,match-case
 /^ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+$/$third-party,important,script,match-case
 /^ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
 /^ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
