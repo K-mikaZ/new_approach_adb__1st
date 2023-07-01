@@ -24,7 +24,8 @@
 *#%#(function beaconBlocker(){ if('sendBeacon' in navigator){ try { navigator.sendBeacon=function(url, data){ return true; } } catch(e){} } })();
 !#endif
 
-||*^$ping
+!!||*^$ping
+$ping,third-party
 
 ||pixels.afcdn.com^$important
 
