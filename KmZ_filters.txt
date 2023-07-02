@@ -3446,10 +3446,10 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 !! https://policies.google.com/technologies/cookies?hl=en
-!! @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
-$cookie=VISITOR_INFO1_LIVE,domain=youtube.com
+!! $cookie=VISITOR_INFO1_LIVE,domain=youtube.com
+@@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
-youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+!! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
 
 !! https://cookiedatabase.org/cookie/gigya/ucid/
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
