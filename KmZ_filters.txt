@@ -946,8 +946,10 @@ tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 
 ! ======[ allocine.fr ]=====================================================
 
-!! allocine.fr##.main-banner
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
+
+!! privacy - domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?$/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
 !! site:allocine.fr - advertisement - fixing delay in the video player
 !! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
