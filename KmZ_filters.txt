@@ -3434,7 +3434,10 @@ dood.*#$#body { color: whitesmoke!important; }
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
 @@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
-@@||gigya.com^$cookie
+!! https://cookiedatabase.org/cookie/gigya/ucid/
+!! Analytics - This cookie stores a unique computer identifier to generate reports.
+@@||gigya.com$cookie=/^(?!(?:ucid))/
+$cookie=ucid,important,domain=gigya.com
 !#endif
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
