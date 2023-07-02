@@ -3428,17 +3428,32 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||pagead2.googlesyndication.com^$domain=arte.tv
 ! ||arte.tv/log-player/
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
+
 !#if (adguard)
+
+!! see https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
+
+!! https://www.cookielawinfo.com/free-cookie-checker-for-websites/
+!! https://www.cookieyes.com/cookie-checker/
+!! https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane
+
+!! Cookie Purpose: Marketing/Tracking (318)
+!! https://cookiedatabase.org/purpose/marketing/
+
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
 @@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
+
 !! https://cookiedatabase.org/cookie/gigya/ucid/
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
 !! @@||gigya.com$cookie=/^(?!(?:ucid))/
-$cookie=ucid,domain=gigya.com
+$cookie=ucid
+
 !#endif
+
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
 ||commandersact.com^$badfilter
