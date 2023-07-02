@@ -3436,8 +3436,8 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://cookiedatabase.org/cookie/gigya/ucid/
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
-@@||gigya.com$cookie=/^(?!(?:ucid))/
-$cookie=ucid,important,domain=gigya.com
+!! @@||gigya.com$cookie=/^(?!(?:ucid))/
+$cookie=ucid,domain=gigya.com
 !#endif
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
