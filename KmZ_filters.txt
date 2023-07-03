@@ -913,7 +913,6 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||static.adsafeprotected.com/favicon.ico$domain=tf1.fr|tf1info.fr
 
 !#if (adguard)
-@@||tf1.fr^$cookie
 !! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-google-analytics
 !! ||googletagmanager.com/gtag/js$script,xhr,redirect-rule=google-analytics
 !! ||googletagmanager.com/gtm.js$script,redirect-rule=google-analytics
@@ -2739,7 +2738,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class^=
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 @@||privacy-center.org^$domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
-@@||e.m6web.fr$third-party,cookie
 youtube.com#@#.opened:remove()
 youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 @@/^ws{1,2}((\:\/{2})+)/$domain=eu-proxy.startpage.com
