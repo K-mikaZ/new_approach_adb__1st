@@ -3998,4 +3998,4 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 @@||api.ipify.org^$important
 ||tealiumiq.com^$badfilter
 ||tealiumiq.com^$third-party,badfilter
-@@||tealiumiq.com^$important
+||tealiumiq.com$third-party,badfilter
