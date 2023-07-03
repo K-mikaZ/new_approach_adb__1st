@@ -1579,8 +1579,6 @@ stream-serie.net#$##option-1{height:100%}
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
-!! ||*/cdn-cgi/apps/head/*$script,~third-party,important
-/^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,match-case,important
 ||*/cdn-cgi/trace|$xmlhttprequest,~third-party
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,third-party,important
@@ -3744,6 +3742,8 @@ themoneytizer$important,script,redirect=noopjs
 /^ht{2}ps?:\/{2}\S+\/script\/cdn\.js$/$third-party
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
+!! ||*/cdn-cgi/apps/head/*$script,~third-party,important
+/^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,match-case,important
 !! on https://t911.org/z-5451051, https://www.gktorrents.cc/z-5861466, ... that call https://judied.com/script/cdn.js
 /^ht{2}ps?:\/{2}\S+\.\w+\/z[-]\d+$/$script,match-case,~third-party
 !! ads concerns
