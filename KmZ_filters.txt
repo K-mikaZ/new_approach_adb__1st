@@ -2148,7 +2148,6 @@ voirseries.*#@#.adsBox
 @@||turner.com^
 /pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
-@@/^https?:\/\/(www\.)?.*\/(?
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
 !! ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
