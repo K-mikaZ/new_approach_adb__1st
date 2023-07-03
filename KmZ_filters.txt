@@ -562,7 +562,7 @@ youtube.com#@##consent-bump:remove()
 youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
 youtube.com#$#ytd-mealbar-promo-renderer { display: none !important; visibility: hidden !important; }
 youtube.com##.ytd-consent-bump-lightbox
-youtube.com###content-wrapper
+!! youtube.com###content-wrapper
 youtube.com##.yt-live-chat-banner-renderer
 youtube.com###visible-banners > .yt-live-chat-banner-manager
 youtube.com#@##clarify-box
