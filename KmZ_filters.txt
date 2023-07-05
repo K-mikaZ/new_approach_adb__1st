@@ -1647,28 +1647,28 @@ stream-serie.net#$##option-1{height:100%}
 *$image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||feeds.feedburner.*?bg=$image
 */adservice.*$image
-||full-serie.*error404.php^$image
-||full-serie.*undefined^$image
+||full-serie.*error404.php$image
+||full-serie.*undefined$image
 ||image.tmdb.org/t/p/original/3sExYAo2rNhKgrHx8S37WMTJHZv.jpg$image
 ||l2.visiblemeasures.com^$image
-||p-eu.acxiom-online.com/pixel/ema?*^$image
+||p-eu.acxiom-online.com/pixel/ema?*$image
 ||electrodepot.fr/pub/media/wysiwyg/site/body-background.jpg$image
 ||nowvideo.sx/embed/$image
-||numerama.com/content/themes/project-n-theme/resources/assets/images/icon/sponsoring.svg^$image
+||numerama.com/content/themes/project-n-theme/resources/assets/images/icon/sponsoring.svg$image
 ||xddl.link$image
-/google\.(.{2,})\/[0-9a-z]{50,60}\/(src=\"data:image\/([a-zA-Z]*);base64,([^\"]*))/^$image
-|*/cookie-forwarding?^$image
-|*/cookie/generic^$image
-|*/error404.php^$image
-|*_type=hidden^$image
+/google\.(.{2,})\/[0-9a-z]{50,60}\/(src=\"data:image\/([a-zA-Z]*);base64,([^\"]*))/$image
+|*/cookie-forwarding?$image
+|*/cookie/generic$image
+|*/error404.php$image
+|*_type=hidden$image
 ||waaw.tv/images/adblock.jpg$image
 ||*.google.*/ads/*$image,important
-||*dpstream.media/premium/*^$image
-||c2.accu.fm/banners/*^$image,important
+||*dpstream.media/premium/*$image
+||c2.accu.fm/banners/*$image,important
 ||c16.vidlox.tv/i/01/00523/sy05y705sc7r_xt.jpg$image,important
 ||clickopen.win/x/assets/previews/*$image,~third-party,important
-||clickserv*.*.*^$image,important
-||collector.githubapp.com/github/page_view^$image,important
+||clickserv*.*.*$image,important
+||collector.githubapp.com/github/page_view$image,important
 ://statscollector.
 ||websimages.com/*/stats/collector.js
 /amp-analytics-$important
@@ -1685,7 +1685,7 @@ stream-serie.net#$##option-1{height:100%}
 /\/pixel\/pu(clc|rs(t)?)\?/
 ||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
-||perf.cdnads.com/perf.gif^$image
+||perf.cdnads.com/perf.gif$image
 ||3lift.com^$third-party
 ||4wnet.com^$third-party
 ||ad-srv.net^$third-party
@@ -2157,7 +2157,7 @@ voirseries.*#@#.adsBox
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
-!! ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,important,redirect-rule=nooptext
+!! ||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,important,redirect-rule=nooptext
 !! ||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
 ||securepubads.g.doubleclick.net/pagead/ppub_config?$xmlhttprequest,redirect-rule=noop.txt,important
 @@/manifest.json$other,domain=cloud.google.com
