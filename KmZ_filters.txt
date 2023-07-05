@@ -988,7 +988,7 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 !! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
-||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|vc\(vcount\)|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid)/
+!!||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|vc\(vcount\)|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid)/
 $cookie=/^(?:d(am|m[ax]i)d|_gads|vc\(vcount\)|nielsen|mics([_-](lts|vid|uaid)|bito(is{2}ecure)?|uid)/
 
 !! Advertising cookies
