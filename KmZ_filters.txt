@@ -3754,8 +3754,8 @@ themoneytizer$important,script,redirect=noopjs
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
 !! ||*/cdn-cgi/apps/head/*$script,~third-party,important
 /^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,match-case,important
-!! on https://t911.org/z-5451051, https://www.gktorrents.cc/z-5861466, ... that call https://judied.com/script/cdn.js
-/^ht{2}ps?:\/{2}\S+\.\w+\/z[-]\d+$/$script,match-case,~third-party
+!! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
+/^ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}$/$script,match-case,~third-party
 !! ads concerns
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
 
