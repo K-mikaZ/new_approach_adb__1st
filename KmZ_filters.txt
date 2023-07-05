@@ -1001,7 +1001,7 @@ $cookie=uid
 $cookie=1P_JAR
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
-$cookie=/^?:ad[-](id|privacy)/
+$cookie=/^(?:ad[-](id|privacy))/
 
 !! Analytical cookies
 !! Google : _g(a|id)
