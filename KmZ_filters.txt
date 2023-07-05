@@ -988,19 +988,17 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 !! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
-
-!! @@||dailymotion.com^$cookie=/^(?!(?:dm[ax]id|damd|_gads|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid))
-!! ||dailymotion.com^$cookie=/^(?!(?:dm-euconsent-v2|[Uu]sprivacy|v1st|ts|ff|sdx|dmvk|_TEST_|([Cc]lient|[Aa]ccess|[Rr]efresh)_token|[Ll]ang|1stsearch))/
 ||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|vc\(vcount\)|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid)/
-!! @@||dailymotion.com^$important,cookie=/^(?:\w+_token|dm-euconsent-v2|usprivacy|v1st|dmvk|ts|ff|lang|_TEST_|1stsearch|s(dx|id))/
+$cookie=/^(?:d(am|m[ax]i)d|_gads|vc\(vcount\)|nielsen|mics([_-](lts|vid|uaid)|bito(is{2}ecure)?|uid)/
 
 !! Advertising cookies
 ||dailymotion.com/cookie/dmaid
-!! ||*^$cookie=/^(?:dm[ax]id|damd|_gads)/
-!! ||*^$important,cookie=/^(?:mics(_(lts|vid)|-uaid))/
+!! ||*^$cookie=/^(?:d(am|m[ax]i)d|_gads)/
+!! ||*^$important,cookie=/^(?:mics([_-](lts|vid|uaid))/
 !! Analytical cookies
+!! Google : _g(a|id)
 !! ||*^$important,cookie=/^(?:nielsen)/
-!! ||*^$important,cookie=/^(?:bito(issecure)?)/
+!! ||*^$important,cookie=/^(?:bito(is{2}ecure)?)/
 
 !#endif
 
