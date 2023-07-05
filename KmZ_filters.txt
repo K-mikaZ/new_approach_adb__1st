@@ -3748,7 +3748,7 @@ themoneytizer$important,script,redirect=noopjs
 /^ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
 /^ht{2}ps?:\/{2}\S+\/1clkn\/\d+$/$script,third-party,match-case,important
 !! /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
-/^ht{2}ps?:\/{2}[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
+!! /^ht{2}ps?:\/{2}[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 /^ht{2}ps?:\/{2}\S+\/script\/cdn\.js$/$third-party
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
 /(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
