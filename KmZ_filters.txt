@@ -989,10 +989,10 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 !! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
 !! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
 
-!!@@||dailymotion.com^$cookie=/^(?!(?:dm[ax]id|damd|_gads|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid))
-!!||dailymotion.com^$cookie=/^(?!(?:dm-euconsent-v2|[Uu]sprivacy|v1st|ts|ff|sdx|dmvk|_TEST_|([Cc]lient|[Aa]ccess|[Rr]efresh)_token|[Ll]ang|1stsearch))/
+!! @@||dailymotion.com^$cookie=/^(?!(?:dm[ax]id|damd|_gads|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid))
+!! ||dailymotion.com^$cookie=/^(?!(?:dm-euconsent-v2|[Uu]sprivacy|v1st|ts|ff|sdx|dmvk|_TEST_|([Cc]lient|[Aa]ccess|[Rr]efresh)_token|[Ll]ang|1stsearch))/
 ||dailymotion.com^$important,cookie=/^(?:dm[ax]id|damd|_gads|vc\(vcount\)|nielsen|mics(_(lts|vid)|-uaid)|bito(issecure)?|_g(a|id)|uid)/
-@@||dailymotion.com^$important,cookie=/^(?:\w+_token|dm-euconsent-v2|usprivacy|v1st|dmvk|ts|ff|lang|_TEST_|1stsearch|s(dx|id))/
+!! @@||dailymotion.com^$important,cookie=/^(?:\w+_token|dm-euconsent-v2|usprivacy|v1st|dmvk|ts|ff|lang|_TEST_|1stsearch|s(dx|id))/
 
 !! Advertising cookies
 ||dailymotion.com/cookie/dmaid
