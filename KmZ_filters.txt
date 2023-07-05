@@ -1608,8 +1608,6 @@ stream-serie.net#$##option-1{height:100%}
 /jquery.lightbox-0.5.min.js|$script,important
 /authedmine.min.js$script,important
 /(.*\.)?filmstreaming[0-9]{1,}\.(pro)\/(adskeeper([0-9]{1,})\.js)/$script,important
-/(fb(\_(authentication|publiecomment)|events|(\(.|-)(gene)?(min))|generictracking).js|$script,important
-/212012198557.js|$script,important
 /connexion_facebook_nl_magelan.js|$script,important
 /figarotrack.js?$script,important
 /google-analytics-for-wordpress/$script,important
