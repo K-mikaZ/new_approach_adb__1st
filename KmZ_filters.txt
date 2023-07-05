@@ -995,12 +995,22 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 ||dailymotion.com/cookie/dmaid
 $cookie=/^(?:d(am|m[ax]i)d|_gads)/
 $cookie=/^(?:mics([_-](lts|vid|uaid)))/
+!! scorecardresearch.com (Com Score)
 $cookie=uid
+!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
+$cookie=1P_JAR
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
+$cookie=/^?:ad[-](id|privacy)/
+
 !! Analytical cookies
 !! Google : _g(a|id)
 $cookie=/^(?:_g(a|id))/
 $cookie=/^(?:nielsen)/
 $cookie=/^(?:bito(is{2}ecure)?)/
+
+!! https://cookiedatabase.org/cookie/addthis/__atrfs/
+$cookie=__atrfs
 
 !#endif
 
