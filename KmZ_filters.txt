@@ -3478,7 +3478,7 @@ $cookie=/^(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)$/
 ||yahoo.com^$cookie=/^(?:GUCS|IDSYNC|RRC|B)$/,important
 yahoo.com##+js(cookie-remover, /^(?:GUCS|IDSYNC|RRC|B)$/)
 !!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
-$cookie=/^(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
+$cookie=/^(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)$/
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie=OAID
 !! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
