@@ -1048,12 +1048,6 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 ||geo.dailymotion.com/cookie.js
 geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 
-!! Advertising cookies
-cookie/dmaid$domain=dailymotion.com
-$cookie=/^(?:d(am|m[ax]i)d|_gads)/
-!! www.dailymotion.com,geo.dailymotion.com##+js(cookie-remover, /^(?:d(am|m[ax]i)d|_gads)/)
-
-
 !! https://www.dailymotion.com/player/metadata/video/x8km2fm?embedder=https%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19600816%26cfilm%3D301066.html&geo=1&player-id=x1hyz&locale=fr&dmV1st=3baf8ab8-d200-4392-8e14-8432ad89d6c2&dmTs=527408&is_native_app=0
 !! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"advertising\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
 !! ||dailymotion.com/player/metadata/video/*$replace=/(\{[\s\S]*?\"reporting\"[\s\S]*?\:\{)[\s\S]*\}/\$1\}/,important
@@ -1071,55 +1065,6 @@ $cookie=/^(?:d(am|m[ax]i)d|_gads)/
 
 ! ======[ ]=====================================================
 
-!#if (adguard)
-
-!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
-
-!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
-!! https://cookiesearch.org/cookies/?cookie-cat=advertisement
-!! https://cookiesearch.org/cookies/?cookie-cat=analytics
-
-!! https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
-$cookie=/^(?:mics([_-](lts|vid|uaid)))/
-
-!! scorecardresearch.com (Com Score)
-$cookie=uid
-
-!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
-!! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
-$cookie=1P_JAR
-
-!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
-!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
-$cookie=/^(?:ad-(id|privacy))/
-
-!! Analytical cookies
-!! Google : _g(a|id)
-!! $cookie=/^(?:_g(a|id))/
-
-!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
-!! $cookie=NIELSEN
-
-!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
-!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
-$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
-
-!! https://cookiedatabase.org/cookie/addthis/__atrfs/
-$cookie=__atrfs
-
-
-!! Cookies categorie Advertisement: ( https://cookiesearch.org/cookies/?cookie-cat=advertisement )
-
-!! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adal_ca
-$cookie=/^(?:_{2}adal_c[a|w])/
-*##+js(cookie-remover, /^(?:_{2}adal_c[a|w])/)
-
-!! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adroll
-$cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
-*##+js(cookie-remover, /^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/)
-
-
-!#endif
 
 
 ultimate-catch.eu##.header-ads
@@ -3479,12 +3424,16 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !! see https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
 
-!! https://www.cookielawinfo.com/free-cookie-checker-for-websites/
-!! https://www.cookieyes.com/cookie-checker/
+!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+
+!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
+
 !! https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane
 
-!! Cookie Purpose: Marketing/Tracking (318)
-!! https://cookiedatabase.org/purpose/marketing/
+
+!! Cookies categorie Analytics: https://cookiesearch.org/cookies/?cookie-cat=analytics
+!! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
+!! Cookie Purpose: Marketing/Tracking (318): https://cookiedatabase.org/purpose/marketing/
 
 
 
@@ -3492,6 +3441,9 @@ dood.*#$#body { color: whitesmoke!important; }
 /cookienotice.js$~third-party
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$third-party,redirect=noop.txt,important
 
+!! 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
+||geo.dailymotion.com/cookie.js
+cookie/dmaid$domain=dailymotion.com
 
 !! ------------------------------------------------------
 
@@ -3503,7 +3455,7 @@ dood.*#$#body { color: whitesmoke!important; }
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
 $cookie=ucid
 !! yandex Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
-$cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
+$cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))$/
 !! yahoo Analytics - https://cookiesearch.org/cookies/?cookie-id=APID
 ||yahoo.com^$cookie=APID
 
@@ -3514,21 +3466,23 @@ $cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
 
 !! ------------------------------------------------------
 
+!! dailymotion Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
+$cookie=/^(?:d(am|m[ax]i)d|_gads)$/
 !! ?? Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
-$cookie=/^(?:_{2}adal_c[a|w])/
+$cookie=/^(?:_{2}adal_c[a|w])$/
 !! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adroll
-$cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
+$cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)$/
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
-$cookie=/^(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
+$cookie=/^(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)$/
 !! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
-||yahoo.com^$cookie=/^(?:GUCS|IDSYNC|RRC|B)/,important
-yahoo.com##+js(cookie-remover, /^(?:GUCS|IDSYNC|RRC|B)/)
+||yahoo.com^$cookie=/^(?:GUCS|IDSYNC|RRC|B)$/,important
+yahoo.com##+js(cookie-remover, /^(?:GUCS|IDSYNC|RRC|B)$/)
 !!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 $cookie=/^(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie=OAID
 !! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
-$cookie=/^(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
+$cookie=/^(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))$/
 !! animationdigitalnetwork.fr Advertisement - https://cookiesearch.org/cookies/?cookie-id=_pubcid
 $cookie=_pubcid
 
@@ -3538,14 +3492,43 @@ $cookie=_pubcid
 !! the __cflb, __cf_bm, cf_ob_info, cf_use_ob, __cfwaitingroom, and __cfruid cookies are strictly necessary to provide the services requested by Cloudflare.
 !! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
 !! https://cookiesearch.org/cookies/?cookie-id=__cf_bm
-@@$cookie=/^(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))/,important
-!!@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+@@$cookie=/^(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))$/,important
+!!@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)$/
 
 !! https://policies.google.com/technologies/cookies?hl=en
 !! $cookie=VISITOR_INFO1_LIVE,domain=youtube.com
 @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
 !! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+
+
+!! https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
+$cookie=/^(?:mics([_-](lts|vid|uaid)))$/
+
+!! scorecardresearch.com (Com Score)
+$cookie=uid
+
+!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
+!! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
+$cookie=1P_JAR
+
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
+$cookie=/^(?:ad-(id|privacy))$/
+
+!! Analytical cookies
+!! Google : _g(a|id)
+!! $cookie=/^(?:_g(a|id))$/
+
+!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
+!! $cookie=NIELSEN
+
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
+$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)$/
+
+!! https://cookiedatabase.org/cookie/addthis/__atrfs/
+$cookie=__atrfs
 
 !#endif
 
