@@ -2839,6 +2839,7 @@ firesticktricks.com##+js(window.open-defuser)
 player.universanimevf.com##+js(window.open-defuser)
 ddl-francais.com##+js(window.open-defuser)
 ||*$xmlhttprequest,third-party,denyallow=animesultra.net|toonanime.xyz,domain=toonanime.*
+/js/adsbygoogle.js$important,domain=toonanime.*
 @@||toonanime.*$xmlhttprequest,media,subdocument
 @@||toonanime.*$generichide
 toonanime.*##+js(window.open-defuser.js)
