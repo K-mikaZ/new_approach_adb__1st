@@ -20,7 +20,7 @@ $cookie=s1
 
 
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js", see < https://github.com/Sergeyshall/jw-streamsense >
-/\/jw([0-9]{1})s{2}(\.min)?\.js/$script
+/\/jw\ds{2}(\.min)?\.js/$script
 
 ! /streamsense(\.min)?\.js/$script like "https://assets.allocine.fr/bundles/engagement/js/streamsense.min.js"
 /[\s\S]*streamsense[\s\S]*/$script,~third-party
