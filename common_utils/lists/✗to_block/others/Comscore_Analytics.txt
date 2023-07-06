@@ -12,6 +12,8 @@ $cookie=s1
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
 ||comscore.com^$domain=~comscore.com
+
+
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js, /comscore_beacon/* ...
 /[\s\S]*comscore[\s\S]*/$script,image,important,domain=~comscore.com
@@ -30,7 +32,7 @@ $cookie=s1
 ! Owned by comScore, Inc.
 ! https://whotracks.me/trackers/scorecard_research_beacon.html
 ! OPERATES UNDER:
-/score(card)?research\.com/
+/score(card)?research\.com/$third-party
 ||scrsrch.com^
 ||securestudies.com^
 ! --------------------------------------------------------------
