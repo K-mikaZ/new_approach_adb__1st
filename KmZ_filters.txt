@@ -1053,7 +1053,7 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 
 !! Advertising cookies
-||dailymotion.com/cookie/dmaid
+cookie/dmaid$domain=dailymotion.com
 $cookie=/^(?:d(am|m[ax]i)d|_gads)/
 !! www.dailymotion.com,geo.dailymotion.com##+js(cookie-remover, /^(?:d(am|m[ax]i)d|_gads)/)
 
