@@ -1094,7 +1094,6 @@ ultimate-catch.eu##.single.small > [href*=":"]
 irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr
 @@||pc.middleware.6play.fr^$xmlhttprequest,domain=6play.fr
-@@||bs.serving-sys.com/serving/adServer.bs^$image,domain=www.6play.fr
 ! ||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
 ! ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
@@ -1138,8 +1137,8 @@ zone-telechargement.casa##[href*=".kfiopkln."]
 ||aan.amazon.com^$all,important
 ||device-metrics-us.amazon.com^$all,important
 ||assoc-amazon.*^$all,important
-||images-na.ssl-images-amazon.com/images/*/*/ads/*^$script,important
-||images-na.ssl-images-amazon.com/images/*/*/productAds/*^$image,important
+||images-na.ssl-images-amazon.com/images/*/*/ads/*$script,important
+||images-na.ssl-images-amazon.com/images/*/*/productAds/*$image,important
 multiup.*##.mfp-preloader
 multiup.*##[target="_blank"]
 multiup.*##.mfp-bg
@@ -1627,18 +1626,18 @@ stream-serie.net#$##option-1{height:100%}
 /toro\-tags\.(.{2,})\/\_?tags\/(.*)\.js/$script,important
 /voir\.dpstream\.(site)\/pop\.js/$script,important
 /^ht{2}ps?:\/\/s3\.amazonaws\.(.{3})\/[\w\d]{54,57}\/[\w,\d]{8,10}$/$xmlhttprequest,third-party,domain=~amazon.com
-|*.gif?partner^$image,important
+|*.gif?partner$image,important
 ||perf.gif$image,important
 ||empty_pixel.gif$image,important
 ||*google.*/images/cleardot.gif|$image,important
 ||cdn1.ftimg.com/images/x.gif$image,~third-party,important
 ||r.mail.ru/*.gif$image,important
 ||*.hivos.*.gif|$image,important
-||cdn.accuradio.com/static/images/*/adblock_warning_yellow.png^$image
-||full-serie.*/templates/Streaming/images/highlight.png^$image
-||ianimes.co/images/e-pubs.png^$image
-||thevideo.me/images/close_red_small.png^$image
-||uv9ieb2ohr.com/images/close_gray.png^$image
+||cdn.accuradio.com/static/images/*/adblock_warning_yellow.png$image
+||full-serie.*/templates/Streaming/images/highlight.png$image
+||ianimes.co/images/e-pubs.png$image
+||thevideo.me/images/close_red_small.png$image
+||uv9ieb2ohr.com/images/close_gray.png$image
 ||vidup.me/images/embed_bg_1.png$image
 ||vidup.me/player/mute.png$image
 ||voirfilmsenstreaming.com/wp-content/themes/dontz/images/bg.png$image
@@ -1947,7 +1946,7 @@ stream-serie.net#$##option-1{height:100%}
 /ad{2}this(edge)?\.com/
 /in(\-)?page(\-)?push\.com/
 /script/*.php?*$image
-||31.220.3.200^
+||31.220.3.200
 ||d1grmk7aafb6ck.cloudfront.net^$third-party
 ||d36zfztxfflmqo.cloudfront.net^$third-party
 ||eikegolehem.com^$third-party
@@ -2362,14 +2361,14 @@ streamroot.io$script,important,badfilter
 ||xtremeserve.xyz$xmlhttprequest,_,important
 ||apprefaculty.pro$xmlhttprequest,_,important
 ||vidalak.com$xmlhttprequest,_,important
-||tag.leadplace.fr/wckr.php?id=*^$image,_,important
+||tag.leadplace.fr/wckr.php?id=*$image,_,important
 ||cloudfront-hls-media-vod-ellation.vip4-ams1.dlvr1.net^$object,_,important
 *$popup,important,domain=esf397vsf1nk.com|itnuzleafan.com|unreshiramor.com
 /(about\:blank)|(data\:text)/$popup,important,domain=streamango.com
 @@*$popup,domain=google.com
-||*.cloudfront.*^$popup,important
+||*.cloudfront.*$popup,important
 ||a5224106a28855abbbb0825aa5e4cd9bd.profile.ams50.cloudfront.net^$all,important
-/(d(1(qg{2}q1at2gusn|r90st78epsag|g3gvqfdsvkse|1enq2rymy0yl|9d01jdwgxcpp)|2(2z575k8abudv|cgdtxs450j04|glav2919q4cw|ha2{2}j8ys3e0o|j{2}zw81hqbuqv|lv4zbk7v5f93|rb23ng5tw{2}z4|ymkpxi1rgldj)|3(6zfztxfflmqo|al52d8cojds7|c(3uihon9kmp|od80thn7qnd)|kpkrgd3aj4o7|oxtn1x3b8d7i|t5ngjixpjdho|v3bqdndm4erx|6zfztxfflmqo|hs51abvkuanv|f4u3khr0ycep|ujids68p6xmp|8nb{2}ai6u794i)|8rk54i4mohrb|c(5k8fg5ioc8s|niko1cv0rz)|gw7ae5vrovs7|n3uy6cx65ujf|t{2}617kogtcso))\.cloudfront\.(.{3})/^$all,important
+/(d(1(qg{2}q1at2gusn|r90st78epsag|g3gvqfdsvkse|1enq2rymy0yl|9d01jdwgxcpp)|2(2z575k8abudv|cgdtxs450j04|glav2919q4cw|ha2{2}j8ys3e0o|j{2}zw81hqbuqv|lv4zbk7v5f93|rb23ng5tw{2}z4|ymkpxi1rgldj)|3(6zfztxfflmqo|al52d8cojds7|c(3uihon9kmp|od80thn7qnd)|kpkrgd3aj4o7|oxtn1x3b8d7i|t5ngjixpjdho|v3bqdndm4erx|6zfztxfflmqo|hs51abvkuanv|f4u3khr0ycep|ujids68p6xmp|8nb{2}ai6u794i)|8rk54i4mohrb|c(5k8fg5ioc8s|niko1cv0rz)|gw7ae5vrovs7|n3uy6cx65ujf|t{2}617kogtcso))\.cloudfront\.(.{3})/$all,important
 @@||p.typekit.net$generichide
 @@||maxst.icons8.com$generichide
 @@||gateway.foresee.com$generichide
@@ -2429,7 +2428,6 @@ search.lilo.org##.top.addivwhite2
 ||cstatic.weborama.fr^$media
 ||entitlements.jwplayer.com^
 /wp-content/plugins/lazy-load/images/1x1.trans.gif$image
-@@||kmz-bandwidth-hero.herokuapp.com^$image
 /promoted-ads$domain=namemeaningsdictionary.com,subdocument
 ||d1grmk7aafb6ck.cloudfront.net^$third-party,badfilter
 ||d1grmk7aafb6ck.cloudfront.net^$third-party,media
@@ -2544,7 +2542,7 @@ vkstreaming.one##.rkads
 voir.dustreaming.co##.aa-share
 cinez.*##.player-list li:if([onclick^="window.open('https://wwv.cinez.net/go/"])
 /run(ative)?\-syndicate\.com/
-||*^$popup,domain=voir-film.cc
+||*$popup,domain=voir-film.cc
 myonlineradio.hu##[src*="/adsense/"]
 ||gravatar.com/avatar.php$image
 flidom.com###footer
@@ -2856,12 +2854,9 @@ radiotunes.com,di.fm##[class*="premium"]
 ||woawouru.net^
 fwmrm.net##+js(window.open-defuser)
 ||fwmrm.net^$popup,important
-!! ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
-||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noop.txt,important
-!! !+ NOT_PLATFORM(ext_ublock)
-!! ||fwmrm.net^$third-party,script,important,redirect-rule=noopjs
+||youborafds01.com*outputformat=json*$third-party,redirect-rule=noop.txt,important
 !+ NOT_PLATFORM(ext_ublock)
-||youborafds01.com*outputformat=json*^$third-party,redirect-rule=noopjson,important
+||youborafds01.com*outputformat=json*$third-party,redirect-rule=noopjson,important
 open.spotify.com#@#+js(nowebrtc)
 @@||vshare.eu/player_sda.html
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
@@ -3025,7 +3020,6 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 ! /(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
 @@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
-!! @@||googlevideo.com^$image,_,third-party,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
 @@/.*/$font,third-party
 ! @@/videoembed/$subdocument,media,third-party, @@/embed/$subdocument,media,third-party
@@ -3058,7 +3052,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_
 &adsExpected=$badfilter
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
-||*^$badfilter,csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$script,badfilter
 ||doubleclick.net/instream/ad_status.js$script,important,badfilter
@@ -3449,7 +3443,8 @@ dood.*#$#body { color: whitesmoke!important; }
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
-@@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+!! @@||*^$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 !! https://policies.google.com/technologies/cookies?hl=en
 !! $cookie=VISITOR_INFO1_LIVE,domain=youtube.com
@@ -3502,7 +3497,7 @@ $cookie=ucid
 ||nexx360.io^
 ||notifpush.com^
 ||prmutv.co^
-*/extraanalyticsdata/*^$important
+*/extraanalyticsdata/*$important
 ||analytics.tiktok.com^
 ||map.cookieless-data.com^$image
 @@||tapecontent.net^$image,media,domain=stapadblockuser.xyz
