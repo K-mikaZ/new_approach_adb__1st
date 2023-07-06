@@ -1084,6 +1084,7 @@ geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 !! Advertising cookies
 ||dailymotion.com/cookie/dmaid
 $cookie=/^(?:d(am|m[ax]i)d|_gads)/
+www.dailymotion.com,geo.dailymotion.com##+js(cookie-remover, /^(?:d(am|m[ax]i)d|_gads)/)
 
 $cookie=/^(?:mics([_-](lts|vid|uaid)))/
 
@@ -1117,9 +1118,11 @@ $cookie=__atrfs
 
 !! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adal_ca
 $cookie=/^(?:_{2}adal_c[a|w])/
+*##+js(cookie-remover, /^(?:_{2}adal_c[a|w])/)
 
 !! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adroll
 $cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
+*##+js(cookie-remover, /^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/)
 
 
 !#endif
