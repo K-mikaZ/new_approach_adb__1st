@@ -1096,11 +1096,11 @@ $cookie=1P_JAR
 
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
-$cookie=/^(?:ad[-](id|privacy))/
+$cookie=/^(?:ad-(id|privacy))/
 
 !! Analytical cookies
 !! Google : _g(a|id)
-$cookie=/^(?:_g(a|id))/
+!! $cookie=/^(?:_g(a|id))/
 
 !! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
 !! $cookie=NIELSEN
@@ -1111,6 +1111,16 @@ $cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
 
 !! https://cookiedatabase.org/cookie/addthis/__atrfs/
 $cookie=__atrfs
+
+
+!! Cookies categorie Advertisement:
+
+!! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adal_ca
+$cookie=/^(?:_{2}adal_c[a|w])/
+
+!! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adroll
+$cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
+
 
 !#endif
 
