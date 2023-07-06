@@ -721,10 +721,6 @@ vidoza.net##.asg-label
 @@||vidtodo.com/js/jquery.cookie.js$script,domain=vidtod.me
 @@||vidtodo.com/js/jquery.min.js$script
 @@||vidtodo.com/js/xupload.js?v=2$script,domain=vidtod.me
-/out.php$popup,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
-||*$popup,third-party,important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
-@@/fuckadblock.js?$script,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
-/js/disqusloader.js$important,domain=hqq.tv|hqq.to|waaw.to|waaw.tv|netu.io|netu.to|netu.tv|vizplay.icu|younetu.com
 vizplay.icu##+js(abort-on-property-read, Image)
 vizplay.icu##+js(abort-on-property-read, ????)
 vizplay.icu##+js(abort-on-property-read, BetterJsPop)
@@ -2967,16 +2963,24 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[onclick="openAuc"]
 ##a[onclick^="openAuc"]
 ##a[href^="mailto:support@netu.tv"]
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##a[href^="mailto:support@netu.tv"]
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.disablePreloadAds, true)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.playAdAlways, false)
-hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.adCancelTimeout, 0)
-! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.numAttempts, 0)
-! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.fadbk, false)
-! hqq.*,waaw.*,netu.*,vizplay.icu,yandexcdn.com,younetu.com##+js(set-constant, my_config.vwview, false)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##a[href^="mailto:support@netu.tv"]
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##a[onclick^="openAuc"]
+!! see https://hqq.tv/js/embed.211.js?736
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.disablePreloadAds, true)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.playAdAlways, false)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.adCancelTimeout, 0)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.spotUrl, emptyArr)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, vwview, false)
+hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, adblockcheck, false)
+!! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com 
+/\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+/ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+/out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+||*$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+@@/fuckadblock.js?$script,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+/js/disqusloader.js$important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
