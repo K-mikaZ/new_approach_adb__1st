@@ -3534,11 +3534,10 @@ $cookie=_pubcid
 ! Le cookie Cloudflare:
 ! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
 ! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
-!! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
-!! https://cookiesearch.org/cookies/?search-term=__cf_bm&filter-type=cookie-name&sort=asc&cookie-id=__cf_bm
 !! the __cflb, __cf_bm, cf_ob_info, cf_use_ob, __cfwaitingroom, and __cfruid cookies are strictly necessary to provide the services requested by Cloudflare.
-!! @@$cookie=/^(?:__cf(_bm|lb|ruid|waitingroom)|cf_ob_info|cf_use_ob)/
-@@$cookie=/^(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom)/,important
+!! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
+!! https://cookiesearch.org/cookies/?cookie-id=__cf_bm
+@@$cookie=/^(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))/,important
 !!@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 !! https://policies.google.com/technologies/cookies?hl=en
