@@ -2809,7 +2809,7 @@ aparat.*##[target="_top"]
 aparat.*##[target="_blank"]
 monstreams.info,derniers-films.com##a[target="_blank"]
 my.mail.ru##+js(window.open-defuser)
-@@/\/streamsense(\.min)?\.js/$script,domain=my.mail.ru
+@@/\/streamsense(\.min)?\.js/$script,domain=my.mail.ru,important
 @@||lei.scan-manga.com^
 streamees.com#@#.an-advert-banner
 streamees.com#@#.an-sponsored
