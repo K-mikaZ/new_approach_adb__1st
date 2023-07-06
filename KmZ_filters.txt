@@ -1113,7 +1113,7 @@ $cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
 $cookie=__atrfs
 
 
-!! Cookies categorie Advertisement:
+!! Cookies categorie Advertisement: ( https://cookiesearch.org/cookies/?cookie-cat=advertisement )
 
 !! https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adal_ca
 $cookie=/^(?:_{2}adal_c[a|w])/
