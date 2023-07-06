@@ -2809,7 +2809,6 @@ aparat.*##[target="_top"]
 aparat.*##[target="_blank"]
 monstreams.info,derniers-films.com##a[target="_blank"]
 my.mail.ru##+js(window.open-defuser)
-@@/\/streamsense(\.min)?\.js/$script,domain=my.mail.ru,important
 @@||lei.scan-manga.com^
 streamees.com#@#.an-advert-banner
 streamees.com#@#.an-sponsored
@@ -3752,6 +3751,8 @@ themoneytizer$important,script,redirect=noopjs
 ||go-mpulse.net$script,third-party,redirect-rule=noopjs,important
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
 !#endif
+
+/[\s\S]*streamsense[\s\S]*/$script,~third-party
 
 /^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
 /^ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js$/$script,third-party,match-case
