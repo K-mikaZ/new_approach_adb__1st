@@ -24,6 +24,7 @@ $cookie=s1
 
 ! /streamsense(\.min)?\.js/$script like "https://assets.allocine.fr/bundles/engagement/js/streamsense.min.js"
 /[\s\S]*streamsense[\s\S]*/$script,~third-party
+@@/streamsense.$domain=my.mail.ru,important
 
 
 ! Owned by comScore, Inc.
