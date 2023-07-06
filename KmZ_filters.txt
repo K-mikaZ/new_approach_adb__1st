@@ -3752,7 +3752,6 @@ themoneytizer$important,script,redirect=noopjs
 ||go-mpulse.net$xmlhttprequest,third-party,redirect-rule=noopjson,important
 !#endif
 
-/[\s\S]*streamsense[\s\S]*/$script,~third-party
 
 /^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
 /^ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js$/$script,third-party,match-case
