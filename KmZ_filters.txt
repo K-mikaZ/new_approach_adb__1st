@@ -3499,11 +3499,12 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !! ------------------------------------------------------
 
-!! gigya.com Analytics - https://cookiesearch.org/cookies/?search-term=ucid&filter-type=cookie-name&sort=asc&cookie-id=ucid
+!! gigya.com Analytics - https://cookiesearch.org/cookies/?cookie-id=ucid
+!! Analytics - This cookie stores a unique computer identifier to generate reports.
 $cookie=ucid
-!! yandex Analytics - https://cookiesearch.org/cookies/?search-term=_ym_isad&filter-type=cookie-name&sort=asc&cookie-id=_ym_isad
+!! yandex Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
 $cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
-!! yahoo Analytics - https://cookiesearch.org/cookies/?search-term=APID&filter-type=cookie-name&sort=asc&cookie-id=APID
+!! yahoo Analytics - https://cookiesearch.org/cookies/?cookie-id=APID
 ||yahoo.com^$cookie=APID
 
 
@@ -3513,18 +3514,18 @@ $cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
 
 !! ------------------------------------------------------
 
-!! ?? Advertisement - https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adal_ca
+!! ?? Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
 $cookie=/^(?:_{2}adal_c[a|w])/
-!! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-cat=advertisement&sort=asc&cookie-id=__adroll
+!! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adroll
 $cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
 $cookie=/^(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
-!! yahoo Advertisement - https://cookiesearch.org/cookies/?search-term=GUCS&filter-type=cookie-name&sort=asc&cookie-id=GUCS
+!! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
 ||yahoo.com^$cookie=/^(?:GUCS|IDSYNC|RRC|B)/,important
 yahoo.com##+js(cookie-remover, /^(?:GUCS|IDSYNC|RRC|B)/)
-!!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?search-term=test_cookie&filter-type=cookie-name&sort=asc&cookie-id=test_cookie
+!!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 $cookie=/^(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
-!! adswizz.com Advertisement - https://cookiesearch.org/cookies/?search-term=OAID&filter-type=cookie-name&sort=asc&cookie-id=OAID
+!! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie=OAID
 !! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
 $cookie=/^(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
@@ -3546,12 +3547,8 @@ $cookie=_pubcid
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
 !! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
 
-!! https://cookiedatabase.org/cookie/gigya/ucid/
-!! Analytics - This cookie stores a unique computer identifier to generate reports.
-!! @@||gigya.com$cookie=/^(?!(?:ucid))/
-$cookie=ucid
-
 !#endif
+
 
 @@||youtube.com$generichide
 @@||youtube.com/youtubei/*/log_event
