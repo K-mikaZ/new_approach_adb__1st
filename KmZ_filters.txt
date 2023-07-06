@@ -601,6 +601,10 @@ short.ink,abysscdn.com##+js(window.open-defuser)
 ||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
 
+designparty.*##+js(window.open-defuser)
+
+
+||hoglinsu.com^
 ||yougube.com^$all,important
 ||youtibe.com^$all,important
 ||youtuhe.com^$all,important
@@ -879,6 +883,14 @@ rakuten.tv##+js(no-xhr-if, /cdn.spotxcdn.com/media/)
 /gampad/ads?$important
 /pagead/ppub_config$important
 @@/pubads_impl.js$important
+
+
+
+!! FIX https://www.6play.fr/m6/direct
+!!||yospace.com^$~object,third-party,badfilter
+!!||yospace.com/csm/$domain=6play.fr,badfilter
+||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
+@@/yospace\.com\/csm\/(\w+)?live/
 
 
 ! ======[ france.tv ]=====================================================
