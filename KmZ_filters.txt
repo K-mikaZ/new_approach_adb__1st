@@ -971,6 +971,12 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 !! site:allocine.fr - vast ads (already sets, but ensure in case)
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
+!!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__ads_txt, emptyObj)
+!!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__app_ads_txt, emptyObj)
+!!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAffinityScore, false)
+!!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAdsRestriction, false)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+
 
 ||google-analytics.com/analytics.js$domain=allocine.fr
 ||autopromo.allocine.fr^$important
@@ -982,50 +988,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 
 
 ! ======[ dailymotion.com ]=====================================================
-
-!#if (adguard)
-
-!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
-
-!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
-!! https://cookiesearch.org/cookies/?cookie-cat=advertisement
-!! https://cookiesearch.org/cookies/?cookie-cat=analytics
-
-!! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
-!! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
-
-!! Advertising cookies
-||dailymotion.com/cookie/dmaid
-$cookie=/^(?:d(am|m[ax]i)d|_gads)/
-
-$cookie=/^(?:mics([_-](lts|vid|uaid)))/
-
-!! scorecardresearch.com (Com Score)
-$cookie=uid
-
-!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
-!! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
-$cookie=1P_JAR
-
-!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
-!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
-$cookie=/^(?:ad[-](id|privacy))/
-
-!! Analytical cookies
-!! Google : _g(a|id)
-$cookie=/^(?:_g(a|id))/
-
-!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
-!! $cookie=NIELSEN
-
-!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
-!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
-$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
-
-!! https://cookiedatabase.org/cookie/addthis/__atrfs/
-$cookie=__atrfs
-
-!#endif
 
 @@||dailymotion.com^$subdocument
 @@||geo.dailymotion.com^
@@ -1075,7 +1037,7 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
-!!www.dailymotion.com,geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
+geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 
 
 
@@ -1095,6 +1057,50 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 
 
 ! ======[ ]=====================================================
+
+!#if (adguard)
+
+!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+
+!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
+!! https://cookiesearch.org/cookies/?cookie-cat=advertisement
+!! https://cookiesearch.org/cookies/?cookie-cat=analytics
+
+!! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
+!! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
+
+!! Advertising cookies
+||dailymotion.com/cookie/dmaid
+$cookie=/^(?:d(am|m[ax]i)d|_gads)/
+
+$cookie=/^(?:mics([_-](lts|vid|uaid)))/
+
+!! scorecardresearch.com (Com Score)
+$cookie=uid
+
+!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
+!! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
+$cookie=1P_JAR
+
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
+$cookie=/^(?:ad[-](id|privacy))/
+
+!! Analytical cookies
+!! Google : _g(a|id)
+$cookie=/^(?:_g(a|id))/
+
+!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
+!! $cookie=NIELSEN
+
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
+$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
+
+!! https://cookiedatabase.org/cookie/addthis/__atrfs/
+$cookie=__atrfs
+
+!#endif
 
 
 ultimate-catch.eu##.header-ads
@@ -3522,7 +3528,6 @@ $cookie=ucid
 @@||stapadblockuser.xyz^$generichide,subdocument,xmlhttprequest,script,image,media
 @@||stapadblockuser.xyz/get_video$media
 @@||batch.com^$important
-@@||*$subdocument,xmlhttprequest,domain=streamtape.com|streamta.pe
 @@||stapadblockuser.*^$image,script,xmlhttprequest,subdocument,~third-party
 ||facebook.com/tr/$important
 ||taboola.com^$important
