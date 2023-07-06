@@ -5,6 +5,10 @@
 ! analitycs integrations
 ! --------------------------------------------------------------
 
+!! https://cookiedatabase.org/cookie/comscore/s1/
+!! https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1
+$cookie=s1
+
 ||comscore.com^$badfilter
 ||www.comscore.com^$badfilter
 ||comscore.com^$domain=~comscore.com
