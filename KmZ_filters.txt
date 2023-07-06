@@ -1044,7 +1044,9 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
-!! 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
+!! dailymotion - try block 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
+cookie/dmaid$domain=dailymotion.com
+!! dailymotion - disallow 3rd Party cookies
 ||geo.dailymotion.com/cookie.js
 geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 
@@ -3440,10 +3442,6 @@ dood.*#$#body { color: whitesmoke!important; }
 !! /jquery.cookie.js$~third-party
 /cookienotice.js$~third-party
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$third-party,redirect=noop.txt,important
-
-!! 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
-||geo.dailymotion.com/cookie.js
-cookie/dmaid$domain=dailymotion.com
 
 !! ------------------------------------------------------
 
