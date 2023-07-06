@@ -3459,7 +3459,7 @@ dood.*#$#body { color: whitesmoke!important; }
 !! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
 !! https://cookiesearch.org/cookies/?search-term=__cf_bm&filter-type=cookie-name&sort=asc&cookie-id=__cf_bm
 !! the __cflb, __cf_bm, cf_ob_info, cf_use_ob, __cfwaitingroom, and __cfruid cookies are strictly necessary to provide the services requested by Cloudflare.
-@@$cookie=/^(__cf(_bm|lb|ruid|waitingroom)|cf_ob_info|cf_use_ob)/
+@@$cookie=/^(?:__cf(_bm|lb|ruid|waitingroom)|cf_ob_info|cf_use_ob)/
 !!@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 
