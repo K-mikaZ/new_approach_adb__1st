@@ -1015,8 +1015,12 @@ $cookie=/^(?:ad[-](id|privacy))/
 !! Google : _g(a|id)
 $cookie=/^(?:_g(a|id))/
 
-$cookie=/^(?:nielsen)/
-$cookie=/^(?:bito(is{2}ecure)?)/
+!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
+!! $cookie=NIELSEN
+
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
+$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)/
 
 !! https://cookiedatabase.org/cookie/addthis/__atrfs/
 $cookie=__atrfs
