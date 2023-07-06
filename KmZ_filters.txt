@@ -3896,27 +3896,9 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 ! ======= VAST =======
 
-! ------------------ rakuten.tv ------------------
-! ||*/vast/3$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-3.0
-! /vast/3$xmlhttprequest,domain=rakuten.tv,redirect-rule=noop.txt
-! @@||search.spotxchange.com^$xmlhttprequest,domain=rakuten.tv,badfilter
-! @@||search.spotxchange.com/vast/$xmlhttprequest,domain=rakuten.tv,badfilter
-! @@||search.spotxchange.com/vast/$xmlhttprequest,badfilter
-! @@||search.spotxchange.com/vast/$badfilter
-! @@||search.spotxchange.com^$xmlhttprequest,badfilter
-! @@||spotxchange.com^$domain=rakuten.tv,badfilter
-! @@||spotxchange.com/vast/$xmlhttprequest,domain=rakuten.tv
-! ||*/vast/4.0$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-4.0
-! ||*/vast/4.1$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-4.1
-! ||*/vast/4.2$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-4.2
-! ||*/vast/1$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-1.0
-! ||*/vast/2$xmlhttprequest,domain=~rakuten.tv,redirect-rule=noopvast-2.0
-! @@/doubleclick_dmm/*$xmlhttprequest,domain=rakuten.tv
-! ||cdn.spotxcdn.com/media/videos/orig/*$xmlhttprequest,domain=rakuten.tv,badfilter
-
-! -------------------- global ---------------------
-! ://ads.$xmlhttprequest,redirect-rule=noopvast-2.0,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
 @@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
+@@||appcdn01.xyz/vast.js
+
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
 ||vast.adsafeprotected.com^$important
@@ -4035,6 +4017,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
+||vast.doubleverify.com/v3/vast?$important,redirect=noopvast-3.0
 
 !#endif
 
