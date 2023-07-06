@@ -3455,7 +3455,7 @@ cookie/dmaid$domain=dailymotion.com
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
 $cookie=ucid
 !! yandex Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
-$cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))$/
+$cookie=/(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
 !! yahoo Analytics - https://cookiesearch.org/cookies/?cookie-id=APID
 ||yahoo.com^$cookie=APID
 
@@ -3467,22 +3467,22 @@ $cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))$/
 !! ------------------------------------------------------
 
 !! dailymotion Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
-$cookie=/^(?:d(am|m[ax]i)d|_gads)$/
+$cookie=/(?:d(am|m[ax]i)d|_gads)/
 !! ?? Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
-$cookie=/^(?:_{2}adal_c[a|w])$/
+$cookie=/(?:_{2}adal_c[a|w])/
 !! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adroll
-$cookie=/^(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)$/
+$cookie=/(?:_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
-$cookie=/^(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)$/
+$cookie=/(?:u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
 !! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
-||yahoo.com^$cookie=/^(?:GUCS|IDSYNC|RRC|B)$/,important
-yahoo.com##+js(cookie-remover, /^(?:GUCS|IDSYNC|RRC|B)$/)
+$cookie=/(?:GUCS|IDSYNC|RRC|B)/,domain=yahoo.com,important
+yahoo.com##+js(cookie-remover, /(?:GUCS|IDSYNC|RRC|B)/)
 !!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
-$cookie=/^(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)$/
+$cookie=/(?:[Ii][Dd]E?|_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie=OAID
 !! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
-$cookie=/^(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))$/
+$cookie=/(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
 !! animationdigitalnetwork.fr Advertisement - https://cookiesearch.org/cookies/?cookie-id=_pubcid
 $cookie=_pubcid
 
@@ -3492,8 +3492,8 @@ $cookie=_pubcid
 !! the __cflb, __cf_bm, cf_ob_info, cf_use_ob, __cfwaitingroom, and __cfruid cookies are strictly necessary to provide the services requested by Cloudflare.
 !! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
 !! https://cookiesearch.org/cookies/?cookie-id=__cf_bm
-@@$cookie=/^(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))$/,important
-!!@@$cookie=/^(_{2})?cf(_(bm|clearance)|[dr]uid|lb)$/
+@@$cookie=/(?:__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))/,important
+!!@@$cookie=/(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 !! https://policies.google.com/technologies/cookies?hl=en
 !! $cookie=VISITOR_INFO1_LIVE,domain=youtube.com
@@ -3503,7 +3503,7 @@ $cookie=_pubcid
 
 
 !! https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
-$cookie=/^(?:mics([_-](lts|vid|uaid)))$/
+$cookie=/(?:mics([_-](lts|vid|uaid)))/
 
 !! scorecardresearch.com (Com Score)
 $cookie=uid
@@ -3514,18 +3514,18 @@ $cookie=1P_JAR
 
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
 !! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
-$cookie=/^(?:ad-(id|privacy))$/
+$cookie=/(?:ad-(id|privacy))/
 
 !! Analytical cookies
 !! Google : _g(a|id)
-!! $cookie=/^(?:_g(a|id))$/
+!! $cookie=/(?:_g(a|id))/
 
 !! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
 !! $cookie=NIELSEN
 
 !! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
 !! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
-$cookie=/^(?:bito([Ii][Ss]{2}ecure)?)$/
+$cookie=/(?:bito([Ii][Ss]{2}ecure)?)/
 
 !! https://cookiedatabase.org/cookie/addthis/__atrfs/
 $cookie=__atrfs
