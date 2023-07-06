@@ -1045,7 +1045,8 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
 !! dailymotion - try block 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
-cookie/dmaid$domain=dailymotion.com
+!! cookie/dmaid$domain=dailymotion.com,redirect=empty
+dailymotion.com##+js(no-fetch-if, /cookie\/dmaid/)
 !! dailymotion - disallow 3rd Party cookies
 ||geo.dailymotion.com/cookie.js
 geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
