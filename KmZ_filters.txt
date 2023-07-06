@@ -1002,7 +1002,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 ! ======[ dailymotion.com ]=====================================================
 
 @@||dailymotion.com^$subdocument
-@@||geo.dailymotion.com^
 ||dailymotion.co*/log*/video*$redirect=noop.txt,important
 !!@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
 @@||dmcdn.net^
@@ -1049,8 +1048,14 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.enableAutoNext, false)
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
+!! 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
+||geo.dailymotion.com/cookie.js
 geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 
+!! Advertising cookies
+||dailymotion.com/cookie/dmaid
+$cookie=/^(?:d(am|m[ax]i)d|_gads)/
+!! www.dailymotion.com,geo.dailymotion.com##+js(cookie-remover, /^(?:d(am|m[ax]i)d|_gads)/)
 
 
 !! https://www.dailymotion.com/player/metadata/video/x8km2fm?embedder=https%3A%2F%2Fwww.allocine.fr%2Fvideo%2Fplayer_gen_cmedia%3D19600816%26cfilm%3D301066.html&geo=1&player-id=x1hyz&locale=fr&dmV1st=3baf8ab8-d200-4392-8e14-8432ad89d6c2&dmTs=527408&is_native_app=0
@@ -1078,14 +1083,7 @@ geo.dailymotion.com##+js(set-constant, dmCookie3rdPartyAllowed, false)
 !! https://cookiesearch.org/cookies/?cookie-cat=advertisement
 !! https://cookiesearch.org/cookies/?cookie-cat=analytics
 
-!! https://legal.dailymotion.com/fr/politique-cookies/#ii-les-cookies-utilises-par-dailymotion-sur-le-service-dailymotion
-!! https://legal.dailymotion.com/fr/politique-cookies/#d-liste-des-cookies-non-exemptes
-
-!! Advertising cookies
-||dailymotion.com/cookie/dmaid
-$cookie=/^(?:d(am|m[ax]i)d|_gads)/
-www.dailymotion.com,geo.dailymotion.com##+js(cookie-remover, /^(?:d(am|m[ax]i)d|_gads)/)
-
+!! https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
 $cookie=/^(?:mics([_-](lts|vid|uaid)))/
 
 !! scorecardresearch.com (Com Score)
