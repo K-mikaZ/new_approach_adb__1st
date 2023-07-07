@@ -3472,8 +3472,11 @@ $cookie=yp,domain=yandex.ru
 
 !! dailymotion Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
 $cookie=/(d(am|m[ax]i)d|_gads)/
-!! ?? Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
-$cookie=/(_{2}adal_c[a|w])/
+!! Adalyser Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
+!! https://www.adalyser.com/en/cookies#:~:text=Category-,__adal_ca,-Adalyser
+!! $cookie=/(_{2}adal_c[a|w])/
+$cookie=__adal_ca
+$cookie=__adal_cw
 !! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adroll
 $cookie=/(_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
