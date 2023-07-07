@@ -3453,8 +3453,13 @@ dood.*#$#body { color: whitesmoke!important; }
 !! gigya.com Analytics - https://cookiesearch.org/cookies/?cookie-id=ucid
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
 $cookie=ucid
-!! yandex Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
-$cookie=/(y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
+!! yandex.ru Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
+!!$cookie=/(y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
+$cookie=_ym_isad
+$cookie=_ym_uid
+$cookie=yabs-sid
+$cookie=yandexuid
+$cookie=yp,domain=yandex.ru
 !! yahoo Analytics - https://cookiesearch.org/cookies/?cookie-id=APID
 ||yahoo.com^$cookie=APID
 
@@ -3474,8 +3479,11 @@ $cookie=/(_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
 $cookie=/(u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
 !! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
-$cookie=/(GUCS|IDSYNC|RRC|B)/,domain=yahoo.com,important
-yahoo.com##+js(cookie-remover, /(GUCS|IDSYNC|RRC|B)/)
+$cookie=GUCS
+$cookie=IDSYNC
+$cookie=RRC
+$cookie=B,domain=yahoo.com
+!!yahoo.com##+js(cookie-remover, /(GUCS|IDSYNC|RRC|B)/)
 !!||doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 $cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
 $cookie=IDE
