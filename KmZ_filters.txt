@@ -3868,7 +3868,7 @@ france.tv##:where(div[id|="didomi"])
 @@||cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json
 @@||cdn.viously.com/player/*/prebid.js
 !! PREBID's unifygroup.com concerns
-|https://pegasus.unifygroup.com/lib/pegasus.min.js$redirect=noopjs
+|https://pegasus.unifygroup.com/lib/pegasus.min.js$redirect=noopjs,important
 
 
 !! * Sets predefined constants on a page:
@@ -3890,7 +3890,7 @@ france.tv##:where(div[id|="didomi"])
 
 ! ======= VMAP =======
 
-||dmxleo.dailymotion.com/cdn/manifest/video/*VMAP*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
+||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
 /vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
 ||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
