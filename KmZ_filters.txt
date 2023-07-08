@@ -593,6 +593,7 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
 @@||abysscdn.com^$subdocument
+abysscdn.com##+js(no-fetch-if, /cdn\.apicdn\d+\.\w+/)
 short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 short.ink,abysscdn.com##+js(window.open-defuser)
 ||*^$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com
