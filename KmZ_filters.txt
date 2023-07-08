@@ -3925,8 +3925,8 @@ france.tv##:where(div[id|="didomi"])
 
 ||static.canal-plus.net/pub$media,important,domain=canalplus.com,redirect=noop-1s.mp4
 ||serving-sys.com^$media,redirect=noop-1s.mp4
-||videos-pub.ftv-publicite.fr^/*.mp4$redirect=noop-1s.mp4,important
-||ftv-publicite.fr^$media,redirect-rule=noop-1s.mp4,important
+!!||videos-pub.ftv-publicite.fr^/*.mp4$redirect=noop-1s.mp4,important
+!!||ftv-publicite.fr^$media,redirect-rule=noop-1s.mp4,important
 
 
 ! ======= VMAP =======
