@@ -34,7 +34,7 @@
 
 !! # TURN (Traversal Using Relays around NAT):
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_turn
-|turn:*
+!! |turn:*
 
 
 
@@ -47,7 +47,7 @@ jetload.*#@#+js(nowebrtc)
 !! hqq.*,netu.*,vizplay.icu,waaw.*#@#+js(nowebrtc)
 upvid.*#@#+js(nowebrtc)
 femax20.com,fembed.com#@#+js(nowebrtc)
-!! tf1.fr#@#+js(nowebrtc)
+tf1.fr#@#+js(nowebrtc)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc)
