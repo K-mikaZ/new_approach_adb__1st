@@ -913,7 +913,6 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 @@||mediainfo.tf1.fr^$domain=tf1.fr
 ||metrics-broker.prod.p.tf1.fr^$badfilter
 ||metrics-broker.prod.p.tf1.fr^$xmlhttprequest,domain=tf1.fr,badfilter
-!!||*$media,domain=tf1.fr,badfilter
 @@||vidpreviews.tf1.fr/video/*$domain=tf1.fr
 @@||tf1.fr$generichide
 @@||compte.tf1.fr^$domain=tf1.fr
@@ -927,17 +926,19 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 www.tf1.fr##:where(div[class^="usabilla"])
 www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
 www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
-!! bad var
-tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
-tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
 !! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
 !! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.url, '')
 !! site:tf1.fr - disable tracking
-tf1.fr##+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
-tf1.fr##+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.thirdparty.abtasty.enabled, false)
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.thirdparty.tagco.ampAnalyticsEnabled, false)
+
+!! bad var
+tf1.fr#@%#//scriptlet('set-constant', '__TF1_CONFIG__.adblock.display', 'false')
+tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
+
 
 
 ! ======[ allocine.fr ]=====================================================
