@@ -6,6 +6,9 @@
 ! Description: Block WEBRTC (Web Real Time Communications), as soon as possible, sometimes used for "real-time advertising".
 ! Description fr: Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), dès que possible, parfois utilisé pour "la publicité en temps réel".
 
+!! REMARQUE: Lorsque le WebRTC est bloqué ou désactivé, certaines applications de vidéo ou de conversation qui s’appuient sur la fonctionnalité WebRTC peuvent ne pas fonctionner correctement.
+
+
 ! see:
 ! < https://www.webrtcworld.com/topics/from-the-experts/articles/332745-where-we-place-ads-webrtc.htm >
 ! < https://webrtc.ventures/2015/09/what-does-webrtc-mean-for-advertising-and-customer-service/ >
@@ -18,30 +21,33 @@
 
 !! BLOCKING
 !! -------
-!! ||*$webrtc
 !! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
 *##+js(nowebrtc)
+
 !! adguard rule
-!! # STUN(Simple Traversal of UDP through Network):
+!! # STUN (Simple Traversal of UDP through Network):
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_stun
 !! e.g: global.stun.twilio.com, stun2.l.google.com, stun.l.google.com, stun:stun.voip.blackberry.com, etc...
 !! /(?:(((?:.+)?stun\d?\.)).+)/$important
-!! !+ NOT_PLATFORM(ext_ublock)
 !+ PLATFORM(adguard)
 |stun:*
 
+!! # TURN (Traversal Using Relays around NAT):
+!! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_turn
+|turn:*
 
-! WHITELISTING
-! [Accepter au cas par cas, comme suite... / Accept on a case-by-case basis, as follows...]
-! example.com#@#+js(nowebrtc)
+
+
+
+! WHITELISTING [ Accept on a case-by-case basis, as follows... example.com#@#+js(nowebrtc) ]
 ! ------------
 
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc)
-hqq.*,netu.*,vizplay.icu,waaw.*#@#+js(nowebrtc)
+!! hqq.*,netu.*,vizplay.icu,waaw.*#@#+js(nowebrtc)
 upvid.*#@#+js(nowebrtc)
 femax20.com,fembed.com#@#+js(nowebrtc)
-tf1.fr#@#+js(nowebrtc)
+!! tf1.fr#@#+js(nowebrtc)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc)
