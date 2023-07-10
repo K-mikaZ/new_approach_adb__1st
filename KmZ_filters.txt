@@ -3504,8 +3504,8 @@ $cookie=B,domain=yahoo.com
 
 !! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 !!$cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
-$cookie,domain=doubleclick.net
-$cookie=IDE
+!! $cookie,domain=doubleclick.net
+$cookie=IDE,~domain=youtube.com
 $cookie=id
 $cookie=__sonar
 $cookie=__ar_v4
