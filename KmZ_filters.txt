@@ -3382,7 +3382,9 @@ lxax.com##[class="hide"]
 /pandg-sdk.js$important,third-party
 ||permutive.com^$third-party
 ||permutive.app^$important,third-party
-||abtasty.com^
+!! ||abtasty.com^
+!! not blocking ||try.abtasty.com/*/*.js
+||try.abtasty.com/*.js$third-party
 ||imasdk.googleapis.com^$badfilter
 younetu.com#$#body { color: whitesmoke; }
 *##.placeholder-pub_dfp
