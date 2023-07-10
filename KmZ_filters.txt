@@ -3550,8 +3550,8 @@ $cookie=bitoIsSecure
 !! https://cookiedatabase.org/cookie/addthis/__atrfs/
 $cookie=__atrfs
 !! https://les-enovateurs.com/temoignage-cookie-tf1-vie-oeuvre-revelations-exclusives
-$cookie=ABTasty
-$cookie=ABTastySession
+!!$cookie=ABTasty
+!!$cookie=ABTastySession
 !!##+js(cookie-remover, ABTastySession)
 
 !! tc_ is for tagcommander I suppose ( like cdn.tagcommander.com/4183/tc_TF1_26.js )
