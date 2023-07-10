@@ -2915,7 +2915,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, vwv
 hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, adblockcheck, false)
 !! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com 
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-/js/script-*.js$~third-party,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+/js/script-*.js$~third-party,important,match-case,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 /ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 /out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 ||*$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
