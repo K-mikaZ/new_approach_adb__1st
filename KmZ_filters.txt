@@ -896,8 +896,6 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 
 ! ======[ tf1.fr ]=====================================================
 
-@@||googletagmanager.com/gtag/js$domain=tf1.fr
-
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$redirect=empty
