@@ -603,6 +603,7 @@ short.ink,abysscdn.com##+js(window.open-defuser)
 ! --------------------------------------------------------
 
 designparty.*##+js(window.open-defuser)
+designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 
 
 ||hoglinsu.com^
@@ -2914,6 +2915,7 @@ hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, vwv
 hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, adblockcheck, false)
 !! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com 
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+/js/script-*.js$~third-party,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 /ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 /out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
 ||*$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
@@ -3263,6 +3265,8 @@ wiflix.*##+js(remove-attr, target|href, .video-player a)
 wiflix.*##+js(window.open-defuser)
 ||wiflix.*/*.mp4$media
 ||wiflix.*/voir/play.php$important
+wiflix.*##iframe:where([src*="/voir/play.php"])
+/voir/play.php$~third-party
 @@||vido.lol^$subdocument
 @@||sbbrisk.com^$subdocument
 sbbrisk.com##+js(window.open-defuser)
@@ -3483,7 +3487,13 @@ $cookie=__adal_cw
 $cookie=/(_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
 
 !! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
-$cookie=/(u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
+!!$cookie=/(u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
+$cookie=uuid
+$cookie=uuidc
+$cookie=mt_mop
+$cookie=mt_misc
+$cookie=bs_mop_u3s
+$cookie=gtm_usr
 
 !! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
 $cookie=GUCS
@@ -3493,15 +3503,26 @@ $cookie=B,domain=yahoo.com
 !!yahoo.com##+js(cookie-remover, /(GUCS|IDSYNC|RRC|B)/)
 
 !! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
-$cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
+!!$cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
+$cookie,domain=doubleclick.net
 $cookie=IDE
 $cookie=id
+$cookie=__sonar
+$cookie=__ar_v4
+$cookie=cto_lwid
 
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
+$cookie,domain=adswizz.com
 $cookie=OAID
 
 !! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
-$cookie=/(tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
+!! $cookie=/(tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
+$cookie,domain=bidswitch.net
+$cookie=tuuid
+$cookie=tuuid_lu
+$cookie=bidswitch_id
+$cookie=bidswitch_user_id
+$cookie=bidswitch_last_time
 
 !! animationdigitalnetwork.fr Advertisement - https://cookiesearch.org/cookies/?cookie-id=_pubcid
 $cookie=_pubcid
@@ -3544,6 +3565,7 @@ $cookie=ad-privacy
 !! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
 !! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
 !!$cookie=/(bito([Ii][Ss]{2}ecure)?)/
+$cookie,domain=bidr.io
 $cookie=bito
 $cookie=bitoIsSecure
 
@@ -3552,7 +3574,6 @@ $cookie=__atrfs
 !! https://les-enovateurs.com/temoignage-cookie-tf1-vie-oeuvre-revelations-exclusives
 $cookie=ABTasty
 $cookie=ABTastySession
-!!##+js(cookie-remover, ABTastySession)
 
 !! tc_ is for tagcommander I suppose ( like cdn.tagcommander.com/4183/tc_TF1_26.js )
 !!$cookie=TC_ABTESTING
@@ -3564,6 +3585,27 @@ $cookie=xfsts
 
 !! googleadservices Advertisement - https://cookiesearch.org/cookies/?cookie-id=Conversion
 $cookie=Conversion
+
+!! https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage
+!! https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/migrate-from-smarttag
+$cookie=pa_vid
+$cookie=_pcid
+$cookie=_pctx
+!!$cookie=_pprv
+!!$cookie=pa_user
+
+!! https://cookiedatabase.org/cookie/criteo/cto_bundle/
+$cookie=cto_bundle
+
+!! https://cookiesearch.org/cookies/?cookie-id=_uid
+$cookie,domain=fwmrm.net
+$cookie=_uid
+$cookie=_fwex_doubleclick.net_SameSite
+
+!! google.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=NID
+!! $cookie=NID
+!! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
+@@$cookie=sid
 
 !#endif
 
@@ -3860,6 +3902,8 @@ themoneytizer$important,script,redirect=noopjs
 /^ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}$/$script,match-case,~third-party
 !! ads concerns
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
+!! ||voirseries.*/_scripts.js|
+/ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js$/$~third-party,match-case
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
@@ -3941,6 +3985,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 @@/\/vast([-~_.]{1}[\w]+)?(\.min)?\.js/
 @@||appcdn01.xyz/vast.js
+||designparty.*/*/vast.js$important
 
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
