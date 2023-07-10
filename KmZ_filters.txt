@@ -3504,13 +3504,13 @@ $cookie=B,domain=yahoo.com
 
 !! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 !!$cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
-!!$cookie,domain=doubleclick.net
-$cookie=IDE,~domain=youtube.com
-@@||youtube.com^$cookie=IDE
-$cookie=id
+$cookie,domain=doubleclick.net
 $cookie=__sonar
 $cookie=__ar_v4
 $cookie=cto_lwid
+$cookie=id
+$cookie=IDE,~domain=youtube.com
+@@||youtube.com^$cookie=IDE,important
 
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie,domain=adswizz.com
