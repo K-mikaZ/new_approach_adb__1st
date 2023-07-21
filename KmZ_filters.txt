@@ -886,7 +886,6 @@ rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
 !! FIX https://www.6play.fr/m6/direct
 !!||yospace.com^$~object,third-party,badfilter
 !!||yospace.com/csm/$domain=6play.fr,badfilter
-||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
 @@/yospace\.com\/csm\/(\w+)?live/
 
 
@@ -3968,6 +3967,8 @@ france.tv##:where(div[id|="didomi"])
 
 ! ======= VMAP =======
 
+||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
+||animationdigitalnetwork.fr/player/video/*/vmap$redirect=noopvmap-1.0,important
 ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
