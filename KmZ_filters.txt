@@ -877,9 +877,12 @@ rakuten.tv##+js(set-constant, heartbeat, OK)
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
-!!/gampad/ads?$important
 /pagead/ppub_config$important
-@@/pubads_impl.js$important
+@@/\/pubads_impl(_.+)?\.js/$important
+!! domain=moviepilot.de - movie trailers
+!@@/gampad/ads?*safeframe$important
+@@/gampad/ads?*webedia$important
+@@/gpt.js|$domain=moviepilot.de
 
 
 
