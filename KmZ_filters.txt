@@ -877,7 +877,7 @@ rakuten.tv##+js(set-constant, heartbeat, OK)
 rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
-/gampad/ads?$important
+!!/gampad/ads?$important
 /pagead/ppub_config$important
 @@/pubads_impl.js$important
 
