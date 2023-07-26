@@ -867,7 +867,7 @@ crunchyroll.com###series_promo_banner
 ||eec.crunchyroll.com^
 rts.ch##+js(abort-on-property-read, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
-@@||rakuten.tv^$ghide
+!@@||rakuten.tv^$ghide
 ! rakuten.tv##div[class="video-advert-meta"]
 ! rakuten.tv##.detail__actions__message__text
 rakuten.tv##+js(nobab)
