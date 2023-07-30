@@ -4006,7 +4006,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||tremorhub.com/*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ||getpublica.com/*&format=vast*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ! ://ads.$xmlhttprequest,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,redirect-rule=noopvast-2.0
-||/vast/v3?$xmlhttprequest,redirect=noopvast-3.0
+/vast/v3?$xmlhttprequest,redirect=noopvast-3.0,important
 ||bid.g.doubleclick.net/dbm/vast$important,third-party,redirect=noopvast-4.0
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md
 ||spotx.tv^$third-party,badfilter
@@ -4023,28 +4023,28 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! ||moviesprofit.com/watch.xml$xmlhttprequest,redirect-rule=noopvast-1.0
 ! /vast/*_vast=1$xmlhttprequest,redirect-rule=noopvast-1.0
 /(.*)\&output\=xml\_vast[2+](.*)?/$xmlhttprequest,redirect-rule=noopvast-2.0
-||*&output=xml_vast2$xmlhttprequest,redirect-rule=noopvast-2.0
-||vast.*/v2$xmlhttprequest,redirect-rule=noopvast-2.0
-||*/vast/VAST-2$xmlhttprequest,redirect-rule=noopvast-2.0
-||*AdsSetup&protocolVersion=2$xmlhttprequest,redirect-rule=noopvast-2.0
-||video-ads.rubiconproject.com/*vast.xml$xmlhttprequest,redirect-rule=noopvast-2.0
-||serving-sys.com/*&pl=VAST$xmlhttprequest,redirect-rule=noopvast-2.0
+*&output=xml_vast2*$xmlhttprequest,redirect-rule=noopvast-2.0,important
+||vast.*/v2$xmlhttprequest,redirect-rule=noopvast-2.0,important
+*/vast/VAST-2*$xmlhttprequest,redirect-rule=noopvast-2.0,important
+*AdsSetup&protocolVersion=2*$xmlhttprequest,redirect-rule=noopvast-2.0,important
+||video-ads.rubiconproject.com/*vast.xml$xmlhttprequest,redirect=noopvast-2.0,important
+||serving-sys.com/*&pl=VAST$xmlhttprequest,redirect=noopvast-2.0,important
 ||xtremeserve.xyz$xmlhttprequest,redirect-rule=noopvast-2.0
 ||spotscenered.info$xmlhttprequest,redirect-rule=noopvast-2.0
 ||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xmlhttprequest,redirect-rule=noopvast-2.0
 ||tpc.googlesyndication.com/ima3vpaid$xmlhttprequest,redirect-rule=noopvast-2.0
 !! ||svastx.moatads.com$xmlhttprequest,redirect-rule=noopvast-2.0
 ||videoadex.com/unvrsltag$xmlhttprequest,redirect-rule=noopvast-2.0
-||/vast/*_vast=2$xmlhttprequest,redirect-rule=noopvast-2.0
-/(.*)\&output\=xml\_vast[3+](.*)?/$xmlhttprequest,redirect-rule=noopvast-3.0
-||*&output=xml_vast3$xmlhttprequest,redirect-rule=noopvast-3.0
-||vast.*/v3$xmlhttprequest,redirect-rule=noopvast-3.0
-||*/vast/VAST-3$xmlhttprequest,redirect-rule=noopvast-3.0
-||*AdsSetup&protocolVersion=3$xmlhttprequest,redirect-rule=noopvast-3.0
-||springserve.com$xmlhttprequest,redirect=noopvast-3.0
+/vast/*_vast=2$xmlhttprequest,redirect=noopvast-2.0,important
+/(.*)\&output\=xml\_vast[3+](.*)?/$xmlhttprequest,redirect=noopvast-3.0,important
+*&output=xml_vast3*$xmlhttprequest,redirect=noopvast-3.0,important
+||vast.*/v3$xmlhttprequest,redirect=noopvast-3.0,important
+*/vast/VAST-3*$xmlhttprequest,redirect=noopvast-3.0,important
+*AdsSetup&protocolVersion=3*$xmlhttprequest,redirect=noopvast-3.0,important
+||springserve.com$xmlhttprequest,redirect=noopvast-3.0,important
 ! ||plified.pro$xmlhttprequest,redirect-rule=noopvast-3.0
-||greedseed.world/vast_tag$xmlhttprequest,redirect-rule=noopvast-3.0
-||vidalak.com/api/vpaid?$xmlhttprequest,redirect-rule=noopvast-3.0
+||greedseed.world/vast_tag$xmlhttprequest,redirect=noopvast-3.0,important
+||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
 ||vast.yomeno.xyz$xmlhttprequest,redirect-rule=noopvast-3.0
 ||movcpm.com/watch.xml$xmlhttprequest,redirect-rule=noopvast-3.0
 ||apprefaculty.pro$xmlhttprequest,redirect-rule=noopvast-3.0
@@ -4070,13 +4070,13 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! /(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(.*)?/$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[1+](.*)?/$xmlhttprequest,redirect-rule=noopvast-4.1,important
 ! /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[2+](.*)?/$xmlhttprequest,redirect-rule=noopvast-4.2,important
-||*&output=xml_vast4$xmlhttprequest,redirect-rule=noopvast-4.0
-||vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0
-||*/vast/VAST-4.0$xmlhttprequest,redirect-rule=noopvast-4.0
+*&output=xml_vast4*$xmlhttprequest,redirect-rule=noopvast-4.0,important
+vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
+*/vast/VAST-4.0$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! ||*/vast/VAST-4.1$xmlhttprequest,redirect-rule=noopvast-4.1
 ! ||*/vast/VAST-4.2$xmlhttprequest,redirect-rule=noopvast-4.2
-||/vast/*_vast=4$xmlhttprequest,redirect-rule=noopvast-4.0
-||*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect=noopvast-4.0
+/vast/*_vast=4$xmlhttprequest,redirect-rule=noopvast-4.0,important
+*AdsSetup&protocolVersion=4.0$xmlhttprequest,redirect=noopvast-4.0,important
 ! ||*AdsSetup&protocolVersion=4.1$xmlhttprequest,redirect=noopvast-4.1
 ! ||*AdsSetup&protocolVersion=4.2$xmlhttprequest,redirect=noopvast-4.2
 ! https://videos.allocine.fr/p-dp-vast2/ or https://goutee.top/p-dp-vast2/ ...
