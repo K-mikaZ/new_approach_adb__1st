@@ -2909,20 +2909,20 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##a[onclick^="openAuc"]
 !! see https://hqq.tv/js/embed.211.js?736
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.disablePreloadAds, true)
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.playAdAlways, false)
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.adCancelTimeout, 0)
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, my_config.spotUrl, emptyArr)
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, vwview, false)
-hqq.*,waaw.*,netu.*,vizplay.icu,younetu.com,yandexcdn.com##+js(set-constant, adblockcheck, false)
-!! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com 
-/\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-/js/script-*.js$~third-party,important,match-case,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-/ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-/out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-||*$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-@@/fuckadblock.js?$script,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
-/js/disqusloader.js$important,domain=hqq.*|waaw.*|netu.*|vizplay.icu|younetu.com|yandexcdn.com
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.disablePreloadAds, true)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.playAdAlways, false)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.adCancelTimeout, 0)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.spotUrl, emptyArr)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, vwview, false)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, adblockcheck, false)
+!! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.* 
+/\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+/js/script-*.js$~third-party,important,match-case,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+/ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+/out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+||*$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+@@/fuckadblock.js?$script,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+/js/disqusloader.js$important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
@@ -3290,7 +3290,6 @@ www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="ad
 universanime.co##[src*="/bouton_ads/"]
 /bouton_ads/*$image,domain=universanime.co
 yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, undefined)
-younetu.com##+js(window.open-defuser)
 scan-manga.com#@##ab_bg
 scan-manga.com#@##carouselTOPContainer
 ||*.cloudfront.net^*realytics*.js
