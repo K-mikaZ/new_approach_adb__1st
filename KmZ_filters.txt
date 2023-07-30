@@ -771,7 +771,7 @@ hds-streaming.*##a[target="_blank"]
 @@||dood.*$script,domain=dood.*|dooood.*
 @@||dooood.com^$subdocument
 dood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
-dood.*,dooood.*#%#//scriptlet("abort-current-inline-script", "check")
+dood.*,dooood.*##+js(abort-current-inline-script, check)
 /(do{2,}d\.(.{2,})\/sw\.js$)/$important
 vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
@@ -1285,7 +1285,7 @@ femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
 @@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
 @@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
-!#if (adguard)
+!#if adguard
 femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
 !#endif
 marmiton.org#?#div:is([data-ad$="_atf"])
@@ -3141,7 +3141,7 @@ akceleratorbiznesu.eu##[src*="/dating/"]
 akceleratorbiznesu.eu##[src*="/imagesnp/"]
 allthings.how##.mv-ad-box
 ! animationdigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
-!#if (adguard)
+!#if adguard
 animationdigitalnetwork.fr#%#AG_onLoad(function() { if(window.location.href.indexOf("/onboarding") != -1){ window.location.href = "https://animationdigitalnetwork.fr"; } });
 !#endif
 answerstoall.com###rc-widget-618603
