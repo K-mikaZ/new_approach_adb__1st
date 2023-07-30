@@ -4037,7 +4037,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||videoadex.com/unvrsltag$xmlhttprequest,redirect-rule=noopvast-2.0
 /vast/*_vast=2$xmlhttprequest,redirect=noopvast-2.0,important
 /(.*)\&output\=xml\_vast[3+](.*)?/$xmlhttprequest,redirect=noopvast-3.0,important
-*&output=xml_vast3*$xmlhttprequest,redirect=noopvast-3.0,important
+*&output=xml_vast3*$redirect=noopvast-3.0,important
 ||vast.*/v3$xmlhttprequest,redirect=noopvast-3.0,important
 */vast/VAST-3*$xmlhttprequest,redirect=noopvast-3.0,important
 *AdsSetup&protocolVersion=3*$xmlhttprequest,redirect=noopvast-3.0,important
@@ -4070,7 +4070,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! /(.*)\&output\=xml\_vast[4+](([\.\-\_]+)?(.*)?/$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[1+](.*)?/$xmlhttprequest,redirect-rule=noopvast-4.1,important
 ! /(.*)\&output\=xml\_vast[4+][\.\-\_+]?[2+](.*)?/$xmlhttprequest,redirect-rule=noopvast-4.2,important
-*&output=xml_vast4*$xmlhttprequest,redirect-rule=noopvast-4.0,important
+*&output=xml_vast4*$redirect=noopvast-4.0,important
 vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 */vast/VAST-4.0$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! ||*/vast/VAST-4.1$xmlhttprequest,redirect-rule=noopvast-4.1
