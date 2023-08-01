@@ -151,14 +151,14 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 *#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *##[class*="player" i]:has( > [src*="stream"][src*="vip.htm"])
 *##[class*="player" i]:has( iframe[src*="fakeplayer"] )
-*#$#[id~="lecteur"]:has( iframe[src*="video"][src*="streaming"][src*=".htm"] ) { display: none!important; }
+*##[id~="lecteur"]:has( iframe[src*="video"][src*="streaming"][src*=".htm"] )
 !! voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
-*#$#:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+*##:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
 !! sokroflix.uno
 *##li[class~="nopls"][data-plink*="/voir/voir"]
 !! *##[class|="fake"], [id|="fake"]
 !! *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
-*#$#:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+*##:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
 *##:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) )
 *##:where([class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]))
 *##[class|="custom-fake"]
@@ -174,7 +174,7 @@ mystream.*,mstream.*##[id^="_0."]
 
 ! *##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
 *#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#[id~="adbd"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#[id~="adbd"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 
 inspiration-cuisine.fr###tdi_47
 chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
