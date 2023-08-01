@@ -108,7 +108,7 @@
 ! #$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
 ! ----[ ADS ]----------------------------------------------------------------
 ! *#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
-! *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/" ):remove()
+! *#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?/" ):remove()
 ! *#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
 ! *#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
 ! *#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
@@ -626,7 +626,7 @@ designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
-/\/offline(\/|\.htm(l)?)?$/$xmlhttprequest,~third-party
+/\/offline(\/|\.htm(l)?)?/$xmlhttprequest,~third-party
 twitter.com##div[data-testid="trend"]
 twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
 twitter.com##a[href^="/i/trends"]
@@ -957,7 +957,7 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.display, false)
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
 
 !! privacy - domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
-/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?$/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
 !! site:allocine.fr - advertisement - fixing delay in the video player
 !! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
@@ -1582,8 +1582,8 @@ stream-serie.net#$##option-1{height:100%}
 |http*://*.info/*.js^$script,third-party,important
 ||lfztmoamieum.com$script,third-party,important
 ||gcpjstirhbqjx.com$script,third-party,important
-/^https?:\/\/[^\s]+\.com\/sfp\.js$/$script,_,third-party
-/^https?:\/\/[^\s]+\.com\/script\/nasu\.js$/$script,_,third-party
+/https?:\/\/[^\s]+\.com\/sfp\.js/$script,_,third-party
+/https?:\/\/[^\s]+\.com\/script\/nasu\.js/$script,_,third-party
 /gpu.min.js|$important
 .top/advertisers.js|$script,important
 /PartnersBox.js?$script,important
@@ -1612,7 +1612,7 @@ stream-serie.net#$##option-1{height:100%}
 /subscribers\.click\/fp{2}\.js/$script,important
 /toro\-tags\.(.{2,})\/\_?tags\/(.*)\.js/$script,important
 /voir\.dpstream\.(site)\/pop\.js/$script,important
-/^ht{2}ps?:\/\/s3\.amazonaws\.(.{3})\/[\w\d]{54,57}\/[\w,\d]{8,10}$/$xmlhttprequest,third-party,domain=~amazon.com
+/ht{2}ps?:\/\/s3\.amazonaws\.(.{3})\/[\w\d]{54,57}\/[\w,\d]{8,10}/$xmlhttprequest,third-party,domain=~amazon.com
 |*.gif?partner$image,important
 ||perf.gif$image,important
 ||empty_pixel.gif$image,important
@@ -2324,7 +2324,7 @@ streamroot.io$script,important,badfilter
 ||doubleclick.net/instream/ad_status.js$important,badfilter
 ||instant.page^$badfilter
 @@||instant.page^$script
-/\/pu\/[.a-s]{1,5}\.js$/$script,~third-party,important,badfilter
+/\/pu\/[.a-s]{1,5}\.js/$script,~third-party,important,badfilter
 /cookiesmanager.$badfilter
 ||*&__cf_chl_jschl_tk__=$badfilter
 ||*?__cf_chl_jschl_tk__=$badfilter
@@ -2669,7 +2669,7 @@ youporn.com##.cSzepHjuLt1
 ||play-asia.com^$domain=~play-asia.com
 ||bebi.com^$domain=~bebi.com
 ||adspeed.com^$domain=~adspeed.com
-@@/^(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})\/pagead\/id)$/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+@@/(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})\/pagead\/id)/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,badfilter
 streamingvf.casa##[href^="https://dereferer.co/"]
 ||littlecdn.com^$domain=~littlecdn.com
@@ -3877,7 +3877,7 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||hjuyyeuvhvq.com^$important,third-party,subdocument,redirect=noopframe
 ||doubleclick.net/activityi*$subdocument,important,redirect=noopframe
 ! from ublock filter
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
+/https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
 @@||commentsmodule.com^
 themoneytizer$important,script,redirect=noopjs
@@ -3897,29 +3897,29 @@ themoneytizer$important,script,redirect=noopjs
 !#endif
 
 
-/^ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+$/$script,xmlhttprequest,third-party,match-case,important
-/^ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js$/$script,third-party,match-case
-/^ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+$/$third-party,important,script,match-case
-/^ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}$/$third-party,important,script,match-case
-/^ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?$/$important,script,xmlhttprequest,third-party,match-case
-/^ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party,match-case
-/^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$third-party,important,script,match-case
-/^ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com
-/^ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
-/^ht{2}ps?:\/{2}\S+\/1clkn\/\d+$/$script,third-party,match-case,important
+/ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+/$script,xmlhttprequest,third-party,match-case,important
+/ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party,match-case
+/ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$third-party,important,script,match-case
+/ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}/$third-party,important,script,match-case
+/ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?/$important,script,xmlhttprequest,third-party,match-case
+/ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js/$script,third-party,match-case
+/ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js/$third-party,important,script,match-case
+/ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}/$script,third-party,xmlhttprequest,domain=~amazon.com
+/ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
+/ht{2}ps?:\/{2}\S+\/1clkn\/\d+/$script,third-party,match-case,important
 !! /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 !! /^ht{2}ps?:\/{2}[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
-/^ht{2}ps?:\/{2}\S+\/script\/cdn\.js$/$third-party
+/ht{2}ps?:\/{2}\S+\/script\/cdn\.js/$third-party
 /(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
-/(?:.+)\/[\da-f]{32}\/invoke\.js$/$script,third-party,important,match-case
+/(?:.+)\/[\da-f]{32}\/invoke\.js/$script,third-party,important,match-case
 !! ||*/cdn-cgi/apps/head/*$script,~third-party,important
 /^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,match-case,important
 !! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
-/^ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}$/$script,match-case,~third-party
+/ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}/$script,match-case,~third-party
 !! ads concerns
-/\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)$/$script,~third-party,match-case
+/\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party,match-case
 !! ||voirseries.*/_scripts.js|
-/ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js$/$~third-party,match-case
+/ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party,match-case
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
