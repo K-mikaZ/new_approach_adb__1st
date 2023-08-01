@@ -171,8 +171,8 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 !! *##[class|="fake"], [id|="fake"]
 !! *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *#$#:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
-*#$#:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) ) { display: none!important; }
-*#$#[class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]){ display: none!important }
+*##:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) )
+*##:where([class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]))
 *##[class|="custom-fake"]
 *###fakevideo
 fakeplayer$~third-party
