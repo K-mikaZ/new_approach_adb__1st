@@ -40,21 +40,21 @@
 ! ----[ DIV ]----------------------------------------------------------------
 !! *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
 !! *#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
-*#$#:where(div[class|="adsvp"][class*="wrapper"])
-!! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-*#$#div:where([class^="salidor_"]:last-of-type) :where( [class^="salidor_"]:first-of-type )
+*#$#:where(div[class|="adsvp"][class*="wrapper"]){ display:none!important; }
+!! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ){ display: none!important; visibility: hidden!important; }
+*#$#div:where([class^="salidor_"]:last-of-type) :where( [class^="salidor_"]:first-of-type ){ display:none!important; }
 *##div[class^="tolro_"]
 *##div[class^="masha_"]
 ! ------------------------
 !! uBlock filters – Ads
 #@#.ads-core-placer
 #@#.ad-placeholder
-*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
 ! 750g.com
 *##.ads-pholder
 ! ------------------------
 #@#div[data-google-query-id]
-*#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
 ! ------------------------
 *##div[class~="containerAds"]
 *##div[class*="coreads_"]
@@ -119,8 +119,8 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 !! *#$#:where(center, span, div) :where(a:is( [class*="mButton"], [class*="myButton"] ):is( [href], [target], [rel^="no"] ))  { display: none!important; visibility: hidden!important; }
 !! *#$#:where(center, div) :where(a:is( [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
 *##:where(center, span, div) :where(a:is( [class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
-*##div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
-*##div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] )
+*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
+*##div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ){ display:none!important; }
 *##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
 !! Fallback Fake button watching
 *##a[href*="premium"][href*=".php"][class*="btn"]
