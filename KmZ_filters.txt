@@ -265,7 +265,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
 youtube.com#@##consent-bump:remove()
 youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
-youtube.com#$#ytd-mealbar-promo-renderer { display: none !important; visibility: hidden !important; }
+youtube.com##ytd-mealbar-promo-renderer
 youtube.com##.ytd-consent-bump-lightbox
 !! youtube.com###content-wrapper
 youtube.com##.yt-live-chat-banner-renderer
