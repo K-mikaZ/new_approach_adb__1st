@@ -369,7 +369,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 /(.*)?amazonaws\.(.{2,})\/ki\.js/$script,important
 @@||googletagmanager.com^$domain=open.spotify.com,badfilter
 @@||scdn.co/cdn/js/gtag.$script,domain=spotify.com,badfilter
-/\/gtag\.(\d+|([a-z]?[A-Z]?[0-9]?){4,})\.js($)?/$script,important,domain=open.spotify.com,redirect=googletagmanager.com/gtm.js
 ||spotify.demdex.net$image,important
 /(.*)spotify(.*)\.akamaized\.net/$xmlhttprequest,redirect-rule=empty
 @@||spclient.wg.spotify.com/$xmlhttprequest,domain=spotify.com,badfilter
