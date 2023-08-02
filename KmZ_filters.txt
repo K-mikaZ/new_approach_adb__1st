@@ -3856,6 +3856,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !! block too many web players
 ||getjad.io^$badfilter
 ||getjad.io$badfilter
+@@||cdn.lib.getjad.io/library/
+@@||cdn.lib.getjad.io/prebid/
 
 @@||consents.prismamedia.com^
 @@||googlesyndication.com^
