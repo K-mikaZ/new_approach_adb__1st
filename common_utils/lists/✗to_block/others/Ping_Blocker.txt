@@ -21,7 +21,7 @@
 !! https://adguard.com/kb/general/ad-filtering/create-own-filters/#ping-modifier:~:text=attribute%20on%20links.-,Compatibility%20with%20different%20versions%20of%20AdGuard,-AdGuard%20for%20Windows
 !! https://www.jsdelivr.com/package/npm/navigator.sendbeacon
 !#if adguard
-*#%#!function(){ if('navigator' in window && 'sendBeacon' in navigator){ try { navigator.sendBeacon=function sendBeacon(url, data = eval?.("'use strict';var data = (data || null); (data)")){ return !0; } } catch(e){} } }
+*#%#!function(){ if('navigator' in window && 'sendBeacon' in navigator){ try { navigator.sendBeacon=function sendBeacon(url, data = eval?.("'use strict';var data = (data || null); (data)")){ return true; } } catch(e){} } }
 !#endif
 
 !!||*^$ping
