@@ -3147,6 +3147,7 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !! prevents Facebook from tracking you even if you are logged in
 ||facebook.com^$third-party,cookie=c_user
+$cookie=c_user,third-party,domain=facebook.com
 
 
 !! /jquery.cookie.js$~third-party
