@@ -61,22 +61,22 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@||forum.qt.io/socket.io/*$websocket
 @@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
 @@||wss.analyticacdn.com^$websocket
-@@$websocket,domain=geoip.redirect-ads.com
+@@$websocket,domain=wss.analyticacdn.com,important
+@@$websocket,domain=geoip.redirect-ads.com,important
 
 ! ensure blocking
 ! -------------------------------------
 
-/ws{2}\:\/\/net\-an{2}ounce(.*)/$websocket,important
+/ws{2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,match-case,important
 wss://net-announce*^$websocket,important
-||clearadnetwork.com^$websocket,important
-||*.hostcontent.live^$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
 ||alugha.com/graphql$websocket,important
-||socket.tidio.co^$websocket,important
-||*.private-api.com^$websocket,important
-||*.idocdn.com^$websocket,importantimportant
-!! ||messaging.deezer.com/websocket$websocket,important
-$websocket,~third-party,important,domain=deezer.com
-$websocket,~third-party,important,domain=tf1.fr
+$websocket,domain=clearadnetwork.com,important
+$websocket,domain=hostcontent.live,important
+$websocket,domain=socket.tidio.co,important
+$websocket,domain=private-api.com,important
+$websocket,domain=idocdn.com,important
+$websocket,~third-party,domain=deezer.com,important
+$websocket,~third-party,domain=tf1.fr,important
 $websocket,domain=app.molotov.tv,redirect=empty,important
