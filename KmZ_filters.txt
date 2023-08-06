@@ -3130,6 +3130,8 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !#if adguard
 
+!! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
+
 !! see https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
 
 !! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
@@ -3143,6 +3145,8 @@ dood.*#$#body { color: whitesmoke!important; }
 !! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
 !! Cookie Purpose: Marketing/Tracking (318): https://cookiedatabase.org/purpose/marketing/
 
+!! prevents Facebook from tracking you even if you are logged in
+||facebook.com^$third-party,cookie=c_user
 
 
 !! /jquery.cookie.js$~third-party
@@ -3552,7 +3556,6 @@ dcode.fr##+js(set-constant, insertAds, noopFunc)
 ||app-stats.calmradio.com^$important
 ||*/jfbconnect.js?*
 ||*?sentry_*$important,third-party
-||facebook.com^$third-party,cookie=c_user
 ||ssl.broadcast.pm/alliance/file/*.mp4$media,domain=geo.dailymotion.com,redirect=noopmp4-1s
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
