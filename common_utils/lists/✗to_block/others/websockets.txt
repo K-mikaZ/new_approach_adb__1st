@@ -18,29 +18,28 @@
 ! -------------------------------------
 
 ! [FIX] streaming sites
-@@||hlsplay.com^$websocket
+@@$websocket,domain=hlsplay.com,important
 @@||wss.jetload.net/cache$websocket,~third-party
-hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 
 ! [FIX] waaw, netu...
-@@||commentsengine.com^$websocket,xmlhttprequest
+hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
+@@$websocket,xmlhttprequest,domain=commentsengine.com,important
 
 ! [FIX] P2P video delivery
-@@||tracker.openwebtorrent.com^$websocket
-@@||tracker.novage.com.ua^$websocket
+@@$websocket,domain=tracker.openwebtorrent.com,important
+@@$websocket,domain=tracker.novage.com.ua,important
+@@$websocket,domain=arc.io,important
 @@wss://*tracker$websocket
-@@||arc.io^$websocket
 
 ! [FIX] spotify
 @@/?access_token=*$websocket,domain=spotify.com
 
 ! [FIX] utils
-@@||lastpass.com^$websocket
-! @@||chat.twitch.tv^$websocket
-@@||chat.twitch.tv^$websocket
-@@||packetlosstest.com^$websocket
-@@||dns-oarc.net^$websocket
-@@$websocket,domain=discord.com
+@@$websocket,domain=lastpass.com,important
+@@$websocket,domain=chat.twitch.tv,important
+@@$websocket,domain=packetlosstest.com,important
+@@$websocket,domain=dns-oarc.net,important
+@@$websocket,domain=discord.com,important
 
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 
