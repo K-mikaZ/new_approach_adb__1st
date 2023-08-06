@@ -21,7 +21,7 @@
 !! https://adguard.com/kb/general/ad-filtering/create-own-filters/#ping-modifier:~:text=attribute%20on%20links.-,Compatibility%20with%20different%20versions%20of%20AdGuard,-AdGuard%20for%20Windows
 !! https://www.jsdelivr.com/package/npm/navigator.sendbeacon
 !#if adguard
-*#%#(function beaconBlocker(){ if('sendBeacon' in navigator){ try { navigator.sendBeacon=function(url, data){ return true; } } catch(e){} } })();
+*#%#(function beaconBlocker(){ if('navigator' in window && 'sendBeacon' in navigator){ try { navigator.sendBeacon=function sendBeacon(url, data = eval?.("'use strict';var data = (data || null); (data)")){ return !0; }; } catch(e){} } })();
 !#endif
 
 !!||*^$ping
@@ -42,6 +42,8 @@ $ping,third-party
 ! [FIX] some video loading time
 @@||viously.com^$ping
 
+! [FIX] break molotov.tv
+@@/ping?token=$domain=app.molotov.tv
 
 ||ping.iamcdn.net^$badfilter
 @@||ping.iamcdn.net^
