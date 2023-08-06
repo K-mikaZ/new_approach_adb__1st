@@ -40,7 +40,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@||chat.twitch.tv^$websocket
 @@||packetlosstest.com^$websocket
 @@||dns-oarc.net^$websocket
-@@||*^$websocket,domain=discord.com
+@@$websocket,domain=discord.com
 
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 
@@ -50,10 +50,10 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! [FIX] speedtest
 @@||nperf.net^$websocket
 @@||cox.net^$websocket
-@@||*^$websocket,domain=www.speedtest.net
+@@$websocket,domain=www.speedtest.net
 
 ! [FIX] dailymotion
-@@||*^$websocket,domain=geo.dailymotion.com
+@@$websocket,domain=geo.dailymotion.com
 
 ||*^$websocket,badfilter,domain=netflix.com
 @@/ws{1,}[:]\/{2}/$domain=netflix.com
@@ -61,7 +61,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@||forum.qt.io/socket.io/*$websocket
 @@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
 @@||wss.analyticacdn.com^$websocket
-@@||*^$websocket,domain=geoip.redirect-ads.com
+@@$websocket,domain=geoip.redirect-ads.com
 
 ! ensure blocking
 ! -------------------------------------
@@ -77,5 +77,6 @@ wss://net-announce*^$websocket,important
 ||*.private-api.com^$websocket,important
 ||*.idocdn.com^$websocket,importantimportant
 !! ||messaging.deezer.com/websocket$websocket,important
-||*^$websocket,~third-party,important,domain=deezer.com
-||*^$websocket,~third-party,important,domain=tf1.fr
+$websocket,~third-party,important,domain=deezer.com
+$websocket,~third-party,important,domain=tf1.fr
+$websocket,domain=app.molotov.tv,redirect=empty,important
