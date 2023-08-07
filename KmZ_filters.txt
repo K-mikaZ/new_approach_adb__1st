@@ -3584,10 +3584,17 @@ themoneytizer$important,script,redirect=noopjs
 ||richaudience.com^
 ||indexww.com^
 ||4dex.io^
+
+! ----------------------------------------
 ! [FIX] video players
-||multipulter.com^$important,badfilter
 @@||content.jwplatform.com/libraries/
-@@||getpublica.com^$domain=app.molotov.tv
+! live stream on app.molotov.tv
+@@||getpublica.com^$important
+! break myvi.tv stream
+/modules/ad/*$badfilter
+||multipulter.com^$important,badfilter
+@@||multipulter.com^$important
+! ----------------------------------------
 
 ||go-mpulse.net^$third-party
 /mpulse.$script,~third-party,redirect=noopjs
