@@ -1755,7 +1755,6 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||stats-irl.sxp.smartclip.net^
 ||tv-static.scdn.co^
 ||tv.deezer.com^
-||multipulter.com^$important
 ||prd.jwpltx.com^$important
 ||adsmediabox.com^$important
 ||ae.dmxleo.com^$important
@@ -2507,7 +2506,8 @@ imsdb.pw##+js(window.open-defuser)
 firesticktricks.com##+js(window.open-defuser)
 player.universanimevf.com##+js(window.open-defuser)
 ddl-francais.com##+js(window.open-defuser)
-||*$xmlhttprequest,third-party,denyallow=animesultra.net|toonanime.xyz,domain=toonanime.*
+! ||*$xmlhttprequest,third-party,denyallow=animesultra.net|toonanime.xyz,domain=toonanime.*
+@@||tooncdn.*/ajax/$domain=toonanime.*
 /js/adsbygoogle.js$important,domain=toonanime.*
 @@||toonanime.*$xmlhttprequest,media,subdocument
 @@||toonanime.*$generichide
@@ -3584,6 +3584,10 @@ themoneytizer$important,script,redirect=noopjs
 ||richaudience.com^
 ||indexww.com^
 ||4dex.io^
+! [FIX] video players
+||multipulter.com^$important,badfilter
+@@||content.jwplatform.com/libraries/
+@@||getpublica.com^$domain=app.molotov.tv
 
 ||go-mpulse.net^$third-party
 /mpulse.$script,~third-party,redirect=noopjs
