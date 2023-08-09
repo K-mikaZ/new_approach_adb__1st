@@ -3650,7 +3650,7 @@ france.tv##:where(div[id|="didomi"])
 !! !#endif
 
 
-/(?:(?:.+((?:\b[.-_=\/])prebid(?:(?:[.-\/]|$))?\b)))/$xmlhttprequest,third-party,match-case
+/(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party,match-case
 /(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party,match-case
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
