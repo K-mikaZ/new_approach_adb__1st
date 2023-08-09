@@ -3710,7 +3710,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
 
-||v.fwmrm.net/ad/g/1?resp=vast1$xmlhttprequest,redirect=noopvast-1.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
@@ -3823,7 +3822,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! ||videosprofitnetwork.com^$redirect=empty
 ||reyden-x.com/*/pre-roll/*$third-party,redirect=noopvast-2.0
 ||lumupu.xyz/vast/?$redirect=noopjson
-||getpublica.com^$xmlhttprequest,domain=crunchyroll.com,important,redirect=noopvast-2
+||getpublica.com^$xmlhttprequest,domain=crunchyroll.com,important,redirect=noopvast-2.0
 ||easyads28.mobi/vast/*
 ||ads.spotx.tv/*_preroll&*$important,redirect=noopvast-3.0
 ||tagbom.com/*/vast.php$important,redirect=noopvast-2.0
