@@ -120,7 +120,7 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 !! *#$#:where(center, div) :where(a:is( [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
 *##:where(center, span, div) :where(a:is( [class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
 *#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
-*##div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ){ display:none!important; }
+*#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ){ display:none!important; }
 *##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
 !! Fallback Fake button watching
 *##a[href*="premium"][href*=".php"][class*="btn"]
