@@ -3037,16 +3037,9 @@ tpbproxypirate.com##[id="float"]
 glodls.*,gtdb.*##a[href*="://bit.ly/"]
 ##.dssdffds
 1337x.*#@#a[href*=" "]
-!#if adguard
-@@||weather.opera-api.com^$third-party,app=opera.exe
-@@||autoupdate.geo.opera.com^$important,app=opera.exe
-||merchandise.opera-api.com/api/teaser-gx^$important,app=opera.exe
-/192\.243\.59\.(\w+)/$network
-/45\.133\.44\.(\w+)/$network
-/142\.0\.204\.(\w+)/$network
-/168\.119\.25\.(\w+)/$network
-/\[(2a01\:4f8\:)+([\w:]+)+([\w:+])+:+([\w]+)\]/$network
-!#endif
+@@||weather.opera-api.com^$third-party
+@@||autoupdate.geo.opera.com^$important
+||merchandise.opera-api.com/api/teaser-gx$important
 @@||www.cmb.fr^$important,document
 @@||cpro.baidu.com/cpro/$domain=rjno1.com,important
 @@||facemorph.me^$important,document
