@@ -3221,7 +3221,7 @@ $cookie=__sonar
 $cookie=__ar_v4
 $cookie=cto_lwid
 $cookie=id
-$cookie=IDE,~domain=youtube.com
+$cookie=IDE,domain=~youtube.com
 @@||youtube.com^$cookie=IDE,important
 
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
