@@ -198,14 +198,12 @@ youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.guide-builder-v2 .branded-page-v2-secondary-col
 youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-box:first-child:last-child
-! ||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com
 youtube.com,youtu.be,yt.be##.html5-endscreen-content
 youtube.com,youtu.be,yt.be##.html5-endscreen
 youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
 youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
 youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-related-channels:first-child + .branded-page-box:last-child
 youtube.com,youtu.be,yt.be###channel-subscription-promo-in-feed
-! ||youtube.com/annotations_invideo?$object-subrequest
 youtube.com,youtu.be,yt.be##.video-annotations
 youtube.com,youtu.be,yt.be##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
 youtube.com,youtu.be,yt.be##.yt-uix-button[data-trigger-for="action-panel-share"]
