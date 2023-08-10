@@ -298,8 +298,8 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 abysscdn.com##+js(no-fetch-if, /cdn\.apicdn\d+\.\w+/)
 short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 short.ink,abysscdn.com##+js(window.open-defuser)
-||*^$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com
-||*^$third-party,domain=websocketgate.com
+$third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com|jsdelivr.net
+$third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
 ||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
