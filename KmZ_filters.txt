@@ -3241,8 +3241,8 @@ $cookie=_pubcid
 !! @@$cookie=/(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
 
 !! https://policies.google.com/technologies/cookies?hl=en
-!! $cookie=VISITOR_INFO1_LIVE,domain=youtube.com
-@@||youtube.com^$cookie=VISITOR_INFO1_LIVE
+$cookie=VISITOR_INFO1_LIVE
+! @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
 !! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
 
