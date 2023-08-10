@@ -43,10 +43,10 @@
 !                - Depending on your distribution, you may need to load the 'ipt_comment' or 'xt_comment' modules into your running kernel first.
 !                  like: 'modprobe ipt_comment'
 ! Regex Numeric Range Generator: https://3widgets.com/
-! 173.194.55.0 ~ 173.194.55.255
-/(173\.194\.5{2}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
-! 206.111.0.0 ~ 206.111.255.255
-/(206\.1{3}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
+!! ! # 173.194.55.0 ~ 173.194.55.255
+!! /(173\.194\.5{2}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
+!! ! # 206.111.0.0 ~ 206.111.255.255
+!! /(206\.1{3}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
 !#endif
 ! ...
 ! #### [ADS] IN FACT, IF YOU WERE TO DISABLE ALL FILTERS, you would only need ...
@@ -261,12 +261,10 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
-! youtube.com#@##consent-bump:remove()
 youtube.com#@$?#consent-bump { remove: true; }
 youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
 youtube.com##ytd-mealbar-promo-renderer
 youtube.com##.ytd-consent-bump-lightbox
-!! youtube.com###content-wrapper
 youtube.com##.yt-live-chat-banner-renderer
 youtube.com###visible-banners > .yt-live-chat-banner-manager
 youtube.com#@##clarify-box
