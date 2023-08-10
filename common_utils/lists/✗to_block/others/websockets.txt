@@ -58,10 +58,8 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@/ws{1,}[:]\/{2}/$domain=netflix.com
 
 @@||forum.qt.io/socket.io/*$websocket
-@@||wss.analyticacdn.com:8443^$websocket,domain=yandexcdn.com
-@@||wss.analyticacdn.com^$websocket
-@@$websocket,domain=wss.analyticacdn.com,important
-@@$websocket,domain=geoip.redirect-ads.com,important
+@@||analyticacdn.com$websocket,important
+@@||geoip.redirect-ads.com$websocket,important
 
 ! ensure blocking
 ! -------------------------------------
@@ -71,11 +69,11 @@ wss://net-announce*^$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
 ||alugha.com/graphql$websocket,important
-$websocket,domain=clearadnetwork.com,important
-$websocket,domain=hostcontent.live,important
-$websocket,domain=socket.tidio.co,important
-$websocket,domain=private-api.com,important
-$websocket,domain=idocdn.com,important
+||clearadnetwork.com$websocket,important
+||hostcontent.live$websocket,important
+||socket.tidio.co$websocket,important
+||private-api.com$websocket,important
+||idocdn.com$websocket,important
 $websocket,~third-party,domain=deezer.com,important
 $websocket,~third-party,domain=tf1.fr,important
 $websocket,domain=app.molotov.tv,redirect=empty,important
