@@ -3702,6 +3702,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 @@||appcdn01.xyz/vast.js
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
+||wolfstream.tv/player/*/vast.js$important
+!! /vast.js$domain=designparty.*,wolfstream.tv
 
 ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
