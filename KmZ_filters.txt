@@ -3860,6 +3860,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 @@||fwmrm.net|
 @@||fwmrm.net^
 !! block ads on sites like 6play.fr
+!! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com
 ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
 
 ||datadoghq.com^$third-party,badfilter
