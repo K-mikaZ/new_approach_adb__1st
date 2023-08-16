@@ -3094,6 +3094,7 @@ dood.*#$#body { color: whitesmoke!important; }
 ||plainmarshyaltered.com^
 ||freighthealaudience.com^
 ||quiaresp.com^
+||highcpmrevenuegate.com^
 ||thraxgawks.guru^
 ||collenwhr.website^
 ||juristarx.cam^
@@ -3598,6 +3599,7 @@ themoneytizer$important,script,redirect=noopjs
 !#endif
 
 
+/(\/[B][N][M]){2}\.(.{3})/$match-case
 /ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+/$script,xmlhttprequest,third-party,match-case,important
 /ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party,match-case
 /ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$third-party,important,script,match-case
