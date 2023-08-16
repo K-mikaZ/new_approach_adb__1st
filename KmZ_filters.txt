@@ -3853,6 +3853,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
 @@||fwmrm.net
+!! block ads on sites like 6play.fr
 ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
 
 ||datadoghq.com^$third-party,badfilter
