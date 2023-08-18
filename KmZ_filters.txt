@@ -1658,7 +1658,6 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||*/cdn-cgi/bm/cv/*js|$script
 ||*/adsid/integrator.js|$script
 ||*/popunder/*.js|$script
-||*/video.counters.js|$script
 ||*.addtoany.*.js|$script
 ||*.7vid.*.js|$script
 ||*.histats.com/*.js|$script
@@ -1980,7 +1979,6 @@ streamroot.io$script,important,badfilter
 ||wt-eu02.net^$third-party,badfilter
 /wt?p=$badfilter
 /cgi-bin/ivw/*$badfilter
-/video.counters.js$badfilter
 .to/ads/$badfilter
 /ads/pop.$badfilter
 ||datadome.co^$third-party,badfilter
