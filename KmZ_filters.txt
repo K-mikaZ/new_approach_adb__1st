@@ -3707,6 +3707,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||designparty.*/*/vast.js$important
 ||wolfstream.tv/player/*/vast.js$important
 !! /vast.js$domain=designparty.*,wolfstream.tv
+/^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.]vast[-.]vpaid(@|\.)/$important
 
 ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
@@ -3825,9 +3826,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||ads.spotx.tv/*_preroll&*$important,redirect=noopvast-3.0
 ||tagbom.com/*/vast.php$important,redirect=noopvast-2.0
 ||sys.vidsrev.com/vast/vasts.min.js$third-party,redirect=noopjs
-||*/videojs-vast-vpaid*$script,important
-||bid.g.doubleclick.net/dbm/vast?dbm_c=*
-||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect-rule=noopvast-4.0
+||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect=noopvast-4.0
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 ||vast.doubleverify.com/v3/vast?$important,redirect=noopvast-3.0
