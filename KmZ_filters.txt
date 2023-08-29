@@ -806,7 +806,7 @@ torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpa
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
 gamestorrents.nu##[href*="gamestorrents.nu/ayudanos-con-una-donacion/"]
 
-/@webtor/player-sdk-js/
+/@webtor/
 
 wlnk.ec##[href^="/telecharger"]
 zone-telechargement.casa##[src="/templates/zone/images/dl/telechargement-direct.png"]
