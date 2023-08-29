@@ -3707,7 +3707,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||designparty.*/*/vast.js$important
 ||wolfstream.tv/player/*/vast.js$important
 !! /vast.js$domain=designparty.*,wolfstream.tv
-/^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.]vast[-.]vpaid(@|\.)/$important
+/^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.](v(ast|paid)[@\-.]){1,2}/$important
 
 ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
 ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
