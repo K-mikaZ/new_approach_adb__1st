@@ -779,7 +779,7 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 *$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 ||*$third-party,xmlhttprequest,script,domain=oxtorrent.*
-cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*##$#vpnvpn:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#vpnvpn:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#[class^="truste"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#div[onclick*="/go/vpn"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#?#div:has(> a:is([href*="/go/vpn"]))
@@ -1795,27 +1795,6 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||*/sniffadb*.js$script
 /adblock.js$script
 /fuckadblock.*?$script
-||google-analytics.*/inpage_linkid.js$script,redirect=google-analytics_inpage_linkid.js
-||addthis.*/addthis_widget.js$script,important,redirect=addthis_widget.js
-||amazon-adsystem.*/amzn_ads.js$script,important,redirect=amazon_ads.js
-||amazon-adsystem.*/apstag.js$script,important,redirect=amazon_apstag.js
-||cdn.ampproject.org/v0.js$script,important,redirect=ampproject_v0.js
-||static.chartbeat.com/js/chartbeat.js$script,important,redirect=chartbeat.js
-||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
-||ligatus.*/angular-tag.js$script,important,redirect=ligatus_angular-tag.js
-||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
-||smartadserver.com^$third-party,domain=~smartadserver.de|~smartadserver.fr
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
-||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
-||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
-||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,badfilter
-||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js,badfilter
-||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js,badfilter
-||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js,badfilter
-||googletagmanager.com/gtm.js$script,redirect=googletagmanager.com/gtm.js,badfilter
-||google-analytics.com/analytics.js$important,script,redirect=google-analytics.com/analytics.js,domain=support.amd.com,badfilter
-||googletagmanager.com/gtm.js$important,script,redirect=googletagmanager.com/gtm.js,domain=support.amd.com,badfilter
 ||google.*$image,redirect-rule=1x1.gif
 ||youtu*.*$image,redirect-rule=1x1.gif
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
@@ -1827,9 +1806,6 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||adform.net/*$image,redirect-rule=1x1.gif
 ||*spotx*$image,redirect-rule=1x1.gif
 ||bidr.io^$image,redirect-rule=1x1.gif
-||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
-||*monke*broker*$script,redirect-rule=monkeybroker.js
-||*monke*broker*$script,important
 voirseries.*#@#.adsBox
 @@||trustarc.com^
 @@||turner.com^
@@ -3057,7 +3033,6 @@ streamingvf.fun##[id^=ads_]
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(io|com)/
 ||cdn.jsdelivr.net*@sentry/*.js$important
-||trafficjunky.com/invocation/popunder$redirect=popads-dummy
 ||mediarithmics.com^
 ! COLOR iframe fix
 uqload.com#$#body { color: whitesmoke; }
@@ -3623,6 +3598,35 @@ themoneytizer$important,script,redirect=noopjs
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party,match-case
 !! ||voirseries.*/_scripts.js|
 /ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party,match-case
+
+
+
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
+! ||google-analytics.*/inpage_linkid.js$script,redirect=google-analytics_inpage_linkid.js
+! ||addthis.*/addthis_widget.js$script,important,redirect=addthis_widget.js
+! ||amazon-adsystem.*/amzn_ads.js$script,important,redirect=amazon_ads.js
+! ||amazon-adsystem.*/apstag.js$script,important,redirect=amazon_apstag.js
+! ||cdn.ampproject.org/v0.js$script,important,redirect=ampproject_v0.js
+! ||static.chartbeat.com/js/chartbeat.js$script,important,redirect=chartbeat.js
+! ||doubleclick.net/instream/ad_status.js$script,important,redirect=doubleclick_instream_ad_status.js
+! ||ligatus.*/angular-tag.js$script,important,redirect=ligatus_angular-tag.js
+! ||smartadserver.*.js$script,important,redirect-rule=smartadserver.com.js
+! ||smartadserver.com^$third-party,domain=~smartadserver.de|~smartadserver.fr
+! ||google-analytics.com/ga.js$script,redirect-rule=google-analytics.com/ga.js,badfilter
+! ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js,badfilter
+! ||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,badfilter
+! ||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js,badfilter
+! ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js,badfilter
+! ||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js,badfilter
+! ||googletagmanager.com/gtm.js$script,redirect=googletagmanager.com/gtm.js,badfilter
+! ||google-analytics.com/analytics.js$important,script,redirect=google-analytics.com/analytics.js,domain=support.amd.com,badfilter
+! ||googletagmanager.com/gtm.js$important,script,redirect=googletagmanager.com/gtm.js,domain=support.amd.com,badfilter
+! ||*fingerprint2*.js$script,redirect-rule=fingerprint2.js
+! ||*monke*broker*$script,redirect-rule=monkeybroker.js
+! ||*monke*broker*$script,important
+! ||trafficjunky.com/invocation/popunder$redirect=popads-dummy
+
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
 france.tv##:where(div[id|="didomi"])
