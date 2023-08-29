@@ -8,6 +8,11 @@
 !
 
 
+! INVALID
+! *##:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) )
+! *##:where([class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]))
+
+
 ! -------------------- ExtendedCss ---------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
 ! I use `:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )` asap for avoid running twice
@@ -159,8 +164,6 @@ voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="downloa
 !! *##[class|="fake"], [id|="fake"]
 !! *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 *##:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
-*##:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) )
-*##:where([class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]))
 *##[class|="custom-fake"]
 *###fakevideo
 fakeplayer$~third-party
