@@ -64,7 +64,7 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 ! ensure blocking
 ! -------------------------------------
 
-/ws{2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,match-case,important
+/ws{1,2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,match-case,important
 wss://net-announce*^$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
