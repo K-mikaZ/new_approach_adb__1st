@@ -2943,7 +2943,7 @@ vshare.eu#@#+js(abort-on-property-read, BetterJsPop)
 vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
 webcrawler.com,results.excite.com##[class^="ads-"]
 webtor.io##.ad
-webtor.io##.mejs__logo-button.mejs__button
+webtor.io##.alerts
 wiflix.*##.sadst
 wiflix.*##+js(remove-attr, target|href, .video-player a)
 wiflix.*##+js(window.open-defuser)
