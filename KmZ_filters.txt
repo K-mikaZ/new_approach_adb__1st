@@ -778,7 +778,16 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 ! ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
+
+! webtor.io concerns
 @@||webtor.io^
+webtor.io##.ad
+webtor.io##.alerts
+webtor.io##+js(window.open-defuser)
+@@||nocturnal-narwhal.buzz^$important,document,jsinject
+! Player SDK for online torrent streaming (https://www.jsdelivr.com/package/npm/@webtor/player-sdk-js)
+@@/@webtor/player-sdk-js
+
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#vpnvpn:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#[class^="truste"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#div[onclick*="/go/vpn"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
@@ -805,8 +814,6 @@ torrenty.*,torrent9.*,torrent09.uno,oxtorrent.me#$#.col-xs-11 { opacity: .25 }
 torrenty.*,torrent9.*,torrent09.*,oxtorrent.me#?#div[class="download-btn" i]:xpath(//a[(contains(@class,"download")) or (contains(@href,"register")) or (contains(@href,"extreme-download"))][not(contains(@href,"magnet:?"))][not(contains(@href,"get_torrent"))])
 thepiratebay0.org,thepiratebay10.org,pirateproxy.live,thehiddenbay.com,piratebay.live,thepiratebay.zone,tpb.party,piratebayproxy.live,piratebay.party,thepiratebay.party,thepiratebays.live,thepiratebays.info,piratebayblocked.com,thepiratebay.vin##a[href*="/offer/torrent-vpn"]
 gamestorrents.nu##[href*="gamestorrents.nu/ayudanos-con-una-donacion/"]
-! Player SDK for online torrent streaming (https://www.jsdelivr.com/package/npm/@webtor/player-sdk-js)
-@@/@webtor/player-sdk-js
 wlnk.ec##[href^="/telecharger"]
 zone-telechargement.casa##[src="/templates/zone/images/dl/telechargement-direct.png"]
 zone-telechargement.casa##[href*=".kfiopkln."]
@@ -2940,8 +2947,6 @@ voirseries.fun##.fx-row.lien:if(.t_down)
 vshare.eu#@#+js(abort-on-property-read, BetterJsPop)
 vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
 webcrawler.com,results.excite.com##[class^="ads-"]
-webtor.io##.ad
-webtor.io##.alerts
 wiflix.*##.sadst
 wiflix.*##+js(remove-attr, target|href, .video-player a)
 wiflix.*##+js(window.open-defuser)
