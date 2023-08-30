@@ -778,8 +778,6 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 ! ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
 *$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
 *$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
-@@||api.nocturnal-narwhal.buzz^$domain=webtor.io
-@@||google-analytics.com^$domain=webtor.io
 @@||webtor.io^
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#vpnvpn:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#[class^="truste"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
