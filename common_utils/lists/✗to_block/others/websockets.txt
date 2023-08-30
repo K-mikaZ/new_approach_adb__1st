@@ -58,7 +58,8 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@/ws{1,}[:]\/{2}/$domain=netflix.com
 
 ! online torrent streaming with webtor.io
-@@$websocket,domain=nocturnal-narwhal.buzz
+@@||api.nocturnal-narwhal.buzz^$websocket
+@@$websocket,domain=webtor.io
 
 @@||forum.qt.io/socket.io/*$websocket
 @@||analyticacdn.com$websocket,important
