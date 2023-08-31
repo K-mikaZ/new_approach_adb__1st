@@ -9,10 +9,5 @@
 
 ! < start Hola Free VPN Popup Remover >
 ! see < https://chrome.google.com/webstore/search/Hola Free VPN Popup Remover >
-!#if (env_chrome && chrome-extension://gkojfkhlekighikafcpjkiklfbnlmeio)
 *##:xpath(//*[@id="_hola_popup_iframe__"])
-!#endif
-!#if (env_firefox && moz-extension://f7f625b8-beec-4726-b050-25a6cf6ac47c)
-*##:xpath(//*[@id="_hola_popup_iframe__"])
-!#endif
 ! </ end Hola Free VPN Popup Remover >
