@@ -564,7 +564,7 @@ crunchyroll.com###series_promo_banner
 @@/analytics/*$domain=crunchyroll.com
 /js/tracking/*$script,domain=crunchyroll.com,important
 /crunchyroll-web.json$xmlhttprequest,domain=crunchyroll.com,redirect=empty
-||*$popup,domain=crunchyroll.com
+! ||*$popup,domain=crunchyroll.com
 ||eec.crunchyroll.com^
 rts.ch##+js(abort-on-property-read, Dr)
 ||hummingbird.rts.ch*/hummingbird.min*.js
