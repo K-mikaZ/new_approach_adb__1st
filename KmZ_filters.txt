@@ -3862,16 +3862,18 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !! tracker categories: Essential  -  not only trackers, but somes utils (use for login to the site, etc ...)
 !! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
 
-!! critical to the functionality of some website
+!! critical to the functionality of some website (block ads on sites like 6play.fr)
 ||fwmrm.net^$third-party,badfilter
 ||fwmrm.net$third-party,badfilter
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
+!! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||v.fwmrm.net/ad/
+||v.fwmrm.net/ad/$badfilter
+||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
+
 @@||fwmrm.net|
 @@||fwmrm.net^
-!! block ads on sites like 6play.fr
-!! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com
-||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
+||fwmrm.net^$popup,important
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
