@@ -3681,7 +3681,7 @@ france.tv##:where(div[id|="didomi"])
 
 ! ======= VMAP =======
 
-||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
+!! ||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
 ||animationdigitalnetwork.fr/player/video/*/vmap$redirect=noopvmap-1.0,important
 ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
