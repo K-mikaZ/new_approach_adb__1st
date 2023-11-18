@@ -59,6 +59,13 @@ youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPla
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
 youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 !
+! #### [FIX] HOW TO GET RID OF THE YOUTUBE AD BLOCK POPUP
+! https://www.reddit.com/r/youtube/comments/17079px/comment/k4sbpf6/
+! www.youtube.com##.opened
+! www.youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+!
 ! #### [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
 ! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
 ! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
