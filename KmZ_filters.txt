@@ -665,7 +665,7 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-ba
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noopjs
 !! site:allocine.fr - fixing delay in the video player
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.ads, emptyObj)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
 !! site:allocine.fr - tracking
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore.clientId, '')
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore, emptyObj)
