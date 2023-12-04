@@ -3861,11 +3861,17 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net$badfilter
 !! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||v.fwmrm.net/ad/
 ||v.fwmrm.net/ad/$badfilter
-||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
+||7cbf2.v.fwmrm.net^$badfilter
+@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
 
+||youboranqs01.com^$badfilter
 @@||fwmrm.net|
-@@||fwmrm.net^
+@@||fwmrm.net^$~script
 ||fwmrm.net^$popup,important
+! ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
+! https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
+||v.fwmrm.net/ad/g/1?$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important,domain=6play.fr
+
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
