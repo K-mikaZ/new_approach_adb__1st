@@ -3860,8 +3860,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
 !! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||v.fwmrm.net/ad/
-||v.fwmrm.net/ad/$badfilter
-||7cbf2.v.fwmrm.net^$badfilter
+! ||v.fwmrm.net/ad/$badfilter
+! ||7cbf2.v.fwmrm.net^$badfilter
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
 
 ||youboranqs01.com^$badfilter
@@ -3870,7 +3870,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
 ||adproxy.tf1.fr^
 @@||fwmrm.net|
-! @@||fwmrm.net^$~script
+@@||fwmrm.net^$~script
 ||v.fwmrm.net^$~script,removeparam
 ||fwmrm.net^$popup,important
 ! ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
