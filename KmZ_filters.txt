@@ -3866,7 +3866,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 ||youboranqs01.com^$badfilter
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
-||adproxy.tf1.fr^$badfilter
 @@||fwmrm.net|
 ! @@||fwmrm.net^$~script
 ||v.fwmrm.net^$~script,removeparam
