@@ -3865,6 +3865,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
 
 ||youboranqs01.com^$badfilter
+! npawAdAdapter is freewheel
+/npawAdAdapter.
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
 ||adproxy.tf1.fr^
 @@||fwmrm.net|
