@@ -610,7 +610,7 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$redirect=empty
-prod-player.tf1.fr##:where(ntrs-edito-img, ntrs-top-toolbar)
+prod-player.tf1.fr##:where(ntrs-edito-img[class="is-visible"], ntrs-top-toolbar)
 !! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!important; } ntrs-edito-subtitle,ntrs-coming-next-description { font-size: 1.4em!important; } ntrs-coming-next-inner { bottom: 5em!important; } ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle) { font-size: 1.2em!important; }
 !! ||*$media,domain=tf1.fr
@@ -3868,7 +3868,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
 ||adproxy.tf1.fr^$badfilter
 @@||fwmrm.net|
-@@||fwmrm.net^$~script
+! @@||fwmrm.net^$~script
+||v.fwmrm.net^$~script,removeparam
 ||fwmrm.net^$popup,important
 ! ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
 ! https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
