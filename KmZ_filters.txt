@@ -3864,7 +3864,9 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! npawAdAdapter is freewheel
 /npawAdAdapter.
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
-||adproxy.tf1.fr^
+! ||adproxy.tf1.fr^
+||adproxy.tf1.fr/web-tf1/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*.requestComplete$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\(\._videoAsset\)?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important,domain=prod-player.tf1.fr
+||adproxy.tf1.fr^$badfilter
 @@||fwmrm.net|
 @@||fwmrm.net^$~script
 ||v.fwmrm.net^$~script,removeparam
