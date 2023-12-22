@@ -2809,10 +2809,6 @@ akceleratorbiznesu.eu##.shadow
 akceleratorbiznesu.eu##[src*="/dating/"]
 akceleratorbiznesu.eu##[src*="/imagesnp/"]
 allthings.how##.mv-ad-box
-! animationdigitalnetwork.fr#@#+js(set, Document.prototype.interestCohort, undefined)
-!#if adguard
-animationdigitalnetwork.fr#%#AG_onLoad(function() { if(window.location.href.indexOf("/onboarding") != -1){ window.location.href = "https://animationdigitalnetwork.fr"; } });
-!#endif
 answerstoall.com###rc-widget-618603
 autoprefixer.github.io##div.ads
 br.atsit.in##.entry-content > div:if(ins[class=adsbygoogle])
