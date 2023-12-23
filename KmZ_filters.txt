@@ -3624,10 +3624,10 @@ themoneytizer$important,script,redirect=noopjs
 
 
 !! Consent Management Platform (CMP) [type="didomi/javascript"]
-france.tv##:where(div[id|="didomi"])
-!#if adguard
-||sdk.privacy-center.org/*/loader.js$script,redirect=didomi-loader
-!#endif
+!! france.tv##:where(div[id|="didomi"])
+! !#if adguard
+!! ||sdk.privacy-center.org/*/loader.js$script,redirect=didomi-loader
+! !#endif
 
 
 ! ====== PREBID ======
