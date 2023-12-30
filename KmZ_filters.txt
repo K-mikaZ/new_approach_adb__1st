@@ -314,6 +314,9 @@ $third-party,domain=websocketgate.com
 designparty.*##+js(window.open-defuser)
 designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 
+! avoid blocking forum.newrelic.com
+||newrelic.com^$badfilter
+||newrelic.com^$third-party
 
 ||hoglinsu.com^
 ||yougube.com^$all,important
@@ -2703,7 +2706,6 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(set-constant, WebSocke
 @@||uptostream.*$xmlhttprequest,domain=uptostream.*
 @@||uptostream.*$subdocument,media
 /uptostream\.(.{2,})(\/as{2}ets\/js)?\/u2f\.js/$script,important
-/uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$redirect=noopvast-3.0,important
 *://uptostream.*/assets/coins.*$important
 @@/(.+)\/([\w-]+\.?)?cast([_.]([\w]+)?)?\.js(.+)?/$script
 ! --------------
@@ -3718,6 +3720,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
 ||vast.adsafeprotected.com^$important
+/uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$redirect=noopvast-3.0,important
+||ads2550.bid/*?cp.host=*$redirect=noopvast-3.0,important
 ||adsafeprotected.com/vast/*skeleton.js$xmlhttprequest,redirect-rule=noopvast-2.0
 ||tremorhub.com/*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ||getpublica.com/*&format=vast*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
