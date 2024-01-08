@@ -638,7 +638,7 @@ prod-player.tf1.fr#$#ntrs-edito-title,ntrs-coming-next-title { font-size: 2em!im
 
 !! site:tf1.fr
 www.tf1.fr##:where(div[class^="usabilla"])
-www.tf1.fr##:where(a[href*="/offre-max"], a[rel*="sponsored"])
+www.tf1.fr##a[href*="/offre-max"]
 www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
 !! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
