@@ -3884,18 +3884,14 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! npawAdAdapter is freewheel
 /npawAdAdapter.
 ! adproxy.tf1.fr is fwmrm.net tv.freewheel.SDK
-! ||adproxy.tf1.fr^
-! ||adproxy.tf1.fr/web-tf1/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*.requestComplete$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\(\._videoAsset\)?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important,domain=prod-player.tf1.fr
 ! ||adproxy.tf1.fr^$badfilter
 @@||fwmrm.net|
 @@||fwmrm.net^$~script
 ||v.fwmrm.net^$~script,removeparam
 ||fwmrm.net^$popup,important
-! ||v.fwmrm.net/ad/g/1?*_html5_live$redirect=noop.js,important
-! https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-! ||*/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important
-! ||v.fwmrm.net/ad/g/1?$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important,domain=6play.fr
-! ||*/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$redirect=noopjs,important
+! https://regex101.com/r/ElUl4O/1  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
+/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important
+
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
