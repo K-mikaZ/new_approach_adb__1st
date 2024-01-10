@@ -3876,7 +3876,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
 !! because of adguard base filter: @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||v.fwmrm.net/ad/
-! ||v.fwmrm.net/ad/$badfilter
+||v.fwmrm.net/ad/$badfilter
+||7cd77.v.fwmrm.net^$badfilter
 ! ||7cbf2.v.fwmrm.net^$badfilter
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
 
@@ -3884,7 +3885,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! npawAdAdapter is freewheel
 /npawAdAdapter.
 @@||fwmrm.net|
-@@||fwmrm.net^$~script
+! @@||fwmrm.net^$~script
 ||v.fwmrm.net^$~script,removeparam
 ||fwmrm.net^$popup,important
 ! adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for prod-player.tf1.fr
