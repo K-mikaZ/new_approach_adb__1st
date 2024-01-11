@@ -20,9 +20,10 @@
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 
 ! because of adguard base filter `##.ad-layer` break france.tv loading player
-#@#.ad-layer
-##.ad-layer:not([style*="display: none;"])
-##[id|="freewheelAd"]:not([style*="display: none;"])
+! #@#.ad-layer
+! ##.ad-layer:not([style*="display: none;"])
+! ##[id|="freewheelAd"]:not([style*="display: none;"])
+##[id|="freewheelAd"]
 
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
