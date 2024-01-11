@@ -3299,11 +3299,6 @@ $cookie=cto_bundle
 !! https://cookiesearch.org/cookies/?cookie-id=_uid
 $cookie=_uid
 
-! freewheel ad
-$cookie,domain=fwmrm.net
-$cookie=_fwex_doubleclick.net_SameSite
-$cookie=_fwex_doubleclick.net_test_cookie
-
 !! google.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=NID
 !! $cookie=NID
 
