@@ -1,3 +1,5 @@
+!! < start freewheel ad >
+
 @@||fwmrm.net|
 ||fwmrm.net^$third-party,badfilter
 ||fwmrm.net$third-party,badfilter
@@ -28,3 +30,11 @@
 
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+
+!#if adguard
+$cookie,domain=fwmrm.net
+$cookie=_fwex_doubleclick.net_SameSite
+$cookie=_fwex_doubleclick.net_test_cookie
+!#endif
+
+!! </ end freewheel ad >
