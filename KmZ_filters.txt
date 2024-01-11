@@ -3880,10 +3880,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !! tracker categories: Essential  -  not only trackers, but somes utils (use for login to the site, etc ...)
 !! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
 
-!! critical to the functionality of some website (like 6play.fr)
-!! <---- freewheel ad ---->
 !#include freewheel_ads.txt
-!! <---- freewheel ad /---->
 
 ||youboranqs01.com^$badfilter
 
