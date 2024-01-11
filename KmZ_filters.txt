@@ -3897,8 +3897,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net^$popup,important
 ! adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for prod-player.tf1.fr
 ! ||adproxy.tf1.fr^$badfilter
-! https://regex101.com/r/5NE9ax/1  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1});/,important,domain=~prod-player.tf1.fr
+! https://regex101.com/r/DkEygK/1  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
+/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}\);/\$1});/,important,domain=~prod-player.tf1.fr
 ! because of adguard base filter `##.ad-layer` break france.tv loading player
 #@#.ad-layer
 ##.ad-layer:not([style*="display: none;"])
