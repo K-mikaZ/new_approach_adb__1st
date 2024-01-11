@@ -3120,7 +3120,7 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !! prevents Facebook from tracking you even if you are logged in
 ||facebook.com^$third-party,cookie=c_user
-$cookie=c_user,third-party,domain=facebook.com
+! $cookie=c_user,third-party,domain=facebook.com
 
 !! ||howtogeek.com^$cookie=unauthenicatedArticleLimitReached
 ||howtogeek.com^$cookie=/LimitReached/
@@ -3191,6 +3191,17 @@ $cookie=GUCS
 $cookie=IDSYNC
 $cookie=RRC
 $cookie=B,domain=yahoo.com
+! https://cookiesearch.org/cookies/?filter-type=script-name&search-term=yahoo&cookie-cat=advertisement
+||yahoo.com^$cookie=IDSYNC
+! $cookie=B,domain=yahoo.com
+||yahoo.com^$cookie=RRC
+||yahoo.com^$cookie=GUCS
+||yahoo.com^$cookie=APIDTS
+||yahoo.com^$cookie=A1S
+||yahoo.com^$cookie=A3
+! https://cookiesearch.org/cookies/?filter-type=script-name&search-term=yahoo&cookie-cat=analytics
+||yahoo.com^$cookie=GUC
+||yahoo.com^$cookie=APID
 !! yahoo.com##+js(cookie-remover, /(GUCS|IDSYNC|RRC|B)/)
 
 !! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
@@ -3291,12 +3302,16 @@ $cookie=_pctx
 $cookie=cto_bundle
 
 !! https://cookiesearch.org/cookies/?cookie-id=_uid
-$cookie,domain=fwmrm.net
 $cookie=_uid
+
+! freewheel ad
+$cookie,domain=fwmrm.net
 $cookie=_fwex_doubleclick.net_SameSite
+$cookie=_fwex_doubleclick.net_test_cookie
 
 !! google.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=NID
 !! $cookie=NID
+
 !! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
 @@$cookie=sid
 
