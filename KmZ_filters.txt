@@ -3897,9 +3897,9 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||fwmrm.net^$popup,important
 ! adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for prod-player.tf1.fr
 ! ||adproxy.tf1.fr^$badfilter
-! https://regex101.com/r/DkEygK/5  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
+! https://regex101.com/r/DkEygK/6  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
 ! FIX: does not work with `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` on `prod-player.tf1.fr` because ending with `}[\n\r])`
-/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\n\r]*?\)/\$1})/,important
+/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 ! because of adguard base filter `##.ad-layer` break france.tv loading player
 #@#.ad-layer
 ##.ad-layer:not([style*="display: none;"])
