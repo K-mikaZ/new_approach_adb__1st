@@ -1,7 +1,7 @@
 !! < start freewheel ad >
 
 !! critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
-@@||fwmrm.net|
+@@||fwmrm.net^|
 ||fwmrm.net^$third-party,badfilter
 ||fwmrm.net$third-party,badfilter
 ||fwmrm.net^$badfilter
