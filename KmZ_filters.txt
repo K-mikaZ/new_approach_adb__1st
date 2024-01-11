@@ -3880,32 +3880,9 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !! tracker categories: Essential  -  not only trackers, but somes utils (use for login to the site, etc ...)
 !! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
 
-!! <---- freewheel ad ---->
 !! critical to the functionality of some website (like 6play.fr)
-@@||fwmrm.net|
-||fwmrm.net^$third-party,badfilter
-||fwmrm.net$third-party,badfilter
-||fwmrm.net^$badfilter
-||fwmrm.net$badfilter
-!! because of adguard base filter: `@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||fwmrm.net^$~object,third-party, ||v.fwmrm.net/ad/, /npawAdAdapter.`
-/npawAdAdapter.$badfilter
-||fwmrm.net^$~object,third-party,badfilter
-@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
-||v.fwmrm.net/ad/$badfilter
-||7cd77.v.fwmrm.net^$badfilter
-! ||7cbf2.v.fwmrm.net^$badfilter
-||fwmrm.net^$popup,important
-! adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for prod-player.tf1.fr
-! ||adproxy.tf1.fr^$badfilter
-! https://regex101.com/r/DkEygK/6  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-! FIX: does not work with `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` on `prod-player.tf1.fr` because ending with `}[\n\r])`
-/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
-! because of adguard base filter `##.ad-layer` break france.tv loading player
-#@#.ad-layer
-##.ad-layer:not([style*="display: none;"])
-##[id|="freewheelAd"]:not([style*="display: none;"])
-!! some settings
-france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+!! <---- freewheel ad ---->
+!#include freewheel_ads.txt
 !! <---- freewheel ad /---->
 
 ||youboranqs01.com^$badfilter
