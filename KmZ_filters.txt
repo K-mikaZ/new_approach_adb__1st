@@ -3891,7 +3891,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ! adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for prod-player.tf1.fr
 ! ||adproxy.tf1.fr^$badfilter
 ! https://regex101.com/r/ElUl4O/1  &&  https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1\}\);/,important,domain=~prod-player.tf1.fr
+/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\][\s\S]*?\.requestComplete\(\{)[\s\S]*\}\);/\$1});/,important,domain=~prod-player.tf1.fr
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
