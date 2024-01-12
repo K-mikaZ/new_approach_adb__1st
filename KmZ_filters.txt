@@ -3413,7 +3413,6 @@ $cookie=_uid
 ||s.pinimg.com^
 ||sc-static.net^
 ||cdn.ravenjs.com^
-||connect.facebook.net^$third-party
 ||optimize.google.com^
 ||www.googleoptimize.com^
 ||www.fastly-insights.com^
