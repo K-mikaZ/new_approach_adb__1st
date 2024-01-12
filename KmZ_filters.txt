@@ -2778,7 +2778,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 6play.fr#?#li:if(>[href*="/freemium/"])
 6play.fr#?#li:if(>[src*="/freemium/"])
 !! https://mon.m6.bedrock.tech/statsd/m6web.m6group_web.client.advertisement.display.error.adblock/increment?token=aed5d109f491259c004cbe8ebc3a7a6e
-6play.fr##+js(no-xhr-if, /\.advertisement\.display\.error\.adblock/, true)
+! 6play.fr##+js(no-xhr-if, /\.advertisement\.display\.error\.adblock/, true)
 !
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
 @@/cookieconsent.$script,~third-party
