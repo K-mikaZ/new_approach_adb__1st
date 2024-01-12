@@ -3209,8 +3209,8 @@ $cookie=IDE
 ! $cookie=IDE,domain=~youtube.com
 ! @@||youtube.com^$cookie=IDE,important
 ! because can be id = OPT_OUT
-! @@||doubleclick.net^$cookie=id
-@@$cookie=id,domain=doubleclick.net
+@@||doubleclick.net^$cookie=id
+! @@$cookie=id,domain=doubleclick.net
 
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie,domain=adswizz.com
