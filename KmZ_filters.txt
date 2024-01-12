@@ -1440,7 +1440,7 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||serving-sys.com^$third-party
 ||sharethis.com^$third-party
 ||skimresources.com^$third-party
-||smartclip.net^$third-party
+||smartclip.net^$~object,third-party
 ||sojern.com^$third-party
 ||sportradarserving.com^$third-party
 ||spot.im^$third-party
@@ -2725,8 +2725,8 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ! YOUR PERSONAL FILTERS BELOW  --
 ! VOS FILTRES PERSO CI-DESSOUS --
 !
-&adPlayhead=$badfilter
-&adsExpected=$badfilter
+! &adPlayhead=$badfilter
+! &adsExpected=$badfilter
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
 ||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
