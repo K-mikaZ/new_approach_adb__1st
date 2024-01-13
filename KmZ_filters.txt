@@ -248,7 +248,6 @@ music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-contain
 /embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/
 /youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
 ||youtube.com/get_video_info$badfilter
