@@ -70,6 +70,7 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
 ! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
+! https://www.reddit.com/r/uBlockOrigin/comments/a8d5jb/comment/ec9z3if/
 ||music.youtube.com^$csp=worker-src 'none'
 ||www.youtube.com^$csp=worker-src 'none'
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -2175,7 +2176,6 @@ passeportsante.net##.dynInFeed
 @@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-*$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ||facebook.com/dlite/skywalker_topic$xmlhttprequest,badfilter
 voir-film.*##[class="tagssz"]
 voir-film.*##.nnbg13 > div:nth-of-type(2)
@@ -2728,7 +2728,6 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ! &adsExpected=$badfilter
 ||adeventtracker.spotify.com^$badfilter
 ||cfeucdn.com/video_short.mp4$badfilter
-||*^$csp=script-src * 'unsafe-inline',domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ||doubleclick.net/instream/ad_status.js$badfilter
 ||doubleclick.net/instream/ad_status.js$script,badfilter
 ||doubleclick.net/instream/ad_status.js$script,important,badfilter
