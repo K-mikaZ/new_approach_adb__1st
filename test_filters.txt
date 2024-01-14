@@ -209,10 +209,10 @@ cine974.com##div:where([class~="msgPromo"],[class~="cine-div-opti"])
 *#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
 ! *##[class*="ads-top"], [class*="ads-bottom"], [class*="ads-left"], [class*="ads-right"], [class*="ads-article-next"], [class*="ads-desktop"]
-! *#$#:is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-*#$#:not( [id~="header"] ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+! *#$#:not( html,body ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:not( html,body,[id~="header"] ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
-*#$#:is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+*#$#:not( html,body ):is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! *##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
 *#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
