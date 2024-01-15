@@ -243,7 +243,7 @@ youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
 youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
 youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
 music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
-/y(t)?img\.(.{2,})(.*\/)?yap\.js/$script,important
+/yt?img\.(.{2,})(.*\/)?yap\.js/$script,important
 /log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
