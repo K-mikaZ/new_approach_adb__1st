@@ -548,8 +548,8 @@ film01stream.*###ads
 french-stream.*#$#:is( :not( [class*="menu"] ):has( > [href*="//is.gd/"] ), [id="banning"] ) { display: none!important; visibility: hidden!important; }
 french-stream.*,fr.french-manga.net##br
 french-stream.*##.bx1
-kykfilmserie.com##div:if(> [href*=".php"])
-skstream.ink##center:if(> center > a[href*="/Inscription" i])
+kykfilmserie.com##div:has(> [href*=".php"])
+skstream.ink##center:has(> center > a[href*="/Inscription" i])
 streamdivx.*##center:if(a.buttonxx)
 streamdivx.*##.buttonxx
 streamingclic.*##.header-nav [href$=".com/streamingclic/"]
@@ -560,8 +560,8 @@ lesseriestreaming.com##[class*="my-3"]
 voirseries.*##[class|="md"]
 voirseries.*##.AV
 voirseries.*##[id^="GoPlayer"]:if([id^="vide"][src*="/streamer.php?"])
-voiranime.com##div:if(> div > a[href*="/signup/"])
-voiranime.com##[class*="_widget"]:if(> div > [id*="ScriptRoot"])
+voiranime.com##div:has(> div > a[href*="/signup/"])
+voiranime.com##[class*="_widget"]:has(> div > [id*="ScriptRoot"])
 voiranime.com##a[href*="/signup/"]
 voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
@@ -791,7 +791,7 @@ irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||webtor.io^$subdocument
 @@||api.nocturnal-narwhal.buzz|
 ! https://forum.adguard.com/index.php?threads/how-to-whitelist-a-website.30987/post-177503
-@@||api.nocturnal-narwhal.buzz^$important,document,jsinject
+@@||api.nocturnal-narwhal.buzz^$document,important
 ! Player SDK for online torrent streaming (https://www.jsdelivr.com/package/npm/@webtor/player-sdk-js)
 @@/@webtor/player-sdk-js
 webtor.io##+js(window.open-defuser)
@@ -870,8 +870,8 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 /\/\w\/\w+\_api\/(\w+)?\?.+\&locale\=.+/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 
-mail.protonmail.com##section:if(>.latest-upgrade)
-mail.protonmail.com##section:if(>[target="_blank"])
+mail.protonmail.com##section:has(>.latest-upgrade)
+mail.protonmail.com##section:has(>[target="_blank"])
 1337x.to##+js(addEventListener-defuser, /^(click|mousedown|mousemove|touchstart|touchend|touchmove)/, system.popunder)
 1337x.to,dropapk.com,fbstreams.me,mlbstream.me,nbastreams.me,nflstreams.me,nhlstreams.me,shink.in,salefiles.com,torrentfunk.com,userscloud.com##+js(abort-on-property-write, Fingerprint2)
 cwtv.com##+js(abort-on-property-write, wallConfig)
@@ -1052,7 +1052,7 @@ ixquick.com###sponsored
 jdownloader.org###cookie_info
 journaldunet.com##.ccmcss_oic
 @@||googlesyndication.com^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
-@@||adservice.google.*^$important,domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
+@@||adservice.google.*^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org,important
 journaldunet.*#$#:root { --reservation-space: 2em !important; }
 journaldunet.*##[class*="_oas_"]:first-of-type
 journaldunet.*##+js(abort-current-inline-script, OAS_AD)
@@ -1231,13 +1231,13 @@ zustream.*##[class="redzz"]
 zustream.*##[class="wgsda"]
 zustream.*##[class^="gws_"]
 zustream.*##[class*="nb-bottom"]
-french--stream.co##div :if(a.frenchpub)
-french--stream.co##div:if(> a#yell60)
+french--stream.co##div :has(a.frenchpub)
+french--stream.co##div:has(> a#yell60)
 justwatch.com##.ad-unit
 le.topseriestreaming.com##.justify-content-center.row:if([class*="ebooks_"])
 mesfilms.net###wnb-bar
 mesfilms.net#$##header.main{top:0}
-papseries.net##div:if(>.mr-3.btn)
+papseries.net##div:has(>.mr-3.btn)
 papseries.net###mv-keywords
 stream-serie.net##.justify-content-center.row:if([class*="ebooks_orange"])
 stream-serie.net#$##option-1{height:100%}
@@ -2384,9 +2384,10 @@ adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(abort-current-inline-script, atob, /popundersPerIP[\s\S]*?Date[\s\S]*?getElementsByTagName[\s\S]*?insertBefore/)
 ! break video loading - because of fuckfuckadblock ( .play-overlay has a click event )
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*#@#.play-overlay,.plyr-overlay
+!#if adguard
 ! from https://github.com/Karmesinrot/Anifiltrs (Anifiltrs — skeletonise.txt)
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*$$script[tag-content="'shift'"][max-length="262144"]
-
+!#endif
 ||adeventtracker.spotify.com^$xmlhttprequest,important,domain=spotify.com,redirect=empty
 /gabo-receiver-service/*$xmlhttprequest,domain=spotify.com,important,badfilter
 torrent9.*,torrentx.*,torrenty.*##.btn.download:not([href*="magnet:"]):not([href*="javascript:"]):not([href*="torrent"])
@@ -2408,9 +2409,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 youtube.com#@#.opened:remove()
 youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 @@/^ws{1,2}((\:\/{2})+)/$domain=eu-proxy.startpage.com
-@@||eu-proxy.startpage.com$cookie,ghide
-@@||startpage.com^$stealth
-@@||hdfilme.ws^$stealth
 @@/fuckadblock.$script,domain=imsdb.pw
 @@||ajax.googleapis.com|
 @@||ajax.aspnetcdn.com|
@@ -2624,7 +2622,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 !! on error redirect adblockcheck for hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.* 
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
 !! /js/script-*.js$~third-party,important,match-case,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
-@@/ad/top/popunder.js$~third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
+@@/ad/top/popunder.js$~third-party,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*,important
 /out.php$popup,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
 *$popup,third-party,important,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
 @@/fuckadblock.$script,domain=hqq.*|waaw.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
@@ -2790,8 +2788,8 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 *youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
 *youtube.com*embed*playsinline*enablejsapi*origin*$subdocument,redirect-rule=noop.html
 6play.fr#@##fb-root:not(body):not(html)
-6play.fr#?#li:if(>[href*="/freemium/"])
-6play.fr#?#li:if(>[src*="/freemium/"])
+6play.fr#?#li:has(>[href*="/freemium/"])
+6play.fr#?#li:has(>[src*="/freemium/"])
 !! https://mon.m6.bedrock.tech/statsd/m6web.m6group_web.client.advertisement.display.error.adblock/increment?token=aed5d109f491259c004cbe8ebc3a7a6e
 ! 6play.fr##+js(no-xhr-if, /\.advertisement\.display\.error\.adblock/, true)
 !
@@ -2799,7 +2797,16 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@/cookieconsent.$script,~third-party
 ! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
 @@||api.company-target.com^$xmlhttprequest,domain=degreed.com
+!#if adguard
 @@||canaltp.fr$cookie
+@@||mozilla.org$cookie
+@@||star.fr$cookie
+@@||vidlox.me$cookie
+@@||eu-proxy.startpage.com$cookie
+@@||startpage.com^$stealth
+@@||hdfilme.ws^$stealth
+!#endif
+@@||eu-proxy.startpage.com$ghide
 @@||canaltp.fr$removeparam
 @@||canaltp.fr^$elemhide
 @@||canaltp.fr^$generichide
@@ -2811,7 +2818,6 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@||gw.api.animationdigitalnetwork.fr^$removeparam
 @@||knowledia.com$removeparam
 @@||mixer.zippycast.io^$removeparam
-@@||mozilla.org$cookie
 @@||navitia.io$removeparam
 @@||navitia.io^$elemhide
 @@||navitia.io^$generichide
@@ -2819,13 +2825,11 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@||rawgit.com
 @@||ssl.google-analytics.com/r/__utm.gif$domain=cineville.fr
 @@||star.fr$all
-@@||star.fr$cookie
 @@||star.fr$elemhide
 @@||star.fr$generichide
 @@||star.fr$removeparam
 @@||static.6cloud.fr/*/onboarding/*.mp4
 @@||trustcommander.net
-@@||vidlox.me$cookie
 @@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
 @@||www-google-analytics.l.google.com^$script,domain=degreed.com
 @@||www.google-analytics.com^$domain=degreed.com
@@ -3566,8 +3570,11 @@ cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
 ! fix header
-cuisineaz.com#$#body:not(.body-modal) { padding-top: 7.5em !important; } @media screen and (min-width: 64em) { body:not(.body-modal), body:not(.body-modal):not(.small-header) { padding-top: 13em !important; } }
-cuisineaz.com#$#.c-controls{ flex-direction: unset!important; }.c-controlBar__button--fullscreen,.c-controlBar__button--report,.c-controlBar__logo-container { display:none!important; }
+cuisineaz.com##body:not(.body-modal):style(padding-top: 7.5em !important;)
+! ##[ @media screen and (min-width: 64em) { body:not(.body-modal) { padding-top: 13em; } }  >>>  body:not(.body-modal):matches-media(screen and (min-width: 64em)):style(padding-top: 13em;) ]
+cuisineaz.com##body:not(.body-modal), body:not(.body-modal):not(.small-header):matches-media(screen and (min-width: 64em)):style(padding-top: 13em !important;)
+cuisineaz.com##.c-controls:style(flex-direction: unset!important;)
+cuisineaz.com##.c-controlBar__button--fullscreen,.c-controlBar__button--report,.c-controlBar__logo-container:style(display:none!important;)
 fourchette-et-bikini.fr#?#div:has(> script:contains(/.*(displayAd|prebid).*/gi))
 fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.tv|waaw.tv|netu.tv|vizplay.icu|yandexcdn.com|younetu.com
