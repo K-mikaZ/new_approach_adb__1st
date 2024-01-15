@@ -1,3 +1,5 @@
+[uBlock Origin; Adguard]
+
 !! < start freewheel ad >
 ! https://vi.freewheel.tv/
 
