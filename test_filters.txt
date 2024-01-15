@@ -216,7 +216,7 @@ cine974.com##div:where([class~="msgPromo"],[class~="cine-div-opti"])
 ! *##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
 *#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
+makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:first-of-type ) { display: none!important; visibility: hidden!important; }
 
 ! [id^="aswift_"], [name^="aswift_"]
 *#$#:is( [id^="aswift_"], [name^="aswift_"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
@@ -290,8 +290,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *##div[data-actirise-slot]
 !! ----[ EZOIC ADS ]-----------------------------------------------------------
 !! Because some use ezoic for host images (not always ads) - test on https://babeltechreviews.com/hardware-accelerated-gpu-scheduling-performance/
-@@||ezoic.net$third-party,important
-@@||ezoiccdn.com$third-party,important
+@@||ezoic.net^$third-party
+@@||ezoiccdn.com^$third-party
 *#@#[data-ezsrcset]
 !! *##[class~="ezasloaded"]
 !! ezoic ads concerns
