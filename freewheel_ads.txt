@@ -27,19 +27,18 @@
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 
-! because of adguard base filter `##.ad-layer` break france.tv loading player
-! #@#.ad-layer
-! ##.ad-layer:not([style*="display: none;"])
-! ##[id|="freewheelAd"]:not([style*="display: none;"])
-##[id|="freewheelAd"]
+! because of adguard base filter `##.ad-layer`
+#@#.ad-layer
+##.ad-layer:not([style*="display: none;"])
+##[id|="freewheelAd"]:not([style*="display: none;"])
 
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
 !#if adguard
 $cookie,domain=fwmrm.net
-$cookie=_fwex_doubleclick.net_SameSite
-$cookie=_fwex_doubleclick.net_test_cookie
+! $cookie=_fwex_doubleclick.net_SameSite
+! $cookie=_fwex_doubleclick.net_test_cookie
 !#endif
 
 !! </ end freewheel ad >
