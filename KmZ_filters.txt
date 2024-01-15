@@ -2359,19 +2359,34 @@ streamingvf.casa##[href^="https://dereferer.co/"]
 ||pouluwie.net^
 ||chivoufe.com^
 ||psaughun.com^
-@@||streamta.pe^$generichide
-/stat/view*$domain=streamta.pe|streamtape.com|stapadblockuser.*
+||reechoat.com^
+||bygliscortor.com^
+||utqqjuvprimkokw.com^
+||adforcast.com^$important
+||zimpolo.com^$important
+! bidclickmedia.com found on domain=vidoza.net
+||bidclickmedia.com^$important
+
+! AudioAddict
+@@||radiotunes.com^$specifichide
+rockradio.com###slideshow-wrap
+
+! 2020-12-14 https://streamtape.com
 ||streamtape.*/ad.js$script,important,badfilter
 ||streamta.pe/ad.js$script,important,badfilter
-@@/ad.js$domain=streamtape.com|streamta.pe|stapadblockuser.*
-streamtape.com,streamta.pe,stapadblockuser.*##+js(window.open-defuser.js)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-class, ad|google-ad|doubleclick|skyscraper, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, style, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##+js(remove-attr, class, #adb)
-streamtape.com,streamta.pe,stapadblockuser.*##body > div:nth-child(2)
-streamtape.com,streamta.pe,stapadblockuser.*#@#.plyr-overlay
-streamtape.com,streamta.pe,stapadblockuser.*##div:nth-of-type(6)
-streamtape.com,streamta.pe,stapadblockuser.*##div[style*="position:"][style*="inset: 0px"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index:"]
+@@/ad.js$domain=adblockstreamtape.*|strcloud.*|streamta.*|streamtape.*|strtape.*|strtapeadblock.*|strtpe.*|streamtapeadblock.*|shavetape.*|tubeload.co|adblockeronstape.*|adblockstrtape.*|adblockstrtech.*|stape.*|streamadblockplus.*|strtapeadblocker.*|adblockplustape.com|stapewithadblock.*|streamadblocker.*
+@@$generichide,domain=adblockstreamtape.*|strcloud.*|streamta.*|streamtape.*|strtape.*|strtapeadblock.*|strtpe.*|streamtapeadblock.*|shavetape.*|tubeload.co|adblockeronstape.*|adblockstrtape.*|adblockstrtech.*|stape.*|streamadblockplus.*|strtapeadblocker.*|adblockplustape.com|stapewithadblock.*|streamadblocker.*,badfilter
+@@$subdocument,domain=adblockstreamtape.*|strcloud.*|streamta.*|streamtape.*|strtape.*|strtapeadblock.*|strtpe.*|streamtapeadblock.*|shavetape.*|tubeload.co|adblockeronstape.*|adblockstrtape.*|adblockstrtech.*|stape.*|streamadblockplus.*|strtapeadblocker.*|adblockplustape.com|stapewithadblock.*|streamadblocker.*
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##[id="adb"]
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##body > div:nth-child(2)
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(window.open-defuser.js)
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(abort-current-inline-script, Math, /emZnbG9hZGVk|break;case \$\./)
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(abort-current-inline-script, atob, /popundersPerIP[\s\S]*?Date[\s\S]*?getElementsByTagName[\s\S]*?insertBefore/)
+! break video loading - because of fuckfuckadblock ( .play-overlay has a click event )
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*#@#.play-overlay,.plyr-overlay
+! from https://github.com/Karmesinrot/Anifiltrs (Anifiltrs — skeletonise.txt)
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*$$script[tag-content="'shift'"][max-length="262144"]
+
 ||adeventtracker.spotify.com^$xmlhttprequest,important,domain=spotify.com,redirect=empty
 /gabo-receiver-service/*$xmlhttprequest,domain=spotify.com,important,badfilter
 torrent9.*,torrentx.*,torrenty.*##.btn.download:not([href*="magnet:"]):not([href*="javascript:"]):not([href*="torrent"])
