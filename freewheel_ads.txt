@@ -5,7 +5,7 @@
 
 !! critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
 ! https://whotracks.me/trackers/freewheel.html
-! @@||fwmrm.net|
+@@||fwmrm.net|
 /^\.fwmrm\.net\^/$badfilter
 ||fwmrm.net^$third-party,badfilter
 ||fwmrm.net$third-party,badfilter
