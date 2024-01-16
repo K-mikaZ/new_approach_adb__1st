@@ -2516,8 +2516,6 @@ radiotunes.com,di.fm##[class*="premium"]
 ||facil-iti.com^$important
 ||dev.appboy.com^
 ||woawouru.net^
-!! fwmrm.net##+js(window.open-defuser)
-!! ||fwmrm.net^$popup,important
 ||youborafds01.com*outputformat=json*$third-party,redirect-rule=noop.txt,important
 !+ NOT_PLATFORM(ext_ublock)
 ||youborafds01.com*outputformat=json*$third-party,redirect-rule=noopjson,important
@@ -3731,11 +3729,10 @@ themoneytizer$important,script,redirect=noopjs
 !! ||ftv-publicite.fr^$media,redirect-rule=noop-1s.mp4,important
 
 
-! ======= VMAP =======
+! ======= Video Multiple Ad Playlist (VMAP) =======
 
 !! ||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
 ||animationdigitalnetwork.fr/player/video/*/vmap$redirect=noopvmap-1.0,important
-||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
 /vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
@@ -3751,7 +3748,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 !! !#if adguard
 
-! ======= VAST =======
+! ======= Video Ad Serving Template (VAST) =======
 
 @@||appcdn01.xyz/vast.js
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
@@ -3759,11 +3756,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||wolfstream.tv/player/*/vast.js$important
 !! /vast.js$domain=designparty.*,wolfstream.tv
 /^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.](v(ast|paid)[@\-.]){1,2}/$important
-
-||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
-||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
-||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
-!! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
 
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
