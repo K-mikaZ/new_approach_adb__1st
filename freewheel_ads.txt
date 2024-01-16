@@ -37,6 +37,15 @@
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
+! Video Ad Serving Template (VAST)
+||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
+||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
+||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
+!! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
+
+! Video Multiple Ad Playlist (VMAP)
+||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
+
 !#if adguard
 $cookie,domain=fwmrm.net
 ! $cookie=_fwex_doubleclick.net_SameSite
