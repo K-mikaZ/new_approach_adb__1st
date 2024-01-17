@@ -56,11 +56,12 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
-||v.fwmrm.net/ad/g/1$removeparam=caid
-! https://regex101.com/r/DkEygK/6
-! https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-! https://vi.freewheel.tv/apc/samples
+! <https://regex101.com/r/DkEygK/6>
+! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
+! <https://vi.freewheel.tv/apc/samples>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
+
+||v.fwmrm.net/ad/g/1$removeparam=caid
 
 !! </ end freewheel ad >
