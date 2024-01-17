@@ -5,12 +5,21 @@
 
 !! critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
 ! https://whotracks.me/trackers/freewheel.html
-@@||fwmrm.net|
+
+@@||mssl.fwmrm.net/*/AdManager.js
 /^\.fwmrm\.net\^/$badfilter
-||fwmrm.net^$third-party,badfilter
-||fwmrm.net$third-party,badfilter
+
+||v.fwmrm.net^$badfilter
+||v.fwmrm.net^$third-party,badfilter
+||v.fwmrm.net$badfilter
+||v.fwmrm.net$third-party,badfilter
+@@||v.fwmrm.net|
+
 ||fwmrm.net^$badfilter
+||fwmrm.net^$third-party,badfilter
 ||fwmrm.net$badfilter
+||fwmrm.net$third-party,badfilter
+@@||fwmrm.net|
 
 !! because of adguard base filter: `@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||fwmrm.net^$~object,third-party, ||v.fwmrm.net/ad/, /npawAdAdapter.`
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
@@ -48,8 +57,10 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 
 !#if adguard
 $cookie,domain=fwmrm.net
+||fwmrm.net^$cookie=_fwex_doubleclick.net_IDE
 ! $cookie=_fwex_doubleclick.net_SameSite
 ! $cookie=_fwex_doubleclick.net_test_cookie
 !#endif
+fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 
 !! </ end freewheel ad >
