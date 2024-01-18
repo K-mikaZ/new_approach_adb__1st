@@ -2057,7 +2057,6 @@ mabbox.bytel.fr##:xpath(/html/body/div[8]/div[2]/div[1])
 ||https://static.doubleclick.net/instream/ad_status.js$important
 @@/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/$domain=youtube.com|youtu.be|yt.be
 search.lilo.org##.top.addivwhite2
-/fuckadblock.*?$script,redirect-rule=nofab.js
 ||googlevideo.com^$media,domain=animationdigitalnetwork.fr
 ||animationdigitalnetwork.fr/tv/mp4/*$~third-party
 ||spotxchange.com^$third-party,badfilter
@@ -2607,7 +2606,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@/ad/top/popunder.js$~third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 *$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-@@/fuckadblock.$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+! @@/fuckadblock.$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /js/disqusloader.js$important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 ||zap.buzz^
 ||popxyz.com^
