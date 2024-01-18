@@ -3831,12 +3831,13 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 ! ======[ EOF ]==========================================================
 
-!! tracker categories: Essential  -  not only trackers, but somes utils (use for login to the site, etc ...)
-!! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
-
 !#include freewheel_ads.txt
 
-||youboranqs01.com^$badfilter
+!! tracker categories: Essential  -  not only trackers
+!! Includes tag managers, privacy notices, and technologies that are critical to the functionality of a website
+!! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
+
+@@||cdn.tagcommander.com^*/tc_*.js
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
