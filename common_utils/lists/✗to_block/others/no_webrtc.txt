@@ -62,5 +62,6 @@ packetlosstest.com#@#+js(nowebrtc)
 ! [FIX] discord.com
 discord.com#@#+js(nowebrtc)
 
+!+ PLATFORM(adguard)
 @@stun:stun.toonanime.*^$domain=toonanime.*,important
 
