@@ -1259,8 +1259,8 @@ stream-serie.net#$##option-1{height:100%}
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,redirect=fingerprint2.js
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
+! because of "service worker" filter of "fuck fuckadblock:mining" /^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,from=~dagrasso.pl|~tiktok.com|~twitter.com|~youtube.com
 !! /([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
-/service-worker.js$script,~third-party
 ||nsaneforums.com/index.php?*serviceworker*
 @@/workbox-sw.js$script,domain=epicgames.com
 ||washingtonpost.com/notification-sw.js$badfilter
@@ -1365,6 +1365,8 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
 ||perf.cdnads.com/perf.gif$image
+! Greenbids - Advertise Better
+||greenbids.ai^
 ||3lift.com^$third-party
 ||4wnet.com^$third-party
 ||ad-srv.net^$third-party
@@ -1778,6 +1780,12 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 ||oatchelt.com^
 ||wuftoars.net^
 ||hjtjiceg.com^
+! 2024-01-18 https://adservice.google.com
+||doubleclick.net^$subdocument,domain=adservice.google.com,important
+||adservice.google.fr^$subdocument,domain=adservice.google.com,important
+||smaato.net^$subdocument
+||ivitrack.com^$subdocument
+||pghub.io^$subdocument
 ||google.*$image,redirect-rule=1x1.gif
 ||youtu*.*$image,redirect-rule=1x1.gif
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
