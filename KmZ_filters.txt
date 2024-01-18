@@ -1289,7 +1289,8 @@ stream-serie.net#$##option-1{height:100%}
 /connexion_facebook_nl_magelan.js|$script,important
 /figarotrack.js?$script,important
 /google-analytics-for-wordpress/$script,important
-/(.*)?(firstimpres{2}ion|highwebmedia|(((sentry\-)cdn)|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
+||sentry-cdn.com^$third-party,domain=~sentry.*
+/(.*)?(firstimpres{2}ion|highwebmedia|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
 /(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/$script
 /(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/$script,important
 /(.*)?stats\.wp\.(com)\/(.*).js/$script,important
