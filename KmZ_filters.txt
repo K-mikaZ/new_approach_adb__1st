@@ -2474,9 +2474,6 @@ fcine.tv#@#[style*="width: 0px"][style*="height: 0px"][style*="position:"][style
 @@||cdn.ampproject.org/v0.js$important
 openwhyd.org##+js(no-setInterval-if, updateFocusState)
 /r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/$badfilter
-@@/^ws{2}(([\:][\/]{2})+)/$domain=wolframalpha.com
-/log_event?$badfilter
-/log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 @@||survey.g.doubleclick.net^/$domain=replay.fr
 tirexo.*##.p-3:if(a[href="/premium.html"])
 interactive-sta$domain=pluto.tv
