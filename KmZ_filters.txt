@@ -1267,7 +1267,6 @@ stream-serie.net#$##option-1{height:100%}
 /firebase-messaging-sw.js$script,domain=lenouvelliste.ch
 ||*youborafds01*.js$script,important
 ||sascdn.com/diff/$script
-||*/cdn-cgi/trace|$xmlhttprequest,~third-party
 ||*/scrip*/compatibility.js|$script,important
 |http*://*.bid/*.js^$script,third-party,important
 |http*://*.cafe/*.js^$script,third-party,important
@@ -1361,6 +1360,8 @@ $image,domain=ubuntu-fr.org,redirect-rule=1x1.gif
 @@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party,domain=amazon.com
 @@encryptedsni.com/cdn-cgi/trace$xmlhttprequest,domain=cloudflare.com
 @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,~third-party
+||*/cdn-cgi/trace|$xmlhttprequest,~third-party
+||younetu.org/cdn-cgi/trace$xmlhttprequest,~third-party,important
 /\/pixel\/pu(clc|rs(t)?)\?/
 ||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
@@ -2537,6 +2538,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 ##a[onclick^="openAuc"]
 ##a[href^="mailto:support@netu.tv"]
+
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]
 !! see https://hqq.tv/js/embed.211.js?736
@@ -2546,7 +2548,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.spotUrl, emptyArr)
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, vwview, false)
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet("prevent-fab-3.2.0")
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet("prevent-fab-3.2.0")
 
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
@@ -2575,8 +2577,18 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@/ad/top/popunder.js$~third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 *$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-! @@/fuckadblock.$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+! 2024-01-18 https://younetu.org/js/adv/fuckadblock.js?2
+/fuckadblock.$script,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /js/disqusloader.js$important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+! fix loading some players
+! because of "Tracking JS Blocklist filter: "||unpkg.com/jquery.cookie@1.4.1/jquery.cookie.js$all"
+@@||unpkg.com/jquery.cookie@*/jquery.cookie.js$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+! 2024-01-18 https://univers-animes.club/ishura-02-vostfr/
+! fix loading yandexcdn.com's player on "univers-animes.club" because
+! "Tracking JS Blocklist (https://gitlab.com/malware-filter/tracking-filter): ||storage.googleapis.com/loadermain.appspot.com/main.js$all"
+||storage.googleapis.com/loadermain.appspot.com/main.js$all,badfilter
+||storage.googleapis.com/loadermain.appspot.com/main.js$all,~script
+||capletstyldia.com^
 ||zap.buzz^
 ||popxyz.com^
 ||yuppyads.com^
@@ -3541,8 +3553,10 @@ themoneytizer$important,script,redirect=noopjs
 ||indexww.com^
 ||4dex.io^
 
-!! How to Turn Off the "Sign in with Google" Prompt on Websites (Blocking the Google signin popup)
-||accounts.google.com/gsi*
+!! How to Turn Off the "Sign in with Google" Prompt on Websites (Blocking the Google annoying popup)
+||accounts.google.com/gsi*$badfilter
+||accounts.google.com/gsi/*$badfilter
+||accounts.google.com/gsi/iframe
 
 ! ----------------------------------------
 ! [FIX] video players
