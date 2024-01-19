@@ -8,9 +8,10 @@
 
 !! because of adguard base filter: `@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||fwmrm.net^$~object,third-party, ||v.fwmrm.net/ad/, /npawAdAdapter.`
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
-||fwmrm.net^$~object,third-party,badfilter
 ||v.fwmrm.net/ad/$badfilter
 /npawAdAdapter.$badfilter
+||fwmrm.net^$~object,third-party,badfilter
+@@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
 
 /^\.fwmrm\.net\^/$badfilter
 ||v.fwmrm.net^$third-party,badfilter
@@ -61,6 +62,9 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! <https://vi.freewheel.tv/apc/samples>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
+
+! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
+||v.fwmrm.net/ad/$image,important,redirect=1x1.gif
 
 ||v.fwmrm.net/ad/g/1$removeparam=caid
 
