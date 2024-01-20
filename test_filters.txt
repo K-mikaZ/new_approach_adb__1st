@@ -295,13 +295,14 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 *#@#[data-ezsrcset]
 !! *##[class~="ezasloaded"]
 !! ezoic ads concerns
+/ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
 *##[id|="ez-video"]
 *##[class|="ez-video"]
-*##[class|="ezoic"]
 *##[id|="ezoic"]
-*##span[id^="ezoic-pub-"]
+*##[class|="ezoic"]
+*##[id|="ezoic-pub"]
 *##[id*="ezmob"]
 *##[ezaw][ezah]
 *##.ezo_ad
