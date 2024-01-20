@@ -55,7 +55,7 @@
 #@#.ads-core-placer
 #@#.ad-placeholder
 *#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
-! 750g.com
+! www.750g.com
 *##.ads-pholder
 ! ------------------------
 #@#div[data-google-query-id]
