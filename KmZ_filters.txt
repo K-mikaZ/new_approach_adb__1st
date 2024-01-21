@@ -3861,9 +3861,9 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 @@||logs.datadoghq.com^
 
 !! block too many web players
-! https://cdn.lib.getjan.io/library/
+! getja[n]: https://cdn.lib.getjan.io/library/
 ||getjan.io/library/$important,redirect=noop.txt
-! https://cdn.lib.getjad.io/
+! getja[d]: https://cdn.lib.getjad.io/
 ||getjad.io/library/*/$important,redirect=noop.txt
 ||getjad.io/adstxt/*/$important,redirect=noop.txt
 ! redirect "getjad.io/prebid/*" to:
