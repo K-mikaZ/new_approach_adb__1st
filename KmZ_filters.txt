@@ -3667,6 +3667,17 @@ themoneytizer$important,script,redirect=noopjs
 !! someURLs$script,redirect=prebid-ads
 !#endif
 
+! getja[n]: https://cdn.lib.getjan.io/library/
+||getjan.io/library/$important,redirect=noop.txt
+! getja[d]: https://cdn.lib.getjad.io/
+||getjad.io/library/*/$important,redirect=noop.txt
+||getjad.io/adstxt/*/$important,redirect=noop.txt
+! redirect "getjad.io/prebid/*" to:
+! https://searchfox.org/mozilla-central/source/browser/extensions/webcompat/shims/adnexus-prebid.js
+! https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/src/redirects/prebid.js
+! https://cdn.lib.getjad.io/
+||getjad.io/prebid/$important,redirect=prebid
+
 
 
 ! ======= ADS =======
@@ -3859,18 +3870,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 @@||www.datadoghq-browser-agent.com^$important
 !! FIX video loading on app.molotov.tv
 @@||logs.datadoghq.com^
-
-!! block too many web players
-! getja[n]: https://cdn.lib.getjan.io/library/
-||getjan.io/library/$important,redirect=noop.txt
-! getja[d]: https://cdn.lib.getjad.io/
-||getjad.io/library/*/$important,redirect=noop.txt
-||getjad.io/adstxt/*/$important,redirect=noop.txt
-! redirect "getjad.io/prebid/*" to:
-! https://searchfox.org/mozilla-central/source/browser/extensions/webcompat/shims/adnexus-prebid.js
-! https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/src/redirects/prebid.js
-! https://cdn.lib.getjad.io/
-||getjad.io/prebid/$important,redirect=prebid
 
 @@||consents.prismamedia.com^
 !! @@||googlesyndication.com^
