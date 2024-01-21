@@ -704,8 +704,8 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 @@||dailymotion.com^$subdocument
 ||dailymotion.co*/log*/video*$redirect=noop.txt,important
 !! @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
-@@||dmcdn.net^
-@@||dm-event.net^$domain=geo.dailymotion.com
+@@||dmcdn.net|
+||dmcdn.net^/*?explicit=0$image,important,redirect=1x1.gif
 ||dmxleo.com^$badfilter
 @@||dmxleo.com^$domain=geo.dailymotion.com
 ||dailymotion.com/cdn/$media,script,badfilter
