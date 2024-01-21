@@ -3862,14 +3862,15 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 !! block too many web players
 ! https://cdn.lib.getjan.io/library/
-||lib.getjan.io/library/*$important,redirect=noop.txt
+||getjan.io/library/$important,redirect=noop.txt
+! https://cdn.lib.getjad.io/
+||getjad.io/library/*/$important,redirect=noop.txt
+||getjad.io/adstxt/*/$important,redirect=noop.txt
 ! redirect "getjad.io/prebid/*" to:
 ! https://searchfox.org/mozilla-central/source/browser/extensions/webcompat/shims/adnexus-prebid.js
 ! https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/src/redirects/prebid.js
 ! https://cdn.lib.getjad.io/
-||lib.getjad.io/prebid/*$important,redirect=prebid
-||lib.getjad.io/library/*/$important,redirect=noop.txt
-||lib.getjad.io/adstxt/*/$important,redirect=noop.txt
+||getjad.io/prebid/$important,redirect=prebid
 
 @@||consents.prismamedia.com^
 !! @@||googlesyndication.com^
