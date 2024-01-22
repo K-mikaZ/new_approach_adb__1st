@@ -387,7 +387,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||spotify.com/melody/*/logging/$important,badfilter
 ||spotify.com^*/logging/$badfilter
 ||open.spotify.com^$badfilter
-/\/me\/(.*)\/contains\?ids\=(([a-zA-Z0-9]+(.*))(\%2)?){1,}/$xmlhttprequest,domain=spotify.com,important
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$third-party,badfilter
@@ -2724,7 +2723,6 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ||youtube.com/ptracking?$badfilter
 ||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ||thepiratebay.*/*.php?$badfilter
-/\/me\/(.*)\/contains\?ids\=(([a-zA-Z0-9]+(.*))(\%2)?){1,}/$xmlhttprequest,important,domain=spotify.com,badfilter
 /pubads.$badfilter
 /adtech_$domain=~adtech.co.uk,badfilter
 /adservice.$image,badfilter
