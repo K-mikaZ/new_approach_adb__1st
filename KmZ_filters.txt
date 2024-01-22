@@ -832,7 +832,9 @@ zone-telechargement.casa##[href*=".kfiopkln."]
 /(.*)?amazonaws\.(.{2,})\/ki\.js\/(.*)\/b0R\.js/$script,important
 ||s3.amazonaws.com/js-static/*$script,important
 ||gtrk.s3.amazonaws.com^$all,important
-||amazon-adsystem.com^$all,important
+! for set ad prefs on https://www.amazon.com/adprefs
+||amazon-adsystem.com^$all,important,badfilter
+@@||s.amazon-adsystem.com^$~third-party
 /amazon\.(.{2,})\/ah\/ajax\/(counter|record-impressions)/$all,important
 ||amazon.*/gp/uedata^$all,important
 ||aan.amazon.com^$all,important
