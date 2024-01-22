@@ -57,15 +57,17 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 !! some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
+! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
+||v.fwmrm.net/ad/$image,important,redirect=1x1.gif
+
+||v.fwmrm.net/ad/g/1$removeparam=caid
+
+!#if (adguard_ext_chromium || adguard_ext_edge || adguard_ext_firefox || adguard_ext_opera || adguard_ext_safari)
 ! <https://regex101.com/r/DkEygK/6>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
 ! <https://vi.freewheel.tv/apc/samples>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
-
-! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
-||v.fwmrm.net/ad/$image,important,redirect=1x1.gif
-
-||v.fwmrm.net/ad/g/1$removeparam=caid
+!#endif
 
 !! </ end freewheel ad >
