@@ -60,7 +60,7 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 
 ||v.fwmrm.net/ad/g/1$removeparam=caid
 
-!#if (adguard_ext_chromium || adguard_ext_edge || adguard_ext_firefox || adguard_ext_opera || adguard_ext_safari)
+!#if !ext_ublock
 ! <https://regex101.com/r/DkEygK/6>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
 ! <https://vi.freewheel.tv/apc/samples>
