@@ -23,4 +23,8 @@
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
 
+! 2024-01-23 Ads
+! <https://static1.webedia.fr/js/gs.js>
+||webedia.fr/js/gs.js
+
 ! < /end webedia's ad >
