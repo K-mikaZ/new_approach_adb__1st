@@ -53,10 +53,6 @@
 *##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
 *##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
 
-! 2024-01-23 Some settings
-france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
-6play.fr##+js(no-xhr-if, v.fwmrm.net/, true)
-
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
 
@@ -89,5 +85,9 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
+
+! 2024-01-23 Some settings
+france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+6play.fr##+js(no-xhr-if, v.fwmrm.net/, true)
 
 ! </ end comcast's ad >
