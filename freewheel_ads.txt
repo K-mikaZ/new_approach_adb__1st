@@ -3,10 +3,6 @@
 ! Critical to the functionality of some website <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 
 ! OPERATES UNDER: stickyadstv.com, Owned by Comcast
-! 2024-01-23 Video Ad Serving Template (VAST)
-||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
-||ads.stickyadstv.com/*AdsSetup&protocolVersion=3*$important,redirect=noopvast-3.0
-||ads.stickyadstv.com/*AdsSetup&protocolVersion=4*$important,redirect=noopvast-4.0
 
 ! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 ||freewheel.tv^$third-party
@@ -55,6 +51,9 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ||v.fwmrm.net/ad/g/1$removeparam=caid
 
 ! 2024-01-23 Video Ad Serving Template (VAST)
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=3*$important,redirect=noopvast-3.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=4*$important,redirect=noopvast-4.0
 ! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
 /ad/g/1?resp=vast2$important,redirect=noopvast-2.0
 /ad/g/1?resp=vast3$important,redirect=noopvast-3.0
