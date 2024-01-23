@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! < start comScore ad >
+! < start comScore's filters >
 
 ! ads & analitycs integrations
 ! https://www.google.com/search?q=%22Owned+by+comScore%22+site%3Awhotracks.me
@@ -23,10 +23,6 @@
 ! 2024-01-23 Unbreak- unlock site itself
 @@||scorecardresearch.com|$~third-party
 
-! comScore Stream Sense - tealium.com
-! see https://tealium.com/integrations/
-! --------------------------------------------------------------
-
 !! https://cookiedatabase.org/cookie/comscore/s1/
 !! https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1
 $cookie=s1
@@ -39,6 +35,10 @@ $cookie,domain=comscore.com
 ||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
 
 
+! comScore Stream Sense - tealium.com
+! see https://tealium.com/integrations/
+! --------------------------------------------------------------
+
 ! JW player Comscore Stream Sense plugin bower "/jw6ss.js", see < https://github.com/Sergeyshall/jw-streamsense >
 /\/jw\ds{2}(\.min)?\.js/$script
 
@@ -46,14 +46,9 @@ $cookie,domain=comscore.com
 /[\s\S]*streamsense[\s\S]*/$script,~third-party
 @@/streamsense.$domain=my.mail.ru,important
 
-
-! Owned by comScore, Inc.
-! https://whotracks.me/trackers/scorecard_research_beacon.html
-! OPERATES UNDER:
-/score(card)?research\.com/$third-party
-||scrsrch.com^
-||securestudies.com^
 ! --------------------------------------------------------------
 ||scorecardresearch.*beacon.js$third-party,script,redirect-rule=scorecardresearch_beacon.js,important
 
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
+
+! </ end comScore's filters >
