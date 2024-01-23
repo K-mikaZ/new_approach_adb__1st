@@ -20,8 +20,8 @@
 !#if (adguard)
 ! 2024-01-23 Mocks the "prebid.js" header bidding suit. <https://docs.prebid.org/>
 ! <https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid>
-! exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
-/getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$redirect-rule=prebid
+! [not sure working] exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
+/getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$important,redirect=prebid
 !#endif
 
 ! 2024-01-23 CSS Filtering
