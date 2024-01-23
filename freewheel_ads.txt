@@ -5,6 +5,10 @@
 
 !! critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
 ! https://whotracks.me/trackers/freewheel.html
+! OPERATES UNDER: fwmrm.net
+! Owned by Comcast <http://www.freewheel.tv/>
+@||freewheel.com|$~third-party
+||freewheel.com^$third-party
 
 !! because of adguard base filter: `@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||fwmrm.net^$~object,third-party, ||v.fwmrm.net/ad/, /npawAdAdapter.`
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
