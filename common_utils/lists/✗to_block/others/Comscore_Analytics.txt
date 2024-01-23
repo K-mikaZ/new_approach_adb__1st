@@ -13,7 +13,7 @@ $cookie,domain=comscore.com
 ! ||comscore.com^$badfilter
 ! ||www.comscore.com^$badfilter
 ! ||comscore.com^$domain=~comscore.com
-||comscore.com|$~third-party
+@@||comscore.com|$~third-party
 
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js, /comscore_beacon/* ...
