@@ -76,13 +76,13 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
 !#if (adguard)
+! 2024-01-23 Cookie concerns
+$cookie=_fwex_doubleclick.net_IDE
 ! 2024-01-23 Request Modifier
 ! <https://regex101.com/r/DkEygK/6>, <https://vi.freewheel.tv/apc/samples>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
-! 2024-01-23 Cookie concerns
-$cookie=_fwex_doubleclick.net_IDE
 !#endif
 
 ! 2024-01-23 Remove Cookies
