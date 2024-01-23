@@ -2533,33 +2533,27 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]
-!! see https://hqq.tv/js/embed.211.js?736
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.disablePreloadAds, true)
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.playAdAlways, false)
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.adCancelTimeout, 0)
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, my_config.spotUrl, emptyArr)
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(set-constant, vwview, false)
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet("prevent-fab-3.2.0")
 
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.numAttempts', '0', '', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.disablePreloadAds', 'true', '', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.playAdAlways', 'false', '', '', '', 'true')
+!! see https://hqq.tv/js/embed.211.js?736
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.numAttempts', '0', '', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.disablePreloadAds', 'true', '', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.playAdAlways', 'false', '', '', '', 'true')
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.autoplay', 'true', '', '', '', 'true')
 
 ! hqq.tv#%#//scriptlet('ubo-set-constant.js', 'my_config.spotUrl', 'emptyArr')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false', '', '', 'true')
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adBlockDetected', 'noopFunc', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adblockcheck', 'false', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adBlockDetected', 'noopFunc', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adblockcheck', 'false', '', '', 'true')
 ! hqq.tv#@%#AG_onLoad(function() { setTimeout(function() { if(typeof after_click === "function") { after_click(); } }, 300); });
 
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'openedSecondPop', 'noopFunc', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'BetterJsPop', 'noopFunc', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'openedSecondPop', 'noopFunc', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'BetterJsPop', 'noopFunc', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'WebSocket', 'undefined', '', '', 'true')
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
 
