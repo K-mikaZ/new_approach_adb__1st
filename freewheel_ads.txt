@@ -35,18 +35,17 @@
 ! 2024-01-23 CSS Filtering
 *#@#.ad-layer
 *#@#div[id|="freewheelAd"]
-! e.g. https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html
+! <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
 ! use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
-! https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage
+! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 *##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
 *##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
 ! ------------------------------------------------------------------------
 ! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 ! ------------------------------------------------------------------------
-! 2024-01-23 WEB-BUG (Beacon, Pixel)
-! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
+! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
 ! ------------------------------------------------------------------------
 ! 2024-01-23 Tracking concerns
