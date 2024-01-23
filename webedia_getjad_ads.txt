@@ -15,12 +15,10 @@
 ||getjad.io/library/*/$important,redirect=noop.txt
 ||getjad.io/adstxt/*/$important,redirect=noop.txt
 
-! 2024-01-23 Prebid concerns - Mocks the prebid.js header bidding suit.
+! 2024-01-23 Prebid concerns - Mocks the "prebid.js" header bidding suit.
 ! <https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid>
-! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
-!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
+! exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
 ! ||getjad.io/prebid/$important,redirect=prebid
-! exclude 9518146, 70801804, 241667871, 21831724030
 /getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$important,redirect=prebid
 
 ! 2024-01-23 CSS Filtering
