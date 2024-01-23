@@ -1,19 +1,39 @@
+[uBlock Origin; Adguard]
+! < start comScore ad >
+
+! ads & analitycs integrations
+! https://www.google.com/search?q=%22Owned+by+comScore%22+site%3Awhotracks.me
+
+! Owned by comScore, Inc.: <https://www.comscore.com/>
+! OPERATES UNDER: [comscore.com, zqtk.net]
+! https://whotracks.me/trackers/comscore.html
+||zqtk.net^
+! 2024-01-23 Unbreak- unlock site itself
+@@||comscore.com|$~third-party
+
+! Owned by comScore, Inc.: <https://www.voicefive.com>
+! OPERATES UNDER: voicefive.com
+! https://whotracks.me/trackers/voicefive.html
+! 2024-01-23 Unbreak- unlock site itself
+@@||voicefive.com|$~third-party
+
+! Owned by comScore, Inc. <https://www.scorecardresearch.com/>
+! OPERATES UNDER: [scorecardresearch.com, scoreresearch.com, scrsrch.com, securestudies.com]
+! https://whotracks.me/trackers/scorecard_research_beacon.html
+||scoreresearch.com^
+||scrsrch.com^
+||securestudies.com^
+! 2024-01-23 Unbreak- unlock site itself
+@@||scorecardresearch.com|$~third-party
 
 ! comScore Stream Sense - tealium.com
 ! see https://tealium.com/integrations/
-! ads integrations
-! analitycs integrations
 ! --------------------------------------------------------------
 
 !! https://cookiedatabase.org/cookie/comscore/s1/
 !! https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1
 $cookie=s1
 $cookie,domain=comscore.com
-
-! ||comscore.com^$badfilter
-! ||www.comscore.com^$badfilter
-! ||comscore.com^$domain=~comscore.com
-@@||comscore.com|$~third-party
 
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js, /comscore_beacon/* ...
