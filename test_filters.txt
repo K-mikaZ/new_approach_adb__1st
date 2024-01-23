@@ -309,3 +309,6 @@ silentinstallhq.com#$#[class|="ezoic"],[id|="ezoic"],[id*="ezmob"],[class*="ezmo
 
 huffingtonpost.fr##[class="before-text "]
 
+! 2024-01-23 https://www.malekal.com
+! www.malekal.com##.Here
+www.malekal.com##div:has(>div:has(> [class*="detect"][class*="alert"]))
