@@ -314,10 +314,6 @@ $third-party,domain=websocketgate.com
 designparty.*##+js(window.open-defuser)
 designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 
-! avoid blocking forum.newrelic.com
-||newrelic.com^$badfilter
-||newrelic.com^$third-party
-
 ||hoglinsu.com^
 ||yougube.com^$all,important
 ||youtibe.com^$all,important
@@ -3842,6 +3838,12 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 !! !#endif
 
+
+!! UNBREAK
+! 2024-01-18 avoid blocking forum.newrelic.com
+@@||newrelic.com|$~third-party
+||newrelic.com^$important,badfilter
+||newrelic.com^$third-party
 
 
 ! ======[ INCLUDES ]=====================================================
