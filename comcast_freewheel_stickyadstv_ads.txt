@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! < start freewheel ad >
+! < start comcast's ad >
 ! Critical to the functionality of some website <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 
 ! OPERATES UNDER: stickyadstv.com, Owned by Comcast
@@ -78,4 +78,4 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
 
-! </ end freewheel ad >
+! </ end comcast's ad >
