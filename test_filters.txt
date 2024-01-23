@@ -57,9 +57,6 @@
 ! www.750g.com
 *##:is( [class|="ads-pholder"], [id|="ads-pholder"] )
 ! ------------------------
-#@#div[data-google-query-id]
-*#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
-! ------------------------
 *##div:is( [class~="containerAds"], [class*="coreads_"] )
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
