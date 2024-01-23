@@ -10,7 +10,7 @@
 ! 2024-01-23 Unbreak- unlock site itself
 @@||comscore.com|$~third-party
 
-! OPERATES UNDER: voicefive.com,  Owned by comScore, Inc.: <https://www.voicefive.com>
+! OPERATES UNDER: voicefive.com, Owned by comScore, Inc.: <https://www.voicefive.com>
 ! https://whotracks.me/trackers/voicefive.html
 ! 2024-01-23 Unbreak- unlock site itself
 @@||voicefive.com|$~third-party
@@ -22,11 +22,6 @@
 ||securestudies.com^
 ! 2024-01-23 Unbreak- unlock site itself
 @@||scorecardresearch.com|$~third-party
-
-!! https://cookiedatabase.org/cookie/comscore/s1/
-!! https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1
-$cookie=s1
-$cookie,domain=comscore.com
 
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js, /comscore_beacon/* ...
@@ -50,5 +45,15 @@ $cookie,domain=comscore.com
 ||scorecardresearch.*beacon.js$third-party,script,redirect-rule=scorecardresearch_beacon.js,important
 
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
+
+!#if (adguard)
+! 2024-01-23 Cookie concerns
+! <https://cookiedatabase.org/cookie/comscore/s1/>, <https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1>
+$cookie=s1
+$cookie,domain=comscore.com
+!#endif
+
+! 2024-01-23 Remove Cookies
+comscore.com##+js(cookie-remover, /^/)
 
 ! </ end comScore's filters >
