@@ -76,7 +76,7 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 ! ------------------------------------------------------------------------
-! 2024-01-23 Content Modifier
+! 2024-01-23 Request Modifier
 !#if (adguard)
 ! <https://regex101.com/r/DkEygK/6>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
