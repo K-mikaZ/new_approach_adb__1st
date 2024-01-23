@@ -1317,7 +1317,6 @@ stream-serie.net#$##option-1{height:100%}
 ||vidup.me/player/mute.png$image
 ||voirfilmsenstreaming.com/wp-content/themes/dontz/images/bg.png$image
 ||www.voirfilms.*/img/close_grey.png$image
-! /exe/indexer.php$image,domain=ubuntu-fr.org
 ||feeds.feedburner.*?bg=$image
 */adservice.*$image
 ||full-serie.*error404.php$image
