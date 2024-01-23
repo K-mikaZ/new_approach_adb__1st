@@ -2,6 +2,8 @@
 ! < start webedia's ad >
 
 ! OPERATES UNDER:  provider: "dfp", system: "jad", Owned by Webedia Group: <https://webedia-group.com/>
+! found on sites like: allocine.fr, adorocinema.com, beyazperde.com, filmstarts.de, sensacine.com
+
 ! 2024-01-23 Unbreak - Because of EasyList filter: ||getjad.io^
 ||getjad.io^$badfilter
 @@||getjad.io/geoloc/
