@@ -3,6 +3,13 @@
 ! Critical to the functionality of some website <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 
 ! OPERATES UNDER: stickyadstv.com, Owned by Comcast
+||cdn.stickyadstv.com/www/images/*.mp4$media,redirect=noop-0.1s.mp3,domain=6play.fr
+! 2024-01-23 Unbreak www.6play.fr
+@@||ads.stickyadstv.com/auto-user-sync$domain=6play.fr
+@@||ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=$domain=6play.fr
+@@||cdn.stickyadstv.com/www/images/*.mp4$xmlhttprequest,domain=6play.fr
+!+ NOT_OPTIMIZED
+@@||ads.stickyadstv.com^|$xmlhttprequest,domain=tf1.fr|tf1info.fr
 
 ! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 ||freewheel.tv^$third-party
@@ -43,6 +50,7 @@
 
 ! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+6play.fr##+js(no-xhr-if, v.fwmrm.net/, true)
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
