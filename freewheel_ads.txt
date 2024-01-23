@@ -1,10 +1,9 @@
 [uBlock Origin; Adguard]
-!! < start freewheel ad >
-! https://whotracks.me/trackers/freewheel.html
-! OPERATES UNDER: fwmrm.net
-! Owned by Comcast <http://www.freewheel.tv/>
+! < start freewheel ad >
 ! Critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
-! FreeWheel Video Integration: https://vi.freewheel.tv/
+! https://whotracks.me/trackers/freewheel.html
+! OPERATES UNDER: fwmrm.net, Owned by Comcast <http://www.freewheel.tv/>
+! More - FreeWheel Video Integration: https://vi.freewheel.tv/
 
 ! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
@@ -35,7 +34,14 @@
 @@||fwmrm.net|
 
 ! 2024-01-23 CSS Filtering
-##[id|="freewheelAd"]
+! e.g. https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html
+! use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
+! while still allowing to use preload="auto" to start loading the video as soon as possible.
+! https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage
+*#@#.ad-layer
+*#@#[id|="freewheelAd"]
+*##.ad-layer:not(:has(> video[poster]))
+*##[id|="freewheelAd"]:not(:has(> video[poster]))
 
 !! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
