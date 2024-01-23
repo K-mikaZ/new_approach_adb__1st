@@ -53,7 +53,7 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ||v.fwmrm.net/ad/g/1$removeparam=caid
 ! ------------------------------------------------------------------------
 ! 2024-01-23 Cookie concerns
-!#if !ext_ublock
+!#if (adguard)
 $cookie,domain=fwmrm.net
 ! ||fwmrm.net^$cookie=_fwex_doubleclick.net_IDE
 $cookie=_fwex_doubleclick.net_IDE
