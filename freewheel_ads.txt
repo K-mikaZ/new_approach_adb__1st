@@ -10,7 +10,7 @@
 @@||freewheel.com|$~third-party
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
 /npawAdAdapter.$badfilter
@@ -27,12 +27,12 @@
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
 ! ||7cd77.v.fwmrm.net^$badfilter
-
+!------------------------------------------------------------------------
 ! 2024-01-23 unlock functionalities
 @@||mssl.fwmrm.net/*/AdManager.js
 ! @@||v.fwmrm.net|
 @@||fwmrm.net|
-
+!------------------------------------------------------------------------
 ! 2024-01-23 CSS Filtering
 *#@#.ad-layer
 *#@#[id|="freewheelAd"]
@@ -42,17 +42,17 @@
 ! https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage
 *##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
 *##[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
-
+!------------------------------------------------------------------------
 !! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
-
+!------------------------------------------------------------------------
 ! 2024-01-23 WEB-BUG (Beacon, Pixel)
 ! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Cookie concerns
 !#if !ext_ublock
 $cookie,domain=fwmrm.net
@@ -62,7 +62,7 @@ $cookie=_fwex_doubleclick.net_IDE
 ! $cookie=_fwex_doubleclick.net_test_cookie
 !#endif
 fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Video Ad Serving Template (VAST)
 ! ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
 /ad/g/1?resp=vast2$important,redirect=noopvast-2.0
@@ -71,11 +71,11 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! ||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
 /ad/g/1?resp=vast4$important,redirect=noopvast-4.0
 !! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Video Multiple Ad Playlist (VMAP)
 ! ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Adguard Concerns
 !#if !ext_ublock
 ! <https://regex101.com/r/DkEygK/6>
@@ -84,7 +84,7 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 !#endif
-
+!------------------------------------------------------------------------
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
 
