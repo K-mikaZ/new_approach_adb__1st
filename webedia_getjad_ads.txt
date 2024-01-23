@@ -14,9 +14,12 @@
 ! 2024-01-23 - getja[d]: https://cdn.lib.getjad.io/
 ||getjad.io/library/*/$important,redirect=noop.txt
 ||getjad.io/adstxt/*/$important,redirect=noop.txt
-! 2024-01-23 - redirect "getjad.io/prebid/*" to:
-! <https://raw.githubusercontent.com/AdguardTeam/Scriptlets/master/src/redirects/prebid.js>
-||getjad.io/prebid/$important,redirect=prebid
+
+! 2024-01-23 Prebid concerns - Mocks the prebid.js header bidding suit.
+! <https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid>
+! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
+!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
+! ||getjad.io/prebid/$important,redirect=prebid
 
 ! 2024-01-23 CSS Filtering
 *##[class^="webedia"]
