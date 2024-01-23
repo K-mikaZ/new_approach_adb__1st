@@ -654,10 +654,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-ba
 !! privacy - domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 !! /\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
-!! site:allocine.fr - advertisement - fixing delay in the video player
-!! "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
-!! |https://assets.allocine.fr/js/website/script-03.3ba7bebbbef1bdc2c198.js
-/\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noopjs
 !! site:allocine.fr - fixing delay in the video player
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.ads, emptyObj)
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
@@ -2383,7 +2379,6 @@ jetanimes.com#@##fakeplayer
 ||cinez.*/acceder-video.php
 mstream.website###adbdetect
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class|="sticky-ad"]
-! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class^="webedia"]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 @@||privacy-center.org^$domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
@@ -3621,17 +3616,7 @@ themoneytizer$important,script,redirect=noopjs
 
 ! ====== PREBID ======
 
-!! Mocks the prebid.js header bidding suit.
-!! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid
-!! see: http://cdn.lib.getjad.io/
-!! prebid-core.js: < https://cdn.lib.getjad.io/prebid/9518146 >
-!!      prebid.js: < https://cdn.lib.getjad.io/prebid/241667871 >
-
-!! !#if adguard
-!! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/9518146/$script,redirect=prebid,important
-!! /.+:\/\/cdn\.lib\.getjad\.io\/prebid\/21831724030/$script,redirect=prebid,important
 ||astatic.ccmbg.com/*/prebid/prebid.*.js$redirect-rule=prebid
-!! !#endif
 
 
 /(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party,match-case
