@@ -7,6 +7,7 @@
 
 ! 2024-01-23 Unbreak - Because of EasyList filter: ||getjad.io^
 ||getjad.io^$badfilter
+||getjad.io^$important,badfilter
 @@||getjad.io/geoloc/
 ! 2024-01-23 - getja[n]: https://cdn.lib.getjan.io/library/
 ||getjan.io/library/$important,redirect=noop.txt
