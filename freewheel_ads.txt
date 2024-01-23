@@ -49,12 +49,6 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
 ! ------------------------------------------------------------------------
-! 2024-01-23 Cookie concerns
-!#if (adguard)
-$cookie=_fwex_doubleclick.net_IDE
-!#endif
-fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
-! ------------------------------------------------------------------------
 ! 2024-01-23 Video Ad Serving Template (VAST)
 ! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
 /ad/g/1?resp=vast2$important,redirect=noopvast-2.0
@@ -64,13 +58,16 @@ fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! 2024-01-23 Video Multiple Ad Playlist (VMAP)
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 ! ------------------------------------------------------------------------
-! 2024-01-23 Request Modifier
 !#if (adguard)
+! 2024-01-23 Request Modifier
 ! <https://regex101.com/r/DkEygK/6>, <https://vi.freewheel.tv/apc/samples>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
+! 2024-01-23 Cookie concerns
+$cookie=_fwex_doubleclick.net_IDE
 !#endif
+fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 ! ------------------------------------------------------------------------
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
