@@ -1,16 +1,19 @@
 [uBlock Origin; Adguard]
 ! < start freewheel ad >
+! Critical to the functionality of some website <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 
-! Critical to the functionality of some website (like www.6play.fr, www.tf1.fr, www.france.tv)
+! OPERATES UNDER: stickyadstv.com, Owned by Comcast
+! 2024-01-23 Video Ad Serving Template (VAST)
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=3*$important,redirect=noopvast-3.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=4*$important,redirect=noopvast-4.0
+
 ! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
-! https://whotracks.me/trackers/freewheel.html
-
-! 2024-01-23 Unbreak
-! unlock site itself (freewheel.tv redirect to freewheel.com)
-@@||freewheel.tv|$~third-party
-@@||freewheel.com|$~third-party
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
+! 2024-01-23 Unbreak - unlock site itself (freewheel.tv redirect to freewheel.com)
+@@||freewheel.tv|$~third-party
+@@||freewheel.com|$~third-party
 
 ! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
