@@ -28,4 +28,7 @@
 ! <https://static1.webedia.fr/js/gs.js>
 ||webedia.fr/js/gs.js
 
+! e.g. site:allocine.fr, "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
+/\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
+
 ! < /end webedia's ad >
