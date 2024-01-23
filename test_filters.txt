@@ -48,21 +48,19 @@
 *#$#:where(div[class|="adsvp"][class*="wrapper"]){ display:none!important; }
 !! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ){ display: none!important; visibility: hidden!important; }
 *#$#div:where([class^="salidor_"]:last-of-type) :where( [class^="salidor_"]:first-of-type ){ display:none!important; }
-*##div[class^="tolro_"]
-*##div[class^="masha_"]
+*##div:is( [class^="tolro_"], [class^="masha_"])
 ! ------------------------
 !! uBlock filters – Ads
 #@#.ads-core-placer
 #@#.ad-placeholder
 *#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
 ! www.750g.com
-*##.ads-pholder
+*##:is( [class|="ads-pholder"], [id|="ads-pholder"] )
 ! ------------------------
 #@#div[data-google-query-id]
 *#$#div[data-google-query-id]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
 ! ------------------------
-*##div[class~="containerAds"]
-*##div[class*="coreads_"]
+*##div:is( [class~="containerAds"], [class*="coreads_"] )
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
