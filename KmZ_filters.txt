@@ -637,8 +637,9 @@ prod-player.tf1.fr##ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle
 
 !! site:tf1.fr
 www.tf1.fr##:where(div[class^="usabilla"])
-www.tf1.fr##a[href*="/offre-max"]
-www.tf1.fr##:where(div[class*="bannerContainer_" i], div[class*="Banner_container_" i])
+www.tf1.fr##div[class^="BannerContainer_"]
+www.tf1.fr##a[href*="/offre-max"][class*="focus-visible"]
+www.tf1.fr##a[rel*="sponsored"]
 !! site:tf1.fr - prevent loading script 'https://static.adsafeprotected.com/favicon.ico'
 tf1.fr#@#+js(set-constant, __TF1_CONFIG__.adblock.checkUrl, '')
 !! site:tf1.fr - prevent loading script '//try.abtasty.com/*.js'
