@@ -4,7 +4,7 @@
 
 ! OPERATES UNDER: stickyadstv.com, Owned by Comcast
 ||cdn.stickyadstv.com/www/images/*.mp4$media,redirect=noop-0.1s.mp3,domain=6play.fr
-! 2024-01-23 Unbreak www.6play.fr
+! 2024-01-23 Unbreak sites
 ! @@||ads.stickyadstv.com/auto-user-sync$domain=6play.fr
 @@||ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=$domain=6play.fr
 @@||cdn.stickyadstv.com/www/images/*.mp4$xmlhttprequest,domain=6play.fr
