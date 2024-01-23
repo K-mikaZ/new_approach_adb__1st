@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! < start webedia's ad >
 
-! OPERATES UNDER: "window.Jad" variable, Owned by Webedia Group: <https://webedia-group.com/>
+! OPERATES UNDER:  provider: "dfp", system: "jad", Owned by Webedia Group: <https://webedia-group.com/>
 ! 2024-01-23 Unbreak - Because of EasyList filter: ||getjad.io^
 ||getjad.io^$badfilter
 @@||getjad.io/geoloc/
@@ -19,8 +19,5 @@
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
-
-! 2024-01-23 Misc (not sure)
-! @@/gampad/ads?*webedia$important
 
 ! < /end webedia's ad >
