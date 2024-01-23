@@ -3658,6 +3658,7 @@ themoneytizer$important,script,redirect=noopjs
 !#endif
 
 ! Because of EasyList filter: ||getjad.io^
+! Webedia https://fr.webedia-group.com/
 ||getjad.io^$badfilter
 @@||getjad.io/geoloc/
 ! getja[n]: https://cdn.lib.getjan.io/library/
