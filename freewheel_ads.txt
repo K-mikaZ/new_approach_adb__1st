@@ -4,12 +4,13 @@
 ! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 ! https://whotracks.me/trackers/freewheel.html
 
-! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
+! 2024-01-23 Unbreak
+! unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
 /npawAdAdapter.$badfilter
@@ -25,11 +26,11 @@
 ||fwmrm.net$third-party,badfilter
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 unlock functionalities
 @@||mssl.fwmrm.net/*/AdManager.js
 @@||v.fwmrm.net|
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 CSS Filtering
 *#@#.ad-layer
 *#@#div[id|="freewheelAd"]
@@ -39,25 +40,25 @@
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 *##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
 *##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Video Ad Serving Template (VAST)
 ! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
 /ad/g/1?resp=vast2$important,redirect=noopvast-2.0
 /ad/g/1?resp=vast3$important,redirect=noopvast-3.0
 /ad/g/1?resp=vast4$important,redirect=noopvast-4.0
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Video Multiple Ad Playlist (VMAP)
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
-! ------------------------------------------------------------------------
+
 !#if (adguard)
 ! 2024-01-23 Request Modifier
 ! <https://regex101.com/r/DkEygK/6>, <https://vi.freewheel.tv/apc/samples>
@@ -67,8 +68,10 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! 2024-01-23 Cookie concerns
 $cookie=_fwex_doubleclick.net_IDE
 !#endif
+
+! 2024-01-23 Remove Cookies
 fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
-! ------------------------------------------------------------------------
+
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
 
