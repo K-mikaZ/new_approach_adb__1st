@@ -2,8 +2,7 @@
 ! < start freewheel ad >
 ! Critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
 ! https://whotracks.me/trackers/freewheel.html
-! OPERATES UNDER: fwmrm.net, Owned by Comcast <http://www.freewheel.tv/>
-! More - FreeWheel Video Integration: https://vi.freewheel.tv/
+! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 
 ! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
