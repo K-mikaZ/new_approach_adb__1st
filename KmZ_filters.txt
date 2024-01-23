@@ -586,8 +586,6 @@ rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
 /pagead/ppub_config$important
 @@/\/pubads_impl(_.+)?\.js/$important
 !! domain=moviepilot.de - movie trailers
-! @@/gampad/ads?*safeframe$important
-@@/gampad/ads?*webedia$important
 @@/gpt.js|$domain=moviepilot.de
 
 
@@ -2385,7 +2383,7 @@ jetanimes.com#@##fakeplayer
 ||cinez.*/acceder-video.php
 mstream.website###adbdetect
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class|="sticky-ad"]
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class^="webedia"]
+! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class^="webedia"]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 @@||privacy-center.org^$domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
@@ -3344,7 +3342,6 @@ $cookie=_uid
 ||wiglessernes.com^
 ||bidswitch.net^
 ||track.hubspot.com^
-||bpt.webedia-group.com^
 ||sc-static.net^
 ||freighthealaudience.com^
 ||d1f05vr3sjsuy7.cloudfront.net^
