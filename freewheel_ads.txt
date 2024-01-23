@@ -40,8 +40,8 @@
 ! https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage
 *#@#.ad-layer
 *#@#[id|="freewheelAd"]
-*##.ad-layer:not(:has(> video[poster]))
-*##[id|="freewheelAd"]:not(:has(> video[poster]))
+*##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
+*##[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
 
 !! 2024-01-23 Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
