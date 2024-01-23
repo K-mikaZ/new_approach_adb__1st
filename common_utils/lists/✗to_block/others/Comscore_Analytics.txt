@@ -23,12 +23,12 @@
 ! 2024-01-23 Unbreak- unlock site itself
 @@||scorecardresearch.com|$~third-party
 
+! e.g. <https://s.yimg.com/aaq/vzm/cs_1.2.0.js>
+||s.yimg.com/aaq/vzm/cs_*.js$important,redirect=noop.js
+
 ! https://flowplayer.com/developers/plugins/comscore
 ! /comscore*.js, /comscore_beacon/* ...
 /[\s\S]*comscore[\s\S]*/$script,image,important,domain=~comscore.com
-
-||s.yimg.com/aaq/vzm/cs_1.2.0.js$redirect=noopjs
-
 
 ! comScore Stream Sense - tealium.com
 ! see https://tealium.com/integrations/
