@@ -1,25 +1,23 @@
 [uBlock Origin; Adguard]
-
 !! < start freewheel ad >
-! https://vi.freewheel.tv/
-
-!! critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
 ! https://whotracks.me/trackers/freewheel.html
 ! OPERATES UNDER: fwmrm.net
 ! Owned by Comcast <http://www.freewheel.tv/>
-! unlock site itself
+! Critical to the functionality of some website (like 6play.fr, tf1.fr, france.tv)
+! FreeWheel Video Integration: https://vi.freewheel.tv/
+
+! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
 
-!! because of adguard base filter: `@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com, ||fwmrm.net^$~object,third-party, ||v.fwmrm.net/ad/, /npawAdAdapter.`
-@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
+! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
 /npawAdAdapter.$badfilter
 ||fwmrm.net^$~object,third-party,badfilter
+@@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
 @@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
-
 /^\.fwmrm\.net\^/$badfilter
 ||v.fwmrm.net^$third-party,badfilter
 ||v.fwmrm.net$third-party,badfilter
@@ -29,31 +27,27 @@
 ||fwmrm.net$third-party,badfilter
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
+! ||7cd77.v.fwmrm.net^$badfilter
 
-||7cd77.v.fwmrm.net^$badfilter
-! ||7cbf2.v.fwmrm.net^$badfilter
-
-||fwmrm.net^$popup,important
-
+! 2024-01-23 unlock functionalities
 @@||mssl.fwmrm.net/*/AdManager.js
-@@||v.fwmrm.net|
+! @@||v.fwmrm.net|
 @@||fwmrm.net|
 
+! 2024-01-23 CSS Filtering
 ##[id|="freewheelAd"]
 
-! Video Ad Serving Template (VAST)
-! ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
-/ad/g/1?resp=vast2$important,redirect=noopvast-2.0
-! ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
-/ad/g/1?resp=vast3$important,redirect=noopvast-3.0
-! ||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
-/ad/g/1?resp=vast4$important,redirect=noopvast-4.0
-!! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
+!! 2024-01-23 Some settings
+france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
-! Video Multiple Ad Playlist (VMAP)
-! ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
-/ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
+! 2024-01-23 WEB-BUG (Beacon, Pixel)
+! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
+||v.fwmrm.net/ad/$image,important,redirect=1x1.gif
 
+! 2024-01-23 Tracking concerns
+||v.fwmrm.net/ad/g/1$removeparam=caid
+
+! 2024-01-23 Cookie concerns
 !#if !ext_ublock
 $cookie,domain=fwmrm.net
 ! ||fwmrm.net^$cookie=_fwex_doubleclick.net_IDE
@@ -63,14 +57,20 @@ $cookie=_fwex_doubleclick.net_IDE
 !#endif
 fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
 
-!! some settings
-france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+! 2024-01-23 Video Ad Serving Template (VAST)
+! ||v.fwmrm.net/ad/g/1?resp=vast2$xmlhttprequest,redirect=noopvast-2.0,important
+/ad/g/1?resp=vast2$important,redirect=noopvast-2.0
+! ||v.fwmrm.net/ad/g/1?resp=vast3$xmlhttprequest,redirect=noopvast-3.0,important
+/ad/g/1?resp=vast3$important,redirect=noopvast-3.0
+! ||v.fwmrm.net/ad/g/1?resp=vast4$xmlhttprequest,redirect=noopvast-4.0,important
+/ad/g/1?resp=vast4$important,redirect=noopvast-4.0
+!! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
 
-! fwmrm.net/ad/u? is img width="1" height="1" on https://www.tf1.fr
-||v.fwmrm.net/ad/$image,important,redirect=1x1.gif
+! 2024-01-23 Video Multiple Ad Playlist (VMAP)
+! ||v.fwmrm.net/ad/g/1?resp=vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,important
+/ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
-||v.fwmrm.net/ad/g/1$removeparam=caid
-
+! 2024-01-23 Adguard Concerns
 !#if !ext_ublock
 ! <https://regex101.com/r/DkEygK/6>
 ! <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
@@ -78,5 +78,8 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 !#endif
+
+! 2024-01-23 Misc (not sure)
+||fwmrm.net^$popup,important
 
 !! </ end freewheel ad >
