@@ -479,8 +479,6 @@ hds-streaming.*##a[target="_blank"]
 dood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
 dood.*,dooood.*##+js(abort-current-inline-script, check)
 /(do{2,}d\.(.{2,})\/sw\.js$)/$important
-! because of duckduckgo-tracker-radar <https://raw.githubusercontent.com/blokadaorg/landing-github-pages/master/blocklists/ddgtrackerradar/standard/hosts.txt>
-@@||i.doodcdn.co^
 vidlox.*##+js(window.open-defuser)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
