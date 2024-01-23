@@ -18,9 +18,9 @@
 ! 2024-01-23 Prebid concerns - Mocks the "prebid.js" header bidding suit. <https://docs.prebid.org/>
 ||getjad.io/prebid/$important
 !#if (adguard)
-! 2024-01-23 Mocks the "prebid.js" header bidding suit. <https://docs.prebid.org/>
+! 2024-01-23 [not sure working properly here] Mocks the "prebid.js" header bidding suit. <https://docs.prebid.org/>
+! but exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
 ! <https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid>
-! [not sure working] exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
 /getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$important,redirect=prebid
 !#endif
 
