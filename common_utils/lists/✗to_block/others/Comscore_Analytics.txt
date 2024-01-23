@@ -1,29 +1,24 @@
 [uBlock Origin; Adguard]
 ! < start comScore's filters >
-
-! ads & analitycs integrations
-! https://www.google.com/search?q=%22Owned+by+comScore%22+site%3Awhotracks.me
+! ads & analitycs integrations <https://www.google.com/search?q=%22Owned+by+comScore%22+site%3Awhotracks.me>
 
 ! OPERATES UNDER: [comscore.com, zqtk.net], Owned by comScore, Inc.: <https://www.comscore.com/>
-! https://whotracks.me/trackers/comscore.html
 ||zqtk.net^
 ! 2024-01-23 Unbreak- unlock site itself
 @@||comscore.com|$~third-party
 
 ! OPERATES UNDER: voicefive.com, Owned by comScore, Inc.: <https://www.voicefive.com>
-! https://whotracks.me/trackers/voicefive.html
 ! 2024-01-23 Unbreak- unlock site itself
 @@||voicefive.com|$~third-party
 
 ! OPERATES UNDER: [scorecardresearch.com, ...], Owned by comScore, Inc. <https://www.scorecardresearch.com/>
-! https://whotracks.me/trackers/scorecard_research_beacon.html
 ||scoreresearch.com^
 ||scrsrch.com^
 ||securestudies.com^
 ! 2024-01-23 Unbreak- unlock site itself
 @@||scorecardresearch.com|$~third-party
 
-! e.g. <https://s.yimg.com/aaq/vzm/cs_1.2.0.js>
+! e.g. <https://s.yimg.com/aaq/vzm/cs_1.2.0.js> (not sure working)
 ||s.yimg.com/aaq/vzm/cs_*.js$important,redirect=noop.js
 
 ! https://flowplayer.com/developers/plugins/comscore
