@@ -24,13 +24,12 @@
 /getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$important,redirect=prebid
 !#endif
 
-! 2024-01-23 CSS Filtering
-##[id^="dfp-"]
-! ##[class^="dfp-" i]
+! 2024-01-23 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
-! ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
+##[id^="dfp-"]
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id])
 ##[class~="webedia"]
-##[class*="webedia"]
+! ##[class^="dfp-" i]
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
