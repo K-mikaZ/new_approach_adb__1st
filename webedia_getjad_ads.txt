@@ -54,6 +54,10 @@
 ! [to confirm] view on www.allocine.fr
 ! /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 ! ||autopromo.allocine.fr^$important
+!! found on allocine.fr : push subscription
+||www.allocine.fr/batchsdk-worker-loader.js$$important
+!! found on allocine.fr : base64 content of otToken => "feature":"PrivacySandboxAdsAPIs"
+||storage.googleapis.com/fledge-tests/otToken.js$important
 
 ! Filtering Per sites
 
