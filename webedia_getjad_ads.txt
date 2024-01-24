@@ -40,6 +40,10 @@
 ! <https://static1.webedia.fr/js/gs.js>
 ||webedia.fr/js/gs.js
 
+!  2024-01-24 Misc
+! [to confirm] view on www.allocine.fr
+/.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+
 ! 2024-01-24 sets window.jad Config (from getjad.io), and ads Mapping
 ! Sometimes it shows up, sometimes it doesn't. Seen in Firefox (e.g. site:www.allocine.fr)
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
