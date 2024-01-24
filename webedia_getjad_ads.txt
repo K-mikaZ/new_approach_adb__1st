@@ -24,7 +24,7 @@
 /getjad\.io\/prebid\/(?!9518146|70801804|241667871|21831724030).+/$important,redirect=prebid
 !#endif
 
-! 2024-01-23 CSS Filtering (useful with Easylist)
+! 2024-01-24 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
 ! ##[class^="dfp-" i]
@@ -40,7 +40,7 @@
 ! <https://static1.webedia.fr/js/gs.js>
 ||webedia.fr/js/gs.js
 
-!  2024-01-24 Misc
+! 2024-01-24 Misc
 ! [to confirm] view on www.allocine.fr
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
