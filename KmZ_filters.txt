@@ -661,6 +661,11 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 !! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
 !! @@||pmdstatic.net^$important
 
+! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.advertising.*.js)
+||dmcdn.net/*/dmp.advertising.*.js$script,important,redirect=noop.js
+! 2024-01-24 ~ 06:15:19 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.mediametrie.*.js)
+||dmcdn.net/*/dmp.mediametrie.*.js$script,important,redirect=noop.js
+
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
 !! tool that can help: https://iframely.com/domains/dailymotion
