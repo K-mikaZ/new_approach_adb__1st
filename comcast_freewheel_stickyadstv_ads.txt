@@ -1,6 +1,14 @@
 [uBlock Origin; Adguard]
+! Title: Comcast ads - by K-mik@Z
+! Last modified: Wed, 24 Jan 2024 06:14:37 +0000
+! Expires: 7 days
+! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/comcast_freewheel_stickyadstv_ads.txt
+! Description: |
+!   OPERATES UNDER: fwmrm.net, stickyadstv.com <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
+!   Critical to the functionality of some website.
+!
 ! < start comcast's ad >
-! Critical to the functionality of some website <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 
 ! OPERATES UNDER: stickyadstv.com, Owned by Comcast
 ||cdn.stickyadstv.com/www/images/*.mp4$media,redirect=noop-0.1s.mp3,domain=6play.fr
