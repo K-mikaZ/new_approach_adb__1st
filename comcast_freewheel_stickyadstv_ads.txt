@@ -1,7 +1,5 @@
 [uBlock Origin; Adguard]
 ! Title: Comcast ads - by K-mik@Z
-! Last modified: Wed, 24 Jan 2024 06:14:37 +0000
-! Expires: 7 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/comcast_freewheel_stickyadstv_ads.txt
 ! Description: |
