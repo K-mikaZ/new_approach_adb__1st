@@ -89,6 +89,5 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__app_ads_txt, emptyObj)
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAffinityScore, false)
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAdsRestriction, false)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 
 ! < /end webedia's ads >
