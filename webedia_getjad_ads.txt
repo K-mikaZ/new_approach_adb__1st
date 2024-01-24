@@ -1,6 +1,6 @@
 [uBlock Origin; Adguard]
 ! Title: Webedia Group ads - by K-mik@Z
-! Last modified: Wed, 24 Jan 2024 04:27:05 +0000
+! Last modified: Wed, 24 Jan 2024 05:31:10 +0000
 ! Expires: 7 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
