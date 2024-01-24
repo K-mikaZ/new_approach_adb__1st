@@ -1,6 +1,6 @@
 [uBlock Origin; Adguard]
 ! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Wed, 24 Jan 2024 05:31:10 +0000
+! Last modified: Wed, 24 Jan 2024 06:46:30 +0000
 ! Expires: 1 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
@@ -3493,7 +3493,9 @@ themoneytizer$important,script,redirect=noopjs
 !! How to Turn Off the "Sign in with Google" Prompt on Websites (Blocking the Google annoying popup)
 ||accounts.google.com/gsi*$badfilter
 ||accounts.google.com/gsi/*$badfilter
-||accounts.google.com/gsi/iframe
+accounts.google.com/gsi/iframe$badfilter
+||accounts.google.com/gsi/iframe$badfilter
+||accounts.google.com/gsi/iframe/select?*=popup&$subdocument
 
 ! ----------------------------------------
 ! [FIX] video players
