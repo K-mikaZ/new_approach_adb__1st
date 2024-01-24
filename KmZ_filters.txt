@@ -2378,7 +2378,6 @@ jetanimes.com,wow-films.*,streampourvous.com##+js(remove-attr, target|href|rel, 
 jetanimes.com#@##fakeplayer
 ||cinez.*/acceder-video.php
 mstream.website###adbdetect
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##[class|="sticky-ad"]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 @@||privacy-center.org^$domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
