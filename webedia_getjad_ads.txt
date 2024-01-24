@@ -27,9 +27,11 @@
 ! 2024-01-23 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
+! ##[class^="dfp-" i]
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id])
 ##[class~="webedia"]
-! ##[class^="dfp-" i]
+! [to confirm] view on www.allocine.fr
+##.afs_ads
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
