@@ -1,5 +1,4 @@
 [uBlock Origin; Adguard]
-!
 ! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
 ! Last modified: Wed, 24 Jan 2024 05:31:10 +0000
 ! Expires: 1 days
