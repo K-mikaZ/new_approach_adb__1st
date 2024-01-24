@@ -25,7 +25,11 @@
 !#endif
 
 ! 2024-01-23 CSS Filtering
-*##[class^="webedia"]
+##[id^="dfp-"]
+##[id^="dfp_"]
+! ##[id^="dfp_"]:is( [class^="DFP"], [class*="_dfp"] )
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
+##[class~="webedia"]
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
