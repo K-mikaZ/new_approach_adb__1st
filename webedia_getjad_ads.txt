@@ -5,7 +5,6 @@
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
 ! Description: |
-!   Filters apply for ads owned by Webedia Group.
 !   OPERATES UNDER:  provider: "dfp", system: "jad", Owned by Webedia Group: <https://webedia-group.com/>
 !   found on sites like: allocine.fr, adorocinema.com, beyazperde.com, filmstarts.de, sensacine.com.
 !   but also: www.750g.com, purepeople magazine, overblog ... and so much more.
