@@ -26,8 +26,15 @@
 
 ! 2024-01-23 CSS Filtering
 ##[id^="dfp-"]
-##[id^="dfp_"]
-! ##[id^="dfp_"]:is( [class^="DFP"], [class*="_dfp"] )
+! ##[id^="dfp_"]
+! ##[id^="dfp-" i]
+! ##[id^="dfp_" i]
+! ##[id^="dfpad" i]
+! ##[id^="dfpslot" i]
+##[class^="dfp-"]
+! ##[class^="dfp_" i]
+! ##[class^="dfpad" i]
+! ##[class^="dfpslot" i]
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
 ##[class~="webedia"]
 
