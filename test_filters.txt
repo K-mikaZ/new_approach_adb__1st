@@ -54,10 +54,10 @@
 #@#.ads-core-placer
 #@#.ad-placeholder
 #$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
-! www.750g.com
+! www.750g.com (is ads-pholder only for Webedia Group ?)
+##[id|="ads-pholder"]
 ##[id^="ads-pholder"]
 ##.ads-pholder
-! ##:is([class~="ads-pholder"]):not([id^="ads-pholder"])
 ! ------------------------
 ##div:is( [class~="containerAds"], [class*="coreads_"] )
 ! ----[ SPAN ]----------------------------------------------------------------
