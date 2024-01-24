@@ -28,7 +28,7 @@
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
 ! ##[class^="dfp-" i]
-##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id^="dfp-"])
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id])
 ##[class~="webedia"]
 
 ! 2024-01-23 Tracking concerns
