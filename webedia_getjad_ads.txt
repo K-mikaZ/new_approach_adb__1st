@@ -26,17 +26,11 @@
 
 ! 2024-01-23 CSS Filtering
 ##[id^="dfp-"]
-! ##[id^="dfp_"]
-! ##[id^="dfp-" i]
-! ##[id^="dfp_" i]
-! ##[id^="dfpad" i]
-! ##[id^="dfpslot" i]
-##[class^="dfp-"]
-! ##[class^="dfp_" i]
-! ##[class^="dfpad" i]
-! ##[class^="dfpslot" i]
-##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
+! ##[class^="dfp-" i]
+! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
+! ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
 ##[class~="webedia"]
+##[class*="webedia"]
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
@@ -45,8 +39,8 @@
 ! <https://static1.webedia.fr/js/gs.js>
 ||webedia.fr/js/gs.js
 
-! 2024-01-23 [to be verified] old rule already encountered, kept for the moment.
-! e.g. site:allocine.fr, "sets window.jad Config (from getjad.io), and ads Mapping for firefox"
+! 2024-01-23 sets window.jad Config (from getjad.io), and ads Mapping
+! Sometimes it shows up, sometimes it doesn't. Seen in Firefox (e.g. site:www.allocine.fr)
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
 
 ! < /end webedia's ad >
