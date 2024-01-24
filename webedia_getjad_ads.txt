@@ -41,9 +41,10 @@
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
 
-! 2024-01-23 Ads
-! <https://static1.webedia.fr/js/gs.js>
+! 2024-01-24 [navigator.userAgent.indexOf('Android')>=0 ](https://static1.webedia.fr/js/gs.js)
+!#if (env_mobile)
 ||webedia.fr/js/gs.js
+!#endif
 
 ! 2024-01-24 In case of whitelisting of "||getjan.io/library/".
 ! Fallbacks for getjan.io libraries use for set window.jad Config and ads Mapping. Seen in Firefox (e.g. site:www.allocine.fr)
