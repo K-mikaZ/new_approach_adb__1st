@@ -1823,6 +1823,7 @@ voirseries.*#@#.adsBox
 @@||canaltp.fr$generichide,specifichide
 @@||*$other,domain=packetlosstest.com
 @@||pubads.g.doubleclick.net^$xmlhttprequest,domain=developers-dot-devsite-v2-prod.appspot.com
+! s0.2mdn.net/instream/video/client.js used for google ima needed by some site
 @@||s0.2mdn.net/instream/video/client.js
 @@/ima3.js$badfilter
 @@/ima3.js|$badfilter
