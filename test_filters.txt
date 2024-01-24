@@ -236,8 +236,6 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 !! *##[data-ad-host*="-pub-"]
 ##[data-ad-text="PUBLICITE"]
 ##[data-placeholder-text="Ad"]
-##div[id~="pub"]
-##div[class~="pub"]
 ##[id="oscuridad"]
 ##[id^="contenidobloqueado"]
 ##[id*="_ad_native_"]
@@ -275,6 +273,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ##[class|="ad-display"]
 ##[class~="google-ads"]
 ##[class~="googleads"]
+! ##div[class~="pub"]
+! ##div[id~="pub"]
+###pub
 ##.afs_ads
 !! ----[ ACTIRISE ADS ]-----------------------------------------------------------
 !! https://www.actirise.com/
