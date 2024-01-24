@@ -46,7 +46,7 @@
 ||webedia.fr/js/gs.js
 !#endif
 
-! 2024-01-24 In case of whitelisting of "||getjan.io/library/".
+! 2024-01-24 Sometimes appears, sometimes not.
 ! Fallbacks for getjan.io libraries use for set window.jad Config and ads Mapping. Seen in Firefox (e.g. site:www.allocine.fr)
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
 
@@ -55,7 +55,7 @@
 ! /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 ! ||autopromo.allocine.fr^$important
 !! found on allocine.fr : push subscription
-||www.allocine.fr/batchsdk-worker-loader.js$$important
+||allocine.fr/batchsdk-worker-loader.js$important
 !! found on allocine.fr : base64 content of otToken => "feature":"PrivacySandboxAdsAPIs"
 ||storage.googleapis.com/fledge-tests/otToken.js$important
 
