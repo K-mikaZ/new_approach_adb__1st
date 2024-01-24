@@ -30,8 +30,6 @@
 ! ##[class^="dfp-" i]
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id])
 ##[class~="webedia"]
-! [to confirm] view on www.allocine.fr
-##.afs_ads
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
@@ -42,10 +40,10 @@
 
 ! 2024-01-24 Misc
 ! [to confirm] view on www.allocine.fr
-/.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+! /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
 ! 2024-01-24 sets window.jad Config (from getjad.io), and ads Mapping
-! Sometimes it shows up, sometimes it doesn't. Seen in Firefox (e.g. site:www.allocine.fr)
+! Seen in Firefox (e.g. site:www.allocine.fr) - Sometimes it shows up, sometimes it doesn't.
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
 
 ! < /end webedia's ad >
