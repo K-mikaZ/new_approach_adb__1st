@@ -5,7 +5,8 @@
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
 ! Description: |
-!   OPERATES UNDER:  provider: "dfp", system: "jad", Owned by Webedia Group: <https://webedia-group.com/>
+!   OPERATES UNDER:  provider: "dfp", system: "jad", Owned by Webedia Group: <https://webedia-group.com/>.
+!   Webedia is a company specializing in online media, a subsidiary of the Fimalac group based in Levallois-Perret, France.
 !   found on sites like: allocine.fr, adorocinema.com, beyazperde.com, filmstarts.de, sensacine.com.
 !   but also: www.750g.com, purepeople magazine, overblog ... and so much more.
 !
