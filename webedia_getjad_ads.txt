@@ -53,10 +53,38 @@
 ! 2024-01-24 Misc
 ! [to confirm] view on www.allocine.fr
 ! /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+! ||autopromo.allocine.fr^$important
 
 ! Filtering Per sites
+
 ! 2024-01-24 [ www.750g.com ]
 www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 /[Nn]ewsletter/$domain=www.750g.com
+
+! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
+! 2024-01-24 Privacy concerns
+/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
+! 2024-01-24 Try fixing delay in the video player
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.ads, emptyObj)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
+! 2024-01-24 Tracking
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore.clientId, '')
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore, emptyObj)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.gtm.active, false)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
+! 2024-01-24 Tracking (prevent loading script)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.dfp.baseUrl, '')
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.dfp, emptyObj)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.mediametrie.libUrl, '')
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.mediametrie, emptyObj)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.gemius, emptyObj)
+!! site:allocine.fr - vast ads (already sets, but ensure in case)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__ads_txt, emptyObj)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__app_ads_txt, emptyObj)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAffinityScore, false)
+!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAdsRestriction, false)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasStickyAds, false)
 
 ! < /end webedia's ads >
