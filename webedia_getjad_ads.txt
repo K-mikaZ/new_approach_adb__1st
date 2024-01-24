@@ -47,7 +47,8 @@
 ! [to confirm] view on www.allocine.fr
 ! /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
-! 2024-01-24 Filtering Per sites
+! Filtering Per sites
+! 2024-01-24 [ www.750g.com ]
 www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 /[Nn]ewsletter/$domain=www.750g.com
 
