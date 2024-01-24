@@ -33,10 +33,9 @@
 ! 2024-01-24 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
-! ##[class^="dfp-" i]
-! ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not([id])
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
-##[class~="webedia"]
+! [to confirm]
+##[class~="webedia" i]
 
 ! 2024-01-23 Tracking concerns
 ||bpt.webedia-group.com^
