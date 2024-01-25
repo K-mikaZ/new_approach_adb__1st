@@ -292,8 +292,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
-@@||silentinstallhq.com^$generichide
-! silentinstallhq.com#$#[class|="ezoic"],[id|="ezoic"],[id*="ezmob"],.ezo_ad,.ezmob,[ezaw][ezah],[id|="ez-video"],[class|="ez-video"] { display:none!important;visibility:hidden!important; }
+! 2024-01-24 ~ 01:13:00 [ silentinstallhq.com ](https://silentinstallhq.com/)
 *#$#:where([id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
 
 huffingtonpost.fr##[class="before-text "]
