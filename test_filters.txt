@@ -9,13 +9,13 @@
 
 
 ! INVALID
-! *##:is( [id^="fake-"], [class^="fake-"] ):last-of-type:has( > :is( [id^="fake-"], [class^="fake-"] ):first-of-type ) )
-! *##:where([class*="movie__"][class*="player"]:has( > iframe[src*="/voir/voir"]))
+! *##:is([id^="fake-"],[class^="fake-"]):last-of-type:has(>:is([id^="fake-"],[class^="fake-"]):first-of-type))
+! *##:where([class*="movie__"][class*="player"]:has(>iframe[src*="/voir/voir"]))
 
 
 ! -------------------- ExtendedCss ---------------------
 ! *** @ref { @link: https://github.com/AdguardTeam/ExtendedCss/blob/master/README.md }
-! I use `:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )` asap for avoid running twice
+! I use `:is(:not([style*="hidden"]):not([style*="display:"][style*="none"]))` asap for avoid running twice
 
 ! https://github.com/AdguardTeam/ExtendedCss
 ! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#extended-css-limitations
@@ -43,34 +43,34 @@
 ! *##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
-!! *#$#div[class|="adsvp"]:last-of-type:has( > [class|="adsvp"]:first-of-type ) ) { display: none!important; visibility: hidden!important; }
-!! *#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important; }
-*#$#:where(div[class|="adsvp"][class*="wrapper"]){ display:none!important; }
-!! *#$#div[class^="salidor_"]:last-of-type:has( > [class^="salidor_"]:first-of-type ) ){ display: none!important; visibility: hidden!important; }
-*#$#div:where([class^="salidor_"]:last-of-type) :where( [class^="salidor_"]:first-of-type ){ display:none!important; }
-##div:is( [class^="tolro_"], [class^="masha_"])
+!! *#$#div[class|="adsvp"]:last-of-type:has(>[class|="adsvp"]:first-of-type)){display:none!important;visibility:hidden!important;}
+!! *#$#div[class|="adsvp"] { display: none!important; visibility: hidden!important;}
+*#$#:where(div[class|="adsvp"][class*="wrapper"]){display:none!important;}
+!! *#$#div[class^="salidor_"]:last-of-type:has(>[class^="salidor_"]:first-of-type)){display:none!important;visibility:hidden!important;}
+*#$#div:where([class^="salidor_"]:last-of-type) :where([class^="salidor_"]:first-of-type){display:none!important;}
+##div:is([class^="tolro_"],[class^="masha_"])
 ! ------------------------
 !! uBlock filters – Ads
 #@#.ads-core-placer
 #@#.ad-placeholder
-*#$#:is( [class~="ads-core-placer"], [class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox), [class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
+*#$#:is([class~="ads-core-placer"],[class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox),[class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 ! www.750g.com (is ads-pholder only for Webedia Group ?)
 ##[id|="ads-pholder"]
 ##[id^="ads-pholder"]
 ##.ads-pholder
 ! ------------------------
-##div:is( [class~="containerAds"], [class*="coreads_"] )
+##div:is([class~="containerAds"],[class*="coreads_"])
 ! ----[ SPAN ]----------------------------------------------------------------
 ! ----[ ADS BY ]--------------------------------------------------------------
 ! adsby: .adsbygoogle, .adsbyexoclick, .adsbyrunactive, .adsbytrafficjunky, .adsbyvli (dunebook.com)
 #@#ins.adsbygoogle
 !! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 !! FIX: [class*="adsby"]{ visibility:hidden } break justgeek.fr ( prefer [class*="adsby"]{ display: none } )
-*#$#[class*="adsby"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { height: 1px!important; display: none!important; }
+*#$#[class*="adsby"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){height:1px!important;display:none!important;}
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! [id|="div-gpt-ad"], div[class|="div-gpt-ad"]
-*#$#:is( [class|="div-gpt-ad"], [id|="div-gpt-ad"] ):not( [style*="opacity:0"] ) { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
-! #?#div:is( [class*="textads"], [class*="ad-unit"]:not( [class*="text-ads"] ), [class*="adunit"] ):is( [style*=": 1px;"], [style*=":1px;"] )
+*#$#:is([class|="div-gpt-ad"],[id|="div-gpt-ad"]):not([style*="opacity:0"]){width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important}
+! #?#div:is([class*="textads"],[class*="ad-unit"]:not([class*="text-ads"]),[class*="adunit"]):is([style*=": 1px;"],[style*=":1px;"])
 ##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
 ! #?#script:matches-attr( "src"="/.+mc.yandex.ru.+/" ):remove()
@@ -120,13 +120,13 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 !! https://blog.logrocket.com/deep-dive-css-where-is-functions/#combining-dividing-stacking-where
 !! *#$#:where(center, span, div) :where(a:is( [class*="mButton"], [class*="myButton"] ):is( [href], [target], [rel^="no"] ))  { display: none!important; visibility: hidden!important; }
 !! *#$#:where(center, div) :where(a:is( [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
-##:where(center, span, div) :where(a:is( [class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."] ):is( [href], [target], [rel^="no"] )):is( :not( [style*="hidden"] ), :not( [style*="display:"][style*="none"] ) )
-*#$#div[class^="movie-aye"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ){ display:none!important; }
-*#$#div[class="g-buttons"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ):has( > a[href] ){ display:none!important; }
-##div[class*="movie__"]:is( [class*="big"][class*="btn"] )
+##:where(center,span,div) :where(a:is([class*="mButton"],[class*="myButton"],[href*="/regarder."],[href*="/telecharger."]):is([href],[target],[rel^="no"])):is(:not([style*="hidden"]),:not([style*="display:"][style*="none"]))
+*#$#div[class^="movie-aye"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
+*#$#div[class="g-buttons"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):has(>a[href]){display:none!important;}
+##div[class*="movie__"]:is([class*="big"][class*="btn"])
 !! Fallback Fake button watching
 ##a[href*="premium"][href*=".php"][class*="btn"]
-##div[class]:has( > a[href*=".php"][target]:is( [href*="premium"],[href*="streaming"]) )
+##div[class]:has(>a[href*=".php"][target]:is([href*="premium"],[href*="streaming"]))
 !! Others
 ##a[href*="-en-hd"][rel^="no"]
 ##[class^="ebooks_orange_"][href]
@@ -135,21 +135,21 @@ fcine.*##[class|="vip-server"]
 
 ! -------------------- Download links, not watching links ---------------------
 ! gocine, streamdeouf, cpasmieux.* ...
-!! *#$#:is( [class~="streamer"], [class*="player" i] ) li:has( > :is( [class~=down], [onclick*="window.open"], [onclick^="goDown"] ) ) { display: none!important; visibility: hidden!important; }
-##:is( [class~="streamer"], [class*="player" i] ) li :where( :is( [class~=down], [class~="dow"], [onclick*="window.open"], [onclick^="goDown"], [onclick^="getxfie()"] ) )
-##:is( [class~="streamer"], [class*="player" i] ):is( [class~="dow"], :has( > [data-url*="/video-streaming.html"] ), :has( > [data-url*="/telecharger/"] ), :has( > [class="download-server"] ) )
-voirseries.*##[class*="player" i]:has( > :is( [class*="download"], [id*="download"] ) )
+!! *#$#:is([class~="streamer"],[class*="player" i]) li:has(>:is([class~=down],[onclick*="window.open"],[onclick^="goDown"])){display:none!important;visibility:hidden!important;}
+##:is([class~="streamer"],[class*="player" i]) li :where(:is([class~=down],[class~="dow"],[onclick*="window.open"],[onclick^="goDown"],[onclick^="getxfie()"]))
+##:is([class~="streamer"],[class*="player" i]):is([class~="dow"],:has(>[data-url*="/video-streaming.html"]),:has(>[data-url*="/telecharger/"]),:has(>[class="download-server"]))
+voirseries.*##[class*="player" i]:has(>:is([class*="download"],[id*="download"]))
 
 
 ! -------------------- Fake watching player ---------------------
 !! *##:where([data-url="/video-vip.html"])
 ##:where([data-url*="vip.htm"])
-##[class*="player" i]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) li:has( > [data-url*="vip.htm"] )
-##li[data-plink*="stream"][data-plink*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
+##[class*="player" i]:is(:not( [style*="hidden"]):not([style*="display:"][style*="none"])) li:has(>[data-url*="vip.htm"])
+##li[data-plink*="stream"][data-plink*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"]))
 !! hdss.show
 ##[class*="player" i] > li[data-link*="/player/online.htm"]
 !! ducine.*, streamfilms.*, cpasmieux.* ...
-*#$##videoplay[src*="stream"][src*="vip.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+*#$##videoplay[src*="stream"][src*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 *#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 ##[class*="player" i]:has( > [src*="stream"][src*="vip.htm"])
 ##[class*="player" i]:has( iframe[src*="fakeplayer"] )
