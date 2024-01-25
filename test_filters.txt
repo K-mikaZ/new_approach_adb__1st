@@ -286,7 +286,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 !! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! 2024-01-25 Block: https://better.fyi/trackers/ezoic.net
 ||ezoic.net$third-party
-! 2024-01-25 ~ 01:13:00 - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
+! 2024-01-25 ~ 01:13:00 - Unbreak - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
 @@||ezoic.net|$~third-party
 @@||ezoic.com|$~third-party
 ! 2024-01-24 Because some use ezoic for host images (not always ads)
@@ -298,9 +298,19 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
-! ##[data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob
+##[data-ez-ph-id]
+##[id|="ez-video"]
+##[class|="ez-video"]
+##[id|="ezoic"]
+##[class|="ezoic"]
+##[id|="ezoic-pub"]
+##[id*="ezmob"]
+##[ezaw][ezah]
+##.ezo_ad
+##.ezoic-ad
+##.ezmob
 ! 2024-01-24 ~ 01:13:00 [ silentinstallhq.com ](https://silentinstallhq.com/)
-*#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
+! *#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
 
 huffingtonpost.fr##[class="before-text "]
 
