@@ -286,7 +286,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 !! ----[ EZOIC ADS ]-----------------------------------------------------------
 ! 2024-01-25 Block: https://better.fyi/trackers/ezoic.net
 ||ezoic.net$third-party
-! 2024-01-25 unlock site itself
+! 2024-01-25 ~ 01:13:00 - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
 @@||ezoic.net|$~third-party
 @@||ezoic.com|$~third-party
 ! 2024-01-24 Because some use ezoic for host images (not always ads)
