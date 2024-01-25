@@ -25,9 +25,11 @@
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
 
 ! 2024-01-24 ezoic ads concerns
-! /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
+/ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
+
+! 2024-01-24 CSS filtering
 ! ##[data-ez-ph-id]
 ! ##[id|="ez-video"]
 ! ##[class|="ez-video"]
