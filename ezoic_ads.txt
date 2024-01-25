@@ -7,7 +7,7 @@
 ! < start ezoic ads >
 
 ! 2024-01-25 Block: https://better.fyi/trackers/ezoic.net
-||ezoic.net$third-party,important
+||ezoic.net^$third-party,important
 ! 2024-01-25 Redundancy with `||ezoic.net$third-party`: ||g.ezoic.net/ezqlog?$important, ||g.ezoic.net/ezoic/ampad.js (Ezoic Amp Ad)
 
 ! 2024-01-25 ~ 01:13:00 - Unbreak - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
