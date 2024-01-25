@@ -31,8 +31,6 @@
 /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 
 ! 2024-01-24 CSS filtering
-! ##[data-ez-ph-id]:not([style*="display:"][style*="none"])
-##[data-ez-ph-id]
 ##[ezaw][ezah]
 ##[id|="ez-video"]
 ##[class|="ez-video"]
@@ -44,6 +42,8 @@
 ##.ezoic-ad
 ##.ezmob
 ! 2024-01-24 ~ 01:13:00 [ silentinstallhq.com ](https://silentinstallhq.com/)
+##[data-ez-ph-id]
+
 ! *#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
 ! *#$#:where([data-ez-ph-id],[ezaw][ezah]):not([style*="display:"][style*="none"]) { display:none!important;visibility:hidden!important; }
 
