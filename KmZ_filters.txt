@@ -3789,6 +3789,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 ! ======[ EOF ]==========================================================
 
+!#include ezoic_ads.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include webedia_getjad_ads.txt
 
