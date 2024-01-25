@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
-! Title: [?][list][new wave] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Wed, 24 Jan 2024 06:46:30 +0000
-! Expires: 1 days
+! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
+! Last modified: Thu, 25 Jan 2024 00:16:03 +0100
+! Expires: 5 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
@@ -805,6 +805,7 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 @@||vk.com^$subdocument
 ||yimg.com/rq/darla/$domain=tumblr.com|yahoo.com,badfilter
 /darla/*/sfext-min.js$script,domain=s.yimg.com,important
+@@||silentinstallhq.com^$generichide
 
 ! Owned by AT Internet, OPERATES UNDER: ati-host.net, aticdn.net, xiti.com
 ! https://whotracks.me/trackers/at_internet.html
