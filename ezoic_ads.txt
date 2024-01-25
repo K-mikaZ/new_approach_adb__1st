@@ -8,6 +8,8 @@
 
 ! 2024-01-25 Block: https://better.fyi/trackers/ezoic.net
 ||ezoic.net$third-party
+! 2024-01-25 privacy concerns (redundancy with ||ezoic.net$third-party)
+! ||g.ezoic.net/ezqlog?$important
 
 ! 2024-01-25 ~ 01:13:00 - Unbreak - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
 @@||ezoic.net|$~third-party
@@ -17,31 +19,30 @@
 @@||ezoiccdn.com|
 #@#[data-ezsrcset]
 
-! 2024-01-25 privacy concerns
-||g.ezoic.net/ezqlog?$important
-
 ! 2024-01-18 fix because "Tracking JS Blocklist" - [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
 ! filters: ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
 
 ! 2024-01-24 ezoic ads concerns
-/ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
+! 
+/ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 
 ! 2024-01-24 CSS filtering
 ! ##[data-ez-ph-id]
-! ##[id|="ez-video"]
-! ##[class|="ez-video"]
-! ##[id|="ezoic"]
-! ##[class|="ezoic"]
-! ##[id|="ezoic-pub"]
-! ##[id*="ezmob"]
 ! ##[ezaw][ezah]
-! ##.ezo_ad
-! ##.ezoic-ad
-! ##.ezmob
+##[id|="ez-video"]
+##[class|="ez-video"]
+##[id|="ezoic"]
+##[class|="ezoic"]
+##[id|="ezoic-pub"]
+##[id*="ezmob"]
+##.ezo_ad
+##.ezoic-ad
+##.ezmob
 ! 2024-01-24 ~ 01:13:00 [ silentinstallhq.com ](https://silentinstallhq.com/)
-*#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
+! *#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
+*#$#:where([data-ez-ph-id],[ezaw][ezah]) { display:none!important;visibility:hidden!important; }
 
 ! < /end ezoic ads >
