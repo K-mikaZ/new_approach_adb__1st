@@ -71,8 +71,9 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! ... <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
 ! https://www.reddit.com/r/uBlockOrigin/comments/a8d5jb/comment/ec9z3if/
-||music.youtube.com^$csp=worker-src 'none'
-||www.youtube.com^$csp=worker-src 'none'
+! BAD: youtube's csp rules block loading site on vivaldi browser
+! ||music.youtube.com^$csp=worker-src 'none'
+! ||www.youtube.com^$csp=worker-src 'none'
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 ! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
