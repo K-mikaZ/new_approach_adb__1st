@@ -284,11 +284,13 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ##div[data-hbdbrk-parent="true"]
 ##div[data-actirise-slot]
 !! ----[ EZOIC ADS ]-----------------------------------------------------------
-!! Because some use ezoic for host images (not always ads)
+! 2024-01-23 Because some use ezoic for host images (not always ads)
 @@||ezoic.net|
 @@||ezoiccdn.com|
 #@#[data-ezsrcset]
-!! ezoic ads concerns
+! 2024-01-23 privacy concerns
+||g.ezoic.net/ezqlog?$important
+! 2024-01-23 ezoic ads concerns
 /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
