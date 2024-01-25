@@ -292,9 +292,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
-! ##[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob
+! ##[data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob
 ! 2024-01-24 ~ 01:13:00 [ silentinstallhq.com ](https://silentinstallhq.com/)
-*#$#:where([id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
+*#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
 
 huffingtonpost.fr##[class="before-text "]
 
