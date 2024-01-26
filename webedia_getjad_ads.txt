@@ -62,7 +62,7 @@
 
 ! 2024-01-24 [ www.750g.com ]
 www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
-/[Nn]ewsletter/$domain=www.750g.com
+/[Nn]ewslet{2}er/$domain=www.750g.com
 
 ! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
