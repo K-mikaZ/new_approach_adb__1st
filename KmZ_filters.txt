@@ -1285,7 +1285,6 @@ stream-serie.net#$##option-1{height:100%}
 ://statscollector.
 ||websimages.com/*/stats/collector.js
 /amp-analytics-$important
-||static.cloudflareinsights.com^$important
 ||slgnt.eu$important,domain=~selligent.com|~emsecure.net|~slgnt.eu|~slgnt.us
 ||grapeshot.co.uk$important,third-party
 ||trustcommander.$important
