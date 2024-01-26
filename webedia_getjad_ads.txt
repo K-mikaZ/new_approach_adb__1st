@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 63358FB1D3088E996CFD7B100D9C5E4BE72A1F14E5889C34629689174E86CC4D
+! Checksum: CB610494538F06BC9996A3C57464872B5EB27DFFBAE7ACC1F017AD775CEE0858
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -57,7 +57,7 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 
 ! 2024-01-26 ~ 10:41:37 Fix because: Easyprivacy list
 ! redirect to AMP (Accelerated Mobile Pages) if navigator.userAgent.indexOf('Android')>=0, see <https://static1.webedia.fr/js/gs.js>
-||webedia.fr/js/gs.js$badilter
+||webedia.fr/js/gs.js$badfilter
 !#if (!env_mobile)
 ||webedia.*/gs.js
 !#endif
