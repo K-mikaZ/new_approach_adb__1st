@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 5BE648E1D0FB77B2C16673973B1753C348F739563398EADAD62BB64964EEACAD
+! Checksum: FE2BD6839630B69F3EDA06A2923751C64C1FC0B94B9CB7004F3019C8E39A2836
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
 ! Last modified: Fri, 26 Jan 2024 08:10:29 +0100
 ! Expires: 5 days
@@ -8,23 +8,13 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
 !
-!
-!
-!-------------------------------------------------------------------------------!
-!------------------ General JS API ---------------------------------------------!
-!-------------------------------------------------------------------------------!
-! JS API START
-! #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
-! JS API FINISH
-
-
 ! ======= COSMETIC =======
 
 
 ! ======= MISC =======
 
 !#if adguard
-6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
+! 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
 !! break site loading
 ! 6play.fr#@%#(function(){let callCounter=0;const nativeJSONParse=JSON.parse;const handler={apply(){callCounter++;const obj=Reflect.apply(...arguments);if(callCounter<=10){if(obj.hasOwnProperty('appName')){obj.applaunch.data.player.features.ad.enabled=false;obj.applaunch.data.player.features.ad.dai.enabled=false;}}else{JSON.parse=nativeJSONParse;}return obj;}};JSON.parse=new Proxy(JSON.parse,handler);})();
 !#endif
@@ -317,10 +307,6 @@ designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 ||popmonetizer.net^$important
 ||jpcuthdkmuonwc.com^$third-party
 ||duimspruer.life^
-! /\?(op\=([\w]+))(\&(file\_code\=[^\n]{6,}))?(\&hash\=[^\n]{6,})?(\&(embed\=\d)(\&adb\=\d))?/$xmlhttprequest,~third-party,match-case,important
-/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,match-case,important
-/(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
-/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
 ! /\/offline(\/|\.htm(l)?)?/$xmlhttprequest,~third-party
 twitter.com##div[data-testid="trend"]
@@ -1753,12 +1739,10 @@ stream-serie.net#$##option-1{height:100%}
 voirseries.*#@#.adsBox
 @@||trustarc.com^
 @@||turner.com^
-/pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
+! /pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
-!! ||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,important,redirect-rule=nooptext
-!! ||securepubads.g.doubleclick.net/pagead/$xmlhttprequest,redirect-rule=empty
 ||securepubads.g.doubleclick.net/pagead/ppub_config?$xmlhttprequest,redirect-rule=noop.txt,important
 @@/manifest.json$other,domain=cloud.google.com
 @@||gstatic.com^$script,domain=cloud.google.com
@@ -1802,7 +1786,7 @@ voirseries.*#@#.adsBox
 @@||fvs.io
 @@||streamroot.io^
 @@/videojs-hlsjs-plugin/
-@@/((allvid)|(d(o{2}d(stream)?))|(f(ilmlecteur|eurl)|(gounlimited)|(h(d(s(lecteur))))|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid))|(re\.zu\-lien))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|udeo)))\.(.{2,})/$ghide
+@@/((allvid)|(d(o{2,}d(stream)?))|(f(ilmlecteur|eurl)|(gounlimited)|(h(d(s(lecteur))))|(ib{2})|(jawcloud)|(opsktp)|(p(laytovid))|(re\.zu\-lien))|(u(p(to(box|stream)|vid)|qload))|([v|w](i(d(eobin|oza|to[do]{2}))|udeo)))\.(.{2,})/$generichide
 @@||bidzen.$ghide
 @@||mystream.$ghide
 @@||mstream.$ghide
@@ -1811,17 +1795,9 @@ voirseries.*#@#.adsBox
 @@||videodelivery.$ghide
 @@||vidzstore.$ghide
 @@||netflix.com$ghide
-@@*$ghide,domain=femax20.com|fembed.com
 @@||fembed.*$subdocument
-! @@||hqq.$inline-script
-! @@||hqq.$ghide
-! @@||netu.$inline-script
-! @@||netu.$ghide
-! @@||vizplay.$inline-script
-@@||vizplay.$ghide
-! @@||waaw.$inline-script
-! @@||waaw.$ghide
-@@*$ghide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
+@@$generichide,domain=doods.*|doooods.*|embedv.net|femax20.*|fembed.*|vizplay.*
+@@$generichide,domain=aparat.cam|clipwatching.com|core1player.com|dood.to|evoload.io|feurl.com|fsimg.info|gcloud.live|ggsplayer.xyz|gounlimited.to|hdslecteur.xyz|jetload.net|mg-play.info|mixdrop.to|play.hydracdn.network|protonvideo.to|secvideo1.online|streamz.vg|uptostream.com|upvid.co|uqload.com|vidfast.co|vidlox.me|vidoza.net|vidtobo.com|vidtodo.com|vudeo.net|youdbox.com
 #@#[src*="://consent.google."]
 #@#+js(acis, atob, decodeURIComponent)
 #@#+js(abort-on-property-read, __cmpGdprAppliesGlobally)
@@ -3527,19 +3503,18 @@ accounts.google.com/gsi/iframe$badfilter
 /ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}/$script,xmlhttprequest,third-party,domain=~amazon.com
 /ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party
 /ht{2}ps?:\/{2}\S+\/1clkn\/\d+/$important
-!! /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
-!! /^ht{2}ps?:\/{2}[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 /ht{2}ps?:\/{2}\S+\/script\/cdn\.js/$third-party
-/(?:.+)\?o{2}\=\d/
 /(?:.+)\/[\da-f]{32}\/invoke\.js/$script,important
-!! ||*/cdn-cgi/apps/head/*$script,~third-party,important
 /^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,important
-!! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
+! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
 /ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}/$script,~third-party
-!! ads concerns
+! ads concerns
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party
-!! ||voirseries.*/_scripts.js|
+! e.g. ||voirseries.*/_scripts.js|
 /ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party
+/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,important
+/(?:.+)\?o{2}\=\d/$xmlhttprequest,third-party,important
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party
 
 
 
