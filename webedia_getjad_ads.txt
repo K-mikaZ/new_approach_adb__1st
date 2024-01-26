@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: A47417C8821FD9EEDAC805F803700DB3B4619545F92448C079019125D8BA64E8
+! Checksum: D86CD971D129741C11BC9749E531F7B5ADC3A4DECCB8DC97D809EF2FEC8B7B45
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -61,7 +61,9 @@
 ! Filtering Per sites
 
 ! 2024-01-24 [ www.750g.com ]
-www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
+! www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
+! More globally
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 
 ! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
