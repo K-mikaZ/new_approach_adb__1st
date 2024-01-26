@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 81B9D1C7496E1D51397C19D51E0420130067CECEA4E1A8A1251B2B65802EC66C
+! Checksum: 7BB649D4AC10DF1303216BCABF76A5A0E4131665AFBAB4F6B6074EBC97A3FD1B
 ! Title: Ezoic ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/ezoic_ads.txt
