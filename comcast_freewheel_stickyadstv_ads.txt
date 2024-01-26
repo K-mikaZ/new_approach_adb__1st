@@ -1,11 +1,11 @@
 [uBlock Origin; Adguard]
-! Checksum: F1D317FB4AA150D0BE23CC96546DB422
+! Checksum: 22A91D746349E5D8C47B1B3283DED1FD
 ! Title: Comcast ads - by K-mik@Z
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/comcast_freewheel_stickyadstv_ads.txt
 ! Description: |
-!   OPERATES UNDER: fwmrm.net, stickyadstv.com <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
-!   Critical to the functionality of some website.
+!   OPERATES UNDER: stickyadstv.com, fwmrm.net (Critical to the functionality of some website.)
+!   <https://www.google.com/search?q=%22owned+by+Comcast%22+site%3Awhotracks.me>
 !
 ! < start comcast's ad >
 
