@@ -1883,9 +1883,6 @@ streamroot.io$script,important,badfilter
 ||videoplaza.tv^$xmlhttprequest,third-party,badfilter
 ||videoplaza.tv^$image,third-party,badfilter
 @@||videoplaza.tv^
-||cookielaw.org^$third-party,badfilter
-||cookielaw.org/scripttemplates$script,domain=~rockpapershotgun.com|~usgamer.net|~rtlxl.nl|~eurogamer.net|~zdnet.com|~eurogamer.pl|~vg247.com,badfilter
-@@||cookielaw.org^
 ||wemfbox.ch^$badfilter
 ||wemfbox.ch^$third-party,badfilter
 ||wt-eu02.net^$badfilter
