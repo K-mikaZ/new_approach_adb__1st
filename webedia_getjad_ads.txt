@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: D86CD971D129741C11BC9749E531F7B5ADC3A4DECCB8DC97D809EF2FEC8B7B45
+! Checksum: EB975A7869E7B0A26145D17B109DB69D8A96181B260C6744FFEF4C27235310C7
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -34,6 +34,8 @@
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
+! 2024-01-24 Fix: Remove placeholders [ www.750g.com ](https://www.750g.com/excellentissime-goutez-le-dakgangjeong-une-recette-coreenne-de-poulet-frit-que-nos-lecteurs-ont-notee-55-a36370.htm)
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 ! [to confirm]
 ##[class~="webedia" i]
 
@@ -59,11 +61,6 @@
 ||storage.googleapis.com/fledge-tests/otToken.js$important
 
 ! Filtering Per sites
-
-! 2024-01-24 [ www.750g.com ]
-! www.750g.com##[class*="sticky"]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
-! More globally
-##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 
 ! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
