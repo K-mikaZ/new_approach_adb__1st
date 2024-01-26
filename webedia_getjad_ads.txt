@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 04DDC52FA5804E11F502A41959FC40D35DA80E1568BCE3AF4C18347E617D7F6F
+! Checksum: 1F9A49C3E158B00A17AD6832021BC36FEA58CB2D896F6E8AD1A53FF29DB02338
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -39,17 +39,28 @@
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not(:has(>.ads-pholder))
 ! [to confirm]
 ##[class~="webedia" i]
+! Filtering Per sites
+! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
+! 2024-01-26 ~ 12:42:26 [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
+! fix: force install addon
+www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal"])
+! 2024-01-26 ~ 10:41:37 [ www.750g.com ](https://www.750g.com/la-meilleure-facon-de-faire-une-fondue-savoyarde-r208187.htm)
+/[Nn]ewslet{2}er/$domain=www.750g.com
 
-! 2024-01-23 Tracking concerns
+! 2024-01-23 Tracking/Privacy concerns
 ||bpt.webedia-group.com^
+||connect.over-blog.com/ping/
+
+! 2024-01-26 ~ 12:42:26 Ads concerns [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
+||assets.over-blog-kiwi.com/*/blog/*/build/ads.$script
 
 ! 2024-01-24 [navigator.userAgent.indexOf('Android')>=0 ](https://static1.webedia.fr/js/gs.js)
-!#if (env_mobile)
-||webedia.fr/js/gs.js
+!#if (!env_mobile)
+||webedia.*/gs.js
 !#endif
 
-! 2024-01-24 Sometimes appears, sometimes not.
-! Fallbacks for getjan.io libraries use for set window.jad Config and ads Mapping. Seen in Firefox (e.g. site:www.allocine.fr)
+! 2024-01-24 Sometimes appears, sometimes not. Seen in Firefox (e.g. site:www.allocine.fr)
 /\S+\/{2}as{2}ets(\.\w+){2}\/js\/website\/script[-]03\.[\d\w]{15,}(\.min)?\.js/$~third-party,redirect=noop.js
 
 ! 2024-01-24 Misc
@@ -61,10 +72,6 @@
 !! found on allocine.fr : base64 content of otToken => "feature":"PrivacySandboxAdsAPIs"
 ||storage.googleapis.com/fledge-tests/otToken.js$important
 
-! Filtering Per sites
-
-! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
 ! 2024-01-24 Privacy concerns
 /\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 ! 2024-01-24 Try fixing delay in the video player
