@@ -3857,8 +3857,10 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||ads.youtube.com|$~third-party
 @@||adssettings.google.com|$~third-party
 ! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
-||marketingplatform.google.com^$third-party
+@@||googleanalytics.com|$~third-party
 @@||marketingplatform.google.com|$~third-party
+||googleanalytics.com^$third-party
+||marketingplatform.google.com^$third-party
 ! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
 ! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
 @@||media-amazon.com/images/I/*.js$all
