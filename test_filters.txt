@@ -57,7 +57,6 @@
 *#$#:is([class~="ads-core-placer"],[class~="ad-placeholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox),[class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 ! www.750g.com (is ads-pholder only for Webedia Group ?)
 ##[id|="ads-pholder"]
-##[id^="ads-pholder"]
 ##.ads-pholder
 ! ------------------------
 ##div:is([class~="containerAds"],[class*="coreads_"])
@@ -274,8 +273,6 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ##[class|="ad-display"]
 ##[class~="google-ads"]
 ##[class~="googleads"]
-! ##div[class~="pub"]
-! ##div[id~="pub"]
 ###pub
 ##.afs_ads
 !! ----[ ACTIRISE ADS ]-----------------------------------------------------------
@@ -289,4 +286,4 @@ huffingtonpost.fr##[class="before-text "]
 
 ! 2024-01-23 https://www.malekal.com
 ! www.malekal.com##.Here
-www.malekal.com##div:has(>div:has(> [class*="detect"][class*="alert"]))
+www.malekal.com##div:has(> div:has(> [class*="detect"][class*="alert"]))
