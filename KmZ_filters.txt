@@ -1315,6 +1315,8 @@ stream-serie.net#$##option-1{height:100%}
 ||perf.cdnads.com/perf.gif$image
 ! Greenbids - Advertise Better
 ||greenbids.ai^
+! googletraveladservices - https://whotracks.me/trackers/google_travel_adds.html
+||googletraveladservices.com^
 ||3lift.com^$third-party
 ||4wnet.com^$third-party
 ||ad-srv.net^$third-party
