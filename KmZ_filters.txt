@@ -290,15 +290,8 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 @@||youtube.com$removeparam=gl
 @@||youtube.com$removeparam=hl
 @@||consent.youtube.com^
-||ads.youtube.com^$badfilter
-@@||ads.youtube.com$generichide
 &lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 &frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-! /([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-! /generate_204$xmlhttprequest,domain=youtube.com
-! ||youtube.com/*_204?$~xmlhttprequest
-! /generate_204$image,other,script
-! /gen_204?$image,script
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
@@ -3791,13 +3784,86 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 
 ! ======[ UNBREAK ]=====================================================
+www.youtube.com#@#.opened
+youtube.com#@#.opened:remove()
+youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
+www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 ! 2024-01-18 avoid blocking [ forum.newrelic.com ]
 @@||newrelic.com|$~third-party
 ||newrelic.com^$important,badfilter
 ||newrelic.com^$third-party
-! 2024-01-25 avoid blocking [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
+! 2024-01-18 unbreak [ mediavine.com ](https://www.mediavine.com/)
+! mediavine.com unlock the site itself
+@@||mediavine.com|$~third-party
+!  2024-01-18 unbreak [ developers.abtasty.com ](https://developers.abtasty.com/docs/tag/tag-cookies)
+||abtasty.com^$badfilter
+||abtasty.com^$third-party
+! 2024-01-18 fix for [ Peter Lowe’s Ad and tracking server list ]
+!  2024-01-18 prebid.org - unlock the site itself
+@@||prebid.org|$~third-party
+! 2024-01-20 unlock loading https://fontsaga.com/font-display-swap/
+@@||ezoic.net|$~third-party
+@@||ezoic.com|$~third-party
+@@||ezoiccdn.com|
+! 2024-01-18 fix for "Tracking JS Blocklist" https://fontsaga.com/font-display-swap/
+! ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
+@@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
+! unlock some players loading
+@@||jwpcdn.com/player/*/jwplayer.core.controls.js$all
+! 2024-01-18 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock hqq.(to|tv) loading on https://univers-animes.club
+@@||storage.googleapis.com/loadermain.appspot.com/main.js$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock player loading https://vimeo.com
+@@||vimeocdn.com/js_opt/global/player_manager_*.js$all
+@@||vimeo.com/api/player.js$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock 3d embed player instagram.com
+@@||instagram.com/embed.js$all
+@@||instagram.com/*/embeds.js$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock player loading https://www.750g.com/est-ce-une-bonne-idee-de-manger-de-la-soupe-pour-diner-tous-les-jours-a36297.htm
+! [ /dmp.infopack.*.js, /dmp.jq_flight.*.js, /dmp.photon_app.*.js, /dmp.photon_vendor.*.js, /pes.pip.*.js ]
+@@||dmcdn.net/playerv5/*$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock search results on https://gibiru.com
+@@||google.com/cse/static/element/*/cse_element__*.js$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+! unlock img loading https://www.expressvpn.com/blog/best-private-search-engines/
+@@||pcdn.co|$all
+! 2024-01-21 [fr][ca]: AdGuard Français ".fr/*/ads/$from=~lemde.fr|~sellplus.fr|~yoopies.fr"
+! unbreak https://www.dcode.fr/regular-expression-simplifier
+! https://github.com/AdguardTeam/AdguardFilters/issues/108381
+dcode.fr##+js(set-constant, dCode.adBlock, false)
+dcode.fr##+js(noeval-if, google_ad_client)
+dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
+! 2024-01-19 Fuck Fuckadblock: Mining | fix for Beatbump Instances: https://github.com/snuffyDev/Beatbump#instances
+@@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,domain=beatbump.io|bb.vern.cc|btb.frail.duckdns.org|bb.ggtyler.dev|bb.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion|vern6inmbjzqpecx4kpkq5sln3cqqrfuxfzh4au3tpxbsfbwbnta.b32.i2p
+! 2024-01-19 Fuck Fuckadblock: Mining | fix for Hyperpipe Instances: https://hyperpipe.codeberg.page/
+@@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,domain=hyperpipe.surge.sh|hyperpipe.esmailelbob.xyz|listen.whatever.social|music.adminforge.de|music.pfcd.me|listen.whateveritworks.org|hyperpipe.frontendfriendly.xyz|hyperpipe.drgns.space|hyperpipe.projectsegfau.lt|hp.ggtyler.dev|hyperpipe.lunar.icu|hp.iqbalrifai.eu.org|hyperpipe.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion
+! for set ad prefs https://www.amazon.com/adprefs
+@@||s.amazon-adsystem.com|$~third-party
+! because of DuckDuckGo Tracker Radar <https://raw.githubusercontent.com/blokadaorg/landing-github-pages/master/blocklists/ddgtrackerradar/standard/hosts.txt>
+@@||i.doodcdn.co|
+||edge.gycpi.b.yahoodns.net^$badfilter
+@@||edge.gycpi.b.yahoodns.net|
+||static1.howtogeekimages.com^$badfilter
+@@||static1.howtogeekimages.com|
+! use for google ima
+@@||2mdn.net/instream/video/client.js$all
+! 2024-01-25 Personalized ad settings - unlock the site itself (ads.youtube.com redirect to adssettings.google.com)
+||ads.youtube.com^$third-party
+||adssettings.google.com^$third-party
+@@||ads.youtube.com|$~third-party
+@@||adssettings.google.com|$~third-party
+! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
 ||marketingplatform.google.com^$third-party
 @@||marketingplatform.google.com|$~third-party
+! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
+! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
+@@||media-amazon.com/images/I/*.js$all
+! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
+@@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
