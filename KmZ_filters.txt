@@ -3342,7 +3342,8 @@ $cookie=_uid
 ||analytics.tiktok.com^
 ||redditstatic.com/ads/pixel.js^
 ||cdn.speedcurve.com^
-||marketingplatform.google.com^
+||marketingplatform.google.com^$third-party
+@@||marketingplatform.google.com|$~third-party
 ||metrics.mzstatic.com^
 ||metrics.icloud.com^
 ||supportmetrics.apple.com^
