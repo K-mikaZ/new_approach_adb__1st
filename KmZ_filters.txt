@@ -3579,7 +3579,7 @@ accounts.google.com/gsi/iframe$badfilter
 ||astatic.ccmbg.com/*/prebid/prebid.*.js$redirect-rule=prebid
 
 
-/(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party
+/(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party,domain=~github.com|~githubusercontent.com
 /(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
