@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 03561DCDB0E7CF6BB402A99BBC7FA053
+! Checksum: 8869F51636024C2BB635712E393BE239966C605769FC503A499B689A93E3F23C
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
 ! Last modified: Fri, 26 Jan 2024 06:54:26 +0100
 ! Expires: 5 days
