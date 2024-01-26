@@ -631,8 +631,7 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 ! ======[ dailymotion.com ]=====================================================
 
 @@||dailymotion.com^$subdocument
-||dailymotion.co*/log*/video*$redirect=noop.txt,important
-!! @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=geo.dailymotion.com,important
+||dailymotion.*/log*/video*$redirect=noop.txt,important
 @@||dmcdn.net|
 ||dmcdn.net/*?explicit=0$image,important,redirect=1x1.gif
 ||dmxleo.com^$badfilter
@@ -640,8 +639,6 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 ||dailymotion.com/cdn/$media,script,badfilter
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
-!! dailymotion.com###buzzpack_play_button,#mc_Middle,.dmco_box.column.span-4.last.right_content.box_right.masscast_middle_box
-!! @@||pmdstatic.net^$important
 
 ! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.advertising.*.js)
 ||dmcdn.net/*/dmp.advertising.*.js$script,important,redirect=noop.js
@@ -653,7 +650,6 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 !! tool that can help: https://iframely.com/domains/dailymotion
 !! tracker:https://whotracks.me/trackers/hubvisor.io.html
 www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_DISABLE_HUBVISOR, true)
-!! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __GKS__.NEON_ENABLE_ONLY_HUBVISOR_MIDROLL, true)
 
 !! test on: https://geo.dailymotion.com/player/x1hyz.html?video=x8jtytz&mute=false&autoplay=false
 !! and https://www.dailymotion.com/embed?api=postMessage&apimode=json&app=com.dailymotion.neon&autoplay-mute=true&client_type=website&collections-action=trigger_event&collections-enable=fullscreen_only&endscreen-enable=false&info=false&like-action=trigger_event&like-enable=fullscreen_only&queue-enable=false&sharing-action=trigger_event&sharing-enable=fullscreen_only&ui-logo=false&watchlater-action=trigger_event&watchlater-enable=fullscreen_only&dmTs=267529
@@ -718,10 +714,8 @@ ultimate-catch.eu##.single.small > [href*=":"]
 irdoz.com,ivmox.com,eyobim.com,crebya.com,jexoom.com###footer
 @@||gelf.m6web.fr^$xmlhttprequest,domain=6play.fr
 @@||pc.middleware.6play.fr^$xmlhttprequest,domain=6play.fr
-! ||*$important,third-party,script,domain=6play.fr,redirect-rule=noopjs
-! ||*$important,third-party,xmlhttprequest,domain=6play.fr,redirect-rule=empty
-*$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
-*$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
+$third-party,all,~image,~css,~font,domain=cpasbien.ph|ettvdl.com|ettvcentral.com|gktorrent.io|torrent9.is|torrent9.gg|torrent9.site|torrent9.to|torrent09.uno|torrent9.ac|torrenty.me|oxtorrent.me|oxtorrent.pw
+$popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 
 ! webtor.io concerns
 @@||webtor.io|
