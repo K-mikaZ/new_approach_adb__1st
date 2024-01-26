@@ -3517,34 +3517,34 @@ accounts.google.com/gsi/iframe$badfilter
 
 
 /(\/[B][N][M]){2}\.(.{3})/$match-case
-/ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+/$script,xmlhttprequest,third-party,match-case,important
-/ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party,match-case
-/ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$third-party,important,script,match-case
-/ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}/$third-party,important,script,match-case
-/ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?/$important,script,xmlhttprequest,third-party,match-case
-/ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party,match-case
-/^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$third-party,important,script,match-case
-/ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}/$script,third-party,xmlhttprequest,domain=~amazon.com
-/ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party,match-case
-/ht{2}ps?:\/{2}\S+\/1clkn\/\d+/$script,third-party,match-case,important
+/ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+/$script,xmlhttprequest,third-party
+/ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party
+/ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$script,third-party
+/ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}/$script,third-party
+/ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?/$script,xmlhttprequest,third-party
+/ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
+/^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$script,third-party
+/ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}/$script,xmlhttprequest,third-party,domain=~amazon.com
+/ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party
+/ht{2}ps?:\/{2}\S+\/1clkn\/\d+/$important
 !! /\:\/\/[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 !! /^ht{2}ps?:\/{2}[a-z]{4,12}\.com\/[\w/\-.]{160,}/$subdocument,script,third-party
 /ht{2}ps?:\/{2}\S+\/script\/cdn\.js/$third-party
-/(?:.+)\?o{2}\=1\&(?:.+)/$xmlhttprequest,third-party,important,match-case
-/(?:.+)\/[\da-f]{32}\/invoke\.js/$script,third-party,important,match-case
+/(?:.+)\?o{2}\=\d/
+/(?:.+)\/[\da-f]{32}\/invoke\.js/$script,important
 !! ||*/cdn-cgi/apps/head/*$script,~third-party,important
-/^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,match-case,important
+/^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,important
 !! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
-/ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}/$script,match-case,~third-party
+/ht{2}ps?:\/{2}\S+\.\w+\/z[-]([\d|\w]){6,}/$script,~third-party
 !! ads concerns
-/\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party,match-case
+/\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party
 !! ||voirseries.*/_scripts.js|
-/ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party,match-case
+/ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party
 
 
 
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,match-case,redirect=metrika-yandex-watch
-/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,match-case,redirect=metrika-yandex-tag
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}watch(?:(.+))/$important,script,redirect=metrika-yandex-watch
+/(?:(.+))[\W]{1}metri[c|k]a[\W]{1}tag(?:(.+))/$important,script,redirect=metrika-yandex-tag
 ! ||google-analytics.*/inpage_linkid.js$script,redirect=google-analytics_inpage_linkid.js
 ! ||addthis.*/addthis_widget.js$script,important,redirect=addthis_widget.js
 ! ||amazon-adsystem.*/amzn_ads.js$script,important,redirect=amazon_ads.js
@@ -3582,8 +3582,8 @@ accounts.google.com/gsi/iframe$badfilter
 ||astatic.ccmbg.com/*/prebid/prebid.*.js$redirect-rule=prebid
 
 
-/(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party,match-case
-/(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party,match-case
+/(?:(?:.+((?:[.-_=\/])prebid(?:(?:[.-\/])?)?)))/$xmlhttprequest,third-party
+/(?:[\/])\b[Bb]id\b((\/.+)|(\-request$)|$)/$xmlhttprequest,third-party
 ||smilewanted.com/getuid?source=prebid-server&$subdocument
 ||currency.prebid.org/latest.json$xmlhttprequest,third-party
 ||mediasquare.fr/msq_prebid
