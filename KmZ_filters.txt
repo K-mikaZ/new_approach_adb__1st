@@ -327,7 +327,7 @@ designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
 /(?:.+)\?o{2}\=1/$xmlhttprequest,third-party,match-case,important
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party,match-case
 ||highstream.tv/dl?op=$xmlhttprequest,_,~third-party,important
-/\/offline(\/|\.htm(l)?)?/$xmlhttprequest,~third-party
+! /\/offline(\/|\.htm(l)?)?/$xmlhttprequest,~third-party
 twitter.com##div[data-testid="trend"]
 twitter.com##div[aria-label^="Timeline"] > div[style] > div[style] > div:has(> div h2[role="heading"] span:contains(Trends))
 twitter.com##a[href^="/i/trends"]
@@ -1741,8 +1741,6 @@ stream-serie.net#$##option-1{height:100%}
 ||smaato.net^$subdocument
 ||ivitrack.com^$subdocument
 ||pghub.io^$subdocument
-||google.*$image,redirect-rule=1x1.gif
-||youtu*.*$image,redirect-rule=1x1.gif
 ||crwdcntrl.net$image,redirect-rule=1x1.gif
 ||*.ru/watch/*$image,redirect-rule=1x1.gif
 ||yadro.ru$image,redirect-rule=1x1.gif
