@@ -3342,8 +3342,6 @@ $cookie=_uid
 ||analytics.tiktok.com^
 ||redditstatic.com/ads/pixel.js^
 ||cdn.speedcurve.com^
-||marketingplatform.google.com^$third-party
-@@||marketingplatform.google.com|$~third-party
 ||metrics.mzstatic.com^
 ||metrics.icloud.com^
 ||supportmetrics.apple.com^
@@ -3772,32 +3770,34 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !! !#endif
 
 
-!! UNBREAK
-! 2024-01-18 avoid blocking forum.newrelic.com
-@@||newrelic.com|$~third-party
-||newrelic.com^$important,badfilter
-||newrelic.com^$third-party
-
-
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
 !#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
 !#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
-
-
-! ======[ EOF ]==========================================================
-
 !#include ezoic_ads.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include webedia_getjad_ads.txt
+
+
+! ======[ EOF ]==========================================================
 
 !! tracker categories: Essential  -  not only trackers
 !! Includes tag managers, privacy notices, and technologies that are critical to the functionality of a website
 !! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
 
 @@||cdn.tagcommander.com^*/tc_*.js
+
+
+! ======[ UNBREAK ]=====================================================
+! 2024-01-18 avoid blocking [ forum.newrelic.com ]
+@@||newrelic.com|$~third-party
+||newrelic.com^$important,badfilter
+||newrelic.com^$third-party
+! 2024-01-25 avoid blocking [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
+||marketingplatform.google.com^$third-party
+@@||marketingplatform.google.com|$~third-party
 
 ||datadoghq.com^$third-party,badfilter
 ||datadoghq.com$third-party,badfilter
