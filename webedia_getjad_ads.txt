@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 1F9A49C3E158B00A17AD6832021BC36FEA58CB2D896F6E8AD1A53FF29DB02338
+! Checksum: 63358FB1D3088E996CFD7B100D9C5E4BE72A1F14E5889C34629689174E86CC4D
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -55,7 +55,9 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 ! 2024-01-26 ~ 12:42:26 Ads concerns [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
 ||assets.over-blog-kiwi.com/*/blog/*/build/ads.$script
 
-! 2024-01-24 [navigator.userAgent.indexOf('Android')>=0 ](https://static1.webedia.fr/js/gs.js)
+! 2024-01-26 ~ 10:41:37 Fix because: Easyprivacy list
+! redirect to AMP (Accelerated Mobile Pages) if navigator.userAgent.indexOf('Android')>=0, see <https://static1.webedia.fr/js/gs.js>
+||webedia.fr/js/gs.js$badilter
 !#if (!env_mobile)
 ||webedia.*/gs.js
 !#endif
