@@ -33,7 +33,7 @@
 ! 2024-01-24 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
-##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"])
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not(:has(>.ads-pholder))
 ! 2024-01-24 Fix: Remove placeholders [ www.750g.com ](https://www.750g.com/excellentissime-goutez-le-dakgangjeong-une-recette-coreenne-de-poulet-frit-que-nos-lecteurs-ont-notee-55-a36370.htm)
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
 ! [to confirm]
