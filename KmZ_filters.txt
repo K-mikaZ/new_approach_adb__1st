@@ -1314,8 +1314,11 @@ stream-serie.net#$##option-1{height:100%}
 |http*://a.a^
 ||perf.cdnads.com/perf.gif$image
 ! Greenbids - Advertise Better
-||greenbids.ai^
-! googletraveladservices - https://whotracks.me/trackers/google_travel_adds.html
+||greenbids.ai^$third-party
+@@||greenbids.ai|$~third-party
+! https://whotracks.me/trackers/doubleclick.html - OPERATES UNDER: 2mdn.net, doubleclick.net, invitemedia.com
+||invitemedia.com^
+! https://whotracks.me/trackers/google_travel_adds.html - OPERATES UNDER: googletraveladservices.com
 ||googletraveladservices.com^
 ||3lift.com^$third-party
 ||4wnet.com^$third-party
