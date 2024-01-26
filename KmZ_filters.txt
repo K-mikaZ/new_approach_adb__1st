@@ -3875,7 +3875,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||marketingplatform.google.com^$third-party
 ! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
 ! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
-@@||media-amazon.com/images/I/*.js$all
+! @@||media-amazon.com/images/I/*.js$all
 @@||media-amazon.com/images/$all,domain=amazon.*
 ! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
