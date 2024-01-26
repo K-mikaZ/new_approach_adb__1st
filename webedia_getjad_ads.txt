@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: CB610494538F06BC9996A3C57464872B5EB27DFFBAE7ACC1F017AD775CEE0858
+! Checksum: 7A5B9DA9DF75D27977D753FDE735A376043D55AB773EC8FC452C5B6D47D6AAFE
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
