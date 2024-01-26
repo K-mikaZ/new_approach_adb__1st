@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: EB975A7869E7B0A26145D17B109DB69D8A96181B260C6744FFEF4C27235310C7
+! Checksum: 04DDC52FA5804E11F502A41959FC40D35DA80E1568BCE3AF4C18347E617D7F6F
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -33,9 +33,10 @@
 ! 2024-01-24 CSS Filtering (useful with Easylist)
 ! seen in Easylist: [id^="dfp_"], [class^="dfp_" i], [class="dfpad" i], [class="dfpads" i], [class^="dfpad-" i], [class^="dfpads-" i], [class^="dfpslot" i]
 ##[id^="dfp-"]
-##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not(:has(>.ads-pholder))
 ! 2024-01-24 Fix: Remove placeholders [ www.750g.com ](https://www.750g.com/excellentissime-goutez-le-dakgangjeong-une-recette-coreenne-de-poulet-frit-que-nos-lecteurs-ont-notee-55-a36370.htm)
 ##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):has(>.ads-pholder)
+! avoid filter twice
+##[class]:is([class$="-atf"],[class$="-btf"],[class$="-mtf"]):not(:has(>.ads-pholder))
 ! [to confirm]
 ##[class~="webedia" i]
 
