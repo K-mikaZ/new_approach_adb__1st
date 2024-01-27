@@ -1,4 +1,4 @@
-[uBlock Origin; Adguard]
+!
 ! Checksum: 0598F32700EDDE41BDA633A175E3157272F3D552BDD611B935C42B69CAA3111A
 ! Title: [/!\][test][beta] "Rules in test" - by K-mik@Z
 ! Last modified: Thu, 25 Jan 2024 00:16:03 +0100
