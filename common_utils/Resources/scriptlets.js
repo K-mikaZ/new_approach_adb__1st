@@ -6640,8 +6640,9 @@ function noopFunc() {};
  * @see {@link https://www.w3.org/TR/REC-xml/#NT-EmptyElemTag}
  **/
 
+// For compatibility reason, use AdBreak. Fix for some players.
 noopvmap-1.0 text/xml
-<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"/>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak/></vmap:VMAP>
 
 noopvast-1.0 text/xml
 <VAST version="1.0"/>
