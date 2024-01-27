@@ -2655,7 +2655,6 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ! 6play.fr##+js(no-xhr-if, /\.advertisement\.display\.error\.adblock/, true)
 !
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
-@@/cookieconsent.$script,~third-party
 ! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
 @@||api.company-target.com^$xmlhttprequest,domain=degreed.com
 !#if adguard
@@ -2976,6 +2975,10 @@ dood.*#$#body { color: whitesmoke!important; }
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
 
 
+!! /jquery.cookie.js$~third-party
+! /cookienotice.js$~third-party
+||*/cookie.js?domain=*&callback=*&client=ca-pub-*$third-party,redirect=noop.txt,important
+
 !#if adguard
 
 !! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
@@ -2999,10 +3002,6 @@ dood.*#$#body { color: whitesmoke!important; }
 
 !! ||howtogeek.com^$cookie=unauthenicatedArticleLimitReached
 ||howtogeek.com^$cookie=/LimitReached/
-
-!! /jquery.cookie.js$~third-party
-/cookienotice.js$~third-party
-||*/cookie.js?domain=*&callback=*&client=ca-pub-*$third-party,redirect=noop.txt,important
 
 !! ------------------------------------------------------
 
