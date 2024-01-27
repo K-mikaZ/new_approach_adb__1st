@@ -6631,25 +6631,29 @@ function noopFunc() {};
 
 /**
  * VMAP -VPAID -VAST concern
+ * Start-Tags, End-Tags, and Empty-Element Tags:
+ * @see {@link https://www.w3.org/TR/REC-xml/#NT-EmptyElemTag}
+ * @example:
+ * EmptyElemTag ::= '<' Name (S Attribute)* S? '/>'
  **/
 
 noopvmap-1.0 text/xml
 <vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"></vmap:VMAP>
 
 noopvast-1.0 text/xml
-<VAST version="1.0"></VAST>
+<VAST version="1.0"/>
 
 noopvast-2.0 text/xml
-<VAST version="2.0"></VAST>
+<VAST version="2.0"/>
 
 noopvast-3.0 text/xml
-<VAST version="3.0"></VAST>
+<VAST version="3.0"/>
 
 noopvast-4.0 text/xml
-<VAST version="4.0"></VAST>
+<VAST version="4.0"/>
 
 noopvast-4.1 text/xml
-<VAST version="4.1"></VAST>
+<VAST version="4.1"/>
 
 noopvast-4.2 text/xml
-<VAST version="4.2"></VAST>
+<VAST version="4.2"/>
