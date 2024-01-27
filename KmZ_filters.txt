@@ -3604,6 +3604,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||designparty.*/*/vast.js$important
 ||wolfstream.tv/player/*/vast.js$important
 !! /vast.js$domain=designparty.*,wolfstream.tv
+! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
 /^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.](v(ast|paid)[@\-.]){1,2}/$important
 
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
