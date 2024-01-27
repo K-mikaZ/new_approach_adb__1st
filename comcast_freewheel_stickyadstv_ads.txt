@@ -51,17 +51,18 @@
 @@||v.fwmrm.net|
 
 ! 2024-01-23 CSS Filtering
-*#@#.ad-layer
-*#@#div[id|="freewheelAd"]
+#@#.ad-layer
+#@#div[id|="freewheelAd"]
 ! <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
 ! Not WEB-BUG: use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
-*##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
-*##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
+##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"]))
+##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
-||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
+! ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
+@@||v.fwmrm.net/ad/u?
 
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
