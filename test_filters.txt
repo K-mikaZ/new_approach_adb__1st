@@ -174,7 +174,7 @@ mystream.*,mstream.*##[id^="_0."]
 
 ! *##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
 ! *#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
+*##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
 *#$#[id~="adbd"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 
 inspiration-cuisine.fr###tdi_47
