@@ -3244,7 +3244,6 @@ $cookie=_uid
 ||analytics.tiktok.com^$important
 ||speedcurve.com^$important
 ||digidip.net^$important
-||videosprofitnetwork.com^$redirect=empty
 ||q.reyden-x.com^
 ||videosworks.com^
 ||serving.stat-rock.com^
@@ -3713,7 +3712,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||videosworks.com/add.php?$redirect=nooptext
 ||ssp.bidvol.com/vast/$redirect=empty
 ||serv01001.xyz^$redirect=noopvast-3.0
-! ||videosprofitnetwork.com^$redirect=empty
 ||reyden-x.com/*/pre-roll/*$third-party,redirect=noopvast-2.0
 ||lumupu.xyz/vast/?$redirect=noopjson
 ||getpublica.com^$xmlhttprequest,domain=crunchyroll.com,important,redirect=noopvast-2.0
