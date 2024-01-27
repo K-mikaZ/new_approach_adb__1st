@@ -1,6 +1,5 @@
-[uBlock Origin; Adguard]
-! Checksum: 7BB649D4AC10DF1303216BCABF76A5A0E4131665AFBAB4F6B6074EBC97A3FD1B
-! Title: Ezoic ads
+!
+! Checksum: 7BB649D4AC10DF1303216BCABF76A5A0E4131665AFBAB4F6B6074EBC97A3FD1B! Title: Ezoic ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/ezoic_ads.txt
 ! Description: Ezoic (ee-zo-ic) is an official Google partner that uses artificial intelligence to offer personalized ads.
