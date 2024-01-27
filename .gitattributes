@@ -6,11 +6,11 @@
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L230
-[attr]adb             linguist-detectable linguist-language=AdBlock
+[attr]adb             linguist-language=AdBlock linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L4077
-[attr]pandoc          -linguist-detectable linguist-language=Markdown
+[attr]pandoc          linguist-language=Markdown -linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2382
-[attr]gitattributes   -linguist-detectable linguist-language=gitattributes
+[attr]gitattributes   linguist-language=gitattributes -linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
 [attr]js              -linguist-detectable
 
