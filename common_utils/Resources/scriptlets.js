@@ -6632,6 +6632,10 @@ function noopFunc() {};
 /**
  * VMAP -VPAID -VAST concern
  * Start-Tags, End-Tags, and Empty-Element Tags:
+ * Empty-element tags may be used for any element which has no content,
+ * whether or not it is declared using the keyword EMPTY.
+ * For interoperability, the empty-element tag SHOULD be used, and SHOULD only be used,
+ * for elements which are declared EMPTY.
  * @example: EmptyElemTag ::= '<' Name (S Attribute)* S? '/>'
  * @see {@link https://www.w3.org/TR/REC-xml/#NT-EmptyElemTag}
  **/
