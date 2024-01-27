@@ -6632,9 +6632,8 @@ function noopFunc() {};
 /**
  * VMAP -VPAID -VAST concern
  * Start-Tags, End-Tags, and Empty-Element Tags:
+ * @example: EmptyElemTag ::= '<' Name (S Attribute)* S? '/>'
  * @see {@link https://www.w3.org/TR/REC-xml/#NT-EmptyElemTag}
- * @example:
- * EmptyElemTag ::= '<' Name (S Attribute)* S? '/>'
  **/
 
 noopvmap-1.0 text/xml
