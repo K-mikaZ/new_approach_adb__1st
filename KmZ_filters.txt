@@ -794,15 +794,11 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||fc.yahoo.com^$domain=mail.yahoo.com
 ||ybp.yahoo.com^
 ||analytics.yahoo.com^
-! ||gemini.yahoo.com^
 ||geo.query.yahoo.com^
-||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
-! mail.yahoo.com##[rel="noreferrer"][data-test-id][href^="https://beap.gemini.yahoo.com/mbclk?"]
-
-! ||mail.yahoo.com/*/gemini_api/?*&contentType=video*&locale=*
-! ||mail.yahoo.com/*/video_api/getVideos?region=*&site=mail*&locale=*
-/\/\w\/\w+\_api\/(\w+)?\?.+\&locale\=.+/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
+||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
+! e.g "/gemini_api/?*&locale=*" or "/video_api/getVideos?*&locale=*"
+/\/\w\/\w+\_api\/(\w+)?\?.+\&locale\=.+/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 
 mail.protonmail.com##section:has(>.latest-upgrade)
 mail.protonmail.com##section:has(>[target="_blank"])
