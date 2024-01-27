@@ -3585,7 +3585,7 @@ accounts.google.com/gsi/iframe$badfilter
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
 /vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
 ||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
-||*vmap*$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
+||*vmap*$xmlhttprequest,redirect-rule=noop-vmap1.0.xml$domain=~github.com|~githubusercontent.com
 ||/*vmap$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
 /vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
