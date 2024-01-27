@@ -1374,7 +1374,6 @@ stream-serie.net#$##option-1{height:100%}
 ||scoota.co^$third-party
 ||segment.io^$third-party
 ||semasio.net^$third-party
-||sentry.io^$third-party
 ||serving-sys.com^$third-party
 ||sharethis.com^$third-party
 ||skimresources.com^$third-party
