@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: 7A5B9DA9DF75D27977D753FDE735A376043D55AB773EC8FC452C5B6D47D6AAFE
+! Checksum: BD9A8304A51916C2B19D20117397230FD5592381DD8BE842F3CF9028D9F071D5
 ! Title: Webedia Group ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/webedia_getjad_ads.txt
@@ -45,8 +45,6 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-ba
 ! 2024-01-26 ~ 12:42:26 [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
 ! fix: force install addon
 www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal"])
-! 2024-01-26 ~ 10:41:37 [ www.750g.com ](https://www.750g.com/la-meilleure-facon-de-faire-une-fondue-savoyarde-r208187.htm)
-/[Nn]ewslet{2}er/$domain=www.750g.com
 
 ! 2024-01-23 Tracking/Privacy concerns
 ||bpt.webedia-group.com^
