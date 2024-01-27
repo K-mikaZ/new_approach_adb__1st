@@ -1,4 +1,3 @@
-[Adguard]
 !
 ! Title: "User Agent Fixer" - by K-mik@Z
 ! Expires: 1 days
