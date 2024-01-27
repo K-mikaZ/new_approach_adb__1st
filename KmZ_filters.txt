@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Checksum: B57D98FC5E9645D941351E5ED0B18AD47734FDBEBD93DFCE59AD5B8B6F9E899E
+! Checksum: 14CE0D6F7D9CDF07C060D9747C034BEAA3A36BDB2D8C42C7CEFC9D5C441AED33
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
 ! Last modified: Sat, 27 Jan 2024 01:25:37 +0100
 ! Expires: 5 days
@@ -641,9 +641,9 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 @@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 
 ! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.advertising.*.js)
-||dmcdn.net/*/dmp.advertising.*.js$script,important,redirect=noop.js
+||dmcdn.net/*/dmp.advertising.$script,important,redirect=noop.js
 ! 2024-01-24 ~ 06:15:19 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.mediametrie.*.js)
-||dmcdn.net/*/dmp.mediametrie.*.js$script,important,redirect=noop.js
+||dmcdn.net/*/dmp.mediametrie.$script,important,redirect=noop.js
 
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
