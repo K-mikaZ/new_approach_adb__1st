@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
-! Checksum: FE2BD6839630B69F3EDA06A2923751C64C1FC0B94B9CB7004F3019C8E39A2836
+! Checksum: B57D98FC5E9645D941351E5ED0B18AD47734FDBEBD93DFCE59AD5B8B6F9E899E
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Fri, 26 Jan 2024 08:10:29 +0100
+! Last modified: Sat, 27 Jan 2024 01:25:37 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
