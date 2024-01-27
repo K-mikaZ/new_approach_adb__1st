@@ -3723,9 +3723,9 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 ||vast.doubleverify.com/v3/vast?$important,redirect=noopvast-3.0
 ||vast.xpln.tech/vast?$xmlhttprequest,important,redirect=noopvast-2.0
-*.xml?v=2.0&external_subid$redirect-rule=noopvast-2.0,important
-*.xml?v=3.0&external_subid$redirect-rule=noopvast-3.0,important
-*.xml?v=4.0&external_subid$redirect-rule=noopvast-4.0,important
+||franecki.net*.xml?v=2.0&external_subid$redirect=noopvast-2.0,important
+||franecki.net*.xml?v=3.0&external_subid$redirect=noopvast-3.0,important
+||franecki.net*.xml?v=4.0&external_subid$redirect=noopvast-4.0,important
 ||0af2a962b0102942d9a7df351b20be55.com^$redirect=noopvast-2.0,important
 ||vast.playmatic.video^$redirect=noopvast-3.0,important
 ||viewtraff.com/*/vpaid/$redirect=noopvast-3.0,important
