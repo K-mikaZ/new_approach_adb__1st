@@ -195,9 +195,7 @@ bettybossi.ch##.ad-bc.used
 ! cine974.com##:where(div):is([class~="msgPromo"],[class~="cine-div-opti"])
 cine974.com##div:where([class~="msgPromo"],[class~="cine-div-opti"])
 ! cuisinez.telequebec.tv
-##div:where([data-component="Pub"])
-##div:where([class*="outbrain"])
-
+##[data-component="Pub"]
 
 ! -------------------- generic ---------------------
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
