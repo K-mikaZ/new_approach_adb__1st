@@ -5,13 +5,13 @@
 # https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
-# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L230
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L230
 [attr]adb             linguist-detectable linguist-language=AdBlock
-# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3948
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L4077
 [attr]pandoc          -linguist-detectable linguist-language=Markdown
-# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L2330
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2382
 [attr]gitattributes   -linguist-detectable linguist-language=gitattributes
-# https://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L3212
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
 [attr]js              -linguist-detectable
 
 # Set default behaviour to automatically normalize line endings.
