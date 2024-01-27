@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
-! Checksum: EFEC3F322D34726D6CF0EDC35BFA7DD5B144D02565BB9B0770CC991AF269CC0F
+! Checksum: 62A03B5546D6FA38211AE159A0EF0219354EEE70FFD48924B7066083A70E16F9
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sat, 27 Jan 2024 02:02:05 +0100
+! Last modified: Sat, 27 Jan 2024 05:46:57 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -3734,6 +3734,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
 !#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
+!#include newsletters_blocklist.txt
 !#include ezoic_ads.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include webedia_getjad_ads.txt
