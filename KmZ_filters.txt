@@ -1,6 +1,5 @@
-[uBlock Origin; Adguard]
-! Checksum: 62A03B5546D6FA38211AE159A0EF0219354EEE70FFD48924B7066083A70E16F9
-! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
+!
+! Checksum: 62A03B5546D6FA38211AE159A0EF0219354EEE70FFD48924B7066083A70E16F9! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
 ! Last modified: Sat, 27 Jan 2024 05:46:57 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
@@ -8,6 +7,7 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_filters.txt
 ! Description: My first blocking list.
 !
+
 ! ======= COSMETIC =======
 
 
