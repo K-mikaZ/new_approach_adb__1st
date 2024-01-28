@@ -3455,11 +3455,11 @@ accounts.google.com/gsi/iframe$badfilter
 ! [FIX] video players
 @@||content.jwplatform.com/libraries/
 ! live stream on app.molotov.tv
-@@||getpublica.com^$important
+@@||getpublica.com|
 ! break myvi.tv stream
 /modules/ad/*$badfilter
 ||multipulter.com^$important,badfilter
-@@||multipulter.com^$important
+@@||multipulter.com|
 ! ----------------------------------------
 
 ||go-mpulse.net^$third-party
