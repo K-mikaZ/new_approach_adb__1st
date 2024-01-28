@@ -26,16 +26,20 @@
 ! OPERATES UNDER: fwmrm.net, Owned by Comcast: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
-! 2024-01-23 Unbreak - unlock site itself (freewheel.tv redirect to freewheel.com)
+! Unbreak
+! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
+! 2024-01-23 unlock functionalities
+@@||mssl.fwmrm.net/*/AdManager.js
+@@||v.fwmrm.net|
+@@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
 
 ! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
 /npawAdAdapter.$badfilter
 ||fwmrm.net^$~object,third-party,badfilter
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
-@@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
 /^\.fwmrm\.net\^/$badfilter
 ||v.fwmrm.net^$third-party,badfilter
 ||v.fwmrm.net$third-party,badfilter
@@ -45,10 +49,6 @@
 ||fwmrm.net$third-party,badfilter
 ||fwmrm.net^$badfilter
 ||fwmrm.net$badfilter
-
-! 2024-01-23 unlock functionalities
-@@||mssl.fwmrm.net/*/AdManager.js
-@@||v.fwmrm.net|
 
 ! 2024-01-23 CSS Filtering
 ! <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
