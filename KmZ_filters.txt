@@ -631,7 +631,7 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 ! ======[ dailymotion.com ]=====================================================
 
 @@||dailymotion.com^$subdocument
-||dailymotion.*/log*/video*$redirect=noop.txt,important
+! ||dailymotion.*/log*/video*$redirect=noop.txt,important
 @@||dmcdn.net|
 ||dmcdn.net/*?explicit=0$image,important,redirect=1x1.gif
 ||dmxleo.com^$badfilter
