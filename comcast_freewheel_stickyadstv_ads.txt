@@ -61,7 +61,7 @@
 ! #@#div[id|="freewheelAd"]
 ! ##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important)
 
-! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
+! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1"> | remove it ensure compliance with media.autoplay.blocking_policy
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
 
 ! 2024-01-23 Tracking concerns
