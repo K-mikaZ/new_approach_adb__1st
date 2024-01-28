@@ -1,6 +1,5 @@
 !
 ! Title: "User Agent Fixer" - by K-mik@Z
-! Last modified: %timestamp%
 ! Expires: 4 days (update frequency)
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/UserAgentFixer.txt
@@ -12,9 +11,6 @@
 ! ...     https://www.chromium.org/updates/ua-reduction/#applicable-platforms
 ! ...     https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#platform-and-not_platform-hints
 !---------------------------------------------------------------------------------------------!
-
-
-%include new_approach_adb__1st:ezoic_ads.txt%
 
 !#if adguard
 
