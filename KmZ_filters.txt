@@ -1,6 +1,6 @@
 ! Checksum: AE630C59049B153794C45AEC69FB9E497DD8D662A1F81F0EE59F53C28E013E8C
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sat, 27 Jan 2024 12:02:11 +0100
+! Last modified: Sat, 28 Jan 2024 16:05:43 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
