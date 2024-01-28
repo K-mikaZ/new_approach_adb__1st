@@ -61,8 +61,7 @@
 ##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"]))
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
-! ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
-@@||v.fwmrm.net/ad/u?
+||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
 
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
