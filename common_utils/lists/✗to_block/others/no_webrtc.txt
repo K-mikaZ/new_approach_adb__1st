@@ -22,7 +22,7 @@
 !! BLOCKING
 !! -------
 !! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
-*##+js(nowebrtc)
+##+js(nowebrtc)
 
 !! adguard rule
 !! # STUN (Simple Traversal of UDP through Network):
@@ -44,15 +44,15 @@
 
 ! [fix] break loading player
 jetload.*#@#+js(nowebrtc)
-!! hqq.*,netu.*,vizplay.icu,waaw.*#@#+js(nowebrtc)
 upvid.*#@#+js(nowebrtc)
 femax20.com,fembed.com#@#+js(nowebrtc)
+! [to be verify] 
 tf1.fr#@#+js(nowebrtc)
 
 ! [fix] break live videos
 ok.ru#@#+js(nowebrtc)
 
-! [fix] error on refresh
+! [to be verify] [fix] error on refresh
 youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#+js(nowebrtc)
 
 ! [FIX] packetlosstest.com
