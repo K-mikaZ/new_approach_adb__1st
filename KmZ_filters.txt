@@ -3448,8 +3448,8 @@ themoneytizer$important,script,redirect=noopjs
 ||accounts.google.com/gsi/*$badfilter
 accounts.google.com/gsi/iframe$badfilter
 ||accounts.google.com/gsi/iframe$badfilter
-! ||accounts.google.com/gsi/iframe/select?*=popup&$subdocument
-||accounts\.google\.com\/gsi\/iframe\/select\?(?:.*\&)?ux_mode=popup$subdocument,third-party
+||accounts.google.com/gsi/iframe/select?*ux_mode=popup$subdocument,third-party
+! ||accounts\.google\.com\/gsi\/iframe\/select\?(?:.*\&)?ux_mode=popup$subdocument,third-party
 
 ! ----------------------------------------
 ! [FIX] video players
