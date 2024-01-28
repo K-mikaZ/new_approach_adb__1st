@@ -57,9 +57,9 @@
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 ! #@#.ad-layer
 ! #@#.ad-layer:has(> video[poster*="data:image/gif;base64"])
-##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important)
+! ##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important)
 ! #@#div[id|="freewheelAd"]
-##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important)
+! ##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important)
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1">
 ||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
