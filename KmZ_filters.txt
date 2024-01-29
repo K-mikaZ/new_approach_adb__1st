@@ -3593,6 +3593,9 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! ======= Video Ad Serving Template (VAST) =======
 
 /\/{1,2}vast[.\/]/$xmlhttprequest,third-party,important,domain=~appcdn01.xyz
+! |https://vidmoly.to/static/vastAD.js
+/vastAD.js
+
 @@||appcdn01.xyz/vast.js
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
