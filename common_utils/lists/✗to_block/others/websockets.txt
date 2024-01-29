@@ -8,8 +8,7 @@
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 
 ! fix because of wss:// and ws://
-! /^ws{1,2}(([\:][\/]{2})+)/
-! /^wss?(([\:][\/]{2})+)/
+! /^ws{1,2}((\:\/{2})+)/
 ! more generic
 ! ||*^$websocket
 
@@ -18,28 +17,28 @@
 ! -------------------------------------
 
 ! [FIX] streaming sites
-@@$websocket,domain=hlsplay.com,important
+@@$websocket,domain=hlsplay.com
 @@||wss.jetload.net/cache$websocket,~third-party
 
 ! [FIX] waaw, netu...
-hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
-@@$websocket,xmlhttprequest,domain=commentsengine.com,important
+hqq.tv#@#+js(set-constant, WebSocket, undefined)
+@@$websocket,xmlhttprequest,domain=commentsengine.com
 
 ! [FIX] P2P video delivery
-@@$websocket,domain=tracker.openwebtorrent.com,important
-@@$websocket,domain=tracker.novage.com.ua,important
-@@$websocket,domain=arc.io,important
+@@$websocket,domain=tracker.openwebtorrent.com
+@@$websocket,domain=tracker.novage.com.ua
+@@$websocket,domain=arc.io
 @@wss://*tracker$websocket
 
 ! [FIX] spotify
 @@/?access_token=*$websocket,domain=spotify.com
 
 ! [FIX] utils
-@@$websocket,domain=lastpass.com,important
-@@$websocket,domain=chat.twitch.tv,important
-@@$websocket,domain=packetlosstest.com,important
-@@$websocket,domain=dns-oarc.net,important
-@@$websocket,domain=discord.com,important
+@@$websocket,domain=lastpass.com
+@@$websocket,domain=chat.twitch.tv
+@@$websocket,domain=packetlosstest.com
+@@$websocket,domain=dns-oarc.net
+@@$websocket,domain=discord.com
 
 @@||edge-chat.*/chat$websocket,domain=facebook.com
 
@@ -64,13 +63,13 @@ hqq.tv#@%#//scriptlet("set-constant", "WebSocket", "undefined")
 @@$websocket,domain=webtor.io
 
 @@||forum.qt.io/socket.io/*$websocket
-@@||analyticacdn.com$websocket,important
-@@||geoip.redirect-ads.com$websocket,important
+@@||analyticacdn.com$websocket
+@@||geoip.redirect-ads.com$websocket
 
 ! ensure blocking
 ! -------------------------------------
 
-/ws{1,2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,match-case,important
+/ws{1,2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,important
 wss://net-announce*^$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
@@ -82,6 +81,6 @@ wss://net-announce*^$websocket,important
 ||idocdn.com$websocket,important
 $websocket,~third-party,domain=deezer.com,important
 $websocket,~third-party,domain=tf1.fr,important
-$websocket,domain=app.molotov.tv,redirect=empty,important
+$websocket,important,redirect=empty,domain=app.molotov.tv
 ! websocket ads
 $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
