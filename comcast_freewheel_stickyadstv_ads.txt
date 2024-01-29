@@ -58,6 +58,7 @@
 ##.ad-layer:has(> video[poster*="data:image/gif;base64"]):style(display:initial!important;)
 ##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important;)
 ! ##div[id|="freewheelAd"]
+##div[id|="freewheelAd"]:has(> video[poster*="data:image/gif;base64"]):style(display:initial!important;)
 ##div[id|="freewheelAd"]:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important;)
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1"> | removing it ensures that the user's media.autoplay.blocking_policy choice is respected.
