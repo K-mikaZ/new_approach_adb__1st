@@ -3592,11 +3592,28 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 ! ======= Video Ad Serving Template (VAST) =======
 
+/\/{1,2}vast[.\/]/$xmlhttprequest,third-party,important,domain=~appcdn01.xyz
 @@||appcdn01.xyz/vast.js
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
-||wolfstream.tv/player/*/vast.js$important
-!! /vast.js$domain=designparty.*,wolfstream.tv
+
+! &output=vastvpaid&, &format=vast*&
+/\&\w=vast(\w\d)?\/$xmlhttprequest,third-party
+
+/vast/v2?$xmlhttprequest,redirect-rule=noopvast-2.0
+/vast/v3?$xmlhttprequest,redirect-rule=noopvast-3.0
+/vast/v4?$xmlhttprequest,redirect-rule=noopvast-4.0
+/v2/vast?$xmlhttprequest,redirect-rule=noopvast-2.0
+/v3/vast?$xmlhttprequest,redirect-rule=noopvast-3.0
+/v4/vast?$xmlhttprequest,redirect-rule=noopvast-4.0
+/vast/VAST-2*$xmlhttprequest,redirect-rule=noopvast-2.0
+||vast.*/v2$xmlhttprequest,redirect-rule=noopvast-2.0
+
+! ||vast.adsafeprotected.com^$important
+||vast.xpln.tech^$redirect-rule=noopvast-2.0
+||vast.playmatic.video^$redirect-rule=noopvast-3.0
+||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
+
 ! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
 /(?:ht{2}ps?:\/{2}\S+\.(.{2,}))\/videojs([\w]+)?[-.](v(ast|paid)[@\-.]){1,2}/$script,important
 ! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
@@ -3604,16 +3621,14 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
 /VPAIDFlash.swf$object,redirect-rule=empty
 
+||wolfstream.tv/player/*/vast.js$important
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
-/\/{1,2}vast\./$third-party
-||vast.adsafeprotected.com^$important
-/uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$redirect=noopvast-3.0,important
-||ads2550.bid/*?cp.host=*$redirect=noopvast-3.0,important
-||adsafeprotected.com/vast/*skeleton.js$xmlhttprequest,redirect-rule=noopvast-2.0
+/uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$important,redirect=noopvast-3.0
+||ads2550.bid/*?cp.host=*$important,redirect=noopvast-3.0
+||adsafeprotected.com/vast/*skeleton.js$redirect-rule=noopvast-2.0
 ||tremorhub.com/*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ||getpublica.com/*&format=vast*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
 ! ://ads.$xmlhttprequest,domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.atmosphere.copernicus.eu|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.gambinoslot.com|~ads.google.com|~ads.harvard.edu|~ads.instacart.com|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,redirect-rule=noopvast-2.0
-/vast/v3?$xmlhttprequest,redirect=noopvast-3.0,important
 ||bid.g.doubleclick.net/dbm/vast$important,third-party,redirect=noopvast-4.0
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md
 ||spotx.tv^$third-party,badfilter
@@ -3631,8 +3646,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! /vast/*_vast=1$xmlhttprequest,redirect-rule=noopvast-1.0
 /(.*)\&output\=xml\_vast[2+](.*)?/$xmlhttprequest,redirect-rule=noopvast-2.0
 ||*&output=xml_vast2*$xmlhttprequest,redirect=noopvast-2.0,important
-||vast.*/v2$xmlhttprequest,redirect-rule=noopvast-2.0,important
-*/vast/VAST-2*$xmlhttprequest,redirect-rule=noopvast-2.0,important
 *AdsSetup&protocolVersion=2*$xmlhttprequest,redirect-rule=noopvast-2.0,important
 ||video-ads.rubiconproject.com/*vast.xml$xmlhttprequest,redirect=noopvast-2.0,important
 ||serving-sys.com/*&pl=VAST$xmlhttprequest,redirect=noopvast-2.0,important
@@ -3725,10 +3738,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||franecki.net*.xml?v=4.0&external_subid$important,redirect=noopvast-4.0
 ||0af2a962b0102942d9a7df351b20be55.com^$important,redirect=noopvast-2.0
 ||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
-||vast.xpln.tech^$redirect-rule=noopvast-2.0
-||vast.playmatic.video^$redirect-rule=noopvast-3.0
-||vast.doubleverify.com/v3/vast?$redirect-rule=noopvast-3.0
-||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
 !! !#endif
 
