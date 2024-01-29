@@ -3603,14 +3603,16 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast(\w\d)?[\/]/$xmlhttprequest,third-party
 
-/vast/v2?$xmlhttprequest,redirect-rule=noopvast-2.0
-/vast/v3?$xmlhttprequest,redirect-rule=noopvast-3.0
-/vast/v4?$xmlhttprequest,redirect-rule=noopvast-4.0
-/v2/vast?$xmlhttprequest,redirect-rule=noopvast-2.0
-/v3/vast?$xmlhttprequest,redirect-rule=noopvast-3.0
-/v4/vast?$xmlhttprequest,redirect-rule=noopvast-4.0
-/vast/VAST-2*$xmlhttprequest,redirect-rule=noopvast-2.0
-||vast.*/v2$xmlhttprequest,redirect-rule=noopvast-2.0
+/vast/v2?$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
+/vast/v3?$xmlhttprequest,third-party,redirect-rule=noopvast-3.0
+/vast/v4?$xmlhttprequest,third-party,redirect-rule=noopvast-4.0
+/v2/vast?$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
+/v3/vast?$xmlhttprequest,third-party,redirect-rule=noopvast-3.0
+/v4/vast?$xmlhttprequest,third-party,redirect-rule=noopvast-4.0
+/vast/VAST-2$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
+/vast/VAST-3$xmlhttprequest,third-party,redirect-rule=noopvast-3.0
+/vast/VAST-4$xmlhttprequest,third-party,redirect-rule=noopvast-4.0
+||vast.*/v2$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
 
 ! ||vast.adsafeprotected.com^$important
 ||vast.xpln.tech^$redirect-rule=noopvast-2.0
