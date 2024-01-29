@@ -3724,7 +3724,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||ssp.bidvol.com/vast/$redirect=empty
 ||serv01001.xyz^$redirect=noopvast-3.0
 ||reyden-x.com/*/pre-roll/*$third-party,redirect=noopvast-2.0
-||lumupu.xyz/vast/?$redirect=noopjson
+||lumupu.xyz/vast/?$redirect-rule=noopjson
 ||getpublica.com^$xmlhttprequest,domain=crunchyroll.com,important,redirect=noopvast-2.0
 ||easyads28.mobi/vast/*
 ||ads.spotx.tv/*_preroll&*$important,redirect=noopvast-3.0
