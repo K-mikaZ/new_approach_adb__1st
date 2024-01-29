@@ -3618,10 +3618,9 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
 ! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
-/[\/]videojs([\w]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
+/[\/]videojs([\w\d-]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
 ! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
-! /VPAIDFlash.swf$object,redirect=empty
-/VPAIDFlash.swf?raw=true$object,redirect-rule=empty
+/VPAIDFlash.swf$object,redirect=empty
 
 ||wolfstream.tv/player/*/vast.js$important
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
