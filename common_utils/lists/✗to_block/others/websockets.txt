@@ -53,10 +53,10 @@ hqq.tv#@#+js(set-constant, WebSocket, undefined)
 ! [FIX] dailymotion
 @@$websocket,domain=geo.dailymotion.com
 
-||*^$websocket,badfilter,domain=netflix.com
-@@/ws{1,2}[:]\/{2}/$domain=netflix.com
+||*^$websocket,domain=netflix.com,badfilter
+@@websocket,domain=netflix.com
 
-@@/ws{1,2}[:]\/{2}/$domain=wolframalpha.com
+@@websocket,domain=wolframalpha.com
 
 ! online torrent streaming with webtor.io
 @@||api.nocturnal-narwhal.buzz^$websocket
@@ -69,8 +69,8 @@ hqq.tv#@#+js(set-constant, WebSocket, undefined)
 ! ensure blocking
 ! -------------------------------------
 
-/ws{1,2}\:\/{2}net[-]an{2}ounce(.*)/$websocket,important
-wss://net-announce*^$websocket,important
+/^ws{1,2}\:\/{2}net[-]an{2}ounce(?:.+)/$websocket,important
+wss://net-announce*$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
 ||alugha.com/graphql$websocket,important
@@ -79,8 +79,8 @@ wss://net-announce*^$websocket,important
 ||socket.tidio.co$websocket,important
 ||private-api.com$websocket,important
 ||idocdn.com$websocket,important
-$websocket,~third-party,domain=deezer.com,important
-$websocket,~third-party,domain=tf1.fr,important
+$websocket,~third-party,important,domain=deezer.com
+$websocket,~third-party,important,domain=tf1.fr
 $websocket,important,redirect=empty,domain=app.molotov.tv
 ! websocket ads
 $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
