@@ -3605,7 +3605,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 /VPAIDFlash.swf$object,redirect-rule=empty
 
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
-||*://vast.*
+/\/{1,2}vast\./$third-party
 ||vast.adsafeprotected.com^$important
 /uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$redirect=noopvast-3.0,important
 ||ads2550.bid/*?cp.host=*$redirect=noopvast-3.0,important
@@ -3645,7 +3645,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 /vast/*_vast=2$xmlhttprequest,redirect=noopvast-2.0,important
 /(.*)\&output\=xml\_vast[3+](.*)?/$xmlhttprequest,redirect=noopvast-3.0,important
 ||*&output=xml_vast3*$redirect=noopvast-3.0,important
-||vast.*/v3$xmlhttprequest,redirect=noopvast-3.0,important
+||vast.*/v3$xmlhttprequest,redirect-rule=noopvast-3.0,important
 */vast/VAST-3*$xmlhttprequest,redirect=noopvast-3.0,important
 *AdsSetup&protocolVersion=3*$xmlhttprequest,redirect=noopvast-3.0,important
 ||springserve.com$xmlhttprequest,redirect=noopvast-3.0,important
