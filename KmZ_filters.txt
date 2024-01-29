@@ -3617,7 +3617,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||vast.playmatic.video^$redirect-rule=noopvast-3.0
 ||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
-! https://regex101.com/r/QQcLU1/1
+! https://regex101.com/r/QQcLU1/1 ("~stylesheet" because block also "VPAIDFlash.swf" object)
 /[\/]videojs([\w\d-]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
 /[\/]videojs([\w\d-]+)?[-.](v(ast|paid)[@\-.]){1,2}/$script,redirect-rule=noopjs
 ! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
