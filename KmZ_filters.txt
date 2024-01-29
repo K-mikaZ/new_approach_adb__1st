@@ -3598,7 +3598,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||designparty.*/*/vast.js$important
 
 ! &output=vastvpaid&, &format=vast*&
-/\&\w=vast(\w\d)?\/$xmlhttprequest,third-party
+/\&\w=vast(\w\d)?[\/]/$xmlhttprequest,third-party
 
 /vast/v2?$xmlhttprequest,redirect-rule=noopvast-2.0
 /vast/v3?$xmlhttprequest,redirect-rule=noopvast-3.0
