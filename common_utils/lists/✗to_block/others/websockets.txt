@@ -8,7 +8,7 @@
 ! to bypass ad blocking, exfiltrate user tracking data, and deliver advertisements.
 
 ! fix because of wss:// and ws://
-! /^ws{1,2}((\:\/{2})+)/
+! /^ws{1,2}\:\/{2}/
 ! more generic
 ! ||*^$websocket
 
