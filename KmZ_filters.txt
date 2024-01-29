@@ -3615,11 +3615,11 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
 ! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
-/(?:ht{2}ps?:\/{2}\S+\.(.{2,}))\/videojs([\w]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
+/[\/]videojs([\w]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
 ! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
 /.+jwp(\w+).+(go{2}gima|jwpsrv|vast)\.js/$important,redirect=noopjs
 ! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
-/VPAIDFlash.swf$object,redirect-rule=empty
+/VPAIDFlash.swf$object,redirect=empty
 
 ||wolfstream.tv/player/*/vast.js$important
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
