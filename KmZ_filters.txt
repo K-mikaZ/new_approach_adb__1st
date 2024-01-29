@@ -3619,8 +3619,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 ! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
 /[\/]videojs([\w]+)?[-.](v(ast|paid)[@\-.]){1,2}/$important,~stylesheet
-! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
-/.+jwp(\w+).+(go{2}gima|jwpsrv|vast)\.js/$important,redirect=noopjs
 ! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
 ! /VPAIDFlash.swf$object,redirect=empty
 /VPAIDFlash.swf?raw=true$object,redirect-rule=empty
@@ -3792,8 +3790,10 @@ www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popu
 ! 2024-01-18 fix for "Tracking JS Blocklist" https://fontsaga.com/font-display-swap/
 ! ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
-! unlock some players loading
-@@||jwpcdn.com/player/*/jwplayer.core.controls.js$all
+! unlock some players loading - FIX because somes block: ||ssl.p.jwpcdn.com^
+@@||p.jwpcdn.com|
+! but ensure blocking - concerns "jwpcdn.com/*/jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*/jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
+/[.\/]jwp(\w+)(\.\w{3}\/\w+)?((\/\w{1})?\/[\d.]+)\/(go{2}gima|jwpsrv|vast)\.js/$important,redirect=noopjs
 ! 2024-01-18 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 ! unlock hqq.(to|tv) loading on https://univers-animes.club
 @@||storage.googleapis.com/loadermain.appspot.com/main.js$all
