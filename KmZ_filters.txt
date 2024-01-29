@@ -1,6 +1,6 @@
 ! Checksum: 5FD6A749678A8AAD7019BDC5EC8FB1B61E75D764C933F16AFD1DD0751EBF7D51
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sat, 28 Jan 2024 16:05:43 +0100
+! Last modified: Sat, 29 Jan 2024 03:57:50 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -3416,8 +3416,6 @@ demotivateur.fr##.ads
 ||appboycdn.com^$third-party
 ||orbsrv.com^$third-party
 @@/cdn-cgi/challenge/
-! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
-/.+jwp(\w+).+(go{2}gima|jwpsrv|vast)\.js/$important,redirect=noopjs
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
@@ -3601,6 +3599,10 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 !! /vast.js$domain=designparty.*,wolfstream.tv
 ! block also object https://yandexcdn.com/js/videojs-vast-vpaid-master/bin/VPAIDFlash.swf?raw=true
 /^ht{2}ps?:\/{2}\S+\.(.{2,})\/videojs(\w+)?[-.](v(ast|paid)[@\-.]){1,2}/$important
+! concerns "jwpcdn.com*jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
+/.+jwp(\w+).+(go{2}gima|jwpsrv|vast)\.js/$important,redirect=noopjs
+! 2024-01-18 on yandexcdn.com && ||video.sibnet.ru^*/VPAIDFlash.swf
+/VPAIDFlash.swf$object,redirect-rule=empty
 
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 ||*://vast.*
@@ -3726,6 +3728,7 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||0af2a962b0102942d9a7df351b20be55.com^$redirect=noopvast-2.0,important
 ||vast.playmatic.video^$redirect=noopvast-3.0,important
 ||viewtraff.com/*/vpaid/$redirect=noopvast-3.0,important
+||vast.xpln.tech^$redirect=noopvast-2.0,important
 
 !! !#endif
 
@@ -3833,8 +3836,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||adssettings.google.com|$~third-party
 ! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
 @@||googleanalytics.com|$~third-party
-@@||marketingplatform.google.com|$~third-party
-||googleanalytics.com^$third-party
+@@||marketingplatform.google.com|$~third-party||googleanalytics.com^$third-party
 ||marketingplatform.google.com^$third-party
 ! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
 ! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
