@@ -19,6 +19,8 @@
 !   filters: ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
 !   Fix loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
+! CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
+||ezojs.com.cdn.cloudflare.net^$badfilter
 
 ! 2024-01-24 Because some use ezoic for host images (not always ads)
 @@||ezoiccdn.com|
