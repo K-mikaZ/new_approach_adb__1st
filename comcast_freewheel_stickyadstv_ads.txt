@@ -11,15 +11,10 @@
 
 ! OPERATES UNDER: stickyadstv.com
 ! 2024-01-23 Unbreak sites
-! @@||ads.stickyadstv.com/auto-user-sync$domain=6play.fr
-!!!!!!! @@||ads.stickyadstv.com/www/delivery/swfIndex.php?reqType=$domain=6play.fr
-!!!!!!! @@||cdn.stickyadstv.com/www/images/*.mp4$xmlhttprequest,domain=6play.fr
 ! https://bugzilla.mozilla.org/show_bug.cgi?id=1717806#c2
-! @@||ads.stickyadstv.com/auto-user-sync*
-! @@||ads.stickyadstv.com/user-matching*
 @@||ads.stickyadstv.com^*user-*
 @@||static.adsafeprotected.com/favicon.ico|
-! ||static.adsafeprotected.com/favicon.ico$image,xmlhttprequest,redirect=2x2.png
+! or ||static.adsafeprotected.com/favicon.ico$image,xmlhttprequest,redirect=2x2.png
 !+ NOT_OPTIMIZED
 @@||ads.stickyadstv.com^|$xmlhttprequest,domain=tf1.fr|tf1info.fr,6play.fr
 
