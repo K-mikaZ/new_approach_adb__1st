@@ -12,6 +12,8 @@
 ! OPERATES UNDER: stickyadstv.com
 ! 2024-01-23 Unbreak sites
 ! https://bugzilla.mozilla.org/show_bug.cgi?id=1717806#c2
+||ads.stickyadstv.com^$important,badfilter
+||ads.stickyadstv.com^$important,third-party,badfilter
 @@||ads.stickyadstv.com^*user-*
 @@||static.adsafeprotected.com/favicon.ico|
 ! or ||static.adsafeprotected.com/favicon.ico$image,xmlhttprequest,redirect=2x2.png
