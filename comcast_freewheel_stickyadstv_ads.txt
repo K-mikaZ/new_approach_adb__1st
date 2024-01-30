@@ -52,7 +52,7 @@
 ! Not WEB-BUG: use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
-#@#div.ad-layer
+#@#.ad-layer
 ##.ad-layer:has(> video[poster*="data:image/gif;base64"]):style(display:initial!important;)
 ##.ad-layer:not(:has(> video[poster*="data:image/gif;base64"])):style(diplay:none!important;)
 ! ##div[id|="freewheelAd"]
