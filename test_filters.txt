@@ -1,3 +1,4 @@
+! Checksum: E264D62C8F1A7C624C683840B56AF5B51D1040B308DC9D515BFFA35574533DA9
 ! Title: [/!\][test][beta] "Rules in test" - by K-mik@Z
 ! Last modified: Thu, 30 Jan 2024 15:03:45 +0100
 ! Expires: 5 days
