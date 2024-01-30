@@ -798,7 +798,7 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 ! e.g "/gemini_api/?*&locale=*" or "/video_api/getVideos?*&locale=*"
-/\/\w\/\w+_api\/\w{0,}\?\S+\&locale\=/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
+/\/\w\/\w+_api\/\w*\?\S+\&locale\=/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
 
 mail.protonmail.com##section:has(>.latest-upgrade)
 mail.protonmail.com##section:has(>[target="_blank"])
