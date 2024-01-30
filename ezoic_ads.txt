@@ -15,11 +15,10 @@
 @@||ezoic.net|$~third-party
 @@||ezoic.com|$~third-party
 
-! 2024-01-18 fix because "Tracking JS Blocklist"
-!   filters: ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
-!   Fix loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
+! 2024-01-24 ~ FIX [ Tracking JS Blocklist ](https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt)
+! Unlock loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
-! CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
+! 2024-01-31 ~ 00:58:00 - CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
 ||ezojs.com.cdn.cloudflare.net^$important,badfilter
 ||ezojs.com.cdn.cloudflare.net^$badfilter
 
