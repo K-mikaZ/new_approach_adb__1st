@@ -37,27 +37,22 @@
 /npawAdAdapter.$badfilter
 ||fwmrm.net^$~object,third-party,badfilter
 @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com,badfilter
-/^\.fwmrm\.net\^/$badfilter
-||v.fwmrm.net^$third-party,badfilter
-||v.fwmrm.net$third-party,badfilter
-||v.fwmrm.net^$badfilter
-||v.fwmrm.net$badfilter
-||fwmrm.net^$third-party,badfilter
-||fwmrm.net$third-party,badfilter
-||fwmrm.net^$badfilter
-||fwmrm.net$badfilter
+! /^\.fwmrm\.net\^/$badfilter
+||v.fwmrm.net|$important,third-party,badfilter
+||v.fwmrm.net|$important,badfilter
 
 ! 2024-01-23 CSS Filtering
 ! <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
-! Not WEB-BUG: use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
+! Not WEB-BUG:
+! use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 #@#.ad-layer
 ##:is(.ad-layer,[id|="freewheelAd"]):has(> video[poster*="data:image/gif;base64"]):style(display: block !important;)
 ##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
-
-! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1"> | removing it ensures that the user's media.autoplay.blocking_policy choice is respected.
-||v.fwmrm.net/ad/u?$important
+! <img width="1" height="1"> | Ensures that the user's media.autoplay.blocking_policy choice is respected (I believe).
+||v.fwmrm.net/ad/u?$important,badfilter
+@@||v.fwmrm.net/ad/u?
 
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
