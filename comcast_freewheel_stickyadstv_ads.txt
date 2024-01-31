@@ -79,7 +79,7 @@ $cookie=_fwex_doubleclick.net_IDE
 !#endif
 
 ! 2024-01-23 Remove Cookies
-fwmrm.net##+js(cookie-remover, _fwex_doubleclick.net_IDE)
+fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
