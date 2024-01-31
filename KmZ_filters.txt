@@ -327,8 +327,6 @@ di.fm##+js(set-constant, maxLoadTime, undefined)
 zenradio.com##[class|="remove-ads"]
 openwhyd.org##.error
 openwhyd.org##+js(abort-on-property-write, document.hasFocus, false)
-@@||cloudfront.net^$domain=openwhyd.org
-@@||openwhyd.org$generichide
 ||promoted.soundcloud.com^
 @@||sndcdn.com^$third-party,badfilter
 @@||sndcdn.com$generichide
