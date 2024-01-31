@@ -13,7 +13,8 @@
 
 ! 2024-01-25 ~ 01:13:00 - Unbreak - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
 @@||ezoic.net|$~third-party
-@@||ezoic.com|$~third-party
+||ezoic.com|$important,badfilter
+||ezoic.com|$badfilter
 
 ! 2024-01-24 ~ FIX [ Tracking JS Blocklist ](https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt)
 ! Unlock loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
