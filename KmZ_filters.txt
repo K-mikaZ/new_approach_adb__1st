@@ -3444,10 +3444,9 @@ themoneytizer$important,script,redirect=noopjs
 ! Too generic, because some sites can use: accounts.google.com/gsi/status?* (for check)
 ||accounts.google.com/gsi*$badfilter
 ||accounts.google.com/gsi/*$badfilter
+! prefer "&ux_mode=popup" (be careful, some do not use "&auto_select=true" with it)
 accounts.google.com/gsi/iframe$badfilter
 ||accounts.google.com/gsi/iframe$badfilter
-! prefer $ux_mode=popup (&auto_select=true)
-! /ac{2}ounts\.go{2}gle\.com\/gsi\/iframe\/select\?.*\&auto_select=true.*\&ux_mode=popup/$subdocument,third-party
 ||accounts.google.com/gsi/iframe/select?*&ux_mode=popup$subdocument,third-party
 
 ! ----------------------------------------
