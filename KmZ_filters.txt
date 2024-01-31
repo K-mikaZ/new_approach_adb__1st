@@ -3071,7 +3071,7 @@ $cookie=B,domain=yahoo.com
 ! https://cookiesearch.org/cookies/?filter-type=script-name&search-term=yahoo&cookie-cat=analytics
 ||yahoo.com^$cookie=GUC
 ||yahoo.com^$cookie=APID
-!! yahoo.com##+js(cookie-remover, /(GUCS|IDSYNC|RRC|B)/)
+!! yahoo.com##+js(remove-cookie, /(GUCS|IDSYNC|RRC|B)/)
 
 !! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
 !! $cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
@@ -3115,7 +3115,7 @@ $cookie=_pubcid
 !! $cookie=VISITOR_INFO1_LIVE
 !! @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
-!! youtube.com##+js(cookie-remover, VISITOR_INFO1_LIVE)
+!! youtube.com##+js(remove-cookie, VISITOR_INFO1_LIVE)
 
 !! scorecardresearch.com (Com Score)
 $cookie=uid
