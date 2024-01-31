@@ -57,7 +57,7 @@
 ##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
 
 ! 2024-01-23 WEB-BUG (Beacon, Pixel) <img width="1" height="1"> | removing it ensures that the user's media.autoplay.blocking_policy choice is respected.
-||v.fwmrm.net/ad/u?$important,redirect=1x1.gif
+||v.fwmrm.net/ad/u?$important
 
 ! 2024-01-23 Tracking concerns
 ||v.fwmrm.net/ad/g/1$removeparam=caid
