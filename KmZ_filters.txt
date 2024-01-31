@@ -788,7 +788,6 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||ati-host.net^$third-party
 ||aticdn.net^$third-party
 ||xiti.com^$third-party
-||xiti.com^$image,redirect-rule=noop.txt,important
 
 ||udc.yahoo.com^$xmlhttprequest,domain=mail.yahoo.com
 ||fc.yahoo.com^$domain=mail.yahoo.com
@@ -1727,7 +1726,6 @@ stream-serie.net#$##option-1{height:100%}
 voirseries.*#@#.adsBox
 @@||trustarc.com^
 @@||turner.com^
-! /pagead[0-9].go{2}glesyndication\.com(\/.*)?\/adsbygo{2}gle\.js/$script,redirect-rule=googlesyndication_adsbygoogle.js
 @@/^https?:\/\/(www\.)?.*\/ad[vs](er(ve)?t?(ise|ising|isement)?)?([_-a-zA-Z0-9.]{1,17})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script,badfilter
 @@/^https?:\/\/(www\.)?.*\/ad[svbxo]?([_-a-zA-Z0-9.]{1,15})?\.js/$script
