@@ -49,6 +49,6 @@ $cookie,domain=comscore.com
 !#endif
 
 ! 2024-01-23 Remove Cookies
-comscore.com##+js(cookie-remover, /^/)
+comscore.com##+js(remove-cookie, /^/)
 
 ! </ end comScore's filters >
