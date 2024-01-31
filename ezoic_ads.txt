@@ -30,7 +30,7 @@
 ||go.ezodn.com^
 ||videosvc.ezoic.com^
 ! 2024-01-25 ~ 12:04:00 [In test]
-/ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
+! /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 
 ! 2024-01-24 CSS filtering
 ##[ezaw][ezah]
