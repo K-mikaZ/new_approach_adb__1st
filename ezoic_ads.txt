@@ -8,7 +8,7 @@
 ! < start ezoic ads >
 
 ! 2024-01-25 Block: https://better.fyi/trackers/ezoic.net
-||ezoic.net^$third-party,important
+||ezoic.net|$third-party,important
 ! 2024-01-25 Redundancy with `||ezoic.net$third-party`: ||g.ezoic.net/ezqlog?$important, ||g.ezoic.net/ezoic/ampad.js (Ezoic Amp Ad)
 
 ! 2024-01-25 ~ 01:13:00 - Unbreak - unlock site itself [ ezoic.net ] => (https://www.ezoic.com/)
@@ -20,16 +20,16 @@
 ! Unlock loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
 @@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
 ! 2024-01-31 ~ 00:58:00 - CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
-||ezojs.com.cdn.cloudflare.net^$important,badfilter
-||ezojs.com.cdn.cloudflare.net^$badfilter
+||ezojs.com.cdn.cloudflare.net|$important,badfilter
+||ezojs.com.cdn.cloudflare.net|$badfilter
 
 ! 2024-01-24 Because some use ezoic for host images (not always ads)
 @@||ezoiccdn.com|
 #@#[data-ezsrcset]
 
 ! 2024-01-24 ezoic ads concerns
-||go.ezodn.com^
-||videosvc.ezoic.com^
+||go.ezodn.com|
+||videosvc.ezoic.com|
 ! 2024-01-25 ~ 12:04:00 [In test]
 ! /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 
