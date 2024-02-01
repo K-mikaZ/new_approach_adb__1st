@@ -36,13 +36,14 @@
 ! 2024-01-24 CSS filtering
 ! ------------
 ! in case of need unblock videosvc.ezoic.com.
-#@#[id|="ez-video"]
-#@#[class|="ez-video"]
+#@#[id^="ez-video"]
+#@#[class^="ez-video"]
 #@#[class="ezoic-autoinsert-video"]
+#@#.ez-video-wrap
 ! ------------
 ##[ezaw][ezah]
 ! ##[class|="ezoic"]
-##[id|="ezoic-pub"]
+##[id^="ezoic-pub"]
 ! ##[id|="ezoic"]
 ! ##[id^="ezoic-pub-ad-placeholder-"]
 ##[id*="ezmob"]
