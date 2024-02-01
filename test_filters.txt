@@ -257,6 +257,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ##[href*="/oiopub-"]
 ##[href*="smartadserver.com"]
 ! 2024-02-01 ~ 07:41:05 - "##[class*="smartlink" i]" block [ support.goguardian.com ](https://support.goguardian.com/s/article/Block-Live-Chat-in-Youtube-1629765149292)
+#@#[class*="smartlink" i]
 ! ##[id*="smartlink" i]
 ! ##[class*="smartlink" i]
 ##[data-src*="outbrain.com"]
