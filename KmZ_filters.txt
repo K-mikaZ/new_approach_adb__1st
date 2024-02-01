@@ -3781,13 +3781,6 @@ www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popu
 ! 2024-01-18 fix for [ Peter Lowe’s Ad and tracking server list ]
 !  2024-01-18 prebid.org - unlock the site itself
 @@||prebid.org|$~third-party
-! 2024-01-20 unlock loading https://fontsaga.com/font-display-swap/
-@@||ezoic.net|$~third-party
-@@||ezoic.com|$~third-party
-@@||ezoiccdn.com|
-! 2024-01-18 fix for "Tracking JS Blocklist" https://fontsaga.com/font-display-swap/
-! ||ezojs.com/tardisrocinante/lazy_load.js$all, but concern also /css_onload.js, /script_delay.js
-@@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
 ! unlock some players loading - FIX because somes block: ||ssl.p.jwpcdn.com^
 @@||p.jwpcdn.com|
 ! but ensure blocking - concerns "jwpcdn.com/*/jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*/jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
