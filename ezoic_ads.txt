@@ -41,9 +41,9 @@
 #@#[class="ezoic-autoinsert-video"]
 ! ------------
 ##[ezaw][ezah]
-##[class|="ezoic"]
+! ##[class|="ezoic"]
 ##[id|="ezoic-pub"]
-##[id|="ezoic"]
+! ##[id|="ezoic"]
 ! ##[id^="ezoic-pub-ad-placeholder-"]
 ##[id*="ezmob"]
 ##.ezmob
