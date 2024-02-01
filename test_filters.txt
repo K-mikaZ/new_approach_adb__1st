@@ -261,10 +261,6 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! ##[class*="smartlink" i]
 ##[data-src*="outbrain.com"]
 ##[class~="OUTBRAIN"]
-!! test on http://www.html5canvastutorials.com/
-##[class~="adthrive-ad"]
-!! *##[class~="adthrive-content"]
-!! *##[id^=AdThrive_]
 ##[class^="AdsenseAd_"]
 !! *##[id="ads"]
 ##[id~="ads4"]
