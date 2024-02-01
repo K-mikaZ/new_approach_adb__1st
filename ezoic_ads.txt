@@ -37,6 +37,7 @@
 ##[ezaw][ezah]:not([style*="display:"][style*="none"])
 ##[id|="ez-video"]:not([style*="display:"][style*="none"])
 ##[class|="ez-video"]:not([style*="display:"][style*="none"])
+##[class="ezoic-autoinsert-video"]:not([style*="display:"][style*="none"])
 ##[id|="ezoic"]:not([style*="display:"][style*="none"])
 ##[class|="ezoic"]:not([style*="display:"][style*="none"])
 ##[id|="ezoic-pub"]:not([style*="display:"][style*="none"])
