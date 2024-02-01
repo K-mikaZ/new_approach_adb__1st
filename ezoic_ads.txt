@@ -34,6 +34,7 @@
 ! /ezojs\.com\/.+\/(?!lazy_load|css_onload|script_delay).+\.js\?(a\=\w|g?cb\=\d+)/$all
 
 ! 2024-01-24 CSS filtering
+##[id^="ezoic-pub-ad-placeholder-"]:not([style*="display:"][style*="none"])
 ##[ezaw][ezah]:not([style*="display:"][style*="none"])
 ##[id|="ez-video"]:not([style*="display:"][style*="none"])
 ##[class|="ez-video"]:not([style*="display:"][style*="none"])
