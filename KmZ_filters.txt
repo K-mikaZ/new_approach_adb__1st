@@ -638,10 +638,9 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
 @@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
 
-! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.advertising.*.js)
-||dmcdn.net/*/dmp.advertising.$script,important,redirect=noop.js
-! 2024-01-24 ~ 06:15:19 [ geo.dailymotion.com ](static1.dmcdn.net/playerv5/dmp.mediametrie.*.js)
-||dmcdn.net/*/dmp.mediametrie.$script,important,redirect=noop.js
+! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ]
+! static1.dmcdn.net/playerv5/dmp.advertising.*.js, static1.dmcdn.net/playerv5/dmp.mediametrie.*.js
+/\.dmcdn\.net\/.*\/dmp\.(?:\b(advertising|mediametrie)\b)\./$script,important,redirect=noop.js
 
 !! url:www.dailymotion.com/video/* - disable ads
 !! test on: https://www.dailymotion.com/video/x5t6gh2, https://www.dailymotion.com/embed/video/x5t6gh2
