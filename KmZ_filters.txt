@@ -339,6 +339,10 @@ soundcloud.com##.announcements
 soundcloud.com##.g-go-plus-marker-list
 soundcloud.com##article.mobileApps
 soundcloud.com##.sc-type-small > div > p:nth-of-type(1):if([target="_blank"])
+||open.spotify.com^$badfilter
+open.spotify.com#@#+js(nowebrtc)
+open.spotify.com##._5c12c73a4f38b98340ea33803209fdc8-scss
+open.spotify.com##[class^="GenericModal__overlay"]
 open.spotify.com##+js(nowebrtc)
 open.spotify.com##[data-template*="sponsored-"]
 open.spotify.com##[aria-label*="premium" i]
@@ -348,6 +352,9 @@ open.spotify.com##[class*="sponsor-"]
 open.spotify.com##[data-*="sponsor-"]
 open.spotify.com##.verifiedBadge
 open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
+/sponsored$domain=open.spotify.com
+open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "disallow_seeking":false, track-playback)
+! open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
 /(.*)?pixel\-static\.spotify\.(.{2,})\/sync\.min\.js/$script,important
 /(.*)?amazonaws\.(.{2,})\/ki\.js/$script,important
 @@||googletagmanager.com^$domain=open.spotify.com,badfilter
@@ -362,7 +369,6 @@ open.spotify.com##._9c0303500ca44a84c3f7ebebf3aa5322-scss
 ||spclient.wg.spotify.com/ad-logic/*
 ||spotify.com/melody/*/logging/$important,badfilter
 ||spotify.com^*/logging/$badfilter
-||open.spotify.com^$badfilter
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=gamespot.com|imasdk.googleapis.com,badfilter
 ||imasdk.googleapis.com$badfilter
 ||imasdk.googleapis.com^$third-party,badfilter
@@ -2367,7 +2373,6 @@ radiotunes.com,di.fm##[class*="premium"]
 ||facil-iti.com^$important
 ||dev.appboy.com^
 ||woawouru.net^
-open.spotify.com#@#+js(nowebrtc)
 @@||vshare.eu/player_sda.html
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
 /uptostream\.(.{3})\/as{2}ets\//$subdocument
@@ -2752,8 +2757,6 @@ mirrored.to##.col-md-12.col-lg-4.col-sm-12 > .centered
 msn.com##.nativead
 msn.com##[data-nativead="1"]
 onextrapixel.com##.banner-container-content-ad
-open.spotify.com##._5c12c73a4f38b98340ea33803209fdc8-scss
-open.spotify.com##[class^="GenericModal__overlay"]
 papystreamings.net##.Playersbelba
 pcmag.com##ins [id|="incontent"]
 pornbraze.com###closeButton
@@ -2914,7 +2917,6 @@ pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][
 lxax.com###parrot
 lxax.com##[class="hide"]
 ||t.fujejo.xyz/redirect/$third-party
-/sponsored$domain=open.spotify.com
 ! anti adblock detect
 @@||adnxs.com^$image,important
 ||appconsent.io^$badfilter
