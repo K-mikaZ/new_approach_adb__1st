@@ -2914,8 +2914,7 @@ pornocomics.net##div[style*="background-color: black;"][style*="height: 100%;"][
 lxax.com###parrot
 lxax.com##[class="hide"]
 ||t.fujejo.xyz/redirect/$third-party
-||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
-||spclient.wg.spotify.com/sponsoredplaylist/$domain=open.spotify.com
+/sponsored$domain=open.spotify.com
 ! anti adblock detect
 @@||adnxs.com^$image,important
 ||appconsent.io^$badfilter
