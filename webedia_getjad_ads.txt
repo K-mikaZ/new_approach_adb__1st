@@ -55,9 +55,8 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 
 ! 2024-01-26 ~ 10:41:37 Fix because: Easyprivacy list
 ! redirect to AMP (Accelerated Mobile Pages) if navigator.userAgent.indexOf('Android')>=0, see <https://static1.webedia.fr/js/gs.js>
+!#if (env_mobile)
 ||webedia.fr/js/gs.js$badfilter
-!#if (!env_mobile)
-||webedia.*/gs.js
 !#endif
 
 ! 2024-01-24 Sometimes appears, sometimes not. Seen in Firefox (e.g. site:www.allocine.fr)
