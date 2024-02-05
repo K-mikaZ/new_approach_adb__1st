@@ -8,7 +8,7 @@
 !
 
 ! [FIXME] DOES NOT WORK AT ALL
-app.molotov.tv##+js(xml-prune, xpath(//*[name()="MPD"][.//*[name()="Period"][contains(@name\,"EventStream")]]), , , log, 1)
+! app.molotov.tv##+js(xml-prune, xpath(//*[name()="MPD"][.//*[name()="Period"][contains(@name\,"EventStream")]]), , , log, 1)
 
 ! INVALID
 ! *##:is([id^="fake-"],[class^="fake-"]):last-of-type:has(>:is([id^="fake-"],[class^="fake-"]):first-of-type))
