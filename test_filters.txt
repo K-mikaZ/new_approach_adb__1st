@@ -285,4 +285,4 @@ huffingtonpost.fr##[class="before-text "]
 www.malekal.com##div:has(> div:has(> [class*="detect"][class*="alert"]))
 
 ! iframe[src^="javascript:"] found on https://streamtape.com/v/bebLqMLl3GIPzyW/NT_du_27-01-2024.mp4
-##iframe[src^="javascript:"]
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##iframe[src^="javascript:"]
