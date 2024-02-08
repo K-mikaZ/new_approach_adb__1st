@@ -4170,7 +4170,7 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||vast.playmatic.video^$redirect-rule=noopvast-3.0
 ||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
-! https://regex101.com/r/QQcLU1/1 ("~stylesheet" because block also "VPAIDFlash.swf" object)
+! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
 /\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,~stylesheet
 /\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
 ! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
