@@ -150,9 +150,10 @@ voirseries.*##[class*="player" i]:has(>:is([class*="download"],[id*="download"])
 !! ducine.*, streamfilms.*, cpasmieux.* ...
 *#$##videoplay[src*="stream"][src*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 *#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
-##[class*="player" i]:has( > [src*="stream"][src*="vip.htm"])
-##[class*="player" i]:has( iframe[src*="fakeplayer"] )
-##[id~="lecteur"]:has( iframe[src*="video"][src*="streaming"][src*=".htm"] )
+! break filmstoon.online
+! ##[class*="player" i]:has(> [src*="stream"][src*="vip.htm"])
+##[class*="player" i]:has(iframe[src*="fakeplayer"])
+##[id~="lecteur"]:has(iframe[src*="video"][src*="streaming"][src*=".htm"])
 !! voirseries.*#$#div[class~="lien"][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 ##:is(div[class~="lien"], li)[onclick*="getxfield("][onclick*="'player');"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
 !! sokroflix.uno
