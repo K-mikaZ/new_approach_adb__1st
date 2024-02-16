@@ -909,14 +909,11 @@ fdesouche.com##.rp-wrapper
 feedspot.com###wrapper
 femmeactuelle.fr##+js(set-constant, videoAdsAllowed, false)
 femmeactuelle.fr###click-zone
-femmeactuelle.fr##.ads-placeholder
-femmeactuelle.fr#$##corps { padding-top: 0 !important; }
 femmeactuelle.fr###bt-softwall
+femmeactuelle.fr##.ads-placeholder
+femmeactuelle.fr#?##corps:style(padding-top: 0!important;)
 @@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
 @@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
-!#if adguard
-femmeactuelle.fr#%#//scriptlet("set-attr", "#corps", "style", "padding-top: 0 !important;")
-!#endif
 marmiton.org#?#div:is([data-ad$="_atf"])
 marmiton.org#?#div:has(>[data-ad$="_atf"])
 marmiton.org#?#div:has(>[data-ad="native_shopping"])
