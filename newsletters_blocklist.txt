@@ -3,12 +3,20 @@
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
 ! Description: Annoying newsletters blocklist
-!
+
+! generic filters
 ##.overlay-newsletter
+
+! specific filters
+www.jalios.com#@#.section-newsletter
+
+! "applications" filters
 chefcuisto.com##+js(set, pq_popup_afficher, 0)
 chefcuisto.com##+js(set, pq_popup_desactive_timer, 1)
 chefcuisto.com##+js(set, pq_popup_requete, null)
 ! 2024-01-28 ~ 14:36:23 - FIX: Newsletter popup when quit [ effetph.com ](https://effetph.com/)
 effetph.com##+js(overlay-buster)
+
+! net filters
 /[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
