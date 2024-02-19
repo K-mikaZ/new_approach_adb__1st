@@ -15,7 +15,7 @@ chefcuisto.com##+js(set, pq_popup_afficher, 0)
 chefcuisto.com##+js(set, pq_popup_desactive_timer, 1)
 chefcuisto.com##+js(set, pq_popup_requete, null)
 ! FIX: Newsletter popup when quit site
-cuisine-saine.fr,effetph.com,iletaitunefoislapatisserie.com,planetevegan.com,simplementfrais.com,vapotestyle.fr,tangerinezest.com,www.kpourkatrine.com##+js(overlay-buster)
+cuisine-saine.fr,effetph.com,iletaitunefoislapatisserie.com,planetevegan.com,simplementfrais.com,vapotestyle.fr,tangerinezest.com,www.kpourkatrine.com,www.okay.eu##+js(overlay-buster)
 
 ! net filters
 /[Nn]ewslet{2}er/$domain=www.750g.com
