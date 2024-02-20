@@ -6,6 +6,7 @@
 
 ! generic filters
 ##.overlay-newsletter
+nicrunicuit.com##.active.mailpoet_form_slide_in
 ! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 
