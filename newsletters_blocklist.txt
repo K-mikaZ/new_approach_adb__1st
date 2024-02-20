@@ -6,7 +6,8 @@
 
 ! generic filters
 ##.overlay-newsletter
-www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
+! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
+www.medisite.fr##.mf-loaded.mf-notification-iframe
 
 ! specific filters
 www.jalios.com#@#.section-newsletter
