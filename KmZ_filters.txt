@@ -914,12 +914,10 @@ femmeactuelle.fr##.ads-placeholder
 femmeactuelle.fr#?##corps:style(padding-top: 0!important;)
 @@||securepubads.g.doubleclick.net/pagead/*/gpt/*.js$domain=femmeactuelle.fr
 @@||securepubads.g.doubleclick.net/gampad/ads?pvsid=$domain=femmeactuelle.fr,badfilter
-marmiton.org#?#div:is([data-ad$="_atf"])
-marmiton.org#?#div:has(>[data-ad$="_atf"])
+www.marmiton.org#@#div[data-ad]
+www.marmiton.org#@#.ad-container
+www.marmiton.org##.ad-container:style(--ad-placeholder-height: 0!important;overflow: visible!important;)
 marmiton.org#?#div:has(>[data-ad="native_shopping"])
-!! marmiton.org##[id^="pegasus_banner_atf"]
-!! marmiton.org##.unfyas, .pegasus_status_rendered
-!! marmiton.org##[data-ad-cls="true"]
 ||googletagmanager.com/gtm.js$domain=marmiton.org,important
 @@||fundingchoicesmessages.google.com^$domain=marmiton.org
 @@||googlesyndication.com^$domain=marmiton.org
