@@ -6,10 +6,11 @@
 
 ! generic filters
 ##.overlay-newsletter
+! www.jalios.com#@#.section-newsletter
+#@#.section-newsletter
 
 ! specific filters
 nicrunicuit.com##.active.mailpoet_form_slide_in
-www.jalios.com#@#.section-newsletter
 ! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 
