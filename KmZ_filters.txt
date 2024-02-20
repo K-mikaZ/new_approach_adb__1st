@@ -917,7 +917,7 @@ femmeactuelle.fr#?##corps:style(padding-top: 0!important;)
 www.marmiton.org#@#div[data-ad]
 www.marmiton.org#@#.ad-container
 www.marmiton.org##.ad-container:style(--ad-placeholder-height: 0!important;overflow: visible!important;)
-www.marmiton.org##.mrtn-recette_affiliation-description
+! www.marmiton.org##.mrtn-recette_affiliation-description
 www.marmiton.org##.card-ingredient-link:style(cursor: unset!important;)
 www.marmiton.org##+js(ra, data-encoded-link|target, .card-ingredient-link)
 ! marmiton.org#?#div:has(>[data-ad="native_shopping"])
