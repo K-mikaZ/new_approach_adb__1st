@@ -6,18 +6,18 @@
 
 ! generic filters
 ##.overlay-newsletter
-nicrunicuit.com##.active.mailpoet_form_slide_in
-! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
-www.medisite.fr##.mf-loaded.mf-notification-iframe
 
 ! specific filters
+nicrunicuit.com##.active.mailpoet_form_slide_in
 www.jalios.com#@#.section-newsletter
+! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
+www.medisite.fr##.mf-loaded.mf-notification-iframe
 
 ! "applications" filters
 chefcuisto.com##+js(set, pq_popup_afficher, 0)
 chefcuisto.com##+js(set, pq_popup_desactive_timer, 1)
 chefcuisto.com##+js(set, pq_popup_requete, null)
-! FIX: Newsletter popup when quit site
+! FIX: Newsletter popup
 cuisine-saine.fr,effetph.com,ikeahackers.net,iletaitunefoislapatisserie.com,planetevegan.com,simplementfrais.com,vapotestyle.fr,tangerinezest.com,www.comment-economiser.fr,www.kpourkatrine.com,www.okay.eu##+js(overlay-buster)
 
 ! net filters
