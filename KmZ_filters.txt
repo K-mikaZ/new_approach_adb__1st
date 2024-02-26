@@ -3467,16 +3467,16 @@ accounts.google.com/gsi/iframe$badfilter
 
 /(\/[B][N][M]){2}\.(.{3})/$match-case
 /ht{2}ps?:\/{2}[\da-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d+/$script,xmlhttprequest,third-party
-/ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party
-/ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$script,third-party
-/ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}/$script,third-party
-/ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?/$script,xmlhttprequest,third-party
-/ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
-/^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$script,third-party
+! /ht{2}ps?:\/{2}([\da-f]{10}\.){2}com\/[\da-f]{32}\.js/$script,third-party
+! /ht{2}ps?:\/{2}\S+\/[45](0[01])?\/\d+/$script,third-party
+! /ht{2}ps?:\/{2}\S+\/[a-zA-Z\d]{10,23}\/\d{4,5}/$script,third-party
+! /ht{2}ps?:\/{2}\S+\.com\/([a-z\d]{2}\/){3}[\da-f]{32}\.js(on)?/$script,xmlhttprequest,third-party
+! /ht{2}ps?:\/{2}[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
+! /^ht{2}ps?:\/{2}w{3}\.[a-z]{6,16}\.com\/[a-z]{1,4}\.js$/$script,third-party
 /ht{2}ps?:\/{2}s3\.*.*\.amazonaws\.com\/[a-f\d]{45,}\/[a-f,\d]{8,10}/$script,xmlhttprequest,third-party,domain=~amazon.com
-/ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party
+! /ht{2}ps?:\/{2}\S+\/sw\.js\?[a-zA-Z\d%]{50,}/$script,~third-party
 /ht{2}ps?:\/{2}\S+\/1clkn\/\d+/$important
-/ht{2}ps?:\/{2}\S+\/script\/cdn\.js/$third-party
+! /ht{2}ps?:\/{2}\S+\/script\/cdn\.js/$third-party
 /(?:.+)\/[\da-f]{32}\/invoke\.js/$script,important
 /^ht{2}ps?:\/{2}\S+\/cdn[-]cgi\/ap{2}s\/(body|head)\/.+/$script,~third-party,important
 ! concerns ||t911.org/z-5451051, ||gktorrents.cc/z-5861466, ||ianimes.cc/z-oou0djeuq, ||oneupload.to/z-* ... that call other scripts
