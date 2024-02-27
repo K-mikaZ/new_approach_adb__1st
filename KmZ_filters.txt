@@ -4387,15 +4387,11 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! use for google ima
 @@||2mdn.net/instream/video/client.js$all
 ! 2024-01-25 Personalized ad settings - unlock the site itself (ads.youtube.com redirect to adssettings.google.com)
-||ads.youtube.com^$third-party
-||adssettings.google.com^$third-party
 @@||ads.youtube.com|$~third-party
 @@||adssettings.google.com|$~third-party
 ! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
 @@||googleanalytics.com|$~third-party
 @@||marketingplatform.google.com|$~third-party
-||googleanalytics.com^$third-party
-||marketingplatform.google.com^$third-party
 ! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
 ! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
 ! @@||media-amazon.com/images/I/*.js$all
@@ -4403,8 +4399,6 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
 
-! ||datadoghq.com^$third-party,badfilter
-! ||datadoghq.com$third-party,badfilter
 !! FIX video loading on capital.fr (e.g. https://www.capital.fr/entreprises-marches/rafale-helicoptere-on-a-teste-les-simulateurs-de-vol-de-sogitec-au-salon-du-bourget-2023-1472333)
 ! @@||www.datadoghq-browser-agent.com^$important
 !! FIX video loading on app.molotov.tv
