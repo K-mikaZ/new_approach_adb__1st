@@ -1,6 +1,6 @@
-! Checksum: 1E05458E7044345CD29D4A6830BC7FA7E0DDF583E7DF18D794E35CDF4DB7671F
+! Checksum: D1E775B76F7E44DABF9F0D189429F074082182756265E14830B777B39548D127
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sat, 29 Jan 2024 06:49:12 +0100
+! Last modified: Tue, 27 Feb 2024 00:42:34 +0100
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -24,7 +24,7 @@
 ! ...
 ! The DNS Sinkhole. Disabling Youtube's built-in throttling options. »»» [reddit](https://tinyurl.com/2k5zvzus)
 ! ... ??? Edit your hosts file and add:   »»» How to: [google](https://tinyurl.com/2l24yknf)
-! ... 127.0.0.1 c.youtube.com
+! ... 127.0.0.1 c.www.youtube.com
 ! ...
 ! ISP is throttling Youtube videos. »»» [reddit](https://www.reddit.com/r/linux/comments/19gpzd/how_to_stop_isps_sucking_at_youtube/)
 ! ... ??? Block CDNs to directly access YouTube videos
@@ -42,14 +42,14 @@
 !#endif
 ! ...
 ! #### [ADS] IN FACT, IF YOU WERE TO DISABLE ALL FILTERS, you would only need ...
-! ... youtube.com##+js(json-prune, adPlacements) && youtube.com##+js(json-prune, playerAds)
+! ... www.youtube.com##+js(json-prune, adPlacements) && www.youtube.com##+js(json-prune, playerAds)
 ! ... to get a ad free experience.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerAds)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, adPlacements)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, playerAds)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, adPlacements)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 !
 ! #### [FIX] HOW TO GET RID OF THE YOUTUBE AD BLOCK POPUP
 ! https://www.reddit.com/r/youtube/comments/17079px/comment/k4sbpf6/
@@ -64,226 +64,273 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
 ! https://www.reddit.com/r/uBlockOrigin/comments/a8d5jb/comment/ec9z3if/
 ! BAD: youtube's csp rules block loading site on vivaldi browser
-! ||music.youtube.com^$csp=worker-src 'none'
+! ||music.www.youtube.com^$csp=worker-src 'none'
 ! ||www.youtube.com^$csp=worker-src 'none'
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.adPlacements)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, playerResponse.playerAds)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, playerResponse.adPlacements)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, playerResponse.playerAds)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
 !
 ! ...
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, PLAYBACK_MODE_DISALLOW)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, PLAYBACK_MODE_DISALLOW)
 
 ! !#if adguard
 ! ... [forum.adguard.com](https://tinyurl.com/2z56vox2)
 ! ... error with microformat
-! youtube-nocookie.com,youtube.com#%#(function(){var overrideObject=function(obj,propertyName,overrideValue){var overriden=false;for(var key in obj)if(obj.hasOwnProperty(key)&&key===propertyName){obj[key]=overrideValue;overriden=true}else if(obj.hasOwnProperty(key)&&typeof obj[key]==="object")if(overrideObject(obj[key],propertyName,overrideValue))overriden=true;return overriden};var smartJSONParseOverride=function(propertyName,overrideValue,reStack){var realParse=JSON.parse;JSON.parse=function(text,reviver){var obj=realParse(text,reviver);if(!obj)return obj;var stackTrace=(new Error).stack;if(reStack.test(stackTrace))if(overrideObject(obj,propertyName,overrideValue));return obj}};smartJSONParseOverride("adPlacements",[],/.*/);smartJSONParseOverride("playerAds",[],/.*/)})();
+! youtube-nocookie.com,www.youtube.com#%#(function(){var overrideObject=function(obj,propertyName,overrideValue){var overriden=false;for(var key in obj)if(obj.hasOwnProperty(key)&&key===propertyName){obj[key]=overrideValue;overriden=true}else if(obj.hasOwnProperty(key)&&typeof obj[key]==="object")if(overrideObject(obj[key],propertyName,overrideValue))overriden=true;return overriden};var smartJSONParseOverride=function(propertyName,overrideValue,reStack){var realParse=JSON.parse;JSON.parse=function(text,reviver){var obj=realParse(text,reviver);if(!obj)return obj;var stackTrace=(new Error).stack;if(reStack.test(stackTrace))if(overrideObject(obj,propertyName,overrideValue));return obj}};smartJSONParseOverride("adPlacements",[],/.*/);smartJSONParseOverride("playerAds",[],/.*/)})();
 ! !#endif
 !
 ! ...
 ! #### [TRACKING] cspreport, (atrUrl, ptrackingUrl, qoeUrl does not work here)
 ! ... window.ytInitialPlayerResponse
 ||www.youtube.com/cspreport$other
-||music.youtube.com/cspreport$other
-||m.youtube.com/cspreport$other
+||music.www.youtube.com/cspreport$other
+||m.www.youtube.com/cspreport$other
 ||youtube-nocookie.com/cspreport$other
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.playbackTracking.*Url, undefined)
 ! ...
 ! #### [TIP] NON-COSMETIC FILTERS TO REMOVE JUNK FROM YOUTUBE
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tcswua/tip_noncosmetic_filters_to_remove_junk_from/>
 ! »»» <https://www.google.com/search?q=NON-COSMETIC+FILTERS+TO+REMOVE+JUNK+FROM+YOUTUBE+site:www.reddit.com>
 ! REMOVES ANNOYING POP MESSAGES ON THE BOTTOM LEFT OF THE SCREEN
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, messages.*.youThereRenderer)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, messages.*.youThereRenderer)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
 ! REMOVES "INVIDEO" INFO CARDS:
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, cards)
-! REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, annotations)
-! REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, endscreen)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, cards)
+! REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, annotations)
+! REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, endscreen)
 ! REMOVES "SHORTS" BUTTON
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
 ! REMOVES VOICE SEARCH BUTTON (ONLY WORKS ON WATCH PAGE)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
 ! REMOVES THE "INCLUDES PAID PROMOTION MESSAGE"
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, paidContentOverlay)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, paidContentOverlay)
 ! REMOVES SIDEBAR ADS
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.promotedSparklesWebRenderer)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.compactPromotedVideoRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.promotedSparklesWebRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.compactPromotedVideoRenderer)
 ! REMOVES ADS IN SEARCH RESULTS
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.searchPyvRenderer.ads)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.searchPyvRenderer.ads)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
 ! REMOVES INFO PANELS UNDER VIDEOS
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
 ! REMOVES MERCHANDISE SHELF
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
 ! REMOVES AUTO PLAYING CHANNEL TRAILERS
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.0.itemSectionRenderer.contents.0.channelVideoPlayerRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.0.itemSectionRenderer.contents.0.channelVideoPlayerRenderer)
 ! REMOVES SHORTS SHELF FROM CHANNEL PAGES
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)
 ! REMOVES MOVIE/SHOW UPSELL BANNERS ON SIDEBAR (EXAMPLE: GO TO A&E COURT CAM VIDEO TO SEE WHAT IM TALKING ABOUT AS THOSE VIDEOS HAVE THESE)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.offerModule)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.offerModule)
 ! REMOVE AUTOPLAYING VIDEO CAROUSEL FROM GAMING TAB
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, header.carouselHeaderRenderer)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, header.carouselHeaderRenderer)
 ! REMOVE FEATURED PLAYLIST FROM DESCRIPTION
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
 ! ...
 !
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, inlineAdsInterval, undefined)
-! youtube.com##+js(remove-attr, 'example', 'div[class="inner"]')
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, inlineAdsInterval, undefined)
+! www.youtube.com##+js(remove-attr, 'example', 'div[class="inner"]')
 ! ... youtube-nocookie.com  https://core.trac.wordpress.org/ticket/44610
 ! ...
 ! ... window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl,
 !     // https://www.youtube.com/embed/LsFkObHdXnU  »»»  https://www.youtube-nocookie.com/embed/SwpkPf63304
-! youtube.com#%#const videoID = window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl.split('/')[4]; const noCookieURL = `https://www.youtube-nocookie.com/embed/${videoID}`; Object.defineProperty(window, 'ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl', { get: function() { return noCookieURL; }})
-! youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', '#movie_player > div.html5-video-container > video', 'controlslist', '')
-! youtubekids.com,youtube-nocookie.com,youtube.com#%#//scriptlet('set-attr', 'div.html5-video-container > video', 'controls', '2')
+! www.youtube.com#%#const videoID = window.ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl.split('/')[4]; const noCookieURL = `https://www.youtube-nocookie.com/embed/${videoID}`; Object.defineProperty(window, 'ytInitialPlayerResponse.microformat.playerMicroformatRenderer.embed.iframeUrl', { get: function() { return noCookieURL; }})
+! youtubekids.com,youtube-nocookie.com,www.youtube.com#%#//scriptlet('set-attr', '#movie_player > div.html5-video-container > video', 'controlslist', '')
+! youtubekids.com,youtube-nocookie.com,www.youtube.com#%#//scriptlet('set-attr', 'div.html5-video-container > video', 'controls', '2')
 
 
 ! #### [TIP] OTHER PARAMS ... yt.config_.EXPERIMENT_FLAGS
 ! ... FIXME: Not working here
-! [MISC] ??? youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.USE_EMBEDDED_INNERTUBE_DATA, true)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_memberships_and_purchases, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_premium_voluntary_pause, false)
-youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.html5_web_enable_halftime_preroll, false)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.h5_set_masthead_ads_asynchronously, false)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.verify_ads_itag_early, false)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_push_enabled, false)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.music_web_enable_service_worker, false)
+! [MISC] ??? youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.USE_EMBEDDED_INNERTUBE_DATA, true)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_memberships_and_purchases, false)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_premium_voluntary_pause, false)
+youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.html5_web_enable_halftime_preroll, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.h5_set_masthead_ads_asynchronously, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.verify_ads_itag_early, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_push_enabled, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.music_web_enable_service_worker, false)
 !
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.masthead, emptyArr)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.header.feedFilterChipBarRenderer, emptyArr)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.masthead, emptyArr)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.contents.twoColumnBrowseResultsRenderer.tabs.*.tabRenderer.content.richGridRenderer.header.feedFilterChipBarRenderer, emptyArr)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
 ! ...
-music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
+music.www.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
 ! ...
 ! #### [TIP] APPARENCE PARAMS
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
 ! ...
 ! #### [TIP] PREVENT INTENSIF TRAFIC
 ! !#if ext_ublock
 ! ...   ??   because adguard slowly with those params
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(youtube\.com/sw\.js)/)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(go{2}\D{3}(?!.*(apis|usercontent|video)).*\.\D{3,8}\/)/)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, method:HEAD)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /\/(stats|tracking|verify)\// method:GET)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /(doubleclick|jnn\-pa\.googleapis|tpc\.googlesyndication)\.\D{3}/ )
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/stats\// method:POST)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-xhr-if, /\/log.*\=json\&/ method:POST)
-! youtubekids.com,youtube-nocookie.com,youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-fetch-if, /(youtube\.com/sw\.js)/)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-fetch-if, /(go{2}\D{3}(?!.*(apis|usercontent|video)).*\.\D{3,8}\/)/)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-fetch-if, method:HEAD)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-fetch-if, /\/(stats|tracking|verify)\// method:GET)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-xhr-if, /(doubleclick|jnn\-pa\.googleapis|tpc\.googlesyndication)\.\D{3}/ )
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-xhr-if, /\/stats\// method:POST)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-xhr-if, /\/log.*\=json\&/ method:POST)
+! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(no-fetch-if, /(?:(?:(?:ht{2}ps\:[\/]{2}(?:(?:(?:[\wd-]{10,22})\.(?:go{2}.*vid.*)\.\D{3})\/(?:vid.*play.*k)\?))(?:.*\&))((\bdur=(?:[1-4]?\d[.,]\d+|60[.,]\d{2,3})\b)|(\bctier\b=))(?:.*))/)
 ! !#endif
 !
 ! #### [FIX] ADS ATTEMPT TO LAUNCH ON YOUTUBE, BUT GIVE "AN ERROR HAS OCCURRED" AND IT'S REAL ANNOYING.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/ggcmkp/comment/fpzkwhq/?utm_source=share&utm_medium=web2x&context=3>
-@@||youtube.com/get_video_info
-youtubekids.com,youtube-nocookie.com,youtube.com#@#.video-ads
-youtubekids.com,youtube-nocookie.com,youtube.com#@#.ytp-ad-module
+@@||www.youtube.com/get_video_info
+youtubekids.com,youtube-nocookie.com,www.youtube.com#@#.video-ads
+youtubekids.com,youtube-nocookie.com,www.youtube.com#@#.ytp-ad-module
 !
-! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|youtube.com,redirect=empty
+! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com,redirect=empty
 ! !#if ext_ublock
-! youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
+! www.youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
 ! !#endif
-! youtube.com#%#//scriptlet('ubo-no-fetch-if.js', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
-youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
-youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
-youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
-youtube.com,youtu.be,yt.be##.guide-builder-v2 .branded-page-v2-secondary-col
-youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-box:first-child:last-child
-youtube.com,youtu.be,yt.be##.html5-endscreen-content
-youtube.com,youtu.be,yt.be##.html5-endscreen
-youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
-youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
-youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-related-channels:first-child + .branded-page-box:last-child
-youtube.com,youtu.be,yt.be###channel-subscription-promo-in-feed
-youtube.com,youtu.be,yt.be##.video-annotations
-youtube.com,youtu.be,yt.be##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
-youtube.com,youtu.be,yt.be##.yt-uix-button[data-trigger-for="action-panel-share"]
-||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
-@@*/next?alt=json$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-youtube.com,youtu.be,yt.be###masthead-ad
-youtube.com,youtu.be,yt.be###carousel-item
-youtube.com,youtu.be,yt.be##.banner-visible-area
-youtube.com,youtu.be,yt.be##[class="video-ads ytp-ad-module"]
-youtube.com,youtu.be,yt.be##.iv-branding
-youtube.com,youtu.be,yt.be##.annotation-type-custom
-youtube.com,youtu.be,yt.be##.annotation
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-ce-element-show
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top-buttons
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-impression-link
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytm-promoted-sparkles-web-renderer
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###old-browser-alert
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###dismissable.ytd-compact-promoted-item-renderer
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.badge-style-type-verified
-! youtube.com,youtu.be,yt.be,youtube-nocookie.com###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-display-ad-renderer
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###offer-module
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###root
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
-youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
-youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
-music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
+! www.youtube.com#%#//scriptlet('ubo-no-fetch-if.js', '/.*=adunit&.*/ method:/POST|GET/', 'noopPromiseResolve')
+www.youtube.com,youtu.be,yt.be##.watch-sidebar-body > #watch-related > .related-list-item
+www.youtube.com,youtu.be,yt.be##.home .branded-page-v2-secondary-col
+www.youtube.com,youtu.be,yt.be##.feed .branded-page-v2-secondary-col
+www.youtube.com,youtu.be,yt.be##.guide-builder-v2 .branded-page-v2-secondary-col
+www.youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-box:first-child:last-child
+www.youtube.com,youtu.be,yt.be##.html5-endscreen-content
+www.youtube.com,youtu.be,yt.be##.html5-endscreen
+www.youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+www.youtube.com,youtu.be,yt.be##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+www.youtube.com,youtu.be,yt.be##.branded-page-v2-col-container > .branded-page-v2-col-container-inner > .branded-page-v2-secondary-col:last-child > .branded-page-related-channels:first-child + .branded-page-box:last-child
+www.youtube.com,youtu.be,yt.be###channel-subscription-promo-in-feed
+www.youtube.com,youtu.be,yt.be##.video-annotations
+www.youtube.com,youtu.be,yt.be##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+www.youtube.com,youtu.be,yt.be##.yt-uix-button[data-trigger-for="action-panel-share"]
+||www.youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+@@*/next?alt=json$domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
+www.youtube.com,youtu.be,yt.be###masthead-ad
+www.youtube.com,youtu.be,yt.be###carousel-item
+www.youtube.com,youtu.be,yt.be##.banner-visible-area
+www.youtube.com,youtu.be,yt.be##[class="video-ads ytp-ad-module"]
+www.youtube.com,youtu.be,yt.be##.iv-branding
+www.youtube.com,youtu.be,yt.be##.annotation-type-custom
+www.youtube.com,youtu.be,yt.be##.annotation
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-ce-element-show
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top-buttons
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-chrome-top
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-impression-link
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-c4-tabbed-header-renderer.style-scope.yt-simple-endpoint.banner-visible-area
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytm-promoted-sparkles-web-renderer
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###old-browser-alert
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###dismissable.ytd-compact-promoted-item-renderer
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.badge-style-type-verified
+! www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-display-ad-renderer
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###offer-module
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###root
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
+music.www.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
 /yt?img\.(.{2,})(.*\/)?yap\.js/$script,important
-/log_event?alt=json$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/embed/*?ps=software*$subdocument,important,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-@@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
-/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/log_event?alt=json$xmlhttprequest,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/embed/*?ps=software*$subdocument,important,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
+@@/manifest.json$other,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
+/stats/watchtime?*=detailpage&*$image,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/
 /youtu(be)?\.(.{2,})/get\_video\_info/$badfilter
-||youtube.com/get_video_info$badfilter
-||www.youtube.com/get_video_info?*=detailpage$xmlhttprequest,domain=youtube.com,badfilter
-||youtube.com/get_video_info?$~third-party,badfilter
+||www.youtube.com/get_video_info$badfilter
+||www.youtube.com/get_video_info?*=detailpage$xmlhttprequest,domain=www.youtube.com,badfilter
+||www.youtube.com/get_video_info?$~third-party,badfilter
 ||youtube-nocookie.com^$badfilter
 @@||youtube-nocookie.com$generichide
 ! <start DandelionSprout YouTubeEvenMorePureVideoExperience (https://github.com/DandelionSprout/adfilt) >
-youtube.com#@##related
-youtube.com#@#ytd-live-chat-frame
-youtube.com#@##comments
-youtube.com#@$?##logo { pointer-events: none !important; cursor: default !important }
+www.youtube.com#@##related
+www.youtube.com#@#ytd-live-chat-frame
+www.youtube.com#@##comments
+www.youtube.com#@$?##logo { pointer-events: none !important; cursor: default !important }
 ! </end DandelionSprout YouTubeEvenMorePureVideoExperience >
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
-youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
-youtube.com#@$?#consent-bump { remove: true; }
-youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
-youtube.com##ytd-mealbar-promo-renderer
-youtube.com##.ytd-consent-bump-lightbox
-youtube.com##.yt-live-chat-banner-renderer
-youtube.com###visible-banners > .yt-live-chat-banner-manager
-youtube.com#@##clarify-box
-youtube.com###YtKevlarVisibilityIdentifier
-youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
-youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
-youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
-youtube.com#@#.appbar-guide-menu-layout, .gstl_50.sbdd_a, .js-yt-header.yt-header, ytd-mini-guide-renderer.ytd-app, app-drawer[opened=""][persistent=""], ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer:style(position: absolute !important;)
-youtube.com#@#.ytp-chrome-top
-youtube.com#@#.ytp-chrome-top-buttons
-youtube.com#@#.ytp-share-button
-! youtube.com#@#+js(abort-on-property-read, watermark)
-youtube.com#@#[id="button"]:has([aria-label*="vocal"])
-music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
-@@||youtube.com$removeparam=gl
-@@||youtube.com$removeparam=hl
-@@||consent.youtube.com^
-&lact=$ping,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-&frags=$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#paper-dialog.ytd-popup-container
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#ytd-popup-container
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#[id="dialog"]
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#yt-upsell-dialog-renderer[dialog][dialog][dialog]
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#.opened
+www.youtube.com,youtu.be,yt.be,youtube-nocookie.com#@#iron-overlay-backdrop
+www.youtube.com#@$?#consent-bump { remove: true; }
+www.youtube.com#@$#iframe[name="passive_signin"] { display: none !important; visibility: hidden !important; }
+www.youtube.com##ytd-mealbar-promo-renderer
+www.youtube.com##.ytd-consent-bump-lightbox
+www.youtube.com##.yt-live-chat-banner-renderer
+www.youtube.com###visible-banners > .yt-live-chat-banner-manager
+www.youtube.com#@##clarify-box
+www.youtube.com###YtKevlarVisibilityIdentifier
+www.youtube.com#@##contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after, tp-yt-app-drawer:style(position: absolute !important;)
+www.youtube.com#@##header:style(transform: none !important; margin-top: 0 !important;)
+www.youtube.com#@##masthead-container:style(position: absolute !important; transition: none !important; transform: none !important;)
+www.youtube.com#@#.appbar-guide-menu-layout, .gstl_50.sbdd_a, .js-yt-header.yt-header, ytd-mini-guide-renderer.ytd-app, app-drawer[opened=""][persistent=""], ytd-two-column-browse-results-renderer[page-subtype="history"] #secondary.ytd-two-column-browse-results-renderer:style(position: absolute !important;)
+www.youtube.com#@#.ytp-chrome-top
+www.youtube.com#@#.ytp-chrome-top-buttons
+www.youtube.com#@#.ytp-share-button
+! www.youtube.com#@#+js(abort-on-property-read, watermark)
+www.youtube.com#@#[id="button"]:has([aria-label*="vocal"])
+music.www.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
+@@||www.youtube.com$removeparam=gl
+@@||www.youtube.com$removeparam=hl
+@@||consent.www.youtube.com^
+&lact=$ping,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+&frags=$domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+
+! How To Get Rid Of The Youtube Ad Block Popup
+! https://www.reddit.com/r/youtube/comments/17079px/comment/k4sbpf6/
+www.youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+! youtube.com#$#iframe[name="passive_signin"]{ display: none !important; }
+! youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none !important; }
+! youtube.com##.ytd-consent-bump-lightbox
+! youtube.com###content-wrapper
+! youtube.com##.yt-live-chat-banner-renderer
+! youtube.com###visible-banners > .yt-live-chat-banner-manager
+! https://adguard.com/kb/general/ad-filtering/create-own-filters/#conditions-directive
+! https://www.reddit.com/r/uBlockOrigin/comments/16lmeri/youtube_antiadblock_and_ads_september_18_2023/k1wl8df/
+! from uBlock filters – Quick fixes
+!#if !cap_html_filtering
+!#if env_firefox
+www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
+!#endif
+!#endif
+! ||youtube.com/s/desktop/*/jsbin/desktop_polymer.vflset/desktop_polymer.js$~doc,uritransform=/desktop\/\w+\/jsbin/desktop\/1e089191\/jsbin/,domain=www.youtube.com
+! https://github.com/psychon-night/bypass-youtube-adblock-blocker/blob/main/ublockRulesFromReddit
+!#if !adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_ios
+www.www.youtube.com##+js(abort-on-stack-trace, btoa, /[A-Za-z]lb \S+polymer/)
+! For the closable popup
+www.youtube.com#?#ytd-enforcement-message-view-model:has(> div.ytd-enforcement-message-view-model)
+www.youtube.com#$#tp-yt-iron-overlay-backdrop { display: none !important; }
+www.youtube.com#$?#tp-yt-paper-dialog:has(> ytd-enforcement-message-view-model > div.ytd-enforcement-message-view-model) { remove: true; }
+! For the overlay
+www.youtube.com#$#ytd-watch-flexy[player-unavailable] #player-container-outer.ytd-watch-flexy { visibility: visible !important; }
+www.youtube.com#$?#yt-playability-error-supported-renderers:has(yt-button-view-model[dialog-dismiss]) { display: none !important; }
+!#endif
+! ONLY FOR ADGUARD
+! /youtubei/v*/player?key=$replace=/\"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+! /youtubei/v*/player?key=$replace=/\"adSlots.*?\}\]\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+! /youtubei/v*/player?key=$replace=/\"playerAds.*?\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
+www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
+www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, youtubei/v1/player)
+tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
+www.youtube.com##+js(trusted-replace-fetch, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , player?key=)
+! https://www.ghacks.net/2021/04/01/here-is-the-easiest-way-to-get-rid-of-googles-before-you-continue-to-youtube-prompt/#comment-4565071
+www.youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
+www.youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
+www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
+
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
@@ -1186,7 +1233,7 @@ stream-serie.net#$##option-1{height:100%}
 */fingerprint2.js$script,important,redirect=fingerprint2.js
 */fp2.js$script,important,redirect=fingerprint2.js
 ||lemde.fr/*/xitistatus.js|$script,important,domain=lemonde.fr,redirect-rule=nofab.js
-! because of "service worker" filter of "fuck fuckadblock:mining" /^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,from=~dagrasso.pl|~tiktok.com|~twitter.com|~youtube.com
+! because of "service worker" filter of "fuck fuckadblock:mining" /^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,from=~dagrasso.pl|~tiktok.com|~twitter.com|~www.youtube.com
 !! /([\/]+)(([\w]+(?:([-~_.]+))+))?(?:[s][w]+)\.js/$script,~third-party
 ||nsaneforums.com/index.php?*serviceworker*
 @@/workbox-sw.js$script,domain=epicgames.com
@@ -1968,7 +2015,7 @@ mabbox.bytel.fr##.no-rules.row
 mabbox.bytel.fr##:xpath(/html/body/div[8]/div[2]/div[1])
 /[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com
 ||https://static.doubleclick.net/instream/ad_status.js$important
-@@/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/$domain=youtube.com|youtu.be|yt.be
+@@/[\=\&\_\-\.\/\?\s\d]fe{2}dback[\=\&\_\-\.\/\?\s\d]/$domain=www.youtube.com|youtu.be|yt.be
 search.lilo.org##.top.addivwhite2
 ||googlevideo.com^$media,domain=animationdigitalnetwork.fr
 ||animationdigitalnetwork.fr/tv/mp4/*$~third-party
@@ -2075,9 +2122,9 @@ facebook.com,fb.com#@#+js(nowebrtc)
 @@/classes/masha/masha.js$script,domain=cinez.net|gocine.org
 passeportsante.net##.dynInFeed
 #@#[href*=".instagram."]
-@@/manifest.json$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com
+@@/manifest.json$other,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/([\_]204([\?]|$))|(\/api(\/stats)?\/(a(ds|tr)))|((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/ad_status\.)|heartbeat(\&|\?)|(\/pagead\/lvz\?)|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(\/ptracking)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(\&s\=youtube\&action\=)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$~other,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
 ||facebook.com/dlite/skywalker_topic$xmlhttprequest,badfilter
 voir-film.*##[class="tagssz"]
 voir-film.*##.nnbg13 > div:nth-of-type(2)
@@ -2230,7 +2277,7 @@ youporn.com##.cSzepHjuLt1
 ||play-asia.com^$domain=~play-asia.com
 ||bebi.com^$domain=~bebi.com
 ||adspeed.com^$domain=~adspeed.com
-@@/(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})\/pagead\/id)/$domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+@@/(ht{2}ps?\:\/\/go{2}gleads\.([a-z]{1})\.doubleclick\.(.{3})\/pagead\/id)/$domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 @@||googleads.g.doubleclick.net/pagead/id$xmlhttprequest,badfilter
 streamingvf.casa##[href^="https://dereferer.co/"]
 ||littlecdn.com^$domain=~littlecdn.com
@@ -2303,8 +2350,8 @@ mstream.website###adbdetect
 allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.afs_ads
 /.*\-money\.\w{10,}/$script,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 @@||privacy-center.org^$domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
-youtube.com#@#.opened:remove()
-youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
+www.youtube.com#@#.opened:remove()
+www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 @@/^ws{1,2}((\:\/{2})+)/$domain=eu-proxy.startpage.com
 @@/fuckadblock.$script,domain=imsdb.pw
 aparat.*##[target="_top"]
@@ -2359,8 +2406,8 @@ vodfilms.*#@#[href*="postlnk.com"]
 filmoflix.*##.full-in > div:if(a[target])
 filmoflix.*##[class$="-player"]
 filmoflix.*##a[target="_parent"]
-youtube.com#@#.ytp-paid-content-overlay
-youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
+www.youtube.com#@#.ytp-paid-content-overlay
+www.youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 ||api.ipify.org^$domain=~ipify.org,badfilter
 @@||mc.yandex.ru^$~script,badfilter
 @@||mc.yandex.ru/metrika/*$domain=embed.mystream.to
@@ -2396,7 +2443,7 @@ voirseries.*##+js(remove-attr, target|href|rel, #iWatch)
 voirseries.*###GoPlayer > i.insideIframe
 voirseries.*###CloseiWatch
 voirseries.*##.MailWrapper:nth-child(n+3)
-@@||accounts.youtube.com/accounts/CheckConnection$domain=accounts.google.com,csp
+@@||accounts.www.youtube.com/accounts/CheckConnection$domain=accounts.google.com,csp
 upvid.biz##[class^="lk"]
 upvid.*##+js(window.open-defuser.js)
 ||vidlox.*^$important,badfilter,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;
@@ -2563,7 +2610,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 /\/[a-z]{1}\-[a-z]{1,2}\-async\/(.+)\/playercinema(.+)?/$script,_,important
 ! /(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
-@@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
+@@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.www.youtube.com|music.www.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
 @@/.*/$font,third-party
 ! @@/videoembed/$subdocument,media,third-party, @@/embed/$subdocument,media,third-party
@@ -2606,8 +2653,8 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ||google-analytics.com^$script,badfilter
 ||googlesyndication.com^$badfilter
 ||googlevideo.com/generate_204$image,badfilter
-||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com|youtube-nocookie.com,badfilter
-||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.youtube.com|music.youtube.com,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.www.youtube.com|music.www.youtube.com|youtube-nocookie.com,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.www.youtube.com|music.www.youtube.com,badfilter
 ||hqq.*/ajax.php?mode=insertLog$badfilter
 ||net/sw.js?$script,~third-party,badfilter
 ||netflix.com/api/ftl/probe?monotonic=$badfilter
@@ -2619,13 +2666,13 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ||www.google-analytics.com^$badfilter
 ||www.googleadservices.com^$badfilter
 ||y2mate.com/*.gif$image,badfilter
-||youtube.com/ptracking?$badfilter
-||youtube.com^$other,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+||www.youtube.com/ptracking?$badfilter
+||www.youtube.com^$other,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 ||thepiratebay.*/*.php?$badfilter
 /pubads.$badfilter
 /adtech_$domain=~adtech.co.uk,badfilter
 /adservice.$image,badfilter
-/stats/watchtime?*=detailpage&*$image,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/stats/watchtime?*=detailpage&*$image,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com,badfilter
 /^https?:\/\/str((eam)?ta(pe)?|cloud)\.[\w]+\//$badfilter,important,csp=script-src 'self' data: 'unsafe-inline' 'unsafe-eval' *.google.com *.gstatic.com local.adguard.org injections.adguard.org;
 !
@@ -2636,8 +2683,8 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ! latendresseencuisine.com##div:if(>ins.adsbygoogle)
 *$removeparam=fbclid
 *$removeparam=yclid
-*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
-*youtube.com*embed*playsinline*enablejsapi*origin*$subdocument,redirect-rule=noop.html
+*www.youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
+*www.youtube.com*embed*playsinline*enablejsapi*origin*$subdocument,redirect-rule=noop.html
 6play.fr#@##fb-root:not(body):not(html)
 6play.fr#?#li:has(>[href*="/freemium/"])
 6play.fr#?#li:has(>[src*="/freemium/"])
@@ -2683,7 +2730,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@||web-analytics.engagio.com/js/ei.js$script,domain=degreed.com
 @@||www-google-analytics.l.google.com^$script,domain=degreed.com
 @@||www.google-analytics.com^$domain=degreed.com
-@@||youtube.com/api/stats/*$domain=youtube.com
+@@||www.youtube.com/api/stats/*$domain=www.youtube.com
 accuweather.com###connatix
 addictivetips.com##.mv-ad-box
 akceleratorbiznesu.eu###featured-links
@@ -2711,8 +2758,8 @@ emule-island.eu##.gplay-box
 enstream.club##a[class^="btn_"][href*=".php?"]
 enstream.club##[class="FPlayer"]
 eslint.org##.ea-type-text,.ea-placement
-/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$script,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
-/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$xmlhttprequest,domain=youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$script,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
+/((\=|\&|\_)ad\_?(u(nit|rl)|t(racking|ype))(\&|\=))|(\/(secure)?pubads(\.|\_))|(\_midroll\_)|(watch7ad\_)|(an{2}otations\_(invideo|module))|(\/ads(ales|erver)\/)|(\.fwmrm\.net)|(\.com\/uds\/afs)|(ad(_)?companion)|(tpc\.googlesyndication\.)|(innovid\.com)|(flashtalking\.com)/$xmlhttprequest,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /([\/]{1})(s(ocket|ervice)?(_|[^\w\d\s:])?)w(orker)?((?!f(object)?)([\D,\W])?([\d].*|[\.][\w]))?\.js/$script,badfilter
 /adsbygoogle.js$script,important,domain=emule-island.eu
 /adsid/integrator.js$script,important
@@ -2843,8 +2890,8 @@ yari-demos.prod.mdn.mozit.cloud#@#+js(set, Document.prototype.interestCohort, un
 scan-manga.com#@##ab_bg
 scan-manga.com#@##carouselTOPContainer
 ||*.cloudfront.net^*realytics*.js
-||*google*^linkredirect?dest=*youtube.com*$redirect=noop.txt
-||*youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
+||*google*^linkredirect?dest=*www.youtube.com*$redirect=noop.txt
+||*www.youtube.com*embed*playsinline*enablejsapi*origin*$domain=hqq.tv
 ||adclick.g.doubleclick.net/*/click$removeparam
 ||developpez.com^compter-*$image,domain=developpez.net,important
 ||letsmakeiteasy.tech/detroitchicago/*
@@ -2955,7 +3002,7 @@ dood.*#$#body { color: whitesmoke!important; }
 @@/cdn-cgi/challenge-platform/$xmlhttprequest,script
 @@/pass_md5/$xmlhttprequest
 ||2mdn.net^$badfilter
-||youtube.com/embed/$domain=lunchboards.com,important
+||www.youtube.com/embed/$domain=lunchboards.com,important
 @@||pagead2.googlesyndication.com^$domain=arte.tv
 ! ||arte.tv/log-player/
 @@||cfeucdn.com^$third-party,media,image,xmlhttprequest
@@ -3076,8 +3123,8 @@ $cookie=__sonar
 $cookie=__ar_v4
 $cookie=cto_lwid
 $cookie=IDE
-! $cookie=IDE,domain=~youtube.com
-! @@||youtube.com^$cookie=IDE,important
+! $cookie=IDE,domain=~www.youtube.com
+! @@||www.youtube.com^$cookie=IDE,important
 ! because can be id = OPT_OUT
 @@||doubleclick.net^$cookie=id
 ! @@$cookie=id,domain=doubleclick.net
@@ -3109,9 +3156,9 @@ $cookie=_pubcid
 
 !! https://policies.google.com/technologies/cookies?hl=en
 !! $cookie=VISITOR_INFO1_LIVE
-!! @@||youtube.com^$cookie=VISITOR_INFO1_LIVE
+!! @@||www.youtube.com^$cookie=VISITOR_INFO1_LIVE
 !! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
-!! youtube.com##+js(remove-cookie, VISITOR_INFO1_LIVE)
+!! www.youtube.com##+js(remove-cookie, VISITOR_INFO1_LIVE)
 
 !! scorecardresearch.com (Com Score)
 $cookie=uid
@@ -3180,8 +3227,8 @@ $cookie=_uid
 !#endif
 
 
-@@||youtube.com$generichide
-@@||youtube.com/youtubei/*/log_event
+@@||www.youtube.com$generichide
+@@||www.youtube.com/youtubei/*/log_event
 ||commandersact.com^$badfilter
 @@|http*:*/ima3.js|$script,xmlhttprequest,badfilter
 !! ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima3
@@ -4318,8 +4365,8 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 
 ! ======[ UNBREAK ]=====================================================
 www.youtube.com#@#.opened
-youtube.com#@#.opened:remove()
-youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
+www.youtube.com#@#.opened:remove()
+www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
 ! 2024-01-18 avoid blocking [ forum.newrelic.com ]
 @@||newrelic.com|$~third-party
@@ -4386,8 +4433,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||static1.howtogeekimages.com|
 ! use for google ima
 @@||2mdn.net/instream/video/client.js$all
-! 2024-01-25 Personalized ad settings - unlock the site itself (ads.youtube.com redirect to adssettings.google.com)
-@@||ads.youtube.com|$~third-party
+! 2024-01-25 Personalized ad settings - unlock the site itself (ads.www.youtube.com redirect to adssettings.google.com)
+@@||ads.www.youtube.com|$~third-party
 @@||adssettings.google.com|$~third-party
 ! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
 @@||googleanalytics.com|$~third-party
