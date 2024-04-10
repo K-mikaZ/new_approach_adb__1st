@@ -2948,12 +2948,11 @@ streamingvf.fun##[id^=ads_]
 @@||userload.co^$subdocument
 ||qiota.com^
 ||googleoptimize.com^$important
-/sentry(-cdn)?\.(io|com)/
+/sentry(-cdn)?\.(com|io)/$third-party
 ||cdn.jsdelivr.net*@sentry/*.js$important
 ||mediarithmics.com^
 ! COLOR iframe fix
-uqload.com#$#body { color: whitesmoke; }
-vidoza.net#$#body { color: whitesmoke!important; }
+uqload.com,vidoza.net#$#body { color: whitesmoke!important; }
 ! parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||viewsb.com^$subdocument
