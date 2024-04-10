@@ -32,6 +32,7 @@
 ! ...         LINUX: $> sudo iptables -A INPUT -s 173.194.55.0/24 -j REJECT -m comment --comment "YouTubeCacheTweak: Youtube Speed Fix"
 !                    $> sudo iptables -A INPUT -s 206.111.0.0/16 -j REJECT -m comment --comment "YouTubeCacheTweak: Youtube Speed Fix"
 !                - [You will need the iptables comment module to add comments to a rule](https://tinyurl.com/2kkqfdl3)
+!                    $> ls /lib/modules/$(uname -r)/kernel/net/netfilter/ | grep _comment
 !                - Depending on your distribution, you may need to load the 'ipt_comment' or 'xt_comment' modules into your running kernel first.
 !                  like: 'modprobe ipt_comment'
 ! Regex Numeric Range Generator: https://3widgets.com/
