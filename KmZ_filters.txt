@@ -3325,7 +3325,7 @@ $cookie=_uid
 ||rsntcgoowyxsu.com^
 ||static.ads-twitter.com^
 ||analytics.twitter.com^
-||s.pinimg.com^
+! ||s.pinimg.com^
 ||sc-static.net^
 ||cdn.ravenjs.com^
 ||optimize.google.com^
