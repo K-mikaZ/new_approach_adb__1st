@@ -3247,7 +3247,7 @@ $cookie=_uid
 ||id5-sync.com^
 /prisma.gif?
 /prisma-tag/
-||ct.pinterest.com^
+! ||ct.pinterest.com^
 ||zeotap.com^
 ||sirdata.io^
 ||px-cloud.net^
