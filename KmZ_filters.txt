@@ -2952,7 +2952,7 @@ streamingvf.fun##[id^=ads_]
 ||cdn.jsdelivr.net*@sentry/*.js$important
 ||mediarithmics.com^
 ! COLOR iframe fix
-uqload.com,vidoza.net#$#body { color: whitesmoke!important; }
+dood.*,uqload.com,vidoza.net,younetu.com#$#body { color: whitesmoke; }
 ! parismatch.com##[id^="match2_"]
 parismatch.com##[class|="lmn"]
 @@||viewsb.com^$subdocument
@@ -2973,12 +2973,10 @@ lxax.com##[class="hide"]
 !! not blocking ||try.abtasty.com/*/*.js
 ||try.abtasty.com/*.js$third-party
 ||imasdk.googleapis.com^$badfilter
-younetu.com#$#body { color: whitesmoke; }
 *##.placeholder-pub_dfp
 terrafemina.com##.fc-dialog-overlay
 juststream.org##.movie-xyz
 ###btnpub
-dood.*#$#body { color: whitesmoke!important; }
 ||testingmetriksbre.ru^
 ||plainmarshyaltered.com^
 ||freighthealaudience.com^
