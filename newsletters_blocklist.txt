@@ -4,12 +4,12 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
 ! Description: Annoying newsletters blocklist
 
-! generic filters
+! "generic" filters
 ##.overlay-newsletter
 ! www.jalios.com#@#.section-newsletter
 #@#.section-newsletter
 
-! specific filters
+! "specific" filters
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
 ! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
@@ -22,6 +22,6 @@ chefcuisto.com##+js(set, pq_popup_requete, null)
 ! FIX: Newsletter popup
 cuisine-saine.fr,effetph.com,frontendgenius.com,ikeahackers.net,iletaitunefoislapatisserie.com,planetevegan.com,simplementfrais.com,vapotestyle.fr,tangerinezest.com,www.comment-economiser.fr,www.kpourkatrine.com,www.rasage-classique.com,www.saveeat.co,www.okay.eu##+js(overlay-buster)
 
-! net filters
+! "net" filters
 /[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
