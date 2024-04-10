@@ -5,14 +5,13 @@
 ! Description: Annoying newsletters blocklist
 
 ! "generic" filters
-##.overlay-newsletter
 ! www.jalios.com#@#.section-newsletter
 #@#.section-newsletter
+##.overlay-newsletter
 
 ! "specific" filters
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
-! www.medisite.fr##.mf-loaded.mf-animate.mf-notification-iframe-top-left.mf-notification-iframe
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 
 ! "applications" filters
