@@ -25,4 +25,4 @@ atelier-fermentation.com,cuisine-saine.fr,effetph.com,frontendgenius.com,healthy
 /[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 ! 2024-04-12 ~ 07:36:34 [ matteoscoffee.com ](https://matteoscoffee.com/)
-||forms.soundestlink.com|$from=matteoscoffee.com
+||forms.soundestlink.com^$from=matteoscoffee.com
