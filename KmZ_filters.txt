@@ -65,7 +65,7 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#csp-syntax
 ! https://www.reddit.com/r/uBlockOrigin/comments/a8d5jb/comment/ec9z3if/
 ! BAD: youtube's csp rules block loading site on vivaldi browser
-! ||music.www.youtube.com^$csp=worker-src 'none'
+! ||music.youtube.com^$csp=worker-src 'none'
 ! ||www.youtube.com^$csp=worker-src 'none'
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
@@ -88,8 +88,8 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.confi
 ! #### [TRACKING] cspreport, (atrUrl, ptrackingUrl, qoeUrl does not work here)
 ! ... window.ytInitialPlayerResponse
 ||www.youtube.com/cspreport$other
-||music.www.youtube.com/cspreport$other
-||m.www.youtube.com/cspreport$other
+||music.youtube.com/cspreport$other
+||m.youtube.com/cspreport$other
 ||youtube-nocookie.com/cspreport$other
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
@@ -166,7 +166,7 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.confi
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
 ! ...
-music.www.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
+music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
 ! ...
 ! #### [TIP] APPARENCE PARAMS
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
@@ -236,7 +236,7 @@ www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-carousel-ad-renderer
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###merch-shelf
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytp-paid-content-overlay
-music.www.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
+music.youtube.com##.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
 /yt?img\.(.{2,})(.*\/)?yap\.js/$script,important
 /log_event?alt=json$xmlhttprequest,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
 /embed/*?disablekb=1&loop=1&mute=0*&autoplay=0&rel=0&showinfo=0&playsinline=1&controls=0&origin=*&iv_load_policy=3&start=0&nologo=1&modestbranding=1&enablejsapi=1&widgetid=1$subdocument,important,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com
@@ -279,7 +279,7 @@ www.youtube.com#@#.ytp-chrome-top-buttons
 www.youtube.com#@#.ytp-share-button
 ! www.youtube.com#@#+js(abort-on-property-read, watermark)
 www.youtube.com#@#[id="button"]:has([aria-label*="vocal"])
-music.www.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
+music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-container.style-scope
 @@||www.youtube.com$removeparam=gl
 @@||www.youtube.com$removeparam=hl
 @@||consent.www.youtube.com^
@@ -2611,7 +2611,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 /\/[a-z]{1}\-[a-z]{1,2}\-async\/(.+)\/playercinema(.+)?/$script,_,important
 ! /(.+)googletagmanager\.(.+)/$script,_,important,___,domain=allocine.fr
 /(.+)\/collect\?v=[\d]{1}(.+)?/$xmlhttprequest,image,_,third-party
-@@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.www.youtube.com|music.www.youtube.com
+@@/(.+)googlevideo\.com\/videogoodput\?(.+)\&source\=goodput/$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@/.*/$stylesheet,font,_,~third-party
 @@/.*/$font,third-party
 ! @@/videoembed/$subdocument,media,third-party, @@/embed/$subdocument,media,third-party
@@ -2654,8 +2654,8 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 ||google-analytics.com^$script,badfilter
 ||googlesyndication.com^$badfilter
 ||googlevideo.com/generate_204$image,badfilter
-||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.www.youtube.com|music.www.youtube.com|youtube-nocookie.com,badfilter
-||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.www.youtube.com|music.www.youtube.com,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com|youtube-nocookie.com,badfilter
+||googlevideo.com/videoplayback?*&ctier=$xmlhttprequest,domain=~youtube-nocookie.com|www.youtube.com|m.youtube.com|music.youtube.com,badfilter
 ||hqq.*/ajax.php?mode=insertLog$badfilter
 ||net/sw.js?$script,~third-party,badfilter
 ||netflix.com/api/ftl/probe?monotonic=$badfilter
