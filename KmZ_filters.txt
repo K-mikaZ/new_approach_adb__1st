@@ -87,10 +87,10 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.confi
 ! ...
 ! #### [TRACKING] cspreport, (atrUrl, ptrackingUrl, qoeUrl does not work here)
 ! ... window.ytInitialPlayerResponse
-||www.youtube.com/cspreport$other
-||music.youtube.com/cspreport$other
-||m.youtube.com/cspreport$other
-||youtube-nocookie.com/cspreport$other
+!||www.youtube.com/cspreport$other
+!||music.youtube.com/cspreport$other
+!||m.youtube.com/cspreport$other
+!||youtube-nocookie.com/cspreport$other
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.atrUrl)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.ptrackingUrl)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, ytInitialPlayerResponse.playbackTracking.qoeUrl)
