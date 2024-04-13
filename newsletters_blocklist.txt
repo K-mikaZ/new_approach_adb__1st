@@ -24,6 +24,6 @@ atelier-fermentation.com,cuisine-saine.fr,effetph.com,frontendgenius.com,healthy
 ! "net" filters
 /[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
-*modalnewsletter$from=www.programme.tv|www.programme-tv.net
+*modalnewsletter$from=www.programme-tv.net|www.programme.tv
 ||forms.soundestlink.com^$from=matteoscoffee.com
 
