@@ -3424,7 +3424,6 @@ $cookie=_uid
 @@||googlesyndication.com^$domain=ipv6-test.com
 @@||googleadservices.com^$domain=ipv6-test.com
 @@||google.*^$domain=ipv6-test.com,important
-@@||tiqcdn.com^
 @@||360.audion.fm^
 @@||ravenjs.com^
 @@||highload.to^$subdocument
@@ -4443,6 +4442,12 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||media-amazon.com/images/$all,domain=amazon.*
 ! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
+
+! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
+||omnitagjs.com^$important,badfilter
+@@||omnitagjs.com^
+@@||tiqcdn.com^
+@@||tags.tiqcdn.com^$cname
 
 !! FIX video loading on capital.fr (e.g. https://www.capital.fr/entreprises-marches/rafale-helicoptere-on-a-teste-les-simulateurs-de-vol-de-sogitec-au-salon-du-bourget-2023-1472333)
 ! @@||www.datadoghq-browser-agent.com^$important
