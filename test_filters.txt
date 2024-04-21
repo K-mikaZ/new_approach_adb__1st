@@ -279,6 +279,9 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ##div[data-hbdbrk-parent="true"]
 ##div[data-actirise-slot]
 
+! 2024-04-21 ~ 10:49:18 [ comment-brasser-sa-biere.fr ](https://comment-brasser-sa-biere.fr/biere-dautomne/)
+##[class*="placeholder"]:has(>:empty)
+
 huffingtonpost.fr##[class="before-text "]
 
 ! 2024-01-23 https://www.malekal.com
