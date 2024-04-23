@@ -119,7 +119,9 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 ! -------------------- Fake button watching ---------------------
 !! https://www.reddit.com/r/uBlockOrigin/comments/zhgek6/is_there_a_or_filter/
 !! https://blog.logrocket.com/deep-dive-css-where-is-functions/#combining-dividing-stacking-where
-##:where(center, span, div):has(>a:is([class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."]:not([href*="malekal.com"])):is([href], [target], [rel^="no"])):is(:not([style*="hidden"]), :not([style*="display:"][style*="none"]))
+! Break https://www.auxdelicesdecaroline.com/fr/recette/c592ufs-marina9s-couleurs-naturelles-580
+! ##:where(center, span, div):has(>a:is([class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."]:not([href*="malekal.com"])):is([href], [target], [rel^="no"])):is(:not([style*="hidden"]), :not([style*="display:"][style*="none"]))
+##:where(center, span, div):has(>a:is(.mButton, .myButton, [href*="/regarder."], [href*="/telecharger."]:not([href*="malekal.com"])):is([href], [target], [rel^="no"])):is(:not([style*="hidden"]), :not([style*="display:"][style*="none"]))
 *#$#div[class^="movie-aye"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 *#$#div[class="g-buttons"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):has(>a[href]){display:none!important;}
 ##div[class*="movie__"]:is([class*="big"][class*="btn"])
