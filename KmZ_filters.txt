@@ -4430,9 +4430,9 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||static1.howtogeekimages.com|
 ! use for google ima
 @@||2mdn.net/instream/video/client.js$all
-! 2024-01-25 Personalized ad settings - unlock the site itself (ads.www.youtube.com redirect to adssettings.google.com)
-@@||ads.www.youtube.com|$~third-party
-@@||adssettings.google.com|$~third-party
+! 2024-01-25 Personalized ad settings - unlock the site itself (ads.youtube.com redirect to adssettings.google.com)
+@@||ads.youtube.com
+@@||adssettings.google.com
 ! 2024-01-25 unlock the site itself [ marketingplatform.google.com ](https://marketingplatform.google.com/about/analytics/)
 @@||googleanalytics.com|$~third-party
 @@||marketingplatform.google.com|$~third-party
