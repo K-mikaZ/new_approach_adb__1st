@@ -189,9 +189,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||bid.g.doubleclick.net/dbm/vast?dbm_c=*$redirect=noopvast-4.0
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
-||franecki.net*.xml?v=2.0&external_subid$important,redirect=noopvast-2.0
-||franecki.net*.xml?v=3.0&external_subid$important,redirect=noopvast-3.0
-||franecki.net*.xml?v=4.0&external_subid$important,redirect=noopvast-4.0
 ||0af2a962b0102942d9a7df351b20be55.com^$important,redirect=noopvast-2.0
 ||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
 
