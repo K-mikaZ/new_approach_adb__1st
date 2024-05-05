@@ -34,6 +34,9 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 
 ||cdn.jsdelivr.net/npm/@dailymotion/vast-client@*/dist/vast-client.$script,important,redirect=noopjs
 
+! 2024-01-29 ~ 11:02:39 - image redirect to a XML
+||ad.mail.ru/vast/$important,redirect=noopvast-3.0
+
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast([\w\d]+)?[\/]/$xmlhttprequest,third-party
 
