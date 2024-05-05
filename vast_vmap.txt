@@ -37,6 +37,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! 2024-01-29 ~ 11:02:39 - image redirect to a XML
 ||ad.mail.ru/vast/$important,redirect=noopvast-3.0
 
+||www.traff01traff02.site^$important,third-party,redirect=noopvast-3.0
+
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast([\w\d]+)?[\/]/$xmlhttprequest,third-party
 
@@ -50,6 +52,14 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 /vast/VAST-3$xmlhttprequest,third-party,redirect-rule=noopvast-3.0
 /vast/VAST-4$xmlhttprequest,third-party,redirect-rule=noopvast-4.0
 ||vast.*/v2$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
+
+/vast.php?partner_id=*&format=2&$important,redirect=noopvast-2.0
+/vast.php?partner_id=*&format=3&$important,redirect=noopvast-3.0
+/vast.php?partner_id=*&format=4&$important,redirect=noopvast-4.0
+! ||franecki.net^/*.xml?v=3.0&external_subid=$important,redirect=noopvast-3.0
+/*.xml?v=2.0&external_subid=$important,redirect=noopvast-2.0
+/*.xml?v=3.0&external_subid=$important,redirect=noopvast-3.0
+/*.xml?v=4.0&external_subid=$important,redirect=noopvast-4.0
 
 ! ||vast.adsafeprotected.com^$important
 ||vast.xpln.tech^$redirect-rule=noopvast-2.0
