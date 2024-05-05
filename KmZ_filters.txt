@@ -4173,6 +4173,7 @@ accounts.google.com/gsi/iframe$badfilter
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include webedia_getjad_ads.txt
 !#include sibnet_ads_and_trackers.txt
+!#include vast_vmap.txt
 !#include newsletters_blocklist.txt
 
 
