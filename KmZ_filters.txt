@@ -4345,10 +4345,11 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 !#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
 !#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
-!#include newsletters_blocklist.txt
 !#include ezoic_ads.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include webedia_getjad_ads.txt
+!#include sibnet_ads_and_trackers.txt
+!#include newsletters_blocklist.txt
 
 
 ! ======[ EOF ]==========================================================
