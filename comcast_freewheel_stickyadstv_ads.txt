@@ -85,6 +85,7 @@ fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 ||fwmrm.net^$popup,important
 
 ! 2024-01-23 Some settings
+france.tv#@#+js(prevent-fetch, fwmrm)
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 
 ! </ end comcast's ad >
