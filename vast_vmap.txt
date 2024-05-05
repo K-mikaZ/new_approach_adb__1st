@@ -32,6 +32,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
 
+||cdn.jsdelivr.net/npm/@dailymotion/vast-client@*/dist/vast-client.$script,important,redirect=noopjs
+
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast([\w\d]+)?[\/]/$xmlhttprequest,third-party
 
