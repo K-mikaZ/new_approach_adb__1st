@@ -6,6 +6,8 @@
 ! ======= Video Multiple Ad Playlist (VMAP) =======
 
 !! ||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
+! ||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,important
+!||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$important,redirect=noop-vmap1.0.xml
 ||animationdigitalnetwork.fr/player/video/*/vmap$redirect=noopvmap-1.0,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
@@ -16,8 +18,6 @@
 /vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
 output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
-||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xmlhttprequest,other,redirect=noop-vmap1.0.xml,important
-||gw.api.animationdigitalnetwork.fr/player/video/*/vmap$important,redirect=noop-vmap1.0.xml
 
 
 !! !#if adguard
