@@ -69,7 +69,7 @@
 ! 2024-01-23 Video Multiple Ad Playlist (VMAP)
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
-!#if (adguard)
+!#if adguard
 ! 2024-01-23 Cookie concerns
 $cookie=_fwex_doubleclick.net_IDE
 ! 2024-01-23 Request Modifier
