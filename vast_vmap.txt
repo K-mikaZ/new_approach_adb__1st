@@ -38,13 +38,6 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ! 2024-01-29 ~ 11:02:39 - image redirect to a XML
 ||ad.mail.ru/vast/$important,redirect=noopvast-3.0
 
-||www.traff01traff02.site^$important,third-party,redirect=noopvast-3.0
-||tremorhub.com/*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
-||getpublica.com/*&format=vast*$xmlhttprequest,domain=crunchyroll.com,redirect-rule=noopvast-2.0
-||rubiconproject.com/*/vast.xml?*$xmlhttprequest,redirect-rule=noopvast-2.0
-||lkqd.net/*&output=vastvpaid&*$xmlhttprequest,redirect-rule=noopvast-2.0
-||tsyndicate.com/*/vast?*$xmlhttprequest,redirect=noopvast-3.0
-
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast([\w\d]+)?[\/]/$xmlhttprequest,third-party
 
@@ -94,6 +87,8 @@ output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
 ||rubiconproject.com/*/vast.xml?*$xmlhttprequest,redirect-rule=noopvast-2.0
 ||lkqd.net/*&output=vastvpaid&*$xmlhttprequest,redirect-rule=noopvast-2.0
 ||tsyndicate.com/*/vast?*$xmlhttprequest,redirect=noopvast-3.0
+||www.traff01traff02.site^$important,third-party,redirect=noopvast-3.0
+
 ! ||*&output=xml_vast1$xmlhttprequest,redirect-rule=noopvast-1.0
 ! ||*&output=xml_vast&$xmlhttprequest,redirect-rule=noopvast-1.0
 ! ||vast.*/v1$xmlhttprequest,redirect-rule=noopvast-1.0
