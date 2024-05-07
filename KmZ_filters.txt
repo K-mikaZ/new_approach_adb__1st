@@ -4270,8 +4270,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
 
 ! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
-||omnitagjs.com^$important,badfilter
-@@||omnitagjs.com^
+! ||omnitagjs.com^$important,badfilter
+! @@||omnitagjs.com^
 @@||tiqcdn.com^
 @@||tags.tiqcdn.com^$cname
 
