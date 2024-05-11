@@ -2363,7 +2363,7 @@ my.mail.ru##+js(window.open-defuser)
 streamees.com#@#.an-advert-banner
 streamees.com#@#.an-sponsored
 @@||ff-01.com^$media
-! 2024-05-10 ¤¤¤ playhydrax.com ¤¤¤ (https://playhydrax.com/?v=hqWHmSL4V)
+! 2024-05-10 ¤¤¤ playhydrax.com ¤¤¤ (https://playhydrax.com/?v=hqWHmSL4V) - test on https://dessins-anime.com/episode/baymax-et-les-nouveaux-heros-episode-10/?server=openload
 playhydrax.com##.playover
 playhydrax.com##+js(window.open-defuser)
 @@*$generichide,domain=playhydrax.com
