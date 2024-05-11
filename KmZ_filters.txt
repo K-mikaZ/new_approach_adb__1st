@@ -4207,7 +4207,8 @@ www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popu
 ! unlock some players loading - FIX because somes block: ||ssl.p.jwpcdn.com^
 @@||p.jwpcdn.com|
 ! but ensure blocking - concerns "jwpcdn.com/*/jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*/jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
-/[.\/]jwp(\w+)(\.\w{3}\/\w+)?((\/\w)?\/[\d.]+)\/(go{2}gima|jwpsrv|vast)\.\w{2}/$important,redirect=noopjs
+/[.\/]jwp(\w+)(\.\w{3}\/\w+)?((\/\w)?\/[\d.]+)\/(go{2}gima|jwpsrv|vast)\.\w{2}/$redirect=noopjs
+@@/\/jwpsrv\.\w{2}/$from=playhydrax.com
 ! 2024-01-18 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 ! unlock hqq.(to|tv) loading on https://univers-animes.club
 @@||storage.googleapis.com/loadermain.appspot.com/main.js$all
