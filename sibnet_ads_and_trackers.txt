@@ -9,9 +9,9 @@
 ! -------------
 ||vst.sibnet.ru^
 ||ad1.sibnet.ru^
-! counter sibnet func
+! counter sibnet "Function"
 ||cvt1.sibnet.ru^
-! counter sibnet Tracker
+! counter sibnet "Trackers"
 ||c.sibnet.ru^
 !
 ! VAST ads
