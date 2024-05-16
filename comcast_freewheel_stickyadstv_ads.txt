@@ -80,7 +80,6 @@ $cookie=_fwex_doubleclick.net_IDE
 
 ! 2024-01-23 Remove Cookies
 fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
-/ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 
 ! 2024-01-23 Misc (not sure)
 ||fwmrm.net^$popup,important
