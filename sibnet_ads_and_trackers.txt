@@ -3,6 +3,9 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/sibnet_ads_and_trackers.txt
 ! Description: Sibnet.ru ads & trackers (also use in some players).
 !
+
+! < start sibnet ads >
+
 ! test on https://anime-sama.fr/catalogue/unnamed-memory/saison1/vostfr/
 !
 ! PRIVACY
@@ -17,3 +20,5 @@
 ! VAST ads
 ! -------------
 ||advast.sibnet.ru^
+
+! < /end sibnet ads >
