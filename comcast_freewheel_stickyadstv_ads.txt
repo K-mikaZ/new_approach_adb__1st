@@ -28,9 +28,10 @@
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
 ! 2024-01-23 unlock functionalities
-@@||mssl.fwmrm.net/*/AdManager.js
 @@||v.fwmrm.net|
 @@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
+! @@||mssl.fwmrm.net/*/AdManager.js
+||mssl.fwmrm.net/*/AdManager.js
 
 ! 2024-01-23 Bad filters:
 ||v.fwmrm.net/ad/$badfilter
