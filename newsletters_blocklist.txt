@@ -11,13 +11,20 @@
 ! "specific" filters
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
+! 2024-05-15 ¤¤¤ www.casayoga.tv ¤¤¤ (https://www.casayoga.tv/blog/recettes-ayurvedique-yoga/ayurveda-recette-lait-d-or-golden-milk)
+www.casayoga.tv###modal-newsletter
+www.casayoga.tv#$#.modal-open { overflow: visible !important; }
+www.casayoga.tv##.in.modal-backdrop
+www.comment-economiser.fr#?##overlay_blockNL:remove()
+! https://stackoverflow.com/a/46533865
+www.comment-economiser.fr#$#.noscroll { all: inherit; !important; }
 www.femmeactuelle.fr##.newsletter-dialog
 www.femmeactuelle.fr##html:style(overflow: visible !important;)
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 
 ! "applications" filters
 ! FIX: Newsletter popup with "+js(overlay-buster)"
-atelier-fermentation.com,cuisine-saine.fr,effetph.com,frontendgenius.com,happypapilles.fr,healthyalie.com,ikeahackers.net,iletaitunefoislapatisserie.com,jevaisvouscuisiner.com,menu-vegetarien.com,planetevegan.com,revolutionfermentation.*,simplementfrais.com,tangerinezest.com,unpasplusvert.fr,vapotestyle.fr,www.academiedugout.fr,www.comment-economiser.fr,www.crack-cafes.fr,www.debic.com,www.guideastuces.com,www.kpourkatrine.com,www.larecolte.fr,www.lekaba.fr,www.lesechos.fr,www.marechal-fraicheur.fr,www.okay.eu,www.pharmamarket.fr,www.rasage-classique.com,www.saveeat.co,www.vracethik.fr##+js(overlay-buster)
+atelier-fermentation.com,brightsec.com,cuisine-saine.fr,effetph.com,frontendgenius.com,happypapilles.fr,healthyalie.com,ikeahackers.net,iletaitunefoislapatisserie.com,jevaisvouscuisiner.com,menu-vegetarien.com,planetevegan.com,revolutionfermentation.*,simplementfrais.com,tangerinezest.com,unpasplusvert.fr,vapotestyle.fr,www.750g.com,www.academiedugout.fr,www.comment-economiser.fr,www.crack-cafes.fr,www.debic.com,www.guideastuces.com,www.kpourkatrine.com,www.larecolte.fr,www.lekaba.fr,www.lesechos.fr,www.marechal-fraicheur.fr,www.okay.eu,www.pharmamarket.fr,www.rasage-classique.com,www.saveeat.co,www.vracethik.fr##+js(overlay-buster)
 
 ! "net" filters
 /[Nn]ewslet{2}er/$domain=www.750g.com
