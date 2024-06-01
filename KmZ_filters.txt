@@ -3239,7 +3239,6 @@ $cookie=_uid
 @@||voe.sx^$subdocument
 @@||sbfull.com^$subdocument
 @@||sblongvu.com^$subdocument,image,script
-||reddit.com/sw.*.js$script
 !! ||github.com/_alive
 ||pegasus.unifygroup.com^$important
 ||prismamedia-com.videoplayerhub.com^
