@@ -12,24 +12,26 @@
 ! < start comcast's ad >
 
 ! OPERATES UNDER: stickyadstv.com
-! 2024-01-23 Unbreak sites
+! --------------------------------
+! 2024-01-23 ¤¤¤ Unbreak sites
 ! https://bugzilla.mozilla.org/show_bug.cgi?id=1717806#c2
 ||ads.stickyadstv.com^$important,badfilter
 ||ads.stickyadstv.com^$important,third-party,badfilter
 @@||ads.stickyadstv.com^*user-*
 @@||static.adsafeprotected.com/favicon.ico|
-! or ||static.adsafeprotected.com/favicon.ico$image,xmlhttprequest,redirect=2x2.png
+! or maybe: ||static.adsafeprotected.com/favicon.ico$image,xmlhttprequest,redirect=2x2.png
 !+ NOT_OPTIMIZED
 @@||ads.stickyadstv.com^|$xmlhttprequest,domain=tf1.fr|tf1info.fr|6play.fr
 
 ! OPERATES UNDER: fwmrm.net: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
+! --------------------------------
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
 ! Unbreak
-! 2024-01-23 unlock site itself (freewheel.tv redirect to freewheel.com)
+! 2024-01-23 ¤¤¤ unlock site itself (freewheel.tv redirect to freewheel.com)
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
-! 2024-01-23 unlock functionalities
+! 2024-01-23 ¤¤¤ unlock functionalities
 @@||fwmrm.net|$badfilter
 ||v.fwmrm.net/ad/$badfilter
 ||v.fwmrm.net|$important,third-party,badfilter
@@ -45,21 +47,20 @@
 ||mssl.fwmrm.net/*/AdManager.js
 /npawAdAdapter.$badfilter
 
-! 2024-01-23 CSS Filtering
-! <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
-! Not WEB-BUG:
+! 2024-01-23 ¤¤¤ CSS Filtering
+! Not WEB-BUG - <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
 ! use a transparent GIF for the poster image, preventing the browser from picking a frame of the video,
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 #@#.ad-layer
 ##:is(.ad-layer,[id|="freewheelAd"]):has(> video[poster*="data:image/gif;base64"]):style(display: block !important;)
 ##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
-! <img width="1" height="1"> | Ensures that the user's media.autoplay.blocking_policy choice is respected (I believe).
-||v.fwmrm.net/ad/u?$important,badfilter
-@@||v.fwmrm.net/ad/u?
 
 ! 2024-01-23 Tracking concerns
 ! ||v.fwmrm.net/ad/g/1$removeparam=caid
+! <img width="1" height="1"> | Ensures that the user's media.autoplay.blocking_policy choice is respected (I believe).
+||v.fwmrm.net/ad/u?$important,badfilter
+@@||v.fwmrm.net/ad/u?
 
 ! 2024-01-23 Video Ad Serving Template (VAST)
 ||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
