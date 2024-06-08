@@ -1,4 +1,3 @@
-!
 ! Title: [⚙][addon] "No WEBRTC" - by K-mik@Z
 ! Expires: 1 days
 ! Author: K-mik@Z
