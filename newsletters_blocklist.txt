@@ -1,5 +1,8 @@
+[uBlock Origin; Adguard]
 ! Checksum: 925301F77DBD5D4A1C408F76529411DEEFA6386255E1DA6FF3C94D7AE665DA17
 ! Title: Anti Newsletters
+! Expires: 4 days
+! Last modified: Sat, 08 Jun 2024 17:12:32 +0100
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
 ! Description: Annoying newsletters blocklist
