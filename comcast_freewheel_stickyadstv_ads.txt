@@ -56,13 +56,13 @@
 ##:is(.ad-layer,[id|="freewheelAd"]):has(> video[poster*="data:image/gif;base64"]):style(display: block !important;)
 ##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
 
-! 2024-01-23 Tracking concerns
+! 2024-01-23 ¤¤¤ Tracking concerns
 ! ||v.fwmrm.net/ad/g/1$removeparam=caid
 ! <img width="1" height="1"> | Ensures that the user's media.autoplay.blocking_policy choice is respected (I believe).
 ||v.fwmrm.net/ad/u?$important,badfilter
 @@||v.fwmrm.net/ad/u?
 
-! 2024-01-23 Video Ad Serving Template (VAST)
+! 2024-01-23 ¤¤¤ Video Ad Serving Template (VAST)
 ||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
 ||ads.stickyadstv.com/*AdsSetup&protocolVersion=3*$important,redirect=noopvast-3.0
 ||ads.stickyadstv.com/*AdsSetup&protocolVersion=4*$important,redirect=noopvast-4.0
@@ -71,25 +71,25 @@
 /ad/g/1?resp=vast3$important,redirect=noopvast-3.0
 /ad/g/1?resp=vast4$important,redirect=noopvast-4.0
 
-! 2024-01-23 Video Multiple Ad Playlist (VMAP)
+! 2024-01-23 ¤¤¤ Video Multiple Ad Playlist (VMAP)
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
 !#if adguard
-! 2024-01-23 Cookie concerns
+! 2024-01-23 ¤¤¤ Cookie concerns
 $cookie=_fwex_doubleclick.net_IDE
-! 2024-01-23 Request Modifier
+! 2024-01-23 ¤¤¤ Request Modifier
 ! <https://regex101.com/r/DkEygK/6>, <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 /ad/g/1?prof=*tv.freewheel.SDK._instanceQueue*$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/,important
 !#endif
 
-! 2024-01-23 Remove Cookies
+! 2024-01-23 ¤¤¤ Remove Cookies
 fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 
-! 2024-01-23 Misc (not sure)
+! 2024-01-23 ¤¤¤ Misc (not sure)
 ||fwmrm.net^$popup,important
 
-! 2024-01-23 Some settings
+! 2024-01-23 ¤¤¤ Some settings
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 ! 
 6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
@@ -98,7 +98,7 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 6play.fr,france.tv##+js(trusted-replace-fetch, *, fwmrm.net)
 6play.fr,france.tv##+js(no-xhr-if, v.fwmrm.net, true)
 6play.fr,france.tv##+js(no-xhr-if, youborafds01.com, true)
-! [fix] because many errors (and cause delays)
+! [fix] from because many errors (and cause delays)
 6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
 www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithForm)
 6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithImage, trueFunc)
