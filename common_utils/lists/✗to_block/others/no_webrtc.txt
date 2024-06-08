@@ -1,5 +1,6 @@
 ! Title: [⚙][addon] "No WEBRTC" - by K-mik@Z
-! Expires: 1 days
+! Expires: 4 days
+! Last modified: Sat, 08 Jun 2024 17:12:32 +0100
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/no_webrtc.txt
 ! Description: Block WEBRTC (Web Real Time Communications), as soon as possible, sometimes used for "real-time advertising".
