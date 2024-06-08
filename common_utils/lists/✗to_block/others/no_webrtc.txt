@@ -20,11 +20,12 @@
 ! see "network request log / journal des requêtes réseau" < https://animedigitalnetwork.fr/video/bleach/5532-episode-1-episode-1 >
 
 !! BLOCKING
-!! -------
+!! --------
 !! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
 ##+js(nowebrtc)
 
-!! adguard rule
+!! ADGUARD RULES
+!! -------------
 !! # STUN (Simple Traversal of UDP through Network):
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_stun
 !! e.g: global.stun.twilio.com, stun2.l.google.com, stun.l.google.com, stun:stun.voip.blackberry.com, etc...
@@ -46,6 +47,8 @@
 jetload.*#@#+js(nowebrtc)
 upvid.*#@#+js(nowebrtc)
 femax20.com,fembed.com#@#+js(nowebrtc)
+! [fix] some loading - because: uBlock filters – Privacy
+france.tv#@#+js(nowebrtc)
 ! [to be verify] 
 tf1.fr#@#+js(nowebrtc)
 
