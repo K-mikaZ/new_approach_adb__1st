@@ -2717,7 +2717,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 @@||evoload.io/js/plausible.js$domain=evoload.io
 @@||google-analytics.com^$domain=star.fr|canaltp.fr
 @@||googletagmanager.com^$domain=star.fr
-@@||gw.api.animationdigitalnetwork.fr^$removeparam
+! @@||gw.api.animationdigitalnetwork.fr^$removeparam
 @@||knowledia.com$removeparam
 @@||mixer.zippycast.io^$removeparam
 @@||navitia.io$removeparam
