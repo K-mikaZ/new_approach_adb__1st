@@ -7,4 +7,5 @@
 
 !gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds:!(0|1)\,adaptive:!(0|1)/, /freeWithAds:!1\,adaptive:!0/, /player/video/*/link?)
 !animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, gw.api.animationdigitalnetwork.fr)
-animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, *)
+animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, /player/video/*/link?)
+!animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, *)
