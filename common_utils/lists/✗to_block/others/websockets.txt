@@ -267,7 +267,7 @@ wss://*.statdynamic.com/*
 
 $websocket,~third-party,important,domain=deezer.com
 $websocket,~third-party,important,domain=tf1.fr
-$websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|xtube.com|youporn.com|youporngay.com
+$websocket,domain=pornhub.*|redtube.*|tube8.*|xtube.*|youporn.*|youporngay.*
 !#if ext_ublock
 $websocket,empty,important,domain=app.molotov.tv
 !#else
