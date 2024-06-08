@@ -35,7 +35,7 @@
 ||v.fwmrm.net|$important,third-party,badfilter
 ||v.fwmrm.net|$important,badfilter
 ! @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com
-@@||v.fwmrm.net/ad/g/1
+@@||v.fwmrm.net/ad/g/1$xmlhttprequest
 ||fwmrm.net^$~object,third-party,badfilter
 @@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
 ! @@||mssl.fwmrm.net/*/AdManager.js
