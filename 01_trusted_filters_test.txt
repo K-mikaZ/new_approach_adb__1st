@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! Title: [?][list] "trusted test" - by K-mik@Z
 ! Expires: 1 days
-! Last modified: Sat, 08 Jun 2024 22:02:32 +0100
+! Last modified: Sat, 08 Jun 2024 22:22:32 +0100
 ! Author: K-mik@Z
 ! Description: Test trusted rules like: trusted-replace-fetch-response.
 
