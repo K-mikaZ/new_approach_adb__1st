@@ -4168,15 +4168,15 @@ accounts.google.com/gsi/iframe$badfilter
 ! ======[ INCLUDES ]=====================================================
 ! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
 
-!#include ./common_utils/lists/%E2%9C%97to_block/others/Comscore_Analytics.txt
 !#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
 
-!#include ezoic_ads.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
-!#include webedia_getjad_ads.txt
+!#include comscore_analytics.txt
+!#include ezoic_ads.txt
+!#include newsletters_blocklist.txt
 !#include sibnet_ads_and_trackers.txt
 !#include vast_vmap.txt
-!#include newsletters_blocklist.txt
+!#include webedia_getjad_ads.txt
 
 
 ! ======[ EOF ]==========================================================
