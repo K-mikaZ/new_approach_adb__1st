@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
+! Title: [?][list] "trusted test" - by K-mik@Z
 ! Expires: 1 days
 ! Last modified: Sat, 08 Jun 2024 17:12:32 +0100
 ! Author: K-mik@Z
