@@ -88,7 +88,22 @@ fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 ||fwmrm.net^$popup,important
 
 ! 2024-01-23 Some settings
-! france.tv#@#+js(prevent-fetch, fwmrm)
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
+6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
+6play.fr##+js(prevent-fetch, fwmrm, method:HEAD)
+6play.fr,france.tv##+js(trusted-replace-xhr, *, fwmrm.net)
+6play.fr,france.tv##+js(trusted-replace-fetch, *, fwmrm.net)
+6play.fr,france.tv##+js(no-xhr-if, v.fwmrm.net/, true)
+6play.fr,france.tv##+js(no-xhr-if, youborafds01.com/, true)
+6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
+www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithForm)
+6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithImage, trueFunc)
+www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithImage)
+6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest, trueFunc)
+www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest)
+6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest, trueFunc)
+www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest)
+6play.fr,www.6play.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithScript, trueFunc)
+www.6play.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithScript)
 
 ! </ end comcast's ad >
