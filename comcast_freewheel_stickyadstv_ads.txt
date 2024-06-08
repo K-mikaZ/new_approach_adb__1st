@@ -1,5 +1,7 @@
 ! Checksum: 18178DBA1CF49F1976C543FC57561EAD3891D8B985BA10B840A49A0B0C09A534
 ! Title: Comcast ads - by K-mik@Z
+! Expires: 4 days
+! Last modified: Sat, 08 Jun 2024 17:12:32 +0100
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/comcast_freewheel_stickyadstv_ads.txt
 ! Description: |
