@@ -7,4 +7,4 @@
 
 !gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds:!(0|1)\,adaptive:!(0|1)/, /freeWithAds:!1\,adaptive:!0/, /player/video/*/link?)
 !gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=true/, /freeWithAds=false/, *)
-animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=true\&adaptive=false/, /freeWithAds=false\&adaptive=true/, *)
+animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, *)
