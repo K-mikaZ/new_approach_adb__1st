@@ -619,7 +619,7 @@ rakuten.tv#@#+js(no-xhr-if, /youboranqs01/)
 ! rakuten.tv##+js(no-xhr-if, /spotx/)
 rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
 /pagead/ppub_config$important
-@@/\/pubads_impl(_.+)?\.js/$important
+@@/\/pubads_impl(_.+)?\.js/
 !! domain=moviepilot.de - movie trailers
 @@/gpt.js|$domain=moviepilot.de
 
