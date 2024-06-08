@@ -691,7 +691,7 @@ tf1.fr#@#+js(set-constant, __TF1_CONFIG__.sentry.enabled, false)
 @@||dmxleo.com^$domain=geo.dailymotion.com
 ||dailymotion.com/cdn/$media,script,badfilter
 ||dailymotion.com/cdn/H264-512x384/video/*.mp4?sec=*$domain=geo.dailymotion.com,redirect=noop-1s.mp4,important
-@@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com,important
+@@||www.dailymotion.com/cdn/manifest/video/*$domain=geo.dailymotion.com
 
 ! 2024-01-24 ~ 06:14:47 [ geo.dailymotion.com ]
 ! static1.dmcdn.net/playerv5/dmp.advertising.*.js, static1.dmcdn.net/playerv5/dmp.mediametrie.*.js
@@ -774,7 +774,7 @@ $popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 @@||webtor.io^$subdocument
 @@||api.nocturnal-narwhal.buzz|
 ! https://forum.adguard.com/index.php?threads/how-to-whitelist-a-website.30987/post-177503
-@@||api.nocturnal-narwhal.buzz^$document,important
+@@||api.nocturnal-narwhal.buzz^$document
 ! Player SDK for online torrent streaming (https://www.jsdelivr.com/package/npm/@webtor/player-sdk-js)
 @@/@webtor/player-sdk-js
 webtor.io##+js(window.open-defuser)
@@ -973,8 +973,8 @@ www.marmiton.org##+js(ra, data-encoded-link|target, .card-ingredient-link)
 ||googletagmanager.com/gtm.js$domain=marmiton.org,important
 @@||fundingchoicesmessages.google.com^$domain=marmiton.org
 @@||googlesyndication.com^$domain=marmiton.org
-@@||adservice.google.*^$domain=marmiton.org,important
-@@||securepubads.g.doubleclick.net^$domain=marmiton.org,important
+@@||adservice.google.*^$domain=marmiton.org
+@@||securepubads.g.doubleclick.net^$domain=marmiton.org
 film.hds-streaming.com##.textwidget
 filmsrip.com##.Banners
 filmstreaming-vf.ws###M416852PreloadC351322,#M416852ScriptRootC351322,[href="/mp/"],.in.fade.modal-backdrop,#pop-trailer .modal-dialog
@@ -1031,7 +1031,7 @@ ixquick.com###sponsored
 jdownloader.org###cookie_info
 journaldunet.com##.ccmcss_oic
 @@||googlesyndication.com^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
-@@||adservice.google.*^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org,important
+@@||adservice.google.*^$domain=linternaute.com|linternaute.fr|journaldesfemmes.com|journaldesfemmes.fr|journaldunet.com|journaldunet.fr|commentcamarche.net|commentcamarche.com|hugolescargot.com|jeux-gratuits.com|lefigaro.fr|meteoconsult.fr|lachainemeteo.com|marmiton.org
 journaldunet.*#$#:root { --reservation-space: 2em !important; }
 journaldunet.*##[class*="_oas_"]:first-of-type
 journaldunet.*##+js(abort-current-inline-script, OAS_AD)
@@ -1265,7 +1265,8 @@ stream-serie.net#$##option-1{height:100%}
 /figarotrack.js?$script,important
 /google-analytics-for-wordpress/$script,important
 ||sentry-cdn.com^$third-party,domain=~sentry.*
-/(.*)?(firstimpres{2}ion|highwebmedia|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
+! badfilter writing
+! /(.*)?(firstimpres{2}ion|highwebmedia|(static\.ads\-twit{2}er)|t(agbucket|hemoneytizer)))\.(.{2,})(\/(.*))?(.*)\.js/$script,important
 /(.*)?ad{2}this(edge)?\.(.{2,})(\/(.*))?(.*)\.js/$script
 /(.*)?hq{2}\.(.{2,})\/js\/(.*\/)?(videojs\-social)\.js/$script,important
 /(.*)?stats\.wp\.(com)\/(.*).js/$script,important
@@ -2251,7 +2252,7 @@ tnaflix.com##.improveADS
 freeporn.digital##.integrate,.artist,.whose
 xxxvideos.ink##.operation
 xhamster.com##.wio-pcam-thumb .item-container, .wio-pcams-widget .item-container
-@@||xhamster.com/embed/$important
+@@||xhamster.com/embed/
 xhamster.com##.player-add-overlay
 xhamster.com##.underplayer
 xhamster.com##.ts-interstitial
@@ -2386,7 +2387,7 @@ korben.info##.entry-content [class*="hentry"]
 ||jetload.net/count
 jetload.net##.vjs-poster
 vizplay.*##+js(window.open-defuser)
-@@||vudeo.io^$subdocument,third-party,important
+@@||vudeo.io^$subdocument,third-party
 @@||vudeo.co^
 vudeo.*##+js(window.open-defuser)
 vudeo.*#@#+js(abort-current-inline-script, document.createElement, "delete window")
@@ -2430,7 +2431,7 @@ radiotunes.com,di.fm##[class*="premium"]
 @@||hostingcloud.racing^$domain=pourcesoir.in
 fcine.tv#@#[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ||cdn.ampproject.org/v0.js$badfilter
-@@||cdn.ampproject.org/v0.js$important
+@@||cdn.ampproject.org/v0.js
 openwhyd.org##+js(no-setInterval-if, updateFocusState)
 /r[0-9]+(.|-+)[A-Za-z0-9]+-+[A-Za-z0-9]+-+[A-Za-z0-9]+.g(o{2}glevideo|vt1)\.com/$badfilter
 @@||survey.g.doubleclick.net^/$domain=replay.fr
@@ -2516,7 +2517,7 @@ hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant
 !! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 !! /js/script-*.js$~third-party,important,match-case,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-@@/ad/top/popunder.js$~third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+@@/ad/top/popunder.js$~third-party,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 /out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 *$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
 ! 2024-01-18 https://younetu.org/js/adv/fuckadblock.js?2
@@ -2938,11 +2939,11 @@ glodls.*,gtdb.*##a[href*="://bit.ly/"]
 ##.dssdffds
 1337x.*#@#a[href*=" "]
 @@||weather.opera-api.com^$third-party
-@@||autoupdate.geo.opera.com^$important
+@@||autoupdate.geo.opera.com^
 ||merchandise.opera-api.com/api/teaser-gx$important
-@@||www.cmb.fr^$important,document
-@@||cpro.baidu.com/cpro/$domain=rjno1.com,important
-@@||facemorph.me^$important,document
+@@||www.cmb.fr^$document
+@@||cpro.baidu.com/cpro/$domain=rjno1.com
+@@||facemorph.me^$document
 commentcamarche.net##.ads--insertor-avoid
 #@#:xpath(//div[.//div[contains(@tabindex,"-1") and contains(@aria-modal,"true")]])
 skdesu.com##.code-block
@@ -2967,9 +2968,9 @@ lxax.com###parrot
 lxax.com##[class="hide"]
 ||t.fujejo.xyz/redirect/$third-party
 ! anti adblock detect
-@@||adnxs.com^$image,important
+@@||adnxs.com^$image
 ||appconsent.io^$badfilter
-@@||appconsent.io^$important
+@@||appconsent.io^
 ||zebestof.com^$important,third-party,domain=cuisine.journaldesfemmes.fr
 /pandg-sdk.js$important,third-party
 ||permutive.com^$third-party
