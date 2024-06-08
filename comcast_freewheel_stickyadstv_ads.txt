@@ -2,7 +2,7 @@
 ! Checksum: 18178DBA1CF49F1976C543FC57561EAD3891D8B985BA10B840A49A0B0C09A534
 ! Title: Comcast ads - by K-mik@Z
 ! Expires: 4 days
-! Last modified: Sun, 09 Jun 2024 00:00:32 +0100
+! Last modified: Sun, 09 Jun 2024 00:05:32 +0100
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/comcast_freewheel_stickyadstv_ads.txt
 ! Description: |
@@ -86,9 +86,11 @@ fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 ||fwmrm.net^$popup,important
 
 ! 2024-01-23 Some settings
+@@||v.fwmrm.net/ad/g/1$from=6play.fr,badfilter
+@@||v.fwmrm.net/ad/g/*_html5_live$script,from=6play.fr,badfilter
 france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
 6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
-6play.fr##+js(prevent-fetch, fwmrm, method:HEAD)
+! 6play.fr##+js(prevent-fetch, fwmrm, method:HEAD)
 6play.fr,france.tv##+js(trusted-replace-xhr, *, fwmrm.net)
 6play.fr,france.tv##+js(trusted-replace-fetch, *, fwmrm.net)
 6play.fr,france.tv##+js(no-xhr-if, v.fwmrm.net/, true)
