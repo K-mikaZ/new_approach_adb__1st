@@ -1,0 +1,1 @@
+gw.api.animationdigitalnetwork.fr##+js(trusted-replace-fetch-response, freeWithAds:true, freeWithAds:false, *)
