@@ -1,10 +1,10 @@
 [uBlock Origin; Adguard]
 ! Title: [?][list] "trusted test" - by K-mik@Z
 ! Expires: 1 days
-! Last modified: Sat, 08 Jun 2024 21:23:32 +0100
+! Last modified: Sat, 08 Jun 2024 22:02:32 +0100
 ! Author: K-mik@Z
 ! Description: Test trusted rules like: trusted-replace-fetch-response.
 
 !gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds:!(0|1)\,adaptive:!(0|1)/, /freeWithAds:!1\,adaptive:!0/, /player/video/*/link?)
 !gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=true/, /freeWithAds=false/, *)
-gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)/, /freeWithAds=!1/, *)
+animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=true\&adaptive=false/, /freeWithAds=false\&adaptive=true/, *)
