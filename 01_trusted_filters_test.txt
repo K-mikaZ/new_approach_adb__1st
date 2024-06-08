@@ -5,4 +5,4 @@
 ! Author: K-mik@Z
 ! Description: Test trusted rules like: trusted-replace-fetch-response.
 
-gw.api.animationdigitalnetwork.fr##+js(trusted-replace-fetch-response, freeWithAds:true, freeWithAds:false, *)
+gw.api.animationdigitalnetwork.fr##+js(trusted-replace-fetch-response, freeWithAds=true, freeWithAds=false, *)
