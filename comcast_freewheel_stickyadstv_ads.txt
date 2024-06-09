@@ -99,8 +99,8 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! 6play.fr,france.tv##+js(no-xhr-if, youborafds01.com, true)
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md
 ! 6play.fr,france.tv##+js(trusted-replace-xhr, *, , "youborafds01.com method:GET")
-6play.fr,france.tv##+js(trusted-replace-xhr, *, , "fwmrm.net method:/GET|POST|HEAD/")
-6play.fr,france.tv##+js(trusted-replace-fetch, *, , "fwmrm.net method:/GET|POST|HEAD/")
+6play.fr##+js(trusted-replace-xhr, *, , "fwmrm.net method:/GET|POST|HEAD/")
+6play.fr##+js(trusted-replace-fetch, *, , "fwmrm.net method:/GET|POST|HEAD/")
 ! [fix] for `AdGuard French filter` - because many errors (and cause delays)
 6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
 6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithForm)
