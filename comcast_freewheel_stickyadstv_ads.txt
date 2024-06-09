@@ -94,9 +94,9 @@ france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, tru
 ! [fix] for `AdGuard French filter` - because cause delays
 @@*$script,redirect=noopjs,to=fwmrm.net
 6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
-6play.fr#@#+js(prevent-fetch, fwmrm, method:HEAD)
-6play.fr,france.tv##+js(no-xhr-if, v.fwmrm.net, true)
-! 6play.fr,france.tv##+js(no-xhr-if, youborafds01.com, true)
+6play.fr,www.6play.fr#@#+js(prevent-fetch, fwmrm, method:HEAD)
+! 6play.fr##+js(no-xhr-if, v.fwmrm.net, true)
+! 6play.fr##+js(no-xhr-if, youborafds01.com, true)
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md
 ! 6play.fr,france.tv##+js(trusted-replace-xhr, *, , "youborafds01.com method:GET")
 6play.fr##+js(trusted-replace-xhr, *, , "fwmrm.net method:/GET|POST|HEAD/")
