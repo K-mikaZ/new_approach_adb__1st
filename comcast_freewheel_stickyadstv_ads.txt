@@ -32,13 +32,13 @@
 @@||freewheel.tv|$~third-party
 @@||freewheel.com|$~third-party
 ! 2024-01-23 ¤¤¤ unlock functionalities
-@@||fwmrm.net|$badfilter
 ||v.fwmrm.net/ad/$badfilter
 ||v.fwmrm.net|$important,third-party,badfilter
 ||v.fwmrm.net|$important,badfilter
 @@||7cbf2.v.fwmrm.net^$xhr,from=6play.fr,badfilter
 ! @@||v.fwmrm.net/ad/g/1?*_html5_live$domain=~gulli.fr|~msn.com
 @@||v.fwmrm.net/ad/g/1$from=6play.fr,badfilter
+@@||fwmrm.net|$badfilter
 @@||v.fwmrm.net/ad/g/*_html5_live$script,from=6play.fr,badfilter
 @@||v.fwmrm.net/ad/g/1$xmlhttprequest
 @@||fwmrm.net^$xmlhttprequest,method=head
