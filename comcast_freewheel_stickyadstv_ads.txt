@@ -54,8 +54,8 @@
 ! while still allowing to use preload="auto" to start loading the video as soon as possible.
 ! e.g. <https://www.france.tv/france-3/nos-terres-inconnues/5390871-rendez-vous-en-guyane-avec-sabrina-ouazani.html>
 #@#.ad-layer
-##:is(.ad-layer,[id|="freewheelAd"]):has(> video[poster*="data:image/gif;base64"]):style(display: block !important;)
-##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
+!##:is(.ad-layer,[id|="freewheelAd"]):has(> video[poster*="data:image/gif;base64"]):style(display: block !important;)
+!##:is(.ad-layer,[id|="freewheelAd"]):not(:has(> video[poster*="data:image/gif;base64"])):style(diplay: none !important;)
 
 ! 2024-01-23 ¤¤¤ Tracking concerns
 ! ||v.fwmrm.net/ad/g/1$removeparam=caid
