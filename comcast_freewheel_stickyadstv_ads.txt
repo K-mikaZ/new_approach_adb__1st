@@ -23,7 +23,7 @@
 !+ NOT_OPTIMIZED
 @@||ads.stickyadstv.com^|$xmlhttprequest,domain=tf1.fr|tf1info.fr|6play.fr
 
-! OPERATES UNDER: fwmrm.net: <http://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
+! OPERATES UNDER: fwmrm.net: <https://www.freewheel.tv/>, Video Integration: <https://vi.freewheel.tv/>
 ! --------------------------------
 ||freewheel.tv^$third-party
 ||freewheel.com^$third-party
