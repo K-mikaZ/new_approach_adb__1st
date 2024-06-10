@@ -38,12 +38,12 @@
 
 ! /streamsense(\.min)?\.js/$script like "https://assets.allocine.fr/bundles/engagement/js/streamsense.min.js"
 /[\s\S]*streamsense[\s\S]*/$script,~third-party
-@@/streamsense.$domain=my.mail.ru,important
+@@/streamsense.$domain=my.mail.ru
 
 ! --------------------------------------------------------------
 ||scorecardresearch.*beacon.js$third-party,script,redirect-rule=scorecardresearch_beacon.js,important
 
-@@||scorecardresearch.com/p?c1=*$domain=twitch.tv,important
+@@||scorecardresearch.com/p?c1=*$domain=twitch.tv
 
 !#if (adguard)
 ! 2024-01-23 Cookie concerns
