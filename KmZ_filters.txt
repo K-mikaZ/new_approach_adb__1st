@@ -3273,7 +3273,7 @@ $cookie=_uid
 @@||tapecontent.net^$image,media,domain=stapadblockuser.xyz
 @@||stapadblockuser.xyz^$generichide,subdocument,xmlhttprequest,script,image,media
 @@||stapadblockuser.xyz/get_video$media
-@@||batch.com^$important
+! @@||batch.com^
 @@||stapadblockuser.*^$image,script,xmlhttprequest,subdocument,~third-party
 ||facebook.com/tr/$important
 ||taboola.com^$important
@@ -3423,16 +3423,16 @@ $cookie=_uid
 ||amung.us^$third-party
 ||a-mx.com^
 ||streamcomplet2.info^
-@@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com,important
+@@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
 @@||googleadservices.com^$domain=ipv6-test.com
-@@||google.*^$domain=ipv6-test.com,important
+@@||google.*^$domain=ipv6-test.com
 @@||360.audion.fm^
 @@||ravenjs.com^
 @@||highload.to^$subdocument
 @@||vanfem.com^$subdocument
-@@||googletagservices.com^$domain=googlesyndication.com,important
+@@||googletagservices.com^$domain=googlesyndication.com
 @@||bing.com^$domain=microsoft.com,third-party
 @@|/exoSubId.min.js$domain=xcafe.com
 uqload.*###play_limit_box
@@ -4289,13 +4289,13 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 !! @@||googlesyndication.com^
 ||gigya.com$badfilter
 ||gigya.com$third-party,badfilter
-@@||gigya.com^$important
+@@||gigya.com^
 ||usabilla.com$badfilter
 ||usabilla.com$third-party,badfilter
-@@||usabilla.com^$important
+@@||usabilla.com^
 ||api.ipify.org^$badfilter
 ||api.ipify.org^$third-party,badfilter
-@@||api.ipify.org^$important
+@@||api.ipify.org^
 ||tealiumiq.com^$badfilter
 ||tealiumiq.com^$third-party,badfilter
 ||tealiumiq.com$third-party,badfilter
