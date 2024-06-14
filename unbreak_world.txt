@@ -83,6 +83,146 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||media-amazon.com/images/$all,domain=amazon.*
 ! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
+! unbreak hdslecteur.com
+@@||ff-01.com^$media
+! unbreak playhydrax.com
+@@*$generichide,domain=playhydrax.com
+@@||playhydrax.com/?v=$subdocument
+@@*$generichide,domain=redirect-ads.com
+! https://webconcepts.info/concepts/well-known-uri/
+! https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml
+@@/\/\.well-known\//
+@@||micro.rubiconproject.com|
+@@||sendpulse.com|$~third-party
+@@||support.sendpulse.com/scripts/file.php$image
+@@||www.googletagmanager.com^$domain=journaldesfemmes.fr
+@@$document,from=betrad.com|evidon.com|jokerly.com|hubspot.com|matomo.org|miva.com|plausible.io|privacyportal.onetrust.com|pubmatic.com|weborama.com|zdbb.net
+@@$~third-party,~ping,from=matomo.org|miva.com|plausible.io|onetrust.com|pubmatic.com|weborama.com|zdbb.net
+||hubspot.com|$badfilter
+@@||hubspot.net^$~ping,from=hubspot.*
+@@$script,domain=hubspot.*
+||tra.scds.pmdstatic.net/sourcepoint/$badfilter
+! unbreak video lading on https://www.cuisineactuelle.fr/culture-food/les-petits-plus-en-cuisine/anti-gaspi/cuisinez-sans-oeuf-grace-a-l-aquafaba-314988-177516
+@@||tra.scds.pmdstatic.net/advertising-core/*/core-ads.js
+#@#[data-ads-core]
+! @@||silentinstallhq.com^$cname
+! @@||openwhyd.org^$cname
+! compte.tf1.fr ⇒ d3rvml4iv2cgo8.cloudfront.net
+! @@||compte.tf1.fr$cname
+@@$cname,from=compte.tf1.fr|openwhyd.org|silentinstallhq.com
+! 2024-05-06 Unbreak- unlock site itself
+||mgnet.xyz|$badfilter
+||mgnet.xyz|$third-party
+@@||www.adswizz.com^$document
+||adswizz.com^$third-party,badfilter
+||adswizz.com^$third-party,to=~www.adswizz.com
+@@||segment.com^$document
+||segment.com^$badfilter
+||segment.com^$third-party,to=~segment.com
+@@||thank-you.io^$document
+||thank-you.io^$third-party,to=~thank-you.io
+||metrics.thank-you.io^
+@@||www.moengage.com^$document
+||moengage.com^$badfilter
+||moengage.com^$third-party
+@@||www.carbonads.net^$document
+||carbonads.net^$badfilter
+||carbonads.net^$third-party
+@@||www.luckyorange.com^$document
+||luckyorange.com^$badfilter
+||luckyorange.com^$third-party
+! 14 juin 2024 ¤¤¤ wistia.com ¤¤¤ (https://wistia.com/)
+@@||wistia.com^$document
+@@||fast.wistia.net^
+@@||embed-cloudfront.wistia.com^
+||fast.wistia.net^*/blank.gif$important
+||fast.wistia.net^*/googleAnalytic*.js$important
+||fast.wistia.net^*/facebookPixel.js$important
+! 14 juin 2024 ¤¤¤ 6sense.com ¤¤¤ (https://6sense.com/)
+@@||6sense.com^$document
+||6sense.com^$badfilter
+||6sense.com^$third-party
+! 14 juin 2024 ¤¤¤ pathfactory.com ¤¤¤ (https://www.pathfactory.com/)
+@@||www.pathfactory.com^$document
+||pathfactory.com^$badfilter
+||pathfactory.com^$third-party
+! 14 juin 2024 ¤¤¤ marketo.com ¤¤¤ (https://developers.marketo.com/)
+@@||developers.marketo.com^$document
+||marketo.com^$badfilter
+||marketo.com^$third-party
+! 14 juin 2024 ¤¤¤ visualwebsiteoptimizer.com ¤¤¤ (https://vwo.com/)
+@@||visualwebsiteoptimizer.com^$document
+! 14 juin 2024 ¤¤¤ qualified.com ¤¤¤ (https://www.qualified.com/)
+@@||www.qualified.com^$document
+||qualified.com^$badfilter
+||qualified.com^$third-party
+@@||assets.qualified.com^$from=~www.qualified.com
+||go.qualified.com^
+||js.qualified.com^
+! 14 juin 2024 ¤¤¤ report-uri.com ¤¤¤ (https://report-uri.com/home/analyse/https%3A%2F%2Fwww.provenir.com%2F)
+||report-uri.com^$third-party,badfilter
+!  2024-01-18 adyoulike.com - unlock the site itself
+! https://whotracks.me/trackers/adyoulike.html
+||adyoulike.com|$badfilter
+@@||adyoulike.com|$~third-party
+@@||www.brightcove.com^$document
+||brightcove.com^$badfilter
+||brightcove.com^$third-party,badfilter
+||metrics.brightcove.com^$important
+! 2024-05-11 ¤¤¤ www.bfmtv.com ¤¤¤ (https://www.bfmtv.com/)
+@@||edge.api.brightcove.com/playback/
+@@||players.brightcove.net^
+! 2024-05-11 ¤¤¤ taboola.com ¤¤¤ (https://advertise.taboola.com/)
+@@||developers.taboola.com^$document
+@@||advertise.taboola.com^$document
+@@||trends.taboola.com^$document
+@@||help.taboola.com^$document
+@@||helpersng.taboola.com^
+@@||blog.taboola.com^$document
+@@||page.taboola.com^
+||taboola.com^$important,badfilter
+||taboola.com^$badfilter
+||taboola.com^$third-party,badfilter
+||taboola.com^$third-party,to=~taboola.com
+||images.taboola.com^$important
+||images-dl.taboola.com^$important
+! 13 juin 2024 ¤¤¤ omnitagjs.com ¤¤¤ (https://www.canalplus.com/)
+||omnitagjs.com^$badfilter
+||omnitagjs.com^$third-party,badfilter
+! 13 juin 2024 ¤¤¤ vidyard.com ¤¤¤ (https://www.vidyard.com/)
+@@||www.vidyard.com^$document
+||vidyard.com^$badfilter
+||vidyard.com^$third-party
+! @@||ad.doubleclick.net/ddm/clk/*http$popup,document
+! @@||tracking.publicidees.com/clic.php?$popup,document
+! @@||clk.tradedoubler.com/click?$popup,document
+! @@||track.effiliation.com|$popup,document
+@@||googleadservices.com/pagead/aclk?$document
+@@||doubleclick.net|$popup,document
+@@||effiliation.com|$popup,document
+@@||publicidees.com|$popup,document
+@@||tradedoubler.com|$popup,document
+@@||commander1.com|$popup,document
+@@||app.adjust.com^$document
+||phonearena.com^$badfilter
+! @@||associationalism.org.uk|$popup
+||keepass.fr^$document,badfilter
+||keepass.fr^$badfilter
+@@||www.datadoghq.com^$document
+||datadoghq.com^$badfilter
+||datadoghq.com^$third-party
+@@||lp.datadoghq.com^$~third-party
+||datadoghq-browser-agent.com^
+@@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,from=app.tuta.com
+! 8 juin 2024 ¤¤¤ cryptpad.disroot.org ¤¤¤ (https://cryptpad.disroot.org/) - to monetize the site with bitcoin, if desired
+@@/crypto.js$domain=cryptpad.disroot.org
+! 13 juin 2024 ¤¤¤ intergi.com ¤¤¤ (https://app.intergi.com/)
+||app.intergi.com^$badfilter
+! https://github.com/EFForg/privacybadger/issues/2847
+||intergi.com^$badfilter
+||intergi.com^$third-party
+||cdn.intergi.com^$badfilter
+||cdn.intergient.com^$badfilter
 
 ! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
 ! ||omnitagjs.com^$important,badfilter
