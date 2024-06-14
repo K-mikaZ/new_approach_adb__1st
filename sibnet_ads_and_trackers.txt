@@ -5,15 +5,13 @@
 !   Sibnet.ru ads & trackers (also use in some players).
 ! < start sibnet ads >
 ! test on https://anime-sama.fr/catalogue/unnamed-memory/saison1/vostfr/
-! PRIVACY
-! -------------
+! ======[ PRIVACY ]======
 ||vst.sibnet.ru^
 ||ad1.sibnet.ru^
 ! counter sibnet "Function"
 ||cvt1.sibnet.ru^
 ! counter sibnet "Trackers"
 ||c.sibnet.ru^
-! VAST ads
-! -------------
+! ======[ VAST ads ]======
 ||advast.sibnet.ru^
 ! < /end sibnet ads >
