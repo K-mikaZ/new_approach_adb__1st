@@ -4195,10 +4195,12 @@ www.youtube.com#@#.opened
 www.youtube.com#@#.opened:remove()
 www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
-! 2024-01-18 avoid blocking [ forum.newrelic.com ]
-@@||newrelic.com|$~third-party
-||newrelic.com^$important,badfilter
+! 2024-01-18 avoid blocking [ https://newrelic.com/ ][ https://forum.newrelic.com/ ]
+@@||newrelic.com^$document
+||newrelic.com^$badfilter
 ||newrelic.com^$third-party
+||js-agent.newrelic.com^$important
+||insights-collector.newrelic.com^$important
 ! 2024-01-18 unbreak [ mediavine.com ](https://www.mediavine.com/)
 ! mediavine.com unlock the site itself
 @@||mediavine.com|$~third-party
