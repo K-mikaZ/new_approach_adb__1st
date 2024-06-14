@@ -233,6 +233,9 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||intergi.com^$third-party
 ||cdn.intergi.com^$badfilter
 ||cdn.intergient.com^$badfilter
+! 13 juin 2024 ¤¤¤ inmobi.com ¤¤¤ (https://www.inmobi.com/)
+@@||www.inmobi.com^$document
+||inmobicdn.net^$badfilter
 
 ! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
 ! ||omnitagjs.com^$important,badfilter
