@@ -3,6 +3,11 @@ www.youtube.com#@#.opened
 www.youtube.com#@#.opened:remove()
 www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
+! block searchbar (I think)
+youtube.com#@#.ytp-paid-content-overlay
+! break youtube menu
+youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
+/(hq{2}|netu|wa{2}w([0-9]{1})?)\.(t[ov]|watch)/#@#+js("prevent-fab-3.2.0")
 ! [FIX] player loading
 doods.pro#@#+js(remove-node-text, script, /adblock|popunder/)
 doods.pro##+js(remove-node-text, script, /popunder/)
