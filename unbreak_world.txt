@@ -3,6 +3,9 @@ www.youtube.com#@#.opened
 www.youtube.com#@#.opened:remove()
 www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
 www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
+! [FIX] player loading
+doods.pro#@#+js(remove-node-text, script, /adblock|popunder/)
+doods.pro##+js(remove-node-text, script, /popunder/)
 ! 2024-01-18 avoid blocking [ https://newrelic.com/ ][ https://forum.newrelic.com/ ]
 @@||newrelic.com^$document
 ||newrelic.com^$badfilter
