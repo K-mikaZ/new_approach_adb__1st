@@ -1,13 +1,10 @@
 ! Title: Sibnet.ru ads & trackers
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/sibnet_ads_and_trackers.txt
-! Description: Sibnet.ru ads & trackers (also use in some players).
-!
-
+! Description: |
+!   Sibnet.ru ads & trackers (also use in some players).
 ! < start sibnet ads >
-
 ! test on https://anime-sama.fr/catalogue/unnamed-memory/saison1/vostfr/
-!
 ! PRIVACY
 ! -------------
 ||vst.sibnet.ru^
@@ -16,9 +13,7 @@
 ||cvt1.sibnet.ru^
 ! counter sibnet "Trackers"
 ||c.sibnet.ru^
-!
 ! VAST ads
 ! -------------
 ||advast.sibnet.ru^
-
 ! < /end sibnet ads >
