@@ -199,10 +199,11 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 13 juin 2024 ¤¤¤ omnitagjs.com ¤¤¤ (https://www.canalplus.com/, https://video-streaming.orange.fr/ )
 ||omnitagjs.com^$badfilter
 ||omnitagjs.com^$third-party,badfilter
+@@||omnitagjs.com^$cname
 ! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
 ||c.woopic.com^$badfilter
-@@||tiqcdn.com^
-@@||tags.tiqcdn.com^$cname
+||tiqcdn.com^$badfilter
+@@||tags.tiqcdn.com^
 ! 13 juin 2024 ¤¤¤ vidyard.com ¤¤¤ (https://www.vidyard.com/)
 @@||www.vidyard.com^$document
 ||vidyard.com^$badfilter
