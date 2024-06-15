@@ -245,6 +245,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||sparteo.com^$badfilter
 ||sparteo.com^$third-party,badfilter
 @@||sparteo.com^$document
+||bid.sparteo.com^$important
 ||sparteo.com^$third-party,to=~sparteo.com
 ! ||sync.sparteo.com^
 ! 13 juin 2024 ¤¤¤ histats.com ¤¤¤ (https://www.histats.com/)
