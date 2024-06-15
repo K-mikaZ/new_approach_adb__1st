@@ -528,7 +528,7 @@ vidlox.*##[id="play_limit_box"]
 33seriestreaming.org##div[class*="btn"] > a[href="#"]
 allseries.*##.telecharger
 !! avoid creation of multiple [id^="aswift_"] or [name^="aswift_"]
-malekal.com##+js(set-constant, window.adsbygoogle, [])
+! malekal.com##+js(set-constant, window.adsbygoogle, [])
 malekal.com##+js(abort-current-inline-script, adsbygoogle)
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
