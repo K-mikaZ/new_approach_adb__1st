@@ -241,6 +241,16 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 13 juin 2024 ¤¤¤ inmobi.com ¤¤¤ (https://www.inmobi.com/)
 @@||www.inmobi.com^$document
 ||inmobicdn.net^$badfilter
+! 13 juin 2024 ¤¤¤ sparteo.com ¤¤¤ (https://corporate.sparteo.com/)
+||sparteo.com^$badfilter
+||sparteo.com^$third-party,badfilter
+@@||sparteo.com^$document
+||sparteo.com^$third-party,to=~sparteo.com
+! ||sync.sparteo.com^
+! 13 juin 2024 ¤¤¤ histats.com ¤¤¤ (https://www.histats.com/)
+@@||histats.com^$document
+||histats.com^$third-party,badfilter
+||histats.com^$third-party,to=~histats.com
 
 !! FIX video loading on capital.fr (e.g. https://www.capital.fr/entreprises-marches/rafale-helicoptere-on-a-teste-les-simulateurs-de-vol-de-sogitec-au-salon-du-bourget-2023-1472333)
 ! @@||www.datadoghq-browser-agent.com^$important
