@@ -157,7 +157,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||pathfactory.com^$badfilter
 ||pathfactory.com^$third-party
 ! 14 juin 2024 ¤¤¤ marketo.com ¤¤¤ (https://developers.marketo.com/)
-@@||developers.marketo.com^$document
+! @@||developers.marketo.com^$document
+@@||marketo.com^$document
 ||marketo.com^$badfilter
 ||marketo.com^$third-party
 ! 14 juin 2024 ¤¤¤ visualwebsiteoptimizer.com ¤¤¤ (https://vwo.com/)
@@ -183,13 +184,14 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||edge.api.brightcove.com/playback/
 @@||players.brightcove.net^
 ! 2024-05-11 ¤¤¤ taboola.com ¤¤¤ (https://advertise.taboola.com/)
-@@||developers.taboola.com^$document
-@@||advertise.taboola.com^$document
-@@||trends.taboola.com^$document
-@@||help.taboola.com^$document
 @@||helpersng.taboola.com^
-@@||blog.taboola.com^$document
 @@||page.taboola.com^
+!@@||developers.taboola.com^$document
+!@@||advertise.taboola.com^$document
+!@@||trends.taboola.com^$document
+!@@||help.taboola.com^$document
+!@@||blog.taboola.com^$document
+@@||taboola.com^$document
 ||taboola.com^$important,badfilter
 ||taboola.com^$badfilter
 ||taboola.com^$third-party,badfilter
