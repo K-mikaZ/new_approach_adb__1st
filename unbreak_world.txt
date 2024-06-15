@@ -203,7 +203,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 2024-04-21 ~ 10:26:08 [ video-streaming.orange.fr ](https://video-streaming.orange.fr/)
 ||c.woopic.com^$badfilter
 ||tiqcdn.com^$badfilter
-@@||tags.tiqcdn.com^
+||tags.tiqcdn.com^$badfilter
 ! 13 juin 2024 ¤¤¤ vidyard.com ¤¤¤ (https://www.vidyard.com/)
 @@||www.vidyard.com^$document
 ||vidyard.com^$badfilter
