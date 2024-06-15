@@ -1641,7 +1641,6 @@ stream-serie.net#$##option-1{height:100%}
 ||*/popunder/*.js|$script
 ||*.addtoany.*.js|$script
 ||*.7vid.*.js|$script
-||*.histats.com/*.js|$script
 ||*.adtrue.com$script
 ||*.exdynsrv.com$script
 ||*.realsrv.com$script
@@ -2998,7 +2997,6 @@ juststream.org##.movie-xyz
 ||affluentshinymulticultural.com^
 ||blockadsnot.com^
 ||tipcatscarola.com^
-||histats.com^$third-party
 ||rndskittytor.com^
 ||cdnativepush.com^
 ||adservice.google.com/adsid/integrator.js$domain=geo.dailymotion.com,important
