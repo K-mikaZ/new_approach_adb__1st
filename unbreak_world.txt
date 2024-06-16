@@ -152,7 +152,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||www.moengage.com^$document
 ||moengage.com^$badfilter
 ||moengage.com^$third-party
-@@||www.carbonads.net^$document
+! 16 juin 2024 ¤¤¤ carbonads.com ¤¤¤ (https://www.carbonads.net/)
+@@$document,from=carbonads.net,carbonads.com
 ||carbonads.net^$badfilter
 ||carbonads.net^$third-party
 @@||www.luckyorange.com^$document
