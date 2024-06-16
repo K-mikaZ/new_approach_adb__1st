@@ -126,11 +126,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||hsappstatic.net^$third-party,badfilter
 ||hsappstatic.net^$badfilter
 ||hsforms.com^$badfilter
-||hsadspixel.net^$important
-||hs-scripts.com^$important
-||hs-analytics.net^$important
-||hs-banner.com^$important
-||hubspot.com|$badfilter
+||hubspot.com^$badfilter
 @@||hubspot.net^$~ping,from=hubspot.*
 ||tra.scds.pmdstatic.net/sourcepoint/$badfilter
 ! unbreak video lading on https://www.cuisineactuelle.fr/culture-food/les-petits-plus-en-cuisine/anti-gaspi/cuisinez-sans-oeuf-grace-a-l-aquafaba-314988-177516
@@ -185,7 +181,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 14 juin 2024 ¤¤¤ visualwebsiteoptimizer.com ¤¤¤ (https://vwo.com/)
 @@||visualwebsiteoptimizer.com^$document
 ! 14 juin 2024 ¤¤¤ qualified.com ¤¤¤ (https://www.qualified.com/)
-@@||www.qualified.com^$document
+@@||qualified.com^$document
 ||qualified.com^$badfilter
 ||qualified.com^$third-party
 @@||assets.qualified.com^$from=~www.qualified.com
