@@ -3460,8 +3460,6 @@ demotivateur.fr##.ads
 cuisineaz.com##[id="aff-container"]
 cuisineaz.com##[id^="dynInfeed"]
 cuisineaz.com##div[id^="advi"]
-! fix header
-cuisineaz.com##body:not(.body-modal):style(padding-top: 7.5em !important;)
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/2185#issuecomment-1193134905
 ! ##[ @media screen and (min-width: 64em) { body:not(.body-modal) { padding-top: 13em; } }  >>>  body:not(.body-modal):matches-media(screen and (min-width: 64em)):style(padding-top: 13em;) ]
 cuisineaz.com##body:not(.body-modal), body:not(.body-modal):not(.small-header):matches-media(screen and (min-width: 64em)):style(padding-top: 13em !important;)
