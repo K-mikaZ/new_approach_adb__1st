@@ -274,6 +274,9 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||bid.sparteo.com^$important
 ||sparteo.com^$third-party,to=~sparteo.com
 ! ||sync.sparteo.com^
+! 16 juin 2024 ¤¤¤ live-website.com ¤¤¤ (https://salamarket.fr/categorie-produit/epicerie) => because of HaGeZi's Threat Intelligence Feeds DNS Blocklist filter
+||live-website.com^$badfilter
+salamarket.fr#@#.elementor-spacer:not(html, body)
 ! 13 juin 2024 ¤¤¤ histats.com ¤¤¤ (https://www.histats.com/)
 @@||histats.com^$document
 ||histats.com^$third-party,badfilter
