@@ -143,7 +143,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 2024-05-06 Unbreak- unlock site itself
 ||mgnet.xyz|$badfilter
 ||mgnet.xyz|$third-party
-@@||www.adswizz.com^$document
+@@||adswizz.com^$document
 ||adswizz.com^$third-party,badfilter
 ||adswizz.com^$third-party,to=~www.adswizz.com
 @@||segment.com^$document
@@ -152,14 +152,14 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||thank-you.io^$document
 ||thank-you.io^$third-party,to=~thank-you.io
 ||metrics.thank-you.io^
-@@||www.moengage.com^$document
+@@||moengage.com^$document
 ||moengage.com^$badfilter
 ||moengage.com^$third-party
 ! 16 juin 2024 ¤¤¤ carbonads.com ¤¤¤ (https://www.carbonads.net/)
 @@$document,from=carbonads.net,carbonads.com
 ||carbonads.net^$badfilter
 ||carbonads.net^$third-party
-@@||www.luckyorange.com^$document
+@@||luckyorange.com^$document
 ||luckyorange.com^$badfilter
 ||luckyorange.com^$third-party
 ! 14 juin 2024 ¤¤¤ wistia.com ¤¤¤ (https://wistia.com/)
@@ -174,7 +174,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||6sense.com^$badfilter
 ||6sense.com^$third-party
 ! 14 juin 2024 ¤¤¤ pathfactory.com ¤¤¤ (https://www.pathfactory.com/)
-@@||www.pathfactory.com^$document
+@@||pathfactory.com^$document
 ||pathfactory.com^$badfilter
 ||pathfactory.com^$third-party
 ! 14 juin 2024 ¤¤¤ marketo.com ¤¤¤ (https://developers.marketo.com/)
@@ -197,7 +197,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! https://whotracks.me/trackers/adyoulike.html
 ||adyoulike.com|$badfilter
 @@||adyoulike.com|$~third-party
-@@||www.brightcove.com^$document
+@@||brightcove.com^$document
 ||brightcove.com^$badfilter
 ||brightcove.com^$third-party,badfilter
 ||metrics.brightcove.com^$important
@@ -231,7 +231,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||tiqcdn.com^$badfilter
 ||tags.tiqcdn.com^$badfilter
 ! 13 juin 2024 ¤¤¤ vidyard.com ¤¤¤ (https://www.vidyard.com/)
-@@||www.vidyard.com^$document
+@@||vidyard.com^$document
 ||vidyard.com^$badfilter
 ||vidyard.com^$third-party
 ! @@||ad.doubleclick.net/ddm/clk/*http$popup,document
