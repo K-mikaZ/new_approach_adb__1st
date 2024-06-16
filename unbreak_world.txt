@@ -272,6 +272,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||teads.tv^$third-party
 ! 13 juin 2024 ¤¤¤ permutive.com ¤¤¤ (https://permutive.com/)
 @@||permutive.com^$document
+||permutive.com^$badfilter
+||permutive.com^$third-party
 ||permutive.app^
 ! 13 juin 2024 ¤¤¤ first-id.fr ¤¤¤ (https://www.first-id.fr/)
 @@||first-id.fr^$document
