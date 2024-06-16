@@ -35,7 +35,7 @@
 !                - [You will need the iptables comment module to add comments to a rule](https://tinyurl.com/2kkqfdl3)
 !                    $> ls /lib/modules/$(uname -r)/kernel/net/netfilter/ | grep _comment
 !                - Depending on your distribution, you may need to load the 'ipt_comment' or 'xt_comment' modules into your running kernel first.
-!                  like: 'modprobe ipt_comment'
+!                  like: 'modprobe ipt_comment' or 'modprobe xt_comment' or by edit '/etc/modules' as root.
 ! Regex Numeric Range Generator: https://3widgets.com/
 !! ! # 173.194.55.0 ~ 173.194.55.255
 !! /(173\.194\.5{2}\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))/$network
