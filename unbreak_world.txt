@@ -116,6 +116,9 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||sendpulse.com|$~third-party
 @@||support.sendpulse.com/scripts/file.php$image
 @@||www.googletagmanager.com^$domain=journaldesfemmes.fr
+||hubspot.com^$badfilter
+@@||hubspot.net^$~ping,from=hubspot.*
+||tra.scds.pmdstatic.net/sourcepoint/$badfilter
 @@$document,from=betrad.com|evidon.com|hubspot.com|jokerly.com|matomo.org|miva.com|plausible.io|privacyportal.onetrust.com|pubmatic.com|weborama.com|zdbb.net
 @@$~third-party,~ping,from=matomo.org|miva.com|plausible.io|onetrust.com|pubmatic.com|weborama.com|zdbb.net
 ! 16 juin 2024 ¤¤¤ hsforms.com ¤¤¤ (https://forums.malwarebytes.com/topic/262017-false-positive-sharehsformscom/)
@@ -125,10 +128,10 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||hsleadflows.net^$badfilter
 ||hsappstatic.net^$third-party,badfilter
 ||hsappstatic.net^$badfilter
+||hsforms.com^$third-party,badfilter
 ||hsforms.com^$badfilter
-||hubspot.com^$badfilter
-@@||hubspot.net^$~ping,from=hubspot.*
-||tra.scds.pmdstatic.net/sourcepoint/$badfilter
+||hsforms.net^$third-party,badfilter
+||hsforms.net^$badfilter
 ! unbreak video lading on https://www.cuisineactuelle.fr/culture-food/les-petits-plus-en-cuisine/anti-gaspi/cuisinez-sans-oeuf-grace-a-l-aquafaba-314988-177516
 @@||tra.scds.pmdstatic.net/advertising-core/*/core-ads.js
 #@#[data-ads-core]
