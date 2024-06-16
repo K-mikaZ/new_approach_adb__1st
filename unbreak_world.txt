@@ -37,6 +37,7 @@ abysscdn.com#@#+js(set-constant, detectAdBlockAll, noopFunc)
 ! 2024-01-18 fix for [ Peter Lowe’s Ad and tracking server list ]
 !  2024-01-18 prebid.org - unlock the site itself
 @@||prebid.org|$~third-party
+@@||prebid.org^$document
 ! unlock some players loading - FIX because somes block: ||ssl.p.jwpcdn.com^
 @@||p.jwpcdn.com|
 ! but ensure blocking - concerns "jwpcdn.com/*/jwpsrv.js" (e.g. https://ssl.p.jwpcdn.com/player/v/8.27.1/jwpsrv.js ) && "*/jwplayer/*/jwpsrv.js" (e.g. https://cdn.abysscdn.com/players/jwplayer/8.4.2/jwpsrv.js )
