@@ -117,7 +117,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||support.sendpulse.com/scripts/file.php$image
 @@||www.googletagmanager.com^$domain=journaldesfemmes.fr
 ||hubspot.com^$badfilter
-@@||hubspot.net^$~ping,from=hubspot.*
+! @@||hubspot.net^$~ping,from=hubspot.*
 ||tra.scds.pmdstatic.net/sourcepoint/$badfilter
 @@$document,from=betrad.com|evidon.com|hubspot.com|jokerly.com|matomo.org|miva.com|plausible.io|privacyportal.onetrust.com|pubmatic.com|weborama.com|zdbb.net
 @@$~third-party,~ping,from=matomo.org|miva.com|plausible.io|onetrust.com|pubmatic.com|weborama.com|zdbb.net
