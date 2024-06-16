@@ -15,11 +15,11 @@
 ||getjad.io^$badfilter
 ||getjad.io^$important,badfilter
 @@||getjad.io/geoloc/
-! 2024-01-23 - getja[n]: https://cdn.lib.getjan.io/library/
-||getjan.io/library/*$redirect=noop.txt
 ! 2024-01-23 - getja[d]: https://cdn.lib.getjad.io/
 ||getjad.io/library/*/*$redirect=noop.txt
 ||getjad.io/adstxt/*/*$redirect=noop.txt
+! 2024-01-23 - getja[n]: https://cdn.lib.getjan.io/library/
+||getjan.io/library/*$redirect=noop.txt
 
 ! 2024-01-23 - Prebid concerns: https://cdn.lib.getjad.io/index_prebid.html
 ||getjad.io/prebid/*
