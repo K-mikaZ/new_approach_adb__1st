@@ -270,6 +270,8 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 13 juin 2024 ¤¤¤ teads.tv ¤¤¤ (https://www.teads.com/)
 @@||teads.tv^$document
 ||teads.tv^$third-party
+! 13 juin 2024 ¤¤¤ permutive.com ¤¤¤ (https://permutive.com/)
+@@||permutive.com^$document
 
 !! FIX video loading on capital.fr (e.g. https://www.capital.fr/entreprises-marches/rafale-helicoptere-on-a-teste-les-simulateurs-de-vol-de-sogitec-au-salon-du-bourget-2023-1472333)
 ! @@||www.datadoghq-browser-agent.com^$important
