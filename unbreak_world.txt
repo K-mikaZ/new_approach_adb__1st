@@ -249,7 +249,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! @@||associationalism.org.uk|$popup
 ||keepass.fr^$document,badfilter
 ||keepass.fr^$badfilter
-@@||www.datadoghq.com^$document
+@@||datadoghq.com^$document
 ||datadoghq.com^$badfilter
 ||datadoghq.com^$third-party
 @@||lp.datadoghq.com^$~third-party
@@ -265,7 +265,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||cdn.intergi.com^$badfilter
 ||cdn.intergient.com^$badfilter
 ! 13 juin 2024 ¤¤¤ inmobi.com ¤¤¤ (https://www.inmobi.com/)
-@@||www.inmobi.com^$document
+@@||inmobi.com^$document
 ||inmobicdn.net^$badfilter
 ! 13 juin 2024 ¤¤¤ sparteo.com ¤¤¤ (https://corporate.sparteo.com/)
 ||sparteo.com^$badfilter
