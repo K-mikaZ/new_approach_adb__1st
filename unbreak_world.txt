@@ -255,6 +255,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ||datadoghq.com^$third-party
 @@||lp.datadoghq.com^$~third-party
 ||datadoghq-browser-agent.com^
+@@||play.vidyard.com^
 @@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case,from=app.tuta.com
 ! 8 juin 2024 ¤¤¤ cryptpad.disroot.org ¤¤¤ (https://cryptpad.disroot.org/) - to monetize the site with bitcoin, if desired
 @@/crypto.js$domain=cryptpad.disroot.org
