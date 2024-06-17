@@ -8,6 +8,8 @@ youtube.com#@#.ytp-paid-content-overlay
 ! break youtube menu
 youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 /(hq{2}|netu|wa{2}w([0-9]{1})?)\.(t[ov]|watch)/#@#+js("prevent-fab-3.2.0")
+! 11 juin 2024 ¤¤¤ mail.google.com ¤¤¤ (https://mail.google.com/)
+@@||trackers.uglyemail.com^$domain=mail.google.com
 ! [FIX] player loading
 doods.pro#@#+js(remove-node-text, script, /adblock|popunder/)
 doods.pro##+js(remove-node-text, script, /popunder/)
