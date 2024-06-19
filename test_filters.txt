@@ -7,7 +7,7 @@
 ! Description: Rules for test.
 !
 
-! [FIXME] DOES NOT WORK AT ALL
+! [FIXME] DOES NOT WORK AT ALL: on url https://daiconnect.com/vod/dash/molotov/spotx/.mpd?***
 ! app.molotov.tv##+js(xml-prune, xpath(//*[name()="MPD"][.//*[name()="Period"][contains(@name\,"EventStream")]]), , , log, 1)
 
 ! INVALID
