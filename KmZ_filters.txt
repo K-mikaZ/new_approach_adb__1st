@@ -47,18 +47,18 @@
 ! ... www.youtube.com##+js(json-prune, adPlacements) && www.youtube.com##+js(json-prune, playerAds)
 ! ... to get a ad free experience.
 ! »»» <https://www.reddit.com/r/uBlockOrigin/comments/tyw0ut/for_those_wondering_how_ubo_is_able_to_block>
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, playerAds)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, adPlacements)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, playerAds)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, adPlacements)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, playerResponse.adPlacements, undefined)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 !
 ! #### [FIX] HOW TO GET RID OF THE YOUTUBE AD BLOCK POPUP
 ! https://www.reddit.com/r/youtube/comments/17079px/comment/k4sbpf6/
 ! www.youtube.com##.opened
 ! www.youtube.com##tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 !
 ! #### [FIX] YOUTUBE ADS SHOWING (PRE-ROLL AND MID-ROLL)
 ! ... <https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll>
@@ -75,8 +75,8 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.adPlacements, undefined)
 !
 ! ...
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_SPONSORSHIPS_OFFER, null)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.WEB_PLAYER_CONTEXT_CONFIGS.WEB_PLAYER_CONTEXT_CONFIG_ID_KEVLAR_VERTICAL_LANDING_PAGE_PROMO, null)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialPlayerResponse.playabilityStatus.miniplayer.miniplayerRenderer.playbackMode, PLAYBACK_MODE_DISALLOW)
 
 ! !#if adguard
@@ -104,36 +104,36 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.confi
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, messages.*.youThereRenderer)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, [].playerResponse.messages playerResponse.messages)
 ! REMOVES "INVIDEO" INFO CARDS:
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, cards)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, cards)
 ! REMOVES "INVIDEO" ANNOTATIONS:  equivalent /annotations_module.js$script,important,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, annotations)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, annotations)
 ! REMOVES ENDSCREENS:  equivalent /endscreen.js$script,important,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, endscreen)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, endscreen)
 ! REMOVES "SHORTS" BUTTON
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)
 ! REMOVES VOICE SEARCH BUTTON (ONLY WORKS ON WATCH PAGE)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.voiceSearchButton)
 ! REMOVES THE "INCLUDES PAID PROMOTION MESSAGE"
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, paidContentOverlay)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, paidContentOverlay)
 ! REMOVES SIDEBAR ADS
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.promotedSparklesWebRenderer)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.compactPromotedVideoRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.promotedSparklesWebRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.results.0.compactPromotedVideoRenderer)
 ! REMOVES ADS IN SEARCH RESULTS
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.searchPyvRenderer.ads)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.searchPyvRenderer.ads)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.carouselAdRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnSearchResultsRenderer.primaryContents.sectionListRenderer.contents.0.itemSectionRenderer.contents.*.promotedSparklesTextSearchRenderer)
 ! REMOVES INFO PANELS UNDER VIDEOS
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.0.itemSectionRenderer.contents.0.infoPanelContentRenderer)
 ! REMOVES MERCHANDISE SHELF
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.results.results.contents.2.merchandiseShelfRenderer)
 ! REMOVES AUTO PLAYING CHANNEL TRAILERS
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.0.itemSectionRenderer.contents.0.channelVideoPlayerRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.0.itemSectionRenderer.contents.0.channelVideoPlayerRenderer)
 ! REMOVES SHORTS SHELF FROM CHANNEL PAGES
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)
 ! REMOVES MOVIE/SHOW UPSELL BANNERS ON SIDEBAR (EXAMPLE: GO TO A&E COURT CAM VIDEO TO SEE WHAT IM TALKING ABOUT AS THOSE VIDEOS HAVE THESE)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.offerModule)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, contents.twoColumnWatchNextResults.secondaryResults.secondaryResults.offerModule)
 ! REMOVE AUTOPLAYING VIDEO CAROUSEL FROM GAMING TAB
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, header.carouselHeaderRenderer)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, header.carouselHeaderRenderer)
 ! REMOVE FEATURED PLAYLIST FROM DESCRIPTION
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, engagementPanels.*.engagementPanelSectionListRenderer.content.structuredDescriptionContentRenderer.items.*.videoDescriptionCourseSectionRenderer)
 ! ...
@@ -153,9 +153,9 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(json-prune, header.car
 ! ... FIXME: Not working here
 ! [MISC] ??? youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.USE_EMBEDDED_INNERTUBE_DATA, true)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_watch_next_pause_autoplay_lact, false)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_memberships_and_purchases, false)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_premium_voluntary_pause, false)
-youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.html5_web_enable_halftime_preroll, false)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_memberships_and_purchases, false)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.enable_premium_voluntary_pause, false)
+!youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.html5_web_enable_halftime_preroll, false)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.h5_set_masthead_ads_asynchronously, false)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.verify_ads_itag_early, false)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.service_worker_enabled, false)
@@ -167,7 +167,7 @@ youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.confi
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.topbar.desktopTopbarRenderer.voiceSearchButton, emptyArr)
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, ytInitialData.overlay.mealbarPromoRenderer, emptyArr)
 ! ...
-music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
+!music.youtube.com##+js(set-constant, yt.config_.AUDIO_QUALITY, AUDIO_QUALITY_HIGH)
 ! ...
 ! #### [TIP] APPARENCE PARAMS
 ! youtubekids.com,youtube-nocookie.com,www.youtube.com##+js(set-constant, yt.config_.EXPERIMENT_FLAGS.web_rounded_thumbnails, false)
@@ -289,11 +289,11 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 
 ! How To Get Rid Of The Youtube Ad Block Popup
 ! https://www.reddit.com/r/youtube/comments/17079px/comment/k4sbpf6/
-www.youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com#@#+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, auxiliaryUi.messageRenderers.enforcementMessageViewModel)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.enforcementMessageViewModel, undefined)
 ! youtube.com#$#iframe[name="passive_signin"]{ display: none !important; }
 ! youtube.com#$#ytd-mealbar-promo-renderer,#consent-bump { display: none !important; }
 ! youtube.com##.ytd-consent-bump-lightbox
@@ -305,13 +305,13 @@ www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRe
 ! from uBlock filters – Quick fixes
 !#if !cap_html_filtering
 !#if env_firefox
-www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
+!www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots legacyImportant)
 !#endif
 !#endif
 ! ||youtube.com/s/desktop/*/jsbin/desktop_polymer.vflset/desktop_polymer.js$~doc,uritransform=/desktop\/\w+\/jsbin/desktop\/1e089191\/jsbin/,domain=www.youtube.com
 ! https://github.com/psychon-night/bypass-youtube-adblock-blocker/blob/main/ublockRulesFromReddit
 !#if !adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_ios
-www.www.youtube.com##+js(abort-on-stack-trace, btoa, /[A-Za-z]lb \S+polymer/)
+!www.www.youtube.com##+js(abort-on-stack-trace, btoa, /[A-Za-z]lb \S+polymer/)
 ! For the closable popup
 !www.youtube.com#?#ytd-enforcement-message-view-model:has(> div.ytd-enforcement-message-view-model)
 !www.youtube.com#$#tp-yt-iron-overlay-backdrop { display: none !important; }
@@ -324,14 +324,14 @@ www.www.youtube.com##+js(abort-on-stack-trace, btoa, /[A-Za-z]lb \S+polymer/)
 ! /youtubei/v*/player?key=$replace=/\"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 ! /youtubei/v*/player?key=$replace=/\"adSlots.*?\}\]\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
 ! /youtubei/v*/player?key=$replace=/\"playerAds.*?\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
-www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, youtubei/v1/player)
+!www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
+!www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, youtubei/v1/player)
 tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
-www.youtube.com##+js(trusted-replace-fetch, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , player?key=)
+!www.youtube.com##+js(trusted-replace-fetch, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , player?key=)
 ! https://www.ghacks.net/2021/04/01/here-is-the-easiest-way-to-get-rid-of-googles-before-you-continue-to-youtube-prompt/#comment-4565071
-www.youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
-www.youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
+!www.youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
+!www.youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
+!www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
 
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
