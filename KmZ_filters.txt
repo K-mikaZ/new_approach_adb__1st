@@ -1965,8 +1965,6 @@ streamroot.io$script,important,badfilter
 ||tag.leadplace.fr/wckr.php?id=*$image,_,important
 ||cloudfront-hls-media-vod-ellation.vip4-ams1.dlvr1.net^$object,_,important
 *$popup,important,domain=esf397vsf1nk.com|itnuzleafan.com|unreshiramor.com
-!! /(about\:blank)|(data\:text)/$popup,important,domain=streamango.com
-/(about\:blank)|(data\:text)/$popup
 @@*$popup,domain=google.com
 ||*.cloudfront.*$popup,important
 ||a5224106a28855abbbb0825aa5e4cd9bd.profile.ams50.cloudfront.net^$all,important
