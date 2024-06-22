@@ -338,8 +338,8 @@ tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist
 @@||short.ink^$subdocument
 @@||abysscdn.com^$subdocument
 abysscdn.com##+js(no-fetch-if, /cdn\.apicdn\d+\.\w+/)
-short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
-short.ink,abysscdn.com##+js(window.open-defuser)
+! short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
+! short.ink,abysscdn.com##+js(window.open-defuser)
 ! $third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com|jsdelivr.net
 $third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
