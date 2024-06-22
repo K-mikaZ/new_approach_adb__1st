@@ -3,9 +3,6 @@
 ! Expires: 1 days
 ! Last modified: Sat, 08 Jun 2024 22:22:32 +0100
 ! Author: K-mik@Z
-! Description: Test trusted rules like: trusted-replace-fetch-response.
+! Description: Test trusted rules like: trusted-replace-fetch-response, trusted-replace-xhr-response...
 
-!gw.api.animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds:!(0|1)\,adaptive:!(0|1)/, /freeWithAds:!1\,adaptive:!0/, /player/video/*/link?)
-!animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, gw.api.animationdigitalnetwork.fr)
-animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, /player/video/*/link?)
-!animationdigitalnetwork.fr##+js(trusted-replace-xhr, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, *)
+animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, /player/video/)
