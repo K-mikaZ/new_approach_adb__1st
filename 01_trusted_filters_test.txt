@@ -5,4 +5,4 @@
 ! Author: K-mik@Z
 ! Description: Test trusted rules like: trusted-replace-fetch-response, trusted-replace-xhr-response...
 
-animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=!(0|1)\&adaptive=!(0|1)/, /freeWithAds=!1\&adaptive=!0/, /player/video/)
+animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
