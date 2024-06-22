@@ -99,4 +99,8 @@ allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trus
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAffinityScore, false)
 !! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAdsRestriction, false)
 
+! cookies concerns
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
+allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com###didomi-host
+
 ! < /end webedia's ads >
