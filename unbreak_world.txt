@@ -30,7 +30,7 @@ doods.pro##+js(remove-node-text, script, /popunder/)
 ||abtasty.com^$third-party
 @@||abtasty.com^$document
 ! 11 juin 2024 ¤¤¤ megastream.autos ¤¤¤ (https://megastream.autos/4854-hawaii-5-0-drnro/2-saison/21-episode.html)
-abysscdn.com#@#+js(set-constant, detectAdBlockAll, noopFunc)
+! abysscdn.com#@#+js(set-constant, detectAdBlockAll, noopFunc)
 @@||iamcdn.net/players/jwplayer/$script,domain=abysscdn.com
 ! 11 juin 2024 ¤¤¤ catalogue.darkino6.top ¤¤¤ (https://catalogue.darkino6.top/post/films/1088674-le-dernier-jaguar)
 ! TIPS: "scriptsafe's canvas protection" BREAK challenges.cloudflare.com make when click button "Visionner"
