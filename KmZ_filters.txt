@@ -2404,8 +2404,10 @@ ddl-francais.com##+js(window.open-defuser)
 /js/adsbygoogle.js$important,domain=toonanime.*
 @@||toonanime.*$xmlhttprequest,media,subdocument
 @@||toonanime.*$generichide
-toonanime.*##+js(window.open-defuser.js)
 toonanime.*#$##adslot { min-height: 15px !important; }
+! 23 juin 2024 ¤¤¤ v7.toonanime.co ¤¤¤ (https://v7.toonanime.co/2630-yatagarasu-the-raven-does-not-choose-its-master-vostfr/episode-12-tv.html)
+! the cause of popups
+toonanime.*##html > div[style*="position: fixed;"][style*="z-index:"][style*="pointer-events:"]
 mixdrop.*##div[class*="-track-"][class*="display"]
 vodfilms.*#@#[href*="postlnk.com"]
 filmoflix.*##.full-in > div:if(a[target])
