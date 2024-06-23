@@ -30,14 +30,15 @@
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_stun
 !! e.g: global.stun.twilio.com, stun2.l.google.com, stun.l.google.com, stun:stun.voip.blackberry.com, etc...
 !! /(?:(((?:.+)?stun\d?\.)).+)/$important
-!+ PLATFORM(adguard)
-|stun:*$domain=~toonanime.*
+! !+ PLATFORM(adguard)
+! |stun:*$domain=~toonanime.*
 
 !! # TURN (Traversal Using Relays around NAT):
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_turn
 !! |turn:*
 
-
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(nowebrtc)
+toonanime.*##+js(nowebrtc)
 
 
 ! WHITELISTING [ Accept on a case-by-case basis, as follows... example.com#@#+js(nowebrtc) ]
@@ -49,7 +50,7 @@ upvid.*#@#+js(nowebrtc)
 femax20.com,fembed.com#@#+js(nowebrtc)
 ! [fix] some loading - because: uBlock filters – Privacy
 france.tv#@#+js(nowebrtc)
-! [to be verify] 
+! [to be verify]
 tf1.fr#@#+js(nowebrtc)
 
 ! [fix] break live videos
@@ -65,5 +66,5 @@ packetlosstest.com#@#+js(nowebrtc)
 ! [FIX] discord.com
 discord.com#@#+js(nowebrtc)
 
-!+ PLATFORM(adguard)
-@@stun:stun.toonanime.*$domain=toonanime.*
+! !+ PLATFORM(adguard)
+! @@stun:stun.toonanime.*$domain=toonanime.*
