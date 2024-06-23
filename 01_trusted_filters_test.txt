@@ -3,6 +3,7 @@
 ! Expires: 1 days
 ! Last modified: Sat, 22 Jun 2024 19:22:32 +0100
 ! Author: K-mik@Z
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/01_trusted_filters_test.txt
 ! Description: Test trusted rules like: trusted-replace-fetch-response, trusted-replace-xhr-response...
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! ¤¤¤ Request Modifier <https://regex101.com/r/DkEygK/6>, <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
