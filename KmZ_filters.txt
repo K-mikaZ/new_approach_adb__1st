@@ -1332,10 +1332,8 @@ stream-serie.net#$##option-1{height:100%}
 ||disqusads.com^$important
 /\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party
 @@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party,domain=amazon.com
-/cdn-cgi/trace|$xmlhttprequest,~third-party,domain=~1.1.1.1|~cloudflare.com|~encryptedsni.com
-! @@encryptedsni.com/cdn-cgi/trace$xmlhttprequest,domain=cloudflare.com
-! @@||1.1.1.1/cdn-cgi/trace$xmlhttprequest,~third-party
-||younetu.org/cdn-cgi/trace$xmlhttprequest,~third-party,important
+@@/cdn-cgi/trace|$xmlhttprequest,~third-party,domain=1.1.1.1|cloudflare.com|encryptedsni.com
+/cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|netu.*|vizplay.*|waaw.*|younetu.*|yandexcdn.*
 /\/pixel\/pu(clc|rs(t)?)\?/
 ||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
