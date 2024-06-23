@@ -20,7 +20,7 @@
 
 ! 2024-01-24 ~ FIX [ Tracking JS Blocklist ](https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt)
 ! Unlock loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
-@@/ezojs\.com\/.+\/(?:lazy_load|css_onload|script_delay)\.js/$all
+@@/ezojs\.com\/\w+\/(?:lazy_load|css_onload|script_delay)\.js/$all
 ! 2024-01-31 ~ 00:58:00 - CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
 ||ezojs.com.cdn.cloudflare.net|$important,badfilter
 ||ezojs.com.cdn.cloudflare.net|$badfilter
