@@ -22,7 +22,7 @@
 ! 2024-01-23 Unbreak- unlock site itself
 @@||scorecardresearch.com|$~third-party
 
-! e.g. <https://s.yimg.com/aaq/vzm/cs_1.2.0.js> (not sure working)
+! e.g. <https://s.yimg.com/aaq/vzm/cs_1.2.0.js>
 ||s.yimg.com/aaq/vzm/cs_*.js$important,redirect=noop.js
 
 ! https://flowplayer.com/developers/plugins/comscore
