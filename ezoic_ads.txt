@@ -58,7 +58,7 @@
 ! *#$#:where([data-ez-ph-id],[id|="ez-video"],[class|="ez-video"],[id|="ezoic"],[class|="ezoic"],[id|="ezoic-pub"],[id*="ezmob"],[ezaw][ezah],.ezo_ad,.ezoic-ad,.ezmob) { display:none!important;visibility:hidden!important; }
 ! *#$#:where([data-ez-ph-id],[ezaw][ezah]):not([style*="display:"][style*="none"]) { display:none!important;visibility:hidden!important; }
 
-! /ezqlog?, /ezais/log? - https://regex101.com/r/VrimLQ/1
-\/ez[aq](?:is\/)?log\?$important
+! /ezqlog?, /ezais/log? - <https://regex101.com/r/VrimLQ/3>
+/\/ez[aq](?:is\/)?log\?/$important
 
 ! < /end ezoic ads >
