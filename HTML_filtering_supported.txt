@@ -7,6 +7,7 @@
 *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
 *##^div[class="g-buttons"]:has(> a[href*="/regarder."].mButton)
 *##^div[class="g-buttons"]:has(> a[href*="/regarder."].myButton)
+*##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
 *##^script[src*="glossydollyknock.com/"]
