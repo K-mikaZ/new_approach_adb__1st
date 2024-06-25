@@ -10,7 +10,10 @@
 !
 
 ! ======= COSMETIC =======
-
+!#if cap_html_filtering
+!#include HTML_filtering_supported.txt
+!#else
+!#endif
 
 ! ======= MISC =======
 
