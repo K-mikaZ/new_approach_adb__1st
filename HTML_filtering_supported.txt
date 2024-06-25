@@ -1,7 +1,5 @@
-! products that support HTML filtering rules
-! use with condition:
-! !#if cap_html_filtering
-! !#endif
+! products that support HTML filtering rules (firefox, AdGuard for Windows, AdGuard for Mac, and AdGuard for Android)
+! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
 *##^#pub
 *##^center:has(> a[href*="/regarder."].mButton)
