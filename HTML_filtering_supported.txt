@@ -17,7 +17,8 @@
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
 *##^script:has-text(+'/tag.min.js')
-*##^script:has-text(/devtoolIsOpening|popmagicldr/)
+*##^script:has-text(devtoolIsOpening)
+*##^script:has-text(popmagicldr)
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
