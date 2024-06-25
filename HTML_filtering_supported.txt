@@ -7,6 +7,17 @@
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
+*##^iframe:is([name*="apiLocator"],[id*="apiLocator"])
+*##^iframe:is([name="google_esf"],[id="google_esf"])
+*##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
+*##^iframe:is([name^="aswift_"],[id^="aswift_"])
+*##^iframe:is([src*="www.googletagmanager.com/ns.html?"],[src*="/gtm"][src*="ns.html?"])
+*##^iframe[src*="/pagead/"]
+*##^iframe[src*="doubleclick"]
+*##^script[src*="/1clkn/"]
+*##^script[src*="/invoke.js"]
+*##^script[src*="/adsid/integrator.js"]
+*##^script[src*="highcpmgate.com"]
 *##^script[src*="glossydollyknock.com/"]
 *##^script[src*="stunkcott.com/"]
 
@@ -23,6 +34,20 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##^iframe[src^="javascript:"]
+d0000d.com##^iframe[style*="width: 0px; height: 0px"]
+d0000d.com##^script:has-text(['concat'])
+d0000d.com##^script:has-text(;break;case )
+! not appear in console but seems works ???
+d0000d.com##^script:matches-attr("src"="/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/")
+d0000d.com,videzz.net##^script[data-cfasync]
+frembed.*##^script:has-text(CDATA)
+videzz.net##^script[data-tag="asg"]
+videzz.net##^script:has-text(vidozza.js)
+! class "nunush" only visible when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
+videzz.net##^script[class="nunush"]
+! external scripts
+videzz.net##^script[src^="//"]
 
 ! ===============================================================
 ! "specific" filters - on french sites
