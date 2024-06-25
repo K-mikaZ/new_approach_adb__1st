@@ -15,6 +15,7 @@
 *##^iframe:is([src*="www.googletagmanager.com/ns.html?"],[src*="/gtm"][src*="ns.html?"])
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
+*##^script:has-text(/devtoolIsOpening|popmagicldr/)
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
