@@ -1,4 +1,4 @@
-! products that support HTML filtering rules (ublock origin for firefox, AdGuard for Windows, AdGuard for Mac, and AdGuard for Android)
+! products that support HTML filtering rules: ublock origin for firefox, Adguard Extension for firefox, AdGuard app for Windows, AdGuard app for Mac, and AdGuard app for Android)
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
 *##^#pub
