@@ -27,6 +27,6 @@ animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tr
 ! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 ! found on: www.6play.fr => tv.freewheel.SDK._instanceQueue['Context_2']._videoAsset.requestComplete({});
 ! found on: www.tf1.fr => tv.freewheel.SDK._instanceQueue['Context_1'].requestComplete({})
-tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,2}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
+tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,}\(\{)[\s\S]*\}[\r\n]?)/\$1})/
 
 !#endif
