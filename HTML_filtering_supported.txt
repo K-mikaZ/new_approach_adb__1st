@@ -16,6 +16,7 @@
 *##^iframe:is([src*="www.googletagmanager.com/ns.html?"],[src*="/gtm"][src*="ns.html?"])
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
+*##^script:has-text(+'/tag.min.js')
 *##^script:has-text(/devtoolIsOpening|popmagicldr/)
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
@@ -42,7 +43,6 @@ adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.
 d0000d.com##^iframe[style*="width: 0px; height: 0px"]
 d0000d.com##^script:has-text(['concat'])
 d0000d.com##^script:has-text(;break;case )
-d0000d.com##^script:has-text(/tag.min.js)
 d0000d.com,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 videzz.net##^script[data-tag="asg"]
