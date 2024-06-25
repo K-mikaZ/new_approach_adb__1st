@@ -15,3 +15,4 @@
 
 !www.malekal.com##^div:has(> div:has(> [class*="xxx-detect"][class*="alert"]))
 malekal.com##^div.Here
+megastream.*##^div#bcklnksts
