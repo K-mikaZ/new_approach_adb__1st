@@ -1,6 +1,9 @@
 ! products that support HTML filtering rules: ublock origin for firefox, Adguard Extension for firefox, AdGuard app for Windows, AdGuard app for Mac, and AdGuard app for Android)
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+! ===============================================================
+! "generic" filters
+! ===============================================================
 *##^#pub
 *##^center:has(> a[href*="/regarder."].mButton)
 *##^center:has(> a[href*="/regarder."].myButton)
@@ -13,6 +16,14 @@
 *##^script[src*="glossydollyknock.com/"]
 *##^script[src*="stunkcott.com/"]
 
-!www.malekal.com##^div:has(> div:has(> [class*="xxx-detect"][class*="alert"]))
+! ===============================================================
+! "specific" filters
+! ===============================================================
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
+
+! ===============================================================
+! "applications" filters
+! ===============================================================
+! YouTube Detection, Ads & Breakages - https://www.reddit.com/r/uBlockOrigin/comments/1atwzem/comment/ks2v27a/
+/base.js$replace=/(enabled_engage_types\}.+?;if\().+?&&(.+?\.isLivePlayback&&)/\$1true)\$2/,domain=m.youtube.com|music.youtube.com|www.youtube.com
