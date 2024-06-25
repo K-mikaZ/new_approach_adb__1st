@@ -9,7 +9,7 @@
 ! Description: My first blocking list.
 !
 
-! ======= COSMETIC =======
+! ======= HTML filtering =======
 !#if cap_html_filtering
 !#include HTML_filtering_supported.txt
 !#else
