@@ -47,7 +47,7 @@ d0000d.com,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 videzz.net##^script[data-tag="asg"]
 videzz.net##^script:has-text(vidozza.js)
-! class "nunush" only visible when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
+! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
 ! external scripts
 videzz.net##^script[src^="//"]
