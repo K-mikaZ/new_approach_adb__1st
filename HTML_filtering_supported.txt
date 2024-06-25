@@ -1,4 +1,5 @@
 ! products that support HTML filtering rules: ublock origin for firefox, Adguard Extension for firefox, AdGuard app for Windows, AdGuard app for Mac, and AdGuard app for Android)
+! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
 ! ===============================================================
