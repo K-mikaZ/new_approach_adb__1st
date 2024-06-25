@@ -9,11 +9,24 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Invalid filter (in console) when loading as list, but works in personal filters.
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-! ¤¤¤ Request Modifier <https://regex101.com/r/DkEygK/7>, <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
-! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
-!/ad/g/1?prof=*tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.requestComplete\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
-!/ad/g/1?prof=*tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.\w+\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
-tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\]\.\w+\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
-! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+! ===============================================================
+! "applications" filters
+! ===============================================================
 animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
+
+
+! ===============================================================
+! "net" filters
+! ===============================================================
+!#if cap_html_filtering
+
+! YouTube Detection, Ads & Breakages - https://www.reddit.com/r/uBlockOrigin/comments/1atwzem/comment/ks2v27a/
+/base.js$replace=/(enabled_engage_types\}.+?;if\().+?&&(.+?\.isLivePlayback&&)/\$1true)\$2/,domain=m.youtube.com|music.youtube.com|www.youtube.com
+! ¤¤¤ Request Modifier <https://regex101.com/r/DkEygK/9>, <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
+! FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
+! found on: www.6play.fr => tv.freewheel.SDK._instanceQueue['Context_2']._videoAsset.requestComplete({});
+! found on: www.tf1.fr => tv.freewheel.SDK._instanceQueue['Context_1'].requestComplete({})
+tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,2}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
+
+!#endif
