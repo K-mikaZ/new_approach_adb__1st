@@ -15,6 +15,7 @@
 ! ===============================================================
 animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
 videzz.net##+js(trusted-click-element, .prevent-first-click)
+videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
 
 
 ! ===============================================================
