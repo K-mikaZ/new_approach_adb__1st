@@ -1381,7 +1381,6 @@ stream-serie.net#$##option-1{height:100%}
 ||dotomi.com^$third-party
 ||doubleclick.net^$third-party
 ||doubleverify.com^$third-party
-||downdetector.com^$third-party
 ||knorex.com^$third-party
 ||emerse.com^$third-party
 ||everesttech.net^$third-party
@@ -1389,7 +1388,6 @@ stream-serie.net#$##option-1{height:100%}
 ||eyeota.net^$third-party
 ||flashtalking.com^$third-party
 ||fonecta.fi^$third-party
-||gumgum.com^$third-party
 ||hlserve.com^$third-party
 ||imrworldwide.com^$third-party
 ||innovid.com^$third-party
