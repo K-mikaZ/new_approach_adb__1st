@@ -36,7 +36,8 @@
 *##^center:has(> a[href*="/regarder."].mButton)
 *##^center:has(> a[href*="/regarder."].myButton)
 ! div[class*="btn"] or div[class*="button"]
-*##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
+! *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
+*##^div[class*="movie__"]:has(> a[href*="/premium"])
 *##^div[class="g-buttons"]:has(> a[href*="/regarder."].mButton)
 *##^div[class="g-buttons"]:has(> a[href*="/regarder."].myButton)
 
