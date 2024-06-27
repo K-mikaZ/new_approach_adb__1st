@@ -1,4 +1,5 @@
 ! products that support HTML filtering rules: ublock origin for firefox, Adguard Extension for firefox, AdGuard app for Windows, AdGuard app for Mac, and AdGuard app for Android)
+! Caution, the elements here are deleted, not hidden
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
@@ -13,7 +14,8 @@
 *##^iframe:is([name="google_esf"],[id="google_esf"])
 *##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
 *##^iframe:is([name^="aswift_"],[id^="aswift_"])
-*##^iframe:is([src*="www.googletagmanager.com/ns.html?"],[src*="/gtm"][src*="ns.html?"])
+*##^iframe:is([src*="www.googletagmanager.com/ns.html?"])
+*##^iframe:is([src*="/gtm"][src*="ns.html?"])
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
 *##^script:has-text(+'/tag.min.js')
@@ -40,12 +42,12 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##^iframe[src^="javascript:"]
 d0000d.com##^iframe[style*="width: 0px; height: 0px"]
 d0000d.com##^script:has-text(['concat'])
 d0000d.com##^script:has-text(;break;case )
 d0000d.com,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
+streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 videzz.net##^script[data-tag="asg"]
 videzz.net##^script:has-text(vidozza.js)
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
