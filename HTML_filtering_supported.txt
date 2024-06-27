@@ -44,7 +44,7 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-d0000d.com##^iframe[style*="width: 0px; height: 0px"]
+!d0000d.com##^iframe[style*="width: 0px; height: 0px"]
 d0000d.com##^script:has-text(['concat'])
 d0000d.com##^script:has-text(;break;case )
 d0000d.com,videzz.net##^script[data-cfasync]
