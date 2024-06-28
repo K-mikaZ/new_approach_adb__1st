@@ -157,7 +157,7 @@ voirseries.*##[class*="player" i]:has(>:is([class*="download"],[id*="download"])
 ##li[class~="nopls"][data-plink*="/voir/voir"]
 !! *##[class|="fake"], [id|="fake"]
 !! *#$#video[id^="fake-"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
-##:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
+! ##:where( [id^="fake-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) )
 ##[class|="custom-fake"]
 ###fakevideo
 fakeplayer$~third-party
