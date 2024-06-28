@@ -217,7 +217,7 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! *#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! BADFILTER *#$#:is( [class*="widget"], [class~="btn"] ):is( [class~="mb-3"]:has( ~:not( [textarea] ) )):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! exclude somes (github: [class~="d-none"])
-##[class~="btn"][class*="mr-"][href]:is(:not([href^="/"],[class~="d-none"])):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
+! ##[class~="btn"][class*="mr-"][href]:is(:not([href^="/"],[class~="d-none"])):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
 
 ##[class="ad-footer"]
 ##[class="ad-wrap"]
@@ -226,7 +226,6 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 
 ##.ad-masthead
 ##[class|="sponsoredPrisma"]
-!! *##[id^="google_ads_iframe_"]
 ##[class^="van_vid_carousel"]
 !! *##[data-ad-client*="-pub-"]
 !! *##[data-ad-host*="-pub-"]
