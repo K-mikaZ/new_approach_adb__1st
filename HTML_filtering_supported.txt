@@ -33,13 +33,12 @@
 ! "generic" filters - on french sites
 ! ===============================================================
 *##^#pub
-*##^center:has(> a[href*="/regarder."].mButton)
-*##^center:has(> a[href*="/regarder."].myButton)
+*##^a[href*="/regarder."]:upward(center)
+*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
 ! div[class*="btn"] or div[class*="button"]
 ! *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-*##^div[class*="movie__"]:has(> a[href*="/premium"])
-*##^div[class="g-buttons"]:has(> a[href*="/regarder."].mButton)
-*##^div[class="g-buttons"]:has(> a[href*="/regarder."].myButton)
+*##^a[href*="/premium"]:upward(div[class*="movie_"])
+
 
 ! ===============================================================
 ! "specific" filters
