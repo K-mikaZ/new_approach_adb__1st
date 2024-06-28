@@ -2487,8 +2487,9 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 ! #@#a[onclick^="openAuc"]
-*#@#a[href^="mailto:support@netu.tv"]
-hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:style(display: none !important;)
+! *#@#a[href^="mailto:support@netu.tv"]
+! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:style(display: none !important;)
+hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:remove()
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#?#a[onclick^="openAuc"]:style(display:none!important;)
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
 
