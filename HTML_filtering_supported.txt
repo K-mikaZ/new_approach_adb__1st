@@ -6,6 +6,7 @@
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
+*##^[id~="adbd"][class*="over"]
 *##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
 *##^div[class|="adsvp"][class*="wrapper"]
 *##^div[class^="movie-aye"]
