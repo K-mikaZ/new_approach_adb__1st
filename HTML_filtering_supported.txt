@@ -16,8 +16,8 @@
 *##^iframe:is([name="google_esf"],[id="google_esf"])
 *##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
 *##^iframe:is([name^="aswift_"],[id^="aswift_"])
-*##^iframe:is([src*="www.googletagmanager.com/ns.html?"])
-*##^iframe:is([src*="/gtm"][src*="ns.html?"])
+*##^iframe[src*="www.googletagmanager.com/ns.html?"]
+*##^iframe[src*="/gtm"][src*="ns.html?"]
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
 *##^ins[class*="adsby"][data-ad-slot]
