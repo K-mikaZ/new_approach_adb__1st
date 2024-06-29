@@ -20,6 +20,8 @@
 *##^iframe:is([src*="/gtm"][src*="ns.html?"])
 *##^iframe[src*="/pagead/"]
 *##^iframe[src*="doubleclick"]
+*##^ins[class*="adsby"][data-ad-slot]
+*##^ins[class*="adsby"][data-ad-client]
 *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
