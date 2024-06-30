@@ -66,5 +66,6 @@ videzz.net##^script[src^="//"]
 ! ===============================================================
 ! "specific" filters - on french sites
 ! ===============================================================
+forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
