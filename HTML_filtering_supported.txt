@@ -46,12 +46,12 @@
 ! ===============================================================
 *##^#pub
 *##^a[href*="/regarder."]:upward(center)
-!*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
 ! div[class*="btn"] or div[class*="button"]
+!*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
 *##^a[href*="/regarder."]:upward(div[class*="button"])
 *##^a[href*="/regarder."]:upward(div[class*="big"][class*="btn"])
 ! *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-*##^a[href*="/premium"]:upward(div[class*="movie_"])
+*##^a[href*="premium"]:upward(div[class*="movie_"])
 *##^a[href*="premium"][href*=".php"][target]:upward(div[class])
 *##^a[href*="streaming"][href*=".php"][target]:upward(div[class])
 
