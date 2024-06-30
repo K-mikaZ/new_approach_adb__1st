@@ -74,8 +74,8 @@ frembed.*##^script:has-text(CDATA)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
-videzz.net##^script[data-tag="asg"]
 videzz.net##^script:has-text(vidozza.js)
+videzz.net##^script[data-tag="asg"]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
 ! external scripts
