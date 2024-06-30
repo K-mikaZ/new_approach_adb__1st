@@ -25,6 +25,8 @@
 *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
+!*##^script[src*="/beacon.min.js"]
+*##^script[data-cf-beacon]
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
@@ -53,7 +55,7 @@
 !d0000d.com##^iframe[style*="width: 0px; height: 0px"]
 d0000d.com##^script:has-text(['concat'])
 d0000d.com##^script:has-text(;break;case )
-d0000d.com,videzz.net##^script[data-cfasync]
+d0000d.com,fusevideo.io,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 videzz.net##^script[data-tag="asg"]
@@ -69,3 +71,5 @@ videzz.net##^script[src^="//"]
 forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
+neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
+neko-sama.fr##^script[data-cfasync]
