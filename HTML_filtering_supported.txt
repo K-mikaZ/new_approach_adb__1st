@@ -39,10 +39,12 @@
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
+*##^script[src*="adsmediabox.com"]
 *##^script[src*="highcpmgate.com"]
 *##^script[src*="gamescdnfor.com"]
 *##^script[src*="glossydollyknock.com"]
 *##^script[src*="googleoptimize.com"]
+*##^script[src*="santosattestation.com"]
 *##^script[src*="seedtag.com"]
 *##^script[src*="stunkcott.com"]
 
@@ -70,6 +72,8 @@ d0000d.com##^script:has-text(;break;case )
 d0000d.com,fusevideo.io,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
+sibnet.ru##^script[src*="//cvt1.sibnet."]
+sibnet.ru##^script[src*="//c.sibnet."]
 videzz.net##^script[data-tag="asg"]
 videzz.net##^script:has-text(vidozza.js)
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
