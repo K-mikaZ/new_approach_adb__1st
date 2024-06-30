@@ -38,7 +38,7 @@
 !! |turn:*
 
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(nowebrtc)
-sendvid.com,toonanime.*,video.sibnet.ru,vidmoly.to##+js(nowebrtc)
+abysscdn.com,sendvid.com,toonanime.*,video.sibnet.ru,vidmoly.to##+js(nowebrtc)
 
 ! WHITELISTING [ Accept on a case-by-case basis, as follows... example.com#@#+js(nowebrtc) ]
 ! ------------
