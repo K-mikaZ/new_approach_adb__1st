@@ -40,8 +40,11 @@
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
 *##^script[src*="highcpmgate.com"]
-*##^script[src*="glossydollyknock.com/"]
-*##^script[src*="stunkcott.com/"]
+*##^script[src*="gamescdnfor.com"]
+*##^script[src*="glossydollyknock.com"]
+*##^script[src*="googleoptimize.com"]
+*##^script[src*="seedtag.com"]
+*##^script[src*="stunkcott.com"]
 
 ! ===============================================================
 ! "generic" filters - on french sites
@@ -77,8 +80,8 @@ videzz.net##^script[src^="//"]
 ! ===============================================================
 ! "specific" filters - on french sites
 ! ===============================================================
+anime-sama.fr,neko-sama.fr##^script[data-cfasync]
 forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
 neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
-neko-sama.fr##^script[data-cfasync]
