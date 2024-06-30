@@ -6,6 +6,13 @@
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
+*##^[class~="ad"][class~="c-ads"]
+*##^[class~="ad"][class~="doubleclick"]
+*##^[class~="ad"][class~="onlyMobile"]
+*##^[class~="ad"][class~="onlyDesktop"]
+*##^[class~="ad"][data-block-devices]
+*##^[class~="ad"][class*="banniere"]
+*##^[class~="ad"][class*="outbrain"]
 *##^[id~="adbd"][class*="over"]
 *##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
 *##^div[class|="adsvp"][class*="wrapper"]
