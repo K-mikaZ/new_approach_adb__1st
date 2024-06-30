@@ -16,6 +16,8 @@
 *##^[id~="adbd"][class*="over"]
 *##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
 *##^div[class|="adsvp"][class*="wrapper"]
+! not removed, only hide, because some sites use it correctly
+*#@#^div[class^="masha_"]
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
