@@ -12,14 +12,14 @@
 ||animationdigitalnetwork.fr/player/video/*/vmap$redirect=noopvmap-1.0,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xmlhttprequest,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
-/vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,important,domain=imasdk.googleapis.com
-||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
+/vmap?$xmlhttprequest,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
+||*&output=xml_vmap1$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ||*vmap*$xmlhttprequest,redirect-rule=noop-vmap1.0.xml$domain=~github.com|~githubusercontent.com
 ||/*vmap$xmlhttprequest,redirect-rule=noop-vmap1.0.xml
-/vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml
+/vmap*.xml$xmlhttprequest,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
-output=xml_vmap1$xmlhttprequest,important,redirect=noop-vmap1.0.xml
-
+output=xml_vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
+imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 
 !! !#if adguard
 
