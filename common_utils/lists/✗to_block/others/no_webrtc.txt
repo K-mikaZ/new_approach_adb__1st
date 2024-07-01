@@ -16,13 +16,11 @@
 ! < https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Protocols >
 
 ! often used by imasdk.googleapis.com/js/core/bridge
-! souvent utilisé par imasdk.googleapis.com/js/core/bridge
-! see "network request log / journal des requêtes réseau" < https://animedigitalnetwork.fr/video/bleach/5532-episode-1-episode-1 >
 
 !! BLOCKING
 !! --------
 !! https://github.com/uBlockOrigin/uBlock-issues/issues/1799#issuecomment-1002609260
-##+js(nowebrtc)
+! *##+js(nowebrtc)
 
 !! ADGUARD RULES
 !! -------------
