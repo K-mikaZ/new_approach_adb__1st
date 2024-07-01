@@ -4,7 +4,7 @@
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/lists/✗to_block/others/no_webrtc.txt
 ! Description: Block WEBRTC (Web Real Time Communications), as soon as possible, sometimes used for "real-time advertising".
-! Description fr: Bloquer WEBRTC (Web Real Time Communications, littéralement: communication web en temps réel), dès que possible, parfois utilisé pour "la publicité en temps réel".
+! Description fr: Bloquer WEBRTC (littéralement: communication web en temps réel), dès que possible, parfois utilisé pour "la publicité en temps réel".
 
 !! REMARQUE: Lorsque le WebRTC est bloqué ou désactivé, certaines applications de vidéo ou de conversation qui s’appuient sur la fonctionnalité WebRTC peuvent ne pas fonctionner correctement.
 
