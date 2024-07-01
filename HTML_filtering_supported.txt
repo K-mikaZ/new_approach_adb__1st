@@ -21,7 +21,9 @@
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
-*##^iframe:is([name*="apiLocator"],[id*="apiLocator"])
+! iframe[name="__uspapiLocator"], iframe[name="__tcfapiLocator"], iframe[name="__gppLocator"]
+!*##^iframe:is([name*="apiLocator"],[id*="apiLocator"])
+*##^iframe[name^="__"][name$="Locator"]
 *##^iframe:is([name="google_esf"],[id="google_esf"])
 *##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
 *##^iframe:is([name^="aswift_"],[id^="aswift_"])
