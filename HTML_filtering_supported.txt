@@ -77,6 +77,7 @@ streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
 videzz.net##^script:has-text(vidozza.js)
+! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that callk https://0i0i0i0.com/
 videzz.net##^script[data-tag="asg"]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
