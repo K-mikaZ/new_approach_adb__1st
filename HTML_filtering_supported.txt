@@ -76,6 +76,7 @@ d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(['concat'])
 d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(;break;case )
 d000d.*,d0000d.*,dood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
+oneupload.*##^script[src*="/js/google-adsense.js"]
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
