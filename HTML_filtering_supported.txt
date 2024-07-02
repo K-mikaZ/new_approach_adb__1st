@@ -38,6 +38,8 @@
 *##^script:has-text(popmagicldr)
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
+! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
+*##^script[data-tag="asg"]
 *##^script[src*="/1clkn/"]
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
@@ -49,6 +51,7 @@
 *##^script[src*="santosattestation.com"]
 *##^script[src*="seedtag.com"]
 *##^script[src*="stunkcott.com"]
+*##^script[src*="waust.at"]
 
 ! ===============================================================
 ! "generic" filters - on french sites
@@ -68,17 +71,14 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-!d0000d.com##^iframe[style*="width: 0px; height: 0px"]
-d0000d.com##^script:has-text(['concat'])
-d0000d.com##^script:has-text(;break;case )
-d0000d.com,fusevideo.io,videzz.net##^script[data-cfasync]
+d000d.com,d0000d.com##^script:has-text(['concat'])
+d000d.com,d0000d.com##^script:has-text(;break;case )
+d000d.com,d0000d.com,fusevideo.io,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
 videzz.net##^script:has-text(vidozza.js)
-! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
-videzz.net##^script[data-tag="asg"]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
 ! external scripts
