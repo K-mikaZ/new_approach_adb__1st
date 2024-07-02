@@ -51,6 +51,7 @@
 *##^script[src*="glossydollyknock.com"]
 *##^script[src*="googleoptimize.com"]
 *##^script[src*="morningamidamaruhal.com"]
+*##^script[src*="plausible.io"]
 *##^script[src*="santosattestation.com"]
 *##^script[src*="seedtag.com"]
 *##^script[src*="stunkcott.com"]
