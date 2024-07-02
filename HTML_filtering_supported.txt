@@ -75,9 +75,9 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(['concat'])
-d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(;break;case )
-d000d.*,d0000d.*,dood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 oneupload.*##^script[src*="/js/google-adsense.js"]
