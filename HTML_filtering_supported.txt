@@ -71,9 +71,9 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-d000d.com,d0000d.com##^script:has-text(['concat'])
-d000d.com,d0000d.com##^script:has-text(;break;case )
-d000d.com,d0000d.com,fusevideo.io,videzz.net##^script[data-cfasync]
+d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(['concat'])
+d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(;break;case )
+d000d.*,d0000d.*,dood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
 frembed.*##^script:has-text(CDATA)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
