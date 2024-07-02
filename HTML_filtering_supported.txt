@@ -45,13 +45,16 @@
 *##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
 *##^script[src*="adsmediabox.com"]
+*##^script[src*="anticipateplummorbid.com"]
 *##^script[src*="highcpmgate.com"]
 *##^script[src*="gamescdnfor.com"]
 *##^script[src*="glossydollyknock.com"]
 *##^script[src*="googleoptimize.com"]
+*##^script[src*="morningamidamaruhal.com"]
 *##^script[src*="santosattestation.com"]
 *##^script[src*="seedtag.com"]
 *##^script[src*="stunkcott.com"]
+*##^script[src*="troubledcontradiction.com"]
 *##^script[src*="waust.at"]
 
 ! ===============================================================
@@ -75,9 +78,12 @@
 d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(['concat'])
 d000d.*,d0000d.*,dood.*,dooood.*##^script:has-text(;break;case )
 d000d.*,d0000d.*,dood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
+filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
+uqload.*##^script:has-text(+'/400/'+)
+uqload.*##^script#_wau1ww
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
