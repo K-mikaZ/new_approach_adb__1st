@@ -21,11 +21,7 @@
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
-!*##^div#dfp-atf
-!*##^div#dfp-btf
-!*##^div#dfp-mtf
-!*##^div#dfp-interstitial
-!*##^div#dfp-masthead
+! #dfp-atf, #dfp-btf, #dfp-mtf, #dfp-interstitial, #dfp-masthead...
 *##^div[id^="dfp-"]
 *##^div.ads-placeholder
 *##^div.ads-container
