@@ -8,8 +8,11 @@
 ! ===============================================================
 *##^[class~="ad"][class~="c-ads"]
 *##^[class~="ad"][class~="doubleclick"]
+!#if env_mobile || adguard_app_android
 *##^[class~="ad"][class~="onlyMobile"]
+!#else
 *##^[class~="ad"][class~="onlyDesktop"]
+!#endif
 *##^[class~="ad"][data-block-devices]
 *##^[class~="ad"][class*="banniere"]
 *##^[class~="ad"][class*="outbrain"]
