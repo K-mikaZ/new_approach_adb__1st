@@ -92,9 +92,9 @@
 ! ===============================================================
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
-d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,fusevideo.io,videzz.net##^script[data-cfasync]
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
+fusevideo.io,videzz.net##^script[data-cfasync]
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
