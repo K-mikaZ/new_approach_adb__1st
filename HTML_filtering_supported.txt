@@ -74,7 +74,6 @@
 ! "generic" filters - on french sites
 ! ===============================================================
 *##^div#pub
-!*##^a[class^="ebooks_orange_"][href]:upward(div[class])
 *##^a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
 *##^a[href*="/regarder."]:upward(center)
 ! div[class*="btn"] or div[class*="button"]
