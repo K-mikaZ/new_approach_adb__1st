@@ -38,23 +38,30 @@
 *##^iframe[src*="doubleclick"]
 *##^ins[class*="adsby"][data-ad-slot]
 *##^ins[class*="adsby"][data-ad-client]
+*##^script:has-text(+'/400/'+)
 *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
 *##^script:has-text(vidozza.js)
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
+*##^script[data-cfasync]:has-text(break;case $)
 ! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
 *##^script[data-tag="asg"]
 *##^script[src*="/1clkn/"]
-*##^script[src*="/invoke.js"]
 *##^script[src*="/adsid/integrator.js"]
+*##^script[src*="/invoke.js"]
 *##^script[src*="adsmediabox.com"]
 *##^script[src*="anticipateplummorbid.com"]
-*##^script[src*="highcpmgate.com"]
+*##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
+*##^script[src*="defendantsulphurstamp.com"]
+*##^script[src*="dexpredict.com"]
 *##^script[src*="gamescdnfor.com"]
+*##^script[src*="glersakr.com"]
 *##^script[src*="glossydollyknock.com"]
 *##^script[src*="googleoptimize.com"]
+*##^script[src*="highcpmgate.com"]
+*##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
 *##^script[src*="morningamidamaruhal.com"]
 *##^script[src*="plausible.io"]
 *##^script[src*="santosattestation.com"]
@@ -66,8 +73,9 @@
 ! ===============================================================
 ! "generic" filters - on french sites
 ! ===============================================================
-*##^#pub
+*##^div#pub
 *##^a[href*="/regarder."]:upward(center)
+*##^a[class^="ebooks_orange_"][href]:upward(div[class])
 ! div[class*="btn"] or div[class*="button"]
 !*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
 *##^a[href*="/regarder."]:upward(div[class*="button"])
@@ -88,8 +96,9 @@ filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 oneupload.*##^script[src*="/js/google-adsense.js"]
+opvid.*##^script:has-text(decodeURIComponent)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
-uqload.*##^script:has-text(+'/400/'+)
+!uqload.*##^script:has-text(+'/400/'+)
 uqload.*##^script#_wau1ww
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
