@@ -21,6 +21,15 @@
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
+!*##^div#dfp-atf
+!*##^div#dfp-btf
+!*##^div#dfp-mtf
+!*##^div#dfp-interstitial
+!*##^div#dfp-masthead
+*##^div[id^="dfp-"]
+*##^div.ads-placeholder
+*##^div.ads-container
+*##^div.sticky-ad-holder
 ! iframe[name="__uspapiLocator"], iframe[name="__tcfapiLocator"], iframe[name="__gppLocator"]
 !*##^iframe:is([name*="apiLocator"],[id*="apiLocator"])
 *##^iframe[name^="__"][name$="Locator"]
@@ -101,3 +110,4 @@ forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
 neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
+www.allocine.fr##^div.main-banner
