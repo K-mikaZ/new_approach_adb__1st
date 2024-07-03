@@ -86,7 +86,6 @@
 *##^a[href*="premium"][href*=".php"][target]:upward(div[class])
 *##^a[href*="streaming"][href*=".php"][target]:upward(div[class])
 
-
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
