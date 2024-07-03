@@ -76,7 +76,7 @@
 *##^div#pub
 *##^a[href*="/regarder."]:upward(center)
 !*##^a[class^="ebooks_orange_"][href]:upward(div[class])
-*##^a[class^="ebooks_orange_"][href]:contains(/(reg|t[eé]l[eé]ch)ar[dg]er/i):upward(div[class])
+*##^a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
 ! div[class*="btn"] or div[class*="button"]
 !*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
 *##^a[href*="/regarder."]:upward(div[class*="button"])
