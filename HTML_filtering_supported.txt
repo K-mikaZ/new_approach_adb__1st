@@ -49,6 +49,7 @@
 *##^iframe[src*="doubleclick"]
 *##^ins[class*="adsby"][data-ad-slot]
 *##^ins[class*="adsby"][data-ad-client]
+*##^ins[class*="adsby"]:upward(center)
 *##^script:has-text(+'/400/'+)
 *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
