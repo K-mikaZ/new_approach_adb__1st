@@ -35,8 +35,7 @@
 *##^div.ads-placeholder
 *##^div.ads-container
 *##^div.sticky-ad-holder
-! iframe[name="__uspapiLocator"], iframe[name="__tcfapiLocator"], iframe[name="__gppLocator"]
-!*##^iframe:is([name*="apiLocator"],[id*="apiLocator"])
+! `iframe[name="__uspapiLocator"]`, `iframe[name="__tcfapiLocator"]`, `iframe[name="__gppLocator"]`...
 *##^iframe[name^="__"][name$="Locator"]
 *##^iframe:is([name="google_esf"],[id="google_esf"])
 *##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
@@ -58,7 +57,7 @@
 *##^script[data-cfasync]:has-text(break;case $)
 ! https://onclickalgo.com/a/display.php?r=7011010
 *##^script[data-cfasync][src*=".com/a/display.php?"]
-! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
+! `script[data-tag="asg"]`: Ads Managed by AdSpyglass.com that call https://0i0i0i0.com/
 *##^script[data-tag="asg"]
 *##^script[src*="/1clkn/"]
 *##^script[src*="/adsid/integrator.js"]
@@ -88,8 +87,7 @@
 *##^div#pub
 *##^a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
 *##^a[href*="/regarder."]:upward(center)
-! div[class*="btn"] or div[class*="button"]
-!*##^a[href*="/regarder."]:upward(div[class="g-buttons"])
+! `div[class*="btn"]` or `div[class*="button"]`
 *##^a[href*="/regarder."]:upward(div[class*="button"])
 *##^a[href*="/regarder."]:upward(div[class*="big"][class*="btn"])
 ! *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
