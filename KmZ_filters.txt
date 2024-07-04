@@ -342,15 +342,23 @@ tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist
 @@||abysscdn.com^$subdocument
 abysscdn.com##+js(no-fetch-if, /cdn\.apicdn\d+\.\w+/)
 ! short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
-! short.ink,abysscdn.com##+js(window.open-defuser)
+! short.ink,abysscdn.com##+js(prevent-window-open)
 ! $third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com|jsdelivr.net
 $third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
 ||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
 
-designparty.*##+js(window.open-defuser)
-designparty.*##+js(no-xhr-if, url:/\/advertises?\//)
+designparty.*##+js(prevent-window-open)
+designparty.*##+js(prevent-xhr, url:/\/advertises?\//, true)
+! designparty.sx: prevented create iframes
+! found on https://v5.voiranime.com/anime/days-with-my-stepsister/days-with-my-stepsister-01-vostfr/
+! https://deobfuscate.relative.im/
+!designparty.sx##+js(aopw, document['\x62\x6f'+'\x64\x79']['\x61\x70'+'\x70\x65'+'\x6e\x64'+'\x43\x68'+'\x69\x6c'+'\x64'](q))
+designparty.*##+js(abort-on-property-write, document.body.appendChild(q))
+!designparty.sx##+js(aost, q, document['\x63\x72'+'\x65\x61'+'\x74\x65'+'\x45\x6c'+'\x65\x6d'+'\x65\x6e'+'\x74']('\x69\x66'+'\x72\x61'+'\x6d\x65'))
+designparty.*##+js(abort-on-stack-trace, q, document.createElement)
+designparty.*##+js(prevent-setTimeout, p())
 
 ||hoglinsu.com^
 ||yougube.com^$all,important
@@ -427,8 +435,8 @@ open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "
 @@*$script,domain=streamz.vg,badfilter
 mstream.*##+js(abort-on-property-read, open)
 mystream.to##+js(abort-on-property-read, open)
-mystream.to##+js(window.open-defuser)
-streamtape.net##+js(window.open-defuser)
+mystream.to##+js(prevent-window-open)
+streamtape.net##+js(prevent-window-open)
 |https://$script,third-party,domain=upstream.to,badfilter
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
@@ -517,7 +525,7 @@ hds-streaming.*##a[target="_blank"]
 dood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
 dood.*,dooood.*##+js(abort-current-inline-script, check)
 /(do{2,}d\.(.{2,})\/sw\.js$)/$important
-vidlox.*##+js(window.open-defuser)
+vidlox.*##+js(prevent-window-open)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
 ||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
@@ -554,7 +562,7 @@ allseries.*##.X
 allseries.*##.jumbotron:if(.page-keywords)
 boingtv.fr##.leaderboard
 wow-films.*##+js(remove-attr, href|rel|target, #clickfakeplayer)
-clipwatching.*##+js(window.open-defuser)
+clipwatching.*##+js(prevent-window-open)
 clipwatching.*##.cover
 clipwatching.*##[target="_top"]
 clipwatching.*##[target="_blank"]
@@ -598,7 +606,7 @@ voiranime.com##a[href*="://network.nutaku.net/"]
 voiranime.to##.c-widget-wrap.ai_widget__inner.widget__inner
 voirfilms.*##.f-inner
 voirfilms.*##.X
-zone-stream.*##+js(window.open-defuser)
+zone-stream.*##+js(prevent-window-open)
 ! fr2.voirfilms.ch,series.dpstreaming.*#?#center:-abp-has(> a[id="show-button"])
 filmgratuit.*,filmz.*,streamavie.*,vfilms.me,voirfilms.*##center:if(.myButton)
 /collecteUEM/log/*$xmlhttprequest,domain=www.canalplus.com
@@ -780,7 +788,7 @@ $popup,third-party,domain=ettvcentral.com|ettvdl.com,badfilter
 @@||api.nocturnal-narwhal.buzz^$document
 ! Player SDK for online torrent streaming (https://www.jsdelivr.com/package/npm/@webtor/player-sdk-js)
 @@/@webtor/player-sdk-js
-webtor.io##+js(window.open-defuser)
+webtor.io##+js(prevent-window-open)
 webtor.io##.ad,.alerts
 
 cpasbien.*,cpasbien0.*,zetorrents.*,gktorrent.*,gktorrents.*,t911.*,torrent09.*,torrent9.*,torrent911.*,oxtorrent.*,oxtorrent.unblockit.bz,torrenty.*#$#vpnvpn:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
@@ -2325,7 +2333,7 @@ rockradio.com###slideshow-wrap
 @@$generichide,domain=adblockstreamtape.*|strcloud.*|streamta.*|streamtape.*|strtape.*|strtapeadblock.*|strtpe.*|streamtapeadblock.*|shavetape.*|tubeload.co|adblockeronstape.*|adblockstrtape.*|adblockstrtech.*|stape.*|streamadblockplus.*|strtapeadblocker.*|adblockplustape.com|stapewithadblock.*|streamadblocker.*,badfilter
 @@$subdocument,domain=adblockstreamtape.*|strcloud.*|streamta.*|streamtape.*|strtape.*|strtapeadblock.*|strtpe.*|streamtapeadblock.*|shavetape.*|tubeload.co|adblockeronstape.*|adblockstrtape.*|adblockstrtech.*|stape.*|streamadblockplus.*|strtapeadblocker.*|adblockplustape.com|stapewithadblock.*|streamadblocker.*
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##[id="adb"]
-adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(window.open-defuser.js)
+adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(prevent-window-open)
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(abort-current-inline-script, Math, /emZnbG9hZGVk|break;case \$\./)
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*##+js(abort-current-inline-script, atob, /popundersPerIP[\s\S]*?Date[\s\S]*?getElementsByTagName[\s\S]*?insertBefore/)
 ! break video loading - because of fuckfuckadblock ( .play-overlay has a click event )
@@ -2357,14 +2365,14 @@ www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-render
 aparat.*##[target="_top"]
 aparat.*##[target="_blank"]
 monstreams.info,derniers-films.com##a[target="_blank"]
-my.mail.ru##+js(window.open-defuser)
+my.mail.ru##+js(prevent-window-open)
 @@||lei.scan-manga.com^
 streamees.com#@#.an-advert-banner
 streamees.com#@#.an-sponsored
 @@||ff-01.com^$media
 ! 2024-05-10 ¤¤¤ playhydrax.com ¤¤¤ (https://playhydrax.com/?v=hqWHmSL4V) - test on https://dessins-anime.com/episode/baymax-et-les-nouveaux-heros-episode-10/?server=openload
 playhydrax.com##.playover
-playhydrax.com##+js(window.open-defuser)
+playhydrax.com##+js(prevent-window-open)
 @@*$generichide,domain=playhydrax.com
 @@||playhydrax.com/?v=$subdocument
 @@*$generichide,domain=redirect-ads.com
@@ -2383,20 +2391,20 @@ korben.info##.entry-content [class*="hentry"]
 /manifest.json$domain=vidlox.me
 ||jetload.net/count
 jetload.net##.vjs-poster
-vizplay.*##+js(window.open-defuser)
+vizplay.*##+js(prevent-window-open)
 @@||vudeo.io^$subdocument,third-party
 @@||vudeo.co^
-vudeo.*##+js(window.open-defuser)
+vudeo.*##+js(prevent-window-open)
 vudeo.*#@#+js(abort-current-inline-script, document.createElement, "delete window")
 ||googletagmanager.com/gtag/js$domain=opvid.online
-opvid.online##+js(window.open-defuser)
-wow-films.*##+js(window.open-defuser)
-fcine.*##+js(window.open-defuser)
-uptobox.stream##+js(window.open-defuser)
-imsdb.pw##+js(window.open-defuser)
-firesticktricks.com##+js(window.open-defuser)
-player.universanimevf.com##+js(window.open-defuser)
-ddl-francais.com##+js(window.open-defuser)
+opvid.online##+js(prevent-window-open)
+wow-films.*##+js(prevent-window-open)
+fcine.*##+js(prevent-window-open)
+uptobox.stream##+js(prevent-window-open)
+imsdb.pw##+js(prevent-window-open)
+firesticktricks.com##+js(prevent-window-open)
+player.universanimevf.com##+js(prevent-window-open)
+ddl-francais.com##+js(prevent-window-open)
 ! ||*$xmlhttprequest,third-party,denyallow=animesultra.net|toonanime.xyz,domain=toonanime.*
 @@||tooncdn.*/ajax/$domain=toonanime.*
 /js/adsbygoogle.js$important,domain=toonanime.*
@@ -2450,7 +2458,7 @@ voirseries.*###CloseiWatch
 voirseries.*##.MailWrapper:nth-child(n+3)
 @@||accounts.www.youtube.com/accounts/CheckConnection$domain=accounts.google.com,csp
 upvid.biz##[class^="lk"]
-upvid.*##+js(window.open-defuser.js)
+upvid.*##+js(prevent-window-open)
 ||vidlox.*^$important,badfilter,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;
 ||*$third-party,domain=upvid.*
 @@||upvid.*$domain=upvid.*
@@ -2459,7 +2467,7 @@ developpez.com###A90f4a144fdc79d5e5b245B
 @@||googletagmanager.com/gtag/*$domain=srek.net
 @@||googletagmanager.com/gtag/*$domain=cookuve.com
 @@||google-analytics.com^$domain=cookuve.com
-voirseries.*##+js(window.open-defuser)
+voirseries.*##+js(prevent-window-open)
 ||abostimp.com^$domain=upvid.biz
 @@||highstream.tv/player8/related.js
 ||czwidgets.fr^
@@ -2798,9 +2806,9 @@ livemint.com##[id^="adHeightstory"][class^="adHeight"]
 luxuretv.com##.adver,.adver-header,#vz_im_ad
 majorgeeks.com#$#.navigation-light { display: none !important; visibility: hidden !important; }
 maketecheasier.com##.in-content-ad
-media-play.co##+js(window.open-defuser)
+media-play.co##+js(prevent-window-open)
 mediafire.com#@#+js(addEventListener-defuser, /^(?:click|mousedown)$/)
-mediafire.com#@#+js(window.open-defuser)
+mediafire.com#@#+js(prevent-window-open)
 microsoft.com##.f-active
 microsoft.com##.switchOfficeHeroFirst
 mirrored.to##.centered > .row
@@ -2867,19 +2875,19 @@ vshare.eu#@#+js(set, Document.prototype.interestCohort, undefined)
 webcrawler.com,results.excite.com##[class^="ads-"]
 wiflix.*##.sadst
 wiflix.*##+js(remove-attr, target|href, .video-player a)
-wiflix.*##+js(window.open-defuser)
+wiflix.*##+js(prevent-window-open)
 ||wiflix.*/*.mp4$media
 ||wiflix.*/voir/play.php$important
 wiflix.*##iframe:where([src*="/voir/play.php"])
 /voir/play.php$~third-party
 @@||vido.lol^$subdocument
 @@||sbbrisk.com^$subdocument
-sbbrisk.com##+js(window.open-defuser)
+sbbrisk.com##+js(prevent-window-open)
 ||*^$third-party,domain=sbbrisk.com,denyallow=akamai-cdn-content.com|akamai-cdn-images.com
 @@||akamai-cdn-content.com^$third-party
 @@||akamai-cdn-images.com^$third-party
 @@||streamhide.to^$subdocument
-streamhide.to##+js(window.open-defuser)
+streamhide.to##+js(prevent-window-open)
 streamhide.to##div[style*="inset:"][style*="z-index"][style*="background"]
 ||streamhide.to/assets/jquery/$script,~third-party
 ||*^$third-party,domain=streamhide.to,denyallow=streamhide.to|sh-content.com|sh-content.xyz
@@ -3437,7 +3445,7 @@ $cookie=_uid
 uqload.*###play_limit_box
 @@||uqload.com$ghide
 @@||uqload.co$ghide
-uqload.*##+js(window.open-defuser)
+uqload.*##+js(prevent-window-open)
 @@||*^$script,image,~third-party,domain=uqload.co|uqload.com
 ||*^$third-party,denyallow=uqload.org|cdnjs.cloudflare.com|gstatic.com,domain=uqload.*
 jtrouver.com##div[class*="afxshop-grid"]
