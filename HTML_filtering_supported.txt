@@ -51,6 +51,7 @@
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
 *##^script:has-text(vidozza.js)
+! Yandex.Metrika counter
 *##^script:has-text(Ya.Metrika)
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
