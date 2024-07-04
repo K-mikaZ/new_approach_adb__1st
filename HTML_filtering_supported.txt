@@ -70,6 +70,7 @@
 *##^script[src*="glersakr.com"]
 *##^script[src*="glossydollyknock.com"]
 *##^script[src*="googleoptimize.com"]
+*##^script[src*="heardaccumulatebeans.com"]
 *##^script[src*="highcpmgate.com"]
 *##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
 *##^script[src*="morningamidamaruhal.com"]
