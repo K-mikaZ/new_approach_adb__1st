@@ -55,6 +55,7 @@
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
 *##^script[data-cfasync]:has-text(break;case $)
+*##^script[data-cfasync][src*=".com/a/display.php?"]
 ! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
 *##^script[data-tag="asg"]
 *##^script[src*="/1clkn/"]
@@ -97,13 +98,12 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
-cinez.biz##^script[data-cfasync][src]
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[data-cfasync][async]
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
-fusevideo.io,videzz.net##^script[data-cfasync]
+fusevideo.io##^script:has-text(atob)
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
@@ -112,6 +112,7 @@ streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 uqload.*##^script#_wau1ww
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
+videzz.net##^script[data-cfasync]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
 ! external scripts
@@ -120,7 +121,9 @@ videzz.net##^script[src^="//"]
 ! ===============================================================
 ! "specific" filters - on french sites
 ! ===============================================================
-anime-sama.fr,neko-sama.fr##^script[data-cfasync]
+! anime-sama.fr,neko-sama.fr##^script[data-cfasync]
+cinez.biz##^script[data-cfasync][src]
+neko-sama.fr##^script[data-cfasync][async][src]
 forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
