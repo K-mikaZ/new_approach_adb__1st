@@ -47,6 +47,7 @@
 *##^ins[class*="adsby"][data-ad-client]
 *##^ins[class*="adsby"]:upward(center)
 *##^script:has-text(+'/400/'+)
+*##^script:has-text(+'/401/'+)
 *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
