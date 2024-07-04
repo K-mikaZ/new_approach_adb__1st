@@ -2030,7 +2030,6 @@ search.lilo.org##.top.addivwhite2
 ||d1grmk7aafb6ck.cloudfront.net^$third-party,badfilter
 ||d1grmk7aafb6ck.cloudfront.net^$third-party,media
 /async-ads.js$script,important
-#@#+js(abort-current-inline-script, document.createElement, script)
 tubeon.com##.drt-spot-visible.no-buttons.drt-spot-box
 google.com##.uEierd
 google.com###tadsb
