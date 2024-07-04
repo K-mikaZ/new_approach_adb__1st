@@ -110,7 +110,7 @@ filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 fusevideo.io##^script:has-text(atob)
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
-! Rating@Mail.ru counter
+! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##^script:has-text(topmailru)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
