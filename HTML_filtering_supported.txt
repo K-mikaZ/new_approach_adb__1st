@@ -122,6 +122,7 @@ videzz.net##^script[src^="//"]
 ! ===============================================================
 ! "specific" filters - on french sites
 ! ===============================================================
+cinez.biz##^script:has-text(document.head.appendChild(s))
 forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
