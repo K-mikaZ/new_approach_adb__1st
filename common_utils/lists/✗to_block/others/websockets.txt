@@ -278,8 +278,9 @@ wss://net-announce*$websocket,important
 ||*.space:*^$websocket,important
 ||*.vidto*.*^$websocket,important
 ||alugha.com/graphql$websocket,important
-||clearadnetwork.com$websocket,important
-||hostcontent.live$websocket,important
-||socket.tidio.co$websocket,important
-||private-api.com$websocket,important
-||idocdn.com$websocket,important
+||clearadnetwork.com^$websocket,important
+||hostcontent.live^$websocket,important
+||socket.tidio.co^$websocket,important
+||private-api.com^$websocket,important
+||idocdn.com^$websocket,important
+||app.staticmoly.me^$websocket,domain=vidmoly.*
