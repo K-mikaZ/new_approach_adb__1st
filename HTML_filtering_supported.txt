@@ -123,7 +123,8 @@ videzz.net##^script[data-cfasync]
 videzz.net##^script[class="nunush"]
 ! videzz.net external scripts
 videzz.net##^script[src^="//"]
-! vidmoly.*##^script:has-text(Metrika)
+videzz.*,vidmoly.*##^script:has-text(Ya.Metrika)
+videzz.*##^script[src*="/sw.js?"]
 vidmoly.*##^script[async]
 vidmoly.*##^script[src*="/frd0ad.js"]
 
