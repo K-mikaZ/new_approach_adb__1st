@@ -131,6 +131,7 @@ malekal.com##^div.Here
 megastream.*##^div#bcklnksts
 neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
 www.allocine.fr##^div.main-banner
+www.cpasmieux.*##^script[src^="//"]
 
 ! ===============================================================
 ! "unbreak" filters
