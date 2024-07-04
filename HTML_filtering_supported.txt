@@ -122,9 +122,7 @@ videzz.net##^script[src^="//"]
 ! ===============================================================
 ! "specific" filters - on french sites
 ! ===============================================================
-! anime-sama.fr,neko-sama.fr##^script[data-cfasync]
-cinez.biz##^script[data-cfasync][src]
-neko-sama.fr##^script[data-cfasync][async][src]
+cinez.biz,neko-sama.fr##^script[data-cfasync][async][src]
 forum.malekal.com##^div.ads
 malekal.com##^div.Here
 megastream.*##^div#bcklnksts
