@@ -2509,6 +2509,7 @@ hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-xhr, /cdn-cgi/trace, true)
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-setTimeout, atOptions)
+hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-window-open)
 
 !! see https://hqq.tv/js/embed.211.js?736
 ! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
