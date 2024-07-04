@@ -55,6 +55,7 @@
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
 *##^script[data-cfasync]:has-text(break;case $)
+! https://onclickalgo.com/a/display.php?r=7011010
 *##^script[data-cfasync][src*=".com/a/display.php?"]
 ! Ads Managed by AdSpyglass.com (script[data-tag="asg"]) that call https://0i0i0i0.com/
 *##^script[data-tag="asg"]
