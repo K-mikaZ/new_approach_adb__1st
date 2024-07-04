@@ -3,7 +3,6 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
-
 ! ===============================================================
 ! "web bugs" filters
 ! ===============================================================
