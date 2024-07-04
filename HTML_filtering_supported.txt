@@ -118,6 +118,9 @@ videzz.net##^script[data-cfasync]
 videzz.net##^script[class="nunush"]
 ! external scripts
 videzz.net##^script[src^="//"]
+vidmoly.*##^script:has-text(Metrika)
+vidmoly.*##^script[async]
+vidmoly.*##^script[src*="/frd0ad.js"]
 
 ! ===============================================================
 ! "specific" filters - on french sites
