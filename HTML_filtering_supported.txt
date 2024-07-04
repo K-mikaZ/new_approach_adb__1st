@@ -3,6 +3,12 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+
+! ===============================================================
+! "web bugs" filters
+! ===============================================================
+*##^img[src*="histats.com"]
+
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
@@ -91,6 +97,7 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
+cinez.biz##^script[data-cfasync][src]
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
 filemoon.*##^script:has-text(parseInt)
