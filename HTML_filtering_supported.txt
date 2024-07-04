@@ -100,6 +100,7 @@
 cinez.biz##^script[data-cfasync][src]
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[data-cfasync][async]
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 fusevideo.io,videzz.net##^script[data-cfasync]
