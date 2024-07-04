@@ -104,6 +104,7 @@ d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[data-cfasync][async]
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 fusevideo.io##^script:has-text(atob)
+fusevideo.io##^script[data-cfasync][async][src]
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
