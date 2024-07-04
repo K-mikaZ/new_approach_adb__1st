@@ -51,6 +51,7 @@
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
 *##^script:has-text(vidozza.js)
+*##^script:has-text(Ya.Metrika)
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
 *##^script[data-cfasync]:has-text(;}}};break;case $.)
@@ -119,7 +120,7 @@ videzz.net##^script[data-cfasync]
 videzz.net##^script[class="nunush"]
 ! videzz.net external scripts
 videzz.net##^script[src^="//"]
-vidmoly.*##^script:has-text(Metrika)
+! vidmoly.*##^script:has-text(Metrika)
 vidmoly.*##^script[async]
 vidmoly.*##^script[src*="/frd0ad.js"]
 
