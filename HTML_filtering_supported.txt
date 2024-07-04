@@ -27,8 +27,6 @@
 *##^[id~="adbd"][class*="over"]
 *##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
 *##^div[class|="adsvp"][class*="wrapper"]
-! not removed, only hide, because some sites use it correctly
-*#@#^div[class^="masha_"]
 *##^div[class^="movie-aye"]
 *##^div[class^="salidor_"]
 *##^div[class^="tolro_"]
@@ -108,7 +106,6 @@ d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(;break;case )
 filemoon.*##^script:has-text(parseInt)
 frembed.*##^script:has-text(CDATA)
 fusevideo.io##^script:has-text(atob)
-hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##^script:has-text(topmailru)
 oneupload.*##^script[src*="/js/google-adsense.js"]
@@ -136,3 +133,11 @@ malekal.com##^div.Here
 megastream.*##^div#bcklnksts
 neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
 www.allocine.fr##^div.main-banner
+
+! ===============================================================
+! "unbreak" filters
+! ===============================================================
+! `.masha_` not removed, only hide, because some sites use it correctly
+*#@#^div[class^="masha_"]
+! [FIX] breaks some videos loading
+hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
