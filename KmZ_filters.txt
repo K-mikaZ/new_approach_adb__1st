@@ -2502,7 +2502,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 ! #@#a[onclick^="openAuc"]
 ! #@#a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:remove()
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#?#a[onclick^="openAuc"]:style(display:none!important;)
+hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]:remove()
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
 
 ! /cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|waaw.*|waaw1.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
