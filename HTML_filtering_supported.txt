@@ -12,11 +12,13 @@
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
-!#if env_mobile || adguard_app_android || adguard_app_ios
+! !#if env_mobile || adguard_app_android || adguard_app_ios
+! !#else
+! !#endif
+!+ PLATFORM(ios,android)
 *##^[class~="ad"][class~="onlyMobile"]
-!#else
+!+ NOT_PLATFORM(ios,android)
 *##^[class~="ad"][class~="onlyDesktop"]
-!#endif
 *##^[class~="ad"][class~="c-ads"]
 *##^[class~="ad"][class~="doubleclick"]
 *##^[class~="ad"][data-block-devices]
