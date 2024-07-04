@@ -443,7 +443,7 @@ open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "
 mstream.*##+js(abort-on-property-read, open)
 mystream.to##+js(abort-on-property-read, open)
 mystream.to##+js(prevent-window-open)
-streamtape.net##+js(prevent-window-open)
+streamta.pe,streamtape.net##+js(prevent-window-open)
 |https://$script,third-party,domain=upstream.to,badfilter
 /[\/\s\d]related[\.\s\d]js/$script
 @@/related.js$script,domain=core1player.com
