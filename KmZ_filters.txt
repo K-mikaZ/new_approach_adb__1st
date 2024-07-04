@@ -1351,7 +1351,6 @@ stream-serie.net#$##option-1{height:100%}
 /\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party
 @@/\.cloudfront\.net\/\?.*[a-zA-Z0-9]{5,16}/$script,third-party,domain=amazon.com
 @@/cdn-cgi/trace|$xmlhttprequest,~third-party,domain=1.1.1.1|cloudflare.com|encryptedsni.com
-/cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|netu.*|vizplay.*|waaw.*|younetu.*|yandexcdn.*
 /\/pixel\/pu(clc|rs(t)?)\?/
 ||imasdk.googleapis.com$third-party,badfilter
 |http*://a.a^
@@ -2506,6 +2505,7 @@ hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:sup
 ! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#?#a[onclick^="openAuc"]:style(display:none!important;)
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
 
+! /cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|waaw.*|waaw1.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-xhr, /cdn-cgi/trace, true)
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
 hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-setTimeout, atOptions)
