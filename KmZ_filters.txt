@@ -340,7 +340,10 @@ tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
 @@||abysscdn.com^$subdocument
-abysscdn.com##+js(no-fetch-if, /cdn\.apicdn\d+\.\w+/)
+abysscdn.com##+js(prevent-fetch, /cdn\.apicdn\d+\.\w+/)
+abysscdn.com##+js(prevent-fetch, tunnel.websocketgate.com)
+abysscdn.com##+js(prevent-fetch, /cdn-cgi/trace)
+abysscdn.com##+js(prevent-fetch, /auth/logged)
 ! short.ink,abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 ! short.ink,abysscdn.com##+js(prevent-window-open)
 ! $third-party,domain=abysscdn.com,denyallow=iamcdn.net|websocketgate.com|jsdelivr.net
@@ -348,7 +351,6 @@ $third-party,domain=websocketgate.com
 ||cdn.freeimagecdn.net^$third-party
 ||*/jwplayer/*/related.js$important,domain=short.ink|abysscdn.com|iamcdn.net
 ! --------------------------------------------------------
-
 designparty.*##+js(prevent-window-open)
 designparty.*##+js(prevent-xhr, url:/\/advertises?\//, true)
 ! designparty.sx: prevented create iframes
@@ -359,6 +361,11 @@ designparty.*##+js(abort-on-property-write, document.body.appendChild(q))
 !designparty.sx##+js(aost, q, document['\x63\x72'+'\x65\x61'+'\x74\x65'+'\x45\x6c'+'\x65\x6d'+'\x65\x6e'+'\x74']('\x69\x66'+'\x72\x61'+'\x6d\x65'))
 designparty.*##+js(abort-on-stack-trace, q, document.createElement)
 designparty.*##+js(prevent-setTimeout, p())
+! window["_run"], window._run on: illvid.net,opvid.*,turbovid.co##+js(abort-current-script, /window(\[\"|\.)_run(\"\])?/)
+illvid.net,opvid.*,turbovid.co##+js(abort-on-stack-trace, _run)
+illvid.net,opvid.*,turbovid.co##+js(prevent-window-open)
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,vidmoly.*##+js(noeval)
+vidmoly.*##+js(set-constant, jwplayer.defaults.plugins, {})
 
 ||hoglinsu.com^
 ||yougube.com^$all,important
@@ -2494,11 +2501,14 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 ! #@#a[onclick^="openAuc"]
-! *#@#a[href^="mailto:support@netu.tv"]
-! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:style(display: none !important;)
+! #@#a[href^="mailto:support@netu.tv"]
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:remove()
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#?#a[onclick^="openAuc"]:style(display:none!important;)
 hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
+
+hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*##+js(prevent-xhr, /cdn-cgi/trace, true)
+hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
+hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*##+js(prevent-setTimeout, atOptions)
 
 !! see https://hqq.tv/js/embed.211.js?736
 ! hqq.*,waaw.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
