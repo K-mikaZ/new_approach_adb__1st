@@ -49,7 +49,6 @@
 ! *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
-*##^script:has-text(vidozza.js)
 ! Yandex.Metrika counter
 *##^script:has-text(mc.yandex.ru/metrika)
 !*##^script[src*="/beacon.min.js"]
@@ -125,6 +124,7 @@ uqload.*##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 uqload.*##^script#_wau1ww
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
+videzz.net##^script:has-text(vidozza.js)
 videzz.net##^script[data-cfasync]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
