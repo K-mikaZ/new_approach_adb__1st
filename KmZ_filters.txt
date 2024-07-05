@@ -353,8 +353,7 @@ $third-party,domain=websocketgate.com
 ! --------------------------------------------------------
 designparty.*##+js(prevent-window-open)
 designparty.*##+js(prevent-xhr, url:/\/advertises?\//, true)
-! designparty.sx: prevented create iframes
-! found on https://v5.voiranime.com/anime/days-with-my-stepsister/days-with-my-stepsister-01-vostfr/
+! designparty.sx: prevent creation of third-party iframes. test on <https://v5.voiranime.com/anime/days-with-my-stepsister/days-with-my-stepsister-01-vostfr/>
 ! https://deobfuscate.relative.im/
 !designparty.sx##+js(aopw, document['\x62\x6f'+'\x64\x79']['\x61\x70'+'\x70\x65'+'\x6e\x64'+'\x43\x68'+'\x69\x6c'+'\x64'](q))
 designparty.*##+js(abort-on-property-write, document.body.appendChild(q))
