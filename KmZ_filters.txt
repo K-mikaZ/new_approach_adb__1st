@@ -366,6 +366,10 @@ illvid.net,opvid.*,turbovid.co##+js(abort-on-stack-trace, _run)
 illvid.net,opvid.*,turbovid.co##+js(prevent-window-open)
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,vidmoly.*##+js(noeval)
 vidmoly.*##+js(set-constant, jwplayer.defaults.plugins, {})
+! `window.baspas` is var `Barracuda` on filemoon.sx
+filemoon.*##+js(set-constant, baspas, undefined)
+filemoon.*##+js(abort-current-script, window[window.baspas||"BetterJsPop"])
+filemoon.*##+js(abort-current-script, Math, urls)
 
 ||hoglinsu.com^
 ||yougube.com^$all,important
