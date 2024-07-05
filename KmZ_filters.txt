@@ -2504,50 +2504,50 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
 ! #@#a[onclick^="openAuc"]
 ! #@#a[href^="mailto:support@netu.tv"]
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:remove()
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]:remove()
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@#+js(nofab)
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##a[href^="mailto:support@netu.tv"]:remove()
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##a[onclick^="openAuc"]:remove()
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#@#+js(nofab)
 
 ! /cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|waaw.*|waaw1.*|netu.*|vizplay.*|younetu.*|yandexcdn.*
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-xhr, /cdn-cgi/trace, true)
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-setTimeout, atOptions)
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*##+js(prevent-window-open)
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(prevent-xhr, /cdn-cgi/trace, true)
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(prevent-setTimeout, atOptions)
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(prevent-window-open)
 
 !! see https://hqq.tv/js/embed.211.js?736
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.numAttempts', '0', '', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.disablePreloadAds', 'true', '', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.playAdAlways', 'false', '', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.autoplay', 'true', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.numAttempts', '0', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.disablePreloadAds', 'true', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.playAdAlways', 'false', '', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'my_config.autoplay', 'true', '', '', '', 'true')
 
 ! hqq.tv#%#//scriptlet('ubo-set-constant.js', 'my_config.spotUrl', 'emptyArr')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adBlockDetected', 'noopFunc', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adblockcheck', 'false', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'vwview', 'false')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adBlockDetected', 'noopFunc', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'adblockcheck', 'false', '', '', 'true')
 ! hqq.tv#@%#AG_onLoad(function() { setTimeout(function() { if(typeof after_click === "function") { after_click(); } }, 300); });
 
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'openedSecondPop', 'noopFunc', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'BetterJsPop', 'noopFunc', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
-! hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'WebSocket', 'undefined', '', '', 'true')
-hqq.*,waaw.*,waaw1.*,netu.*,vizplay.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'openedSecondPop', 'noopFunc', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'BetterJsPop', 'noopFunc', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
+! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#%#//scriptlet('set-constant', 'WebSocket', 'undefined', '', '', 'true')
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
 
-!! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-/\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-!! /js/script-*.js$~third-party,important,match-case,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-@@/ad/top/popunder.js$~third-party,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-/out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-*$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+!! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+/\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+!! /js/script-*.js$~third-party,important,match-case,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+@@/ad/top/popunder.js$~third-party,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+/out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+*$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ! 2024-01-18 https://younetu.org/js/adv/fuckadblock.js?2
-/fuckadblock.$script,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
-/js/disqusloader.js$important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+/fuckadblock.$script,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+/js/disqusloader.js$important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ! fix loading some players
 ! because of "Tracking JS Blocklist filter: "||unpkg.com/jquery.cookie@1.4.1/jquery.cookie.js$all"
-@@||unpkg.com/jquery.cookie@*/jquery.cookie.js$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|yandexcdn.*|younetu.*
+@@||unpkg.com/jquery.cookie@*/jquery.cookie.js$script,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ! 2024-01-18 https://univers-animes.club/ishura-02-vostfr/
 ! fix loading yandexcdn.com's player on "univers-animes.club" because
 ! "Tracking JS Blocklist (https://gitlab.com/malware-filter/tracking-filter): ||storage.googleapis.com/loadermain.appspot.com/main.js$all"
