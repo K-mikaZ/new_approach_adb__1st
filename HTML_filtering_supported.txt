@@ -105,7 +105,7 @@ cinez.biz,d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(Object["prototype"])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,uqload.*##^script:has-text(;}}};break;case $.)
-d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/?"]
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/"]
 ! filemoon.*##^script:has-text(parseInt)
 forum.malekal.com##^div.ads
 frembed.*##^script:has-text(CDATA)
