@@ -61,28 +61,28 @@
 *##^script[src*="/1clkn/"]
 *##^script[src*="/adsid/integrator.js"]
 *##^script[src*="/invoke.js"]
-*##^script[src*="adsmediabox.com"]
-*##^script[src*="anticipateplummorbid.com"]
-*##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
-*##^script[src*="defendantsulphurstamp.com"]
-*##^script[src*="dexpredict.com"]
-*##^script[src*="gamescdnfor.com"]
-*##^script[src*="glersakr.com"]
-*##^script[src*="glossydollyknock.com"]
-*##^script[src*="googleoptimize.com"]
-*##^script[src*="heardaccumulatebeans.com"]
-*##^script[src*="highcpmgate.com"]
-*##^script[src*="highrevenuenetwork.com"]
-*##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
-*##^script[src*="morningamidamaruhal.com"]
-*##^script[src*="o333o.com"]
-*##^script[src*="plausible.io"]
-*##^script[src*="prizegrantedrevision.com"]
-*##^script[src*="santosattestation.com"]
-*##^script[src*="seedtag.com"]
-*##^script[src*="stunkcott.com"]
-*##^script[src*="troubledcontradiction.com"]
-*##^script[src*="waust.at"]
+!*##^script[src*="adsmediabox.com"]
+!*##^script[src*="anticipateplummorbid.com"]
+!*##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
+!*##^script[src*="defendantsulphurstamp.com"]
+!*##^script[src*="dexpredict.com"]
+!*##^script[src*="gamescdnfor.com"]
+!*##^script[src*="glersakr.com"]
+!*##^script[src*="glossydollyknock.com"]
+!*##^script[src*="googleoptimize.com"]
+!*##^script[src*="heardaccumulatebeans.com"]
+!*##^script[src*="highcpmgate.com"]
+!*##^script[src*="highrevenuenetwork.com"]
+!*##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
+!*##^script[src*="morningamidamaruhal.com"]
+!*##^script[src*="o333o.com"]
+!*##^script[src*="plausible.io"]
+!*##^script[src*="prizegrantedrevision.com"]
+!*##^script[src*="santosattestation.com"]
+!*##^script[src*="seedtag.com"]
+!*##^script[src*="stunkcott.com"]
+!*##^script[src*="troubledcontradiction.com"]
+!*##^script[src*="waust.at"]
 
 ! ===============================================================
 ! "generic" filters - on french sites
@@ -101,16 +101,21 @@
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
+cinez.biz##^script:has-text(document.head.appendChild(s))
 cinez.biz,d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama.fr##^script[data-cfasync][async][src]
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script:has-text(Object["prototype"])
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,uqload.*##^script:has-text(;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/?"]
 filemoon.*##^script:has-text(parseInt)
+forum.malekal.com##^div.ads
 frembed.*##^script:has-text(CDATA)
 fusevideo.io##^script:has-text(atob)
+malekal.com##^div.Here
+megastream.*##^div#bcklnksts
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##^script:has-text(topmailru)
+neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
@@ -124,21 +129,11 @@ videzz.net##^script[data-cfasync]
 ! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
 videzz.net##^script[class="nunush"]
 ! videzz.net external scripts
-videzz.net##^script[src^="//"]
+videzz.net,www.cpasmieux.*##^script[src^="//"]
 videzz.*##^script[src*="/sw.js?"]
 vidmoly.*##^script[async]
 vidmoly.*##^script[src*="/frd0ad.js"]
-
-! ===============================================================
-! "specific" filters - on french sites
-! ===============================================================
-cinez.biz##^script:has-text(document.head.appendChild(s))
-forum.malekal.com##^div.ads
-malekal.com##^div.Here
-megastream.*##^div#bcklnksts
-neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
 www.allocine.fr##^div.main-banner
-www.cpasmieux.*##^script[src^="//"]
 
 ! ===============================================================
 ! "unbreak" filters
