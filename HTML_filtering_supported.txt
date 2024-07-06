@@ -3,6 +3,8 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+!#if cap_html_filtering
+
 ! ===============================================================
 ! "web bugs" filters
 ! ===============================================================
@@ -142,3 +144,139 @@ www.allocine.fr##^div.main-banner
 *#@#^div[class^="masha_"]
 ! [FIX] breaks some videos loading
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
+
+!#else
+
+! ===============================================================
+! "web bugs" filters
+! ===============================================================
+*##img[src*="histats.com"]:remove()
+*##img[src*="top-fwz1.mail.ru/counter"]:remove()
+
+! ===============================================================
+! "generic" filters
+! ===============================================================
+!#if env_mobile || adguard_app_android || adguard_app_ios
+*##[class~="ad"][class~="onlyMobile"]
+*##[class~="ad"][class~="onlyTablet"]
+!#else
+*##[class~="ad"][class~="onlyDesktop"]
+!#endif
+*##[class~="ad"][class~="c-ads"]
+*##[class~="ad"][class~="doubleclick"]
+*##[class~="ad"][data-block-devices]
+*##[class~="ad"][class*="banniere"]
+*##[class~="ad"][class*="outbrain"]
+*##[id~="adbd"][class*="over"]
+*##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
+*##div[class|="adsvp"][class*="wrapper"]
+*##div[class^="movie-aye"]
+*##div[class^="salidor_"]
+*##div[class^="tolro_"]
+! #dfp-atf, #dfp-btf, #dfp-mtf, #dfp-interstitial, #dfp-masthead...
+*##div[id^="dfp-"]
+*##div.ads-placeholder
+*##div.ads-container
+*##div.sticky-ad-holder
+! `iframe[name="__uspapiLocator"]`, `iframe[name="__tcfapiLocator"]`, `iframe[name="__gppLocator"]`...
+*##iframe[name^="__"][name$="Locator"]:remove()
+*##iframe:is([name="google_esf"],[id="google_esf"]):remove()
+*##iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"]):remove()
+*##iframe:is([name^="aswift_"],[id^="aswift_"]):remove()
+*##iframe[src*="www.googletagmanager.com/ns.html?"]:remove()
+*##iframe[src*="/gtm"][src*="ns.html?"]:remove()
+*##iframe[src*="/pagead/"]:remove()
+*##iframe[src*="doubleclick"]:remove()
+*##ins[class*="adsby"][data-ad-slot]:remove()
+*##ins[class*="adsby"][data-ad-client]:remove()
+*##ins[class*="adsby"]:upward(center)
+*##+js(remove-node-text, script, +'/tag.min.js')
+*##+js(remove-node-text, script, devtoolIsOpening)
+*##+js(remove-node-text, script, popmagicldr)
+! Yandex.Metrika counter
+*##+js(remove-node-text, script, mc.yandex.ru/metrika)
+!*##script[src*="/beacon.min.js"]:remove()
+*##script[data-cf-beacon]:remove()
+! https://onclickalgo.com/a/display.php?r=7011010
+*##script[data-cfasync][src*=".com/a/display.php?"]:remove()
+! `script[data-tag="asg"]`: Ads Managed by AdSpyglass.com that call https://0i0i0i0.com/
+*##script[data-tag="asg"]:remove()
+*##script[src*="/1clkn/"]:remove()
+*##script[src*="/adsid/integrator.js"]:remove()
+*##script[src*="/invoke.js"]:remove()
+!*##^script[src*="adsmediabox.com"]
+!*##^script[src*="anticipateplummorbid.com"]
+!*##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
+!*##^script[src*="defendantsulphurstamp.com"]
+!*##^script[src*="dexpredict.com"]
+!*##^script[src*="gamescdnfor.com"]
+!*##^script[src*="glersakr.com"]
+!*##^script[src*="glossydollyknock.com"]
+!*##^script[src*="googleoptimize.com"]
+!*##^script[src*="heardaccumulatebeans.com"]
+!*##^script[src*="highcpmgate.com"]
+!*##^script[src*="highrevenuenetwork.com"]
+!*##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
+!*##^script[src*="morningamidamaruhal.com"]
+!*##^script[src*="o333o.com"]
+!*##^script[src*="plausible.io"]
+!*##^script[src*="prizegrantedrevision.com"]
+!*##^script[src*="santosattestation.com"]
+!*##^script[src*="seedtag.com"]
+!*##^script[src*="stunkcott.com"]
+!*##^script[src*="troubledcontradiction.com"]
+!*##^script[src*="waust.at"]
+
+! ===============================================================
+! "generic" filters - on french sites
+! ===============================================================
+*##div#pub
+*##a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
+*##a[href*="/regarder."]:upward(center)
+! `div[class*="btn"]` or `div[class*="button"]`
+*##a[href*="/regarder."]:upward(div[class*="button"])
+*##a[href*="/regarder."]:upward(div[class*="big"][class*="btn"])
+! *##div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
+*##a[href*="premium"]:upward(div[class*="movie_"])
+*##a[href*="premium"][href*=".php"][target]:upward(div[class])
+*##a[href*="streaming"][href*=".php"][target]:upward(div[class])
+
+! ===============================================================
+! "specific" filters
+! ===============================================================
+cinez.biz##+js(remove-node-text, script, document.head.appendChild(s))
+cinez.biz,d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama.fr##script[data-cfasync][async][src]:remove()
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##+js(remove-node-text, script, ['concat'])
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##+js(remove-node-text, script, Object["prototype"])
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,uqload.*##+js(remove-node-text, script, ;}}};break;case $.)
+d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##script[src*="cloudfront.net/"]:remove()
+! filemoon.*##script:has-text(parseInt)
+forum.malekal.com##div.ads
+frembed.*##+js(remove-node-text, script, CDATA)
+fusevideo.io##+js(remove-node-text, script, atob)
+malekal.com##div.Here
+megastream.*##div#bcklnksts
+! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
+my.mail.ru##+js(remove-node-text, script, topmailru)
+neko-sama.fr##a.flink[href*="hentai"]:upward(footer)
+oneupload.*##script[src*="/js/google-adsense.js"]:remove()
+opvid.*##+js(remove-node-text, script, decodeURIComponent)
+streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
+! `*##script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
+! *##script:has-text(/\+\'\/[45](0[01])\/\'\+/)
+uqload.*##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
+uqload.*##script#_wau1ww:remove()
+video.sibnet.ru##script[src*="//cvt1.sibnet."]:remove()
+video.sibnet.ru##script[src*="//c.sibnet."]:remove()
+videzz.net##+js(remove-node-text, script, vidozza.js)
+videzz.net##script[data-cfasync]:remove()
+! class "nunush" only visible (briefly) when load/reload page (ex: https://videzz.net/embed-bliv64q90528.html)
+videzz.net##script[class="nunush"]:remove()
+! videzz.net external scripts
+videzz.net,www.cpasmieux.*##script[src^="//"]:remove()
+videzz.*##script[src*="/sw.js?"]:remove()
+vidmoly.*##script[async]:remove()
+vidmoly.*##script[src*="/frd0ad.js"]:remove()
+www.allocine.fr##div.main-banner
+
+!#endif
