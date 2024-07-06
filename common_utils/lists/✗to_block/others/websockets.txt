@@ -54,9 +54,9 @@ hqq.tv#@#+js(set-constant, WebSocket, undefined)
 @@$websocket,domain=geo.dailymotion.com
 
 ||*^$websocket,domain=netflix.com,badfilter
-@@websocket,domain=netflix.com
+@@$websocket,domain=netflix.com
 
-@@websocket,domain=wolframalpha.com
+@@$websocket,domain=wolframalpha.com
 
 ! online torrent streaming with webtor.io
 @@||api.nocturnal-narwhal.buzz^$websocket
