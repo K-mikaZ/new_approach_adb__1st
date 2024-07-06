@@ -1,0 +1,219 @@
+! COOKIES
+
+!! /jquery.cookie.js$~third-party
+! /cookienotice.js$~third-party
+||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
+
+!#if adguard
+
+!! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
+
+!! see https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
+
+!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+
+!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
+
+!! https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane
+
+
+!! Cookies categorie Analytics: https://cookiesearch.org/cookies/?cookie-cat=analytics
+!! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
+!! Cookie Purpose: Marketing/Tracking (318): https://cookiedatabase.org/purpose/marketing/
+
+!! prevents Facebook from tracking you even if you are logged in
+||facebook.com^$third-party,cookie=c_user
+! $cookie=c_user,third-party,domain=facebook.com
+
+!! ||howtogeek.com^$cookie=unauthenicatedArticleLimitReached
+||howtogeek.com^$cookie=/LimitReached/
+
+!! ------------------------------------------------------
+
+!! Cookies categorie Analytics: https://cookiesearch.org/cookies/?cookie-cat=analytics
+
+!! ------------------------------------------------------
+
+!! gigya.com Analytics - https://cookiesearch.org/cookies/?cookie-id=ucid
+!! Analytics - This cookie stores a unique computer identifier to generate reports.
+$cookie=ucid
+!! yandex.ru Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
+!! $cookie=/(y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))/
+$cookie=_ym_isad
+$cookie=_ym_uid
+$cookie=yabs-sid
+$cookie=yandexuid
+$cookie=yp,domain=yandex.ru
+!! yahoo Analytics - https://cookiesearch.org/cookies/?cookie-id=APID
+||yahoo.com^$cookie=APID
+
+
+!! ------------------------------------------------------
+
+!! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
+
+!! ------------------------------------------------------
+
+!! dailymotion Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
+!! $cookie=/(d(am|m[ax]i)d|_gads)/
+$cookie=dmxid
+$cookie=dmaid
+$cookie=damd
+
+! Google DoubleClick - The functionality is: to provide ad delivery or retargeting.
+! https://cookiedatabase.org/?s=_gads&lang=en
+$cookie=_gads
+$cookie=__gads
+$cookie=___gads
+
+!! Mediarithmics Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
+!! $cookie=/(mics([_-](lts|vid|uaid)))/
+$cookie=mics_lts
+$cookie=mics_vid
+$cookie=mics-uaid
+
+!! Adalyser Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adal_ca
+!! https://www.adalyser.com/en/cookies#:~:text=Category-,__adal_ca,-Adalyser
+!! $cookie=/(_{2}adal_c[a|w])/
+$cookie=__adal_ca
+$cookie=__adal_cw
+
+!! adroll Advertisement - https://cookiesearch.org/cookies/?cookie-id=__adroll
+$cookie=/(_{2}adrol{2}(_(fpc|shared|consent(_params)?))?|tluid)/
+
+!! MathTag Advertisement - https://cookiesearch.org/cookies/?cookie-id=uuid
+!! $cookie=/(u{2}idc?|mt_m(op|isc)|bs_mop_u3s|gtm_usr)/
+$cookie=uuid
+$cookie=uuidc
+$cookie=mt_mop
+$cookie=mt_misc
+$cookie=bs_mop_u3s
+$cookie=gtm_usr
+
+!! yahoo Advertisement - https://cookiesearch.org/cookies/?cookie-id=GUCS
+$cookie=GUCS
+$cookie=IDSYNC
+$cookie=RRC
+$cookie=B,domain=yahoo.com
+! https://cookiesearch.org/cookies/?filter-type=script-name&search-term=yahoo&cookie-cat=advertisement
+||yahoo.com^$cookie=IDSYNC
+! $cookie=B,domain=yahoo.com
+||yahoo.com^$cookie=RRC
+||yahoo.com^$cookie=GUCS
+||yahoo.com^$cookie=APIDTS
+||yahoo.com^$cookie=A1S
+||yahoo.com^$cookie=A3
+! https://cookiesearch.org/cookies/?filter-type=script-name&search-term=yahoo&cookie-cat=analytics
+||yahoo.com^$cookie=GUC
+||yahoo.com^$cookie=APID
+!! yahoo.com##+js(remove-cookie, /(GUCS|IDSYNC|RRC|B)/)
+
+!! doubleclick.net Advertisement - https://cookiesearch.org/cookies/?cookie-id=test_cookie
+!! $cookie=/(_{2}(sonar|ar_v4)|test_cookie|cto_lwid)/
+$cookie,domain=doubleclick.net
+$cookie=__sonar
+$cookie=__ar_v4
+$cookie=cto_lwid
+$cookie=IDE
+! $cookie=IDE,domain=~www.youtube.com
+! @@||www.youtube.com^$cookie=IDE,important
+! because can be id = OPT_OUT
+@@||doubleclick.net^$cookie=id
+! @@$cookie=id,domain=doubleclick.net
+
+!! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
+$cookie,domain=adswizz.com
+$cookie=OAID
+
+!! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
+!! $cookie=/(tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))/
+$cookie,domain=bidswitch.net
+$cookie=tuuid
+$cookie=tuuid_lu
+$cookie=bidswitch_id
+$cookie=bidswitch_user_id
+$cookie=bidswitch_last_time
+
+!! animationdigitalnetwork.fr Advertisement - https://cookiesearch.org/cookies/?cookie-id=_pubcid
+$cookie=_pubcid
+
+! Le cookie Cloudflare:
+! https://support.cloudflare.com/hc/fr-fr/articles/360038470312-Comprendre-les-interactions-avec-le-cookie-SameSite-sur-Cloudflare
+! https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
+!! the __cflb, __cf_bm, cf_ob_info, cf_use_ob, __cfwaitingroom, and __cfruid cookies are strictly necessary to provide the services requested by Cloudflare.
+!! https://cookiedatabase.org/cookie/cloudflare/__cf_bm/
+!! https://cookiesearch.org/cookies/?cookie-id=__cf_bm
+@@$cookie=/(__cf(_(bm|ob_info|use_ob)|lb|ruid|waitingroom))/,important
+!! @@$cookie=/(_{2})?cf(_(bm|clearance)|[dr]uid|lb)/
+
+!! https://policies.google.com/technologies/cookies?hl=en
+!! $cookie=VISITOR_INFO1_LIVE
+!! @@||www.youtube.com^$cookie=VISITOR_INFO1_LIVE
+!! https://forums.commentcamarche.net/forum/affich-17006650-youtube-probleme-cookies-visitor-info1-live
+!! www.youtube.com##+js(remove-cookie, VISITOR_INFO1_LIVE)
+
+!! scorecardresearch.com (Com Score)
+$cookie=uid
+
+!! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
+!! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
+!! $cookie=1P_JAR
+
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-id/
+!! https://cookiedatabase.org/cookie/amazon-adsystem/ad-privacy/
+!! $cookie=/(ad-(id|privacy))/
+$cookie=ad-id
+$cookie=ad-privacy
+
+!! Analytical cookies
+!! Google : _g(a|id)
+!! $cookie=/(_g(a|id))/
+
+!! https://cookiesearch.org/cookies/?search-term=nielsen&filter-type=cookie-name&sort=asc&cookie-id=NIELSEN
+!! $cookie=NIELSEN
+
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bito
+!! https://cookiesearch.org/cookies/?search-term=bito&filter-type=cookie-name&sort=asc&cookie-id=bitoIsSecure
+!! $cookie=/(bito([Ii][Ss]{2}ecure)?)/
+$cookie,domain=bidr.io
+$cookie=bito
+$cookie=bitoIsSecure
+
+!! https://cookiedatabase.org/cookie/addthis/__atrfs/
+$cookie=__atrfs
+!! https://les-enovateurs.com/temoignage-cookie-tf1-vie-oeuvre-revelations-exclusives
+$cookie=ABTasty
+$cookie=ABTastySession
+
+!! tc_ is for tagcommander I suppose ( like cdn.tagcommander.com/4183/tc_TF1_26.js )
+!! $cookie=TC_ABTESTING
+!! test_cookie is for doubleclick ( same, I suppose )
+!! $cookie=tc_test_cookie
+
+!! misc ?? vidoza.net (https://vidoza.net/embed-ekojuo5xp7po.html)
+$cookie=xfsts
+
+!! googleadservices Advertisement - https://cookiesearch.org/cookies/?cookie-id=Conversion
+$cookie=Conversion
+
+!! https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage
+!! https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/migrate-from-smarttag
+$cookie=pa_vid
+$cookie=_pcid
+$cookie=_pctx
+!! $cookie=_pprv
+!! $cookie=pa_user
+
+!! https://cookiedatabase.org/cookie/criteo/cto_bundle/
+$cookie=cto_bundle
+
+!! https://cookiesearch.org/cookies/?cookie-id=_uid
+$cookie=_uid
+
+!! google.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=NID
+!! $cookie=NID
+
+!! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
+@@$cookie=sid
+
+!#endif
