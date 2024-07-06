@@ -12,6 +12,9 @@
 ! ======= HTML filtering =======
 !#include HTML_filtering.txt
 
+! ======= COOKIES filtering =======
+!#include COOKIES_filtering.txt
+
 ! ======= MISC =======
 
 !#if adguard
