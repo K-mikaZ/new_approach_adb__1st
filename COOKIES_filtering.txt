@@ -25,7 +25,6 @@
 ||facebook.com^$third-party,cookie=c_user
 ! $cookie=c_user,third-party,domain=facebook.com
 
-!! ||howtogeek.com^$cookie=unauthenicatedArticleLimitReached
 ||howtogeek.com^$cookie=/LimitReached/
 
 !! ------------------------------------------------------
@@ -217,3 +216,10 @@ $cookie=_uid
 @@$cookie=sid
 
 !#endif
+
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
+! prevent forcing connection to continue reading (unauthenicatedArticleLimitReached)
+howtogeek.com##+js(remove-cookie, /LimitReached/)
+howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
+!! prevents Facebook from tracking you even if you are logged in
+facebook.com##+js(remove-cookie, c_user)
