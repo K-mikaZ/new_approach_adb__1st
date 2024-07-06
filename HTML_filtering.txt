@@ -157,27 +157,27 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! "generic" filters
 ! ===============================================================
 !#if env_mobile || adguard_app_android || adguard_app_ios
-*##[class~="ad"][class~="onlyMobile"]
-*##[class~="ad"][class~="onlyTablet"]
+*##[class~="ad"][class~="onlyMobile"]:remove()
+*##[class~="ad"][class~="onlyTablet"]:remove()
 !#else
-*##[class~="ad"][class~="onlyDesktop"]
+*##[class~="ad"][class~="onlyDesktop"]:remove()
 !#endif
-*##[class~="ad"][class~="c-ads"]
-*##[class~="ad"][class~="doubleclick"]
-*##[class~="ad"][data-block-devices]
-*##[class~="ad"][class*="banniere"]
-*##[class~="ad"][class*="outbrain"]
-*##[id~="adbd"][class*="over"]
-*##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
-*##div[class|="adsvp"][class*="wrapper"]
-*##div[class^="movie-aye"]
-*##div[class^="salidor_"]
-*##div[class^="tolro_"]
+*##[class~="ad"][class~="c-ads"]:remove()
+*##[class~="ad"][class~="doubleclick"]:remove()
+*##[class~="ad"][data-block-devices]:remove()
+*##[class~="ad"][class*="banniere"]:remove()
+*##[class~="ad"][class*="outbrain"]:remove()
+*##[id~="adbd"][class*="over"]:remove()
+*##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):remove()
+*##div[class|="adsvp"][class*="wrapper"]:remove()
+*##div[class^="movie-aye"]:remove()
+*##div[class^="salidor_"]:remove()
+*##div[class^="tolro_"]:remove()
 ! #dfp-atf, #dfp-btf, #dfp-mtf, #dfp-interstitial, #dfp-masthead...
-*##div[id^="dfp-"]
-*##div.ads-placeholder
-*##div.ads-container
-*##div.sticky-ad-holder
+*##div[id^="dfp-"]:remove()
+*##div.ads-placeholder:remove()
+*##div.ads-container:remove()
+*##div.sticky-ad-holder:remove()
 ! `iframe[name="__uspapiLocator"]`, `iframe[name="__tcfapiLocator"]`, `iframe[name="__gppLocator"]`...
 *##iframe[name^="__"][name$="Locator"]:remove()
 *##iframe:is([name="google_esf"],[id="google_esf"]):remove()
@@ -189,7 +189,7 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 *##iframe[src*="doubleclick"]:remove()
 *##ins[class*="adsby"][data-ad-slot]:remove()
 *##ins[class*="adsby"][data-ad-client]:remove()
-*##ins[class*="adsby"]:upward(center)
+*##ins[class*="adsby"]:upward(center):remove()
 *##+js(remove-node-text, script, +'/tag.min.js')
 *##+js(remove-node-text, script, devtoolIsOpening)
 *##+js(remove-node-text, script, popmagicldr)
@@ -230,16 +230,16 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! ===============================================================
 ! "generic" filters - on french sites
 ! ===============================================================
-*##div#pub
-*##a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
-*##a[href*="/regarder."]:upward(center)
+*##div#pub:remove()
+*##a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class]):remove()
+*##a[href*="/regarder."]:upward(center):remove()
 ! `div[class*="btn"]` or `div[class*="button"]`
-*##a[href*="/regarder."]:upward(div[class*="button"])
-*##a[href*="/regarder."]:upward(div[class*="big"][class*="btn"])
+*##a[href*="/regarder."]:upward(div[class*="button"]):remove()
+*##a[href*="/regarder."]:upward(div[class*="big"][class*="btn"]):remove()
 ! *##div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-*##a[href*="premium"]:upward(div[class*="movie_"])
-*##a[href*="premium"][href*=".php"][target]:upward(div[class])
-*##a[href*="streaming"][href*=".php"][target]:upward(div[class])
+*##a[href*="premium"]:upward(div[class*="movie_"]):remove()
+*##a[href*="premium"][href*=".php"][target]:upward(div[class]):remove()
+*##a[href*="streaming"][href*=".php"][target]:upward(div[class]):remove()
 
 ! ===============================================================
 ! "specific" filters
@@ -251,14 +251,14 @@ d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##+js(remove-node-text, script, O
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,uqload.*##+js(remove-node-text, script, ;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*##script[src*="cloudfront.net/"]:remove()
 ! filemoon.*##script:has-text(parseInt)
-forum.malekal.com##div.ads
+forum.malekal.com##div.ads:remove()
 frembed.*##+js(remove-node-text, script, CDATA)
 fusevideo.io##+js(remove-node-text, script, atob)
-malekal.com##div.Here
-megastream.*##div#bcklnksts
+malekal.com##div.Here:remove()
+megastream.*##div#bcklnksts:remove()
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##+js(remove-node-text, script, topmailru)
-neko-sama.fr##a.flink[href*="hentai"]:upward(footer)
+neko-sama.fr##a.flink[href*="hentai"]:upward(footer):remove()
 oneupload.*##script[src*="/js/google-adsense.js"]:remove()
 opvid.*##+js(remove-node-text, script, decodeURIComponent)
 streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
@@ -277,6 +277,6 @@ videzz.net,www.cpasmieux.*##script[src^="//"]:remove()
 videzz.*##script[src*="/sw.js?"]:remove()
 vidmoly.*##script[async]:remove()
 vidmoly.*##script[src*="/frd0ad.js"]:remove()
-www.allocine.fr##div.main-banner
+www.allocine.fr##div.main-banner:remove()
 
 !#endif
