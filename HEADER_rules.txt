@@ -1,0 +1,8 @@
+! HEADER rules --------------------------------------------------------------------
+
+! allow some otherwise player loading is interrupted
+@@||*$header=link:/^\<\/\/(?:.*)stun[\d]*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+@@||*$header=link:/^\<\/\/(?:.*)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+||*$header=link:/^\<\/\/vkcdnservice\.appspot\.com(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+||*$header=link:/^\<\/\/[\w]+\.ya(dro|ndex)\.ru\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
