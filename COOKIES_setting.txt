@@ -218,8 +218,7 @@ howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
 ! **Not working: |
-!   because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences)
-!   for setting 3rd party cookies within iframes.
+!   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies within iframes.
 !   hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
