@@ -213,6 +213,8 @@ $cookie=_uid
 
 ! SET cookies ------------------------------------------------------------------------------------------
 cookiesearch.org##+js(set-cookie-reload, cookieyes-consent, consentid:c3dDb2FlcFQ5cnNjV3FadEJZSDRyTGlVYktmenhvZ2Y,consent:yes,action:yes,necessary:yes,functional:no,analytics:no,performance:no,advertisement:no,other:no)
+! howtogeek.com: prevent forcing connection to continue reading
+howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 ! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 ! https://cookiedatabase.org/service/hubspot/
 ! **No longer active: hubspot.com##+js(set-cookie, __hs_opt_out, yes)
@@ -221,11 +223,11 @@ cookiesearch.org##+js(set-cookie-reload, cookieyes-consent, consentid:c3dDb2FlcF
 ! -------------------------------------------------------------------------------------------------------
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
-! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies within iframes.
+! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences)
+! for setting 3rd party cookies within iframes.
 ! **Not working: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
-! prevent forcing connection to continue reading (unauthenicatedArticleLimitReached)
-howtogeek.com##+js(remove-cookie, unauthenicatedArticleLimitReached)
+! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
-!! prevents Facebook from tracking you even if you are logged in
+! prevents Facebook from tracking you even if you are logged in
 facebook.com##+js(remove-cookie, c_user)
 ! -------------------------------------------------------------------------------------------------------
