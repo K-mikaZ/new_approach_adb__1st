@@ -1,3 +1,5 @@
-! CSP blocking -----------------------------------------------------------------
+! CSP blocking ------------------------------------------------------------------
+! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier
+! -------------------------------------------------------------------------------
 
 ||ok.ru^$csp=default-src data: 'self' 'unsafe-inline' 'unsafe-eval' ok.ru *.ok.ru odnoklassniki.ru *.odnoklassniki.ru mycdn.me http://*.mycdn.me https://*.mycdn.me *.mail.ru *.imgsmail.ru *.googleapis.com *.gstatic.com www.google.com https://football.sportmail.ru *.google.ru *.google.com blob:;  script-src 'unsafe-inline' 'unsafe-eval' *.mail.ru https://*.mail.ru *.imgsmail.ru *.mradx.net ok.ru *.ok.ru odnoklassniki.ru *.odnoklassniki.ru mycdn.me http://*.mycdn.me https://*.mycdn.me mc.yandex.ru an.yandex.ru yastatic.net yandex.st *.google-analytics.com api-maps.yandex.ru https://api-maps.yandex.ru https://clck.yandex.ru *.googleapis.com *.gstatic.com www.google.com www.youtube.com https://www.youtube.com *.ytimg.com https://*.ytimg.com https://football.sportmail.ru connect.facebook.net *.google.ru *.google.com;  worker-src blob: 'self'; connect-src * wss: 'none' blob: data:; font-src * data: blob:; frame-src * blob: 'self'; img-src * data: blob: about: 'none'; media-src * data: blob:; object-src *;
