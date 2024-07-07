@@ -13,7 +13,7 @@
 !#include HEADER_rules.txt
 
 ! ======= CSP blocking =======
-!#include CSP_blocking.text
+!#include CSP_blocking.txt
 
 ! ======= COOKIES setting and filtering =======
 !#include COOKIES_setting.txt
