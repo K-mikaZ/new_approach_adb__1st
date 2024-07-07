@@ -223,6 +223,7 @@ $cookie=_uid
 ! **No longer active: hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 
 ! REMOVE cookies -----------------------------------------------------------------------
+! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies within iframes.
 ! **Not working: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! prevent forcing connection to continue reading (unauthenicatedArticleLimitReached)
 howtogeek.com##+js(remove-cookie, unauthenicatedArticleLimitReached)
