@@ -9,11 +9,11 @@
 ! Description: My first blocking list.
 !
 
-! ======= CSP blocking =======
-!#include CSP_blocking.text
-
 ! ======= HEADER rules =======
 !#include HEADER_rules.txt
+
+! ======= CSP blocking =======
+!#include CSP_blocking.text
 
 ! ======= COOKIES setting and filtering =======
 !#include COOKIES_setting.txt
