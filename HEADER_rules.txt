@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 ! HEADER rules --------------------------------------------------------------------
 
 ! allow some otherwise player loading is interrupted
