@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 ! Products that support HTML filtering rules: (ublock origin and Adguard Extension for firefox) and (AdGuard app for Windows, Mac, and Android)
 ! Be careful, items here will be deleted, not just hidden!
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
