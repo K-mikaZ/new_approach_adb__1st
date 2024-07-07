@@ -1,23 +1,17 @@
-! COOKIES
-
-||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
-
-!#if adguard
-
-!! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
-
-!! see https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_privacy.txt
-
-!! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
-
-!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
-
-!! https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane
+! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
 
 
 !! Cookies categorie Analytics: https://cookiesearch.org/cookies/?cookie-cat=analytics
 !! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
 !! Cookie Purpose: Marketing/Tracking (318): https://cookiedatabase.org/purpose/marketing/
+!! Free Website Cookie Checker: https://www.cookieyes.com/cookie-checker/?ref=CSearch
+
+!! https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane
+
+||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
+
+!#if adguard
+!! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
 
 !! prevents Facebook from tracking you even if you are logged in
 ||facebook.com^$third-party,cookie=c_user
@@ -216,6 +210,7 @@ $cookie=_uid
 !#endif
 
 ! SET cookies -----------------------------------------------------------------------
+cookiesearch.org##+js(set-cookie, cookieyes-consent, consentid:c3dDb2FlcFQ5cnNjV3FadEJZSDRyTGlVYktmenhvZ2Y,consent:yes,action:yes,necessary:yes,functional:no,analytics:no,performance:no,advertisement:no,other:no)
 ! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 ! https://cookiedatabase.org/service/hubspot/
 ! **No longer active: hubspot.com##+js(set-cookie, __hs_opt_out, yes)
