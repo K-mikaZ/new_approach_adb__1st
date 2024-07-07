@@ -212,7 +212,7 @@ $cookie=_uid
 !#endif
 
 ! SET cookies ------------------------------------------------------------------------------------------
-cookiesearch.org##+js(set-cookie, cookieyes-consent, consentid:c3dDb2FlcFQ5cnNjV3FadEJZSDRyTGlVYktmenhvZ2Y,consent:yes,action:yes,necessary:yes,functional:no,analytics:no,performance:no,advertisement:no,other:no)
+cookiesearch.org##+js(set-cookie-reload, cookieyes-consent, consentid:c3dDb2FlcFQ5cnNjV3FadEJZSDRyTGlVYktmenhvZ2Y,consent:yes,action:yes,necessary:yes,functional:no,analytics:no,performance:no,advertisement:no,other:no)
 ! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 ! https://cookiedatabase.org/service/hubspot/
 ! **No longer active: hubspot.com##+js(set-cookie, __hs_opt_out, yes)
