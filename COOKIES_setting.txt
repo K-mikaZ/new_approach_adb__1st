@@ -219,11 +219,11 @@ howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 ! -------------------------------------------------------------------------------------------------------
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
+! prevents Facebook from tracking you even if you are logged in
+facebook.com##+js(remove-cookie, c_user)
 ! **Not working: |
 !   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies within iframes.
 !   hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
-! prevents Facebook from tracking you even if you are logged in
-facebook.com##+js(remove-cookie, c_user)
 ! -------------------------------------------------------------------------------------------------------
