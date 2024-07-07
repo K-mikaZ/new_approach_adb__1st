@@ -217,9 +217,9 @@ $cookie=_uid
 
 ! SET cookies -----------------------------------------------------------------------
 ! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
-hubspot.com##+js(set-cookie, __hs_opt_out, yes)
-hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
-hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
+!No longer active: hubspot.com##+js(set-cookie, __hs_opt_out, yes)
+!No longer active: hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
+!No longer active: hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 
 ! REMOVE cookies -----------------------------------------------------------------------
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
