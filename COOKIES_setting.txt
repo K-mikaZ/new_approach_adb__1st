@@ -217,9 +217,10 @@ howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 ! -------------------------------------------------------------------------------------------------------
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
-! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences) |
+! **Not working: |
+!   because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences)
 !   for setting 3rd party cookies within iframes.
-! **Not working: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
+!   hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 ! prevents Facebook from tracking you even if you are logged in
