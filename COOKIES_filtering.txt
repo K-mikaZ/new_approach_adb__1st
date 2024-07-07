@@ -223,7 +223,7 @@ $cookie=_uid
 ! **No longer active: hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 
 ! REMOVE cookies -----------------------------------------------------------------------
-! **Does not work: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
+! **Not working: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! prevent forcing connection to continue reading (unauthenicatedArticleLimitReached)
 howtogeek.com##+js(remove-cookie, unauthenicatedArticleLimitReached)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
