@@ -1,5 +1,5 @@
-! Cookies are used to track your browsing habits, which can lead to more targeted ads.
-!  |  Disabling them can help reduce the number of ads you see.
+! Cookies are used to track your browsing habits, which can lead to more targeted ads. |
+!   Disabling them can help reduce the number of ads you see.
 
 ! USEFULL LINKS ----------------------------------------------------------------------------------------
 ! ** Free Website Cookie Checker: <https://www.cookieyes.com/cookie-checker/?ref=CSearch>
@@ -223,8 +223,8 @@ howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 ! -------------------------------------------------------------------------------------------------------
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
-! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences)
-!  |  for setting 3rd party cookies within iframes.
+! because hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.* using P3P header (Platform for Privacy Preferences) |
+!   for setting 3rd party cookies within iframes.
 ! **Not working: hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
