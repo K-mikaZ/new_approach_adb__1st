@@ -52,7 +52,8 @@
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
 ! Yandex.Metrika counter
-*##^script:has-text(mc.yandex.ru/metrika)
+! *##^script:has-text(mc.yandex.ru/metrika)
+*##^script:has-text(/\(m,e,t,r,i,k,a\)/)
 !*##^script[src*="/beacon.min.js"]
 *##^script[data-cf-beacon]
 ! https://onclickalgo.com/a/display.php?r=7011010
