@@ -19,14 +19,10 @@
 ||facebook.com^$third-party,cookie=c_user
 ! $cookie=c_user,third-party,domain=facebook.com
 
-||howtogeek.com^$cookie=/LimitReached/
-
-!! ------------------------------------------------------
-
-!! Cookies categorie Analytics: https://cookiesearch.org/cookies/?cookie-cat=analytics
-
-!! ------------------------------------------------------
-
+! -------------------------------------------------------------------------------------------------------
+! Cookies categorie Analytics: |
+!   https://cookiesearch.org/cookies/?cookie-cat=analytics
+! -------------------------------------------------------------------------------------------------------
 !! gigya.com Analytics - https://cookiesearch.org/cookies/?cookie-id=ucid
 !! Analytics - This cookie stores a unique computer identifier to generate reports.
 $cookie=ucid
@@ -41,12 +37,10 @@ $cookie=yp,domain=yandex.ru
 ||yahoo.com^$cookie=APID
 
 
-!! ------------------------------------------------------
-
-!! Cookies categorie Advertisement: https://cookiesearch.org/cookies/?cookie-cat=advertisement
-
-!! ------------------------------------------------------
-
+! -------------------------------------------------------------------------------------------------------
+! Cookies categorie Advertisement: |
+!   https://cookiesearch.org/cookies/?cookie-cat=advertisement
+! -------------------------------------------------------------------------------------------------------
 !! dailymotion Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
 !! $cookie=/(d(am|m[ax]i)d|_gads)/
 $cookie=dmxid
