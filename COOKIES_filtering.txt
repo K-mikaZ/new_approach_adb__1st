@@ -1,4 +1,5 @@
-! Cookies are used to track your browsing habits, which can lead to more targeted ads. Disabling them can help reduce the number of ads you see.
+! Cookies are used to track your browsing habits, which can lead to more targeted ads.
+! Disabling them can help reduce the number of ads you see.
 
 ! USEFULL LINKS ----------------------------------------------------------------------------------------
 ! ** Free Website Cookie Checker: <https://www.cookieyes.com/cookie-checker/?ref=CSearch>
