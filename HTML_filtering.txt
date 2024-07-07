@@ -278,6 +278,7 @@ videzz.net,www.cpasmieux.*##script[src^="//"]:remove()
 videzz.*##script[src*="/sw.js?"]:remove()
 vidmoly.*##script[async]:remove()
 vidmoly.*##script[src*="/frd0ad.js"]:remove()
+www.adkami.com##^script:has-text(/\[_0x[\w\d]+\('0x[\d]'\)/)
 www.allocine.fr##div.main-banner:remove()
 
 !#endif
