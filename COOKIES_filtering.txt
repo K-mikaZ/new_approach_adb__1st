@@ -11,7 +11,9 @@
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
 
 !#if adguard
+! -------------------------------------------------------------------------------------------------------
 !! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
+! -------------------------------------------------------------------------------------------------------
 
 !! prevents Facebook from tracking you even if you are logged in
 ||facebook.com^$third-party,cookie=c_user
