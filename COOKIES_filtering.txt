@@ -1,7 +1,5 @@
 ! COOKIES
 
-!! /jquery.cookie.js$~third-party
-! /cookienotice.js$~third-party
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
 
 !#if adguard
@@ -217,6 +215,13 @@ $cookie=_uid
 
 !#endif
 
+! SET cookies -----------------------------------------------------------------------
+! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
+hubspot.com##+js(set-cookie, __hs_opt_out, yes)
+hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
+hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
+
+! REMOVE cookies -----------------------------------------------------------------------
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! prevent forcing connection to continue reading (unauthenicatedArticleLimitReached)
 howtogeek.com##+js(remove-cookie, unauthenicatedArticleLimitReached)
