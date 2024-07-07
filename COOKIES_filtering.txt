@@ -217,9 +217,10 @@ cookiesearch.org##+js(set-cookie-reload, cookieyes-consent, consentid:c3dDb2FlcF
 howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 ! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
 ! https://cookiedatabase.org/service/hubspot/
-! **No longer active: hubspot.com##+js(set-cookie, __hs_opt_out, yes)
-! **No longer active: hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
-! **No longer active: hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
+! **No longer active: |
+!   hubspot.com##+js(set-cookie, __hs_opt_out, yes)
+!   hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
+!   hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 ! -------------------------------------------------------------------------------------------------------
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
