@@ -11,7 +11,7 @@
 
 ! HEADER rules --------------------------------------------------------------------
 
-! *** COOKIE blocking ***
+! *** COOKIE blocking (prevent creation) ***
 ||*$header=Cookie:uid_dm,important
 ||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
 
