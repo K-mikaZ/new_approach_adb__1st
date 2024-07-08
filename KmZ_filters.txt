@@ -21,6 +21,10 @@
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
 
+! ======= URI transform =======
+!#include _URI_transform.txt
+
+
 ! ======= MISC =======
 
 !#if adguard
