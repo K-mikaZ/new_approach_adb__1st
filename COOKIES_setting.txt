@@ -217,12 +217,6 @@ $cookie=_uid
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
 howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
-! https://knowledge.hubspot.com/privacy-and-consent/what-cookies-does-hubspot-set-in-a-visitor-s-browser
-! https://cookiedatabase.org/service/hubspot/
-! **No longer active: |
-!   hubspot.com##+js(set-cookie, __hs_opt_out, yes)
-!   hubspot.com##+js(set-cookie, __hs_do_not_track, yes)
-!   hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
 
@@ -236,7 +230,6 @@ howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 
 cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
-
 
 ! REDIRECT rules --------------------------------------------------------------------
 
