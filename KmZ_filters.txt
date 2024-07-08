@@ -10,16 +10,16 @@
 !
 
 ! ======= HEADER rules =======
-!#include HEADER_rules.txt
+!#include _HEADER_rules.txt
 
 ! ======= CSP blocking =======
-!#include CSP_blocking.txt
+!#include _CSP_blocking.txt
 
 ! ======= COOKIES setting and filtering =======
-!#include COOKIES_setting.txt
+!#include _COOKIES_setting.txt
 
 ! ======= HTML filtering =======
-!#include HTML_filtering.txt
+!#include _HTML_filtering.txt
 
 ! ======= MISC =======
 
