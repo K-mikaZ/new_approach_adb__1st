@@ -217,6 +217,7 @@ $cookie=_uid
 !#endif
 
 ! SET cookies ------------------------------------------------------------------------------------------
+cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], ,100)
 ! howtogeek.com: |
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
