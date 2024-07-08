@@ -211,19 +211,13 @@ $cookie=_uid
 
 !#endif
 
-! SET cookies ------------------------------------------------------------------------------------------
+! SET/REMOVE cookies ------------------------------------------------------------------------------------------
 
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! howtogeek.com: |
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
 howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
-
-! REMOVE cookies ----------------------------------------------------------------------------------------
-
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
-! prevents Facebook from tracking you even if you are logged in
-facebook.com##+js(remove-cookie, c_user)
-! howtogeek.com: prevent forcing connection to continue reading
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 
 ! CLICK banner cookies (refuse) -----------------------------------------------------------------------------
