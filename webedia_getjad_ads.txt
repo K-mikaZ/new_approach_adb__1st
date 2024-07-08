@@ -40,7 +40,7 @@
 ##[class~="webedia" i]
 ! Filtering Per sites
 ! 2024-01-24 [ allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com ]
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##.main-banner
+www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##.main-banner
 ! 2024-01-26 ~ 12:42:26 [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
 ! fix: force install addon
 www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal"])
