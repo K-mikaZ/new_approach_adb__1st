@@ -2,6 +2,7 @@
 ! HEADER rules --------------------------------------------------------------------
 
 ! *** COOKIE ***
+||*$header=Cookie:uid_dm,important
 
 ! *** LINK ***
 ! allow some otherwise player loading is interrupted
