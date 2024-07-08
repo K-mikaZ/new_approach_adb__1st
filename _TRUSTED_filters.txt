@@ -24,6 +24,13 @@
 animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
 ! CLICK banner cookies
 cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
+geo2.dailymotion.com#@#+js(set-constant, dmCookie3rdPartyAllowed, false)
+geo2.dailymotion.com##+js(trusted-set-constant, dmCookie3rdPartyAllowed, false)
+geo2.dailymotion.com##+js(trusted-set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
+geo2.dailymotion.com##+js(trusted-set-constant, DMP_HAS_ADS, false)
+geo2.dailymotion.com##+js(trusted-set-constant, DMP_RECOMMENDATIONS_OPTIMISATION, null)
+geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.hasAds, false)
+geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.recommendationsOptimisation, null)
 open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "disallow_seeking":false, track-playback)
 ! open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
 ! [FIX] for allow play/pause on click player
