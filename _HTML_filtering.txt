@@ -19,6 +19,7 @@
 ! ===============================================================
 *##^img[src*="histats.com"]
 *##^img[src*="top-fwz1.mail.ru/counter"]
+ok.xxx##^img[src*="//counter.yadro.ru"]:upward(a[href][target])
 
 ! ===============================================================
 ! "generic" filters
@@ -169,6 +170,7 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! ===============================================================
 *##img[src*="histats.com"]:remove()
 *##img[src*="top-fwz1.mail.ru/counter"]:remove()
+ok.xxx##img[src*="//counter.yadro.ru"]:upward(a[href][target]):remove()
 
 ! ===============================================================
 ! "generic" filters
