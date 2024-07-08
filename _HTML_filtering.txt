@@ -282,7 +282,7 @@ opvid.*##+js(remove-node-text, script, decodeURIComponent)
 streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
 ! `*##script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
 ! *##script:has-text(/\+\'\/[45](0[01])\/\'\+/)
-uqload.*##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
+turbovid.*,uqload.*##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
 uqload.*##script#_wau1ww:remove()
 video.sibnet.ru##script[src*="//cvt1.sibnet."]:remove()
 video.sibnet.ru##script[src*="//c.sibnet."]:remove()
