@@ -15,7 +15,9 @@
 !   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
 !   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (like `uid`) within iframes.
 ||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
+! scorecardresearch.com (ComScore)
 ||*$header=Cookie:uid,important
+! scorecardresearch.com (ComScore) use by dailymotion (like on www.allocine.fr)
 ||*$header=Cookie:uid_dm,important
 
 ! REDIRECT rules --------------------------------------------------------------------
