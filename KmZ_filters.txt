@@ -3217,6 +3217,10 @@ juststream.org##.movie-xyz
 ||amung.us^$third-party
 ||a-mx.com^
 ||streamcomplet2.info^
+||adlooxtracking.com^
+||adlooxtracking.ru^
+||ads.adaptv.advertising.com^
+||video.adaptv.advertising.com^
 @@||doubleclick.*^$domain=googlesyndication.com|ipv6-test.com
 @@|/exoSubId.min.js$domain=xcafe.com
 @@||googlesyndication.com^$domain=ipv6-test.com
