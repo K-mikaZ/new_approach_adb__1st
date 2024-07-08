@@ -10,6 +10,7 @@
 ! -------------------------------------------------------------------------------------------------------
 
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
+||geo2.dailymotion.com/cookie.js$redirect=noop.txt,important
 
 !#if adguard
 ! -------------------------------------------------------------------------------------------------------
