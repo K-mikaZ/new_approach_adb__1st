@@ -21,8 +21,7 @@ doods.pro##+js(remove-node-text, script, /popunder/)
 ||newrelic.com^$third-party
 ||js-agent.newrelic.com^$important
 ||insights-collector.newrelic.com^$important
-! 2024-01-18 unbreak [ mediavine.com ](https://www.mediavine.com/)
-! mediavine.com unlock the site itself
+! 2024-01-18 unbreak [ mediavine.com ](https://www.mediavine.com/) => Unlock the site itself.
 @@||mediavine.com|$~third-party
 @@||mediavine.com^$document
 !  2024-01-18 unbreak [ developers.abtasty.com ](https://developers.abtasty.com/docs/tag/tag-cookies)
@@ -30,7 +29,6 @@ doods.pro##+js(remove-node-text, script, /popunder/)
 ||abtasty.com^$third-party
 @@||abtasty.com^$document
 ! 11 juin 2024 ¤¤¤ megastream.autos ¤¤¤ (https://megastream.autos/4854-hawaii-5-0-drnro/2-saison/21-episode.html)
-! abysscdn.com#@#+js(set-constant, detectAdBlockAll, noopFunc)
 @@||iamcdn.net/players/jwplayer/$script,domain=abysscdn.com
 ! 11 juin 2024 ¤¤¤ catalogue.darkino6.top ¤¤¤ (https://catalogue.darkino6.top/post/films/1088674-le-dernier-jaguar)
 ! TIPS: "scriptsafe's canvas protection" BREAK challenges.cloudflare.com make when click button "Visionner"
@@ -100,8 +98,6 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||googleanalytics.com|$~third-party
 @@||marketingplatform.google.com|$~third-party
 ! 2024-01-18 unbreak loading images on [ amazon.com ](https://www.amazon.com/)
-! ||media-amazon.com/images/I/61ZS63EQSsL.js$all, and 71xenowIgVL.js, 81BSkurbH5L.js, 81FBQD3SRQL.js
-! @@||media-amazon.com/images/I/*.js$all
 @@||media-amazon.com/images/$all,domain=amazon.*
 ! 2024-01-20 fix for "Tracking JS Blocklist" <https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt>
 @@||cloudflare.com/ajax/libs/qtip2/*/jquery.qtip.min.js$all
@@ -140,7 +136,6 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! @@||silentinstallhq.com^$cname
 ! @@||openwhyd.org^$cname
 ! compte.tf1.fr ⇒ d3rvml4iv2cgo8.cloudfront.net
-! @@||compte.tf1.fr$cname
 @@$cname,from=compte.tf1.fr|openwhyd.org|silentinstallhq.com
 ! 2024-05-06 Unbreak- unlock site itself
 ||mgnet.xyz|$badfilter
@@ -210,11 +205,6 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! 2024-05-11 ¤¤¤ taboola.com ¤¤¤ (https://advertise.taboola.com/)
 @@||helpersng.taboola.com^
 @@||page.taboola.com^
-!@@||developers.taboola.com^$document
-!@@||advertise.taboola.com^$document
-!@@||trends.taboola.com^$document
-!@@||help.taboola.com^$document
-!@@||blog.taboola.com^$document
 @@||taboola.com^$document
 ||taboola.com^$important,badfilter
 ||taboola.com^$badfilter
@@ -237,11 +227,7 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 @@||vidyard.com^$document
 ||vidyard.com^$badfilter
 ||vidyard.com^$third-party
-! @@||ad.doubleclick.net/ddm/clk/*http$popup,document
-! @@||tracking.publicidees.com/clic.php?$popup,document
-! @@||clk.tradedoubler.com/click?$popup,document
-! @@||track.effiliation.com|$popup,document
-@@||googleadservices.com/pagead/aclk?$document
+@@||googleadservices.com/pagead/aclk?$popup,document
 @@||doubleclick.net|$popup,document
 @@||effiliation.com|$popup,document
 @@||publicidees.com|$popup,document
@@ -316,7 +302,6 @@ cety.app#@#[class*="adsby"]
 /ad-inserter/*$redirect-rule=noopjs
 
 @@||consents.prismamedia.com^
-!! @@||googlesyndication.com^
 ||gigya.com$badfilter
 ||gigya.com$third-party,badfilter
 @@||gigya.com^
