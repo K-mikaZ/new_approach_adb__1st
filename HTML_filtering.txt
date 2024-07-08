@@ -282,4 +282,10 @@ vidmoly.*##script[src*="/frd0ad.js"]:remove()
 www.adkami.com##^script:has-text(/\[_0x[\w\d]+\('0x[\d]'\)/)
 www.allocine.fr##div.main-banner:remove()
 
+!#if env_firefox || ext_ublock || adguard_ext_firefox
+||fwmrm.net^$badfilter
+||7cbf2.v.fwmrm.net^$badfilter
+tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
+!#endif
+
 !#endif
