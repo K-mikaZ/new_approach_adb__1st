@@ -12,10 +12,10 @@
 ! HEADER rules --------------------------------------------------------------------
 
 ! *** COOKIE blocking (prevent creation) ***
-||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
 ! **Not working on some sites |
 !   like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
 !   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies within iframes.
+||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
 ||*$header=Cookie:uid,important
 ||*$header=Cookie:uid_dm,important
 
