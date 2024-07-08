@@ -37,9 +37,6 @@
 ! Cookies categorie Analytics: |
 !   https://cookiesearch.org/cookies/?cookie-cat=analytics
 ! -------------------------------------------------------------------------------------------------------
-!! gigya.com Analytics - https://cookiesearch.org/cookies/?cookie-id=ucid
-!! Analytics - This cookie stores a unique computer identifier to generate reports.
-$cookie=ucid
 !! yandex.ru Analytics - https://cookiesearch.org/cookies/?cookie-id=_ym_isad
 !! $cookie=/^(?:y(p|a(ndexuid|bs-sid))|_ym_((ui|isa)?d))$/
 $cookie=_ym_isad
