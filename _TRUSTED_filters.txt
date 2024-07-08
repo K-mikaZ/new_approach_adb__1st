@@ -31,6 +31,7 @@ geo2.dailymotion.com##+js(trusted-set-constant, DMP_HAS_ADS, false)
 geo2.dailymotion.com##+js(trusted-set-constant, DMP_RECOMMENDATIONS_OPTIMISATION, null)
 geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.hasAds, false)
 geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.recommendationsOptimisation, null)
+megastream.*##+js(trusted-set-constant, console.clear, undefined)
 open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "disallow_seeking":false, track-playback)
 ! open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
 ! [FIX] for allow play/pause on click player
