@@ -294,11 +294,25 @@ salamarket.fr#@#.elementor-spacer:not(html, body)
 ||permutive.app^
 ! 13 juin 2024 ¤¤¤ first-id.fr ¤¤¤ (https://www.first-id.fr/)
 @@||first-id.fr^$document
-
-!! FIX video loading on capital.fr (e.g. https://www.capital.fr/entreprises-marches/rafale-helicoptere-on-a-teste-les-simulateurs-de-vol-de-sogitec-au-salon-du-bourget-2023-1472333)
-! @@||www.datadoghq-browser-agent.com^$important
-!! FIX video loading on app.molotov.tv
-! @@||logs.datadoghq.com^
+! cause delay when play video on arte.tv
+||arte.tv/log-player/$badfilter
+@@||mesure.streaming.estat.com^$image
+! https://www.barstoolsports.com/video/3518372/riggs-vs-union-hills-c.c.-holes-16-18
+@@||pagead2.googlesyndication.com^$domain=imasdk.googleapis.com
+zotmarche.re#@#.elementor-spacer:not(html, body)
+@@/ads160.$script,from=toonanime.*
+@@||tpc.googlesyndication.com^$domain=youtube.com
+@@gcb=*&cb=$script,from=www.reunionsaveurs.com
+! [FIX] `/ezais/analytics`, break https://www.reunionsaveurs.com/
+/ezais/analytics?$badfilter
+www.starmag.com#@#.ebam_ad
+||sonar.viously.com^$from=~aufeminin.com|~melty.fr|~nextplz.fr,badfilter
+||cuty.io^$badfilter
+cety.app#@#[class*="adsby"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"]))
+cety.app#@#[class*="adsby"]
+! https://www.adalyser.com/en/cookies
+||adalyser.com^$badfilter
+||fwmrm.net^$badfilter
 
 @@||consents.prismamedia.com^
 !! @@||googlesyndication.com^
