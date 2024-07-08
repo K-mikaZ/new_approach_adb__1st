@@ -2,7 +2,7 @@
 ! HEADER rules --------------------------------------------------------------------
 
 ! *** LINK ***
-! allow some otherwise player loading is interrupted
+! ensures not to block any, otherwise loading of the player is interrupted.
 @@||*$header=link:/^\<\/\/(?:.*)stun[\d]*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 @@||*$header=link:/^\<\/\/(?:.*)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ! https://regex101.com/r/ZaM63o/2
