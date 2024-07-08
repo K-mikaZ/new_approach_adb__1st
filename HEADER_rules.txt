@@ -1,9 +1,6 @@
 [uBlock Origin; Adguard]
 ! HEADER rules --------------------------------------------------------------------
 
-! *** COOKIE blocking ***
-||*$header=Cookie:uid_dm,important
-
 ! *** LINK ***
 ! allow some otherwise player loading is interrupted
 @@||*$header=link:/^\<\/\/(?:.*)stun[\d]*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
