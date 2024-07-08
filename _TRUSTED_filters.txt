@@ -37,6 +37,16 @@ videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
 ! CLICK banner cookies
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 
+! 2024-01-24 Try fixing delay in the video player
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.ads, emptyObj)
+! 2024-01-24 Tracking
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.player.gtm.active, false)
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasStickyAds, false)
+! 2024-01-24 Tracking (prevent loading script)
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.player.mediametrie.libUrl, undefined)
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasPaywall, false)
+!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasDmVastFallback, false)
+
 
 ! ===============================================================
 ! "net" filters
