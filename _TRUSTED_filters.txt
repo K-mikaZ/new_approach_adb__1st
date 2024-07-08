@@ -22,6 +22,7 @@ open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "
 streamta.pe,streamtape.*#@#.play-overlay
 streamta.pe,streamtape.*##+js(trusted-click-element, .play-overlay)
 tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
+! [FIX] for allow play/pause on click player
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
 videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
