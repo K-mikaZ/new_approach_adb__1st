@@ -216,7 +216,6 @@ $cookie=_uid
 !#endif
 
 ! SET cookies ------------------------------------------------------------------------------------------
-cookiesearch.org##+js(set-cookie-reload, cookieyes-consent, consentid:c3dDb2FlcFQ5cnNjV3FadEJZSDRyTGlVYktmenhvZ2Y,consent:yes,action:yes,necessary:yes,functional:no,analytics:no,performance:no,advertisement:no,other:no)
 ! howtogeek.com: |
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
