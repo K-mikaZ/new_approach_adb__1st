@@ -329,19 +329,6 @@ music.youtube.com#@#.ytmusic-popup-container.style-scope > .ytmusic-popup-contai
 !www.youtube.com#$#ytd-watch-flexy[player-unavailable] #player-container-outer.ytd-watch-flexy { visibility: visible !important; }
 !www.youtube.com#$?#yt-playability-error-supported-renderers:has(yt-button-view-model[dialog-dismiss]) { display: none !important; }
 !#endif
-! ONLY FOR ADGUARD
-! /youtubei/v*/player?key=$replace=/\"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-! /youtubei/v*/player?key=$replace=/\"adSlots.*?\}\]\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-! /youtubei/v*/player?key=$replace=/\"playerAds.*?\}\}\]\,//,domain=youtubekids.com|youtube-nocookie.com|youtube.com
-!www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
-!www.youtube.com##+js(trusted-replace-xhr, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, youtubei/v1/player)
-tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
-!www.youtube.com##+js(trusted-replace-fetch, /"adPlacements.*?([A-Z]"\}|"\}{2})\}\]\,/, , player?key=)
-! https://www.ghacks.net/2021/04/01/here-is-the-easiest-way-to-get-rid-of-googles-before-you-continue-to-youtube-prompt/#comment-4565071
-!www.youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
-!www.youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-!www.youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-
 
 ! --- short.ink concerns: Test on 33seriestreaming.org ---
 @@||short.ink^$subdocument
