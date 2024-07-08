@@ -56,7 +56,6 @@ www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 !www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasPaywall, false)
 !www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
-
 ! ===============================================================
 ! "net" filters
 ! ===============================================================
