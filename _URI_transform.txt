@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 ! uritransform |
 !    Can only be used in a trusted-source origin.
 !    <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#uritransform>
