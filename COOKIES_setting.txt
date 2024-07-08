@@ -20,12 +20,6 @@
 ! scorecardresearch.com (ComScore) used by dailymotion (like on www.allocine.fr)
 ||*$header=Cookie:uid_dm,important
 
-! REDIRECT rules --------------------------------------------------------------------
-
-||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
-! dailymotion's const: dmCookie3rdPartyAllowed
-||geo2.dailymotion.com/cookie.js$redirect=noop.txt,important
-
 !#if adguard
 ! -------------------------------------------------------------------------------------------------------
 !! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier
@@ -218,6 +212,7 @@ $cookie=_uid
 !#endif
 
 ! SET cookies ------------------------------------------------------------------------------------------
+
 ! howtogeek.com: |
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
@@ -230,6 +225,7 @@ howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 !   hubspot.com##+js(set-cookie, __hs_initial_opt_in, no)
 
 ! REMOVE cookies ----------------------------------------------------------------------------------------
+
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 ! prevents Facebook from tracking you even if you are logged in
 facebook.com##+js(remove-cookie, c_user)
@@ -237,5 +233,13 @@ facebook.com##+js(remove-cookie, c_user)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 
 ! CLICK banner cookies (refuse) -----------------------------------------------------------------------------
+
 cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
+
+
+! REDIRECT rules --------------------------------------------------------------------
+
+||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
+! dailymotion's const: dmCookie3rdPartyAllowed
+||geo2.dailymotion.com/cookie.js$redirect=noop.txt,important
