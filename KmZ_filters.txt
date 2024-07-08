@@ -19,7 +19,7 @@
 !#include COOKIES_setting.txt
 
 ! ======= HTML filtering =======
-!#include HTML_filtering.txt
+!#include ublock-HTML_filtering.txt
 
 ! ======= MISC =======
 
