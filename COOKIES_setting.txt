@@ -17,7 +17,7 @@
 ||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
 ! scorecardresearch.com (ComScore)
 ||*$header=Cookie:uid,important
-! scorecardresearch.com (ComScore) use by dailymotion (like on www.allocine.fr)
+! scorecardresearch.com (ComScore) used by dailymotion (like on www.allocine.fr)
 ||*$header=Cookie:uid_dm,important
 
 ! REDIRECT rules --------------------------------------------------------------------
