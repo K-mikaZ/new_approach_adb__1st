@@ -2275,6 +2275,9 @@ eporner.com###movieplayer-box-adv
 youporn.com###pb_template
 youporn.com##div.uvL35JUoBC
 youporn.com##.cSzepHjuLt1
+drtuber.com##video:watch-attr(preroll):remove-attr(preroll)
+! [FIX] for having controls on drtuber.com
+drtuber.com###video_area:style(max-height: 100% !important;)
 ||adtng.com^$domain=~adtng.com
 ||cfgr3.com^$domain=~cfgr3.com
 ||etahub.com^$domain=~etahub.com
