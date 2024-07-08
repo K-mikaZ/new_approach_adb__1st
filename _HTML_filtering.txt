@@ -4,7 +4,15 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+
 !#if cap_html_filtering
+
+! ===============================================================
+! "Response header" filtering |
+!    https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+!    The syntax to remove the response header is a special case of HTML filtering, whereas the response headers are targeted rather than the response body:
+!    example.com##^responseheader(header-name)
+! ===============================================================
 
 ! ===============================================================
 ! "web bugs" filters
