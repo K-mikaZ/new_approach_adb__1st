@@ -12,8 +12,9 @@
 ! HEADER rules --------------------------------------------------------------------
 
 ! *** COOKIE blocking (prevent creation) ***
-||*$header=Cookie:uid_dm,important
 ||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
+||*$header=Cookie:uid,important
+||*$header=Cookie:uid_dm,important
 
 ! REDIRECT rules --------------------------------------------------------------------
 
