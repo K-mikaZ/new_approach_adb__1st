@@ -34,6 +34,7 @@ tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
 videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
+www.allocine.fr##+js(trusted-click-element, #didomi-host button[onclick*="Agree"], , 100)
 ! CLICK banner cookies
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 
