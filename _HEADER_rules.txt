@@ -11,4 +11,4 @@
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 
 ! *** RANGE ***
-||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,3})/
+||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
