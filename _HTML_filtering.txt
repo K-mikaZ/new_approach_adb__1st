@@ -138,7 +138,13 @@ videzz.net,www.cpasmieux.*##^script[src^="//"]
 videzz.*##^script[src*="/sw.js?"]
 vidmoly.*##^script[async]
 vidmoly.*##^script[src*="/frd0ad.js"]
+www.adkami.com##^script:has-text(/\[_0x[\w\d]+\('0x[\d]'\)/)
 www.allocine.fr##^div.main-banner
+www.howtogeek.com##^script[src*="adsninja.ca"]
+www.howtogeek.com##^script[src*="sentinelbi."]
+www.howtogeek.com##^script:has-text(/\.an_sn.*/)
+www.howtogeek.com##^script:has-text(/\.adsninja.+/)
+www.howtogeek.com##^script:has-text(websiteSentinel)
 
 ! ===============================================================
 ! "net" filters
@@ -297,7 +303,12 @@ videzz.net,www.cpasmieux.*##script[src^="//"]:remove()
 videzz.*##script[src*="/sw.js?"]:remove()
 vidmoly.*##script[async]:remove()
 vidmoly.*##script[src*="/frd0ad.js"]:remove()
-www.adkami.com##^script:has-text(/\[_0x[\w\d]+\('0x[\d]'\)/)
+www.adkami.com##+js(remove-node-text, script, /\[_0x[\w\d]+\('0x[\d]'\)/)
 www.allocine.fr##div.main-banner:remove()
+www.howtogeek.com##script[src*="adsninja.ca"]:remove()
+www.howtogeek.com##script[src*="sentinelbi."]:remove()
+www.howtogeek.com##+js(remove-node-text, script, /\.an_sn.*/)
+www.howtogeek.com##+js(remove-node-text, script, /\.adsninja.+/)
+www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 
 !#endif
