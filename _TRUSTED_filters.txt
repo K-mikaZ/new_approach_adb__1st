@@ -8,6 +8,7 @@
 
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Invalid filter (in console) when loading as list, but works in personal filters.
+!     Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_TRUSTED_filters.txt
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md
 
@@ -30,7 +31,6 @@ geo2.dailymotion.com##+js(trusted-set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE,
 geo2.dailymotion.com##+js(trusted-set-constant, DMP_HAS_ADS, false)
 geo2.dailymotion.com##+js(trusted-set-constant, DMP_RECOMMENDATIONS_OPTIMISATION, null)
 geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.hasAds, false)
-geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.recommendationsOptimisation, null)
 megastream.*##+js(trusted-set-constant, console.clear, undefined)
 open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "disallow_seeking":false, track-playback)
 ! open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
@@ -42,19 +42,9 @@ tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', 
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
 videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
-www.allocine.fr##+js(trusted-click-element, #didomi-host button[onclick*="Agree"], , 100)
+!www.allocine.fr##+js(trusted-click-element, #didomi-host button[onclick*="Agree"], , 100)
 ! CLICK banner cookies
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
-
-! 2024-01-24 Try fixing delay in the video player
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.ads, emptyObj)
-! 2024-01-24 Tracking
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.player.gtm.active, false)
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasStickyAds, false)
-! 2024-01-24 Tracking (prevent loading script)
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.player.mediametrie.libUrl, undefined)
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasPaywall, false)
-!www.allocine.fr,www.adorocinema.com,www.beyazperde.com,www.filmstarts.de,www.sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasDmVastFallback, false)
 
 ! ===============================================================
 ! "net" filters
