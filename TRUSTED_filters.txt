@@ -14,12 +14,16 @@
 ! "applications" filters
 ! ===============================================================
 animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
+! CLICK banner cookies
+cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
 ! [FIX] for allow play/pause on click player
 streamta.pe,streamtape.*#@#.play-overlay
 streamta.pe,streamtape.*##+js(trusted-click-element, .play-overlay)
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
 videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
+! CLICK banner cookies
+www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 
 
 ! ===============================================================
