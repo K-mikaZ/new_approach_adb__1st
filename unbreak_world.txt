@@ -313,6 +313,7 @@ cety.app#@#[class*="adsby"]
 ! https://www.adalyser.com/en/cookies
 ||adalyser.com^$badfilter
 ||fwmrm.net^$badfilter
+/ad-inserter/*$redirect-rule=noopjs
 
 @@||consents.prismamedia.com^
 !! @@||googlesyndication.com^
