@@ -2528,10 +2528,9 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#@%#//script
 
 !! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
-!! /js/script-*.js$~third-party,important,match-case,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
-@@/ad/top/popunder.js$~third-party,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
-/out.php$popup,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
-*$popup,third-party,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
+! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#popunder
+/out.php$popunder,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
+hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*$popunder
 ! 2024-01-18 https://younetu.org/js/adv/fuckadblock.js?2
 /fuckadblock.$script,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
 /js/disqusloader.js$important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
