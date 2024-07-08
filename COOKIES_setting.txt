@@ -220,11 +220,6 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove
 howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 
-! CLICK banner cookies (refuse) -----------------------------------------------------------------------------
-
-cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
-www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
-
 ! REDIRECT rules --------------------------------------------------------------------
 
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
