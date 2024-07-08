@@ -124,7 +124,7 @@ opvid.*##^script:has-text(decodeURIComponent)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 ! `*##^script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
 ! *##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
-uqload.*##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
+turbovid.*,uqload.*##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 uqload.*##^script#_wau1ww
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
