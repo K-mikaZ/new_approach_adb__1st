@@ -22,7 +22,7 @@
 
 ! 2024-01-23 - Prebid concerns: https://cdn.lib.getjad.io/index_prebid.html
 ||getjad.io/prebid/*
-!#if (adguard)
+!#if adguard
 ! 2024-01-23 [not sure working properly here] Mocks the "prebid.js" header bidding suit. <https://docs.prebid.org/>
 ! but exclude "prebid-core.js": 9518146, 70801804, 241667871, 21831724030
 ! <https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#-%EF%B8%8F-prebid>
@@ -52,7 +52,7 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 ! 2024-01-26 ~ 12:42:26 Ads concerns [ www.amandinecooking.com ](https://www.amandinecooking.com/2016/09/barres-de-cereales-maison-avoine-banane-noisettes-et-chocolat.html)
 ||assets.over-blog-kiwi.com/*/blog/*/build/ads.$script
 
-!#if (env_mobile)
+!#if env_mobile
 ! redirect to AMP (Accelerated Mobile Pages) if navigator.userAgent.indexOf('Android')>=0, see <https://static1.webedia.fr/js/gs.js>
 ||webedia.fr/js/gs.js$badfilter
 !#endif
