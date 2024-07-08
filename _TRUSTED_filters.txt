@@ -14,13 +14,13 @@
 ! ===============================================================
 ! "applications" filters
 ! ===============================================================
-6play.fr##+js(trusted-replace-xhr, *, , "fwmrm.net method:/GET|POST|HEAD/")
-6play.fr##+js(trusted-replace-fetch, *, , "fwmrm.net method:/GET|POST|HEAD/")
-6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithForm)
-6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithImage)
-6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest)
-6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest)
-6play.fr,tf1.fr##+js(trusted-replace-fetch, tv.freewheel.SDK.Util.pingURLWithScript)
+6play.fr##+js(trusted-replace-xhr-response, *, , "fwmrm.net method:/GET|POST|HEAD/")
+6play.fr##+js(trusted-replace-fetch-response, *, , "fwmrm.net method:/GET|POST|HEAD/")
+6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithForm)
+6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithImage)
+6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest)
+6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest)
+6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithScript)
 animationdigitalnetwork.fr##+js(trusted-replace-xhr-response, /freeWithAds=(?:tru|fals)e\&adaptive=(?:tru|fals)e/, /freeWithAds=false\&adaptive=true/, /player/video/)
 ! CLICK banner cookies
 cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
@@ -37,7 +37,7 @@ open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "
 ! [FIX] for allow play/pause on click player
 streamta.pe,streamtape.*#@#.play-overlay
 streamta.pe,streamtape.*##+js(trusted-click-element, .play-overlay)
-tv.youtube.com##+js(trusted-replace-xhr, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
+tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|player\?key=|watch\?v=|youtubei\/v1\/player/)
 ! [FIX] for allow play/pause on click player
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
