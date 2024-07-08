@@ -91,13 +91,13 @@ fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 
 ! [fix] for `AdGuard French filter` - because cause delays
 ! @@*$script,redirect=noopjs,to=fwmrm.net
-6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
-6play.fr,www.6play.fr#@#+js(prevent-fetch, fwmrm, method:HEAD)
+!6play.fr,www.6play.fr,france.tv#@#+js(prevent-fetch, fwmrm)
+!6play.fr,www.6play.fr#@#+js(prevent-fetch, fwmrm, method:HEAD)
 ! [fix] for `AdGuard French filter` - because many errors (and cause delays)
-6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
-6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithImage, trueFunc)
-6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest, trueFunc)
-6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest, trueFunc)
-6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithScript, trueFunc)
+!6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithForm, trueFunc)
+!6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithImage, trueFunc)
+!6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest, trueFunc)
+!6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest, trueFunc)
+!6play.fr,tf1.fr,prod-player.tf1.fr,www.6play.fr,www.tf1.fr#@#+js(set-constant, tv.freewheel.SDK.Util.pingURLWithScript, trueFunc)
 
 ! </ end comcast's ad >
