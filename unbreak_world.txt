@@ -30,9 +30,8 @@ doods.pro##+js(remove-node-text, script, /popunder/)
 @@||abtasty.com^$document
 ! 11 juin 2024 ¤¤¤ megastream.autos ¤¤¤ (https://megastream.autos/4854-hawaii-5-0-drnro/2-saison/21-episode.html)
 @@||iamcdn.net/players/jwplayer/$script,domain=abysscdn.com
-! 11 juin 2024 ¤¤¤ catalogue.darkino6.top ¤¤¤ (https://catalogue.darkino6.top/post/films/1088674-le-dernier-jaguar)
-! TIPS: "scriptsafe's canvas protection" BREAK challenges.cloudflare.com make when click button "Visionner"
-! BREAK laoding player (button "Visionner")
+! BREAK laoding player (button "Visionner") on `www.darkiworld.com` |
+!     TIPS: "scriptsafe's canvas protection" BREAK challenges.cloudflare.com make when click button "Visionner"
 @@/devtools-detector.js$from=darkibox.com
 ! 2024-01-18 fix for [ Peter Lowe’s Ad and tracking server list ]
 !  2024-01-18 prebid.org - unlock the site itself
