@@ -2493,8 +2493,7 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-! #@#a[onclick^="openAuc"]
-! #@#a[href^="mailto:support@netu.tv"]
+! IMPORTANT: always, not only if cap_html_filtering
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##a[href^="mailto:support@netu.tv"]:remove()
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##a[onclick^="openAuc"]:remove()
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#@#+js(nofab)
