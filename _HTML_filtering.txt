@@ -108,7 +108,7 @@ cinez.biz##^script:has-text(document.head.appendChild(s))
 cinez.biz,d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama.fr##^script[data-cfasync][async][src]
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(Object["prototype"])
-d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.,uqload.*##^script:has-text(;}}};break;case $.)
+d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.*,uqload.*##^script:has-text(;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/"]
 ! filemoon.*##^script:has-text(parseInt)
 forum.malekal.com##^div.ads
