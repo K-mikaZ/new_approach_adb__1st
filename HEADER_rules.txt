@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! HEADER rules --------------------------------------------------------------------
 
-! *** COOKIE ***
+! *** COOKIE blocking ***
 ||*$header=Cookie:uid_dm,important
 
 ! *** LINK ***
