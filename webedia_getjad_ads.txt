@@ -71,40 +71,11 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 
 ! 2024-01-24 Privacy concerns
 /\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
-! 2024-01-24 Try fixing delay in the video player
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.ads, {})
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.ads, emptyObj)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.ads, emptyObj)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasMqDfpFirstLevel, false)
-! 2024-01-24 Tracking
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore.clientId, '')
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.comscore, emptyObj)
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.player.gtm.active, false)
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.flags.brandHasStickyAds, false)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.player.gtm.active, false)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasStickyAds, false)
-! 2024-01-24 Tracking (prevent loading script)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.dfp.baseUrl, '')
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.dfp, emptyObj)
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.player.mediametrie.libUrl, '')
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.player.mediametrie.libUrl, undefined)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.mediametrie, emptyObj)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.player.gemius, emptyObj)
-!! site:allocine.fr - vast ads (already sets, but ensure in case)
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com#@#+js(set-constant, AC.config.flags.brandHasDmVastFallback, false)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasPaywall, false)
-allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(trusted-set-constant, AC.config.flags.brandHasDmVastFallback, false)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__ads_txt, emptyObj)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.routing.routes.allocine__app_ads_txt, emptyObj)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAffinityScore, false)
-!! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##+js(set-constant, AC.config.flags.brandHasAdsRestriction, false)
 
 ! cookies concerns
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-!allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com###didomi-host
-allocine.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-allocine.fr###didomi-host
-! https://github.com/uBlockOrigin/uAssets/issues/22871 - Accept all (https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-cookies.txt)
-allocine.fr##+js(trusted-set-cookie, euconsent-v2, CP7Tt8AP7Tt8AAHABBENArEsAP_gAEPgAAAAg1NX_H__bW9r8Xr3aft0eY1P99j77sQxBhfJE-4FzLvW_JwXx2ExNA36tqIKmRIEu3bBIQFlHJDUTVigaogVryDMakWcgTNKJ6BkiFMRM2dYCF5vmQtj-QKY5vp9d3dx2D-t_dv83dzyz8VHn3e5_2e0eJCdA58tDfv9bROb-9IPd_58v4v0_F_rk2_eT1l_tevp7B8uft87_XU-9_fff79AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQagCzDQqIA-wJCQi0HCKBACoKwgIoEAAAAJA0QEAJgwKdgYBLrCRACAFAAMEAIAAUZAAgAAAgAQiACQAoEAAEAgUAAIAAAgEABAwAAgAsBAIAAQHQIUwIAFAsAEjMiIUwIQoEggJbKBBICgQVwgCLPAAgERMFAAAAAAVgACAsFgMSSAlQkECXEG0AABAAgEEIFQgk4MAAwJGy1A4Im0ZWkAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA.f_wACHwAAAAA)
+! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
+! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com###didomi-host
+! allocine.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
+! allocine.fr###didomi-host
 
 ! < /end webedia's ads >
