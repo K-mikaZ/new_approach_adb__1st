@@ -119,6 +119,7 @@ d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(['conc
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(Object["prototype"])
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.*,uqload.*,darkibox.com##^script:has-text(;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/"]
+drtuber.com##^a.ad-title[target="_blank"][href="javascript:void(0);"]
 ! filemoon.*##^script:has-text(parseInt)
 forum.malekal.com##^div.ads
 frembed.*##^script:has-text(CDATA)
@@ -128,6 +129,10 @@ megastream.*##^div#bcklnksts
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##^script:has-text(topmailru)
 neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
+ok.xxx##^a[target="_blank"][rel="sponsored"]:upward(div)
+ok.xxx##^script[async][src*="/ad-provider.js"]
+ok.xxx##^ins[class="adsbyexoclick"]:upward(div)
+ok.xxx##^script:has-text((s,o,l,v,e,d))
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
@@ -269,6 +274,7 @@ d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(remove-node-text, s
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(remove-node-text, script, Object["prototype"])
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.,uqload.*,darkibox.com##+js(remove-node-text, script, ;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##script[src*="cloudfront.net/"]:remove()
+drtuber.com##a.ad-title[target="_blank"][href="javascript:void(0);"]:remove()
 ! filemoon.*##script:has-text(parseInt)
 forum.malekal.com##div.ads:remove()
 frembed.*##+js(remove-node-text, script, CDATA)
@@ -278,6 +284,10 @@ megastream.*##div#bcklnksts:remove()
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##+js(remove-node-text, script, topmailru)
 neko-sama.fr##a.flink[href*="hentai"]:upward(footer):remove()
+ok.xxx##a[target="_blank"][rel="sponsored"]:upward(div):remove()
+ok.xxx##script[async][src*="/ad-provider.js"]:remove()
+ok.xxx##ins[class="adsbyexoclick"]:upward(div):remove()
+ok.xxx##+js(remove-node-text, script, (s,o,l,v,e,d))
 oneupload.*##script[src*="/js/google-adsense.js"]:remove()
 opvid.*##+js(remove-node-text, script, decodeURIComponent)
 streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
