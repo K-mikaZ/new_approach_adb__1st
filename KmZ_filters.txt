@@ -2787,8 +2787,6 @@ eslint.org##.ea-type-text,.ea-placement
 filmcomplet.vip###syndic
 ghacks.net##.column-ad
 ghacks.net##.wide-ad
-google.*#@##bottomads
-google.*#@#a[href*="/aclk?"][data-al]:upward(2)
 groovypost.com##[class|="groov-adsense"]
 haenselblatt.com##p > div:if([id|=zx_ad_place])
 howtogeek.com##[class*="adslot"]
@@ -2902,7 +2900,6 @@ streamhide.to##div[style*="inset:"][style*="z-index"][style*="background"]
 /empty.srt$~third-party
 wincert.net##.primisslate
 www.addictivetips.com##.mv-ad-box
-www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
 @@||universanime.co^$generichide
 universanime.co##[src*="/bouton_ads/"]
 /bouton_ads/*$image,domain=universanime.co
