@@ -5,12 +5,15 @@
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
 
+!    https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier
+!    ||example.org^$removeheader=request:header-name
+
+
 !#if cap_html_filtering
 
 ! ===============================================================
 ! "Response header" filtering |
 !    https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
-!    https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier
 !    The syntax to remove the response header is a special case of HTML filtering, whereas the response headers are targeted rather than the response body:
 !    example.com##^responseheader(header-name)
 ! ===============================================================
