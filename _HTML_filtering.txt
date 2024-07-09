@@ -5,10 +5,6 @@
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
 
-!    https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier
-!    ||example.org^$removeheader=request:header-name
-
-
 !#if cap_html_filtering
 
 ! ===============================================================
