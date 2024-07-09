@@ -32,7 +32,9 @@ geo2.dailymotion.com##+js(trusted-set-constant, DMP_RECOMMENDATIONS_OPTIMISATION
 geo2.dailymotion.com##+js(trusted-set-constant, __PLAYER_CONFIG__.player.hasAds, false)
 megastream.*##+js(trusted-set-constant, console.clear, undefined)
 open.spotify.com##+js(trusted-replace-fetch-response, "disallow_seeking":true, "disallow_seeking":false, track-playback)
-! open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
+open.spotify.com##+js(trusted-replace-fetch-response, '/(\{"uri":"spotify:ad:.+?,"manifest"):.+?,"audio_id":/', '$1:{"file_urls_mp3":[{"bitrate":160000,"file_id":null,"file_url":"https://cdn.jsdelivr.net/gh/stephenhawk8054/external_resources@master/noop-0.1s.mp3","impression_urls":[""],"track_type":"AUDIO","format":null,"audio_quality":null,"hifi_status":null,"gain_db":null,"expires_at":null}]},"audio_id":', track-playback)
+!pornhub.com##+js(trusted-click-element, button[data-event="cookie_banner"][data-label="accept_essential"], , 500)
+!    or pornhub.com##+js(set-cookie, cookieConsent, 2)
 ! [FIX] for allow play/pause on click player
 streamta.pe,streamtape.*#@#.play-overlay
 streamta.pe,streamtape.*##+js(trusted-click-element, .play-overlay)
@@ -40,7 +42,7 @@ tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', 
 ! [FIX] for allow play/pause on click player
 videzz.net#@#.prevent-first-click
 videzz.net##+js(trusted-click-element, .prevent-first-click)
-videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
+!videzz.net##+js(trusted-set-constant, asgvastcnf_overlay.spotUrl, undefined)
 !www.allocine.fr##+js(trusted-click-element, #didomi-host button[onclick*="Agree"], , 100)
 ! CLICK banner cookies
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
@@ -49,25 +51,29 @@ www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 ! "net" filters
 ! ===============================================================
 
-! uritransform |
+! $uritransform |
 !    Can only be used in a trusted-source origin.
 !    <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#uritransform>
 ||geo2.dailymotion.com/player/*mute=true$uritransform=/mute=true/mute=false/,domain=www.allocine.fr
-||gw.api.animationdigitalnetwork.fr/player/video/*adaptive=false$uritransform=/adaptive=false/adaptive=true/,domain=animationdigitalnetwork.fr
+!||gw.api.animationdigitalnetwork.fr/player/video/*adaptive=false$uritransform=/adaptive=false/adaptive=true/,domain=animationdigitalnetwork.fr
 
 !#if cap_html_filtering
 
 !#if env_firefox || ext_ublock || adguard_ext_firefox
 ! YouTube Detection, Ads & Breakages - https://www.reddit.com/r/uBlockOrigin/comments/1atwzem/comment/ks2v27a/
 /base.js$replace=/(enabled_engage_types\}.+?;if\().+?&&(.+?\.isLivePlayback&&)/\$1true)\$2/,domain=m.youtube.com|music.youtube.com|www.youtube.com
-! *** Request Modifier <https://regex101.com/r/DkEygK/11> |
-!    https://vi.freewheel.tv/apc/samples, https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code
-!    FIX: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` | adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
+! <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo%3AAdguardTeam%2FAdguardFilters+tv%5C.freewheel%5C.SDK&type=code>
+! [FIX] because AdGuard French filter |
+!    Allow freewheel replacement on www.6play.fr
+||7cbf2.v.fwmrm.net^$badfilter
+@@||adsafeprotected.com^$domain=6play.fr
+6play.fr##+js(trusted-replace-fetch-response, '/var IASFreewheelExtension[\s\S]*=[\s\S]*/', 'var IASFreewheelExtension=()=>{return ;};', /IASFreewheelExtension.js)
+! [FIX]: for `adproxy.tf1.fr/web-tf1/ad/g/1?prof=*` because ending with `}[\r\n])` instead of `})` |
+!    adproxy.tf1.fr is `fwmrm.net tv.freewheel.SDK` for `prod-player.tf1.fr`
 !    found on: www.6play.fr => tv.freewheel.SDK._instanceQueue['Context_2']._videoAsset.requestComplete({});
 !    found on: www.tf1.fr => tv.freewheel.SDK._instanceQueue['Context_1'].requestComplete({})
-! [FIX] to allow freewheel replacement on www.6play.fr
-!||7cbf2.v.fwmrm.net^$badfilter
-tv.freewheel.sdk._instancequeue$important,replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
+!    Request Modifier <https://regex101.com/r/DkEygK/11>
+tv.freewheel.sdk._instancequeue$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
 !#endif
 
 !#endif
