@@ -4,6 +4,7 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+! <start REMOVE elements > -----------------------------------------------------------------------------------------
 
 !#if cap_html_filtering
 
@@ -314,3 +315,10 @@ www.howtogeek.com##+js(remove-node-text, script, /\.adsninja.+/)
 www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 
 !#endif
+
+! </end REMOVE elements > -----------------------------------------------------------------------------------------
+
+! https://stackoverflow.com/questions/21842373/css-selector-for-when-a-html-document-is-inside-an-iframe
+www.google.com##html:not(root) iframe#container_layer
+www.google.com##div#taw:style(padding-top: initial !important;)
+
