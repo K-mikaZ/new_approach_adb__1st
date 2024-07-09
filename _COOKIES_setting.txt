@@ -14,11 +14,11 @@
 ! *** COOKIE blocking (prevent creation) *** |
 !   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
 !   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (like `uid`) within iframes.
-||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/,important
+||*$header=Cookie:/^(?:y(?:a(?:ndexuid|bs-sid))|_ym_(?:(?:ui|isa)?d))$/
 ! scorecardresearch.com (ComScore)
-||*$header=Cookie:uid,important
+||*$header=Cookie:uid
 ! scorecardresearch.com (ComScore) used by dailymotion (like on www.allocine.fr)
-||*$header=Cookie:uid_dm,important
+||*$header=Cookie:uid_dm
 
 !#if adguard
 ! -------------------------------------------------------------------------------------------------------
