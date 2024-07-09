@@ -139,8 +139,7 @@ streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 turbovid.*##^script[src*="/api/posts?"]
 ! `*##^script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
 ! *##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
-turbovid.*,uqload.*,darkibox.com##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
-uqload.*##^script#_wau1ww
+turbovid.*,darkibox.com##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
 videzz.net##^script:has-text(vidozza.js)
@@ -294,8 +293,7 @@ streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
 turbovid.*##script[src*="/api/posts?"]:remove()
 ! `*##script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
 ! *##script:has-text(/\+\'\/[45](0[01])\/\'\+/)
-turbovid.*,uqload.*,darkibox.com##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
-uqload.*##script#_wau1ww:remove()
+turbovid.*,darkibox.com##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
 video.sibnet.ru##script[src*="//cvt1.sibnet."]:remove()
 video.sibnet.ru##script[src*="//c.sibnet."]:remove()
 videzz.net##+js(remove-node-text, script, vidozza.js)
