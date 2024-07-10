@@ -9,6 +9,7 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Invalid filter (in console) when loading as list, but works in personal filters.
 !     Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_TRUSTED_filters.txt
+!     https://github.com/gorhill/uBlock/wiki/Advanced-settings#trustedlistprefixes
 !     https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
