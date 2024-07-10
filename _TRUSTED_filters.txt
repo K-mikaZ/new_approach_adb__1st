@@ -23,7 +23,7 @@
 !6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest)
 !6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithScript)
 ! CLICK banner cookies
-cookiesearch.org##+js(trusted-click-element, button[data-cky-tag="reject-button"], , 200)
+cookiesearch.org##+js(trusted-click-element, button[data-cky-tag*="reject-button"][aria-label="Reject All"], , 200)
 geo2.dailymotion.com#@#+js(set-constant, dmCookie3rdPartyAllowed, false)
 geo2.dailymotion.com##+js(trusted-set-constant, dmCookie3rdPartyAllowed, false)
 geo2.dailymotion.com##+js(trusted-set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
