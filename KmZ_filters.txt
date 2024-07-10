@@ -2041,9 +2041,6 @@ search.lilo.org##.top.addivwhite2
 ||d1grmk7aafb6ck.cloudfront.net^$third-party,media
 /async-ads.js$script,important
 tubeon.com##.drt-spot-visible.no-buttons.drt-spot-box
-google.com##.uEierd
-google.com###tadsb
-google.com###bottomads
 timeanddate.com###ad1
 timeanddate.com###ad300
 pngwing.com##.list_ads
