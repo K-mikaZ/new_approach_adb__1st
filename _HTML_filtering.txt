@@ -319,6 +319,6 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 ! https://stackoverflow.com/questions/21842373/css-selector-for-when-a-html-document-is-inside-an-iframe
+www.google.com#$#div#taw{padding-top: initial !important;}
 www.google.com##html:not(root) iframe#container_layer
-www.google.com##div#taw:style(padding-top: initial !important;)
 
