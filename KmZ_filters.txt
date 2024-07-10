@@ -24,6 +24,9 @@
 
 ! ======= MISC =======
 
+! [FIX] for ads display on google search
+gum-service.azurewebsites.net##+js(abort-current-inline-script, Advp)
+
 !#if adguard
 ! 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
 !! break site loading
