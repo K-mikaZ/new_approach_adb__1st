@@ -54,7 +54,7 @@ www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 ! $uritransform |
 !    Can only be used in a trusted-source origin.
 !    <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#uritransform>
-||geo2.dailymotion.com/player/*mute=true$uritransform=/mute=true/mute=false/,domain=www.allocine.fr
+||dailymotion.com/player/*mute=true$uritransform=/mute=true/mute=false/,domain=www.allocine.fr
 !||gw.api.animationdigitalnetwork.fr/player/video/*adaptive=false$uritransform=/adaptive=false/adaptive=true/,domain=animationdigitalnetwork.fr
 
 !#if cap_html_filtering
