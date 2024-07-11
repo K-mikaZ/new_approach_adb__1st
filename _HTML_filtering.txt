@@ -319,7 +319,8 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 ! test on: |
-!    <https://www.google.com/search?client=firefox-b-d&q=fruit+baies+palmiers+manger>
+!    <https://www.google.com/search?q=best+android+apps+open+source+for+scanning+qr+code>
+!    <https://www.google.com/search?q=fruit+baies+palmiers+manger>
 !    <https://www.google.com/search?q=a%C3%A7a%C3%AF>
 ! ads iframe content |
 !    BAD: blocking or removing `search.web-explore.com`, `gum-service.azurewebsites.net` or `waws-prod-par-001.francecentral.cloudapp.azure.com`
@@ -332,8 +333,9 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 /w+\.go+gle(?:\.com)?\.(.{2,3})/##html:not(root) iframe#container_layer[src]
 ! `iframe#container_layer[src*="gum-service.azurewebsites.net"]` use `#taw` for display ads
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##div#taw
-! [FIX] https://www.google.com/search?q=a%C3%A7a%C3%AF (when remove iframe#container_layer[src*="gum-service.azurewebsites.net"])
+! [FIX] when remove iframe#container_layer on <https://www.google.com/search?q=a%C3%A7a%C3%AF>
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##div#search:style(padding-top: initial !important;)
+
 ! (cu === commercial unit (Sponsorised)): .cu-container, [class*="commercial-unit-"]
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##.cu-container
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##div[data-pla="1"]:upward([class*="commercial-unit-"])
