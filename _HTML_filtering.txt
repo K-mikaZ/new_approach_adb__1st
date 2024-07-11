@@ -317,8 +317,24 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 !#endif
 
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
-
+! test on: |
+!    <https://www.google.com/search?client=firefox-b-d&q=fruit+baies+palmiers+manger>
+!    <https://www.google.com/search?q=a%C3%A7a%C3%AF>
 ! https://stackoverflow.com/questions/21842373/css-selector-for-when-a-html-document-is-inside-an-iframe
-www.google.com#$#div#taw{padding-top: initial !important;}
-www.google.com##html:not(root) iframe#container_layer
-
+/w+\.go+gle(?:\.com)?\.(.{2,3})/##html:not(root) iframe#container_layer[src]
+! `iframe#container_layer[src*="gum-service.azurewebsites.net"]` use `#taw` for display ads
+/w+\.go+gle(?:\.com)?\.(com|.{2})/##div#taw
+! hide the iframe content |
+!    blocking  `waws-prod-par-001.francecentral.cloudapp.azure.com` (cname of gum-service.azurewebsites.net) is more simple but create more delay. Only hide html content when all loaded.
+!    BAD: search.web-explore.com##^html
+!         gum-service.azurewebsites.net##iframe:remove()
+@@||gum-service.azurewebsites.net^$cname
+@@$subdocument,domain=gum-service.azurewebsites.net|waws-prod-par-001.francecentral.cloudapp.azure.com
+! [FIX] https://www.google.com/search?q=a%C3%A7a%C3%AF (when remove iframe#container_layer[src*="gum-service.azurewebsites.net"])
+/w+\.go+gle(?:\.com)?\.(com|.{2})/##div#search:style(padding-top: initial !important;)
+! (cu === commercial unit (Sponsorised)): .cu-container, [class*="commercial-unit-"]
+/w+\.go+gle(?:\.com)?\.(com|.{2})/##.cu-container
+/w+\.go+gle(?:\.com)?\.(com|.{2})/##div[data-pla="1"]:upward([class*="commercial-unit-"])
+! from easylist: #tads[aria-label], #tadsb[aria-label]
+/w+\.go+gle(?:\.com)?\.(com|.{2})/##div[id^="tads"][aria-label]:upward(div[id$="tvcap"])
+!/w+\.go+gle(?:\.com)?\.(com|.{2})/###bottomads
