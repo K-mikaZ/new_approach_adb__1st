@@ -12,10 +12,10 @@
 ##.overlay-newsletter
 
 ! "specific" filters
-!#if cap_html_filtering
-www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
-!#endif
-www.moneyvox.fr##.js-listener-popin-nopub-newsletter-restrict:remove()
+www.moneyvox.fr###top:style(overflow: visible !important;)
+www.moneyvox.fr###sbox-window
+www.moneyvox.fr###sbox-overlay
+www.moneyvox.fr###sbox-content
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
 ! 2024-05-15 ¤¤¤ www.casayoga.tv ¤¤¤ (https://www.casayoga.tv/blog/recettes-ayurvedique-yoga/ayurveda-recette-lait-d-or-golden-milk)
