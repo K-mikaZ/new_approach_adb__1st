@@ -12,6 +12,7 @@
 ##.overlay-newsletter
 
 ! "specific" filters
+! www.moneyvox.fr (some filter on _HTML_filtering.txt)
 www.moneyvox.fr###top:style(overflow: visible !important;)
 www.moneyvox.fr###sbox-window
 www.moneyvox.fr###sbox-overlay
