@@ -6,6 +6,7 @@
 
 ! <start REMOVE elements > -----------------------------------------------------------------------------------------
 
+
 !#if cap_html_filtering
 
 ! ===============================================================
@@ -159,6 +160,7 @@ www.howtogeek.com##^script[src*="sentinelbi."]
 www.howtogeek.com##^script:has-text(/\.an_sn.*/)
 www.howtogeek.com##^script:has-text(/\.adsninja.+/)
 www.howtogeek.com##^script:has-text(websiteSentinel)
+www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
 
 ! ===============================================================
 ! "unbreak" filters
@@ -313,6 +315,7 @@ www.howtogeek.com##script[src*="sentinelbi."]:remove()
 www.howtogeek.com##+js(remove-node-text, script, /\.an_sn.*/)
 www.howtogeek.com##+js(remove-node-text, script, /\.adsninja.+/)
 www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
+www.moneyvox.fr##.js-listener-popin-nopub-newsletter-restrict:remove()
 
 !#endif
 
