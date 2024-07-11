@@ -317,6 +317,7 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 !#endif
 
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
+
 ! test on: |
 !    <https://www.google.com/search?client=firefox-b-d&q=fruit+baies+palmiers+manger>
 !    <https://www.google.com/search?q=a%C3%A7a%C3%AF>
