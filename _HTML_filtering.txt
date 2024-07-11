@@ -326,7 +326,8 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 !    BAD: blocking or removing `search.web-explore.com`, `gum-service.azurewebsites.net` or `waws-prod-par-001.francecentral.cloudapp.azure.com`
 !    blocking `waws-prod-par-001.francecentral.cloudapp.azure.com` (cname of gum-service.azurewebsites.net) is more simple but create more delay.
 !    Only hide html content when all loaded
-!    Google `iframe#container_layer` (with overflow, that create more delay when removed) uses `iframe[src*="gum-service.azurewebsites.net"]` which nests `iframe[src*="search.web-explore.com"]`, a real lego game.
+!    Google `iframe#container_layer` (with overflow) uses `iframe[src*="gum-service.azurewebsites.net"]` which nests `iframe[src*="search.web-explore.com"]`, a real lego game.
+! IMPORTANT: removing items create more delay (2 times longer for me) than hide them because of overflow from iframe that calculate height of each items
 @@||gum-service.azurewebsites.net^$cname
 @@$subdocument,domain=gum-service.azurewebsites.net|waws-prod-par-001.francecentral.cloudapp.azure.com
 ! https://stackoverflow.com/questions/21842373/css-selector-for-when-a-html-document-is-inside-an-iframe
