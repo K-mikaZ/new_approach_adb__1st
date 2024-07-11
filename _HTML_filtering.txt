@@ -20,7 +20,7 @@
 ! ===============================================================
 *##^img[src*="histats.com"]
 *##^img[src*="top-fwz1.mail.ru/counter"]
-ok.xxx##^img[src*="//counter.yadro.ru"]:upward(a[href][target])
+ok.xxx##^a[href][target]:has(>img[src*="//counter.yadro.ru"])
 
 ! ===============================================================
 ! "generic" filters
@@ -58,7 +58,7 @@ ok.xxx##^img[src*="//counter.yadro.ru"]:upward(a[href][target])
 *##^iframe[src*="doubleclick"]
 *##^ins[class*="adsby"][data-ad-slot]
 *##^ins[class*="adsby"][data-ad-client]
-*##^ins[class*="adsby"]:upward(center)
+*##^center:has(> ins[class*="adsby"])
 ! *##^script:has-text(+'/tag.min.js')
 *##^script:has-text(devtoolIsOpening)
 *##^script:has-text(popmagicldr)
@@ -101,15 +101,15 @@ ok.xxx##^img[src*="//counter.yadro.ru"]:upward(a[href][target])
 ! "generic" filters - on french sites
 ! ===============================================================
 *##^div#pub
-*##^a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class])
-*##^a[href*="/regarder."]:upward(center)
+*##^div[class]:has(> a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/))
+*##^center:has(> a[href*="/regarder."])
 ! `div[class*="btn"]` or `div[class*="button"]`
-*##^a[href*="/regarder."]:upward(div[class*="button"])
-*##^a[href*="/regarder."]:upward(div[class*="big"][class*="btn"])
+*##^div[class*="button"]:has(> a[href*="/regarder."])
+*##^div[class*="big"][class*="btn"]:has(> a[href*="/regarder."])
 ! *##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-*##^a[href*="premium"]:upward(div[class*="movie_"])
-*##^a[href*="premium"][href*=".php"][target]:upward(div[class])
-*##^a[href*="streaming"][href*=".php"][target]:upward(div[class])
+*##^div[class*="movie_"]:has(> a[href*="premium"])
+*##^div[class]:has(> a[href*="premium"][href*=".php"][target])
+*##^div[class]:has(> a[href*="streaming"][href*=".php"][target])
 
 ! ===============================================================
 ! "specific" filters
@@ -129,10 +129,10 @@ malekal.com##^div.Here
 megastream.*##^div#bcklnksts
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##^script:has-text(topmailru)
-neko-sama.fr##^a.flink[href*="hentai"]:upward(footer)
-ok.xxx##^a[target="_blank"][rel="sponsored"]:upward(div)
+neko-sama.fr##^footer:has(> a.flink[href*="hentai"])
+ok.xxx##^div:has(> a[target="_blank"][rel="sponsored"])
 ok.xxx##^script[async][src*="/ad-provider.js"]
-ok.xxx##^ins[class="adsbyexoclick"]:upward(div)
+ok.xxx##^div:has(> ins[class="adsbyexoclick"])
 ok.xxx##^script:has-text((s,o,l,v,e,d))
 oneupload.*##^script[src*="/js/google-adsense.js"]
 opvid.*##^script:has-text(decodeURIComponent)
@@ -175,7 +175,7 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! ===============================================================
 *##img[src*="histats.com"]:remove()
 *##img[src*="top-fwz1.mail.ru/counter"]:remove()
-ok.xxx##img[src*="//counter.yadro.ru"]:upward(a[href][target]):remove()
+ok.xxx##a[href][target]:has(> img[src*="//counter.yadro.ru"]):remove()
 
 ! ===============================================================
 ! "generic" filters
@@ -213,7 +213,7 @@ ok.xxx##img[src*="//counter.yadro.ru"]:upward(a[href][target]):remove()
 *##iframe[src*="doubleclick"]:remove()
 *##ins[class*="adsby"][data-ad-slot]:remove()
 *##ins[class*="adsby"][data-ad-client]:remove()
-*##ins[class*="adsby"]:upward(center):remove()
+*##center:has(> ins[class*="adsby"]):remove()
 *##+js(remove-node-text, script, +'/tag.min.js')
 *##+js(remove-node-text, script, devtoolIsOpening)
 *##+js(remove-node-text, script, popmagicldr)
@@ -283,7 +283,7 @@ malekal.com##div.Here:remove()
 megastream.*##div#bcklnksts:remove()
 ! Rating@Mail.ru counter `topmailru for top-fwz1.mail.ru`
 my.mail.ru##+js(remove-node-text, script, topmailru)
-neko-sama.fr##a.flink[href*="hentai"]:upward(footer):remove()
+neko-sama.fr##footer:has(> a.flink[href*="hentai"]):remove()
 ok.xxx##a[target="_blank"][rel="sponsored"]:upward(div):remove()
 ok.xxx##script[async][src*="/ad-provider.js"]:remove()
 ok.xxx##ins[class="adsbyexoclick"]:upward(div):remove()
