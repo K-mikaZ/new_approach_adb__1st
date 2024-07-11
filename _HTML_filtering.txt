@@ -336,7 +336,7 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 ! [FIX] when remove iframe#container_layer on <https://www.google.com/search?q=a%C3%A7a%C3%AF>
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##div#search:style(padding-top: initial !important;)
 
-! (cu === commercial unit (Sponsorised)): .cu-container contains [class*="commercial-unit-"]
+! (cu === commercial unit (Sponsorised)): .cu-container contains [class*="commercial-unit-desktop-"],  [class*="commercial-unit-mobile-"]...
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##.cu-container
 ! from easylist: #tads[aria-label], #tadsb[aria-label] has [aria-label="Annonces"]
 /w+\.go+gle(?:\.com)?\.(com|.{2})/##div[id$="tvcap"] > div[id^="tads"][aria-label]:upward(div[id$="tvcap"])
