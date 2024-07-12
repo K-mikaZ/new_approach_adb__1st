@@ -6,4 +6,4 @@
 ! Break loading site because of overflow
 latribune.fr#@?##newsletter-register-modal:remove()
 www.comment-economiser.fr#?##overlay_blockNL:remove()
-www.moneyvox.fr#?#.js-listener-popin-nopub-newsletter-restrict:remove()
+www.moneyvox.fr#?#[class^="js-listener"][class*="newsletter"]:remove()
