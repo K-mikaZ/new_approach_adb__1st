@@ -8,6 +8,11 @@
 ! Description: My first blocking list.
 !
 
+
+
+! ======[ INCLUDES ]=====================================================
+! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
+
 ! ======= HEADER rules =======
 !#include _HEADER_rules.txt
 
@@ -20,8 +25,20 @@
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
 
+!#include common_utils/lists/%E2%9C%97to_block/others/websockets.txt
+!#include common_utils/lists/%E2%9C%97to_block/others/no_webrtc.txt
 
-! ======= MISC =======
+!#include comcast_freewheel_stickyadstv_ads.txt
+!#include comscore_analytics.txt
+!#include ezoic_ads.txt
+!#include newsletters_blocklist.txt
+!#include sibnet_ads_and_trackers.txt
+!#include vast_vmap.txt
+!#include webedia_getjad_ads.txt
+!#include unbreak_world.txt
+
+
+! =======[ MISC ]=====================================================
 
 ! [FIX] for ads display on google search
 gum-service.azurewebsites.net##+js(abort-current-inline-script, Advp)
@@ -3959,21 +3976,6 @@ accounts.google.com/gsi/iframe$badfilter
 ||serving-sys.com^$media,redirect=noop-1s.mp4
 !! ||videos-pub.ftv-publicite.fr^/*.mp4$redirect=noop-1s.mp4,important
 !! ||ftv-publicite.fr^$media,redirect-rule=noop-1s.mp4,important
-
-! ======[ INCLUDES ]=====================================================
-! see < https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#preprocessor-directives >
-
-!#include ./common_utils/lists/%E2%9C%97to_block/others/websockets.txt
-!#include ./common_utils/lists/%E2%9C%97to_block/others/no_webrtc.txt
-
-!#include comcast_freewheel_stickyadstv_ads.txt
-!#include comscore_analytics.txt
-!#include ezoic_ads.txt
-!#include newsletters_blocklist.txt
-!#include sibnet_ads_and_trackers.txt
-!#include vast_vmap.txt
-!#include webedia_getjad_ads.txt
-!#include unbreak_world.txt
 
 
 ! ======[ EOF ]==========================================================
