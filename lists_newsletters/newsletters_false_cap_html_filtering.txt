@@ -1,3 +1,3 @@
+latribune.fr#@?##newsletter-register-modal:remove()
 www.comment-economiser.fr#?##overlay_blockNL:remove()
-www.latribune.fr#@?##newsletter-register-modal:remove()
 www.moneyvox.fr#?#.js-listener-popin-nopub-newsletter-restrict:remove()
