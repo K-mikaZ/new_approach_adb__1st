@@ -15,31 +15,14 @@
 !#endif
 
 ! "generic" filters
-#@#.section-newsletter
-##.overlay-newsletter
+!#include newsletters_generic_filters.txt
 
 ! "specific" filters
-nicrunicuit.com##.active.mailpoet_form_slide_in
-reflectoring.io##.popup-xs
-! 2024-05-15 ¤¤¤ www.casayoga.tv ¤¤¤ (https://www.casayoga.tv/blog/recettes-ayurvedique-yoga/ayurveda-recette-lait-d-or-golden-milk)
-www.casayoga.tv###modal-newsletter
-www.casayoga.tv##.modal-open:style(overflow: visible !important;)
-www.casayoga.tv##.in.modal-backdrop
-! https://stackoverflow.com/a/46533865
-www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
-www.femmeactuelle.fr##.newsletter-dialog
-www.femmeactuelle.fr##html:style(overflow: visible !important;)
-www.medisite.fr##.mf-loaded.mf-notification-iframe
+!#include newsletters_specific_filters.txt
 
 ! "applications" filters
-! FIX: Newsletter popup with "+js(overlay-buster)"
-atelier-fermentation.com,brightsec.com,cuisine-saine.fr,effetph.com,frontendgenius.com,happypapilles.fr,healthyalie.com,ikeahackers.net,iletaitunefoislapatisserie.com,jevaisvouscuisiner.com,menu-vegetarien.com,planetevegan.com,poiscaille.fr,revolutionfermentation.*,simplementfrais.com,tangerinezest.com,unpasplusvert.fr,vapotestyle.fr,www.750g.com,www.academiedugout.fr,www.comment-economiser.fr,www.crack-cafes.fr,www.debic.com,www.femmeactuelle.fr,www.france-mineraux.fr,www.guideastuces.com,www.kpourkatrine.com,www.lanutrition.fr,www.larecolte.fr,www.lekaba.fr,www.lesechos.fr,www.marechal-fraicheur.fr,www.moulinex.fr,www.okay.eu,www.pharmamarket.fr,www.rasage-classique.com,www.saveeat.co,www.vracethik.fr##+js(overlay-buster)
+!#include newsletters_applications_filters.txt
 
 ! "net" filters
-! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
-@@||www.moneyvox.fr/newsletter/*$frame
-/[Nn]ewslet{2}er/$domain=www.750g.com
-/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
-*modalnewsletter$from=www.programme-tv.net|www.programme.tv
-||forms.soundestlink.com^$from=matteoscoffee.com
+!#include newsletters_net_filters.txt
 
