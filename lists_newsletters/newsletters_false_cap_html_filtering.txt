@@ -1,8 +1,8 @@
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-/^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/#?##poool-widget:remove()
-/^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/#?#script[data-vendor*=":poool-"]:remove()
-/^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/#?#[data-poool]:remove()
+*#?##poool-widget:remove()
+*#?#script[data-vendor*=":poool-"]:remove()
+*#?#[data-poool]:remove()
 latribune.fr#?##newsletter-register-modal:remove()
 www.comment-economiser.fr#?##overlay_blockNL:remove()
 www.moneyvox.fr#?#.js-listener-popin-nopub-newsletter-restrict:remove()
