@@ -1,6 +1,9 @@
+*modalnewsletter$from=www.programme-tv.net|www.programme.tv
 ! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
 @@||www.moneyvox.fr/newsletter/*$frame
-/[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
-*modalnewsletter$from=www.programme-tv.net|www.programme.tv
+/[Nn]ewslet{2}er/$domain=www.750g.com
 ||forms.soundestlink.com^$from=matteoscoffee.com
+! ADVANCED_PAYWALL |
+!    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
+||poool.fr^
