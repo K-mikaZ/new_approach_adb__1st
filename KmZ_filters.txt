@@ -26,17 +26,18 @@
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
 
-!#include common_utils/lists/%E2%9C%97to_block/others/websockets.txt
-!#include common_utils/lists/%E2%9C%97to_block/others/no_webrtc.txt
 
+!#include newsletters_blocklist.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include comscore_analytics.txt
 !#include ezoic_ads.txt
-!#include newsletters_blocklist.txt
 !#include sibnet_ads_and_trackers.txt
-!#include vast_vmap.txt
 !#include webedia_getjad_ads.txt
+!#include vast_vmap.txt
 !#include unbreak_world.txt
+
+!#include common_utils/lists/%E2%9C%97to_block/others/websockets.txt
+!#include common_utils/lists/%E2%9C%97to_block/others/no_webrtc.txt
 
 
 ! =======[ MISC ]=====================================================
