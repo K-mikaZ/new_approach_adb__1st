@@ -7,8 +7,12 @@
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
 ! Description: Annoying newsletters blocklist
 
+
+!#if cap_html_filtering
 !#include newsletters_true_cap_html_filtering.txt
+!#else
 !#include newsletters_false_cap_html_filtering.txt
+!#endif
 
 ! "generic" filters
 #@#.section-newsletter
@@ -23,26 +27,11 @@ www.casayoga.tv##.modal-open:style(overflow: visible !important;)
 www.casayoga.tv##.in.modal-backdrop
 ! https://stackoverflow.com/a/46533865
 www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
-!#if cap_html_filtering
-www.comment-economiser.fr##^#overlay_blockNL
-!#else
-www.comment-economiser.fr#?##overlay_blockNL:remove()
-!#endif
 www.femmeactuelle.fr##.newsletter-dialog
 www.femmeactuelle.fr##html:style(overflow: visible !important;)
-!#if cap_html_filtering
-www.latribune.fr##^#newsletter-register-modal
-!#else
-www.latribune.fr#?##newsletter-register-modal:remove()
-!#endif
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 ! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
 @@||www.moneyvox.fr/newsletter/*$frame
-!#if cap_html_filtering
-www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
-!#else
-www.moneyvox.fr#?#.js-listener-popin-nopub-newsletter-restrict:remove()
-!#endif
 
 ! "applications" filters
 ! FIX: Newsletter popup with "+js(overlay-buster)"
