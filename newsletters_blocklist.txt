@@ -13,6 +13,9 @@
 !#include lists_newsletters/newsletters_false_cap_html_filtering.txt
 !#endif
 
+! "cookies" filters ------------------------------------------------------
+!#include lists_newsletters/newsletters_cookies_filters.txt
+
 ! "generic" filters ------------------------------------------------------
 !#include lists_newsletters/newsletters_generic_filters.txt
 
