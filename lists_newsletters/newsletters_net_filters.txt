@@ -5,4 +5,4 @@
 /[Nn]ewslet{2}er/$domain=www.750g.com
 ||forms.soundestlink.com^$from=matteoscoffee.com
 ! ADVANCED_PAYWALL
-||poool.fr^
+||poool.fr^$3p
