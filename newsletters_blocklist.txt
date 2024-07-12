@@ -12,12 +12,16 @@
 !#else
 !#include newsletters_false_cap_html_filtering.txt
 !#endif
+
 ! "generic" filters ------------------------------------------------------
 !#include newsletters_generic_filters.txt
+
 ! "specific" filters ------------------------------------------------------
 !#include newsletters_specific_filters.txt
+
 ! "applications" filters ------------------------------------------------------
 !#include newsletters_applications_filters.txt
+
 ! "net" filters ------------------------------------------------------
 !#include newsletters_net_filters.txt
 
