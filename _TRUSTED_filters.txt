@@ -9,7 +9,6 @@
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Invalid filter (in console) when loading as list, but works in personal filters.
 !     Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_TRUSTED_filters.txt
-!     https://github.com/gorhill/uBlock/wiki/Advanced-settings#trustedlistprefixes
 !     https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md
 ! ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
@@ -23,8 +22,20 @@
 !6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.sendAdRequestWithXMLHTTPRequest)
 !6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithXMLHTTPRequest)
 !6play.fr,tf1.fr##+js(trusted-replace-fetch-response, tv.freewheel.SDK.Util.pingURLWithScript)
+
+! Pour regarder l’ensemble des programmes et le direct, vous devez accepter les cookies.
+!www.tf1.fr##+js(trusted-set-cookie, didomi_cookies, 'essential,analytics,marketing,social',,, reload, 1)
+www.tf1.fr##+js(trusted-set-cookie, didomi_cookies, 'essential,analytics')
+www.tf1.fr##+js(trusted-set-cookie, didomi_token, eyJ1c2VyX2lkIjoiMTkwYTM1NzAtMjE0MS02OWMzLThmNTItYWExOTk1ZjYyOTZkIiwiY3JlYXRlZCI6IjIwMjQtMDctMTFUMTk6NDg6MjYuNzcyWiIsInVwZGF0ZWQiOiIyMDI0LTA3LTExVDE5OjUwOjE0LjI1MloiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJlbmFibGVkIjpbImdlb2xvY2F0aW9uX2RhdGEiLCJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIiwicGVyc29ubmFsaS15ZjJuamdiciIsInB1YmxpY2l0ZS1jaWRKRmJ5YSIsInJlc2VhdXhzby1VZk56RTN4ZyIsIm1lc3VyZWRhLW1uNHpmV1U2Il19LCJ2ZW5kb3JzIjp7ImRpc2FibGVkIjpbImdvb2dsZSIsImM6dGYxLUJBS0tWelZNIl19LCJ2ZW5kb3JzX2xpIjp7ImRpc2FibGVkIjpbImM6dGYxLUJBS0tWelZNIl19fQ==,,, reload, 1)
+www.tf1.fr##+js(trusted-set-local-storage-item, euconsent-v2, CQBl0UAQBl0UAAHABBENA8EsAP_gAAAAAAqIAAAAAADFIAMAAQUrHQAYAAgpWQgAwABBSslABgACClYSADAAEFKy0AGAAIKVgAAA.f_wAAAAAAAAA,,, reload, 1)
 ! CLICK banner cookies
 cookiesearch.org##+js(trusted-click-element, button[data-cky-tag*="reject-button"][aria-label="Reject All"], , 200)
+! cookies: reject all
+ileauxepices.com##+js(trusted-set-cookie, ets_am_customer_reward_tab, undefined)
+ileauxepices.com##+js(trusted-set-cookie, euconsent-v2, CQBihYAQBihYABcAKDFRA8EgAAAAAAAAAAqIIzQAARmgAAAA.yAMbVNg,,, reload, 1)
+ileauxepices.com##+js(trusted-set-local-storage-item, sddan:cmp:stc, CQBihYAQBihYABcAKDFRA8EgAAAAAAAAAAqIIzQAARmgAAAA.yAMbVNg)
+ileauxepices.com##+js(trusted-set-local-storage-item, sddan:cmp:stc:ts, $now$)
+ileauxepices.com##+js(trusted-set-local-storage-item, sddan:cmp, {"lp":$now$})
 geo2.dailymotion.com#@#+js(set-constant, dmCookie3rdPartyAllowed, false)
 geo2.dailymotion.com##+js(trusted-set-constant, dmCookie3rdPartyAllowed, false)
 geo2.dailymotion.com##+js(trusted-set-constant, DMP_COOKIES_3RD_PARTY_AVAILABLE, false)
@@ -47,6 +58,9 @@ videzz.net##+js(trusted-click-element, .prevent-first-click)
 !www.allocine.fr##+js(trusted-click-element, #didomi-host button[onclick*="Agree"], , 100)
 ! CLICK banner cookies
 www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
+! https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html
+www.latribune.fr##+js(trusted-set-cookie, euconsent-v2, CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA)
+www.latribune.fr##+js(trusted-set-cookie, didomi_token, eyJ1c2VyX2lkIjoiMTkwYTYxOTUtZDY1Mi02YTcxLWI5ODMtNDU2ODAwZDI0ZTkzIiwiY3JlYXRlZCI6IjIwMjQtMDctMTJUMDg6Mzk6NTguNTY1WiIsInVwZGF0ZWQiOiIyMDI0LTA3LTEyVDA4OjQ0OjI1LjU2MFoiLCJ2ZXJzaW9uIjoyLCJwdXJwb3NlcyI6eyJkaXNhYmxlZCI6WyJkZXZpY2VfY2hhcmFjdGVyaXN0aWNzIiwiZ2VvbG9jYXRpb25fZGF0YSIsImF1ZGllbmNlbS14ZWRlVTJnUSJdfSwidmVuZG9ycyI6eyJkaXNhYmxlZCI6WyJnb29nbGUiLCJjOnlvdXR1YmUiLCJjOmFiLXRhc3R5IiwiYzp3eXNpc3RhdCIsImM6cGFyc2VseSIsImM6YWN4aW9tIiwiYzpvd25wYWdlIiwiYzppcHJvbSIsImM6cG9vb2wtVnloQ2l0N04iLCJjOmluZmVjdGlvdXMtbWVkaWEiLCJjOnZpZGVvbG9neSIsImM6cmVhbHl0aWNzLUFnd2hLYjltIiwiYzphdGludGVybmUtY1dRS0hlSloiLCJjOmFidGFzdHkyLWl6akpSTUVpIiwiYzpwb29vbC1XR01mN3JoQyIsImM6Z29vZ2xlYW5hLTRUWG5KaWdSIiwiYzpzb2Npb21hbnRpLW1NVEc4eGc0IiwiYzppZ25pdGlvbmEtVjRrZ2F3eXgiLCJjOnVucnVseWdyby1uS3lMcWRLaSIsImM6cGVyc29uYWx5LURRMkVwTUg3IiwiYzpzZWxsaWdlbnQtZmduVExyYWYiLCJjOmltcGFjdHRlYy0zNmJpQk03VyIsImM6dnVibGUtY01DSlZ4NGUiLCJjOnBsYXRmb3JtMzYtUVZVZVIzS1kiLCJjOmp3LXBsYXllciIsImM6eWllbGRsaWZ0LWdZN1FVUVBVIiwiYzp0aW1laG9waW4tdFZ6dG13OEIiLCJjOnViZXJtZWRpYS1GanpBQXdYVSIsImM6aGF2YXNtZWRpLUJBRzdwSkRlIiwiYzpkeW5hZG1pYy1Ya2JCdGVKRCIsImM6ZGlnaWRpcGdtLTNMQWNMaGhLIiwiYzpkZWVwaW50ZW4tWWdkbmlLWDciLCJjOnVwd2F2ZWluYy02Q3FZTGlSUSIsImM6bW50bi00NmltRG1FYSIsImM6YWN4aW9tLTljRUVCZWc4IiwiYzpzb2plcm5pbmMtMnhwY0dQNk0iLCJjOmFkY29sb255LWNndHkyOFpBIiwiYzpkaWdpdGFsZWEtNlhHZU1KVGUiLCJjOnByZWJpZG9yZy1IaWppcllkYiIsImM6bmFub2ludGVyLXE0OWpiN0V0IiwiYzpiZWFjaGZyb250LVhZZEFMeTl5IiwiYzprYXl6ZW4tZTNoSmJtYlIiLCJjOnNpcmRhdGFjby15N3ppN0VKYiIsImM6anN3ZWJwcm8telVDa1VXUlciLCJjOnNwZWFyYWRnLVViNEpIWmUzIiwiYzpzb3VyY2Vwb2luLWZIM1lWN3FVIiwiYzptb2JpbGVmdXMteVVueHhZdEciLCJjOm1lZGlhbWF0aC13SlF3VEFaMiIsImM6emFtbmV0d29yLVczWTRCcXA5IiwiYzpkbmFpY29tLVlIZUVyREdDIiwiYzp2aWV3ZGVvczItRXhteGdjQVEiLCJjOmthaXJpb25nbS1WRjZDQ1Y3MiIsImM6ZG1haW5zdGl0LU5ScTJBS2NDIiwiYzpjbGluY2hsYWItOEE3d3hUOEciLCJjOmlnbml0aW9uby1MVkFNWmRuaiIsImM6YmF0Y2gtZjZleG5VZmYiLCJjOmRhaWx5bW90aW8tYUpYYnFIOFkiLCJjOnNhbGVzZm9yY2UtOVBIVnAyRUEiXX0sInZlbmRvcnNfbGkiOnsiZGlzYWJsZWQiOlsiZ29vZ2xlIiwiYzppbmZlY3Rpb3VzLW1lZGlhIiwiYzp2aWRlb2xvZ3kiLCJjOnJlYWx5dGljcy1BZ3doS2I5bSIsImM6c29jaW9tYW50aS1tTVRHOHhnNCIsImM6aWduaXRpb25hLVY0a2dhd3l4IiwiYzp2dWJsZS1jTUNKVng0ZSIsImM6cGxhdGZvcm0zNi1RVlVlUjNLWSIsImM6anctcGxheWVyIiwiYzpoYXZhc21lZGktQkFHN3BKRGUiLCJjOmRtYWluc3RpdC1OUnEyQUtjQyIsImM6aWduaXRpb25vLUxWQU1aZG5qIl19LCJhYyI6IkFBQUEuQUFBQSJ9)
 
 ! ===============================================================
 ! "net" filters
@@ -57,6 +71,7 @@ www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 !    <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#uritransform>
 ||dailymotion.com/player/*mute=true$uritransform=/mute=true/mute=false/,domain=www.allocine.fr
 !||gw.api.animationdigitalnetwork.fr/player/video/*adaptive=false$uritransform=/adaptive=false/adaptive=true/,domain=animationdigitalnetwork.fr
+
 
 !#if cap_html_filtering
 
