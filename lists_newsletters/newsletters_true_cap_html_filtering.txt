@@ -3,6 +3,6 @@
 /^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/##^#poool-widget
 /^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/##^script[data-vendor*=":poool-"]
 /^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/##^[data-poool]
-!latribune.fr#@#^#newsletter-register-modal
+latribune.fr##^#newsletter-register-modal
 www.comment-economiser.fr##^#overlay_blockNL
 www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
