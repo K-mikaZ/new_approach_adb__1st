@@ -3,6 +3,6 @@
 *##^#poool-widget
 *##^script[data-vendor*=":poool-"]
 *##^[data-poool]
-latribune.fr##^#newsletter-register-modal
+latribune.fr#@#^#newsletter-register-modal
 www.comment-economiser.fr##^#overlay_blockNL
 www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
