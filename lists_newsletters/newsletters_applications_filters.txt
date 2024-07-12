@@ -5,7 +5,8 @@
 !    For instance, elements styled display: block will be displayed despite the hidden attribute's presence.
 !    TEST on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 ! <https://regex101.com/r/6cIoW9/1>, <https://stackoverflow.com/questions/10306690/what-is-a-regular-expression-which-will-match-a-valid-domain-name-without-a-subd>
-*##[hidden]:matches-css(display: /(?!none)/):style(display: none !important)
+*##[hidden]:matches-css(display: /^(?!none.*);$/):style(display: none !important)
+latribune.fr##body:matches-css(overflow: /^(?!visible.*);$/):style(overflow: visible !important)
 latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 
 ! [FIX] Newsletter popups with "+js(overlay-buster)" ---------------------------------------------------
