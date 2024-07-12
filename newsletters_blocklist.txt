@@ -24,6 +24,13 @@ www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
 www.femmeactuelle.fr##.newsletter-dialog
 www.femmeactuelle.fr##html:style(overflow: visible !important;)
 www.medisite.fr##.mf-loaded.mf-notification-iframe
+! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
+@@||www.moneyvox.fr/newsletter/*$frame
+!#if cap_html_filtering
+www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
+!#else
+www.moneyvox.fr##.js-listener-popin-nopub-newsletter-restrict:remove()
+!#endif
 
 ! "applications" filters
 ! FIX: Newsletter popup with "+js(overlay-buster)"
