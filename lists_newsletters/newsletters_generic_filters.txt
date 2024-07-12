@@ -1,3 +1,11 @@
+! [FIX] The hidden state: |
+!    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_state>
+!    Web browsers may implement the hidden state using display: none, in which case the element will not participate in page layout.
+!    This also means that changing the value of the CSS display property on an element in the hidden state will override the state.
+!    For instance, elements styled display: block will be displayed despite the hidden attribute's presence.
+!    TEST on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
+! <https://regex101.com/r/6cIoW9/1>, <https://stackoverflow.com/questions/10306690/what-is-a-regular-expression-which-will-match-a-valid-domain-name-without-a-subd>
+/^(?:(xn--)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,7})$/##[hidden]:matches-css(display: /(?!none)/):style(display: none !important)
 #@#.section-newsletter
 ##.newsletter-widget
 ##.overlay-newsletter
