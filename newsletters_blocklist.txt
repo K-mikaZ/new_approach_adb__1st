@@ -30,14 +30,14 @@ www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
 www.femmeactuelle.fr##.newsletter-dialog
 www.femmeactuelle.fr##html:style(overflow: visible !important;)
 www.medisite.fr##.mf-loaded.mf-notification-iframe
-! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
-@@||www.moneyvox.fr/newsletter/*$frame
 
 ! "applications" filters
 ! FIX: Newsletter popup with "+js(overlay-buster)"
 atelier-fermentation.com,brightsec.com,cuisine-saine.fr,effetph.com,frontendgenius.com,happypapilles.fr,healthyalie.com,ikeahackers.net,iletaitunefoislapatisserie.com,jevaisvouscuisiner.com,menu-vegetarien.com,planetevegan.com,poiscaille.fr,revolutionfermentation.*,simplementfrais.com,tangerinezest.com,unpasplusvert.fr,vapotestyle.fr,www.750g.com,www.academiedugout.fr,www.comment-economiser.fr,www.crack-cafes.fr,www.debic.com,www.femmeactuelle.fr,www.france-mineraux.fr,www.guideastuces.com,www.kpourkatrine.com,www.lanutrition.fr,www.larecolte.fr,www.lekaba.fr,www.lesechos.fr,www.marechal-fraicheur.fr,www.moulinex.fr,www.okay.eu,www.pharmamarket.fr,www.rasage-classique.com,www.saveeat.co,www.vracethik.fr##+js(overlay-buster)
 
 ! "net" filters
+! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
+@@||www.moneyvox.fr/newsletter/*$frame
 /[Nn]ewslet{2}er/$domain=www.750g.com
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
