@@ -6,4 +6,5 @@
 ! Break loading site because of overflow
 latribune.fr#@?##newsletter-register-modal:remove()
 www.comment-economiser.fr#?##overlay_blockNL:remove()
+! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
 www.moneyvox.fr#?#[class^="js-listener"][class*="newsletter"]:remove()
