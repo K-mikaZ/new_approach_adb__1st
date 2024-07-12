@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! Title: Anti Newsletters
 ! Expires: 4 days
-! Last modified: Fri, 12 Jul 2024 12:01:39 +0100
+! Last modified: Fri, 12 Jul 2024 11:12:26 +0100
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
 ! Description: Annoying newsletters blocklist
