@@ -18,7 +18,6 @@ reflectoring.io##.popup-xs
 www.casayoga.tv###modal-newsletter
 www.casayoga.tv##.modal-open:style(overflow: visible !important;)
 www.casayoga.tv##.in.modal-backdrop
-www.comment-economiser.fr#?##overlay_blockNL:remove()
 ! https://stackoverflow.com/a/46533865
 www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
 www.femmeactuelle.fr##.newsletter-dialog
@@ -27,9 +26,11 @@ www.medisite.fr##.mf-loaded.mf-notification-iframe
 ! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
 @@||www.moneyvox.fr/newsletter/*$frame
 !#if cap_html_filtering
+www.comment-economiser.fr##^#overlay_blockNL
 www.moneyvox.fr##^.js-listener-popin-nopub-newsletter-restrict
 !#else
-www.moneyvox.fr##.js-listener-popin-nopub-newsletter-restrict:remove()
+www.comment-economiser.fr#?##overlay_blockNL:remove()
+www.moneyvox.fr#?#.js-listener-popin-nopub-newsletter-restrict:remove()
 !#endif
 
 ! "applications" filters
