@@ -27,6 +27,11 @@ www.comment-economiser.fr#?##overlay_blockNL:remove()
 !#endif
 www.femmeactuelle.fr##.newsletter-dialog
 www.femmeactuelle.fr##html:style(overflow: visible !important;)
+!#if cap_html_filtering
+www.latribune.fr##^#newsletter-register-modal
+!#else
+www.latribune.fr#?##newsletter-register-modal:remove()
+!#endif
 www.medisite.fr##.mf-loaded.mf-notification-iframe
 ! allow moneyvox.fr/newsletter/popin-content.php?nopub=1 because of overflow
 @@||www.moneyvox.fr/newsletter/*$frame
