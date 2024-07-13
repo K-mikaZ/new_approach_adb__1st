@@ -3343,7 +3343,7 @@ accounts.google.com/gsi/iframe$badfilter
 /\/as{2}ets\/(jquery[-\/]){2}(\d\.){2}(?:\d\.)?min\.js\?(?:v=\d)?&?type=(?:adult|mainstream)/$script,~third-party
 ! e.g. ||voirseries.*/_scripts.js|
 /ht{2}ps?:\/\/([vw]{2,}([a-z]{1,})?([0-9]{1,})?\.)?\S+\.(.{2,})\/_scripts\.js/$~third-party
-/(?:.+)\?op\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xmlhttprequest,important
+/(?:.+)\?\w+\=((?!watch).([\w]+))(?:(.+)?)\&embed\=[\d]{1}(?:(.+)?)\&adb\=[\d]{1}(?:.+)?/$xhr,important
 /(?:.+)\?o{2}\=\d/$xmlhttprequest,third-party,important
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,third-party
 
