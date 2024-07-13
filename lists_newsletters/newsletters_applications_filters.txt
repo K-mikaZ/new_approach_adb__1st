@@ -1,12 +1,3 @@
-! [FIX] The hidden state: |
-!    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_state>
-!    Web browsers may implement the hidden state using display: none, in which case the element will not participate in page layout.
-!    This also means that changing the value of the CSS display property on an element in the hidden state will override the state.
-!    For instance, elements styled display: block will be displayed despite the hidden attribute's presence.
-!    TEST on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-! <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
-! <https://regex101.com/r/6cIoW9/1>, <https://stackoverflow.com/questions/10306690/what-is-a-regular-expression-which-will-match-a-valid-domain-name-without-a-subd>
-*##:is([hidden],[aria-hidden="true"]):not([hidden="until-found"]):matches-css(display:/(([^;]*(?!none).))/):style(display: none !important;)
 latribune.fr,moneyvox.fr##body:matches-css(overflow:/[\s]*(?!visible)[^;]*/):style(overflow: visible !important;)
 latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 moneyvox.fr##body#top.body-overlayed:remove-class(body-overlayed)
