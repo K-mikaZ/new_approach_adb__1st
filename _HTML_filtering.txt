@@ -329,6 +329,6 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 !    EXAMPLE: <https://www.latribune.fr>
 !      <div class="cookie-consent-wall cookie-consent-wall-clear" hidden="" style="display: block;"></div>
 !      <div class="cookie-consent-banner" hidden="" style="display: flex;">
-*##[hidden]:not([hidden="until-found"]):style(display: none !important;)
+##[hidden]:not([hidden="until-found"]):style(display: none !important;)
 
 latribune.fr##.tag-pub
