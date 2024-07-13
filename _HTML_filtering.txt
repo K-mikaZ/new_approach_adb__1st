@@ -327,7 +327,7 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 !    TEST on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 ! <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
 ! <https://regex101.com/r/Wavgnz/2>, <https://stackoverflow.com/questions/10306690/what-is-a-regular-expression-which-will-match-a-valid-domain-name-without-a-subd>
-*##:is([hidden]):not([hidden="until-found"]):matches-css(display:/(?:[^;](?!none).*)/):style(display: none !important;)
+*##[hidden]:not([hidden="until-found"]):matches-css(display:/(?:[^;](?!none).*)/):style(display: none !important;)
 
 ! test on: |
 !    <https://www.google.com/search?q=best+android+apps+open+source+for+scanning+qr+code>
