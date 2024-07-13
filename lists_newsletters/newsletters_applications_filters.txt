@@ -1,6 +1,6 @@
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-*##[data-poool]:remove-attr(data-poool)
+*#@#[data-poool]:remove-attr(data-poool)
 
 ! BAD *##:is(body):has(> #didomi-host):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
 latribune.fr##html.member-not-connected:remove-class(member-not-connected)
