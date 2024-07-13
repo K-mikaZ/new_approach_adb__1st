@@ -2,11 +2,9 @@
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 *##[data-poool]:remove-attr(data-poool)
 
-! try *##:is(body):has(> #didomi-host):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
-!moneyvox.fr##body:matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
-!latribune.fr##html body:has(> #didomi-host):upward(body):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
+! BAD *##:is(body):has(> #didomi-host):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
 latribune.fr##html.member-not-connected:remove-class(member-not-connected)
-moneyvox.fr##body#top.body-overlayed:remove-class(body-overlayed)
+moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 
 ! [FIX] Newsletter popups with "+js(overlay-buster)" ---------------------------------------------------
 atelier-fermentation.com,brightsec.com,cuisine-saine.fr,effetph.com,frontendgenius.com,happypapilles.fr,healthyalie.com,ikeahackers.net,iletaitunefoislapatisserie.com,jevaisvouscuisiner.com,menu-vegetarien.com,planetevegan.com,poiscaille.fr,revolutionfermentation.*,simplementfrais.com,tangerinezest.com,unpasplusvert.fr,vapotestyle.fr,www.750g.com,www.academiedugout.fr,www.comment-economiser.fr,www.crack-cafes.fr,www.debic.com,www.femmeactuelle.fr,www.france-mineraux.fr,www.guideastuces.com,www.kpourkatrine.com,www.lanutrition.fr,www.larecolte.fr,www.lekaba.fr,www.lesechos.fr,www.marechal-fraicheur.fr,www.moulinex.fr,www.okay.eu,www.pharmamarket.fr,www.rasage-classique.com,www.saveeat.co,www.vracethik.fr##+js(overlay-buster)
