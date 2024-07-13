@@ -382,7 +382,6 @@ vidmoly.*##+js(set-constant, jwplayer.defaults.plugins, {})
 81u6xl9d.xyz,filemoon.*,uqload.*##+js(prevent-setTimeout, /\(\)[\s\S]*{[\r\n]*try{[\r\n]*var t[\s\S]*=[\s\S]*\["sandbox"\,/)
 81u6xl9d.xyz,filemoon.*##+js(set-constant, baspas, undefined)
 81u6xl9d.xyz,filemoon.*##+js(abort-current-inline-script, /window\['\\x.+'+.*\]/)
-81u6xl9d.xyz,filemoon.*##+js(abort-current-inline-script, Math.floor, urls)
 $subdocument,domain=81u6xl9d.xyz|filemoon.*,important
 
 ||hoglinsu.com^
