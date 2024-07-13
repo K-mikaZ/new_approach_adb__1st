@@ -328,6 +328,6 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 ! <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
 ! <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_until_found_state>
 ! <https://regex101.com/r/Wavgnz/2>
-*##[hidden]:not([hidden="until-found"]):matches-css(display:/(?:[^;](?!none).*)/):style(display: none !important;)
+*##[hidden]:not([hidden="until-found"]):style(display: none !important;)
 
 latribune.fr##.tag-pub
