@@ -379,9 +379,11 @@ illvid.net,opvid.*,turbovid.co##+js(prevent-window-open)
 d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,vidmoly.*##+js(noeval)
 vidmoly.*##+js(set-constant, jwplayer.defaults.plugins, {})
 ! `window.baspas` is var `Barracuda` on filemoon.sx
-filemoon.*##+js(set-constant, baspas, undefined)
-filemoon.*##+js(abort-current-script, window[window.baspas||"BetterJsPop"])
-filemoon.*##+js(abort-current-script, Math, urls)
+81u6xl9d.xyz,filemoon.*,uqload.*##+js(prevent-setTimeout, /\(\)[\s\S]*{[\r\n]*try{[\r\n]*var t[\s\S]*=[\s\S]*\["sandbox"\,/)
+81u6xl9d.xyz,filemoon.*##+js(set-constant, baspas, undefined)
+81u6xl9d.xyz,filemoon.*##+js(abort-current-script, window[window.baspas||"BetterJsPop"])
+81u6xl9d.xyz,filemoon.*##+js(abort-on-stack-trace, Math, urls)
+$subdocument,domain=81u6xl9d.xyz|filemoon.*,important
 
 ||hoglinsu.com^
 ||yougube.com^$all,important
