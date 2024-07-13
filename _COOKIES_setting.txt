@@ -219,6 +219,7 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove
 !   prevent forcing connection to continue reading
 !   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
 howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
+howtogeek.com#@#+js(remove-cookie, articlesRead)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 moneyvox.fr##+js(remove-cookie, mvx_consult)
 ! pornhub.com: hide age confirmation and accept essential cookies
