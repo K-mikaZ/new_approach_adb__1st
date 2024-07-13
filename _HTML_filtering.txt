@@ -311,7 +311,7 @@ www.adkami.com##+js(remove-node-text, script, /\[_0x[\w\d]+\('0x[\d]'\)/)
 www.allocine.fr##div.main-banner:remove()
 www.howtogeek.com##script[src*="adsninja.ca"]:remove()
 www.howtogeek.com##script[src*="sentinelbi."]:remove()
-www.howtogeek.com##+js(remove-node-text, script, /\.an_sn.*/)
+www.howtogeek.com##+js(remove-node-text, script, /\.an_sn.*?/)
 www.howtogeek.com##+js(remove-node-text, script, /\.adsninja.+/)
 www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 
