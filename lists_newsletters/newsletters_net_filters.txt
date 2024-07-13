@@ -2,5 +2,6 @@
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$domain=www.750g.com
 ||forms.soundestlink.com^$from=matteoscoffee.com
-! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
+! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
+!     view on <https://www.latribune.fr>
 ||poool.fr^$3p
