@@ -320,14 +320,15 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 ! [FIX] The hidden state: |
+!    <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
 !    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_state>
+!    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_until_found_state>
 !    Web browsers may implement the hidden state using display: none, in which case the element will not participate in page layout.
 !    This also means that changing the value of the CSS display property on an element in the hidden state will override the state.
 !    For instance, elements styled display: block will be displayed despite the hidden attribute's presence.
-!    TEST on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-! <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
-! <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_until_found_state>
-! <https://regex101.com/r/Wavgnz/2>
-!*##[hidden]:not([hidden="until-found"]):style(display: none !important;)
+!    EXAMPLE: <https://www.latribune.fr>
+!      <div class="cookie-consent-wall cookie-consent-wall-clear" hidden="" style="display: block;"></div>
+!      <div class="cookie-consent-banner" hidden="" style="display: flex;">
+##[hidden]:not([hidden="until-found"]):style(display: none !important;)
 
 latribune.fr##.tag-pub
