@@ -1,4 +1,4 @@
-! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
+! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 *#@?##poool-widget:remove()
 *#?#script[data-vendor*=":poool-"]:remove()
