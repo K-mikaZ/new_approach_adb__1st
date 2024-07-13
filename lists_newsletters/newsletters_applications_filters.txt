@@ -2,7 +2,8 @@
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 *#@#[data-poool]:remove-attr(data-poool)
 
-!*##body:has(> #didomi-host:not([aria-label="hidden"])):style(overflow: auto !important;)
+! FIX many ADVANCED_PAYWALL
+##body:has(> #didomi-host:not([aria-label="hidden"])):style(overflow: auto !important;)
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 
