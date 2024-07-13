@@ -1,3 +1,4 @@
+! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr>
 *##[data-poool]:remove-attr(data-poool)
 
 latribune.fr,moneyvox.fr##body:matches-css(overflow:/(?:[^;](?!visible).*)/):style(overflow: visible !important;)
