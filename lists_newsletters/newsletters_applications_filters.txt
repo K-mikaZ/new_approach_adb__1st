@@ -2,9 +2,9 @@
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 *##[data-poool]:remove-attr(data-poool)
 
-!*##:is(html,body):has(> #didomi-host):upward(1):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
-moneyvox.fr##body:matches-css(overflow:/(?:[^;](?!visible).*)/):style(overflow: visible !important;)
-latribune.fr##html body:has(> #didomi-host):upward(body):matches-css(overflow:/(?:[^;](?!visible).*)/):style(overflow: visible !important;)
+! try *##:is(html,body):has(> #didomi-host):upward(1):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
+moneyvox.fr##body:matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
+latribune.fr##html body:has(> #didomi-host):upward(body):matches-css(overflow:/(?:[^;](?:hidden).*)/):style(overflow: visible !important;)
 latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 moneyvox.fr##body#top.body-overlayed:remove-class(body-overlayed)
 
