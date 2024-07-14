@@ -8,23 +8,23 @@
 
 ! "remove" filters ------------------------------------------------------
 !#if cap_html_filtering
-!#include lists_newsletters/newsletters_true_cap_html_filtering.txt
+!#include paywall_rules/paywall_true_cap_html_filtering.txt
 !#else
-!#include lists_newsletters/newsletters_false_cap_html_filtering.txt
+!#include paywall_rules/paywall_false_cap_html_filtering.txt
 !#endif
 
 ! "cookies" filters ------------------------------------------------------
-!#include lists_newsletters/newsletters_cookies_filters.txt
+!#include paywall_rules/paywall_cookies_filters.txt
 
 ! "generic" filters ------------------------------------------------------
-!#include lists_newsletters/newsletters_generic_filters.txt
+!#include paywall_rules/paywall_generic_filters.txt
 
 ! "specific" filters ------------------------------------------------------
-!#include lists_newsletters/newsletters_specific_filters.txt
+!#include paywall_rules/paywall_specific_filters.txt
 
 ! "applications" filters ------------------------------------------------------
-!#include lists_newsletters/newsletters_applications_filters.txt
+!#include paywall_rules/paywall_applications_filters.txt
 
 ! "net" filters ------------------------------------------------------
-!#include lists_newsletters/newsletters_net_filters.txt
+!#include paywall_rules/paywall_net_filters.txt
 
