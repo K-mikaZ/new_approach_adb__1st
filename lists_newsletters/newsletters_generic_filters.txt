@@ -1,3 +1,6 @@
+! FIX many ADVANCED_PAYWALL
+##body:has(> #didomi-host:not([aria-label="hidden"])):style(overflow: auto !important;)
+
 #@#.section-newsletter
 ##.newsletter-widget
 ##.overlay-newsletter
