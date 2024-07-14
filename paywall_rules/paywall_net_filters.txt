@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
 /ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$domain=www.750g.com
