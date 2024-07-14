@@ -3,7 +3,7 @@
 ! Last modified: Sun, 14 Jul 2024 22:57:19 +0200
 ! Expires: 4 days (update frequency)
 ! Author: K-mik@Z
-! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
+! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_paywall_blocklist.txt
 ! Description: Annoying paywall blocklist.
 
 ! "remove" filters ------------------------------------------------------
