@@ -1,6 +1,3 @@
-! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-##body:has(> #didomi-host:not([aria-label="hidden"])):style(overflow: auto !important;)
-
 #@#.section-newsletter
 ##.newsletter-widget
 ##.overlay-newsletter
