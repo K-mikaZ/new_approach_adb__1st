@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 #@#.section-newsletter
 ##.newsletter-widget
 ##.overlay-newsletter
