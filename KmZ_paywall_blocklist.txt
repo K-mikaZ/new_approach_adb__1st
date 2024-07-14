@@ -1,6 +1,6 @@
 [uBlock Origin; Adguard]
 ! Title: [?][list] "Advanced Paywall, Registration wall, Cookie wall, Subscription solution." - by K-mik@Z
-! Last modified: Sun, 14 Jul 2024 11:03:18 +0100
+! Last modified: Sun, 14 Jul 2024 22:57:19 +0200
 ! Expires: 4 days (update frequency)
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/newsletters_blocklist.txt
