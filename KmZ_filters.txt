@@ -13,7 +13,10 @@
 ! <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name>
 
 ! ======= HEADER rules =======
+! Rules with the $header modifier are supported by Ublock origin, AdGuard for Windows, Mac, and Android
+!#if cap_html_filtering
 !#include _HEADER_rules.txt
+!#endif
 
 ! ======= CSP blocking =======
 !#include _CSP_blocking.txt
