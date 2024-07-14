@@ -1,3 +1,4 @@
+[uBlock Origin; Adguard]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
 !moneyvox.fr###sbox-overlay
