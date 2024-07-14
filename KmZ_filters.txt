@@ -25,7 +25,7 @@
 !#include _HTML_filtering.txt
 
 
-!#include newsletters_blocklist.txt
+!#include _NEWSLETTERS_blocklist.txt
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include comscore_analytics.txt
 !#include ezoic_ads.txt
