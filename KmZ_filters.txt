@@ -546,7 +546,6 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
 !! @@||doodstream.com*?op=enc_status*$domain=dood.*
-||*^$script,third-party,domain=dood.*
 ||*^$domain=dood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 @@||doodcdn.*$script,domain=dood.*|dooood.*
 @@||dood.*$script,domain=dood.*|dooood.*
