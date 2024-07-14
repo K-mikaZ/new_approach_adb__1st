@@ -13,9 +13,6 @@
 !#include paywall_rules/paywall_false_cap_html_filtering.txt
 !#endif
 
-! "cookies" filters ------------------------------------------------------
-!#include paywall_rules/paywall_cookies_filters.txt
-
 ! "generic" filters ------------------------------------------------------
 !#include paywall_rules/paywall_generic_filters.txt
 
