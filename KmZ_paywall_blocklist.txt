@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! Title: Anti Newsletters
+! Title: ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 ! Last modified: Sun, 14 Jul 2024 09:13:51 +0100
 ! Expires: 4 days (update frequency)
 ! Author: K-mik@Z
