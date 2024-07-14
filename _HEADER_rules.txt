@@ -1,5 +1,8 @@
 [uBlock Origin; Adguard]
 ! HEADER rules --------------------------------------------------------------------
+! Rules with the $header modifier are supported by Ublock origin, AdGuard for Windows, Mac, and Android
+!    <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
+!#if cap_html_filtering
 
 !    https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier
 !    ||example.org^$removeheader=request:header-name
@@ -15,3 +18,5 @@
 
 ! *** RANGE ***
 ||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
+
+!#endif
