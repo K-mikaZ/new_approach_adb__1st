@@ -1,2 +1,1 @@
-||*$header=set-cookie:mvx_consult,important,domain=moneyvox.fr
 moneyvox.fr##+js(remove-cookie, mvx_consult)
