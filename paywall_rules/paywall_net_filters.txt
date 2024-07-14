@@ -5,5 +5,5 @@
 ||forms.soundestlink.com^$from=matteoscoffee.com
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
 !     view on <https://www.latribune.fr>
+@@||poool.fr^$document
 ||poool.fr^$3p
-||poool.fr^$document
