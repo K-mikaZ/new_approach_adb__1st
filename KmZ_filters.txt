@@ -231,7 +231,7 @@ france.tv#@#+js(prevent-fetch, fwmrm)
 youtubekids.com,youtube-nocookie.com,www.youtube.com#@#.video-ads
 youtubekids.com,youtube-nocookie.com,www.youtube.com#@#.ytp-ad-module
 !
-! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com,redirect=empty
+! /\/(p(agead|romos))[\/|\?]/$important,match-case,domain=youtubekids.com|youtube-nocookie.com|www.youtube.com,empty
 ! !#if ext_ublock
 ! www.youtube.com##+js(no-fetch-if, /.*=adunit&.*/ method:/POST|GET/, noopPromiseResolve)
 ! !#endif
@@ -647,7 +647,7 @@ filmgratuit.*,filmz.*,streamavie.*,vfilms.me,voirfilms.*##center:if(.myButton)
 crunchyroll.com###series_promo_banner
 @@/analytics/*$domain=crunchyroll.com
 /js/tracking/*$script,domain=crunchyroll.com,important
-/crunchyroll-web.json$xmlhttprequest,domain=crunchyroll.com,redirect=empty
+/crunchyroll-web.json$xmlhttprequest,domain=crunchyroll.com,empty
 ! ||*$popup,domain=crunchyroll.com
 ||eec.crunchyroll.com^
 rts.ch##+js(abort-on-property-read, Dr)
@@ -679,7 +679,7 @@ rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
 
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
-||prod-player.tf1.fr/*/player/undefined$redirect=empty
+||prod-player.tf1.fr/*/player/undefined$empty
 prod-player.tf1.fr##:where(ntrs-edito-img[class="is-visible"], ntrs-top-toolbar)
 !! custom font-size (on fullscreen, coming-next...)
 prod-player.tf1.fr##ntrs-edito-title,ntrs-coming-next-title:style(font-size: 2em!important;)
@@ -775,7 +775,7 @@ www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.pla
 !! www.dailymotion.com,geo.dailymotion.com##+js(set-constant, __PLAYER_CONFIG__.player.autostart, 'off')
 
 !! dailymotion - try block 3rd Party cookies (ads and analytics - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies)
-!! cookie/dmaid$domain=dailymotion.com,redirect=empty
+!! cookie/dmaid$domain=dailymotion.com,empty
 dailymotion.com##+js(no-fetch-if, /cookie\/dmaid/)
 !! dailymotion - disallow 3rd Party cookies
 ||geo.dailymotion.com/cookie.js
@@ -893,7 +893,7 @@ multiup.*##.col-md-4:if(.host[namehost="UseNet"])
 ||edge-mcdn.secure.yahoo.com^$domain=mail.yahoo.com
 ||yimg.com/rx/builds/*/iframe-controller-page.html$subdocument,domain=mail.yahoo.com
 ! e.g "/gemini_api/?*&locale=*" or "/video_api/getVideos?*&locale=*"
-/\/\w\/\w+_api\/\w*\?\S+\&locale\=/$xmlhttprequest,domain=mail.yahoo.com,redirect=empty
+/\/\w\/\w+_api\/\w*\?\S+\&locale\=/$xmlhttprequest,domain=mail.yahoo.com,empty
 
 mail.protonmail.com##section:has(>.latest-upgrade)
 mail.protonmail.com##section:has(>[target="_blank"])
@@ -2295,7 +2295,7 @@ xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhams
 eporner.com##.vjs-inplayer-container
 eporner.com###movieplayer-box-adv
 ||optnx.com^$third-party
-/\/_xa\/ads(\w+)?\?/$xmlhttprequest,~third-party,redirect=empty
+/\/_xa\/ads(\w+)?\?/$xmlhttprequest,~third-party,empty
 @@||ypncdn.com^$domain=youporn.com
 @@||phncdn.com^$domain=youporn.com
 youporn.com###pb_template
@@ -2373,7 +2373,7 @@ adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.
 ! from https://github.com/Karmesinrot/Anifiltrs (Anifiltrs — skeletonise.txt)
 adblockstreamtape.*,strcloud.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*,strtpe.*,streamtapeadblock.*,shavetape.*,tubeload.co,adblockeronstape.*,adblockstrtape.*,adblockstrtech.*,stape.*,streamadblockplus.*,strtapeadblocker.*,adblockplustape.com,stapewithadblock.*,streamadblocker.*$$script[tag-content="'shift'"][max-length="262144"]
 !#endif
-||adeventtracker.spotify.com^$xmlhttprequest,important,domain=spotify.com,redirect=empty
+||adeventtracker.spotify.com^$xmlhttprequest,important,domain=spotify.com,empty
 /gabo-receiver-service/*$xmlhttprequest,domain=spotify.com,important,badfilter
 torrent9.*,torrentx.*,torrenty.*##.btn.download:not([href*="magnet:"]):not([href*="javascript:"]):not([href*="torrent"])
 yggtorrent.*##a[href*="/go_vpn"]
