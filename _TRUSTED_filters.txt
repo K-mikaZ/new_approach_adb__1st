@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! Title: [?][list] "trusted test" - by K-mik@Z
 ! Expires: 1 days
-! Last modified: Sat, 22 Jun 2024 19:22:32 +0100
+! Last modified: Mon, 15 Jul 2024 20:00:48 +0200
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_TRUSTED_filters.txt
 ! Description: Test trusted rules like: trusted-replace-fetch-response, trusted-replace-xhr-response...
