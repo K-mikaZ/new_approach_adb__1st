@@ -1,6 +1,6 @@
 ! Checksum: E264D62C8F1A7C624C683840B56AF5B51D1040B308DC9D515BFFA35574533DA9
 ! Title: [/!\][test][beta] "Rules in test" - by K-mik@Z
-! Last modified: Mon, 15 Jul 2024 20:00:48 +0200
+! Last modified: Mon, 15 Jul 2024 20:35:17 +0200
 ! Expires: 5 days
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/test_filters.txt
@@ -11,8 +11,8 @@
 ! app.molotov.tv##+js(xml-prune, xpath(//*[name()="MPD"][.//*[name()="Period"][contains(@name\,"EventStream")]]), , , log, 1)
 
 ! INVALID
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##:is([id^="fake-"],[class^="fake-"]):last-of-type:has(>:is([id^="fake-"],[class^="fake-"]):first-of-type))
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##:where([class*="movie__"][class*="player"]:has(>iframe[src*="/voir/voir"]))
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##:is([id^="fake-"],[class^="fake-"]):last-of-type:has(>:is([id^="fake-"],[class^="fake-"]):first-of-type))
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##:where([class*="movie__"][class*="player"]:has(>iframe[src*="/voir/voir"]))
 
 
 ! -------------------- ExtendedCss ---------------------
@@ -29,20 +29,20 @@
 
 ! [FIX] pornhub.com is slow down with this method (but only with Adguard)
 ! ----[ IFRAMES ]------------------------------------------------------------
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [name*="apiLocator"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="google_ads_iframe_"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [name*="apiLocator"] )
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id="google_esf"], [name="google_esf"] )
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id^="google_ads_iframe_"] )
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id^="aswift_"], [name^="aswift_"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [name*="apiLocator"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id="google_esf"], [name="google_esf"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="google_ads_iframe_"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="google_ads_iframe"], [name^="google_ads_iframe"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [id^="aswift_"], [name^="aswift_"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [name*="apiLocator"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id="google_esf"], [name="google_esf"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id^="google_ads_iframe_"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [id^="aswift_"], [name^="aswift_"] )
 ! fallback, in case
 ! #?#iframe:is( [src*="/pagead/"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [src*="/pagead/"] )
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [src*="doubleclick"] ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [src*="doubleclick"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [src*="/pagead/"] )
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#iframe:is( [src*="doubleclick"] ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##^iframe:is( [src*="doubleclick"] )
 ! ----[ INS ]----------------------------------------------------------------
 ! ----[ DIV ]----------------------------------------------------------------
 ##div[class^="masha_"]
@@ -50,7 +50,7 @@
 !! uBlock filters – Ads
 #@#.ads-core-placer
 #@#.ad-placeholder
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is(.ads-core-placer,.ads-core-placeholder,.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox),[class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is(.ads-core-placer,.ads-core-placeholder,.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox),[class*="AdPlaceholder"]:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
 ! www.750g.com (is ads-pholder only for Webedia Group ?)
 ##[id|="ads-pholder"]
 ##.ads-pholder
@@ -62,10 +62,10 @@
 #@#ins.adsbygoogle
 !! Filtre AdGuard Français: malekal.com#$#.adsbygoogle { height: 1px!important; visibility:hidden!important; }
 !! FIX: [class*="adsby"]{ visibility:hidden } break justgeek.fr ( prefer [class*="adsby"]{ display: none } )
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class*="adsby"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){height:1px!important;display:none!important;}
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class*="adsby"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){height:1px!important;display:none!important;}
 ! ----[ PIXEL ]----------------------------------------------------------------
 ! [id|="div-gpt-ad"], div[class|="div-gpt-ad"]
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is([class|="div-gpt-ad"],[id|="div-gpt-ad"]):not([style*="opacity:0"]){width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important}
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is([class|="div-gpt-ad"],[id|="div-gpt-ad"]):not([style*="opacity:0"]){width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important}
 ! #?#div:is([class*="textads"],[class*="ad-unit"]:not([class*="text-ads"]),[class*="adunit"]):is([style*=": 1px;"],[style*=":1px;"])
 ##div[class*="ima-ad-"]
 ! #?#script:matches-attr( "src"="/.+histats.+/" ):remove()
@@ -93,18 +93,18 @@
 ! #$#noscript:contains(/src=.+googletagmanager.+/) { remove: true; }
 ! #$#noscript:contains(/src=.+static.ads-twitter.com.+/) { remove: true; }
 ! ----[ ADS ]----------------------------------------------------------------
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?/" ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "data-cfasync"="false" ):matches-attr( "src"="/\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|digital|live|space|store|tech|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/[0-9a-f]{32}\/invoke\.js$/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#script:matches-attr( "src"="/.+addthis.com.+/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#?#link:matches-attr( "href"="/.+trafficjunky.com.+/" ):remove()
 ! ----[ WHITELIST ]----------------------------------------------------------------
 ! break "animationdigitalnetwork.fr"
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script[data-cmp-src*="hotjar."]:remove()
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script:matches-attr( "/data-.+/"="/.+doubleclick.+/" ):remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script[data-cmp-src*="hotjar."]:remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#script:matches-attr( "/(.+)?src/"="/.+hotjar\..+/" ):remove()
 ! break loading videos ( test on https://www.femmeactuelle.fr/cuisine/recettes/la-vraie-recette-des-truffes-de-jean-paul-hevin-07506 )
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#[data-ads-core]:remove()
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@?#[data-ads-core]:remove()
 #@#div[aria-live^="polite"]
 #@#div > div[aria-live="polite"]
 website.informer.com#@?#.adsbygoogle:upward(1)
@@ -117,8 +117,8 @@ femmeactuelle.fr,cuisineactuelle.fr#@#.ratio-16-9 > div
 ! Break https://www.auxdelicesdecaroline.com/fr/recette/c592ufs-marina9s-couleurs-naturelles-580
 ! ##:where(center, span, div):has(>a:is([class*="mButton"], [class*="myButton"], [href*="/regarder."], [href*="/telecharger."]:not([href*="malekal.com"])):is([href], [target], [rel^="no"])):is(:not([style*="hidden"]), :not([style*="display:"][style*="none"]))
 !##:where(center, span, div):has(>a:is(.mButton, .myButton, [href*="/regarder."], [href*="/telecharger."]:not([href*="malekal.com"])):is([href], [target], [rel^="no"])):is(:not([style*="hidden"]), :not([style*="display:"][style*="none"]))
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#div[class^="movie-aye"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#div[class="g-buttons"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):has(>a[href]){display:none!important;}
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#div[class^="movie-aye"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#div[class="g-buttons"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):has(>a[href]){display:none!important;}
 ##div[class*="movie__"]:is([class*="big"][class*="btn"])
 !! Fallback Fake button watching
 ##a[href*="premium"][href*=".php"][class*="btn"]
@@ -145,8 +145,8 @@ voirseries.*##[class*="player" i]:has(>:is([class*="download"],[id*="download"])
 !! hdss.show
 ##[class*="player" i] > li[data-link*="/player/online.htm"]
 !! ducine.*, streamfilms.*, cpasmieux.* ...
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$##videoplay[src*="stream"][src*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$##videoplay[src*="stream"][src*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"])){display:none!important;}
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$##videoplay[src*="video"][src*="streaming.htm"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 ! break filmstoon.online
 ! ##[class*="player" i]:has(> [src*="stream"][src*="vip.htm"])
 ##[class*="player" i]:has(iframe[src*="fakeplayer"])
@@ -169,10 +169,10 @@ fakeplayer$~third-party
 
 mystream.*,mstream.*##[id^="_0."]
 
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id~="adbd"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[id^="playerOver"], [id^="playerPub"], [id*="playerbro"]
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id*="player"]:is( [id*="Over"], [id*="Pub"], [id*="bro"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id~="adbd"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; }
 
 inspiration-cuisine.fr###tdi_47
 chefcuisto.com#@#.fc-ab-root > .fc-dialog-container
@@ -198,23 +198,23 @@ cine974.com##div:where([class~="msgPromo"],[class~="cine-div-opti"])
 ! *** Please, set generic rules after ExtendedCss, avoid running twice
 ! *** Some generic rules can be called in case (fallback)
 
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class~="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[id="topad"]:is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[class*="ads-top"], [class*="ads-bottom"], [class*="ads-left"], [class*="ads-right"], [class*="ads-article-next"], [class*="ads-desktop"]
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body,[id~="header"] ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body ):is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[class*="ads-top"], [class*="ads-bottom"], [class*="ads-left"], [class*="ads-right"], [class*="ads-article-next"], [class*="ads-desktop"]
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body,[id~="header"] ):is( [class*="ads-"] ):is( [class*="top"], [class*="bottom"], [class*="left"], [class*="right"], [class*="article-next"], [class*="desktop"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[class*="top-ads"], [class*="bottom-ads"], [class*="left-ads"], [class*="right-ads"]
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:not( html,body ):is( [class*="top-"], [class*="bottom-"], [class*="left-"], [class*="right-"] ):is( [class*="ads"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##.ad.c-ads, .ad.doubleclick, .ad.onlyMobile, .ad.onlyDesktop ...
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is( [class~="ad"] ):is( [class~="c-ads"], [class~="doubleclick"], [class~="onlyMobile"], [class~="onlyDesktop"], [data-block-devices], [class*="banniere"], [class*="outbrain"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 capital.fr#$#div:is( [class$="-ads"], [class*="-ads-"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:first-of-type ) { display: none!important; visibility: hidden!important; }
 
 ! [id^="aswift_"], [name^="aswift_"]
-/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is( [id^="aswift_"], [name^="aswift_"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#:is( [id^="aswift_"], [name^="aswift_"] ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! ~freeformatter.com##.mb-3 (see https://www.freeformatter.com/xml-validator-xsd.html)
-!/^(xn-^2)?[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}\.?((xn-^2)?([a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
+!/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#$#[class~="mb-3"]:has( ~ :not( [textarea] ) ):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! BADFILTER *#$#:is( [class*="widget"], [class~="btn"] ):is( [class~="mb-3"]:has( ~:not( [textarea] ) )):is( :not( [style*="hidden"] ):not( [style*="display:"][style*="none"] ) ) { display: none!important; visibility: hidden!important; }
 ! exclude somes (github: [class~="d-none"])
 ! ##[class~="btn"][class*="mr-"][href]:is(:not([href^="/"],[class~="d-none"])):is(:not([style*="hidden"]):not([style*="display:"][style*="none"])):style(display:none!important;visibility:hidden!important;)
