@@ -3011,7 +3011,7 @@ lxax.com##[class="hide"]
 !! not blocking ||try.abtasty.com/*/*.js
 ||try.abtasty.com/*.js$third-party
 ||imasdk.googleapis.com^$badfilter
-*##.placeholder-pub_dfp
+##.placeholder-pub_dfp
 terrafemina.com##.fc-dialog-overlay
 juststream.org##.movie-xyz
 ###btnpub
