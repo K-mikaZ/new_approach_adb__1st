@@ -10,7 +10,7 @@
 !     become => /^(?:(beh.*?([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/
 ! find a way for not apply on `about:` when use `trusted-` filters (not sure of its usefulness)
 !     [about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/([\s]*?([^;](?!none).)*)/):style(display: none !important;)
+/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/(?:[\s]*?(?:[^;](?!none).)*)/):style(display: none !important;)
 /^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
