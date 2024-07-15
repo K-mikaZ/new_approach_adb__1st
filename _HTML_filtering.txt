@@ -319,16 +319,4 @@ www.howtogeek.com##+js(remove-node-text, script, websiteSentinel)
 
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
-! [FIX] The hidden state: |
-!    <https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute>
-!    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_state>
-!    <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden#the_hidden_until_found_state>
-!    Web browsers may implement the hidden state using display: none, in which case the element will not participate in page layout.
-!    This also means that changing the value of the CSS display property on an element in the hidden state will override the state.
-!    For instance, elements styled display: block will be displayed despite the hidden attribute's presence.
-!    EXAMPLE: <https://www.latribune.fr>
-!      <div class="cookie-consent-wall cookie-consent-wall-clear" hidden="" style="display: block;"></div>
-!      <div class="cookie-consent-banner" hidden="" style="display: flex;">
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[hidden]:not([hidden="until-found"]):style(display: none !important;)
-
 latribune.fr##.tag-pub
