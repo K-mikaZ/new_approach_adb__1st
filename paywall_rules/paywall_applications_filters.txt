@@ -1,12 +1,12 @@
 [uBlock Origin; Adguard]
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 ! <https://regex101.com/r/jbJ7pJ/4>
-^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$##[hidden]:not([hidden="until-found"]):style(display: none !important;)
-^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$##body.didomi-popup-open:remove-class(didomi-popup-open)
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##[hidden]:not([hidden="until-found"]):style(display: none !important;)
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$#@#[data-poool]:remove-attr(data-poool)
+/^(?<domain>(?<ext_and_about_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/#@#[data-poool]:remove-attr(data-poool)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
