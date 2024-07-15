@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 ! Title: Comscore analytics
 ! Expires: 4 days
-! Last modified: Sat, 08 Jun 2024 17:12:32 +0100
+! Last modified: Mon, 15 Jul 2024 20:00:48 +0200
 ! Author: K-mik@Z
 ! < start comScore's filters >
 ! ads & analitycs integrations <https://www.google.com/search?q=%22Owned+by+comScore%22+site%3Awhotracks.me>
