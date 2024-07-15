@@ -3303,7 +3303,6 @@ themoneytizer$important,script,redirect=noopjs
 ||accounts.google.com/gsi/*$badfilter
 ||accounts.google.com/gsi/$~script,badfilter
 ||accounts.google.com/gsi/iframe$badfilter
-@@||accounts.google.com/gsi/iframe
 ! prefer "&ux_mode=popup" (be careful, some do not use "&auto_select=true" with it)
 ||accounts.google.com/gsi/iframe/select?*&ux_mode=popup$subdocument,third-party
 
