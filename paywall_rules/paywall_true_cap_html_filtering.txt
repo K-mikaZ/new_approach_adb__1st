@@ -1,10 +1,12 @@
 [uBlock Origin; Adguard]
+! READ: [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
+
 ||*$header=set-cookie:mvx_consult,important,domain=moneyvox.fr
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^#poool-widget
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[data-vendor*=":poool-"]
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##^#poool-widget
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##^script[data-vendor*=":poool-"]
 ! Break loading site because of overflow
 latribune.fr#@#^#newsletter-register-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
