@@ -6,12 +6,12 @@ Using a fix to the alternative generic selector `*##` ( which is equivalent to: 
 > 
 > `[about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done`
 
-best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:|localhost))))$/`
+best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:|localhost|127\..+))))$/`
 
 > Read:
 > + [Lookaround part 1](//www.regular-expressions.info/lookaround.html), [Lookaround part 2](//www.regular-expressions.info/lookaround2.html) - <regular-expressions.info>
 > + [negative lookbehind](//caniuse.com/js-regexp-lookbehind) - <caniuse.com>
 
-Simplified become => `/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost))$/`
+Simplified become => `/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/`
 
 > [Page test](https://regex101.com/r/jbJ7pJ/10) - <regex101.com>
