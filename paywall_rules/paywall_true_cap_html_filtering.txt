@@ -5,8 +5,8 @@
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##^#poool-widget
-/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##^script[data-vendor*=":poool-"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost))$/##^#poool-widget
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost))$/##^script[data-vendor*=":poool-"]
 ! Break loading site because of overflow
 latribune.fr#@#^#newsletter-register-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
