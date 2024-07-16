@@ -9,7 +9,7 @@
 !            [negative lookbehind](https://caniuse.com/js-regexp-lookbehind)
 !     Simplified become => /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/
 !     Page test: <https://regex101.com/r/jbJ7pJ/8>
-/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^([\s]*?\b(?!\bnone))/):style(display: none !important;)
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
