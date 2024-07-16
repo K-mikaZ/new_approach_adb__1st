@@ -1,4 +1,4 @@
-# alternative generic selector
+# [FIX] Alternative generic selector
 
 alternative to generic `*##` selector ( equivalent to: `/^(?<domains>\S+)$/` )
 > because that selects all URLs ( also extension pages,  about:blank frames )
