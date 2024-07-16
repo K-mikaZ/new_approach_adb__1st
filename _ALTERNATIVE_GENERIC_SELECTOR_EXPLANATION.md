@@ -14,4 +14,4 @@ best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:|localhost|1
 
 Simplified become => `/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/`
 
-> [Page test](https://regex101.com/r/jbJ7pJ/10) - <regex101.com>
+> [Page test](https://regex101.com/r/jbJ7pJ/11) - <regex101.com>
