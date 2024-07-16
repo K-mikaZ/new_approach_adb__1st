@@ -1,8 +1,8 @@
 [uBlock Origin; Adguard]
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost))$/#?##poool-widget:remove()
-/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost))$/#?#script[data-vendor*=":poool-"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#?##poool-widget:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#?#script[data-vendor*=":poool-"]:remove()
 ! Break loading site because of overflow
 latribune.fr#@?##newsletter-register-modal:remove()
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
