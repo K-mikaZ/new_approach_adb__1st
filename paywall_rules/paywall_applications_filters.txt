@@ -1,6 +1,6 @@
 [uBlock Origin; Adguard]
+! READ: [alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/generic_filter_selector_explanation.md)
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-! [alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/generic_filter_selector_explanation.md)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
