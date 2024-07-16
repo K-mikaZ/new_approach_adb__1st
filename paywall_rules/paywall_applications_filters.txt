@@ -2,7 +2,8 @@
 ! READ: [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
 
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
+! break some useful popups
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
 /^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 ! ENSURE whitlisted because break loadin site
 !    test on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
