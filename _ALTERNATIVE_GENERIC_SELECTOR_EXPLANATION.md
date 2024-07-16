@@ -2,7 +2,7 @@
 
 alternative to generic `*##` selector ( which is equivalent to: `/^(?<domains>\S+)$/` )
 > because that selects all URLs ( also extension pages,  about:blank frames )
-> and this creates significant slowdowns in ublock ( especially with "application filters" ), example:
+> and this creates significant slowdowns in ublock ( especially with "application filters" ), example seen in the ublock console:
 > 
 > `[about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done`
 
