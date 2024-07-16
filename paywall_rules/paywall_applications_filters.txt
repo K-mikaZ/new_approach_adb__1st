@@ -1,5 +1,5 @@
 [uBlock Origin; Adguard]
-! READ: [alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/generic_filter_selector_explanation.md)
+! READ: [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
 
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
