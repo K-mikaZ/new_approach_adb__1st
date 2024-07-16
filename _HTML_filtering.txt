@@ -4,6 +4,8 @@
 ! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#html-filters
 ! use with condition: !#if cap_html_filtering ... !#else ... !#endif
 
+! READ: [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
+
 ! <start REMOVE elements > -----------------------------------------------------------------------------------------
 
 
@@ -19,98 +21,98 @@
 ! ===============================================================
 ! "web bugs" filters
 ! ===============================================================
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^img[src*="histats.com"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^img[src*="top-fwz1.mail.ru/counter"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^img[src*="histats.com"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^img[src*="top-fwz1.mail.ru/counter"]
 ok.xxx##^a[href][target]:has(>img[src*="//counter.yadro.ru"])
 
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
 !#if env_mobile || adguard_app_android || adguard_app_ios
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class~="onlyMobile"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class~="onlyTablet"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class~="onlyMobile"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class~="onlyTablet"]
 !#else
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class~="onlyDesktop"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class~="onlyDesktop"]
 !#endif
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class~="c-ads"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class~="doubleclick"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][data-block-devices]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class*="banniere"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[class~="ad"][class*="outbrain"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[id~="adbd"][class*="over"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class|="adsvp"][class*="wrapper"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class^="movie-aye"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class^="salidor_"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class^="tolro_"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class~="c-ads"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class~="doubleclick"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][data-block-devices]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class*="banniere"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[class~="ad"][class*="outbrain"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[id~="adbd"][class*="over"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class|="adsvp"][class*="wrapper"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class^="movie-aye"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class^="salidor_"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class^="tolro_"]
 ! #dfp-atf, #dfp-btf, #dfp-mtf, #dfp-interstitial, #dfp-masthead...
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[id^="dfp-"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div.ads-placeholder
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div.ads-container
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div.sticky-ad-holder
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[id^="dfp-"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div.ads-placeholder
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div.ads-container
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div.sticky-ad-holder
 ! `iframe[name="__uspapiLocator"]`, `iframe[name="__tcfapiLocator"]`, `iframe[name="__gppLocator"]`...
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe[name^="__"][name$="Locator"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe:is([name="google_esf"],[id="google_esf"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe:is([name^="aswift_"],[id^="aswift_"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe[src*="www.googletagmanager.com/ns.html?"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe[src*="/gtm"][src*="ns.html?"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe[src*="/pagead/"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^iframe[src*="doubleclick"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^ins[class*="adsby"][data-ad-slot]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^ins[class*="adsby"][data-ad-client]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^center:has(> ins[class*="adsby"])
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(+'/tag.min.js')
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(devtoolIsOpening)
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(popmagicldr)
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe[name^="__"][name$="Locator"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe:is([name="google_esf"],[id="google_esf"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe:is([name^="aswift_"],[id^="aswift_"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe[src*="www.googletagmanager.com/ns.html?"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe[src*="/gtm"][src*="ns.html?"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe[src*="/pagead/"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^iframe[src*="doubleclick"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^ins[class*="adsby"][data-ad-slot]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^ins[class*="adsby"][data-ad-client]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^center:has(> ins[class*="adsby"])
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(+'/tag.min.js')
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(devtoolIsOpening)
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(popmagicldr)
 ! Yandex.Metrika counter
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(mc.yandex.ru/metrika)
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(/\(m,e,t,r,i,k,a\)/)
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="/beacon.min.js"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[data-cf-beacon]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(mc.yandex.ru/metrika)
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(/\(m,e,t,r,i,k,a\)/)
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="/beacon.min.js"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[data-cf-beacon]
 ! https://onclickalgo.com/a/display.php?r=7011010
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[data-cfasync][src*=".com/a/display.php?"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[data-cfasync][src*=".com/a/display.php?"]
 ! `script[data-tag="asg"]`: Ads Managed by AdSpyglass.com that call https://0i0i0i0.com/
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[data-tag="asg"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="/1clkn/"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="/adsid/integrator.js"]
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="/invoke.js"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="adsmediabox.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="anticipateplummorbid.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="defendantsulphurstamp.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="dexpredict.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="gamescdnfor.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="glersakr.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="glossydollyknock.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="googleoptimize.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="heardaccumulatebeans.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="highcpmgate.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="highrevenuenetwork.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="morningamidamaruhal.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="o333o.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="plausible.io"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="prizegrantedrevision.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="santosattestation.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="seedtag.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="stunkcott.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="troubledcontradiction.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="waust.at"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[data-tag="asg"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="/1clkn/"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="/adsid/integrator.js"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="/invoke.js"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="adsmediabox.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="anticipateplummorbid.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="defendantsulphurstamp.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="dexpredict.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="gamescdnfor.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="glersakr.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="glossydollyknock.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="googleoptimize.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="heardaccumulatebeans.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="highcpmgate.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="highrevenuenetwork.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="morningamidamaruhal.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="o333o.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="plausible.io"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="prizegrantedrevision.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="santosattestation.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="seedtag.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="stunkcott.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="troubledcontradiction.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="waust.at"]
 
 ! ===============================================================
 ! "generic" filters - on french sites
 ! ===============================================================
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div#pub
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class]:has(> a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/))
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^center:has(> a[href*="/regarder."])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div#pub
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class]:has(> a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/))
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^center:has(> a[href*="/regarder."])
 ! `div[class*="btn"]` or `div[class*="button"]`
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class*="button"]:has(> a[href*="/regarder."])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class*="big"][class*="btn"]:has(> a[href*="/regarder."])
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class*="movie_"]:has(> a[href*="premium"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class]:has(> a[href*="premium"][href*=".php"][target])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^div[class]:has(> a[href*="streaming"][href*=".php"][target])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class*="button"]:has(> a[href*="/regarder."])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class*="big"][class*="btn"]:has(> a[href*="/regarder."])
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class*="movie_"]:has(> a[href*="premium"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class]:has(> a[href*="premium"][href*=".php"][target])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^div[class]:has(> a[href*="streaming"][href*=".php"][target])
 
 ! ===============================================================
 ! "specific" filters
@@ -140,7 +142,7 @@ opvid.*##^script:has-text(decodeURIComponent)
 streamta.pe,streamtape.*##^iframe[src^="javascript:"]
 turbovid.*##^script[src*="/api/posts?"]
 ! `*##^script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 turbovid.*##^script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 video.sibnet.ru##^script[src*="//cvt1.sibnet."]
 video.sibnet.ru##^script[src*="//c.sibnet."]
@@ -165,7 +167,7 @@ www.howtogeek.com##^script:has-text(websiteSentinel)
 ! "unbreak" filters
 ! ===============================================================
 ! `.masha_` not removed, only hide, because some sites use it correctly
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/#@#^div[class^="masha_"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#@#^div[class^="masha_"]
 ! [FIX] breaks some videos loading
 hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == top)
 
@@ -174,97 +176,97 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! ===============================================================
 ! "web bugs" filters
 ! ===============================================================
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##img[src*="histats.com"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##img[src*="top-fwz1.mail.ru/counter"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##img[src*="histats.com"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##img[src*="top-fwz1.mail.ru/counter"]:remove()
 ok.xxx##a[href][target]:has(> img[src*="//counter.yadro.ru"]):remove()
 
 ! ===============================================================
 ! "generic" filters
 ! ===============================================================
 !#if env_mobile || adguard_app_android || adguard_app_ios
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class~="onlyMobile"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class~="onlyTablet"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class~="onlyMobile"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class~="onlyTablet"]:remove()
 !#else
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class~="onlyDesktop"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class~="onlyDesktop"]:remove()
 !#endif
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class~="c-ads"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class~="doubleclick"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][data-block-devices]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class*="banniere"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[class~="ad"][class*="outbrain"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[id~="adbd"][class*="over"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[class|="adsvp"][class*="wrapper"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[class^="movie-aye"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[class^="salidor_"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[class^="tolro_"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class~="c-ads"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class~="doubleclick"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][data-block-devices]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class*="banniere"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[class~="ad"][class*="outbrain"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[id~="adbd"][class*="over"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[id*="player"]:is([id*="Over"],[id*="Pub"],[id*="bro"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[class|="adsvp"][class*="wrapper"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[class^="movie-aye"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[class^="salidor_"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[class^="tolro_"]:remove()
 ! #dfp-atf, #dfp-btf, #dfp-mtf, #dfp-interstitial, #dfp-masthead...
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[id^="dfp-"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div.ads-placeholder:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div.ads-container:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div.sticky-ad-holder:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[id^="dfp-"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div.ads-placeholder:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div.ads-container:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div.sticky-ad-holder:remove()
 ! `iframe[name="__uspapiLocator"]`, `iframe[name="__tcfapiLocator"]`, `iframe[name="__gppLocator"]`...
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe[name^="__"][name$="Locator"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe:is([name="google_esf"],[id="google_esf"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe:is([name^="aswift_"],[id^="aswift_"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe[src*="www.googletagmanager.com/ns.html?"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe[src*="/gtm"][src*="ns.html?"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe[src*="/pagead/"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##iframe[src*="doubleclick"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##ins[class*="adsby"][data-ad-slot]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##ins[class*="adsby"][data-ad-client]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##center:has(> ins[class*="adsby"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##+js(remove-node-text, script, +'/tag.min.js')
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##+js(remove-node-text, script, devtoolIsOpening)
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##+js(remove-node-text, script, popmagicldr)
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe[name^="__"][name$="Locator"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe:is([name="google_esf"],[id="google_esf"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe:is([name^="google_ads_iframe"],[id^="google_ads_iframe_"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe:is([name^="aswift_"],[id^="aswift_"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe[src*="www.googletagmanager.com/ns.html?"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe[src*="/gtm"][src*="ns.html?"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe[src*="/pagead/"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##iframe[src*="doubleclick"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##ins[class*="adsby"][data-ad-slot]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##ins[class*="adsby"][data-ad-client]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##center:has(> ins[class*="adsby"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##+js(remove-node-text, script, +'/tag.min.js')
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##+js(remove-node-text, script, devtoolIsOpening)
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##+js(remove-node-text, script, popmagicldr)
 ! Yandex.Metrika counter
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##+js(remove-node-text, script, mc.yandex.ru/metrika)
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[src*="/beacon.min.js"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[data-cf-beacon]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##+js(remove-node-text, script, mc.yandex.ru/metrika)
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[src*="/beacon.min.js"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[data-cf-beacon]:remove()
 ! https://onclickalgo.com/a/display.php?r=7011010
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[data-cfasync][src*=".com/a/display.php?"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[data-cfasync][src*=".com/a/display.php?"]:remove()
 ! `script[data-tag="asg"]`: Ads Managed by AdSpyglass.com that call https://0i0i0i0.com/
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[data-tag="asg"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[src*="/1clkn/"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[src*="/adsid/integrator.js"]:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script[src*="/invoke.js"]:remove()
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="adsmediabox.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="anticipateplummorbid.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="defendantsulphurstamp.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="dexpredict.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="gamescdnfor.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="glersakr.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="glossydollyknock.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="googleoptimize.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="heardaccumulatebeans.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="highcpmgate.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="highrevenuenetwork.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="morningamidamaruhal.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="o333o.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="plausible.io"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="prizegrantedrevision.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="santosattestation.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="seedtag.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="stunkcott.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="troubledcontradiction.com"]
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##^script[src*="waust.at"]
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[data-tag="asg"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[src*="/1clkn/"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[src*="/adsid/integrator.js"]:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script[src*="/invoke.js"]:remove()
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="adsmediabox.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="anticipateplummorbid.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="de9a16fesnda8m2ntsulph40uurstre1namp.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="defendantsulphurstamp.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="dexpredict.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="gamescdnfor.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="glersakr.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="glossydollyknock.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="googleoptimize.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="heardaccumulatebeans.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="highcpmgate.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="highrevenuenetwork.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="kfhoun7sr9vjhunitrdaiiya39lkjnyuilplsae4fk.org"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="morningamidamaruhal.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="o333o.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="plausible.io"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="prizegrantedrevision.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="santosattestation.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="seedtag.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="stunkcott.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="troubledcontradiction.com"]
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[src*="waust.at"]
 
 ! ===============================================================
 ! "generic" filters - on french sites
 ! ===============================================================
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div#pub:remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="/regarder."]:upward(center):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div#pub:remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[class^="ebooks_orange_"][href]:contains(/([Rr]eg|[Tt][eé]l[eé]ch)ar[dg]er/):upward(div[class]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="/regarder."]:upward(center):remove()
 ! `div[class*="btn"]` or `div[class*="button"]`
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="/regarder."]:upward(div[class*="button"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="/regarder."]:upward(div[class*="big"][class*="btn"]):remove()
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="premium"]:upward(div[class*="movie_"]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="premium"][href*=".php"][target]:upward(div[class]):remove()
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##a[href*="streaming"][href*=".php"][target]:upward(div[class]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="/regarder."]:upward(div[class*="button"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="/regarder."]:upward(div[class*="big"][class*="btn"]):remove()
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##div[class*="movie__"]:has(> a[href*="/premium-streaming.php"])
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="premium"]:upward(div[class*="movie_"]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="premium"][href*=".php"][target]:upward(div[class]):remove()
+/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##a[href*="streaming"][href*=".php"][target]:upward(div[class]):remove()
 
 ! ===============================================================
 ! "specific" filters
@@ -294,7 +296,7 @@ opvid.*##+js(remove-node-text, script, decodeURIComponent)
 streamta.pe,streamtape.*##iframe[src^="javascript:"]:remove()
 turbovid.*##script[src*="/api/posts?"]:remove()
 ! `*##script:has-text(+'/400/'+)`, `*##^script:has-text(+'/401/'+)`, `*##^script:has-text(+'/500/'+)`, `*##^script:has-text(+'/501/'+)`
-!/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##script:has-text(/\+\'\/[45](0[01])\/\'\+/)
+!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##script:has-text(/\+\'\/[45](0[01])\/\'\+/)
 turbovid.*##+js(remove-node-text, script, /\+\'\/[45](0[01])\/\'\+/)
 video.sibnet.ru##script[src*="//cvt1.sibnet."]:remove()
 video.sibnet.ru##script[src*="//c.sibnet."]:remove()
