@@ -1,21 +1,20 @@
 [uBlock Origin; Adguard]
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-! alternative to `*##` because it creates significant lag in ublock origin |
-!     Read: <https://www.regular-expressions.info/lookaround.html>
-!     Page test: <https://regex101.com/r/jbJ7pJ/7>
-!     this => `/^(?<domain>(?<reliable_urls>(?!(^[\w\-]+)\:)\S+))$/` selects all URLs (also localhost, ip...) except trusted websites (extension pages, about:blank frames)
-!     best => `/^(?<domain>(?<reliable_urls>(?:[^\w-]+:))|(?<punycodes>(?:xn-^2))?(?:[a-z0-9][a-z0-9-_]{0,61}[a-z0-9]{0,}))\.?(?<domain_tld>(?:xn-^2)?(?:[a-z0-9\-.]{1,61}|[a-z0-9-]{0,30})\.[a-z-1-9]{2,})$/`
-! Simplified because some browser does not support [Lookbehind in JS regular expressions](https://caniuse.com/js-regexp-lookbehind)
-!     and includes `behind-the-scene` urls for be able to apply some fixes.
-!     become => /^(?:(beh.*?([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/
-! find a way for not apply on `about:` when use `trusted-` filters (not sure of its usefulness)
-!     [about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/(?:[\s]*?(?:[^;](?!none).)*)/):style(display: none !important;)
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/##body.didomi-popup-open:remove-class(didomi-popup-open)
+! alternative to generic `*##` selector (equivalent to `/^(?<domains>\S+)$/`) |
+!     because that selects all URLs (also extension pages,  about:blank frames)
+!     and this creates significant slowdowns in ublock (especially with "application filters")
+!     e.g. `[about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done`
+!     best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:))))$/`
+!     Links: <https://www.regular-expressions.info/lookaround.html>
+!            [negative lookbehind](https://caniuse.com/js-regexp-lookbehind)
+!     Simplified become => /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/
+!     Page test: <https://regex101.com/r/jbJ7pJ/8>
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^([\s]*?\b(?!\bnone))[^;]+/):style(display: none !important;)
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-/^(?:(([^\w:-]+))|xn-^2)?(?:[a-z\d][\wd-]{0,61}[a-z\d]*)\.?(?:xn-^2)?(?:[a-z\d.-]{1,61}|[\wd-]{0,30})\.[a-z\d-]{2,}$/#@#[data-poool]:remove-attr(data-poool)
+/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/#@#[data-poool]:remove-attr(data-poool)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
