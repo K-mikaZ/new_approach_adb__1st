@@ -1,14 +1,6 @@
 [uBlock Origin; Adguard]
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-! alternative to generic `*##` selector (equivalent to `/^(?<domains>\S+)$/`) |
-!     because that selects all URLs (also extension pages,  about:blank frames)
-!     and this creates significant slowdowns in ublock (especially with "application filters")
-!     e.g. `[about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done`
-!     best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:))))$/`
-!     Links: <https://www.regular-expressions.info/lookaround.html>
-!            [negative lookbehind](https://caniuse.com/js-regexp-lookbehind)
-!     Simplified become => /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/
-!     Page test: <https://regex101.com/r/jbJ7pJ/8>
+! [alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/generic_filter_selector_explanation.md)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
 /^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
 
