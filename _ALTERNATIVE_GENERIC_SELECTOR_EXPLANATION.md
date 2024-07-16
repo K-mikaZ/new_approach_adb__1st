@@ -6,12 +6,12 @@ alternative to generic `*##` selector ( equivalent to: `/^(?<domains>\S+)$/` )
 > 
 > `[about:blank][set-cookie ⁝ euconsent-v2 ⁝ CQBpHQAQBpHQAAHABBENA8EgAAAAAAAAAAqIAAAAAAAA.YAAAAAAAAAAA ⁝ ] Done`
 
-best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:))))$/`
+best => `/^(?<domains>\S+\b(?<!excluded>\b(?:(about:|[^-]-extension:|localhost))))$/`
 
 > Read:
-> + [Lookaround](https://www.regular-expressions.info/lookaround.html)
-> + [negative lookbehind - caniuse.com](https://caniuse.com/js-regexp-lookbehind)
+> + [Lookaround part 1](//www.regular-expressions.info/lookaround.html), [Lookaround part 2](//www.regular-expressions.info/lookaround2.html) - <regular-expressions.info>
+> + [negative lookbehind](//caniuse.com/js-regexp-lookbehind) - <caniuse.com>
 
-Simplified become => `/^\S+\b(?<!\b(?:[^-](?:-.+)?:))$/`
+Simplified become => `/^\S+\b(?<!\b(?:([^-](?:-.+):|localhost)))$/`
 
-> Page test: <https://regex101.com/r/jbJ7pJ/8>
+> [Page test](https://regex101.com/r/jbJ7pJ/9) - <regex101.com>
