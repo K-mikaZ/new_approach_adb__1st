@@ -7,5 +7,5 @@
 !     view on <https://www.latribune.fr>
 @@||poool.fr^$document
 ||poool.fr^$3p
-! CNAME: cmp.nature.com ⇒ springer2.map.fastly.net
+! CNAME (www.nature.com): cmp.nature.com ⇒ springer2.map.fastly.net
 ||springer2.map.fastly.net^
