@@ -1,10 +1,14 @@
 [uBlock Origin; Adguard]
-! READ: [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
+! READ:
+! [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
+! Procedural-cosmetic-filters: https://github.com/gorhill/ublock/wiki/Procedural-cosmetic-filters
 
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 ! break some useful popups ( TEST PERF: `/^(\s*?(?<!none).)*?$/` VS `/^(\s*?(?!none).)*?$/` )
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
+! found on www.nature.com
+*##dialog.cc-banner:watch-attr(open):remove-attr(open)
 ! ENSURE whitlisted because break loadin site
 !    test on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#@#[data-poool]:remove-attr(data-poool)
