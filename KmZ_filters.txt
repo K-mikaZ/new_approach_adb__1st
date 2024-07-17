@@ -543,7 +543,6 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 ||site.dotvideo.cc^$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
-||*^$domain=d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 @@||doodcdn.*$script,domain=dood.*|dooood.*
 @@||dood.*$script,domain=dood.*|dooood.*
 @@||dooood.com^$subdocument
@@ -553,7 +552,6 @@ d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(abort-current-inlin
 vidlox.*##+js(prevent-window-open)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
-||vidlox.*^$document,important,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;,badfilter
 @@||embed.filmsplay.*$subdocument
 @@||vizcloud.co^$subdocument
 @@||filemoon.sx^$subdocument
@@ -2482,7 +2480,6 @@ voirseries.*##.MailWrapper:nth-child(n+3)
 @@||accounts.www.youtube.com/accounts/CheckConnection$domain=accounts.google.com,csp
 upvid.biz##[class^="lk"]
 upvid.*##+js(prevent-window-open)
-||vidlox.*^$important,badfilter,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.jsdelivr.net *.google.com local.adguard.org injections.adguard.org;
 ||*$third-party,domain=upvid.*
 @@||upvid.*$domain=upvid.*
 ||upvid.biz/js/ad_pop.js$domain=upvid.biz,important
@@ -2714,8 +2711,6 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*$popunder
 /adservice.$image,badfilter
 /stats/watchtime?*=detailpage&*$image,domain=www.youtube.com|youtu.be|yt.be|youtube-nocookie.com,badfilter
 /[\=\&\_\-\.\/\?\s\d](google([\-])?)?analytics(\.js)?[\=\&\_\-\.\/\?\s\d]/$domain=~gitlab.com,badfilter
-/^https?:\/\/str((eam)?ta(pe)?|cloud)\.[\w]+\//$badfilter,important,csp=script-src 'self' data: 'unsafe-inline' 'unsafe-eval' *.google.com *.gstatic.com local.adguard.org injections.adguard.org;
-!
 ###arc-widget-launcher-iframe
 ##+js(set, Document.prototype.interestCohort, undefined)
 #@#.advertisement:not(body)
