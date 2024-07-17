@@ -11,3 +11,4 @@
 ||verify.nature.com^
 ||cmp.nature.com^
 ! TEST WITH `||cmp.*/consent-bundle*.js`
+||cmp.*/consent-bundle*.js
