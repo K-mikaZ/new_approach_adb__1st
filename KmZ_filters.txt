@@ -381,7 +381,7 @@ designparty.*##+js(prevent-setTimeout, p())
 ! window["_run"], window._run on:
 illvid.net,opvid.*,turbovid.co##+js(abort-current-inline-script, /window(?:\[\"|\.)_run(?:\"\])?/)
 illvid.net,opvid.*,turbovid.co##+js(prevent-window-open)
-d00d.*,d000d.*,d0000d.*,dood.*,doood.*,dooood.*,vidmoly.*##+js(noeval)
+d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,vidmoly.*##+js(noeval)
 vidmoly.*##+js(set-constant, jwplayer.defaults.plugins, {})
 ! `window.baspas` is var `Barracuda` on filemoon.sx
 81u6xl9d.xyz,filemoon.*,uqload.*##+js(prevent-setTimeout, /\(\)[\s\S]*{[\r\n]*try{[\r\n]*var t[\s\S]*=[\s\S]*\["sandbox"\,/)
@@ -543,13 +543,12 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 ||site.dotvideo.cc^$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
-!! @@||doodstream.com*?op=enc_status*$domain=dood.*
-||*^$domain=dood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||*^$domain=d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 @@||doodcdn.*$script,domain=dood.*|dooood.*
 @@||dood.*$script,domain=dood.*|dooood.*
 @@||dooood.com^$subdocument
-dood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
-dood.*,dooood.*##+js(abort-current-inline-script, check)
+d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
+d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(abort-current-inline-script, check)
 /(do{2,}d\.(.{2,})\/sw\.js$)/$important
 vidlox.*##+js(prevent-window-open)
 vidlox.*##[id="play_limit_box"]
