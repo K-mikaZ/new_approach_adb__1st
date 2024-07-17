@@ -10,3 +10,4 @@
 ! COOKIE (www.nature.com)
 ||verify.nature.com^
 ||cmp.nature.com^
+! TEST WITH `||cmp.*/consent-bundle*.js`
