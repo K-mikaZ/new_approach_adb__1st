@@ -8,7 +8,8 @@
 @@||poool.fr^$document
 ||poool.fr^$3p
 ! COOKIE (www.nature.com) instead of `nature.com##+js(trusted-click-element, dialog.cc-banner[open] button[data-cc-action="reject"])`
-||verify.nature.com^
-||cmp.nature.com^
-! TEST WITH `||cmp.*/consent-bundle*.js`
+!||verify.nature.com^
+!||cmp.nature.com^
+! TEST WITH `||cmp.*/consent-bundle*.js` and `||verify.*/verify/*.js`
 ||cmp.*/consent-bundle*.js
+||verify.*/verify/*.js
