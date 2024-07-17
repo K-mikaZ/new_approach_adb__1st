@@ -3,8 +3,8 @@
 
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 ! break some useful popups
-!!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##[hidden]:not([hidden="until-found"]):watch-attr(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
-!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##body.didomi-popup-open:remove-class(didomi-popup-open)
+!*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?\b(?!\bnone))/):style(display: none !important;)
+*##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
 ! ENSURE whitlisted because break loadin site
 !    test on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#@#[data-poool]:remove-attr(data-poool)
