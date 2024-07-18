@@ -1,4 +1,8 @@
 [uBlock Origin; Adguard]
+! whitelisting --------------------------------------------------------
 #@#.section-newsletter
+! Blocking ------------------------------------------------------------
+##.lgcookieslaw-overlay
+##.lgcookieslaw_banner
 ##.newsletter-widget
 ##.overlay-newsletter
