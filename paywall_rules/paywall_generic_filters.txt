@@ -4,7 +4,7 @@
 ! Cookie wall ---------------------------------------------------------
 ##.lgcookieslaw-overlay
 !##.lgcookieslaw_banner
-##.tc-privacy-overlay
+!##.tc-privacy-overlay
 ! Newsletter ----------------------------------------------------------
 ##.newsletter-widget
 ##.overlay-newsletter
