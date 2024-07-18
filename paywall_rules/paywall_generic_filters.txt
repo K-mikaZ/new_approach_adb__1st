@@ -7,7 +7,7 @@
 ##.lgcookieslaw-overlay
 ##dialog.cc-banner
 ! tagcommander.com
-##[class|="tc-privacy"]
+!##[class|="tc-privacy"]
 ! Newsletter ----------------------------------------------------------
 ##.newsletter-widget
 ##.overlay-newsletter
