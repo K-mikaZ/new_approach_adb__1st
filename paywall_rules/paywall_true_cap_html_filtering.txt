@@ -7,8 +7,9 @@
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^#poool-widget
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[data-vendor*=":poool-"]
+casayoga.tv##^#modal-cookies
+comment-economiser.fr##^#overlay_blockNL
 ! Break loading site because of overflow
 latribune.fr#@#^#newsletter-register-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
 moneyvox.fr##^[class^="js-listener"][class*="newsletter"]
-www.comment-economiser.fr##^#overlay_blockNL
