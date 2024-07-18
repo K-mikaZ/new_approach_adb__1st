@@ -13,5 +13,7 @@ chefcuisto.com##^#cf-wrapper #cf-error-details
 comment-economiser.fr##^#overlay_blockNL
 ! Break loading site because of overflow
 latribune.fr#@#^#newsletter-register-modal
+! https://github.com/easylist/easylist/issues/19342#issue-2351600314
+intersport.ro##^div.x-cookies-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
 moneyvox.fr##^[class^="js-listener"][class*="newsletter"]
