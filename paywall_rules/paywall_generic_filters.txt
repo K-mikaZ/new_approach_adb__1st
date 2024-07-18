@@ -2,7 +2,9 @@
 ! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
 ! Cookie wall ---------------------------------------------------------
+! 2024-05-15 ¤¤¤ www.casayoga.tv ¤¤¤ (https://www.casayoga.tv/blog/recettes-ayurvedique-yoga/ayurveda-recette-lait-d-or-golden-milk)
 ###modal-cookies
+###modal-newsletter
 !##.lgcookieslaw_banner
 ##.lgcookieslaw-overlay
 ##dialog.cc-banner
