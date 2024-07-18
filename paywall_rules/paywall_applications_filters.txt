@@ -6,7 +6,7 @@
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
 ! break some useful popups ( TEST PERF: `/^(\s*?(?<!none).)*?$/` VS `/^(\s*?(?!none).)*?$/` )
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
+!*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body.didomi-popup-open:remove-class(didomi-popup-open)
 ! tagcommander.com
 *##body.tc-modal-open:remove-class(tc-modal-open)
