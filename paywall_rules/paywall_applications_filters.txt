@@ -9,10 +9,8 @@
 *##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
 ! found on www.nature.com
-!*##dialog.cc-banner:watch-attr(open):remove-attr(open)
-! ENSURE whitlisted because break loadin site
-!    test on: <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
-!/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#@#[data-poool]:remove-attr(data-poool)
+*##.cc-banner:matches-attr(open)
+nature.com##.cc-banner
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 !moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
