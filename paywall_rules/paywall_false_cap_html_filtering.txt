@@ -3,8 +3,11 @@
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#?##poool-widget:remove()
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#?#script[data-vendor*=":poool-"]:remove()
+casayoga.tv#?##modal-cookies:remove()
+! a false error page (in reality, just a div at the start of the page when access to the popup is blocked)
+chefcuisto.com#?##cf-wrapper #cf-error-details:remove()
+comment-economiser.fr#?##overlay_blockNL:remove()
 ! Break loading site because of overflow
 latribune.fr#@?##newsletter-register-modal:remove()
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
-www.moneyvox.fr#?#[class^="js-listener"][class*="newsletter"]:remove()
-www.comment-economiser.fr#?##overlay_blockNL:remove()
+moneyvox.fr#?#[class^="js-listener"][class*="newsletter"]:remove()
