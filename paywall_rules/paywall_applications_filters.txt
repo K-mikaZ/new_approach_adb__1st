@@ -8,11 +8,14 @@
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
-! found on www.nature.com
-! .cc-banner "generic"
+*##body.tc-modal-open:remove-class(tc-modal-open)
+! "generic" .cc-banner (found on www.nature.com), "specific" are placed into paywall_rules/paywall_specific_filters.txt
 *##.cc-banner:matches-attr(open):has([class^="cc-banner"][class*="container"]:not([style*="display: none"]))
-! .cc-banner "specific"
-nature.com##.cc-banner[open]
+
+! https://stackoverflow.com/a/46533865
+www.casayoga.tv##.modal-open:style(overflow: visible !important;)
+www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
+www.femmeactuelle.fr##html:style(overflow: visible !important;)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 !moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
