@@ -47,6 +47,8 @@ france.tv#@#+js(prevent-fetch, fwmrm)
 ||youboranqs01.com^$badfilter
 ! [FIX] reduce page loading time on youtube
 ||play.google.com/log$badfilter
+chefcuisto.com##+js(set-constant, PREBID_TIMEOUT: 10)
+chefcuisto.com##+js(set-constant, FAILSAFE_TIMEOUT, 30)
 
 !#if adguard
 ! 6play.fr#@%#AG_onLoad(function(){var b=new MutationObserver(function(){var a=document.querySelector('button.is-tertiary');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},2E4)});
