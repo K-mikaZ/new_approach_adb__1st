@@ -9,8 +9,10 @@
 *##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
 ! found on www.nature.com
-*##.cc-banner:matches-attr(open)
-nature.com##.cc-banner
+! .cc-banner "generic"
+*##.cc-banner:matches-attr(open):has([class^="cc-banner"][class*="container"]:not([style*="display: none"]))
+! .cc-banner "specific"
+nature.com##.cc-banner[open]
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 !moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
