@@ -4,7 +4,8 @@
 ! Cookie wall ---------------------------------------------------------
 ##.lgcookieslaw-overlay
 !##.lgcookieslaw_banner
-!##.tc-privacy-overlay
+! tagcommander.com
+##[class|="tc-privacy"]
 ! Newsletter ----------------------------------------------------------
 ##.newsletter-widget
 ##.overlay-newsletter
