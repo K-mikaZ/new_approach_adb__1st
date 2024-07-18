@@ -1,7 +1,7 @@
 [uBlock Origin; Adguard]
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
-/ht^2ps?:\/^2chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
-/[Nn]ewslet^2er/$domain=www.750g.com
+/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
+/[Nn]ewslet{2}er/$domain=www.750g.com
 ||forms.soundestlink.com^$from=matteoscoffee.com
 ||tagcommander.com^*/tc_*.js$script,important,from=moneyvox.fr
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
