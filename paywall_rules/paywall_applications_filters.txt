@@ -14,8 +14,6 @@
 ! https://stackoverflow.com/a/46533865
 !casayoga.tv##.modal-open:style(overflow: visible !important;)
 !femmeactuelle.fr##html:style(overflow: visible !important;)
-comment-economiser.fr##.noscroll:style(all: inherit !important;)
-##.noscroll:style(all: inherit !important;)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 !moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
