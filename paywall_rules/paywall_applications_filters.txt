@@ -16,8 +16,8 @@
 !femmeactuelle.fr##html:style(overflow: visible !important;)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
-!moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
-moneyvox.fr##body:matches-attr("class"="body-overlayed"):remove-class(body-overlayed)
+moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
+!moneyvox.fr##body:matches-attr("class"="body-overlayed"):remove-class(body-overlayed)
 toquedechef.com##+js(set-constant, lgcookieslaw_consent_mode, 1)
 toquedechef.com##+js(set-constant, lgcookieslaw_block_navigation, 0)
 toquedechef.com##+js(set-constant, lgcookieslaw_reject_cookies_when_closing_banner, 1)
