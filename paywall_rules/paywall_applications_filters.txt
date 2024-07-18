@@ -8,9 +8,8 @@
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
+! tagcommander.com
 *##body.tc-modal-open:remove-class(tc-modal-open)
-! "generic" .cc-banner (found on www.nature.com), "specific" are placed into paywall_rules/paywall_specific_filters.txt
-*##.cc-banner:matches-attr(open):has([class^="cc-banner"][class*="container"]:not([style*="display: none"]))
 
 ! https://stackoverflow.com/a/46533865
 www.casayoga.tv##.modal-open:style(overflow: visible !important;)
