@@ -1,6 +1,5 @@
 [uBlock Origin; Adguard]
 ! READ:
-! [Alternative generic selector explanation](https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/_ALTERNATIVE_GENERIC_SELECTOR_EXPLANATION.md)
 ! Procedural-cosmetic-filters: https://github.com/gorhill/ublock/wiki/Procedural-cosmetic-filters
 
 ! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
