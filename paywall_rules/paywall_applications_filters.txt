@@ -7,14 +7,15 @@
 ! break some useful popups ( TEST PERF: `/^(\s*?(?<!none).)*?$/` VS `/^(\s*?(?!none).)*?$/` )
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 *##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-*##body:matches-attr("class"="didomi-popup-open"):remove-class(didomi-popup-open)
+*##body.didomi-popup-open:remove-class(didomi-popup-open)
 ! tagcommander.com
 *##body.tc-modal-open:remove-class(tc-modal-open)
 
 ! https://stackoverflow.com/a/46533865
-www.casayoga.tv##.modal-open:style(overflow: visible !important;)
-www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
-www.femmeactuelle.fr##html:style(overflow: visible !important;)
+!casayoga.tv##.modal-open:style(overflow: visible !important;)
+!femmeactuelle.fr##html:style(overflow: visible !important;)
+comment-economiser.fr##.noscroll:style(all: inherit !important;)
+##.noscroll:style(all: inherit !important;)
 
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 !moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
