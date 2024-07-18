@@ -1,8 +1,10 @@
 [uBlock Origin; Adguard]
-! whitelisting --------------------------------------------------------
+! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
-! Blocking ------------------------------------------------------------
+! Cookie wall ---------------------------------------------------------
 ##.lgcookieslaw-overlay
-##.lgcookieslaw_banner
+!##.lgcookieslaw_banner
+##.tc-privacy-overlay
+! Newsletter ----------------------------------------------------------
 ##.newsletter-widget
 ##.overlay-newsletter
