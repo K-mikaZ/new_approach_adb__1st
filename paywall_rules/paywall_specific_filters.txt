@@ -7,10 +7,6 @@ moneyvox.fr##[id^="sbox-"]
 nature.com##.cc-banner[open]
 ! 2024-05-15 ¤¤¤ www.casayoga.tv ¤¤¤ (https://www.casayoga.tv/blog/recettes-ayurvedique-yoga/ayurveda-recette-lait-d-or-golden-milk)
 www.casayoga.tv###modal-newsletter
-www.casayoga.tv##.modal-open:style(overflow: visible !important;)
 www.casayoga.tv##.in.modal-backdrop
-! https://stackoverflow.com/a/46533865
-www.comment-economiser.fr##.noscroll:style(all: inherit !important;)
 www.femmeactuelle.fr##.newsletter-dialog
-www.femmeactuelle.fr##html:style(overflow: visible !important;)
 www.medisite.fr##.mf-loaded.mf-notification-iframe
