@@ -2,8 +2,9 @@
 ! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
 ! Cookie wall ---------------------------------------------------------
-##.lgcookieslaw-overlay
+###modal-cookies
 !##.lgcookieslaw_banner
+##.lgcookieslaw-overlay
 ##dialog.cc-banner
 ! tagcommander.com
 ##[class|="tc-privacy"]
