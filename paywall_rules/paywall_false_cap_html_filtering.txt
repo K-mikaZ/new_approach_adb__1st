@@ -7,6 +7,8 @@ casayoga.tv#?##modal-cookies:remove()
 ! a false error page (in reality, just a div at the start of the page when access to the popup is blocked)
 chefcuisto.com#?##cf-wrapper #cf-error-details:remove()
 comment-economiser.fr#?##overlay_blockNL:remove()
+! https://github.com/easylist/easylist/issues/19342#issue-2351600314
+intersport.ro#?#div.x-cookies-modal:remove()
 ! Break loading site because of overflow
 latribune.fr#@?##newsletter-register-modal:remove()
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
