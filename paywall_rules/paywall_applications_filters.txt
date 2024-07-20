@@ -11,7 +11,7 @@
 *##body.didomi-popup-open:remove-class(didomi-popup-open)
 ! .tc-modal-open => for tagcommander.com
 ! [FIX] break lastpass addon on firefox
-~lastpass.com##body.tc-modal-open:remove-class(tc-modal-open)
+! ##body.tc-modal-open:remove-class(tc-modal-open)
 
 ! https://stackoverflow.com/a/46533865
 !casayoga.tv##.modal-open:style(overflow: visible !important;)
