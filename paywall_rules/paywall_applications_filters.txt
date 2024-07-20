@@ -8,10 +8,10 @@
 ! break some useful popups e.g. on bloctel.gouv.fr (create accompt)
 !*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
 !*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-*##body.didomi-popup-open:remove-class(didomi-popup-open)
 ! .tc-modal-open => for tagcommander.com
-! [FIX] break lastpass addon on firefox
+! [FIX] break lastpass addon on firefox (I think)
 ! ##body.tc-modal-open:remove-class(tc-modal-open)
+!*##body.didomi-popup-open:remove-class(didomi-popup-open)
 
 ! https://stackoverflow.com/a/46533865
 !casayoga.tv##.modal-open:style(overflow: visible !important;)
