@@ -268,11 +268,8 @@ wss://*.statdynamic.com/*
 $websocket,~third-party,important,domain=deezer.com
 $websocket,~third-party,important,domain=tf1.fr
 $websocket,domain=pornhub.*|redtube.*|tube8.*|xtube.*|youporn.*|youporngay.*
-!#if ext_ublock
 $websocket,empty,important,domain=app.molotov.tv
-!#else
-$websocket,redirect=empty,important,domain=app.molotov.tv
-!#endif
+
 wss://net-announce*$websocket,important
 /^ws{1,2}\:\/{2}net[-]an{2}ounce(?:.+)/$websocket,important
 ||*.space:*^$websocket,important
