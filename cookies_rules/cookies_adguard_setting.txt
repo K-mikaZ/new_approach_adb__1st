@@ -1,7 +1,7 @@
 ! 🛈 Compatibility: Rules with $cookie modifier are not supported by |
-!    - AdGuard Content Blocker.
-!    - AdGuard for iOS.
-!    - AdGuard for Safari.
+!    - AdGuard Content Blocker (adguard_ext_android_cb)
+!    - AdGuard for iOS (adguard_app_ios)
+!    - AdGuard for Safari (adguard_ext_safari)
 ! /!\ Restrictions: $cookie rules support three types of modifiers: |
 !    $domain, $~domain, $important, $third-party, and $~third-party.
 ! ---------------------------------------------------------------------------------------------
