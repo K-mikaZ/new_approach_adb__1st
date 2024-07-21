@@ -1,0 +1,2 @@
+[uBlock Origin; Adguard]
+||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
