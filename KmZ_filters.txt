@@ -1,5 +1,5 @@
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sun, 21 Jul 2024 17:55:35 +0200
+! Last modified: Sun, 21 Jul 2024 18:02:22 +0200
 ! Expires: 4 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -18,7 +18,7 @@
 !     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !
 ! ---------------------------------------------------------------------------------------------
-!#include header_rules/_HEADER_rules.txt
+!#include _HEADER_rules.txt
 !#endif
 
 !-----------------------------------------------------------------------------------------------
