@@ -19,7 +19,8 @@
 !
 ! ---------------------------------------------------------------------------------------------
 ! 🛈 Compatibility: Rules with the $header modifier are supported by |
-!    Ublock Origin, AdGuard for Windows, Mac, and Android.
+!    - Ublock Origin
+!    - AdGuard for Windows, Mac, and Android.
 !    <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !#include _HEADER_rules.txt
 !#endif
@@ -29,7 +30,8 @@
 !    ||example.org^$removeheader=request:header-name
 !    /!\ Restrictions: This type of rules can be used only in "trusted filters".
 !    🛈 Compatibility: Rules with $removeheader modifier are supported by |
-!        AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
+!        - AdGuard for Windows, Mac, and Android
+!        - AdGuard Browser Extension for Chrome, Firefox, and Edge.
 !-----------------------------------------------------------------------------------------------
 
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
