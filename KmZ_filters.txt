@@ -14,7 +14,9 @@
 
 !#if cap_html_filtering
 ! ---------------------------------------------------------------------------------------------
+!
 ! HEADER rules
+!
 ! ---------------------------------------------------------------------------------------------
 ! Rules with the $header modifier are supported by |
 !    Ublock Origin, AdGuard for Windows, Mac, and Android.
@@ -24,7 +26,9 @@
 
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ---------------------------------------------------------------------------------------------
+!
 ! CSP blocking rules 
+!
 ! ---------------------------------------------------------------------------------------------
 ! Rules with $csp modifier are not supported by |
 !    AdGuard Content Blocker (adguard_ext_android_cb),
