@@ -7,9 +7,9 @@
 ! ======= *** LINK *** =======
 ||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?)$/,to=/(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)/
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?)$/,to=/(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)/
-! <https://regex101.com/r/ZaM63o/4>
-!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).+)\>(?:[^<].*?)$/,to=/(^|.+\.)(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)$/
-||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).+)\>(?:[^<].*?)$/
+! <https://regex101.com/r/ZaM63o/5>
+!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?)$/,to=/(^|.+\.)(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)$/
+||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?)$/
 ! ensures not to block any, otherwise loading of the player is interrupted.
 @@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 @@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
