@@ -200,19 +200,8 @@ $cookie=_uid
 
 !#endif
 
-! SET/REMOVE cookies ------------------------------------------------------------------------------------------
-
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
-! howtogeek.com: |
-!   prevent forcing connection to continue reading
-!   <https://www.cookieyes.com/cookie-checker/?url=https://www.howtogeek.com/&ref=CSearch-cyCookieChSWT>
-howtogeek.com##+js(set-cookie, unauthenicatedArticleLimitReached, false)
-howtogeek.com#@#+js(remove-cookie, articlesRead)
-howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
-moneyvox.fr##+js(remove-cookie, mvx_consult)
-! pornhub.com: hide age confirmation and accept essential cookies
-pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
-pornhub.com##+js(set-cookie, cookieConsent, 2)
+! "application" filters ------------------------------------------------------
+!#include cookies_application_filter.txt
 
 ! "net" filters ------------------------------------------------------
-!#include cookies_rules/cookies_net_filter.txt
+!#include cookies_net_filter.txt
