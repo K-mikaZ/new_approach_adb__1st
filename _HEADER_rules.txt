@@ -3,8 +3,8 @@
 !    - Ublock Origin
 !    - AdGuard for Windows, Mac, and Android.
 ! ---------------------------------------------------------------------------------------------
-
 ! *** LINK ***
+! ---------------------------------------------------------------------------------------------
 ! ensures not to block any, otherwise loading of the player is interrupted.
 @@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 @@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
@@ -14,6 +14,7 @@
 ||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot)*)\>(?:[^<]*?)$/
 ||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
-
+! ---------------------------------------------------------------------------------------------
 ! *** RANGE ***
+! ---------------------------------------------------------------------------------------------
 ||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
