@@ -22,6 +22,13 @@
 !    Ublock Origin, AdGuard for Windows, Mac, and Android.
 !    <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !#include _HEADER_rules.txt
+!-----------------------------------------------------------------------------------------------
+! See also:
+!    <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier>
+!    ||example.org^$removeheader=request:header-name
+!    Rules with $removeheader modifier are supported by AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
+!    /!\ Restrictions: This type of rules can be used only in "trusted filters".
+!-----------------------------------------------------------------------------------------------
 !#endif
 
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
