@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 ! -------------------------------------
 ! SET cookies
 ! -------------------------------------
@@ -11,6 +10,7 @@ pornhub.com##+js(set-cookie, cookieConsent, 2)
 ! -------------------------------------
 ! REMOVE cookies
 ! -------------------------------------
+fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
 hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 howtogeek.com#@#+js(remove-cookie, articlesRead)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
