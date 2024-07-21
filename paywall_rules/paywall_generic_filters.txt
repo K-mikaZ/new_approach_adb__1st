@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 ! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
 ! Cookie wall ---------------------------------------------------------
