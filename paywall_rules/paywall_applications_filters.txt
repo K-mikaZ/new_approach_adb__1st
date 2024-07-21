@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 ! READ:
 ! Procedural-cosmetic-filters: https://github.com/gorhill/ublock/wiki/Procedural-cosmetic-filters
 
