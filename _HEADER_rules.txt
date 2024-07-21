@@ -7,9 +7,11 @@
 @@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 @@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ! https://regex101.com/r/ZaM63o/2
-||*$header=link:/^\<\/\/vkcdnservice\.appspot\.com(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
-||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
-||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+!||*$header=link:/^\<\/\/vkcdnservice\.appspot\.com(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot)*)\>(?:[^<]*?)$/,to=/(^|.+\.)(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)$/
+||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot)*)\>(?:[^<]*?)$/
+||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
+||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 
 ! *** RANGE ***
 ||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
