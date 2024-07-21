@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 femmeactuelle.fr##.newsletter-dialog
 medisite.fr##.mf-loaded.mf-notification-iframe
 ! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
