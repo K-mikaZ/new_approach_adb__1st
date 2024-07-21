@@ -2760,15 +2760,6 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*$popunder
 @@/\.(.{2,})\/js\/d\_check\.js\?(\d+)/
 ! @@/vendor/ads/*.css$domain=animationdigitalnetwork.fr
 @@||api.company-target.com^$xmlhttprequest,domain=degreed.com
-!#if adguard
-@@||canaltp.fr$cookie
-@@||mozilla.org$cookie
-@@||star.fr$cookie
-@@||vidlox.me$cookie
-@@||eu-proxy.startpage.com$cookie
-@@||startpage.com^$stealth
-@@||hdfilme.ws^$stealth
-!#endif
 @@||eu-proxy.startpage.com$ghide
 @@||canaltp.fr$removeparam
 @@||canaltp.fr^$elemhide
