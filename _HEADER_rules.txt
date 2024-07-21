@@ -1,8 +1,4 @@
 [uBlock Origin; Adguard]
-!    https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier
-!    ||example.org^$removeheader=request:header-name
-!    Rules with $removeheader modifier are supported by AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension for Chrome, Firefox, and Edge.
-!    Restrictions: This type of rules can be used only in "trusted filters".
 
 ! *** LINK ***
 ! ensures not to block any, otherwise loading of the player is interrupted.
