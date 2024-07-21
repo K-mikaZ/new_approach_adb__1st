@@ -10,13 +10,6 @@
 
 !#if adguard
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
-! 🛈 Compatibility: Rules with $cookie modifier are not supported by |
-!    - AdGuard Content Blocker (adguard_ext_android_cb)
-!    - AdGuard for iOS (adguard_app_ios)
-!    - AdGuard for Safari (adguard_ext_safari)
-! /!\ Restrictions: $cookie rules support three types of modifiers: |
-!    $domain, $~domain, $important, $third-party, and $~third-party.
-! ---------------------------------------------------------------------------------------------
 !#include cookies_adguard_setting.txt
 !#endif
 !#endif
