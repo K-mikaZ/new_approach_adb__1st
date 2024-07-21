@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 ! /!\ TESTING
 ! *** COOKIE blocking (prevent creation) *** |
 !   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
