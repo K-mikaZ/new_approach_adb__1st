@@ -1,7 +1,3 @@
-[uBlock Origin; Adguard]
-
-||*$header=set-cookie:mvx_consult,important,domain=moneyvox.fr
-
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) <poool.fr> |
 !    <https://www.latribune.fr/partenaires/votre-argent-avec-finance-heros/ou-trouver-une-banque-en-ligne-gratuite-et-sans-justificatif-987361.html>
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^#poool-widget
