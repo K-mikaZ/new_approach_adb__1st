@@ -181,3 +181,5 @@ $cookie=_uid
 
 !! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
 @@$cookie=sid
+
+$cookie=_fwex_doubleclick.net_IDE
