@@ -10,7 +10,7 @@
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 ! <https://regex101.com/r/ZaM63o/5>
 !||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?),domain=/(?:hq{2}|v(edirt|izplay)|(?:w[aw]{0,2}){2}\d*|y(andexcdn|ounetu))\.(.+)/
-||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?)/
+!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?)/
 ! ensures not to block any, otherwise loading of the player is interrupted.
 @@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 @@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
