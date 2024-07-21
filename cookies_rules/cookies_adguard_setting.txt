@@ -1,11 +1,3 @@
-! 🛈 Compatibility: Rules with $cookie modifier are not supported by |
-!    - AdGuard Content Blocker (adguard_ext_android_cb)
-!    - AdGuard for iOS (adguard_app_ios)
-!    - AdGuard for Safari (adguard_ext_safari)
-! /!\ Restrictions: $cookie rules support three types of modifiers: |
-!    $domain, $~domain, $important, $third-party, and $~third-party.
-! ---------------------------------------------------------------------------------------------
-
 !! prevents Facebook from tracking you even if you are logged in
 ||facebook.com^$third-party,cookie=c_user
 ! $cookie=c_user,third-party,domain=facebook.com
@@ -189,5 +181,3 @@ $cookie=_uid
 
 !! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
 @@$cookie=sid
-
-!#endif
