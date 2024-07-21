@@ -43,7 +43,7 @@
 !#endif
 
 ! ======= COOKIES setting and filtering =======
-!#include _COOKIES_setting.txt
+!#include cookies_rules/_COOKIES_setting.txt
 
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
