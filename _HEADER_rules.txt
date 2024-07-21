@@ -2,9 +2,8 @@
 ! 🛈 Compatibility: Rules with the $header modifier are supported by |
 !    - Ublock Origin
 !    - AdGuard for Windows, Mac, and Android.
-! -------------------------------------------
-! *** LINK ***
-! -------------------------------------------
+! ---------------------------------------------------------------------------------------------
+! ======= *** LINK *** =======
 ! ensures not to block any, otherwise loading of the player is interrupted.
 @@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 @@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*)$/,to=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
@@ -13,7 +12,5 @@
 ||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).+)\>(?:[^<].*?)$/
 ||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?)$/,to=/(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)/
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?)$/,to=/(?:hq+|(?:you)?netu|vedirt|vizplay|(?:w[aw]{0,2}){2}\d*|yandexcdn)\.(.+)/
-! -------------------------------------------
-! *** RANGE ***
-! -------------------------------------------
+! ======= *** RANGE *** =======
 ||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
