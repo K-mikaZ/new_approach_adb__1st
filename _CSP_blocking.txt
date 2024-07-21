@@ -1,10 +1,10 @@
 [uBlock Origin; Adguard]
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
-! CSP blocking ------------------------------------------------------------------
+! CSP blocking --------------------------------------------------------------------------------------
 !     Rules with $csp modifier are not supported by AdGuard Content Blocker (adguard_ext_android_cb),
 !     AdGuard for iOS (adguard_app_ios) and AdGuard for Safari (adguard_ext_safari).
 !     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
-! -------------------------------------------------------------------------------
+! ---------------------------------------------------------------------------------------------------
 
 ||*$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:,to=d00d.*|d000d.*|d0000d.*|do0od.*|dood.*|doood.*|dooood.*
 ||*$csp=default-src 'self' https://admin.lastpass.com; img-src 'self' https://lastpass.com data: blob:; object-src 'self' https://*.googlevideo.com; connect-src 'self' https://lastpass.com wss://*.lastpass.com https://www.lastpass.com https://pollserver.lastpass.com https://loglogin.lastpass.com https://accounts.lastpass.com https://login.microsoftonline.com https://graph.microsoft.com https://login.microsoftonline.us https://graph.microsof…ttps://*.onelogin.com https://openidconnect.googleapis.com https://content.googleapis.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' https://lastpass.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://lastpass.com https://www.youtube.com https://*.ytimg.com https://lp-cdn.lastpass.com; font-src data: 'self' 'unsafe-inline' 'unsafe-eval' https://lastpass.com; frame-src 'self' https://ssl.gstatic.com https://www.google.com https://www.youtube.com https://cdn.lmiutil.com,domain=lastpass.com
