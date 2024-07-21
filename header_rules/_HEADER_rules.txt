@@ -6,10 +6,10 @@
 ! ---------------------------------------------------------------------------------------------
 
 ! ======= *** COOKIES *** =======
-!#include header_rules/cookies_header_rules.txt
+!#include cookies_header_rules.txt
 
 ! ======= *** LINKS *** =======
-!#include header_rules/links_header_rules.txt
+!#include links_header_rules.txt
 
 ! ======= *** RANGES *** =======
-!#include header_rules/ranges_header_rules.txt
+!#include ranges_header_rules.txt
