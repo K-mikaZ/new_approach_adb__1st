@@ -1,6 +1,5 @@
-[uBlock Origin; Adguard]
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Sun, 21 Jul 2024 17:46:29 +0200
+! Last modified: Sun, 21 Jul 2024 17:55:35 +0200
 ! Expires: 4 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
