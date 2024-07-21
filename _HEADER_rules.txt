@@ -5,16 +5,11 @@
 !    - AdGuard for Windows, Mac, and Android.
 ! ---------------------------------------------------------------------------------------------
 
-! ======= *** LINK *** =======
-! hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
-||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
-||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
-! <https://regex101.com/r/ZaM63o/5>
-!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?),domain=/(?:hq{2}|v(edirt|izplay)|(?:w[aw]{0,2}){2}\d*|y(andexcdn|ounetu))\.(.+)/
-!||*$header=link:/^\<\/\/vkcdnservice\.(?:.+(?<=appspot).*?)\>(?:[^<].*?)/
-! ensures not to block any, otherwise loading of the player is interrupted.
-@@||*$header=link:/^\<\/\/(?:.*?)vkcdnservice\.com\>(?:[^<]*),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
-@@||*$header=link:/^\<\/\/(?:.*?)stun\d*\.(?:.+)\>(?:[^<]*),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
+! ======= *** COOKIES *** =======
+!#include header_rules/cookies_header_rules.txt
 
-! ======= *** RANGE *** =======
-||*$header=Range:bytes=0-,important,domain=/uqload\.(.{2,})/
+! ======= *** LINKS *** =======
+!#include header_rules/links_header_rules.txt
+
+! ======= *** RANGES *** =======
+!#include header_rules/ranges_header_rules.txt
