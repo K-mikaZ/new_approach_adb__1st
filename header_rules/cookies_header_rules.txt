@@ -1,2 +1,7 @@
 [uBlock Origin; Adguard]
+! /!\ TESTING
+! *** COOKIE blocking (prevent creation) *** |
+!   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
+!   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (like `uid`) within iframes.
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
+||*$header=cookie:mvx_consult,domain=moneyvox.fr
