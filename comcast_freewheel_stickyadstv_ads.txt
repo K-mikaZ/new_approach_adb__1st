@@ -75,14 +75,6 @@ www.france.tv#@#.ad-layer
 ! 2024-01-23 ¤¤¤ Video Multiple Ad Playlist (VMAP)
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
-!#if adguard
-! 2024-01-23 ¤¤¤ Cookie concerns
-$cookie=_fwex_doubleclick.net_IDE
-!#endif
-
-! 2024-01-23 ¤¤¤ Remove Cookies
-fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
-
 ! 2024-01-23 ¤¤¤ Misc (not sure)
 ||fwmrm.net^$popup,important
 
