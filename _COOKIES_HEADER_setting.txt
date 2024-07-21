@@ -1,12 +1,9 @@
 [uBlock Origin; Adguard]
 ! 🛈 Compatibility: Rules with the $header modifier are supported by |
-!    products that support HTML filtering rules (cap_html_filtering):
+!  products that support HTML filtering rules (cap_html_filtering):
 !    - Ublock Origin.
 !    - AdGuard for Windows, Mac, and Android.
 ! ---------------------------------------------------------------------------------------------
 
-! *** COOKIE blocking (prevent creation) *** |
-!   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
-!   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (like `uid`) within iframes.
-
 ! ======= *** COOKIE *** =======
+||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
