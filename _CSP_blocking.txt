@@ -1,6 +1,7 @@
 [uBlock Origin; Adguard]
 ! CSP blocking ------------------------------------------------------------------
-! https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier
+!     Rules with $csp modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
+!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
 ! -------------------------------------------------------------------------------
 
 ||*$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:,to=d00d.*|d000d.*|d0000d.*|do0od.*|dood.*|doood.*|dooood.*
