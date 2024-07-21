@@ -45,14 +45,4 @@
 
 @@||scorecardresearch.com/p?c1=*$domain=twitch.tv
 
-!#if (adguard)
-! 2024-01-23 Cookie concerns
-! <https://cookiedatabase.org/cookie/comscore/s1/>, <https://cookiesearch.org/cookies/?search-term=comscore&filter-type=script-name&sort=asc&cookie-id=s1>
-$cookie=s1
-$cookie,domain=comscore.com
-!#endif
-
-! 2024-01-23 Remove Cookies
-comscore.com##+js(remove-cookie, /^/)
-
 ! </ end comScore's filters >
