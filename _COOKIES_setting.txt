@@ -214,8 +214,5 @@ moneyvox.fr##+js(remove-cookie, mvx_consult)
 pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
 pornhub.com##+js(set-cookie, cookieConsent, 2)
 
-! REDIRECT rules --------------------------------------------------------------------
-
-||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
-! dailymotion's const: dmCookie3rdPartyAllowed
-||geo2.dailymotion.com/cookie.js$redirect=noop.txt,important
+! "net" filters ------------------------------------------------------
+!#include cookies_rules/cookies_net_filter.txt
