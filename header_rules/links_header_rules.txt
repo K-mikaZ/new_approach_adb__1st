@@ -1,4 +1,3 @@
-[uBlock Origin; Adguard]
 ! hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 ||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]*?),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]*?),domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
