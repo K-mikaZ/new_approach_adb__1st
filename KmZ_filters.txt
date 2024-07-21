@@ -16,8 +16,6 @@
 !#include _HEADER_rules.txt
 
 ! ======= CSP blocking =======
-! Rules with $csp modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
-!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
 !#include _CSP_blocking.txt
 
 ! ======= COOKIES setting and filtering =======
