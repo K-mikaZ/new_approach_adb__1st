@@ -1,0 +1,12 @@
+! ---------------------------------------------
+! "CNAME BLOCKING" rules
+! ---------------------------------------------
+! dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
+||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
+! static.adsafeprotected.com ⇒ d162h6x3rxav67.cloudfront.net
+||d162h6x3rxav67.cloudfront.net^
+! ---------------------------------------------
+! "CNAME WHITELISTING" rules
+! ---------------------------------------------
+! gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
+@@||cfglobalcdn.com^$cname
