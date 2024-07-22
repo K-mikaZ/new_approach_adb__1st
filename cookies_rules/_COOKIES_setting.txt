@@ -14,7 +14,9 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! COOKIES modifier |
-!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!   <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!   The $cookie modifier completely changes rule behavior.
+!     Instead of blocking a request, this modifier makes AdGuard suppress or modify the Cookie and Set-Cookie headers.
 !
 !#include cookies_adguard_setting.txt
 ! ---------------------------------------------------------------------------------------------
