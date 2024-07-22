@@ -2549,26 +2549,30 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-! IMPORTANT: always, not only if cap_html_filtering
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##a[href^="mailto:support@netu.tv"]:remove()
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##a[onclick^="openAuc"]:remove()
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#@#+js(nofab)
+@@$generichide,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
+!@@/js/script_*.js?$domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/#@#+js(nofab)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/#@#+js(set-constant, WebSocket, undefined)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(abort-on-stack-trace, olplayer.error, Be.o.dispatcher.o.dispatcher)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(abort-on-property-read, Document.prototype.oncontextmenu)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-window-open)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-xhr, /cdn-cgi/trace, true)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, rtimeOut, noopFunc)
+! IMPORTANT: always `:remove()`, not only if cap_html_filtering
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##a[href^="mailto:support@netu.tv"]:remove()
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##a[onclick^="openAuc"]:remove()
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-addEventListener, focus)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-addEventListener, /^(?:click|touchstart)$/, togglePopupWindow)
+! https://younetu.org/js/video.js/7/videojs-aspect-ratio-panel.js?4
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(prevent-addEventListener, , preventDefault)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(aeld, _, , log, 3)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, my_config.spotUrl, [])
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, my_config.adCancelTimeout, 10)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, my_config.numAttempts, 1)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, my_config.disablePreloadAds, true)
+!/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(set-constant, my_config.playAdAlways, false)
 
-! /cdn-cgi/trace|$xmlhttprequest,~third-party,from=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(prevent-xhr, /cdn-cgi/trace, true)
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(prevent-addEventListener, load, document.getElementsByTagName('head')[0].appendChild(script))
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(prevent-setTimeout, atOptions)
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(prevent-window-open)
-
-!! see https://hqq.tv/js/embed.211.js?736
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.spotUrl', 'emptyArr', '', '', '', 'true')
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.adCancelTimeout', '100', '', '', '', 'true')
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.numAttempts', '0', '', '', '', 'true')
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.disablePreloadAds', 'true', '', '', '', 'true')
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.playAdAlways', 'false', '', '', '', 'true')
-! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'my_config.autoplay', 'true', '', '', '', 'true')
-
-! hqq.tv#%#//scriptlet('ubo-set-constant.js', 'my_config.spotUrl', 'emptyArr')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'vwview', 'false', '', '', 'true')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'vwview', 'false')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'adBlockDetected', 'noopFunc', '', '', 'true')
@@ -2580,7 +2584,6 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(preven
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'WebSocket', 'undefined', '', '', 'true')
-/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/#@#+js(set-constant, WebSocket, undefined)
 
 !! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
