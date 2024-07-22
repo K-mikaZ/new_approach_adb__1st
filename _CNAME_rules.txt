@@ -14,6 +14,8 @@
 ! 👁️‍🗨️ static.adsafeprotected.com ⇒ d162h6x3rxav67.cloudfront.net
 !   🔗 <https://github.com/AdguardTeam/cname-trackers/issues/101>
 ||d162h6x3rxav67.cloudfront.net^
+! 👁️‍🗨️ AdSpyglass <https://www.adspyglass.com>
+||0i0i0i0.com^
 
 ! "CNAME WHITELISTING" rules
 ! ----------------------------------------------------------------------------------------------
