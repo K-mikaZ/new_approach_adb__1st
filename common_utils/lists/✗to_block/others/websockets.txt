@@ -1,6 +1,7 @@
 
 ! WebSockets
 ! -----------
+! "Bidirectional communication technology for web apps" <https://caniuse.com/websockets>
 ! REAL-TIME WEB TEST – DOES HTML5 WEBSOCKETS WORK FOR YOU?
 ! https://websocketstest.com
 
@@ -22,7 +23,7 @@
 
 ! [FIX] waaw, netu...
 hqq.tv#@#+js(set-constant, WebSocket, undefined)
-@@$websocket,xmlhttprequest,domain=commentsengine.com
+@@$websocket,xmlhttprequest,domain=commentsengine.com|commentsmodule.com
 
 ! [FIX] P2P video delivery
 @@$websocket,domain=tracker.openwebtorrent.com
