@@ -1,5 +1,5 @@
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Mon, 22 Jul 2024 16:12:50 +0200
+! Last modified: Mon, 22 Jul 2024 16:25:14 +0200
 ! Expires: 4 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -57,6 +57,9 @@
 
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
+
+! ======= "CNAME" rules =======
+!#include _CNAME_rules.txt
 
 !#include comcast_freewheel_stickyadstv_ads.txt
 !#include comscore_analytics.txt
