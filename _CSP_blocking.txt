@@ -1,3 +1,4 @@
+! ----------------------------------------------------------------------------------------------
 ! 🛈 Compatibility: Rules with $csp modifier are not supported by |
 !    - AdGuard Content Blocker (adguard_ext_android_cb),
 !    - AdGuard for iOS (adguard_app_ios) and AdGuard for Safari (adguard_ext_safari).
