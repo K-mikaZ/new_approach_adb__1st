@@ -7,4 +7,4 @@
 !  /!\ Restrictions: This type of rules can be used only in "trusted filters".
 !-----------------------------------------------------------------------------------------------
 ! Cookie:uid
-/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/$removeheader=set-cookie
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/$removeheader=request:set-cookie
