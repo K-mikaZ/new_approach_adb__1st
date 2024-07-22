@@ -1,3 +1,4 @@
+!
 ! 🛈 Compatibility: Rules with the $header modifier are supported by |
 !   products that support HTML filtering rules (cap_html_filtering):
 !    - Ublock Origin.
