@@ -7,5 +7,5 @@
 ||*$header=link:/^\<\/\/(?:.*?\.)?stun\d*\.(?:.+)\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 ! blocks imasdk\.googleapis\.com and also vkcdnservice.appspot.com.storage.googleapis.com
 ||*$header=link:/^\<\/\/\w+\.(?:.*?(?<=googleapis)).+\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
-! block `vkcdnservice.appspot.com.storage.googleapis.com` but not `deliver.vkcdnservice.com`
+! block `vkcdnservice.appspot.com.storage.googleapis.com` but not `deliver.vkcdnservice.com` (test link: <https://regex101.com/r/ZaM63o/6>)
 ||*$header=link:/^\<\/\/vkcdnservice\.(?:.*?(?<=appspot)).+\>(?:[^<]+)/,important
