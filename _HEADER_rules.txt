@@ -3,6 +3,7 @@
 !   products that support HTML filtering rules (cap_html_filtering):
 !    - Ublock Origin.
 !    - AdGuard for Windows, Mac, and Android.
+!
 ! ---------------------------------------------------------------------------------------------
 
 ! ======= *** COOKIES *** =======
