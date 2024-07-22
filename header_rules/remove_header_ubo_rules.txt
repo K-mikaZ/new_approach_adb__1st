@@ -1,0 +1,9 @@
+!-----------------------------------------------------------------------------------------------
+!  🛈 The syntax to remove the response header is a special case of HTML filtering, |
+!    whereas the response headers are targeted rather than the response body:
+!      example.com##^responseheader(header-name)
+!    header-name is required to be in lowercase. It is the name of the header to remove.
+!  /!\ Restrictions:
+!    - The removal of response headers can only be applied to document resources like main- or sub-frames.
+!    - Only a limited set of headers get targeted for removal: location, refresh, report-to and set-cookie.
+!-----------------------------------------------------------------------------------------------
