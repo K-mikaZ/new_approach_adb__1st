@@ -1,6 +1,6 @@
 !-----------------------------------------------------------------------------------------------
-!    🛈 Compatibility: Rules with $removeheader modifier are supported by |
-!        - AdGuard for Windows, Mac, and Android (adguard_app_windows, adguard_app_mac, adguard_app_android) => cap_html_filtering
-!        - AdGuard Browser Extension for Chrome, Firefox, and Edge. (adguard_ext_chromium, adguard_ext_firefox, adguard_ext_edge)
-!    /!\ Restrictions: This type of rules can be used only in "trusted filters".
+!  🛈 Compatibility: Rules with $removeheader modifier are supported by |
+!      - AdGuard for Windows, Mac, and Android (adguard_app_windows, adguard_app_mac, adguard_app_android) => cap_html_filtering
+!      - AdGuard Browser Extension for Chrome, Firefox, and Edge. (adguard_ext_chromium, adguard_ext_firefox, adguard_ext_edge)
+!  /!\ Restrictions: This type of rules can be used only in "trusted filters".
 !-----------------------------------------------------------------------------------------------
