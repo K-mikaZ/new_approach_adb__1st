@@ -91,7 +91,7 @@ $cookie=IDE
 !! adswizz.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=OAID
 $cookie,domain=adswizz.com
 $cookie=OAID
-!! bidswitch Advertisement - https://cookiesearch.org/cookies/?cookie-id=tuuid
+!! bidswitch Advertisement - https://cookiesearch.org/cookies/?filter-type=script-name&search-term=bidswitch
 !! $cookie=/^(?:tu{2}id(_lu)?|google_push|bidswitch_((user_)?id|last_time))$/
 $cookie,domain=bidswitch.net
 $cookie=tuuid
