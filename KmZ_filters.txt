@@ -8,7 +8,7 @@
 !
 
 ! ======[ INCLUDES ]=====================================================
-! 🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#include-directive>
+! 🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive>
 ! 🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name>
 
 
@@ -17,7 +17,7 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "HEADER" rules |
-!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
+!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#header-modifier>
 !   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header>
 !
 !#include _HEADER_rules.txt
@@ -27,7 +27,7 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "REMOVE HEADER" rules |
-!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier>
+!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#removeheader-modifier>
 !
 !#include header_rules/remove_true_header_rules.txt
 !-----------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! CSP blocking rules |
-!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
+!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#csp-modifier>
 !
 !#include _CSP_blocking.txt
 ! ----------------------------------------------------------------------------------------------
