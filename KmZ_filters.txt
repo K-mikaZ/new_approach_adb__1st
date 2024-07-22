@@ -3308,10 +3308,11 @@ fourchette-et-bikini.fr#$##margin-adds { margin-top: 4.5rem !important; }
 ||embed.twitch.tv^$third-party,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
 ||hjuyyeuvhvq.com^$important,third-party,subdocument,redirect=noopframe
 ||doubleclick.net/activityi*$subdocument,important,redirect=noopframe
+@@||commentsmodule.com^$domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 ! from ublock filter
 /https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?/$script,redirect-rule=noopjs
 ||cfglobalcdn.com^$badfilter
-@@||commentsmodule.com^
+@@||commentsengine.com^
 themoneytizer$important,script,redirect=noopjs
 ||popmonetizer.net^$important,subdocument,redirect=noopframe
 ||richaudience.com^
