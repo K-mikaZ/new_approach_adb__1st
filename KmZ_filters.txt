@@ -20,7 +20,7 @@
 !   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#header-modifier>
 !   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header>
 !
-!#include _HEADER_rules.txt!
+!#include _HEADER_rules.txt
 !
 ! ---------------------------------------------------------------------------------------------
 !#endif
