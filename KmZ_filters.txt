@@ -42,7 +42,6 @@
 !#endif
 !#endif
 
-
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ---------------------------------------------------------------------------------------------
 !
