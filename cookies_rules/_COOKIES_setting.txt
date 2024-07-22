@@ -1,16 +1,23 @@
+! ----------------------------------------------------------------------------------------------
 ! Cookies are used to track your browsing habits, which can lead to more targeted ads. |
 !   Disabling them can help reduce the number of ads you see.
-
-! USEFULL LINKS ----------------------------------------------------------------------------------------
+!
+! USEFULL LINKS:
 ! ** Free Website Cookie Checker: <https://www.cookieyes.com/cookie-checker/?ref=CSearch>
 ! ** Cookie Search: <https://cookiesearch.org>
 ! ** Cookie Database: <https://cookiedatabase.org>
 ! ** <https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane>
-! -------------------------------------------------------------------------------------------------------
+! ----------------------------------------------------------------------------------------------
 
 !#if adguard
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
+! ---------------------------------------------------------------------------------------------
+!
+! COOKIES modifier |
+!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!
 !#include cookies_adguard_setting.txt
+! ---------------------------------------------------------------------------------------------
 !#endif
 !#endif
 
