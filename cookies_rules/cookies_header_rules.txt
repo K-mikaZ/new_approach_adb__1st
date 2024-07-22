@@ -1,6 +1,6 @@
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ------------------------------------------------------------------------------------
-!  See: <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!  🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
 ! ------------------------------------------------------------------------------------
 ! /!\ TESTING
 ! *** COOKIE blocking (prevent creation) *** |
