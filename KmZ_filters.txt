@@ -2549,8 +2549,6 @@ seriescultes.*,sotipsters.*##[id|="custom_html"]
 @@||mixdrop.$generichide
 @@||younetu.com^$subdocument
 @@||hqq.*^$script,xmlhttprequest,~third-party,badfilter
-! CNAME gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
-@@||cfglobalcdn.com^$cname
 @@$generichide,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 !@@/js/script_*.js?$domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 /(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/#@#+js(nofab)
