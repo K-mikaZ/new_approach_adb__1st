@@ -1,9 +1,3 @@
-! ---------------------------------------------------------------------------------------------
-!
-! "REMOVE HEADER" rules |
-!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier>
-!     ||example.org^$removeheader=request:header-name
-!
 !-----------------------------------------------------------------------------------------------
 !    🛈 Compatibility: Rules with $removeheader modifier are supported by |
 !        - AdGuard for Windows, Mac, and Android (adguard_app_windows, adguard_app_mac, adguard_app_android) => cap_html_filtering
