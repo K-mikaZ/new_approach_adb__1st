@@ -26,10 +26,18 @@
 !#if !ext_ublock
 ! ---------------------------------------------------------------------------------------------
 !
-! "REMOVE HEADER" rules |
+! "REMOVE HEADER" adguard rules |
 !   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#removeheader-modifier>
 !
-!#include header_rules/remove_true_header_rules.txt
+!#include header_rules/remove_header_adguard_rules.txt
+!-----------------------------------------------------------------------------------------------
+!#else
+! ---------------------------------------------------------------------------------------------
+!
+! "REMOVE HEADER" ublock rules |
+!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering>
+!
+!#include header_rules/remove_header_ubo_rules.txt
 !-----------------------------------------------------------------------------------------------
 !#endif
 !#endif
