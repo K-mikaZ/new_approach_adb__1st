@@ -7,5 +7,5 @@
 !    - The removal of response headers can only be applied to document resources like main- or sub-frames.
 !    - Only a limited set of headers get targeted for removal: location, refresh, report-to and set-cookie.
 !-----------------------------------------------------------------------------------------------
-! Cookie:uid
+! sites using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (Cookie:uid) within iframes.
 /(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##^responseheader(set-cookie)
