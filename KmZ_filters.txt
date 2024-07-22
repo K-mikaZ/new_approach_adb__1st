@@ -7,21 +7,22 @@
 ! Description: My personal blocking list.
 !
 
-! ======[ INCLUDE directive ]=====================================================
+! ======[ INCLUDE directive ]================================================================
 ! 🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive>
 ! 🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name>
 
 
 !#if cap_html_filtering || adguard_ext_chromium || adguard_ext_firefox || adguard_ext_edge
 !#if cap_html_filtering
-! ---------------------------------------------------------------------------------------------
+! --------------------------------------------------------------------------------------------
 !
 ! "HEADER" rules |
 !   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#header-modifier>
 !   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header>
 !
-!#include _HEADER_rules.txt
-! ----------------------------------------------------------------------------------------------
+!#include _HEADER_rules.txt!
+!
+! ---------------------------------------------------------------------------------------------
 !#endif
 ! ---------------------------------------------------------------------------------------------
 !
