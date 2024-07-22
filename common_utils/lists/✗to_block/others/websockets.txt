@@ -23,7 +23,7 @@
 
 ! [FIX] waaw, netu...
 hqq.tv#@#+js(set-constant, WebSocket, undefined)
-@@$websocket,xmlhttprequest,domain=commentsengine.com|commentsmodule.com
+@@$websocket,xhr,domain=commentsengine.com|commentsmodule.com
 
 ! [FIX] P2P video delivery
 @@$websocket,domain=tracker.openwebtorrent.com
