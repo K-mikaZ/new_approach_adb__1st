@@ -20,4 +20,4 @@
 ! "CNAME WHITELISTING" rules
 ! ----------------------------------------------------------------------------------------------
 ! gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
-@@||cfglobalcdn.com^$cname
+@@||c11.netu.tv^
