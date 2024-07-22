@@ -10,9 +10,9 @@ pornhub.com##+js(set-cookie, cookieConsent, 2)
 ! -------------------------------------
 ! REMOVE cookies
 ! -------------------------------------
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(remove-cookie, uid)
 comscore.com##+js(remove-cookie, /^/)
 fwmrm.net##+js(remove-cookie, _fwex_doubleclick.net_IDE)
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*##+js(remove-cookie, uid)
 howtogeek.com#@#+js(remove-cookie, articlesRead)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
 moneyvox.fr##+js(remove-cookie, mvx_consult)
