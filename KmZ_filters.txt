@@ -2580,7 +2580,7 @@ hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(preven
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'popUrl', 'undefined', '', '', 'true')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'popns', 'noopFunc', '', '', 'true')
 ! hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#%#//scriptlet('set-constant', 'WebSocket', 'undefined', '', '', 'true')
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*#@%#//scriptlet('set-constant', 'WebSocket', 'undefined')
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/#@#+js(set-constant, WebSocket, undefined)
 
 !! on error redirect adblockcheck for hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
 /\/check\d{8,}\.\w{3,4}/$~third-party,redirect=noop.html,important,domain=hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|yandexcdn.*|younetu.*
