@@ -1,6 +1,11 @@
+!#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
+! ------------------------------------------------------------------------------------
+!  See: <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+! ------------------------------------------------------------------------------------
 ! /!\ TESTING
 ! *** COOKIE blocking (prevent creation) *** |
 !   Not working on some sites like hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,younetu.*,yandexcdn.*
 !   because using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (like `uid`) within iframes.
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
 ||*$header=cookie:mvx_consult,domain=moneyvox.fr
+!#endif
