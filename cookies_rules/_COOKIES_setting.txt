@@ -1,12 +1,11 @@
 ! ----------------------------------------------------------------------------------------------
 ! Cookies are used to track your browsing habits, which can lead to more targeted ads. |
 !   Disabling them can help reduce the number of ads you see.
-!
-! USEFULL LINKS:
-! ** Free Website Cookie Checker: <https://www.cookieyes.com/cookie-checker/?ref=CSearch>
-! ** Cookie Search: <https://cookiesearch.org>
-! ** Cookie Database: <https://cookiedatabase.org>
-! ** <https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane>
+!   USEFULL LINKS:
+!     ** Free Website Cookie Checker: <https://www.cookieyes.com/cookie-checker/?ref=CSearch>
+!     ** Cookie Search: <https://cookiesearch.org>
+!     ** Cookie Database: <https://cookiedatabase.org>
+!     ** <https://learn.microsoft.com/fr-fr/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane>
 ! ----------------------------------------------------------------------------------------------
 
 !#if adguard
