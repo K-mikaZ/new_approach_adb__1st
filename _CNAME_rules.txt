@@ -1,17 +1,22 @@
-! ---------------------------------------------
+! ----------------------------------------------------------------------------------------------
+!
 ! "CNAME BLOCKING" rules |
 !   🛈 A CNAME (Canonical Name) is a type of DNS record that defines an alias from one domain name to another.
 !     It is a basic function used by millions of websites to create unique subdomains for different services, such as mail, search, etc.
 !     To allow for seamless interaction, the subdomains are trusted just like the primary domain.
 !     CNAME-cloaked tracking abuses this fundamental mechanic and creates many more problems than unwelcome data collection.
-! ---------------------------------------------
+!
+! ----------------------------------------------------------------------------------------------
 ! 👁️‍🗨️ dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
 ||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
 ! 👁️‍🗨️ static.adsafeprotected.com ⇒ d162h6x3rxav67.cloudfront.net
 !   🔗 <https://github.com/AdguardTeam/cname-trackers/issues/101>
 ||d162h6x3rxav67.cloudfront.net^
-! ---------------------------------------------
+
+! ----------------------------------------------------------------------------------------------
+!
 ! "CNAME WHITELISTING" rules
-! ---------------------------------------------
+!
+! ----------------------------------------------------------------------------------------------
 ! gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
 @@||cfglobalcdn.com^$cname
