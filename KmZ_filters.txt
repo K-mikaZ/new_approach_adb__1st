@@ -7,7 +7,7 @@
 ! Description: My personal blocking list.
 !
 
-! ======[ INCLUDES ]=====================================================
+! ======[ INCLUDE directive ]=====================================================
 ! 🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive>
 ! 🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name>
 
@@ -38,8 +38,9 @@
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ---------------------------------------------------------------------------------------------
 !
-! CSP blocking rules |
+! "CSP" rules |
 !   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#csp-modifier>
+!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
 !
 !#include _CSP_blocking.txt
 ! ----------------------------------------------------------------------------------------------
@@ -47,7 +48,7 @@
 
 ! ---------------------------------------------------------------------------------------------
 !
-! COOKIES rules
+! "COOKIES" rules
 !
 !#include cookies_rules/_COOKIES_setting.txt
 ! ----------------------------------------------------------------------------------------------
