@@ -35,9 +35,10 @@ $cookie=dmaid
 $cookie=damd
 ! Google DoubleClick - The functionality is: to provide ad delivery or retargeting.
 ! https://cookiedatabase.org/?s=_gads&lang=en
-$cookie=_gads
-$cookie=__gads
-$cookie=___gads
+! No longer active
+! $cookie=_gads
+! $cookie=__gads
+! $cookie=___gads
 !! Mediarithmics Advertisement - https://legal.dailymotion.com/en/cookie-policy/#c-list-of-non-exempted-cookies
 !! $cookie=/^(?:mics([_-](lts|vid|uaid)))$/
 $cookie=mics_lts
