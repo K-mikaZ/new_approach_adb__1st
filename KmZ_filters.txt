@@ -39,8 +39,8 @@
 ! CSP blocking rules |
 !     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
 !
-! ---------------------------------------------------------------------------------------------
 !#include _CSP_blocking.txt
+! ----------------------------------------------------------------------------------------------
 !#endif
 
 ! ---------------------------------------------------------------------------------------------
@@ -48,8 +48,8 @@
 ! COOKIES setting and filtering |
 !     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
 !
-! ---------------------------------------------------------------------------------------------
 !#include cookies_rules/_COOKIES_setting.txt
+! ----------------------------------------------------------------------------------------------
 
 ! ======= HTML filtering =======
 !#include _HTML_filtering.txt
