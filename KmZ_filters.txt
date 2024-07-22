@@ -18,6 +18,7 @@
 !
 ! "HEADER" rules |
 !   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
+!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header>
 !
 !#include _HEADER_rules.txt
 ! ----------------------------------------------------------------------------------------------
