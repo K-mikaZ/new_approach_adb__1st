@@ -17,7 +17,7 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "HEADER" rules |
-!     <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
+!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !
 !#include _HEADER_rules.txt
 ! ----------------------------------------------------------------------------------------------
@@ -25,8 +25,8 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "REMOVE HEADER" rules |
-!     🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier>
-!     ||example.org^$removeheader=request:header-name
+!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#removeheader-modifier>
+!   ||example.org^$removeheader=request:header-name
 !
 !#include header_rules/remove_true_header_rules.txt
 !-----------------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! CSP blocking rules |
-!     🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
+!   🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#csp-modifier>
 !
 !#include _CSP_blocking.txt
 ! ----------------------------------------------------------------------------------------------
