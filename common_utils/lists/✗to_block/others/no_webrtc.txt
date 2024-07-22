@@ -35,7 +35,7 @@
 !! # https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Connectivity#qu%E2%80%99est-ce_que_turn
 !! |turn:*
 
-hqq.*,netu.*,vedirt.*,vizplay.*,waaw.*,waaw1.*,yandexcdn.*,younetu.*##+js(nowebrtc)
+/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(nowebrtc)
 abysscdn.com,sendvid.com,toonanime.*,uptobox.*,video.sibnet.ru,vidmoly.to,vidtodo.*##+js(nowebrtc)
 
 ! WHITELISTING [ Accept on a case-by-case basis, as follows... example.com#@#+js(nowebrtc) ]
