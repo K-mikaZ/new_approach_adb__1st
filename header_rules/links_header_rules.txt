@@ -1,8 +1,9 @@
 ! hqq.*|netu.*|vedirt.*|vizplay.*|waaw.*|waaw1.*|younetu.*|yandexcdn.*
 !    link: <//younetu.org>; rel=preconnect; crossorigin, <//global.stun.twilio.com>; rel=dns-prefetch; crossorigin, <//counter.yadro.ru>; rel=preconnect; crossorigin, <//imasdk.googleapis.com>; rel=preconnect; crossorigin, <//stun2.l.google.com>; rel=dns-prefetch; crossorigin, <//unpkg.com>; rel=preconnect; crossorigin, <//mc.yandex.ru>; rel=preconnect; crossorigin, <//cdn.jsdelivr.net>; rel=preconnect; crossorigin, <//wss.commentsmodule.com>; rel=dns-prefetch; crossorigin, <//www.gstatic.com>; rel=preconnect; crossorigin, <//imasdk.googleapis.com>; rel=preconnect; crossorigin, <//storage.googleapis.com>; rel=preconnect; crossorigin, <//www.google.com>; rel=preconnect; crossorigin,<//a.labadena.com>; rel=preconnect; crossorigin, <//deliver.vkcdnservice.com>; rel=preconnect; crossorigin,<//vkcdnservice.appspot.com.storage.googleapis.com>; rel=preconnect; crossorigin, <//www.google.com>; rel=preconnect; crossorigin, <//www.recaptcha.net>; rel=preconnect; crossorigin, <//cdnjs.cloudflare.com>; rel=preconnect; crossorigin
+! ------------------------------------------------------------------------
 ||*$header=link:/^\<\/\/\w+\.ya(dro|ndex)\.ru\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
 ||*$header=link:/^\<\/\/a\.labadena\.com\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
-||*$header=link:/^\<\/\/(?:.+)?stun\d*\.(?:.+)\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
+||*$header=link:/^\<\/\/(?:.*?\.)?stun\d*\.(?:.+)\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/^\<\/\/
 ! block `vkcdnservice.appspot.com.storage.googleapis.com` but not `deliver.vkcdnservice.com`
 ||*$header=link:/^\<\/\/vkcdnservice\.(.*?(?<=appspot)).+\>(?:[^<]+)/,important
 !||*$header=link:/^\<\/\/vkcdnservice\.(.*?(?<=appspot)).+\>(?:[^<]+)/,important,domain=/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/
