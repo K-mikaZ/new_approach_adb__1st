@@ -6,5 +6,3 @@
 !    ||example.org^$removeheader=request:header-name removes a request header called header-name
 !  /!\ Restrictions: This type of rules can be used only in "trusted filters".
 !-----------------------------------------------------------------------------------------------
-! sites using P3P header (Platform for Privacy Preferences) for setting 3rd party cookies (Cookie:uid) within iframes.
-/(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/$removeheader=request:set-cookie
