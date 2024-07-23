@@ -182,7 +182,10 @@ hqq.*,netu.*,vizplay.*,waaw.*,younetu.*,yandexcdn.*#@#^script:has-text(self == t
 ! ===============================================================
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##img[src*="histats.com"]:remove()
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##img[src*="top-fwz1.mail.ru/counter"]:remove()
-ok.xxx##a[href][target]:has(> img[src*="//counter.yadro.ru"]):remove()
+abysscdn.com#?#img[src*="/favicon.ico"][style="display:none"]:remove()
+chefcuisto.com#?#img[src*="https://www.facebook.com/tr?"]:remove()
+!chefcuisto.com#?#img[style="display:none"][alt="Pixel"]:remove()
+ok.xxx#?#a[href][target]:has(> img[src*="//counter.yadro.ru"]):remove()
 
 ! ===============================================================
 ! "generic" filters
