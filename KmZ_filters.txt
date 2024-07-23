@@ -35,6 +35,7 @@
 !#else
 !#include header_rules/remove_header_ubo_rules.txt
 !#endif
+!
 !-----------------------------------------------------------------------------------------------
 !#endif
 
@@ -46,6 +47,7 @@
 !   🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#csp-modifier
 !
 !#include _CSP_blocking.txt
+!
 ! ----------------------------------------------------------------------------------------------
 !#endif
 
@@ -54,6 +56,7 @@
 ! "COOKIES" rules
 !
 !#include cookies_rules/_COOKIES_setting.txt
+!
 ! ----------------------------------------------------------------------------------------------
 
 ! ======= HTML filtering =======
