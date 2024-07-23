@@ -9,8 +9,6 @@
 
 ! "CNAME BLOCKING" rules
 ! ----------------------------------------------------------------------------------------------
-! 💵 [ads] AdSpyglass <https://www.adspyglass.com>
-||0i0i0i0.com^
 ! 👁️‍🗨️ [telemetry] CNAME az416426.vo.msecnd.net ⇒ cs9.wpc.v0cdn.net (dc.applicationinsights.microsoft.com)
 !   see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
 ||cs9.wpc.v0cdn.net^
