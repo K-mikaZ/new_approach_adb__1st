@@ -22,7 +22,7 @@
 ||d2a8zts6hhnqj1.cloudfront.net^
 ! 💵 [monetization] CNAME cmp.inmobi.com ⇒ d23sp3kzv1t6m5.cloudfront.net (quantcast.com)
 ||d23sp3kzv1t6m5.cloudfront.net^
-! ⛔ [adblock] CNAME cdn.asgcdn.com ⇒ d8kp0wl8m7jru.cloudfront.net (Original URL https://cdn.asgcdn.com/block-detector.js)
+! ⛔ [anti-adblock] CNAME cdn.asgcdn.com ⇒ d8kp0wl8m7jru.cloudfront.net (Original URL https://cdn.asgcdn.com/block-detector.js)
 ||d8kp0wl8m7jru.cloudfront.net^
 ! 👁️‍🗨️ [pixel] CNAME driftt.imgix.net ⇒ dualstack.com.imgix.map.fastly.net
 ||dualstack.com.imgix.map.fastly.net^
