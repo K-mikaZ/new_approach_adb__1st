@@ -23,6 +23,7 @@
 ! ⛔ [anti-adblock] CNAME cdn.asgcdn.com ⇒ d8kp0wl8m7jru.cloudfront.net (Original URL https://cdn.asgcdn.com/block-detector.js)
 ||d8kp0wl8m7jru.cloudfront.net^
 ! 👁️‍🗨️ [telemetry] CNAME dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
+!   see: https://pulsedive.com/ioc/dc.services.visualstudio.com
 ||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
 
 ! "CNAME WHITELISTING" rules
