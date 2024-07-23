@@ -22,6 +22,9 @@
 ! ===============================================================
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^img[src*="histats.com"]
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^img[src*="top-fwz1.mail.ru/counter"]
+abysscdn.com##^img[src*="/favicon.ico"][style="display:none"]
+chefcuisto.com##^img[src*="https://www.facebook.com/tr?"]
+!chefcuisto.com##^img[style="display:none"][alt="Pixel"]
 ok.xxx##^a[href][target]:has(>img[src*="//counter.yadro.ru"])
 
 ! ===============================================================
