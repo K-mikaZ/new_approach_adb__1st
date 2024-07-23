@@ -142,8 +142,8 @@ voirseries.*##[class*="player" i]:has(>:is([class*="download"],[id*="download"])
 ! -------------------- Fake watching player ---------------------
 !! *##:where([data-url="/video-vip.html"])
 ##:where([data-url*="vip.htm"])
-##[class*="player" i]:is(:not( [style*="hidden"]):not([style*="display:"][style*="none"])) li:has(>[data-url*="vip.htm"])
-##li[data-plink*="stream"][data-plink*="vip.htm"]:is(:not([style*="hidden"]):not([style*="display:"][style*="none"]))
+##[class*="player" i] li:has(>[data-url*="vip.htm"])
+##li[data-plink*="stream"][data-plink*="vip.htm"]
 !! hdss.show
 ##[class*="player" i] > li[data-link*="/player/online.htm"]
 !! ducine.*, streamfilms.*, cpasmieux.* ...
