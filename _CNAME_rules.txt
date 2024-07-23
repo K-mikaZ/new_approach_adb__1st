@@ -12,7 +12,7 @@
 ! 💵 [ads] AdSpyglass <https://www.adspyglass.com>
 ||0i0i0i0.com^
 ! 👁️‍🗨️ [telemetry] CNAME az416426.vo.msecnd.net ⇒ cs9.wpc.v0cdn.net (dc.applicationinsights.microsoft.com)
-! see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
+!   see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
 ||cs9.wpc.v0cdn.net^
 ! 👁️‍🗨️ [pixel] CNAME static.adsafeprotected.com ⇒ d162h6x3rxav67.cloudfront.net
 !   🔗 <https://github.com/AdguardTeam/cname-trackers/issues/101>
@@ -20,12 +20,14 @@
 ! 👁️‍🗨️ [tracking] CNAME p.asgpxl.com ⇒ d2a8zts6hhnqj1.cloudfront.net (Original URL: https://p.asgpxl.com/tr.js)
 !   concerns: www.traforama.com", "app.traforama.com", "www.adspyglass.com", "app.adspyglass.com"
 ||d2a8zts6hhnqj1.cloudfront.net^
-! 💵 [marketing] CNAME cmp.inmobi.com ⇒ d23sp3kzv1t6m5.cloudfront.net (quantcast.com)
+! 💵 [monetization] CNAME cmp.inmobi.com ⇒ d23sp3kzv1t6m5.cloudfront.net (quantcast.com)
 ||d23sp3kzv1t6m5.cloudfront.net^
 ! ⛔ [adblock] CNAME cdn.asgcdn.com ⇒ d8kp0wl8m7jru.cloudfront.net (Original URL https://cdn.asgcdn.com/block-detector.js)
 ||d8kp0wl8m7jru.cloudfront.net^
 ! 👁️‍🗨️ [pixel] CNAME driftt.imgix.net ⇒ dualstack.com.imgix.map.fastly.net
 ||dualstack.com.imgix.map.fastly.net^
+! 👁️‍🗨️ [pixel] CNAME data.product.lastpass.com ⇒ ghs.googlehosted.com (Original URL https://data.product.lastpass.com/data/ptm.gif)
+||ghs.googlehosted.com^
 ! 👁️‍🗨️ [telemetry] CNAME dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
 ||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
 
