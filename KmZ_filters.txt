@@ -8,8 +8,8 @@
 !
 
 ! ======[ INCLUDE directive ]================================================================
-! 🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive>
-! 🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name>
+! 🔗 https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name
+! 🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive
 
 
 !#if cap_html_filtering || adguard_ext_chromium || adguard_ext_firefox || adguard_ext_edge
@@ -17,8 +17,8 @@
 ! --------------------------------------------------------------------------------------------
 !
 ! "HEADER" rules |
-!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#header-modifier>
-!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header>
+!   🔗 https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#header
+!   🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#header-modifier
 !
 !#include _HEADER_rules.txt
 !
@@ -27,8 +27,8 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "REMOVE HEADER" rules |
-!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#removeheader-modifier>
-!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering>
+!   🔗 https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#response-header-filtering
+!   🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#removeheader-modifier
 !
 !#if !ext_ublock
 !#include header_rules/remove_header_adguard_rules.txt
@@ -42,8 +42,8 @@
 ! ---------------------------------------------------------------------------------------------
 !
 ! "CSP" rules |
-!   🔗 <https://adguard.com/kb/general/ad-filtering/create-own-filters/#csp-modifier>
-!   🔗 <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp>
+!   🔗 https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#csp
+!   🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#csp-modifier
 !
 !#include _CSP_blocking.txt
 ! ----------------------------------------------------------------------------------------------
