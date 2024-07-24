@@ -1,5 +1,5 @@
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Tue, 23 Jul 2024 00:45:24 +0200
+! Last modified: Wed, 24 Jul 2024 17:04:55 +0200
 ! Expires: 4 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
