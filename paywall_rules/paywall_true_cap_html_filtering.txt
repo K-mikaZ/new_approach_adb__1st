@@ -4,7 +4,8 @@
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/##^script[data-vendor*=":poool-"]
 casayoga.tv##^#modal-cookies
 ! a false error page (in reality, just a div at the start of the page when access to the popup is blocked)
-chefcuisto.com##^#cf-wrapper #cf-error-details
+! `#cf-wrapper #cookie-alert` and `#cf-wrapper #cf-error-details`
+chefcuisto.com##^#cf-wrapper
 comment-economiser.fr##^#overlay_blockNL
 ! Break loading site because of overflow
 latribune.fr#@#^#newsletter-register-modal
