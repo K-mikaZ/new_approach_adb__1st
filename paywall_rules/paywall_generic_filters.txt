@@ -1,6 +1,7 @@
 ! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
 ! Cookie wall ---------------------------------------------------------
+###cookieChoiceInfo
 ! found on www.nature.com
 !##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):not([style*="display: none"])
 ##[class^="cookie-consent-"][hidden]:not([style*="display: none"])
