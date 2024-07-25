@@ -35,20 +35,19 @@
 output=xml_vmap1$xmlhttprequest,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 
-!! !#if adguard
 
 ! ======= Video Ad Serving Template (VAST) =======
-!   noop vast only supported by adguard
 
 /\/{1,2}vast[.\/]/$important,xmlhttprequest,third-party,domain=~raw.githubusercontent.com|~github.com
 ! |https://vidmoly.to/static/vastAD.js
 /vastAD.js
-
 @@||appcdn01.xyz/vast.js
 @@/\/vast([-~_.]{1}\w+)?(\.min)?\.js/$domain=designparty.*
 ||designparty.*/*/vast.js$important
-
 ||cdn.jsdelivr.net/npm/@dailymotion/vast-client@*/dist/vast-client.$script,important,redirect=noopjs
+
+!! !#if adguard
+!   noop vast only supported by adguard
 
 ! 2024-01-29 ~ 11:02:39 - image redirect to a XML
 ||ad.mail.ru/vast/$important,redirect=noopvast-3.0
