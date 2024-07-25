@@ -1,8 +1,11 @@
-! Title: VAST & VMAP ads
+! Title: VAST / VMAP / ... ads
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/vast_vmap.txt
 ! Description: |
-!   Video Ad Serving Template (VAST) & Video Multiple Ad Playlist (VMAP) blocklist.
+!   Blocking Video Ad Serving Template (VAST), Video Multiple Ad Playlist (VMAP) blocklist, Video Player-Ad Interface Definition (VPAID), ...
+
+! 
+! READ: https://clearcode.cc/blog/vast-vpaid-vmap-mraid/
 
 
 ! ======= Video Player-Ad Interface Definition (VPAID) =======
