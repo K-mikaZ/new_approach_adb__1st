@@ -11,11 +11,11 @@
 ||sdk.privacy-center.org^$script,domain=didomi.io|intersport.fr|lunion.fr|ouest-france.fr|ouestfrance-immo.com|ouestfrance-immo.pro
 ||cookiebot.com^$from=acscourier.net
 ||smartrep.gr^$from=acscourier.net
+! [COOKIE] ----------------------
 ! 25 juil. 2024 - www.surmafacture.fr
 ||consentframework.com^$3p
-! COOKIE (www.nature.com) instead of `nature.com##+js(trusted-click-element, dialog.cc-banner[open] button[data-cc-action="reject"])`
-! TEST WITH `||cmp.*/consent-bundle*.js` and `||verify.*/verify/*.js`
+! 25 juil. 2024 - www.nature.com
 ||verify.*/verify/*.min.js
 ||cmp.*/consent-bundle*.js
-!||cmp.*.com^choice/*/choice.js?tag_version
+! 25 juil. 2024 - InMobi CMP `cmp.{domain}/choice/*/choice.js?tag_version=`
 ||cmp.*/choice/*/choice.js?tag_version
