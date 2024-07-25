@@ -13,7 +13,6 @@ youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 ||criteo.net^$important,badfilter
 @@||static.criteo.net^
 @@||cta-service-cms2.hubspot.com^$removeparam
-@@||www.googletagmanager.com/gtm.js$script,domain=actu.fr
 ! 11 juin 2024 ¤¤¤ mail.google.com ¤¤¤ (https://mail.google.com/)
 @@||trackers.uglyemail.com^$domain=mail.google.com
 ! [FIX] player loading
