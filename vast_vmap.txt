@@ -16,11 +16,6 @@
 /\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
 ! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
 /VPAIDFlash.swf$object,redirect=empty
-! noop vast only supported by adguard
-||tpc.googlesyndication.com/ima3vpaid$redirect=noopvast-2.0
-||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
-||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
-||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
 
 
 ! ======= Video Multiple Ad Playlist (VMAP) =======
@@ -43,6 +38,7 @@ imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 !! !#if adguard
 
 ! ======= Video Ad Serving Template (VAST) =======
+!   noop vast only supported by adguard
 
 /\/{1,2}vast[.\/]/$important,xmlhttprequest,third-party,domain=~raw.githubusercontent.com|~github.com
 ! |https://vidmoly.to/static/vastAD.js
@@ -59,6 +55,11 @@ imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 
 ! &output=vastvpaid&, &format=vast*&
 /\&\w=vast([\w\d]+)?[\/]/$xmlhttprequest,third-party
+
+||tpc.googlesyndication.com/ima3vpaid$redirect=noopvast-2.0
+||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
+||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
+||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
 
 /vast/v2?$xmlhttprequest,third-party,redirect-rule=noopvast-2.0
 /vast/v3?$xmlhttprequest,third-party,redirect-rule=noopvast-3.0
