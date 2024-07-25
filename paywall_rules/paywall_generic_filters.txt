@@ -9,7 +9,6 @@
 ##dialog.cc-banner
 ! found on www.nature.com
 ##[class^="cookie-consent-"][hidden]:not([style*="display: none"])
-###cookieChoiceInfo
 ! tagcommander.com
 !##[class|="tc-privacy"]
 ! Newsletter ----------------------------------------------------------
