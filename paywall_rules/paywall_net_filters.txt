@@ -12,7 +12,7 @@
 ||cookiebot.com^$from=acscourier.net
 ||smartrep.gr^$from=acscourier.net
 ! 25 juil. 2024 - www.surmafacture.fr
-||consentframework.com^
+||consentframework.com^$3p
 ! COOKIE (www.nature.com) instead of `nature.com##+js(trusted-click-element, dialog.cc-banner[open] button[data-cc-action="reject"])`
 ! TEST WITH `||cmp.*/consent-bundle*.js` and `||verify.*/verify/*.js`
 !||verify.nature.com^
