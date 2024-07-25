@@ -1,5 +1,5 @@
 ! Title: [?][list] "Advanced Paywall, Registration wall, Cookie wall, Subscription solution." - by K-mik@Z
-! Last modified: Thu, 25 Jul 2024 15:32:18 +0200
+! Last modified: Thu, 25 Jul 2024 18:05:56 +0200
 ! Expires: 4 days (update frequency)
 ! Author: K-mik@Z
 ! Homepage: https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/KmZ_paywall_blocklist.txt
