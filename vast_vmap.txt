@@ -10,13 +10,14 @@
 
 ! ======= Video Player-Ad Interface Definition (VPAID) =======
 
-||tpc.googlesyndication.com/ima3vpaid?$script,important,redirect=noopjs
-||tpc.googlesyndication.com/ima3vpaid$xhr,important,redirect=noopvast-2.0
+||imasdk.googleapis.com/js/sdkloader/vpaid_adapter.js$redirect=noopjs
 ! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
 /\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,~stylesheet
 /\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
 ! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
 /VPAIDFlash.swf$object,redirect=empty
+! noop vast only supported by adguard
+||tpc.googlesyndication.com/ima3vpaid$redirect=noopvast-2.0
 ||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
 ||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
 ||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
