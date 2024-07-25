@@ -4021,4 +4021,4 @@ themoneytizer$important,script,redirect=noopjs
 !! Includes tag managers, privacy notices, and technologies that are critical to the functionality of a website
 !! https://whotracks.me/blog/tracker_categories.html#:~:text=other%20interaction%20tools-,Essential,-Includes%20tag%20managers
 
-@@||cdn.tagcommander.com^*/tc_*.js
+! @@||cdn.tagcommander.com^*/tc_*.js
