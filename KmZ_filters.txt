@@ -3117,7 +3117,6 @@ juststream.org##.movie-xyz
 ! @@||batch.com^
 @@||stapadblockuser.*^$image,script,xmlhttprequest,subdocument,~third-party
 ||facebook.com/tr/$important
-||taboola.com^$important
 ||implcit.com^$important
 ||beop.io^$important
 ||confiant-integrations.global.ssl.fastly.net^$important
