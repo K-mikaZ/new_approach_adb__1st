@@ -4,6 +4,21 @@
 ! Description: |
 !   Video Ad Serving Template (VAST) & Video Multiple Ad Playlist (VMAP) blocklist.
 
+
+! ======= Video Player-Ad Interface Definition (VPAID) =======
+
+||tpc.googlesyndication.com/ima3vpaid?$script,important,redirect=noopjs
+||tpc.googlesyndication.com/ima3vpaid$xhr,important,redirect=noopvast-2.0
+! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
+/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,~stylesheet
+/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
+! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
+/VPAIDFlash.swf$object,redirect=empty
+||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
+||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
+||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
+
+
 ! ======= Video Multiple Ad Playlist (VMAP) =======
 
 !! ||yospace.com/csm/analytics;$xmlhttprequest,redirect-rule=noop-vmap1.0.xml,important
@@ -65,12 +80,6 @@ imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 ||vast.playmatic.video^$redirect-rule=noopvast-3.0
 ||vast.xpln.tech/vast?$redirect-rule=noopvast-2.0
 
-! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
-/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,~stylesheet
-/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
-! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
-/VPAIDFlash.swf$object,redirect=empty
-
 ||wolfstream.tv/player/*/vast.js$important
 /(.*)?o3{3}o\.(.{2,})\/vast\-im\.js/$script,important
 /uptostream\.(.{2,})\/as{2}ets\/ads(\w+)?\.xml/$important,redirect=noopvast-3.0
@@ -104,7 +113,6 @@ imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 ||xtremeserve.xyz$xmlhttprequest,redirect-rule=noopvast-2.0
 ||spotscenered.info$xmlhttprequest,redirect-rule=noopvast-2.0
 ||ad.doubleclick.net/ddm/pfadx/*;dcmt=text/xml$xmlhttprequest,redirect-rule=noopvast-2.0
-||tpc.googlesyndication.com/ima3vpaid$xmlhttprequest,redirect-rule=noopvast-2.0
 !! ||svastx.moatads.com$xmlhttprequest,redirect-rule=noopvast-2.0
 ||videoadex.com/unvrsltag$xmlhttprequest,redirect-rule=noopvast-2.0
 /vast/*_vast=2$xmlhttprequest,redirect=noopvast-2.0,important
@@ -116,7 +124,6 @@ imasdk.googleapis.com##+js(xml-prune, VAST, , /^.+/)
 ||springserve.com$xmlhttprequest,redirect=noopvast-3.0,important
 ! ||plified.pro$xmlhttprequest,redirect-rule=noopvast-3.0
 ||greedseed.world/vast_tag$xmlhttprequest,redirect=noopvast-3.0,important
-||vidalak.com/api/vpaid?$xmlhttprequest,redirect=noopvast-3.0,important
 ||vast.yomeno.xyz$xmlhttprequest,redirect-rule=noopvast-3.0
 ||movcpm.com/watch.xml$xmlhttprequest,redirect-rule=noopvast-3.0
 ||apprefaculty.pro$xmlhttprequest,redirect-rule=noopvast-3.0
@@ -171,7 +178,6 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||ssp.bidvol.com/vast/
 ||serv01001.xyz^$redirect=noopvast-3.0
 ||rocketme.top/vast.php?$redirect=noopvast-3.0
-||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
 ||videosworks.com/add.php?$redirect=nooptext
 ||ssp.bidvol.com/vast/$redirect=empty
 ||serv01001.xyz^$redirect=noopvast-3.0
@@ -186,6 +192,5 @@ vast.*/v4$xmlhttprequest,redirect-rule=noopvast-4.0,important
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 ||0af2a962b0102942d9a7df351b20be55.com^$important,redirect=noopvast-2.0
-||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
 
 !! !#endif
