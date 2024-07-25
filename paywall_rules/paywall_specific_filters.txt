@@ -1,5 +1,8 @@
 actu.fr###didomi-host:style(visibility: hidden !important;)
 femmeactuelle.fr##.newsletter-dialog
+forum.quechoisir.org###tc-privacy-wrapper
+forum.quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
+forum.quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
 medisite.fr##.mf-loaded.mf-notification-iframe
 ! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
 nature.com##.cc-banner[open]
