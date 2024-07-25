@@ -17,3 +17,5 @@
 ! TEST WITH `||cmp.*/consent-bundle*.js` and `||verify.*/verify/*.js`
 ||verify.*/verify/*.min.js
 ||cmp.*/consent-bundle*.js
+!||cmp.*.com^choice/*/choice.js?tag_version
+||cmp.*/choice/*/choice.js?tag_version
