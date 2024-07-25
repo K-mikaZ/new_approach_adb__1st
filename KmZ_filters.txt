@@ -3015,7 +3015,6 @@ streamingvf.fun##[id^=ads_]
 @@||vidoza.net$media,_,~third-party
 @@||uloadcdn.com^$media
 @@||userload.co^$subdocument
-||qiota.com^
 ||googleoptimize.com^$important
 /sentry(-cdn)?\.(com|io)/$third-party
 ||cdn.jsdelivr.net*@sentry/*.js$important
