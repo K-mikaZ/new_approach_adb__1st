@@ -21,6 +21,8 @@ chefcuisto.com##+js(abort-current-script, lapressequebecoise_popup-js-extra)
 chefcuisto.com###cf-wrapper #cookie-alert
 chefcuisto.com##body.slideout-enabled:style(overflow: visible !important;)
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
+lunion.fr##+js(prevent-addEventListener, /^q_qiota.+/)
+lunion.fr##+js(prevent-addEventListener, DOMContentLoaded, /.*?isSubscriber.*?/)
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 !moneyvox.fr##body:matches-attr("class"="body-overlayed"):remove-class(body-overlayed)
 shop.garten-bienen.at##+js(prevent-setTimeout, modal.show())
