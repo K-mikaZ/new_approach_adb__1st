@@ -1,6 +1,8 @@
+actu.fr###didomi-host:style(visibility: hidden !important;)
 femmeactuelle.fr##.newsletter-dialog
 medisite.fr##.mf-loaded.mf-notification-iframe
 ! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
 nature.com##.cc-banner[open]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
+
