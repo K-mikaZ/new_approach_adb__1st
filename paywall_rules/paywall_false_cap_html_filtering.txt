@@ -4,7 +4,8 @@
 !/^\S+\b(?<!\b(?:[^-](?:-.+:)|localhost|127\..+))$/#?#script[data-vendor*=":poool-"]:remove()
 casayoga.tv#?##modal-cookies:remove()
 ! a false error page (in reality, just a div at the start of the page when access to the popup is blocked)
-chefcuisto.com#?##cf-wrapper #cf-error-details:remove()
+! `#cf-wrapper #cookie-alert` and `#cf-wrapper #cf-error-details`
+chefcuisto.com#?##cf-wrapper:remove()
 comment-economiser.fr#?##overlay_blockNL:remove()
 ! https://github.com/easylist/easylist/issues/19342#issue-2351600314
 intersport.ro#?#div.x-cookies-modal:remove()
