@@ -7,6 +7,11 @@
 ###tarteaucitronRoot
 ##.lgcookieslaw-overlay
 ##dialog.cc-banner
+! help.consentmanager.fr
+##div.cmpwrapper
+##div.cmpwrapper:empty
+##div#cmpwrapper.cmpwrapper
+##div#cmpwrapper.cmpwrapper:empty
 ! found on www.nature.com
 ##[class^="cookie-consent-"][hidden]:not([style*="display: none"])
 ! tagcommander.com
