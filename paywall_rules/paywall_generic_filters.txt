@@ -16,6 +16,9 @@
 ##[class^="cookie-consent-"][hidden]:not([style*="display: none"])
 ! tagcommander.com
 !##[class|="tc-privacy"]
+!###tc-privacy-wrapper
+!##.tc-privacy-overlay:style(display: none !important;)
+!##body.tc-modal-open:remove-class(tc-modal-open)
 ! Newsletter ----------------------------------------------------------
 ###modal-newsletter
 ##.newsletter-widget
