@@ -15,7 +15,5 @@
 ||consentframework.com^$3p
 ! COOKIE (www.nature.com) instead of `nature.com##+js(trusted-click-element, dialog.cc-banner[open] button[data-cc-action="reject"])`
 ! TEST WITH `||cmp.*/consent-bundle*.js` and `||verify.*/verify/*.js`
-!||verify.nature.com^
 ||verify.*/verify/*.min.js
-!||cmp.nature.com^
 ||cmp.*/consent-bundle*.js
