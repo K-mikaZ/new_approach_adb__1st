@@ -22,6 +22,9 @@
 !#endif
 !#endif
 
+! "specific" filters ------------------------------------------------------
+!#include cookies_specific_filters.txt
+
 ! "application" filters ------------------------------------------------------
 !#include cookies_application_filter.txt
 
