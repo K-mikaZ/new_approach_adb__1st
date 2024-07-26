@@ -9,26 +9,12 @@
 
 ! "CNAME BLOCKING" rules
 ! ----------------------------------------------------------------------------------------------
-! 👁️‍🗨️ [telemetry] CNAME az416426.vo.msecnd.net ⇒ cs9.wpc.v0cdn.net (dc.applicationinsights.microsoft.com)
-!   see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
-||cs9.wpc.v0cdn.net^
-! 👁️‍🗨️ [tracking] CNAME trck.digiteka.com ⇒ claranet-logger1.dginfra.net
-||claranet-logger1.dginfra.net^
-! 👁️‍🗨️ [pixel] CNAME static.adsafeprotected.com ⇒ d162h6x3rxav67.cloudfront.net
-!   🔗 <https://github.com/AdguardTeam/cname-trackers/issues/101>
-||d162h6x3rxav67.cloudfront.net^
-! 👁️‍🗨️ [tracking] CNAME p.asgpxl.com ⇒ d2a8zts6hhnqj1.cloudfront.net (Original URL: https://p.asgpxl.com/tr.js)
-!   concerns: www.traforama.com", "app.traforama.com", "www.adspyglass.com", "app.adspyglass.com"
-||d2a8zts6hhnqj1.cloudfront.net^
+!#include privacy_rules/privacy_cname_rules.txt
+
 ! 💵 [monetization] CNAME cmp.inmobi.com ⇒ d23sp3kzv1t6m5.cloudfront.net (quantcast.com)
 ||d23sp3kzv1t6m5.cloudfront.net^
 ! ⛔ [anti-adblock] CNAME cdn.asgcdn.com ⇒ d8kp0wl8m7jru.cloudfront.net (Original URL https://cdn.asgcdn.com/block-detector.js)
 ||d8kp0wl8m7jru.cloudfront.net^
-! 👁️‍🗨️ [telemetry] CNAME dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
-!   see: https://pulsedive.com/ioc/dc.services.visualstudio.com
-||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
-! 👁️‍🗨️ [tracking] CNAME cdn.taboola.com ⇒ tls13.taboola.map.fastly.net
-||tls13.taboola.map.fastly.net^
 
 ! "CNAME WHITELISTING" rules
 ! ----------------------------------------------------------------------------------------------
