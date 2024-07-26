@@ -1,0 +1,4 @@
+! [analytics] Cookieless tracking without integration
+!   🔗 https://wordpress.org/plugins/burst-statistics/
+!   🔗 https://burst-statistics.com/integrating-your-cookie-banner-with-burst-statistics/
+/burst-statistics/*/burst
