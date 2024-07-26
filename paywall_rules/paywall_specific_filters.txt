@@ -1,6 +1,7 @@
 actu.fr###didomi-host:style(visibility: hidden !important;)
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
+goodassur.com##.eu-cookie-compliance-banner
 quechoisir.org###tc-privacy-wrapper
 quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
 quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
