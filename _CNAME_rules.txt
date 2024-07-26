@@ -19,4 +19,5 @@
 ! "CNAME WHITELISTING" rules
 ! ----------------------------------------------------------------------------------------------
 ! gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
-@@||c11.netu.tv^
+@@||*.netu.tv^$cname
+@@||geo2.dailymotion.com^$cname
