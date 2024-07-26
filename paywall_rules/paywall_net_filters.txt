@@ -1,6 +1,8 @@
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
 !/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$from=www.750g.com
+! www.axept.io
+||axept.io^$3p
 ||forms.soundestlink.com^$from=matteoscoffee.com
 ||tagcommander.com^*/tc_*.js$script,important,from=moneyvox.fr
 ! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
