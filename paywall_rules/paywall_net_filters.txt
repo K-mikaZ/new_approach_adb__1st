@@ -1,22 +1,21 @@
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
 !/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$from=www.750g.com
-! www.axept.io
-||axept.io^$3p
-||forms.soundestlink.com^$from=matteoscoffee.com
-||tagcommander.com^*/tc_*.js$script,important,from=moneyvox.fr
-! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
-!     view on <https://www.latribune.fr>
-||poool.fr^$3p
-||qiota.com^$3p
-||sdk.privacy-center.org^$script,domain=didomi.io|intersport.fr|lunion.fr|ouest-france.fr|ouestfrance-immo.com|ouestfrance-immo.pro
-||cookiebot.com^$from=acscourier.net
-||smartrep.gr^$from=acscourier.net
-! [COOKIE] ----------------------
-! 25 juil. 2024 - www.surmafacture.fr
-||consentframework.com^$3p
 ! 25 juil. 2024 - www.nature.com
 ||verify.*/verify/*.min.js
 ||cmp.*/consent-bundle*.js
 ! 25 juil. 2024 - InMobi CMP `cmp.{domain}/choice/*/choice.js?tag_version=`
 ||cmp.*/choice/*/choice.js?tag_version
+! www.axept.io
+||axept.io^$3p
+||cookiebot.com^$from=acscourier.net
+! 25 juil. 2024 - www.surmafacture.fr
+||consentframework.com^$3p
+||forms.soundestlink.com^$from=matteoscoffee.com
+! ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.) |
+!     view on <https://www.latribune.fr>
+||poool.fr^$3p
+||qiota.com^$3p
+||sdk.privacy-center.org^$script,domain=didomi.io|intersport.fr|lunion.fr|ouest-france.fr|ouestfrance-immo.com|ouestfrance-immo.pro
+||smartrep.gr^$from=acscourier.net
+||tagcommander.com^*/tc_*.js$script,important,from=moneyvox.fr
