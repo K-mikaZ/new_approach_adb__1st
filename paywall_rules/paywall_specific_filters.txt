@@ -13,6 +13,7 @@ chefcuisto.com##body:style(overflow: visible !important;)
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 goodassur.com##.eu-cookie-compliance-banner
+goodassur.com##body:style(overflow-x: unset !important;)
 ! (tc) tagcommander cookie/paywall
 quechoisir.org###tc-privacy-wrapper
 quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
