@@ -1,31 +1,12 @@
 ! READ:
 ! Procedural-cosmetic-filters: https://github.com/gorhill/ublock/wiki/Procedural-cosmetic-filters
 
-! TODO => TEST PERF: `/^(\s*?(?<!none).)*?$/` VS `/^(\s*?(?!none).)*?$/`
-
-! FIX many ADVANCED_PAYWALL (Paywall. Registration wall. Cookie wall. Subscription solution.)
-! break some useful popups e.g. on bloctel.gouv.fr (create accompt)
-!*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-!*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-! .tc-modal-open => for tagcommander.com
-! [FIX] break lastpass addon on firefox (I think)
-! ##body.tc-modal-open:remove-class(tc-modal-open)
-!*##body.didomi-popup-open:remove-class(didomi-popup-open)
-
-! https://stackoverflow.com/a/46533865
-!casayoga.tv##.modal-open:style(overflow: visible !important;)
-!femmeactuelle.fr##html:style(overflow: visible !important;)
-
 blogspot.com##+js(prevent-addEventListener, DOMContentLoaded, cookieChoices)
 chefcuisto.com##+js(set-constant, pq_popup_requete, [])
 chefcuisto.com##+js(abort-current-script, lapressequebecoise_popup-js-extra)
-chefcuisto.com##body:style(overflow: visible !important;)
 goodassur.com##+js(prevent-addEventListener, DOMContentLoaded, /(.*?).*?\{.*?eu-cookie-compliance.*?\}/)
-!latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 lunion.fr##+js(prevent-addEventListener, /^q_qiota.*?/)
 lunion.fr##+js(prevent-addEventListener, DOMContentLoaded, /.*?isSubscriber.*?/)
-moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
-!moneyvox.fr##body:matches-attr("class"="body-overlayed"):remove-class(body-overlayed)
 shop.garten-bienen.at##+js(prevent-setTimeout, modal.show())
 toquedechef.com##+js(set-constant, lgcookieslaw_consent_mode, 1)
 toquedechef.com##+js(set-constant, lgcookieslaw_block_navigation, 0)
