@@ -13,7 +13,10 @@
 
 ! ----------------------------------------------------------------------------------------------
 !
-! "CNAME" rules
+! "CNAME" rules |
+!   use in addition to:
+!     🔗 https://github.com/AdguardTeam/cname-trackers
+!     🔗 https://github.com/nextdns/cname-cloaking-blocklist
 !
 !#include _CNAME_rules.txt
 !
