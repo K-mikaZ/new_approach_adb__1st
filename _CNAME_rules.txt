@@ -9,7 +9,7 @@
 
 ! "CNAME BLOCKING" rules
 ! ----------------------------------------------------------------------------------------------
-!#include privacy_rules/privacy_cname_rules.txt
+!#include privacy_rules/privacy_cname_filters.txt
 
 ! 💵 [monetization] CNAME cmp.inmobi.com ⇒ d23sp3kzv1t6m5.cloudfront.net (quantcast.com)
 ||d23sp3kzv1t6m5.cloudfront.net^
