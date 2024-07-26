@@ -1,5 +1,5 @@
 ! Title: [?][list] "Rules, Filtering and exception list" - by K-mik@Z
-! Last modified: Thu, 25 Jul 2024 23:06:01 +0200
+! Last modified: Fri, 26 Jul 2024 03:02:52 +0200
 ! Expires: 4 days
 ! Author: K-mik@Z
 ! Licence: The Unlicense - https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/LICENSE.md
@@ -11,6 +11,13 @@
 ! 🔗 https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name
 ! 🔗 https://adguard.com/kb/general/ad-filtering/create-own-filters/#include-directive
 
+! ----------------------------------------------------------------------------------------------
+!
+! "CNAME" rules
+!
+!#include _CNAME_rules.txt
+!
+! ----------------------------------------------------------------------------------------------
 
 !#if cap_html_filtering || adguard_ext_chromium || adguard_ext_firefox || adguard_ext_edge
 !#if cap_html_filtering
@@ -69,9 +76,9 @@
 
 ! ----------------------------------------------------------------------------------------------
 !
-! "CNAME" rules
+! "PRIVACY" rules
 !
-!#include _CNAME_rules.txt
+!#include _PRIVACY_rules.txt
 !
 ! ----------------------------------------------------------------------------------------------
 
