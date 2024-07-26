@@ -27,6 +27,8 @@
 ! 👁️‍🗨️ [telemetry] CNAME dc.services.visualstudio.com ⇒ gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com
 !   see: https://pulsedive.com/ioc/dc.services.visualstudio.com
 ||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
+! 👁️‍🗨️ [tracking] CNAME cdn.taboola.com ⇒ tls13.taboola.map.fastly.net
+||tls13.taboola.map.fastly.net^
 
 ! "CNAME WHITELISTING" rules
 ! ----------------------------------------------------------------------------------------------
