@@ -6,7 +6,7 @@
 ||cmp.*/consent-bundle*.js
 ! 25 juil. 2024 - InMobi CMP `cmp.{domain}/choice/*/choice.js?tag_version=`
 ||cmp.*/choice/*/choice.js?tag_version
-! www.axept.io
+! www.axept.io on gestia-solidaire.com
 ||axept.io^$3p
 ||cookiebot.com^$from=acscourier.net
 ! 25 juil. 2024 - www.surmafacture.fr
