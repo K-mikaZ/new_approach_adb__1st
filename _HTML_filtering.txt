@@ -119,6 +119,8 @@ ok.xxx##^a[href][target]:has(>img[src*="//counter.yadro.ru"])
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
+actu.fr##^.ac-embed--inread3.ac-embed--dailymotion:has(div [data-purposes*="promotions"])
+capital.fr##^div.ads-display
 cinez.biz##^script:has-text(document.head.appendChild(s))
 cinez.biz,d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama.fr##^script[data-cfasync][async][src]
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(['concat'])
@@ -278,6 +280,8 @@ ok.xxx#?#a[href][target]:has(> img[src*="//counter.yadro.ru"]):remove()
 ! ===============================================================
 ! "specific" filters
 ! ===============================================================
+actu.fr#?#.ac-embed--inread3.ac-embed--dailymotion:has(div [data-purposes*="promotions"]):remove()
+capital.fr#?#div.ads-display:remove()
 cinez.biz##+js(remove-node-text, script, document.head.appendChild(s))
 cinez.biz,d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,fusevideo.io,neko-sama.fr##script[data-cfasync][async][src]:remove()
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(remove-node-text, script, ['concat'])
