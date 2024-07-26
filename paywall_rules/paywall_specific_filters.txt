@@ -1,4 +1,18 @@
+! break some useful popups e.g. on bloctel.gouv.fr (create accompt)
+!*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
+!*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
+! .tc-modal-open => for tagcommander.com
+! [FIX] break lastpass addon on firefox (I think)
+! ##body.tc-modal-open:remove-class(tc-modal-open)
+!*##body.didomi-popup-open:remove-class(didomi-popup-open)
+
+! https://stackoverflow.com/a/46533865
+!casayoga.tv##.modal-open:style(overflow: visible !important;)
+!femmeactuelle.fr##html:style(overflow: visible !important;)
+!latribune.fr##html.member-not-connected:remove-class(member-not-connected)
+
 actu.fr###didomi-host:style(visibility: hidden !important;)
+chefcuisto.com##body:style(overflow: visible !important;)
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 goodassur.com##.eu-cookie-compliance-banner
@@ -7,6 +21,7 @@ quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
 quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
 medisite.fr##.mf-loaded.mf-notification-iframe
 ! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
+moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 nature.com##.cc-banner[open]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
