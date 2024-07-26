@@ -1,1 +1,2 @@
-!#include privacy_rules/privacy_application_rules.txt
+!#include privacy_rules/privacy_application_filters.txt
+!#include privacy_rules/privacy_net_filters.txt
