@@ -1,2 +1,3 @@
 criteo.net
+googletagmanager.com
 www.googletagmanager.com
