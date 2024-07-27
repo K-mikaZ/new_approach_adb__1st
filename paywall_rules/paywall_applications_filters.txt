@@ -7,6 +7,7 @@ chefcuisto.com##+js(abort-current-script, lapressequebecoise_popup-js-extra)
 goodassur.com##+js(prevent-addEventListener, DOMContentLoaded, /(.*?).*?\{.*?eu-cookie-compliance.*?\}/)
 lunion.fr##+js(prevent-addEventListener, /^q_qiota.*?/)
 lunion.fr##+js(prevent-addEventListener, DOMContentLoaded, /.*?isSubscriber.*?/)
+numerama.com##+js(prevent-addEventListener, wallpaper-ads)
 ! seems not working
 !ringover.fr##+js(prevent-addEventListener, mouseleave, /handleOverlayVisibility\(.*?\)/)
 ringover.fr##+js(prevent-addEventListener, scroll, showSalesContactPopin())
