@@ -5,6 +5,7 @@ googleadservices.com
 hs-scripts.com
 indexww.com
 js.hs-scripts.com
+metrics.thank-you.io
 stats.wp.com
 snap.licdn.com
 www.datadoghq-browser-agent.com
