@@ -5,8 +5,9 @@ casalemedia.com
 clearcode.cc
 google-analytics.com
 indexexchange.com
-poool.fr
-qiota.com
 newrelic.com
 prebid.org
+poool.fr
+qiota.com
+sendpulse.com
 www.google-analytics.com
