@@ -9,11 +9,14 @@ google-analytics.com
 hsforms.com
 indexexchange.com
 luckyorange.com
+marketo.com
 moengage.com
 newrelic.com
+pathfactory.com
 prebid.org
 poool.fr
 qiota.com
 sendpulse.com
+visualwebsiteoptimizer.com
 wistia.com
 www.google-analytics.com
