@@ -8,14 +8,14 @@
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L230
-[attr]adb             linguist-language=AdBlock linguist-detectable
+[attr]adb            linguist-language=AdBlock linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L4077
-[attr]pandoc          linguist-language=Markdown -linguist-detectable
+[attr]pandoc         linguist-language=Markdown -linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2382
 # Enable syntax highlighting for files with `.gitattributes` extensions.
-[attr]gitattributes   linguist-language=gitattributes linguist-detectable -linguist-documentation
+[attr]gitattributes  linguist-language=gitattributes linguist-detectable -linguist-documentation
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
-[attr]js              -linguist-detectable
+[attr]js             -linguist-detectable
 
 # Handle line endings automatically for files detected as text
 *               text=auto
