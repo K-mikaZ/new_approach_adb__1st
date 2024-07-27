@@ -1,3 +1,4 @@
 criteo.net
+static.criteo.net
 googletagmanager.com
 www.googletagmanager.com
