@@ -15,7 +15,11 @@
 [attr]js              -linguist-detectable
 
 # Set default behaviour to automatically normalize line endings.
-# *               text=auto
+*               text=auto
+
+
+# hosts file always be normalized on checkin.
+hosts           text
 
 #
 # The above will handle all files NOT found below
