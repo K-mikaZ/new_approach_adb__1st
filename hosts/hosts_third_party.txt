@@ -4,6 +4,7 @@ adpushup.com
 casalemedia.com
 clearcode.cc
 google-analytics.com
+hsforms.com
 indexexchange.com
 newrelic.com
 prebid.org
