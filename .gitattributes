@@ -14,7 +14,7 @@
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
 [attr]js              -linguist-detectable
 
-# Set default behaviour to automatically normalize line endings.
+# Handle line endings automatically for files detected as text
 *               text=auto
 
 
@@ -31,6 +31,9 @@ hosts           text
 *.md            text pandoc diff=markdown
 *.txt           text adb
 *.js            text js
+
+# Enable syntax highlighting for files with `.gitattributes` extensions.
+*.gitattributes linguist-language=gitattributes linguist-detectable -linguist-documentation
 
 # Exclude files from exporting
 .gitattributes  export-ignore
