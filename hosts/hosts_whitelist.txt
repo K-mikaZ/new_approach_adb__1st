@@ -7,11 +7,13 @@ edge.api.brightcove.com
 embed-cloudfront.wistia.com
 fast.wistia.net
 ff-01.com
+helpersng.taboola.com
 static.criteo.net
 googletagmanager.com
 marketingplatform.google.com
 micro.rubiconproject.com
 p.jwpcdn.com
+page.taboola.com
 players.brightcove.net
 ssl.p.jwpcdn.com
 share.hsforms.com
