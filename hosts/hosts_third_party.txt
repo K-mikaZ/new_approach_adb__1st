@@ -1,3 +1,4 @@
+# ALLOW ON FIRST PARTY
 abtasty.com
 adpushup.com
 casalemedia.com
