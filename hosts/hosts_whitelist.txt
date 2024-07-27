@@ -1,4 +1,6 @@
 criteo.net
 static.criteo.net
 googletagmanager.com
+p.jwpcdn.com
+ssl.p.jwpcdn.com
 www.googletagmanager.com
