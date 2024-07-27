@@ -4,6 +4,7 @@ adssettings.google.com
 criteo.net
 static.criteo.net
 googletagmanager.com
+marketingplatform.google.com
 p.jwpcdn.com
 ssl.p.jwpcdn.com
 www.googletagmanager.com
