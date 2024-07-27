@@ -1,1 +1,3 @@
-
+cdn.parsely.com
+datadoghq-browser-agent.com
+www.datadoghq-browser-agent.com
