@@ -1,4 +1,5 @@
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
+/cookieconsent.js$domain=www.smsvertpro.com
 !/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$from=www.750g.com
 ! 25 juil. 2024 - www.nature.com
