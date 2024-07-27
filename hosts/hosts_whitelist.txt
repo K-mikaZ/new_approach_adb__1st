@@ -1,6 +1,7 @@
 # NOT BLOCKING PLEASE!
 ads.youtube.com
 adssettings.google.com
+assets.qualified.com
 criteo.net
 embed-cloudfront.wistia.com
 fast.wistia.net
