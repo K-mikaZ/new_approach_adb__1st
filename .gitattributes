@@ -19,7 +19,7 @@
 
 
 # hosts file always be normalized on checkin.
-hosts           text
+hosts/*         text
 
 #
 # The above will handle all files NOT found below
