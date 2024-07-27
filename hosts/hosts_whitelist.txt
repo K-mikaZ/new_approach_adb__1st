@@ -2,6 +2,7 @@
 ads.youtube.com
 adssettings.google.com
 criteo.net
+ff-01.com
 static.criteo.net
 googletagmanager.com
 marketingplatform.google.com
