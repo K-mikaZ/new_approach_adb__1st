@@ -2,6 +2,7 @@ cdn.parsely.com
 datadoghq-browser-agent.com
 googleadservices.com
 hs-scripts.com
+indexww.com
 js.hs-scripts.com
 stats.wp.com
 snap.licdn.com
