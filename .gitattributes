@@ -12,6 +12,7 @@
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L4077
 [attr]pandoc         linguist-language=Markdown -linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2382
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2424
 # Enable syntax highlighting for files with `.gitattributes` extensions.
 [attr]gitattributes  linguist-language=gitattributes linguist-detectable -linguist-documentation
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
