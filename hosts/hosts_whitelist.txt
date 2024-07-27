@@ -1,3 +1,5 @@
+ads.youtube.com
+adssettings.google.com
 criteo.net
 static.criteo.net
 googletagmanager.com
