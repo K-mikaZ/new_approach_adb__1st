@@ -1,4 +1,6 @@
 # FIXED IF ADDRESSES BLOCKED BY CNAME
+#   File to use with adblocker
+#   format: @@||geo2.dailymotion.com^$cname
 geo.dailymotion.com
 geo2.dailymotion.com
 omnitagjs.com
