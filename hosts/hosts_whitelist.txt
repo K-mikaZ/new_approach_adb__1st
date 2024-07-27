@@ -9,4 +9,5 @@ marketingplatform.google.com
 micro.rubiconproject.com
 p.jwpcdn.com
 ssl.p.jwpcdn.com
+share.hsforms.com
 www.googletagmanager.com
