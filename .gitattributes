@@ -12,7 +12,8 @@
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L4077
 [attr]pandoc          linguist-language=Markdown -linguist-detectable
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L2382
-[attr]gitattributes   linguist-language=gitattributes -linguist-detectable
+# Enable syntax highlighting for files with `.gitattributes` extensions.
+[attr]gitattributes   linguist-language=gitattributes linguist-detectable -linguist-documentation
 # https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml#L3323
 [attr]js              -linguist-detectable
 
@@ -33,9 +34,6 @@ hosts/*         text
 *.md            text pandoc diff=markdown
 *.txt           text adb
 *.js            text js
-
-# Enable syntax highlighting for files with `.gitattributes` extensions.
-*.gitattributes linguist-language=gitattributes linguist-detectable -linguist-documentation
 
 # Exclude files from exporting
 .gitattributes  export-ignore
