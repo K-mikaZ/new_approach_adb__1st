@@ -1,4 +1,5 @@
-# BLOCKING ON THIRD PARTY ONLY, ALLOWING ON FIRST PARTY
+# BLOCKING ON THIRD PARTY ONLY
+# I use this file to remove the addresses below from the hosts files, and only use it with an adblocker.
 6sense.com
 abtasty.com
 adpushup.com
