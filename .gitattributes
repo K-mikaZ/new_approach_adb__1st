@@ -27,7 +27,7 @@ hosts           text
 
 # These files are text and should be normalized (Convert crlf => lf)
 *.gitattributes text
-.gitignore     text
+.gitignore      text
 *.md            text pandoc diff=markdown
 *.txt           text adb
 *.js            text js
