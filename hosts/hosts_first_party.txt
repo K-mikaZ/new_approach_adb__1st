@@ -4,6 +4,8 @@ datadoghq-browser-agent.com
 go.qualified.com
 googleadservices.com
 hs-scripts.com
+images.taboola.com
+images-dl.taboola.com
 indexww.com
 js.hs-scripts.com
 js.qualified.com
