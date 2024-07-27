@@ -22,6 +22,7 @@ report-uri.com
 qualified.com
 qiota.com
 sendpulse.com
+vidyard.com
 visualwebsiteoptimizer.com
 wistia.com
 www.google-analytics.com
