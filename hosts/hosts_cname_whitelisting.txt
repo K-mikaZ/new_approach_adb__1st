@@ -1,1 +1,3 @@
+geo.dailymotion.com
+geo2.dailymotion.com
 omnitagjs.com
