@@ -13,6 +13,7 @@ latribune.fr#@#^#newsletter-register-modal
 intersport.ro##^div.x-cookies-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
 moneyvox.fr##^[class^="js-listener"][class*="newsletter"]
+numerama.com##^#premium-subscribe-modal
 ringover.fr##^#overlay_template
 ringover.fr##^#popin-salescontact
 ringover.fr##^#cookies
