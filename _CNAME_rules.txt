@@ -21,3 +21,4 @@
 ! gt4s3g.cfglobalcdn.com ⇒ c11.netu.tv
 @@||*.netu.tv^$cname
 @@||geo2.dailymotion.com^$cname
+@@||omnitagjs.com^$cname
