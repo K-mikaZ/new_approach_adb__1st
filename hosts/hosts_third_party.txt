@@ -1,7 +1,9 @@
 abtasty.com
 adpushup.com
 clearcode.cc
+google-analytics.com
 poool.fr
 qiota.com
 newrelic.com
 prebid.org
+www.google-analytics.com
