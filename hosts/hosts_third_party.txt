@@ -2,6 +2,8 @@
 6sense.com
 abtasty.com
 adpushup.com
+adyoulike.com
+brightcove.com
 casalemedia.com
 carbonads.net
 clearcode.cc
@@ -10,6 +12,7 @@ hsforms.com
 indexexchange.com
 luckyorange.com
 marketo.com
+metrics.brightcove.com
 moengage.com
 newrelic.com
 pathfactory.com
