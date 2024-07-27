@@ -2,6 +2,8 @@
 # Handle line endings automatically for files detected as text
 # and leave all files detected as binary untouched.
 # https://rehansaeed.com/gitattributes-best-practices/
+# A Collection of Useful .gitattributes Templates
+# https://github.com/gitattributes/gitattributes
 # https://github.com/alexkaratarakis/gitattributes/blob/master/.gitattributes
 
 # Attribute definitions (from https://github.com/DandelionSprout/adfilt/blob/master/.gitattributes)
