@@ -1,10 +1,12 @@
 # BLOCKING EVERYWHERE
 cdn.parsely.com
 datadoghq-browser-agent.com
+go.qualified.com
 googleadservices.com
 hs-scripts.com
 indexww.com
 js.hs-scripts.com
+js.qualified.com
 metrics.thank-you.io
 stats.wp.com
 snap.licdn.com
