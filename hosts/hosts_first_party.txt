@@ -1,3 +1,4 @@
+# BLOCKING EVERYWHERE
 cdn.parsely.com
 datadoghq-browser-agent.com
 googleadservices.com
