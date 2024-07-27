@@ -10,6 +10,8 @@ lunion.fr##+js(prevent-addEventListener, DOMContentLoaded, /.*?isSubscriber.*?/)
 ! seems not working
 !ringover.fr##+js(prevent-addEventListener, mouseleave, /handleOverlayVisibility\(.*?\)/)
 ringover.fr##+js(prevent-addEventListener, scroll, showSalesContactPopin())
+! in case of #overlay_template name changed (not cap_html_filtering here)
+ringover.fr###overlay.overlay_business-phone-system:remove()
 shop.garten-bienen.at##+js(prevent-setTimeout, modal.show())
 toquedechef.com##+js(set-constant, lgcookieslaw_consent_mode, 1)
 toquedechef.com##+js(set-constant, lgcookieslaw_block_navigation, 0)
