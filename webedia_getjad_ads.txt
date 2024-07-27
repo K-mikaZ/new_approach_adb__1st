@@ -70,12 +70,6 @@ www.amandinecooking.com##[id^="cuisine_recette_"]:is([id$="overlay"],[id$="modal
 ||storage.googleapis.com/fledge-tests/otToken.js$important
 
 ! 2024-01-24 Privacy concerns
-/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
-
-! cookies concerns
-! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-! allocine.fr,adorocinema.com,beyazperde.com,filmstarts.de,sensacine.com###didomi-host
-! allocine.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-! allocine.fr###didomi-host
+!/\S+\.\w+\/[_]\/(ad)?geolocalize(ip)?/$~third-party,important,domain=allocine.fr|adorocinema.com|beyazperde.com|filmstarts.de|sensacine.com
 
 ! < /end webedia's ads >
