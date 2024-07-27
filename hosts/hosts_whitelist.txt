@@ -3,6 +3,7 @@ ads.youtube.com
 adssettings.google.com
 assets.qualified.com
 criteo.net
+edge.api.brightcove.com
 embed-cloudfront.wistia.com
 fast.wistia.net
 ff-01.com
@@ -11,6 +12,7 @@ googletagmanager.com
 marketingplatform.google.com
 micro.rubiconproject.com
 p.jwpcdn.com
+players.brightcove.net
 ssl.p.jwpcdn.com
 share.hsforms.com
 www.googletagmanager.com
