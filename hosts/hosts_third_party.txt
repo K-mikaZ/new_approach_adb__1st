@@ -1,4 +1,5 @@
 # BLOCKING ON THIRD PARTY ONLY, ALLOWING ON FIRST PARTY
+6sense.com
 abtasty.com
 adpushup.com
 casalemedia.com
@@ -14,4 +15,5 @@ prebid.org
 poool.fr
 qiota.com
 sendpulse.com
+wistia.com
 www.google-analytics.com
