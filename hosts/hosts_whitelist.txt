@@ -6,6 +6,7 @@ ff-01.com
 static.criteo.net
 googletagmanager.com
 marketingplatform.google.com
+micro.rubiconproject.com
 p.jwpcdn.com
 ssl.p.jwpcdn.com
 www.googletagmanager.com
