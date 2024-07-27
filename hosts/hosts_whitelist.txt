@@ -1,3 +1,4 @@
+# NOT BLOCKING PLEASE!
 ads.youtube.com
 adssettings.google.com
 criteo.net
