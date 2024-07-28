@@ -1,10 +1,10 @@
-#    and others are simply essential.
 # NOT BLOCKING PLEASE !
-#    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites,
+#    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites, and others are simply essential.
 ads.youtube.com
 adssettings.google.com
 assets.qualified.com
 awempire.com
+brightcove.com
 collect.tealiumiq.com
 coreads.pmdstatic.net
 criteo.net
@@ -39,6 +39,7 @@ sonar.viously.com
 ssl.p.jwpcdn.com
 static.adsafeprotected.com
 static.criteo.net
+tealiumiq.com
 tra.scds.pmdstatic.net
 traffichaus.com
 tsyndicate.com
