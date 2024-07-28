@@ -3113,7 +3113,7 @@ juststream.org##.movie-xyz
 /prisma-tag/
 ! ||ct.pinterest.com^
 ||zeotap.com^
-||sirdata.io^
+||sirdata.io^$3p
 ||px-cloud.net^
 ||myvisualiq.net^
 ||marazma.com^
