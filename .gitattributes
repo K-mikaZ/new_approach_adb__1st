@@ -29,7 +29,7 @@ hosts/*         text
 #
 
 # These files are text and should be normalized (Convert crlf => lf)
-*.gitattributes text
+*.gitattributes text gitattributes
 .gitignore      text
 *.md            text pandoc diff=markdown
 *.txt           text adb
