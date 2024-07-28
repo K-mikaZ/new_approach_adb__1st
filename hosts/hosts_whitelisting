@@ -1,5 +1,6 @@
 # NOT BLOCKING PLEASE !
-#    Some are blocked in the third-party hosts file, and others are essential for some websites to function properly.
+#    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites,
+#    and others are simply essential.
 ads.youtube.com
 adssettings.google.com
 assets.qualified.com
