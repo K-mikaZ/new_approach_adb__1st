@@ -14,7 +14,7 @@ intersport.ro##^div.x-cookies-modal
 ! remove the acces to the iframe `https://www.moneyvox.fr/newsletter/popin-content.php`
 moneyvox.fr##^[class^="js-listener"][class*="newsletter"]
 numerama.com##^#premium-subscribe-modal
-numerama.com##^.is-distinct-mite:has(button[data-dialog-controls*="premium-subscribe"])
+numerama.com##^div:has(>button[data-dialog-controls*="premium-subscribe"])
 ringover.fr##^#overlay_template
 ringover.fr##^#popin-salescontact
 ringover.fr##^#cookies
