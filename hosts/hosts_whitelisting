@@ -1,10 +1,11 @@
+#    and others are simply essential.
 # NOT BLOCKING PLEASE !
 #    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites,
-#    and others are simply essential.
 ads.youtube.com
 adssettings.google.com
 assets.qualified.com
 awempire.com
+cdn.lib.getjad.io
 collect.tealiumiq.com
 coreads.pmdstatic.net
 criteo.net
