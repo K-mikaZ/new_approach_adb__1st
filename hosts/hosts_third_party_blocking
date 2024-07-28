@@ -1,23 +1,26 @@
 # BLOCKING ON THIRD PARTY ONLY
-#   I use this file to remove the addresses below from the hosts files, and only use it with an adblocker.
 #   format: ||abtasty.com^$3p
+#   I use this file to remove the addresses below from the hosts files, and only use it with an adblocker.
 6sense.com
 abtasty.com
 adpushup.com
 adyoulike.com
-audioeye.com
-brightcove.com
-casalemedia.com
-carbonads.net
-clearcode.cc
 api.consentframework.com
+audioeye.com
+awempire.com
+brightcove.com
 cache.consentframework.com
-choices.consentframework.com
-consentframework.com
+carbonads.net
+casalemedia.com
 cdn.sirdata.io
+choices.consentframework.com
+clearcode.cc
+consentframework.com
 doubleclick.net
 hsforms.com
 indexexchange.com
+juicyads.com
+livejasmin.com
 luckyorange.com
 marketo.com
 metrics.brightcove.com
@@ -25,17 +28,19 @@ moengage.com
 newrelic.com
 pathfactory.com
 plausible.io
-prebid.org
 poool.fr
+prebid.org
+qiota.com
+qualified.com
 report-uri.com
 rubiconproject.com
-qualified.com
-qiota.com
 sendpulse.com
 sirdata.io
 slicktext.com
 static.doubleclick.net
+traffichaus.com
 trafficstars.com
+tsyndicate.com
 vercel-insights.com
 vidyard.com
 visualwebsiteoptimizer.com
