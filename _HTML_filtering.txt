@@ -335,3 +335,4 @@ www.howtogeek.com#?#+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 latribune.fr##.tag-pub
+androidalle.com##[class*="intro-"]:has(ins.adsbygoogle)
