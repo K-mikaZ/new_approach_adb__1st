@@ -1,6 +1,6 @@
 # BLOCKING ON THIRD PARTY ONLY
-#   format: ||abtasty.com^$3p
 #   I use this file to remove the addresses below from the hosts files, and only use it with an adblocker.
+#   format: ||abtasty.com^$3p
 6sense.com
 abtasty.com
 adpushup.com
