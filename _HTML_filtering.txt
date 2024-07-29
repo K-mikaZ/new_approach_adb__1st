@@ -335,5 +335,6 @@ www.howtogeek.com#?#+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 androidalle.com##[class*="intro-"]:has(ins.adsbygoogle)
+linternaute.com##.cp_videopremium:style(position: unset !important)
 latribune.fr##.tag-pub
 www.radio.fr##.py-4.justify-between
