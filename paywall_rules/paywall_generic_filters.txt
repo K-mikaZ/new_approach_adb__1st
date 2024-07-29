@@ -3,6 +3,7 @@
 ! Cookie wall ---------------------------------------------------------
 !##.lgcookieslaw_banner
 ###cookieChoiceInfo
+###cookie-notice
 ###modal-cookies
 ###tarteaucitronRoot
 ##.lgcookieslaw-overlay
