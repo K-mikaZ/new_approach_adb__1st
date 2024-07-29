@@ -335,6 +335,9 @@ www.howtogeek.com#?#+js(remove-node-text, script, websiteSentinel)
 ! </end REMOVE elements > -----------------------------------------------------------------------------------------
 
 androidalle.com##[class*="intro-"]:has(ins.adsbygoogle)
-linternaute.com##.cp_videopremium:style(position: unset !important)
 latribune.fr##.tag-pub
 www.radio.fr##.py-4.justify-between
+
+! [FIX] placeholder
+www.surmafacture.fr##div.fluid-width-video-wrapper:style(padding-top: unset !important)
+linternaute.com##.cp_videopremium:style(position: unset !important)
