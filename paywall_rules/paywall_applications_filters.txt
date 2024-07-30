@@ -4,6 +4,7 @@
 blogspot.com##+js(prevent-addEventListener, DOMContentLoaded, cookieChoices)
 chefcuisto.com##+js(set-constant, pq_popup_requete, [])
 chefcuisto.com##+js(abort-current-script, lapressequebecoise_popup-js-extra)
+femmeactuelle.fr##+js(prevent-addEventListener, PAYWALL:client:ready)
 goodassur.com##+js(prevent-addEventListener, DOMContentLoaded, /(.*?).*?\{.*?eu-cookie-compliance.*?\}/)
 lunion.fr##+js(prevent-addEventListener, /^q_qiota.*?/)
 lunion.fr##+js(prevent-addEventListener, DOMContentLoaded, /.*?isSubscriber.*?/)
