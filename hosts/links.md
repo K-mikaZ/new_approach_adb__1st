@@ -12,5 +12,5 @@ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&onlytrackers=1&s
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&notrackers=1&skip=adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com,yesadvertising.com
 ```
 ```
-https://pgl.yoyo.org/as/serverlist.php?hostformat=adblockplus&showintro=0&skip=abtasty.com,google-analytics.com,googleanalytics.com,adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com,yesadvertising.com
+https://pgl.yoyo.org/as/serverlist.php?hostformat=adblockplus&mimetype=plaintext&showintro=0&skip=abtasty.com,google-analytics.com,googleanalytics.com,adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com,yesadvertising.com
 ```
