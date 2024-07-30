@@ -1,5 +1,5 @@
 # BLOCKING EVERYWHERE
-#    to be used in addition to: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml;mimetype=plaintext;skip=adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,prebid.org,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com
+#    to be used in addition to: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml;mimetype=plaintext;skip=adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,doubleverify.com,googlesyndication.com,googletagmanager.com,juicyads.com,prebid.org,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com
 7vid.net
 a.1film.to
 a.omappapi.com
@@ -27,14 +27,12 @@ cdn.parsely.com
 cdn.segment.com
 cdn.taboola.com
 client-registry.mutinycdn.com
-correlationcocktailinevitably.com
 counter.yadro.ru
 cvt1.sibnet.ru
 d1ros97qkrwjf5.cloudfront.net
 dev.visualwebsiteoptimizer.com
 distillery.wistia.com
 dm-event.net
-doubleverify.com
 duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion
 e.viously.com
 events.data.msn.com
