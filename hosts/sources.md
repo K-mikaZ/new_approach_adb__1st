@@ -6,8 +6,8 @@ pgl.yoyo.org with optional query string parameters
 
 example:
 ```
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&onlytrackers=1&skip=google-analytics.com,googleanalytics.com,abtasty.com
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&onlytrackers=1&validity=1&skip=google-analytics.com,googleanalytics.com,abtasty.com
 ```
 ```
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&notrackers=1
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&notrackers=1&validity=1
 ```
