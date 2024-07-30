@@ -24,6 +24,7 @@ toquedechef.com##+js(set-constant, lgcookieslaw_saved_preferences, 1)
 ! Cookies Remover |
 !    Removes current page cookies. Runs on load and before unload.
 ! -------------------------------------------------------------------------------------------
+comment-economiser.fr##+js(remove-cookie, modalBoxTimestampStart)
 moneyvox.fr##+js(remove-cookie, mvx_consult)
 
 ! -------------------------------------------------------------------------------------------
