@@ -1,5 +1,5 @@
 # BLOCKING EVERYWHERE
-#    to be used in addition to: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&mimetype=plaintext&notrackers=1&skip=adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com
+#    to be used in addition to: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml;mimetype=plaintext;skip=adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com
 7vid.net
 a.1film.to
 a.omappapi.com
