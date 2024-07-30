@@ -9,5 +9,5 @@ example:
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&onlytrackers=1&validity=1&skip=google-analytics.com,googleanalytics.com,abtasty.com
 ```
 ```
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&notrackers=1&validity=1
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&notrackers=1&validity=1&skip=adf.ly
 ```
