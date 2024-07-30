@@ -2,6 +2,7 @@
 #    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites (redirects, access page to advertisement configuration...), and others are simply essential.
 ads.youtube.com
 adssettings.google.com
+amplitude.com
 assets.qualified.com
 awempire.com
 batch.com
