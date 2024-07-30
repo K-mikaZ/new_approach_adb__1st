@@ -10,6 +10,7 @@
 !*##body.didomi-popup-open:remove-class(didomi-popup-open)
 actu.fr###didomi-host:style(visibility: hidden !important;)
 chefcuisto.com##body:style(overflow: visible !important;)
+comment-economiser.fr###overlay_blockNL
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 goodassur.com##.eu-cookie-compliance-banner
