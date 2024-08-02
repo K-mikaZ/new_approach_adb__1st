@@ -1,5 +1,10 @@
 # Some usefull links
 
+
+## Allow lists
+> [iam-py-test allowlist.txt](https://github.com/iam-py-test/allowlist/raw/main/allowlist.txt)
+
+
 ## [pgl.yoyo.org with optional query string parameters](https://pgl.yoyo.org/as/formats.php)
 
 `https://pgl.yoyo.org/as/formats.php`
@@ -14,6 +19,7 @@ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml;mimetype=plainte
 ```
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;mimetype=plaintext;showintro=0;skip=abtasty.com,google-analytics.com,googleanalytics.com,adf.ly,ads.youtube.com,adsafeprotected.com,awempire.com,criteo.com,criteo.net,googlesyndication.com,googletagmanager.com,juicyads.com,rubiconproject.com,taboola.com,tealium.com,tealiumiq.com
 ```
+
 
 ## [rethinkdns.com](https://www.rethinkdns.com/)
 
