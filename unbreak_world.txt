@@ -8,16 +8,15 @@ youtube.com#@#.ytp-paid-content-overlay
 ! break youtube menu
 youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
 /(hq{2}|netu|wa{2}w([0-9]{1})?)\.(t[ov]|watch)/#@#+js("prevent-fab-3.2.0")
-||criteo.net^$badfilter
-||criteo.net^$3p,badfilter
-||criteo.net^$important,badfilter
+!||criteo.net^$badfilter
+!||criteo.net^$3p,badfilter
+!||criteo.net^$important,badfilter
 ||adpushup.com^$badfilter
 ||adpushup.com^$3p
 @@||adpushup.com^$document
 ||clearcode.cc^$badfilter
 ||clearcode.cc^$3p
 @@||clearcode.cc^$document
-@@||static.criteo.net^
 @@||cta-service-cms2.hubspot.com^$removeparam
 ! 11 juin 2024 ¤¤¤ mail.google.com ¤¤¤ (https://mail.google.com/)
 @@||trackers.uglyemail.com^$domain=mail.google.com
