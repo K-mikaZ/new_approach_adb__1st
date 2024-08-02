@@ -3131,7 +3131,6 @@ juststream.org##.movie-xyz
 ||q.reyden-x.com^
 ||videosworks.com^
 ||serving.stat-rock.com^
-||criteo.*^$third-party
 ||lumupu.xyz^
 ||plodqkexxg.com^
 ||mediego.com^
