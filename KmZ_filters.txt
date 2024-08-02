@@ -3090,7 +3090,7 @@ juststream.org##.movie-xyz
 !! ||github.com/_alive
 ||pegasus.unifygroup.com^$important
 ||prismamedia-com.videoplayerhub.com^
-||wysistat.com^
+||wysistat.com^$3p
 ||api.optinproject.com^
 ||prismashop.commander1.com^
 ||img-static.com^
