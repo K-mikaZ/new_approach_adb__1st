@@ -1,5 +1,6 @@
 # NOT BLOCKING PLEASE
 #    Some are to be blocked in the third-party hosts file only to ensure the proper functioning of certain websites (redirects, access page to advertisement configuration...), and others are simply essential.
+#    to be used in addition to: 🔗 https://github.com/iam-py-test/allowlist/raw/main/allowlist.txt
 ads.youtube.com
 adssettings.google.com
 amplitude.com
