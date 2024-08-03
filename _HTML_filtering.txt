@@ -128,7 +128,7 @@ d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script:has-text(Object
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.*,uqload.*,darkibox.com##^script:has-text(;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##^script[src*="cloudfront.net/"]
 drtuber.com##^a.ad-title[target="_blank"][href="javascript:void(0);"]
-dulourd.*##^div.g-buttons
+dulourd.*,streamdeouf.*##^div.g-buttons
 dulourd.*##^div#playerOver
 ! filemoon.*##^script:has-text(parseInt)
 forum.malekal.com##^div.ads
@@ -289,7 +289,7 @@ d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(remove-node-text, s
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*,turbovid.*,uqload.*,darkibox.com##+js(remove-node-text, script, ;}}};break;case $.)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*#?#script[src*="cloudfront.net/"]:remove()
 drtuber.com#?#a.ad-title[target="_blank"][href="javascript:void(0);"]:remove()
-dulourd.*#?#^div.g-buttons:remove()
+dulourd.*,streamdeouf.*#?#^div.g-buttons:remove()
 dulourd.*#?#^div#playerOver:remove()
 ! filemoon.*##script:has-text(parseInt)
 forum.malekal.com#?#div.ads:remove()
