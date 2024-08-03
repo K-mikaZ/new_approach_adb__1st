@@ -48,6 +48,15 @@ https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Bloat
 https://github.com/AmnestyTech/investigations/raw/master/2021-07-18_nso/domains.txt
 ```
 ```
+https://github.com/AmnestyTech/investigations/raw/master/2021-12-16_cytrox/domains.txt
+```
+```
+https://github.com/AmnestyTech/investigations/raw/master/2024-05-02_wintego_helios/domains.txt
+```
+```
+https://github.com/AmnestyTech/investigations/raw/master/2023-03-29_android_campaign/domains.txt
+```
+```
 https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/malware.list
 ```
 ```
