@@ -45,7 +45,7 @@ https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Bloat
 ```
 ```
-https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-07-18_nso/domains.txt
+https://github.com/AmnestyTech/investigations/raw/master/2021-07-18_nso/domains.txt
 ```
 ```
 https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/malware.list
