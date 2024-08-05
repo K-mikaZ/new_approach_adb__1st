@@ -3,6 +3,7 @@
 #    to be used in addition to: 🔗 https://github.com/iam-py-test/allowlist/raw/main/allowlist.txt
 ads.youtube.com
 adssettings.google.com
+adsterra.com
 amplitude.com
 assets.qualified.com
 awempire.com
@@ -10,6 +11,7 @@ batch.com
 bricks.co
 brightcove.com
 brightcove.net
+cdn.tagcommander.com
 collect.tealiumiq.com
 criteo.net
 dmcdn.net
@@ -37,17 +39,19 @@ p.jwpcdn.com
 page.taboola.com
 pagead2.googlesyndication.com
 partner-api.sddan.com
-people-pa.clients6.google.com
 pbstck.com
+people-pa.clients6.google.com
 players.brightcove.net
-prebid.org
 pmdstatic.net
+prebid.org
 s2.dmcdn.net
+samsungknox.com
+sddan.com
 sentry.com
 sentry.io
-sddan.com
 share.hsforms.com
 sirdata.eu
+smartadserver.com
 sonar.viously.com
 ssl.google-analytics.com
 ssl.p.jwpcdn.com
@@ -58,8 +62,10 @@ tpc.googlesyndication.com
 traffichaus.com
 tsyndicate.com
 ttwstatic.com
+typeform.com
 v.fwmrm.net
 visualwebsiteoptimizer.com
+weborama.com
 wistia.com
 www.awempire.com
 www.bricks.co
@@ -68,11 +74,5 @@ www.googletagmanager.com
 www.optidigital.com
 www.sentry.com
 wysistat.com
-weborama.com
 yospace.com
 youboranqs01.com
-adsterra.com
-samsungknox.com
-typeform.com
-smartadserver.com
-cdn.tagcommander.com
