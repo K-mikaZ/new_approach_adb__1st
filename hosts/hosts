@@ -18,8 +18,8 @@ beap-bc.yahoo.com
 bid.sparteo.com
 bidder.criteo.com
 bidder.taboola.com
-bricks-co.com
 bpt.webedia-group.com
+bricks-co.com
 browser.sentry-cdn.com
 btloader.com
 byteoversea.com
@@ -65,11 +65,11 @@ indexww.com
 ingest.sentry.io
 insights-collector.newrelic.com
 ivitrack.com
+js-agent.newrelic.com
 js.estat.com
 js.hs-scripts.com
 js.qualified.com
 js.sentry-cdn.com
-js-agent.newrelic.com
 logx.optimizely.com
 mc.yandex.ru
 metrics.api.drift.com
@@ -90,8 +90,8 @@ pub.doubleverify.com
 relay-client-c01.iocnt.net
 richaudience.com
 sac.ayads.co
-sentry-cdn.com
 scripts.opti-digital.com
+sentry-cdn.com
 slpubmedias.tf1.fr
 snap.licdn.com
 socdm.com
@@ -115,9 +115,9 @@ via.batch.com
 vst.sibnet.ru
 waust.at
 wfcs.lol
-www.eb.3lift.com
 www.datadoghq-browser-agent.com
 www.dwin1.com
+www.eb.3lift.com
 www.googleadservices.com
 www.googleoptimize.com
 www14.smartadserver.com
