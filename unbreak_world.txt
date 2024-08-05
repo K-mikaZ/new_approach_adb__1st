@@ -293,7 +293,7 @@ salamarket.fr#@#.elementor-spacer:not(html, body)
 @@||first-id.fr^$document
 ! cause delay when play video on arte.tv
 ||arte.tv/log-player/$badfilter
-@@||mesure.streaming.estat.com^$image
+!@@||mesure.streaming.estat.com^$image
 ! https://www.barstoolsports.com/video/3518372/riggs-vs-union-hills-c.c.-holes-16-18
 @@||pagead2.googlesyndication.com^$domain=imasdk.googleapis.com
 zotmarche.re#@#.elementor-spacer:not(html, body)
