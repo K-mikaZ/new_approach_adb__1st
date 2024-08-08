@@ -1699,8 +1699,8 @@ stream-serie.net#$##option-1{height:100%}
 /in(\-)?page(\-)?push\.com/
 /script/*.php?*$image
 ||31.220.3.200
-||d1grmk7aafb6ck.cloudfront.net^$third-party
-||d36zfztxfflmqo.cloudfront.net^$third-party
+||d1grmk7aafb6ck.cloudfront.net^
+||d36zfztxfflmqo.cloudfront.net^
 ||eikegolehem.com^$third-party
 ||e2ertt.com^$third-party
 ||inabsolor.com^$third-party
@@ -1709,7 +1709,6 @@ stream-serie.net#$##option-1{height:100%}
 ||rwn1sdb4xqa2.com^$third-party
 ||ayeboagnu.com^$third-party
 ||3wregie.eu^$third-party
-||windows.net^$third-party
 ||script.ioam.
 ||analisa.io$third-party
 ||iotechnologies.com^$third-party
