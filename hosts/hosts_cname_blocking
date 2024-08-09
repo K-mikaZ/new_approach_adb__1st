@@ -2,7 +2,8 @@
 claranet-logger1.dginfra.net
 # 👁️‍🗨️ [telemetry] CNAME az416426.vo.msecnd.net ⇒ cs9.wpc.v0cdn.net (dc.applicationinsights.microsoft.com)
 #   see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
-cs9.wpc.v0cdn.net
+! BAD - break: https://create.microsoft.com/fr-fr/templates/budgets
+! cs9.wpc.v0cdn.net
 # 👁️‍🗨️ [tracking] CNAME p.asgpxl.com ⇒ d2a8zts6hhnqj1.cloudfront.net (Original URL: https://p.asgpxl.com/tr.js)
 #   concerns: www.traforama.com", "app.traforama.com", "www.adspyglass.com", "app.adspyglass.com"
 d2a8zts6hhnqj1.cloudfront.net
