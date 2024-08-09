@@ -25,4 +25,12 @@ moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 nature.com##.cc-banner[open]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
+! 9 août 2024 ¤¤¤ vapodistri.com ¤¤¤ (https://vapodistri.com/degerm-aspire-sterilisateur-uv-portable)
+vapodistri.com##.tvcmscookies-notice
+! 9 août 2024 ¤¤¤ www.neovapo.com ¤¤¤ (https://www.neovapo.com/blog/dans-quel-flacon-mettre-des-eliquides-diy-n210)
+www.neovapo.com##.ply-visible.ply-backdrop
+www.neovapo.com##.ply-visible.ply-popup
+! 9 août 2024 ¤¤¤ www.vapengo.fr ¤¤¤ (https://www.vapengo.fr/classic/1259-781-tb-racca-10ml.html)
+www.vapengo.fr##.iqitcookielaw-showed
+www.point-smoke.fr##.cc-window
 
