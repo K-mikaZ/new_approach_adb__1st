@@ -4,7 +4,9 @@
 /[Nn]ewslet{2}er/$from=www.750g.com
 ! 29 juil. 2024 - www.radio.fr, www.femmeactuelle.fr
 !||cdn.privacy-mgmt.com^*/wrapperMessagingWithoutDetection.js
-/wrapperMessagingWithoutDetection.js$redirect=noopjs
+! BAD, Blocking videos loading on "www.cuisineactuelle.fr"
+!/wrapperMessagingWithoutDetection.js$redirect=noopjs
+/wrapperMessagingWithoutDetection.js$badfilter
 ! 25 juil. 2024 - www.nature.com
 ||verify.*/verify/*.min.js
 ||cmp.*/consent-bundle*.js
