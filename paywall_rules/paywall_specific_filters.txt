@@ -13,6 +13,9 @@ chefcuisto.com##body:style(overflow: visible !important;)
 comment-economiser.fr###overlay_blockNL
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
+forum.doctissimo.fr##.didomi-popup-backdrop
+forum.doctissimo.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
+forum.doctissimo.fr##body.didomi-popup-open:style(overflow: auto !important;)
 goodassur.com##.eu-cookie-compliance-banner
 goodassur.com##body:style(overflow-x: unset !important;)
 ! (tc) tagcommander cookie/paywall
