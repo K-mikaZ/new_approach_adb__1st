@@ -629,15 +629,15 @@ allseries.*##.telecharger
 malekal.com##+js(abort-current-inline-script, adsbygoogle)
 malekal.com#@##adsense
 malekal.com#@#.an-advert-banner
-animationdigitalnetwork.fr##.adn-opm2-block-rectangle
-animationdigitalnetwork.fr##.adn-pave
-animationdigitalnetwork.fr###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
-yatta.animationdigitalnetwork.fr##.adn-header
-animationdigitalnetwork.fr##.videosummary-image
-animationdigitalnetwork.fr##.adn-megaban-hide.adn-transparent-block
-animationdigitalnetwork.fr##.adn-right>.adn-full-block-center.adn-transparent-block
-animationdigitalnetwork.fr##.adn-playlist-right>.adn-full-block-center.adn-transparent-block
-animationdigitalnetwork.fr##.adn-player-right>div.adn-full-block-center.adn-transparent-block
+animationdigitalnetwork.*##.adn-opm2-block-rectangle
+animationdigitalnetwork.*##.adn-pave
+animationdigitalnetwork.*###google_ads_iframe_\/21835257576\/ADN_SQUARE_TOP_0__container__
+yatta.animationdigitalnetwork.*##.adn-header
+animationdigitalnetwork.*##.videosummary-image
+animationdigitalnetwork.*##.adn-megaban-hide.adn-transparent-block
+animationdigitalnetwork.*##.adn-right>.adn-full-block-center.adn-transparent-block
+animationdigitalnetwork.*##.adn-playlist-right>.adn-full-block-center.adn-transparent-block
+animationdigitalnetwork.*##.adn-player-right>div.adn-full-block-center.adn-transparent-block
 /animationdigitalnetwork\.(.{2,})\/media\/analytics\/event\.min\.js/$script,important
 !! /classes/masha/masha.js
 4kstreamz.*##.register
