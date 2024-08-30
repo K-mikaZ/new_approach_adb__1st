@@ -23,10 +23,11 @@
 !! ||yospace.com/csm/analytics;$xhr,redirect-rule=noop-vmap1.0.xml,important
 ! ||proxy.ads.canalplus-bo.net/web/*/advert/?adInfo=$xhr,other,redirect=noop-vmap1.0.xml,important
 !||gw.api.animationdigitalnetwork.*/player/video/*/vmap$important,redirect=noop-vmap1.0.xml
-||animationdigitalnetwork.*/player/video/*/vmap$redirect=noop-vmap1.0.xml,important
+!||animationdigitalnetwork.*/player/video/*/vmap$redirect=noop-vmap1.0.xml,important
 ||dmxleo.dailymotion.com/cdn/manifest/video/*_VMAP_*$xhr,redirect=noop-vmap1.0.xml,important
 ||dailymotion.com/vast/video/*.xml?$important,redirect=noop-vmap1.0.xml
-/vmap?$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
+!/vmap?$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
+/vmap|$xhr,important,redirect=noop-vmap1.0.xml,domain=imasdk.googleapis.com
 ||*&output=xml_vmap1$xhr,redirect-rule=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ||*vmap*$xhr,redirect-rule=noop-vmap1.0.xml,domain=~github.com|~githubusercontent.com
 ||/*vmap$xhr,redirect-rule=noop-vmap1.0.xml
