@@ -12,8 +12,7 @@
 
 ||imasdk.googleapis.com/js/sdkloader/vpaid_adapter.js$redirect=noopjs
 ! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
-/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,~stylesheet
-/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$script,redirect-rule=noopjs
+/\/videojs([\wd-]+)?[-.](v\w{3,4}[@\-.]){1,2}/$important,script,redirect=noopjs
 ! 2024-01-18 on videojs-vast-vpaid-master/bin/VPAIDFlash.swf && ||video.sibnet.ru^*/VPAIDFlash.swf
 /VPAIDFlash.swf$object,redirect=empty
 
