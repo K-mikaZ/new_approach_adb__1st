@@ -606,12 +606,12 @@ fmax.xyz##+js(abort-on-property-read, __Y)
 ||site.dotvideo.cc^$important
 /\?go\=(regarder|telecharger)\-en\-hd/
 hds-streaming.*##a[target="_blank"]
-@@||doodcdn.*$script,domain=dood.*|dooood.*
-@@||dood.*$script,domain=dood.*|dooood.*
-@@||dooood.com^$subdocument
+@@||doodcdn.*$script,domain=d00d.*|d000d.*|d0000d.*|do0od.*|dood.*|doood.*|dooood.*
+@@||dood.*$script,domain=d00d.*|d000d.*|d0000d.*|do0od.*|dood.*|doood.*|dooood.*
+@@$subdocument,domain=d00d.*|d000d.*|d0000d.*|do0od.*|dood.*|doood.*|dooood.*
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(no-xhr-if, method:HEAD, emptyObj)
 d00d.*,d000d.*,d0000d.*,do0od.*,dood.*,doood.*,dooood.*##+js(abort-current-inline-script, check)
-/(do{2,}d\.(.{2,})\/sw\.js$)/$important
+/(d[o0]{2,}d\.(.{2,})\/sw\.js$)/$important
 vidlox.*##+js(prevent-window-open)
 vidlox.*##[id="play_limit_box"]
 ||vidlox.*/favicon.ico
