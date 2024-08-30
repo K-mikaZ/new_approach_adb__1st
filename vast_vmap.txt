@@ -34,11 +34,11 @@
 /vmap*.xml$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ||videosprofitnetwork.com/watch.xml?$redirect=noop-vmap1.0.xml
 output=xml_vmap1$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
-imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 
 
 ! ======= Video Ad Serving Template (VAST) =======
 
+imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 /\/{1,2}vast[.\/]/$important,xhr,3p,domain=~raw.githubusercontent.com|~github.com
 ! |https://vidmoly.to/static/vastAD.js
 /vastAD.js
