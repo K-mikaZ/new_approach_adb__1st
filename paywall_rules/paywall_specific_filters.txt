@@ -37,4 +37,5 @@ www.neovapo.com##.ply-visible.ply-popup
 ! 9 août 2024 ¤¤¤ www.vapengo.fr ¤¤¤ (https://www.vapengo.fr/classic/1259-781-tb-racca-10ml.html)
 www.vapengo.fr##.iqitcookielaw-showed
 www.point-smoke.fr##.cc-window
-
+! 2 sept. 2024 ¤¤¤ ya-tout-fromage-maison.fr ¤¤¤ (https://ya-tout-fromage-maison.fr/foire-aux-questions.html#Particularites-beurre)
+ya-tout-fromage-maison.fr###cadre_alert_cookies
