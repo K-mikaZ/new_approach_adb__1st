@@ -23,6 +23,7 @@ quechoisir.org###tc-privacy-wrapper
 quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
 quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
 medisite.fr##.mf-loaded.mf-notification-iframe
+mescoursesenvrac.com##.popup-display.basel-cookies-popup
 ! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 nature.com##.cc-banner[open]
