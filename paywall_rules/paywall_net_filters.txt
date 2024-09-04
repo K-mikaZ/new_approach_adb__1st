@@ -3,8 +3,6 @@
 !/ht{2}ps?:\/{2}chefcuisto\.com\/popup\/([\w-]+)(-\d)?\//$important
 /[Nn]ewslet{2}er/$from=www.750g.com
 ! BAD, Blocking videos loading on "www.cuisineactuelle.fr, www.radio.fr, www.femmeactuelle.fr"
-!||cdn.privacy-mgmt.com^*/wrapperMessagingWithoutDetection.js
-!/wrapperMessagingWithoutDetection.js$redirect=noopjs
 /wrapperMessagingWithoutDetection.js$badfilter
 /unified/wrapperMessagingWithoutDetection.js$badfilter
 ^*^wrapperMessagingWithoutDetection.js$domain=www.cuisineaz.com
