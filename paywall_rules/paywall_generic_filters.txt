@@ -2,6 +2,7 @@
 #@#.section-newsletter
 ! Cookie wall ---------------------------------------------------------
 !##.lgcookieslaw_banner
+! ¤¤¤ cmplz ¤¤¤ (https://verticus.fr/ingredients-naturels-produits-menagers-maison/)
 ###cmplz-cookiebanner-container
 ##.cmplz-cookiebanner
 ###cookieChoiceInfo
