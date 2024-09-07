@@ -1,3 +1,4 @@
+! https://html-css-js.com/html/character-codes/ ==>  💵  👁️‍🗨️  ⛔ 
 ! 👁️‍🗨️ [telemetry] CNAME az416426.vo.msecnd.net ⇒ cs9.wpc.v0cdn.net (dc.applicationinsights.microsoft.com)
 !   see: https://az416426.vo.msecnd.net/scripts/a/ai.0.js
 ! BAD - break: https://create.microsoft.com/fr-fr/templates/budgets
