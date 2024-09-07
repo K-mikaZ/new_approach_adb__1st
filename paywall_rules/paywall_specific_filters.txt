@@ -44,3 +44,5 @@ goodassur.com##body:style(overflow-x: unset !important;)
 moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
 quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
+www.regilait.com##.consent-banner.show:style(display: none !important;)
+
