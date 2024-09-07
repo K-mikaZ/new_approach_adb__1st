@@ -13,7 +13,7 @@
 ###tarteaucitronRoot
 ##.lgcookieslaw-overlay
 ##dialog.cc-banner
-! lucullent.com,www.homeland.immo
+! lucullent.com,www.homeland.immo,www.point-smoke.fr
 ##.cc-bottom.cc-window
 ! help.consentmanager.fr
 ##div.cmpwrapper
