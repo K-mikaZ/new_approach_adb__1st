@@ -13,6 +13,7 @@
 ###tarteaucitronRoot
 ##.lgcookieslaw-overlay
 ##dialog.cc-banner
+##.cc-bottom.cc-window
 ! help.consentmanager.fr
 ##div.cmpwrapper
 ##div.cmpwrapper:empty
