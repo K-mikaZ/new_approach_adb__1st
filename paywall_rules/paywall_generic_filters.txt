@@ -27,6 +27,8 @@
 !###tc-privacy-wrapper
 !##.tc-privacy-overlay:style(display: none !important;)
 !##body.tc-modal-open:remove-class(tc-modal-open)
+! 6 sept. 2024 ¤¤¤ www.lepetitpotagerbiodepapounet.net ¤¤¤ (https://www.lepetitpotagerbiodepapounet.net/post/les-feuilles-de-framboisiers-sont-excellentes-pour-la-sant%C3%A9-voici-ce-qu-il-y-a-moyen-de-faire-avec)
+##.consent-banner-root
 ! Newsletter ----------------------------------------------------------
 ###modal-newsletter
 ##.newsletter-widget
