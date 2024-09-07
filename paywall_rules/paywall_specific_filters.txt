@@ -31,6 +31,8 @@ www.vapengo.fr##.iqitcookielaw-showed
 www.regal.fr##[data-controller="newsletter-simple"]
 ! www.point-smoke.fr##.cc-window
 www.ricardocuisine.com##.c-promotion-banner
+www.solubarome.fr##.notification_cookie
+www.ecigplanete.com##.eupopup-container
 ! 2 sept. 2024 ¤¤¤ ya-tout-fromage-maison.fr ¤¤¤ (https://ya-tout-fromage-maison.fr/foire-aux-questions.html#Particularites-beurre)
 ya-tout-fromage-maison.fr###cadre_alert_cookies
 
