@@ -7,25 +7,15 @@
 !femmeactuelle.fr##html:style(overflow: visible !important;)
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 
-!*##body.didomi-popup-open:remove-class(didomi-popup-open)
-actu.fr###didomi-host:style(visibility: hidden !important;)
-chefcuisto.com##body:style(overflow: visible !important;)
 comment-economiser.fr###overlay_blockNL
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 forum.doctissimo.fr##.didomi-popup-backdrop
-forum.doctissimo.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-forum.doctissimo.fr##body.didomi-popup-open:style(overflow: auto !important;)
 goodassur.com##.eu-cookie-compliance-banner
-goodassur.com##body:style(overflow-x: unset !important;)
 ! (tc) tagcommander cookie/paywall
 quechoisir.org###tc-privacy-wrapper
-quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
-quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
 medisite.fr##.mf-loaded.mf-notification-iframe
 mescoursesenvrac.com##.popup-display.basel-cookies-popup
-! moneyvox.fr (#sbox-overlay, #sbox-window) - moneyvox.fr##[id^="sbox-"]
-moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
 nature.com##.cc-banner[open]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
@@ -43,3 +33,14 @@ www.regal.fr##[data-controller="newsletter-simple"]
 www.ricardocuisine.com##.c-promotion-banner
 ! 2 sept. 2024 ¤¤¤ ya-tout-fromage-maison.fr ¤¤¤ (https://ya-tout-fromage-maison.fr/foire-aux-questions.html#Particularites-beurre)
 ya-tout-fromage-maison.fr###cadre_alert_cookies
+
+www.quitoque.fr,www.hagengrote.fr##body.modal-open:remove-class(modal-open)
+!*##body.didomi-popup-open:remove-class(didomi-popup-open)
+actu.fr###didomi-host:style(visibility: hidden !important;)
+chefcuisto.com##body:style(overflow: visible !important;)
+forum.doctissimo.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
+forum.doctissimo.fr##body.didomi-popup-open:style(overflow: auto !important;)
+goodassur.com##body:style(overflow-x: unset !important;)
+moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
+quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
+quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
