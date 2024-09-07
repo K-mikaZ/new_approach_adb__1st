@@ -24,3 +24,6 @@
 ! "net" filters ------------------------------------------------------
 !#include paywall_rules/paywall_net_filters.txt
 
+! "overlay buster" filters ------------------------------------------------------
+!#include paywall_rules/overlay_buster.txt
+
