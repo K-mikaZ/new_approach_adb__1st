@@ -30,7 +30,8 @@
 ! 6 sept. 2024 ¤¤¤ www.lepetitpotagerbiodepapounet.net ¤¤¤ (https://www.lepetitpotagerbiodepapounet.net/post/les-feuilles-de-framboisiers-sont-excellentes-pour-la-sant%C3%A9-voici-ce-qu-il-y-a-moyen-de-faire-avec)
 ##.consent-banner-root
 ! https://www.undejeunerdesoleil.com/2016/06/ktipiti-creme-poivrons-feta.html
-##div[data-name="mediavine-gdpr-cmp"]
+! https://www.mesinspirationsculinaires.com/article-pate-a-tartiner-maison.html
+!##div[data-name="mediavine-gdpr-cmp"]
 ! Newsletter ----------------------------------------------------------
 ###modal-newsletter
 ##.newsletter-widget
