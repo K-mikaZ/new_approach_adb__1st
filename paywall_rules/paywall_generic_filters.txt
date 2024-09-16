@@ -32,6 +32,9 @@
 ! https://www.undejeunerdesoleil.com/2016/06/ktipiti-creme-poivrons-feta.html
 ! https://www.mesinspirationsculinaires.com/article-pate-a-tartiner-maison.html
 !##div[data-name="mediavine-gdpr-cmp"]
+! 9 sept. 2024 ¤¤¤ www.poupadou.com ¤¤¤ (https://www.poupadou.com/blog/recette-sauce-avgolemono/)
+##.androcookies-modal
+##.androcookies-modal-wp
 ! Newsletter ----------------------------------------------------------
 ###modal-newsletter
 ##.newsletter-widget
