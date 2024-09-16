@@ -1,12 +1,3 @@
-! break some useful popups e.g. on bloctel.gouv.fr (create accompt)
-!*##[hidden]:not([hidden="until-found"]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-!*##:is(.cookie-consent-wall[hidden],.cookie-consent-banner[hidden]):matches-css(display:/^(\s*?(?<!none).)*?$/):style(display: none !important;)
-
-! https://stackoverflow.com/a/46533865
-!casayoga.tv##.modal-open:style(overflow: visible !important;)
-!femmeactuelle.fr##html:style(overflow: visible !important;)
-!latribune.fr##html.member-not-connected:remove-class(member-not-connected)
-
 comment-economiser.fr###overlay_blockNL
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
@@ -35,17 +26,3 @@ www.solubarome.fr##.notification_cookie
 www.ecigplanete.com##.eupopup-container
 ! 2 sept. 2024 ¤¤¤ ya-tout-fromage-maison.fr ¤¤¤ (https://ya-tout-fromage-maison.fr/foire-aux-questions.html#Particularites-beurre)
 ya-tout-fromage-maison.fr###cadre_alert_cookies
-
-www.quitoque.fr,www.hagengrote.fr##body.modal-open:remove-class(modal-open)
-!*##body.didomi-popup-open:remove-class(didomi-popup-open)
-actu.fr###didomi-host:style(visibility: hidden !important;)
-chefcuisto.com##body:style(overflow: visible !important;)
-culinair.fr##body.dialog-prevent-scroll:remove-class(dialog-prevent-scroll)
-forum.doctissimo.fr##body:watch-attr(didomi-popup-open):remove-class(didomi-popup-open)
-forum.doctissimo.fr##body.didomi-popup-open:style(overflow: auto !important;)
-goodassur.com##body:style(overflow-x: unset !important;)
-moneyvox.fr##body.body-overlayed:remove-class(body-overlayed)
-quechoisir.org##.tc-privacy-overlay:style(display: none !important;)
-quechoisir.org##body.tc-modal-open:remove-class(tc-modal-open)
-www.regilait.com##.consent-banner.show:style(display: none !important;)
-
