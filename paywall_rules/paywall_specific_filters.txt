@@ -1,4 +1,5 @@
 comment-economiser.fr###overlay_blockNL
+conseils-maisons.fr##.newsletter-row.popup
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 forum.doctissimo.fr##.didomi-popup-backdrop
