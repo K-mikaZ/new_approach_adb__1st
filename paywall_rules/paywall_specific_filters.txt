@@ -10,6 +10,9 @@ mescoursesenvrac.com##.popup-display.basel-cookies-popup
 nature.com##.cc-banner[open]
 nicrunicuit.com##.active.mailpoet_form_slide_in
 reflectoring.io##.popup-xs
+kinsta.com##.popup-newsletter-cta
+pozette.fr##.containerCookie
+surfshark.com##.active.js-popup-gift
 ! 9 août 2024 ¤¤¤ vapodistri.com ¤¤¤ (https://vapodistri.com/degerm-aspire-sterilisateur-uv-portable)
 vapodistri.com##.tvcmscookies-notice
 webtv.hotellerie-restauration.ac-versailles.fr###cookie-bar
