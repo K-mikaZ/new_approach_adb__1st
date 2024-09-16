@@ -5,6 +5,7 @@ forum.doctissimo.fr##.didomi-popup-backdrop
 goodassur.com##.eu-cookie-compliance-banner
 ! (tc) tagcommander cookie/paywall
 quechoisir.org,www.moulinex.fr###tc-privacy-wrapper
+quechoisir.org,www.moulinex.fr##.tc-privacy-overlay
 medisite.fr##.mf-loaded.mf-notification-iframe
 mescoursesenvrac.com##.popup-display.basel-cookies-popup
 nature.com##.cc-banner[open]
