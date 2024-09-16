@@ -144,7 +144,6 @@ dcode.fr##+js(no-setTimeout-if, /\.displayMessage[\s\S]*?\.nextFunction\(\)/)
 ! unbreak video lading on https://www.cuisineactuelle.fr/culture-food/les-petits-plus-en-cuisine/anti-gaspi/cuisinez-sans-oeuf-grace-a-l-aquafaba-314988-177516
 @@||tra.scds.pmdstatic.net/advertising-core/*/core-ads.js
 #@#[data-ads-core]
-##div[data-ads-core]:not(.ads-core-video)
 ! @@||silentinstallhq.com^$cname
 ! @@||openwhyd.org^$cname
 ! compte.tf1.fr ⇒ d3rvml4iv2cgo8.cloudfront.net
