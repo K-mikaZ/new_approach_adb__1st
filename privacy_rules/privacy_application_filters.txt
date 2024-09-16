@@ -1,2 +1,3 @@
 ! TRK => traking ?
 lunion.fr##+js(prevent-addEventListener, /^TRK_.*?/)
+femmeactuelle.fr##+js(prevent-addEventListener, abtasty_executedCampaign)
