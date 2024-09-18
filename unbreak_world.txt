@@ -7,6 +7,7 @@ www.youtube.com#@#tp-yt-paper-dialog.ytd-popup-container.style-scope > .ytd-popu
 youtube.com#@#.ytp-paid-content-overlay
 ! break youtube menu
 youtube.com#@##upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
+redtube.com#@#svg
 /(hq{2}|netu|wa{2}w([0-9]{1})?)\.(t[ov]|watch)/#@#+js("prevent-fab-3.2.0")
 !||criteo.net^$badfilter
 !||criteo.net^$3p,badfilter
