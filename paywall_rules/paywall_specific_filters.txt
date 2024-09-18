@@ -1,5 +1,6 @@
 comment-economiser.fr###overlay_blockNL
 conseils-maisons.fr##.newsletter-row.popup
+culte.com###catapult-cookie-bar
 economie.gouv.fr##.block-newsletter-popin-block
 femmeactuelle.fr##.newsletter-dialog
 forum.doctissimo.fr##.didomi-popup-backdrop
@@ -18,6 +19,8 @@ surfshark.com##.active.js-popup-gift
 ! 9 août 2024 ¤¤¤ vapodistri.com ¤¤¤ (https://vapodistri.com/degerm-aspire-sterilisateur-uv-portable)
 vapodistri.com##.tvcmscookies-notice
 webtv.hotellerie-restauration.ac-versailles.fr###cookie-bar
+! 18 sept. 2024 ¤¤¤ www.quelquesgrammesdegourmandise.com ¤¤¤ (https://www.quelquesgrammesdegourmandise.com/boisson-chocolatee-cacolac/)
+www.quelquesgrammesdegourmandise.com##div[data-name="mediavine-gdpr-cmp"] .amc-modal-container
 www.hagengrote.fr###newsletterLayer
 www.marechal-fraicheur.fr##.show.newsletter-modal
 ! 9 août 2024 ¤¤¤ www.neovapo.com ¤¤¤ (https://www.neovapo.com/blog/dans-quel-flacon-mettre-des-eliquides-diy-n210)
