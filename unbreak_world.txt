@@ -1,4 +1,6 @@
 ! ======[ UNBREAK ]=====================================================
+!@@||litix.io^$from=prod-player.tf1.fr
+||litix.io^$badfilter
 www.youtube.com#@#.opened
 www.youtube.com#@#.opened:remove()
 www.youtube.com#@$?#ytd-popup-container > paper-dialog > yt-upsell-dialog-renderer { remove: true; }
