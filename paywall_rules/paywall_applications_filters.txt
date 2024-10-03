@@ -33,6 +33,9 @@ www.marechal-fraicheur.fr##+js(prevent-addEventListener, /footernewsletter.+/)
 !femmeactuelle.fr##html:style(overflow: visible !important;)
 !latribune.fr##html.member-not-connected:remove-class(member-not-connected)
 
+! fix for cmplz-cookiebanner
+*##body:watch-attr(data-cmplz):style(overflow: auto !important;)
+
 www.quitoque.fr,www.hagengrote.fr##body.modal-open:remove-class(modal-open)
 !*##body.didomi-popup-open:remove-class(didomi-popup-open)
 actu.fr###didomi-host:style(visibility: hidden !important;)
