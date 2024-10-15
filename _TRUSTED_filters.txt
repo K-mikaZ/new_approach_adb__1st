@@ -88,6 +88,7 @@ www.velo-club.net##+js(trusted-click-element, button.cmplz-deny, , 500)
 !    found on: www.6play.fr => tv.freewheel.SDK._instanceQueue['Context_2']._videoAsset.requestComplete({});
 !    found on: www.tf1.fr => tv.freewheel.SDK._instanceQueue['Context_1'].requestComplete({})
 !    Request Modifier <https://regex101.com/r/DkEygK/11>
+||adproxy.tf1.fr^$badfilter
 tv.freewheel.sdk._instancequeue$replace=/(tv\.freewheel\.SDK\._instanceQueue\['Context_[\s\S]*?'\](?:\.[\w_]*){1,}\(\{)[\s\S]*\}[\r\n]?\)/\$1})/
 !#endif
 
