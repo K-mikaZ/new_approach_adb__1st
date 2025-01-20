@@ -3128,7 +3128,7 @@ juststream.org##.movie-xyz
 ||heatmap.it^$important
 ||analytics.tiktok.com^$important
 ||speedcurve.com^$important
-||digidip.net^$important
+!||digidip.net^$important
 ||q.reyden-x.com^
 ||videosworks.com^
 ||serving.stat-rock.com^
