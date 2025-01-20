@@ -2041,7 +2041,8 @@ streamroot.io$script,important,badfilter
 ||cloudfront-hls-media-vod-ellation.vip4-ams1.dlvr1.net^$object,_,important
 *$popup,important,domain=esf397vsf1nk.com|itnuzleafan.com|unreshiramor.com
 @@*$popup,domain=google.com
-||*.cloudfront.*$popup,important
+! ||*.cloudfront.*$popup,important. BADFILTER. because of https://www.ter.sncf.com/pays-de-la-loire/tarifs-cartes/cartes-de-reduction
+!||*.cloudfront.*$popup,important
 ||a5224106a28855abbbb0825aa5e4cd9bd.profile.ams50.cloudfront.net^$all,important
 /(d(1(qg{2}q1at2gusn|r90st78epsag|g3gvqfdsvkse|1enq2rymy0yl|9d01jdwgxcpp)|2(2z575k8abudv|cgdtxs450j04|glav2919q4cw|ha2{2}j8ys3e0o|j{2}zw81hqbuqv|lv4zbk7v5f93|rb23ng5tw{2}z4|ymkpxi1rgldj)|3(6zfztxfflmqo|al52d8cojds7|c(3uihon9kmp|od80thn7qnd)|kpkrgd3aj4o7|oxtn1x3b8d7i|t5ngjixpjdho|v3bqdndm4erx|6zfztxfflmqo|hs51abvkuanv|f4u3khr0ycep|ujids68p6xmp|8nb{2}ai6u794i)|8rk54i4mohrb|c(5k8fg5ioc8s|niko1cv0rz)|gw7ae5vrovs7|n3uy6cx65ujf|t{2}617kogtcso))\.cloudfront\.(.{3})/$all,important
 @@||p.typekit.net$generichide
