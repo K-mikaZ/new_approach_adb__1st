@@ -3101,7 +3101,6 @@ juststream.org##.movie-xyz
 ! ||ct.pinterest.com^
 ||zeotap.com^
 ||sirdata.io^$3p
-||px-cloud.net^
 ||myvisualiq.net^
 ||marazma.com^
 ||pciqckge.com^
