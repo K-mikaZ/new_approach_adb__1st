@@ -46,7 +46,7 @@
 @@||v.fwmrm.net/crossdomain.xml$object,xmlhttprequest
 /npawAdAdapter.$badfilter
 ! mssl.fwmrm.net AdManager's can be object (.swf)
-||mssl.fwmrm.net^$important,all
+!||mssl.fwmrm.net^$important,all
 
 ! 2024-01-23 ¤¤¤ CSS Filtering
 ! Not WEB-BUG - <https://www.cookieshq.co.uk/posts/responsive-video-poster-images-with-css-and-activestorage>
@@ -76,7 +76,7 @@ www.france.tv#@#.ad-layer
 /ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
 
 ! 2024-01-23 ¤¤¤ Misc (not sure)
-||fwmrm.net^$popup,important
+!||fwmrm.net^$popup,important
 
 ! 2024-01-23 ¤¤¤ Some settings
 ! france.tv##+js(set-constant, tv.freewheel.SDK.PLATFORM_NOT_SUPPORT_VIDEO_AD, true)
