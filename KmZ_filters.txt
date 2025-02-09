@@ -102,7 +102,6 @@
 gum-service.azurewebsites.net##+js(abort-current-inline-script, Advp)
 ||search.web-explore.com^$important,subdocument,domain=gum-service.azurewebsites.net
 ! [FIX] player errors on france.tv
-france.tv#@#+js(prevent-fetch, fwmrm)
 ||youboranqs01.com^$badfilter
 ! [FIX] reduce page loading time on youtube
 ||play.google.com/log$badfilter
