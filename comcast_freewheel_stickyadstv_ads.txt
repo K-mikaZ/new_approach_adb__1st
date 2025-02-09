@@ -61,7 +61,7 @@ www.france.tv#@#.ad-layer
 ! ||v.fwmrm.net/ad/g/1$removeparam=caid
 ! <img width="1" height="1"> | Ensures that the user's media.autoplay.blocking_policy choice is respected (I believe).
 ||v.fwmrm.net/ad/u?$important,badfilter
-@@||v.fwmrm.net/ad/u?
+@@||v.fwmrm.net/ad/
 
 ! 2024-01-23 ¤¤¤ Video Ad Serving Template (VAST)
 ||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
