@@ -13,6 +13,7 @@ ads.microsoft.com
 advast.sibnet.ru
 analytics.adjust.net.in
 analytics.pangle-ads.com
+appboycdn.com
 bat.bing.net
 bat.r.msn.com
 bats.video.yahoo.com
@@ -31,7 +32,6 @@ cdn.adsninja.ca
 cdn.parsely.com
 cdn.segment.com
 cdn.taboola.com
-chimpstatic.com
 client-registry.mutinycdn.com
 contentsquare.net
 coolserving.com
@@ -70,8 +70,8 @@ js-agent.newrelic.com
 js.hs-scripts.com
 js.qualified.com
 js.sentry-cdn.com
-lyfnh.io
 logx.optimizely.com
+lyfnh.io
 mc.yandex.ru
 metrics.api.drift.com
 metrics.brightcove.com
@@ -79,7 +79,6 @@ metrics.thank-you.io
 mrf.io
 mssl.fwmrm.net
 nr-data.net
-opti-digital.com
 optimizesrv.com
 p.asgpxl.com
 p.typekit.net
@@ -97,13 +96,13 @@ slpubmedias.tf1.fr
 snap.licdn.com
 socdm.com
 stat.ovh
+static-tracking.klaviyo.com
 static.addtoany.com
 static.ads-twitter.com
 static.affilae.com
 static.chartbeat.com
 static.fastcmp.com
 static.mediarithmics.com
-static-tracking.klaviyo.com
 stats.wp.com
 sync.sparteo.com
 syndication.optimizesrv.com
