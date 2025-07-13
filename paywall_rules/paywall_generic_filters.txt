@@ -15,11 +15,11 @@
 ##dialog.cc-banner
 ! lucullent.com,www.homeland.immo,www.point-smoke.fr
 ##.cc-bottom.cc-window
-! help.consentmanager.fr
-##div.cmpwrapper
-##div.cmpwrapper:empty
-##div#cmpwrapper.cmpwrapper
-##div#cmpwrapper.cmpwrapper:empty
+! help.consentmanager.fr, block loading https://www.quelquesgrammesdegourmandise.com/boisson-chocolatee-cacolac/
+! ##div.cmpwrapper
+! ##div.cmpwrapper:empty
+! ##div#cmpwrapper.cmpwrapper
+! ##div#cmpwrapper.cmpwrapper:empty
 ! found on www.nature.com
 ##[class^="cookie-consent-"][hidden]:not([style*="display: none"])
 ! tagcommander.com
