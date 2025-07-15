@@ -152,5 +152,5 @@
 ||gig-ai-g-prod-westeurope-3-app-v4-tag.westeurope.cloudapp.azure.com^
 # 👁️‍🗨️ [tracking] CNAME cdn.taboola.com ⇒ tls13.taboola.map.fastly.net - <https://urlscan.io/domain/taboola.com>
 ||tls13.taboola.map.fastly.net^
-# 👁️‍🗨️ [tracking] CNAME CNAME: telemetry.seenthis.io ⇒ n.sni.global.fastly.net (part of: sitestream.co)
+# 👁️‍🗨️ [tracking] CNAME: telemetry.seenthis.io ⇒ n.sni.global.fastly.net (part of: sitestream.co)
 ||telemetry.seenthis.io^
