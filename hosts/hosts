@@ -2,6 +2,48 @@
 # BLOCKING EVERYWHERE
 #    to be used in addition to: |
 #      https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus;mimetype=plaintext;showintro=0;notrackers=1;skip=adf.ly,ads.youtube.com,abtasty.com,adjust.com,adsafeprotected.com,awstrack.me,awempire.com,consensu.org,criteo.com,doubleverify.com,estat.com,googlesyndication.com,googletagmanager.com,googletagservices.com,juicyads.com,litix.io,mediarithmics.io,prebid.org,pxf.io,rubiconproject.com,smartadserver.com,spideo.com,spotxchange.com,stickyadstv.com,taboola.com,tagcommander.com,tealium.com,tealiumiq.com,usabilla.com,weborama.com,xiti.com,yadro.ru
+#
+# unchecky_begin
+#    These rules were added by the Unchecky program in order to block advertising software modules
+||tracking.opencandy.com.s3.amazonaws.com^
+||media.opencandy.com^
+||cdn.opencandy.com^
+||tracking.opencandy.com^
+||api.opencandy.com^
+||api.recommendedsw.com^
+||rp.yefeneri2.com^
+||os.yefeneri2.com^
+||os2.yefeneri2.com^
+||installer.betterinstaller.com^
+||installer.filebulldog.com^
+||d3oxtn1x3b8d7i.cloudfront.net^
+||inno.bisrv.com^
+||nsis.bisrv.com^
+||cdn.file2desktop.com^
+||cdn.goateastcach.us^
+||cdn.guttastatdk.us^
+||cdn.inskinmedia.com^
+||cdn.insta.oibundles2.com^
+||cdn.insta.playbryte.com^
+||cdn.llogetfastcach.us^
+||cdn.montiera.com^
+||cdn.msdwnld.com^
+||cdn.mypcbackup.com^
+||cdn.ppdownload.com^
+||cdn.riceateastcach.us^
+||cdn.shyapotato.us^
+||cdn.solimba.com^
+||cdn.tuto4pc.com^
+||cdn.appround.biz^
+||cdn.bigspeedpro.com^
+||cdn.bispd.com^
+||cdn.bisrv.com^
+||cdn.cdndp.com^
+||cdn.download.sweetpacks.com^
+||cdn.dpdownload.com^
+||cdn.visualbee.net^
+# unchecky_end
+#
 ||7vid.net^
 ||a.1film.to^
 ||a.omappapi.com^
