@@ -989,9 +989,7 @@ watchcartoonsonline.eu##+js(abort-current-inline-script, document.createElement,
 wz.de##+js(abort-on-property-read, jsABLoaded)
 zippyshare.com##+js(abort-current-inline-script, String.fromCharCode, decodeURIComponent)
 zone-stream.club##+js(abort-on-property-read, check)
-twitch.tv##+js(twitch-videoad.js)
-imdb.com###top_ad_wrapper
-imdb.com##.cornerstone_slot
+imdb.com###top_ad_wrapperimdb.com##.cornerstone_slot
 lemonde.fr###js-engagement-banner
 linternaute.com##[id*="Crt-"]
 linternaute.com##.sonar-infinite.sonar-fill.sonar.sns_avoidance_link.sns_ico--bell
