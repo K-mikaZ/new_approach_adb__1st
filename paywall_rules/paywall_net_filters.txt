@@ -1,7 +1,12 @@
 ! bypass paywalls by redirecting an article to a webpage capture from archive.today (which uses archive.ph).
 !   • Be prepared to complete a Google reCAPTCHA
 !   • If no archive exists be prepared to wait while one is created (this can take a minute)
-!     > `https://archive.today/?run=1&url={location.href}`
+!       code: |
+!     >    `https://archive.today/?run=1&url={location.href}`
+!       bookmarklet: (from https://jnavas2.github.io/Archive-Page/) |
+!           javascript:void(open('https://archive.today/?run=1&url=%27+encodeURIComponent(document.location)))
+!       addon: |
+!           https://github.com/JNavas2/Archive-Page
 ! ------------------------------------------
 *modalnewsletter$from=www.programme-tv.net|www.programme.tv
 /cookieconsent.js$domain=www.smsvertpro.com
