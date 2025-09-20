@@ -6640,7 +6640,7 @@ function noopFunc() {};
  * @see {@link https://www.w3.org/TR/REC-xml/#NT-EmptyElemTag}
  **/
 
-// EMPTY VMAP with AdBreak, for compatibility reason. Fix for some players.
+// EMPTY VMAP with empty AdBreak, for compatibility reason. Fix for some players.
 // e.g. https://github.com/dropy2008/SpeedoXtream/blob/fc502b55a4cc434e9c04e2ce7e12f966ced4e07c/TestingResources/Vast/vmapOptimizedPodWith3AdsBumpersTag.xml
 noopvmap-1.0 text/xml
 <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"><vmap:AdBreak/></vmap:VMAP>
