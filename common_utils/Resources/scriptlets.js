@@ -6643,22 +6643,22 @@ function noopFunc() {};
 // For compatibility reason, use AdBreak. Fix for some players.
 // e.g. https://github.com/dropy2008/SpeedoXtream/blob/fc502b55a4cc434e9c04e2ce7e12f966ced4e07c/TestingResources/Vast/vmapOptimizedPodWith3AdsBumpersTag.xml
 noopvmap-1.0 text/xml
-<vmap:VMAP xmlns:vmap="http://www.iab.net/vmap-1.0" version="1.0"><vmap:AdBreak/></vmap:VMAP>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"><vmap:AdBreak/></vmap:VMAP>
 
 noopvast-1.0 text/xml
-<VAST version="1.0"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0"/>
 
 noopvast-2.0 text/xml
-<VAST version="2.0"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0"/>
 
 noopvast-3.0 text/xml
-<VAST version="3.0"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0"/>
 
 noopvast-4.0 text/xml
-<VAST version="4.0"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.0"/>
 
 noopvast-4.1 text/xml
-<VAST version="4.1"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.1"/>
 
 noopvast-4.2 text/xml
-<VAST version="4.2"/>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.2"/>
