@@ -193,3 +193,12 @@ vast.*/v4$xhr,redirect-rule=noopvast-4.0,important
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 ||0af2a962b0102942d9a7df351b20be55.com^$important,redirect=noopvast-2.0
+
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=2*$important,redirect=noopvast-2.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=3*$important,redirect=noopvast-3.0
+||ads.stickyadstv.com/*AdsSetup&protocolVersion=4*$important,redirect=noopvast-4.0
+! ||fwmrm.net/*crunchyroll.com*midroll*$xmlhttprequest,redirect=noopvast-2.0
+/ad/g/1?resp=vast2$important,redirect=noopvast-2.0
+/ad/g/1?resp=vast3$important,redirect=noopvast-3.0
+/ad/g/1?resp=vast4$important,redirect=noopvast-4.0
+/ad/g/1?resp=vmap1$important,redirect=noop-vmap1.0.xml
