@@ -8,7 +8,7 @@
 ! READ: https://clearcode.cc/blog/vast-vpaid-vmap-mraid/
 
 
-! ======= Video Player-Ad Interface Definition (VPAID) =======
+! ======= Video Player Ad Interface Definition (VPAID) =======
 
 ||imasdk.googleapis.com/js/sdkloader/vpaid_adapter.js$redirect=noopjs
 ! https://regex101.com/r/QQcLU1/2 ("~stylesheet" because block also "VPAIDFlash.swf" object)
