@@ -37,6 +37,8 @@ output=xml_vmap1$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 
 ! ======= Video Ad Serving Template (VAST) =======
 
+! VAST ads - 18 oct. 2025 ¤¤¤ www.pornlib.com ¤¤¤ (https://www.pornlib.com/)
+||jibeno.xyz^
 imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 /\/{1,2}vast[.\/]/$important,xhr,3p,domain=~raw.githubusercontent.com|~github.com
 ! |https://vidmoly.to/static/vastAD.js
