@@ -733,12 +733,6 @@ rakuten.tv##+js(no-xhr-if, /cdn\.spotxcdn\.com\/media/)
 !! ||*.tf1.fr/*youbora*$script,redirect=noopjs
 @@||*.tf1.fr/*youbora*$script
 ||prod-player.tf1.fr/*/player/undefined$empty
-prod-player.tf1.fr##:where(ntrs-edito-img[class="is-visible"], ntrs-top-toolbar)
-!! custom font-size (on fullscreen, coming-next...)
-prod-player.tf1.fr##ntrs-edito-title,ntrs-coming-next-title:style(font-size: 2em!important;)
-prod-player.tf1.fr##ntrs-edito-subtitle,ntrs-coming-next-description:style(font-size: 1.4em!important;)
-prod-player.tf1.fr##ntrs-coming-next-inner:style(bottom: 5em!important;)
-prod-player.tf1.fr##ntrs-player.is-fullscreen :is(ntrs-time, ntrs-toolbar-middle):style(font-size: 1.2em!important;)
 !! ||*$media,domain=tf1.fr
 ! https://github.com/AdguardTeam/AdguardFilters/pull/102134
 ||dnl-adv-ssl.tf1.fr^$media,domain=tf1.fr
