@@ -56,9 +56,6 @@ imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 ||sys.vidsrev.com/vast/vasts.min.js$3p,redirect=noopjs
 ||lumupu.xyz/vast/?$redirect-rule=noopjson
 
-!#if adguard
-!   noop vast only supported by adguard
-
 ! 2024-01-29 ~ 11:02:39 - image that redirect to a XML
 ||ad.mail.ru/vast/$important,redirect=noopvast-3.0
 
@@ -196,5 +193,3 @@ vast.*/v4$xhr,redirect-rule=noopvast-4.0,important
 ||twinrdsrv.com/preroll.engine$redirect=noopvast-2.0
 ||voirdrama.org/rotateva.php$redirect=noopvast-3.0
 ||0af2a962b0102942d9a7df351b20be55.com^$important,redirect=noopvast-2.0
-
-!#endif
