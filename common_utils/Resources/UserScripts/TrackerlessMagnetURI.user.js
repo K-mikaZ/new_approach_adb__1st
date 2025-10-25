@@ -24,6 +24,7 @@
 // @run-at             document-end
 // @ match              http*://animereleasegroup.blogspot.com/*
 //
+// @match              http://*/*
 // @match              https://*/*
 // @ match magnet:*
 //
@@ -54,7 +55,7 @@
 
     try {
         let magnets = Array.prototype.slice.call(d?.querySelectorAll("a[href*='magnet:']"));
-        
+
         // magnets.length || LOG("No magnets found.");
         if (!magnets.length) {
             LOG("No magnets found.");
