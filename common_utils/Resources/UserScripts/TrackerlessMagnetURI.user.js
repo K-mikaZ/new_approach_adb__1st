@@ -12,23 +12,21 @@
 // @description:pt     Reescreve todos os links de URI do Magnet para forçar os clientes BitTorrent a usarem a descoberta de pares sem rastreadores em vez de assistida por servidor.
 //
 // @author             K-mik@Z
-// @version            1.1.4
+// @version            1.1.6
 // @namespace          tag:github.com,2020:K-mik@Z:TrackerlessMagnetURI:RewritesAllMagnetURILinksToForcesBitTorrentClientsToUseTrackerlessRatherThanServerAssistedPeerDiscovery:TryToTakeOverTheWorld
-// @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
-// @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
+// @copyright          2020+, K-mik@Z (https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js)
+// @homepageURL        https://github.com/K-mikaZ/new_approach_adb__1st/blob/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
 // @downloadURL        https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
-// @updateURL          https://github.com/K-mikaZ/new_approach_adb__1st/tree/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
+// @updateURL          https://raw.githubusercontent.com/K-mikaZ/new_approach_adb__1st/master/common_utils/Resources/UserScripts/TrackerlessMagnetURI.user.js
 // @icon               data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHdpZHRoPSIxMDAiPgogIDxwYXRoIGZpbGw9IiNkZWRlZGUiIGQ9Ik02LjY2NiA2LjY2NnYyMGgyNi42Njh2LTIwSDYuNjY2eiIvPgogIDxwYXRoIGQ9Ik0wIDB2ODYuNjY2aDYuNjY2djYuNjY4SDIwVjEwMGg2MHYtNi42NjZoMTMuMzM0di02LjY2OEgxMDBWMEg2MHYzMy4zMzRoNi42NjZWNjBINjB2Ni42NjZINDBWNjBoLTYuNjY2VjMzLjMzNEg0MFYwSDB6bTYuNjY2IDYuNjY2aDI2LjY2OHYyMGgtNi42Njh2NDBoNi42Njh2Ni42NjhoMzMuMzMydi02LjY2OGg2LjY2OHYtNDBoLTYuNjY4di0yMGgyNi42NjhWODBoLTYuNjY4djYuNjY2SDczLjMzNHY2LjY2OEgyNi42NjZ2LTYuNjY4SDEzLjMzNFY4MEg2LjY2NlY2LjY2NnoiLz4KICA8cGF0aCBmaWxsPSJyZWQiIGQ9Ik02LjY2NiAyNi42NjZWODBoNi42Njh2Ni42NjZoMTMuMzMydjYuNjY4aDQ2LjY2OHYtNi42NjhoMTMuMzMyVjgwaDYuNjY4VjI2LjY2NmgtMjB2NDAuMDAyaC02LjY2NnY2LjY2NmgtLjAwMnYtLjExNUg2MHYuMTE1SDQwdi0uMTE1aC02LjY2NnYuMTE1aC0uMDAydi02LjY2NmgtNi42NjZWMjYuNjY2aC0yMHoiLz4KICA8cGF0aCBmaWxsPSIjZGVkZWRlIiBkPSJNNjYuNjY2IDYuNjY2djIwaDI2LjY2OHYtMjBINjYuNjY2eiIvPgo8L3N2Zz4K
-// @grant              none
-// @noframes           true
-// @run-at             document-end
-// @require            data:javascript,let { document:doc, console, top, self } = window, context = { prod: false };
-// @ match              http*://animereleasegroup.blogspot.com/*
 //
 // @match              http://*/*
 // @match              https://*/*
-// @ match magnet:*
 //
+// @grant              none
+// @noframes           true
+// @run-at             document-end
+// @require            data:javascript;charset=utf-8,let{document,console,top,self}=window,context={prod:false},magnets=Array.prototype.slice.call(document?.querySelectorAll("a[href*='magnet:']"));
 // ==/UserScript==
 
 // READ: https://en.wikipedia.org/wiki/Magnet_URI_scheme
@@ -37,17 +35,20 @@
 // originally from "https://github.com/da2x/trackerless-magnets/blob/master/webextensions/data/content-script.js"
 // read < https://www.ctrl.blog/entry/trackerless-magnets-extension.html >
 
-!function(a) {
-    "use strict";
-    /* global context,doc */
+// http*://animereleasegroup.blogspot.com/*
 
+!function(a) {
+    "use strict"; /* global context, magnets */
     // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
 
-    // (In Development: !context.prod) || (In Prod: context.prod)
+    // (In Prod => context.prod || In Development => !context.prod)
     context.isDebug = context.prod;
 
+    // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
+    var LOG = context.isDebug ? console.log.bind(console) : function () {}; // USED ONLY IN DEBUG MODE
+
     //  How to make userscript match only once?
-    if (top !== self) return; // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
+    if (top !== self) { return; } // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
 
     // const context = {
     //     // from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
@@ -55,23 +56,19 @@
     //     isDebug: false, // In Development: true || In Prod: false
     // };
 
-    // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
-    var LOG = context.isDebug ? console.log.bind(console) : function () {}; // USED ONLY IN DEBUG MODE
-
     try {
-        let magnets = Array.prototype.slice.call(doc?.querySelectorAll("a[href*='magnet:']"));
+        // let magnets = Array.prototype.slice.call(document?.querySelectorAll("a[href*='magnet:']"));
 
         // magnets.length || LOG("No magnets found.");
         if (!magnets.length) {
-            LOG("No magnets found.");
-            return; // Abort
+            LOG("No magnets found.");/* Abort */return;
         }
 
         // https://stackoverflow.com/questions/31697237/get-href-list-from-element-list-in-javascript
         // var links = Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']"));
         // var links_array = links.map(function(elem){ return elem.getAttribute("href"); });
         // Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']")).map(function(elem){ return elem.getAttribute("href"); });
-        var r, e, l = doc?.querySelectorAll("a[href^='magnet:']");
+        var r, e, l = document?.querySelectorAll("a[href^='magnet:']");
         if (l) for (a in l) null != l[a] && null != l[a].href && (r = new URL(l[a].href)).searchParams.has("xt") && (e = "magnet:?xt=" + r.searchParams.getAll("xt"),
                                                                                                                      r.searchParams.has("xl") && (e += "&xl=" + r.searchParams.getAll("xl")),
                                                                                                                      r.searchParams.has("dn") && (e += "&dn=" + r.searchParams.getAll("dn")),
