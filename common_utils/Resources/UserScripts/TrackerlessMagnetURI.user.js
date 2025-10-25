@@ -41,8 +41,8 @@
 // lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
 
 !function(a) {
-    "use strict"; /* global context, magnets */
-    // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
+    "use strict";
+    /* global context, magnets */ // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
 
     // (In Prod => context.prod || In Development => !context.prod)
     context.isDebug = context.prod;
