@@ -22,6 +22,7 @@
 // @grant              none
 // @noframes           true
 // @run-at             document-end
+// @require            data:javascript,let { document:doc, console, top, self } = window, context = { prod: false };
 // @ match              http*://animereleasegroup.blogspot.com/*
 //
 // @match              http://*/*
@@ -38,23 +39,27 @@
 
 !function(a) {
     "use strict";
-    let { document:d, console:c, top:t, self:s } = window;
+    /* global context,doc */
+
+    // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
+
+    // (In Development: !context.prod) || (In Prod: context.prod)
+    context.isDebug = context.prod;
 
     //  How to make userscript match only once?
-    if (t !== s) return; // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
+    if (top !== self) return; // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
 
-    const context = {
-        // from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
-        // lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
-        isDebug: false, // In Development: true || In Prod: false
-    };
+    // const context = {
+    //     // from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
+    //     // lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
+    //     isDebug: false, // In Development: true || In Prod: false
+    // };
 
     // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
-    // var INFO = context.isDebug ? c.info.bind(c) : function () {}; // USE ONLY IN DEBUG
-    var LOG = context.isDebug ? c.log.bind(c) : function () {}; // USE ONLY IN DEBUG
+    var LOG = context.isDebug ? console.log.bind(console) : function () {}; // USED ONLY IN DEBUG MODE
 
     try {
-        let magnets = Array.prototype.slice.call(d?.querySelectorAll("a[href*='magnet:']"));
+        let magnets = Array.prototype.slice.call(doc?.querySelectorAll("a[href*='magnet:']"));
 
         // magnets.length || LOG("No magnets found.");
         if (!magnets.length) {
@@ -66,7 +71,7 @@
         // var links = Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']"));
         // var links_array = links.map(function(elem){ return elem.getAttribute("href"); });
         // Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']")).map(function(elem){ return elem.getAttribute("href"); });
-        var r, e, l = d?.querySelectorAll("a[href^='magnet:']");
+        var r, e, l = doc?.querySelectorAll("a[href^='magnet:']");
         if (l) for (a in l) null != l[a] && null != l[a].href && (r = new URL(l[a].href)).searchParams.has("xt") && (e = "magnet:?xt=" + r.searchParams.getAll("xt"),
                                                                                                                      r.searchParams.has("xl") && (e += "&xl=" + r.searchParams.getAll("xl")),
                                                                                                                      r.searchParams.has("dn") && (e += "&dn=" + r.searchParams.getAll("dn")),
