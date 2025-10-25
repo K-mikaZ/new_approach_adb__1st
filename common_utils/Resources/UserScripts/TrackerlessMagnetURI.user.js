@@ -26,11 +26,10 @@
 // @grant              none
 // @noframes           true
 // @run-at             document-end
-// @require            data:javascript;charset=utf-8,let{document,console,top,self}=window,context={prod:false},magnets=Array.prototype.slice.call(document?.querySelectorAll("a[href*='magnet:']"));
+// @require            data:javascript;charset=utf-8,let context={prod:false},{document,console,top,self}=window,magnets=Array.prototype.slice.call(document?.querySelectorAll("a[href*='magnet:']"));
 // ==/UserScript==
 
 // READ: https://en.wikipedia.org/wiki/Magnet_URI_scheme
-// https://www.reddit.com/r/javascript/comments/qov21/parsing_a_magnet_link_with_javascript/
 
 // originally from "https://github.com/da2x/trackerless-magnets/blob/master/webextensions/data/content-script.js"
 // read < https://www.ctrl.blog/entry/trackerless-magnets-extension.html >
@@ -42,20 +41,30 @@
 
 !function(a) {
     "use strict";
-    /* global context, magnets */ // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
+    /* global context, magnets */ // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724865124
 
-    // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
     context.isDebug = context.prod; // (In Prod => context.prod || In Development => !context.prod)
 
+    // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
     var LOG = context.isDebug ? console.log.bind(console) : function () {}; // USED ONLY IN DEBUG MODE
 
     //  How to make userscript match only once?
-    if (top !== self) { return; } // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
+    if (top !== self) { return; } // The site probably uses IFRAME or hidden IFRAME. Make sure the script is not running in IFRAME.
 
     try {
 
         // magnets.length || LOG("No magnets found.");
         if (!magnets.length) { LOG("No magnets found.");/* Abort */return; }
+
+        var magnets_protocol = magnets.filter((magnet) => magnet.protocol === "magnet:"); //protocol: "magnet:"
+        magnets_protocol.length && ( LOG({magnets_protocol}) );
+
+        // like: "http://anonymouse.org/cgi-bin/anon-www.cgi/magnet:?xt=urn:btih:5d7c306e862491da4cd9b33b1cb99fc311421b36&dn=Archer+2009+S03E08+PROPER+HDTV+x264-COMPULSiON+%5Beztv%5D&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.ccc.de%3A80"
+        var magnets_others = magnets.filter((magnet) => magnet.protocol !== "magnet:");
+        magnets_others.length && ( LOG({magnets_others}) );
+
+        // https://www.reddit.com/r/javascript/comments/qov21/parsing_a_magnet_link_with_javascript/#t1_c3z9ybc-post-rtjson-content
+        // Array.prototype.forEach.call(magnets_others, (m = m.substr(m.search(/magnet:\?xt=urn:/))) => LOG(m));
 
         // https://stackoverflow.com/questions/31697237/get-href-list-from-element-list-in-javascript
         // var links = Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']"));
