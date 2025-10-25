@@ -49,7 +49,7 @@
     const context = {
         // from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
         // lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
-        isDebug: true, // In Development: true || In Prod: false
+        isDebug: false, // In Development: true || In Prod: false
     };
 
     // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
