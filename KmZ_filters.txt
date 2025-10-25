@@ -2496,7 +2496,6 @@ radiotunes.com,di.fm##[class*="premium"]
 @@||audio-akp-quic-control-spotify-com.akamaized.net/audio/*$badfilter
 /uptostream\.(.{3})\/as{2}ets\//$subdocument
 /crunchyroll\.(.{3})\/(.*\/)?track(er|ing)/
-@@||hostingcloud.racing^$domain=pourcesoir.in
 fcine.tv#@#[style*="width: 0px"][style*="height: 0px"][style*="position:"][style*="z-index:"]:not([style*="transform"]):not([style*="transition"]):not([style*="animation"])
 ||cdn.ampproject.org/v0.js$badfilter
 @@||cdn.ampproject.org/v0.js
