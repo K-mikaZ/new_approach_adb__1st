@@ -44,10 +44,8 @@
     "use strict";
     /* global context, magnets */ // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
 
-    // (In Prod => context.prod || In Development => !context.prod)
-    context.isDebug = context.prod;
-
     // https://stackoverflow.com/questions/7500811/how-do-i-disable-console-log-when-i-am-not-debugging
+    context.isDebug = context.prod; // (In Prod => context.prod || In Development => !context.prod)
     var LOG = context.isDebug ? console.log.bind(console) : function () {}; // USED ONLY IN DEBUG MODE
 
     //  How to make userscript match only once?
