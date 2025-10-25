@@ -37,6 +37,9 @@
 
 // http*://animereleasegroup.blogspot.com/*
 
+// from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
+// lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
+
 !function(a) {
     "use strict"; /* global context, magnets */
     // https://github.com/Tampermonkey/tampermonkey/issues/1058#issuecomment-724838020
@@ -50,19 +53,10 @@
     //  How to make userscript match only once?
     if (top !== self) { return; } // The site probably uses IFRAME or hidden IFRAME. Configure the script to not run in IFRAME.
 
-    // const context = {
-    //     // from https://greasyfork.org/fr/scripts/512700-online-shopping-assistant-automatically-query-coupons-save-money/code
-    //     // lang: (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase() || "en",
-    //     isDebug: false, // In Development: true || In Prod: false
-    // };
-
     try {
-        // let magnets = Array.prototype.slice.call(document?.querySelectorAll("a[href*='magnet:']"));
 
         // magnets.length || LOG("No magnets found.");
-        if (!magnets.length) {
-            LOG("No magnets found.");/* Abort */return;
-        }
+        if (!magnets.length) { LOG("No magnets found.");/* Abort */return; }
 
         // https://stackoverflow.com/questions/31697237/get-href-list-from-element-list-in-javascript
         // var links = Array.prototype.slice.call(document.querySelectorAll("a[href*='magnet:']"));
