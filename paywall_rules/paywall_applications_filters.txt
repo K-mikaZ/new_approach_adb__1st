@@ -21,6 +21,7 @@ toquedechef.com##+js(set-constant, lgcookieslaw_consent_mode, 1)
 toquedechef.com##+js(set-constant, lgcookieslaw_block_navigation, 0)
 toquedechef.com##+js(set-constant, lgcookieslaw_reject_cookies_when_closing_banner, 1)
 toquedechef.com##+js(set-constant, lgcookieslaw_saved_preferences, 1)
+! 29 oct. 2025 ¤¤¤ lacerisesurlemaillot.fr ¤¤¤ (https://lacerisesurlemaillot.fr/des-recettes-de-tartinades/) - fix for ###cmpwrapper
 www.quelquesgrammesdegourmandise.com##+js(prevent-addEventListener, , /^(?:.*)$/, wrapper*)
 www.marechal-fraicheur.fr##+js(prevent-addEventListener, message)
 www.marechal-fraicheur.fr##+js(prevent-addEventListener, /footernewsletter.+/)
