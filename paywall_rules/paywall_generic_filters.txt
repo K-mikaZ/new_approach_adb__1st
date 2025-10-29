@@ -8,6 +8,8 @@
 ###cookieChoiceInfo
 ###cookie-notice
 ###modal-cookies
+! 29 oct. 2025 ¤¤¤ lacerisesurlemaillot.fr ¤¤¤ (https://lacerisesurlemaillot.fr/des-recettes-de-tartinades/)
+###cmpwrapper
 ! 4 août 2024 ¤¤¤ brise-soleil-orientable.com ¤¤¤ (https://brise-soleil-orientable.com/page/21-brise-soleil-orientable-anti-effraction)
 ##.notification_cookie
 ###tarteaucitronRoot
