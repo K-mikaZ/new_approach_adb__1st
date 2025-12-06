@@ -327,7 +327,6 @@ www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###dismissable.ytd-compact-pr
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.badge-style-type-verified
 ! www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###contents > .ytd-search-pyv-renderer.style-scope:if(.ytd-promoted-video-renderer)
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##.ytd-display-ad-renderer
-www.youtube.com,youtu.be,yt.be,youtube-nocookie.com##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###offer-module
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###root
 www.youtube.com,youtu.be,yt.be,youtube-nocookie.com###root-container
