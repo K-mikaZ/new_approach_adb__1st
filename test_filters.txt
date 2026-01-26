@@ -280,7 +280,8 @@ makeuseof.com#$#div[class*="ad-zone"]:last-of-type:has( > [class*="ad-zone"]:fir
 ! 2024-04-21 ~ 10:49:18 [ comment-brasser-sa-biere.fr ](https://comment-brasser-sa-biere.fr/biere-dautomne/)
 ! BREAK: https://www.mariefrance.fr/culture/a-13-ans-elle-arrete-lecole-pour-soccuper-de-son-compte-tiktok-579025.html
 ! ##[class*="placeholder"]:has(>:empty)
-##[class*="placeholder"]:not(html, body, div):has(> :empty)
+! BREAK too many sites
+! ##[class*="placeholder"]:not(html, body, div):has(> :empty)
 
 huffingtonpost.fr##[class="before-text "]
 
