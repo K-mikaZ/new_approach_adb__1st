@@ -1,5 +1,7 @@
 ! Global Whitelisting --------------------------------------------------------
 #@#.section-newsletter
+! break "Consent-O-Matic"
+#@##tarteaucitronRoot
 ! Cookie wall ---------------------------------------------------------
 !##.lgcookieslaw_banner
 ! ¤¤¤ cmplz ¤¤¤ (https://verticus.fr/ingredients-naturels-produits-menagers-maison/)
