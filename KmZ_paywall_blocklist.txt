@@ -13,7 +13,7 @@
 !#endif
 
 ! "generic" filters ------------------------------------------------------
-!#include paywall_rules/paywall_generic_filters.txt
+! !#include paywall_rules/paywall_generic_filters.txt
 
 ! "specific" filters ------------------------------------------------------
 !#include paywall_rules/paywall_specific_filters.txt
