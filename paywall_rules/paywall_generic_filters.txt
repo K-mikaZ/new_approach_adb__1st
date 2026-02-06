@@ -12,7 +12,6 @@
 ###cmpwrapper
 ! 4 août 2024 ¤¤¤ brise-soleil-orientable.com ¤¤¤ (https://brise-soleil-orientable.com/page/21-brise-soleil-orientable-anti-effraction)
 ##.notification_cookie
-###tarteaucitronRoot
 ! https://www.label-qualirepar.fr/particulier/bonusreparation.html#bonus
 ##:is(html,body):where([class^="tarteaucitron-"]):remove-class(/tarteaucitron-\S+/)
 ##.lgcookieslaw-overlay
