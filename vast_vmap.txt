@@ -40,7 +40,9 @@ output=xml_vmap1$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ! VAST ads - 18 oct. 2025 ¤¤¤ www.pornlib.com ¤¤¤ (https://www.pornlib.com/)
 ||jibeno.xyz^
 imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
-/\/{1,2}vast[.\/]/$important,xhr,3p,domain=~raw.githubusercontent.com|~github.com
+! /\/{1,2}vast[.\/]/$important,xhr,3p,domain=~raw.githubusercontent.com|~github.com
+^*^*/vast.php?*&sub*=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+
 ! |https://vidmoly.to/static/vastAD.js
 /vastAD.js
 ||ssp.bidvol.com/vast/
@@ -64,15 +66,19 @@ imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 ||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
 ||vidalak.com/api/vpaid?$xhr,redirect=noopvast-3.0,important
 
-/vast/v2?$xhr,3p,redirect-rule=noopvast-2.0
-/vast/v3?$xhr,3p,redirect-rule=noopvast-3.0
-/vast/v4?$xhr,3p,redirect-rule=noopvast-4.0
-/v2/vast?$xhr,3p,redirect-rule=noopvast-2.0
-/v3/vast?$xhr,3p,redirect-rule=noopvast-3.0
-/v4/vast?$xhr,3p,redirect-rule=noopvast-4.0
-/vast/VAST-2$xhr,3p,redirect-rule=noopvast-2.0
-/vast/VAST-3$xhr,3p,redirect-rule=noopvast-3.0
-/vast/VAST-4$xhr,3p,redirect-rule=noopvast-4.0
+!/vast/v2?$xhr,3p,redirect-rule=noopvast-2.0
+!/vast/v3?$xhr,3p,redirect-rule=noopvast-3.0
+!/vast/v4?$xhr,3p,redirect-rule=noopvast-4.0
+/\/vast\/v\d\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+!/v2/vast?$xhr,3p,redirect-rule=noopvast-2.0
+!/v3/vast?$xhr,3p,redirect-rule=noopvast-3.0
+!/v4/vast?$xhr,3p,redirect-rule=noopvast-4.0
+/\/v\d\/vast\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+!/vast/VAST-2$xhr,3p,redirect-rule=noopvast-2.0
+!/vast/VAST-3$xhr,3p,redirect-rule=noopvast-3.0
+!/vast/VAST-4$xhr,3p,redirect-rule=noopvast-4.0
+/\/vast\/VAST-\d/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+
 ||vast.*/v2$xhr,3p,redirect-rule=noopvast-2.0
 
 /vast.php?partner_id=*&format=2&$important,redirect=noopvast-2.0
