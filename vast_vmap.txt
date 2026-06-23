@@ -41,7 +41,8 @@ output=xml_vmap1$xhr,redirect=noop-vmap1.0.xml,domain=~imasdk.googleapis.com
 ||jibeno.xyz^
 imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 ! /\/{1,2}vast[.\/]/$important,xhr,3p,domain=~raw.githubusercontent.com|~github.com
-^*^*/vast.php?*&sub*=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+!^*^*/vast.php?*&sub*=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+^*^*/vast.php?*&sub*=$important,redirect=noopvast-3.0
 
 ! |https://vidmoly.to/static/vastAD.js
 /vastAD.js
@@ -59,38 +60,38 @@ imasdk.googleapis.com##+js(xml-prune, VAST,, /^.+/)
 ||lumupu.xyz/vast/?$redirect-rule=noopjson
 
 ! 2024-01-29 ~ 11:02:39 - image that redirect to a XML
-!||ad.mail.ru/vast/$important,redirect=noopvast-3.0
-||ad.mail.ru/vast/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+||ad.mail.ru/vast/$important,redirect=noopvast-3.0
+!||ad.mail.ru/vast/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
 
 ||tpc.googlesyndication.com/ima3vpaid$redirect=noopvast-2.0
 ||viewtraff.com/*/vpaid/$important,redirect=noopvast-3.0
 ||serving.viewtraff.com/*/vpaid/$redirect=noopvast-3.0
 ||vidalak.com/api/vpaid?$xhr,redirect=noopvast-3.0,important
 
-!/vast/v2?$xhr,3p,redirect-rule=noopvast-2.0
-!/vast/v3?$xhr,3p,redirect-rule=noopvast-3.0
-!/vast/v4?$xhr,3p,redirect-rule=noopvast-4.0
-/\/vast\/v\d\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
-!/v2/vast?$xhr,3p,redirect-rule=noopvast-2.0
-!/v3/vast?$xhr,3p,redirect-rule=noopvast-3.0
-!/v4/vast?$xhr,3p,redirect-rule=noopvast-4.0
-/\/v\d\/vast\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
-!/vast/VAST-2$xhr,3p,redirect-rule=noopvast-2.0
-!/vast/VAST-3$xhr,3p,redirect-rule=noopvast-3.0
-!/vast/VAST-4$xhr,3p,redirect-rule=noopvast-4.0
-/\/vast\/VAST-\d/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+/vast/v2?$xhr,3p,redirect-rule=noopvast-2.0
+/vast/v3?$xhr,3p,redirect-rule=noopvast-3.0
+/vast/v4?$xhr,3p,redirect-rule=noopvast-4.0
+!/\/vast\/v\d\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+v2/vast?$xhr,3p,redirect-rule=noopvast-2.0
+/v3/vast?$xhr,3p,redirect-rule=noopvast-3.0
+/v4/vast?$xhr,3p,redirect-rule=noopvast-4.0
+!/\/v\d\/vast\?/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+/vast/VAST-2$xhr,3p,redirect-rule=noopvast-2.0
+/vast/VAST-3$xhr,3p,redirect-rule=noopvast-3.0
+/vast/VAST-4$xhr,3p,redirect-rule=noopvast-4.0
+!/\/vast\/VAST-\d/$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
 
 ||vast.*/v2$xhr,3p,redirect-rule=noopvast-2.0
 
-!/vast.php?partner_id=*&format=2&$important,redirect=noopvast-2.0
-!/vast.php?partner_id=*&format=3&$important,redirect=noopvast-3.0
-!/vast.php?partner_id=*&format=4&$important,redirect=noopvast-4.0
-/vast.php?partner_id=*&format=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+/vast.php?partner_id=*&format=2&$important,redirect=noopvast-2.0
+/vast.php?partner_id=*&format=3&$important,redirect=noopvast-3.0
+/vast.php?partner_id=*&format=4&$important,redirect=noopvast-4.0
+!/vast.php?partner_id=*&format=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
 ! ||franecki.net^/*.xml?v=3.0&external_subid=$important,redirect=noopvast-3.0
-!/*.xml?v=2.0&external_subid=$important,redirect=noopvast-2.0
-!/*.xml?v=3.0&external_subid=$important,redirect=noopvast-3.0
-!/*.xml?v=4.0&external_subid=$important,redirect=noopvast-4.0
-/*.xml?v=*&external_subid=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
+/*.xml?v=2.0&external_subid=$important,redirect=noopvast-2.0
+/*.xml?v=3.0&external_subid=$important,redirect=noopvast-3.0
+/*.xml?v=4.0&external_subid=$important,redirect=noopvast-4.0
+!/*.xml?v=*&external_subid=$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<Ad\/><\/VAST>/,xmlhttprequest,important
 
 ! ||vast.adsafeprotected.com^$important
 ||vast.xpln.tech^$redirect-rule=noopvast-2.0
