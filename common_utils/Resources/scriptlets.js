@@ -6641,9 +6641,12 @@ function noopFunc() {};
  **/
 
 // EMPTY VMAP with empty AdBreak, for compatibility reason. Fix for some players.
+
 // e.g. https://github.com/dropy2008/SpeedoXtream/blob/fc502b55a4cc434e9c04e2ce7e12f966ced4e07c/TestingResources/Vast/vmapOptimizedPodWith3AdsBumpersTag.xml
 noopvmap-1.0 text/xml
 <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0"><vmap:AdBreak/></vmap:VMAP>
+
+// EMPTY VAST with empty Ad, for compatibility reason. Fix for some players.
 
 // <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0"/>
 // <VAST version="1.0"/>
