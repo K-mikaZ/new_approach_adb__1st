@@ -22,6 +22,8 @@
 !#endif
 !#endif
 
+!#include cookies_header_rules.txt
+
 ! "application" filters ------------------------------------------------------
 !#include cookies_application_filter.txt
 
