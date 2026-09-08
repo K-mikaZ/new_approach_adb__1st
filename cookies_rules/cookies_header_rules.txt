@@ -12,4 +12,5 @@
 ! Structure du nom : Le nom complet du cookie varie en fonction du domaine publicitaire tiers qui le génère. La syntaxe ressemble à ceci :_fwex_<domaine_du_serveur_tiers>_<nom_du_cookie>
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
 ||*$header=set-cookie:/^._fwex_/,domain=~freewheel.com
+||*$header=cookie:/^._fwex_/,domain=~freewheel.com
 !#endif
