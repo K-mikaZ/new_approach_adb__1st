@@ -16,7 +16,7 @@ comscore.com##+js(remove-cookie, /^/)
 ! Un cookie commençant par _fwex_ est un traceur lié à la régie publicitaire FreeWheel, une filiale du groupe Comcast spécialisée dans la gestion et l'optimisation des publicités vidéo (notamment pour les plateformes de streaming et les médias).
 ! Structure du nom : Le nom complet du cookie varie en fonction du domaine publicitaire tiers qui le génère. La syntaxe ressemble à ceci :_fwex_<domaine_du_serveur_tiers>_<nom_du_cookie>
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
-~www.freewheel.com##+js(remove-cookie, /^_fwex_/)
+*##+js(remove-cookie, /^_fwex_/)
 fwmrm.net##+js(remove-cookie, /^_fwex_/)
 howtogeek.com#@#+js(remove-cookie, articlesRead)
 howtogeek.com##+js(remove-cookie, articlesRead, when, scroll keydown)
