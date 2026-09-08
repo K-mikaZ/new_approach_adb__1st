@@ -115,6 +115,7 @@ $cookie=_pubcid
 !! www.youtube.com##+js(remove-cookie, VISITOR_INFO1_LIVE)
 !! scorecardresearch.com (Com Score)
 $cookie=uid
+!! https://cookiesearch.org/cookies/?cookie-id=_uid
 $cookie=_uid
 !! https://cookiedatabase.org/cookie/google-ads-optimization/1p-jar/
 !! https://cookiesearch.org/cookies/?search-term=1P_JAR&filter-type=cookie-name&sort=asc&cookie-id=1P_JAR
@@ -157,8 +158,6 @@ $cookie=_pctx
 !! $cookie=pa_user
 !! https://cookiedatabase.org/cookie/criteo/cto_bundle/
 $cookie=cto_bundle
-!! https://cookiesearch.org/cookies/?cookie-id=_uid
-$cookie=_uid
 !! google.com Advertisement - https://cookiesearch.org/cookies/?cookie-id=NID
 !! $cookie=NID
 !! google.com Analytics (needed, break deezer) - https://cookiesearch.org/cookies/?cookie-id=sid
