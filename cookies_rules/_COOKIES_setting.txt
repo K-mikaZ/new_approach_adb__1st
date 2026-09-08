@@ -17,6 +17,7 @@
 !   The $cookie modifier completely changes rule behavior. Instead of blocking a request,
 !     this modifier makes AdGuard suppress or modify the Cookie and Set-Cookie headers.
 !
+!#include cookies_header_rules.txt
 !#include cookies_adguard_setting.txt
 ! ---------------------------------------------------------------------------------------------
 !#endif
