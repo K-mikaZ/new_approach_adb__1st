@@ -4,18 +4,23 @@
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ------------------------------------------------------------------------------------
 !  🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!      Restrictions: In AdGuard Browser Extension MV3, regular expressions in the $header modifier values are not supported.
 ! ------------------------------------------------------------------------------------
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
 ||*$header=cookie:mvx_consult,domain=moneyvox.fr
 ! Un cookie commençant par _fwex_ est un traceur lié à la régie publicitaire FreeWheel, une filiale du groupe Comcast spécialisée dans la gestion et l'optimisation des publicités vidéo (notamment pour les plateformes de streaming et les médias).
 ! Structure du nom : Le nom complet du cookie varie en fonction du domaine publicitaire tiers qui le génère. La syntaxe ressemble à ceci :_fwex_<domaine_du_serveur_tiers>_<nom_du_cookie>
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
-||fwmrm.net^$header=set-cookie:/^.*_([su]id|fwex_)/,domain=~freewheel.tv
-||fwmrm.net^$header=cookie:/^.*_([su]id|fwex_)/,domain=~freewheel.tv
+||fwmrm.net^$header=set-cookie:_fwex_,domain=~freewheel.tv
+||fwmrm.net^$header=set-cookie:_sid,domain=~freewheel.tv
+||fwmrm.net^$header=set-cookie:_uid,domain=~freewheel.tv
+||fwmrm.net^$header=cookie:_fwex_,domain=~freewheel.tv
+||fwmrm.net^$header=cookie:_sid,domain=~freewheel.tv
+||fwmrm.net^$header=cookie:_uid,domain=~freewheel.tv
 ! Pixel Meta (Facebook) dès qu'un visiteur arrive sur un site web
 ! https://cookiedatabase.org/cookie/facebook/_fbp/#morecookies
-||*$header=set-cookie:/^.*_js_datr/,domain=~facebook.com
-||*$header=cookie:/^.*_js_datr/,domain=~facebook.com
+||*$header=set-cookie:_js_datr,domain=~facebook.com
+||*$header=cookie:_js_datr,domain=~facebook.com
 ||*$header=set-cookie:datr,domain=~facebook.com
 ||*$header=cookie:datr,domain=~facebook.com
 !#endif
