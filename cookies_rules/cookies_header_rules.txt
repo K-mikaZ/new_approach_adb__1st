@@ -11,20 +11,20 @@
 ! Un cookie commençant par _fwex_ est un traceur lié à la régie publicitaire FreeWheel, une filiale du groupe Comcast spécialisée dans la gestion et l'optimisation des publicités vidéo (notamment pour les plateformes de streaming et les médias).
 ! Structure du nom : Le nom complet du cookie varie en fonction du domaine publicitaire tiers qui le génère. La syntaxe ressemble à ceci :_fwex_<domaine_du_serveur_tiers>_<nom_du_cookie>
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
-||fwmrm.net^$header=set-cookie,domain=~freewheel.tv,important
-||fwmrm.net^$header=cookie,domain=~freewheel.tv,important
+||fwmrm.net^$important,header=set-cookie,domain=~freewheel.tv
+||fwmrm.net^$important,header=cookie,domain=~freewheel.tv
 ! static.mediarithmics.com : mics_
-||mediarithmics.com^$header=set-cookie,important
-||mediarithmics.com^$header=cookie,important
+||mediarithmics.com^$important,header=set-cookie
+||mediarithmics.com^$important,header=cookie
 ! collect.commander1.com : TCID
-||commander1.com^$header=set-cookie,important
-||commander1.com^$header=cookie,important
+||commander1.com^$important,header=set-cookie
+||commander1.com^$important,header=cookie
 ! Pixel Meta (Facebook) dès qu'un visiteur arrive sur un site web
 ! https://cookiedatabase.org/cookie/facebook/_fbp/#morecookies
 !||*$header=set-cookie:_js_datr,domain=~facebook.com
 !||*$header=cookie:_js_datr,domain=~facebook.com
 !||*$header=set-cookie:datr,domain=~facebook.com
 !||*$header=cookie:datr,domain=~facebook.com
-||facebook.com^$3p,header=set-cookie,important
-||facebook.com^$3p,header=cookie,important
+||facebook.com^$important,3p,header=set-cookie
+||facebook.com^$important,3p,header=cookie
 !#endif
