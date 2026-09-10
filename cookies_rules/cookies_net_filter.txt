@@ -1,3 +1,5 @@
 ||*/cookie.js?domain=*&callback=*&client=ca-pub-*$redirect=noop.txt,important
 ! dailymotion's const: dmCookie3rdPartyAllowed
 ||geo2.dailymotion.com/cookie.js$redirect=noop.txt,important
+! bloque directement les requêtes vers les serveurs de Meta (comme connect.facebook.net), ce qui empêche le cookie _fbp de se créer.
+||connect.facebook.net^$3p,important
