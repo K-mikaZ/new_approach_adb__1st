@@ -12,8 +12,7 @@ www.3237.fr##+js(set-cookie, ResoConsentCaptcha, true)
 ! REMOVE cookies
 ! -------------------------------------
 /(?:hq{2}|v(edirt|izplay)|wa+w\d*|y(andexcdn|ounetu))\.(.+)/##+js(remove-cookie, uid)
-comscore.com##+js(remove-cookie, /^/)
-m6.fr,www.programme-tv.net##+js(remove-cookie, _fbp)
+!comscore.com##+js(remove-cookie, /^/)
 tf1.fr##+js(remove-cookie, wa_ext_fw)
 !www.france.tv##+js(remove-cookie, utiq_consent_status)
 howtogeek.com#@#+js(remove-cookie, articlesRead)
