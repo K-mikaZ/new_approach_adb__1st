@@ -22,6 +22,6 @@
 ||commander1.com^$important,header=cookie
 ! Pixel Meta (ex: graph.facebook.com)
 ! https://cookiedatabase.org/cookie/facebook/
-||facebook.com^$3p,important,header=set-cookie
-||facebook.com^$3p,important,header=cookie
+||facebook.$3p,important,header=set-cookie
+||facebook.$3p,important,header=cookie
 !#endif
