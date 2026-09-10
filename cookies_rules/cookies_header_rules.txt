@@ -13,7 +13,7 @@
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
 ||fwmrm.net^$header=set-cookie,domain=~freewheel.tv
 ||fwmrm.net^$header=cookie,domain=~freewheel.tv
-! static.mediarithmics.com : mics_
+! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
 ||mediarithmics.com^$header=set-cookie
 ||mediarithmics.com^$header=cookie
 ! collect.commander1.com : TCID
