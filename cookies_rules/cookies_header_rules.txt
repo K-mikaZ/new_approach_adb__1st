@@ -20,7 +20,7 @@
 ! collect.commander1.com : TCID
 ||commander1.com^$important,header=set-cookie
 ||commander1.com^$important,header=cookie
-! Pixel Meta (Facebook) dès qu'un visiteur arrive sur un site web
+! Pixel Meta (ex: graph.facebook.com)
 ! https://cookiedatabase.org/cookie/facebook/
 ||facebook.com^$3p,important,header=set-cookie
 ||facebook.com^$3p,important,header=cookie
