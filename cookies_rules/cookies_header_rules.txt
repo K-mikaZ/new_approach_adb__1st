@@ -20,11 +20,7 @@
 ||commander1.com^$header=set-cookie
 ||commander1.com^$header=cookie
 ! Pixel Meta (Facebook) dès qu'un visiteur arrive sur un site web
-! https://cookiedatabase.org/cookie/facebook/_fbp/#morecookies
-!||*$header=set-cookie:_js_datr,domain=~facebook.com
-!||*$header=cookie:_js_datr,domain=~facebook.com
-!||*$header=set-cookie:datr,domain=~facebook.com
-!||*$header=cookie:datr,domain=~facebook.com
+! https://cookiedatabase.org/cookie/facebook/
 ||facebook.com^$3p,header=set-cookie
 ||facebook.com^$3p,header=cookie
 !#endif
