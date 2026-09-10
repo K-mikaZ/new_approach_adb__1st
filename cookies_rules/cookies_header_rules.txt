@@ -22,6 +22,6 @@
 ||commander1.com^$important,header=cookie
 ! Pixel Meta (Facebook) dès qu'un visiteur arrive sur un site web
 ! https://cookiedatabase.org/cookie/facebook/
-||facebook.com^$important,3p,header=set-cookie
-||facebook.com^$important,3p,header=cookie
+||facebook.com^$3p,important,header=set-cookie
+||facebook.com^$3p,important,header=cookie
 !#endif
