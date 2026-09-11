@@ -13,6 +13,7 @@
 ! --------------------
 ! 1. On laisse le script AdManager se charger normalement (mssl.fwmrm.net^*/AdManager.js, adm.fwmrm.net^*/AdManager.js)
 !    <https://github.com/search?q="fwmrm.net^"+-repo:K-mikaZ/new_approach_adb__1st&type=code>
+!    <https://github.com/search?q="/AdManager.js$"+-repo:K-mikaZ/new_approach_adb__1st&type=code>
 !    Test sur : <https://www.cnbc.com/latest-video/>
 !               <https://play.tv3.lt/>
 !    @@||fwmrm.net^*/AdManager.js$script
