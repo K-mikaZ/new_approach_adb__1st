@@ -13,7 +13,7 @@
 ! --------------------
 ! 1. On laisse le script AdManager se charger normalement
 !   @@||mssl.fwmrm.net^*/AdManager.js$script
-!   @@||adm.fwmrm.net^
+!   @@||adm.fwmrm.net^*/AdManager.js$script
 ! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
 !    <https://vi.freewheel.tv/apc/samples>
 !    <https://github.com/search?q=tv\.freewheel\.SDK -repo:K-mikaZ/new_approach_adb__1st&type=code>
@@ -26,6 +26,8 @@
 !     mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
 ||mssl.fwmrm.net^$header=set-cookie
 ||mssl.fwmrm.net^$header=cookie
+||adm.fwmrm.net^$header=set-cookie
+||adm.fwmrm.net^$header=cookie
 ! 4 : Resultat dans consoles
 !     sur <https://www.tv5mondeplus.com/fr/documentaires/culture/les-maitres-du-sel> :
 !         | ℹ️ No ads to display - proceeding to content
