@@ -9,12 +9,13 @@
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
 ||*$header=cookie:mvx_consult,domain=moneyvox.fr
 ! Neutralise le script de synchronisation des cookies FreeWheel sans bloquer la vidéo
-! Un cookie commençant par _fwex_ est un traceur lié à la régie publicitaire FreeWheel, une filiale du groupe Comcast spécialisée dans la gestion et l'optimisation des publicités vidéo (notamment pour les plateformes de streaming et les médias).
-! Structure du nom : Le nom complet du cookie varie en fonction du domaine publicitaire tiers qui le génère. La syntaxe ressemble à ceci :_fwex_<domaine_du_serveur_tiers>_<nom_du_cookie>
-! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
-||v.fwmrm.net^$header=set-cookie,domain=~freewheel.tv
-||v.fwmrm.net^$header=cookie,domain=~freewheel.tv
-@@||v.fwmrm.net^$header=cookie,domain=tv5mondeplus.com
+! Sur de nombreux sites équipés de FreeWheel (comme les plateformes de replay), le script refuse de lancer la vidéo s'il est bloqué,
+! mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
+! 1. On laisse le script AdManager se charger normalement
+!   @@||mssl.fwmrm.net^*/AdManager.js$script
+! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
+!    ||mssl.fwmrm.net^$xhr,3p
+! 3 : Le blocage via les cookies (Astuce Reddit)
 ||mssl.fwmrm.net^$header=set-cookie
 ||mssl.fwmrm.net^$header=cookie
 ! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
