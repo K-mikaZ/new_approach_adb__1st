@@ -24,8 +24,11 @@
 !     mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
 ||mssl.fwmrm.net^$header=set-cookie
 ||mssl.fwmrm.net^$header=cookie
-! 4 : Resultat dans console (example sur https://www.tv5mondeplus.com/fr/documentaires/culture/les-maitres-du-sel)
-!     ℹ️ No ads to display - proceeding to content
+! 4 : Resultat dans consoles
+!     sur <https://www.tv5mondeplus.com/fr/documentaires/culture/les-maitres-du-sel> :
+!         | ℹ️ No ads to display - proceeding to content
+!     sur <https://www.tf1.fr/tf1/direct>, <https://www.france.tv/france-2/direct.html>
+!         | 0 ad break(s) in total, 0 ad break(s) parsed, 0 new ad(s), 0 deleted ad(s)
 !
 ! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
 ||mediarithmics.com^$important,header=set-cookie
