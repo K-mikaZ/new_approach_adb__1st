@@ -13,6 +13,7 @@
 ! --------------------
 ! 1. On laisse le script AdManager se charger normalement
 !   @@||mssl.fwmrm.net^*/AdManager.js$script
+!   @@||adm.fwmrm.net^
 ! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
 !    <https://vi.freewheel.tv/apc/samples>
 !    <https://github.com/search?q=tv\.freewheel\.SDK -repo:K-mikaZ/new_approach_adb__1st&type=code>
