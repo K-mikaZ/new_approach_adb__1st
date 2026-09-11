@@ -8,17 +8,25 @@
 ! ------------------------------------------------------------------------------------
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
 ||*$header=cookie:mvx_consult,domain=moneyvox.fr
-! Neutralise le script de synchronisation des cookies FreeWheel sans bloquer la vidéo
-! Sur de nombreux sites équipés de FreeWheel (comme les plateformes de replay), le script refuse de lancer la vidéo s'il est bloqué,
-! mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
+!
+! FreeWheel AdManager :
+! --------------------
 ! 1. On laisse le script AdManager se charger normalement
 !   @@||mssl.fwmrm.net^*/AdManager.js$script
-! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent, <https://vi.freewheel.tv/apc/samples>, <https://github.com/search?q=repo:AdguardTeam/AdguardFilters+_instanceQueue&type=code>
+! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
+!    <https://vi.freewheel.tv/apc/samples>
+!    <https://github.com/search?q=repo:AdguardTeam/AdguardFilters+_instanceQueue&type=code>
 !    Si le lecteur s'arrête, c'est parfois parce qu'il attend une structure d'erreur propre à Freewheel plutôt qu'un retour vide (ex: "ads":{"ads":null}). Essayez cette variante qui simule un message "No Ad" explicite :
 !    ^*^*/ad/g/1?*_instanceQ$replace=/(\b_instanceQ\w+.*?\.[\w_.]+\(\{[\s\S]*?"version"\s*:\s*"\d+")[\s\S]*?\}\s*\);?/$1,"errors":{"errors":[{"severity":"INFO","id":"NO_AD_AVAILABLE"}]},"eventCallbacks":{"eventCallbacks":[]},"ads":{"ads":[]}});/
-! 3 : Le blocage via les cookies (Astuce Reddit)
+! 3 : Neutralise le script de synchronisation des cookies FreeWheel sans bloquer la vidéo
+!     Sur de nombreux sites équipés de FreeWheel (comme les plateformes de replay),
+!     le script refuse de lancer la vidéo s'il est bloqué,
+!     mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
 ||mssl.fwmrm.net^$header=set-cookie
 ||mssl.fwmrm.net^$header=cookie
+! 4 : Resultat dans console (example sur https://www.tv5mondeplus.com/fr/documentaires/culture/les-maitres-du-sel)
+!     ℹ️ No ads to display - proceeding to content
+!
 ! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
 ||mediarithmics.com^$important,header=set-cookie
 ||mediarithmics.com^$important,header=cookie
