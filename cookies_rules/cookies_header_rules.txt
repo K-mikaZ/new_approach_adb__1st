@@ -17,7 +17,8 @@
 !    <https://vi.freewheel.tv/apc/samples>
 !    <https://github.com/search?q=tv\.freewheel\.SDK -repo:K-mikaZ/new_approach_adb__1st&type=code>
 !    <https://github.com/search?q=_instanceQueue -repo:K-mikaZ/new_approach_adb__1st&type=code>
-!    Si le lecteur s'arrête, c'est parfois parce qu'il attend une structure d'erreur propre à Freewheel plutôt qu'un retour vide (ex: "ads":{"ads":null}). Essayez cette variante qui simule un message "No Ad" explicite :
+!    Si le lecteur s'arrête, c'est parfois parce qu'il attend une structure d'erreur propre à Freewheel plutôt qu'un retour vide (ex: "ads":{"ads":null}).
+!    Essayez cette variante qui simule un message "No Ad" explicite :
 !    ^*^*/ad/g/1?*_instanceQ$replace=/(\b_instanceQ\w+.*?\.[\w_.]+\(\{[\s\S]*?"version"\s*:\s*"\d+")[\s\S]*?\}\s*\);?/$1,"errors":{"errors":[{"severity":"INFO","id":"NO_AD_AVAILABLE"}]},"eventCallbacks":{"eventCallbacks":[]},"ads":{"ads":[]}});/,to=adproxy.tf1.fr|v.fwmrm.net|/^fwlive\.(?:sony)?crackle\.com$/
 ! 3 : Neutralise le script de synchronisation des cookies FreeWheel (ex: omsdk) sans bloquer la vidéo
 !     Sur de nombreux sites équipés de FreeWheel (comme les plateformes de replay),
