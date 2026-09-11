@@ -14,6 +14,7 @@
 ! Exemple concret : Le cookie _fwex_doubleclick.net_id sert à faire la passerelle avec les outils publicitaires Google DoubleClick.
 ||v.fwmrm.net^$header=set-cookie,domain=~freewheel.tv
 ||v.fwmrm.net^$header=cookie,domain=~freewheel.tv
+@@||v.fwmrm.net^$header=cookie,domain=tv5mondeplus.com
 ||mssl.fwmrm.net^$header=set-cookie
 ||mssl.fwmrm.net^$header=cookie
 ! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
