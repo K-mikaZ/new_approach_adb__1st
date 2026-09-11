@@ -12,12 +12,13 @@
 ! FreeWheel AdManager :
 ! --------------------
 ! 1. On laisse le script AdManager se charger normalement (mssl.fwmrm.net^*/AdManager.js, adm.fwmrm.net^*/AdManager.js)
+!    <https://github.com/search?q="fwmrm.net^"+-repo:K-mikaZ/new_approach_adb__1st&type=code>
 !    Test sur : <https://www.cnbc.com/latest-video/>
 !    @@||fwmrm.net^*/AdManager.js$script
 ! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
 !    <https://vi.freewheel.tv/apc/samples>
-!    <https://github.com/search?q=tv\.freewheel\.SDK -repo:K-mikaZ/new_approach_adb__1st&type=code>
-!    <https://github.com/search?q=_instanceQueue -repo:K-mikaZ/new_approach_adb__1st&type=code>
+!    <https://github.com/search?q=tv\.freewheel\.SDK+-repo:K-mikaZ/new_approach_adb__1st&type=code>
+!    <https://github.com/search?q=_instanceQueue+-repo:K-mikaZ/new_approach_adb__1st&type=code>
 !    Si le lecteur s'arrête, c'est parfois parce qu'il attend une structure d'erreur propre à Freewheel plutôt qu'un retour vide (ex: "ads":{"ads":null}).
 !    Essayez cette variante qui simule un message "No Ad" explicite :
 !    ^*^*/ad/g/1?*_instanceQ$replace=/(\b_instanceQ\w+.*?\.[\w_.]+\(\{[\s\S]*?"version"\s*:\s*"\d+")[\s\S]*?\}\s*\);?/$1,"errors":{"errors":[{"severity":"INFO","id":"NO_AD_AVAILABLE"}]},"eventCallbacks":{"eventCallbacks":[]},"ads":{"ads":[]}});/,to=adproxy.tf1.fr|v.fwmrm.net|/^fwlive\.(?:sony)?crackle\.com$/
