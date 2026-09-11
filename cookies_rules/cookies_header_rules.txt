@@ -12,6 +12,7 @@
 ! FreeWheel AdManager :
 ! --------------------
 ! 1. On laisse le script AdManager se charger normalement (mssl.fwmrm.net^*/AdManager.js, adm.fwmrm.net^*/AdManager.js)
+!    Test sur : <https://www.cnbc.com/latest-video/>
 !    @@||fwmrm.net^*/AdManager.js$script
 ! 2. On bloque les requêtes de serveurs publicitaires (Vast / Vpaid) qui en découlent
 !    <https://vi.freewheel.tv/apc/samples>
