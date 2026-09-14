@@ -6644,6 +6644,7 @@ function noopFunc() {};
 
 // e.g. https://github.com/dropy2008/SpeedoXtream/blob/fc502b55a4cc434e9c04e2ce7e12f966ced4e07c/TestingResources/Vast/vmapOptimizedPodWith3AdsBumpersTag.xml
 noopvmap-1.0 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
   <vmap:AdBreak timeOffset="start" breakType="linear" breakId="noop_global" />
 </vmap:VMAP>
@@ -6660,6 +6661,7 @@ noopvmap-1.0 text/xml
 // <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0"/>
 // <VAST version="1.0"/>
 noopvast-1.0 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0">
   <Ad id="noop_ad">
     <InLine>
@@ -6671,6 +6673,7 @@ noopvast-1.0 text/xml
 </VAST>
 
 noopvast-2.0 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
   <Ad id="noop_ad">
     <InLine>
@@ -6682,6 +6685,7 @@ noopvast-2.0 text/xml
 </VAST>
 
 noopvast-3.0 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
   <Ad id="noop_ad">
     <InLine>
@@ -6693,6 +6697,7 @@ noopvast-3.0 text/xml
 </VAST>
 
 noopvast-4.0 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.0">
   <Ad id="noop_ad">
     <InLine>
@@ -6704,6 +6709,7 @@ noopvast-4.0 text/xml
 </VAST>
 
 noopvast-4.1 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.1">
   <Ad id="noop_ad">
     <InLine>
@@ -6715,6 +6721,7 @@ noopvast-4.1 text/xml
 </VAST>
 
 noopvast-4.2 text/xml
+<?xml version="1.0" encoding="UTF-8"?>
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.2">
   <Ad id="noop_ad">
     <InLine>
