@@ -6649,23 +6649,78 @@ noopvmap-1.0 text/xml
 </vmap:VMAP>
 
 // EMPTY VAST with empty Ad, for compatibility reason. Fix for some players.
-
+// selon les spécifications strictes de l'IAB, bien qu'il soit syntaxiquement valide en XML,
+// il provoquera une erreur de parsing ou un crash sur la majorité des lecteurs vidéo (comme le SDK Google IMA) pour deux raisons :
+//   - La balise <Ad/> ne peut pas être auto-fermante :
+//        Selon le schéma XSD officiel de l'IAB, un nœud <Ad> doit obligatoirement contenir soit un bloc <InLine>, soit un bloc <Wrapper>.
+//   - Absence des éléments requis :
+//        Pour être valide, un VAST InLine doit obligatoirement inclure les balises <AdSystem>, <AdTitle>, et au moins une balise <Impression>.
+// Les parsers stricts (comme le SDK Google IMA ou Video.js IMA) vérifient la présence de nœuds spécifiques comme <AdSystem> ou <AdTitle>.
+// Si ces balises sont absentes (cas d'un VAST totalement vide), le lecteur lève une erreur fatale.
 // <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0"/>
 // <VAST version="1.0"/>
 noopvast-1.0 text/xml
-<VAST version="1.0"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="1.0">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
 
 noopvast-2.0 text/xml
-<VAST version="2.0"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="2.0">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
 
 noopvast-3.0 text/xml
-<VAST version="3.0"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
 
 noopvast-4.0 text/xml
-<VAST version="4.0"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.0">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
 
 noopvast-4.1 text/xml
-<VAST version="4.1"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.1">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
 
 noopvast-4.2 text/xml
-<VAST version="4.2"><Ad/></VAST>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="4.2">
+  <Ad id="noop_ad">
+    <InLine>
+      <AdSystem>NoOp</AdSystem>
+      <AdTitle>Empty Ad</AdTitle>
+      <Impression/>
+    </InLine>
+  </Ad>
+</VAST>
