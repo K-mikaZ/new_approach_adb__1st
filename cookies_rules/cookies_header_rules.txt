@@ -4,6 +4,7 @@
 !#if !adguard_ext_android_cb || !adguard_app_ios || !adguard_ext_safari
 ! ------------------------------------------------------------------------------------
 !  🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#cookie-modifier>
+!  🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !      Restrictions: In AdGuard Browser Extension MV3, regular expressions in the $header modifier values are not supported.
 ! ------------------------------------------------------------------------------------
 ||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
