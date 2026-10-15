@@ -29,8 +29,10 @@
 !     Sur de nombreux sites équipés de FreeWheel (comme les plateformes de replay),
 !     le script refuse de lancer la vidéo s'il est bloqué,
 !     mais se désactive de lui-même si le navigateur refuse de lui donner des cookies de suivi.
-||*$header=set-cookie,to=/^(?:adm|mssl)\.fwmrm\.net$/
-||*$header=cookie,to=/^(?:adm|mssl)\.fwmrm\.net$/
+*$important,header=set-cookie,__,to=v.fwmrm.net
+@@||*$header=cookie,____________,to=/^(?:adm|mssl)\.fwmrm\.net$/
+! collect.commander1.com : TCID
+*$important,header=set-cookie,__,to=commander1.com
 ! 4 : Resultat dans consoles
 !     sur <https://www.tv5mondeplus.com/fr/documentaires/culture/les-maitres-du-sel> :
 !         | ℹ️ No ads to display - proceeding to content
@@ -40,9 +42,6 @@
 ! https://developer.mediarithmics.io/advanced-usages/data-privacy-compliance/cookies
 ||mediarithmics.com^$important,header=set-cookie
 ||mediarithmics.com^$important,header=cookie
-! collect.commander1.com : TCID
-||commander1.com^$important,header=set-cookie
-||commander1.com^$important,header=cookie
 ! Pixel Meta (ex: graph.facebook.com)
 ! https://cookiedatabase.org/cookie/facebook/
 ||facebook.$3p,important,header=set-cookie
