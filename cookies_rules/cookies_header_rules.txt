@@ -7,8 +7,8 @@
 !  🔗 <https://adguard.com/kb/fr/general/ad-filtering/create-own-filters/#header-modifier>
 !      Restrictions: In AdGuard Browser Extension MV3, regular expressions in the $header modifier values are not supported.
 ! ------------------------------------------------------------------------------------
-||*$header=set-cookie:mvx_consult,domain=moneyvox.fr
-||*$header=cookie:mvx_consult,domain=moneyvox.fr
+*$header=set-cookie:mvx_consult,domain=moneyvox.fr
+*$header=cookie:mvx_consult,domain=moneyvox.fr
 !
 ! FreeWheel AdManager :
 ! --------------------
