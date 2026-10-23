@@ -21,7 +21,10 @@
 
 ! 2024-01-24 ~ FIX [ Tracking JS Blocklist ](https://malware-filter.gitlab.io/malware-filter/tracking-filter.txt)
 ! Unlock loading images on [ fontsaga.com ](https://fontsaga.com/font-display-swap/)
-@@/ezojs\.com\/\w+\/(?:lazy_load|css_onload|script_delay)\.js/$all
+!@@/ezojs\.com\/[a-zA-Z0-9_]+\/(?:lazy_load|css_onload|script_delay)\.js/$script
+@@*/lazy_load.js$script,domain=ezojs.com
+@@*/css_onload.js$script,domain=ezojs.com
+@@*/script_delay.js$script,domain=ezojs.com
 ! 2024-01-31 ~ 00:58:00 - CNAME www.ezojs.com ⇒ www.ezojs.com.cdn.cloudflare.net
 ||ezojs.com.cdn.cloudflare.net|$important,badfilter
 ||ezojs.com.cdn.cloudflare.net|$badfilter
@@ -60,6 +63,6 @@
 ! *#$#:where([data-ez-ph-id],[ezaw][ezah]):not([style*="display:"][style*="none"]) { display:none!important;visibility:hidden!important; }
 
 ! /ezqlog?, /ezais/log? - <https://regex101.com/r/VrimLQ/3>
-/\/ez[aq](?:is\/)?log\?/$important
+/\/ez[qa](?:is)?\/?log\?/gs$important
 
 ! < /end ezoic ads >
